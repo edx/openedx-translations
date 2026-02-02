@@ -17,8 +17,9 @@ on:
         default: ''
         type: string
 
-  schedule:
-    - cron: '0 0 * * *'  # every day at midnight
+  # Uncomment after this is manually confirmed.
+  # schedule:
+  #   - cron: '0 0 * * *'  # every day at midnight
 
 jobs:
   setup-matrix:
@@ -34,82 +35,112 @@ jobs:
             const selectedRepo = ${{ toJSON(github.event.inputs.repo) }} ?? '';
 
             const allPythonRepos = [
-              'AudioXBlock',
-              'completion',
-              'course-discovery',
-              'credentials',
-              'credentials-themes',
-              'DoneXBlock',
-              'edx-ace',
-              'edx-bulk-grades',
-              'edx-enterprise',
-              'edx-ora2',
-              'edx-platform',
-              'edx-proctoring',
-              'FeedbackXBlock',
-              'RecommenderXBlock',
-              'platform-plugin-aspects',
-              'xblock-drag-and-drop-v2',
-              'xblock-free-text-response',
-              'xblock-google-drive',
-              'xblock-image-explorer',
-              'xblock-image-modal',
-              'xblock-lti-consumer',
-              'xblock-qualtrics-survey',
-              'xblock-sql-grader',
-              'xblock-submit-and-compare',
+              'edx/AudioXBlock',
+              'edx/DoneXBlock',
+              'edx/FeedbackXBlock',
+              'edx/RecommenderXBlock',
+              'edx/ai-translations'
+              'edx/commerce-coordinator',
+              'edx/course-discovery',
+              'edx/credentials',
+              'edx/credentials-themes',
+              'edx/edx-ace',
+              'edx/edx-exams',
+              'edx/edx-platform',
+              'edx/edx-portal-designer',
+              'edx/edx-registrar',
+              'edx/enterprise-access',
+              'edx/enterprise-catalog',
+              'edx/enterprise-subsidy',
+              'edx/financial-assistance',
+              'edx/order-fulfillment',
+              'edx/sanctions',
+              'edx/video-encode-manager',
+              'openedx/edx-bulk-grades',
+              'openedx/edx-ora2',
+              'edx/edx-proctoring',
+              'edx/platform-plugin-aspects',
+              'edx/xblock-drag-and-drop-v2',
+              'edx/xblock-free-text-response',
+              'edx/xblock-google-drive',
+              'edx/xblock-image-explorer',
+              'edx/xblock-image-modal',
+              'edx/xblock-lti-consumer',
+              'edx/xblock-qualtrics-survey',
+              'edx/xblock-sql-grader',
+              'edx/xblock-submit-and-compare',
             ];
 
             const allJavascriptRepos = [
-              'frontend-app-admin-portal',
-              'frontend-app-publisher',
-              'frontend-app-account',
-              'frontend-app-authn',
-              'frontend-app-communications',
-              'frontend-app-course-authoring',
-              'frontend-app-discussions',
-              'frontend-app-enterprise-public-catalog',
-              'frontend-app-gradebook',
-              'frontend-app-learner-dashboard',
-              'frontend-app-learner-record',
-              'frontend-app-learning',
-              'frontend-app-library-authoring',
-              'frontend-app-ora',
-              'frontend-app-ora-grading',
-              'frontend-app-profile',
-              'frontend-app-support-tools',
-              'frontend-component-footer',
-              'frontend-component-header',
-              'frontend-lib-special-exams',
-              'frontend-platform',
-              'paragon',
-              'studio-frontend',
-              'frontend-app-learner-portal-enterprise',
-              'frontend-enterprise',
+              'edx/frontend-app-account',
+              'edx/frontend-app-admin-portal',
+              'edx/frontend-app-authn',
+              'edx/frontend-app-authoring',
+              'edx/frontend-app-communications',
+              'edx/frontend-app-discussions',
+              'edx/frontend-app-enterprise-api-doc',
+              'edx/frontend-app-enterprise-checkout',
+              'edx/frontend-app-explore-catalog',
+              'edx/frontend-app-gradebook',
+              'edx/frontend-app-learner-dashboard',
+              'edx/frontend-app-learner-portal-enterprise',
+              'edx/frontend-app-learner-portal-programs',
+              'edx/frontend-app-learner-record',
+              'edx/frontend-app-learning',
+              'edx/frontend-app-ora',
+              'edx/frontend-app-ora-grading',
+              'edx/frontend-app-payment',
+              'edx/frontend-app-profile',
+              'edx/frontend-app-program-console',
+              'edx/frontend-app-publisher',
+              'edx/frontend-app-skills',
+              'edx/frontend-app-support-tools',
+              'edx/frontend-component-authn-edx',
+              'edx/frontend-component-footer-edx',
+              'edx/frontend-component-header-edx',
+              'edx/frontend-components-tinymce-advanced-plugins-edx',
+              'edx/frontend-plugin-advertisements',
+              'edx/frontend-plugin-authn',
+              'edx/frontend-plugin-learner-dashboard',
+              'edx/frontend-plugin-notifications',
+              'edx/frontend-plugin-persona',
+              'edx/frontend-plugin-recommendations',
+              'edx/frontend-platform',
+              'openedx/paragon',
+              'edx/studio-frontend',
+              'openedx/frontend-plugin-framework',
             ];
 
-            const allGenericRepos = [
-              {
-                repo: 'tutor-contrib-aspects',
-                transifex_file_path: 'transifex_input.yaml',
-              },
-              {
-                repo: 'openedx-app-ios',
-                transifex_file_path: 'I18N/I18N/en.lproj/Localizable.strings',
-                before_extract: 'make translation_requirements',
-                ref: 'develop',  // TODO: Use main branch https://github.com/openedx/openedx-translations/issues/6395
-              },
-              {
-                repo: 'openedx-app-android',
-                transifex_file_path: 'i18n/src/main/res/values/strings.xml',
-                before_extract: 'make translation_requirements',
-                ref: 'develop',  // TODO: Use main branch https://github.com/openedx/openedx-translations/issues/6395
-              },
-            ]
+            const allJavascriptMonorepoPackages = [
+              'edx/frontend-plugins/cohesion-wrapper',
+              'edx/frontend-plugins/course-app-translation-plugin',
+              'edx/frontend-plugins/course-end-enterprise-plugins',
+              'edx/frontend-plugins/course-outline-sidebar-trigger-plugin',
+              'edx/frontend-plugins/left-sidebar-navigation-plugin',
+              'edx/frontend-plugins/progress-tab-grade-plugins',
+              'edx/frontend-plugins/unit-title-plugin',
+            ];
+
+            // When https://2u-internal.atlassian.net/wiki/spaces/AU/pages/2786066453/Mobile+app+translations
+            // tasks or equivalents are completed, uncomment and correct this section.
+            //const allGenericRepos = [
+            //  {
+            //    repo: 'openedx-app-ios',
+            //    transifex_file_path: 'I18N/I18N/en.lproj/Localizable.strings',
+            //    before_extract: 'make translation_requirements',
+            //    ref: 'develop',  // TODO: Use main branch https://github.com/openedx/openedx-translations/issues/6395
+            //  },
+            //  {
+            //    repo: 'openedx-app-android',
+            //    transifex_file_path: 'i18n/src/main/res/values/strings.xml',
+            //    before_extract: 'make translation_requirements',
+            //    ref: 'develop',  // TODO: Use main branch https://github.com/openedx/openedx-translations/issues/6395
+            //  },
+            //]
 
             core.setOutput('hasPythonRepos', true);
             core.setOutput('hasJavascriptRepos', true);
-            core.setOutput('hasGenericRepos', true);
+            core.setOutput('hasGenericRepos', false);
 
             if (selectedRepo === '') {
               core.setOutput('pythonRepos', allPythonRepos);
@@ -153,6 +184,16 @@ jobs:
     outputs:
       branch: ${{ steps.dynamic_branch.outputs.branch }}
     steps:
+
+    # prepare GitHub app token
+    - name: Generate GitHub App token
+      id: generate_token
+      uses: actions/create-github-app-token@v1
+      with:
+        app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID}}
+        private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY}}
+        owner: edx
+
     # sets the job output that creates a unique branch name
     - name: dynamically set branch job output variable
       id: dynamic_branch
@@ -162,11 +203,13 @@ jobs:
     - name: echo branch name
       id: date
       run: echo $BRANCH
-    - name: clone openedx/openedx-translations
+    - name: clone edx/openedx-translations
       uses: actions/checkout@v5
 
     # creates the branch where all the translations will be added to
     - name: make and push a new branch
+      env:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       run: |
         git checkout -b ${{ steps.dynamic_branch.outputs.branch }}
         git push --set-upstream origin ${{ steps.dynamic_branch.outputs.branch }}
@@ -182,10 +225,12 @@ jobs:
 
     runs-on: ubuntu-latest
     continue-on-error: true
+    env:
+      GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
     steps:
       # Clones the openedx-translations repo
-      - name: clone openedx/openedx-translations
+      - name: clone edx/openedx-translations
         uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
@@ -195,10 +240,10 @@ jobs:
         run: sudo apt install -y gettext
 
       # Clones the  repository
-      - name: clone ${{ github.repository_owner }}/${{ matrix.repo }}
+      - name: clone ${{ matrix.repo }}
         uses: actions/checkout@v5
         with:
-          repository: ${{ github.repository_owner }}/${{ matrix.repo }}
+          repository: ${{ matrix.repo }}
           ref: ${{ github.event.inputs.ref }}
           path: translations/${{ matrix.repo }}
 
@@ -254,9 +299,7 @@ jobs:
       - name: find the location of the translation source files
         id: add-sources
         run: |
-          # set identity
-          git config --global user.email "translations-bot@openedx.org"
-          git config --global user.name "edx-transifex-bot"
+          git config --global user.name "edx-translations-app"
           # Change directory to translations/${{ matrix.repo }}
           cd translations/${{ matrix.repo }}
           # finds the directory containing the english locale usually located in
@@ -332,10 +375,12 @@ jobs:
         repo: ${{ fromJson(needs.setup-matrix.outputs.js_repos) }}
     runs-on: ubuntu-latest
     continue-on-error: true
+    env:
+      GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
     steps:
       # Clones the openedx-translations repo
-      - name: clone openedx/openedx-translations
+      - name: clone edx/openedx-translations
         uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
@@ -364,8 +409,7 @@ jobs:
         id: add-sources
         run: |
           # set identity
-          git config --global user.email "translations-bot@openedx.org"
-          git config --global user.name "edx-transifex-bot"
+          git config --global user.name "edx-translations-app"
           # Change directory to translations/${{ matrix.repo }}
           cd translations/${{ matrix.repo }}
           # remove translations/${{ matrix.repo }}/.git so we don't commit a submodule
@@ -399,10 +443,12 @@ jobs:
 
     runs-on: ubuntu-latest
     continue-on-error: true
+    env:
+      GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
     steps:
       # Clones the openedx-translations repo
-      - name: clone openedx/openedx-translations
+      - name: clone edx/openedx-translations
         uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
@@ -445,7 +491,7 @@ jobs:
         run: |
           # set identity
           git config --global user.email "translations-bot@openedx.org"
-          git config --global user.name "edx-transifex-bot"
+          git config --global user.name "edx-translations-app"
           # Change directory to translations/${{ matrix.repository_config.repo }}
           cd translations/${{ matrix.repository_config.repo }}
 
@@ -473,7 +519,7 @@ jobs:
 
     steps:
       # Clones the openedx-translations repo on the automated/extract-translation-source-files-# branch
-      - name: clone openedx/openedx-translations
+      - name: clone edx/openedx-translations
         uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
@@ -484,24 +530,25 @@ jobs:
         id: createPR
         env:
           # This token requires Write access to the openedx-translations repo
-          GITHUB_TOKEN: ${{ secrets.EDX_TRANSIFEX_BOT_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "COMMIT_COUNT=$(git rev-list HEAD ^origin/main | wc -l)" >> $GITHUB_ENV
-          echo "PR_URL=$(gh pr create --title 'chore: add updated translation source files' --body 'This PR is auto-generated by [extract-translation-source-files](https://github.com/openedx/openedx-translations/blob/master/.github/workflows/extract-translation-source-files.yml).')" >> $GITHUB_ENV
+          echo "PR_URL=$(gh pr create --title 'chore: add updated translation source files' --body 'This PR is auto-generated by [extract-translation-source-files](https://github.com/edx/openedx-translations/blob/master/.github/workflows/extract-translation-source-files.yml).')" >> $GITHUB_ENV
 
       # Merges the pull request
-      - name: merge pull request
-        id: mergePR
-        env:
-          # This token requires Write access to the openedx-translations repo
-          GITHUB_TOKEN: ${{ secrets.EDX_TRANSIFEX_BOT_GITHUB_TOKEN }}
-        if: "${{ env.COMMIT_COUNT > 0 }}"
-        run: gh pr merge ${{ env.PR_URL }} --merge --auto
+      # TODO disables automerge for now
+      # - name: merge pull request
+      #   id: mergePR
+      #   env:
+      #     # This token requires Write access to the openedx-translations repo
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   if: "${{ env.COMMIT_COUNT > 0 }}"
+      #   run: gh pr merge ${{ env.PR_URL }} --merge --auto
 
       # Notify that branch did not merge because there were no new commits in the branch
       # and delete the branch now that it is unnecessary
-      - name: notify of empty branch and delete branch
-        if: (steps.mergePR.outcome == 'skipped')
-        run: |
-          echo "The branch was not merged because the branch had 0 commits."
-          git push origin -d ${{ needs.setup-branch.outputs.branch }}
+      # - name: notify of empty branch and delete branch
+      #   if: (steps.mergePR.outcome == 'skipped')
+      #   run: |
+      #     echo "The branch was not merged because the branch had 0 commits."
+      #     git push origin -d ${{ needs.setup-branch.outputs.branch }}
