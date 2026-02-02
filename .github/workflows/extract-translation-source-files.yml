@@ -300,6 +300,7 @@ jobs:
         id: add-sources
         run: |
           git config --global user.name "edx-translations-app"
+          git config --global user.email "edx-translations-app@users.noreply.github.com"
           # Change directory to translations/${{ matrix.repo }}
           cd translations/${{ matrix.repo }}
           # finds the directory containing the english locale usually located in
