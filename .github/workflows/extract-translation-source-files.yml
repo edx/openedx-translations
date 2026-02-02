@@ -492,8 +492,8 @@ jobs:
         id: add-sources
         run: |
           # set identity
-          git config --global user.email "translations-bot@openedx.org"
           git config --global user.name "edx-translations-app"
+          git config --global user.email "edx-translations-app@users.noreply.github.com"
           # Change directory to translations/${{ matrix.repository_config.repo }}
           cd translations/${{ matrix.repository_config.repo }}
 
