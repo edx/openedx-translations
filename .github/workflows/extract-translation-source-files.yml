@@ -20,9 +20,6 @@ on:
   # schedule:
   #   - cron: '0 0 * * *'  # every day at midnight
 
-env:
-  TRANSLATIONS_REPO: edx/openedx-translations
-
 jobs:
   setup-matrix:
     runs-on: ubuntu-latest
@@ -39,10 +36,11 @@ jobs:
             const allPythonRepos = [
               'edx/AudioXBlock',
               'edx/DoneXBlock',
-              'edx/FeedbackXBlock',
+              'openedx/FeedbackXBlock',
               'edx/RecommenderXBlock',
               'edx/ai-translations',
-              'edx/commerce-coordinator',
+              // Commerce-coordinator gives an error on extract_translations
+              //'edx/commerce-coordinator',
               'edx/course-discovery',
               'edx/credentials',
               'edx/credentials-themes',
@@ -205,7 +203,7 @@ jobs:
     - name: echo branch name
       id: date
       run: echo $BRANCH
-    - name: clone $TRANSLATIONS_REPO
+    - name: clone ${{ github.repository }}
       uses: actions/checkout@v5
 
     # creates the branch where all the translations will be added to
@@ -240,7 +238,7 @@ jobs:
           private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
           owner: edx
 
-      - name: clone $TRANSLATIONS_REPO
+      - name: clone ${{ github.repository }}
         uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
@@ -256,6 +254,7 @@ jobs:
           repository: ${{ matrix.repo }}
           ref: ${{ github.event.inputs.ref }}
           path: translations/${{ matrix.repo }}
+          token: ${{ steps.generate_token.outputs.token }}
 
       - name: prepare the environment with edx-platform specific changes
         if: matrix.repo == 'edx-platform'
@@ -402,7 +401,7 @@ jobs:
           owner: edx
 
       # Clones the openedx-translations repo
-      - name: clone $TRANSLATIONS_REPO
+      - name: clone ${{ github.repository }}
         uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
@@ -414,6 +413,7 @@ jobs:
           repository: ${{ github.repository_owner }}/${{ matrix.repo }}
           ref: ${{ github.event.inputs.ref }}
           path: translations/${{ matrix.repo }}
+          token: ${{ steps.generate_token.outputs.token }}
 
       # Sets up node/npm
       - name: setup node
@@ -482,18 +482,19 @@ jobs:
           private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
           owner: edx
       # Clones the openedx-translations repo
-      - name: clone $TRANSLATIONS_REPO
+      - name: clone ${{ github.repository }}
         uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
 
       # Clones the repository
-      - name: clone ${{ github.repository_owner }}/${{ matrix.repository_config.repo }}
+      - name: clone ${{ matrix.repository_config.repo }}
         uses: actions/checkout@v5
         with:
           repository: ${{ github.repository_owner }}/${{ matrix.repository_config.repo }}
           ref: ${{ github.event.inputs.ref || matrix.repository_config.ref }}
           path: translations/${{ matrix.repository_config.repo }}
+          token: ${{ steps.generate_token.outputs.token }}
 
       # Sets up Python
       - name: setup python
@@ -567,7 +568,7 @@ jobs:
           owner: edx
 
       # Clones the openedx-translations repo on the automated/extract-translation-source-files-# branch
-      - name: clone $TRANSLATIONS_REPO
+      - name: clone ${{ github.repository }}
         uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
