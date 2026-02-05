@@ -226,8 +226,6 @@ jobs:
     continue-on-error: true
 
     steps:
-      # Clones the openedx-translations repo
-
       # prepare GitHub app token
       - name: Generate GitHub App token
         id: generate_token
@@ -237,14 +235,15 @@ jobs:
           private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
           owner: edx
 
+      # Installs gettext, a dependency for extracting translation source files in django
+      - name: install gettext
+        run: sudo apt install -y gettext
+
+      # Clones the openedx-translations repo
       - name: clone ${{ github.repository }}
         uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
-
-      # Installs gettext, a dependency for extracting translation source files in django
-      - name: install gettext
-        run: sudo apt install -y gettext
 
       # Clones the  repository
       - name: clone ${{ matrix.repo }}
@@ -480,6 +479,7 @@ jobs:
           app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
           private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
           owner: edx
+
       # Clones the openedx-translations repo
       - name: clone ${{ github.repository }}
         uses: actions/checkout@v5
@@ -591,7 +591,7 @@ jobs:
           # This token requires Write access to the openedx-translations repo
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         if: "${{ env.COMMIT_COUNT > 0 }}"
-        run: gh pr merge ${{ env.PR_URL }} --merge --disable-auto
+        run: gh pr create ${{ env.PR_URL }} --merge --base master
         # run: gh pr merge ${{ env.PR_URL }} --merge --auto
 
       # Notify that branch did not merge because there were no new commits in the branch
