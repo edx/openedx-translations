@@ -406,10 +406,10 @@ jobs:
           ref: ${{ needs.setup-branch.outputs.branch }}
 
       # Clones the  repository
-      - name: clone ${{ github.repository_owner }}/${{ matrix.repo }}
+      - name: clone ${{ matrix.repo }}
         uses: actions/checkout@v5
         with:
-          repository: ${{ github.repository_owner }}/${{ matrix.repo }}
+          repository: ${{ matrix.repo }}
           ref: ${{ github.event.inputs.ref }}
           path: translations/${{ matrix.repo }}
           token: ${{ steps.generate_token.outputs.token }}
@@ -490,7 +490,7 @@ jobs:
       - name: clone ${{ matrix.repository_config.repo }}
         uses: actions/checkout@v5
         with:
-          repository: ${{ github.repository_owner }}/${{ matrix.repository_config.repo }}
+          repository: ${{ matrix.repository_config.repo }}
           ref: ${{ github.event.inputs.ref || matrix.repository_config.ref }}
           path: translations/${{ matrix.repository_config.repo }}
           token: ${{ steps.generate_token.outputs.token }}
