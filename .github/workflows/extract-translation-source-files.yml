@@ -39,19 +39,18 @@ jobs:
               'openedx/FeedbackXBlock',
               'edx/RecommenderXBlock',
               'edx/ai-translations',
-              // Commerce-coordinator gives an error on extract_translations
               //'edx/commerce-coordinator',
               'edx/course-discovery',
               'edx/credentials',
               'edx/credentials-themes',
               'edx/edx-ace',
-              'edx/edx-exams',
+              // 'edx/edx-exams',
               'edx/edx-platform',
-              'edx/edx-portal-designer',
-              'edx/edx-registrar',
-              'edx/enterprise-access',
-              'edx/enterprise-catalog',
-              'edx/enterprise-subsidy',
+              'edx/portal-designer',
+              'edx/registrar',
+              // 'edx/enterprise-access',
+              // 'edx/enterprise-catalog',
+              // 'edx/enterprise-subsidy',
               'edx/financial-assistance',
               'edx/order-fulfillment',
               'edx/sanctions',
@@ -60,10 +59,10 @@ jobs:
               'openedx/edx-ora2',
               'edx/edx-proctoring',
               'edx/platform-plugin-aspects',
-              'edx/xblock-drag-and-drop-v2',
+              'openedx/xblock-drag-and-drop-v2',
               'edx/xblock-free-text-response',
-              'edx/xblock-google-drive',
-              'edx/xblock-image-explorer',
+              'openedx/xblock-google-drive',
+              'openedx/xblock-image-explorer',
               'edx/xblock-image-modal',
               'edx/xblock-lti-consumer',
               'edx/xblock-qualtrics-survey',
@@ -586,18 +585,19 @@ jobs:
 
       # Merges the pull request
       # TODO disables automerge for now
-      # - name: merge pull request
-      #   id: mergePR
-      #   env:
-      #     # This token requires Write access to the openedx-translations repo
-      #     GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-      #   if: "${{ env.COMMIT_COUNT > 0 }}"
-      #   run: gh pr merge ${{ env.PR_URL }} --merge --auto
+      - name: merge pull request
+        id: mergePR
+        env:
+          # This token requires Write access to the openedx-translations repo
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+        if: "${{ env.COMMIT_COUNT > 0 }}"
+        run: gh pr merge ${{ env.PR_URL }} --merge --disable-auto
+        # run: gh pr merge ${{ env.PR_URL }} --merge --auto
 
       # Notify that branch did not merge because there were no new commits in the branch
       # and delete the branch now that it is unnecessary
-      # - name: notify of empty branch and delete branch
-      #   if: (steps.mergePR.outcome == 'skipped')
-      #   run: |
-      #     echo "The branch was not merged because the branch had 0 commits."
-      #     git push origin -d ${{ needs.setup-branch.outputs.branch }}
+      - name: notify of empty branch and delete branch
+        if: (steps.mergePR.outcome == 'skipped')
+        run: |
+          echo "The branch was not merged because the branch had 0 commits."
+          git push origin -d ${{ needs.setup-branch.outputs.branch }}
