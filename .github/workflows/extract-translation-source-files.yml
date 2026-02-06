@@ -154,8 +154,6 @@ jobs:
               core.setOutput('pythonRepos', []);
               core.setOutput('hasPythonRepos', false);
             }
-            core.setOutput('pythonRepos', []);
-            core.setOutput('hasPythonRepos', false);
 
             if (allJavascriptRepos.includes(selectedRepo)) {
               core.setOutput('javascriptRepos', [selectedRepo]);
@@ -163,7 +161,6 @@ jobs:
               core.setOutput('javascriptRepos', []);
               core.setOutput('hasJavascriptRepos', false);
             }
-            core.setOutput('javascriptRepos', ['edx/frontend-plugin-learner-dashboard']);
 
             //const genericRepoConfig = allGenericRepos.find(repoConfig => repoConfig.repo === selectedRepo);
             //if (genericRepoConfig !== undefined) {
