@@ -16,7 +16,6 @@ on:
         required: false
         default: ''
         type: string
-
   # Uncomment after this is manually confirmed.
   # schedule:
   #   - cron: '0 0 * * *'  # every day at midnight
@@ -37,7 +36,7 @@ jobs:
             const allPythonRepos = [
               'edx/AudioXBlock',
               'edx/DoneXBlock',
-              'edx/FeedbackXBlock',
+              'openedx/FeedbackXBlock',
               'edx/RecommenderXBlock',
               'edx/ai-translations',
               'edx/commerce-coordinator',
@@ -47,8 +46,8 @@ jobs:
               'edx/edx-ace',
               'edx/edx-exams',
               'edx/edx-platform',
-              'edx/edx-portal-designer',
-              'edx/edx-registrar',
+              'edx/portal-designer',
+              'edx/registrar',
               'edx/enterprise-access',
               'edx/enterprise-catalog',
               'edx/enterprise-subsidy',
@@ -60,10 +59,10 @@ jobs:
               'openedx/edx-ora2',
               'edx/edx-proctoring',
               'edx/platform-plugin-aspects',
-              'edx/xblock-drag-and-drop-v2',
+              'openedx/xblock-drag-and-drop-v2',
               'edx/xblock-free-text-response',
-              'edx/xblock-google-drive',
-              'edx/xblock-image-explorer',
+              'openedx/xblock-google-drive',
+              'openedx/xblock-image-explorer',
               'edx/xblock-image-modal',
               'edx/xblock-lti-consumer',
               'edx/xblock-qualtrics-survey',
@@ -111,7 +110,7 @@ jobs:
               'openedx/frontend-plugin-framework',
             ];
 
-            const allJavascriptMonorepoPackages = [
+            const javascriptReposWithSubpackages = [
               'edx/frontend-plugins/cohesion-wrapper',
               'edx/frontend-plugins/course-app-translation-plugin',
               'edx/frontend-plugins/course-end-enterprise-plugins',
@@ -145,7 +144,7 @@ jobs:
             if (selectedRepo === '') {
               core.setOutput('pythonRepos', allPythonRepos);
               core.setOutput('javascriptRepos', allJavascriptRepos);
-              core.setOutput('genericRepos', allGenericRepos);
+              //core.setOutput('genericRepos', allGenericRepos);
               return;
             }
 
@@ -163,21 +162,21 @@ jobs:
               core.setOutput('hasJavascriptRepos', false);
             }
 
-            const genericRepoConfig = allGenericRepos.find(repoConfig => repoConfig.repo === selectedRepo);
-            if (genericRepoConfig !== undefined) {
-              core.setOutput('genericRepos', [genericRepoConfig]);
-            } else {
-              core.setOutput('genericRepos', []);
-              core.setOutput('hasGenericRepos', false);
-            }
+            //const genericRepoConfig = allGenericRepos.find(repoConfig => repoConfig.repo === selectedRepo);
+            //if (genericRepoConfig !== undefined) {
+              //core.setOutput('genericRepos', [genericRepoConfig]);
+            //} else {
+              //core.setOutput('genericRepos', []);
+              //core.setOutput('hasGenericRepos', false);
+            //}
 
     outputs:
       has_python_repos: ${{ steps.generate_repo_matrix.outputs.hasPythonRepos }}
       python_repos: ${{ steps.generate_repo_matrix.outputs.pythonRepos }}
       has_js_repos: ${{ steps.generate_repo_matrix.outputs.hasJavascriptRepos }}
       js_repos: ${{ steps.generate_repo_matrix.outputs.javascriptRepos }}
-      has_generic_repos: ${{ steps.generate_repo_matrix.outputs.hasGenericRepos }}
-      generic_repos: ${{ steps.generate_repo_matrix.outputs.genericRepos }}
+      # has_generic_repos: ${{ steps.generate_repo_matrix.outputs.hasGenericRepos }}
+      # generic_repos: ${{ steps.generate_repo_matrix.outputs.genericRepos }}
 
   setup-branch:
     runs-on: ubuntu-latest
@@ -203,7 +202,7 @@ jobs:
     - name: echo branch name
       id: date
       run: echo $BRANCH
-    - name: clone edx/openedx-translations
+    - name: clone ${{ github.repository }}
       uses: actions/checkout@v5
 
     # creates the branch where all the translations will be added to
@@ -227,8 +226,6 @@ jobs:
     continue-on-error: true
 
     steps:
-      # Clones the openedx-translations repo
-
       # prepare GitHub app token
       - name: Generate GitHub App token
         id: generate_token
@@ -238,14 +235,15 @@ jobs:
           private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
           owner: edx
 
-      - name: clone edx/openedx-translations
-        uses: actions/checkout@v5
-        with:
-          ref: ${{ needs.setup-branch.outputs.branch }}
-
       # Installs gettext, a dependency for extracting translation source files in django
       - name: install gettext
         run: sudo apt install -y gettext
+
+      # Clones the openedx-translations repo
+      - name: clone ${{ github.repository }}
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
 
       # Clones the  repository
       - name: clone ${{ matrix.repo }}
@@ -254,6 +252,7 @@ jobs:
           repository: ${{ matrix.repo }}
           ref: ${{ github.event.inputs.ref }}
           path: translations/${{ matrix.repo }}
+          token: ${{ steps.generate_token.outputs.token }}
 
       - name: prepare the environment with edx-platform specific changes
         if: matrix.repo == 'edx-platform'
@@ -400,18 +399,19 @@ jobs:
           owner: edx
 
       # Clones the openedx-translations repo
-      - name: clone edx/openedx-translations
+      - name: clone ${{ github.repository }}
         uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
 
       # Clones the  repository
-      - name: clone ${{ github.repository_owner }}/${{ matrix.repo }}
+      - name: clone ${{ matrix.repo }}
         uses: actions/checkout@v5
         with:
-          repository: ${{ github.repository_owner }}/${{ matrix.repo }}
+          repository: ${{ matrix.repo }}
           ref: ${{ github.event.inputs.ref }}
           path: translations/${{ matrix.repo }}
+          token: ${{ steps.generate_token.outputs.token }}
 
       # Sets up node/npm
       - name: setup node
@@ -458,7 +458,8 @@ jobs:
   # assumes that a `extract_translations` make target exists and will create
   # a transifex_input.yaml file in the root of the site.
   generic-translations:
-    if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_generic_repos) == true }}
+    if: false
+    # if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_generic_repos) == true }}
     needs: [setup-branch, setup-matrix, js-translations]
     strategy:
       # using max-parallel to avoid git push/pull issues when running in parallel
@@ -478,19 +479,21 @@ jobs:
           app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
           private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
           owner: edx
+
       # Clones the openedx-translations repo
-      - name: clone edx/openedx-translations
+      - name: clone ${{ github.repository }}
         uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
 
       # Clones the repository
-      - name: clone ${{ github.repository_owner }}/${{ matrix.repository_config.repo }}
+      - name: clone ${{ matrix.repository_config.repo }}
         uses: actions/checkout@v5
         with:
-          repository: ${{ github.repository_owner }}/${{ matrix.repository_config.repo }}
+          repository: ${{ matrix.repository_config.repo }}
           ref: ${{ github.event.inputs.ref || matrix.repository_config.ref }}
           path: translations/${{ matrix.repository_config.repo }}
+          token: ${{ steps.generate_token.outputs.token }}
 
       # Sets up Python
       - name: setup python
@@ -550,7 +553,12 @@ jobs:
 
   merge-translations:
     runs-on: ubuntu-latest
-    needs: [setup-branch, python-translations, js-translations, generic-translations]
+    #needs: [setup-branch, python-translations, js-translations, generic-translations]
+    needs: [setup-branch, python-translations, js-translations]
+    permissions:
+      contents: write
+      pull-requests: write
+
 
     steps:
       # prepare GitHub app token
@@ -563,7 +571,7 @@ jobs:
           owner: edx
 
       # Clones the openedx-translations repo on the automated/extract-translation-source-files-# branch
-      - name: clone edx/openedx-translations
+      - name: clone ${{ github.repository }}
         uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
@@ -577,22 +585,23 @@ jobs:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: |
           echo "COMMIT_COUNT=$(git rev-list HEAD ^origin/main | wc -l)" >> $GITHUB_ENV
-          echo "PR_URL=$(gh pr create --title 'chore: add updated translation source files' --body 'This PR is auto-generated by [extract-translation-source-files](https://github.com/edx/openedx-translations/blob/master/.github/workflows/extract-translation-source-files.yml).')" >> $GITHUB_ENV
+          echo "PR_URL=$(gh pr create --repo edx/openedx-translations --title 'chore: add updated translation source files' --body 'This PR is auto-generated by [extract-translation-source-files](https://github.com/edx/openedx-translations/blob/master/.github/workflows/extract-translation-source-files.yml).')" >> $GITHUB_ENV
 
       # Merges the pull request
       # TODO disables automerge for now
-      # - name: merge pull request
-      #   id: mergePR
-      #   env:
-      #     # This token requires Write access to the openedx-translations repo
-      #     GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-      #   if: "${{ env.COMMIT_COUNT > 0 }}"
-      #   run: gh pr merge ${{ env.PR_URL }} --merge --auto
+      - name: merge pull request
+        id: mergePR
+        env:
+          # This token requires Write access to the openedx-translations repo
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+        if: "${{ env.COMMIT_COUNT > 0 }}"
+        run: echo ${{ env.PR_URL }}
+        # run: gh pr merge ${{ env.PR_URL }} --merge --auto
 
       # Notify that branch did not merge because there were no new commits in the branch
       # and delete the branch now that it is unnecessary
-      # - name: notify of empty branch and delete branch
-      #   if: (steps.mergePR.outcome == 'skipped')
-      #   run: |
-      #     echo "The branch was not merged because the branch had 0 commits."
-      #     git push origin -d ${{ needs.setup-branch.outputs.branch }}
+      - name: notify of empty branch and delete branch
+        if: (steps.mergePR.outcome == 'skipped')
+        run: |
+          echo "The branch was not merged because the branch had 0 commits."
+          git push origin -d ${{ needs.setup-branch.outputs.branch }}
