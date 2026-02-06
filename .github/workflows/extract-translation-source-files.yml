@@ -556,7 +556,6 @@ jobs:
     #needs: [setup-branch, python-translations, js-translations, generic-translations]
     needs: [setup-branch, js-translations]
     permissions:
-      contents: write
       pull-requests: write
 
 
@@ -594,7 +593,7 @@ jobs:
         env:
           # This token requires Write access to the openedx-translations repo
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-        # if: "${{ env.COMMIT_COUNT > 0 }}"
+        if: "${{ env.COMMIT_COUNT > 0 }}"
         run: echo ${{ env.PR_URL }}
         # run: gh pr merge ${{ env.PR_URL }} --merge --auto
 
