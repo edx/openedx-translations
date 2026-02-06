@@ -554,7 +554,7 @@ jobs:
   merge-translations:
     runs-on: ubuntu-latest
     #needs: [setup-branch, python-translations, js-translations, generic-translations]
-    needs: [setup-branch, python-translations, js-translations]
+    needs: [setup-branch, js-translations]
     permissions:
       contents: write
       pull-requests: write
