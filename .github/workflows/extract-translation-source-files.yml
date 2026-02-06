@@ -154,6 +154,8 @@ jobs:
               core.setOutput('pythonRepos', []);
               core.setOutput('hasPythonRepos', false);
             }
+            core.setOutput('pythonRepos', []);
+            core.setOutput('hasPythonRepos', false);
 
             if (allJavascriptRepos.includes(selectedRepo)) {
               core.setOutput('javascriptRepos', [selectedRepo]);
@@ -161,6 +163,7 @@ jobs:
               core.setOutput('javascriptRepos', []);
               core.setOutput('hasJavascriptRepos', false);
             }
+            core.setOutput('javascriptRepos', ['edx/frontend-plugin-learner-dashboard']);
 
             //const genericRepoConfig = allGenericRepos.find(repoConfig => repoConfig.repo === selectedRepo);
             //if (genericRepoConfig !== undefined) {
@@ -554,6 +557,7 @@ jobs:
   merge-translations:
     runs-on: ubuntu-latest
     #needs: [setup-branch, python-translations, js-translations, generic-translations]
+    needs: [setup-branch, python-translations, js-translations]
     permissions:
       contents: write
       pull-requests: write
