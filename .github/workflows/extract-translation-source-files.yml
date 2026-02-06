@@ -555,8 +555,6 @@ jobs:
     runs-on: ubuntu-latest
     #needs: [setup-branch, python-translations, js-translations, generic-translations]
     needs: [setup-branch, js-translations]
-    permissions:
-      pull-requests: write
 
 
     steps:
