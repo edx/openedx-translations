@@ -41,6 +41,7 @@ django==4.2.16
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   django-cors-headers
     #   django-crum
+    #   django-extensions
     #   django-waffle
     #   edx-django-utils
     #   edx-i18n-tools
@@ -48,6 +49,8 @@ django-cors-headers==4.9.0
     # via -r requirements/translations.in
 django-crum==0.7.9
     # via edx-django-utils
+django-extensions==4.1
+    # via -r requirements/translations.in
 django-waffle==5.0.0
     # via edx-django-utils
 edx-django-utils==8.0.1
