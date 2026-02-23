@@ -10,5 +10,6 @@ transifex-client
 transifex-python
 python-slugify
 
-# some apps import celery at initialization; although it's not used for extraction, it needs to be installed for the workflow to run successfully
+# some apps have dependencies that are irrelevant to translations extractions but that must be installed for the workflow to run successfully
 celery
+django-cors-headers

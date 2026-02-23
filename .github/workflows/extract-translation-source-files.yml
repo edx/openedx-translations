@@ -587,7 +587,7 @@ jobs:
       - name: create pull request
         id: createPR
         env:
-          # This token requires Write access to the openedx-translations repo
+        # This token requires Write access to the openedx-translations repo
         # Let's try this instead. See comment above the generate_token step. I imagine we have a reason for using this
         # new GitHub token, but I'm curious what happens without it.
           # GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
@@ -600,8 +600,11 @@ jobs:
       # TODO disables automerge for now
       - name: merge pull request
         id: mergePR
+        # Do not automerge if the job is running on a branch that is not main to avoid automerging pull requests when running manually.
+        if: ${{ github.ref == 'refs/heads/main' }}
         env:
           # This token requires Write access to the openedx-translations repo
+          # TODO: check if the secrets.GITHUB_TOKEN has the necessary permissions to merge the PR, if so, we can use it instead of the generated token
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         if: "${{ env.COMMIT_COUNT > 0 }}"
         run: echo ${{ env.PR_URL }}
