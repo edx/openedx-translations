@@ -506,6 +506,30 @@ jobs:
       - name: install requirements
         run: pip install -r requirements/translations.txt
 
+      # Installs Python requirements from translations.txt
+      - name: install requirements
+        run: |
+          # Install requirements for all packages
+          pip install -r requirements/translations.txt
+
+          # Install repository-specific requirements if they exist
+          cd translations/${{ matrix.repo }}
+          
+          # Common requirement file patterns to try
+          REQ_FILES=(
+            "requirements/base.txt"
+          )
+          
+          for req_file in "${REQ_FILES[@]}"; do
+            if test -f "$req_file"; then
+              echo "Installing $req_file for ${{ matrix.repo }}"
+              pip install -r "$req_file" || echo "Failed to install $req_file, continuing..."
+              break
+            fi
+          done
+
+          cd -
+
       - name: run optional pre-extraction step
         if: "${{ matrix.repository_config.before_extract }}"
         run: |
