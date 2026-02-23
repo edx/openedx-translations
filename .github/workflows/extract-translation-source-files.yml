@@ -512,6 +512,9 @@ jobs:
           # Install requirements for all packages
           pip install -r requirements/translations.txt
 
+          echo "matrix.repository_config.repo: ${{ matrix.repository_config.repo }}"
+          echo "matrix.repository_config.repo: ${{ matrix.repo }}"
+
           # Install repository-specific requirements if they exist
           cd translations/${{ matrix.repo }}
           
