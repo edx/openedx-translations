@@ -605,7 +605,7 @@ jobs:
           # TODO: check if the secrets.GITHUB_TOKEN has the necessary permissions to merge the PR, if so, we can use it instead of the generated token
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         # Do not automerge if the job is running on a branch that is not main to avoid automerging pull requests when running manually.
-        if: ${{ github.ref == 'refs/heads/main' }} && ${{ env.COMMIT_COUNT > 0 }}
+        if: ${{ github.ref == 'refs/heads/main' && env.COMMIT_COUNT > 0}}
         run: echo ${{ env.PR_URL }}
         # run: gh pr merge ${{ env.PR_URL }} --merge --auto
 
