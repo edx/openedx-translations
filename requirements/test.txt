@@ -64,6 +64,7 @@ django==4.2.16
     #   -r requirements/translations.txt
     #   django-cors-headers
     #   django-crum
+    #   django-extensions
     #   django-waffle
     #   edx-django-utils
     #   edx-i18n-tools
@@ -73,6 +74,8 @@ django-crum==0.7.9
     # via
     #   -r requirements/translations.txt
     #   edx-django-utils
+django-extensions==4.1
+    # via -r requirements/translations.txt
 django-waffle==5.0.0
     # via
     #   -r requirements/translations.txt
