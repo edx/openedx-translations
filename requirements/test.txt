@@ -27,6 +27,10 @@ certifi==2024.8.30
     # via
     #   -r requirements/translations.txt
     #   requests
+cffi==2.0.0
+    # via
+    #   -r requirements/translations.txt
+    #   pynacl
 charset-normalizer==3.3.2
     # via
     #   -r requirements/translations.txt
@@ -38,6 +42,7 @@ click==8.1.7
     #   click-didyoumean
     #   click-plugins
     #   click-repl
+    #   edx-django-utils
     #   transifex-python
 click-didyoumean==0.3.1
     # via
@@ -58,8 +63,21 @@ django==4.2.16
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/translations.txt
     #   django-cors-headers
+    #   django-crum
+    #   django-waffle
+    #   edx-django-utils
     #   edx-i18n-tools
 django-cors-headers==4.9.0
+    # via -r requirements/translations.txt
+django-crum==0.7.9
+    # via
+    #   -r requirements/translations.txt
+    #   edx-django-utils
+django-waffle==5.0.0
+    # via
+    #   -r requirements/translations.txt
+    #   edx-django-utils
+edx-django-utils==8.0.1
     # via -r requirements/translations.txt
 edx-i18n-tools==1.6.3
     # via -r requirements/translations.txt
@@ -109,6 +127,18 @@ prompt-toolkit==3.0.52
     # via
     #   -r requirements/translations.txt
     #   click-repl
+psutil==7.2.2
+    # via
+    #   -r requirements/translations.txt
+    #   edx-django-utils
+pycparser==3.0
+    # via
+    #   -r requirements/translations.txt
+    #   cffi
+pynacl==1.6.2
+    # via
+    #   -r requirements/translations.txt
+    #   edx-django-utils
 pyseeyou==1.0.2
     # via
     #   -r requirements/translations.txt
@@ -151,6 +181,10 @@ sqlparse==0.5.1
     # via
     #   -r requirements/translations.txt
     #   django
+stevedore==5.7.0
+    # via
+    #   -r requirements/translations.txt
+    #   edx-django-utils
 text-unidecode==1.3
     # via
     #   -r requirements/translations.txt
