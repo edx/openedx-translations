@@ -209,7 +209,6 @@ jobs:
     - name: make and push a new branch
       env:
         GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
-        # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git checkout -b ${{ steps.dynamic_branch.outputs.branch }}
         git push --set-upstream origin ${{ steps.dynamic_branch.outputs.branch }}
@@ -288,13 +287,11 @@ jobs:
             # Install edx-platform specific apps (e.g. wiki) which is required to extract translations from
             pip install -r $EDX_BASE_REQS
           fi
-
-          # Install repository-specific requirements if they exist
-          cd translations/${{ matrix.repo }}
           
           # Common requirement file patterns to try
+          APP_BASE="translations/${{ matrix.repo }}"
           REQ_FILES=(
-            "requirements/base.txt"
+            "$APP_BASE/requirements/base.txt"
           )
           
           for req_file in "${REQ_FILES[@]}"; do
@@ -304,8 +301,6 @@ jobs:
               break
             fi
           done
-
-          cd -
 
       # Extracts the translation source files
       - name: extract translation source files
@@ -423,7 +418,7 @@ jobs:
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
 
-      # Clones the  repository
+      # Clones the repository
       - name: clone ${{ matrix.repo }}
         uses: actions/checkout@v5
         with:
@@ -628,7 +623,7 @@ jobs:
         # run: gh pr merge ${{ env.PR_URL }} --merge --auto
 
       # Notify that branch did not merge because there were no new commits in the branch
-      # and delete the branch now that it is unnecessary
+      # and delete the branch now that it is unnecessary.
       - name: notify of empty branch and delete branch
         if: (steps.mergePR.outcome == 'skipped')
         run: |
