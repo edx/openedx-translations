@@ -596,7 +596,6 @@ jobs:
           fetch-depth: 0
 
       # Create a pull request
-      # NOTE
       - name: create pull request
         id: createPR
         env:
@@ -612,7 +611,6 @@ jobs:
         id: mergePR
         env:
           # This token requires write access to the openedx-translations repo.
-          # NOTE
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # Do not automerge if any of the following are true.
         # 1. the job is not running on the main branch
