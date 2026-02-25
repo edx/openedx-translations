@@ -277,18 +277,6 @@ jobs:
             requirements/translations.txt
             translations/edx-platf*rm/requirements/edx/base.txt
 
-      # # Installs Python requirements from translations.txt
-      # - name: install requirements
-      #   run: |
-      #     # Install requirements for all packages
-      #     pip install -r requirements/translations.txt
-
-      #     EDX_BASE_REQS=translations/edx-platform/requirements/edx/base.txt
-      #     if test -f $EDX_BASE_REQS; then
-      #       # Install edx-platform specific apps (e.g. wiki) which is required to extract translations from
-      #       pip install -r $EDX_BASE_REQS
-      #     fi
-
       # Installs Python requirements from translations.txt
       - name: install requirements
         run: |
@@ -300,9 +288,6 @@ jobs:
             # Install edx-platform specific apps (e.g. wiki) which is required to extract translations from
             pip install -r $EDX_BASE_REQS
           fi
-
-          echo "matrix.repository_config.repo: ${{ matrix.repository_config.repo }}"
-          echo "matrix.repository_config.repo: ${{ matrix.repo }}"
 
           # Install repository-specific requirements if they exist
           cd translations/${{ matrix.repo }}
@@ -458,6 +443,7 @@ jobs:
         run: |
           cd translations/${{ matrix.repo }}
           make extract_translations
+
       # git adds only the translation source files, found in src/i18n/transifex_input.json
       - name: git add the translation source files
         id: add-sources
@@ -477,6 +463,7 @@ jobs:
           git add $TRANSIFEX_JSON_PATH -f -v
           # Check the git status of the translation source files
           echo "GIT_STATUS=$(git status $TRANSIFEX_JSON_PATH -s | wc -l)" >> $GITHUB_ENV
+
       # Attempts to commit the translation source files if there is a difference
       - name: git commit the translation source files
         env:
@@ -614,16 +601,11 @@ jobs:
           fetch-depth: 0
 
       # Create a pull request
-      # In theory, GitHub autocreates a GitHub token secret at the beginning of every workflow run.
-      # According to the repo configuration, these GitHub action tokens should have write permissions.
-      # I want to see what happens if we use the GitHub token instead in the make and push a new branch step.
+      # NOTE
       - name: create pull request
         id: createPR
         env:
-        # This token requires Write access to the openedx-translations repo
-        # Let's try this instead. See comment above the generate_token step. I imagine we have a reason for using this
-        # new GitHub token, but I'm curious what happens without it.
-          # GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+          # This token requires Write access to the openedx-translations repo
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "COMMIT_COUNT=$(git rev-list HEAD ^origin/main | wc -l)" >> $GITHUB_ENV
@@ -635,8 +617,8 @@ jobs:
         id: mergePR
         env:
           # This token requires write access to the openedx-translations repo.
-          # TODO: check if the secrets.GITHUB_TOKEN has the necessary permissions to merge the PR, if so, we can use it instead of the generated token
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+          # NOTE
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # Do not automerge if any of the following are true.
         # 1. the job is not running on the main branch
         # 2. the job is not running as the result of a scheduled trigger (i.e. a cron)
