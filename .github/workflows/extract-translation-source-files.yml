@@ -31,7 +31,6 @@ jobs:
           script: |
             // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
             // const selectedRepo = core.getInput('repo');
-            console.log('Testing logging in github-script');
             const selectedRepo = ${{ toJSON(github.event.inputs.repo) }} ?? '';
 
             const allPythonRepos = [
@@ -111,15 +110,15 @@ jobs:
               { owner: 'openedx', repo: 'frontend-plugin-framework' },
             ];
 
-            # const javascriptReposWithSubpackages = [
-            #   { owner: 'edx', repo: 'frontend-plugins/cohesion-wrapper' },
-            #   { owner: 'edx', repo: 'frontend-plugins/course-app-translation-plugin' },
-            #   { owner: 'edx', repo: 'frontend-plugins/course-end-enterprise-plugins' },
-            #   { owner: 'edx', repo: 'frontend-plugins/course-outline-sidebar-trigger-plugin' },
-            #   { owner: 'edx', repo: 'frontend-plugins/left-sidebar-navigation-plugin' },
-            #   { owner: 'edx', repo: 'frontend-plugins/progress-tab-grade-plugins' },
-            #   { owner: 'edx', repo: 'frontend-plugins/unit-title-plugin' },
-            # ];
+            const javascriptReposWithSubpackages = [
+              { owner: 'edx', repo: 'frontend-plugins/cohesion-wrapper' },
+              { owner: 'edx', repo: 'frontend-plugins/course-app-translation-plugin' },
+              { owner: 'edx', repo: 'frontend-plugins/course-end-enterprise-plugins' },
+              { owner: 'edx', repo: 'frontend-plugins/course-outline-sidebar-trigger-plugin' },
+              { owner: 'edx', repo: 'frontend-plugins/left-sidebar-navigation-plugin' },
+              { owner: 'edx', repo: 'frontend-plugins/progress-tab-grade-plugins' },
+              { owner: 'edx', repo: 'frontend-plugins/unit-title-plugin' },
+            ];
 
             // When https://2u-internal.atlassian.net/wiki/spaces/AU/pages/2786066453/Mobile+app+translations
             // tasks or equivalents are completed, uncomment and correct this section.
