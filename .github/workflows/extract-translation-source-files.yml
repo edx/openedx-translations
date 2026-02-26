@@ -148,15 +148,17 @@ jobs:
               return;
             }
 
-            if (allPythonRepos.includes(selectedRepo)) {
-              core.setOutput('pythonRepos', [selectedRepo]);
+            const pythonRepo = allPythonRepos.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
+            if (pythonRepo) {
+              core.setOutput('pythonRepos', [pythonRepo]);
             } else {
               core.setOutput('pythonRepos', []);
               core.setOutput('hasPythonRepos', false);
             }
 
-            if (allJavascriptRepos.includes(selectedRepo)) {
-              core.setOutput('javascriptRepos', [selectedRepo]);
+            const javascriptRepo = allJavascriptRepos.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
+            if (javascriptRepo) {
+              core.setOutput('javascriptRepos', [javascriptRepo]);
             } else {
               core.setOutput('javascriptRepos', []);
               core.setOutput('hasJavascriptRepos', false);
@@ -202,6 +204,7 @@ jobs:
     - name: echo branch name
       id: date
       run: echo $BRANCH
+
     - name: clone ${{ github.repository }}
       uses: actions/checkout@v5
 
