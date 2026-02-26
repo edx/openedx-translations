@@ -148,7 +148,9 @@ jobs:
               return;
             }
 
+            console.log(`Selected repo: ${selectedRepo}, starting Python repo lookup`);
             const pythonRepo = allPythonRepos.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
+            console.log(`Completed Python repo lookup, found: ${pythonRepo}`);
             if (pythonRepo) {
               core.setOutput('pythonRepos', [pythonRepo]);
             } else {
@@ -156,7 +158,9 @@ jobs:
               core.setOutput('hasPythonRepos', false);
             }
 
+            console.log(`Selected repo: ${selectedRepo}, starting JavaScript repo lookup`);
             const javascriptRepo = allJavascriptRepos.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
+            console.log(`Completed JavaScript repo lookup, found: ${javascriptRepo}`);
             if (javascriptRepo) {
               core.setOutput('javascriptRepos', [javascriptRepo]);
             } else {
