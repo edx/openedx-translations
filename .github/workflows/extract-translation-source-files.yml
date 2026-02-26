@@ -31,6 +31,7 @@ jobs:
           script: |
             // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
             // const selectedRepo = core.getInput('repo');
+            console.log('Testing logging in github-script');
             const selectedRepo = ${{ toJSON(github.event.inputs.repo) }} ?? '';
 
             const allPythonRepos = [
