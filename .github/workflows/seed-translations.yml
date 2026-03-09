@@ -1,7 +1,8 @@
 # TODO: comment
 
 name: Seed Translations
-run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
+# TODO: Add a better name; cron jobs won't have inputs
+run-name: Seed translations for ${{ inputs.application }} for language ${{ inputs.translation_language }}
 
 on:
   workflow_dispatch:
@@ -85,7 +86,7 @@ jobs:
               'es-es',
               'tr-tr',
               'de-de',
-              'it-it,
+              'it-it',
               'id',
               'ko-kr',
               'el',
@@ -94,9 +95,11 @@ jobs:
 
             if (selectedApp !== '' && !allJavascriptApps.includes(selectedApp)) {
               core.setFailed(`Selected application ${selectedApp} is not a valid option.`);
+              return;
             }
             if (selectedLanguages !== '' && !supportedLanguages.includes(selectedLanguages)) {
               core.setFailed(`Selected language ${selectedLanguages} is not a valid option.`);
+              return;
             }
 
             const applications = selectedApp === '' ? allJavascriptApps : selectedApp;
