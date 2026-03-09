@@ -1,0 +1,157 @@
+# TODO: comment
+
+name: Seed Translations
+run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      application:
+        description: 'Application to seed translations for. Leave blank to run all.'
+        required: false
+        type: string
+      translation_language:
+        description: 'Language code to seed translations for in {language-code}{-region-code (optional)} format (e.g. es-419). Leave blank to run all.'
+        required: false
+        type: string
+  # Uncomment after this is manually confirmed.
+  # schedule:
+  #   - cron: '0 0 * * *'  # every day at midnight UTC
+
+jobs:
+  setup-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      # matrix: ${{ steps.set-matrix.outputs.matrix }}
+      applications: ${{ steps.generate_repo_matrix.outputs.applications }}
+      translation_language: ${{ steps.generate_repo_matrix.outputs.translation_language }}
+    steps:
+      - uses: actions/github-script@v7
+        id: generate_repo_matrix
+        with:
+          script: |
+            // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
+            // const selectedApp = core.getInput('application');
+            // const selectedLanguages = core.getInput('translation_language');
+            const selectedApp = ${{ toJSON(github.event.inputs.application) }} ?? '';
+            const selectedLanguages = ${{ toJSON(github.event.inputs.translation_language) }} ?? '';
+
+            const allJavascriptApps = [
+              'frontend-app-account',
+              'frontend-app-admin-portal',
+              'frontend-app-authn',
+              'frontend-app-authoring',
+              'frontend-app-communications',
+              'frontend-app-discussions',
+              'frontend-app-enterprise-api-doc',
+              'frontend-app-enterprise-checkout',
+              'frontend-app-enterprise-public-catalog',
+              'frontend-app-gradebook',
+              'frontend-app-learner-dashboard',
+              'frontend-app-learner-portal-enterprise',
+              'frontend-app-learner-portal-programs',
+              'frontend-app-learner-record',
+              'frontend-app-learning',
+              'frontend-app-ora',
+              'frontend-app-ora-grading',
+              'frontend-app-payment',
+              'frontend-app-profile',
+              'frontend-app-program-console',
+              'frontend-app-publisher',
+              'frontend-app-skills',
+              'frontend-app-support-tools',
+              'frontend-component-authn-edx',
+              'frontend-component-footer-edx',
+              'frontend-component-header-edx',
+              'frontend-components-tinymce-advanced-plugins-edx',
+              'frontend-plugin-advertisements',
+              'frontend-plugin-authn',
+              'frontend-plugin-learner-dashboard',
+              'frontend-plugin-notifications',
+              'frontend-plugin-persona',
+              'frontend-plugin-recommendations',
+              'frontend-platform',
+              'paragon',
+              'studio-frontend',
+              'frontend-plugin-framework',
+            ];
+
+            const supportedLanguages = [
+              'en',
+              'es-419',
+              'fr',
+              'pt-br',
+              'ar',
+              'es-es',
+              'tr-tr',
+              'de-de',
+              'it-it,
+              'id',
+              'ko-kr',
+              'el',
+              'th',
+            ];
+
+            if (selectedApp !== '' && !allJavascriptApps.includes(selectedApp)) {
+              core.setFailed(`Selected application ${selectedApp} is not a valid option.`);
+            }
+            if (selectedLanguages !== '' && !supportedLanguages.includes(selectedLanguages)) {
+              core.setFailed(`Selected language ${selectedLanguages} is not a valid option.`);
+            }
+
+            const applications = selectedApp === '' ? allJavascriptApps : selectedApp;
+            const language = selectedLanguage === '' ? supportedLanguages : selectedLanguage;
+
+            core.setOutput('applications', applications);
+            core.setOutput('translation_language', language);
+
+  find-translations-files:
+    runs-on: ubuntu-latest
+    needs: setup-matrix
+    strategy:
+      # using max-parallel to avoid git push/pull issues when running in parallel
+      max-parallel: 1
+      matrix:
+        application: ${{ fromJson(needs.setup-matrix.outputs.applications }}
+        translation_language: ${{ fromJson(needs.setup-matrix.outputs.translation_language }}
+    outputs:
+      translation_file: ${{ steps.find-files.outputs.translation_file }}
+      source_strings_file: ${{ steps.find-files.outputs.source_strings_file }}
+    
+    steps:
+      # Clones the edx/openedx-translations repository
+      - name: clone ${github.repository}
+        uses: actions/checkout@v5
+      
+      - name: convert and set ${matrix.translation_language} language code
+        run: |
+          language_code=$(echo ${{ ${matrix.translation_language }} | awk -F'-' '{print tolower($1) "_" toupper($2)}')
+          echo "LANGUAGE_CODE=$language_code" >> $GITHUB_ENV
+
+      - name: validate and find ${matrix.translation_language} language translations files for ${matrix.application}
+        id: find-files
+        run: |
+          translations_file_path="translations/${{ matrix.application }}/src/i18n/messages/${{ env.LANGUAGE_CODE }}.json"
+          if [ -f "$translations_file_path" ]; then
+            echo "Translations file exists: $translations_file_path"
+          else
+            echo "Translations file does not exist: $translations_file_path"
+            exit 1
+          fi
+
+          source_strings_file_path="translations/${{ matrix.application }}/src/i18n/transifex_input.json"
+          if [ -f "$source_strings_file_path" ]; then
+            echo "Source strings file exists: $source_strings_file_path"
+          else
+            echo "Source strings file does not exist: $source_strings_file_path"
+            exit 1
+          fi
+
+          echo "translations_file=$translations_file_path" >> $$GITHUB_OUTPUT
+          echo "source_strings_file=$source_strings_file_path" >> $$GITHUB_OUTPUT
+
+  # seed-translations:
+  #   runs-on: ubuntu-latest
+  #   needs: [setup-matrix, find-translations-files]
+  #   steps:
+  #     - name: call seed translations endpoint for ${matrix.translation_language} language code
