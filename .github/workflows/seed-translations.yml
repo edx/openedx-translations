@@ -34,8 +34,8 @@ jobs:
             // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
             // const selectedApp = core.getInput('application');
             // const selectedLanguage = core.getInput('translation_language');
-            const selectedApp = ${{ toJSON(github.event.inputs.application) }} ?? '';
-            const selectedLanguage = ${{ toJSON(github.event.inputs.translation_language) }} ?? '';
+            const selectedApp = ${{ toJSON(github.event.inputs.application).toLowerCase() }} ?? '';
+            const selectedLanguage = ${{ toJSON(github.event.inputs.translation_language).toLowerCase() }} ?? '';
 
             const allJavascriptApps = [
               'frontend-app-account',
