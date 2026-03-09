@@ -33,9 +33,9 @@ jobs:
           script: |
             // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
             // const selectedApp = core.getInput('application');
-            // const selectedLanguages = core.getInput('translation_language');
+            // const selectedLanguage = core.getInput('translation_language');
             const selectedApp = ${{ toJSON(github.event.inputs.application) }} ?? '';
-            const selectedLanguages = ${{ toJSON(github.event.inputs.translation_language) }} ?? '';
+            const selectedLanguage = ${{ toJSON(github.event.inputs.translation_language) }} ?? '';
 
             const allJavascriptApps = [
               'frontend-app-account',
@@ -97,13 +97,13 @@ jobs:
               core.setFailed(`Selected application ${selectedApp} is not a valid option.`);
               return;
             }
-            if (selectedLanguages !== '' && !supportedLanguages.includes(selectedLanguages)) {
-              core.setFailed(`Selected language ${selectedLanguages} is not a valid option.`);
+            if (selectedLanguage !== '' && !supportedLanguages.includes(selectedLanguage)) {
+              core.setFailed(`Selected language ${selectedLanguage} is not a valid option.`);
               return;
             }
 
-            const applications = selectedApp === '' ? allJavascriptApps : selectedApp;
-            const language = selectedLanguage === '' ? supportedLanguages : selectedLanguage;
+            const applications = selectedApp === '' ? allJavascriptApps : [selectedApp];
+            const language = selectedLanguage === '' ? supportedLanguages : [selectedLanguage];
 
             core.setOutput('applications', applications);
             core.setOutput('translation_language', language);
@@ -123,15 +123,15 @@ jobs:
     
     steps:
       # Clones the edx/openedx-translations repository
-      - name: clone ${github.repository}
+      - name: clone ${{ github.repository }}
         uses: actions/checkout@v5
       
-      - name: convert and set ${matrix.translation_language} language code
+      - name: convert and set ${{ matrix.translation_language }} language code
         run: |
-          language_code=$(echo ${{ ${matrix.translation_language }} | awk -F'-' '{print tolower($1) "_" toupper($2)}')
+          language_code=$(echo ${{ matrix.translation_language }} | awk -F'-' '{print tolower($1) "_" toupper($2)}')
           echo "LANGUAGE_CODE=$language_code" >> $GITHUB_ENV
 
-      - name: validate and find ${matrix.translation_language} language translations files for ${matrix.application}
+      - name: validate and find ${{ matrix.translation_language }} language translations files for ${{ matrix.application }}
         id: find-files
         run: |
           translations_file_path="translations/${{ matrix.application }}/src/i18n/messages/${{ env.LANGUAGE_CODE }}.json"
@@ -150,8 +150,8 @@ jobs:
             exit 1
           fi
 
-          echo "translations_file=$translations_file_path" >> $$GITHUB_OUTPUT
-          echo "source_strings_file=$source_strings_file_path" >> $$GITHUB_OUTPUT
+          echo "translations_file=$translations_file_path" >> $GITHUB_OUTPUT
+          echo "source_strings_file=$source_strings_file_path" >> $GITHUB_OUTPUT
 
   # seed-translations:
   #   runs-on: ubuntu-latest
