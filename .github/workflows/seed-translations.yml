@@ -115,8 +115,8 @@ jobs:
       # using max-parallel to avoid git push/pull issues when running in parallel
       max-parallel: 1
       matrix:
-        application: ${{ fromJson(needs.setup-matrix.outputs.applications }}
-        translation_language: ${{ fromJson(needs.setup-matrix.outputs.translation_language }}
+        application: ${{ fromJson(needs.setup-matrix.outputs.applications) }}
+        translation_language: ${{ fromJson(needs.setup-matrix.outputs.translation_language) }}
     outputs:
       translation_file: ${{ steps.find-files.outputs.translation_file }}
       source_strings_file: ${{ steps.find-files.outputs.source_strings_file }}
