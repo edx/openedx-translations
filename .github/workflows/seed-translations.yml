@@ -167,6 +167,10 @@ jobs:
       - name: Call seed translations endpoint for ${{ matrix.translation_language }} language code for ${{ matrix.application}}
         id: seed-translations
         run: |
+          echo "Translations file path: ${TRANSLATIONS_FILE}"
+          echo "Source strings file path: ${SOURCE_STRINGS_FILE}"
+          cat "$TRANSLATIONS_FILE"
+          cat "$SOURCE_STRINGS_FILE"
           response=$(curl -s -w "%{http_code}" -X POST ${{ secrets.EDX_AI_TRANSLATIONS_API_ROOT }} \
             -H "Content-Type: multipart/form-data" \
             -F application_name=${{ matrix.application }} \
