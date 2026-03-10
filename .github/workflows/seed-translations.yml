@@ -73,7 +73,6 @@ jobs:
 
             // TODO: update this to use the correct language code format (i.e. edX language code or GCP language code).
             const supportedLanguages = [
-              'en',
               'es-419',
               'fr',
               'pt-br',
@@ -115,9 +114,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: setup-matrix
     strategy:
-      # TODO: I don't think we need this, but double-check.
-      # using max-parallel to avoid git push/pull issues when running in parallel
-      max-parallel: 1
       matrix:
         application: ${{ fromJson(needs.setup-matrix.outputs.applications) }}
         translation_language: ${{ fromJson(needs.setup-matrix.outputs.translation_languages) }}
