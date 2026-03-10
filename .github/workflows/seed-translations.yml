@@ -111,8 +111,9 @@ jobs:
             core.setOutput('translation_languages', languages);
 
   seed-translations:
-    runs-on: ubuntu-latest
+    continue-on-error: true
     needs: setup-matrix
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         application: ${{ fromJson(needs.setup-matrix.outputs.applications) }}
