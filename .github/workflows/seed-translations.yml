@@ -1,7 +1,8 @@
 # TODO: comment
 
 name: Seed Translations
-# TODO: Add a better name; cron jobs won't have inputs
+# TODO: Add a better name; cron jobs won't have inputs.
+# TODO: use intermediate env variable to avoid injection attacks; see https://docs.github.com/en/actions/reference/security/secure-use#understanding-the-risk-of-script-injections
 # run-name: Seed translations for ${{ inputs.application }} for language ${{ inputs.translation_language }}
 
 on:
@@ -31,12 +32,6 @@ jobs:
         id: generate_repo_matrix
         with:
           script: |
-            // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
-            // const selectedApp = core.getInput('application');
-            // const selectedLanguage = core.getInput('translation_language');
-            const selectedApp = ${{ toJSON(github.event.inputs.application) }}.toLowerCase() ?? '';
-            const selectedLanguage = ${{ toJSON(github.event.inputs.translation_language) }}.toLowerCase() ?? '';
-
             const allJavascriptApps = [
               'frontend-app-account',
               'frontend-app-admin-portal',
@@ -92,6 +87,12 @@ jobs:
               'el',
               'th',
             ];
+
+            // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
+            // const selectedApp = core.getInput('application');
+            // const selectedLanguage = core.getInput('translation_language');
+            const selectedApp = ${{ toJSON(github.event.inputs.application) }}.toLowerCase() ?? '';
+            const selectedLanguage = ${{ toJSON(github.event.inputs.translation_language) }}.toLowerCase() ?? '';
 
             if (selectedApp !== '' && !allJavascriptApps.includes(selectedApp)) {
               core.setFailed(`Selected application ${selectedApp} is not a valid option.`);
@@ -153,8 +154,17 @@ jobs:
           echo "translations_file=$translations_file_path" >> $GITHUB_OUTPUT
           echo "source_strings_file=$source_strings_file_path" >> $GITHUB_OUTPUT
 
-  # seed-translations:
-  #   runs-on: ubuntu-latest
-  #   needs: [setup-matrix, find-translations-files]
-  #   steps:
-  #     - name: call seed translations endpoint for ${matrix.translation_language} language code
+  seed-translations:
+    runs-on: ubuntu-latest
+    needs: [setup-matrix, find-translations-files]
+    steps:
+      - name: call seed translations endpoint for ${matrix.translation_language} language code
+        id: seed-translations
+        run: |
+          response=$(curl -s -o response.txt -w "%{http_code}" -X POST ${{ secrets.EDX_AI_TRANSLATIONS_API_ROOT }} \
+            -H "Content-Type: multipart/form-data" \
+            -F application_name=${{ matrix.application }} \
+            -F translation_language=${{ matrix.translation_language }} \
+            -F source_language=en)
+          
+          echo "Response code: $response"
