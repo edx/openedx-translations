@@ -71,7 +71,7 @@ jobs:
               'frontend-plugin-framework',
             ];
 
-            # TODO: update this to use the correct language code format (i.e. edX language code or GCP language code).
+            // TODO: update this to use the correct language code format (i.e. edX language code or GCP language code).
             const supportedLanguages = [
               'en',
               'es-419',
@@ -124,23 +124,23 @@ jobs:
       - name: clone ${{ github.repository }}
         uses: actions/checkout@v5
       
-      - name: Convert ${{ matrix.translation_language }} language code for ${{ matrix.application }} to expected format. 
-        run: |
-          # TODO: add better handling for language codes without region code
-          language_code=$(echo ${{ matrix.translation_language }} | awk -F'-' '{print tolower($1) "_" toupper($2)}')
-          echo "LANGUAGE_CODE=$language_code" >> $GITHUB_ENV
-
-      # - name: Convert ${{ matrix.translation_language }} language code for ${{ matrix.application }} to expected format.
+      # - name: Convert ${{ matrix.translation_language }} language code for ${{ matrix.application }} to expected format. 
       #   run: |
-      #     language_code=${{ matrix.translation_language }}
-      #     if [[ "$language_code" == *-* ]]; then
-      #       # If the language code contains a hyphen, process it to the format language_REGION.
-      #       language_code=$(echo $language_code | awk -F'-' '{print tolower($1) "_" toupper($2)}')
-      #     else
-      #       # If there's no hyphen, just convert to lowercase.
-      #       language_code=$(echo $language_code | tr '[:upper:]' '[:lower:]')
-      #     fi
+      #     # TODO: add better handling for language codes without region code
+      #     language_code=$(echo ${{ matrix.translation_language }} | awk -F'-' '{print tolower($1) "_" toupper($2)}')
       #     echo "LANGUAGE_CODE=$language_code" >> $GITHUB_ENV
+
+      - name: Convert ${{ matrix.translation_language }} language code for ${{ matrix.application }} to expected format.
+        run: |
+          language_code=${{ matrix.translation_language }}
+          if [[ "$language_code" == *-* ]]; then
+            # If the language code contains a hyphen, process it to the format language_REGION.
+            language_code=$(echo $language_code | awk -F'-' '{print tolower($1) "_" toupper($2)}')
+          else
+            # If there's no hyphen, just convert to lowercase.
+            language_code=$(echo $language_code | tr '[:upper:]' '[:lower:]')
+          fi
+          echo "LANGUAGE_CODE=$language_code" >> $GITHUB_ENV
 
       - name: Find ${{ matrix.translation_language }} language translations files for ${{ matrix.application }}.
         id: find-files
