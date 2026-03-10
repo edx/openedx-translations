@@ -1,9 +1,8 @@
-# TODO: comment
+# This workflow seeds translations by calling the configured seed translations endpoint with
+# a source strings file and translations string file for each application and language code
+# combination.
 
 name: Seed Translations
-# TODO: Add a better name; cron jobs won't have inputs.
-# TODO: use intermediate env variable to avoid injection attacks; see https://docs.github.com/en/actions/reference/security/secure-use#understanding-the-risk-of-script-injections
-# run-name: Seed translations for ${{ inputs.application }} for language ${{ inputs.translation_language }}
 
 on:
   workflow_dispatch:
@@ -12,6 +11,7 @@ on:
         description: 'Application to seed translations for. Leave blank to run all.'
         required: false
         type: string
+      # TODO: update this to use the correct language code format (i.e. edX language code or GCP language code).
       translation_language:
         description: 'Language code to seed translations for in {language-code}{-region-code (optional)} format (e.g. es-419). Leave blank to run all.'
         required: false
@@ -121,16 +121,16 @@ jobs:
         translation_language: ${{ fromJson(needs.setup-matrix.outputs.translation_languages) }}
     
     steps:
-      - name: clone ${{ github.repository }}
+      - name: Clone ${{ github.repository }}
         uses: actions/checkout@v5
       
-      # - name: Convert ${{ matrix.translation_language }} language code for ${{ matrix.application }} to expected format. 
+      # - name: Convert ${{ matrix.translation_language }} language code for ${{ matrix.application }} to expected format
       #   run: |
       #     # TODO: add better handling for language codes without region code
       #     language_code=$(echo ${{ matrix.translation_language }} | awk -F'-' '{print tolower($1) "_" toupper($2)}')
       #     echo "LANGUAGE_CODE=$language_code" >> $GITHUB_ENV
 
-      - name: Convert ${{ matrix.translation_language }} language code for ${{ matrix.application }} to expected format.
+      - name: Convert ${{ matrix.translation_language }} language code for ${{ matrix.application }} to expected format
         run: |
           language_code=${{ matrix.translation_language }}
           if [[ "$language_code" == *-* ]]; then
@@ -142,7 +142,7 @@ jobs:
           fi
           echo "LANGUAGE_CODE=$language_code" >> $GITHUB_ENV
 
-      - name: Find ${{ matrix.translation_language }} language translations files for ${{ matrix.application }}.
+      - name: Find ${{ matrix.translation_language }} language translations files for ${{ matrix.application }}
         id: find-files
         run: |
           translations_file_path="translations/${{ matrix.application }}/src/i18n/messages/${{ env.LANGUAGE_CODE }}.json"
@@ -164,7 +164,7 @@ jobs:
           echo "TRANSLATIONS_FILE=$translations_file_path" >> $GITHUB_ENV
           echo "SOURCE_STRINGS_FILE=$source_strings_file_path" >> $GITHUB_ENV
 
-      - name: Call seed translations endpoint for ${{ matrix.translation_language }} language code for ${{ matrix.applicaton}}.
+      - name: Call seed translations endpoint for ${{ matrix.translation_language }} language code for ${{ matrix.application}}
         id: seed-translations
         run: |
           response=$(curl -s -w "%{http_code}" -X POST ${{ secrets.EDX_AI_TRANSLATIONS_API_ROOT }} \
