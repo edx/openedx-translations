@@ -8,7 +8,7 @@ name: Seed Translations
 on:
   workflow_dispatch:
     inputs:
-      application:
+      application_name:
         description: 'Application to seed translations for. Leave blank to run all.'
         required: false
         type: string
@@ -24,9 +24,8 @@ jobs:
   setup-matrix:
     runs-on: ubuntu-latest
     outputs:
-      # matrix: ${{ steps.set-matrix.outputs.matrix }}
       applications: ${{ steps.generate_repo_matrix.outputs.applications }}
-      translation_language: ${{ steps.generate_repo_matrix.outputs.translation_language }}
+      translation_languages: ${{ steps.generate_repo_matrix.outputs.translation_languages }}
     steps:
       - uses: actions/github-script@v7
         id: generate_repo_matrix
@@ -72,6 +71,7 @@ jobs:
               'frontend-plugin-framework',
             ];
 
+            # TODO: update this to use the correct language code format (i.e. edX language code or GCP language code).
             const supportedLanguages = [
               'en',
               'es-419',
@@ -89,9 +89,9 @@ jobs:
             ];
 
             // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
-            // const selectedApp = core.getInput('application');
+            // const selectedApp = core.getInput('application_name');
             // const selectedLanguage = core.getInput('translation_language');
-            const selectedApp = ${{ toJSON(github.event.inputs.application) }}.toLowerCase() ?? '';
+            const selectedApp = ${{ toJSON(github.event.inputs.application_name) }}.toLowerCase() ?? '';
             const selectedLanguage = ${{ toJSON(github.event.inputs.translation_language) }}.toLowerCase() ?? '';
 
             if (selectedApp !== '' && !allJavascriptApps.includes(selectedApp)) {
@@ -104,10 +104,10 @@ jobs:
             }
 
             const applications = selectedApp === '' ? allJavascriptApps : [selectedApp];
-            const language = selectedLanguage === '' ? supportedLanguages : [selectedLanguage];
+            const languages = selectedLanguage === '' ? supportedLanguages : [selectedLanguage];
 
             core.setOutput('applications', applications);
-            core.setOutput('translation_language', language);
+            core.setOutput('translation_languages', languages);
 
   seed-translations:
     runs-on: ubuntu-latest
@@ -118,43 +118,56 @@ jobs:
       max-parallel: 1
       matrix:
         application: ${{ fromJson(needs.setup-matrix.outputs.applications) }}
-        translation_language: ${{ fromJson(needs.setup-matrix.outputs.translation_language) }}
+        translation_language: ${{ fromJson(needs.setup-matrix.outputs.translation_languages) }}
     
     steps:
       - name: clone ${{ github.repository }}
         uses: actions/checkout@v5
       
-      - name: convert and set ${{ matrix.translation_language }} language code
+      # - name: Convert ${{ matrix.translation_language }} language code for ${{ matrix.application }} to expected format. 
+      #   run: |
+      #     # TODO: add better handling for language codes without region code
+      #     language_code=$(echo ${{ matrix.translation_language }} | awk -F'-' '{print tolower($1) "_" toupper($2)}')
+      #     echo "LANGUAGE_CODE=$language_code" >> $GITHUB_ENV
+
+      - name: Convert ${{ matrix.translation_language }} language code for ${{ matrix.application }} to expected format.
         run: |
-          language_code=$(echo ${{ matrix.translation_language }} | awk -F'-' '{print tolower($1) "_" toupper($2)}')
+          language_code=${{ matrix.translation_language }}
+          if [[ "$language_code" == *-* ]]; then
+            # If the language code contains a hyphen, process it to the format language_REGION.
+            language_code=$(echo $language_code | awk -F'-' '{print tolower($1) "_" toupper($2)}')
+          else
+            # If there's no hyphen, just convert to lowercase.
+            language_code=$(echo $language_code | tr '[:upper:]' '[:lower:]')
+          fi
           echo "LANGUAGE_CODE=$language_code" >> $GITHUB_ENV
 
-      - name: validate and find ${{ matrix.translation_language }} language translations files for ${{ matrix.application }}
+      - name: Find ${{ matrix.translation_language }} language translations files for ${{ matrix.application }}.
         id: find-files
         run: |
           translations_file_path="translations/${{ matrix.application }}/src/i18n/messages/${{ env.LANGUAGE_CODE }}.json"
           if [ -f "$translations_file_path" ]; then
-            echo "Translations file exists: $translations_file_path"
+            echo "Translations file exists: $translations_file_path."
           else
-            echo "Translations file does not exist: $translations_file_path"
+            echo "Translations file does not exist: $translations_file_path."
             exit 1
           fi
 
           source_strings_file_path="translations/${{ matrix.application }}/src/i18n/transifex_input.json"
           if [ -f "$source_strings_file_path" ]; then
-            echo "Source strings file exists: $source_strings_file_path"
+            echo "Source strings file exists: $source_strings_file_path."
           else
-            echo "Source strings file does not exist: $source_strings_file_path"
+            echo "Source strings file does not exist: $source_strings_file_path."
             exit 1
           fi
 
           echo "TRANSLATIONS_FILE=$translations_file_path" >> $GITHUB_ENV
           echo "SOURCE_STRINGS_FILE=$source_strings_file_path" >> $GITHUB_ENV
 
-      - name: call seed translations endpoint for ${{ matrix.translation_language }} language code
+      - name: Call seed translations endpoint for ${{ matrix.translation_language }} language code for ${{ matrix.applicaton}}.
         id: seed-translations
         run: |
-          response=$(curl -s -o response.txt -w "%{http_code}" -X POST ${{ secrets.EDX_AI_TRANSLATIONS_API_ROOT }} \
+          response=$(curl -s -w "%{http_code}" -X POST ${{ secrets.EDX_AI_TRANSLATIONS_API_ROOT }} \
             -H "Content-Type: multipart/form-data" \
             -F application_name=${{ matrix.application }} \
             -F translation_language=${{ matrix.translation_language }} \
@@ -162,4 +175,9 @@ jobs:
             -F translations_file=@"${{ env.TRANSLATIONS_FILE }}" \
             -F source_strings_file=@"${{ env.SOURCE_STRINGS_FILE }}")
           
-          echo "Response code: $response"
+          if [ "$response" -eq 200 ]; then
+            echo "API call succeeded with status code $response."
+          else
+            echo "API call failed with status code $response."
+            exit 1
+          fi
