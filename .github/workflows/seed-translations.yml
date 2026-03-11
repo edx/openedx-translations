@@ -128,7 +128,7 @@ jobs:
             }
 
             const applications = selectedApp === '' ? allJavascriptApps : [selectedApp];
-            const translation_languages = selectedLanguage === '' ? Object.values(languageMap) : languageMap[selectedLanguage];
+            const translation_languages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
 
             core.setOutput('applications', applications);
             core.setOutput('translation_languages', translation_languages);
