@@ -20,7 +20,7 @@ jobs:
   setup-matrix:
     runs-on: ubuntu-latest
     outputs:
-      applications: ${{ steps.generate_repo_matrix.outputs.applications }}
+      javascript_applications: ${{ steps.generate_repo_matrix.outputs.javascript_applications }}
       translation_languages: ${{ steps.generate_repo_matrix.outputs.translation_languages }}
     steps:
       - uses: actions/github-script@v7
@@ -140,7 +140,7 @@ jobs:
             console.log('javascript_applications: ', javascriptApplications);
             console.log('translation_languages: ', translationLanguages);
 
-  seed-translations:
+  seed-translations-json:
     continue-on-error: true
     needs: setup-matrix
     runs-on: ubuntu-latest
