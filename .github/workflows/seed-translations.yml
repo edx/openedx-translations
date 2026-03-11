@@ -135,6 +135,8 @@ jobs:
             core.setOutput('javascript_applications', javascriptApplications);
             core.setOutput('translation_languages', translationLanguages);
 
+            console.log('selectedLanguage: ', selectedLanguage);
+            console.log('indexedByLang: ', [languageMap[selectedLanguage]])
             console.log('javascript_applications: ', javascriptApplications);
             console.log('translation_languages: ', translationLanguages);
 
