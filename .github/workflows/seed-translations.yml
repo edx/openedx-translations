@@ -12,12 +12,12 @@ on:
         required: false
         type: string
       translation_language:
-        description: 'Language code to seed translations for in Google translations format (i.e. ISO 639-1 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). Leave blank to run all.'
+        description: 'Language code to seed translations for in edX translations format (i.e. ISO 639-1 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). Leave blank to run all.'
         required: false
         type: string
 
 jobs:
-  setup-matrix:
+  setup:
     runs-on: ubuntu-latest
     outputs:
       javascript_applications: ${{ steps.generate_repo_matrix.outputs.javascript_applications }}
@@ -67,14 +67,15 @@ jobs:
               'frontend-plugin-framework',
             ];
 
-            // The seed translations endpoint supports language codes that follow the IETF BCP 47 standard.
-            // These language codes are a combination of a two-letter language code (i.e. the ISO 639-1 standard) and the country code (i.e. the ISO 3166-1 alpha-2 standard), separated by a hyphen.
+
+            // The seed translations endpoint supports language codes in the IETF BCP 47 format.
+            // These language codes are a combination of a two-letter language code (i.e. the ISO 639-1 standard)
+            // and the country code (i.e. the ISO 3166-1 alpha-2 standard), separated by a hyphen.
+            // We'll call this the edX language code.
             // As an example, "it-it".
-            // However, the filenames in this repository for JSON messages file use IETF BCP 47 language codes with underscores instead of hyphens. This is not uncommon.
-            // Note that the language codes used in JSON messages files come from formatjs during the messages extraction process, which is implemented by scripts in frontend-build.
-            // As a result, we maintain a map between language codes expected by the seed translations endpoint and the language codes used for JSON messages filenames in this repository.
-            
-            // Leave a comment about this fa-ir missing file and whether to assume underscore.
+            // However, the filenames in this repository for JSON messages files use languages in the IETF BCP 47 format
+            // but with underscores instead of hyphens. This is not uncommon. We'll call this the repo language code.
+            // The languages are defined as objects containing both language codes.
             const languages = [
               { edxLang: "ar", repoLang: "ar" },
               { edxLang: "ca", repoLang: "ca" },
@@ -85,15 +86,12 @@ jobs:
               { edxLang: "es-419", repoLang: "es_419" },
               { edxLang: "es-es", repoLang: "es_ES" },
               { edxLang: "fa", repoLang: "fa" },
-              { edxLang: "fa-ir", repoLang: "fa-ir" },
               { edxLang: "fr", repoLang: "fr" },
               { edxLang: "fr-ca", repoLang: "fr_CA" },
               { edxLang: "he", repoLang: "he" },
               { edxLang: "hi", repoLang: "hi" },
               { edxLang: "id", repoLang: "id" },
               { edxLang: "it-it", repoLang: "it_IT" },
-              // NOTE: This doesn't match the ko_KR format I expected, but I only see ko.json.
-              // Shoudl we use ko_KR here?
               { edxLang: "ko-kr", repoLang: "ko" },
               { edxLang: "pl", repoLang: "pl" },
               { edxLang: "pt-br", repoLang: "pt_BR" },
@@ -107,16 +105,15 @@ jobs:
               { edxLang: "zh-cn", repoLang: "zh_CN" }
             ];
 
+            // In order to effeciently query for a selected language, we maintain a mapping from edX language codes
+            // to the object that describes the language.            
             const languageMap = languages.reduce((acc, lang) => {
               acc[lang.edxLang] = lang;
               return acc;
             }, {});
 
-            // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
-            // const appInput = core.getInput('application_name');
-            // const languageInput = core.getInput('translation_language');
-            const appInput = ${{ toJSON(github.event.inputs.application_name) }} ?? '';
-            const languageInput = ${{ toJSON(github.event.inputs.translation_language) }} ?? '';
+            const appInput = ${{ toJSON(github.event.inputs.application_name) }} || '';
+            const languageInput = ${{ toJSON(github.event.inputs.translation_language) }} || '';
             const selectedApp = appInput ? appInput.toLowerCase() : '';
             const selectedLanguage = languageInput ? languageInput.toLowerCase() : '';
 
@@ -135,78 +132,50 @@ jobs:
             core.setOutput('javascript_applications', javascriptApplications);
             core.setOutput('translation_languages', translationLanguages);
 
-            console.log('selectedLanguage: ', selectedLanguage);
-            console.log('indexedByLang: ', [languageMap[selectedLanguage]])
-            console.log('javascript_applications: ', javascriptApplications);
-            console.log('translation_languages: ', translationLanguages);
-
-  seed-translations-json:
-    continue-on-error: true
-    needs: setup-matrix
+  seed-translations:
+    needs: setup
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        application: ${{ fromJson(needs.setup-matrix.outputs.javascript_applications) }}
-        translation_language: ${{ fromJson(needs.setup-matrix.outputs.translation_languages) }}
-    
+        application: ${{ fromJson(needs.setup.outputs.javascript_applications) }}
     steps:
-      - name: Clone ${{ github.repository }}
+      - name: Clone repository
         uses: actions/checkout@v5
-      
-      # - name: Convert ${{ matrix.translation_language }} language code for ${{ matrix.application }} to expected format
-      #   run: |
-      #     # TODO: add better handling for language codes without region code
-      #     language_code=$(echo ${{ matrix.translation_language }} | awk -F'-' '{print tolower($1) "_" toupper($2)}')
-      #     echo "LANGUAGE_CODE=$language_code" >> $GITHUB_ENV
 
-      # - name: Convert ${{ matrix.translation_language }} language code for ${{ matrix.application }} to expected format
-      #   run: |
-      #     language_code=${{ matrix.translation_language }}
-      #     if [[ "$language_code" == *-* ]]; then
-      #       # If the language code contains a hyphen, process it to the format language_REGION.
-      #       language_code=$(echo $language_code | awk -F'-' '{print tolower($1) "_" toupper($2)}')
-      #     else
-      #       # If there's no hyphen, just convert to lowercase.
-      #       language_code=$(echo $language_code | tr '[:upper:]' '[:lower:]')
-      #     fi
-      #     echo "LANGUAGE_CODE=$language_code" >> $GITHUB_ENV
-
-      - name: Find ${{ matrix.translation_language.edxLang }} language translations files for ${{ matrix.application }}
-        id: find-files
+      - name: Seed translation languages for ${{ matrix.application }}
         run: |
-          translations_file_path="translations/${{ matrix.application }}/src/i18n/messages/${{ matrix.translation_language.repoLang }}.json"
-          if [ -f "$translations_file_path" ]; then
-            echo "Translations file exists: $translations_file_path."
-          else
-            echo "Translations file does not exist: $translations_file_path. Skipping."
-            exit 1
-          fi
+          translation_languages='${{ needs.setup.outputs.translation_languages }}'
 
-          source_strings_file_path="translations/${{ matrix.application }}/src/i18n/transifex_input.json"
-          if [ -f "$source_strings_file_path" ]; then
-            echo "Source strings file exists: $source_strings_file_path."
-          else
-            echo "Source strings file does not exist: $source_strings_file_path. Skipping."
-            exit 1
-          fi
+          for lang in $(echo "$translation_languages" | jq -c '.[]'); do
+            edxLang=$(echo "$lang" | jq -r '.edxLang')
+            repoLang=$(echo "$lang" | jq -r '.repoLang')
 
-          echo "TRANSLATIONS_FILE=$translations_file_path" >> $GITHUB_ENV
-          echo "SOURCE_STRINGS_FILE=$source_strings_file_path" >> $GITHUB_ENV
+            echo "Processing language $edxLang for application ${{ matrix.application }}"
 
-      - name: Call seed translations endpoint for ${{ matrix.translation_language.edxLang }} language code for ${{ matrix.application}}
-        id: seed-translations-json
-        run: |
-          status_code=$(curl -s -w "%{http_code}" -o /tmp/seed_translations_response.txt -X POST ${{ secrets.EDX_AI_TRANSLATIONS_API_ROOT }} \
-            -F application_name=${{ matrix.application }} \
-            -F translation_language=${{ matrix.translation_language.edxLang }} \
-            -F source_language=en \
-            -F translations_file=@"${{ env.TRANSLATIONS_FILE }}" \
-            -F source_strings_file=@"${{ env.SOURCE_STRINGS_FILE }}")
-          
-          if [ "$status_code" -eq 200 ]; then
-            echo "API call succeeded with status code $status_code."
-          else
-            echo "API call failed with status code $status_code."
-            cat /tmp/seed_translations_response.txt
-            exit 1
-          fi
+            translations_file_path="translations/${{ matrix.application }}/src/i18n/messages/${repoLang}.json"
+            source_strings_file_path="translations/${{ matrix.application }}/src/i18n/transifex_input.json"
+
+            if [ ! -f "$translations_file_path" ]; then
+              echo "Translations file does not exist: $translations_file_path. Skipping."
+              continue
+            fi
+
+            if [ ! -f "$source_strings_file_path" ]; then
+              echo "Source strings file does not exist: $source_strings_file_path. Skipping."
+              continue
+            fi
+
+            status_code=$(curl -s -w "%{http_code}" -o /tmp/seed_translations_response.txt -X POST ${{ secrets.EDX_AI_TRANSLATIONS_API_ROOT }} \
+              -F application_name=${{ matrix.application }} \
+              -F translation_language=$edxLang \
+              -F source_language=en \
+              -F translations_file=@"$translations_file_path" \
+              -F source_strings_file=@"$source_strings_file_path")
+            
+            if [ "$status_code" -eq 200 ]; then
+              echo "API call succeeded for language $edxLang for application ${{ matrix.application }} with status code $status_code."
+            else
+              echo "API call failed for language $edxLang for application ${{ matrix.application }} with status code $status_code."
+              cat /tmp/seed_translations_response.txt
+            fi
+          done
