@@ -105,7 +105,7 @@ jobs:
               { edxLang: "zh-cn", repoLang: "zh-_CN" }
             ];
 
-            const languageMap = new Map(languages.map(lang => [lang.edxLang, repoLang]));
+            const languageMap = new Map(languages.map(lang => [lang.edxLang, lang.repoLang]));
 
             // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
             // const appInput = core.getInput('application_name');
