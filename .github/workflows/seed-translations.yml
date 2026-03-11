@@ -119,7 +119,7 @@ jobs:
               core.setFailed(`Selected application ${selectedApp} is not a valid option.`);
               return;
             }
-            if (selectedLanguage !== '' && !Objects.keys(languageMap).includes(selectedLanguage)) {
+            if (selectedLanguage !== '' && !Object.keys(languageMap).includes(selectedLanguage)) {
               core.setFailed(`Selected language ${selectedLanguage} is not a valid option.`);
               return;
             }
