@@ -200,3 +200,6 @@ jobs:
             echo "API call succeeded with status code $status_code."
           else
             echo "API call failed with status code $status_code."
+            cat /tmp/seed_translations_response.txt
+            exit 1
+          fi
