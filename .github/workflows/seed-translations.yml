@@ -92,7 +92,9 @@ jobs:
               { edxLang: "hi", repoLang: "hi" },
               { edxLang: "id", repoLang: "id" },
               { edxLang: "it-it", repoLang: "it_IT" },
-              { edxLang: "ko-kr", repoLang: "ko-kr" },
+              // NOTE: This doesn't match the ko_KR format I expected, but I only see ko.json.
+              // Shoudl we use ko_KR here?
+              { edxLang: "ko-kr", repoLang: "ko" },
               { edxLang: "pl", repoLang: "pl" },
               { edxLang: "pt-br", repoLang: "pt_BR" },
               { edxLang: "pt-pt", repoLang: "pt_PT" },
@@ -102,7 +104,7 @@ jobs:
               { edxLang: "th", repoLang: "th" },
               { edxLang: "tr-tr", repoLang: "tr_TR" },
               { edxLang: "uk", repoLang: "uk" },
-              { edxLang: "zh-cn", repoLang: "zh-_CN" }
+              { edxLang: "zh-cn", repoLang: "zh_CN" }
             ];
 
             const languageMap = languages.reduce((acc, lang) => {
@@ -127,11 +129,14 @@ jobs:
               return;
             }
 
-            const applications = selectedApp === '' ? allJavascriptApps : [selectedApp];
-            const translation_languages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
+            const javascriptApplications = selectedApp === '' ? allJavascriptApps : [selectedApp];
+            const translationLanguages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
 
-            core.setOutput('applications', applications);
-            core.setOutput('translation_languages', translation_languages);
+            core.setOutput('javascript_applications', javascriptApplications);
+            core.setOutput('translation_languages', translationLanguages);
+
+            console.log('javascript_applications: ', javascriptApplications);
+            console.log('translation_languages: ', translationLanguages);
 
   seed-translations:
     continue-on-error: true
@@ -139,7 +144,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        application: ${{ fromJson(needs.setup-matrix.outputs.applications) }}
+        application: ${{ fromJson(needs.setup-matrix.outputs.javascript_applications) }}
         translation_language: ${{ fromJson(needs.setup-matrix.outputs.translation_languages) }}
     
     steps:
