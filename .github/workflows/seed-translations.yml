@@ -2,7 +2,7 @@
 # a source strings file and translations string file for each application and language code
 # combination.
 
-name: Seed Translations
+name: Seed translations
 
 on:
   workflow_dispatch:
@@ -105,7 +105,7 @@ jobs:
               { edxLang: "zh-cn", repoLang: "zh_CN" }
             ];
 
-            // In order to effeciently query for a selected language, we maintain a mapping from edX language codes
+            // In order to efficiently query for details about a selected language, we maintain a mapping from edX language codes
             // to the object that describes the language.            
             const languageMap = languages.reduce((acc, lang) => {
               acc[lang.edxLang] = lang;
@@ -142,6 +142,7 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v5
 
+
       - name: Seed translation languages for ${{ matrix.application }}
         run: |
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
@@ -150,7 +151,7 @@ jobs:
             edxLang=$(echo "$lang" | jq -r '.edxLang')
             repoLang=$(echo "$lang" | jq -r '.repoLang')
 
-            echo "Processing language $edxLang for application ${{ matrix.application }}"
+            echo "Processing language $edxLang for application ${{ matrix.application }}."
 
             translations_file_path="translations/${{ matrix.application }}/src/i18n/messages/${repoLang}.json"
             source_strings_file_path="translations/${{ matrix.application }}/src/i18n/transifex_input.json"
@@ -165,13 +166,20 @@ jobs:
               continue
             fi
 
-            status_code=$(curl -s -w "%{http_code}" -o /tmp/seed_translations_response.txt -X POST ${{ secrets.EDX_AI_TRANSLATIONS_API_ROOT }} \
+            curl_exit_code=0
+            status_code=$(curl -sS --connect-timeout 10 --max-time 60 -w "%{http_code}" -o /tmp/seed_translations_response.txt -X POST ${{ secrets.EDX_AI_TRANSLATIONS_API_ROOT }} \
               -F application_name=${{ matrix.application }} \
               -F translation_language=$edxLang \
               -F source_language=en \
               -F translations_file=@"$translations_file_path" \
-              -F source_strings_file=@"$source_strings_file_path")
-            
+              -F source_strings_file=@"$source_strings_file_path") || curl_exit_code=$?
+
+            if [ "$curl_exit_code" -ne 0 ]; then
+              echo "Curl request failed for language $edxLang for application ${{ matrix.application }} with exit code $curl_exit_code."
+              cat /tmp/seed_translations_response.txt
+              continue
+            fi
+
             if [ "$status_code" -eq 200 ]; then
               echo "API call succeeded for language $edxLang for application ${{ matrix.application }} with status code $status_code."
             else
