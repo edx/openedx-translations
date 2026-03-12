@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
     inputs:
       application_name:
-        description: 'Application to seed translations for. Leave blank to run all.'
+        description: 'Application to seed translations for, corresponding for a repository name under the translations directory. Leave blank to run all.'
         required: false
         type: string
       translation_language:
-        description: 'Language code to seed translations for in edX translations format (i.e. ISO 639-1 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). Leave blank to run all.'
+        description: 'Language code to seed translations for in edX translations format (i.e. BCP 47 format format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
         required: false
         type: string
 
@@ -71,18 +71,17 @@ jobs:
             // The seed translations endpoint supports language codes in the IETF BCP 47 format.
             // These language codes are a combination of a two-letter language code (i.e. the ISO 639-1 standard)
             // and the country code (i.e. the ISO 3166-1 alpha-2 standard), separated by a hyphen.
-            // We'll call this the edX language code.
-            // As an example, "it-it".
+            // As an example, "it-it", "es-419", "pt-pt", etc. We'll call this the edX language code.
             // However, the filenames in this repository for JSON messages files use languages in the IETF BCP 47 format
             // but with underscores instead of hyphens. This is not uncommon. We'll call this the repo language code.
-            // The languages are defined as objects containing both language codes.
+            // The languages are defined as objects containing both language codes because the edX language code is required
+            // to call the seed translations API while the repo code is required to find the required translation messages files.
             const languages = [
               { edxLang: "ar", repoLang: "ar" },
               { edxLang: "ca", repoLang: "ca" },
               { edxLang: "da", repoLang: "da" },
               { edxLang: "de-de", repoLang: "de_DE" },
               { edxLang: "el", repoLang: "el" },
-              { edxLang: "en", repoLang: "en" },
               { edxLang: "es-419", repoLang: "es_419" },
               { edxLang: "es-es", repoLang: "es_ES" },
               { edxLang: "fa", repoLang: "fa" },
