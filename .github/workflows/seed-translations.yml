@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
     inputs:
       application_name:
-        description: 'Application to seed translations for, corresponding for a repository name under the translations directory. Leave blank to run all.'
+        description: 'Application to seed translations for, corresponding to a repository name under the translations directory. Leave blank to run all.'
         required: false
         type: string
       translation_language:
-        description: 'Language code to seed translations for in edX translations format (i.e. BCP 47 format format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
+        description: 'Language code to seed translations for in edX translations format (i.e. BCP 47 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
         required: false
         type: string
 
