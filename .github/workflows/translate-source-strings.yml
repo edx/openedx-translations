@@ -10,7 +10,7 @@ on:
         description: 'Application to fetch translations for, corresponding to a repository name under the translations directory. Leave blank to run all.'
         required: false
         type: string
-      language:
+      translation_language:
         description: 'Language code to fetch translations for in edX translations format (i.e. BCP 47 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
         required: false
         type: string
@@ -119,7 +119,7 @@ jobs:
             // const languageInput = core.getInput('translation_language');
 
             const appInput = ${{ toJSON(github.event.inputs.application_name) }} || '';
-            const languageInput = ${{ toJSON(github.event.inputs.language) }} || '';
+            const languageInput = ${{ toJSON(github.event.inputs.translation_language) }} || '';
             const selectedApp = appInput ? appInput.toLowerCase() : '';
             const selectedLanguage = languageInput ? languageInput.toLowerCase() : '';
 
