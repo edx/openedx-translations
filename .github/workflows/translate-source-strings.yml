@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       application_name:
-        description: 'Application to fetch translations for, corresponding to a repository name under the translations directory. Leave blank to run all.''
+        description: 'Application to fetch translations for, corresponding to a repository name under the translations directory. Leave blank to run all.'
         required: false
         type: string
       language:
