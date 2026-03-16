@@ -301,7 +301,7 @@ jobs:
         # 1. the job is not running on the main branch
         # 2. the job is not running as the result of a scheduled trigger (i.e. a cron)
         # 3. there are 0 commits
-        if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'schedule' && env.COMMIT_COUNT > 0 }}
+        # if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'schedule' && env.COMMIT_COUNT > 0 }}
         # run: gh pr merge ${{ env.PR_URL }} --merge --auto
         run: echo "NO-OP"
 
