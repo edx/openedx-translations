@@ -233,6 +233,10 @@ jobs:
 
             if [ "$status_code" -eq 200 ]; then
               echo "API call succeeded for language $edxLang for application ${{ matrix.application }}."
+              if ! jq empty "$response_file" 2>/dev/null; then
+                echo "Response for language $edxLang for application ${{ matrix.application }} is not valid JSON. Skipping."
+                continue
+              fi
               cp "$response_file" "$output_file_path"
               git add "$output_file_path" -f
               GIT_STATUS=$(git status "$output_file_path" -s | wc -l)
