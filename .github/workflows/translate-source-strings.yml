@@ -221,7 +221,7 @@ jobs:
             status_code=$(curl -sS --connect-timeout 10 --max-time 120 \
               -w "%{http_code}" \
               -o "$response_file" \
-              -X POST "${{ secrets.AI_TRANSLATIONS_API_ROOT }}/api/v1/static_strings/json/translate" \
+              -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
               -F "file=@$source_strings_file_path" \
               -F "application_name=${{ matrix.application }}" \
               -F "language=$edxLang") || curl_exit_code=$?
