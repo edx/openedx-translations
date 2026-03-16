@@ -282,7 +282,9 @@ jobs:
           REPO="${{ github.repository }}"
           COMMIT_COUNT=$(git rev-list HEAD ^origin/main | wc -l | tr -d ' ')
           echo "COMMIT_COUNT=$COMMIT_COUNT" >> $GITHUB_ENV
+          echo "This is COMMIT_COUNT: $COMMIT_COUNT"
           if [ "$COMMIT_COUNT" -gt 0 ]; then
+            echo "I'm in the if block!"
             PR_URL=$(gh pr create \
               --repo "$REPO" \
               --title "chore: add AI translated strings" \
