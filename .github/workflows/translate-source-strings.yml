@@ -1,0 +1,305 @@
+# This workflow generates translations for JavaScript applications by calling the AI translations
+# endpoint with source strings files and committing the translated output to a pull request.
+
+name: Translate source strings
+
+on:
+  workflow_dispatch:
+    inputs:
+      application_name:
+        description: 'Application to fetch translations for, corresponding to a repository name under the translations directory. Leave blank to run all.''
+        required: false
+        type: string
+      language:
+        description: 'Language code to fetch translations for in edX translations format (i.e. BCP 47 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
+        required: false
+        type: string
+  # Uncomment after this is manually confirmed.
+  # schedule:
+  #   - cron: '0 0 * * 0'  # every Sunday at midnight
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      javascript_applications: ${{ steps.generate_matrix.outputs.javascript_applications }}
+      translation_languages: ${{ steps.generate_matrix.outputs.translation_languages }}
+    steps:
+      - uses: actions/github-script@v7
+        id: generate_matrix
+        with:
+          script: |
+            const allJavascriptApps = [
+              'frontend-app-account',
+              'frontend-app-admin-portal',
+              'frontend-app-authn',
+              'frontend-app-authoring',
+              'frontend-app-communications',
+              'frontend-app-discussions',
+              'frontend-app-enterprise-api-doc',
+              'frontend-app-enterprise-checkout',
+              'frontend-app-enterprise-public-catalog',
+              'frontend-app-gradebook',
+              'frontend-app-learner-dashboard',
+              'frontend-app-learner-portal-enterprise',
+              'frontend-app-learner-portal-programs',
+              'frontend-app-learner-record',
+              'frontend-app-learning',
+              'frontend-app-ora',
+              'frontend-app-ora-grading',
+              'frontend-app-payment',
+              'frontend-app-profile',
+              'frontend-app-program-console',
+              'frontend-app-publisher',
+              'frontend-app-skills',
+              'frontend-app-support-tools',
+              'frontend-component-authn-edx',
+              'frontend-component-footer-edx',
+              'frontend-component-header-edx',
+              'frontend-components-tinymce-advanced-plugins-edx',
+              'frontend-plugin-advertisements',
+              'frontend-plugin-authn',
+              'frontend-plugin-learner-dashboard',
+              'frontend-plugin-notifications',
+              'frontend-plugin-persona',
+              'frontend-plugin-recommendations',
+              'frontend-platform',
+              'paragon',
+              'studio-frontend',
+              'frontend-plugin-framework',
+            ];
+
+            // The fetch translations endpoint supports language codes in the IETF BCP 47 format.
+            // These language codes are a combination of a two-letter language code (i.e. the ISO 639-1 standard)
+            // and the country code (i.e. the ISO 3166-1 alpha-2 standard), separated by a hyphen.
+            // As an example, "it-it", "es-419", "pt-pt", etc. We'll call this the edX language code.
+            // However, the filenames in this repository for JSON messages files use languages in the IETF BCP 47 format
+            // but with underscores instead of hyphens. We'll call this the repo language code.
+            // The languages are defined as objects containing both language codes because the edX language code is required
+            // to call the fetch translations API while the repo code is required to name the output translation file.
+            const languages = [
+              { edxLang: "ar", repoLang: "ar" },
+              { edxLang: "ca", repoLang: "ca" },
+              { edxLang: "da", repoLang: "da" },
+              { edxLang: "de", repoLang: "de" },
+              { edxLang: "de-de", repoLang: "de_DE" },
+              { edxLang: "el", repoLang: "el" },
+              { edxLang: "es-419", repoLang: "es_419" },
+              { edxLang: "es-es", repoLang: "es_ES" },
+              { edxLang: "fa", repoLang: "fa" },
+              { edxLang: "fr", repoLang: "fr" },
+              { edxLang: "fr-ca", repoLang: "fr_CA" },
+              { edxLang: "he", repoLang: "he" },
+              { edxLang: "hi", repoLang: "hi" },
+              { edxLang: "id", repoLang: "id" },
+              { edxLang: "it-it", repoLang: "it_IT" },
+              { edxLang: "ko-kr", repoLang: "ko" },
+              { edxLang: "pl", repoLang: "pl" },
+              { edxLang: "pt-br", repoLang: "pt_BR" },
+              { edxLang: "pt-pt", repoLang: "pt_PT" },
+              { edxLang: "ru", repoLang: "ru" },
+              { edxLang: "sw", repoLang: "sw" },
+              { edxLang: "te", repoLang: "te" },
+              { edxLang: "th", repoLang: "th" },
+              { edxLang: "tr-tr", repoLang: "tr_TR" },
+              { edxLang: "uk", repoLang: "uk" },
+              { edxLang: "zh-cn", repoLang: "zh_CN" }
+            ];
+
+            // In order to efficiently query for details about a selected language, we maintain a mapping
+            // from edX language codes to the object that describes the language.
+            const languageMap = languages.reduce((acc, lang) => {
+              acc[lang.edxLang] = lang;
+              return acc;
+            }, {});
+
+
+            // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
+            // const appInput = core.getInput('application_name');
+            // const languageInput = core.getInput('translation_language');
+
+            const appInput = ${{ toJSON(github.event.inputs.application_name) }} || '';
+            const languageInput = ${{ toJSON(github.event.inputs.language) }} || '';
+            const selectedApp = appInput ? appInput.toLowerCase() : '';
+            const selectedLanguage = languageInput ? languageInput.toLowerCase() : '';
+
+            if (selectedApp !== '' && !allJavascriptApps.includes(selectedApp)) {
+              core.setFailed(`Selected application "${selectedApp}" is not a valid option.`);
+              return;
+            }
+            if (selectedLanguage !== '' && !Object.keys(languageMap).includes(selectedLanguage)) {
+              core.setFailed(`Selected language "${selectedLanguage}" is not a valid option.`);
+              return;
+            }
+
+            const javascriptApplications = selectedApp === '' ? allJavascriptApps : [selectedApp];
+            const translationLanguages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
+
+            core.setOutput('javascript_applications', javascriptApplications);
+            core.setOutput('translation_languages', translationLanguages);
+
+  setup-branch:
+    runs-on: ubuntu-latest
+    outputs:
+      branch: ${{ steps.dynamic_branch.outputs.branch }}
+    steps:
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
+          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
+          owner: edx
+
+      - name: Dynamically set branch name
+        id: dynamic_branch
+        run: echo "branch=automated/translate-source-strings-$(date +'%Y%m%dT%H%M%S')" >> $GITHUB_OUTPUT
+
+      - name: Clone ${{ github.repository }}
+        uses: actions/checkout@v5
+
+      - name: Create and push branch
+        env:
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+        run: |
+          git checkout -b ${{ steps.dynamic_branch.outputs.branch }}
+          git push --set-upstream origin ${{ steps.dynamic_branch.outputs.branch }}
+
+  translate:
+    needs: [setup, setup-branch]
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      # using max-parallel to avoid git push/pull issues when running in parallel
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        application: ${{ fromJson(needs.setup.outputs.javascript_applications) }}
+
+    steps:
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
+          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
+          owner: edx
+
+      - name: Clone ${{ github.repository }}
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
+
+      - name: Configure git identity
+        run: |
+          git config --global user.name "edx-translations-app"
+          git config --global user.email "edx-translations-app@users.noreply.github.com"
+
+      - name: Translate source strings for ${{ matrix.application }}
+        env:
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+        run: |
+          translation_languages='${{ needs.setup.outputs.translation_languages }}'
+
+          for lang in $(echo "$translation_languages" | jq -c '.[]'); do
+            edxLang=$(echo "$lang" | jq -r '.edxLang')
+            repoLang=$(echo "$lang" | jq -r '.repoLang')
+
+            echo "Processing language $edxLang for application ${{ matrix.application }}."
+
+            source_strings_file_path="translations/${{ matrix.application }}/transifex_input.json"
+
+            if [ ! -f "$source_strings_file_path" ]; then
+              echo "Source strings file does not exist: $source_strings_file_path. Skipping."
+              continue
+            fi
+
+            output_file_path="translations/${{ matrix.application }}/src/i18n/messages/${repoLang}.json"
+            response_file="/tmp/ai_translate_response_${edxLang}.json"
+
+            curl_exit_code=0
+            status_code=$(curl -sS --connect-timeout 10 --max-time 120 \
+              -w "%{http_code}" \
+              -o "$response_file" \
+              -X POST "${{ secrets.AI_TRANSLATIONS_API_ROOT }}/api/v1/static_strings/json/translate" \
+              -F "file=@$source_strings_file_path" \
+              -F "application_name=${{ matrix.application }}" \
+              -F "language=$edxLang") || curl_exit_code=$?
+
+            if [ "$curl_exit_code" -ne 0 ]; then
+              echo "Curl request failed for language $edxLang for application ${{ matrix.application }} with exit code $curl_exit_code."
+              continue
+            fi
+
+            if [ "$status_code" -eq 200 ]; then
+              echo "API call succeeded for language $edxLang for application ${{ matrix.application }}."
+              cp "$response_file" "$output_file_path"
+              git add "$output_file_path" -f
+              GIT_STATUS=$(git status "$output_file_path" -s | wc -l)
+              if [ "$GIT_STATUS" -gt 0 ]; then
+                git commit -m "chore: add AI translated strings for ${{ matrix.application }} in language $edxLang"
+                git push
+              fi
+            else
+              echo "API call failed for language $edxLang for application ${{ matrix.application }} with status code $status_code."
+              cat "$response_file"
+            fi
+          done
+
+  merge:
+    runs-on: ubuntu-latest
+    needs: [setup-branch, translate]
+    # Run even if translate jobs were skipped or failed (e.g. when a single repo is specified).
+    if: ${{ !cancelled() }}
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
+          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
+          owner: edx
+
+      - name: Clone ${{ github.repository }}
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
+          fetch-depth: 0
+
+      - name: Create pull request
+        id: createPR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REPO="${{ github.repository }}"
+          COMMIT_COUNT=$(git rev-list HEAD ^origin/main | wc -l | tr -d ' ')
+          echo "COMMIT_COUNT=$COMMIT_COUNT" >> $GITHUB_ENV
+          if [ "$COMMIT_COUNT" -gt 0 ]; then
+            PR_URL=$(gh pr create \
+              --repo "$REPO" \
+              --title "chore: add AI translated strings" \
+              --body "This PR is auto-generated by [ai-translate-source-strings](https://github.com/${REPO}/blob/main/.github/workflows/ai-translate-source-strings.yml).")
+            echo "PR_URL=$PR_URL" >> $GITHUB_ENV
+          fi
+
+      - name: Merge pull request
+        id: mergePR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Do not automerge if any of the following are true.
+        # 1. the job is not running on the main branch
+        # 2. the job is not running as the result of a scheduled trigger (i.e. a cron)
+        # 3. there are 0 commits
+        if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'schedule' && env.COMMIT_COUNT > 0 }}
+        # run: gh pr merge ${{ env.PR_URL }} --merge --auto
+
+      # Notify that branch did not merge and delete the branch now that it is unnecessary.
+      - name: Notify of empty branch and delete branch
+        if: ${{ steps.mergePR.outcome == 'skipped' }}
+        run: |
+          echo "The branch was not merged and was deleted because the workflow was not run on the main branch, was not scheduled (i.e. a cron), or the branch had 0 commits."
+          git push origin -d ${{ needs.setup-branch.outputs.branch }}
