@@ -207,7 +207,7 @@ jobs:
 
             echo "Processing language $edxLang for application ${{ matrix.application }}."
 
-            source_strings_file_path="translations/${{ matrix.application }}/transifex_input.json"
+            source_strings_file_path="translations/${{ matrix.application }}/src/i18n/transifex_input.json"
 
             if [ ! -f "$source_strings_file_path" ]; then
               echo "Source strings file does not exist: $source_strings_file_path. Skipping."
