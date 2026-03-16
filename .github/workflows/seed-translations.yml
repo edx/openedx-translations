@@ -112,6 +112,10 @@ jobs:
               return acc;
             }, {});
 
+            // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
+            // const appInput = core.getInput('application_name');
+            // const languageInput = core.getInput('translation_language');
+
             const appInput = ${{ toJSON(github.event.inputs.application_name) }} || '';
             const languageInput = ${{ toJSON(github.event.inputs.translation_language) }} || '';
             const selectedApp = appInput ? appInput.toLowerCase() : '';
@@ -143,7 +147,6 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v5
-
 
       - name: Seed translation languages for ${{ matrix.application }}
         run: |
