@@ -181,8 +181,10 @@ jobs:
           status_code=$(curl -sS --connect-timeout 10 --max-time 120 \
             -w "%{http_code}" \
             -o "$response_file" \
-            -X POST ${{ vars.LMS_ACCESS_TOKEN_URL }}
+            -X POST "${{ vars.LMS_ACCESS_TOKEN_URL }}" \
             -d "grant_type=client_credentials" \
+            -d "client_id=client_id" \
+            -d "client_secret=client_secret" \
             -d "token_type=jwt") || curl_exit_code=$?
 
           if [ "$curl_exit_code" -ne 0 ]; then
