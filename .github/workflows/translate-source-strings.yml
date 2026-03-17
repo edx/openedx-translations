@@ -193,7 +193,7 @@ jobs:
           fi
 
           jwt_token=$(jq -r '.access_token' "$response_file")
-          echo "::add-mask::$jwt_token"
+          # echo "::add-mask::$jwt_token"
 
            if [ -z "$jwt_token" ] || [ "$jwt_token" = "null" ]; then
             echo "Failed to extract access_token from LMS JWT response."
@@ -236,7 +236,8 @@ jobs:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
           JWT_TOKEN: ${{ needs.lms-authenticate.outputs.jwt_token }}
         run: |
-          echo "::add-mask::$JWT_TOKEN"
+          # echo "::add-mask::$JWT_TOKEN"
+          echo "JWT_TOKEN=$JWT_TOKEN"
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
 
