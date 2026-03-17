@@ -261,8 +261,10 @@ jobs:
               -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
               -F "file=@$source_strings_file_path" \
               -F "application_name=${{ matrix.application }}" \
-              -F "language=$edxLang")
-              -H "Authorization: JWT ${JWT_TOKEN}" || curl_exit_code=$? \
+              -F "language=$edxLang") \
+              -d "client_id=client_id" \
+              -d "client_secret=client_secret" \
+              -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
 
             if [ "$curl_exit_code" -ne 0 ]; then
               echo "Curl request failed for language $edxLang for application ${{ matrix.application }} with exit code $curl_exit_code."
