@@ -45,6 +45,7 @@ jobs:
               'frontend-app-learner-portal-programs',
               'frontend-app-learner-record',
               'frontend-app-learning',
+              'frontend-app-library-authoring',
               'frontend-app-ora',
               'frontend-app-ora-grading',
               'frontend-app-payment',
@@ -277,18 +278,29 @@ jobs:
                 echo "Response for language $edxLang for application ${{ matrix.application }} is not valid JSON. Skipping."
                 continue
               fi
+
               cp "$response_file" "$output_file_path"
+
+              mkdir -p "$(dirname "$output_file_path")"
+              if ! cp "$response_file" "$output_file_path"; then
+                echo "Failed to copy translated strings for language $edx:ang for application ${{ matrix.application}} to $output_file_path. Skipping."
+                continue
+              fi
+
               git add "$output_file_path" -f
               GIT_STATUS=$(git status "$output_file_path" -s | wc -l)
-              if [ "$GIT_STATUS" -gt 0 ]; then
-                git commit -m "chore: add AI translated strings for ${{ matrix.application }} in language $edxLang"
-                git push
-              fi
-            else
-              echo "API call failed for language $edxLang for application ${{ matrix.application }} with status code $status_code."
-              cat "$response_file"
-            fi
-          done
+            done
+          else
+            echo "API call failed for language $edxLang for application ${{ matrix.application }} with status code $status_code."
+            cat "$response_file"
+          fi
+
+          GIT_STATUS=$(git status "translations/${{ matrix.application }}/src/i18n/messages" -s | wc -l)
+          if [ "$GIT_STATUS" -gt 0 ]; then
+            git commit -m "chore: add AI translated strings for ${{ matrix.application }}"
+            git push
+          fi
+
 
   merge:
     runs-on: ubuntu-latest
@@ -300,14 +312,6 @@ jobs:
       pull-requests: write
 
     steps:
-      - name: Generate GitHub App token
-        id: generate_token
-        uses: actions/create-github-app-token@v1
-        with:
-          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
-          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
-          owner: edx
-
       - name: Clone ${{ github.repository }}
         uses: actions/checkout@v5
         with:
@@ -322,9 +326,8 @@ jobs:
           REPO="${{ github.repository }}"
           COMMIT_COUNT=$(git rev-list HEAD ^origin/main | wc -l | tr -d ' ')
           echo "COMMIT_COUNT=$COMMIT_COUNT" >> $GITHUB_ENV
-          echo "This is COMMIT_COUNT: $COMMIT_COUNT"
+
           if [ "$COMMIT_COUNT" -gt 0 ]; then
-            echo "I'm in the if block!"
             PR_URL=$(gh pr create \
               --repo "$REPO" \
               --title "chore: add AI translated strings" \
