@@ -193,13 +193,13 @@ jobs:
           fi
 
           jwt_token=$(jq -r '.access_token' "$response_file")
-          echo "::add-mask::$jwt_token"
 
            if [ -z "$jwt_token" ] || [ "$jwt_token" = "null" ]; then
             echo "Failed to extract access_token from LMS JWT response."
             exit 1
           fi
 
+          echo "::add-mask::$jwt_token"
           echo "jwt_token=$jwt_token" >> $GITHUB_OUTPUT
 
   translate:
@@ -278,28 +278,24 @@ jobs:
                 continue
               fi
 
-              cp "$response_file" "$output_file_path"
-
               mkdir -p "$(dirname "$output_file_path")"
               if ! cp "$response_file" "$output_file_path"; then
-                echo "Failed to copy translated strings for language $edx:ang for application ${{ matrix.application}} to $output_file_path. Skipping."
+                echo "Failed to copy translated strings for language $edxLang for application ${{ matrix.application }} to $output_file_path. Skipping."
                 continue
               fi
 
               git add "$output_file_path" -f
-              GIT_STATUS=$(git status "$output_file_path" -s | wc -l)
-            done
-          else
-            echo "API call failed for language $edxLang for application ${{ matrix.application }} with status code $status_code."
-            cat "$response_file"
-          fi
+            else
+              echo "API call failed for language $edxLang for application ${{ matrix.application }} with status code $status_code."
+              cat "$response_file"
+            fi
+          done
 
           GIT_STATUS=$(git status "translations/${{ matrix.application }}/src/i18n/messages" -s | wc -l)
           if [ "$GIT_STATUS" -gt 0 ]; then
             git commit -m "chore: add AI translated strings for ${{ matrix.application }}"
             git push
           fi
-
 
   merge:
     runs-on: ubuntu-latest
