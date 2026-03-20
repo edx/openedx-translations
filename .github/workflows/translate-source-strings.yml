@@ -195,7 +195,7 @@ jobs:
 
       - name: Fetch LMS JWT token
         id: fetch-jwt-token
-        run : |
+        run: |
           response_file="/tmp/lms_token_response.json"
 
           curl_exit_code=0
@@ -225,6 +225,7 @@ jobs:
             exit 1
           fi
 
+          // Mask the JWT so as not to inadvertently expose it.
           echo "::add-mask::$jwt_token"
           echo "JWT_TOKEN=$jwt_token" >> $GITHUB_ENV
 
@@ -232,6 +233,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
         run: |
+          // Mask the JWT so as not to inadvertently expose it.
           echo "::add-mask::$JWT_TOKEN"
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
@@ -276,6 +278,9 @@ jobs:
 
               mkdir -p "$(dirname "$output_file_path")"
 
+              // Pretty format the JSON prior to writing it to the file; otherwise, the file will be one very long JSON string.
+              // Although unlikely, jq can theoretically fail for reasons other than invalid JSON. Invalid JSON is checked above, but out of an abundance of caution,
+              // only write to the file if jq succeeds; otherwise, the file would be overwritten with an empty file, deleting the translations.
               jq . "$response_file" > "${output_file_path}.tmp" \
                 && mv "${output_file_path}.tmp" "$output_file_path" \
                 || {
@@ -300,7 +305,6 @@ jobs:
   merge:
     runs-on: ubuntu-latest
     needs: [setup-branch, translate]
-    # Run even if translate jobs were skipped or failed (e.g. when a single repo is specified).
     if: ${{ !cancelled() }}
     permissions:
       contents: write
