@@ -220,7 +220,7 @@ jobs:
 
           jwt_token=$(jq -r '.access_token' "$response_file")
 
-           if [ -z "$jwt_token" ] || [ "$jwt_token" = "null" ]; then
+          if [ -z "$jwt_token" ] || [ "$jwt_token" = "null" ]; then
             echo "Failed to extract access_token from LMS JWT response."
             exit 1
           fi
@@ -275,10 +275,14 @@ jobs:
               fi
 
               mkdir -p "$(dirname "$output_file_path")"
-              if ! cp "$response_file" "$output_file_path"; then
-                echo "Failed to copy translated strings for language $edxLang for application ${{ matrix.application }} to $output_file_path. Skipping."
-                continue
-              fi
+
+              jq . "$response_file" > "${output_file_path}.tmp" \
+                && mv "${output_file_path}.tmp" "$output_file_path" \
+                || {
+                  echo "Failed to write translated strings for language $edxLang for application ${{ matrix.application }} to $output_file_path. Skipping."
+                  rm -f "${output_file_path}.tmp"
+                  continue
+                }
 
               git add "$output_file_path" -f
             else
