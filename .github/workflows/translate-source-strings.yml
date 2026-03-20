@@ -143,14 +143,6 @@ jobs:
     outputs:
       branch: ${{ steps.dynamic_branch.outputs.branch }}
     steps:
-      - name: Generate GitHub App token
-        id: generate_token
-        uses: actions/create-github-app-token@v1
-        with:
-          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
-          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
-          owner: edx
-
       - name: Dynamically set branch name
         id: dynamic_branch
         run: echo "branch=automated/translate-source-strings-$(date +'%Y%m%dT%H%M%S')" >> $GITHUB_OUTPUT
