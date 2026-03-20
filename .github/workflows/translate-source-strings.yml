@@ -171,7 +171,36 @@ jobs:
     outputs:
       jwt_token: ${{ steps.fetch-jwt-token.outputs.jwt_token }}
 
+
+
+  translate:
+    needs: [setup, setup-branch, lms-authenticate]
+    runs-on: ubuntu-latest
+    strategy:
+      # using max-parallel to avoid git push/pull issues when running in parallel
+      max-parallel: 1
+      matrix:
+        application: ${{ fromJson(needs.setup.outputs.javascript_applications) }}
+
     steps:
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
+          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
+          owner: edx
+
+      - name: Clone ${{ github.repository }}
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
+
+      - name: Configure git identity
+        run: |
+          git config --global user.name "edx-translations-app"
+          git config --global user.email "edx-translations-app@users.noreply.github.com"
+
       - name: Fetch LMS JWT token
         id: fetch-jwt-token
         run : |
@@ -200,41 +229,11 @@ jobs:
           fi
 
           echo "::add-mask::$jwt_token"
-          echo "jwt_token=$jwt_token" >> $GITHUB_OUTPUT
-
-  translate:
-    needs: [setup, setup-branch, lms-authenticate]
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    strategy:
-      # using max-parallel to avoid git push/pull issues when running in parallel
-      max-parallel: 1
-      matrix:
-        application: ${{ fromJson(needs.setup.outputs.javascript_applications) }}
-
-    steps:
-      - name: Generate GitHub App token
-        id: generate_token
-        uses: actions/create-github-app-token@v1
-        with:
-          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
-          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
-          owner: edx
-
-      - name: Clone ${{ github.repository }}
-        uses: actions/checkout@v5
-        with:
-          ref: ${{ needs.setup-branch.outputs.branch }}
-
-      - name: Configure git identity
-        run: |
-          git config --global user.name "edx-translations-app"
-          git config --global user.email "edx-translations-app@users.noreply.github.com"
+          echo "JWT_TOKEN=$jwt_token" >> $GITHUB_ENV
 
       - name: Translate source strings for ${{ matrix.application }}
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
-          JWT_TOKEN: ${{ needs.lms-authenticate.outputs.jwt_token }}
         run: |
           echo "::add-mask::$JWT_TOKEN"
 
