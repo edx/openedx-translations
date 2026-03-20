@@ -165,16 +165,8 @@ jobs:
           git checkout -b ${{ steps.dynamic_branch.outputs.branch }}
           git push --set-upstream origin ${{ steps.dynamic_branch.outputs.branch }}
 
-  lms-authenticate:
-    needs: [setup, setup-branch]
-    runs-on: ubuntu-latest
-    outputs:
-      jwt_token: ${{ steps.fetch-jwt-token.outputs.jwt_token }}
-
-
-
   translate:
-    needs: [setup, setup-branch, lms-authenticate]
+    needs: [setup, setup-branch]
     runs-on: ubuntu-latest
     strategy:
       # using max-parallel to avoid git push/pull issues when running in parallel
@@ -218,6 +210,11 @@ jobs:
 
           if [ "$curl_exit_code" -ne 0 ]; then
             echo "Curl request to fetch LMS JWT failed with exit code $curl_exit_code."
+            exit 1
+          fi
+
+          if [ "$status_code" -ne 200 ]; then
+            echo "API call to fetch LMS JWT for application ${{ matrix.application }} with status code $status_code."
             exit 1
           fi
 
@@ -266,7 +263,7 @@ jobs:
               -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
 
             if [ "$curl_exit_code" -ne 0 ]; then
-              echo "Curl request failed for language $edxLang for application ${{ matrix.application }} with exit code $curl_exit_code."
+              echo "Curl request to fetch translations failed for language $edxLang for application ${{ matrix.application }} with exit code $curl_exit_code."
               continue
             fi
 
