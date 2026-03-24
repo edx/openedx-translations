@@ -219,8 +219,8 @@ jobs:
               -F "application_name=${{ matrix.application }}" \
               -F "translation_language=$edxLang" \
               -F "source_language=en" \
-              -F "translations_file=@$translations_file_path" \
-              -F "source_strings_file=@$source_strings_file_path" \
+              -F "translation_file=@$translations_file_path" \
+              -F "source_file=@$source_strings_file_path" \
               -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
 
             if [ "$curl_exit_code" -ne 0 ]; then
