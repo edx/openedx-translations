@@ -142,6 +142,10 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       branch: ${{ steps.dynamic_branch.outputs.branch }}
+    permissions:
+      contents: write
+      pull-requests: write
+
     steps:
       - name: Dynamically set branch name
         id: dynamic_branch
@@ -152,7 +156,7 @@ jobs:
 
       - name: Create and push branch
         env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git checkout -b ${{ steps.dynamic_branch.outputs.branch }}
           git push --set-upstream origin ${{ steps.dynamic_branch.outputs.branch }}
@@ -165,15 +169,18 @@ jobs:
       max-parallel: 1
       matrix:
         application: ${{ fromJson(needs.setup.outputs.javascript_applications) }}
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
-      - name: Generate GitHub App token
-        id: generate_token
-        uses: actions/create-github-app-token@v1
-        with:
-          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
-          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
-          owner: edx
+      # - name: Generate GitHub App token
+      #   id: generate_token
+      #   uses: actions/create-github-app-token@v1
+      #   with:
+      #     app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
+      #     private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
+      #     owner: edx
 
       - name: Clone ${{ github.repository }}
         uses: actions/checkout@v5
@@ -206,7 +213,7 @@ jobs:
           fi
 
           if [ "$status_code" -ne 200 ]; then
-            echo "API call to fetch LMS JWT for application ${{ matrix.application }} with status code $status_code."
+            echo "API call to fetch LMS JWT failed for application ${{ matrix.application }} with status code $status_code."
             exit 1
           fi
 
@@ -223,12 +230,13 @@ jobs:
 
       - name: Translate source strings for ${{ matrix.application }}
         env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Mask the JWT so as not to inadvertently expose it.
           echo "::add-mask::$JWT_TOKEN"
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
+          num_failures=0
 
           for lang in $(echo "$translation_languages" | jq -c '.[]'); do
             edxLang=$(echo "$lang" | jq -r '.edxLang')
@@ -258,6 +266,7 @@ jobs:
 
             if [ "$curl_exit_code" -ne 0 ]; then
               echo "Curl request to fetch translations failed for language $edxLang for application ${{ matrix.application }} with exit code $curl_exit_code."
+              num_failures=$((num_failures+1))
               continue
             fi
 
@@ -265,6 +274,7 @@ jobs:
               echo "API call succeeded for language $edxLang for application ${{ matrix.application }}."
               if ! jq empty "$response_file" 2>/dev/null; then
                 echo "Response for language $edxLang for application ${{ matrix.application }} is not valid JSON. Skipping."
+                num_failures=$((num_failures+1))
                 continue
               fi
 
@@ -278,6 +288,7 @@ jobs:
                 || {
                   echo "Failed to write translated strings for language $edxLang for application ${{ matrix.application }} to $output_file_path. Skipping."
                   rm -f "${output_file_path}.tmp"
+                  num_failures=$((num_failures+1))
                   continue
                 }
 
@@ -285,6 +296,7 @@ jobs:
             else
               echo "API call failed for language $edxLang for application ${{ matrix.application }} with status code $status_code."
               cat "$response_file"
+              num_failures=$((num_failures+1))
             fi
           done
 
@@ -292,6 +304,11 @@ jobs:
           if [ "$GIT_STATUS" -gt 0 ]; then
             git commit -m "chore: add AI translated strings for ${{ matrix.application }}"
             git push
+          fi
+
+          if [ "$num_failures" -ne 0 ]; then
+            echo "One or more languages for application ${{ matrix.application }} failed to be translated. Failing job."
+            exit 1
           fi
 
   merge:
