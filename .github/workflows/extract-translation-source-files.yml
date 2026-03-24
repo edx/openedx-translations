@@ -187,13 +187,13 @@ jobs:
     steps:
 
     # prepare GitHub app token
-    - name: Generate GitHub App token
-      id: generate_token
-      uses: actions/create-github-app-token@v1
-      with:
-        app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
-        private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
-        owner: edx
+    # - name: Generate GitHub App token
+    #   id: generate_token
+    #   uses: actions/create-github-app-token@v1
+    #   with:
+    #     app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
+    #     private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
+    #     owner: edx
 
     # sets the job output that creates a unique branch name
     - name: dynamically set branch job output variable
@@ -211,7 +211,7 @@ jobs:
     # creates the branch where all the translations will be added to
     - name: make and push a new branch
       env:
-        GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       run: |
         git checkout -b ${{ steps.dynamic_branch.outputs.branch }}
         git push --set-upstream origin ${{ steps.dynamic_branch.outputs.branch }}

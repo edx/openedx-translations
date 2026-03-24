@@ -169,7 +169,7 @@ jobs:
           fi
 
           if [ "$status_code" -ne 200 ]; then
-            echo "API call to fetch LMS JWT for application ${{ matrix.application }} with status code $status_code."
+            echo "API call to fetch LMS JWT failed for application ${{ matrix.application }} with status code $status_code."
             exit 1
           fi
 
@@ -190,6 +190,7 @@ jobs:
           echo "::add-mask::$JWT_TOKEN"
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
+          num_failures=0
 
           for lang in $(echo "$translation_languages" | jq -c '.[]'); do
             edxLang=$(echo "$lang" | jq -r '.edxLang')
@@ -222,10 +223,10 @@ jobs:
               -F "source_strings_file=@$source_strings_file_path" \
               -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
 
-
             if [ "$curl_exit_code" -ne 0 ]; then
               echo "Curl request to seed translations failed for language $edxLang for application ${{ matrix.application }} with exit code $curl_exit_code."
               cat /tmp/seed_translations_response.txt
+              num_failures=$((num_failures+1))
               continue
             fi
 
@@ -234,5 +235,11 @@ jobs:
             else
               echo "API call to seed translations failed for language $edxLang for application ${{ matrix.application }} with status code $status_code."
               cat /tmp/seed_translations_response.txt
+              num_failures=$((num_failures+1))
             fi
           done
+        
+          if [ "$num_failures" -ne 0 ]; then
+            echo "One or more languages for application ${{ matrix.application }} failed to be translated. Failing job."
+            exit 1
+          fi
