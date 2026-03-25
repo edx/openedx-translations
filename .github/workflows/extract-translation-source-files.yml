@@ -1,0 +1,640 @@
+# This workflow extracts translation source files from code and adds the extracted
+# translation source files to the openedx-translations repository via an auto-merged pull
+# request.
+
+name: Extract Translation Source Files
+
+on:
+  workflow_dispatch:    # by request
+    inputs:
+      repo:
+        description: 'Repository to extract translation source files from (leave blank to run all). Use format owner/repo, e.g. edx/edx-platform.'
+        required: false
+        type: string
+      ref:
+        description: 'If repository is specified, the ref to extract translation source files from (leave blank to use the default branch).'
+        required: false
+        default: ''
+        type: string
+  schedule:
+    - cron: '0 0 * * *'  # every day at midnight UTC
+
+jobs:
+  setup-matrix:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/github-script@v7
+        id: generate_repo_matrix
+        with:
+          script: |
+            // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
+            // const selectedRepo = core.getInput('repo');
+            const selectedRepo = ${{ toJSON(github.event.inputs.repo) }} ?? '';
+
+            const allPythonRepos = [
+              { owner: 'edx', repo: 'AudioXBlock' },
+              { owner: 'edx', repo: 'DoneXBlock' },
+              { owner: 'openedx', repo: 'FeedbackXBlock' },
+              { owner: 'edx', repo: 'RecommenderXBlock' },
+              { owner: 'edx', repo: 'ai-translations' },
+              { owner: 'edx', repo: 'commerce-coordinator' },
+              { owner: 'edx', repo: 'course-discovery' },
+              { owner: 'edx', repo: 'credentials' },
+              { owner: 'edx', repo: 'credentials-themes' },
+              { owner: 'edx', repo: 'edx-ace' },
+              { owner: 'edx', repo: 'edx-exams' },
+              { owner: 'edx', repo: 'edx-platform' },
+              { owner: 'edx', repo: 'portal-designer' },
+              { owner: 'edx', repo: 'registrar' },
+              { owner: 'edx', repo: 'enterprise-access' },
+              { owner: 'edx', repo: 'enterprise-catalog' },
+              { owner: 'edx', repo: 'enterprise-subsidy' },
+              { owner: 'edx', repo: 'financial-assistance' },
+              { owner: 'edx', repo: 'order-fulfillment' },
+              { owner: 'edx', repo: 'sanctions' },
+              { owner: 'edx', repo: 'video-encode-manager' },
+              { owner: 'openedx', repo: 'edx-bulk-grades' },
+              { owner: 'openedx', repo: 'edx-ora2' },
+              { owner: 'edx', repo: 'edx-proctoring' },
+              { owner: 'edx', repo: 'platform-plugin-aspects' },
+              { owner: 'openedx', repo: 'xblock-drag-and-drop-v2' },
+              { owner: 'edx', repo: 'xblock-free-text-response' },
+              { owner: 'openedx', repo: 'xblock-google-drive' },
+              { owner: 'openedx', repo: 'xblock-image-explorer' },
+              { owner: 'edx', repo: 'xblock-image-modal' },
+              { owner: 'edx', repo: 'xblock-lti-consumer' },
+              { owner: 'edx', repo: 'xblock-qualtrics-survey' },
+              { owner: 'edx', repo: 'xblock-sql-grader' },
+              { owner: 'edx', repo: 'xblock-submit-and-compare' },
+            ];
+
+            const allJavascriptRepos = [
+              { owner: 'edx', repo: 'frontend-app-account' },
+              { owner: 'edx', repo: 'frontend-app-admin-portal' },
+              { owner: 'edx', repo: 'frontend-app-authn' },
+              { owner: 'edx', repo: 'frontend-app-authoring' },
+              { owner: 'edx', repo: 'frontend-app-communications' },
+              { owner: 'edx', repo: 'frontend-app-discussions' },
+              { owner: 'edx', repo: 'frontend-app-enterprise-api-doc' },
+              { owner: 'edx', repo: 'frontend-app-enterprise-checkout' },
+              { owner: 'edx', repo: 'frontend-app-enterprise-public-catalog' },
+              { owner: 'edx', repo: 'frontend-app-gradebook' },
+              { owner: 'edx', repo: 'frontend-app-learner-dashboard' },
+              { owner: 'edx', repo: 'frontend-app-learner-portal-enterprise' },
+              { owner: 'edx', repo: 'frontend-app-learner-portal-programs' },
+              { owner: 'edx', repo: 'frontend-app-learner-record' },
+              { owner: 'edx', repo: 'frontend-app-learning' },
+              { owner: 'edx', repo: 'frontend-app-ora' },
+              { owner: 'edx', repo: 'frontend-app-ora-grading' },
+              { owner: 'edx', repo: 'frontend-app-payment' },
+              { owner: 'edx', repo: 'frontend-app-profile' },
+              { owner: 'edx', repo: 'frontend-app-program-console' },
+              { owner: 'edx', repo: 'frontend-app-publisher' },
+              { owner: 'edx', repo: 'frontend-app-skills' },
+              { owner: 'edx', repo: 'frontend-app-support-tools' },
+              { owner: 'edx', repo: 'frontend-component-authn-edx' },
+              { owner: 'edx', repo: 'frontend-component-footer-edx' },
+              { owner: 'edx', repo: 'frontend-component-header-edx' },
+              { owner: 'edx', repo: 'frontend-components-tinymce-advanced-plugins-edx' },
+              { owner: 'edx', repo: 'frontend-plugin-advertisements' },
+              { owner: 'edx', repo: 'frontend-plugin-authn' },
+              { owner: 'edx', repo: 'frontend-plugin-learner-dashboard' },
+              { owner: 'edx', repo: 'frontend-plugin-notifications' },
+              { owner: 'edx', repo: 'frontend-plugin-persona' },
+              { owner: 'edx', repo: 'frontend-plugin-recommendations' },
+              { owner: 'edx', repo: 'frontend-platform' },
+              { owner: 'openedx', repo: 'paragon' },
+              { owner: 'edx', repo: 'studio-frontend' },
+              { owner: 'openedx', repo: 'frontend-plugin-framework' },
+            ];
+
+            const javascriptReposWithSubpackages = [
+              { owner: 'edx', repo: 'frontend-plugins/cohesion-wrapper' },
+              { owner: 'edx', repo: 'frontend-plugins/course-app-translation-plugin' },
+              { owner: 'edx', repo: 'frontend-plugins/course-end-enterprise-plugins' },
+              { owner: 'edx', repo: 'frontend-plugins/course-outline-sidebar-trigger-plugin' },
+              { owner: 'edx', repo: 'frontend-plugins/left-sidebar-navigation-plugin' },
+              { owner: 'edx', repo: 'frontend-plugins/progress-tab-grade-plugins' },
+              { owner: 'edx', repo: 'frontend-plugins/unit-title-plugin' },
+            ];
+
+            // When https://2u-internal.atlassian.net/wiki/spaces/AU/pages/2786066453/Mobile+app+translations
+            // tasks or equivalents are completed, uncomment and correct this section.
+            //const allGenericRepos = [
+            //  {
+            //    repo: 'openedx-app-ios',
+            //    transifex_file_path: 'I18N/I18N/en.lproj/Localizable.strings',
+            //    before_extract: 'make translation_requirements',
+            //    ref: 'develop',  // TODO: Use main branch https://github.com/openedx/openedx-translations/issues/6395
+            //  },
+            //  {
+            //    repo: 'openedx-app-android',
+            //    transifex_file_path: 'i18n/src/main/res/values/strings.xml',
+            //    before_extract: 'make translation_requirements',
+            //    ref: 'develop',  // TODO: Use main branch https://github.com/openedx/openedx-translations/issues/6395
+            //  },
+            //]
+
+            core.setOutput('hasPythonRepos', true);
+            core.setOutput('hasJavascriptRepos', true);
+            core.setOutput('hasGenericRepos', false);
+
+            if (selectedRepo === '') {
+              core.setOutput('pythonRepos', allPythonRepos);
+              core.setOutput('javascriptRepos', allJavascriptRepos);
+              //core.setOutput('genericRepos', allGenericRepos);
+              return;
+            }
+
+            const pythonRepo = allPythonRepos.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
+            if (pythonRepo) {
+              core.setOutput('pythonRepos', [pythonRepo]);
+            } else {
+              core.setOutput('pythonRepos', []);
+              core.setOutput('hasPythonRepos', false);
+            }
+
+            const javascriptRepo = allJavascriptRepos.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
+            if (javascriptRepo) {
+              core.setOutput('javascriptRepos', [javascriptRepo]);
+            } else {
+              core.setOutput('javascriptRepos', []);
+              core.setOutput('hasJavascriptRepos', false);
+            }
+
+            //const genericRepoConfig = allGenericRepos.find(repoConfig => repoConfig.repo === selectedRepo);
+            //if (genericRepoConfig !== undefined) {
+              //core.setOutput('genericRepos', [genericRepoConfig]);
+            //} else {
+              //core.setOutput('genericRepos', []);
+              //core.setOutput('hasGenericRepos', false);
+            //}
+
+    outputs:
+      has_python_repos: ${{ steps.generate_repo_matrix.outputs.hasPythonRepos }}
+      python_repos: ${{ steps.generate_repo_matrix.outputs.pythonRepos }}
+      has_js_repos: ${{ steps.generate_repo_matrix.outputs.hasJavascriptRepos }}
+      js_repos: ${{ steps.generate_repo_matrix.outputs.javascriptRepos }}
+      # has_generic_repos: ${{ steps.generate_repo_matrix.outputs.hasGenericRepos }}
+      # generic_repos: ${{ steps.generate_repo_matrix.outputs.genericRepos }}
+
+  setup-branch:
+    runs-on: ubuntu-latest
+    outputs:
+      branch: ${{ steps.dynamic_branch.outputs.branch }}
+    steps:
+
+    # prepare GitHub app token
+    - name: Generate GitHub App token
+      id: generate_token
+      uses: actions/create-github-app-token@v1
+      with:
+        app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
+        private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
+        owner: edx
+
+    # sets the job output that creates a unique branch name
+    - name: dynamically set branch job output variable
+      id: dynamic_branch
+      run: echo "branch=automated/extract-translation-source-files-$(date +'%Y%m%dT%H%M%S')" >> $GITHUB_OUTPUT
+
+    # clones the edx/openedx-translations repository so a branch can be added in the next step
+    - name: echo branch name
+      id: date
+      run: echo $BRANCH
+
+    - name: clone ${{ github.repository }}
+      uses: actions/checkout@v5
+
+    # creates the branch where all the translations will be added to
+    - name: make and push a new branch
+      env:
+        GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
+      run: |
+        git checkout -b ${{ steps.dynamic_branch.outputs.branch }}
+        git push --set-upstream origin ${{ steps.dynamic_branch.outputs.branch }}
+
+  python-translations:
+    if: ${{ fromJson(needs.setup-matrix.outputs.has_python_repos) == true }}
+    needs: [setup-branch, setup-matrix]
+    strategy:
+      # using max-parallel to avoid git push/pull issues when running in parallel
+      max-parallel: 1
+      matrix:
+        repo_config: ${{ fromJson(needs.setup-matrix.outputs.python_repos) }}
+
+    runs-on: ubuntu-latest
+    continue-on-error: true
+
+    steps:
+      # prepare GitHub app token
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
+          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
+          owner: edx
+
+      # Installs gettext, a dependency for extracting translation source files in django
+      - name: install gettext
+        run: sudo apt install -y gettext
+
+      # Clones the edx/openedx-translations repository
+      - name: clone ${github.repository}
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
+
+      # Clones the app repository
+      - name: clone ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
+        uses: actions/checkout@v5
+        with:
+          repository: ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
+          ref: ${{ github.event.inputs.ref }}
+          path: translations/${{ matrix.repo_config.repo }}
+          token: ${{ steps.generate_token.outputs.token }}
+
+      - name: prepare the environment with edx-platform specific changes
+        if: matrix.repo_config.repo == 'edx-platform'
+        run: |
+          # This is needed for edx-platform base.txt packages
+          sudo apt install -y libxml2-dev libxmlsec1-dev libxslt1-dev
+
+          # There is a theme directory with it's own conf/locale directory, we need to remove that
+          rm -rf translations/${{ matrix.repo_config.repo }}/themes/conf
+
+      # Setup Python
+      - name: setup python
+        uses: actions/setup-python@v5
+        id: setup_python
+        with:
+          python-version: '3.11'
+          cache: pip
+          # The `edx-platf*rm` wildcard will be expanded to `edx-platform` if its requirement file exists,
+          # otherwise it will be omitted
+          cache-dependency-path: |
+            requirements/translations.txt
+            translations/edx-platf*rm/requirements/edx/base.txt
+
+      # Installs Python requirements from translations.txt
+      - name: install requirements
+        run: |
+          # Install requirements for all packages
+          pip install -r requirements/translations.txt
+
+          EDX_BASE_REQS=translations/edx-platform/requirements/edx/base.txt
+          if test -f $EDX_BASE_REQS; then
+            # Install edx-platform specific apps (e.g. wiki) which is required to extract translations from
+            pip install -r $EDX_BASE_REQS
+          fi
+
+          APP_BASE="translations/${{ matrix.repo_config.repo }}"
+          REQ_FILES=(
+            "$APP_BASE/requirements/base.txt"
+          )
+  
+          # Avoid reinstalling edx-platform requirements.
+          if [[ "${{ matrix.repo_config.repo }}" != "edx-platform" ]]; then
+            APP_BASE="translations/${{ matrix.repo_config.repo }}"
+
+            # Common requirement app file patterns to try to install from
+            REQ_FILES=(
+              "$APP_BASE/requirements/base.txt"
+            )
+
+            for req_file in "${REQ_FILES[@]}"; do
+              if test -f "$req_file"; then
+                echo "Installing $req_file for ${{ matrix.repo_config.repo }}"
+                pip install -r "$req_file" || echo "Failed to install $req_file, continuing..."
+                break
+              fi
+            done
+          fi
+
+      # Extracts the translation source files
+      - name: extract translation source files
+        run: |
+          cd translations/${{ matrix.repo_config.repo }}
+          make extract_translations
+        env:
+          IS_OPENEDX_TRANSLATIONS_WORKFLOW: yes
+
+      # Validate compilation of translation source files
+      - name: validate compilation of translation source files
+        run: |
+          cd translations/${{ matrix.repo_config.repo }}
+          django-admin compilemessages --locale en
+
+      # Preparations so git adds only the translation source files, found in conf/locale/en
+      - name: find the location of the translation source files
+        id: add-sources
+        env:
+          GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
+        run: |
+          git config --global user.name "edx-translations-app"
+          git config --global user.email "edx-translations-app@users.noreply.github.com"
+          # Change directory to translations/${{ matrix.repo_config.repo }}
+          cd translations/${{ matrix.repo_config.repo }}
+          # finds the directory containing the english locale usually located in
+          # */*/conf/locale/en
+          # but also exclude any hidden directories that might exist for some reason
+          EN_DIR=$(find . -type d -not -path '*/.*' -regex ".+conf\/locale\/en$")
+          en_dir_count=$(echo "$EN_DIR" | wc -l)
+          # If the repo complies with OEP-58, then we'll find only one directory that matches the above criteria
+          # Otherwise, we'll consider it an error
+          if [ $en_dir_count -gt 1 ]; then
+            echo "Error: More than one English locale directory found for ${{ matrix.repo_config.repo }}!"
+            exit 1
+          elif [ $en_dir_count -eq 0 ]; then
+            echo "Error: Missing English locale directory for ${{ matrix.repo_config.repo }}!"
+            exit 1
+          fi
+          # Save EN_DIR value to be used in next steps
+          echo "EN_DIR=$EN_DIR" >> $GITHUB_ENV
+          # remove translations/${{ matrix.repo_config.repo }}/.git so we don't commit a submodule
+          rm -rf .git
+
+      - name: add repo translation source files openedx-translations
+        env:
+          GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
+        run: |
+          # finds the django.po and djangojs.po files generated by make
+          # extract_translations into EN_DIR and adds them
+          cd translations/${{ matrix.repo_config.repo }}
+          DJANGO_PATH=$(find $EN_DIR -name 'django.po')
+          DJANGOJS_PATH=$(find $EN_DIR -name 'djangojs.po')
+          ############## Special support for XBlocks
+          # if both files are not found, then it can be an XBlock (thus, text.po and textjs.po files)
+          if [ -z "$DJANGO_PATH" ] && [ -z "$DJANGOJS_PATH" ]; then
+            DJANGO_PATH=$(find $EN_DIR -name 'text.po')
+            DJANGOJS_PATH=$(find $EN_DIR -name 'textjs.po')
+            # Rename the files to django.po and djangojs.po, if exists
+            if [ -n "$DJANGO_PATH" ]; then
+              mv $DJANGO_PATH $(dirname $DJANGO_PATH)/django.po
+              DJANGO_PATH=$(dirname $DJANGO_PATH)/django.po
+            fi
+            if [ -n "$DJANGOJS_PATH" ]; then
+              mv $DJANGOJS_PATH $(dirname $DJANGOJS_PATH)/djangojs.po
+              DJANGOJS_PATH=$(dirname $DJANGOJS_PATH)/djangojs.po
+            fi
+          fi
+          ############## End of - Special support for XBlocks
+          # use (-f) to force add the files even if they are ignored in the source repo
+          git add $DJANGO_PATH $DJANGOJS_PATH -f -v
+          # Check the git statuses of the translation source files
+          echo "GIT_STATUS=$(git status $DJANGO_PATH $DJANGOJS_PATH -s | wc -l)" >> $GITHUB_ENV
+
+      # Attempts to commit the translation source files if there is a difference
+      - name: git commit the translation source files
+        if: "${{ env.GIT_STATUS > 0 }}"
+        run: |
+          # commit the changes
+          git commit -m "chore: add extracted translation source files from ${{ matrix.repo_config.repo }}"
+          # push changes to branch
+          git push
+
+  js-translations:
+    if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_js_repos) == true }}
+    needs: [setup-branch, setup-matrix, python-translations]
+    strategy:
+      # using max-parallel to avoid git push/pull issues when running in parallel
+      max-parallel: 1
+      matrix:
+        # repos missing extract_translations target in makefile:
+        # * frontend-build?
+        # * frontend-app-learner-portal-programs
+        # * frontend-component-cookie-policy-banner
+        # * frontend-app-programs-dashboard
+        # repos with errors running extract_translations
+        # * frontend-template-application
+        repo_config: ${{ fromJson(needs.setup-matrix.outputs.js_repos) }}
+    runs-on: ubuntu-latest
+    continue-on-error: true
+
+    steps:
+    # prepare GitHub app token
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
+          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
+          owner: edx
+
+      # Clones the edx/openedx-translations repository
+      - name: clone ${{ github.repository }}
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
+
+      # Clones the app repository
+      - name: clone ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
+        uses: actions/checkout@v5
+        with:
+          repository: ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
+          ref: ${{ github.event.inputs.ref }}
+          path: translations/${{ matrix.repo_config.repo }}
+          token: ${{ steps.generate_token.outputs.token }}
+
+      # Sets up node/npm
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16
+
+      # Extracts the translation source files
+      - name: extract translation source files
+        run: |
+          cd translations/${{ matrix.repo_config.repo }}
+          make extract_translations
+
+      # git adds only the translation source files, found in src/i18n/transifex_input.json
+      - name: git add the translation source files
+        id: add-sources
+        env:
+          GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
+        run: |
+          # set identity
+          git config --global user.name "edx-translations-app"
+          git config --global user.email "edx-translations-app@users.noreply.github.com"
+          # Change directory to translations/${{ matrix.repo_config.repo }}
+          cd translations/${{ matrix.repo_config.repo }}
+          # remove translations/${{ matrix.repo_config.repo }}/.git so we don't commit a submodule
+          rm -rf .git
+          # find transifex_input.json
+          TRANSIFEX_JSON_PATH=$(find . -name 'transifex_input.json')
+          # stage the transifex_input.json file generated by make
+          git add $TRANSIFEX_JSON_PATH -f -v
+          # Check the git status of the translation source files
+          echo "GIT_STATUS=$(git status $TRANSIFEX_JSON_PATH -s | wc -l)" >> $GITHUB_ENV
+
+      # Attempts to commit the translation source files if there is a difference
+      - name: git commit the translation source files
+        env:
+          GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
+        if: "${{ env.GIT_STATUS > 0 }}"
+        run: |
+          # commit the changes
+          git commit -m "chore: add extracted translation source files from ${{ matrix.repo_config.repo }}"
+          # push changes to branch
+          git push
+
+  # Non-Django, non-JS repositories with a generic extraction interface. This
+  # assumes that a `extract_translations` make target exists and will create
+  # a transifex_input.yaml file in the root of the site.
+  generic-translations:
+    if: false
+    # if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_generic_repos) == true }}
+    needs: [setup-branch, setup-matrix, js-translations]
+    strategy:
+      # using max-parallel to avoid git push/pull issues when running in parallel
+      max-parallel: 1
+      matrix:
+        repository_config: ${{ fromJson(needs.setup-matrix.outputs.generic_repos) }}
+
+    runs-on: ubuntu-latest
+    continue-on-error: true
+
+    steps:
+      # prepare GitHub app token
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
+          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
+          owner: edx
+
+      # Clones the edx/openedx-translations repository
+      - name: clone ${github.repository}
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
+
+      # Clones the app repository
+      - name: clone ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
+        uses: actions/checkout@v5
+        with:
+          repository: ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
+          ref: ${{ github.event.inputs.ref || matrix.repo_config.ref }}
+          path: translations/${{ matrix.repo_config.repo }}
+          token: ${{ steps.generate_token.outputs.token }}
+
+      # Sets up Python
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Installs Python requirements from translations.txt
+      - name: install requirements
+        run: pip install -r requirements/translations.txt
+
+      - name: run optional pre-extraction step
+        if: "${{ matrix.repository_config.before_extract }}"
+        run: |
+          # If the repository has additional requirements or processing steps run them
+          cd translations/${{ matrix.repository_config.repo }}
+          ${{ matrix.repository_config.before_extract }}
+
+      # Extracts the translation source files
+      - name: extract translation source files
+        run: |
+          cd translations/${{ matrix.repository_config.repo }}
+          make extract_translations
+
+      # git adds only the translation source file transifex_input.yaml from
+      # the repo root.
+      - name: git add the translation source files
+        id: add-sources
+        env:
+          GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
+        run: |
+          # set identity
+          git config --global user.name "edx-translations-app"
+          git config --global user.email "edx-translations-app@users.noreply.github.com"
+          # Change directory to translations/${{ matrix.repository_config.repo }}
+          cd translations/${{ matrix.repository_config.repo }}
+
+          # remove translations/${{ matrix.repository_config.repo }}/.git so we don't commit a submodule
+          rm -rf .git
+
+          # stage the transifex_input.yaml file generated by make, force it in
+          # case the file is in .gitignore (it should be)
+          git add ${{ matrix.repository_config.transifex_file_path }} -f -v
+          # Check the git status of the translation source files
+          echo "GIT_STATUS=$(git status ${{ matrix.repository_config.transifex_file_path }} -s | wc -l)" >> $GITHUB_ENV
+
+      # Attempts to commit the translation source files if there is a difference
+      - name: git commit the translation source files
+        if: "${{ env.GIT_STATUS > 0 }}"
+        env:
+          GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
+        run: |
+          # commit the changes
+          git commit -m "chore: add extracted translation source files from ${{ matrix.repository_config.repo }}"
+          # push changes to branch
+          git push
+
+  merge-translations:
+    runs-on: ubuntu-latest
+    #needs: [setup-branch, python-translations, js-translations, generic-translations]
+    needs: [setup-branch, python-translations, js-translations]
+    # If a single repo is specified, at least one job in the needs array will be skipped. Without this condition, the merge-translations job
+    # will be skipped as well.
+    # This allows the workflow to complete and not be marked as failed when the workflow is run on a single repository.
+    if: ${{ !cancelled() }}
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      # prepare GitHub app token
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
+          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
+          owner: edx
+
+      # Clones the edx/openedx-translations repository on the automated/extract-translation-source-files-# branch
+      - name: clone ${{ github.repository }}
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
+          fetch-depth: 0
+
+      # Create a pull request
+      - name: create pull request
+        id: createPR
+        env:
+          # This token requires Write access to the openedx-translations repo
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REPO="${{ github.repository }}"
+          echo "COMMIT_COUNT=$(git rev-list HEAD ^origin/main | wc -l)" >> $GITHUB_ENV
+          echo "PR_URL=$(gh pr create --repo $REPO --title 'chore: add updated translation source files' --body 'This PR is auto-generated by [extract-translation-source-files](https://github.com/'$REPO'/blob/main/.github/workflows/extract-translation-source-files.yml).')" >> $GITHUB_ENV
+          echo ${{ env.PR_URL }}
+
+      # Merges the pull request
+      - name: merge pull request
+        id: mergePR
+        env:
+          # This token requires write access to the openedx-translations repo.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Do not automerge if any of the following are true.
+        # 1. the job is not running on the main branch
+        # 2. the job is not running as the result of a scheduled trigger (i.e. a cron)
+        # 3. there are 0 commits
+        if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'schedule' && env.COMMIT_COUNT > 0 }}
+        run: gh pr merge ${{ env.PR_URL }} --merge --auto
+
+      # Notify that branch did not merge and delete the branch now that it is unnecessary.
+      - name: notify of empty branch and delete branch
+        if: (steps.mergePR.outcome == 'skipped')
+        run: |
+          echo "The branch was not merged and was deleted because the workflow was not run on the main branch, was not scheduled (i.e. a cron), or the branch had 0 commits."
+          git push origin -d ${{ needs.setup-branch.outputs.branch }}
