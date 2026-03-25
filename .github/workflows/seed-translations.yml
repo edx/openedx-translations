@@ -79,7 +79,6 @@ jobs:
               { edxLang: "ar", repoLang: "ar" },
               { edxLang: "ca", repoLang: "ca" },
               { edxLang: "da", repoLang: "da" },
-              { edxLang: "de", repoLang: "de" },
               { edxLang: "de-de", repoLang: "de_DE" },
               { edxLang: "el", repoLang: "el" },
               { edxLang: "es-419", repoLang: "es_419" },
@@ -227,7 +226,7 @@ jobs:
             fi
 
             curl_exit_code=0
-            status_code=$(curl -sS --connect-timeout 10 --max-time 120 \
+            status_code=$(curl -sS --connect-timeout 10 --max-time 180 \
               -w "%{http_code}" \
               -o /tmp/seed_translations_response.txt \
               -X POST "${{ vars.AI_TRANSLATIONS_SEED_TRANSLATIONS_URL }}" \
@@ -252,9 +251,11 @@ jobs:
               cat /tmp/seed_translations_response.txt
               num_failures=$((num_failures+1))
             fi
+
+            'echo"'
           done
         
           if [ "$num_failures" -ne 0 ]; then
-            echo "One or more languages for application ${{ matrix.application }} failed to be translated. Failing job."
+            echo "One or more languages for application ${{ matrix.application }} failed to be seeded. Failing job."
             exit 1
           fi
