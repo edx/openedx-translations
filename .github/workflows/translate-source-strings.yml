@@ -12,7 +12,7 @@ on:
         required: false
         type: string
       translation_language:
-        description: 'Language code to fetch translations for in edX translations format (i.e. BCP 47 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
+        description: 'Language code to fetch translations for in edX translations format (i.e. IETF BCP 47 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
         required: false
         type: string
   # Uncomment after this is manually confirmed.
@@ -154,6 +154,10 @@ jobs:
       - name: Clone ${{ github.repository }}
         uses: actions/checkout@v5
 
+      # Note that when using a workflow_dispatch, this step will create a branch off the specified ref, which may not be the default branch.
+      # This is useful for testing changes to the workflow during development. However, it will generate a branch with the changes on the
+      # specified branch and any generated translations files.
+      # The merge step prevents auto-merge in this case. 
       - name: Create and push branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -174,14 +178,6 @@ jobs:
       pull-requests: write
 
     steps:
-      # - name: Generate GitHub App token
-      #   id: generate_token
-      #   uses: actions/create-github-app-token@v1
-      #   with:
-      #     app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
-      #     private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
-      #     owner: edx
-
       - name: Clone ${{ github.repository }}
         uses: actions/checkout@v5
         with:
@@ -191,6 +187,22 @@ jobs:
         run: |
           git config --global user.name "edx-translations-app"
           git config --global user.email "edx-translations-app@users.noreply.github.com"
+
+      - name: Validate required environment variables
+        run: |
+          missing=0
+          if [ -z "${{ vars.LMS_ACCESS_TOKEN_URL }}" ]; then
+            echo "Required variable LMS_ACCESS_TOKEN_URL is not set."
+            missing=$((missing+1))
+          fi
+          if [ -z "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" ]; then
+            echo "Required variable AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL is not set."
+            missing=$((missing+1))
+          fi
+          if [ "$missing" -ne 0 ]; then
+            echo "One or more required variables are missing. Please configure them in the repository settings under Variables."
+            exit 1
+          fi
 
       - name: Fetch LMS JWT token
         id: fetch-jwt-token
@@ -271,7 +283,7 @@ jobs:
             fi
 
             if [ "$status_code" -eq 200 ]; then
-              echo "API call succeeded for language $edxLang for application ${{ matrix.application }}."
+              echo "API call to fetch translations succeeded for language $edxLang for application ${{ matrix.application }}."
               if ! jq empty "$response_file" 2>/dev/null; then
                 echo "Response for language $edxLang for application ${{ matrix.application }} is not valid JSON. Skipping."
                 num_failures=$((num_failures+1))
@@ -292,7 +304,7 @@ jobs:
                   continue
                 }
 
-              git add "$output_file_path" -f
+              git add "$output_file_path"
             else
               echo "API call failed for language $edxLang for application ${{ matrix.application }} with status code $status_code."
               cat "$response_file"
@@ -352,9 +364,8 @@ jobs:
         # 1. the job is not running on the main branch
         # 2. the job is not running as the result of a scheduled trigger (i.e. a cron)
         # 3. there are 0 commits
-        # if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'schedule' && env.COMMIT_COUNT > 0 }}
-        # run: gh pr merge ${{ env.PR_URL }} --merge --auto
-        run: echo "NO-OP"
+        if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'schedule' && env.COMMIT_COUNT > 0 }}
+        run: gh pr merge ${{ env.PR_URL }} --merge --auto
 
       # Notify that branch did not merge and delete the branch now that it is unnecessary.
       - name: Notify of empty branch and delete branch
