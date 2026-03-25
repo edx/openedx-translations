@@ -269,7 +269,7 @@ jobs:
               num_failures=$((num_failures+1))
             fi
 
-            'echo"'
+            echo ""
           done
         
           if [ "$num_failures" -ne 0 ]; then
