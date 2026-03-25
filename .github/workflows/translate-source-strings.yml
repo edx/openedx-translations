@@ -129,11 +129,11 @@ jobs:
 
             if (selectedApp !== '' && !allJavascriptApps.includes(selectedApp)) {
               core.setFailed(`Selected application "${selectedApp}" is not a valid option.`);
-              return;
+              throw new Error(`Selected application "${selectedApp}" is not a valid option.`);
             }
             if (selectedLanguage !== '' && !Object.keys(languageMap).includes(selectedLanguage)) {
               core.setFailed(`Selected language "${selectedLanguage}" is not a valid option.`);
-              return;
+              throw new Error(`Selected language "${selectedLanguage}" is not a valid option.`);
             }
 
             const javascriptApplications = selectedApp === '' ? allJavascriptApps : [selectedApp];
@@ -330,8 +330,10 @@ jobs:
 
   merge:
     runs-on: ubuntu-latest
-    needs: [setup-branch, translate]
-    if: ${{ !cancelled() }}
+    needs: [setup, setup-branch, translate]
+    # We want to run this job even if the translate job fails. This is because the translate job will fail when one or more translations fais, even
+    # if some translations succeed. We want to merge in the successful translations.
+    if: ${{ !cancelled() && needs.setup.result == 'success' && needs.setup-branch.result == 'success' }}
     permissions:
       contents: write
       pull-requests: write
