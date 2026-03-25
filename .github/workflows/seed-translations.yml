@@ -122,11 +122,11 @@ jobs:
 
             if (selectedApp !== '' && !allJavascriptApps.includes(selectedApp)) {
               core.setFailed(`Selected application "${selectedApp}" is not a valid option.`);
-              return;
+              throw new Error(`Selected application "${selectedApp}" is not a valid option.`);
             }
             if (selectedLanguage !== '' && !Object.keys(languageMap).includes(selectedLanguage)) {
               core.setFailed(`Selected language "${selectedLanguage}" is not a valid option.`);
-              return;
+              throw new Error(`Selected language "${selectedLanguage}" is not a valid option.`);
             }
 
             const javascriptApplications = selectedApp === '' ? allJavascriptApps : [selectedApp];
