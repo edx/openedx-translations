@@ -1,5 +1,5 @@
 # This workflow seeds translations for JavaScript applications by calling the AI translations
-# seed endpoint for each application anbd language code combination, using existing source string files and translated strings file.
+# seed endpoint for each application and language code combination, using existing source string files and translated strings file.
 
 name: Seed translations
 
@@ -157,6 +157,23 @@ jobs:
             echo "Required variable AI_TRANSLATIONS_SEED_TRANSLATIONS_URL is not set."
             missing=$((missing+1))
           fi
+
+          # Mask the client ID and secret to prevent it from being logged
+          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_ID }}"
+          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_SECRET }}"
+
+          # Validate that the client ID is defined
+          if [ -z "${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_ID }}" ]; then
+            echo "Required secret EDX_TRANSLATIONS_STAGE_CLIENT_ID is not set."
+            missing=$((missing+1))
+          fi
+
+          # Validate that the client secret is defined
+          if [ -z "${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_SECRET }}" ]; then
+            echo "Required secret EDX_TRANSLATIONS_STAGE_CLIENT_SECRET is not set."
+            missing=$((missing+1))
+          fi
+
           if [ "$missing" -ne 0 ]; then
             echo "One or more required variables are missing. Please configure them in the repository settings under Variables."
             exit 1
