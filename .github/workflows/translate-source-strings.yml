@@ -1,6 +1,7 @@
-# This workflow generates translations for JavaScript applications by calling the AI translations
-# translate endpoint, supplying a file of source strings.
-# If successful, it commits the translated output, opens a pull request, and auto-merges the pull request.
+# This workflow fetches translations for JavaScript applications by calling the AI translations
+# translate endpoint, using existing source string files.
+# If successful, it commits the translated output and opens a pull request. In a select set of conditions,
+# it auto-merges the pull request.
 
 name: Translate source strings
 
@@ -314,7 +315,7 @@ jobs:
 
           GIT_STATUS=$(git status "translations/${{ matrix.application }}/src/i18n/messages" -s | wc -l)
           if [ "$GIT_STATUS" -gt 0 ]; then
-            git commit -m "chore: add AI translated strings for ${{ matrix.application }}"
+            git commit -m "chore: add AI translatm ed strings for ${{ matrix.application }}"
             git push
           fi
 
