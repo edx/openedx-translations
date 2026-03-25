@@ -1,8 +1,11 @@
 # This workflow fetches translations for JavaScript applications by calling the AI translations
-# translate endpoint, using existing source string files.
+# translate endpoint for each application anbd language code combination, using existing source string files.
 # If successful, it commits the translated output and opens a pull request. In a select set of conditions,
 # it auto-merges the pull request.
 
+
+# This workflow seeds translations for JavaScript applications by calling the AI translations
+# seed endpoint for each application anbd language code combination, using existing source string files and translated strings file.
 name: Translate source strings
 
 on:
