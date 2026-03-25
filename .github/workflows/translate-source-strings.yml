@@ -193,6 +193,7 @@ jobs:
       - name: Validate required environment variables
         run: |
           missing=0
+
           if [ -z "${{ vars.LMS_ACCESS_TOKEN_URL }}" ]; then
             echo "Required variable LMS_ACCESS_TOKEN_URL is not set."
             missing=$((missing+1))
@@ -209,13 +210,13 @@ jobs:
           # Validate that the client ID is defined
           if [ -z "${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_ID }}" ]; then
             echo "Required secret EDX_TRANSLATIONS_STAGE_CLIENT_ID is not set."
-            exit 1
+            missing=$((missing+1))
           fi
 
           # Validate that the client secret is defined
           if [ -z "${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_SECRET }}" ]; then
             echo "Required secret EDX_TRANSLATIONS_STAGE_CLIENT_SECRET is not set."
-            exit 1
+            missing=$((missing+1))
           fi
 
           if [ "$missing" -ne 0 ]; then
