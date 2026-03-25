@@ -149,6 +149,7 @@ jobs:
       - name: Validate required environment variables
         run: |
           missing=0
+
           if [ -z "${{ vars.LMS_ACCESS_TOKEN_URL }}" ]; then
             echo "Required variable LMS_ACCESS_TOKEN_URL is not set."
             missing=$((missing+1))
