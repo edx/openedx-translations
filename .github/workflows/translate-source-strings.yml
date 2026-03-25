@@ -86,7 +86,6 @@ jobs:
               { edxLang: "ar", repoLang: "ar" },
               { edxLang: "ca", repoLang: "ca" },
               { edxLang: "da", repoLang: "da" },
-              { edxLang: "de", repoLang: "de" },
               { edxLang: "de-de", repoLang: "de_DE" },
               { edxLang: "el", repoLang: "el" },
               { edxLang: "es-419", repoLang: "es_419" },
@@ -215,7 +214,7 @@ jobs:
           response_file="/tmp/lms_token_response.json"
 
           curl_exit_code=0
-          status_code=$(curl -sS --connect-timeout 10 --max-time 120 \
+          status_code=$(curl -sS --connect-timeout 10 --max-time 180 \
             -w "%{http_code}" \
             -o "$response_file" \
             -X POST "${{ vars.LMS_ACCESS_TOKEN_URL }}" \
@@ -315,11 +314,13 @@ jobs:
               cat "$response_file"
               num_failures=$((num_failures+1))
             fi
+
+            echo ""
           done
 
           GIT_STATUS=$(git status "translations/${{ matrix.application }}/src/i18n/messages" -s | wc -l)
           if [ "$GIT_STATUS" -gt 0 ]; then
-            git commit -m "chore: add AI translatm ed strings for ${{ matrix.application }}"
+            git commit -m "chore: add AI translated strings for ${{ matrix.application }}"
             git push
           fi
 
