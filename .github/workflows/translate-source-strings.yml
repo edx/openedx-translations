@@ -1,5 +1,6 @@
 # This workflow generates translations for JavaScript applications by calling the AI translations
-# endpoint with source strings files and committing the translated output to a pull request.
+# translate endpoint, supplying a file of source strings.
+# If successful, it commits the translated output, opens a pull request, and auto-merges the pull request.
 
 name: Translate source strings
 
