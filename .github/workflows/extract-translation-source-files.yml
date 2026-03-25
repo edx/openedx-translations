@@ -211,7 +211,7 @@ jobs:
     # creates the branch where all the translations will be added to
     - name: make and push a new branch
       env:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
       run: |
         git checkout -b ${{ steps.dynamic_branch.outputs.branch }}
         git push --set-upstream origin ${{ steps.dynamic_branch.outputs.branch }}
