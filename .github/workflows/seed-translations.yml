@@ -1,6 +1,5 @@
-# This workflow seeds translations by calling the configured seed translations endpoint with
-# a source strings file and translations string file for each application and language code
-# combination.
+# This workflow seeds translations for JavaScript applications by calling the AI translations
+# seed endpoint for each application anbd language code combination, using existing source string files and translated strings file.
 
 name: Seed translations
 
@@ -12,7 +11,7 @@ on:
         required: false
         type: string
       translation_language:
-        description: 'Language code to seed translations for in edX translations format (i.e. BCP 47 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
+        description: 'Language code to seed translations for in edX translations format (i.e. IETF BCP 47 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
         required: false
         type: string
 
@@ -137,8 +136,8 @@ jobs:
             core.setOutput('translation_languages', translationLanguages);
 
   seed-translations:
-    needs: setup
     runs-on: ubuntu-latest
+    needs: [setup]
     strategy:
       matrix:
         application: ${{ fromJson(needs.setup.outputs.javascript_applications) }}
@@ -147,6 +146,22 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v5
+
+      - name: Validate required environment variables
+        run: |
+          missing=0
+          if [ -z "${{ vars.LMS_ACCESS_TOKEN_URL }}" ]; then
+            echo "Required variable LMS_ACCESS_TOKEN_URL is not set."
+            missing=$((missing+1))
+          fi
+          if [ -z "${{ vars.AI_TRANSLATIONS_SEED_TRANSLATIONS_URL }}" ]; then
+            echo "Required variable AI_TRANSLATIONS_SEED_TRANSLATIONS_URL is not set."
+            missing=$((missing+1))
+          fi
+          if [ "$missing" -ne 0 ]; then
+            echo "One or more required variables are missing. Please configure them in the repository settings under Variables."
+            exit 1
+          fi
 
       - name: Fetch LMS JWT token
         id: fetch-jwt-token
