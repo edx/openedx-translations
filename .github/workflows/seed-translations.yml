@@ -26,10 +26,12 @@ jobs:
         id: generate_repo_matrix
         with:
           script: |
+            // This is a mapping from JavaScript applications to additional options.
             const allJavascriptApps = {
               'frontend-app-account': {},
               'frontend-app-admin-portal': {},
               'frontend-app-authn': {},
+              'frontend-app-authoring': {},
               'frontend-app-communications': {},
               'frontend-app-discussions': {},
               'frontend-app-enterprise-api-doc': {},
@@ -53,6 +55,7 @@ jobs:
               'frontend-component-footer-edx': {},
               'frontend-component-header-edx': {},
               'frontend-components-tinymce-advanced-plugins-edx': {},
+              'frontend-enterprise': { pathOverride: 'i18n' },
               'frontend-plugin-advertisements': {},
               'frontend-plugin-authn': {},
               'frontend-plugin-learner-dashboard': {},
@@ -64,7 +67,6 @@ jobs:
               'studio-frontend': {},
               'frontend-plugin-framework': {},
             };
-
 
             // The seed translations endpoint supports language codes in the IETF BCP 47 format.
             // These language codes are a combination of a two-letter language code (i.e. the ISO 639-1 standard)
@@ -103,7 +105,7 @@ jobs:
             ];
 
             // In order to efficiently query for details about a selected language, we maintain a mapping from edX language codes
-            // to the object that describes the language.            
+            // to the object that describes the language.
             const languageMap = languages.reduce((acc, lang) => {
               acc[lang.edxLang] = lang;
               return acc;
@@ -127,7 +129,9 @@ jobs:
               throw new Error(`Selected language "${selectedLanguage}" is not a valid option.`);
             }
 
-            const javascriptApplications = selectedApp === '' ? Object.keys(allJavascriptApps) : [selectedApp];
+            const javascriptApplications = selectedApp === ''
+              ? Object.entries(allJavascriptApps).map(([appName, config]) => ({ appName, ...config }))
+              : [{ appName: selectedApp, ...allJavascriptApps[selectedApp] }];
             const translationLanguages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
 
             core.setOutput('javascript_applications', javascriptApplications);
@@ -180,7 +184,6 @@ jobs:
           fi
 
       - name: Fetch LMS JWT token
-        id: fetch-jwt-token
         run: |
           response_file="/tmp/lms_token_response.json"
 
@@ -200,7 +203,7 @@ jobs:
           fi
 
           if [ "$status_code" -ne 200 ]; then
-            echo "API call to fetch LMS JWT failed for application ${{ matrix.application }} with status code $status_code."
+            echo "API call to fetch LMS JWT failed for application ${{ matrix.application.appName }} with status code $status_code."
             exit 1
           fi
 
@@ -215,31 +218,33 @@ jobs:
           echo "::add-mask::$jwt_token"
           echo "JWT_TOKEN=$jwt_token" >> $GITHUB_ENV
 
-      - name: Seed translation languages for ${{ matrix.application }}
+      - name: Seed translation languages for ${{ matrix.application.appName }}
         run: |
           # Mask the JWT so as not to inadvertently expose it.
           echo "::add-mask::$JWT_TOKEN"
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
+          i18n_path="${{ matrix.application.pathOverride || 'src/i18n' }}"
+
           num_failures=0
 
           for lang in $(echo "$translation_languages" | jq -c '.[]'); do
             edxLang=$(echo "$lang" | jq -r '.edxLang')
             repoLang=$(echo "$lang" | jq -r '.repoLang')
 
-            echo "Processing language $edxLang for application ${{ matrix.application }}."
+            echo "Processing language $edxLang for application ${{ matrix.application.appName }}."
 
-            translations_file_path=$(find translations/${{ matrix.application }} -name "${repoLang}.json")
-            source_strings_file_path=$(find translations/${{ matrix.application }} -name "transifex_input.json")
+            translations_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/messages/${repoLang}.json"
+            source_strings_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/transifex_input.json"
 
             if [ ! -f "$translations_file_path" ]; then
-              echo "Translations file ${repoLang}.json does not exist in translations/${{ matrix.application }} directory. Skipping."
+              echo "Translations file does not exist: $translations_file_path. Skipping."
               echo ""
               continue
             fi
 
             if [ ! -f "$source_strings_file_path" ]; then
-              echo "Source strings file transifex_input.json does not exist in translations/${{ matrix.application }} directory. Skipping."
+              echo "Source strings file does not exist: $source_strings_file_path. Skipping."
               echo ""
               continue
             fi
@@ -249,7 +254,7 @@ jobs:
               -w "%{http_code}" \
               -o /tmp/seed_translations_response.txt \
               -X POST "${{ vars.AI_TRANSLATIONS_SEED_TRANSLATIONS_URL }}" \
-              -F "application_name=${{ matrix.application }}" \
+              -F "application_name=${{ matrix.application.appName }}" \
               -F "translation_language=$edxLang" \
               -F "source_language=en" \
               -F "translation_file=@$translations_file_path" \
@@ -257,24 +262,24 @@ jobs:
               -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
 
             if [ "$curl_exit_code" -ne 0 ]; then
-              echo "Curl request to seed translations failed for language $edxLang for application ${{ matrix.application }} with exit code $curl_exit_code."
+              echo "Curl request to seed translations failed for language $edxLang for application ${{ matrix.application.appName }} with exit code $curl_exit_code."
               cat /tmp/seed_translations_response.txt
               num_failures=$((num_failures+1))
               continue
             fi
 
             if [ "$status_code" -eq 200 ]; then
-              echo "API call to seed translations succeeded for language $edxLang for application ${{ matrix.application }} with status code $status_code."
+              echo "API call to seed translations succeeded for language $edxLang for application ${{ matrix.application.appName }} with status code $status_code."
             else
-              echo "API call to seed translations failed for language $edxLang for application ${{ matrix.application }} with status code $status_code."
+              echo "API call to seed translations failed for language $edxLang for application ${{ matrix.application.appName }} with status code $status_code."
               cat /tmp/seed_translations_response.txt
               num_failures=$((num_failures+1))
             fi
 
             echo ""
           done
-        
+
           if [ "$num_failures" -ne 0 ]; then
-            echo "One or more languages for application ${{ matrix.application }} failed to be seeded. Failing job."
+            echo "One or more languages for application ${{ matrix.application.appName }} failed to be seeded. Failing job."
             exit 1
           fi
