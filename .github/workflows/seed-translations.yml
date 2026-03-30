@@ -238,10 +238,6 @@ jobs:
               continue
             fi
 
-            total_keys=$(jq 'length' "$translations_file_path")
-            non_empty_keys=$(jq '[to_entries[] | select(.value != null and .value != "")] | length' "$translations_file_path")
-            echo "Translations file $translations_file_path: $total_keys total keys, $non_empty_keys non-empty keys."
-
             if [ ! -f "$source_strings_file_path" ]; then
               echo "Source strings file transifex_input.json does not exist in translations/${{ matrix.application }} directory. Skipping."
               echo ""
