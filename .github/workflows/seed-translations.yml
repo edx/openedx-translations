@@ -68,7 +68,7 @@ jobs:
 
             // The seed translations endpoint supports language codes in the IETF BCP 47 format.
             // These language codes are a combination of a two-letter language code (i.e. the ISO 639-1 standard)
-            // and the country code (i.e. the ISO 3166-1 alpha-2 standard), separated by a hyphen.
+            // and the region subtag (ISO 3166-1 alpha-2 or UN M.49), separated by a hyphen.
             // As an example, "it-it", "es-419", "pt-pt", etc. We'll call this the edX language code.
             // However, the filenames in this repository for JSON messages files use languages in the IETF BCP 47 format
             // but with underscores instead of hyphens. This is not uncommon. We'll call this the repo language code.
@@ -175,7 +175,7 @@ jobs:
           fi
 
           if [ "$missing" -ne 0 ]; then
-            echo "One or more required variables are missing. Please configure them in the repository settings under Variables."
+            echo "One or more required variables or secrets are missing. Please configure them in the repository settings under Variables or Secrets."
             exit 1
           fi
 
@@ -229,8 +229,8 @@ jobs:
 
             echo "Processing language $edxLang for application ${{ matrix.application }}."
 
-            translations_file_path="translations/${{ matrix.application }}/src/i18n/messages/${repoLang}.json"
-            source_strings_file_path="translations/${{ matrix.application }}/src/i18n/transifex_input.json"
+            translations_file_path=$(find translations/${{ matrix.application }} -name '${{ repoLang }}.json')
+            source_strings_file_path=$(find translations/${{ matrix.application }} -name 'transifex_input.json')
 
             if [ ! -f "$translations_file_path" ]; then
               echo "Translations file does not exist: $translations_file_path. Skipping."
