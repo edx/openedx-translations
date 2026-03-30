@@ -284,8 +284,8 @@ jobs:
             echo ""
           done
 
-          if [ "$num_attempted" -eq 0 ] && { [ -n "$app_input" ] || [ -n "$lang_input" ]; }; then
-            echo "No translations were seeded for application ${{ matrix.application.appName }} despite specific inputs being provided. Check that the application directory and translation files exist at the expected path."
+          if [ "$num_attempted" -eq 0 ]; then
+            echo "No translations were seeded for application ${{ matrix.application.appName }}. Check that the application directory and translation files exist at the expected path."
             exit 1
           fi
 
