@@ -225,8 +225,11 @@ jobs:
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
           i18n_path="${{ matrix.application.pathOverride || 'src/i18n' }}"
+          app_input="${{ github.event.inputs.application_name }}"
+          lang_input="${{ github.event.inputs.translation_language }}"
 
           num_failures=0
+          num_attempted=0
 
           for lang in $(echo "$translation_languages" | jq -c '.[]'); do
             edxLang=$(echo "$lang" | jq -r '.edxLang')
@@ -248,6 +251,8 @@ jobs:
               echo ""
               continue
             fi
+
+            num_attempted=$((num_attempted+1))
 
             curl_exit_code=0
             status_code=$(curl -sS --connect-timeout 10 --max-time 180 \
@@ -278,6 +283,11 @@ jobs:
 
             echo ""
           done
+
+          if [ "$num_attempted" -eq 0 ] && { [ -n "$app_input" ] || [ -n "$lang_input" ]; }; then
+            echo "No translations were seeded for application ${{ matrix.application.appName }} despite specific inputs being provided. Check that the application directory and translation files exist at the expected path."
+            exit 1
+          fi
 
           if [ "$num_failures" -ne 0 ]; then
             echo "One or more languages for application ${{ matrix.application.appName }} failed to be seeded. Failing job."
