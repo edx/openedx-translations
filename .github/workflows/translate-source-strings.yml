@@ -9,14 +9,14 @@ on:
   workflow_dispatch:
     inputs:
       application_name:
-        description: 'Application to fetch translations for, corresponding to a repository name under the translations directory. Leave blank to run all.'
+        description: 'JavaScript application to fetch translations for, corresponding to a JavaScript app repository name under the translations directory. Leave blank to run all.'
         required: false
         type: string
       translation_language:
         description: 'Language code to fetch translations for in edX translations format (i.e. IETF BCP 47 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
         required: false
         type: string
-  # Uncomment after this is manually confirmed.
+  # Uncomment after this is manually confirmed and existing translated strings have been seeded.
   # schedule:
   #   - cron: '0 0 * * 0'  # every Sunday at midnight
 

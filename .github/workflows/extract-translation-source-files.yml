@@ -17,7 +17,7 @@ on:
         default: ''
         type: string
   schedule:
-    - cron: '0 0 */2 * *'  # every other day at midnight
+    - cron: '0 0 * * *'  # every day at midnight UTC
 
 jobs:
   setup-matrix:
