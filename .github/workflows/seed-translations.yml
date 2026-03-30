@@ -26,44 +26,44 @@ jobs:
         id: generate_repo_matrix
         with:
           script: |
-            const allJavascriptApps = [
-              'frontend-app-account',
-              'frontend-app-admin-portal',
-              'frontend-app-authn',
-              'frontend-app-communications',
-              'frontend-app-discussions',
-              'frontend-app-enterprise-api-doc',
-              'frontend-app-enterprise-checkout',
-              'frontend-app-enterprise-public-catalog',
-              'frontend-app-gradebook',
-              'frontend-app-learner-dashboard',
-              'frontend-app-learner-portal-enterprise',
-              'frontend-app-learner-portal-programs',
-              'frontend-app-learner-record',
-              'frontend-app-learning',
-              'frontend-app-ora',
-              'frontend-app-ora-grading',
-              'frontend-app-payment',
-              'frontend-app-profile',
-              'frontend-app-program-console',
-              'frontend-app-publisher',
-              'frontend-app-skills',
-              'frontend-app-support-tools',
-              'frontend-component-authn-edx',
-              'frontend-component-footer-edx',
-              'frontend-component-header-edx',
-              'frontend-components-tinymce-advanced-plugins-edx',
-              'frontend-plugin-advertisements',
-              'frontend-plugin-authn',
-              'frontend-plugin-learner-dashboard',
-              'frontend-plugin-notifications',
-              'frontend-plugin-persona',
-              'frontend-plugin-recommendations',
-              'frontend-platform',
-              'paragon',
-              'studio-frontend',
-              'frontend-plugin-framework',
-            ];
+            const allJavascriptApps = {
+              'frontend-app-account': {},
+              'frontend-app-admin-portal': {},
+              'frontend-app-authn': {},
+              'frontend-app-communications': {},
+              'frontend-app-discussions': {},
+              'frontend-app-enterprise-api-doc': {},
+              'frontend-app-enterprise-checkout': {},
+              'frontend-app-enterprise-public-catalog': {},
+              'frontend-app-gradebook': {},
+              'frontend-app-learner-dashboard': {},
+              'frontend-app-learner-portal-enterprise': {},
+              'frontend-app-learner-portal-programs': {},
+              'frontend-app-learner-record': {},
+              'frontend-app-learning': {},
+              'frontend-app-ora': {},
+              'frontend-app-ora-grading': {},
+              'frontend-app-payment': {},
+              'frontend-app-profile': {},
+              'frontend-app-program-console': {},
+              'frontend-app-publisher': {},
+              'frontend-app-skills': {},
+              'frontend-app-support-tools': {},
+              'frontend-component-authn-edx': {},
+              'frontend-component-footer-edx': {},
+              'frontend-component-header-edx': {},
+              'frontend-components-tinymce-advanced-plugins-edx': {},
+              'frontend-plugin-advertisements': {},
+              'frontend-plugin-authn': {},
+              'frontend-plugin-learner-dashboard': {},
+              'frontend-plugin-notifications': {},
+              'frontend-plugin-persona': {},
+              'frontend-plugin-recommendations': {},
+              'frontend-platform': {},
+              'paragon': {},
+              'studio-frontend': {},
+              'frontend-plugin-framework': {},
+            };
 
 
             // The seed translations endpoint supports language codes in the IETF BCP 47 format.
@@ -118,7 +118,7 @@ jobs:
             const selectedApp = appInput ? appInput.toLowerCase() : '';
             const selectedLanguage = languageInput ? languageInput.toLowerCase() : '';
 
-            if (selectedApp !== '' && !allJavascriptApps.includes(selectedApp)) {
+            if (selectedApp !== '' && !Object.keys(allJavascriptApps).includes(selectedApp)) {
               core.setFailed(`Selected application "${selectedApp}" is not a valid option.`);
               throw new Error(`Selected application "${selectedApp}" is not a valid option.`);
             }
@@ -127,7 +127,7 @@ jobs:
               throw new Error(`Selected language "${selectedLanguage}" is not a valid option.`);
             }
 
-            const javascriptApplications = selectedApp === '' ? allJavascriptApps : [selectedApp];
+            const javascriptApplications = selectedApp === '' ? Object.keys(allJavascriptApps) : [selectedApp];
             const translationLanguages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
 
             core.setOutput('javascript_applications', javascriptApplications);
