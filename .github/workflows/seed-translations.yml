@@ -234,11 +234,13 @@ jobs:
 
             if [ ! -f "$translations_file_path" ]; then
               echo "Translations file ${repoLang}.json does not exist in translations/${{ matrix.application }} directory. Skipping."
+              echo ""
               continue
             fi
 
             if [ ! -f "$source_strings_file_path" ]; then
               echo "Source strings file transifex_input.json does not exist in translations/${{ matrix.application }} directory. Skipping."
+              echo ""
               continue
             fi
 
