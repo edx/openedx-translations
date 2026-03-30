@@ -229,7 +229,7 @@ jobs:
 
             echo "Processing language $edxLang for application ${{ matrix.application }}."
 
-            translations_file_path=$(find translations/${{ matrix.application }} -name '${{ repoLang }}.json')
+            translations_file_path=$(find translations/${{ matrix.application }} -name '${repoLang}.json')
             source_strings_file_path=$(find translations/${{ matrix.application }} -name 'transifex_input.json')
 
             if [ ! -f "$translations_file_path" ]; then
