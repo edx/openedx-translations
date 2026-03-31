@@ -254,6 +254,10 @@ jobs:
 
             num_attempted=$((num_attempted+1))
 
+            total_keys=$(jq 'length' "$translations_file_path")
+            non_empty_keys=$(jq '[to_entries[] | select(.value != "" and .value != null)] | length' "$translations_file_path")
+            echo "Translations file $translations_file_path: $total_keys total keys, $non_empty_keys non-empty keys."
+
             curl_exit_code=0
             status_code=$(curl -sS --connect-timeout 10 --max-time 180 \
               -w "%{http_code}" \
