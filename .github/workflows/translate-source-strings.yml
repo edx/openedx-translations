@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       application_name:
-        description: 'JavaScript application to fetch translations for, corresponding to a JavaScript app repository name under the translations directory. Leave blank to run all.'
+        description: 'JavaScript application to fetch translations for, corresponding to a repository name under the translations directory. Leave blank to run all.'
         required: false
         type: string
       translation_language:
@@ -18,67 +18,70 @@ on:
         type: string
   # Uncomment after this is manually confirmed and existing translated strings have been seeded.
   # schedule:
-  #   - cron: '0 0 * * 0'  # every Sunday at midnight
+  #  - cron: '0 0 * * *'  # every day at midnight UTC
+
 
 jobs:
   setup:
     runs-on: ubuntu-latest
     outputs:
-      javascript_applications: ${{ steps.generate_matrix.outputs.javascript_applications }}
-      translation_languages: ${{ steps.generate_matrix.outputs.translation_languages }}
+      javascript_applications: ${{ steps.generate_repo_matrix.outputs.javascript_applications }}
+      translation_languages: ${{ steps.generate_repo_matrix.outputs.translation_languages }}
     steps:
       - uses: actions/github-script@v7
-        id: generate_matrix
+        id: generate_repo_matrix
         with:
           script: |
-            const allJavascriptApps = [
-              'frontend-app-account',
-              'frontend-app-admin-portal',
-              'frontend-app-authn',
-              'frontend-app-communications',
-              'frontend-app-discussions',
-              'frontend-app-enterprise-api-doc',
-              'frontend-app-enterprise-checkout',
-              'frontend-app-enterprise-public-catalog',
-              'frontend-app-gradebook',
-              'frontend-app-learner-dashboard',
-              'frontend-app-learner-portal-enterprise',
-              'frontend-app-learner-portal-programs',
-              'frontend-app-learner-record',
-              'frontend-app-learning',
-              'frontend-app-library-authoring',
-              'frontend-app-ora',
-              'frontend-app-ora-grading',
-              'frontend-app-payment',
-              'frontend-app-profile',
-              'frontend-app-program-console',
-              'frontend-app-publisher',
-              'frontend-app-skills',
-              'frontend-app-support-tools',
-              'frontend-component-authn-edx',
-              'frontend-component-footer-edx',
-              'frontend-component-header-edx',
-              'frontend-components-tinymce-advanced-plugins-edx',
-              'frontend-plugin-advertisements',
-              'frontend-plugin-authn',
-              'frontend-plugin-learner-dashboard',
-              'frontend-plugin-notifications',
-              'frontend-plugin-persona',
-              'frontend-plugin-recommendations',
-              'frontend-platform',
-              'paragon',
-              'studio-frontend',
-              'frontend-plugin-framework',
-            ];
+            // This is a mapping from JavaScript applications to additional options.
+            const allJavascriptApps = {
+              'frontend-app-account': {},
+              'frontend-app-admin-portal': {},
+              'frontend-app-authn': {},
+              'frontend-app-communications': {},
+              'frontend-app-discussions': {},
+              'frontend-app-enterprise-api-doc': {},
+              'frontend-app-enterprise-checkout': {},
+              'frontend-app-enterprise-public-catalog': {},
+              'frontend-app-gradebook': {},
+              'frontend-app-learner-dashboard': {},
+              'frontend-app-learner-portal-enterprise': {},
+              'frontend-app-learner-portal-programs': {},
+              'frontend-app-learner-record': {},
+              'frontend-app-learning': {},
+              'frontend-app-ora': {},
+              'frontend-app-ora-grading': {},
+              'frontend-app-payment': {},
+              'frontend-app-profile': {},
+              'frontend-app-program-console': {},
+              'frontend-app-publisher': {},
+              'frontend-app-skills': {},
+              'frontend-app-support-tools': {},
+              'frontend-component-authn-edx': {},
+              'frontend-component-footer-edx': {},
+              'frontend-component-header-edx': {},
+              'frontend-components-tinymce-advanced-plugins-edx': {},
+              'frontend-enterprise': { pathOverride: 'i18n' },
+              'frontend-plugin-advertisements': {},
+              'frontend-plugin-authn': {},
+              'frontend-plugin-learner-dashboard': {},
+              'frontend-plugin-notifications': {},
+              'frontend-plugin-persona': {},
+              'frontend-plugin-recommendations': {},
+              'frontend-platform': {},
+              'paragon': {},
+              'studio-frontend': {},
+              'frontend-plugin-framework': {},
+            };
+
 
             // The fetch translations endpoint supports language codes in the IETF BCP 47 format.
             // These language codes are a combination of a two-letter language code (i.e. the ISO 639-1 standard)
-            // and the country code (i.e. the ISO 3166-1 alpha-2 standard), separated by a hyphen.
+            // and the region subtag (ISO 3166-1 alpha-2 or UN M.49), separated by a hyphen.
             // As an example, "it-it", "es-419", "pt-pt", etc. We'll call this the edX language code.
             // However, the filenames in this repository for JSON messages files use languages in the IETF BCP 47 format
-            // but with underscores instead of hyphens. We'll call this the repo language code.
+            // but with underscores instead of hyphens. This is not uncommon. We'll call this the repo language code.
             // The languages are defined as objects containing both language codes because the edX language code is required
-            // to call the fetch translations API while the repo code is required to name the output translation file.
+            // to call the fetch translations API while the repo code is required to name the output translation messages files.
             const languages = [
               { edxLang: "ar", repoLang: "ar" },
               { edxLang: "ca", repoLang: "ca" },
@@ -107,8 +110,8 @@ jobs:
               { edxLang: "zh-cn", repoLang: "zh_CN" }
             ];
 
-            // In order to efficiently query for details about a selected language, we maintain a mapping
-            // from edX language codes to the object that describes the language.
+            // In order to efficiently query for details about a selected language, we maintain a mapping from edX language codes
+            // to the object that describes the language.
             const languageMap = languages.reduce((acc, lang) => {
               acc[lang.edxLang] = lang;
               return acc;
@@ -123,7 +126,7 @@ jobs:
             const selectedApp = appInput ? appInput.toLowerCase() : '';
             const selectedLanguage = languageInput ? languageInput.toLowerCase() : '';
 
-            if (selectedApp !== '' && !allJavascriptApps.includes(selectedApp)) {
+            if (selectedApp !== '' && !Object.keys(allJavascriptApps).includes(selectedApp)) {
               core.setFailed(`Selected application "${selectedApp}" is not a valid option.`);
               throw new Error(`Selected application "${selectedApp}" is not a valid option.`);
             }
@@ -131,12 +134,14 @@ jobs:
               core.setFailed(`Selected language "${selectedLanguage}" is not a valid option.`);
               throw new Error(`Selected language "${selectedLanguage}" is not a valid option.`);
             }
-
-            const javascriptApplications = selectedApp === '' ? allJavascriptApps : [selectedApp];
+  
+            const javascriptApplications = selectedApp === ''
+              ? Object.entries(allJavascriptApps).map(([appName, config]) => ({ appName, ...config }))
+              : [{ appName: selectedApp, ...allJavascriptApps[selectedApp] }];
             const translationLanguages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
 
-            core.setOutput('javascript_applications', JSON.stringify(javascriptApplications));
-            core.setOutput('translation_languages', JSON.stringify(translationLanguages));
+            core.setOutput('javascript_applications', javascriptApplications);
+            core.setOutput('translation_languages', translationLanguages);
 
   setup-branch:
     runs-on: ubuntu-latest
@@ -220,12 +225,11 @@ jobs:
           fi
 
           if [ "$missing" -ne 0 ]; then
-            echo "One or more required variables are missing. Please configure them in the repository settings under Variables."
+            echo "One or more required variables or secrets are missing. Please configure them in the repository settings under Variables."
             exit 1
           fi
 
       - name: Fetch LMS JWT token
-        id: fetch-jwt-token
         run: |
           response_file="/tmp/lms_token_response.json"
 
@@ -245,7 +249,7 @@ jobs:
           fi
 
           if [ "$status_code" -ne 200 ]; then
-            echo "API call to fetch LMS JWT failed for application ${{ matrix.application }} with status code $status_code."
+            echo "API call to fetch LMS JWT failed for application ${{ matrix.application.appName }} with status code $status_code."
             exit 1
           fi
 
@@ -260,52 +264,58 @@ jobs:
           echo "::add-mask::$jwt_token"
           echo "JWT_TOKEN=$jwt_token" >> $GITHUB_ENV
 
-      - name: Translate source strings for ${{ matrix.application }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Translate source strings for ${{ matrix.application.appName }}
         run: |
           # Mask the JWT so as not to inadvertently expose it.
           echo "::add-mask::$JWT_TOKEN"
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
+          i18n_path="${{ matrix.application.pathOverride || 'src/i18n' }}"
+
           num_failures=0
+          num_attempted=0
 
           for lang in $(echo "$translation_languages" | jq -c '.[]'); do
             edxLang=$(echo "$lang" | jq -r '.edxLang')
             repoLang=$(echo "$lang" | jq -r '.repoLang')
 
-            echo "Processing language $edxLang for application ${{ matrix.application }}."
+            echo "Processing language $edxLang for application ${{ matrix.application.appName }}."
 
-            source_strings_file_path="translations/${{ matrix.application }}/src/i18n/transifex_input.json"
+            source_strings_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/transifex_input.json"
 
             if [ ! -f "$source_strings_file_path" ]; then
               echo "Source strings file does not exist: $source_strings_file_path. Skipping."
+              echo ""
               continue
             fi
 
-            output_file_path="translations/${{ matrix.application }}/src/i18n/messages/${repoLang}.json"
+            num_attempted=$((num_attempted+1))
+
+            output_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/messages/${repoLang}.json"
             response_file="/tmp/ai_translate_response_${edxLang}.json"
 
             curl_exit_code=0
-            status_code=$(curl -sS --connect-timeout 10 --max-time 120 \
+            status_code=$(curl -sS --connect-timeout 10 --max-time 180 \
               -w "%{http_code}" \
               -o "$response_file" \
               -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
               -F "file=@$source_strings_file_path" \
-              -F "application_name=${{ matrix.application }}" \
+              -F "application_name=${{ matrix.application.appName }}" \
               -F "language=$edxLang" \
               -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
 
             if [ "$curl_exit_code" -ne 0 ]; then
-              echo "Curl request to fetch translations failed for language $edxLang for application ${{ matrix.application }} with exit code $curl_exit_code."
+              echo "Curl request to fetch translations failed for language $edxLang for application ${{ matrix.application.appName }} with exit code $curl_exit_code."
+              cat $response_file
+
               num_failures=$((num_failures+1))
               continue
             fi
 
             if [ "$status_code" -eq 200 ]; then
-              echo "API call to fetch translations succeeded for language $edxLang for application ${{ matrix.application }}."
+              echo "API call to fetch translations succeeded for language $edxLang for application ${{ matrix.application.appName }}."
               if ! jq empty "$response_file" 2>/dev/null; then
-                echo "Response for language $edxLang for application ${{ matrix.application }} is not valid JSON. Skipping."
+                echo "Response for language $edxLang for application ${{ matrix.application.appName }} is not valid JSON. Skipping."
                 num_failures=$((num_failures+1))
                 continue
               fi
@@ -318,7 +328,7 @@ jobs:
               jq . "$response_file" > "${output_file_path}.tmp" \
                 && mv "${output_file_path}.tmp" "$output_file_path" \
                 || {
-                  echo "Failed to write translated strings for language $edxLang for application ${{ matrix.application }} to $output_file_path. Skipping."
+                  echo "Failed to write translated strings for language $edxLang for application ${{ matrix.application.appName }} to $output_file_path. Skipping."
                   rm -f "${output_file_path}.tmp"
                   num_failures=$((num_failures+1))
                   continue
@@ -326,7 +336,7 @@ jobs:
 
               git add "$output_file_path"
             else
-              echo "API call failed for language $edxLang for application ${{ matrix.application }} with status code $status_code."
+              echo "API call to fetch translations failed for language $edxLang for application ${{ matrix.application.appName }} with status code $status_code."
               cat "$response_file"
               num_failures=$((num_failures+1))
             fi
@@ -334,14 +344,19 @@ jobs:
             echo ""
           done
 
-          GIT_STATUS=$(git status "translations/${{ matrix.application }}/src/i18n/messages" -s | wc -l)
+          if [ "$num_attempted" -eq 0 ]; then
+            echo "No strings were translated for application ${{ matrix.application.appName }}. Check that the application directory and source strings file exist at the expected path."
+            exit 1
+          fi
+
+          GIT_STATUS=$(git status "translations/${{ matrix.application.appName }}/${i18n_path}/messages" -s | wc -l)
           if [ "$GIT_STATUS" -gt 0 ]; then
-            git commit -m "chore: add AI translated strings for ${{ matrix.application }}"
+            git commit -m "chore: add AI translated strings for ${{ matrix.application.appName }}"
             git push
           fi
 
           if [ "$num_failures" -ne 0 ]; then
-            echo "One or more languages for application ${{ matrix.application }} failed to be translated. Failing job."
+            echo "One or more languages for application ${{ matrix.application.appName }} failed to be translated. Failing job."
             exit 1
           fi
 
