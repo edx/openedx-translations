@@ -16,9 +16,8 @@ on:
         description: 'Language code to fetch translations for in edX translations format (i.e. IETF BCP 47 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
         required: false
         type: string
-  # Uncomment after this is manually confirmed and existing translated strings have been seeded.
-  # schedule:
-  #  - cron: '0 0 * * *'  # every day at midnight UTC
+  schedule:
+   - cron: '0 0 * * *'  # every day at midnight UTC
 
 
 jobs:
@@ -33,6 +32,7 @@ jobs:
         with:
           script: |
             // This is a mapping from JavaScript applications to additional options.
+            // * pathOverride: the path to the root of the application's translations directory, defaults to src/i18n
             const allJavascriptApps = {
               'frontend-app-account': {},
               'frontend-app-admin-portal': {},
@@ -226,7 +226,7 @@ jobs:
           fi
 
           if [ "$missing" -ne 0 ]; then
-            echo "One or more required variables or secrets are missing. Please configure them in the repository settings under Variables."
+            echo "One or more required variables or secrets are missing. Please configure them in the repository settings under Secrets and variables."
             exit 1
           fi
 

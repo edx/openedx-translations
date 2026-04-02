@@ -27,6 +27,7 @@ jobs:
         with:
           script: |
             // This is a mapping from JavaScript applications to additional options.
+            // * pathOverride: the path to the root of the application's translations directory, defaults to src/i18n
             const allJavascriptApps = {
               'frontend-app-account': {},
               'frontend-app-admin-portal': {},
@@ -179,7 +180,7 @@ jobs:
           fi
 
           if [ "$missing" -ne 0 ]; then
-            echo "One or more required variables or secrets are missing. Please configure them in the repository settings under Variables or Secrets."
+            echo "One or more required variables or secrets are missing. Please configure them in the repository settings under Secrets and variables."
             exit 1
           fi
 
