@@ -295,8 +295,14 @@ jobs:
             output_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/messages/${repoLang}.json"
             response_file="/tmp/ai_translate_response_${edxLang}.json"
 
+            # The fetch translations endpoint occassionally times out with a 504 Gateway Timeout error when
+            # the underlying request to the AI translations service exceeds 60 seconds.
+            # However, once the request completes, then subsequent requests will take much less time because
+            # the translations are cached.
+            # Most requests complete in under 15 seconds. For this reason, we retry once after 30 seconds to
+            # increase the likelihood of success. Requests that still fail will be picked up on the following run of this workflow.
             curl_exit_code=0
-            status_code=$(curl -sS --connect-timeout 10 --max-time 180 \
+            status_code=$(curl -sS --connect-timeout 10 --max-time 180 --retry 1 --retry-delay 30 \
               -w "%{http_code}" \
               -o "$response_file" \
               -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
