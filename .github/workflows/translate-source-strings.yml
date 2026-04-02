@@ -16,9 +16,6 @@ on:
         description: 'Language code to fetch translations for in edX translations format (i.e. IETF BCP 47 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
         required: false
         type: string
-  schedule:
-   - cron: '0 3 * * *'  # every day at 3:00 UTC
-
 
 jobs:
   setup:
