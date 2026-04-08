@@ -14,6 +14,8 @@ on:
         description: 'Language code to seed translations for in edX translations format (i.e. IETF BCP 47 format), typically {language-code}{-region-code (optional)} (e.g. es-419 or pt-PT). This is case insensitive. Leave blank to run all.'
         required: false
         type: string
+  schedule:
+   - cron: '0 3 * * *'  # every day at 3:00 UTC
 
 jobs:
   setup:
@@ -83,9 +85,6 @@ jobs:
               { edxLang: "da", repoLang: "da" },
               { edxLang: "de-de", repoLang: "de_DE" },
               { edxLang: "el", repoLang: "el" },
-              { edxLang: "es-419", repoLang: "es_419" },
-              { edxLang: "es-es", repoLang: "es_ES" },
-              { edxLang: "fa", repoLang: "fa" },
               { edxLang: "fr", repoLang: "fr" },
               { edxLang: "fr-ca", repoLang: "fr_CA" },
               { edxLang: "he", repoLang: "he" },
