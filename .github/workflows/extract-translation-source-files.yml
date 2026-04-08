@@ -145,7 +145,7 @@ jobs:
 
             core.setOutput('hasPythonRepos', true);
             core.setOutput('hasJavascriptRepos', true);
-            core.setOutput('hasMonorepos', true);
+            core.setOutput('hasMonorepos', monoreposWithSubpackages.length > 0);
             core.setOutput('hasGenericRepos', false);
 
             if (selectedRepo === '') {
@@ -571,6 +571,9 @@ jobs:
                 fi
               fi
               cd ../..
+            else
+              echo "Error: Package directory 'packages/$package' not found"
+              failed=1
             fi
           done
           if [ "$failed" -ne 0 ]; then
