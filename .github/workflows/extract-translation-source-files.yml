@@ -559,8 +559,8 @@ jobs:
             if [ -d "packages/$package" ]; then
               echo "Extracting translations for packages/$package"
               cd "packages/$package"
-              if [ -f Makefile ] && grep -q 'i18n\.extract' Makefile; then
-                if ! make i18n.extract; then
+              if [ -f Makefile ] && grep -q 'extract_translations' Makefile; then
+                if ! make extract_translations; then
                   echo "Translation extraction failed for $package"
                   failed=1
                 fi
