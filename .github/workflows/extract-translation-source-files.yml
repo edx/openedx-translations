@@ -565,8 +565,16 @@ jobs:
                   failed=1
                 fi
               else
-                if ! npm run i18n_extract --if-present; then
-                  echo "Translation extraction failed for $package"
+                if [ ! -f package.json ]; then
+                  echo "Translation extraction failed for $package: package.json not found"
+                  failed=1
+                elif node -e "const pkg=require('./package.json'); process.exit(pkg.scripts.extract_translations ? 0 : 1)"; then
+                  if ! npm run extract_translations; then
+                    echo "Translation extraction failed for $package"
+                    failed=1
+                  fi
+                else
+                  echo "Translation extraction failed for $package: npm script 'extract_translations' not found"
                   failed=1
                 fi
               fi
@@ -587,6 +595,7 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
         run: |
+          set -e
           # set identity
           git config --global user.name "edx-translations-app"
           git config --global user.email "edx-translations-app@users.noreply.github.com"
