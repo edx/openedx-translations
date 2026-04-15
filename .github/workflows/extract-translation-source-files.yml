@@ -109,14 +109,21 @@ jobs:
               { owner: 'openedx', repo: 'frontend-plugin-framework' },
             ];
 
-            const javascriptReposWithSubpackages = [
-              { owner: 'edx', repo: 'frontend-plugins/cohesion-wrapper' },
-              { owner: 'edx', repo: 'frontend-plugins/course-app-translation-plugin' },
-              { owner: 'edx', repo: 'frontend-plugins/course-end-enterprise-plugins' },
-              { owner: 'edx', repo: 'frontend-plugins/course-outline-sidebar-trigger-plugin' },
-              { owner: 'edx', repo: 'frontend-plugins/left-sidebar-navigation-plugin' },
-              { owner: 'edx', repo: 'frontend-plugins/progress-tab-grade-plugins' },
-              { owner: 'edx', repo: 'frontend-plugins/unit-title-plugin' },
+            const monoreposWithSubpackages = [
+              { 
+                owner: 'edx', 
+                repo: 'frontend-plugins',
+                packages: [
+                  'cohesion-wrapper',
+                  'course-app-translation-plugin',
+                  'course-end-enterprise-plugins',
+                  'course-outline-sidebar-trigger-plugin',
+                  'left-sidebar-navigation-plugin',
+                  'progress-tab-grade-plugins',
+                  'template-private-plugin',
+                  'unit-title-plugin',
+                ]
+              },
             ];
 
             // When https://2u-internal.atlassian.net/wiki/spaces/AU/pages/2786066453/Mobile+app+translations
@@ -138,11 +145,13 @@ jobs:
 
             core.setOutput('hasPythonRepos', true);
             core.setOutput('hasJavascriptRepos', true);
+            core.setOutput('hasMonorepos', monoreposWithSubpackages.length > 0);
             core.setOutput('hasGenericRepos', false);
 
             if (selectedRepo === '') {
               core.setOutput('pythonRepos', allPythonRepos);
               core.setOutput('javascriptRepos', allJavascriptRepos);
+              core.setOutput('monorepos', monoreposWithSubpackages);
               //core.setOutput('genericRepos', allGenericRepos);
               return;
             }
@@ -163,6 +172,14 @@ jobs:
               core.setOutput('hasJavascriptRepos', false);
             }
 
+            const monorepo = monoreposWithSubpackages.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
+            if (monorepo) {
+              core.setOutput('monorepos', [monorepo]);
+            } else {
+              core.setOutput('monorepos', []);
+              core.setOutput('hasMonorepos', false);
+            }
+
             //const genericRepoConfig = allGenericRepos.find(repoConfig => repoConfig.repo === selectedRepo);
             //if (genericRepoConfig !== undefined) {
               //core.setOutput('genericRepos', [genericRepoConfig]);
@@ -176,6 +193,8 @@ jobs:
       python_repos: ${{ steps.generate_repo_matrix.outputs.pythonRepos }}
       has_js_repos: ${{ steps.generate_repo_matrix.outputs.hasJavascriptRepos }}
       js_repos: ${{ steps.generate_repo_matrix.outputs.javascriptRepos }}
+      has_monorepos: ${{ steps.generate_repo_matrix.outputs.hasMonorepos }}
+      monorepos: ${{ steps.generate_repo_matrix.outputs.monorepos }}
       # has_generic_repos: ${{ steps.generate_repo_matrix.outputs.hasGenericRepos }}
       # generic_repos: ${{ steps.generate_repo_matrix.outputs.genericRepos }}
 
@@ -481,13 +500,139 @@ jobs:
           # push changes to branch
           git push
 
+  # Monorepos with subpackages (e.g., frontend-plugins)
+  # Each package in the monorepo has its own transifex_input.json
+  monorepo-translations:
+    if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_monorepos) == true }}
+    needs: [setup-branch, setup-matrix, js-translations]
+    strategy:
+      # using max-parallel to avoid git push/pull issues when running in parallel
+      max-parallel: 1
+      matrix:
+        repo_config: ${{ fromJson(needs.setup-matrix.outputs.monorepos) }}
+    runs-on: ubuntu-latest
+    continue-on-error: true
+
+    steps:
+      # prepare GitHub app token
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.EDX_TRANSLATIONS_APP_ID }}
+          private-key: ${{ secrets.EDX_TRANSLATIONS_APP_KEY }}
+          owner: edx
+
+      # Clones the edx/openedx-translations repository
+      - name: clone ${{ github.repository }}
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
+
+      # Clones the monorepo
+      - name: clone ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
+        uses: actions/checkout@v5
+        with:
+          repository: ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
+          ref: ${{ github.event.inputs.ref }}
+          path: translations/${{ matrix.repo_config.repo }}
+          token: ${{ steps.generate_token.outputs.token }}
+
+      # Sets up node/npm
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: translations/${{ matrix.repo_config.repo }}/.nvmrc
+
+      # Install dependencies
+      - name: install dependencies
+        run: |
+          cd translations/${{ matrix.repo_config.repo }}
+          npm ci
+
+      # Extract translations for all packages
+      - name: extract translations from all packages
+        run: |
+          cd translations/${{ matrix.repo_config.repo }}
+          failed=0
+          for package in ${{ join(matrix.repo_config.packages, ' ') }}; do
+            if [ -d "packages/$package" ]; then
+              echo "Extracting translations for packages/$package"
+              cd "packages/$package"
+              if [ -f Makefile ] && grep -q 'extract_translations' Makefile; then
+                if ! make extract_translations; then
+                  echo "Translation extraction failed for $package"
+                  failed=1
+                fi
+              else
+                if [ ! -f package.json ]; then
+                  echo "Translation extraction failed for $package: package.json not found"
+                  failed=1
+                elif node -e "const pkg=require('./package.json'); process.exit(pkg.scripts.extract_translations ? 0 : 1)"; then
+                  if ! npm run extract_translations; then
+                    echo "Translation extraction failed for $package"
+                    failed=1
+                  fi
+                else
+                  echo "Translation extraction failed for $package: npm script 'extract_translations' not found"
+                  failed=1
+                fi
+              fi
+              cd ../..
+            else
+              echo "Error: Package directory 'packages/$package' not found"
+              failed=1
+            fi
+          done
+          if [ "$failed" -ne 0 ]; then
+            echo "One or more translation extractions failed"
+            exit 1
+          fi
+
+      # git adds the translation source files from each package
+      - name: git add the translation source files
+        id: add-sources
+        env:
+          GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
+        run: |
+          set -e
+          # set identity
+          git config --global user.name "edx-translations-app"
+          git config --global user.email "edx-translations-app@users.noreply.github.com"
+          # Change directory to translations/${{ matrix.repo_config.repo }}
+          cd translations/${{ matrix.repo_config.repo }}
+          # remove translations/${{ matrix.repo_config.repo }}/.git so we don't commit a submodule
+          rm -rf .git
+          # find all transifex_input.json files in packages
+          TRANSIFEX_JSON_FILES=$(find packages/*/src/i18n -name 'transifex_input.json' 2>/dev/null || true)
+          if [ -z "$TRANSIFEX_JSON_FILES" ]; then
+            echo "No transifex_input.json files found"
+            echo "GIT_STATUS=0" >> $GITHUB_ENV
+          else
+            # stage all transifex_input.json files
+            echo "$TRANSIFEX_JSON_FILES" | xargs git add -f -v
+            # Check the git status of the translation source files
+            echo "GIT_STATUS=$(git status packages/*/src/i18n/transifex_input.json -s 2>/dev/null | wc -l)" >> $GITHUB_ENV
+          fi
+
+      # Attempts to commit the translation source files if there is a difference
+      - name: git commit the translation source files
+        env:
+          GITHUB_TOKEN: "${{ steps.generate_token.outputs.token }}"
+        if: "${{ env.GIT_STATUS > 0 }}"
+        run: |
+          # commit the changes
+          git commit -m "chore: add extracted translation source files from ${{ matrix.repo_config.repo }}"
+          # push changes to branch
+          git push
+
   # Non-Django, non-JS repositories with a generic extraction interface. This
   # assumes that a `extract_translations` make target exists and will create
   # a transifex_input.yaml file in the root of the site.
   generic-translations:
     if: false
     # if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_generic_repos) == true }}
-    needs: [setup-branch, setup-matrix, js-translations]
+    needs: [setup-branch, setup-matrix, monorepo-translations]
     strategy:
       # using max-parallel to avoid git push/pull issues when running in parallel
       max-parallel: 1
@@ -580,8 +725,8 @@ jobs:
 
   merge-translations:
     runs-on: ubuntu-latest
-    #needs: [setup-branch, python-translations, js-translations, generic-translations]
-    needs: [setup-branch, python-translations, js-translations]
+    #needs: [setup-branch, python-translations, js-translations, monorepo-translations, generic-translations]
+    needs: [setup-branch, python-translations, js-translations, monorepo-translations]
     # If a single repo is specified, at least one job in the needs array will be skipped. Without this condition, the merge-translations job
     # will be skipped as well.
     # This allows the workflow to complete and not be marked as failed when the workflow is run on a single repository.
