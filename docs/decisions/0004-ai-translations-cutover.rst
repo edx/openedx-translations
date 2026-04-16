@@ -23,7 +23,7 @@ Problem
 *******
 
 As part of the ongoing effort to decouple from openedx (see `0003-fork-from-openedx`_),
-we desire greater ability to control how stirngs are translated.
+we desire greater ability to control how strings are translated.
 
 In particular, we would like to replace Transifex with an internally controlled
 translation service both for greater control and to remove the need to pay for an
