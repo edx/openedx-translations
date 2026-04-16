@@ -70,7 +70,7 @@ Alternatives Considered
 Staying on Transifex
 ====================
 
-Woould require either leveraging the existing openedx translations, which could diverge, and
+Would require either leveraging the existing openedx translations, which could diverge, and
 allows us less control, or paying for a new, costly enterprise license for the edX org.
 
 Rollout Plan
