@@ -52,8 +52,8 @@
   "discussions.confirmEmailModalBody": "Chúng tôi đã gửi cho bạn một email để xác minh tài khoản của bạn. Vui lòng kiểm tra hộp thư đến của bạn và nhấp vào nút lớn màu đỏ để xác nhận và tiếp tục tìm hiểu.",
   "discussions.confirmEmailImageAlt": "xác nhận nền email",
   "discussions.topics.backAlt": "Quay lại danh sách Chủ đề",
-  "discussions.topics.discussions": "{đếm, số nhiều, =0 {Thảo luận} một {# Thảo luận} khác {# Thảo luận} }",
-  "discussions.topics.questions": "{đếm, số nhiều, =0 {Câu hỏi} một {# Câu hỏi} khác {# Câu hỏi} }",
+  "discussions.topics.discussions": "{count, plural, =0 {Thảo luận} one {# Thảo luận} other {# Thảo luận}}",
+  "discussions.topics.questions": "{count, plural, =0 {Câu hỏi} one {# Câu hỏi} other {# Câu hỏi}}",
   "discussions.topics.reported": "{reported} đã báo cáo",
   "discussions.topics.previouslyReported": "{previouslyReported} đã báo cáo trước đó",
   "discussions.topics.find.label": "Tìm kiếm Chủ đề",
@@ -113,7 +113,7 @@
   "discussions.post.closedBy": "Bài đăng bị đóng bởi",
   "discussion.comment.time": "{time} trước đây",
   "discussion.thread.notFound": "Không tìm thấy chủ đề",
-  "discussions.comment.sortFilterStatus": "{sắp xếp, chọn, sai {Cũ nhất đầu tiên} đúng {Mới nhất đầu tiên} other { {sort} } }",
+  "discussions.comment.sortFilterStatus": "{sort, select, false {Cũ nhất đầu tiên} true {Mới nhất đầu tiên} other { {sort} }}",
   "discussions.captcha.verification.label": "Xác minh CAPTCHA không thành công.",
   "discussions.topics.sort.message": "Sắp xếp theo {sortBy}",
   "discussions.topics.sort.lastActivity": "Hoạt động gần đây",
@@ -233,5 +233,5 @@
   "discussions.posts.sort.lastActivity": "Hoạt động gần đây",
   "discussions.posts.sort.commentCount": "Hoạt động nhiều nhất",
   "discussions.posts.sort.voteCount": "Nhiều lượt thích nhất",
-  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {All} true {Sở hữu} other { {own} }} {status, select, statusAll {} statusUnread {unread} statusFollowing {followed} statusReported {reported} statusUnanswered {unanswered} statusUnresponded {unresponded} other { {status} } } {loại, chọn, thảo luận {thảo luận} câu hỏi {câu hỏi} tất cả {bài đăng} khác { {type} } } {cohortType, select, all {} group {in {cohort} } other { {cohortType} }} được sắp xếp theo {sort, select, lastActivityAt { hoạt động gần đây} commentCount {hoạt động nhiều nhất} voteCount {lượt thích nhiều nhất} other { {sort} }}"
+  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {All} true {Sở hữu} other { {own} }} {status, select, statusAll {} statusUnread {unread} statusFollowing {followed} statusReported {reported} statusUnanswered {unanswered} statusUnresponded {unresponded} other { {status} } } {type, select, discussion {thảo luận} question {câu hỏi} all {bài đăng} other { {type} }} {cohortType, select, all {} group {in {cohort} } other { {cohortType} }} được sắp xếp theo {sort, select, lastActivityAt { hoạt động gần đây} commentCount {hoạt động nhiều nhất} voteCount {lượt thích nhiều nhất} other { {sort} }}"
 }

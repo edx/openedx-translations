@@ -84,7 +84,7 @@
   "discussions.comments.comment.endorsedResponseCount": "{num, plural, =0 {Sin respuestas respaldadas} one {Mostrando # respuesta respaldada} other {Mostrando # respuestas respaldadas}}",
   "discussions.comments.comment.loadMoreComments": "Cargar más comentarios",
   "discussions.comments.comment.loadMoreResponses": "Cargar más respuestas",
-  "discussions.comments.comment.visibility": "Esta publicación es visible para { grupo , Seleccionar , null {Todos} otros {{ grupo }} }.",
+  "discussions.comments.comment.visibility": "Esta publicación es visible para {group, select, null {Todos} other {{ grupo }}}.",
   "discussions.comments.comment.postedTime": "{postType, select, discussion { discusión } question {Question} other {{postType}}} publicado {relativeTime} por",
   "discussions.comments.comment.commentTime": "Publicado {relativeTime}",
   "discussions.comments.comment.answer": "Respuesta",
@@ -170,7 +170,7 @@
   "discussions.post.unfollow.description": "No estás siguiendo esta publicación",
   "discussions.app.title": "Debates",
   "discussions.posts.actionBar.searchAllPosts": "Buscar en todas las publicaciones",
-  "discussions.posts.actionBar.search": "{página, Seleccionar , temas {Buscar temas} publicaciones {Buscar todas las publicaciones} alumnos {Buscar alumnos} myPosts {Buscar todas las publicaciones} otros {{page}} }",
+  "discussions.posts.actionBar.search": "{page, select, topics {Buscar temas} posts {Buscar todas las publicaciones} learners {Buscar alumnos} myPosts {Buscar todas las publicaciones} other {{page}}}",
   "discussions.actionBar.searchInfo": "Mostrando resultados de {count} para &quot;{text}&quot;",
   "discussions.actionBar.searchRewriteInfo": "No results found for \"{searchString}\". Showing {count} results for \"{textSearchRewrite}\".",
   "discussions.actionBar.searchInfoSearching": "Buscando..",
@@ -233,5 +233,5 @@
   "discussions.posts.sort.lastActivity": "Actividad reciente",
   "discussions.posts.sort.commentCount": "La mayoría de la actividad",
   "discussions.posts.sort.voteCount": "La mayoría me gusta",
-  "discussions.posts.sort-filter.sortFilterStatus": "{propio, Seleccionar , falso {Todos} cierto {Propio} otro {{propio}} } {status, Seleccionar , statusAll {} statusUnread {unread} statusFollowing {followed} statusReported {reported} statusUnan respondió {sin respuesta} estado sin respuesta {sin respuesta} otro { {status}} } {type, select, discussion { discusiones } question {preguntas} all {publicaciones} other {{type}}} {cohortType, select, all {} group { en { dividir en cohortes }} other {{cohortType}}} ordenado por {ordenar, Seleccionar , lastActivityAt {actividad reciente} commentCount {más actividad} voteCount {más me gusta} otros {{sort}} }"
+  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {Todos} true {Propio} other {{propio}}} {status, Seleccionar , statusAll {} statusUnread {unread} statusFollowing {followed} statusReported {reported} statusUnan respondió {sin respuesta} estado sin respuesta {sin respuesta} otro { {status}} } {type, select, discussion { discusiones } question {preguntas} all {publicaciones} other {{type}}} {cohortType, select, all {} group { en { dividir en cohortes }} other {{cohortType}}} ordenado por {sort, select, lastActivityAt {actividad reciente} commentCount {más actividad} voteCount {más me gusta} other {{sort}}}"
 }
