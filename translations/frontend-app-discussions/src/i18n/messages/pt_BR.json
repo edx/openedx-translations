@@ -43,7 +43,7 @@
   "navigation.course.tabs.label": "Material do Curso",
   "discussions.topics.backAlt": "Voltar à lista de tópicos",
   "discussions.topics.discussions": "{contagem, plural, =0 { Discussão } um {# Discussão } outro {# Discussão } }",
-  "discussions.topics.questions": "{count, plural, =0 {Question} one {# Question} other {# Questions} }",
+  "discussions.topics.questions": "{count, plural, =0 {Question} one {# Question} other {# Questions}}",
   "discussions.topics.reported": "<span class='notranslate'>{reported}</span> reportado",
   "discussions.topics.previouslyReported": "<span class='notranslate'>{previouslyReported}</span> relatado anteriormente",
   "discussions.topics.find.label": "Pesquisar tópicos",
@@ -70,12 +70,12 @@
   "discussions.comments.comment.addResponse": "Adicionar uma resposta",
   "discussions.comments.comment.abuseFlaggedMessage": "Conteúdo denunciado para análise da equipe",
   "discussions.actions.back.alt": "De volta à lista",
-  "discussions.comments.comment.responseCount": "{num, plural, =0 {Sem respostas} um {Mostrando # resposta} outro {Mostrando # respostas} }",
-  "discussions.comments.comment.endorsedResponseCount": "{num, plural, =0 {Nenhuma resposta endossou } um {Mostrando # resposta endossou } other {Mostrando # respostas endossou } }",
+  "discussions.comments.comment.responseCount": "{num, plural, =0 {Sem respostas} one {Mostrando # resposta} other {Mostrando # respostas}}",
+  "discussions.comments.comment.endorsedResponseCount": "{num, plural, =0 {Nenhuma resposta endossou } one {Mostrando # resposta endossou } other {Mostrando # respostas endossou }}",
   "discussions.comments.comment.loadMoreComments": "Carregar mais comentários",
   "discussions.comments.comment.loadMoreResponses": "Carregar mais respostas",
   "discussions.comments.comment.visibility": "Este publicar é visível para { grupo , select, null {Everyone} other { {grupo} } }.",
-  "discussions.comments.comment.postedTime": "{postType, select, Discussão {Discussão} question {Question} other { {postType} } } postado {relativeTime} por",
+  "discussions.comments.comment.postedTime": "{postType, select, discussion {Discussão} question {Question} other { {postType} }} postado {relativeTime} por",
   "discussions.comments.comment.commentTime": "Postado <span class='notranslate'>{relativeTime}</span>",
   "discussions.comments.comment.answer": "Resposta",
   "discussions.comments.comment.answeredlabel": "Marcado como respondido por",
@@ -209,5 +209,5 @@
   "discussions.posts.sort.lastActivity": "Atividade recente",
   "discussions.posts.sort.commentCount": "A maioria das atividades",
   "discussions.posts.sort.voteCount": "mais curtidas",
-  "discussions.posts.sort-filter.sortFilterStatus": "{próprio, selecione, falso {Todos} verdadeiro {Próprio} outro { {own} } } {status, selecione, statusTodos {} statusUnread {não lido} statusFollowing {seguido} statusReportado {relatado} statusUnanswered {não respondido} statusUnresponded {não respondido} other { {status} } } {type, select, Discussão {Discussão} question {questions} todas {postagens} other { {type} } } {cohortType, select, all {} grupo {in {agrupar} } other { {cohortType} } } classificado por {classificar, selecionar, lastActivityAt {atividade recente } commentCount {mais atividades} voteCount {mais curtidas} other { {sort} } }"
+  "discussions.posts.sort-filter.sortFilterStatus": "{próprio, selecione, falso {Todos} verdadeiro {Próprio} outro { {own} } } {status, selecione, statusTodos {} statusUnread {não lido} statusFollowing {seguido} statusReportado {relatado} statusUnanswered {não respondido} statusUnresponded {não respondido} other { {status} } } {type, select, discussion {Discussão} question {questions} all {postagens} other { {type} }} {cohortType, select, all {} group {in {agrupar} } other { {cohortType} }} classificado por {classificar, selecionar, lastActivityAt {atividade recente } commentCount {mais atividades} voteCount {mais curtidas} other { {sort} } }"
 }

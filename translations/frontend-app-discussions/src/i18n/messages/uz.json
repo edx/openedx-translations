@@ -52,8 +52,8 @@
   "discussions.confirmEmailModalBody": "Accountingizni tasdiqlash uchun sizga xat yubordik. Iltimos, kirish qutingizni tekshiring va tasdiqlash va o'rganishni davom ettirish uchun katta qizil tugmani bosing.",
   "discussions.confirmEmailImageAlt": "elektron pochta fonini tasdiqlang",
   "discussions.topics.backAlt": "Mavzular ro'yxatiga qaytish",
-  "discussions.topics.discussions": "{count, plural, =0 {Discussion} one {# Discussion} other {# Discussions} }",
-  "discussions.topics.questions": "{count, plural, =0 {Question} one {# Question} other {# Questions} }",
+  "discussions.topics.discussions": "{count, plural, =0 {Discussion} one {# Discussion} other {# Discussions}}",
+  "discussions.topics.questions": "{count, plural, =0 {Question} one {# Question} other {# Questions}}",
   "discussions.topics.reported": "{reported} xabar berdi",
   "discussions.topics.previouslyReported": "{previouslyReported} avvalroq xabar qilingan",
   "discussions.topics.find.label": "Mavzularni qidirish",
@@ -84,8 +84,8 @@
   "discussions.comments.comment.endorsedResponseCount": "{son, koʻplik, =0 {Tasdiqlangan javoblar yoʻq} bitta {#ta maʼqullangan javob koʻrsatilmoqda} boshqa {#ta maʼqullangan javob koʻrsatilmoqda}}",
   "discussions.comments.comment.loadMoreComments": "Ko'proq sharhlarni yuklang",
   "discussions.comments.comment.loadMoreResponses": "Koʻproq javoblarni yuklang",
-  "discussions.comments.comment.visibility": "Bu post {group, select, null {Everyone} boshqa { {group} } } ga ko‘rinadi.",
-  "discussions.comments.comment.postedTime": "{postType, tanlash, muhokama qilish {Muhokama} savol {Savol} boshqa { {postType} } } chop etgan {relativeTime}",
+  "discussions.comments.comment.visibility": "Bu post {group, select, null {Everyone} other { {group} }} ga ko‘rinadi.",
+  "discussions.comments.comment.postedTime": "{postType, select, discussion {Muhokama} question {Savol} other { {postType} }} chop etgan {relativeTime}",
   "discussions.comments.comment.commentTime": "Yuborilgan {relativeTime}",
   "discussions.comments.comment.answer": "Javob",
   "discussions.comments.comment.answeredlabel": "Javob bergan deb belgilangan",
@@ -113,7 +113,7 @@
   "discussions.post.closedBy": "Post yopilgan",
   "discussion.comment.time": "{time} oldin",
   "discussion.thread.notFound": "Mavzu topilmadi",
-  "discussions.comment.sortFilterStatus": "{sort, select, false {Eng eski birinchi} rost {Eng yangi birinchi} boshqa { {sort} }}",
+  "discussions.comment.sortFilterStatus": "{sort, select, false {Eng eski birinchi} true {Eng yangi birinchi} other { {sort} }}",
   "discussions.captcha.verification.label": "CAPTCHA tasdiqlash muvaffaqiyatsiz tugadi.",
   "discussions.topics.sort.message": "{sortBy} tomonidan saralangan",
   "discussions.topics.sort.lastActivity": "Oxirgi faoliyat",
@@ -233,5 +233,5 @@
   "discussions.posts.sort.lastActivity": "Oxirgi faoliyat",
   "discussions.posts.sort.commentCount": "Eng ko'p faollik",
   "discussions.posts.sort.voteCount": "Eng ko'p yoqtirishlar",
-  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {All} true {Own} other {{own}} } {status, select, statusAll {} statusUnread {unread} statusFollowing {followed} statusReported {reported} statusUnanswered {unanswered} statusUnresponded {unresponded} other {{status}} } {type, select, discussion {discussions} question {questions} all {posts} other {{type}} } {cohortType, select, all {} group {in {cohort}} other {{cohortType}} } sorted by {sort, select, lastActivityAt {recent activity} commentCount {most activity} voteCount {most likes} other {{sort}} }"
+  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {All} true {Own} other {{own}}} {status, select, statusAll {} statusUnread {unread} statusFollowing {followed} statusReported {reported} statusUnanswered {unanswered} statusUnresponded {unresponded} other {{status}} } {type, select, discussion {discussions} question {questions} all {posts} other {{type}}} {cohortType, select, all {} group {in {cohort}} other {{cohortType}}} sorted by {sort, select, lastActivityAt {recent activity} commentCount {most activity} voteCount {most likes} other {{sort}}}"
 }
