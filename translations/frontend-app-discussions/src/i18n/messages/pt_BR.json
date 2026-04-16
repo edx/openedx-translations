@@ -63,7 +63,7 @@
   "discussions.learner.mostActivity": "A maioria das atividades",
   "discussions.learner.reportedActivity": "Atividade relatada",
   "discussions.learner.recentActivity": "Atividade recente",
-  "discussions.learner.sortFilterStatus": "Todos os alunos classificados por {classificar, selecionar, sinalizar {atividade relatada} atividade {mais atividade} outro { {sort} } }",
+  "discussions.learner.sortFilterStatus": "Todos os alunos classificados por {sort, select, flagged {atividade relatada} activity {mais atividade} deleted {atividade excluída} other {{sort}} }",
   "discussion.learner.allActivity": "Todas as atividades",
   "discussion.learner.posts": "Postagens",
   "discussions.comments.comment.addComment": "Adicionar comentário",
@@ -74,7 +74,7 @@
   "discussions.comments.comment.endorsedResponseCount": "{num, plural, =0 {Nenhuma resposta endossou } one {Mostrando # resposta endossou } other {Mostrando # respostas endossou }}",
   "discussions.comments.comment.loadMoreComments": "Carregar mais comentários",
   "discussions.comments.comment.loadMoreResponses": "Carregar mais respostas",
-  "discussions.comments.comment.visibility": "Este publicar é visível para {group, select, null {Everyone} other { {grupo} }}.",
+  "discussions.comments.comment.visibility": "Este publicar é visível para {group, select, null {Everyone} other {{group}}}.",
   "discussions.comments.comment.postedTime": "{postType, select, discussion {Discussão} question {Question} other { {postType} }} postado {relativeTime} por",
   "discussions.comments.comment.commentTime": "Postado {relativeTime}",
   "discussions.comments.comment.answer": "Resposta",
@@ -209,5 +209,5 @@
   "discussions.posts.sort.lastActivity": "Atividade recente",
   "discussions.posts.sort.commentCount": "A maioria das atividades",
   "discussions.posts.sort.voteCount": "mais curtidas",
-  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {Todos} true {Próprio} other { {own} }} {status, selecione, statusTodos {} statusUnread {não lido} statusFollowing {seguido} statusReportado {relatado} statusUnanswered {não respondido} statusUnresponded {não respondido} other { {status} } } {type, select, discussion {Discussão} question {questions} all {postagens} other { {type} }} {cohortType, select, all {} group {in {agrupar} } other { {cohortType} }} classificado por {sort, select, lastActivityAt {atividade recente } commentCount {mais atividades} voteCount {mais curtidas} other { {sort} }}"
+  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {Todos} true {Próprio} other {{own}} } {status, select, statusAll {} statusUnread {não lido} statusFollowing {seguido} statusReported {relatado} statusUnanswered {não respondido} statusUnresponded {não respondido} statusActive {ativo} statusDeleted {excluído} other {{status}} } {type, select, discussion {Discussão} question {perguntas} all {postagens} other {{type}} } {cohortType, select, all {} group {in {cohort}} other {{cohortType}} } classificado por {sort, select, lastActivityAt {atividade recente} commentCount {mais atividades} voteCount {mais curtidas} other {{sort}} }"
 }

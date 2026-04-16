@@ -73,7 +73,7 @@
   "discussions.learner.mostActivity": "La mayoría de la actividad",
   "discussions.learner.reportedActivity": "Actividad reportada",
   "discussions.learner.recentActivity": "Actividad reciente",
-  "discussions.learner.sortFilterStatus": "Todos los alumnos ordenados por {sort, Seleccionar , actividad {actividad reportada} {más actividad} otra {{sort}} }",
+  "discussions.learner.sortFilterStatus": "Todos los alumnos ordenados por {sort, select, flagged {actividad reportada} activity {más actividad} deleted {actividad eliminada} other {{sort}} }",
   "discussion.learner.allActivity": "Toda la actividad",
   "discussion.learner.posts": "Publicación",
   "discussions.comments.comment.addComment": "Añadir comentario",
@@ -233,5 +233,5 @@
   "discussions.posts.sort.lastActivity": "Actividad reciente",
   "discussions.posts.sort.commentCount": "La mayoría de la actividad",
   "discussions.posts.sort.voteCount": "La mayoría me gusta",
-  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {Todos} true {Propio} other {{propio}}} {status, Seleccionar , statusAll {} statusUnread {unread} statusFollowing {followed} statusReported {reported} statusUnan respondió {sin respuesta} estado sin respuesta {sin respuesta} otro { {status}} } {type, select, discussion { discusiones } question {preguntas} all {publicaciones} other {{type}}} {cohortType, select, all {} group { en { dividir en cohortes }} other {{cohortType}}} ordenado por {sort, select, lastActivityAt {actividad reciente} commentCount {más actividad} voteCount {más me gusta} other {{sort}}}"
+  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {Todos} true {Propio} other {{own}} } {status, select, statusAll {} statusUnread {sin leer} statusFollowing {seguido} statusReported {reportado} statusUnanswered {sin respuesta} statusUnresponded {sin respuesta} statusActive {activo} statusDeleted {eliminado} other {{status}} } {type, select, discussion {discusiones} question {preguntas} all {publicaciones} other {{type}} } {cohortType, select, all {} group {en {cohort}} other {{cohortType}} } ordenado por {sort, select, lastActivityAt {actividad reciente} commentCount {más actividad} voteCount {más me gusta} other {{sort}} }"
 }

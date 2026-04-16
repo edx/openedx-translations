@@ -63,7 +63,7 @@
   "discussions.learner.mostActivity": "กิจกรรมส่วนใหญ่",
   "discussions.learner.reportedActivity": "กิจกรรมที่รายงาน",
   "discussions.learner.recentActivity": "กิจกรรมล่าสุด",
-  "discussions.learner.sortFilterStatus": "ผู้เรียนทั้งหมดจัดเรียงตาม {sort, select, flagged {กิจกรรมที่รายงาน} กิจกรรม {กิจกรรมส่วนใหญ่} อื่นๆ { {sort} } }",
+  "discussions.learner.sortFilterStatus": "ผู้เรียนทั้งหมดจัดเรียงตาม {sort, select, flagged {กิจกรรมที่รายงาน} activity {กิจกรรมส่วนใหญ่} deleted {กิจกรรมที่ถูกลบ} other {{sort}} }",
   "discussion.learner.allActivity": "ทุกกิจกรรม",
   "discussion.learner.posts": "กระทู้",
   "discussions.comments.comment.addComment": "Add comment",
@@ -103,7 +103,7 @@
   "discussions.post.closedBy": "ปิดกระทู้แล้วครับ",
   "discussion.comment.time": "{time} ที่แล้ว",
   "discussion.thread.notFound": "ไม่พบกระทู้",
-  "discussions.comment.sortFilterStatus": "{เรียงลำดับ เลือก เท็จ {เก่าที่สุดก่อน} จริง {ใหม่ที่สุดก่อน} อื่น ๆ { {sort} } }",
+  "discussions.comment.sortFilterStatus": "{sort, select, false {เก่าที่สุดก่อน} true {ใหม่ที่สุดก่อน} other {{sort}} }",
   "discussions.topics.sort.message": "จัดเรียงตาม {sortBy}",
   "discussions.topics.sort.lastActivity": "กิจกรรมล่าสุด",
   "discussions.topics.sort.commentCount": "กิจกรรมส่วนใหญ่",
@@ -159,7 +159,7 @@
   "discussions.post.unfollow.description": "คุณไม่ได้ติดตามโพสต์นี้",
   "discussions.app.title": "กระดานสนทนา",
   "discussions.posts.actionBar.searchAllPosts": "Search all posts",
-  "discussions.posts.actionBar.search": "{หน้า เลือก หัวข้อ {ค้นหาหัวข้อ} โพสต์ {ค้นหาโพสต์ทั้งหมด} ผู้เรียน {ค้นหาผู้เรียน} โพสต์ของฉัน {ค้นหาโพสต์ทั้งหมด} other { {page} } }",
+  "discussions.posts.actionBar.search": "{page, select, topics {ค้นหาหัวข้อ} posts {ค้นหาโพสต์ทั้งหมด} learners {ค้นหาผู้เรียน} myPosts {ค้นหาโพสต์ทั้งหมด} other {{page}} }",
   "discussions.actionBar.searchInfo": "กำลังแสดงผลลัพธ์ {count} สำหรับ &quot; {text} &quot;",
   "discussions.actionBar.searchRewriteInfo": "ไม่พบผลลัพธ์สำหรับ &quot; {searchString} &quot;. กำลังแสดงผลลัพธ์ {count} สำหรับ &quot; {textSearchRewrite} &quot;",
   "discussions.actionBar.searchInfoSearching": "ค้นหา...",
@@ -209,5 +209,5 @@
   "discussions.posts.sort.lastActivity": "กิจกรรมล่าสุด",
   "discussions.posts.sort.commentCount": "กิจกรรมส่วนใหญ่",
   "discussions.posts.sort.voteCount": "ชอบมากที่สุด",
-  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {All} true {Own} other { {own} }} {status, select, statusAll {} statusUnread {unread} statusFollowing {followed} statusReported {reported} statusUnanswered {unanswered} statusUnresponded {unresponded} อื่นๆ { {status} } } {ประเภท เลือก การอภิปราย {การสนทนา} คำถาม {คำถาม} ทั้งหมด {โพสต์} อื่นๆ { {type} } } {cohortType เลือก ทั้งหมด {} กลุ่ม {in {cohort} } อื่น ๆ { {cohortType} } } เรียงลำดับตาม {sort, select, lastActivityAt { กิจกรรมล่าสุด} commentCount {กิจกรรมมากที่สุด} voteCount {ชอบมากที่สุด} other { {sort} }}"
+  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {All} true {Own} other { {own} } } {status, select, statusAll {} statusUnread {unread} statusFollowing {followed} statusReported {reported} statusUnanswered {unanswered} statusUnresponded {unresponded} statusActive {ยังใช้งานอยู่} statusDeleted {ถูกลบ} other { {status} } } {type, select, discussion {การสนทนา} question {คำถาม} all {โพสต์} other { {type} } } {cohortType, select, all {} group {in {cohort} } other { {cohortType} } } เรียงลำดับตาม {sort, select, lastActivityAt {กิจกรรมล่าสุด} commentCount {กิจกรรมมากที่สุด} voteCount {ชอบมากที่สุด} other { {sort} } }"
 }

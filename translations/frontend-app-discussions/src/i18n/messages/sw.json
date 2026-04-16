@@ -63,7 +63,7 @@
   "discussions.learner.mostActivity": "Shughuli nyingi",
   "discussions.learner.reportedActivity": "Shughuli iliyoripotiwa",
   "discussions.learner.recentActivity": "Shughuli ya hivi majuzi",
-  "discussions.learner.sortFilterStatus": "Wanafunzi wote wamepangwa kulingana na shughuli za {panga, chagua, zilizoripotiwa {shughuli zilizoripotiwa} {shughuli nyingi} zingine { {sort} } }",
+  "discussions.learner.sortFilterStatus": "Wanafunzi wote wamepangwa kulingana na shughuli za {sort, select, flagged {shughuli zilizoripotiwa} activity {shughuli nyingi} deleted {shughuli zilizofutwa} other {{sort}} }",
   "discussion.learner.allActivity": "Shughuli zote",
   "discussion.learner.posts": "Machapisho",
   "discussions.comments.comment.addComment": "Ongeza maoni",
@@ -209,5 +209,5 @@
   "discussions.posts.sort.lastActivity": "Shughuli ya hivi majuzi",
   "discussions.posts.sort.commentCount": "Shughuli nyingi",
   "discussions.posts.sort.voteCount": "Wengi wanaopenda",
-  "discussions.posts.sort-filter.sortFilterStatus": "{kumiliki, chagua, si kweli {Yote} kweli {Own} nyingine { {own} } } {hadhi, chagua, haliYote {} haliHaijasomwa {haijasomwa} haliInayofuata {imefuata} haliImeripotiwa {imeripotiwa} haliHaijajibiwa {haijajibiwa} hali haijajibiwa {haijajibu00050} nyingine {status} } } {aina, chagua, majadiliano {majadiliano} swali {maswali} yote {machapisho} mengine { {type} } } {cohortType, chagua, wote {} kikundi {katika {cohort} } nyingine { {cohortType}      chagua shughuli ya hivi majuzi} maoniHesabu {shughuli nyingi} voteCount {zinazopendwa zaidi} zingine { {sort} } }"
+  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {Yote} true {Yangu} other {{own}} } {status, select, statusAll {} statusUnread {haijasomwa} statusFollowing {imefuata} statusReported {imeripotiwa} statusUnanswered {haijajibiwa} statusUnresponded {haijajibu} statusActive {amilifu} statusDeleted {imefutwa} other {{status}} } {type, select, discussion {majadiliano} question {maswali} all {machapisho} other {{type}} } {cohortType, select, all {} group {katika {cohort}} other {{cohortType}} } Imepangwa kwa {sort, select, lastActivityAt {shughuli ya hivi majuzi} commentCount {shughuli nyingi} voteCount {zinazopendwa zaidi} other {{sort}} }"
 }

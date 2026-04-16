@@ -63,7 +63,7 @@
   "discussions.learner.mostActivity": "చాలా కార్యాచరణ",
   "discussions.learner.reportedActivity": "నివేదించబడిన కార్యాచరణ",
   "discussions.learner.recentActivity": "ఇటీవలి కార్యాచరణ",
-  "discussions.learner.sortFilterStatus": "అభ్యాసకులందరూ {క్రమబద్ధీకరించబడిన, ఎంపిక చేసిన, ఫ్లాగ్ చేయబడిన {రిపోర్ట్ చేయబడిన కార్యాచరణ} కార్యాచరణ {చాలా కార్యాచరణ} ఇతర { {sort} }}",
+  "discussions.learner.sortFilterStatus": "అభ్యాసకులందరూ {sort, select, flagged {రిపోర్ట్ చేయబడిన కార్యాచరణ} activity {చాలా కార్యాచరణ} deleted {తొలగించబడిన కార్యాచరణ} other {{sort}} }",
   "discussion.learner.allActivity": "అన్ని కార్యాచరణ",
   "discussion.learner.posts": "పోస్ట్‌లు",
   "discussions.comments.comment.addComment": "వ్యాఖ్యను జోడించండి",
@@ -209,5 +209,5 @@
   "discussions.posts.sort.lastActivity": "ఇటీవలి కార్యాచరణ",
   "discussions.posts.sort.commentCount": "చాలా కార్యాచరణ",
   "discussions.posts.sort.voteCount": "ఎక్కువ మంది ఇష్టపడ్డారు",
-  "discussions.posts.sort-filter.sortFilterStatus": "{సొంతం, ఎంచుకోండి, తప్పు {అన్నీ} ఒప్పు {సొంతం} ఇతర { {own} }} {స్థితి, ఎంపిక, స్థితిఅన్ని {} చదవని {చదవని} స్థితిని అనుసరించి {అనుసరించిన} స్థితినివేదించబడింది {నివేదించబడింది} స్థితి సమాధానం {status} } {రకం, ఎంపిక, చర్చ {చర్చలు} ప్రశ్న {ప్రశ్నలు} అన్ని {పోస్ట్‌లు} ఇతర { {type} } } {cohortType, ఎంచుకోండి, అన్ని {} సమూహం { {cohort} } ఇతర { {cohortType} ద్వారా ఎంపిక చేయబడింది, చివరిది ఇటీవలి కార్యకలాపం} వ్యాఖ్య కౌంట్ {అత్యంత కార్యకలాపం} ఓటు కౌంట్ {అత్యంత ఇష్టాలు} ఇతర { {sort} } }"
+  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {అన్నీ} true {సొంతం} other {{own}} } {status, select, statusAll {} statusUnread {చదవని} statusFollowing {అనుసరించిన} statusReported {నివేదించబడింది} statusUnanswered {సమాధానం ఇవ్వబడలేదు} statusUnresponded {స్పందించలేదు} statusActive {చురుకుగా} statusDeleted {తొలగించబడింది} other {{status}} } {type, select, discussion {చర్చలు} question {ప్రశ్నలు} all {పోస్ట్‌లు} other {{type}} } {cohortType, select, all {} group {in {cohort}} other {{cohortType}} } ఇలా క్రమబద్ధీకరించబడింది {sort, select, lastActivityAt {ఇటీవలి కార్యకలాపం} commentCount {అత్యంత కార్యకలాపం} voteCount {అత్యంత ఇష్టాలు} other {{sort}} }"
 }
