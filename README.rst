@@ -1,15 +1,19 @@
 openedx-translations
 ####################
 
-This openedx-translations repository contains translation files from Open edX repositories
-to be kept in sync with Transifex. To accomplish this task, a GitHub Action in
-``.github/workflows/`` named ``extract-translation-source-files.yml`` regularly extracts
-English translation source files form Open edX repositories containing code and adds them
-to this repository. A GitHub Transifex app allows for the automatic upload of these
-translation files and after being translated on Transifex, the automatic download back
-into this repository. The translation files in this repository can then be accessed by
-using the `openedx-atlas`_ CLI tool to download specific directories of translation files
-from openedx-translations.
+This openedx-translations repository contains translation files from edX & open edX repositories.
+A GitHub Action in ``.github/workflows/`` named ``extract-translation-source-files.yml``
+regularly extracts English translation source files from Open edX repositories and adds
+them to this repository.
+
+Translations are provided via two tracks (currently in migration):
+
+- **JavaScript/frontend apps**: Translations are fetched from the `ai-translations`_ service.
+- **Python/Django apps**: A GitHub Transifex App uploads source files to Transifex, and
+  after translation, downloads them back into this repository.
+
+The translation files in this repository can then be accessed by using the `openedx-atlas`_
+CLI tool to download specific directories of translation files from openedx-translations.
 
 This repository implements the `OEP-58`_ proposal.
 
@@ -25,8 +29,9 @@ release. As of May 10th, 2024 the following are the release branches:
 This branch is used for the latest version of Open edX such as
 `Tutor nightly`_, `edx-platform "master" branch`_ and others.
 
-To translate the latest versions the `open-edx/openedx-translations`_ Transifex
-project should be used.
+Python app translations for the latest version are managed in the
+`open-edx/openedx-translations`_ Transifex project. JavaScript app translations
+are handled by the `ai-translations`_ service.
 
 
 ``open-release/<release-name>.master`` branch
@@ -38,7 +43,9 @@ for the Redwood release (June 2024), the branches were:
 `Tutor Redwood v18`_, `edx-platform "open-release/redwood.master" branch`_
 and others.
 
-To update translations for a named release, find the corresponding named release project in the `Open edX Transifex project <https://app.transifex.com/open-edx/>`_  by searching for the release name (for example, Redwood) in the search box. 
+To update Python app translations for a named release, find the corresponding named release
+project in the `Open edX Transifex project <https://app.transifex.com/open-edx/>`_ by
+searching for the release name (for example, Redwood) in the search box.
 
 Tools for repository maintainers
 ********************************
@@ -70,7 +77,7 @@ The validation can be run locally with the following command:
 
 .. code-block:: bash
 
-    make validate_translations
+    make validate_translation_files
 
 
 The validation errors is also posted as a comment on the update translation
@@ -89,6 +96,7 @@ pull requests, run the following command:
 
 .. _OEP-58: https://github.com/openedx/open-edx-proposals/pull/367
 .. _openedx-atlas: https://github.com/openedx/openedx-atlas
+.. _ai-translations: https://github.com/edx/ai-translations
 
 .. _sync_translations.yml workflow on GitHub: https://github.com/openedx/openedx-translations/actions/workflows/sync-translations.yml
 
