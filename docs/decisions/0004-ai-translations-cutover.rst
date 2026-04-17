@@ -71,7 +71,7 @@ Staying on Transifex
 
 While strings continue to be translated by Transifex in the upstream openedx/openedx-translations
 repository, edX no longer maintains a license with Transifex, so we cannot translate
-edX-specific string.
+edX-specific strings.
 
 Using Transifex would require either leveraging the existing openedx translations, which are expected
 to diverge, or paying for a new, costly enterprise license for the edX org.
