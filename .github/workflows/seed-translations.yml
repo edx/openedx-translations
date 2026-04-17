@@ -223,10 +223,19 @@ jobs:
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
           i18n_path="${{ matrix.application.pathOverride || 'src/i18n' }}"
+          app_translations_dir="translations/${{ matrix.application.appName }}"
+
+          # Skip the application entirely if its translations directory hasn't been
+          # populated yet (e.g. a newly added app with no extracted strings).
+          if [ ! -d "$app_translations_dir" ]; then
+            echo "Translations directory does not exist: $app_translations_dir. Skipping application."
+            exit 0
+          fi
 
           num_failures=0
           num_attempted=0
 
+          # Loop through selected languages
           for lang in $(echo "$translation_languages" | jq -c '.[]'); do
             edxLang=$(echo "$lang" | jq -r '.edxLang')
             repoLang=$(echo "$lang" | jq -r '.repoLang')
@@ -236,12 +245,15 @@ jobs:
             translations_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/messages/${repoLang}.json"
             source_strings_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/transifex_input.json"
 
+            # Skip individual languages that haven't been translated yet; not every app
+            # has a file for every supported language.
             if [ ! -f "$translations_file_path" ]; then
               echo "Translations file does not exist: $translations_file_path. Skipping."
               echo ""
               continue
             fi
 
+            # Skip if the source strings file is missing; both files are required to seed.
             if [ ! -f "$source_strings_file_path" ]; then
               echo "Source strings file does not exist: $source_strings_file_path. Skipping."
               echo ""
@@ -281,9 +293,10 @@ jobs:
             echo ""
           done
 
+          # Warn (but don't fail) if no languages were seeded — the directory exists but
+          # none of the expected language files were present.
           if [ "$num_attempted" -eq 0 ]; then
-            echo "No translations were seeded for application ${{ matrix.application.appName }}. Check that the application directory and translation files exist at the expected path."
-            exit 1
+            echo "Warning: No translations were seeded for application ${{ matrix.application.appName }}. Check that translation files exist at the expected path."
           fi
 
           if [ "$num_failures" -ne 0 ]; then
