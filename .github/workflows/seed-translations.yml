@@ -235,7 +235,7 @@ jobs:
           num_failures=0
           num_attempted=0
 
-          # Loop through selectedlanguages
+          # Loop through selected languages
           for lang in $(echo "$translation_languages" | jq -c '.[]'); do
             edxLang=$(echo "$lang" | jq -r '.edxLang')
             repoLang=$(echo "$lang" | jq -r '.repoLang')
