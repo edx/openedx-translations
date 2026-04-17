@@ -223,6 +223,12 @@ jobs:
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
           i18n_path="${{ matrix.application.pathOverride || 'src/i18n' }}"
+          app_translations_dir="translations/${{ matrix.application.appName }}"
+
+          if [ ! -d "$app_translations_dir" ]; then
+            echo "Translations directory does not exist: $app_translations_dir. Skipping application."
+            exit 0
+          fi
 
           num_failures=0
           num_attempted=0
@@ -282,8 +288,7 @@ jobs:
           done
 
           if [ "$num_attempted" -eq 0 ]; then
-            echo "No translations were seeded for application ${{ matrix.application.appName }}. Check that the application directory and translation files exist at the expected path."
-            exit 1
+            echo "Warning: No translations were seeded for application ${{ matrix.application.appName }}. Check that translation files exist at the expected path."
           fi
 
           if [ "$num_failures" -ne 0 ]; then
