@@ -23,11 +23,10 @@ Problem
 *******
 
 As part of the ongoing effort to decouple from openedx (see `0003-fork-from-openedx`_),
-we desire greater ability to control how strings are translated.
+we also need to decouple our string translations from openedx.
 
-In particular, we would like to replace Transifex with an internally controlled
-translation service both for greater control and to remove the need to pay for an
-enterprise license for Transifex.
+In particular, as our user-facing text diverges from openedx, we need a separate sandbox
+for source strings and their translations.
 
 .. _0003-fork-from-openedx: 0003-fork-from-openedx.rst
 
@@ -70,8 +69,12 @@ Alternatives Considered
 Staying on Transifex
 ====================
 
-Would require either leveraging the existing openedx translations, which could diverge, and
-allows us less control, or paying for a new, costly enterprise license for the edX org.
+While strings continue to be translated by Transifex in the upstream openedx/openedx-translations
+repository, edX no longer maintains a license with Transifex, so we cannot translate
+edX-specific string.
+
+Using Transifex would require either leveraging the existing openedx translations, which are expected
+to diverge, or paying for a new, costly enterprise license for the edX org.
 
 Rollout Plan
 ************
