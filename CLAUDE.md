@@ -56,21 +56,32 @@ make upgrade                            # Recompile requirements/*.txt from *.in
 
 The repo is currently in a **hybrid state**: JavaScript/frontend apps use ai-translations; Python/Django apps still use Transifex.
 
-Key workflows:
+Workflows use `dorny/paths-filter` to conditionally skip expensive steps when only `.po` files changed.
+
+#### Translation workflows
+
 - **`extract-translation-source-files.yml`** — Daily cron; clones ~50 upstream repos (including `ai-translations`) and extracts English source strings into `translations/`.
-- **`translate-source-strings.yml`** — Calls the ai-translations service API to fetch translated strings for JavaScript frontend apps (~22 apps, ~21 languages). Triggered manually or on a schedule.
-- **`seed-translations.yml`** — Seeds/trains the ai-translations service with source strings. Uses `EDX_TRANSLATIONS_PROD_CLIENT_ID/SECRET` and an LMS JWT token.
-- **`validate-translation-files.yml`** — PR check; runs `validate_translation_files.py` for `.po` and `.json` files.
+- **`translate-source-strings.yml`** — Calls the ai-translations service API to fetch translated strings for JavaScript frontend apps (~22 apps, ~21 languages).
+- **`seed-translations.yml`** — Seeds/trains the ai-translations service with source strings.
+
+These 3 jobs authenticate using `EDX_TRANSLATIONS_PROD_CLIENT_ID/SECRET` and an LMS JWT token.
+
+#### Validation workflows
+
+- **`validate-translation-files.yml`** — PR check; runs `validate_translation_files.py` for modified `.po` and `.json` files.
 - **`python-tests.yml`** — Runs pytest when non-`.po` files change (skips on pure translation file PRs).
+
+#### Cleanup & merge workflows
+
 - **`automerge-transifex-app-prs.yml`** — Auto-merges bot PRs from the Transifex GitHub App (Python app translations, still active).
 - **`fix-transifex-resource-names.yml`** / **`release-project-sync.yml`** — Transifex resource management for Python apps and release branches.
-
-Workflows use `dorny/paths-filter` to conditionally skip expensive steps when only `.po` files changed.
 
 ### Translation Provider Configuration
 
 - **`transifex.yml`** — Defines all 50+ upstream repositories, file path patterns, and language settings for the Transifex integration. Still active for the Python app translation track.
-- ai-translations is configured via GitHub Actions secrets (`AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL`, `AI_TRANSLATIONS_SEED_TRANSLATIONS_URL`) rather than a config file in this repo.
+- The connection to `ai-translations` is configured via GitHub variables in the repo using:
+    - `AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL`
+    - `AI_TRANSLATIONS_SEED_TRANSLATIONS_URL`
 
 ## Environment Requirements
 
