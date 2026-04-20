@@ -292,11 +292,10 @@ jobs:
             # The fetch translations endpoint occasionally times out with a 504 Gateway Timeout error when
             # the underlying request to the AI translations service exceeds 60 seconds.
             # However, once the request completes, then subsequent requests will take much less time because
-            # the translations are cached.
-            # Most requests complete in under 15 seconds. For this reason, we retry once after 180 seconds to
-            # increase the likelihood of success. Requests that still fail will be picked up on the following run of this workflow.
+            # the translations are cached. --retry-all-errors ensures curl retries on 504 responses (not just
+            # network errors). Requests that still fail after all retries are soft-failed with a warning.
             curl_exit_code=0
-            status_code=$(curl -sS --connect-timeout 10 --max-time 180 --retry 1 --retry-delay 180 \
+            status_code=$(curl -sS --connect-timeout 10 --max-time 180 --retry 3 --retry-delay 60 --retry-all-errors \
               -w "%{http_code}" \
               -o "$response_file" \
               -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
@@ -336,6 +335,9 @@ jobs:
                 }
 
               git add "$output_file_path"
+            elif [ "$status_code" -eq 504 ]; then
+              echo "::warning::API call timed out (504) for language $edxLang for application ${{ matrix.application.appName }} after retries. Skipping — will retry on next run."
+              cat "$response_file"
             else
               echo "::warning::API call to fetch translations failed for language $edxLang for application ${{ matrix.application.appName }} with status code $status_code."
               cat "$response_file"
