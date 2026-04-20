@@ -22,85 +22,16 @@ jobs:
       javascript_applications: ${{ steps.generate_repo_matrix.outputs.javascript_applications }}
       translation_languages: ${{ steps.generate_repo_matrix.outputs.translation_languages }}
     steps:
+      - uses: actions/checkout@v5
+
       - uses: actions/github-script@v7
         id: generate_repo_matrix
         with:
           script: |
-            // This is a mapping from JavaScript applications to additional options.
-            // * pathOverride: the path to the root of the application's translations directory, defaults to src/i18n
-            const allJavascriptApps = {
-              'frontend-app-account': {},
-              'frontend-app-admin-portal': {},
-              'frontend-app-authn': {},
-              'frontend-app-communications': {},
-              'frontend-app-discussions': {},
-              'frontend-app-enterprise-api-doc': {},
-              'frontend-app-enterprise-checkout': {},
-              'frontend-app-enterprise-public-catalog': {},
-              'frontend-app-gradebook': {},
-              'frontend-app-learner-dashboard': {},
-              'frontend-app-learner-portal-enterprise': {},
-              'frontend-app-learner-portal-programs': {},
-              'frontend-app-learner-record': {},
-              'frontend-app-learning': {},
-              'frontend-app-ora': {},
-              'frontend-app-ora-grading': {},
-              'frontend-app-payment': {},
-              'frontend-app-profile': {},
-              'frontend-app-program-console': {},
-              'frontend-app-publisher': {},
-              'frontend-app-skills': {},
-              'frontend-app-support-tools': {},
-              'frontend-component-authn-edx': {},
-              'frontend-component-footer-edx': {},
-              'frontend-component-header-edx': {},
-              'frontend-components-tinymce-advanced-plugins-edx': {},
-              'frontend-enterprise': { pathOverride: 'i18n' },
-              'frontend-lib-special-exams': {},
-              'frontend-plugin-advertisements': {},
-              'frontend-plugin-authn': {},
-              'frontend-plugin-learner-dashboard': {},
-              'frontend-plugin-notifications': {},
-              'frontend-plugin-persona': {},
-              'frontend-plugin-recommendations': {},
-              'frontend-platform': {},
-              'paragon': {},
-              'studio-frontend': {},
-              'frontend-plugin-framework': {},
-            };
-
-            // The seed translations endpoint supports language codes in the IETF BCP 47 format.
-            // These language codes are a combination of a two-letter language code (i.e. the ISO 639-1 standard)
-            // and the region subtag (ISO 3166-1 alpha-2 or UN M.49), separated by a hyphen.
-            // As an example, "it-it", "es-419", "pt-pt", etc. We'll call this the edX language code.
-            // However, the filenames in this repository for JSON messages files use languages in the IETF BCP 47 format
-            // but with underscores instead of hyphens. This is not uncommon. We'll call this the repo language code.
-            // The languages are defined as objects containing both language codes because the edX language code is required
-            // to call the seed translations API while the repo code is required to find the required translation messages files.
-            const languages = [
-              { edxLang: "ar", repoLang: "ar" },
-              { edxLang: "ca", repoLang: "ca" },
-              { edxLang: "da", repoLang: "da" },
-              { edxLang: "de-de", repoLang: "de_DE" },
-              { edxLang: "el", repoLang: "el" },
-              { edxLang: "fr", repoLang: "fr" },
-              { edxLang: "fr-ca", repoLang: "fr_CA" },
-              { edxLang: "he", repoLang: "he" },
-              { edxLang: "hi", repoLang: "hi" },
-              { edxLang: "id", repoLang: "id" },
-              { edxLang: "it-it", repoLang: "it_IT" },
-              { edxLang: "ko-kr", repoLang: "ko" },
-              { edxLang: "pl", repoLang: "pl" },
-              { edxLang: "pt-br", repoLang: "pt_BR" },
-              { edxLang: "pt-pt", repoLang: "pt_PT" },
-              { edxLang: "ru", repoLang: "ru" },
-              { edxLang: "sw", repoLang: "sw" },
-              { edxLang: "te", repoLang: "te" },
-              { edxLang: "th", repoLang: "th" },
-              { edxLang: "tr-tr", repoLang: "tr_TR" },
-              { edxLang: "uk", repoLang: "uk" },
-              { edxLang: "zh-cn", repoLang: "zh_CN" }
-            ];
+            const fs = require('fs');
+            const { javascriptApplications: allJavascriptApps, languages } = JSON.parse(
+              fs.readFileSync('.github/translations-config.json', 'utf8')
+            );
 
             // In order to efficiently query for details about a selected language, we maintain a mapping from edX language codes
             // to the object that describes the language.
