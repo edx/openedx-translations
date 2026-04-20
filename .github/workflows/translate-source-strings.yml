@@ -200,19 +200,18 @@ jobs:
           num_failures=0
           num_attempted=0
 
+          source_strings_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/transifex_input.json"
+
+          if [ ! -f "$source_strings_file_path" ]; then
+            echo "::warning::Source strings file does not exist: $source_strings_file_path. Skipping — application directory may not yet be seeded."
+            exit 0
+          fi
+
           for lang in $(echo "$translation_languages" | jq -c '.[]'); do
             edxLang=$(echo "$lang" | jq -r '.edxLang')
             repoLang=$(echo "$lang" | jq -r '.repoLang')
 
             echo "Processing language $edxLang for application ${{ matrix.application.appName }}."
-
-            source_strings_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/transifex_input.json"
-
-            if [ ! -f "$source_strings_file_path" ]; then
-              echo "::warning::Source strings file does not exist: $source_strings_file_path. Skipping."
-              echo ""
-              continue
-            fi
 
             num_attempted=$((num_attempted+1))
 
@@ -276,11 +275,6 @@ jobs:
 
             echo ""
           done
-
-          if [ "$num_attempted" -eq 0 ]; then
-            echo "::warning::No source strings file found for ${{ matrix.application.appName }}. Skipping — application directory may not yet be seeded."
-            exit 0
-          fi
 
           GIT_STATUS=$(git status "translations/${{ matrix.application.appName }}/${i18n_path}/messages" -s | wc -l)
           if [ "$GIT_STATUS" -gt 0 ]; then
