@@ -198,7 +198,6 @@ jobs:
           i18n_path="${{ matrix.application.pathOverride || 'src/i18n' }}"
 
           num_failures=0
-          num_attempted=0
 
           source_strings_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/transifex_input.json"
 
@@ -212,8 +211,6 @@ jobs:
             repoLang=$(echo "$lang" | jq -r '.repoLang')
 
             echo "Processing language $edxLang for application ${{ matrix.application.appName }}."
-
-            num_attempted=$((num_attempted+1))
 
             output_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/messages/${repoLang}.json"
             response_file="/tmp/ai_translate_response_${edxLang}.json"
