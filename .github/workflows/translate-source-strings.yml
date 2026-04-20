@@ -235,7 +235,7 @@ jobs:
 
             if [ "$curl_exit_code" -ne 0 ]; then
               echo "::warning::Curl request to fetch translations failed for language $edxLang for application ${{ matrix.application.appName }} with exit code $curl_exit_code."
-              cat $response_file
+              [ -s "$response_file" ] && cat "$response_file"
 
               num_failures=$((num_failures+1))
               continue
@@ -266,10 +266,10 @@ jobs:
               git add "$output_file_path"
             elif [ "$status_code" -eq 504 ]; then
               echo "::warning::API call timed out (504) for language $edxLang for application ${{ matrix.application.appName }} after retries. Skipping — will retry on next run."
-              cat "$response_file"
+              [ -s "$response_file" ] && cat "$response_file"
             else
               echo "::warning::API call to fetch translations failed for language $edxLang for application ${{ matrix.application.appName }} with status code $status_code."
-              cat "$response_file"
+              [ -s "$response_file" ] && cat "$response_file"
               num_failures=$((num_failures+1))
             fi
 
