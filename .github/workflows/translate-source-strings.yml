@@ -17,6 +17,11 @@ on:
         required: false
         type: string
 
+env:
+  # Maximum number of source string keys to send in a single API request.
+  # Larger files are split into chunks of this size to avoid gateway timeouts.
+  TRANSLATION_CHUNK_SIZE: 500
+
 jobs:
   setup:
     runs-on: ubuntu-latest
@@ -215,7 +220,7 @@ jobs:
 
           # Determine chunk count. This lets us split large source files into chunks to avoid gateway timeouts.
           # Each chunk is translated independently and responses are merged.
-          chunk_size=500
+          chunk_size="$TRANSLATION_CHUNK_SIZE"
           num_chunks=$(( (key_count + chunk_size - 1) / chunk_size ))
 
           # Iterate through languages to translate.
