@@ -242,7 +242,11 @@ jobs:
                 echo "Processing chunk $((chunk_idx + 1)) of $num_chunks for language $edxLang."
                 start=$((chunk_idx * chunk_size))
                 chunk_source="/tmp/ai_translate_chunk_${edxLang}_${chunk_idx}.json"
-                jq "to_entries | .[$start:$((start + chunk_size))] | from_entries" "$source_strings_file_path" > "$chunk_source"
+                if ! jq "to_entries | .[$start:$((start + chunk_size))] | from_entries" "$source_strings_file_path" > "$chunk_source"; then
+                  echo "::warning::Failed to create chunk $((chunk_idx + 1)) of $num_chunks for language $edxLang for application ${{ matrix.application.appName }}. Skipping."
+                  chunk_failed=1
+                  break
+                fi
 
               # For small files, we can skip the chunking and just use the original source file.
               else
