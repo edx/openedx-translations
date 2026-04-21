@@ -211,7 +211,11 @@ jobs:
             exit 0
           fi
 
-          # Validate that source strings file contains strings.
+          # Validate that the source strings file is a non-empty JSON object.
+          if ! jq -e 'type == "object"' "$source_strings_file_path" > /dev/null 2>&1; then
+            echo "::warning::Source strings file is malformed or not a JSON object: $source_strings_file_path. Skipping."
+            exit 0
+          fi
           key_count=$(jq 'length' "$source_strings_file_path")
           if [ "$key_count" -eq 0 ]; then
             echo "::warning::Source strings file is empty for ${{ matrix.application.appName }}. Skipping."
