@@ -219,7 +219,8 @@ jobs:
           num_chunks=$(( (key_count + chunk_size - 1) / chunk_size ))
 
           # Iterate through languages to translate.
-          for lang in $(echo "$translation_languages" | jq -c '.[]'); do
+          # Use read to avoid word-splitting issues if any language value contains whitespace.
+          while IFS= read -r lang; do
             edxLang=$(echo "$lang" | jq -r '.edxLang')
             repoLang=$(echo "$lang" | jq -r '.repoLang')
 
@@ -344,7 +345,7 @@ jobs:
 
             git add "$output_file_path"
             echo ""
-          done
+          done < <(echo "$translation_languages" | jq -c '.[]')
 
           # Check if there are any changes to commit. If so, commit and push.
           GIT_STATUS=$(git status "translations/${{ matrix.application.appName }}/${i18n_path}/messages" -s | wc -l)
