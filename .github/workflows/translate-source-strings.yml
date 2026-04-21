@@ -206,10 +206,16 @@ jobs:
             exit 0
           fi
 
+          # Validate that source strings file contains strings.
+          key_count=$(jq 'length' "$source_strings_file_path")
+          if [ "$key_count" -eq 0 ]; then
+            echo "::warning::Source strings file is empty for ${{ matrix.application.appName }}. Skipping."
+            exit 0
+          fi
+
           # Determine chunk count. This lets us split large source files into chunks to avoid gateway timeouts.
           # Each chunk is translated independently and responses are merged.
           chunk_size=500
-          key_count=$(jq 'length' "$source_strings_file_path")
           num_chunks=$(( (key_count + chunk_size - 1) / chunk_size ))
 
           # Iterate through languages to translate.
