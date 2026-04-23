@@ -76,27 +76,20 @@ jobs:
               { owner: 'edx', repo: 'xblock-submit-and-compare' },
             ];
 
-            const allJavascriptRepos = Object.entries(javascriptApplications).map(([repo, config]) => ({
-              owner: config.owner ?? 'edx',
-              repo,
-            }));
+            const allJavascriptRepos = Object.entries(javascriptApplications)
+              .filter(([, config]) => !config.subpackages)
+              .map(([repo, config]) => ({
+                owner: config.owner ?? 'edx',
+                repo,
+              }));
 
-            const monoreposWithSubpackages = [
-              { 
-                owner: 'edx', 
-                repo: 'frontend-plugins',
-                packages: [
-                  'cohesion-wrapper',
-                  'course-app-translation-plugin',
-                  'course-end-enterprise-plugins',
-                  'course-outline-sidebar-trigger-plugin',
-                  'left-sidebar-navigation-plugin',
-                  'progress-tab-grade-plugins',
-                  'template-private-plugin',
-                  'unit-title-plugin',
-                ]
-              },
-            ];
+            const monoreposWithSubpackages = Object.entries(javascriptApplications)
+              .filter(([, config]) => config.subpackages)
+              .map(([repo, config]) => ({
+                owner: config.owner ?? 'edx',
+                repo,
+                packages: config.subpackages,
+              }));
 
             // When https://2u-internal.atlassian.net/wiki/spaces/AU/pages/2786066453/Mobile+app+translations
             // tasks or equivalents are completed, uncomment and correct this section.

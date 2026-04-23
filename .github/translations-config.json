@@ -38,7 +38,19 @@
     "frontend-platform": {},
     "paragon": { "owner": "openedx" },
     "studio-frontend": {},
-    "frontend-plugin-framework": { "owner": "openedx" }
+    "frontend-plugin-framework": { "owner": "openedx" },
+    "frontend-plugins": {
+      "subpackages": [
+        "cohesion-wrapper",
+        "course-app-translation-plugin",
+        "course-end-enterprise-plugins",
+        "course-outline-sidebar-trigger-plugin",
+        "left-sidebar-navigation-plugin",
+        "progress-tab-grade-plugins",
+        "template-private-plugin",
+        "unit-title-plugin"
+      ]
+    }
   },
   "languages": [
     { "edxLang": "ar", "repoLang": "ar" },
