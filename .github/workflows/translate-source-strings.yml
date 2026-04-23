@@ -20,7 +20,8 @@ on:
 env:
   # Maximum number of source string keys to send in a single API request.
   # Larger files are split into chunks of this size to avoid gateway timeouts.
-  TRANSLATION_CHUNK_SIZE: 500
+  # Can be overridden by setting the TRANSLATION_CHUNK_SIZE repository variable.
+  TRANSLATION_CHUNK_SIZE: ${{ vars.TRANSLATION_CHUNK_SIZE || 500 }}
 
 jobs:
   setup:
