@@ -76,14 +76,14 @@ jobs:
               { owner: 'edx', repo: 'xblock-submit-and-compare' },
             ];
 
-            const allJavascriptRepos = Object.entries(javascriptApplications)
+            const javascriptRepos = Object.entries(javascriptApplications)
               .filter(([, config]) => !config.subpackages)
               .map(([repo, config]) => ({
                 owner: config.owner ?? 'edx',
                 repo,
               }));
 
-            const monoreposWithSubpackages = Object.entries(javascriptApplications)
+            const javascriptReposWithSubpackages = Object.entries(javascriptApplications)
               .filter(([, config]) => config.subpackages)
               .map(([repo, config]) => ({
                 owner: config.owner ?? 'edx',
@@ -110,13 +110,13 @@ jobs:
 
             core.setOutput('hasPythonRepos', true);
             core.setOutput('hasJavascriptRepos', true);
-            core.setOutput('hasMonorepos', monoreposWithSubpackages.length > 0);
+            core.setOutput('hasJavascriptReposWithSubpackages', javascriptReposWithSubpackages.length > 0);
             core.setOutput('hasGenericRepos', false);
 
             if (selectedRepo === '') {
               core.setOutput('pythonRepos', allPythonRepos);
-              core.setOutput('javascriptRepos', allJavascriptRepos);
-              core.setOutput('monorepos', monoreposWithSubpackages);
+              core.setOutput('javascriptRepos', javascriptRepos);
+              core.setOutput('js_repos_with_subpackages', javascriptReposWithSubpackages);
               //core.setOutput('genericRepos', allGenericRepos);
               return;
             }
@@ -129,7 +129,7 @@ jobs:
               core.setOutput('hasPythonRepos', false);
             }
 
-            const javascriptRepo = allJavascriptRepos.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
+            const javascriptRepo = javascriptRepos.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
             if (javascriptRepo) {
               core.setOutput('javascriptRepos', [javascriptRepo]);
             } else {
@@ -137,12 +137,12 @@ jobs:
               core.setOutput('hasJavascriptRepos', false);
             }
 
-            const monorepo = monoreposWithSubpackages.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
-            if (monorepo) {
-              core.setOutput('monorepos', [monorepo]);
+            const javascriptRepoWithSubpackage = javascriptReposWithSubpackages.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
+            if (javascriptRepoWithSubpackage) {
+              core.setOutput('js_repos_with_subpackages', [javascriptRepoWithSubpackage]);
             } else {
-              core.setOutput('monorepos', []);
-              core.setOutput('hasMonorepos', false);
+              core.setOutput('js_repos_with_subpackages', []);
+              core.setOutput('hasJavascriptReposWithSubpackages', false);
             }
 
             //const genericRepoConfig = allGenericRepos.find(repoConfig => repoConfig.repo === selectedRepo);
@@ -158,8 +158,8 @@ jobs:
       python_repos: ${{ steps.generate_repo_matrix.outputs.pythonRepos }}
       has_js_repos: ${{ steps.generate_repo_matrix.outputs.hasJavascriptRepos }}
       js_repos: ${{ steps.generate_repo_matrix.outputs.javascriptRepos }}
-      has_monorepos: ${{ steps.generate_repo_matrix.outputs.hasMonorepos }}
-      monorepos: ${{ steps.generate_repo_matrix.outputs.monorepos }}
+      has_js_repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.hasJavascriptReposWithSubpackages }}
+      js_repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.js_repos_with_subpackages }}
       # has_generic_repos: ${{ steps.generate_repo_matrix.outputs.hasGenericRepos }}
       # generic_repos: ${{ steps.generate_repo_matrix.outputs.genericRepos }}
 
@@ -465,16 +465,16 @@ jobs:
           # push changes to branch
           git push
 
-  # Monorepos with subpackages (e.g., frontend-plugins)
-  # Each package in the monorepo has its own transifex_input.json
-  monorepo-translations:
-    if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_monorepos) == true }}
+  # Javascript Repos with subpackages (e.g., frontend-plugins)
+  # Each package in the javascriptRepoWithSubpackage has its own transifex_input.json
+  js-repos-with-subpackages-translations:
+    if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_js_repos_with_subpackages) == true }}
     needs: [setup-branch, setup-matrix, js-translations]
     strategy:
       # using max-parallel to avoid git push/pull issues when running in parallel
       max-parallel: 1
       matrix:
-        repo_config: ${{ fromJson(needs.setup-matrix.outputs.monorepos) }}
+        repo_config: ${{ fromJson(needs.setup-matrix.outputs.js_repos_with_subpackages) }}
     runs-on: ubuntu-latest
     continue-on-error: true
 
@@ -494,7 +494,7 @@ jobs:
         with:
           ref: ${{ needs.setup-branch.outputs.branch }}
 
-      # Clones the monorepo
+      # Clones the javascriptRepoWithSubpackage
       - name: clone ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
         uses: actions/checkout@v5
         with:
@@ -597,7 +597,7 @@ jobs:
   generic-translations:
     if: false
     # if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_generic_repos) == true }}
-    needs: [setup-branch, setup-matrix, monorepo-translations]
+    needs: [setup-branch, setup-matrix, js-repos-with-subpackages-translations]
     strategy:
       # using max-parallel to avoid git push/pull issues when running in parallel
       max-parallel: 1
@@ -690,8 +690,8 @@ jobs:
 
   merge-translations:
     runs-on: ubuntu-latest
-    #needs: [setup-branch, python-translations, js-translations, monorepo-translations, generic-translations]
-    needs: [setup-branch, python-translations, js-translations, monorepo-translations]
+    #needs: [setup-branch, python-translations, js-translations, js-repos-with-subpackages-translations, generic-translations]
+    needs: [setup-branch, python-translations, js-translations, js-repos-with-subpackages-translations]
     # If a single repo is specified, at least one job in the needs array will be skipped. Without this condition, the merge-translations job
     # will be skipped as well.
     # This allows the workflow to complete and not be marked as failed when the workflow is run on a single repository.
