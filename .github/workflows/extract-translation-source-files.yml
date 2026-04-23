@@ -116,7 +116,7 @@ jobs:
             if (selectedRepo === '') {
               core.setOutput('pythonRepos', allPythonRepos);
               core.setOutput('javascriptRepos', javascriptRepos);
-              core.setOutput('js_repos_with_subpackages', javascriptReposWithSubpackages);
+              core.setOutput('javascriptReposWithSubpackages', javascriptReposWithSubpackages);
               //core.setOutput('genericRepos', allGenericRepos);
               return;
             }
@@ -139,9 +139,9 @@ jobs:
 
             const javascriptRepoWithSubpackage = javascriptReposWithSubpackages.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
             if (javascriptRepoWithSubpackage) {
-              core.setOutput('js_repos_with_subpackages', [javascriptRepoWithSubpackage]);
+              core.setOutput('javascriptReposWithSubpackages', [javascriptRepoWithSubpackage]);
             } else {
-              core.setOutput('js_repos_with_subpackages', []);
+              core.setOutput('javascriptReposWithSubpackages', []);
               core.setOutput('hasJavascriptReposWithSubpackages', false);
             }
 
@@ -159,7 +159,7 @@ jobs:
       has_js_repos: ${{ steps.generate_repo_matrix.outputs.hasJavascriptRepos }}
       js_repos: ${{ steps.generate_repo_matrix.outputs.javascriptRepos }}
       has_js_repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.hasJavascriptReposWithSubpackages }}
-      js_repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.js_repos_with_subpackages }}
+      js_repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.javascriptReposWithSubpackages }}
       # has_generic_repos: ${{ steps.generate_repo_matrix.outputs.hasGenericRepos }}
       # generic_repos: ${{ steps.generate_repo_matrix.outputs.genericRepos }}
 
