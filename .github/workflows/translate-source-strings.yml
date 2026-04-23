@@ -17,6 +17,11 @@ on:
         required: false
         type: string
 
+env:
+  # Maximum number of source string keys to send in a single API request.
+  # Larger files are split into chunks of this size to avoid gateway timeouts.
+  TRANSLATION_CHUNK_SIZE: 500
+
 jobs:
   setup:
     runs-on: ubuntu-latest
@@ -59,7 +64,7 @@ jobs:
               core.setFailed(`Selected language "${selectedLanguage}" is not a valid option.`);
               throw new Error(`Selected language "${selectedLanguage}" is not a valid option.`);
             }
-  
+
             const javascriptApplications = selectedApp === ''
               ? Object.entries(allJavascriptApps).map(([appName, config]) => ({ appName, ...config }))
               : [{ appName: selectedApp, ...allJavascriptApps[selectedApp] }];
@@ -88,7 +93,7 @@ jobs:
       # Note that when using a workflow_dispatch, this step will create a branch off the specified ref, which may not be the default branch.
       # This is useful for testing changes to the workflow during development. However, it will generate a branch with the changes on the
       # specified branch and any generated translations files.
-      # The merge step prevents auto-merge in this case. 
+      # The merge step prevents auto-merge in this case.
       - name: Create and push branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -193,86 +198,169 @@ jobs:
         run: |
           # Mask the JWT so as not to inadvertently expose it.
           echo "::add-mask::$JWT_TOKEN"
-
-          translation_languages='${{ needs.setup.outputs.translation_languages }}'
-          i18n_path="${{ matrix.application.pathOverride || 'src/i18n' }}"
-
           num_failures=0
 
+          # Get list of languages, output path, and source strings path
+          translation_languages='${{ needs.setup.outputs.translation_languages }}'
+          i18n_path="${{ matrix.application.pathOverride || 'src/i18n' }}"
           source_strings_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/transifex_input.json"
 
+          # Validate that the source strings file exists. If not, exit early.
           if [ ! -f "$source_strings_file_path" ]; then
             echo "::warning::Source strings file does not exist: $source_strings_file_path. Skipping — application directory may not yet be seeded."
             exit 0
           fi
 
-          for lang in $(echo "$translation_languages" | jq -c '.[]'); do
+          # Validate that the source strings file is a non-empty JSON object.
+          if ! jq -e 'type == "object"' "$source_strings_file_path" > /dev/null 2>&1; then
+            echo "::warning::Source strings file is malformed or not a JSON object: $source_strings_file_path. Skipping."
+            exit 0
+          fi
+          key_count=$(jq 'length' "$source_strings_file_path")
+          if [ "$key_count" -eq 0 ]; then
+            echo "::warning::Source strings file is empty for ${{ matrix.application.appName }}. Skipping."
+            exit 0
+          fi
+
+          # Determine chunk count. This lets us split large source files into chunks to avoid gateway timeouts.
+          # Each chunk is translated independently and responses are merged.
+          chunk_size="$TRANSLATION_CHUNK_SIZE"
+          num_chunks=$(( (key_count + chunk_size - 1) / chunk_size ))
+
+          # Iterate through languages to translate.
+          # Use read to avoid word-splitting issues if any language value contains whitespace.
+          while IFS= read -r lang; do
             edxLang=$(echo "$lang" | jq -r '.edxLang')
             repoLang=$(echo "$lang" | jq -r '.repoLang')
 
-            echo "Processing language $edxLang for application ${{ matrix.application.appName }}."
+            echo "Processing language $edxLang for application ${{ matrix.application.appName }} ($key_count keys, in $num_chunks chunk(s))."
 
-            output_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/messages/${repoLang}.json"
-            response_file="/tmp/ai_translate_response_${edxLang}.json"
+            chunk_failed=0
+            chunk_504=0
+            chunk_response_files=()
 
-            # The fetch translations endpoint occasionally times out with a 504 Gateway Timeout error when
-            # the underlying request to the AI translations service exceeds 60 seconds.
-            # However, once the request completes, then subsequent requests will take much less time because
-            # the translations are cached. --retry-all-errors ensures curl retries on 504 responses (not just
-            # network errors). Requests that still fail after all retries are soft-failed with a warning.
-            curl_exit_code=0
-            status_code=$(curl -sS --connect-timeout 10 --max-time 180 --retry 3 --retry-delay 60 --retry-all-errors \
-              -w "%{http_code}" \
-              -o "$response_file" \
-              -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
-              -F "file=@$source_strings_file_path" \
-              -F "application_name=${{ matrix.application.appName }}" \
-              -F "language=$edxLang" \
-              -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
+            # Iterate over each chunk
+            for ((chunk_idx=0; chunk_idx<num_chunks; chunk_idx++)); do
 
-            if [ "$curl_exit_code" -ne 0 ]; then
-              echo "::warning::Curl request to fetch translations failed for language $edxLang for application ${{ matrix.application.appName }} with exit code $curl_exit_code."
-              [ -s "$response_file" ] && cat "$response_file"
+              # Create a temp file to store the translated response(s)
+              chunk_response="/tmp/ai_translate_response_${edxLang}_${chunk_idx}.json"
+              chunk_response_files+=("$chunk_response")
 
+              # For large files, break into chunks and translate each separately
+              if [ "$num_chunks" -gt 1 ]; then
+                echo "Processing chunk $((chunk_idx + 1)) of $num_chunks for language $edxLang."
+                start=$((chunk_idx * chunk_size))
+                chunk_source="/tmp/ai_translate_chunk_${edxLang}_${chunk_idx}.json"
+                if ! jq "to_entries | .[$start:$((start + chunk_size))] | from_entries" "$source_strings_file_path" > "$chunk_source"; then
+                  echo "::warning::Failed to create chunk $((chunk_idx + 1)) of $num_chunks for language $edxLang for application ${{ matrix.application.appName }}. Skipping."
+                  chunk_failed=1
+                  break
+                fi
+
+              # For small files, we can skip the chunking and just use the original source file.
+              else
+                chunk_source="$source_strings_file_path"
+              fi
+
+              # The fetch translations endpoint occasionally times out with a 504 Gateway Timeout error.
+              # --retry-all-errors ensures curl retries on 504 responses (not just network errors).
+              # Requests that still fail after all retries are soft-failed with a warning.
+              curl_exit_code=0
+              status_code=$(curl -sS --connect-timeout 10 --max-time 180 --retry 3 --retry-delay 60 --retry-all-errors \
+                -w "%{http_code}" \
+                -o "$chunk_response" \
+                -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
+                -F "file=@$chunk_source" \
+                -F "application_name=${{ matrix.application.appName }}" \
+                -F "language=$edxLang" \
+                -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
+
+              # On a chunk failure, early exit the chunk loop to avoid unnecessary API calls.
+              if [ "$curl_exit_code" -ne 0 ]; then
+                echo "::warning::Curl request failed for chunk $((chunk_idx + 1)) of $num_chunks, language $edxLang, application ${{ matrix.application.appName }} with exit code $curl_exit_code."
+                [ -s "$chunk_response" ] && cat "$chunk_response"
+                chunk_failed=1
+                break
+              fi
+
+              if [ "$status_code" -eq 504 ]; then
+                echo "::warning::API call timed out (504) for chunk $((chunk_idx + 1)) of $num_chunks, language $edxLang, application ${{ matrix.application.appName }} after retries. Skipping — will retry on next run."
+                [ -s "$chunk_response" ] && cat "$chunk_response"
+                chunk_504=1
+                break
+              fi
+
+              if [ "$status_code" -ne 200 ]; then
+                echo "::warning::API call failed for chunk $((chunk_idx + 1)) of $num_chunks, language $edxLang, application ${{ matrix.application.appName }} with status code $status_code."
+                [ -s "$chunk_response" ] && cat "$chunk_response"
+                chunk_failed=1
+                break
+              fi
+
+              echo "Chunk $((chunk_idx + 1)) of $num_chunks succeeded for language $edxLang."
+            done
+
+            # Note chunk failures
+            if [ "$chunk_failed" -eq 1 ]; then
               num_failures=$((num_failures+1))
+              echo ""
+              continue
+            fi
+            if [ "$chunk_504" -eq 1 ]; then
+              echo ""
               continue
             fi
 
-            if [ "$status_code" -eq 200 ]; then
-              echo "API call to fetch translations succeeded for language $edxLang for application ${{ matrix.application.appName }}."
-              if ! jq empty "$response_file" 2>/dev/null; then
-                echo "::warning::Response for language $edxLang for application ${{ matrix.application.appName }} is not valid JSON. Skipping."
-                num_failures=$((num_failures+1))
-                continue
+            # Validate that chunks are valid JSON
+            all_valid=1
+            for chunk_response in "${chunk_response_files[@]}"; do
+              if ! jq empty "$chunk_response" 2>/dev/null; then
+                echo "::warning::A response chunk for language $edxLang for application ${{ matrix.application.appName }} is not valid JSON. Skipping."
+                all_valid=0
+                break
               fi
+            done
+            if [ "$all_valid" -eq 0 ]; then
+              num_failures=$((num_failures+1))
+              echo ""
+              continue
+            fi
 
-              mkdir -p "$(dirname "$output_file_path")"
+            echo "API call to fetch translations succeeded for language $edxLang for application ${{ matrix.application.appName }}."
 
-              # Pretty format the JSON prior to writing it to the file; otherwise, the file will be one very long JSON string.
-              # Although unlikely, jq can theoretically fail for reasons other than invalid JSON. Invalid JSON is checked above, but out of an abundance of caution,
-              # only write to the file if jq succeeds; otherwise, the file would be overwritten with an empty file, deleting the translations.
-              jq . "$response_file" > "${output_file_path}.tmp" \
+            # Create output directory, if it doesn't exist
+            output_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/messages/${repoLang}.json"
+            mkdir -p "$(dirname "$output_file_path")"
+
+            # Pretty format the JSON; if multiple chunks, merge them first with jq -s 'add'.
+            # Only write to the output file if jq succeeds to avoid overwriting with an empty file.
+            if [ "${#chunk_response_files[@]}" -gt 1 ]; then
+              jq -s 'add' "${chunk_response_files[@]}" > "${output_file_path}.tmp" \
+                && mv "${output_file_path}.tmp" "$output_file_path" \
+                || {
+                  echo "::warning::Failed to merge and write translated strings for language $edxLang for application ${{ matrix.application.appName }}. Skipping."
+                  rm -f "${output_file_path}.tmp"
+                  num_failures=$((num_failures+1))
+                  echo ""
+                  continue
+                }
+            else
+              jq . "${chunk_response_files[0]}" > "${output_file_path}.tmp" \
                 && mv "${output_file_path}.tmp" "$output_file_path" \
                 || {
                   echo "::warning::Failed to write translated strings for language $edxLang for application ${{ matrix.application.appName }} to $output_file_path. Skipping."
                   rm -f "${output_file_path}.tmp"
                   num_failures=$((num_failures+1))
+                  echo ""
                   continue
                 }
-
-              git add "$output_file_path"
-            elif [ "$status_code" -eq 504 ]; then
-              echo "::warning::API call timed out (504) for language $edxLang for application ${{ matrix.application.appName }} after retries. Skipping — will retry on next run."
-              [ -s "$response_file" ] && cat "$response_file"
-            else
-              echo "::warning::API call to fetch translations failed for language $edxLang for application ${{ matrix.application.appName }} with status code $status_code."
-              [ -s "$response_file" ] && cat "$response_file"
-              num_failures=$((num_failures+1))
             fi
 
+            git add "$output_file_path"
             echo ""
-          done
+          done < <(echo "$translation_languages" | jq -c '.[]')
 
+          # Check if there are any changes to commit. If so, commit and push.
           GIT_STATUS=$(git status "translations/${{ matrix.application.appName }}/${i18n_path}/messages" -s | wc -l)
           if [ "$GIT_STATUS" -gt 0 ]; then
             git commit -m "chore: add AI translated strings for ${{ matrix.application.appName }}"
