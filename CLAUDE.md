@@ -76,6 +76,19 @@ These 3 jobs authenticate using `EDX_TRANSLATIONS_PROD_CLIENT_ID/SECRET` and an 
 - **`automerge-transifex-app-prs.yml`** — Auto-merges bot PRs from the Transifex GitHub App (Python app translations, still active).
 - **`fix-transifex-resource-names.yml`** / **`release-project-sync.yml`** — Transifex resource management for Python apps and release branches.
 
+### JavaScript App Configuration (`.github/translations-config.json`)
+
+All JavaScript apps are registered in `javascriptApplications`. Each entry is keyed by repo name with an optional config object supporting these fields:
+
+- **`owner`** — GitHub org (defaults to `edx`)
+- **`pathOverride`** — overrides the default `src/i18n` path for source/translated files
+- **`subpackages`** — list of package directory names inside a monorepo's `packages/` directory; presence of this key marks the repo as a monorepo
+
+Apps **with** `subpackages` are treated as monorepos throughout the extract, seed, and translate workflows. They are split into a separate matrix from regular JS apps. Each subpackage is treated as its own translation unit, with:
+- Source strings at `translations/<repo>/packages/<package>/src/i18n/transifex_input.json`
+- Translated strings at `translations/<repo>/packages/<package>/src/i18n/messages/<repoLang>.json`
+- `application_name` of `<repo>/<package>` (e.g., `frontend-plugins/cohesion-wrapper`) when calling the ai-translations API
+
 ### Translation Provider Configuration
 
 - **`transifex.yml`** — Defines all 50+ upstream repositories, file path patterns, and language settings for the Transifex integration. Still active for the Python app translation track.
