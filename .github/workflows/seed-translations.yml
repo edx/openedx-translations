@@ -135,7 +135,7 @@ jobs:
           num_attempted=0
 
           # Loop through selected languages
-          for lang in $(echo "$translation_languages" | jq -c '.[]'); do
+          while IFS= read -r lang; do
             # Re-fetch JWT per language to prevent token expiry on long-running jobs.
             fetch_jwt || exit 1
 
@@ -193,7 +193,7 @@ jobs:
             fi
 
             echo ""
-          done
+          done < <(echo "$translation_languages" | jq -c '.[]')
 
           # Warn (but don't fail) if no languages were seeded — the directory exists but
           # none of the expected language files were present.
