@@ -1,5 +1,5 @@
-# This workflow seeds translations for JavaScript applications by calling the AI translations
-# seed endpoint for each application and language code combination, using existing source string files and translated strings file.
+# This workflow seeds translations for JavaScript applications, storing existing translations in ai-translations.
+# This one-time action helps us avoid re-translating strings that have already been translated.
 
 name: Seed translations
 
@@ -29,27 +29,28 @@ jobs:
         id: generate_repo_matrix
         with:
           script: |
+            // Get repo & language config from translations-config.json.
             const fs = require('fs');
             const { javascriptApplications: allJavascriptApps, languages } = JSON.parse(
               fs.readFileSync('.github/translations-config.json', 'utf8')
             );
 
-            // In order to efficiently query for details about a selected language, we maintain a mapping from edX language codes
-            // to the object that describes the language.
+            // Map language codes to their repo path and edX format for easy lookup and validation.
             const languageMap = languages.reduce((acc, lang) => {
               acc[lang.edxLang] = lang;
               return acc;
             }, {});
 
-            // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
+            // Get apps & languages to seed from workflow inputs
+            // Original method, replaced with workaround until https://github.com/actions/toolkit/issues/1576 is fixed.
             // const appInput = core.getInput('application_name');
             // const languageInput = core.getInput('translation_language');
-
             const appInput = ${{ toJSON(github.event.inputs.application_name) }} || '';
             const languageInput = ${{ toJSON(github.event.inputs.translation_language) }} || '';
             const selectedApp = appInput ? appInput.toLowerCase() : '';
             const selectedLanguage = languageInput ? languageInput.toLowerCase() : '';
 
+            // Validate that app & languge inputs are valid
             if (selectedApp !== '' && !Object.keys(allJavascriptApps).includes(selectedApp)) {
               core.setFailed(`Selected application "${selectedApp}" is not a valid option.`);
               throw new Error(`Selected application "${selectedApp}" is not a valid option.`);
@@ -59,23 +60,26 @@ jobs:
               throw new Error(`Selected language "${selectedLanguage}" is not a valid option.`);
             }
 
+            // Split out regular JS apps and monorepos (repos with subpackages), defaulting to all if unspecified.
             const javascriptRepos = Object.entries(allJavascriptApps).filter(([, config]) => !config.subpackages);
-            const javascriptSubpackageRepos = Object.entries(allJavascriptApps).filter(([, config]) => config.subpackages);
-
             const javascriptApplications = selectedApp === ''
               ? javascriptRepos.map(([appName, config]) => ({ appName, ...config }))
               : javascriptRepos.filter(([appName]) => appName === selectedApp).map(([appName, config]) => ({ appName, ...config }));
 
+            const javascriptSubpackageRepos = Object.entries(allJavascriptApps).filter(([, config]) => config.subpackages);
             const javascriptReposWithSubpackages = selectedApp === ''
               ? javascriptSubpackageRepos.map(([repo, config]) => ({ repo, owner: config.owner ?? 'edx', packages: config.subpackages }))
               : javascriptSubpackageRepos.filter(([repo]) => repo === selectedApp).map(([repo, config]) => ({ repo, owner: config.owner ?? 'edx', packages: config.subpackages }));
 
+            // Split out translations langauges to seed, defaulting to all if none selected.
             const translationLanguages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
 
+            // Produce validated output of applications and languages to seed.
             core.setOutput('javascript_applications', javascriptApplications);
             core.setOutput('javascript_repos_with_subpackages', javascriptReposWithSubpackages);
             core.setOutput('translation_languages', translationLanguages);
 
+  # Seeds regular (non-monorepo) JavaScript apps.
   seed-translations:
     runs-on: ubuntu-latest
     needs: [setup]
@@ -216,6 +220,7 @@ jobs:
             exit 1
           fi
 
+  # Seeds monorepos with subpackages (e.g. frontend-plugins); each subpackage is seeded independently.
   seed-js-repos-with-subpackages:
     runs-on: ubuntu-latest
     needs: [setup]
@@ -245,11 +250,13 @@ jobs:
           echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}"
           echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}"
 
+          # Validate that the client ID is defined
           if [ -z "${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}" ]; then
             echo "Required secret EDX_TRANSLATIONS_PROD_CLIENT_ID is not set."
             missing=$((missing+1))
           fi
 
+          # Validate that the client secret is defined
           if [ -z "${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}" ]; then
             echo "Required secret EDX_TRANSLATIONS_PROD_CLIENT_SECRET is not set."
             missing=$((missing+1))
@@ -291,11 +298,13 @@ jobs:
             exit 1
           fi
 
+          # Mask the JWT so as not to inadvertently expose it.
           echo "::add-mask::$jwt_token"
           echo "JWT_TOKEN=$jwt_token" >> $GITHUB_ENV
 
       - name: Seed translation languages for ${{ matrix.repo_config.repo }} subpackages
         run: |
+          # Mask the JWT so as not to inadvertently expose it.
           echo "::add-mask::$JWT_TOKEN"
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
@@ -304,18 +313,21 @@ jobs:
           num_failures=0
           num_attempted=0
 
+          # Loop through each subpackage in the monorepo.
           for package in $(echo "$packages" | jq -r '.[]'); do
             echo "Processing package $package in ${{ matrix.repo_config.repo }}."
 
             i18n_dir="translations/${{ matrix.repo_config.repo }}/packages/${package}/src/i18n"
             source_strings_file_path="${i18n_dir}/transifex_input.json"
 
+            # Skip packages whose source strings haven't been extracted yet.
             if [ ! -f "$source_strings_file_path" ]; then
               echo "Source strings file does not exist: $source_strings_file_path. Skipping package."
               echo ""
               continue
             fi
 
+            # Loop through selected languages for this package.
             for lang in $(echo "$translation_languages" | jq -c '.[]'); do
               edxLang=$(echo "$lang" | jq -r '.edxLang')
               repoLang=$(echo "$lang" | jq -r '.repoLang')
@@ -324,6 +336,8 @@ jobs:
 
               translations_file_path="${i18n_dir}/messages/${repoLang}.json"
 
+              # Skip individual languages that haven't been translated yet; not every package
+              # has a file for every supported language.
               if [ ! -f "$translations_file_path" ]; then
                 echo "Translations file does not exist: $translations_file_path. Skipping."
                 echo ""
