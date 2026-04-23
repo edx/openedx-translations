@@ -192,9 +192,16 @@ jobs:
             exit 0
           fi
 
+          # Validate chunk size is a positive integer; fall back to 500 if unset or invalid.
+          if [[ "$TRANSLATION_CHUNK_SIZE" =~ ^[1-9][0-9]*$ ]]; then
+            chunk_size="$TRANSLATION_CHUNK_SIZE"
+          else
+            echo "::warning::TRANSLATION_CHUNK_SIZE ('$TRANSLATION_CHUNK_SIZE') is not a positive integer. Falling back to 500."
+            chunk_size=500
+          fi
+
           # Determine chunk count. This lets us split large source files into chunks to avoid gateway timeouts.
           # Each chunk is translated independently and responses are merged.
-          chunk_size="$TRANSLATION_CHUNK_SIZE"
           num_chunks=$(( (key_count + chunk_size - 1) / chunk_size ))
 
           # Iterate through languages to translate.
