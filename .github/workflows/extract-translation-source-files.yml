@@ -469,7 +469,7 @@ jobs:
   # Each package in the javascriptRepoWithSubpackage has its own transifex_input.json
   js-repos-with-subpackages-translations:
     if: ${{ !cancelled() && fromJson(needs.setup-matrix.outputs.has_js_repos_with_subpackages) == true }}
-    needs: [setup-branch, setup-matrix, js-translations]
+    needs: [setup-branch, setup-matrix]
     strategy:
       # using max-parallel to avoid git push/pull issues when running in parallel
       max-parallel: 1
