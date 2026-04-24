@@ -27,6 +27,8 @@ jobs:
   setup:
     runs-on: ubuntu-latest
     outputs:
+      has_javascript_applications: ${{ steps.generate_repo_matrix.outputs.has_javascript_applications }}
+      has_javascript_repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.has_javascript_repos_with_subpackages }}
       javascript_applications: ${{ steps.generate_repo_matrix.outputs.javascript_applications }}
       javascript_repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.javascript_repos_with_subpackages }}
       translation_languages: ${{ steps.generate_repo_matrix.outputs.translation_languages }}
@@ -80,6 +82,8 @@ jobs:
 
             const translationLanguages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
 
+            core.setOutput('has_javascript_applications', javascriptApplications.length > 0);
+            core.setOutput('has_javascript_repos_with_subpackages', javascriptReposWithSubpackages.length > 0);
             core.setOutput('javascript_applications', javascriptApplications);
             core.setOutput('javascript_repos_with_subpackages', javascriptReposWithSubpackages);
             core.setOutput('translation_languages', translationLanguages);
@@ -113,6 +117,7 @@ jobs:
           git push --set-upstream origin ${{ steps.dynamic_branch.outputs.branch }}
 
   translate:
+    if: ${{ fromJson(needs.setup.outputs.has_javascript_applications) == true }}
     needs: [setup, setup-branch]
     runs-on: ubuntu-latest
     strategy:
@@ -363,6 +368,7 @@ jobs:
           fi
 
   translate-js-repos-with-subpackages:
+    if: ${{ !cancelled() && fromJson(needs.setup.outputs.has_javascript_repos_with_subpackages) == true }}
     needs: [setup, setup-branch, translate]
     runs-on: ubuntu-latest
     strategy:
