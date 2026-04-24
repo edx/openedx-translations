@@ -52,7 +52,7 @@ jobs:
             const selectedApp = appInput ? appInput.toLowerCase() : '';
             const selectedLanguage = languageInput ? languageInput.toLowerCase() : '';
 
-            // Validate that app & languge inputs are valid
+            // Validate that app & language inputs are valid
             if (selectedApp !== '' && !Object.keys(allJavascriptApps).includes(selectedApp)) {
               core.setFailed(`Selected application "${selectedApp}" is not a valid option.`);
               throw new Error(`Selected application "${selectedApp}" is not a valid option.`);
@@ -73,7 +73,7 @@ jobs:
               ? javascriptSubpackageRepos.map(([repo, config]) => ({ repo, owner: config.owner ?? 'edx', packages: config.subpackages }))
               : javascriptSubpackageRepos.filter(([repo]) => repo === selectedApp).map(([repo, config]) => ({ repo, owner: config.owner ?? 'edx', packages: config.subpackages }));
 
-            // Split out translations langauges to seed, defaulting to all if none selected.
+            // Split out translation languages to seed, defaulting to all if none selected.
             const translationLanguages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
 
             // Produce validated output of applications and languages to seed.
