@@ -81,7 +81,7 @@ These 3 jobs authenticate using `EDX_TRANSLATIONS_PROD_CLIENT_ID/SECRET` and an 
 All JavaScript apps are registered in `javascriptApplications`. Each entry is keyed by repo name with an optional config object supporting these fields:
 
 - **`owner`** — GitHub org (defaults to `edx`)
-- **`pathOverride`** — overrides the default `src/i18n` path for source/translated files
+- **`pathOverride`** — overrides the default `src/i18n` path for source/translated files; only supported for non-monorepo apps (monorepo subpackages always use `packages/<package>/src/i18n`)
 - **`subpackages`** — list of package directory names inside a monorepo's `packages/` directory; presence of this key marks the repo as a monorepo
 
 Apps **with** `subpackages` are treated as monorepos throughout the extract, seed, and translate workflows. They are split into a separate matrix from regular JS apps. Each subpackage is treated as its own translation unit, with:
