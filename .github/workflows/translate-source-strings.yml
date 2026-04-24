@@ -20,7 +20,8 @@ on:
 env:
   # Maximum number of source string keys to send in a single API request.
   # Larger files are split into chunks of this size to avoid gateway timeouts.
-  TRANSLATION_CHUNK_SIZE: 500
+  # Can be overridden by setting the TRANSLATION_CHUNK_SIZE repository variable.
+  TRANSLATION_CHUNK_SIZE: ${{ vars.TRANSLATION_CHUNK_SIZE || 500 }}
 
 jobs:
   setup:
@@ -159,45 +160,14 @@ jobs:
             exit 1
           fi
 
-      - name: Fetch LMS JWT token
-        run: |
-          response_file="/tmp/lms_token_response.json"
-
-          curl_exit_code=0
-          status_code=$(curl -sS --connect-timeout 10 --max-time 180 \
-            -w "%{http_code}" \
-            -o "$response_file" \
-            -X POST "${{ vars.LMS_ACCESS_TOKEN_URL }}" \
-            -d "grant_type=client_credentials" \
-            -d "client_id=${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}" \
-            -d "client_secret=${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}" \
-            -d "token_type=jwt") || curl_exit_code=$?
-
-          if [ "$curl_exit_code" -ne 0 ]; then
-            echo "Curl request to fetch LMS JWT failed with exit code $curl_exit_code."
-            exit 1
-          fi
-
-          if [ "$status_code" -ne 200 ]; then
-            echo "API call to fetch LMS JWT failed for application ${{ matrix.application.appName }} with status code $status_code."
-            exit 1
-          fi
-
-          jwt_token=$(jq -r '.access_token' "$response_file")
-
-          if [ -z "$jwt_token" ] || [ "$jwt_token" = "null" ]; then
-            echo "Failed to extract access_token from LMS JWT response."
-            exit 1
-          fi
-
-          # Mask the JWT so as not to inadvertently expose it.
-          echo "::add-mask::$jwt_token"
-          echo "JWT_TOKEN=$jwt_token" >> $GITHUB_ENV
-
       - name: Translate source strings for ${{ matrix.application.appName }}
+        env:
+          LMS_ACCESS_TOKEN_URL: ${{ vars.LMS_ACCESS_TOKEN_URL }}
+          EDX_TRANSLATIONS_PROD_CLIENT_ID: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}
+          EDX_TRANSLATIONS_PROD_CLIENT_SECRET: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}
         run: |
-          # Mask the JWT so as not to inadvertently expose it.
-          echo "::add-mask::$JWT_TOKEN"
+          . .github/scripts/fetch_jwt.sh
+
           num_failures=0
 
           # Get list of languages, output path, and source strings path
@@ -222,14 +192,24 @@ jobs:
             exit 0
           fi
 
+          # Validate chunk size is a positive integer; fall back to 500 if unset or invalid.
+          if [[ "$TRANSLATION_CHUNK_SIZE" =~ ^[1-9][0-9]*$ ]]; then
+            chunk_size="$TRANSLATION_CHUNK_SIZE"
+          else
+            echo "::warning::TRANSLATION_CHUNK_SIZE ('$TRANSLATION_CHUNK_SIZE') is not a positive integer. Falling back to 500."
+            chunk_size=500
+          fi
+
           # Determine chunk count. This lets us split large source files into chunks to avoid gateway timeouts.
           # Each chunk is translated independently and responses are merged.
-          chunk_size="$TRANSLATION_CHUNK_SIZE"
           num_chunks=$(( (key_count + chunk_size - 1) / chunk_size ))
 
           # Iterate through languages to translate.
           # Use read to avoid word-splitting issues if any language value contains whitespace.
           while IFS= read -r lang; do
+            # Re-fetch JWT per language to prevent token expiry on long-running jobs.
+            fetch_jwt || exit 1
+
             edxLang=$(echo "$lang" | jq -r '.edxLang')
             repoLang=$(echo "$lang" | jq -r '.repoLang')
 
