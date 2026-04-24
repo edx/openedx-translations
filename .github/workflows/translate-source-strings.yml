@@ -369,7 +369,7 @@ jobs:
 
   translate-js-repos-with-subpackages:
     if: ${{ !cancelled() && fromJson(needs.setup.outputs.has_javascript_repos_with_subpackages) == true }}
-    needs: [setup, setup-branch, translate]
+    needs: [setup, setup-branch]
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
@@ -523,9 +523,17 @@ jobs:
   merge:
     runs-on: ubuntu-latest
     needs: [setup, setup-branch, translate, translate-js-repos-with-subpackages]
-    # We want to run this job even if the translate job fails. This is because the translate job will fail when one or more translations fails, even
-    # if some translations succeed. We want to merge in the successful translations.
-    if: ${{ !cancelled() && needs.setup.result == 'success' && needs.setup-branch.result == 'success' }}
+    # Run even if a translate job fails (partial translations are still worth merging) or is skipped
+    # (e.g. only monorepos or only regular apps were selected). Explicitly checking each result
+    # prevents GitHub from auto-skipping this job when a needed job was skipped.
+    if: >-
+      ${{
+        !cancelled() &&
+        needs.setup.result == 'success' &&
+        needs.setup-branch.result == 'success' &&
+        needs.translate.result != 'cancelled' &&
+        needs.translate-js-repos-with-subpackages.result != 'cancelled'
+      }}
     permissions:
       contents: write
       pull-requests: write
