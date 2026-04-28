@@ -377,9 +377,16 @@ jobs:
           # Check the git statuses of the translation source files
           echo "GIT_STATUS=$(git status $DJANGO_PATH $DJANGOJS_PATH -s | wc -l)" >> $GITHUB_ENV
 
+          # Count staged changed lines that are NOT POT-Creation-Date timestamp updates.
+          # If zero, the only change is the daily timestamp and we should skip the commit.
+          MEANINGFUL_CHANGES=$(git diff --cached -- $DJANGO_PATH $DJANGOJS_PATH \
+            | awk '/^[+-]/ && !/^[+-]{3}/ && !/^[+-]"POT-Creation-Date:/' \
+            | wc -l)
+          echo "MEANINGFUL_CHANGES=$MEANINGFUL_CHANGES" >> $GITHUB_ENV
+
       # Attempts to commit the translation source files if there is a difference
       - name: git commit the translation source files
-        if: "${{ env.GIT_STATUS > 0 }}"
+        if: "${{ env.GIT_STATUS > 0 && env.MEANINGFUL_CHANGES > 0 }}"
         run: |
           # commit the changes
           git commit -m "chore: add extracted translation source files from ${{ matrix.repo_config.repo }}"
