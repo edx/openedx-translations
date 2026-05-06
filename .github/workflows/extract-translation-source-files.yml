@@ -381,7 +381,7 @@ jobs:
           # If zero, the only change is the daily timestamp and we should skip the commit.
           MEANINGFUL_CHANGES=$(git diff --cached -- $DJANGO_PATH $DJANGOJS_PATH \
             | awk '/^[+-]/ && !/^[+-]{3}/ && !/^[+-]"POT-Creation-Date:/' \
-            | wc -l)
+            | awk 'END{print NR}')
           echo "MEANINGFUL_CHANGES=$MEANINGFUL_CHANGES" >> $GITHUB_ENV
 
       # Attempts to commit the translation source files if there is a difference
