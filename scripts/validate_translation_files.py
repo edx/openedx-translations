@@ -65,7 +65,7 @@ def _is_valid_translation_file(file_path, allowed_types=None):
         if not allowed_types or 'po' in allowed_types:
             return True
 
-    if file_str.endswith('.json') and not file_str.endswith('transifex_input.json'):
+    if file_str.endswith('.json') and not file_str.endswith('source_strings.json'):
         if not allowed_types or 'json' in allowed_types:
             return True
 
@@ -94,10 +94,10 @@ def validate_json_translation_file(translation_file, error_missing_keys=False):
     """
     # The validation command is ran with the following parameters:
     #    npx @formatjs/cli verify --structural-equality --source-locale en en.json ar.json
-    # This repository's structure uses transifex_input.json instead of en.json
+    # This repository's structure uses source_strings.json instead of en.json
     # Therefore it needs to be copied to .git-ignored temp. en.json file
     # so @formatjs/cli command can read it.
-    en_file = translation_file.dirname() / '../transifex_input.json'
+    en_file = translation_file.dirname() / '../source_strings.json'
     required_temp_en_file_path = translation_file.dirname() / 'en.json'
 
     # Using realpath so the binary file is found even when changing directories in subprocess.
@@ -140,7 +140,7 @@ def validate_json_translation_file(translation_file, error_missing_keys=False):
     return ValidationResult(
         is_valid=False,
         output=(
-            f'Missing "transifex_input.json" source file for {translation_file}. '
+            f'Missing "source_strings.json" source file for {translation_file}. '
             f'This script assumes the latter is used in React.js apps. '
             f'If that is not true, the validate_translation_files.py needs to be updated. '
         )

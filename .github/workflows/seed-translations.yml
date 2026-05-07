@@ -164,7 +164,7 @@ jobs:
             echo "Processing language $edxLang for application ${{ matrix.application.appName }}."
 
             translations_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/messages/${repoLang}.json"
-            source_strings_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/transifex_input.json"
+            source_strings_file_path="translations/${{ matrix.application.appName }}/${i18n_path}/source_strings.json"
 
             # Skip individual languages that haven't been translated yet; not every app
             # has a file for every supported language.
@@ -292,7 +292,7 @@ jobs:
             echo "Processing package $package in ${{ matrix.repo_config.repo }}."
 
             i18n_dir="translations/${{ matrix.repo_config.repo }}/packages/${package}/src/i18n"
-            source_strings_file_path="${i18n_dir}/transifex_input.json"
+            source_strings_file_path="${i18n_dir}/source_strings.json"
 
             # Skip packages whose source strings haven't been extracted yet.
             if [ ! -f "$source_strings_file_path" ]; then
