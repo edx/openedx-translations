@@ -359,7 +359,24 @@ jobs:
           GIT_STATUS=$(git status "translations/${{ matrix.application.appName }}/${i18n_path}/messages" -s | wc -l)
           if [ "$GIT_STATUS" -gt 0 ]; then
             git commit -m "chore: add AI translated strings for ${{ matrix.application.appName }}"
-            git push
+            max_push_attempts=3
+            push_attempt=1
+            push_succeeded=0
+            while [ "$push_attempt" -le "$max_push_attempts" ]; do
+              if git pull --rebase && git push; then
+                push_succeeded=1
+                break
+              fi
+              if [ "$push_attempt" -lt "$max_push_attempts" ]; then
+                echo "git push failed due to a concurrent branch update. Retrying ($push_attempt/$max_push_attempts)..."
+                sleep $((push_attempt * 5))
+              fi
+              push_attempt=$((push_attempt+1))
+            done
+            if [ "$push_succeeded" -ne 1 ]; then
+              echo "::error::Failed to push translated strings after $max_push_attempts attempts due to concurrent branch updates."
+              exit 1
+            fi
           fi
 
           if [ "$num_failures" -ne 0 ]; then
@@ -512,7 +529,24 @@ jobs:
           GIT_STATUS=$(git status "translations/${{ matrix.repo_config.repo }}/packages" -s | wc -l)
           if [ "$GIT_STATUS" -gt 0 ]; then
             git commit -m "chore: add AI translated strings for ${{ matrix.repo_config.repo }} subpackages"
-            git push
+            max_push_attempts=3
+            push_attempt=1
+            push_succeeded=0
+            while [ "$push_attempt" -le "$max_push_attempts" ]; do
+              if git pull --rebase && git push; then
+                push_succeeded=1
+                break
+              fi
+              if [ "$push_attempt" -lt "$max_push_attempts" ]; then
+                echo "git push failed due to a concurrent branch update. Retrying ($push_attempt/$max_push_attempts)..."
+                sleep $((push_attempt * 5))
+              fi
+              push_attempt=$((push_attempt+1))
+            done
+            if [ "$push_succeeded" -ne 1 ]; then
+              echo "::error::Failed to push translated strings after $max_push_attempts attempts due to concurrent branch updates."
+              exit 1
+            fi
           fi
 
           if [ "$num_failures" -ne 0 ]; then
