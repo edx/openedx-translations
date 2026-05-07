@@ -359,6 +359,7 @@ jobs:
           GIT_STATUS=$(git status "translations/${{ matrix.application.appName }}/${i18n_path}/messages" -s | wc -l)
           if [ "$GIT_STATUS" -gt 0 ]; then
             git commit -m "chore: add AI translated strings for ${{ matrix.application.appName }}"
+            git pull --rebase
             git push
           fi
 
@@ -512,6 +513,7 @@ jobs:
           GIT_STATUS=$(git status "translations/${{ matrix.repo_config.repo }}/packages" -s | wc -l)
           if [ "$GIT_STATUS" -gt 0 ]; then
             git commit -m "chore: add AI translated strings for ${{ matrix.repo_config.repo }} subpackages"
+            git pull --rebase
             git push
           fi
 
