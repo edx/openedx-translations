@@ -31,7 +31,7 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-            const { javascriptApplications } = JSON.parse(
+            const { javascriptApplications, pythonApplications } = JSON.parse(
               fs.readFileSync('.github/translations-config.json', 'utf8')
             );
 
@@ -39,42 +39,10 @@ jobs:
             // const selectedRepo = core.getInput('repo');
             const selectedRepo = ${{ toJSON(github.event.inputs.repo) }} ?? '';
 
-            const allPythonRepos = [
-              { owner: 'edx', repo: 'AudioXBlock' },
-              { owner: 'edx', repo: 'DoneXBlock' },
-              { owner: 'openedx', repo: 'FeedbackXBlock' },
-              { owner: 'edx', repo: 'RecommenderXBlock' },
-              { owner: 'edx', repo: 'ai-translations' },
-              { owner: 'edx', repo: 'commerce-coordinator' },
-              { owner: 'edx', repo: 'course-discovery' },
-              { owner: 'edx', repo: 'credentials' },
-              { owner: 'edx', repo: 'credentials-themes' },
-              { owner: 'edx', repo: 'edx-ace' },
-              { owner: 'edx', repo: 'edx-exams' },
-              { owner: 'edx', repo: 'edx-platform' },
-              { owner: 'edx', repo: 'portal-designer' },
-              { owner: 'edx', repo: 'registrar' },
-              { owner: 'edx', repo: 'enterprise-access' },
-              { owner: 'edx', repo: 'enterprise-catalog' },
-              { owner: 'edx', repo: 'enterprise-subsidy' },
-              { owner: 'edx', repo: 'financial-assistance' },
-              { owner: 'edx', repo: 'order-fulfillment' },
-              { owner: 'edx', repo: 'sanctions' },
-              { owner: 'edx', repo: 'video-encode-manager' },
-              { owner: 'openedx', repo: 'edx-bulk-grades' },
-              { owner: 'openedx', repo: 'edx-ora2' },
-              { owner: 'edx', repo: 'edx-proctoring' },
-              { owner: 'edx', repo: 'platform-plugin-aspects' },
-              { owner: 'openedx', repo: 'xblock-drag-and-drop-v2' },
-              { owner: 'edx', repo: 'xblock-free-text-response' },
-              { owner: 'openedx', repo: 'xblock-google-drive' },
-              { owner: 'openedx', repo: 'xblock-image-explorer' },
-              { owner: 'edx', repo: 'xblock-image-modal' },
-              { owner: 'edx', repo: 'xblock-lti-consumer' },
-              { owner: 'edx', repo: 'xblock-qualtrics-survey' },
-              { owner: 'edx', repo: 'xblock-sql-grader' },
-              { owner: 'edx', repo: 'xblock-submit-and-compare' },
-            ];
+            const pythonRepos = Object.entries(pythonApplications).map(([repo, config]) => ({
+              owner: config.owner ?? 'edx',
+              repo,
+            }));
 
             const javascriptRepos = Object.entries(javascriptApplications)
               .filter(([, config]) => !config.subpackages)
@@ -108,20 +76,20 @@ jobs:
             //  },
             //]
 
-            core.setOutput('hasPythonRepos', true);
+            core.setOutput('hasPythonRepos', pythonRepos.length > 0);
             core.setOutput('hasJavascriptRepos', true);
             core.setOutput('hasJavascriptReposWithSubpackages', javascriptReposWithSubpackages.length > 0);
             core.setOutput('hasGenericRepos', false);
 
             if (selectedRepo === '') {
-              core.setOutput('pythonRepos', allPythonRepos);
+              core.setOutput('pythonRepos', pythonRepos);
               core.setOutput('javascriptRepos', javascriptRepos);
               core.setOutput('javascriptReposWithSubpackages', javascriptReposWithSubpackages);
               //core.setOutput('genericRepos', allGenericRepos);
               return;
             }
 
-            const pythonRepo = allPythonRepos.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
+            const pythonRepo = pythonRepos.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
             if (pythonRepo) {
               core.setOutput('pythonRepos', [pythonRepo]);
             } else {
