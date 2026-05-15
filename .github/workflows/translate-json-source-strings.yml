@@ -160,9 +160,9 @@ jobs:
                 -w "%{http_code}" \
                 -o "$chunk_response" \
                 -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
-                -F "file=@$chunk_source" \
+                -F "source_file=@$chunk_source" \
                 -F "application_name=${{ matrix.application.appName }}" \
-                -F "language=$edxLang" \
+                -F "translation_language=$edxLang" \
                 -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
 
               # On a chunk failure, early exit the chunk loop to avoid unnecessary API calls.
@@ -345,9 +345,9 @@ jobs:
                 -w "%{http_code}" \
                 -o "$response_file" \
                 -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
-                -F "file=@$source_strings_file_path" \
+                -F "source_file=@$source_strings_file_path" \
                 -F "application_name=${{ matrix.repo_config.repo }}/${package}" \
-                -F "language=$edxLang" \
+                -F "translation_language=$edxLang" \
                 -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
 
               if [ "$curl_exit_code" -ne 0 ]; then
