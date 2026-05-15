@@ -1,0 +1,106 @@
+# Reusable workflow: generates the application matrix and language list for translation workflows.
+# Reads application configuration from translations-config.json using the provided config_key.
+
+name: _Translate setup
+
+on:
+  workflow_call:
+    inputs:
+      config_key:
+        description: 'Key in translations-config.json to read applications from (e.g. javascriptApplications or pythonApplications).'
+        required: true
+        type: string
+      application_name:
+        description: 'Application to filter to. Leave blank to include all.'
+        required: false
+        type: string
+        default: ''
+      translation_language:
+        description: 'Language to filter to. Leave blank to include all.'
+        required: false
+        type: string
+        default: ''
+    outputs:
+      has_applications:
+        description: 'Whether there are any applications to translate.'
+        value: ${{ jobs.setup.outputs.has_applications }}
+      has_repos_with_subpackages:
+        description: 'Whether there are any repos with subpackages to translate.'
+        value: ${{ jobs.setup.outputs.has_repos_with_subpackages }}
+      applications:
+        description: 'JSON array of applications to translate.'
+        value: ${{ jobs.setup.outputs.applications }}
+      repos_with_subpackages:
+        description: 'JSON array of repos with subpackages to translate.'
+        value: ${{ jobs.setup.outputs.repos_with_subpackages }}
+      translation_languages:
+        description: 'JSON array of languages to translate.'
+        value: ${{ jobs.setup.outputs.translation_languages }}
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      has_applications: ${{ steps.generate_repo_matrix.outputs.has_applications }}
+      has_repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.has_repos_with_subpackages }}
+      applications: ${{ steps.generate_repo_matrix.outputs.applications }}
+      repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.repos_with_subpackages }}
+      translation_languages: ${{ steps.generate_repo_matrix.outputs.translation_languages }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/github-script@v7
+        id: generate_repo_matrix
+        with:
+          script: |
+            const fs = require('fs');
+            const parsedConfig = JSON.parse(fs.readFileSync('.github/translations-config.json', 'utf8'));
+            const allApps = parsedConfig[${{ toJSON(inputs.config_key) }}];
+            const { languages } = parsedConfig;
+
+            if (!allApps) {
+              core.setFailed(`Config key "${{ inputs.config_key }}" not found in translations-config.json.`);
+              return;
+            }
+
+            const languageMap = languages.reduce((acc, lang) => {
+              acc[lang.edxLang] = lang;
+              return acc;
+            }, {});
+
+            // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
+            // const appInput = core.getInput('application_name');
+            // const languageInput = core.getInput('translation_language');
+
+            const appInput = ${{ toJSON(inputs.application_name) }} || '';
+            const languageInput = ${{ toJSON(inputs.translation_language) }} || '';
+            const selectedApp = appInput ? appInput.toLowerCase() : '';
+            const selectedLanguage = languageInput ? languageInput.toLowerCase() : '';
+
+            if (selectedApp !== '' && !Object.keys(allApps).includes(selectedApp)) {
+              core.setFailed(`Selected application "${selectedApp}" is not a valid option.`);
+              return;
+            }
+            if (selectedLanguage !== '' && !Object.keys(languageMap).includes(selectedLanguage)) {
+              core.setFailed(`Selected language "${selectedLanguage}" is not a valid option.`);
+              return;
+            }
+
+            const regularRepos = Object.entries(allApps).filter(([, config]) => !config.subpackages);
+            const subpackageRepos = Object.entries(allApps).filter(([, config]) => config.subpackages);
+
+            const applications = selectedApp === ''
+              ? regularRepos.map(([appName, config]) => ({ appName, ...config }))
+              : regularRepos.filter(([appName]) => appName === selectedApp).map(([appName, config]) => ({ appName, ...config }));
+
+            const reposWithSubpackages = selectedApp === ''
+              ? subpackageRepos.map(([repo, config]) => ({ repo, owner: config.owner ?? 'edx', packages: config.subpackages }))
+              : subpackageRepos.filter(([repo]) => repo === selectedApp).map(([repo, config]) => ({ repo, owner: config.owner ?? 'edx', packages: config.subpackages }));
+
+            const translationLanguages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
+
+            core.setOutput('has_applications', applications.length > 0);
+            core.setOutput('has_repos_with_subpackages', reposWithSubpackages.length > 0);
+            core.setOutput('applications', applications);
+            core.setOutput('repos_with_subpackages', reposWithSubpackages);
+            core.setOutput('translation_languages', translationLanguages);

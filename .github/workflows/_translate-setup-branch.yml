@@ -1,0 +1,38 @@
+# Reusable workflow: creates a timestamped branch for a translation PR and pushes it.
+
+name: _Translate setup branch
+
+on:
+  workflow_call:
+    inputs:
+      branch_prefix:
+        description: 'Prefix for the branch name (e.g. automated/translate-source-strings).'
+        required: true
+        type: string
+    outputs:
+      branch:
+        description: 'The name of the created branch.'
+        value: ${{ jobs.setup-branch.outputs.branch }}
+
+jobs:
+  setup-branch:
+    runs-on: ubuntu-latest
+    outputs:
+      branch: ${{ steps.dynamic_branch.outputs.branch }}
+    permissions:
+      contents: write
+
+    steps:
+      - name: Dynamically set branch name
+        id: dynamic_branch
+        run: echo "branch=${{ inputs.branch_prefix }}-$(date +'%Y%m%dT%H%M%S')" >> $GITHUB_OUTPUT
+
+      - name: Clone ${{ github.repository }}
+        uses: actions/checkout@v5
+
+      - name: Create and push branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git checkout -b ${{ steps.dynamic_branch.outputs.branch }}
+          git push --set-upstream origin ${{ steps.dynamic_branch.outputs.branch }}

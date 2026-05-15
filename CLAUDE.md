@@ -61,7 +61,7 @@ Workflows use `dorny/paths-filter` to conditionally skip expensive steps when on
 #### Translation workflows
 
 - **`extract-translation-source-files.yml`** — Daily cron; clones ~50 upstream repos (including `ai-translations`) and extracts English source strings into `translations/`.
-- **`translate-source-strings.yml`** — Calls the ai-translations service API to fetch translated strings for JavaScript frontend apps (~22 apps, ~21 languages).
+- **`translate-json-source-strings.yml`** — Calls the ai-translations service API to fetch translated strings for JavaScript frontend apps (~22 apps, ~21 languages).
 - **`seed-translations.yml`** — Seeds/trains the ai-translations service with source strings.
 
 These 3 jobs authenticate using `EDX_TRANSLATIONS_PROD_CLIENT_ID/SECRET` and an LMS JWT token.
