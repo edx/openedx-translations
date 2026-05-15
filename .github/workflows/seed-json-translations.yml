@@ -105,7 +105,6 @@ jobs:
               -X POST "${{ vars.AI_TRANSLATIONS_SEED_TRANSLATIONS_URL }}" \
               -F "application_name=${{ matrix.application.appName }}" \
               -F "translation_language=$edxLang" \
-              -F "source_language=en" \
               -F "translation_file=@$translations_file_path" \
               -F "source_file=@$source_strings_file_path" \
               -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
@@ -211,7 +210,6 @@ jobs:
                 -X POST "${{ vars.AI_TRANSLATIONS_SEED_TRANSLATIONS_URL }}" \
                 -F "application_name=${{ matrix.repo_config.repo }}/${package}" \
                 -F "translation_language=$edxLang" \
-                -F "source_language=en" \
                 -F "translation_file=@$translations_file_path" \
                 -F "source_file=@$source_strings_file_path" \
                 -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
