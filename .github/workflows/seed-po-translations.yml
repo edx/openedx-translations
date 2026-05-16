@@ -12,6 +12,7 @@ on:
         type: string
 
       translation_language:
+      
         description: 'Language code in edX format (e.g. es-419 or pt-PT). Leave blank to run all.'
         required: false
         type: string
@@ -28,6 +29,7 @@ jobs:
       translation_languages: ${{ steps.generate_repo_matrix.outputs.translation_languages }}
 
     steps:
+
       - uses: actions/checkout@v5
 
       - uses: actions/github-script@v7
@@ -51,8 +53,8 @@ jobs:
             const appInput = ${{ toJSON(github.event.inputs.application_name) }} || '';
             const languageInput = ${{ toJSON(github.event.inputs.translation_language) }} || '';
 
-            const selectedApp = appInput ? appInput.toLowerCase() : '';
-            const selectedLanguage = languageInput ? languageInput.toLowerCase() : '';
+            const selectedApp = appInput;
+            const selectedLanguage = languageInput;
 
             if (
               selectedApp !== '' &&
@@ -135,6 +137,7 @@ jobs:
             );
 
   # Seeds regular Python applications
+
   seed-python-po-translations:
     if: ${{ fromJson(needs.setup.outputs.has_python_applications) == true }}
 
@@ -231,9 +234,9 @@ jobs:
 
             for po_file in "$po_dir"/*.po; do
 
-               if [ ! -f "$po_file" ]; then
+              if [ ! -f "$po_file" ]; then
                 continue
-               fi
+              fi
 
               echo "Processing file $po_file"
 
@@ -272,13 +275,13 @@ jobs:
               echo ""
             done
 
-              if [ "$status_code" -ne 200 ]; then
-                echo "Curl request failed for $po_file with status code $status_code"
-                cat /tmp/seed_po_response.txt
-                num_failures=$((num_failures+1))
-              fi
+            if [ "$status_code" -ne 200 ]; then
+              echo "Curl request failed for $po_file with status code $status_code"
+              cat /tmp/seed_po_response.txt
+              num_failures=$((num_failures+1))
+            fi
 
-            done
+          done
 
           done < <(echo "$translation_languages" | jq -c '.[]')
 
@@ -292,6 +295,7 @@ jobs:
           fi
 
   # Seeds Python repos with subpackages
+
   seed-python-po-repos-with-subpackages:
     if: ${{ fromJson(needs.setup.outputs.has_python_repos_with_subpackages) == true }}
 
@@ -329,13 +333,13 @@ jobs:
             exit 1
           fi
 
-      -  name: Seed Python PO translations for subpackages
-         env:
+      - name: Seed Python PO translations for subpackages
+        env:
           LMS_ACCESS_TOKEN_URL: ${{ vars.LMS_ACCESS_TOKEN_URL }}
           EDX_TRANSLATIONS_PROD_CLIENT_ID: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}
           EDX_TRANSLATIONS_PROD_CLIENT_SECRET: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}
 
-         run: |
+        run: |
           . .github/scripts/fetch_jwt.sh
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
@@ -354,7 +358,7 @@ jobs:
               echo "Package directory does not exist: $app_dir"
               continue
             fi
-            
+
             # Dynamically locate conf/locale directory
             locale_base=$(find "$app_dir" -type d -path "*/conf/locale" | head -1)
 
