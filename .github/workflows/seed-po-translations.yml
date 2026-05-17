@@ -10,183 +10,42 @@ on:
         description: 'Python application/repository to seed translations for. Leave blank to run all.'
         required: false
         type: string
-
       translation_language:
-      
         description: 'Language code in edX format (e.g. es-419 or pt-PT). Leave blank to run all.'
         required: false
         type: string
 
 jobs:
   setup:
-    runs-on: ubuntu-latest
+    uses: ./.github/workflows/_translate-setup.yml
+    with:
+      config_key: pythonApplications
+      application_name: ${{ inputs.application_name || '' }}
+      translation_language: ${{ inputs.translation_language || '' }}
 
-    outputs:
-      has_python_applications: ${{ steps.generate_repo_matrix.outputs.has_python_applications }}
-      python_applications: ${{ steps.generate_repo_matrix.outputs.python_applications }}
-      has_python_repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.has_python_repos_with_subpackages }}
-      python_repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.python_repos_with_subpackages }}
-      translation_languages: ${{ steps.generate_repo_matrix.outputs.translation_languages }}
-
-    steps:
-
-      - uses: actions/checkout@v5
-
-      - uses: actions/github-script@v7
-        id: generate_repo_matrix
-        with:
-          script: |
-            const fs = require('fs');
-
-            const {
-              pythonApplications: allPythonApps,
-              languages,
-            } = JSON.parse(
-              fs.readFileSync('.github/translations-config.json', 'utf8')
-            );
-
-            const languageMap = languages.reduce((acc, lang) => {
-              acc[lang.edxLang] = lang;
-              return acc;
-            }, {});
-
-            const appInput = ${{ toJSON(github.event.inputs.application_name) }} || '';
-            const languageInput = ${{ toJSON(github.event.inputs.translation_language) }} || '';
-
-            const selectedApp = appInput;
-            const selectedLanguage = languageInput;
-
-            if (
-              selectedApp !== '' &&
-              !Object.keys(allPythonApps).includes(selectedApp)
-            ) {
-              core.setFailed(`Selected application "${selectedApp}" is not valid.`);
-              throw new Error(`Selected application "${selectedApp}" is not valid.`);
-            }
-
-            if (
-              selectedLanguage !== '' &&
-              !Object.keys(languageMap).includes(selectedLanguage)
-            ) {
-              core.setFailed(`Selected language "${selectedLanguage}" is not valid.`);
-              throw new Error(`Selected language "${selectedLanguage}" is not valid.`);
-            }
-
-            // Regular Python repos
-            const pythonRepos = Object.entries(allPythonApps)
-              .filter(([, config]) => !config.subpackages);
-
-            const pythonApplications = selectedApp === ''
-              ? pythonRepos.map(([appName, config]) => ({
-                  appName,
-                  ...config,
-                }))
-              : pythonRepos
-                  .filter(([appName]) => appName === selectedApp)
-                  .map(([appName, config]) => ({
-                    appName,
-                    ...config,
-                  }));
-
-            // Python repos with subpackages
-            const pythonSubpackageRepos = Object.entries(allPythonApps)
-              .filter(([, config]) => config.subpackages);
-
-            const pythonReposWithSubpackages = selectedApp === ''
-              ? pythonSubpackageRepos.map(([repo, config]) => ({
-                  repo,
-                  owner: config.owner ?? 'edx',
-                  packages: config.subpackages,
-                }))
-              : pythonSubpackageRepos
-                  .filter(([repo]) => repo === selectedApp)
-                  .map(([repo, config]) => ({
-                    repo,
-                    owner: config.owner ?? 'edx',
-                    packages: config.subpackages,
-                  }));
-
-            const translationLanguages =
-              selectedLanguage === ''
-                ? Object.values(languageMap)
-                : [languageMap[selectedLanguage]];
-
-            core.setOutput(
-              'has_python_applications',
-              pythonApplications.length > 0
-            );
-
-            core.setOutput(
-              'python_applications',
-              pythonApplications
-            );
-
-            core.setOutput(
-              'has_python_repos_with_subpackages',
-              pythonReposWithSubpackages.length > 0
-            );
-
-            core.setOutput(
-              'python_repos_with_subpackages',
-              pythonReposWithSubpackages
-            );
-
-            core.setOutput(
-              'translation_languages',
-              translationLanguages
-            );
+  validate:
+    uses: ./.github/workflows/_translate-validate-env.yml
+    with:
+      fetch_translations_url: ${{ vars.AI_TRANSLATIONS_SEED_PO_TRANSLATIONS_URL }}
+      fetch_translations_url_name: AI_TRANSLATIONS_SEED_PO_TRANSLATIONS_URL
+      lms_access_token_url: ${{ vars.LMS_ACCESS_TOKEN_URL }}
+    secrets: inherit
 
   # Seeds regular Python applications
 
   seed-python-po-translations:
-    if: ${{ fromJson(needs.setup.outputs.has_python_applications) == true }}
-
+    if: ${{ fromJson(needs.setup.outputs.has_applications) == true }}
     runs-on: ubuntu-latest
-
-    needs: [setup]
-
+    needs: [setup, validate]
     strategy:
       matrix:
-        application: ${{ fromJson(needs.setup.outputs.python_applications) }}
-
+        application: ${{ fromJson(needs.setup.outputs.applications) }}
       fail-fast: false
       max-parallel: 3
 
     steps:
       - name: Clone repository
         uses: actions/checkout@v5
-
-      - name: Validate required environment variables
-        run: |
-          missing=0
-
-          if [ -z "${{ vars.LMS_ACCESS_TOKEN_URL }}" ]; then
-            echo "Required variable LMS_ACCESS_TOKEN_URL is not set."
-            missing=$((missing+1))
-          fi
-
-          if [ -z "${{ vars.AI_TRANSLATIONS_SEED_PO_TRANSLATIONS_URL }}" ]; then
-            echo "Required variable AI_TRANSLATIONS_SEED_PO_TRANSLATIONS_URL is not set."
-            missing=$((missing+1))
-          fi
-
-          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}"
-          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}"
-
-          if [ -z "${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}" ]; then
-            echo "Required secret EDX_TRANSLATIONS_PROD_CLIENT_ID is not set."
-            missing=$((missing+1))
-          fi
-
-          if [ -z "${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}" ]; then
-            echo "Required secret EDX_TRANSLATIONS_PROD_CLIENT_SECRET is not set."
-            missing=$((missing+1))
-          fi
-
-          if [ "$missing" -ne 0 ]; then
-            echo "Missing required variables or secrets."
-            exit 1
-          fi
 
       - name: Seed Python PO translations for ${{ matrix.application.appName }}
         env:
@@ -198,9 +57,8 @@ jobs:
           . .github/scripts/fetch_jwt.sh
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
-
           app_dir="translations/${{ matrix.application.appName }}"
-
+          
           if [ ! -d "$app_dir" ]; then
             echo "Application directory does not exist: $app_dir"
             exit 0
@@ -228,7 +86,7 @@ jobs:
             po_dir="${locale_base}/${repoLang}/LC_MESSAGES"
 
             if [ ! -d "$po_dir" ]; then
-              echo "PO directory does not exist: $po_dir"
+              echo "PO directory does not exist: $po_dir. Skipping."
               continue
             fi
 
@@ -275,14 +133,6 @@ jobs:
               echo ""
             done
 
-            if [ "$status_code" -ne 200 ]; then
-              echo "Curl request failed for $po_file with status code $status_code"
-              cat /tmp/seed_po_response.txt
-              num_failures=$((num_failures+1))
-            fi
-
-          done
-
           done < <(echo "$translation_languages" | jq -c '.[]')
 
           if [ "$num_attempted" -eq 0 ]; then
@@ -297,15 +147,15 @@ jobs:
   # Seeds Python repos with subpackages
 
   seed-python-po-repos-with-subpackages:
-    if: ${{ fromJson(needs.setup.outputs.has_python_repos_with_subpackages) == true }}
+    if: ${{ fromJson(needs.setup.outputs.has_repos_with_subpackages) == true }}
 
     runs-on: ubuntu-latest
 
-    needs: [setup]
+    needs: [setup, validate]
 
     strategy:
       matrix:
-        repo_config: ${{ fromJson(needs.setup.outputs.python_repos_with_subpackages) }}
+        repo_config: ${{ fromJson(needs.setup.outputs.repos_with_subpackages) }}
 
       fail-fast: false
       max-parallel: 3
@@ -313,25 +163,6 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v5
-
-      # Reuse same validation logic
-      - name: Validate required environment variables
-        run: |
-          missing=0
-
-          if [ -z "${{ vars.LMS_ACCESS_TOKEN_URL }}" ]; then
-            echo "Required variable LMS_ACCESS_TOKEN_URL is not set."
-            missing=$((missing+1))
-          fi
-
-          if [ -z "${{ vars.AI_TRANSLATIONS_SEED_PO_TRANSLATIONS_URL }}" ]; then
-            echo "Required variable AI_TRANSLATIONS_SEED_PO_TRANSLATIONS_URL is not set."
-            missing=$((missing+1))
-          fi
-
-          if [ "$missing" -ne 0 ]; then
-            exit 1
-          fi
 
       - name: Seed Python PO translations for subpackages
         env:
