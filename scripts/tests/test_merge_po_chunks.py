@@ -92,6 +92,28 @@ class TestMergePoChunks:
         # polib.pofile raises on parse errors
         polib.pofile(output)
 
+    def test_metadata_is_fuzzy_propagated_from_last_chunk(self, tmp_path):
+        chunk_a = make_chunk(
+            tmp_path, "chunk_a.po",
+            [("Hello", "مرحبا")],
+            {"Language": "ar"},
+        )
+        chunk_b = make_chunk(
+            tmp_path, "chunk_b.po",
+            [("Goodbye", "وداعا")],
+            {"Language": "ar"},
+        )
+        # Set metadata_is_fuzzy on the last chunk only
+        po_b = polib.pofile(chunk_b)
+        po_b.metadata_is_fuzzy = ['fuzzy']
+        po_b.save(chunk_b)
+
+        output = str(tmp_path / "merged.po")
+        merge_po_chunks([chunk_a, chunk_b], output)
+
+        merged = polib.pofile(output)
+        assert merged.metadata_is_fuzzy == ['fuzzy']
+
     def test_raises_on_empty_chunk_list(self, tmp_path):
         with pytest.raises(ValueError, match="chunk_paths must not be empty"):
             merge_po_chunks([], str(tmp_path / "merged.po"))
