@@ -85,6 +85,14 @@ jobs:
 
           echo "Found locale base: $locale_base"
 
+          # Validate chunk size once per job; fall back to 500 if unset or invalid.
+          if [[ "$TRANSLATION_CHUNK_SIZE" =~ ^[1-9][0-9]*$ ]]; then
+            chunk_size="$TRANSLATION_CHUNK_SIZE"
+          else
+            echo "::warning::TRANSLATION_CHUNK_SIZE ('$TRANSLATION_CHUNK_SIZE') is not a positive integer. Falling back to 500."
+            chunk_size=500
+          fi
+
           num_failures=0
           num_attempted=0
 
@@ -114,14 +122,6 @@ jobs:
               echo "Processing file $po_file"
 
               num_attempted=$((num_attempted+1))
-
-              # Validate chunk size is a positive integer; fall back to 500 if unset or invalid.
-              if [[ "$TRANSLATION_CHUNK_SIZE" =~ ^[1-9][0-9]*$ ]]; then
-                chunk_size="$TRANSLATION_CHUNK_SIZE"
-              else
-                echo "::warning::TRANSLATION_CHUNK_SIZE ('$TRANSLATION_CHUNK_SIZE') is not a positive integer. Falling back to 500."
-                chunk_size=500
-              fi
 
               chunk_dir="/tmp/po_chunks_${edxLang}_$(basename "$po_file" .po)"
               rm -rf "$chunk_dir"
