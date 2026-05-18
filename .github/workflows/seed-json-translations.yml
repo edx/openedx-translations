@@ -1,13 +1,13 @@
 # This workflow seeds translations for JavaScript applications, storing existing translations in ai-translations.
 # This one-time action helps us avoid re-translating strings that have already been translated.
 
-name: Seed translations
+name: Seed JSON Translations
 
 on:
   workflow_dispatch:
     inputs:
       application_name:
-        description: 'Application to seed translations for, corresponding to a repository name under the translations directory. Leave blank to run all.'
+        description: 'JS application/repository to seed translations for, corresponding to a repository name under the translations directory. Leave blank to run all.'
         required: false
         type: string
       translation_language:
