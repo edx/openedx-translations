@@ -74,7 +74,7 @@ jobs:
 
             const appInput = ${{ toJSON(inputs.application_name) }} || '';
             const languageInput = ${{ toJSON(inputs.translation_language) }} || '';
-            const selectedApp = appInput ? appInput.toLowerCase() : '';
+            const selectedApp = appInput || '';
             const selectedLanguage = languageInput ? languageInput.toLowerCase() : '';
 
             if (selectedApp !== '' && !Object.keys(allApps).includes(selectedApp)) {
