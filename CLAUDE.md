@@ -93,8 +93,9 @@ Apps **with** `subpackages` are treated as monorepos throughout the extract, see
 
 - **`transifex.yml`** — Defines all 50+ upstream repositories, file path patterns, and language settings for the Transifex integration. Still active for the Python app translation track.
 - The connection to `ai-translations` is configured via GitHub variables in the repo using:
-    - `AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL`
-    - `AI_TRANSLATIONS_SEED_TRANSLATIONS_URL`
+    - `AI_TRANSLATIONS_FETCH_JSON_TRANSLATIONS_URL`
+    - `AI_TRANSLATIONS_SEED_JSON_TRANSLATIONS_URL`
+    - `AI_TRANSLATIONS_SEED_PO_TRANSLATIONS_URL`
 
 ## Environment Requirements
 
