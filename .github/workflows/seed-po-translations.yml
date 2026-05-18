@@ -193,6 +193,9 @@ jobs:
                 echo "Successfully seeded all chunks for $po_file"
               fi
 
+              rm -f "$chunk_list_file"
+              rm -rf "$chunk_dir"
+
               echo ""
             done
           done < <(echo "$translation_languages" | jq -c '.[]')
