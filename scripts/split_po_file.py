@@ -1,9 +1,9 @@
 """
-Split a PO file into smaller chunks for upload to the ai-translations seed API.
+Split a PO file into smaller chunks for upload to the ai-translations API.
 
 Each chunk is a valid PO file containing the original header metadata and a
-subset of the translated entries. Splitting by entry boundaries ensures plural
-variants (msgid_plural / msgstr[N]) are never divided across chunks.
+subset of entries. Splitting by entry boundaries ensures plural variants
+(msgid_plural / msgstr[N]) are never divided across chunks.
 """
 
 import argparse
@@ -12,15 +12,20 @@ import os
 import polib
 
 
-def split_po_file(input_path, output_dir, chunk_size=500):
+def split_po_file(input_path, output_dir, chunk_size=500, translated_only=True):
     """
-    Split a PO file into chunks of at most chunk_size translated entries.
+    Split a PO file into chunks of at most chunk_size entries.
+
+    When translated_only=True (default), only translated entries are included —
+    correct for seeding, where untranslated strings have nothing to contribute.
+    When translated_only=False, all entries are included — correct for
+    translation, where source strings with empty msgstrs are the whole point.
 
     Returns a list of paths to the written chunk files, in order.
-    Returns an empty list if the file contains no translated entries.
+    Returns an empty list if the file contains no qualifying entries.
     """
     po = polib.pofile(input_path)
-    entries = po.translated_entries()
+    entries = po.translated_entries() if translated_only else list(po)
 
     if not entries:
         return []
@@ -43,14 +48,15 @@ def split_po_file(input_path, output_dir, chunk_size=500):
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Split a PO file into chunks suitable for the seed API.',
+        description='Split a PO file into chunks suitable for the ai-translations API.',
     )
     parser.add_argument('--input', required=True, help='Path to the input PO file')
     parser.add_argument('--output-dir', required=True, help='Directory to write chunk files into')
-    parser.add_argument('--chunk-size', type=int, default=500, help='Max translated entries per chunk (default: 500)')
+    parser.add_argument('--chunk-size', type=int, default=500, help='Max entries per chunk (default: 500)')
+    parser.add_argument('--all-entries', action='store_true', help='Include untranslated entries (for translation workflow; default includes only translated entries)')
     args = parser.parse_args()
 
-    chunk_paths = split_po_file(args.input, args.output_dir, args.chunk_size)
+    chunk_paths = split_po_file(args.input, args.output_dir, args.chunk_size, translated_only=not args.all_entries)
     for path in chunk_paths:
         print(path)
 

@@ -113,3 +113,37 @@ class TestSplitPoFile:
         chunks = split_po_file(LARGE_PO, str(tmp_path), chunk_size=2)
         basenames = [os.path.basename(c) for c in chunks]
         assert basenames == ["chunk_0000.po", "chunk_0001.po", "chunk_0002.po"]
+
+    # translated_only=False (--all-entries) tests
+
+    def test_all_entries_includes_untranslated(self, tmp_path):
+        po = polib.pofile(LARGE_PO)
+        expected = len(list(po))
+
+        chunks = split_po_file(LARGE_PO, str(tmp_path), chunk_size=500, translated_only=False)
+        total = sum(len(polib.pofile(c)) for c in chunks)
+        assert total == expected
+
+    def test_all_entries_total_exceeds_translated_only_total(self, tmp_path):
+        po = polib.pofile(LARGE_PO)
+        assert len(po.untranslated_entries()) > 0, "fixture must have untranslated entries"
+
+        chunks_translated = split_po_file(LARGE_PO, str(tmp_path / "translated"), chunk_size=500)
+        chunks_all = split_po_file(LARGE_PO, str(tmp_path / "all"), chunk_size=500, translated_only=False)
+
+        total_translated = sum(len(polib.pofile(c)) for c in chunks_translated)
+        total_all = sum(len(polib.pofile(c)) for c in chunks_all)
+        assert total_all > total_translated
+
+    def test_all_entries_returns_chunks_even_when_all_untranslated(self, tmp_path):
+        untranslated_po = polib.POFile()
+        untranslated_po.metadata = {
+            "Language": "ar",
+            "Content-Type": "text/plain; charset=UTF-8",
+        }
+        untranslated_po.append(polib.POEntry(msgid="Hello", msgstr=""))
+        input_path = str(tmp_path / "untranslated.po")
+        untranslated_po.save(input_path)
+
+        chunks = split_po_file(input_path, str(tmp_path / "out"), chunk_size=500, translated_only=False)
+        assert len(chunks) == 1
