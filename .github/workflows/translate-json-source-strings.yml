@@ -40,8 +40,8 @@ jobs:
   validate:
     uses: ./.github/workflows/_translate-validate-env.yml
     with:
-      fetch_translations_url: ${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}
-      fetch_translations_url_name: AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL
+      fetch_translations_url: ${{ vars.AI_TRANSLATIONS_FETCH_JSON_TRANSLATIONS_URL }}
+      fetch_translations_url_name: AI_TRANSLATIONS_FETCH_JSON_TRANSLATIONS_URL
       lms_access_token_url: ${{ vars.LMS_ACCESS_TOKEN_URL }}
     secrets: inherit
 
@@ -159,7 +159,7 @@ jobs:
               status_code=$(curl -sS --connect-timeout 10 --max-time 180 --retry 3 --retry-delay 60 --retry-all-errors \
                 -w "%{http_code}" \
                 -o "$chunk_response" \
-                -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
+                -X POST "${{ vars.AI_TRANSLATIONS_FETCH_JSON_TRANSLATIONS_URL }}" \
                 -F "source_file=@$chunk_source" \
                 -F "application_name=${{ matrix.application.appName }}" \
                 -F "translation_language=$edxLang" \
@@ -344,7 +344,7 @@ jobs:
               status_code=$(curl -sS --connect-timeout 10 --max-time 180 --retry 3 --retry-delay 60 --retry-all-errors \
                 -w "%{http_code}" \
                 -o "$response_file" \
-                -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
+                -X POST "${{ vars.AI_TRANSLATIONS_FETCH_JSON_TRANSLATIONS_URL }}" \
                 -F "source_file=@$source_strings_file_path" \
                 -F "application_name=${{ matrix.repo_config.repo }}/${package}" \
                 -F "translation_language=$edxLang" \
