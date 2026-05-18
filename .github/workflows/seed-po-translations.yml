@@ -15,6 +15,11 @@ on:
         required: false
         type: string
 
+env:
+  # Maximum number of translated entries to send in a single API request.
+  # Can be overridden by setting the TRANSLATION_CHUNK_SIZE repository variable.
+  TRANSLATION_CHUNK_SIZE: ${{ vars.TRANSLATION_CHUNK_SIZE || 500 }}
+
 jobs:
   setup:
     uses: ./.github/workflows/_translate-setup.yml
@@ -110,13 +115,21 @@ jobs:
 
               num_attempted=$((num_attempted+1))
 
+              # Validate chunk size is a positive integer; fall back to 500 if unset or invalid.
+              if [[ "$TRANSLATION_CHUNK_SIZE" =~ ^[1-9][0-9]*$ ]]; then
+                chunk_size="$TRANSLATION_CHUNK_SIZE"
+              else
+                echo "::warning::TRANSLATION_CHUNK_SIZE ('$TRANSLATION_CHUNK_SIZE') is not a positive integer. Falling back to 500."
+                chunk_size=500
+              fi
+
               chunk_dir="/tmp/po_chunks_${edxLang}_$(basename "$po_file" .po)"
               rm -rf "$chunk_dir"
 
               mapfile -t chunk_files < <(python scripts/split_po_file.py \
                 --input "$po_file" \
                 --output-dir "$chunk_dir" \
-                --chunk-size 500)
+                --chunk-size "$chunk_size")
 
               if [ "${#chunk_files[@]}" -eq 0 ]; then
                 echo "No translated entries in $po_file. Skipping."
