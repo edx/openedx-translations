@@ -124,13 +124,23 @@ jobs:
               num_attempted=$((num_attempted+1))
 
               chunk_dir="/tmp/po_chunks_${edxLang}_$(basename "$po_file" .po)"
+              chunk_list_file="/tmp/po_chunk_list_${edxLang}_$(basename "$po_file" .po).txt"
               rm -rf "$chunk_dir"
 
-              mapfile -t chunk_files < <(python scripts/split_po_file.py \
+              python scripts/split_po_file.py \
                 --input "$po_file" \
                 --output-dir "$chunk_dir" \
                 --chunk-size "$chunk_size" \
-                --translated-only)
+                --translated-only > "$chunk_list_file"
+              split_exit_code=$?
+
+              if [ "$split_exit_code" -ne 0 ]; then
+                echo "Failed to split $po_file into chunks (exit code $split_exit_code). Failing."
+                num_failures=$((num_failures+1))
+                continue
+              fi
+
+              mapfile -t chunk_files < "$chunk_list_file"
 
               if [ "${#chunk_files[@]}" -eq 0 ]; then
                 echo "No translated entries in $po_file. Skipping."
