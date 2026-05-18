@@ -92,9 +92,7 @@ jobs:
 
             for po_file in "$po_dir"/*.po; do
 
-              if [ ! -f "$po_file" ]; then
-                continue
-              fi
+              [ -f "$po_file" ] || continue
 
               echo "Processing file $po_file"
 
