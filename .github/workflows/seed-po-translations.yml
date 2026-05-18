@@ -7,11 +7,11 @@ on:
   workflow_dispatch:
     inputs:
       application_name:
-        description: 'Python application/repository to seed translations for. Leave blank to run all.'
+        description: 'Python application/repository to seed translations for, case sensitive. Leave blank to run all.'
         required: false
         type: string
       translation_language:
-        description: 'Language code in edX format (e.g. es-419 or pt-PT). Leave blank to run all.'
+        description: 'Language code in edX format (e.g. es-419 or pt-PT), case insensitive. Leave blank to run all.'
         required: false
         type: string
 
