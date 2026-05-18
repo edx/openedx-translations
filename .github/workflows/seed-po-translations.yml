@@ -32,7 +32,7 @@ jobs:
     secrets: inherit
 
   # Seeds regular Python applications.
-  seed-translations:
+  seed-po-translations:
     if: ${{ fromJson(needs.setup.outputs.has_applications) == true }}
     runs-on: ubuntu-latest
     needs: [setup, validate]
