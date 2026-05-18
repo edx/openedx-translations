@@ -20,6 +20,9 @@ def merge_po_chunks(chunk_paths, output_path):
 
     Returns the merged POFile.
     """
+    if not chunk_paths:
+        raise ValueError("chunk_paths must not be empty")
+
     chunks = [polib.pofile(p) for p in chunk_paths]
 
     result = polib.POFile()

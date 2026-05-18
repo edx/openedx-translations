@@ -92,6 +92,10 @@ class TestMergePoChunks:
         # polib.pofile raises on parse errors
         polib.pofile(output)
 
+    def test_raises_on_empty_chunk_list(self, tmp_path):
+        with pytest.raises(ValueError, match="chunk_paths must not be empty"):
+            merge_po_chunks([], str(tmp_path / "merged.po"))
+
     def test_returns_merged_pofile(self, tmp_path):
         chunks = split_po_file(LARGE_PO, str(tmp_path / "chunks"), chunk_size=2)
         output = str(tmp_path / "merged.po")
