@@ -1,4 +1,4 @@
-#This workflow seeds translations for Python applications, storing existing translations in ai-translations.
+# This workflow seeds translations for Python applications, storing existing translations in ai-translations.
 # This one-time action helps us avoid re-translating strings that have already been translated.
 
 name: Seed Python Translations
@@ -31,8 +31,7 @@ jobs:
       lms_access_token_url: ${{ vars.LMS_ACCESS_TOKEN_URL }}
     secrets: inherit
 
-  # Seeds regular Python applications
-
+  # Seeds regular Python applications.
   seed-python-po-translations:
     if: ${{ fromJson(needs.setup.outputs.has_applications) == true }}
     runs-on: ubuntu-latest
@@ -42,7 +41,6 @@ jobs:
         application: ${{ fromJson(needs.setup.outputs.applications) }}
       fail-fast: false
       max-parallel: 3
-
     steps:
       - name: Clone repository
         uses: actions/checkout@v5
@@ -52,15 +50,16 @@ jobs:
           LMS_ACCESS_TOKEN_URL: ${{ vars.LMS_ACCESS_TOKEN_URL }}
           EDX_TRANSLATIONS_PROD_CLIENT_ID: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}
           EDX_TRANSLATIONS_PROD_CLIENT_SECRET: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}
-
         run: |
           . .github/scripts/fetch_jwt.sh
 
           translation_languages='${{ needs.setup.outputs.translation_languages }}'
           app_dir="translations/${{ matrix.application.appName }}"
-          
+
+          # Skip the application entirely if its translations directory hasn't been
+          # populated yet (e.g. a newly added app with no extracted strings).
           if [ ! -d "$app_dir" ]; then
-            echo "Application directory does not exist: $app_dir"
+            echo "Application directory does not exist: $app_dir. Skipping application."
             exit 0
           fi
 
@@ -76,22 +75,27 @@ jobs:
           num_failures=0
           num_attempted=0
 
+          # Loop through selected languages
           while IFS= read -r lang; do
-
+            # Re-fetch JWT per language to prevent token expiry on long-running jobs.
             fetch_jwt || exit 1
 
             edxLang=$(echo "$lang" | jq -r '.edxLang')
             repoLang=$(echo "$lang" | jq -r '.repoLang')
 
+            echo "Processing language $edxLang for application ${{ matrix.application.appName }}."
+
             po_dir="${locale_base}/${repoLang}/LC_MESSAGES"
 
+            # Skip individual languages that haven't been translated yet; not every app
+            # has a directory for every supported language.
             if [ ! -d "$po_dir" ]; then
               echo "PO directory does not exist: $po_dir. Skipping."
+              echo ""
               continue
             fi
 
             for po_file in "$po_dir"/*.po; do
-
               [ -f "$po_file" ] || continue
 
               echo "Processing file $po_file"
@@ -99,9 +103,7 @@ jobs:
               num_attempted=$((num_attempted+1))
 
               > /tmp/seed_po_response.txt
-
               curl_exit_code=0
-
               status_code=$(curl -sS \
                 --connect-timeout 10 \
                 --max-time 180 \
@@ -115,6 +117,7 @@ jobs:
                 -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
 
               if [ "$curl_exit_code" -ne 0 ]; then
+                echo "Curl request to seed translations failed for $po_file with exit code $curl_exit_code."
                 cat /tmp/seed_po_response.txt
                 num_failures=$((num_failures+1))
                 continue
@@ -130,11 +133,12 @@ jobs:
 
               echo ""
             done
-
           done < <(echo "$translation_languages" | jq -c '.[]')
 
+          # Warn (but don't fail) if no languages were seeded — the directory exists but
+          # none of the expected language files were present.
           if [ "$num_attempted" -eq 0 ]; then
-            echo "Warning: No Python PO translations were seeded."
+            echo "Warning: No translations were seeded for application ${{ matrix.application.appName }}. Check that translation files exist at the expected path."
           fi
 
           if [ "$num_failures" -ne 0 ]; then
