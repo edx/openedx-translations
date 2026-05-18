@@ -43,7 +43,7 @@ class TestMergePoChunks:
 
         original = polib.pofile(LARGE_PO)
         merged = polib.pofile(output)
-        assert len(merged) == len(original.translated_entries())
+        assert len(merged) == len(list(original))
 
     def test_entry_order_preserved(self, tmp_path):
         chunks = split_po_file(LARGE_PO, str(tmp_path / "chunks"), chunk_size=2)
@@ -51,7 +51,7 @@ class TestMergePoChunks:
 
         merge_po_chunks(chunks, output)
 
-        original_msgids = [e.msgid for e in polib.pofile(LARGE_PO).translated_entries()]
+        original_msgids = [e.msgid for e in polib.pofile(LARGE_PO)]
         merged_msgids = [e.msgid for e in polib.pofile(output)]
         assert merged_msgids == original_msgids
 

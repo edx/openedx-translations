@@ -12,14 +12,14 @@ import os
 import polib
 
 
-def split_po_file(input_path, output_dir, chunk_size=500, translated_only=True):
+def split_po_file(input_path, output_dir, chunk_size=500, translated_only=False):
     """
     Split a PO file into chunks of at most chunk_size entries.
 
-    When translated_only=True (default), only translated entries are included —
-    correct for seeding, where untranslated strings have nothing to contribute.
-    When translated_only=False, all entries are included — correct for
-    translation, where source strings with empty msgstrs are the whole point.
+    When translated_only=False (default), all entries are included — correct
+    for translation, where source strings with empty msgstrs are the whole point.
+    When translated_only=True, only translated entries are included — correct
+    for seeding, where untranslated strings have nothing to contribute.
 
     Returns a list of paths to the written chunk files, in order.
     Returns an empty list if the file contains no qualifying entries.
@@ -53,10 +53,10 @@ def main():
     parser.add_argument('--input', required=True, help='Path to the input PO file')
     parser.add_argument('--output-dir', required=True, help='Directory to write chunk files into')
     parser.add_argument('--chunk-size', type=int, default=500, help='Max entries per chunk (default: 500)')
-    parser.add_argument('--all-entries', action='store_true', help='Include untranslated entries (for translation workflow; default includes only translated entries)')
+    parser.add_argument('--translated-only', action='store_true', help='Include only translated entries (for seeding; default includes all entries)')
     args = parser.parse_args()
 
-    chunk_paths = split_po_file(args.input, args.output_dir, args.chunk_size, translated_only=not args.all_entries)
+    chunk_paths = split_po_file(args.input, args.output_dir, args.chunk_size, translated_only=args.translated_only)
     for path in chunk_paths:
         print(path)
 

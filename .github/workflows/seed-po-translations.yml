@@ -129,7 +129,8 @@ jobs:
               mapfile -t chunk_files < <(python scripts/split_po_file.py \
                 --input "$po_file" \
                 --output-dir "$chunk_dir" \
-                --chunk-size "$chunk_size")
+                --chunk-size "$chunk_size" \
+                --translated-only)
 
               if [ "${#chunk_files[@]}" -eq 0 ]; then
                 echo "No translated entries in $po_file. Skipping."
