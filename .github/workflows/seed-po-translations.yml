@@ -45,6 +45,14 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v5
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install translation script requirements
+        run: pip install -r requirements/translations.txt
+
       - name: Seed Python PO translations for ${{ matrix.application.appName }}
         env:
           LMS_ACCESS_TOKEN_URL: ${{ vars.LMS_ACCESS_TOKEN_URL }}
@@ -102,33 +110,63 @@ jobs:
 
               num_attempted=$((num_attempted+1))
 
-              > /tmp/seed_po_response.txt
-              curl_exit_code=0
-              status_code=$(curl -sS \
-                --connect-timeout 10 \
-                --max-time 180 \
-                -w "%{http_code}" \
-                -o /tmp/seed_po_response.txt \
-                -X POST "${{ vars.AI_TRANSLATIONS_SEED_PO_TRANSLATIONS_URL }}" \
-                -F "application_name=${{ matrix.application.appName }}" \
-                -F "translation_language=$edxLang" \
-                -F "source_language=en" \
-                -F "translation_file=@$po_file" \
-                -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
+              chunk_dir="/tmp/po_chunks_${edxLang}_$(basename "$po_file" .po)"
+              rm -rf "$chunk_dir"
 
-              if [ "$curl_exit_code" -ne 0 ]; then
-                echo "Curl request to seed translations failed for $po_file with exit code $curl_exit_code."
-                cat /tmp/seed_po_response.txt
-                num_failures=$((num_failures+1))
+              mapfile -t chunk_files < <(python scripts/split_po_file.py \
+                --input "$po_file" \
+                --output-dir "$chunk_dir" \
+                --chunk-size 500)
+
+              if [ "${#chunk_files[@]}" -eq 0 ]; then
+                echo "No translated entries in $po_file. Skipping."
+                echo ""
                 continue
               fi
 
-              if [ "$status_code" -eq 200 ]; then
-                echo "Successfully seeded $po_file"
-              else
-                echo "Failed seeding $po_file with status $status_code"
-                cat /tmp/seed_po_response.txt
+              num_chunks="${#chunk_files[@]}"
+              echo "Split into $num_chunks chunk(s)."
+
+              file_failed=0
+              for chunk_idx in "${!chunk_files[@]}"; do
+                chunk_file="${chunk_files[$chunk_idx]}"
+                echo "Seeding chunk $((chunk_idx + 1)) of $num_chunks for $po_file"
+
+                > /tmp/seed_po_response.txt
+                curl_exit_code=0
+                status_code=$(curl -sS \
+                  --connect-timeout 10 \
+                  --max-time 180 \
+                  -w "%{http_code}" \
+                  -o /tmp/seed_po_response.txt \
+                  -X POST "${{ vars.AI_TRANSLATIONS_SEED_PO_TRANSLATIONS_URL }}" \
+                  -F "application_name=${{ matrix.application.appName }}" \
+                  -F "translation_language=$edxLang" \
+                  -F "source_language=en" \
+                  -F "translation_file=@$chunk_file" \
+                  -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
+
+                if [ "$curl_exit_code" -ne 0 ]; then
+                  echo "Curl request to seed translations failed for chunk $((chunk_idx + 1)) of $num_chunks of $po_file with exit code $curl_exit_code."
+                  cat /tmp/seed_po_response.txt
+                  file_failed=1
+                  break
+                fi
+
+                if [ "$status_code" -eq 200 ]; then
+                  echo "Successfully seeded chunk $((chunk_idx + 1)) of $num_chunks"
+                else
+                  echo "Failed seeding chunk $((chunk_idx + 1)) of $num_chunks of $po_file with status $status_code"
+                  cat /tmp/seed_po_response.txt
+                  file_failed=1
+                  break
+                fi
+              done
+
+              if [ "$file_failed" -ne 0 ]; then
                 num_failures=$((num_failures+1))
+              else
+                echo "Successfully seeded all chunks for $po_file"
               fi
 
               echo ""
