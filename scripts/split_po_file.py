@@ -24,6 +24,9 @@ def split_po_file(input_path, output_dir, chunk_size=500, translated_only=False)
     Returns a list of paths to the written chunk files, in order.
     Returns an empty list if the file contains no qualifying entries.
     """
+    if chunk_size <= 0:
+        raise ValueError(f"chunk_size must be a positive integer, got {chunk_size}")
+
     po = polib.pofile(input_path)
     entries = po.translated_entries() if translated_only else list(po)
 

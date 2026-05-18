@@ -4,6 +4,7 @@ Tests for scripts/split_po_file.py
 
 import os
 import polib
+import pytest
 
 from ..split_po_file import split_po_file
 
@@ -106,6 +107,10 @@ class TestSplitPoFile:
         chunks = split_po_file(LARGE_PO, str(tmp_path), chunk_size=2)
         basenames = [os.path.basename(c) for c in chunks]
         assert basenames == ["chunk_0000.po", "chunk_0001.po", "chunk_0002.po", "chunk_0003.po"]
+
+    def test_raises_on_non_positive_chunk_size(self, tmp_path):
+        with pytest.raises(ValueError, match="chunk_size must be a positive integer"):
+            split_po_file(LARGE_PO, str(tmp_path), chunk_size=0)
 
     # translated_only=True (--translated-only) tests
 
