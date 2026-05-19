@@ -270,8 +270,17 @@ jobs:
 
           EDX_BASE_REQS=translations/edx-platform/requirements/edx/base.txt
           if test -f $EDX_BASE_REQS; then
-            # Install edx-platform specific apps (e.g. wiki) which is required to extract translations from
-            pip install -r $EDX_BASE_REQS
+            # Compatibility for older packages using pkg_resources
+            pip install "setuptools<81"
+
+            # Install edx-platform specific apps (e.g. wiki) required for translation extraction
+            pip install --no-build-isolation -r $EDX_BASE_REQS
+
+            # Required by babel_mako.cfg
+            pip install mako
+
+            # Required by babel_underscore.cfg
+            pip install "enmerkar<0.7"
           fi
 
           APP_BASE="translations/${{ matrix.repo_config.repo }}"
