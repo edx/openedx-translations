@@ -277,10 +277,10 @@ jobs:
             pip install --no-build-isolation -r $EDX_BASE_REQS
 
             # Required by babel_mako.cfg
-            pip install mako
+            pip install "mako[babel]"
 
             # Required by babel_underscore.cfg
-            pip install "enmerkar<0.7"
+            pip install enmerkar-underscore
           fi
 
           APP_BASE="translations/${{ matrix.repo_config.repo }}"
