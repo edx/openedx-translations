@@ -4,69 +4,69 @@ msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2026-05-20 16:10+0000\n"
+"PO-Revision-Date: 2026-05-20 16:17+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: es_ES\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: recommender.py:314
 msgid "Invalid location URL provided"
-msgstr "URL de ubicación no válida proporcionada"
+msgstr "제공된 위치 URL이 올바르지 않습니다"
 
 #: recommender.py:325
 msgid "The resource you are attempting to provide already exists"
-msgstr "El recurso que intenta proporcionar ya existe"
+msgstr "제공하려는 자원이 이미 존재합니다"
 
 #: recommender.py:338
 msgid ""
 "The resource you are attempting to provide has been disallowed by the staff."
 " Reason: "
-msgstr "El personal ha rechazado el recurso que intenta proporcionar. Razón: "
+msgstr "제공하려는 자원이 스태프에 의해 거부되었습니다. 사유: "
 
 #: recommender.py:355
 msgid "The selected resource does not exist"
-msgstr "El recurso seleccionado no existe"
+msgstr "선택된 자원이 존재하지 않습니다"
 
 #: recommender.py:403
 msgid "Size of uploaded file exceeds threshold"
-msgstr "El tamaño del archivo subido supera el umbral"
+msgstr "업로드된 파일의 크기가 한도를 초과했습니다"
 
 #: recommender.py:414
 msgid "The configuration of pyfs is not properly set"
-msgstr "La configuración de pyfs no está configurada correctamente"
+msgstr "pyfs의 구성이 올바르게 설정되지 않았습니다"
 
 #: recommender.py:753
 msgid "Endorse resource without permission"
-msgstr "Respaldar recurso sin permiso"
+msgstr "권한 없이 자원을 추천할 수 없습니다"
 
 #: recommender.py:797
 msgid "You don't have the permission to remove this resource"
-msgstr "No tienes permiso para eliminar este recurso."
+msgstr "이 자원을 제거할 권한이 없습니다"
 
 #: recommender.py:848
 msgid "Only staff can import resources"
-msgstr "Sólo el personal puede importar recursos"
+msgstr "자원 가져오기는 스태프만 가능합니다"
 
 #: recommender.py:859 recommender.py:886
 msgid ""
 "Please submit the JSON file obtained with the download resources button"
-msgstr "Envíe el archivo JSON obtenido con el botón de descarga de recursos."
+msgstr "자원 다운로드 버튼으로 얻은 JSON 파일을 제출해주세요"
 
 #: recommender.py:899
 msgid "Tried to access flagged resources without staff permission"
-msgstr "Intentó acceder a recursos marcados sin el permiso del personal"
+msgstr "스태프 권한 없이 플래그된 자원에 접근하려 했습니다"
 
 #: templates/recommender.html:85
 msgid "This is a list of recommended resources. If you\\"
-msgstr "Esta es una lista de recursos recomendados. Si usted\\"
+msgstr "추천 자원 목록입니다. 만약 당신이\\"
 
 #: templates/recommender.html:86 static/js/src/cats.js:158
 msgid "Show related resources"
-msgstr "Mostrar recursos relacionados"
+msgstr "관련 자원 보기"
 
 #: templates/recommender.html:93
 msgid ""
@@ -74,25 +74,24 @@ msgid ""
 "helpful, but it is empty currently. If you find useful resources, either on "
 "edx.org or elsewhere, please add it."
 msgstr ""
-"Esta será una lista de recursos que sus compañeros de estudios pensaron que "
-"podrían ser útiles, pero actualmente está vacía. Si encuentra recursos "
-"útiles, ya sea en edx.org o en otro lugar, agréguelos."
+"이곳은 동료 학생들이 도움이 될 것이라고 생각한 자원 목록이지만, 현재는 비어 있습니다. 유용한 자원을 edx.org 또는 다른 곳에서 "
+"찾으시면 추가해주세요."
 
 #: templates/recommender.html:120
 msgid "Add new resource &gt;&gt;"
-msgstr "Agregar nuevo recurso &gt;&gt;"
+msgstr "새 자원 추가 >>"
 
 #: templates/recommender.html:121
 msgid "Download resources"
-msgstr "Descargar recursos"
+msgstr "자원 다운로드"
 
 #: templates/recommender.html:122 templates/recommender.html:148
 msgid "Upload resources"
-msgstr "Subir recursos"
+msgstr "자원 업로드"
 
 #: templates/recommender.html:124
 msgid "mode"
-msgstr "modo"
+msgstr "모드"
 
 #: templates/recommender.html:133
 msgid ""
@@ -103,141 +102,129 @@ msgid ""
 "so helpful, downvote it. If it has issues (illegal material, incorrect, "
 "etc.), please flag it and let us know the reason."
 msgstr ""
-"Esta es una lista de recursos que sus compañeros de estudios pensaron que "
-"podrían ser útiles. Si encuentra otro recurso útil, ya sea en edx.org o en "
-"otro lugar, agréguelo. Si puede mejorar la descripción o la vista previa de "
-"un recurso, hágalo también. Si encuentra un recurso útil, votelo. Si no es "
-"tan útil, vota en contra. Si tiene problemas (material ilegal, incorrecto, "
-"etc.), márquelo y háganos saber el motivo."
+"이곳은 동료 학생들이 도움이 될 것이라고 생각한 자원 목록입니다. 다른 유용한 자원을 edx.org 또는 다른 곳에서 찾으시면 "
+"추가해주세요. 자원의 설명이나 미리보기를 개선할 수 있다면 수정해주세요. 자원이 도움이 된다면 추천(업보트)하고, 그렇지 않다면 "
+"비추천(다운보트)해주세요. 문제가 있는 경우(불법 자료, 부정확함 등) 플래그하여 사유를 알려주세요."
 
 #: templates/recommender.html:141
 msgid "cancel and go back to resource list"
-msgstr "cancelar y volver a la lista de recursos"
+msgstr "취소하고 자원 목록으로 돌아가기"
 
 #: templates/recommender.html:141
 msgid "&lt; Related resources"
-msgstr "&lt; Recursos relacionados"
+msgstr "< 관련 자원"
 
 #: templates/recommender.html:147
 msgid "Resources (in JSON format):"
-msgstr "Recursos (en formato JSON):"
+msgstr "자원 (JSON 형식):"
 
 #: templates/recommender.html:147
 msgid "Provide a file of resource list in JSON format"
-msgstr "Proporcionar un archivo de lista de recursos en formato JSON"
+msgstr "JSON 형식의 자원 목록 파일을 제공해주세요"
 
 #: templates/recommender.html:153 templates/recommender.html:163
 #: templates/recommender.html:173
 msgid "Reason"
-msgstr "razonamiento"
+msgstr "사유"
 
 #: templates/recommender.html:157
 msgid "Reason for why this resource should be removed"
-msgstr "Razón por la que se debe eliminar este recurso"
+msgstr "이 자원을 제거해야 하는 이유"
 
 #: templates/recommender.html:167
 msgid "Reason for why this resource should be endorsed"
-msgstr "Razón por la cual se debe respaldar este recurso"
+msgstr "이 자원을 추천해야 하는 이유"
 
 #: templates/recommender.html:177
 msgid "Reason for why this resource should be flagged"
-msgstr "Motivo por el que se debe marcar este recurso"
+msgstr "이 자원에 플래그를 달아야 하는 이유"
 
 #: templates/recommender.html:183 templates/recommender.html:208
 msgid "Title"
-msgstr "Título"
+msgstr "제목"
 
 #: templates/recommender.html:185 templates/recommender.html:210
 msgid "Provide a resource title, required"
-msgstr "Proporcionar un título de recurso, obligatorio"
+msgstr "필수: 자원 제목을 입력해주세요"
 
 #: templates/recommender.html:187 templates/recommender.html:212
 msgid ""
 "Provide a meaningful title so other students know whether this is useful to "
 "them"
-msgstr ""
-"Proporcione un título significativo para que otros estudiantes sepan si les "
-"resulta útil."
+msgstr "다른 학생들이 유용하다고 판단할 수 있도록 의미 있는 제목을 입력해주세요"
 
 #: templates/recommender.html:189
 msgid "Location"
-msgstr "Ubicación"
+msgstr "위치"
 
 #: templates/recommender.html:191 templates/recommender.html:216
 msgid "Provide a resource location in url, required"
-msgstr "Proporcione una ubicación de recurso en la URL, obligatorio"
+msgstr "필수: URL 형식의 자원 위치를 입력해주세요"
 
 #: templates/recommender.html:195 templates/recommender.html:220
 msgid "Description"
-msgstr "Descripción"
+msgstr "설명"
 
 #: templates/recommender.html:199 templates/recommender.html:224
 msgid ""
 "Provide a meaningful description so other students know whether this is "
 "useful to them"
-msgstr ""
-"Proporcione una descripción significativa para que otros estudiantes sepan "
-"si les resulta útil."
+msgstr "다른 학생들이 유용하다고 판단할 수 있도록 의미 있는 설명을 입력해주세요"
 
 #: templates/recommender.html:202
 msgid "Preview screenshot:"
-msgstr "Captura de pantalla de vista previa:"
+msgstr "미리보기 스크린샷:"
 
 #: templates/recommender.html:202
 msgid "Provide a resource screenshot"
-msgstr "Proporcionar una captura de pantalla del recurso"
+msgstr "자원 스크린샷을 제공해주세요"
 
 #: templates/recommender.html:203
 msgid "Save change"
-msgstr "Guardar cambios"
+msgstr "변경 사항 저장"
 
 #: templates/recommender.html:222
 msgid "Provide a resource description"
-msgstr "Proporcionar una descripción del recurso"
+msgstr "자원 설명을 제공해주세요"
 
 #: templates/recommender.html:227
 msgid "Provide a file of resource screenshot"
-msgstr "Proporcionar un archivo de captura de pantalla del recurso"
+msgstr "자원 스크린샷 파일을 제공해주세요"
 
 #: templates/recommender.html:228
 msgid "Add resource"
-msgstr "Agregar recurso"
+msgstr "자원 추가"
 
 #: templates/recommenderstudio.html:6
 msgid "Configuration setting"
-msgstr "Ajuste de configuración"
+msgstr "구성 설정"
 
 #: templates/recommenderstudio.html:9
 msgid ""
 "Set the student-view, client side configurations for RecommenderXblock."
-msgstr ""
-"Establezca las configuraciones del lado del cliente de la vista de "
-"estudiante para RecommenderXblock."
+msgstr "RecommenderXblock의 학생용 클라이언트 측 구성을 설정합니다."
 
 #: templates/recommenderstudio.html:12 templates/recommenderstudio.html:18
 msgid "Yes"
-msgstr "Sí"
+msgstr "예"
 
 #: templates/recommenderstudio.html:13 templates/recommenderstudio.html:19
 msgid "No"
-msgstr "No"
+msgstr "아니오"
 
 #: templates/recommenderstudio.html:14
 msgid ""
 "Do you want to take users on a little tour when they see the "
 "RecommenderXBlock first time?"
-msgstr ""
-"¿Quiere llevar a los usuarios a un pequeño recorrido cuando vean "
-"RecommenderXBlock por primera vez?"
+msgstr "사용자가 처음 RecommenderXBlock을 볼 때 투어를 진행하시겠습니까?"
 
 #: templates/recommenderstudio.html:21
 msgid "Do you want to disable the UX functions which are under development?"
-msgstr "¿Quieres desactivar las funciones UX que están en desarrollo?"
+msgstr "개발 중인 UX 기능을 비활성화하시겠습니까?"
 
 #: templates/recommenderstudio.html:36
 msgid "How many resources you want to show in each page of the resource list?"
-msgstr ""
-"¿Cuántos recursos desea mostrar en cada página de la lista de recursos?"
+msgstr "자원 목록의 한 페이지에 표시할 자원 개수는 몇 개입니까?"
 
 #: templates/recommenderstudio.html:46
 msgid ""
@@ -245,45 +232,42 @@ msgid ""
 "pages from (current page - page range) to (current page + page range) will "
 "be shown."
 msgstr ""
-"¿Cuántos íconos de página hay en el control de paginación (es decir, rango "
-"de páginas)? Se mostrarán los iconos para las páginas desde (página actual -"
-" rango de páginas) hasta (página actual + rango de páginas)."
+"페이지네이션 컨트롤에 표시할 페이지 아이콘 수(즉, 페이지 범위)는 얼마입니까? (현재 페이지 - 페이지 범위)부터 (현재 페이지 + "
+"페이지 범위)까지 아이콘이 표시됩니다."
 
 #: static/js/src/cats.js:65
 msgid ""
 "Recommend a new resource which may be helpful to other students solving this"
 " problem"
-msgstr ""
-"Recomendar un nuevo recurso que pueda ser útil para otros estudiantes que "
-"resuelvan este problema."
+msgstr "이 문제를 해결하는 다른 학생들에게 도움이 될 수 있는 새로운 자원을 추천해주세요"
 
 #: static/js/src/cats.js:66
 msgid "Edit this resource"
-msgstr "Editar este recurso"
+msgstr "이 자원 편집"
 
 #: static/js/src/cats.js:67
 msgid "Upvote if the resource is helpful"
-msgstr "Vota si el recurso es útil."
+msgstr "자원이 도움이 된다면 추천해주세요"
 
 #: static/js/src/cats.js:68
 msgid "Downvote if the resource is not helpful"
-msgstr "Vota negativamente si el recurso no es útil."
+msgstr "자원이 도움이 되지 않는다면 비추천해주세요"
 
 #: static/js/src/cats.js:69
 msgid "Votes"
-msgstr "Votos"
+msgstr "투표"
 
 #: static/js/src/cats.js:70
 msgid "Resource title"
-msgstr "Título del recurso"
+msgstr "자원 제목"
 
 #: static/js/src/cats.js:71
 msgid "Remove this resource and give the reason why you do that"
-msgstr "Elimina este recurso y explica el motivo por el que lo haces."
+msgstr "이 자원을 제거하고 그 이유를 작성해주세요"
 
 #: static/js/src/cats.js:72
 msgid "Preview image (typically, a screenshot)"
-msgstr "Imagen de vista previa (normalmente, una captura de pantalla)"
+msgstr "미리보기 이미지 (일반적으로 스크린샷)"
 
 #: static/js/src/cats.js:73 static/js/src/cats.js:77
 msgid ""
@@ -291,144 +275,126 @@ msgid ""
 " concise, but give enough detail to let students know whether this resources"
 " is useful to them"
 msgstr ""
-"Dé un resumen breve (de 1 a 3 oraciones) del recurso; Idealmente, esto "
-"debería ser conciso, pero brindar suficientes detalles para que los "
-"estudiantes sepan si este recurso les es útil."
+"자원에 대한 간략한 요약(1~3문장)을 작성해주세요. 간결하되 충분한 정보를 제공하여 다른 학생들이 유용 여부를 판단할 수 있도록 "
+"해주세요"
 
 #: static/js/src/cats.js:74 static/js/src/cats.js:78
 msgid "Cut-and-paste the URL of the resource."
-msgstr "Corta y pega la URL del recurso."
+msgstr "자원의 URL을 복사하여 붙여넣기 하세요."
 
 #: static/js/src/cats.js:75 static/js/src/cats.js:79
 msgid ""
 "Give a paragraph of summary of the resource; the summary should be more "
 "detailed than you gave in Title"
-msgstr ""
-"Dar un párrafo de resumen del recurso; el resumen debe ser más detallado que"
-" el que proporcionaste en el título"
+msgstr "자원에 대한 단락 요약을 작성해주세요. 제목에 비해 더 자세하게 설명해 주세요"
 
 #: static/js/src/cats.js:76 static/js/src/cats.js:80
 msgid ""
 "Upload a preview screenshot (in GIF/PNG/JPG) of the resource; ideally, this "
 "should let students know whether this resources is useful to them"
-msgstr ""
-"Cargue una captura de pantalla de vista previa (en GIF/PNG/JPG) del recurso;"
-" Idealmente, esto debería permitirles a los estudiantes saber si este "
-"recurso es útil para ellos."
+msgstr "자원의 미리보기 스크린샷 (GIF/PNG/JPG 형식)을 업로드하세요. 충분히 유용한지 학생들이 판단할 수 있어야 합니다"
 
 #: static/js/src/cats.js:81
 msgid "Go back to the main list"
-msgstr "Volver a la lista principal"
+msgstr "메인 목록으로 돌아가기"
 
 #: static/js/src/cats.js:82
 msgid "Give a meaningful reason for why this resource should be removed"
-msgstr ""
-"Proporcione una razón significativa por la que se debe eliminar este "
-"recurso."
+msgstr "이 자원을 제거해야 하는 의미 있는 이유를 작성해주세요"
 
 #: static/js/src/cats.js:83
 msgid "Flag this resource as problematic and give your reason"
-msgstr "Marca este recurso como problemático y explica el motivo."
+msgstr "이 자원을 문제 있는 것으로 표시하고 그 이유를 작성해주세요"
 
 #: static/js/src/cats.js:84
 msgid "Delete this resource"
-msgstr "Eliminar este recurso"
+msgstr "이 자원 삭제"
 
 #: static/js/src/cats.js:85
 msgid "Show a list of student-recommented related resources"
-msgstr ""
-"Mostrar una lista de recursos relacionados recomendados por estudiantes"
+msgstr "학생들이 추천한 관련 자원 목록 보기"
 
 #: static/js/src/cats.js:86
 msgid "Hide the recommendations list"
-msgstr "Ocultar la lista de recomendaciones"
+msgstr "추천 목록 숨기기"
 
 #: static/js/src/cats.js:87
 msgid "Check the icon to endorse this resource"
-msgstr "Marque el ícono para respaldar este recurso."
+msgstr "이 자원을 추천하려면 아이콘을 선택하세요"
 
 #: static/js/src/cats.js:88
 msgid "This resource is endorsed by staff"
-msgstr "Este recurso está respaldado por el personal."
+msgstr "이 자원은 스태프에 의해 추천되었습니다"
 
 #: static/js/src/cats.js:89
 msgid "Click to view resources for removal"
-msgstr "Haga clic para ver los recursos para la eliminación"
+msgstr "제거할 자원을 보려면 클릭하세요"
 
 #: static/js/src/cats.js:90
 msgid "Click to view resources in ordinary decreasing-vote order"
-msgstr ""
-"Haga clic para ver los recursos en orden ordinario de votos decrecientes"
+msgstr "일반적인 내림차순 투표 순으로 자원을 보려면 클릭하세요"
 
 #: static/js/src/cats.js:93
 msgid ""
 "Here is a list of reasons why students think this resource problematic:"
-msgstr ""
-"Aquí hay una lista de razones por las que los estudiantes piensan que este "
-"recurso es problemático:"
+msgstr "학생들이 이 자원을 문제 있다고 생각하는 이유 목록은 다음과 같습니다:"
 
 #: static/js/src/cats.js:94
 msgid "The reason why it is endorsed is:"
-msgstr "La razón por la que se avala es:"
+msgstr "추천된 이유는 다음과 같습니다:"
 
 #: static/js/src/cats.js:95
 msgid "Resource: "
-msgstr "Recurso: "
+msgstr "자원: "
 
 #: static/js/src/cats.js:96
 msgid "votes"
-msgstr "votos"
+msgstr "투표"
 
 #: static/js/src/cats.js:104
 msgid ""
 "The content you typed has not been submitted yet. Are you sure to go back?"
-msgstr ""
-"El contenido que usted escribió aún no ha sido enviado. ¿Estás seguro de que"
-" volverás?"
+msgstr "입력한 내용이 아직 제출되지 않았습니다. 정말로 돌아가시겠습니까?"
 
 #: static/js/src/cats.js:107 static/js/src/cats.js:199
 msgid "Import resources"
-msgstr "Importar recursos"
+msgstr "자원 가져오기"
 
 #: static/js/src/cats.js:108
 msgid "Suggest resource"
-msgstr "Sugerir recurso"
+msgstr "자원 제안"
 
 #: static/js/src/cats.js:109 static/js/src/cats.js:207
 msgid "Edit existing resource"
-msgstr "Editar recurso existente"
+msgstr "기존 자원 편집"
 
 #: static/js/src/cats.js:110
 msgid "Flag Resource"
-msgstr "Marcar recurso"
+msgstr "자원 플래그"
 
 #: static/js/src/cats.js:111
 msgid "Endorse Resource"
-msgstr "Respaldar recurso"
+msgstr "자원 추천"
 
 #: static/js/src/cats.js:112
 msgid "Remove Resource"
-msgstr "Eliminar recurso"
+msgstr "자원 제거"
 
 #: static/js/src/cats.js:116
 msgid "Upload resources in JSON format to the database."
-msgstr "Sube recursos en formato JSON a la base de datos."
+msgstr "JSON 형식의 자원을 데이터베이스에 업로드합니다."
 
 #: static/js/src/cats.js:117
 msgid ""
 "Suggest a resource which can help other students with this problem. Please "
 "do not give the answer directly."
-msgstr ""
-"Sugiera un recurso que pueda ayudar a otros estudiantes con este problema. "
-"Por favor no dé la respuesta directamente."
+msgstr "이 문제에 도움이 될 수 있는 자원을 제안해주세요. 답을 직접 제시하지 마세요."
 
 #: static/js/src/cats.js:118
 msgid ""
 "Edit the resource and make it more helpful for other students with this "
 "problem. Please do not give the answer directly."
-msgstr ""
-"Edite el recurso y hágalo más útil para otros estudiantes con este problema."
-" Por favor no dé la respuesta directamente."
+msgstr "이 자원을 편집하여 이 문제를 해결하는 다른 학생들에게 더 도움이 되도록 해주세요. 답을 직접 제시하지 마세요."
 
 #: static/js/src/cats.js:119
 msgid ""
@@ -436,78 +402,77 @@ msgid ""
 "resources, and remove inappropriate ones (spam, incorrect, abusive, etc.). "
 "Giving a clear reason will help us do this efficiently."
 msgstr ""
-"¿Por qué le gustaría marcar este recurso? El personal revisará todos los "
-"recursos marcados y eliminará los inapropiados (spam, incorrectos, abusivos,"
-" etc.). Dar una razón clara nos ayudará a hacer esto de manera eficiente."
+"이 자원에 플래그를 달고자 하는 이유는 무엇입니까? 스태프가 모든 플래그된 자원을 검토하여 부적절한 자원(스팸, 부정확함, 학대 등)을 "
+"제거할 것입니다. 명확한 이유를 제시하면 효율적인 처리가 가능합니다."
 
 #: static/js/src/cats.js:120
 msgid "Endorse this resource and give the reason why you do that."
-msgstr "Respalde este recurso y explique la razón por la que lo hace."
+msgstr "이 자원을 추천하고 그 이유를 작성해주세요."
 
 #: static/js/src/cats.js:121
 msgid "Remove this resource and give the reason why you do that."
-msgstr "Elimine este recurso y proporcione la razón por la que lo hace."
+msgstr "이 자원을 제거하고 그 이유를 작성해주세요."
 
 #: static/js/src/cats.js:157
 msgid "Hide related resources"
-msgstr "Ocultar recursos relacionados"
+msgstr "관련 자원 숨기기"
 
 #: static/js/src/cats.js:191
 msgid "From page {fromPage} To page {toPage}"
-msgstr "De la página {fromPage} A la página {toPage}"
+msgstr "페이지 {fromPage}부터 페이지 {toPage}까지"
 
 #: static/js/src/cats.js:196
 msgid "Export resources"
-msgstr "Exportar recursos"
+msgstr "자원 내보내기"
 
 #: static/js/src/cats.js:198
 msgid "Entering import resource mode"
-msgstr "Entrando al modo de importación de recursos"
+msgstr "자원 가져오기 모드로 진입 중"
 
 #: static/js/src/cats.js:202
 msgid "Entering add resource mode"
-msgstr "Entrando al modo agregar recurso"
+msgstr "자원 추가 모드로 진입 중"
 
 #: static/js/src/cats.js:203
 msgid "Add new resource"
-msgstr "Agregar nuevo recurso"
+msgstr "새 자원 추가"
 
 #: static/js/src/cats.js:206
 msgid "Entering edit resource mode"
-msgstr "Entrando al modo de edición de recursos"
+msgstr "자원 편집 모드로 진입 중"
 
 #: static/js/src/cats.js:210
 msgid "Entering flag resource mode"
-msgstr "Entrando al modo de recurso de bandera"
+msgstr "자원 플래그 모드로 진입 중"
 
 #: static/js/src/cats.js:211
 msgid "Flag resource"
-msgstr "Marcar recurso"
+msgstr "자원 플래그"
 
 #: static/js/src/cats.js:212
 msgid "Unflag resource"
-msgstr "Desmarcar recurso"
+msgstr "자원 플래그 해제"
 
 #: static/js/src/cats.js:215
 msgid "Endorse resource"
-msgstr "Respaldar recurso"
+msgstr "자원 추천"
 
 #: static/js/src/cats.js:216
 msgid "Unendorse resource"
-msgstr "Dejar de respaldar el recurso"
+msgstr "자원 추천 해제"
 
 #: static/js/src/cats.js:218
 msgid "Remove resource"
-msgstr "Eliminar recurso"
+msgstr "자원 제거"
 
 #: static/js/src/cats.js:219
 msgid "Hovering resource"
-msgstr "recurso flotante"
+msgstr "자원 호버링 중"
 
 #: static/js/src/cats.js:220
 msgid "A resource was clicked"
-msgstr "Se hizo clic en un recurso"
+msgstr "자원이 클릭되었습니다"
 
 #: static/js/src/cats.js:221
 msgid "Back to resource list mode"
-msgstr "Volver al modo de lista de recursos"
+msgstr "자원 목록 모드로 돌아가기"
