@@ -1,30 +1,17 @@
-# #-#-#-#-#  django.po (course-discovery)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2018 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# 
-# Translators:
-# Translators:
-# Sarina Canelake <sarina@tcril.org>, 2023
-# Nathan Robertson, 2024
-# Valentina Morelli, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
-# Omar Al-Ithawi <i@omardo.com>, 2025
-# Brian Smith, 2025
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-02 00:28+0000\n"
-"PO-Revision-Date: 2023-01-26 15:39+0000\n"
-"Last-Translator: Brian Smith, 2025\n"
-"Language-Team: Spanish (Latin America) (https://app.transifex.com/open-edx/teams/6205/es_419/)\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-04-27 00:38+0000\n"
+"PO-Revision-Date: 2026-05-20 16:47+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: English (http://www.transifex.com/open-edx/edx-platform/language/en/)\n"
+"Language: es_419\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_419\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: apps/api/filters.py:48
 #, python-brace-format
@@ -203,7 +190,7 @@ msgstr ""
 "La edición del curso no fue exitosa. La url slug del curso ‘[{url_slug}]’ "
 "está en uso. Por favor actualice este campo e intente nuevamente."
 
-#: apps/api/views.py:58
+#: apps/api/views.py:57
 msgid "You are not permitted to access the API documentation."
 msgstr "No tiene permiso para acceder a la documentación de la API"
 
@@ -568,6 +555,10 @@ msgstr "demo"
 msgid "other"
 msgstr "otro"
 
+#: apps/course_metadata/choices.py:54
+msgid "Course Create"
+msgstr "Crear curso"
+
 #: apps/course_metadata/choices.py:55
 msgid "Partial Update"
 msgstr "Actualización Parcial"
@@ -867,7 +858,7 @@ msgstr "Curso para completar los datos."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:27
 msgid "KEY"
-msgstr "KEY"
+msgstr "Clave"
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:29
 msgid "Organization to backpopulate."
@@ -1289,7 +1280,7 @@ msgstr "Este campo permite anular el término del curso predeterminado"
 msgid ""
 "This field contain external course marketing type specific to product lines"
 msgstr ""
-"Este campo contiene un tipo de marketing de curso externo específico para "
+"Este campo contiene el tipo de marketing de curso externo específico para "
 "las líneas de productos"
 
 #: apps/course_metadata/models.py:1002
@@ -2227,6 +2218,16 @@ msgstr ""
 "        Este es un recordatorio automático de que el curso \"%(course_name)s\" (Clave del curso: %(course_key)s) ha finalizado oficialmente el %(course_end_date)s.\n"
 "        "
 
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:23
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:18
+msgid ""
+"If this was intentional, no action is needed. However, if this course was "
+"meant to remain available, you have two options to restore access:"
+msgstr ""
+"Si esto fue intencional, no se requiere ninguna acción. Sin embargo, si se "
+"esperaba que este curso permaneciera disponible, tienes dos opciones para "
+"restaurar el acceso:"
+
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:29
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:21
 msgid ""
@@ -2255,6 +2256,19 @@ msgstr "Visita el curso en Publisher"
 msgid "You can review and modify the course end settings here:"
 msgstr ""
 "Puede revisar y modificar la configuración de finalización del curso aquí:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:41
+#, python-format
+msgid ""
+"\n"
+"        If no action is taken, the course will no longer be available for enrollment or access by learners on \n"
+"        <a href=\"%(partner_marketing_site_url)s\">%(partner_marketing_site_url)s</a> after the end date.\n"
+"        "
+msgstr ""
+"\n"
+"        Si no se toma ninguna acción, el curso dejará de estar disponible para la inscripción o el acceso de los estudiantes en \n"
+"        <a href=\"%(partner_marketing_site_url)s\">%(partner_marketing_site_url)s</a> después de la fecha de finalización.\n"
+"        "
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:47
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:34
@@ -2691,4 +2705,4 @@ msgstr "¡No se ha encontrado ningún objeto asociado!"
 
 #: urls.py:32
 msgid "Discovery Service Administration"
-msgstr "Administración del servicio Discovery"
+msgstr "Administración del Servicio de Descubrimiento"
