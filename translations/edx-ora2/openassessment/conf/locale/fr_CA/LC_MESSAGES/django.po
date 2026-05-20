@@ -1,29 +1,17 @@
-# #-#-#-#-#  django.po (edx-ora2)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2018 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2018.
-# 
-# Translators:
-# Omar Al-Ithawi <i@omardo.com>, 2024
-# Brian Smith, 2024
-# Gabriel D'Amours <gabriel@opencraft.com>, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024
-# Pierre Mailhot <pierre.mailhot@gmail.com>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-ora2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-13 17:55-0500\n"
-"PO-Revision-Date: 2023-05-10 00:48+0000\n"
-"Last-Translator: Pierre Mailhot <pierre.mailhot@gmail.com>, 2024\n"
-"Language-Team: French (Canada) (https://app.transifex.com/open-edx/teams/6205/fr_CA/)\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-05-05 00:52+0000\n"
+"PO-Revision-Date: 2026-05-20 19:57+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr_CA\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: assessment/api/student_training.py:179
 msgid "Could not parse serialized rubric"
@@ -177,7 +165,7 @@ msgid "No description provided."
 msgstr "Aucune description fournie."
 
 #: data.py:1626 templates/legacy/edit/oa_edit_criterion.html:54
-#: xblock/studio_mixin.py:57
+#: xblock/studio_mixin.py:58
 msgid "None"
 msgstr "Aucun"
 
@@ -383,6 +371,34 @@ msgstr ""
 "Indiquez si les apprenants peuvent voir la grille pendant qu'ils travaillent"
 " sur leur réponse."
 
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:167
+msgid "Allow Learner Resubmissions"
+msgstr "Autoriser les resoumissions de l'apprenant"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:174
+msgid ""
+"Set to TRUE to allow learners to resubmit ungraded work. Set to FALSE if "
+"resubmissions are not allowed."
+msgstr ""
+"Réglez sur TRUE pour permettre aux apprenants de renvoyer des travaux non "
+"notés. Réglez sur FALSE si les resoumissions ne sont pas autorisées."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:178
+msgid "Resubmission Grace Period"
+msgstr "Période de grâce pour la resoumission"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:187
+msgid ""
+"Specify the maximum period during which resubmissions are allowed. If left "
+"blank, learners will be able to reset their submission as long as it has not"
+" been graded. The grace period starts once the learner has submitted their "
+"response."
+msgstr ""
+"Spécifiez la période maximale pendant laquelle les resoumissions sont "
+"autorisées. Si ce champ est laissé vide, les apprenants pourront "
+"réinitialiser leur soumission tant qu'elle n'a pas été notée. La période de "
+"grâce commence dès que l'apprenant a soumis sa réponse."
+
 #: templates/legacy/edit/oa_edit_criterion.html:6
 #: templates/legacy/staff_area/oa_student_info.html:122
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:25
@@ -417,14 +433,14 @@ msgstr "Ajouter une option"
 msgid "Feedback for This Criterion"
 msgstr "Retour sur ce critère"
 
-#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:56
+#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:57
 msgid "Optional"
 msgstr "Optionnel"
 
 #: templates/legacy/edit/oa_edit_criterion.html:56
 #: templates/legacy/oa_rubric.html:13
 #: templates/legacy/student_training/student_training.html:93
-#: xblock/studio_mixin.py:55
+#: xblock/studio_mixin.py:56
 msgid "Required"
 msgstr "Requis"
 
@@ -564,6 +580,17 @@ msgstr "Moyenne"
 #: templates/legacy/edit/oa_edit_peer_assessment.html:63
 msgid "Median (default)"
 msgstr "Médiane (par défaut)"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:66
+msgid ""
+"Select the preferred grading strategy for the peer assessment. By default, "
+"the median across all peer reviews is used to calculate the final grade. If "
+"you select the mean, the average of all peer reviews will be used."
+msgstr ""
+"Sélectionnez la stratégie de notation préférée pour l’évaluation par les "
+"pairs. Par défaut, la médiane de toutes les évaluations par les pairs est "
+"utilisée pour calculer la note finale. Si vous choisissez la moyenne, la "
+"moyenne de toutes les évaluations par les pairs sera utilisée."
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:5
 msgid "Peer Assessment Deadlines"
@@ -1384,7 +1411,7 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"disponible {date} (dans %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "            "
 
 #. Translators: This string displays a date to the user, then tells them the
@@ -1398,7 +1425,7 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"date limite {date} (dans %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "            "
 
 #: templates/legacy/peer/oa_peer_assessment.html:61
@@ -1521,7 +1548,8 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"En cours (%(review_number)s de %(num_must_grade)s)"
+"          En cours (%(review_number)s sur %(num_must_grade)s)\n"
+"        "
 
 #: templates/legacy/peer/oa_peer_waiting.html:37
 msgid ""
@@ -1530,10 +1558,10 @@ msgid ""
 "you've completed all the steps for this problem and your peers have assessed"
 " your response."
 msgstr ""
-"Toutes les réponses soumises par des pairs ont été évaluées. Vérifiez "
-"ultérieurement si d'autres apprenants ont soumis des réponses. Vous recevrez"
-" votre évaluation après avoir terminé toutes les étapes de ce problème et "
-"lorsque vos pairs auront évalué vos réponses."
+"Toutes les réponses des pairs disponibles ont été évaluées. Revenez plus "
+"tard pour voir si d'autres apprenants ont soumis des réponses. Vous recevrez"
+" votre note après avoir complété toutes les étapes de ce problème et après "
+"que vos pairs auront évalué votre réponse."
 
 #: templates/legacy/response/oa_response.html:27
 msgid "Your Team's Response"
@@ -1550,7 +1578,7 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"disponible {date} (dans %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "            "
 
 #. Translators: This string displays a date to the user, then tells them the
@@ -1564,7 +1592,7 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"date limite {date} (dans %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "            "
 
 #: templates/legacy/response/oa_response.html:54
@@ -1778,19 +1806,19 @@ msgstr "Sélectionnez un fichier à envoyer pour cette soumission."
 msgid "Supported file types: "
 msgstr "Types de fichiers pris en charge :"
 
-#: templates/legacy/response/oa_response.html:285
+#: templates/legacy/response/oa_response.html:286
 msgid "Upload files"
 msgstr "Téléverser les fichiers"
 
-#: templates/legacy/response/oa_response.html:287
+#: templates/legacy/response/oa_response.html:288
 msgid "Upload file"
 msgstr "Téléverser un fichier"
 
-#: templates/legacy/response/oa_response.html:304
+#: templates/legacy/response/oa_response.html:305
 msgid "This is a team submission."
 msgstr "Ceci est une soumission d'équipe."
 
-#: templates/legacy/response/oa_response.html:306
+#: templates/legacy/response/oa_response.html:307
 msgid ""
 "One team member should submit a response with the team’s shared files and a "
 "text response on behalf of the entire team."
@@ -1798,7 +1826,7 @@ msgstr ""
 "Un membre de l'équipe doit envoyer une réponse avec les fichiers partagés de"
 " l'équipe et une réponse textuelle au nom de toute l'équipe."
 
-#: templates/legacy/response/oa_response.html:308
+#: templates/legacy/response/oa_response.html:309
 msgid ""
 "One team member should submit a response with the team’s shared files on "
 "behalf of the entire team."
@@ -1806,18 +1834,18 @@ msgstr ""
 "Un membre de l'équipe doit envoyer une réponse avec les fichiers partagés de"
 " l'équipe au nom de toute l'équipe."
 
-#: templates/legacy/response/oa_response.html:310
+#: templates/legacy/response/oa_response.html:311
 msgid ""
 "One team member should submit a text response on behalf of the entire team."
 msgstr ""
 "Un membre de l'équipe doit soumettre une réponse textuelle au nom de toute "
 "l'équipe."
 
-#: templates/legacy/response/oa_response.html:312
+#: templates/legacy/response/oa_response.html:313
 msgid "One team member should submit on behalf of the entire team."
 msgstr "Un membre de l'équipe doit soumettre au nom de toute l'équipe."
 
-#: templates/legacy/response/oa_response.html:314
+#: templates/legacy/response/oa_response.html:315
 msgid ""
 "\n"
 "                  Learn more about team assignments here: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
@@ -1827,11 +1855,11 @@ msgstr ""
 "                  En savoir plus sur les affectations d'équipe ici : (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
 "                  "
 
-#: templates/legacy/response/oa_response.html:322
+#: templates/legacy/response/oa_response.html:323
 msgid "We could not submit your response"
 msgstr "Votre réponse n'a pas pu être soumise"
 
-#: templates/legacy/response/oa_response.html:333
+#: templates/legacy/response/oa_response.html:334
 msgid "Submit your response and move to the next step"
 msgstr "Soumettez votre réponse et passez à l'étape suivante"
 
@@ -1988,7 +2016,7 @@ msgid ""
 "           "
 msgstr ""
 "\n"
-"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"disponible {date} (dans %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "           "
 
 #. Translators: This string displays a date to the user, then tells them the
@@ -2002,7 +2030,7 @@ msgid ""
 "           "
 msgstr ""
 "\n"
-"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"date limite {date} (dans %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "           "
 
 #: templates/legacy/self/oa_self_assessment.html:88
@@ -2469,7 +2497,7 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"disponible {date} (dans %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "            "
 
 #. Translators: This string displays a date to the user, then tells them the
@@ -2483,7 +2511,7 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"date limite {date} (dans %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "            "
 
 #: templates/legacy/student_training/student_training.html:58
@@ -2691,19 +2719,19 @@ msgstr "Auto-évaluation à évaluation par les pairs"
 msgid "Self Assessment to Staff Assessment"
 msgstr "Auto-évaluation à évaluation par le personnel"
 
-#: xblock/openassessmentblock.py:1358
+#: xblock/openassessmentblock.py:1365
 msgid "You can't reset your submission."
 msgstr "Vous ne pouvez pas réinitialiser votre soumission."
 
-#: xblock/openassessmentblock.py:1371
+#: xblock/openassessmentblock.py:1378
 msgid "The user does not exist."
 msgstr "L'utilisateur n'existe pas."
 
-#: xblock/openassessmentblock.py:1374
+#: xblock/openassessmentblock.py:1381
 msgid "There is no submission to reset."
 msgstr "Il n’y a aucune soumission à réinitialiser."
 
-#: xblock/openassessmentblock.py:1376
+#: xblock/openassessmentblock.py:1383
 msgid "Submission reset successfully."
 msgstr "La soumission a été réinitialisée avec succès."
 
@@ -2827,36 +2855,36 @@ msgstr ""
 "une note de zéro, sauf si vous supprimez l’état d’un membre de l’équipe pour"
 " le problème afin de permettre à l’équipe de renvoyer une réponse."
 
-#: xblock/studio_mixin.py:246 xblock/studio_mixin.py:258
+#: xblock/studio_mixin.py:247 xblock/studio_mixin.py:259
 msgid "Error updating XBlock configuration"
 msgstr "Erreur lors de la mise à jour de la configuration du XBlock"
 
-#: xblock/studio_mixin.py:263
+#: xblock/studio_mixin.py:264
 msgid "Error: Text Response and File Upload Response cannot both be disabled"
 msgstr ""
 "Erreur : la réponse textuelle et la réponse avec téléversement de fichier ne"
 " peuvent pas être toutes les deux désactivées"
 
-#: xblock/studio_mixin.py:267
+#: xblock/studio_mixin.py:268
 msgid ""
 "Error: When Text Response is disabled, File Upload Response must be Required"
 msgstr ""
 "Erreur : lorsque la réponse textuelle est désactivée, la réponse de "
 "téléversement avec fichier doit être requise"
 
-#: xblock/studio_mixin.py:270
+#: xblock/studio_mixin.py:271
 msgid ""
 "Error: When File Upload Response is disabled, Text Response must be Required"
 msgstr ""
 "Erreur : lorsque la réponse avec téléversement de fichier est désactivée, la"
 " réponse textuelle doit être requise"
 
-#: xblock/studio_mixin.py:294
+#: xblock/studio_mixin.py:295
 #, python-brace-format
 msgid "Validation error: {error}"
 msgstr "Erreur de validation : {error}"
 
-#: xblock/studio_mixin.py:328
+#: xblock/studio_mixin.py:329
 msgid "Successfully updated OpenAssessment XBlock"
 msgstr "OpenAssessment XBlock a été correctement mis à jour"
 
@@ -2972,6 +3000,14 @@ msgstr ""
 "Le type de l'évaluation ne peut pas être modifié une fois le problème "
 "publié."
 
+#: xblock/utils/validation.py:176
+msgid ""
+"The grading strategy for peer assessments cannot be changed after the "
+"problem has been released."
+msgstr ""
+"La stratégie de notation pour les évaluations par les pairs ne peut pas être"
+" modifiée après la publication du problème."
+
 #: xblock/utils/validation.py:200
 msgid "This rubric definition is not valid."
 msgstr "L'identifiant de la grille est invalide."
@@ -3028,4 +3064,4 @@ msgstr ""
 
 #: xblock/utils/validation.py:392
 msgid "The submission format is invalid."
-msgstr "Le format de la réponse est invalide."
+msgstr "Le format de la soumission est invalide."
