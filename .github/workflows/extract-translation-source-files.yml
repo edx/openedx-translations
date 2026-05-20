@@ -223,7 +223,10 @@ jobs:
 
       # Installs gettext, a dependency for extracting translation source files in django
       - name: install gettext
-        run: sudo apt install -y gettext
+        run: |
+          sudo apt install -y gettext
+          # Remove system python3-babel if installed to avoid conflicts with pip-installed babel
+          sudo apt remove -y python3-babel || true
 
       # Clones the edx/openedx-translations repository
       - name: clone ${github.repository}
@@ -275,13 +278,15 @@ jobs:
 
             # Install edx-platform specific apps (e.g. wiki) required for translation extraction
             pip install --no-build-isolation -r $EDX_BASE_REQS
-
-            # Required by babel_mako.cfg
-            pip install "mako[babel]"
-
-            # Required by babel_underscore.cfg
-            pip install enmerkar-underscore
           fi
+
+      # Verify pybabel is using the correct version from pip, not system
+      - name: verify babel installation
+        run: |
+          which pybabel
+          pybabel --version
+          python -c "import babel; print(f'Babel version: {babel.__version__}')"
+          python -c "import mako.ext.babelplugin; print('Mako Babel plugin available')"
 
           APP_BASE="translations/${{ matrix.repo_config.repo }}"
           REQ_FILES=(

@@ -4,6 +4,12 @@
 edx-i18n-tools
 pyyaml
 
+# Extraction dependencies
+# Required by babel_mako.cfg for mako template extraction
+mako[babel]
+# Required by babel_underscore.cfg for underscore template extraction
+enmerkar-underscore
+
 # transifex
 requests
 transifex-client
