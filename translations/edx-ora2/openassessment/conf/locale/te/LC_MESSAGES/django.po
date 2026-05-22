@@ -1,0 +1,2977 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: edx-ora2\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-05-05 00:52+0000\n"
+"PO-Revision-Date: 2026-05-22 21:47+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: assessment/api/student_training.py:179
+msgid "Could not parse serialized rubric"
+msgstr "సీరియలైజ్ చేసిన రూబ్రిక్‌ను విశ్లేషించలేకపోయాం"
+
+#: assessment/api/student_training.py:191
+msgid ""
+"If your assignment includes a learner training step, the rubric must have at"
+" least one criterion, and that criterion must have at least one option."
+msgstr ""
+"మీ అసైన్మెంట్‌లో అభ్యాసక శిక్షణ దశ ఉంటే, రూబ్రిక్‌లో కనీసం ఒక ప్రమాణం "
+"ఉండాలి, మరియు ఆ ప్రమాణానికి కనీసం ఒక ఎంపిక ఉండాలి."
+
+#: assessment/api/student_training.py:203
+#, python-brace-format
+msgid "Example {example_number} has a validation error: {error}"
+msgstr "ఉదాహరణ {example_number} వద్ద ధృవీకరణ లోపం: {error}"
+
+#: assessment/api/student_training.py:217
+#, python-brace-format
+msgid ""
+"Example {example_number} has an invalid option for \"{criterion_name}\": "
+"\"{option_name}\""
+msgstr ""
+"ఉదాహరణ {example_number} లో \"{criterion_name}\" కోసం చెల్లని ఎంపిక ఉంది: "
+"\"{option_name}\""
+
+#: assessment/api/student_training.py:227
+#, python-brace-format
+msgid "Example {example_number} has an extra option for \"{criterion_name}\""
+msgstr "ఉదాహరణ {example_number} లో \"{criterion_name}\" కోసం అదనపు ఎంపిక ఉంది"
+
+#: assessment/api/student_training.py:240
+#, python-brace-format
+msgid "Example {example_number} is missing an option for \"{criterion_name}\""
+msgstr "ఉదాహరణ {example_number} లో \"{criterion_name}\" కోసం ఎంపిక లేనిదిగా ఉంది"
+
+#: assessment/score_type_constants.py:21 xblock/grade_mixin.py:547
+msgid "Peer"
+msgstr "సహచరుడు"
+
+#: assessment/score_type_constants.py:22
+msgid "Self"
+msgstr "స్వయం"
+
+#: assessment/score_type_constants.py:23
+msgid "Staff"
+msgstr "సిబ్బంది"
+
+#: assessment/score_type_constants.py:25
+msgid "Unknown"
+msgstr "తెలియని"
+
+#: data.py:584
+#, python-brace-format
+msgid "Criterion {number}: {label}"
+msgstr "ప్రమాణం {number}: {label}"
+
+#: data.py:586
+#, python-brace-format
+msgid "Points {number}"
+msgstr "అంకాలు {number}"
+
+#: data.py:587
+#, python-brace-format
+msgid "Median Score {number}"
+msgstr "మధ్యమ స్కోర్ {number}"
+
+#: data.py:588
+#, python-brace-format
+msgid "Feedback {number}"
+msgstr "ఫీడ్‌బ్యాక్ {number}"
+
+#: data.py:917
+msgid "Item ID"
+msgstr "ఐటమ్ ID"
+
+#: data.py:918
+msgid "Submission ID"
+msgstr "సమర్పణ ID"
+
+#: data.py:930
+msgid "Anonymized Student ID"
+msgstr "గోప్యమైన విద్యార్థి ID"
+
+#: data.py:961
+msgid "Assessment ID"
+msgstr "అంకనం ID"
+
+#: data.py:962
+msgid "Assessment Scored Date"
+msgstr "అంకనం పొందిన తేదీ"
+
+#: data.py:963
+msgid "Assessment Scored Time"
+msgstr "అంకనం పొందిన సమయం"
+
+#: data.py:964
+msgid "Assessment Type"
+msgstr "అంకనం రకం"
+
+#: data.py:965
+msgid "Anonymous Scorer Id"
+msgstr "గోప్యమైన స్కోరర్ ID"
+
+#: data.py:967
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:59
+msgid "Overall Feedback"
+msgstr "మొత్తం ఫీడ్‌బ్యాక్"
+
+#: data.py:968
+msgid "Assessment Score Earned"
+msgstr "అంకనం ద్వారా పొందిన స్కోర్"
+
+#: data.py:969
+msgid "Assessment Scored At"
+msgstr "అంకనం పొందిన సమయంలో"
+
+#: data.py:970
+msgid "Date/Time Final Score Given"
+msgstr "తేదీ/సమయం - తుది స్కోర్ ఇచ్చారు"
+
+#: data.py:971
+msgid "Final Score Earned"
+msgstr "తుది పొందిన స్కోర్"
+
+#: data.py:972
+msgid "Final Score Possible"
+msgstr "తుది సాధ్యమైన స్కోర్"
+
+#: data.py:973
+msgid "Feedback Statements Selected"
+msgstr "ఎంపిక చేసుకున్న ఫీడ్‌బ్యాక్ వాక్యాలు"
+
+#: data.py:974
+msgid "Feedback on Assessment"
+msgstr "అంకనం పై ఫీడ్‌బ్యాక్"
+
+#: data.py:976
+msgid "Response Files"
+msgstr "ప్రతిస్పందన ఫైళ్లు"
+
+#: data.py:1367
+msgid "No description provided."
+msgstr "వివరణ అందించబడలేదు."
+
+#: data.py:1626 templates/legacy/edit/oa_edit_criterion.html:54
+#: xblock/studio_mixin.py:58
+msgid "None"
+msgstr "ఏదీ లేదు"
+
+#: templates/legacy/edit/oa_edit.html:28
+msgid "Save"
+msgstr "సేవ్ చేయండి"
+
+#: templates/legacy/edit/oa_edit.html:32
+msgid "Cancel"
+msgstr "రద్దు చేయండి"
+
+#: templates/legacy/edit/oa_edit_assessment_steps.html:6
+msgid ""
+"Open Response Assessments allow you to configure single or multiple steps in"
+" a rubric based open response assessment sequence. The steps available below"
+" can be enabled, disable, and ordered for a flexible set of pedagogical "
+"needs."
+msgstr ""
+"ఓపెన్ రెస్పాన్స్ అంచనాలు రూబ్రిక్ ఆధారంగా ఓపెన్ రెస్పాన్స్ అంచనా "
+"సీక్వెన్స్‌లో ఒక్కటి లేదా ఎక్కువ దశలను సెట్ చేయడానికి ఉపయుక్తంగా ఉంటాయి. "
+"క్రింద అందుబాటులో ఉన్న దశలను, అనుకూల విద్యా అవసరాలకు, ప్రారంభించడం, "
+"నిలిపివేయడం మరియు క్రమబద్ధీకరించడం అయ్యేలా సెటప్ చేయవచ్చు."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:5
+msgid "Display Name "
+msgstr "ప్రదర్శన పేరు "
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:8
+msgid "The display name for this component."
+msgstr "ఈ భాగానికి ప్రదర్శన పేరు."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:12
+msgid "Text Response"
+msgstr "పాఠ్య ప్రతిస్పందన"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:20
+msgid ""
+"Specify whether learners must include a text based response to this "
+"problem's prompt."
+msgstr ""
+"ఈ సమస్య యొక్క ప్రాంప్ట్‌కు విద్యార్థులు పాఠ్య ఆధారిత ప్రతిస్పందన "
+"ఇవ్వవలస్నిది అనే విషయాన్ని స్పష్టం చేయండి."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:25
+msgid "Response Editor"
+msgstr "ప్రతిస్పందన ఎడిటర్"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:33
+msgid ""
+"Select which editor learners will use to include a text based response to "
+"this problem's prompt."
+msgstr ""
+"ఈ సమస్య యొక్క ప్రాంప్ట్‌కు పాఠ్య ఆధారిత సమాధానాన్ని చేర్చడానికి విద్యార్థులు"
+" ఉపయోగించే ఎడిటర్‌ను ఎంచుకోండి."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:38
+msgid "File Uploads Response"
+msgstr "ఫైల్ అప్‌లోడ్‌స్ ప్రతిస్పందన"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:46
+msgid ""
+"Specify whether learners are able to upload files as a part of their "
+"response."
+msgstr ""
+"విద్యార్థులు తమ ప్రతిస్పందనలో భాగంగా ఫైళ్లను అప్‌లోడ్ చేయగలరా అనే విషయాన్ని "
+"స్పష్టం చేయండి."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:50
+msgid "Allow Multiple Files"
+msgstr "బహుళ ఫైళ్లను అనుమతించు"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:52
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:93
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:131
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:157
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:169
+#: templates/legacy/edit/oa_edit_peer_assessment.html:45
+msgid "False"
+msgstr "తప్పు"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:53
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:94
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:132
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:158
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:170
+#: templates/legacy/edit/oa_edit_peer_assessment.html:46
+msgid "True"
+msgstr "నిజం"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:56
+msgid ""
+"Specify whether learners can upload more than one file. This has no effect "
+"if File Uploads Response is set to None. This is automatically set to True "
+"for Team Assignments. "
+msgstr ""
+"విద్యార్థులు ఒకటి కన్నా ఎక్కువ ఫైళ్లను అప్‌లోడ్ చేయగలరా అనే విషయాన్ని "
+"స్పష్టం చేయండి. ఫైల్ అప్‌లోడ్‌స్ ప్రతిస్పందన 'ఏదీ లేదు' గా సెట్ అయితే దీని "
+"ప్రభావం ఉండదు. టీమ్ అసైన్మెంట్ల కోసం ఇది ఆటోమేటిక్‌గా నిజంగా సెట్ అవుతుంది."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:58
+msgid "File Upload Types"
+msgstr "ఫైల్ అప్‌లోడ్ రకాలు"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:60
+msgid "PDF or Image Files"
+msgstr "PDF లేదా చిత్ర ఫైళ్లు"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:61
+msgid "Image Files"
+msgstr "చిత్ర ఫైళ్లు"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:62
+msgid "Custom File Types"
+msgstr "కస్టమ్ ఫైల్ రకాలు"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:66
+msgid ""
+"Specify whether learners can submit files along with their text responses."
+msgstr ""
+"విద్యార్థులు తమ పాఠ్య ప్రతిస్పందనలతో పాటు ఫైళ్లను సబ్మిట్ చేయగలరా అనే "
+"విషయాన్ని స్పష్టం చేయండి."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:70
+msgid "File Types"
+msgstr "ఫైల్ రకాలు"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:79
+msgid ""
+"Enter the file extensions, separated by commas, that you want learners to be"
+" able to upload. For example: pdf,doc,docx."
+msgstr ""
+"విద్యార్థులు అప్‌లోడ్ చేయగలిగే ఫైల్ ఎక్స్‌టెన్షన్లను, కామాలతో వేరుచేసి నమోదు"
+" చేయండి. ఉదాహరణ: pdf,doc,docx."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:84
+msgid ""
+"To add more file extensions, select Custom File Types and enter the full "
+"list of acceptable file extensions to be included."
+msgstr ""
+"మరిన్ని ఫైల్ ఎక్స్‌టెన్షన్లను జోడించడానికి, Custom File Types ఎంచుకుని, "
+"చేర్చాల్సిన అంగీకరించదగిన ఫైల్ ఎక్స్‌టెన్షన్ల పూర్తి జాబితాను నమోదు చేయండి."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:91
+msgid "Allow LaTeX Responses"
+msgstr "LaTeX ప్రతిస్పందనలను అనుమతించు"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:97
+msgid "Specify whether learners can write LaTeX formatted strings"
+msgstr ""
+"విద్యార్థులు LaTeX ఫార్మాట్ చేసిన స్ట్రింగ్స్ రాయగలరా అనే విషయాన్ని స్పష్టం "
+"చేయండి."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:102
+#: templates/legacy/leaderboard/oa_leaderboard_show.html:8
+#: templates/legacy/leaderboard/oa_leaderboard_waiting.html:10
+msgid "Top Responses"
+msgstr "ఉత్తమ  ప్రతిస్పందనలు"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:104
+msgid " (Disabled)"
+msgstr " (నిష్క్రియ)"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:117
+msgid ""
+"Specify the number of top scoring responses to display after the learner has"
+" submitted a response. Valid numbers are 0 to 99. If the number is 0, the "
+"Top Responses section does not appear to learners."
+msgstr ""
+"విద్యార్థి ప్రతిస్పందన సమర్పించిన తర్వాత, చూడలేని టాప్ స్కోర్ ఉన్న "
+"ప్రతిస్పందనల సంఖ్యను స్పష్టం చేయండి. చెల్లుబాటు అయ్యే సంఖ్యలు 0 నుండి 99 "
+"వరకూ ఉన్నాయి. సంఖ్య 0 అయితే, Top Responses విభాగం విద్యార్థులకు కనిపించదు."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:122
+msgid "When Teams Enabled is set to true, Top Responses will be disabled."
+msgstr ""
+"టీమ్స్ ఎనేబుల్‌డ్ true గా సెట్ అయినప్పుడు, Top Responses నిష్క్రియం అవుతాయి."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:129
+msgid "Teams Enabled"
+msgstr "టీమ్స్ ఎనేబుల్‌డ్"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:136
+msgid "Specify whether team submissions are allowed for this response."
+msgstr ""
+"ఈ ప్రతిస్పందన కోసం టీమ్ సమర్పణలను అనుమతించవలసిందో లేదో స్పష్టం చేయండి."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:141
+msgid "Select Team-Set"
+msgstr "టీమ్-సెట్ ఎంచుకోండి"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:155
+msgid "Show Rubric During Response"
+msgstr "ప్రతిస్పందన సమయంలో రూబ్రిక్ చూపించు"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:162
+msgid ""
+"Specify whether learners can see the rubric while they are working on their "
+"response."
+msgstr ""
+"విద్యార్థులు తమ ప్రతిస్పందనపై పనిచేస్తున్నప్పుడు రూబ్రిక్ చూడగలరా అని "
+"స్పష్టం చేయండి."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:167
+msgid "Allow Learner Resubmissions"
+msgstr "విద్యార్థి పునఃసమర్పణలను అనుమతించు"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:174
+msgid ""
+"Set to TRUE to allow learners to resubmit ungraded work. Set to FALSE if "
+"resubmissions are not allowed."
+msgstr ""
+"విద్యార్థులు అంకించని పనిని పునఃసమర్పణకు అనుమతించేందుకు TRUE గా సెట్ చేయండి."
+" పునఃసమర్పణలు అనుమతించబడవు అయితే FALSE గా సెట్ చేయండి."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:178
+msgid "Resubmission Grace Period"
+msgstr "పునఃసమర్పణ గ్రేస్ పీరియడ్"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:187
+msgid ""
+"Specify the maximum period during which resubmissions are allowed. If left "
+"blank, learners will be able to reset their submission as long as it has not"
+" been graded. The grace period starts once the learner has submitted their "
+"response."
+msgstr ""
+"పునఃసమర్పణలు అనుమతించబడే గరిష్ఠ వ్యవధిని స్పష్టం చేయండి. ఖాళీగా ఉంటే, అంకితం"
+" చేయబడని వరకు విద్యార్థులు తమ సమర్పణను రీసెట్ చేసుకోవచ్చు. గ్రేస్ పీరియడ్ "
+"విద్యార్థి తమ ప్రతిస్పందనను సమర్పించిన వెంటనే మొదలవుతుంది."
+
+#: templates/legacy/edit/oa_edit_criterion.html:6
+#: templates/legacy/staff_area/oa_student_info.html:122
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:25
+msgid "Criterion"
+msgstr "ప్రమాణం"
+
+#: templates/legacy/edit/oa_edit_criterion.html:7
+msgid "You cannot delete a criterion after the assignment has been released."
+msgstr "అసైన్మెంట్ విడుదలైన తర్వాత మీరు ప్రమాణాన్ని తొలగించలేరు."
+
+#: templates/legacy/edit/oa_edit_criterion.html:9
+#: templates/legacy/edit/oa_edit_option.html:7
+#: templates/legacy/edit/oa_edit_prompt.html:10
+#: templates/legacy/edit/oa_training_example.html:10
+msgid "Remove"
+msgstr "తొలగించు"
+
+#: templates/legacy/edit/oa_edit_criterion.html:17
+msgid "Criterion Name"
+msgstr "ప్రమాణం పేరు"
+
+#: templates/legacy/edit/oa_edit_criterion.html:29
+msgid "Criterion Prompt"
+msgstr "ప్రమాణం ప్రాంప్ట్"
+
+#: templates/legacy/edit/oa_edit_criterion.html:44
+msgid "Add Option"
+msgstr "ఎంపిక జోడించు"
+
+#: templates/legacy/edit/oa_edit_criterion.html:52
+msgid "Feedback for This Criterion"
+msgstr "ఈ ప్రమాణానికి సంబంధించిన ఫీడ్‌బ్యాక్"
+
+#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:57
+msgid "Optional"
+msgstr "ఎంపికీయ"
+
+#: templates/legacy/edit/oa_edit_criterion.html:56
+#: templates/legacy/oa_rubric.html:13
+#: templates/legacy/student_training/student_training.html:93
+#: xblock/studio_mixin.py:56
+msgid "Required"
+msgstr "కావలసిన"
+
+#: templates/legacy/edit/oa_edit_criterion.html:61
+msgid ""
+"Select one of the options above. This describes whether or not the reviewer "
+"will have to provide criterion feedback."
+msgstr ""
+"పైన ఉన్న ఎంపికలలో ఒకటిని ఎంచుకోండి. ఇది సమీక్షకుడు ప్రమాణ ఫీడ్‌బ్యాక్ "
+"ఇవ్వాల్సిన అవసరమో లేదో వివరిస్తుంది."
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:3
+msgid "Open Response Assessment"
+msgstr "ఓపెన్ రెస్పాన్స్ అంచనా"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:8
+#: templates/legacy/edit/oa_edit_prompt.html:7
+msgid "Prompt"
+msgstr "ప్రాంప్ట్"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:15
+msgid "Rubric"
+msgstr "రూబ్రిక్"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:22
+msgid "Schedule"
+msgstr "షెడ్యూల్"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:29
+msgid "Assessment steps"
+msgstr "అంకనం దశలు"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:36
+msgid "Settings"
+msgstr "సెట్టింగ్స్"
+
+#: templates/legacy/edit/oa_edit_option.html:5
+msgid "Option"
+msgstr "ఎంపిక"
+
+#: templates/legacy/edit/oa_edit_option.html:16
+msgid "Option Name"
+msgstr "ఎంపిక పేరు"
+
+#: templates/legacy/edit/oa_edit_option.html:29
+msgid "Option Points"
+msgstr "ఎంపిక అంకాలు"
+
+#: templates/legacy/edit/oa_edit_option.html:42
+msgid "Option Explanation"
+msgstr "ఎంపిక వివరణ"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:10
+msgid "Step: Peer Assessment"
+msgstr "దశ: సహచర అంచనా"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:15
+msgid ""
+"Peer Assessment allows students to provide feedback to other students and "
+"also receive feedback from others in their final grade. Often, though not "
+"always, this step is preceded by Self Assessment or Learner Training steps."
+msgstr ""
+"సహచర అంచనా, విద్యార్థులు ఇతర విద్యార్థులకు ఫీడ్‌బ్యాక్ ఇవ్వడానికి, మరియు "
+"తుది గ్రేడ్‌లో ఇతరుల నుండి ఫీడ్‌బ్యాక్ అందుకోవడానికి అనుమతిస్తుంది. చాలా "
+"సార్లు (కనీసం ఎప్పుడూ కాకపోయినా) ఈ దశకు ముందు స్వ-అంచనా లేదా అభ్యాసక శిక్షణ "
+"దశలు ఉంటాయి."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:18
+msgid ""
+"Configuration: For this step to be configured you must specify the number of"
+" peer reviews a student will be assessed with, and the number of peer a "
+"student must grade. Additional options can be specified."
+msgstr ""
+"కన్ఫిగరేషన్: ఈ దశను సెట్ చేయడానికి, విద్యార్థిని ఎంతమంది సహచరుల ద్వారా అంచనా"
+" చేయబడతారో, అలాగే విద్యార్థి ఎంతమందిని గ్రేడ్ చేయాలో సంఖ్యను స్పష్టం చేయాలి."
+" అదనపు ఎంపికలను కూడా పేర్కొనవచ్చు."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:23
+msgid "View Options & Configuration"
+msgstr "ఎంపికలు & కన్ఫిగరేషన్ చూడండి"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:29
+msgid "Must Grade"
+msgstr "గ్రేడ్ చేయవలసినవి"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:32
+msgid ""
+"Specify the number of peer assessments that each learner must complete. "
+"Valid numbers are 1 to 99."
+msgstr ""
+"ప్రతి విద్యార్థి పూర్తి చేయవలసిన సహచర అంచనాల సంఖ్యను స్పష్టం చేయండి. "
+"చెల్లుబాటు అయ్యే సంఖ్యలు 1 నుండి 99 వరకూ ఉన్నాయి."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:36
+msgid "Graded By"
+msgstr "గ్రేడ్ చేసినది"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:39
+msgid ""
+"Specify the number of learners that each response must be assessed by. Valid"
+" numbers are 1 to 99."
+msgstr ""
+"ప్రతి ప్రతిస్పందనను అంచనా చేయవలసిన విద్యార్థుల సంఖ్యను స్పష్టం చేయండి. "
+"చెల్లుబాటు అయ్యే సంఖ్యలు 1 నుండి 99 వరకూ ఉన్నాయి."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:43
+msgid "Enable Flexible Peer Grade Averaging"
+msgstr "అనుకూలమైన సహచర గ్రేడ్ సగటును ప్రారంభించు"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:49
+#, python-format
+msgid ""
+"When enabled, learners who have received at least 30%% of the required \\"
+msgstr "ఎన్నేబుల్ చేసినప్పుడు, విద్యార్థులు అవసరమైన 30%% కనీసం పొందినట్లయితే \\"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:53
+msgid ""
+"This feature is being enabled by the course-level setting. It can be found "
+"under the Open Response Assessment Settings card on the Pages & Resources "
+"studio page."
+msgstr ""
+"ఈ ఫీచర్ కోర్సు స్థాయి సెట్టింగ్ ద్వారా ఎనేబుల్ అవుతుంది. ఇది Pages & "
+"Resources స్టూడియో పేజీలో Open Response Assessment Settings కార్డ్ కింద "
+"కనిపిస్తుంది."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:60
+msgid "Grading strategy for the peer assessment"
+msgstr "సహచర అంచనాకై గ్రేడింగ్ వ్యూహం"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:62
+msgid "Mean"
+msgstr "సగటు"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:63
+msgid "Median (default)"
+msgstr "మధ్యమ (డిఫాల్ట్)"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:66
+msgid ""
+"Select the preferred grading strategy for the peer assessment. By default, "
+"the median across all peer reviews is used to calculate the final grade. If "
+"you select the mean, the average of all peer reviews will be used."
+msgstr ""
+"సహచర అంచనాకు ఇష్టప్రాయమైన గ్రేడింగ్ వ్యూహాన్ని ఎంచుకోండి. డిఫాల్ట్‌గా, అన్ని"
+" సహచర సమీక్షల మధ్యమను ఉపయోగించి తుది గ్రేడ్ లెక్కింపబడుతుంది. మీరు సగటును "
+"ఎంచుకుంటే, అన్ని సహచర సమీక్షల సగటును ఉపయోగిస్తారు."
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:5
+msgid "Peer Assessment Deadlines"
+msgstr "సహచర అంచనా డెడ్‌లైన్లు"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:10
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:10
+msgid "Start Date"
+msgstr "ప్రారంభ తేదీ"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:19
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:19
+msgid "Start Time"
+msgstr "ప్రారంభ సమయం"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:27
+msgid "The date and time when learners can begin assessing peer responses."
+msgstr ""
+"విద్యార్థులు సహచర ప్రతిస్పందనలను అంచనా చేయడం ప్రారంభించగలిగే తేదీ మరియు సమయం"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:31
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:31
+#: templates/legacy/staff_area/oa_staff_area.html:119
+msgid "Due Date"
+msgstr "గడువు తేదీ"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:40
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:40
+msgid "Due Time"
+msgstr "గడువు సమయం"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:48
+msgid "The date and time when all peer assessments must be complete."
+msgstr "అన్ని సహచర అంచనాలు పూర్తయ్యే తేదీ మరియు సమయం"
+
+#: templates/legacy/edit/oa_edit_prompt.html:8
+msgid "You cannot delete a prompt after the assignment has been released."
+msgstr "అసైన్మెంట్ విడుదల చేసిన తర్వాత, మీరు ప్రాంప్ట్‌ని తొలగించలేరు."
+
+#: templates/legacy/edit/oa_edit_prompts.html:10
+msgid ""
+"Prompts. Replace the sample text with your own text. For more information, "
+"see the ORA documentation."
+msgstr ""
+"ప్రాంప్ట్‌లు. నమూనా పాఠ్యాన్ని మీ స్వంత పాఠ్యంతో మార్చండి. మరింత సమాచారం "
+"కోసం, ORA డాక్యుమెంటేషన్ చూడండి."
+
+#: templates/legacy/edit/oa_edit_prompts.html:22
+msgid "Add Prompt"
+msgstr "ప్రాంప్ట్ జోడించు"
+
+#: templates/legacy/edit/oa_edit_rubric.html:14
+msgid ""
+"Rubrics are made up of criteria, which usually contain one or more options. "
+"Each option has a point value. This template contains two sample criteria "
+"and their options. Replace the sample text with your own text. For more "
+"information, see the ORA documentation."
+msgstr ""
+"రూబ్రిక్స్ ప్రమాణాలతో తయారవుతాయి, ఇవి సాధారణంగా ఒక్కటి లేదా ఎక్కువ ఎంపికలను "
+"కలిగి ఉంటాయి. ప్రతి ఎంపికకు ఒక అంకెల విలువ ఉంటుంది. ఈ టెంప్లేట్‌లో రెండు "
+"నమూనా ప్రమాణాలు మరియు వాటి ఎంపికలు ఉన్నాయి. నమూనా పాఠ్యాన్ని మీ స్వంత "
+"పాఠ్యంతో మార్చండి. మరింత సమాచారం కోసం, ORA డాక్యుమెంటేషన్ చూడండి."
+
+#: templates/legacy/edit/oa_edit_rubric.html:29
+msgid "Add Criterion"
+msgstr "ప్రమాణం జోడించు"
+
+#: templates/legacy/edit/oa_edit_rubric.html:35
+msgid "Feedback for This Response"
+msgstr "ఈ ప్రతిస్పందనకు సంబంధించిన ఫీడ్‌బ్యాక్"
+
+#: templates/legacy/edit/oa_edit_rubric.html:40
+msgid "Feedback Instructions"
+msgstr "ఫీడ్‌బ్యాక్ సూచనలు"
+
+#: templates/legacy/edit/oa_edit_rubric.html:44
+msgid ""
+"Encourage learners to provide feedback on the response they have graded. You"
+" can replace the sample text with your own."
+msgstr ""
+"మీరు గ్రేడ్ చేసిన ప్రతిస్పందనపై విద్యార్థులు ఫీడ్‌బ్యాక్ ఇవ్వమని "
+"ప్రోత్సహించండి. మీరు నమూనా పాఠ్యాన్ని మీ స్వంత పదాలతో మార్చవచ్చు."
+
+#: templates/legacy/edit/oa_edit_rubric.html:49
+msgid "Default Feedback Text"
+msgstr "డిఫాల్ట్ ఫీడ్‌బ్యాక్ పాఠ్యం"
+
+#: templates/legacy/edit/oa_edit_rubric.html:53
+msgid ""
+"Enter feedback text that learners will see before they enter their own "
+"feedback. Use this text to show learners a good example peer assessment."
+msgstr ""
+"విద్యార్థులు తమ స్వంత ఫీడ్‌బ్యాక్ నమోదు చేయకముందు వీక్షించే ఫీడ్‌బ్యాక్ "
+"పాఠ్యాన్ని నమోదు చేయండి. మంచి సహచర అంచనాను చూపించడానికి ఈ పాఠ్యాన్ని "
+"ఉపయోగించండి."
+
+#: templates/legacy/edit/oa_edit_schedule.html:5
+msgid "Deadlines Configuration"
+msgstr "డెడ్‌లైన్ కాన్ఫిగరేషన్"
+
+#: templates/legacy/edit/oa_edit_schedule.html:9
+msgid "Select a deadline configuration option"
+msgstr "ఒక డెడ్‌లైన్ కాన్ఫిగరేషన్ ఎంపికను ఎంచుకోండి"
+
+#: templates/legacy/edit/oa_edit_schedule.html:14
+msgid "Configure deadlines manually"
+msgstr "డెడ్‌లైన్లను చేతితో సెట్ చేయండి"
+
+#: templates/legacy/edit/oa_edit_schedule.html:18
+msgid "Match deadlines to the subsection due date"
+msgstr "ఉపవిభాగం గడువు తేదీతో డెడ్‌లైన్లను సరిపోల్చండి"
+
+#: templates/legacy/edit/oa_edit_schedule.html:22
+msgid "Match deadlines to the course end date"
+msgstr "కోర్సు ముగింపు తేదీతో డెడ్‌లైన్లను సరిపోల్చండి"
+
+#: templates/legacy/edit/oa_edit_schedule.html:25
+msgid "Learn more about open response date settings"
+msgstr "ఓపెన్ రెస్పాన్స్ తేదీ సెట్టింగ్స్ గురించి మరింత తెలుసుకోండి"
+
+#: templates/legacy/edit/oa_edit_schedule.html:35
+msgid "Response Start Date"
+msgstr "ప్రతిస్పందన ప్రారంభ తేదీ"
+
+#: templates/legacy/edit/oa_edit_schedule.html:48
+msgid "Response Start Time"
+msgstr "ప్రతిస్పందన ప్రారంభ సమయం"
+
+#: templates/legacy/edit/oa_edit_schedule.html:57
+msgid "The date and time when learners can begin submitting responses."
+msgstr "విద్యార్థులు ప్రతిస్పందనలు సమర్పించడం ప్రారంభించగలిగే తేదీ మరియు సమయం"
+
+#: templates/legacy/edit/oa_edit_schedule.html:65
+msgid "Response Due Date"
+msgstr "ప్రతిస్పందన గడువు తేదీ"
+
+#: templates/legacy/edit/oa_edit_schedule.html:78
+msgid "Response Due Time"
+msgstr "ప్రతిస్పందన గడువు సమయం"
+
+#: templates/legacy/edit/oa_edit_schedule.html:87
+msgid "The date and time when learners can no longer submit responses."
+msgstr "విద్యార్థులు ప్రతిస్పందనలు సమర్పించలేని తేదీ మరియు సమయం"
+
+#: templates/legacy/edit/oa_edit_self_assessment.html:8
+msgid "Step: Self Assessment"
+msgstr "దశ: స్వఅంచనా"
+
+#: templates/legacy/edit/oa_edit_self_assessment.html:12
+msgid ""
+"Self Assessment asks learners to grade their own submissions against the "
+"rubric."
+msgstr ""
+"స్వఅంచనా విద్యార్థులు తమ సమర్పణలను రూబ్రిక్‌కు సరిపోల్చి గ్రేడ్ చేయమని "
+"అడుగుతుంది."
+
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:5
+msgid "Self Assessment Deadlines"
+msgstr "స్వఅంచనా డెడ్‌లైన్లు"
+
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:27
+msgid "The date and time when learners can begin assessing their responses."
+msgstr ""
+"విద్యార్థులు తమ ప్రతిస్పందనలను అంచనా చేయడం ప్రారంభించగలిగే తేదీ మరియు సమయం"
+
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:48
+msgid "The date and time when all self assessments must be complete."
+msgstr "అన్ని స్వఅంచనాలు పూర్తయ్యే తేదీ మరియు సమయం"
+
+#: templates/legacy/edit/oa_edit_staff_assessment.html:8
+msgid "Step: Staff Assessment"
+msgstr "దశ: సిబ్బంది అంచనా"
+
+#: templates/legacy/edit/oa_edit_staff_assessment.html:12
+msgid ""
+"Staff Assessment gates sets the final grade for students if enabled with "
+"other steps, though it can also be used as a standalone step."
+msgstr ""
+"సిబ్బంది అంచనా ఇతర దశలతో కలిపి ఉంటే విద్యార్థులకు తుది గ్రేడ్ సెట్ "
+"చేస్తుంది. దీన్ని సెపరెట్‌గా కూడా ఉపయోగించవచ్చు."
+
+#: templates/legacy/edit/oa_edit_student_training.html:9
+msgid "Step: Learner Training"
+msgstr "దశ: అభ్యాసక శిక్షణ"
+
+#: templates/legacy/edit/oa_edit_student_training.html:14
+msgid ""
+"Learner Training is used to help students practice grading a simulated peer "
+"submission in order to train them on the rubric and ensure learner's "
+"understand the rubric for either Self or Peer Assessment steps."
+msgstr ""
+"అభ్యాసక శిక్షణ విద్యార్థుల రూబ్రిక్ పై శిక్షణ పొందేందుకు, సిమ్యులేటెడ్ సహచర "
+"సమర్పణను గ్రేడ్ చేసి, స్వ లేదా సహచర అంచనా దశల కోసం రూబ్రిక్‌ను అర్థం "
+"చేసుకునేందుకు ఉపయోగిస్తారు."
+
+#: templates/legacy/edit/oa_edit_student_training.html:17
+msgid ""
+"Configuration: For this step to be fully configured you must provide one or "
+"more graded sample responses. Learners must then match this instructor score"
+" to advance and are provided feedback when their score doesn't match the "
+"sample response."
+msgstr ""
+"కన్ఫిగరేషన్: ఈ దశను పూర్తిగా సెట్ చేయడానికి, ఒకటి లేదా అంతకంటే ఎక్కువ గ్రేడ్"
+" చేయబడిన నమూనా ప్రతిస్పందనలు అందించాలి. విద్యార్థులు ముందుకు సాగేందుకు ఈ "
+"ఇన్స్ట్రక్టర్ స్కోర్‌కి తగినట్లుగా సరిపోల్చాలి; అలాగే, వారి స్కోర్ నమూనా "
+"ప్రతిస్పందనతో సరిపోలకపోతే ఫీడ్‌బ్యాక్ ఇవ్వబడుతుంది."
+
+#: templates/legacy/edit/oa_edit_student_training.html:22
+msgid "View / Add Sample Responses"
+msgstr "నమూనా ప్రతిస్పందనలను చూడండి / జోడించండి"
+
+#: templates/legacy/edit/oa_edit_student_training.html:32
+msgid "Add Sample Response"
+msgstr "నమూనా ప్రతిస్పందన జోడించు"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:4
+msgid "Clone Rubric"
+msgstr "రూబ్రిక్‌ను క్లోన్ చేయండి"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:7
+msgid ""
+"To clone a rubric from an existing published or unpublished draft, you can "
+"search by the Block ID. Note that cloning is one-way, meaning changes made "
+"after cloning will only affect the rubric being modified, and will not "
+"modify any rubric it was cloned from."
+msgstr ""
+"ప్రచురించబడిన లేదా ప్రచురించని డ్రాఫ్ట్ నుండి రూబ్రిక్‌ను క్లోన్ "
+"చేసుకోవడానికి, మీరు Block ID ఆధారంగా శోధించవచ్చు. క్లోనింగ్ ఒక వైపున మాత్రమే"
+" ఉంటుంది; క్లోన్ చేసిన తరువాత చేసిన మార్పులు కేవలం మార్చబడుతున్న రూబ్రిక్‌పై"
+" ప్రభావితం చేసి, క్లోన్ చేసిన ఇతర రూబ్రిక్‌ను మార్చవు."
+
+#: templates/legacy/edit/oa_rubric_reuse.html:9
+msgid "Block ID For this ORA:"
+msgstr "ఈ ORA కోసం బ్లాక్ ID:"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:19
+msgid "Block ID"
+msgstr "బ్లాక్ ID"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:21
+msgid "No other Open Response Assessments found in course"
+msgstr "కోర్సులో మరొక ఓపెన్ రెస్పాన్స్ అంచనాలు కనుగొనబడలేదు"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:31
+msgid "Clone"
+msgstr "క్లోన్"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:37
+msgid "Rubric Successfully Cloned from Block ID: "
+msgstr "బ్లాక్ ID నుండి రూబ్రిక్ విజయవంతంగా క్లోన్ చేయబడింది: "
+
+#: templates/legacy/edit/oa_training_example.html:7
+msgid "Scored Response"
+msgstr "స్కోర్డ్ ప్రతిస్పందన"
+
+#: templates/legacy/edit/oa_training_example.html:16
+msgid "Response Score"
+msgstr "ప్రతిస్పందన స్కోర్"
+
+#: templates/legacy/edit/oa_training_example.html:27
+msgid "Response"
+msgstr "ప్రతిస్పందన"
+
+#: templates/legacy/edit/oa_training_example_criterion.html:10
+msgid "Not Selected"
+msgstr "ఎంచుకోకపోయేలా"
+
+#: templates/legacy/edit/oa_training_example_criterion.html:15
+#: templates/legacy/oa_rubric.html:43
+#: templates/legacy/student_training/student_training.html:128
+msgid "points"
+msgstr "అంకాలు"
+
+#: templates/legacy/grade/oa_assessment_feedback.html:8
+#, python-format
+msgid ""
+"\n"
+"                %(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s\n"
+"              "
+msgstr ""
+"\n"
+"                %(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s\n"
+"              "
+
+#: templates/legacy/grade/oa_assessment_title.html:7
+#, python-format
+msgid ""
+"\n"
+"                      %(assessment_title)s - %(points)s point\n"
+"                  "
+msgid_plural ""
+"\n"
+"                      %(assessment_title)s - %(points)s points\n"
+"                  "
+msgstr[0] ""
+"\n"
+"                      %(assessment_title)s - %(points)s పాయింట్\n"
+"                  "
+msgstr[1] ""
+"\n"
+"                      %(assessment_title)s - %(points)s పాయింట్లు\n"
+"                  "
+
+#: templates/legacy/grade/oa_assessment_title.html:24
+#, python-format
+msgid "More information about %(name)s"
+msgstr " %(name)s గురించి మరింత సమాచారం"
+
+#: templates/legacy/grade/oa_grade_cancelled.html:14
+#: templates/legacy/grade/oa_grade_complete.html:15
+#: templates/legacy/grade/oa_grade_complete.html:26
+#: templates/legacy/grade/oa_grade_incomplete.html:14
+#: templates/legacy/grade/oa_grade_not_started.html:14
+#: templates/legacy/grade/oa_grade_waiting.html:14
+msgid "Your Grade"
+msgstr "మీ గ్రేడ్"
+
+#: templates/legacy/grade/oa_grade_cancelled.html:19
+#, python-format
+msgid ""
+"\n"
+"                                        %(points_earned)s out of %(points_possible)s\n"
+"                                    "
+msgstr ""
+"\n"
+"                                        %(points_earned)s, %(points_possible)s లో\n"
+"                                    "
+
+#: templates/legacy/grade/oa_grade_cancelled.html:38
+msgid "Your submission has been cancelled."
+msgstr "మీ సమర్పణ రద్దు చేయబడింది."
+
+#: templates/legacy/grade/oa_grade_complete.html:19
+#, python-format
+msgid ""
+"\n"
+"                                            %(points_earned)s out of %(points_possible)s\n"
+"                                        "
+msgstr ""
+"\n"
+"                                            %(points_earned)s, %(points_possible)s లో\n"
+"                                        "
+
+#: templates/legacy/grade/oa_grade_complete.html:38
+#: templates/legacy/response/oa_response.html:29
+msgid "Your Response"
+msgstr "మీ ప్రతిస్పందన"
+
+#: templates/legacy/grade/oa_grade_complete.html:41
+msgid "Your Upload"
+msgstr "మీ అప్‌లోడ్"
+
+#: templates/legacy/grade/oa_grade_complete.html:46
+msgid "Assessments of Your Response"
+msgstr "మీ ప్రతిస్పందనపై అంచనాలు"
+
+#: templates/legacy/grade/oa_grade_complete.html:50
+#: templates/legacy/grade/oa_grade_complete.html:132
+#: templates/legacy/grade/oa_grade_incomplete.html:28
+#: templates/legacy/grade/oa_grade_waiting.html:28
+#: templates/legacy/message/oa_message_cancelled.html:4
+#: templates/legacy/message/oa_message_closed.html:4
+#: templates/legacy/message/oa_message_complete.html:4
+#: templates/legacy/message/oa_message_incomplete.html:4
+#: templates/legacy/peer/oa_peer_closed.html:33
+#: templates/legacy/peer/oa_peer_complete.html:30
+#: templates/legacy/peer/oa_peer_turbo_mode.html:40
+#: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:34
+#: templates/legacy/peer/oa_peer_waiting.html:34
+#: templates/legacy/response/oa_response_cancelled.html:31
+#: templates/legacy/response/oa_response_closed.html:29
+#: templates/legacy/response/oa_response_submitted.html:30
+#: templates/legacy/response/oa_response_team_already_submitted.html:25
+#: templates/legacy/self/oa_self_closed.html:30
+#: templates/legacy/student_training/student_training_closed.html:27
+msgid "Status"
+msgstr "స్థితి"
+
+#: templates/legacy/grade/oa_grade_complete.html:65
+msgid "Overall Grade"
+msgstr "మొత్తం గ్రేడ్"
+
+#: templates/legacy/grade/oa_grade_complete.html:70
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:28
+msgid "Points"
+msgstr "అంకాలు"
+
+#: templates/legacy/grade/oa_grade_complete.html:96
+msgid "Additional comments on your response"
+msgstr "మీ ప్రతిస్పందనపై అదనపు వ్యాఖ్యలు"
+
+#: templates/legacy/grade/oa_grade_complete.html:117
+msgid "Provide feedback on peer assessments"
+msgstr "సహచర అంచనాలపై ఫీడ్‌బ్యాక్ ఇవ్వండి"
+
+#: templates/legacy/grade/oa_grade_complete.html:126
+msgid "Submitting Feedback"
+msgstr "ఫీడ్‌బ్యాక్ సమర్పించడం"
+
+#: templates/legacy/grade/oa_grade_complete.html:134
+msgid ""
+"Your feedback has been submitted. Course staff will be able to see this "
+"feedback when they review course records."
+msgstr ""
+"మీ ఫీడ్‌బ్యాక్ సమర్పించబడింది. కోర్సు సిబ్బంది కోర్సు రికార్డ్స్‌ని "
+"సమీక్షించినప్పుడు ఈ ఫీడ్‌బ్యాక్‌ను చూడగలరు."
+
+#: templates/legacy/grade/oa_grade_complete.html:140
+msgid ""
+"Course staff will be able to see any feedback that you provide here when "
+"they review course records."
+msgstr ""
+"కోర్సు సిబ్బంది, కోర్సు రికార్డ్స్‌ని సమీక్షించినప్పుడు, మీరు ఇక్కడ ఇచ్చే "
+"ఏదైనా ఫీడ్‌బ్యాక్‌ను చూడగలరు."
+
+#: templates/legacy/grade/oa_grade_complete.html:146
+msgid ""
+"Select the statements below that best reflect your experience with peer "
+"assessments."
+msgstr "సహచర అంచనాలతో మీ అనుభవాన్ని ప్రతిబింబించే కింది ప్రమాణాలను ఎంచుకోండి."
+
+#: templates/legacy/grade/oa_grade_complete.html:155
+msgid "These assessments were useful."
+msgstr "ఈ అంచనాలు ఉపయోగకరంగా ఉన్నాయ్."
+
+#: templates/legacy/grade/oa_grade_complete.html:164
+msgid "These assessments were not useful."
+msgstr "ఈ అంచనాలు ఉపయోగకరంగా లేవు."
+
+#: templates/legacy/grade/oa_grade_complete.html:173
+msgid "I disagree with one or more of the peer assessments of my response."
+msgstr ""
+"నా ప్రతిస్పందనపై సహచర అంచనాలలో ఒకటి లేదా అంతకంటే ఎక్కువతో నేను అపసర్ధత "
+"వ్యక్తం చేస్తున్నాను."
+
+#: templates/legacy/grade/oa_grade_complete.html:182
+msgid "Some comments I received were inappropriate."
+msgstr "నా అందిన కొన్ని వ్యాఖ్యలు అనుచితమైనవి."
+
+#: templates/legacy/grade/oa_grade_complete.html:187
+msgid ""
+"Provide feedback on the grade or comments that you received from your peers."
+msgstr "మీరు సహచరుల నుండి 받은 గ్రేడ్ లేదా వ్యాఖ్యలపై ఫీడ్‌బ్యాక్ ఇవ్వండి."
+
+#: templates/legacy/grade/oa_grade_complete.html:190
+msgid "I feel the feedback I received was..."
+msgstr "నాకు అందిన ఫీడ్‌బ్యాక్ నాకు అనిపించింది..."
+
+#: templates/legacy/grade/oa_grade_complete.html:200
+msgid "We could not submit your feedback"
+msgstr "మేము మీ ఫీడ్‌బ్యాక్‌ను సమర్పించలేకపోయాము"
+
+#: templates/legacy/grade/oa_grade_complete.html:206
+msgid "Submit feedback on peer assessments"
+msgstr "సహచర అంచనాలపై ఫీడ్‌బ్యాక్‌ను సమర్పించండి"
+
+#: templates/legacy/grade/oa_grade_incomplete.html:16
+msgid "Not Completed"
+msgstr "పూర్తికాకపోయింది"
+
+#: templates/legacy/grade/oa_grade_incomplete.html:33
+msgid "You have not completed all the steps of this problem."
+msgstr "మీరు ఈ సమస్యకు సంబంధించిన అన్ని దశలను పూర్తి చేయలేదు."
+
+#: templates/legacy/grade/oa_grade_not_started.html:16
+msgid "Not Started"
+msgstr "ప్రారంభించలేదు"
+
+#: templates/legacy/grade/oa_grade_not_started.html:27
+msgid "You have not started this problem yet."
+msgstr "మీరు ఇంకా ఈ సమస్యను ప్రారంభించలేదు."
+
+#: templates/legacy/grade/oa_grade_waiting.html:16
+msgid "Waiting for Assessments"
+msgstr "అంచనాల కోసం ఎదురుచూస్తోంది"
+
+#: templates/legacy/grade/oa_grade_waiting.html:33
+msgid ""
+"You have completed your steps in the assignment, but some assessments still "
+"need to be done on your response. When the assessments of your response are "
+"complete, you will see feedback from everyone who assessed your response, "
+"and you will receive your final grade."
+msgstr ""
+"మీరు అసైన్మెంట్‌లోని దశలను పూర్తి చేసేకానీ, మీ ప్రతిస్పందనపై ఇంకా కొన్ని "
+"అంచనాలు చేయాల్సి ఉంది. మీ ప్రతిస్పందన అంచనాలు పూర్తయిన తర్వాత, అంచనా వేసిన "
+"వారి నుండి ఫీడ్‌బ్యాక్ కనిపిస్తుందీ, అలాగే మీ తుది గ్రేడ్ లభ్యం అవుతుంది."
+
+#: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:15
+#: templates/legacy/staff_area/oa_staff_area.html:16
+#: templates/legacy/staff_area/oa_staff_area.html:18
+#: templates/legacy/staff_area/oa_staff_area.html:153
+msgid "Grade Available Responses"
+msgstr "అందుబాటులో ఉన్న ప్రతిస్పందనలను గ్రేడ్ చేయండి"
+
+#: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:26
+msgid ""
+"Grade Available Responses is unavailable. This item is not configured for "
+"Staff Assessment."
+msgstr ""
+"అందుబాటులో ఉన్న ప్రతిస్పందనలను గ్రేడ్ చేయడం అందుబాటులో లేదు. ఈ అంశం సిబ్బంది"
+" అంచనాకు సెట్ చేయబడలేదు."
+
+#: templates/legacy/instructor_dashboard/oa_listing.html:6
+msgid "Please wait"
+msgstr "దయచేసి వేచి ఉండండి"
+
+#: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:15
+msgid "Waiting Step Details"
+msgstr "ఎదురు దశ వివరాలు"
+
+#: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:24
+msgid ""
+"Waiting Step details view is unavailable. This item is not configured for "
+"peer assessments."
+msgstr ""
+"ఎదురు దశ వివరాల వీక్షణ అందుబాటులో లేదు. ఈ అంశం సహచర అంచనాలకు సెట్ చేయబడలేదు."
+
+#: templates/legacy/leaderboard/oa_leaderboard_show.html:20
+#, python-format
+msgid "%(num_points)s points"
+msgstr "%(num_points)s అంకాలు"
+
+#: templates/legacy/leaderboard/oa_leaderboard_show.html:24
+#: templates/legacy/peer/oa_peer_assessment.html:84
+#: templates/legacy/peer/oa_peer_turbo_mode.html:53
+msgid "Your peer's response to the prompt above"
+msgstr "పైన ఉన్న ప్రాంప్ట్‌కు మీ సహచరుడి ప్రతిస్పందన"
+
+#: templates/legacy/leaderboard/oa_leaderboard_waiting.html:19
+msgid ""
+"After you complete all the steps of this assignment, you can see the top-"
+"scoring responses from your peers."
+msgstr ""
+"ఈ అసైన్మెంట్‌లోని అన్ని దశలను పూర్తి చేసిన తర్వాత, మీ సహచరుల నుండి "
+"టాప్-స్కోర్ చేసిన ప్రతిస్పందనలు చూపబడతాయి."
+
+#: templates/legacy/message/oa_message_cancelled.html:8
+msgid ""
+"Your team’s submission has been cancelled. Your team will receive a grade of"
+" zero unless course staff resets your assessment to allow the team to "
+"resubmit a response."
+msgstr ""
+"మీ టీమ్ సమర్పణ రద్దు చేయబడింది. కోర్స్ సిబ్బంది మీ అంచనాను రీసెట్ చేయకపోతే, "
+"మీ టీమ్‌కు జీరో గ్రేడ్ లభిస్తుంది."
+
+#: templates/legacy/message/oa_message_cancelled.html:10
+msgid ""
+"Your submission has been cancelled. You will receive a grade of zero unless "
+"course staff resets your assessment to allow you to resubmit a response."
+msgstr ""
+"మీ సమర్పణ రద్దు చేయబడింది. కోర్స్ సిబ్బంది మీ అంచనాను రీసెట్ చేయకపోతే, మీరు "
+"జీరో గ్రేడ్ పొందుతారు."
+
+#: templates/legacy/message/oa_message_closed.html:8
+msgid ""
+"This task is not yet available. Check back to complete the assignment once "
+"this section has opened."
+msgstr ""
+"ఈ పని ఇంకా అందుబాటులో లేదు. ఈ విభాగం తెరవబడిన తర్వాత అసైన్మెంట్ పూర్తి "
+"చేయడానికి తిరిగి చూడండి."
+
+#: templates/legacy/message/oa_message_closed.html:10
+msgid ""
+"This assignment has closed. One or more deadlines for this assignment have "
+"passed. You will receive an incomplete grade for this assignment."
+msgstr ""
+"ఈ అసైన్మెంట్ ముగిసింది. ఈ అసైన్మెంట్‌కు సంబంధించిన ఒక్కటి లేదా అంతకంటే "
+"ఎక్కువ డెడ్‌లైన్లు గడిచిపోవడం వల్ల, మీరు పూర్తి కాని గ్రేడ్ పొందుతారు."
+
+#: templates/legacy/message/oa_message_complete.html:8
+msgid ""
+"You have completed this assignment. Your final grade will be available when "
+"the assessments of your response are complete."
+msgstr ""
+"మీరు ఈ అసైన్మెంట్‌ను పూర్తి చేసారు. మీ ప్రతిస్పందన అంచనాలు పూర్తయిన తర్వాత, "
+"మీ తుది గ్రేడ్ అందుబాటులో అవుతుంది."
+
+#: templates/legacy/message/oa_message_complete.html:10
+msgid ""
+"You have completed this assignment. Review your grade and your assessment "
+"details."
+msgstr ""
+"మీరు ఈ అసైన్మెంట్‌ను పూర్తి చేసారు. మీ గ్రేడ్ మరియు అంచనా వివరాలను "
+"సమీక్షించండి."
+
+#: templates/legacy/message/oa_message_incomplete.html:9
+msgid ""
+"This assignment is in progress. Learner training will close soon. Complete "
+"the learner training step to move on."
+msgstr ""
+"ఈ అసైన్మెంట్ ప్రోగ్రెస్‌లో ఉంది. అభ్యాసక శిక్షణ త్వరలో ముగుస్తుంది. ముందుకు "
+"సాగేందుకు స్వఅంచనా దశను పూర్తి చేయండి."
+
+#: templates/legacy/message/oa_message_incomplete.html:11
+msgid ""
+"This assignment is in progress. Complete the learner training step to move "
+"on."
+msgstr ""
+"ఈ అసైన్మెంట్ ప్రోగ్రెస్‌లో ఉంది. ముందుకు సాగేందుకు స్వఅంచనా దశను పూర్తి "
+"చేయండి."
+
+#: templates/legacy/message/oa_message_incomplete.html:15
+#: templates/legacy/message/oa_message_incomplete.html:33
+msgid ""
+"This assignment is in progress. Check back later when the assessment period "
+"has started."
+msgstr ""
+"ఈ అసైన్మెంట్ ప్రోగ్రెస్‌లో ఉంది. అంచనా కాలం ప్రారంభించినప్పుడు తిరిగి "
+"చూడండి."
+
+#: templates/legacy/message/oa_message_incomplete.html:20
+#, python-format
+msgid ""
+"\n"
+"                                    %(start_strong)sThis assignment is in progress. The self assessment step will close soon.%(end_strong)s You still need to complete the %(start_link)sself assessment%(end_link)s step.\n"
+"                                "
+msgstr ""
+"\n"
+"                                    %(start_strong)sఈ అసైన్మెంట్ ప్రోగ్రెస్‌లో ఉంది. స్వ-అంచనా దశ త్వరలో ముగుస్తుంది.%(end_strong)s మీరు ఇంకా %(start_link)sస్వ-అంచనా%(end_link)s దశను పూర్తి చేయాల్సి ఉంది.\n"
+"                                "
+
+#: templates/legacy/message/oa_message_incomplete.html:24
+#, python-format
+msgid ""
+"\n"
+"                                    This assignment is in progress. You still need to complete the %(start_link)sself assessment%(end_link)s step.\n"
+"                                "
+msgstr ""
+"\n"
+"                                    ఈ అసైన్మెంట్ ప్రోగ్రెస్‌లో ఉంది. మీరు ఇంకా %(start_link)sస్వ-అంచనా%(end_link)s దశను పూర్తి చేయాల్సి ఉంది.\n"
+"                                "
+
+#: templates/legacy/message/oa_message_incomplete.html:38
+#, python-format
+msgid ""
+"\n"
+"                                    This assignment is in progress.%(start_strong)sThe peer assessment step will close soon.%(end_strong)s All submitted peer responses have been assessed. Check back later to see if more learners have submitted responses. You still need to complete the %(start_link)speer assessment%(end_link)s step.\n"
+"                                "
+msgstr ""
+"\n"
+"                                    ఈ అసైన్మెంట్ ప్రోగ్రెస్‌లో ఉంది.%(start_strong)sసహచర అంచనా దశ త్వరలో ముగుస్తుంది.%(end_strong)s అన్ని సమర్పించిన సహచర ప్రతిస్పందనలను అంచనా వేసారు. మరిన్ని విద్యార్థులు ప్రతిస్పందనలు సమర్పించారో తెలుసుకోవడానికి తర్వాత తిరిగి చూడండి. మీరు ఇంకా %(start_link)sసహచర అంచనా%(end_link)s దశను పూర్తి చేయాల్సి ఉంది.\n"
+"                                "
+
+#: templates/legacy/message/oa_message_incomplete.html:42
+#, python-format
+msgid ""
+"\n"
+"                                    This assignment is in progress. All submitted peer responses have been assessed. Check back later to see if more learners have submitted responses. You still need to complete the %(start_link)speer assessment%(end_link)s step.\n"
+"                                "
+msgstr ""
+"\n"
+"                                    ఈ అసైన్మెంట్ ప్రోగ్రెస్‌లో ఉంది. అన్ని సమర్పించిన సహచర ప్రతిస్పందనలను అంచనా వేసారు. మరిన్ని విద్యార్థులు ప్రతిస్పందనలు సమర్పించారో తెలుసుకోవడానికి ఇకపై తిరిగి చూడండి. మీరు ఇంకా %(start_link)sసహచర అంచనా%(end_link)s దశను పూర్తి చేయాల్సి ఉంది.\n"
+"                                "
+
+#: templates/legacy/message/oa_message_incomplete.html:46
+#, python-format
+msgid ""
+"\n"
+"                                    This assignment is in progress. %(start_strong)sThe peer assessment step will close soon.%(end_strong)s You still need to complete the %(start_link)speer assessment%(end_link)s step.\n"
+"                                "
+msgstr ""
+"\n"
+"                                    ఈ అసైన్మెంట్ ప్రోగ్రెస్‌లో ఉంది. %(start_strong)sసహచర అంచనా దశ త్వరలో ముగుస్తుంది.%(end_strong)s మీరు ఇంకా %(start_link)sసహచర అంచనా%(end_link)s దశను పూర్తి చేయాల్సి ఉంది.\n"
+"                                "
+
+#: templates/legacy/message/oa_message_incomplete.html:50
+#, python-format
+msgid ""
+"\n"
+"                                    This assignment is in progress. You still need to complete the %(start_link)speer assessment%(end_link)s step.\n"
+"                                "
+msgstr ""
+"\n"
+"                                    ఈ అసైన్మెంట్ ప్రోగ్రెస్‌లో ఉంది. మీరు ఇంకా %(start_link)sసహచర అంచనా%(end_link)s దశను పూర్తి చేయాల్సి ఉంది.\n"
+"                                "
+
+#: templates/legacy/message/oa_message_no_team.html:4
+msgid "Team membership is required to view this assignment"
+msgstr "ఈ అసైన్మెంట్‌ను చూడడానికి టీమ్ సభ్యత్వం అవసరం."
+
+#: templates/legacy/message/oa_message_no_team.html:7
+#, python-format
+msgid ""
+"\n"
+"            This is a team assignment for team-set \"%(teamset_name)s\".\n"
+"            You are currently not on a team in team-set \"%(teamset_name)s\".\n"
+"            You must be on a team in team-set \"%(teamset_name)s\" to access this team assignment.\n"
+"            "
+msgstr ""
+"\n"
+"            ఇది టీమ్-సెట్ \"%(teamset_name)s\" కోసం ఒక టీమ్ అసైన్మెంట్.\n"
+"            మీరు ప్రస్తుతముగా టీమ్-సెట్ \"%(teamset_name)s\" లో టీమ్‌లో లేరు.\n"
+"            ఈ టీమ్ అసైన్మెంట్‌కు చేరడానికి, మీరు టీమ్-సెట్ \"%(teamset_name)s\" లో టీమ్ సభ్యత్వం కలిగి ఉండాలి.\n"
+"            "
+
+#: templates/legacy/message/oa_message_open.html:7
+#, python-format
+msgid ""
+"\n"
+"                    Assignment submissions will close soon. To receive a grade, first provide a response to the prompt, then complete the steps below the %(start_tag)sYour Response%(end_tag)s field.\n"
+"                "
+msgstr ""
+"\n"
+"                    అసైన్మెంట్ సమర్పణలు త్వరలో ముగుస్తాయి. గ్రేడ్ పొందడానికి, ముందుగా ప్రాంప్ట్‌కు ప్రతిస్పందన ఇవ్వండి, తర్వాత %(start_tag)sYour Response%(end_tag)s ఫీల్డ్ కింద ఉన్న దశలను పూర్తిచేయండి.\n"
+"                "
+
+#: templates/legacy/message/oa_message_open.html:11
+#, python-format
+msgid ""
+"\n"
+"                    This assignment has several steps. In the first step, you'll provide a response to the prompt. The other steps appear below the %(start_tag)sYour Response%(end_tag)s field.\n"
+"                "
+msgstr ""
+"\n"
+"                    ఈ అసైన్మెంట్‌కు అనేక దశలు ఉన్నాయి. మొదటి దశలో, మీరు ప్రాంప్ట్‌కు ప్రతిస్పందన ఇవ్వాలి. ఇతర దశలు %(start_tag)sYour Response%(end_tag)s ఫీల్డ్ క్రింద కనిపిస్తాయి.\n"
+"                "
+
+#: templates/legacy/message/oa_message_unavailable.html:4
+msgid "Instructions Unavailable"
+msgstr "సూచనలు అందుబాటులో లేవు"
+
+#: templates/legacy/message/oa_message_unavailable.html:6
+msgid "The instructions for this step could not be loaded."
+msgstr "ఈ దశకు సంబంధించిన సూచనలను లోడ్ చేయలేకపోయాము."
+
+#: templates/legacy/oa_base.html:16 templates/openassessmentblock/base.html:22
+msgid ""
+"This assignment has several steps. In the first step, you'll provide a "
+"response to the prompt. The other steps appear below the Your Response "
+"field."
+msgstr ""
+"ఈ అసైన్మెంట్‌కు అనేక దశలు ఉన్నాయి. మొదటి దశలో, మీరు ప్రాంప్ట్‌కు ప్రతిస్పందన"
+" ఇవ్వాలి. ఇతర దశలు Your Response ఫీల్డ్ క్రింద కనిపిస్తాయి."
+
+#: templates/legacy/oa_base.html:37 templates/openassessmentblock/base.html:56
+#: templates/openassessmentblock/base.html:105
+msgid "Loading"
+msgstr "లోడ్ అవుతోంది"
+
+#: templates/legacy/oa_latex_preview.html:6
+msgid "Preview in LaTeX"
+msgstr "LaTeXలో ప్రివ్యూ చేయండి"
+
+#: templates/legacy/oa_latex_preview.html:9
+msgid "Click to preview your submission in LaTeX."
+msgstr "LaTeXలో మీ సమర్పణను ప్రివ్యూ చేయడానికి క్లిక్ చేయండి."
+
+#: templates/legacy/oa_latex_preview.html:14
+msgid "Preview Response"
+msgstr "ప్రతిస్పందనను ప్రివ్యూ చేయండి"
+
+#: templates/legacy/oa_rubric.html:53
+msgid "Comments"
+msgstr "వ్యాఖ్యలు"
+
+#: templates/legacy/oa_submission_answer.html:8
+msgid "The question for this section"
+msgstr "ఈ విభాగం కోసం ప్రశ్న"
+
+#: templates/legacy/oa_team_uploaded_files.html:9
+msgid "Files that were uploaded by your teammates:"
+msgstr "మీ టీమ్ సభ్యులు అప్‌లోడ్ చేసిన ఫైళ్లు:"
+
+#: templates/legacy/oa_team_uploaded_files.html:28
+#: templates/legacy/oa_uploaded_file.html:34
+msgid "View the files associated with this submission:"
+msgstr "ఈ సమర్పణకు సంబంధించిన ఫైళ్లు చూడండి:"
+
+#: templates/legacy/oa_team_uploaded_files.html:32
+msgid "Uploaded by"
+msgstr "అప్‌లోడ్ చేసినవారు"
+
+#: templates/legacy/oa_uploaded_file.html:16
+msgid "Files that were uploaded by you:"
+msgstr "మీరు అప్‌లోడ్ చేసిన ఫైళ్లు:"
+
+#: templates/legacy/oa_uploaded_file.html:48
+msgid ""
+"Caution: These files were uploaded by another course learner and have not "
+"been verified, screened, approved, reviewed, or endorsed by the site "
+"administrator. If you access the files, you do so at your own risk.)"
+msgstr ""
+"జాగ్రత్త: ఈ ఫైళ్లు మరో కోర్సు విద్యార్థి ద్వారా అప్‌లోడ్ చేయబడ్డవి మరియు "
+"సైట్ అడ్మిన్ ద్వారా ధృవీకృతం, స్క్రీన్, అనుమతి, సమీక్ష లేదా "
+"మద్దతునిచ్చబడలేదు. వీటిని యాక్సెస్ చేస్తే, మీరు మీ తానే బాధ్యత తీసుకుంటారు."
+
+#: templates/legacy/peer/oa_peer_assessment.html:36
+msgid "Assess Peers"
+msgstr "సహచరులను అంచనా వేయండి"
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 00:00 UTC (in
+#. 5 days and 45 minutes)"
+#: templates/legacy/peer/oa_peer_assessment.html:44
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"అందుబాటులో ఉంది {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 00:00 UTC (in 5 days
+#. and 45 minutes)"
+#: templates/legacy/peer/oa_peer_assessment.html:51
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"గడువు {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#: templates/legacy/peer/oa_peer_assessment.html:61
+#, python-format
+msgid ""
+"\n"
+"                    In Progress (%(review_number)s of %(num_must_grade)s)\n"
+"                "
+msgstr ""
+"\n"
+"                    ప్రోగ్రెస్‌లో ఉంది (%(review_number)s నుంచి %(num_must_grade)s)\n"
+"                "
+
+#: templates/legacy/peer/oa_peer_assessment.html:75
+#: templates/legacy/peer/oa_peer_turbo_mode.html:45
+msgid "Read and assess the following response from one of your peers."
+msgstr "మీ సహచరుల నుంచి వచ్చిన క్రింది ప్రతిస్పందనను చదివి అంచనా వేశారు."
+
+#: templates/legacy/peer/oa_peer_assessment.html:87
+#: templates/legacy/peer/oa_peer_turbo_mode.html:56
+#: templates/legacy/self/oa_self_assessment.html:70
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:45
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:38
+#: templates/legacy/staff_area/oa_student_info.html:63
+msgid "Associated Files"
+msgstr "సంబంధిత ఫైళ్ళు"
+
+#: templates/legacy/peer/oa_peer_assessment.html:101
+#: templates/legacy/peer/oa_peer_turbo_mode.html:70
+#: templates/legacy/self/oa_self_assessment.html:81
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:57
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:50
+msgid "We could not submit your assessment"
+msgstr "మేము మీ అంచనాను సమర్పించలేకపోయాము"
+
+#: templates/legacy/peer/oa_peer_cancelled.html:19
+#: templates/legacy/response/oa_response_cancelled.html:21
+#: templates/legacy/self/oa_self_cancelled.html:21
+#: templates/legacy/student_training/student_training_cancelled.html:18
+msgid "Cancelled"
+msgstr "రద్దు చేయబడ్డది"
+
+#: templates/legacy/peer/oa_peer_closed.html:20
+#, python-format
+msgid ""
+"\n"
+"            Incomplete (%(num_graded)s of %(num_must_grade)s)\n"
+"        "
+msgstr ""
+"\n"
+"            పూర్తికాకపోయింది (%(num_graded)s నుంచి %(num_must_grade)s)\n"
+"        "
+
+#: templates/legacy/peer/oa_peer_closed.html:35
+msgid ""
+"The due date for this step has passed. This step is now closed. You can no "
+"longer complete peer assessments or continue with this assignment, and you "
+"will receive a grade of Incomplete."
+msgstr ""
+"ఈ దశ యొక్క గడువు తేదీ గడిచిపోయింది. ఈ దశ ఇప్పుడు మూసివేయబడింది. మీరు ఇకపై "
+"సహచర అంచనాలు పూర్తిచేయలేరు లేదా ఈ అసైన్మెంట్‌ను కొనసాగించలేరు, మీరు "
+"'Incomplete' గ్రేడ్ పొందుతారు."
+
+#: templates/legacy/peer/oa_peer_complete.html:13
+msgid "Completed"
+msgstr "పూర్తి అయింది"
+
+#: templates/legacy/peer/oa_peer_complete.html:31
+#: templates/legacy/peer/oa_peer_turbo_mode.html:41
+#: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:36
+msgid ""
+"You have successfully completed all of the required peer assessments for "
+"this assignment. You may assess additional peer responses if you want to. "
+"Completing additional assessments will not affect your final grade."
+msgstr ""
+"ఈ అసైన్మెంట్ కోసం అవసరమైన సహచర అంచనాలను విజయవంతంగా పూర్తి చేశారు. కావాలంటే "
+"అదనపు సహచర ప్రతిస్పందనలను అంచనా వేయవచ్చు. అదనపు అంచనాలు పూర్తి చేయడం మీ తుది"
+" గ్రేడ్ పై ప్రభావం చూపదు."
+
+#: templates/legacy/peer/oa_peer_complete.html:36
+msgid "We could not retrieve additional submissions for assessment"
+msgstr "మేము అదనపు సమర్పణలను అంచనాకు పొందలేకపోయాము"
+
+#: templates/legacy/peer/oa_peer_complete.html:43
+msgid "Continue Assessing Peers"
+msgstr "సహచరులను అంచనా వేయడం కొనసాగించండి"
+
+#: templates/legacy/peer/oa_peer_turbo_mode.html:26
+#: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:20
+#, python-format
+msgid ""
+"\n"
+"        Complete (%(num_graded)s)\n"
+"      "
+msgstr ""
+"\n"
+"        పూర్తి అయింది (%(num_graded)s)\n"
+"      "
+
+#: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:38
+msgid ""
+"All submitted peer responses have been assessed. Check back later to see if "
+"more learners have submitted responses."
+msgstr ""
+"సమర్పించిన అన్ని సహచర ప్రతిస్పందనలను అంచనా వేసారు. మరిన్ని విద్యార్థులు "
+"సమర్పించిన ప్రతిస్పందనలు ఉన్నాయో తెలుసుకోవడానికి తర్వాత తిరిగి చూడండి."
+
+#: templates/legacy/peer/oa_peer_unavailable.html:16
+#: templates/legacy/response/oa_response_unavailable.html:17
+#: templates/legacy/self/oa_self_unavailable.html:17
+#: templates/legacy/student_training/student_training_unavailable.html:16
+msgid "Not Available"
+msgstr "అందుబాటులో లేదు"
+
+#: templates/legacy/peer/oa_peer_waiting.html:20
+#, python-format
+msgid ""
+"\n"
+"          In Progress (%(review_number)s of %(num_must_grade)s)\n"
+"        "
+msgstr ""
+"\n"
+"          ప్రగతిలో ఉంది (%(review_number)s లో %(num_must_grade)s)\n"
+"        "
+
+#: templates/legacy/peer/oa_peer_waiting.html:37
+msgid ""
+"All available peer responses have been assessed. Check back later to see if "
+"more learners have submitted responses. You will receive your grade after "
+"you've completed all the steps for this problem and your peers have assessed"
+" your response."
+msgstr ""
+"అందుబాటులో ఉన్న అన్ని సహచర ప్రతిస్పందనలను మూల్యాంకనం చేశారు. మరిని "
+"విద్యార్థులు ప్రతిస్పందనలు సమర్పించినా తర్వాత చూడండి. మీరు ఈ సమస్యకు "
+"సంబంధించిన అన్ని దశలను పూర్తి చేసి, మీ సహచరులు మీ ప్రతిస్పందనను మూల్యాంకనం "
+"చేసిన తర్వాత మీ గ్రేడ్ అందుతుంది."
+
+#: templates/legacy/response/oa_response.html:27
+msgid "Your Team's Response"
+msgstr "మీ జట్టు యొక్క ప్రతిస్పందన"
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/response/oa_response.html:39
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"అందుబాటులో {date} (లో %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/response/oa_response.html:46
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"గడువు {date} (లో %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#: templates/legacy/response/oa_response.html:54
+#: templates/legacy/self/oa_self_assessment.html:56
+msgid "In Progress"
+msgstr "ప్రగతిలో"
+
+#: templates/legacy/response/oa_response.html:66
+msgid "Enter your team's response to the prompt."
+msgstr "మీ జట్టు ప్రతిస్పందనను నమోదు చేయండి."
+
+#: templates/legacy/response/oa_response.html:68
+msgid ""
+"\n"
+"                        Your work will save automatically and you can return to complete your team's response at any time before the due date\n"
+"                      "
+msgstr ""
+"మీ పని ఆటోమేటిక్‌గా సేవ్ అవుతుంది మరియు గడువు తేదికి ముందు ఎప్పుడైనా మీ "
+"జట్టు ప్రతిస్పందనను పూర్తి చేయడానికి మీరు తిరిగి వచ్చవచ్చు."
+
+#: templates/legacy/response/oa_response.html:81
+msgid ""
+"\n"
+"                        Your work will save automatically and you can return to complete your team's response at any time.\n"
+"                      "
+msgstr ""
+"మీ పని ఆటోమేటిక్‌గా సేవ్ అవుతుంది మరియు ఎప్పుడైనా మీ జట్టు ప్రతిస్పందనను "
+"పూర్తి చేయడానికి మీరు తిరిగి వచ్చవచ్చు."
+
+#: templates/legacy/response/oa_response.html:86
+msgid ""
+"After you submit a response on behalf of your team, it cannot be edited."
+msgstr ""
+"మీరు మీ జట్టు తరఫున ప్రతిస్పందనను సమర్పించిన తరువాత, దానిని సవరించడం సాధ్యం "
+"కాదు."
+
+#: templates/legacy/response/oa_response.html:89
+msgid "Enter your response to the prompt."
+msgstr "పై ప్రాంప్ట్‌కు మీ ప్రత్యుత్తరాన్ని నమోదు చేయండి."
+
+#: templates/legacy/response/oa_response.html:92
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time before the subsection due date "
+msgstr ""
+"మీ పని ఆటోమేటిక్‌గా సేవ్ అవుతుంది మరియు ఉపవిభాగ గడువు తేదికి ముందు ఎప్పుడైనా"
+" మీ ప్రత్యుత్తరాన్ని పూర్తి చేయడానికి మీరు తిరిగి వచ్చవచ్చు "
+
+#: templates/legacy/response/oa_response.html:94
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time before the course ends "
+msgstr ""
+"మీ పని ఆటోమేటిక్‌గా సేవ్ అవుతుంది మరియు కోర్సు ముగిసే తేదికి ముందే ఎప్పుడైనా"
+" మీ ప్రత్యుత్తరాన్ని పూర్తి చేయడానికి మీరు తిరిగి వచ్చవచ్చు "
+
+#: templates/legacy/response/oa_response.html:96
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time before the due date "
+msgstr ""
+"మీ పని ఆటోమేటిక్‌గా సేవ్ అవుతుంది మరియు గడువు తేదికి ముందు ఎప్పుడైనా మీ "
+"ప్రత్యుత్తరాన్ని పూర్తి చేయడానికి మీరు తిరిగి వచ్చవచ్చు "
+
+#: templates/legacy/response/oa_response.html:108
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time."
+msgstr ""
+"మీ పని ఆటోమేటిక్‌గా సేవ్ అవుతుంది మరియు ఎప్పుడైనా మీ ప్రత్యుత్తరాన్ని పూర్తి"
+" చేయడానికి మీరు తిరిగి వచ్చవచ్చు."
+
+#: templates/legacy/response/oa_response.html:110
+msgid "After you submit your response, you cannot edit it"
+msgstr "మీరు మీ ప్రత్యుత్తరాన్ని సమర్పించిన తరువాత, దానిని సవరించలేరు."
+
+#: templates/legacy/response/oa_response.html:120
+msgid "What will this assignment be graded on?"
+msgstr "ఈ అసైన్‌మెంట్‌ని ఏమి ఆధారంగా గ్రేడ్ చేస్తారు?"
+
+#: templates/legacy/response/oa_response.html:134
+msgid "The prompt for this section"
+msgstr "ఈ విభాగం కోసం ప్రాంప్ట్"
+
+#: templates/legacy/response/oa_response.html:148
+msgid "You are on team "
+msgstr "మీరు జట్టులో ఉన్నారు "
+
+#: templates/legacy/response/oa_response.html:150
+msgid "Team Members: "
+msgstr "జట్టు సభ్యులు: "
+
+#: templates/legacy/response/oa_response.html:155
+#, python-format
+msgid ""
+"\n"
+"                                              %(team_members_with_external_submissions)s\n"
+"                                              have/has already submitted a response to this assignment with another team,\n"
+"                                              and will not be a part of your team's submission or assignment grade.\n"
+"                                          "
+msgstr ""
+"%(team_members_with_external_submissions)s ఇప్పటికే మరొక జట్టుతో ఈ "
+"అసైన్‌మెంట్‌కు ప్రత్యుత్తరం సమర్పించారు, కాబట్టి అవి మీ జట్టు సమర్పణ లేదా "
+"అసైన్‌మెంట్ గ్రేడ్‌లో భాగంగా ఉండవు."
+
+#: templates/legacy/response/oa_response.html:171
+msgid "Team Response "
+msgstr "జట్టు ప్రతిస్పందన "
+
+#: templates/legacy/response/oa_response.html:173
+msgid "Your Response "
+msgstr "మీ ప్రత్యుత్తరం "
+
+#: templates/legacy/response/oa_response.html:177
+#: templates/legacy/response/oa_response.html:247
+msgid "(Required)"
+msgstr "(అనివార్యం)"
+
+#: templates/legacy/response/oa_response.html:179
+#: templates/legacy/response/oa_response.html:249
+msgid "(Optional)"
+msgstr "(ఐచ్చికం)"
+
+#: templates/legacy/response/oa_response.html:183
+msgid ""
+"\n"
+"                                              Teams should designate one team member to submit a response on behalf of the\n"
+"                                              entire team.  All team members can use this space to work on draft responses,\n"
+"                                              but you will not be able to see your teammates' drafts made in this space, so\n"
+"                                              please coordinate with them to decide on the final response the designated team\n"
+"                                              member should submit.\n"
+"                                          "
+msgstr ""
+"జట్లు తమ మొత్తం జట్టు ప్రతిస్పందన కోసం ఒక సభ్యుడిని నియమించాలి. అన్ని "
+"సభ్యులు డ్రాఫ్ట్ ప్రతిస్పందనలపై పని చేయవచ్చనొ, కానీ వారు రూపొందించిన "
+"డ్రాఫ్ట్‌లను మీరు చూడలేరు. తుది ప్రత్యుత్తరం కోసం, దయచేసి మీరంతటా సమన్వయం "
+"చేయండి."
+
+#: templates/legacy/response/oa_response.html:197
+msgid "Enter your response to the prompt above."
+msgstr "పై ప్రాంప్ట్‌కు మీ ప్రత్యుత్తరాన్ని నమోదు చేయండి."
+
+#: templates/legacy/response/oa_response.html:211
+#, python-format
+msgid ""
+"\n"
+"                                      You are currently on Team %(team_name)s. Since you were on Team %(previous_team_name)s\n"
+"                                      when they submitted a response to this assignment, you are seeing Team %(previous_team_name)s’s\n"
+"                                      response and will receive the same grade for this assignment as your former teammates.\n"
+"                                      You will not be part of Team %(team_name)s’s submission for this assignment and will not\n"
+"                                      receive a grade for their submission.\n"
+"                                  "
+msgstr ""
+"\n"
+"                                      మీరు ప్రస్తుతం %(team_name)s జట్టులో ఉన్నారు. మీరు %(previous_team_name)s జట్టులో ఉండగా వారు ఈ అసైన్‌మెంట్‌కు ప్రత్యుత్తరాన్ని సమర్పించినందున, మీరు %(previous_team_name)s జట్టు యొక్క ప్రత్యుత్తరాన్ని చూస్తున్నారు మరియు అదే గ్రేడ్ పొందతారు. మీరు %(team_name)s జట్టు సమర్పణలో భాగం కావు మరియు వారి సమర్పణకు గ్రేడ్ పొందరు.\n"
+"                                  "
+
+#: templates/legacy/response/oa_response.html:224
+msgid "We could not save your progress"
+msgstr "మేము మీ ప్రగతిని సేవ్ చేయలేకపోయాము"
+
+#: templates/legacy/response/oa_response.html:232
+msgid "Status of Your Response"
+msgstr "మీ ప్రత్యుత్తర స్థితి"
+
+#: templates/legacy/response/oa_response.html:245
+msgid "File Uploads "
+msgstr "ఫైల్ అప్‌లోడ్‌లు "
+
+#: templates/legacy/response/oa_response.html:253
+msgid ""
+"\n"
+"                                  Upload files and review files uploaded by you and your teammates below. Be sure to add\n"
+"                                  descriptions to your files to help your teammates identify them.\n"
+"                              "
+msgstr ""
+"ఫైల్‌లను అప్‌లోడ్ చేసి, మీరు మరియు మీ జట్టుదారులు అప్‌లోడ్ చేసిన ఫైల్‌లను "
+"క్రింద సమీక్షించండి. మీ జట్టుదారులు వాటిని గుర్తించడానికి, మీ ఫైల్‌లకు "
+"వివరణలు జోడించడం ఖచ్చితంగా చేయండి."
+
+#: templates/legacy/response/oa_response.html:261
+msgid "We could not upload files"
+msgstr "మేము ఫైల్‌లను అప్‌లోడ్ చేయలేకపోయాము"
+
+#: templates/legacy/response/oa_response.html:267
+msgid "We could not delete files"
+msgstr "మేము ఫైల్‌లను తొలగించలేకపోయాము"
+
+#: templates/legacy/response/oa_response.html:274
+msgid "Select one or more files to upload for this submission."
+msgstr "ఈ సమర్పణ కోసం అప్‌లోడ్ చేయడానికి ఒకటి లేదా ఎక్కువ ఫైల్‌లను ఎంచుకోండి."
+
+#: templates/legacy/response/oa_response.html:276
+msgid "Select a file to upload for this submission."
+msgstr "ఈ సమర్పణ కోసం అప్‌లోడ్ చేయడానికి ఒక ఫైల్‌ని ఎంచుకోండి."
+
+#: templates/legacy/response/oa_response.html:280
+msgid "Supported file types: "
+msgstr "సahayించే ఫైల్ రకాలు: "
+
+#: templates/legacy/response/oa_response.html:286
+msgid "Upload files"
+msgstr "ఫైల్‌లను అప్‌లోడ్ చేయండి"
+
+#: templates/legacy/response/oa_response.html:288
+msgid "Upload file"
+msgstr "ఫైల్‌ను అప్‌లోడ్ చేయండి"
+
+#: templates/legacy/response/oa_response.html:305
+msgid "This is a team submission."
+msgstr "ఇది జట్టు సమర్పణ."
+
+#: templates/legacy/response/oa_response.html:307
+msgid ""
+"One team member should submit a response with the team’s shared files and a "
+"text response on behalf of the entire team."
+msgstr ""
+"ఒక జట్టు సభ్యుడు, జట్టు పంచుకున్న ఫైల్‌లతో పాటు మొత్తం జట్టు తరఫున వచన "
+"ప్రత్యుత్తరాన్ని సమర్పించాలి."
+
+#: templates/legacy/response/oa_response.html:309
+msgid ""
+"One team member should submit a response with the team’s shared files on "
+"behalf of the entire team."
+msgstr ""
+"ఒక జట్టు సభ్యుడు, జట్టు పంచుకున్న ఫైల్‌లతో పాటు మొత్తం జట్టు తరఫున "
+"ప్రత్యుత్తరాన్ని సమర్పించాలి."
+
+#: templates/legacy/response/oa_response.html:311
+msgid ""
+"One team member should submit a text response on behalf of the entire team."
+msgstr "ఒక జట్టు సభ్యుడు మొత్తం జట్టు తరఫున వచన ప్రత్యుత్తరాన్ని సమర్పించాలి."
+
+#: templates/legacy/response/oa_response.html:313
+msgid "One team member should submit on behalf of the entire team."
+msgstr "ఒక జట్టు సభ్యుడు మొత్తం జట్టు తరఫున సమర్పణ చేయాలి."
+
+#: templates/legacy/response/oa_response.html:315
+msgid ""
+"\n"
+"                  Learn more about team assignments here: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
+"                  "
+msgstr ""
+"\n"
+"                  జట్టు అసైన్‌మెంట్‌ల గురించి ఇక్కడ తెలుసుకోండి: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">లింక్</a>)\n"
+"                  "
+
+#: templates/legacy/response/oa_response.html:323
+msgid "We could not submit your response"
+msgstr "మేము మీ ప్రత్యుత్తరాన్ని సమర్పించలేకపోయాము"
+
+#: templates/legacy/response/oa_response.html:334
+msgid "Submit your response and move to the next step"
+msgstr "మీ ప్రత్యుత్తరాన్ని సమర్పించి, తదుపరి దశకు వెళ్లండి"
+
+#: templates/legacy/response/oa_response_cancelled.html:34
+msgid "Your submission was cancelled. "
+msgstr "మీ సమర్పణను రద్దు చేయబడింది. "
+
+#: templates/legacy/response/oa_response_cancelled.html:37
+#, python-format
+msgid ""
+"\n"
+"                                Your submission has been cancelled by %(removed_by_username)s on %(removed_datetime)s\n"
+"                            "
+msgstr ""
+"\n"
+"                                %(removed_by_username)s ద్వారా %(removed_datetime)sన మీ సమర్పణను రద్దు చేయబడ్డది\n"
+"                            "
+
+#: templates/legacy/response/oa_response_cancelled.html:41
+#, python-format
+msgid ""
+"\n"
+"                               Your submission was cancelled on %(removed_datetime)s\n"
+"                            "
+msgstr ""
+"\n"
+"                               %(removed_datetime)sన మీ సమర్పణను రద్దు చేయబడింది\n"
+"                            "
+
+#: templates/legacy/response/oa_response_cancelled.html:48
+#, python-format
+msgid ""
+"\n"
+"                            Comments: %(comments)s\n"
+"                        "
+msgstr ""
+"\n"
+"                            వ్యాఖ్యలు: %(comments)s\n"
+"                        "
+
+#: templates/legacy/response/oa_response_closed.html:19
+#: templates/legacy/self/oa_self_closed.html:20
+#: templates/legacy/student_training/student_training_closed.html:17
+msgid "Incomplete"
+msgstr "అపూర్ణం"
+
+#: templates/legacy/response/oa_response_closed.html:32
+msgid ""
+"The due date for this step has passed. This step is now closed. You can no "
+"longer submit a response or continue with this problem, and you will receive"
+" a grade of Incomplete. If you saved but did not submit a response, the "
+"response appears in the course records."
+msgstr ""
+"ఈ దశకు గడువు తేదీ ముగియడం వల్ల, ఈ దశ ఇప్పుడు మూసివేయబడింది. మీరు ఇకపై "
+"ప్రత్యుత్తరం సమర్పించలేకపోవచ్చు లేదా ఈ సమస్యని కొనసాగించలేరు, మరియు మీకు "
+"'అపూర్ణం' గ్రేడ్ అందుతుంది. మీకు సేవ్ చేశానని కానీ, ప్రత్యుత్తరాన్ని "
+"సమర్పించనివుంటే అది కోర్సు రికార్డ్స్‌లో కనిపిస్తుంది."
+
+#: templates/legacy/response/oa_response_graded.html:20
+#: templates/legacy/response/oa_response_submitted.html:20
+#: templates/legacy/self/oa_self_complete.html:18
+#: templates/legacy/student_training/student_training_complete.html:17
+msgid "Complete"
+msgstr "పూర్తి"
+
+#: templates/legacy/response/oa_response_graded.html:30
+#: templates/legacy/response/oa_response_submitted.html:51
+#: templates/legacy/self/oa_self_assessment.html:67
+msgid "Your response"
+msgstr "మీ ప్రత్యుత్తరము"
+
+#: templates/legacy/response/oa_response_graded.html:33
+#: templates/legacy/response/oa_response_submitted.html:54
+msgid "Your Uploaded Files"
+msgstr "మీ అప్‌లోడ్ చేసిన ఫైల్‌లు"
+
+#: templates/legacy/response/oa_response_submitted.html:32
+msgid ""
+"Your response has been submitted. You will receive your grade after all "
+"steps are complete and your response is fully assessed."
+msgstr ""
+"మీ ప్రత్యుత్తరాన్ని సమర్పించారు. అన్ని దశలు పూర్తి అయ్యి, మీ "
+"ప్రత్యుత్తరాన్ని పూర్తిగా మూల్యాంకనం చేసిన తర్వాత మీకు గ్రేడ్ అందుతుంది."
+
+#: templates/legacy/response/oa_response_submitted.html:34
+#, python-format
+msgid ""
+"\n"
+"                        You still need to complete the %(peer_start_tag)speer assessment%(end_tag)s and %(self_start_tag)sself assessment%(end_tag)s steps.\n"
+"                    "
+msgstr ""
+"\n"
+"                        మీరు ఇంకా %(peer_start_tag)sసహచర మూల్యాంకనం%(end_tag)s మరియు %(self_start_tag)sస్వీయ మూల్యాంకనం%(end_tag)s దశలను పూర్తి చేయాల్సి ఉంది.\n"
+"                    "
+
+#: templates/legacy/response/oa_response_submitted.html:38
+#, python-format
+msgid ""
+"\n"
+"                        You still need to complete the %(start_tag)speer assessment%(end_tag)s step.\n"
+"                    "
+msgstr ""
+"\n"
+"                        మీరు ఇంకా %(start_tag)sసహచర మూల్యాంకనం%(end_tag)s దశను పూర్తి చేయాలి.\n"
+"                    "
+
+#: templates/legacy/response/oa_response_submitted.html:42
+#, python-format
+msgid ""
+"\n"
+"                        You still need to complete the %(start_tag)sself assessment%(end_tag)s step.\n"
+"                    "
+msgstr ""
+"\n"
+"                        మీరు ఇంకా %(start_tag)sస్వీయ మూల్యాంకనం%(end_tag)s దశను పూర్తి చేయాలి.\n"
+"                    "
+
+#: templates/legacy/response/oa_response_submitted.html:63
+msgid "We could not reset your response"
+msgstr "మేము మీ ప్రత్యుత్తరాన్ని రీసెట్ చేయలేకపోయాము"
+
+#: templates/legacy/response/oa_response_submitted.html:69
+msgid "Reset response and submit again"
+msgstr "ప్రత్యుత్తరాన్ని రీసెట్ చేసి మళ్లీ సమర్పించండి"
+
+#: templates/legacy/response/oa_response_team_already_submitted.html:15
+msgid "Error"
+msgstr "లోపం"
+
+#: templates/legacy/response/oa_response_team_already_submitted.html:29
+#, python-format
+msgid ""
+"\n"
+"                            You joined Team %(team_name)s after they submitted a response for this assignment\n"
+"                            and you will not receive a grade for their response. You have also not previously submitted\n"
+"                            a response to this assignment with another team. Please contact course staff to discuss your\n"
+"                            options for this assignment.\n"
+"                        "
+msgstr ""
+"\n"
+"                            మీరు %(team_name)s జట్టులో చేరిన తర్వాత, వారు ఈ అసైన్‌మెంట్‌కు ప్రత్యుత్తరాన్ని సమర్పించినందున, వారి ప్రత్యుత్తరానికి మీకు గ్రేడ్ లభించడు. మీరు మరొక జట్టుతో ఇదేవిధంగా సమర్పణ చేయలేదు. దయచేసి, మీ ఎంపికలను చర్చించడానికి కోర్సు సిబ్బందిని సంప్రదించండి.\n"
+"                        "
+
+#: templates/legacy/self/oa_self_assessment.html:33
+msgid "Assess Your Response"
+msgstr "మీ ప్రత్యుత్తరానికి మూల్యాంకనం ఇవ్వండి"
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/self/oa_self_assessment.html:41
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+msgstr ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"అందుబాటులో {date} (లో %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/self/oa_self_assessment.html:48
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+msgstr ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"గడువు {date} (లో %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+
+#: templates/legacy/self/oa_self_assessment.html:88
+msgid "Submit your assessment"
+msgstr "మీ మూల్యాంకనాన్ని సమర్పించండి"
+
+#: templates/legacy/self/oa_self_closed.html:32
+msgid ""
+"The due date for this step has passed. This step is now closed. You can no "
+"longer complete a self assessment or continue with this assignment, and you "
+"will receive a grade of Incomplete."
+msgstr ""
+"ఈ దశకు గడువు ముగిసింది. ఈ దశ ఇప్పుడు మూసివేయబడింది. మీరు ఇకపై స్వీయ "
+"మూల్యాంకనం పూర్తి చేయలేరు లేదా ఈ అసైన్‌మెంట్‌ను కొనసాగించలేరు, మరియు మీకు "
+"'అపూర్ణం' గ్రేడ్ లభిస్తుంది."
+
+#: templates/legacy/staff/oa_staff_grade.html:13 xblock/grade_mixin.py:369
+msgid "Staff Grade"
+msgstr "సిబ్బంది గ్రేడ్"
+
+#: templates/legacy/staff_area/oa_staff_area.html:8
+#: templates/legacy/staff_area/oa_staff_area.html:35
+msgid "Manage Individual Learners"
+msgstr "వ్యక్తిగతంగా విద్యార్థులను నిర్వహించండి"
+
+#: templates/legacy/staff_area/oa_staff_area.html:10
+msgid "Manage Team Responses"
+msgstr "జట్టు ప్రత్యుత్తరాలను నిర్వహించండి"
+
+#: templates/legacy/staff_area/oa_staff_area.html:13
+#: templates/legacy/staff_area/oa_staff_area.html:71
+msgid "View Assignment Statistics"
+msgstr "అసైన్‌మెంట్ గణాంకాలను వీక్షించండి"
+
+#: templates/legacy/staff_area/oa_staff_area.html:22
+msgid "Demo the new Grading Experience"
+msgstr "కొత్త గ్రేడింగ్ అనుభవాన్ని డెమో చేయండి"
+
+#: templates/legacy/staff_area/oa_staff_area.html:26
+msgid "View ORA in Studio"
+msgstr "స్టూడియోలో ORA ను వీక్షించండి"
+
+#: templates/legacy/staff_area/oa_staff_area.html:31
+#: templates/legacy/staff_area/oa_staff_area.html:69
+#: templates/legacy/staff_area/oa_staff_area.html:151
+msgid "Close"
+msgstr "మూసివేయండి"
+
+#: templates/legacy/staff_area/oa_staff_area.html:37
+msgid "Manage Teams"
+msgstr "జట్టులను నిర్వహించండి"
+
+#: templates/legacy/staff_area/oa_staff_area.html:50
+msgid "Enter an individual learner's username or email"
+msgstr "ఒక వ్యక్తిగత విద్యార్థి యూజర్‌నేమ్ లేదా ఇమెయిల్ నమోదు చేయండి"
+
+#: templates/legacy/staff_area/oa_staff_area.html:52
+msgid "Enter a team member's username or edX email"
+msgstr "ఒక జట్టు సభ్యుడి యూజర్‌నేమ్ లేదా edX ఇమెయిల్ నమోదు చేయండి"
+
+#: templates/legacy/staff_area/oa_staff_area.html:56
+msgid "Submit"
+msgstr "సమర్పించండి"
+
+#: templates/legacy/staff_area/oa_staff_area.html:78
+msgid "Response total"
+msgstr "ప్రతిస్పందన మొత్తం"
+
+#: templates/legacy/staff_area/oa_staff_area.html:84
+msgid "Location"
+msgstr "స్థానం"
+
+#: templates/legacy/staff_area/oa_staff_area.html:90
+msgid "Learner Progress"
+msgstr "విద్యార్థి ప్రగతి"
+
+#: templates/legacy/staff_area/oa_staff_area.html:94
+#: templates/legacy/staff_area/oa_staff_area.html:117
+msgid "Problem Step"
+msgstr "సమస్య దశ"
+
+#: templates/legacy/staff_area/oa_staff_area.html:95
+msgid "Active Learners in Step"
+msgstr "దశలో చురుకైన విద్యార్థులు"
+
+#: templates/legacy/staff_area/oa_staff_area.html:113
+msgid "Dates"
+msgstr "తేదీలు"
+
+#: templates/legacy/staff_area/oa_staff_area.html:118
+msgid "Release Date"
+msgstr "విడుదల తేదీ"
+
+#: templates/legacy/staff_area/oa_staff_area.html:131
+#: templates/legacy/staff_area/oa_staff_area.html:137
+msgid "N/A"
+msgstr "N/A"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners.html:7
+msgid "Staff Assessment"
+msgstr "సిబ్బంది మూల్యాంకనం"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:14
+msgid "Give this team a grade using the problem's rubric."
+msgstr "సమస్య యొక్క రూబ్రిక్ ఉపయోగించి ఈ జట్టుకు గ్రేడ్ ఇవ్వండి."
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:16
+msgid "Give this learner a grade using the problem's rubric."
+msgstr "సమస్య యొక్క రూబ్రిక్ ఆధారంగా ఈ విద్యార్థికి గ్రేడ్ ఇవ్వండి."
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:26
+#, python-format
+msgid ""
+"\n"
+"                                        Response for: %(team_name)s with %(team_usernames)s\n"
+"                                    "
+msgstr ""
+"\n"
+"                                        ప్రతిస్పందన కోసం: %(team_name)s తో %(team_usernames)s\n"
+"                                    "
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:30
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:20
+#, python-format
+msgid ""
+"\n"
+"                                        Response for: %(student_username)s\n"
+"                                    "
+msgstr ""
+"\n"
+"                                        ప్రతిస్పందన కోసం: %(student_username)s\n"
+"                                    "
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:34
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:24
+msgid "Learner Response"
+msgstr "విద్యార్థి ప్రత్యుత్తరం"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:39
+msgid "The teams's response to the prompt above"
+msgstr "పైన ఇచ్చిన ప్రాంప్ట్‌కు జట్టు యొక్క ప్రత్యుత్తరం"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:41
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:32
+#: templates/legacy/staff_area/oa_student_info.html:57
+msgid "The learner's response to the prompt above"
+msgstr "పైన ఇచ్చిన ప్రాంప్ట్‌కు విద్యార్థి ప్రత్యుత్తరం"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:64
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:57
+msgid "Submit assessment"
+msgstr "మూల్యాంకనాన్ని సమర్పించండి"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:70
+msgid "Submit assessment and continue grading"
+msgstr "మూల్యాంకనాన్ని సమర్పించి, గ్రేడింగ్ కొనసాగించండి"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_count.html:6
+#, python-format
+msgid ""
+"\n"
+"                %(ungraded)s Available and %(in_progress)s Checked Out\n"
+"            "
+msgstr ""
+"\n"
+"                %(ungraded)s లభ్యం మరియు %(in_progress)s చెక్ అవుట్ అయింది\n"
+"            "
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:7
+msgid "Override this learner's current grade using the problem's rubric."
+msgstr ""
+"సమస్య యొక్క రూబ్రిక్ ఉపయోగించి ఈ విద్యార్థి యొక్క ప్రస్తుత గ్రేడ్‌ను "
+"మార్చండి."
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:9
+msgid "Override this team's current grade using the problem's rubric."
+msgstr ""
+"సమస్య యొక్క రూబ్రిక్ ఉపయోగించి ఈ జట్టు యొక్క ప్రస్తుత గ్రేడ్‌ను మార్చండి."
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:27
+msgid "Team Response"
+msgstr "జట్టు ప్రత్యుత్తరం"
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:34
+#: templates/legacy/staff_area/oa_student_info.html:59
+msgid "The team's response to the prompt above"
+msgstr "పైన ఇచ్చిన ప్రాంప్ట్‌కు జట్టు ప్రత్యుత్తరం"
+
+#: templates/legacy/staff_area/oa_student_info.html:11
+#, python-format
+msgid ""
+"\n"
+"                    Viewing learner: %(learner)s\n"
+"                "
+msgstr ""
+"\n"
+"                    వీక్షిస్తున్న విద్యార్థి: %(learner)s\n"
+"                "
+
+#: templates/legacy/staff_area/oa_student_info.html:15
+#, python-format
+msgid ""
+"\n"
+"                    Viewing team: %(team)s\n"
+"                "
+msgstr ""
+"\n"
+"                    వీక్షిస్తున్న జట్టు: %(team)s\n"
+"                "
+
+#: templates/legacy/staff_area/oa_student_info.html:28
+msgid "Learner's Response"
+msgstr "విద్యార్థి యొక్క ప్రత్యుత్తరం"
+
+#: templates/legacy/staff_area/oa_student_info.html:30
+msgid "Team's Response"
+msgstr "జట్టు యొక్క ప్రత్యుత్తరం"
+
+#: templates/legacy/staff_area/oa_student_info.html:39
+#, python-format
+msgid ""
+"\n"
+"                            Learner submission removed by %(removed_by_username)s on %(removed_datetime)s\n"
+"                        "
+msgstr ""
+"\n"
+"                            %(removed_by_username)s ద్వారా %(removed_datetime)sన విద్యార్థి సమర్పణ తొలగించబడింది\n"
+"                        "
+
+#: templates/legacy/staff_area/oa_student_info.html:43
+#, python-format
+msgid ""
+"\n"
+"                            Learner submission removed on %(removed_datetime)s\n"
+"                        "
+msgstr ""
+"\n"
+"                            %(removed_datetime)sన విద్యార్థి సమర్పణ తొలగించబడింది\n"
+"                        "
+
+#: templates/legacy/staff_area/oa_student_info.html:50
+#, python-format
+msgid ""
+"\n"
+"                        Comments: %(comments)s\n"
+"                    "
+msgstr ""
+"\n"
+"                        వ్యాఖ్యలు: %(comments)s\n"
+"                    "
+
+#: templates/legacy/staff_area/oa_student_info.html:71
+msgid "Peer Assessments for This Learner"
+msgstr "ఈ విద్యార్థి కోసం సహచర మూల్యాంకనాలు"
+
+#: templates/legacy/staff_area/oa_student_info.html:76
+msgid "Peer Assessments Completed by This Learner"
+msgstr "ఈ విద్యార్థి చేత పూర్తి చేసిన సహచర మూల్యాంకనాలు"
+
+#: templates/legacy/staff_area/oa_student_info.html:81
+msgid "Learner's Self Assessment"
+msgstr "విద్యార్థి స్వీయ మూల్యాంకనం"
+
+#: templates/legacy/staff_area/oa_student_info.html:87
+msgid "Staff Assessment for This Learner"
+msgstr "ఈ విద్యార్థి కోసం సిబ్బంది మూల్యాంకనం"
+
+#: templates/legacy/staff_area/oa_student_info.html:89
+msgid "Staff Assessment for this Team"
+msgstr "ఈ జట్టుకు సిబ్బంది మూల్యాంకనం"
+
+#: templates/legacy/staff_area/oa_student_info.html:100
+msgid "Learner's Final Grade"
+msgstr "విద్యార్థి యొక్క తుది గ్రేడ్"
+
+#: templates/legacy/staff_area/oa_student_info.html:102
+msgid "Team's Final Grade"
+msgstr "జట్టు యొక్క తుది గ్రేడ్"
+
+#: templates/legacy/staff_area/oa_student_info.html:112
+#, python-format
+msgid ""
+"\n"
+"                            Final grade: %(points_earned)s out of %(points_possible)s\n"
+"                        "
+msgstr ""
+"\n"
+"                            ఆఖరి గ్రేడ్: %(points_earned)s, మొత్తం %(points_possible)s నుండి\n"
+"                        "
+
+#: templates/legacy/staff_area/oa_student_info.html:119
+msgid "Final Grade Details"
+msgstr "తుది గ్రేడ్ వివరాలు"
+
+#: templates/legacy/staff_area/oa_student_info.html:139
+#, python-format
+msgid ""
+"\n"
+"                                        %(assessment_label)s - %(points)s point\n"
+"                                    "
+msgid_plural ""
+"\n"
+"                                        %(assessment_label)s - %(points)s points\n"
+"                                    "
+msgstr[0] ""
+"\n"
+"                                        %(assessment_label)s - %(points)s పాయింట్\n"
+"                                    "
+msgstr[1] ""
+"\n"
+"                                        %(assessment_label)s - %(points)s పాయింట్లు\n"
+"                                    "
+
+#: templates/legacy/staff_area/oa_student_info.html:154
+msgid "Feedback Recorded"
+msgstr "ఫీడ్‌బ్యాక్ నమోదు చేసారు"
+
+#: templates/legacy/staff_area/oa_student_info.html:165
+msgid "The submission is waiting for assessments."
+msgstr "సమర్పణ మూల్యాంకనాలకు వేచి ఉంది."
+
+#: templates/legacy/staff_area/oa_student_info.html:170
+msgid ""
+"The learner's submission has been removed from peer assessment. The learner "
+"receives a grade of zero unless you delete the learner's state for the "
+"problem to allow them to resubmit a response."
+msgstr ""
+"విద్యార్థి సమర్పణను సహచర మూల్యాంకనం నుండి తొలగించారు. మీరు విద్యార్థి యొక్క "
+"స్థితిని తొలగించి మళ్లీ సమర్పణ చేసే అవకాశం ఇవ్వకపోతే, విద్యార్థికి జీరో "
+"గ్రేడ్ లభిస్తుంది."
+
+#: templates/legacy/staff_area/oa_student_info.html:172
+msgid ""
+"The team’s submission has been removed from grading. The team receives a "
+"grade of zero unless you delete the a team member’s state for the problem to"
+" allow the team to resubmit a response."
+msgstr ""
+"జట్టు సమర్పణను గ్రేడింగ్ నుండి తొలగించారు. మీరు జట్టు సభ్యుని స్థితిని "
+"తొలగించి జట్టు మళ్లీ సమర్పణ చేసే అవకాశం ఇవ్వకపోతే, జట్టుకూ జీరో గ్రేడ్ "
+"లభిస్తుంది."
+
+#: templates/legacy/staff_area/oa_student_info.html:177
+msgid "The problem has not been started."
+msgstr "సమస్యను ప్రారంభించలేదు."
+
+#: templates/legacy/staff_area/oa_student_info.html:181
+msgid "The problem has not been completed."
+msgstr "సమస్యను పూర్తి చేయలేదు."
+
+#: templates/legacy/staff_area/oa_student_info.html:193
+msgid "Submit Assessment Grade Override"
+msgstr "మూల్యాంకన గ్రేడ్ ఓవర్రైడ్ సమర్పించండి"
+
+#: templates/legacy/staff_area/oa_student_info.html:195
+msgid "Submit Team Grade Override"
+msgstr "జట్టు గ్రేడ్ ఓవర్రైడ్ సమర్పించండి"
+
+#: templates/legacy/staff_area/oa_student_info.html:204
+msgid "Unable to perform grade override"
+msgstr "గ్రేడ్ ఓవర్రైడ్ చేయడంలో విఫలమయ్యాం"
+
+#: templates/legacy/staff_area/oa_student_info.html:207
+msgid ""
+"Grades are frozen. Grades are automatically frozen 30 days after the course "
+"end date."
+msgstr ""
+"గ్రేడ్‌లు జమారు. కోర్సు ముగిసిన 30 రోజుల తరువాత గ్రేడ్‌లు ఆటోమేటిక్‌గా "
+"జమారవుతాయి."
+
+#: templates/legacy/staff_area/oa_student_info.html:212
+msgid ""
+"This submission has been cancelled and cannot recieve a grade. Refer to "
+"documentation for how to delete the learner’s state for this problem to "
+"allow them to resubmit."
+msgstr ""
+"ఈ సమర్పణ రద్దు చేయబడింది మరియు గ్రేడ్ ఇవ్వబడదు. విద్యార్థి యొక్క స్థితిని "
+"తొలగించి మళ్లీ సమర్పణకు అవకాశం ఇచ్చే విధంగా డాక్యుమెంటేషన్ చూడండి."
+
+#: templates/legacy/staff_area/oa_student_info.html:230
+msgid "Remove Submission From Peer Grading"
+msgstr "సహచర గ్రేడింగ్ నుండి సమర్పణను తీసివేయండి"
+
+#: templates/legacy/staff_area/oa_student_info.html:232
+msgid "Remove Team Submission from Grading"
+msgstr "గ్రేడింగ్ నుండి జట్టు సమర్పణను తీసివేయండి"
+
+#: templates/legacy/staff_area/oa_student_info.html:242
+msgid "Caution: This Action Cannot Be Undone"
+msgstr "జాగ్రత్త: ఈ చర్యను తిరిగి పొందటం సాధ్యం కాదు"
+
+#: templates/legacy/staff_area/oa_student_info.html:244
+msgid ""
+"Removing a learner's submission cannot be undone and should be done with "
+"caution."
+msgstr ""
+"విద్యార్థి సమర్పణను తీసివేయడం తిరిగి పొందటం చేయలేనిది, కాబట్టి జాగ్రత్తగా "
+"చేయాలి."
+
+#: templates/legacy/staff_area/oa_student_info.html:246
+msgid ""
+"Removing a team's submission cannot be undone and should be done with "
+"caution."
+msgstr ""
+"జట్టు సమర్పణను తీసివేయడం తिरిగి పొందటం చేయలేనిది, కాబట్టి జాగ్రత్తగా చేయాలి."
+
+#: templates/legacy/staff_area/oa_student_info.html:252
+msgid "Comments:"
+msgstr "వ్యాఖ్యలు:"
+
+#: templates/legacy/staff_area/oa_student_info.html:261
+msgid "Remove submission"
+msgstr "సమర్పణను తీసివేయండి"
+
+#: templates/legacy/staff_area/oa_student_info.html:276
+msgid "A response was not found for this learner."
+msgstr "ఈ విద్యార్థికి సంబంధించిన ప్రత్యుత్తరాన్ని కనుగొనబడలేదు."
+
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:16
+#, python-format
+msgid ""
+"\n"
+"                            Assessment %(assessment_num)s:\n"
+"                        "
+msgstr ""
+"\n"
+"                            మూల్యాంకనం %(assessment_num)s:\n"
+"                        "
+
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:22
+msgid "Assessment Details"
+msgstr "మూల్యాంకన వివరాలు"
+
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:26
+msgid "Selected Option"
+msgstr "ఎంచుకున్న ఎంపిక"
+
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:27
+msgid "Feedback"
+msgstr "ఫీడ్‌బ్యాక్"
+
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:29
+msgid "Points Possible"
+msgstr "సాధ్యమైన పాయింట్లు"
+
+#: templates/legacy/student_training/student_training.html:18
+msgid "Learn to Assess Responses"
+msgstr "ప్రతిస్పందనలను మూల్యాంకనం చేయడం నేర్చుకోండి"
+
+#: templates/legacy/student_training/student_training.html:27
+#, python-format
+msgid ""
+"\n"
+"                      In Progress (%(current_progress_num)s of %(training_available_num)s)\n"
+"                  "
+msgstr ""
+"\n"
+"                      ప్రగతిలో ఉంది (%(current_progress_num)s లో %(training_available_num)s)\n"
+"                  "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/student_training/student_training.html:38
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"అందుబాటులో {date} (లో %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/student_training/student_training.html:45
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"గడువు {date} (లో %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#: templates/legacy/student_training/student_training.html:58
+#: templates/legacy/student_training/student_training.html:66
+msgid "Learning to Assess Responses"
+msgstr "ప్రతిస్పందనలను మూల్యాంకనం చేయడం నేర్చుకుంటోంది"
+
+#: templates/legacy/student_training/student_training.html:61
+msgid ""
+"Before you begin to assess your peers' responses, you'll learn how to "
+"complete peer assessments by reviewing responses that instructors have "
+"already assessed. If you select the same options for the response that the "
+"instructor selected, you'll move to the next step. If you don't select the "
+"same options, you'll review the response and try again."
+msgstr ""
+"మీ సహచరుల ప్రతిస్పందనలను మూల్యాంకనం చేయడం ప్రారంభించేమునుపు, మీరు "
+"ఇన్స్ట్రక్టర్లు ఇప్పటికే మూల్యాంకనం చేసిన ప్రత్యుత్తరాలను సమీక్షించి సహచర "
+"మూల్యాంకనాల ప్రక్రియను నేర్చుకుంటారు. మీరు ఇన్స్ట్రక్టర్ ఎంచుకున్న ఎంపికలేలా"
+" ఎంచుకుంటే, తదుపరి దశకు వెళతారు. లేదంటే, ప్రత్యుత్తరాన్ని సమీక్షించి మళ్లీ "
+"ప్రయత్నించండి."
+
+#: templates/legacy/student_training/student_training.html:69
+msgid ""
+"Your assessment differs from the instructor's assessment of this response. "
+"Review the response and consider why the instructor may have assessed it "
+"differently. Then, try the assessment again."
+msgstr ""
+"మీ మూల్యాంకనం, ఈ ప్రత్యుత్తరానికి ఇన్స్ట్రక్టర్ చేసిన మూల్యాంకనంతో భిన్నంగా "
+"ఉంది. ప్రత్యుత్తరాన్ని సమీక్షించి, ఇన్స్ట్రక్టర్ ఎందుకు భిన్నంగా మూల్యాంకనం "
+"చేసారో ఆలోచించండి. తరువాత, మళ్లీ మూల్యాంకనం చేయండి."
+
+#: templates/legacy/student_training/student_training.html:76
+msgid "The response to the prompt above:"
+msgstr "పై ప్రాంప్ట్‌కు సంబంధించిన ప్రత్యుత్తరం:"
+
+#: templates/legacy/student_training/student_training.html:98
+msgid "Selected Options Agree"
+msgstr "ఎంచుకున్న ఎంపికలు సరిపోతున్నాయి"
+
+#: templates/legacy/student_training/student_training.html:101
+msgid "The option you selected is the option that the instructor selected."
+msgstr "మీరే ఎంచుకున్న ఎంపిక, ఇన్స్ట్రక్టర్ ఎంచుకున్న ఎంపికతో సమానం."
+
+#: templates/legacy/student_training/student_training.html:105
+msgid "Selected Options Differ"
+msgstr "ఎంచుకున్న ఎంపికలు భిన్నంగా ఉన్నాయి"
+
+#: templates/legacy/student_training/student_training.html:108
+msgid ""
+"The option you selected is not the option that the instructor selected."
+msgstr "మీరు ఎంచుకున్న ఎంపిక, ఇన్స్ట్రక్టర్ ఎంచుకున్నది కాదు."
+
+#: templates/legacy/student_training/student_training.html:144
+msgid "We could not check your assessment"
+msgstr "మేము మీ మూల్యాంకనాన్ని తనిఖీ చేయలేకపోయాము"
+
+#: templates/legacy/student_training/student_training.html:151
+msgid "Compare your selections with the instructor's selections"
+msgstr "ఇన్స్ట్రక్టర్ ఎంపికలతో మీ ఎంపికలను పోల్చండి"
+
+#: templates/legacy/student_training/student_training_closed.html:29
+msgid ""
+"The due date for this step has passed. This step is now closed. You can no "
+"longer continue with this assignment, and you will receive a grade of "
+"Incomplete."
+msgstr ""
+"ఈ దశకు గడువు ముగిసింది. ఈ దశ ఇప్పుడు మూసివేయబడింది. మీరు ఇకపై ఈ "
+"అసైన్‌మెంట్‌ను కొనసాగించలేరు, మరియు మీకు 'అపూర్ణం' గ్రేడ్ లభిస్తుంది."
+
+#: templates/legacy/student_training/student_training_error.html:18
+msgid "Error Loading Learner Training Examples"
+msgstr "విద్యార్థి శిక్షణ ఉదాహరణలను లోడ్ చేయడంలో లోపం"
+
+#: templates/legacy/student_training/student_training_error.html:21
+msgid "The Learner Training Step of this assignment could not be loaded."
+msgstr "ఈ అసైన్‌మెంట్ యొక్క విద్యార్థి శిక్షణ దశను లోడ్ చేయలేకపోయాము."
+
+#: templates/openassessmentblock/base.html:69
+msgid "Loading Open Response Assessment..."
+msgstr "ఓపెన్ రెస్పాన్స్ మూల్యాంకనాన్ని లోడ్ చేస్తోంది..."
+
+#: xblock/grade_mixin.py:78 xblock/leaderboard_mixin.py:61
+msgid "An unexpected error occurred."
+msgstr "అనుకోని లోపం సంభవించింది."
+
+#: xblock/grade_mixin.py:180
+msgid "Peer Assessment"
+msgstr "సహచర మూల్యాంకనం"
+
+#: xblock/grade_mixin.py:182
+msgid "Self Assessment"
+msgstr "స్వీయ మూల్యాంకనం"
+
+#: xblock/grade_mixin.py:222
+msgid "Assessment feedback could not be saved."
+msgstr "మూల్యాంకన ఫీడ్‌బ్యాక్ సేవ్ చేయబడలేదు."
+
+#: xblock/grade_mixin.py:233
+msgid "Feedback saved."
+msgstr "ఫీడ్‌బ్యాక్ సేవ్ చేయబడింది."
+
+#: xblock/grade_mixin.py:370 xblock/grade_mixin.py:535
+msgid "Staff Comments"
+msgstr "సిబ్బంది వ్యాఖ్యలు"
+
+#: xblock/grade_mixin.py:383 xblock/grade_mixin.py:542
+#, python-brace-format
+msgid "Peer {peer_index}"
+msgstr "సహచర {peer_index}"
+
+#: xblock/grade_mixin.py:384
+msgid "Peer Comments"
+msgstr "సహచర వ్యాఖ్యలు"
+
+#: xblock/grade_mixin.py:394
+msgid "Self Assessment Grade"
+msgstr "స్వీయ మూల్యాంకన గ్రేడ్"
+
+#: xblock/grade_mixin.py:394
+msgid "Your Self Assessment"
+msgstr "మీ స్వీయ మూల్యాంకనం"
+
+#: xblock/grade_mixin.py:395 xblock/grade_mixin.py:554
+msgid "Your Comments"
+msgstr "మీ వ్యాఖ్యలు"
+
+#: xblock/grade_mixin.py:429
+msgid "Peer Mean Grade"
+msgstr "సహచర సగటు గ్రేడ్"
+
+#: xblock/grade_mixin.py:430
+msgid "Peer Median Grade"
+msgstr "సహచర మధ్యస్థ గ్రేడ్"
+
+#: xblock/grade_mixin.py:508
+msgid "Waiting for peer reviews"
+msgstr "సహచర సమీక్షలకు వేచి ఉంది"
+
+#: xblock/grade_mixin.py:677
+msgid "The grade for this problem is determined by your Staff Grade."
+msgstr "ఈ సమస్యకు మీ సిబ్బంది గ్రేడ్ ఆధారంగా గ్రేడ్ నిర్ణయించబడుతుంది."
+
+#: xblock/grade_mixin.py:681
+msgid "The grade for this problem is determined by your Self Assessment."
+msgstr "ఈ సమస్యకు మీ స్వీయ మూల్యాంకనం ఆధారంగా గ్రేడ్ నిర్ణయించబడుతుంది."
+
+#: xblock/grade_mixin.py:687
+#, python-brace-format
+msgid ""
+"You have successfully completed this problem and received a "
+"{earned_points}/{total_points}."
+msgstr ""
+"మీరు విజయవంతంగా ఈ సమస్యను పూర్తి చేసి {earned_points}/{total_points} "
+"పొందారు."
+
+#: xblock/grade_mixin.py:695
+msgid ""
+"You have not yet received all necessary peer reviews to determine your final"
+" grade."
+msgstr ""
+"మీరు తుది గ్రేడ్ నిర్ణయించడానికి అవసరమైన అన్ని సహచర సమీక్షలను ఇంకా పొందలేదు."
+
+#: xblock/grade_mixin.py:710
+msgid ""
+"The grade for this problem is determined by the median score of your Peer "
+"Assessments."
+msgstr ""
+"ఈ సమస్యకు మీ సహచర మూల్యాంకనాల మధ్యస్థ స్కోర్ ఆధారంగా గ్రేడ్ "
+"నిర్ణయించబడుతుంది."
+
+#: xblock/grade_mixin.py:715
+msgid ""
+"The grade for this problem is determined by the mean score of your Peer "
+"Assessments."
+msgstr ""
+"ఈ సమస్యకు మీ సహచర మూల్యాంకనాల సగటు స్కోర్ ఆధారంగా గ్రేడ് నిర్ణయించబడుతుంది."
+
+#: xblock/openassesment_template_mixin.py:66
+msgid "Peer Assessment Only"
+msgstr "కేవలం సహచర మూల్యాంకనం"
+
+#: xblock/openassesment_template_mixin.py:67
+msgid "Self Assessment Only"
+msgstr "కేవలం స్వీయ మూల్యాంకనం"
+
+#: xblock/openassesment_template_mixin.py:68
+msgid "Staff Assessment Only"
+msgstr "కేవలం సిబ్బంది మూల్యాంకనం"
+
+#: xblock/openassesment_template_mixin.py:69
+msgid "Self Assessment to Peer Assessment"
+msgstr "స్వీయ మూల్యాంకనం నుండి సహచర మూల్యాంకనం"
+
+#: xblock/openassesment_template_mixin.py:70
+msgid "Self Assessment to Staff Assessment"
+msgstr "స్వీయ మూల్యాంకనం నుండి సిబ్బంది మూల్యాంకనం"
+
+#: xblock/openassessmentblock.py:1365
+msgid "You can't reset your submission."
+msgstr "మీ సమర్పణను రీసెట్ చేయలేరు."
+
+#: xblock/openassessmentblock.py:1378
+msgid "The user does not exist."
+msgstr "వాడుకరి ఉనికిలో లేదు."
+
+#: xblock/openassessmentblock.py:1381
+msgid "There is no submission to reset."
+msgstr "రీసెట్ చేయడానికి ఎటువంటి సమర్పణ లేదు."
+
+#: xblock/openassessmentblock.py:1383
+msgid "Submission reset successfully."
+msgstr "సమర్పణ విజయవంతంగా రీసెట్ చేయబడింది."
+
+#: xblock/rubric_reuse_mixin.py:62
+msgid "You must specify a block id from which to copy a rubric."
+msgstr "రూబ్రిక్ కాపీ చేయడానికి మీరు ఒక బ్లాక్ ఐడిని నిర్దేశించాలి."
+
+#: xblock/rubric_reuse_mixin.py:66
+msgid "Invalid block id."
+msgstr "తెలియని బ్లాక్ ఐడి."
+
+#: xblock/rubric_reuse_mixin.py:72
+#, python-brace-format
+msgid ""
+"No Open Response Assessment found in {course_id} with block id {block_id}"
+msgstr ""
+"{course_id} లో, బ్లాక్ ఐడి {block_id}తో ఓపెన్ రెస్పాన్స్ మూల్యాంకనం "
+"కనుగొనబడలేదు"
+
+#: xblock/staff_area_mixin.py:42
+msgid "You do not have permission to schedule training"
+msgstr "శిక్షణ షెడ్యూల్ చేయడానికి మీకు అనుమతి లేదు"
+
+#: xblock/staff_area_mixin.py:43
+msgid "You do not have permission to reschedule tasks."
+msgstr "టాస్క్‌లను రీషెడ్యూల్ చేయడానికి మీకు అనుమతి లేదు."
+
+#: xblock/staff_area_mixin.py:69
+msgid "You do not have permission to access the ORA staff area"
+msgstr "ORA సిబ్బంది ప్రాంతాన్ని యాక్సెస్ చేయడానికి మీకు అనుమతి లేదు"
+
+#: xblock/staff_area_mixin.py:70
+msgid "You do not have permission to access ORA learner information."
+msgstr "ORA విద్యార్థి సమాచారాన్ని యాక్సెస్ చేయడానికి మీకు అనుమతి లేదు."
+
+#: xblock/staff_area_mixin.py:71
+msgid "You do not have permission to access ORA staff grading."
+msgstr "ORA సిబ్బంది గ్రేడింగ్ యాక్సెస్ చేయడానికి మీకు అనుమతి లేదు."
+
+#: xblock/staff_area_mixin.py:241
+msgid "Pending"
+msgstr "పెండింగ్"
+
+#: xblock/staff_area_mixin.py:242
+msgid "Complete/Overwritten"
+msgstr "పూర్తి/మళ్లీ రాసినది"
+
+#: xblock/staff_area_mixin.py:245
+msgid "Not applicable"
+msgstr "వర్తించదు"
+
+#: xblock/staff_area_mixin.py:246
+msgid "Not submitted"
+msgstr "సమర్పించబడలేదు"
+
+#: xblock/staff_area_mixin.py:247
+msgid "Submitted"
+msgstr "సమర్పించబడింది"
+
+#: xblock/staff_area_mixin.py:341
+msgid "Error getting learner information."
+msgstr "విద్యార్థి సమాచారాన్ని పొందడంలో లోపం."
+
+#: xblock/staff_area_mixin.py:384
+msgid "Error loading the checked out learner response."
+msgstr "చెక్‌ఔట్ అయిన విద్యార్థి ప్రత్యుత్తరాన్ని లోడ్ చేయడంలో లోపం."
+
+#: xblock/staff_area_mixin.py:385
+msgid "No other learner responses are available for grading at this time."
+msgstr ""
+"ఈ సమయంలో గ్రేడింగ్ కోసం మరింత విద్యార్థి ప్రత్యుత్తరాలు అందుబాటులో లేవు."
+
+#: xblock/staff_area_mixin.py:387
+msgid "Error getting staff grade information."
+msgstr "సిబ్బంది గ్రేడ్ సమాచారాన్ని పొందడంలో లోపం."
+
+#: xblock/staff_area_mixin.py:408
+msgid "Error getting staff grade ungraded and checked out counts."
+msgstr "సిబ్బంది గ్రేడ్, అగ్రేడ్ మరియు చెక్ అవుట్ కౌంట్లను పొందడంలో లోపం."
+
+#: xblock/staff_area_mixin.py:703
+msgid "Please enter valid reason to remove the submission."
+msgstr "సమర్పణను తొలగించడానికి సరైన కారణాన్ని నమోదు చేయండి."
+
+#: xblock/staff_area_mixin.py:714
+msgid "Submission not found"
+msgstr "సమర్పణ కనుగొనబడలేదు"
+
+#: xblock/staff_area_mixin.py:725
+msgid "Submission for team assignment has no associated team submission"
+msgstr ""
+"జట్టు అసైన్‌మెంట్‌కు సంబంధించిన సమర్పణకు ఏటువంటి జట్టు సమర్పణ జత చేయబడలేదు"
+
+#: xblock/staff_area_mixin.py:754
+msgid ""
+"The learner submission has been removed from peer assessment. The learner "
+"receives a grade of zero unless you delete the learner's state for the "
+"problem to allow them to resubmit a response."
+msgstr ""
+"విద్యార్థి సమర్పణను సహచర మూల్యాంకనం నుండి తొలగించారు. విద్యార్థి యొక్క "
+"స్థితిని తొలగించి, ప్రత్యుత్తరాన్ని మళ్లీ సమర్పించడానికి అవకాశం ఇవ్వకపోతే, "
+"విద్యార్థికి జీరో గ్రేడ్ లభిస్తుంది."
+
+#: xblock/staff_area_mixin.py:789
+msgid ""
+"The team’s submission has been removed from grading. The team receives a "
+"grade of zero unless you delete a team member’s state for the problem to "
+"allow the team to resubmit a response."
+msgstr ""
+"జట్టు సమర్పణను గ్రేడింగ్ నుండి తొలగించారు. జట్టు సభ్యుని స్థితిని తొలగించి, "
+"జట్టు మళ్లీ సమర్పించడానికి అవకాశం ఇవ్వకపోతే, జట్టుకు జీరో గ్రేడ్ లభిస్తుంది."
+
+#: xblock/studio_mixin.py:247 xblock/studio_mixin.py:259
+msgid "Error updating XBlock configuration"
+msgstr "XBlock కాన్ఫిగరేషన్ నవీకరణలో లోపం"
+
+#: xblock/studio_mixin.py:264
+msgid "Error: Text Response and File Upload Response cannot both be disabled"
+msgstr ""
+"లోపం: టెక్స్ట్ రెస్పాన్స్ మరియు ఫైల్ అప్‌లోడ్ రెస్పాన్స్ రెండూ డిసేబుల్ "
+"చేయబడవు"
+
+#: xblock/studio_mixin.py:268
+msgid ""
+"Error: When Text Response is disabled, File Upload Response must be Required"
+msgstr ""
+"లోపం: టెక్స్ట్ రెస్పాన్స్ డిసేబుల్ అయినప్పుడు, ఫైల్ అప్‌లోడ్ రెస్పాన్స్ "
+"తప్పనిసరి కావాలి"
+
+#: xblock/studio_mixin.py:271
+msgid ""
+"Error: When File Upload Response is disabled, Text Response must be Required"
+msgstr ""
+"లోపం: ఫైల్ అప్‌లోడ్ రెస్పాన్స్ డిసేబుల్ అయినప్పుడు, టెక్స్ట్ రెస్పాన్స్ "
+"తప్పనిసరి కావాలి"
+
+#: xblock/studio_mixin.py:295
+#, python-brace-format
+msgid "Validation error: {error}"
+msgstr "వాలిడేషన్ లోపం: {error}"
+
+#: xblock/studio_mixin.py:329
+msgid "Successfully updated OpenAssessment XBlock"
+msgstr "OpenAssessment XBlock విజయవంతంగా నవీకరించబడింది"
+
+#: xblock/utils/data_conversion.py:315
+msgid "You must provide options selected in the assessment."
+msgstr "మూల్యాంకనంలో మీరు ఎంచుకున్న ఎంపికలను అందించాలి."
+
+#: xblock/utils/data_conversion.py:318
+msgid "You must provide overall feedback in the assessment."
+msgstr "మూల్యాంకనంలో మొత్తం ఫీడ్‌బ్యాక్ అందించాలి."
+
+#: xblock/utils/data_conversion.py:321
+msgid "You must provide feedback for criteria in the assessment."
+msgstr "మూల్యాంకనంలో క్రైటీరియా కోసం ఫీడ్‌బ్యాక్ అందించాలి."
+
+#: xblock/utils/resolve_dates.py:52
+#, python-brace-format
+msgid ""
+"'{date}' is an invalid date format. Make sure the date is formatted as YYYY-"
+"MM-DDTHH:MM:SS."
+msgstr ""
+"'{date}' సరైన తేదీ రూపరం కాదు. తేదీని YYYY-MM-DDTHH:MM:SS రూపంలో ఉన్నదో లేదో"
+" నిర్ధారించుకోండి."
+
+#: xblock/utils/resolve_dates.py:57
+#, python-brace-format
+msgid "'{date}' must be a date string or datetime"
+msgstr "'{date}' తేదీ స్ట్రింగ్ లేదా datetime అయి ఉండాలి"
+
+#: xblock/utils/resolve_dates.py:210
+#, python-brace-format
+msgid ""
+"This step's start date '{start}' cannot be earlier than the previous step's "
+"start date '{prev}'."
+msgstr ""
+"ఈ దశ ప్రారంభ తేదీ '{start}', ముందు దశ ప్రారంభ తేదీ '{prev}' కంటే ముందుగా "
+"ఉండకూడదు."
+
+#: xblock/utils/resolve_dates.py:218
+#, python-brace-format
+msgid ""
+"This step's due date '{due}' cannot be later than the next step's due date "
+"'{prev}'."
+msgstr "ఈ దశ గడువు '{due}', తరువాతి దశ గడువు '{prev}' కంటే ఆలస్యంగా ఉండకూడదు."
+
+#: xblock/utils/resolve_dates.py:234
+#, python-brace-format
+msgid "The start date '{start}' cannot be later than the due date '{due}'"
+msgstr "ప్రారంభ తేదీ '{start}', గడువు '{due}' కంటే ఆలస్యంగా ఉండకూడదు."
+
+#: xblock/utils/validation.py:120
+msgid "This problem must include at least one assessment."
+msgstr "ఈ సమస్యలో కనీసం ఒక మూల్యాంకనం ఉండాలి."
+
+#: xblock/utils/validation.py:124
+msgid "The assessment order you selected is invalid."
+msgstr "మీరు ఎంచుకున్న మూల్యాంకన క్రమం చెల్లవంతం కాదు."
+
+#: xblock/utils/validation.py:134
+msgid "In peer assessment, the \"Must Grade\" value must be a positive integer."
+msgstr "సహచర మూల్యాంకనలో, \"Must Grade\" విలువ సానుకూల పూర్తి సంఖ్యగా ఉండాలి."
+
+#: xblock/utils/validation.py:137
+msgid "In peer assessment, the \"Graded By\" value must be a positive integer."
+msgstr "సహచర మూల్యాంకనలో, \"Graded By\" విలువ సానుకూల పూర్తి సంఖ్యగా ఉండాలి."
+
+#: xblock/utils/validation.py:141
+msgid ""
+"In peer assessment, the \"Must Grade\" value must be greater than or equal "
+"to the \"Graded By\" value."
+msgstr ""
+"సహచర మూల్యాంకనలో, \"Must Grade\" విలువ, \"Graded By\" విలువకు సమానమో లేదా "
+"ఎక్కువగా ఉండాలి."
+
+#: xblock/utils/validation.py:150
+msgid "You must provide at least one example response for learner training."
+msgstr ""
+"విద్యార్థి శిక్షణ కోసం కనీసం ఒక ఉదాహరణ ప్రత్యుత్తరాన్ని మీరు అందించాలి."
+
+#: xblock/utils/validation.py:153
+msgid "Each example response for learner training must be unique."
+msgstr "విద్యార్థి శిక్షణ కోసం ప్రతి ఉదాహరణ ప్రత్యుత్తరం ప్రత్యేకంగా ఉండాలి."
+
+#: xblock/utils/validation.py:160
+msgid "The \"required\" value must be true if staff assessment is the only step."
+msgstr ""
+"సిబ్బంది మూల్యాంకనం మాత్రమే ఉన్నప్పుడు, \"required\" విలువ నిజం అయి ఉండాలి."
+
+#: xblock/utils/validation.py:164
+msgid ""
+"The number of assessments cannot be changed after the problem has been "
+"released."
+msgstr "సమस्या విడుదలైన తర్వాత, మూల్యాంకనాల సంఖ్యను మార్చలేం."
+
+#: xblock/utils/validation.py:169
+msgid ""
+"The assessment type cannot be changed after the problem has been released."
+msgstr "సమस्या విడుదలైన తర్వాత, మూల్యాంకన రకాన్ని మార్చలేం."
+
+#: xblock/utils/validation.py:176
+msgid ""
+"The grading strategy for peer assessments cannot be changed after the "
+"problem has been released."
+msgstr ""
+"సమస్య విడుదలైన తర్వాత, సహచర మూల్యాంకనాల గ్రేడింగ్ వ్యూహాన్ని మార్చలేం."
+
+#: xblock/utils/validation.py:200
+msgid "This rubric definition is not valid."
+msgstr "ఈ రూబ్రిక్ నిర్వచనం చెల్లవంతం కాదు."
+
+#: xblock/utils/validation.py:203
+msgid "You must provide at least one prompt."
+msgstr "కనీసం ఒక ప్రాంప్ట్‌ను మీరు అందించాలి."
+
+#: xblock/utils/validation.py:209
+#, python-brace-format
+msgid "Options in '{criterion}' have duplicate name(s): {duplicates}"
+msgstr "'{criterion}'లోని ఎంపికల్లో పునరావృతమైన పేర్లు ఉన్నాయి: {duplicates}"
+
+#: xblock/utils/validation.py:217
+msgid "Criteria with no options must require written feedback."
+msgstr "ఎంపికలేని క్రైటీరియాలకు వ్రాత ఫీడ్‌బ్యాక్ తప్పనిసరి."
+
+#: xblock/utils/validation.py:226
+msgid "Prompts cannot be created or deleted after a problem is released."
+msgstr "సమస్య విడుదలైన తర్వాత, ప్రాంప్ట్‌లను సృష్టించలేక లేదా తొలగించలేం."
+
+#: xblock/utils/validation.py:230
+msgid "The number of criteria cannot be changed after a problem is released."
+msgstr "సమस्या విడుదలైన తర్వాత, క్రైటీరియాల సంఖ్యను మార్చలేం."
+
+#: xblock/utils/validation.py:243
+msgid "Criteria names cannot be changed after a problem is released"
+msgstr "సమस्या విడుదలైన తర్వాత, క్రైటీరియా పేర్లను మార్చలేము."
+
+#: xblock/utils/validation.py:248
+msgid "The number of options cannot be changed after a problem is released."
+msgstr "సమస్య విడుదలైన తర్వాత, ఎంపికల సంఖ్యను మార్చలేం."
+
+#: xblock/utils/validation.py:253
+msgid "Point values cannot be changed after a problem is released."
+msgstr "సమస్య విడుదలైన తర్వాత, పాయింట్ విలువలను మార్చలేం."
+
+#: xblock/utils/validation.py:304
+msgid "Learner training must have at least one training example."
+msgstr "విద్యార్థి శిక్షణలో కనీసం ఒక శిక్షణ ఉదాహరణ ఉండాలి."
+
+#: xblock/utils/validation.py:369
+msgid "Leaderboard number is invalid."
+msgstr "లీడ్‌బోర్డ్ సంఖ్య చెల్లవంతం కాదు."
+
+#: xblock/utils/validation.py:392
+msgid "The submission format is invalid."
+msgstr "సమర్పణ ఫార్మాట్ చెల్లదు."

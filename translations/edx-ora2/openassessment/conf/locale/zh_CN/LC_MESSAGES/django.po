@@ -1,25 +1,16 @@
-# #-#-#-#-#  django.po (edx-ora2)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2018 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2018.
-# 
-# Translators:
-# Brian Smith, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-ora2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-13 17:55-0500\n"
-"PO-Revision-Date: 2023-05-10 00:48+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024\n"
-"Language-Team: Chinese (China) (https://app.transifex.com/open-edx/teams/6205/zh_CN/)\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-05-05 00:52+0000\n"
+"PO-Revision-Date: 2026-05-22 22:07+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: assessment/api/student_training.py:179
@@ -58,17 +49,113 @@ msgstr "样例答案{example_number} 的“{criterion_name}”得分点缺少分
 msgid "Peer"
 msgstr "同学"
 
+#: assessment/score_type_constants.py:22
+msgid "Self"
+msgstr "自我"
+
+#: assessment/score_type_constants.py:23
+msgid "Staff"
+msgstr "员工"
+
+#: assessment/score_type_constants.py:25
+msgid "Unknown"
+msgstr "未知"
+
+#: data.py:584
+#, python-brace-format
+msgid "Criterion {number}: {label}"
+msgstr "标准 {number}: {label}"
+
+#: data.py:586
+#, python-brace-format
+msgid "Points {number}"
+msgstr "分数 {number}"
+
+#: data.py:587
+#, python-brace-format
+msgid "Median Score {number}"
+msgstr "中值分数 {number}"
+
+#: data.py:588
+#, python-brace-format
+msgid "Feedback {number}"
+msgstr "反馈 {number}"
+
 #: data.py:917
 msgid "Item ID"
 msgstr "项目编号"
+
+#: data.py:918
+msgid "Submission ID"
+msgstr "提交ID"
+
+#: data.py:930
+msgid "Anonymized Student ID"
+msgstr "匿名学生ID"
+
+#: data.py:961
+msgid "Assessment ID"
+msgstr "评估ID"
+
+#: data.py:962
+msgid "Assessment Scored Date"
+msgstr "评估评分日期"
+
+#: data.py:963
+msgid "Assessment Scored Time"
+msgstr "评估评分时间"
+
+#: data.py:964
+msgid "Assessment Type"
+msgstr "评估类型"
+
+#: data.py:965
+msgid "Anonymous Scorer Id"
+msgstr "匿名评分者ID"
 
 #: data.py:967
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:59
 msgid "Overall Feedback"
 msgstr "整体评语"
 
+#: data.py:968
+msgid "Assessment Score Earned"
+msgstr "获得的评估分数"
+
+#: data.py:969
+msgid "Assessment Scored At"
+msgstr "评分时间点"
+
+#: data.py:970
+msgid "Date/Time Final Score Given"
+msgstr "给出最终分数的日期/时间"
+
+#: data.py:971
+msgid "Final Score Earned"
+msgstr "获得的最终分数"
+
+#: data.py:972
+msgid "Final Score Possible"
+msgstr "可能的最终分数"
+
+#: data.py:973
+msgid "Feedback Statements Selected"
+msgstr "选择的反馈语句"
+
+#: data.py:974
+msgid "Feedback on Assessment"
+msgstr "对评估的反馈"
+
+#: data.py:976
+msgid "Response Files"
+msgstr "回应文件"
+
+#: data.py:1367
+msgid "No description provided."
+msgstr "未提供描述。"
+
 #: data.py:1626 templates/legacy/edit/oa_edit_criterion.html:54
-#: xblock/studio_mixin.py:57
+#: xblock/studio_mixin.py:58
 msgid "None"
 msgstr "无"
 
@@ -79,6 +166,14 @@ msgstr "保存"
 #: templates/legacy/edit/oa_edit.html:32
 msgid "Cancel"
 msgstr "取消"
+
+#: templates/legacy/edit/oa_edit_assessment_steps.html:6
+msgid ""
+"Open Response Assessments allow you to configure single or multiple steps in"
+" a rubric based open response assessment sequence. The steps available below"
+" can be enabled, disable, and ordered for a flexible set of pedagogical "
+"needs."
+msgstr "开放式回应评估允许您为基于评分标准的开放式回应评估序列配置单个或多个步骤。下面可用的步骤可以启用、禁用并按顺序排列，以满足灵活的教学需求。"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:5
 msgid "Display Name "
@@ -98,6 +193,16 @@ msgid ""
 "problem's prompt."
 msgstr "指定学员是否必须对该问题提示作出基于文本的解答"
 
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:25
+msgid "Response Editor"
+msgstr "回应编辑器"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:33
+msgid ""
+"Select which editor learners will use to include a text based response to "
+"this problem's prompt."
+msgstr "选择学习者将用于对本题提示进行文本回应的编辑器。"
+
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:38
 msgid "File Uploads Response"
 msgstr "文件上传解答"
@@ -107,6 +212,10 @@ msgid ""
 "Specify whether learners are able to upload files as a part of their "
 "response."
 msgstr "指定学员是否可以在解答中上传文件"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:50
+msgid "Allow Multiple Files"
+msgstr "允许多个文件"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:52
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:93
@@ -126,6 +235,13 @@ msgstr "否"
 msgid "True"
 msgstr "是"
 
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:56
+msgid ""
+"Specify whether learners can upload more than one file. This has no effect "
+"if File Uploads Response is set to None. This is automatically set to True "
+"for Team Assignments. "
+msgstr "指定是否允许学习者上传多个文件。如果文件上传回应设置为无，则此设置无效。对于团队作业，此设置会自动为True。"
+
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:58
 msgid "File Upload Types"
 msgstr "上传文件的类型"
@@ -142,6 +258,11 @@ msgstr "图像文件"
 msgid "Custom File Types"
 msgstr "自定义文件类型"
 
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:66
+msgid ""
+"Specify whether learners can submit files along with their text responses."
+msgstr "指定学习者是否可以在提交文本回应的同时上传文件。"
+
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:70
 msgid "File Types"
 msgstr "文件类型"
@@ -151,6 +272,12 @@ msgid ""
 "Enter the file extensions, separated by commas, that you want learners to be"
 " able to upload. For example: pdf,doc,docx."
 msgstr "输入您希望学员可以上传的文件类型的扩展名，使用逗号隔开。例如：pdf、doc、docx。"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:84
+msgid ""
+"To add more file extensions, select Custom File Types and enter the full "
+"list of acceptable file extensions to be included."
+msgstr "要添加更多文件扩展名，请选择自定义文件类型并输入要包含的可接受文件扩展名的完整列表。"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:91
 msgid "Allow LaTeX Responses"
@@ -166,6 +293,21 @@ msgstr "详细说明学员是否可以写入 LaTeX 格式的字符串"
 msgid "Top Responses"
 msgstr "最佳答复"
 
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:104
+msgid " (Disabled)"
+msgstr " （已禁用）"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:117
+msgid ""
+"Specify the number of top scoring responses to display after the learner has"
+" submitted a response. Valid numbers are 0 to 99. If the number is 0, the "
+"Top Responses section does not appear to learners."
+msgstr "指定在学习者提交回应后显示的最高分回应数量。有效数字为0到99。如果数字为0，则最高回应部分不会显示给学习者。"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:122
+msgid "When Teams Enabled is set to true, Top Responses will be disabled."
+msgstr "当启用团队时，最高回应将被禁用。"
+
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:129
 msgid "Teams Enabled"
 msgstr "群组已启用"
@@ -173,6 +315,42 @@ msgstr "群组已启用"
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:136
 msgid "Specify whether team submissions are allowed for this response."
 msgstr "指定是否允许团队提交此响应。"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:141
+msgid "Select Team-Set"
+msgstr "选择团队集"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:155
+msgid "Show Rubric During Response"
+msgstr "在回应期间显示评分标准"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:162
+msgid ""
+"Specify whether learners can see the rubric while they are working on their "
+"response."
+msgstr "指定学习者在作答时是否可以看到评分标准。"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:167
+msgid "Allow Learner Resubmissions"
+msgstr "允许学习者重新提交"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:174
+msgid ""
+"Set to TRUE to allow learners to resubmit ungraded work. Set to FALSE if "
+"resubmissions are not allowed."
+msgstr "设置为TRUE允许学习者重新提交未评分的作业。如果不允许重新提交，请设置为FALSE。"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:178
+msgid "Resubmission Grace Period"
+msgstr "重新提交宽限期"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:187
+msgid ""
+"Specify the maximum period during which resubmissions are allowed. If left "
+"blank, learners will be able to reset their submission as long as it has not"
+" been graded. The grace period starts once the learner has submitted their "
+"response."
+msgstr "指定允许重新提交的最长时间。如果留空，只要未评分，学习者将能够重置其提交。宽限期在学习者提交回应后开始。"
 
 #: templates/legacy/edit/oa_edit_criterion.html:6
 #: templates/legacy/staff_area/oa_student_info.html:122
@@ -207,16 +385,22 @@ msgstr "增加分值选项"
 msgid "Feedback for This Criterion"
 msgstr "此得分点的评语"
 
-#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:56
+#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:57
 msgid "Optional"
 msgstr "可选的"
 
 #: templates/legacy/edit/oa_edit_criterion.html:56
 #: templates/legacy/oa_rubric.html:13
 #: templates/legacy/student_training/student_training.html:93
-#: xblock/studio_mixin.py:55
+#: xblock/studio_mixin.py:56
 msgid "Required"
 msgstr "必要的"
+
+#: templates/legacy/edit/oa_edit_criterion.html:61
+msgid ""
+"Select one of the options above. This describes whether or not the reviewer "
+"will have to provide criterion feedback."
+msgstr "从上述选项中选择一个。这描述了评审是否必须提供标准反馈。"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:3
 msgid "Open Response Assessment"
@@ -234,6 +418,10 @@ msgstr "评分标准"
 #: templates/legacy/edit/oa_edit_header_and_validation.html:22
 msgid "Schedule"
 msgstr "时间表"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:29
+msgid "Assessment steps"
+msgstr "评估步骤"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:36
 msgid "Settings"
@@ -259,13 +447,83 @@ msgstr "分值选项详解"
 msgid "Step: Peer Assessment"
 msgstr "步骤：学生互评"
 
+#: templates/legacy/edit/oa_edit_peer_assessment.html:15
+msgid ""
+"Peer Assessment allows students to provide feedback to other students and "
+"also receive feedback from others in their final grade. Often, though not "
+"always, this step is preceded by Self Assessment or Learner Training steps."
+msgstr "同伴评估允许学生为其他学生提供反馈，并在最终成绩中收到他人的反馈。通常，虽然不总是如此，此步骤之前会先有自我评估或学习者培训步骤。"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:18
+msgid ""
+"Configuration: For this step to be configured you must specify the number of"
+" peer reviews a student will be assessed with, and the number of peer a "
+"student must grade. Additional options can be specified."
+msgstr "配置：要配置此步骤，必须指定一名学生将接受的同伴评审数量以及一名学生必须评审的同伴数量。还可以指定其他选项。"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:23
+msgid "View Options & Configuration"
+msgstr "查看选项及配置"
+
 #: templates/legacy/edit/oa_edit_peer_assessment.html:29
 msgid "Must Grade"
 msgstr "必须评分"
 
+#: templates/legacy/edit/oa_edit_peer_assessment.html:32
+msgid ""
+"Specify the number of peer assessments that each learner must complete. "
+"Valid numbers are 1 to 99."
+msgstr "指定每位学习者必须完成的同伴评估数量。有效数字为1到99。"
+
 #: templates/legacy/edit/oa_edit_peer_assessment.html:36
 msgid "Graded By"
 msgstr "评分人数"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:39
+msgid ""
+"Specify the number of learners that each response must be assessed by. Valid"
+" numbers are 1 to 99."
+msgstr "指定每个回应必须由多少学习者评估。有效数字为1到99。"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:43
+msgid "Enable Flexible Peer Grade Averaging"
+msgstr "启用灵活的同伴评分平均"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:49
+#, python-format
+msgid ""
+"When enabled, learners who have received at least 30%% of the required \\"
+msgstr "启用后，至少获得所需30%%的分数的学习者\\"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:53
+msgid ""
+"This feature is being enabled by the course-level setting. It can be found "
+"under the Open Response Assessment Settings card on the Pages & Resources "
+"studio page."
+msgstr "该功能由课程级设置启用。可在“页面与资源”工作室页面的开放式回应评估设置卡中找到。"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:60
+msgid "Grading strategy for the peer assessment"
+msgstr "同伴评估的评分策略"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:62
+msgid "Mean"
+msgstr "平均"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:63
+msgid "Median (default)"
+msgstr "中位数（默认）"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:66
+msgid ""
+"Select the preferred grading strategy for the peer assessment. By default, "
+"the median across all peer reviews is used to calculate the final grade. If "
+"you select the mean, the average of all peer reviews will be used."
+msgstr "选择同伴评估的首选评分策略。默认情况下，所有同伴评审的中位数用于计算最终成绩。如果选择平均，则使用所有同伴评审的平均分。"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:5
+msgid "Peer Assessment Deadlines"
+msgstr "同伴评估截止日期"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:10
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:10
@@ -277,6 +535,10 @@ msgstr "开始日期"
 msgid "Start Time"
 msgstr "开始时间"
 
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:27
+msgid "The date and time when learners can begin assessing peer responses."
+msgstr "学习者可以开始评审同伴回应的日期和时间。"
+
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:31
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:119
@@ -287,6 +549,10 @@ msgstr "截止日期"
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:40
 msgid "Due Time"
 msgstr "截止时间"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:48
+msgid "The date and time when all peer assessments must be complete."
+msgstr "所有同伴评审必须在此日期和时间前完成。"
 
 #: templates/legacy/edit/oa_edit_prompt.html:8
 msgid "You cannot delete a prompt after the assignment has been released."
@@ -339,6 +605,30 @@ msgid ""
 "feedback. Use this text to show learners a good example peer assessment."
 msgstr "输入反馈文本，学员将在输入他们自己的反馈之前看到该反馈文本。使用此文本向学员展示优秀的同学评估示例。"
 
+#: templates/legacy/edit/oa_edit_schedule.html:5
+msgid "Deadlines Configuration"
+msgstr "截止日期配置"
+
+#: templates/legacy/edit/oa_edit_schedule.html:9
+msgid "Select a deadline configuration option"
+msgstr "选择截止日期配置选项"
+
+#: templates/legacy/edit/oa_edit_schedule.html:14
+msgid "Configure deadlines manually"
+msgstr "手动配置截止日期"
+
+#: templates/legacy/edit/oa_edit_schedule.html:18
+msgid "Match deadlines to the subsection due date"
+msgstr "将截止日期匹配到小节截止日期"
+
+#: templates/legacy/edit/oa_edit_schedule.html:22
+msgid "Match deadlines to the course end date"
+msgstr "将截止日期匹配到课程结束日期"
+
+#: templates/legacy/edit/oa_edit_schedule.html:25
+msgid "Learn more about open response date settings"
+msgstr "了解有关开放式回应日期设置的更多信息"
+
 #: templates/legacy/edit/oa_edit_schedule.html:35
 msgid "Response Start Date"
 msgstr "解答开始日期"
@@ -367,17 +657,93 @@ msgstr "学生不能继续提交答案的日期及时间。"
 msgid "Step: Self Assessment"
 msgstr "步骤：自我评分"
 
+#: templates/legacy/edit/oa_edit_self_assessment.html:12
+msgid ""
+"Self Assessment asks learners to grade their own submissions against the "
+"rubric."
+msgstr "自我评估要求学习者根据评分标准为自己的提交进行评分。"
+
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:5
+msgid "Self Assessment Deadlines"
+msgstr "自我评估截止日期"
+
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:27
+msgid "The date and time when learners can begin assessing their responses."
+msgstr "学习者可以开始评审自己回应的日期和时间。"
+
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:48
+msgid "The date and time when all self assessments must be complete."
+msgstr "所有自我评估必须在此日期和时间前完成。"
+
 #: templates/legacy/edit/oa_edit_staff_assessment.html:8
 msgid "Step: Staff Assessment"
 msgstr "步骤：工作人员评分"
+
+#: templates/legacy/edit/oa_edit_staff_assessment.html:12
+msgid ""
+"Staff Assessment gates sets the final grade for students if enabled with "
+"other steps, though it can also be used as a standalone step."
+msgstr "如果与其他步骤一起启用，工作人员评估关卡将为学生设定最终成绩，但也可作为独立步骤使用。"
 
 #: templates/legacy/edit/oa_edit_student_training.html:9
 msgid "Step: Learner Training"
 msgstr "步骤：学生训练"
 
+#: templates/legacy/edit/oa_edit_student_training.html:14
+msgid ""
+"Learner Training is used to help students practice grading a simulated peer "
+"submission in order to train them on the rubric and ensure learner's "
+"understand the rubric for either Self or Peer Assessment steps."
+msgstr "学习者培训用于帮助学生练习对模拟同伴提交进行评分，以便训练他们熟悉评分标准，并确保他们了解用于自我或同伴评估步骤的评分标准。"
+
+#: templates/legacy/edit/oa_edit_student_training.html:17
+msgid ""
+"Configuration: For this step to be fully configured you must provide one or "
+"more graded sample responses. Learners must then match this instructor score"
+" to advance and are provided feedback when their score doesn't match the "
+"sample response."
+msgstr "配置：要完全配置此步骤，必须提供一个或多个评分样本回应。学习者随后必须匹配此讲师分数才能推进，并在其分数与样本回应不匹配时获得反馈。"
+
+#: templates/legacy/edit/oa_edit_student_training.html:22
+msgid "View / Add Sample Responses"
+msgstr "查看/添加评分样本回应"
+
 #: templates/legacy/edit/oa_edit_student_training.html:32
 msgid "Add Sample Response"
 msgstr "添加样本答案"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:4
+msgid "Clone Rubric"
+msgstr "克隆评分标准"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:7
+msgid ""
+"To clone a rubric from an existing published or unpublished draft, you can "
+"search by the Block ID. Note that cloning is one-way, meaning changes made "
+"after cloning will only affect the rubric being modified, and will not "
+"modify any rubric it was cloned from."
+msgstr ""
+"要从现有已发布或未发布的草稿中克隆评分标准，可以按区块ID搜索。请注意，克隆是单向的，这意味着克隆后的更改只会影响被修改的评分标准，而不会修改其原始评分标准。"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:9
+msgid "Block ID For this ORA:"
+msgstr "该开放式回应的区块ID："
+
+#: templates/legacy/edit/oa_rubric_reuse.html:19
+msgid "Block ID"
+msgstr "区块ID"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:21
+msgid "No other Open Response Assessments found in course"
+msgstr "在课程中未找到其他开放式回应评估"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:31
+msgid "Clone"
+msgstr "克隆"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:37
+msgid "Rubric Successfully Cloned from Block ID: "
+msgstr "评分标准已成功从区块ID克隆： "
 
 #: templates/legacy/edit/oa_training_example.html:7
 msgid "Scored Response"
@@ -410,6 +776,22 @@ msgid ""
 msgstr ""
 "\n"
 " %(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s"
+
+#: templates/legacy/grade/oa_assessment_title.html:7
+#, python-format
+msgid ""
+"\n"
+"                      %(assessment_title)s - %(points)s point\n"
+"                  "
+msgid_plural ""
+"\n"
+"                      %(assessment_title)s - %(points)s points\n"
+"                  "
+msgstr[0] ""
+"\n"
+"                      %(assessment_title)s - %(points)s 分\n"
+"                  "
+msgstr[1] ""
 
 #: templates/legacy/grade/oa_assessment_title.html:24
 #, python-format
@@ -602,6 +984,16 @@ msgstr "无法进行可评分解答。该项没有设置教师评分。"
 msgid "Please wait"
 msgstr "请稍候"
 
+#: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:15
+msgid "Waiting Step Details"
+msgstr "等待步骤详情"
+
+#: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:24
+msgid ""
+"Waiting Step details view is unavailable. This item is not configured for "
+"peer assessments."
+msgstr "等待步骤详情视图不可用。此项未配置为同伴评估。"
+
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:20
 #, python-format
 msgid "%(num_points)s points"
@@ -618,6 +1010,19 @@ msgid ""
 "After you complete all the steps of this assignment, you can see the top-"
 "scoring responses from your peers."
 msgstr "当完成该作业的所有步骤后，您可以看到高分答案榜。"
+
+#: templates/legacy/message/oa_message_cancelled.html:8
+msgid ""
+"Your team’s submission has been cancelled. Your team will receive a grade of"
+" zero unless course staff resets your assessment to allow the team to "
+"resubmit a response."
+msgstr "您的团队提交已被取消。除非课程工作人员重置您的评估以允许团队重新提交，否则您的团队将获得零分。"
+
+#: templates/legacy/message/oa_message_cancelled.html:10
+msgid ""
+"Your submission has been cancelled. You will receive a grade of zero unless "
+"course staff resets your assessment to allow you to resubmit a response."
+msgstr "您的提交已被取消。除非课程工作人员重置您的评估以允许您重新提交，否则您将获得零分。"
 
 #: templates/legacy/message/oa_message_closed.html:8
 msgid ""
@@ -722,6 +1127,25 @@ msgstr ""
 "\n"
 "该作业正在进行中。您还需要继续完成%(start_link)s互评%(end_link)s步骤。 "
 
+#: templates/legacy/message/oa_message_no_team.html:4
+msgid "Team membership is required to view this assignment"
+msgstr "查看此作业需要团队成员身份"
+
+#: templates/legacy/message/oa_message_no_team.html:7
+#, python-format
+msgid ""
+"\n"
+"            This is a team assignment for team-set \"%(teamset_name)s\".\n"
+"            You are currently not on a team in team-set \"%(teamset_name)s\".\n"
+"            You must be on a team in team-set \"%(teamset_name)s\" to access this team assignment.\n"
+"            "
+msgstr ""
+"\n"
+"            这是针对团队集 \"%(teamset_name)s\" 的团队作业。\n"
+"            您当前不属于团队集 \"%(teamset_name)s\" 中的任何团队。\n"
+"            您必须属于团队集 \"%(teamset_name)s\" 中的某个团队才能访问此团队作业。\n"
+"            "
+
 #: templates/legacy/message/oa_message_open.html:7
 #, python-format
 msgid ""
@@ -782,6 +1206,10 @@ msgstr "评语"
 msgid "The question for this section"
 msgstr "该节的问题"
 
+#: templates/legacy/oa_team_uploaded_files.html:9
+msgid "Files that were uploaded by your teammates:"
+msgstr "由您的队友上传的文件："
+
 #: templates/legacy/oa_team_uploaded_files.html:28
 #: templates/legacy/oa_uploaded_file.html:34
 msgid "View the files associated with this submission:"
@@ -790,6 +1218,10 @@ msgstr "查看此提交的关联文件"
 #: templates/legacy/oa_team_uploaded_files.html:32
 msgid "Uploaded by"
 msgstr "上传者："
+
+#: templates/legacy/oa_uploaded_file.html:16
+msgid "Files that were uploaded by you:"
+msgstr "由您上传的文件："
 
 #: templates/legacy/oa_uploaded_file.html:48
 msgid ""
@@ -947,6 +1379,10 @@ msgid ""
 " your response."
 msgstr "所有同学提交的回复均已被评分。稍后返回查看是否有更多学员提交回复。您将在完成此问题的所有步骤，且同学已对回复进行评分后获得分数。"
 
+#: templates/legacy/response/oa_response.html:27
+msgid "Your Team's Response"
+msgstr "您的团队回答"
+
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 (in 5 days and
 #. 45 minutes)"
@@ -978,13 +1414,64 @@ msgstr ""
 msgid "In Progress"
 msgstr "正在进行中"
 
+#: templates/legacy/response/oa_response.html:66
+msgid "Enter your team's response to the prompt."
+msgstr "请输入您团队对提示的回答。"
+
+#: templates/legacy/response/oa_response.html:68
+msgid ""
+"\n"
+"                        Your work will save automatically and you can return to complete your team's response at any time before the due date\n"
+"                      "
+msgstr "您的作业会自动保存，您可以在截止日期前随时返回完成您团队的回答。"
+
+#: templates/legacy/response/oa_response.html:81
+msgid ""
+"\n"
+"                        Your work will save automatically and you can return to complete your team's response at any time.\n"
+"                      "
+msgstr "您的作业会自动保存，您可以随时返回完成您团队的回答。"
+
+#: templates/legacy/response/oa_response.html:86
+msgid ""
+"After you submit a response on behalf of your team, it cannot be edited."
+msgstr "代表团队提交回答后，将无法再进行编辑。"
+
 #: templates/legacy/response/oa_response.html:89
 msgid "Enter your response to the prompt."
 msgstr "请输入您对该题目的回复"
 
+#: templates/legacy/response/oa_response.html:92
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time before the subsection due date "
+msgstr "您的作业会自动保存，您可以在子部分截止日期前随时返回完成您的回答。"
+
+#: templates/legacy/response/oa_response.html:94
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time before the course ends "
+msgstr "您的作业会自动保存，您可以在课程结束前随时返回完成您的回答。"
+
+#: templates/legacy/response/oa_response.html:96
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time before the due date "
+msgstr "您的作业会自动保存，您可以在截止日期前随时返回完成您的回答。"
+
+#: templates/legacy/response/oa_response.html:108
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time."
+msgstr "您的作业会自动保存，您可以随时返回完成您的回答。"
+
 #: templates/legacy/response/oa_response.html:110
 msgid "After you submit your response, you cannot edit it"
 msgstr "答案一旦提交，您将无法再修改。"
+
+#: templates/legacy/response/oa_response.html:120
+msgid "What will this assignment be graded on?"
+msgstr "这个作业将依据什么进行评分？"
 
 #: templates/legacy/response/oa_response.html:134
 msgid "The prompt for this section"
@@ -998,14 +1485,66 @@ msgstr "你不在团队"
 msgid "Team Members: "
 msgstr "团队成员："
 
+#: templates/legacy/response/oa_response.html:155
+#, python-format
+msgid ""
+"\n"
+"                                              %(team_members_with_external_submissions)s\n"
+"                                              have/has already submitted a response to this assignment with another team,\n"
+"                                              and will not be a part of your team's submission or assignment grade.\n"
+"                                          "
+msgstr ""
+"%(team_members_with_external_submissions)s "
+"已经以其他团队身份提交了该作业的回答，不会计入您团队的提交或作业分数。"
+
+#: templates/legacy/response/oa_response.html:171
+msgid "Team Response "
+msgstr "团队回答 "
+
+#: templates/legacy/response/oa_response.html:173
+msgid "Your Response "
+msgstr "您的回答 "
+
+#: templates/legacy/response/oa_response.html:177
+#: templates/legacy/response/oa_response.html:247
+msgid "(Required)"
+msgstr "（必填）"
+
 #: templates/legacy/response/oa_response.html:179
 #: templates/legacy/response/oa_response.html:249
 msgid "(Optional)"
 msgstr "(非必填)"
 
+#: templates/legacy/response/oa_response.html:183
+msgid ""
+"\n"
+"                                              Teams should designate one team member to submit a response on behalf of the\n"
+"                                              entire team.  All team members can use this space to work on draft responses,\n"
+"                                              but you will not be able to see your teammates' drafts made in this space, so\n"
+"                                              please coordinate with them to decide on the final response the designated team\n"
+"                                              member should submit.\n"
+"                                          "
+msgstr ""
+"团队应指定一名成员代表整个团队提交回答。所有团队成员可以在此处撰写草稿，但您无法看到他人所写的草稿，请与他们协商确定由指定团队成员提交的最终回答。"
+
 #: templates/legacy/response/oa_response.html:197
 msgid "Enter your response to the prompt above."
 msgstr "请输入您对上述题目的回复"
+
+#: templates/legacy/response/oa_response.html:211
+#, python-format
+msgid ""
+"\n"
+"                                      You are currently on Team %(team_name)s. Since you were on Team %(previous_team_name)s\n"
+"                                      when they submitted a response to this assignment, you are seeing Team %(previous_team_name)s’s\n"
+"                                      response and will receive the same grade for this assignment as your former teammates.\n"
+"                                      You will not be part of Team %(team_name)s’s submission for this assignment and will not\n"
+"                                      receive a grade for their submission.\n"
+"                                  "
+msgstr ""
+"您当前在团队 %(team_name)s 中。由于您在团队 %(previous_team_name)s 提交回答时所属，因此您看到的是团队 "
+"%(previous_team_name)s 的回答，并将获得与之前团队成员相同的分数。您不会计入团队 %(team_name)s "
+"的提交，也不会获得其提交的分数。"
 
 #: templates/legacy/response/oa_response.html:224
 msgid "We could not save your progress"
@@ -1015,6 +1554,18 @@ msgstr "我们无法保存您的进度。"
 msgid "Status of Your Response"
 msgstr "您的答案的状态"
 
+#: templates/legacy/response/oa_response.html:245
+msgid "File Uploads "
+msgstr "文件上传 "
+
+#: templates/legacy/response/oa_response.html:253
+msgid ""
+"\n"
+"                                  Upload files and review files uploaded by you and your teammates below. Be sure to add\n"
+"                                  descriptions to your files to help your teammates identify them.\n"
+"                              "
+msgstr "上传文件并查看您及团队成员上传的文件。请务必为文件添加说明，以便团队成员识别。"
+
 #: templates/legacy/response/oa_response.html:261
 msgid "We could not upload files"
 msgstr "无法上传文件"
@@ -1023,23 +1574,66 @@ msgstr "无法上传文件"
 msgid "We could not delete files"
 msgstr "我们不能删除文件"
 
+#: templates/legacy/response/oa_response.html:274
+msgid "Select one or more files to upload for this submission."
+msgstr "请选择一个或多个文件上传到本次提交。"
+
 #: templates/legacy/response/oa_response.html:276
 msgid "Select a file to upload for this submission."
 msgstr "选择一个要为此提交上传的文件。"
 
-#: templates/legacy/response/oa_response.html:285
+#: templates/legacy/response/oa_response.html:280
+msgid "Supported file types: "
+msgstr "支持的文件类型： "
+
+#: templates/legacy/response/oa_response.html:286
 msgid "Upload files"
 msgstr "上传文件"
 
-#: templates/legacy/response/oa_response.html:287
+#: templates/legacy/response/oa_response.html:288
 msgid "Upload file"
 msgstr "上传文件"
 
-#: templates/legacy/response/oa_response.html:322
+#: templates/legacy/response/oa_response.html:305
+msgid "This is a team submission."
+msgstr "这是团队提交。"
+
+#: templates/legacy/response/oa_response.html:307
+msgid ""
+"One team member should submit a response with the team’s shared files and a "
+"text response on behalf of the entire team."
+msgstr "一名团队成员应代表整个团队提交包含团队共享文件及文字回答的回答。"
+
+#: templates/legacy/response/oa_response.html:309
+msgid ""
+"One team member should submit a response with the team’s shared files on "
+"behalf of the entire team."
+msgstr "一名团队成员应代表整个团队提交包含团队共享文件的回答。"
+
+#: templates/legacy/response/oa_response.html:311
+msgid ""
+"One team member should submit a text response on behalf of the entire team."
+msgstr "一名团队成员应代表整个团队提交文字回答。"
+
+#: templates/legacy/response/oa_response.html:313
+msgid "One team member should submit on behalf of the entire team."
+msgstr "一名团队成员应代表整个团队提交。"
+
+#: templates/legacy/response/oa_response.html:315
+msgid ""
+"\n"
+"                  Learn more about team assignments here: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
+"                  "
+msgstr ""
+"在此了解更多关于团队作业的信息：(<a target=\"_blank\" href=\"https://support.edx.org/hc/en-"
+"us/articles/360000191067-Submit-your-"
+"response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">链接</a>)"
+
+#: templates/legacy/response/oa_response.html:323
 msgid "We could not submit your response"
 msgstr "我们无法提交您的答案"
 
-#: templates/legacy/response/oa_response.html:333
+#: templates/legacy/response/oa_response.html:334
 msgid "Submit your response and move to the next step"
 msgstr "提交您的答案并进行下一步"
 
@@ -1146,9 +1740,30 @@ msgstr ""
 "\n"
 "                        您仍然需要完成%(start_tag)s自我评估%(end_tag)s步骤。"
 
+#: templates/legacy/response/oa_response_submitted.html:63
+msgid "We could not reset your response"
+msgstr "无法重置您的回答"
+
+#: templates/legacy/response/oa_response_submitted.html:69
+msgid "Reset response and submit again"
+msgstr "重置回答并重新提交"
+
 #: templates/legacy/response/oa_response_team_already_submitted.html:15
 msgid "Error"
 msgstr "错误"
+
+#: templates/legacy/response/oa_response_team_already_submitted.html:29
+#, python-format
+msgid ""
+"\n"
+"                            You joined Team %(team_name)s after they submitted a response for this assignment\n"
+"                            and you will not receive a grade for their response. You have also not previously submitted\n"
+"                            a response to this assignment with another team. Please contact course staff to discuss your\n"
+"                            options for this assignment.\n"
+"                        "
+msgstr ""
+"您在团队 %(team_name)s "
+"提交回答后加入，因此您将不会获得该回答的分数。您之前也未以其他团队身份提交过回答。请联系课程工作人员讨论此作业的相关选项。"
 
 #: templates/legacy/self/oa_self_assessment.html:33
 msgid "Assess Your Response"
@@ -1200,10 +1815,22 @@ msgstr "员工评分"
 msgid "Manage Individual Learners"
 msgstr "管理个别学员"
 
+#: templates/legacy/staff_area/oa_staff_area.html:10
+msgid "Manage Team Responses"
+msgstr "管理团队回答"
+
 #: templates/legacy/staff_area/oa_staff_area.html:13
 #: templates/legacy/staff_area/oa_staff_area.html:71
 msgid "View Assignment Statistics"
 msgstr "查看任务统计数据"
+
+#: templates/legacy/staff_area/oa_staff_area.html:22
+msgid "Demo the new Grading Experience"
+msgstr "演示新的评分体验"
+
+#: templates/legacy/staff_area/oa_staff_area.html:26
+msgid "View ORA in Studio"
+msgstr "在 Studio 中查看 ORA"
 
 #: templates/legacy/staff_area/oa_staff_area.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:69
@@ -1211,9 +1838,17 @@ msgstr "查看任务统计数据"
 msgid "Close"
 msgstr "关闭"
 
+#: templates/legacy/staff_area/oa_staff_area.html:37
+msgid "Manage Teams"
+msgstr "管理团队"
+
 #: templates/legacy/staff_area/oa_staff_area.html:50
 msgid "Enter an individual learner's username or email"
 msgstr "输入学生个人的用户名或邮箱"
+
+#: templates/legacy/staff_area/oa_staff_area.html:52
+msgid "Enter a team member's username or edX email"
+msgstr "输入团队成员的用户名或 edX 邮箱"
 
 #: templates/legacy/staff_area/oa_staff_area.html:56
 msgid "Submit"
@@ -1257,9 +1892,21 @@ msgstr "不适用"
 msgid "Staff Assessment"
 msgstr "工作人员评分"
 
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:14
+msgid "Give this team a grade using the problem's rubric."
+msgstr "根据问题的评分标准，为该团队打分。"
+
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:16
 msgid "Give this learner a grade using the problem's rubric."
 msgstr "使用问题的评分标准给此学员一个评分。"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:26
+#, python-format
+msgid ""
+"\n"
+"                                        Response for: %(team_name)s with %(team_usernames)s\n"
+"                                    "
+msgstr "回答来自：%(team_name)s，成员 %(team_usernames)s"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:30
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:20
@@ -1276,6 +1923,10 @@ msgstr ""
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:24
 msgid "Learner Response"
 msgstr "学员回复"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:39
+msgid "The teams's response to the prompt above"
+msgstr "团队对上述提示的回答"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:41
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:32
@@ -1306,9 +1957,42 @@ msgstr ""
 msgid "Override this learner's current grade using the problem's rubric."
 msgstr "使用问题的评价量规覆盖学员的当前评分。"
 
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:9
+msgid "Override this team's current grade using the problem's rubric."
+msgstr "使用问题的评分标准覆盖该团队当前的分数。"
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:27
+msgid "Team Response"
+msgstr "团队回答"
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:34
+#: templates/legacy/staff_area/oa_student_info.html:59
+msgid "The team's response to the prompt above"
+msgstr "团队对上述提示的回答"
+
+#: templates/legacy/staff_area/oa_student_info.html:11
+#, python-format
+msgid ""
+"\n"
+"                    Viewing learner: %(learner)s\n"
+"                "
+msgstr "正在查看学员：%(learner)s"
+
+#: templates/legacy/staff_area/oa_student_info.html:15
+#, python-format
+msgid ""
+"\n"
+"                    Viewing team: %(team)s\n"
+"                "
+msgstr "正在查看团队：%(team)s"
+
 #: templates/legacy/staff_area/oa_student_info.html:28
 msgid "Learner's Response"
 msgstr "学生回复"
+
+#: templates/legacy/staff_area/oa_student_info.html:30
+msgid "Team's Response"
+msgstr "团队的回答"
 
 #: templates/legacy/staff_area/oa_student_info.html:39
 #, python-format
@@ -1358,9 +2042,17 @@ msgstr "学生自评"
 msgid "Staff Assessment for This Learner"
 msgstr "此学员的员工评估"
 
+#: templates/legacy/staff_area/oa_student_info.html:89
+msgid "Staff Assessment for this Team"
+msgstr "该团队的教师评价"
+
 #: templates/legacy/staff_area/oa_student_info.html:100
 msgid "Learner's Final Grade"
 msgstr "学员的最终评分"
+
+#: templates/legacy/staff_area/oa_student_info.html:102
+msgid "Team's Final Grade"
+msgstr "团队的最终分数"
 
 #: templates/legacy/staff_area/oa_student_info.html:112
 #, python-format
@@ -1377,6 +2069,22 @@ msgstr ""
 msgid "Final Grade Details"
 msgstr "最终评分详情"
 
+#: templates/legacy/staff_area/oa_student_info.html:139
+#, python-format
+msgid ""
+"\n"
+"                                        %(assessment_label)s - %(points)s point\n"
+"                                    "
+msgid_plural ""
+"\n"
+"                                        %(assessment_label)s - %(points)s points\n"
+"                                    "
+msgstr[0] ""
+"\n"
+"                                        %(assessment_label)s - %(points)s 分\n"
+"                                    "
+msgstr[1] ""
+
 #: templates/legacy/staff_area/oa_student_info.html:154
 msgid "Feedback Recorded"
 msgstr "反馈已记录"
@@ -1392,6 +2100,13 @@ msgid ""
 "problem to allow them to resubmit a response."
 msgstr "学员的提交已从同学评估中撤销。除非您删除该问题的学员状态，让他们重新提交回复，否则学员的评分为 0。"
 
+#: templates/legacy/staff_area/oa_student_info.html:172
+msgid ""
+"The team’s submission has been removed from grading. The team receives a "
+"grade of zero unless you delete the a team member’s state for the problem to"
+" allow the team to resubmit a response."
+msgstr "该团队的提交已被移出评分。除非您删除某位团队成员在该题目的状态以允许团队重新提交，否则团队将获得零分。"
+
 #: templates/legacy/staff_area/oa_student_info.html:177
 msgid "The problem has not been started."
 msgstr "此问题尚未开始。"
@@ -1404,9 +2119,34 @@ msgstr "此问题尚未完成。"
 msgid "Submit Assessment Grade Override"
 msgstr "提交评估评分覆盖"
 
+#: templates/legacy/staff_area/oa_student_info.html:195
+msgid "Submit Team Grade Override"
+msgstr "提交团队分数覆盖"
+
+#: templates/legacy/staff_area/oa_student_info.html:204
+msgid "Unable to perform grade override"
+msgstr "无法执行分数覆盖"
+
+#: templates/legacy/staff_area/oa_student_info.html:207
+msgid ""
+"Grades are frozen. Grades are automatically frozen 30 days after the course "
+"end date."
+msgstr "分数已冻结。课程结束后30天内，分数将自动冻结。"
+
+#: templates/legacy/staff_area/oa_student_info.html:212
+msgid ""
+"This submission has been cancelled and cannot recieve a grade. Refer to "
+"documentation for how to delete the learner’s state for this problem to "
+"allow them to resubmit."
+msgstr "该提交已取消，无法获得分数。请参阅文档了解如何删除学员在该题目的状态以允许其重新提交。"
+
 #: templates/legacy/staff_area/oa_student_info.html:230
 msgid "Remove Submission From Peer Grading"
 msgstr "删除同学评分的提交"
+
+#: templates/legacy/staff_area/oa_student_info.html:232
+msgid "Remove Team Submission from Grading"
+msgstr "将团队提交移出评分"
 
 #: templates/legacy/staff_area/oa_student_info.html:242
 msgid "Caution: This Action Cannot Be Undone"
@@ -1417,6 +2157,12 @@ msgid ""
 "Removing a learner's submission cannot be undone and should be done with "
 "caution."
 msgstr "删除学员提交的操作不可撤销，所以应谨慎操作。"
+
+#: templates/legacy/staff_area/oa_student_info.html:246
+msgid ""
+"Removing a team's submission cannot be undone and should be done with "
+"caution."
+msgstr "移除团队提交操作无法撤销，请谨慎操作。"
 
 #: templates/legacy/staff_area/oa_student_info.html:252
 msgid "Comments:"
@@ -1562,6 +2308,10 @@ msgstr "加载学员训练示例错误"
 msgid "The Learner Training Step of this assignment could not be loaded."
 msgstr "不能加载此任务的学员训练步骤。"
 
+#: templates/openassessmentblock/base.html:69
+msgid "Loading Open Response Assessment..."
+msgstr "正在加载开放性回答评估..."
+
 #: xblock/grade_mixin.py:78 xblock/leaderboard_mixin.py:61
 msgid "An unexpected error occurred."
 msgstr "发生了意外错误。"
@@ -1607,6 +2357,10 @@ msgstr "自我评分结果"
 msgid "Your Comments"
 msgstr "您的评论"
 
+#: xblock/grade_mixin.py:429
+msgid "Peer Mean Grade"
+msgstr "同行平均分"
+
 #: xblock/grade_mixin.py:430
 msgid "Peer Median Grade"
 msgstr "同伴平均分数"
@@ -1615,9 +2369,88 @@ msgstr "同伴平均分数"
 msgid "Waiting for peer reviews"
 msgstr "等待同学评语"
 
+#: xblock/grade_mixin.py:677
+msgid "The grade for this problem is determined by your Staff Grade."
+msgstr "该题目的分数由教师评分决定。"
+
+#: xblock/grade_mixin.py:681
+msgid "The grade for this problem is determined by your Self Assessment."
+msgstr "该题目的分数由自我评估决定。"
+
+#: xblock/grade_mixin.py:687
+#, python-brace-format
+msgid ""
+"You have successfully completed this problem and received a "
+"{earned_points}/{total_points}."
+msgstr "您已成功完成该题目，并获得 {earned_points}/{total_points} 分。"
+
+#: xblock/grade_mixin.py:695
+msgid ""
+"You have not yet received all necessary peer reviews to determine your final"
+" grade."
+msgstr "您尚未收到所有必要的同行评审，因此无法确定最终分数。"
+
+#: xblock/grade_mixin.py:710
+msgid ""
+"The grade for this problem is determined by the median score of your Peer "
+"Assessments."
+msgstr "该题目的分数由您的同行评审中位数决定。"
+
+#: xblock/grade_mixin.py:715
+msgid ""
+"The grade for this problem is determined by the mean score of your Peer "
+"Assessments."
+msgstr "该题目的分数由您的同行评审平均分决定。"
+
 #: xblock/openassesment_template_mixin.py:66
 msgid "Peer Assessment Only"
 msgstr "仅限同行评估"
+
+#: xblock/openassesment_template_mixin.py:67
+msgid "Self Assessment Only"
+msgstr "仅自我评估"
+
+#: xblock/openassesment_template_mixin.py:68
+msgid "Staff Assessment Only"
+msgstr "仅教师评估"
+
+#: xblock/openassesment_template_mixin.py:69
+msgid "Self Assessment to Peer Assessment"
+msgstr "从自我评估转为同行评审"
+
+#: xblock/openassesment_template_mixin.py:70
+msgid "Self Assessment to Staff Assessment"
+msgstr "从自我评估转为教师评估"
+
+#: xblock/openassessmentblock.py:1365
+msgid "You can't reset your submission."
+msgstr "您无法重置您的提交。"
+
+#: xblock/openassessmentblock.py:1378
+msgid "The user does not exist."
+msgstr "用户不存在。"
+
+#: xblock/openassessmentblock.py:1381
+msgid "There is no submission to reset."
+msgstr "没有可重置的提交。"
+
+#: xblock/openassessmentblock.py:1383
+msgid "Submission reset successfully."
+msgstr "提交已成功重置。"
+
+#: xblock/rubric_reuse_mixin.py:62
+msgid "You must specify a block id from which to copy a rubric."
+msgstr "您必须指定要复制评分标准的区块ID。"
+
+#: xblock/rubric_reuse_mixin.py:66
+msgid "Invalid block id."
+msgstr "无效的区块ID。"
+
+#: xblock/rubric_reuse_mixin.py:72
+#, python-brace-format
+msgid ""
+"No Open Response Assessment found in {course_id} with block id {block_id}"
+msgstr "在 {course_id} 中未找到区块ID为 {block_id} 的开放性回答评估"
 
 #: xblock/staff_area_mixin.py:42
 msgid "You do not have permission to schedule training"
@@ -1643,9 +2476,17 @@ msgstr "您无权访问教员评分"
 msgid "Pending"
 msgstr "等待"
 
+#: xblock/staff_area_mixin.py:242
+msgid "Complete/Overwritten"
+msgstr "完成/已覆盖"
+
 #: xblock/staff_area_mixin.py:245
 msgid "Not applicable"
 msgstr "不适用"
+
+#: xblock/staff_area_mixin.py:246
+msgid "Not submitted"
+msgstr "未提交"
 
 #: xblock/staff_area_mixin.py:247
 msgid "Submitted"
@@ -1675,6 +2516,14 @@ msgstr "获得不合格和已检验的员工评分计数出现错误。"
 msgid "Please enter valid reason to remove the submission."
 msgstr "请输入合理的理由以移除该提交。"
 
+#: xblock/staff_area_mixin.py:714
+msgid "Submission not found"
+msgstr "未找到提交"
+
+#: xblock/staff_area_mixin.py:725
+msgid "Submission for team assignment has no associated team submission"
+msgstr "团队作业的提交没有关联的团队提交记录"
+
 #: xblock/staff_area_mixin.py:754
 msgid ""
 "The learner submission has been removed from peer assessment. The learner "
@@ -1682,16 +2531,37 @@ msgid ""
 "problem to allow them to resubmit a response."
 msgstr "学员提交已从同学评估中删除。除非您删除该问题的学员状态，让他们重新提交回复，否则学员的评分为 0。"
 
-#: xblock/studio_mixin.py:246 xblock/studio_mixin.py:258
+#: xblock/staff_area_mixin.py:789
+msgid ""
+"The team’s submission has been removed from grading. The team receives a "
+"grade of zero unless you delete a team member’s state for the problem to "
+"allow the team to resubmit a response."
+msgstr "该团队的提交已被移出评分。除非您删除某位团队成员在该题目的状态以允许团队重新提交，否则团队将获得零分。"
+
+#: xblock/studio_mixin.py:247 xblock/studio_mixin.py:259
 msgid "Error updating XBlock configuration"
 msgstr "更新XBlock配置出错"
 
-#: xblock/studio_mixin.py:294
+#: xblock/studio_mixin.py:264
+msgid "Error: Text Response and File Upload Response cannot both be disabled"
+msgstr "错误：文字回答与文件上传回答不能同时禁用"
+
+#: xblock/studio_mixin.py:268
+msgid ""
+"Error: When Text Response is disabled, File Upload Response must be Required"
+msgstr "错误：当禁用文字回答时，文件上传回答必须为必填"
+
+#: xblock/studio_mixin.py:271
+msgid ""
+"Error: When File Upload Response is disabled, Text Response must be Required"
+msgstr "错误：当禁用文件上传回答时，文字回答必须为必填"
+
+#: xblock/studio_mixin.py:295
 #, python-brace-format
 msgid "Validation error: {error}"
 msgstr "验证错误: {error}"
 
-#: xblock/studio_mixin.py:328
+#: xblock/studio_mixin.py:329
 msgid "Successfully updated OpenAssessment XBlock"
 msgstr "成功更新开放评分XBlock"
 
@@ -1783,9 +2653,19 @@ msgid ""
 "The assessment type cannot be changed after the problem has been released."
 msgstr "题目公开之后，不能再修改评分类型。"
 
+#: xblock/utils/validation.py:176
+msgid ""
+"The grading strategy for peer assessments cannot be changed after the "
+"problem has been released."
+msgstr "发布后无法更改同行评审的评分策略。"
+
 #: xblock/utils/validation.py:200
 msgid "This rubric definition is not valid."
 msgstr "这个评分标准的定义无效。"
+
+#: xblock/utils/validation.py:203
+msgid "You must provide at least one prompt."
+msgstr "您必须提供至少一个提示。"
 
 #: xblock/utils/validation.py:209
 #, python-brace-format
