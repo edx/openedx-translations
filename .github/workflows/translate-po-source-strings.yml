@@ -194,7 +194,7 @@ jobs:
                   -w "%{http_code}" \
                   -o "$chunk_response" \
                   -X POST "${{ vars.AI_TRANSLATIONS_FETCH_PO_TRANSLATIONS_URL }}" \
-                  -F "source_file=@$chunk_file" \
+                  -F "source_file=@$chunk_file;filename=$po_filename" \
                   -F "application_name=${{ matrix.application.appName }}" \
                   -F "translation_language=$edxLang" \
                   -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
