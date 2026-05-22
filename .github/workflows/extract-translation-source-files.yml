@@ -225,6 +225,12 @@ jobs:
       - name: install gettext
         run: sudo apt install -y gettext
 
+      # Remove system python3-babel to avoid conflicts with pip-installed babel
+      - name: remove system babel
+        run: |
+          # Remove system python3-babel if installed to ensure pip-installed version is used
+          sudo apt remove -y python3-babel || true
+
       # Clones the edx/openedx-translations repository
       - name: clone ${github.repository}
         uses: actions/checkout@v5
@@ -296,6 +302,17 @@ jobs:
               fi
             done
           fi
+
+      # Verify extraction dependencies are correctly installed
+      - name: verify extraction setup
+        run: |
+          echo "Checking pybabel installation..."
+          which pybabel
+          pybabel --version
+          echo "Verifying mako babel plugin..."
+          python -c "from mako.ext.babelplugin import extract; print('✓ Mako babel plugin available')"
+          echo "Verifying enmerkar-underscore plugin..."
+          python -c "from enmerkar_underscore import extract; print('✓ Underscore extraction plugin available')"
 
       # Extracts the translation source files
       - name: extract translation source files

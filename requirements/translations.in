@@ -4,6 +4,10 @@
 edx-i18n-tools
 pyyaml
 
+# Extraction dependencies for Open edX repositories
+mako[babel]               # Provides extraction method for Mako templates
+enmerkar-underscore       # Provides extraction method for Underscore.js templates
+
 # transifex
 requests
 transifex-client
