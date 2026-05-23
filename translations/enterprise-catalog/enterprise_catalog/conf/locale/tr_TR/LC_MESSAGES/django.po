@@ -1,0 +1,357 @@
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-03-16 00:39+0000\n"
+"PO-Revision-Date: 2026-05-23 04:31+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: enterprise_catalog/apps/academy/models.py:22
+msgid "Tag title"
+msgstr "Etiket başlığı"
+
+#: enterprise_catalog/apps/academy/models.py:23
+msgid "Tag description."
+msgstr "Etiket açıklaması."
+
+#: enterprise_catalog/apps/academy/models.py:27
+msgid "Tag"
+msgstr "Etiket"
+
+#: enterprise_catalog/apps/academy/models.py:28
+msgid "Tags"
+msgstr "Etiketler"
+
+#: enterprise_catalog/apps/academy/models.py:46
+msgid "Academy title"
+msgstr "Akademi başlığı"
+
+#: enterprise_catalog/apps/academy/models.py:48
+msgid "Short description of the academy."
+msgstr "Akademinin kısa açıklaması."
+
+#: enterprise_catalog/apps/academy/models.py:49
+msgid "Long description of the academy."
+msgstr "Akademinin uzun açıklaması."
+
+#: enterprise_catalog/apps/academy/models.py:50
+msgid "URL of the image shown on academy card on the frontend."
+msgstr "Akademi kartında gösterilen resmin URL'si"
+
+#: enterprise_catalog/apps/academy/models.py:55
+msgid "Academy"
+msgstr "Akademi"
+
+#: enterprise_catalog/apps/academy/models.py:56
+msgid "Academies"
+msgstr "Akademiler"
+
+#: enterprise_catalog/apps/catalog/algolia_utils.py:859
+msgid "Available now"
+msgstr "Şu an mevcut"
+
+#: enterprise_catalog/apps/catalog/models.py:86
+msgid ""
+"Query parameters which will be used to filter the discovery service's "
+"search/all endpoint results, specified as a JSON object."
+msgstr ""
+"Discovery servisi'nin search/all uç noktası sonuçlarını filtrelemek için "
+"kullanılacak, JSON nesnesi olarak belirtilen sorgu parametreleri."
+
+#: enterprise_catalog/apps/catalog/models.py:110
+msgid "Catalog Query"
+msgstr "Katalog Sorgusu"
+
+#: enterprise_catalog/apps/catalog/models.py:111
+msgid "Catalog Queries"
+msgstr "Katalog Sorguları"
+
+#: enterprise_catalog/apps/catalog/models.py:231
+msgid ""
+"Ordered list of enrollment modes which can be displayed to learners for "
+"course runs in this catalog."
+msgstr ""
+"Bu katalogdaki kurs oturumları için öğrencilere gösterilebilecek kayıt "
+"modlarının sıralı listesi."
+
+#: enterprise_catalog/apps/catalog/models.py:237
+msgid ""
+"Specifies whether courses should be published with direct-to-audit "
+"enrollment URLs."
+msgstr ""
+"Kursların doğrudan denetim kayıt URL'leri ile yayınlanıp yayınlanmayacağını "
+"belirtir."
+
+#: enterprise_catalog/apps/catalog/models.py:244
+msgid "Enterprise Catalog"
+msgstr "Kurumsal Katalog"
+
+#: enterprise_catalog/apps/catalog/models.py:245
+msgid "Enterprise Catalogs"
+msgstr "Kurumsal Kataloglar"
+
+#: enterprise_catalog/apps/catalog/models.py:685
+msgid ""
+"The UUID that represents a piece of content. This value is usually a "
+"secondary identifier to content_key in the enterprise environment."
+msgstr ""
+"Bir içeriği temsil eden UUID. Bu değer genellikle kurumsal ortamda "
+"content_key için ikincil bir tanımlayıcıdır."
+
+#: enterprise_catalog/apps/catalog/models.py:695
+#: enterprise_catalog/apps/catalog/models.py:840
+msgid ""
+"The key that represents a piece of content, such as a course, course run, or"
+" program."
+msgstr ""
+"Bir içeriği, örneğin kurs, kurs oturumu veya program gibi, temsil eden "
+"anahtar."
+
+#: enterprise_catalog/apps/catalog/models.py:710
+msgid ""
+"The key represents this content's parent. For example for course_runs "
+"content their parent course key."
+msgstr ""
+"Anahtar, bu içeriğin ebeveynini temsil eder. Örneğin, course_runs içeriği "
+"için ebeveyn kurs anahtarı."
+
+#: enterprise_catalog/apps/catalog/models.py:721
+msgid ""
+"The metadata about a particular piece content as retrieved from the "
+"discovery service's search/all endpoint results, specified as a JSON object."
+msgstr ""
+"Discovery servisinin search/all uç noktası sonuçlarından alınan belirli bir "
+"içeriğe ait meta veriler, JSON nesnesi olarak belirtilmiştir."
+
+#: enterprise_catalog/apps/catalog/models.py:777
+#: enterprise_catalog/apps/catalog/models.py:778
+msgid "Content Metadata"
+msgstr "İçerik Meta Verileri"
+
+#: enterprise_catalog/apps/catalog/models.py:824
+#: enterprise_catalog/apps/catalog/models.py:825
+msgid "Restricted Course Metadata"
+msgstr "Kısıtlı Kurs Meta Verileri"
+
+#: enterprise_catalog/apps/catalog/models.py:1718
+msgid ""
+"If true, will force the command's underlying celery tasks to run regardless "
+"of how recently the same task, on the same input, has been successfully "
+"executed."
+msgstr ""
+"Doğru ise, aynı girdi üzerinde aynı görevin ne kadar kısa süre önce "
+"başarıyla yürütülmüş olursa olsun, komutun altında yatan celery görevlerinin"
+" çalışmasını zorlar."
+
+#: enterprise_catalog/apps/catalog/models.py:1726
+msgid ""
+"If true, for management commands that respect this field, celery tasks will "
+"not be apply_async()'d, but instead exectue as regular python functions."
+msgstr ""
+"Doğru ise, bu alana saygı gösteren yönetim komutları için celery görevleri "
+"apply_async() ile çalıştırılmaz, bunun yerine normal python fonksiyonları "
+"olarak yürütülür."
+
+#: enterprise_catalog/apps/catalog/models.py:1759
+msgid "The content metadata this translation belongs to"
+msgstr "Bu çeviriye ait içerik meta verileri"
+
+#: enterprise_catalog/apps/catalog/models.py:1763
+msgid "ISO 639-1 language code (e.g., 'es' for Spanish)"
+msgstr "ISO 639-1 dil kodu (örneğin, İspanyolca için 'es')"
+
+#: enterprise_catalog/apps/catalog/models.py:1771
+msgid "Translated title"
+msgstr "Çevrilmiş başlık"
+
+#: enterprise_catalog/apps/catalog/models.py:1776
+msgid "Translated short description"
+msgstr "Çevrilmiş kısa açıklama"
+
+#: enterprise_catalog/apps/catalog/models.py:1781
+msgid "Translated full description"
+msgstr "Çevrilmiş tam açıklama"
+
+#: enterprise_catalog/apps/catalog/models.py:1786
+msgid "Translated learning outcomes"
+msgstr "Çevrilmiş öğrenme çıktıları"
+
+#: enterprise_catalog/apps/catalog/models.py:1791
+msgid "Translated prerequisites"
+msgstr "Çevrilmiş önkoşullar"
+
+#: enterprise_catalog/apps/catalog/models.py:1797
+msgid "Translated subtitle"
+msgstr "Çevrilmiş alt başlık"
+
+#: enterprise_catalog/apps/catalog/models.py:1803
+msgid "SHA256 hash of source content to detect changes"
+msgstr "Değişiklikleri tespit etmek için kaynak içeriğin SHA256 karması"
+
+#: enterprise_catalog/apps/catalog/models.py:1807
+msgid "Content Translation"
+msgstr "İçerik Çevirisi"
+
+#: enterprise_catalog/apps/catalog/models.py:1808
+msgid "Content Translations"
+msgstr "İçerik Çevirileri"
+
+#: enterprise_catalog/apps/core/admin.py:16
+msgid "Personal info"
+msgstr "Kişisel bilgi"
+
+#: enterprise_catalog/apps/core/admin.py:17
+msgid "Permissions"
+msgstr "İzinler"
+
+#: enterprise_catalog/apps/core/admin.py:19
+msgid "Important dates"
+msgstr "Önemli tarihler"
+
+#: enterprise_catalog/apps/core/models.py:17
+msgid "Full Name"
+msgstr "Tam Ad"
+
+#: enterprise_catalog/apps/core/models.py:21
+msgid "first name"
+msgstr "isim"
+
+#: enterprise_catalog/apps/curation/models.py:54
+msgid "Enterprise curation"
+msgstr "Kurumsal kürasyon"
+
+#: enterprise_catalog/apps/curation/models.py:55
+msgid "Enterprise curations"
+msgstr "Kurumsal kürasyonlar"
+
+#: enterprise_catalog/apps/curation/models.py:176
+msgid "Sort order for favorited items, in ascending order (0=first)"
+msgstr "Favori öğelerin sıralama düzeni, artan sırada (0=ilk)"
+
+#: enterprise_catalog/apps/jobs/models.py:16
+msgid "The job ID received from API."
+msgstr "API'den alınan iş kimliği."
+
+#: enterprise_catalog/apps/jobs/models.py:21
+msgid "The external identifier for the job received from API."
+msgstr "API'den alınan iş için harici tanımlayıcı."
+
+#: enterprise_catalog/apps/jobs/models.py:24
+msgid "Job title"
+msgstr "İş başlığı"
+
+#: enterprise_catalog/apps/jobs/models.py:25
+msgid "Job description."
+msgstr "İş açıklaması."
+
+#: enterprise_catalog/apps/jobs/models.py:30
+msgid "Job"
+msgstr "İş"
+
+#: enterprise_catalog/apps/jobs/models.py:31
+msgid "Jobs"
+msgstr "İşler"
+
+#: enterprise_catalog/apps/jobs/models.py:53
+#: enterprise_catalog/apps/video_catalog/models.py:180
+msgid "Skill id"
+msgstr "Beceri kimliği"
+
+#: enterprise_catalog/apps/jobs/models.py:54
+#: enterprise_catalog/apps/video_catalog/models.py:181
+msgid "Skill name"
+msgstr "Beceri adı"
+
+#: enterprise_catalog/apps/jobs/models.py:58
+msgid "The significance of skill for the job."
+msgstr "İş için becerinin önemi."
+
+#: enterprise_catalog/apps/jobs/models.py:65
+msgid "Job Skill"
+msgstr "İş Becerisi"
+
+#: enterprise_catalog/apps/jobs/models.py:66
+msgid "Job Skills"
+msgstr "İş Becerileri"
+
+#: enterprise_catalog/apps/jobs/models.py:97
+msgid "Job Enterprise"
+msgstr "İş Kurumsu"
+
+#: enterprise_catalog/apps/jobs/models.py:98
+msgid "Job Enterprises"
+msgstr "İş Kurumsuları"
+
+#: enterprise_catalog/apps/video_catalog/models.py:66
+msgid "EdX video id"
+msgstr "EdX video kimliği"
+
+#: enterprise_catalog/apps/video_catalog/models.py:67
+msgid "Client video id"
+msgstr "Müşteri video kimliği"
+
+#: enterprise_catalog/apps/video_catalog/models.py:68
+#: enterprise_catalog/apps/video_catalog/models.py:145
+msgid "Video title"
+msgstr "Video başlığı"
+
+#: enterprise_catalog/apps/video_catalog/models.py:69
+#: enterprise_catalog/apps/video_catalog/models.py:144
+msgid "Video Xblock Usage Key"
+msgstr "Video Xblock Kullanım Anahtarı"
+
+#: enterprise_catalog/apps/video_catalog/models.py:82
+msgid ""
+"The metadata about a particular video as retrieved from the LMS service, "
+"specified as a JSON object."
+msgstr ""
+"LMS servisinden alınan belirli bir videoya ait meta veriler, JSON nesnesi "
+"olarak belirtilmiştir."
+
+#: enterprise_catalog/apps/video_catalog/models.py:90
+msgid "Video"
+msgstr "Video"
+
+#: enterprise_catalog/apps/video_catalog/models.py:91
+msgid "Videos"
+msgstr "Videolar"
+
+#: enterprise_catalog/apps/video_catalog/models.py:115
+msgid "Video transcript summary"
+msgstr "Video transkript özeti"
+
+#: enterprise_catalog/apps/video_catalog/models.py:120
+msgid "Video Transcript Summary"
+msgstr "Video Transkript Özeti"
+
+#: enterprise_catalog/apps/video_catalog/models.py:121
+msgid "Video Transcript Summaries"
+msgstr "Video Transkript Özetleri"
+
+#: enterprise_catalog/apps/video_catalog/models.py:148
+msgid "Flag for row level filtering of processed rows."
+msgstr "İşlenmiş satırların satır düzeyinde filtrelenmesi için bayrak."
+
+#: enterprise_catalog/apps/video_catalog/models.py:152
+msgid "Shortlisted Video"
+msgstr "Kısa listelenmiş video"
+
+#: enterprise_catalog/apps/video_catalog/models.py:153
+msgid "Shortlisted Videos"
+msgstr "Kısa listelenmiş videolar"
+
+#: enterprise_catalog/apps/video_catalog/models.py:186
+msgid "Video Skill"
+msgstr "Video Becerisi"
+
+#: enterprise_catalog/apps/video_catalog/models.py:187
+msgid "Video Skills"
+msgstr "Video Becerileri"

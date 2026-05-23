@@ -1,0 +1,353 @@
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-03-16 00:39+0000\n"
+"PO-Revision-Date: 2026-05-23 04:15+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: enterprise_catalog/apps/academy/models.py:22
+msgid "Tag title"
+msgstr "عنوان الوسم"
+
+#: enterprise_catalog/apps/academy/models.py:23
+msgid "Tag description."
+msgstr "وصف الوسم."
+
+#: enterprise_catalog/apps/academy/models.py:27
+msgid "Tag"
+msgstr "وسم"
+
+#: enterprise_catalog/apps/academy/models.py:28
+msgid "Tags"
+msgstr "أوسمة"
+
+#: enterprise_catalog/apps/academy/models.py:46
+msgid "Academy title"
+msgstr "عنوان الأكاديمية"
+
+#: enterprise_catalog/apps/academy/models.py:48
+msgid "Short description of the academy."
+msgstr "وصف مختصر للأكاديمية."
+
+#: enterprise_catalog/apps/academy/models.py:49
+msgid "Long description of the academy."
+msgstr "وصف مطول للأكاديمية."
+
+#: enterprise_catalog/apps/academy/models.py:50
+msgid "URL of the image shown on academy card on the frontend."
+msgstr "رابط الصورة المعروضة على بطاقة الأكاديمية في الواجهة الأمامية."
+
+#: enterprise_catalog/apps/academy/models.py:55
+msgid "Academy"
+msgstr "أكاديمية"
+
+#: enterprise_catalog/apps/academy/models.py:56
+msgid "Academies"
+msgstr "أكاديميات"
+
+#: enterprise_catalog/apps/catalog/algolia_utils.py:859
+msgid "Available now"
+msgstr "متوفر الآن"
+
+#: enterprise_catalog/apps/catalog/models.py:86
+msgid ""
+"Query parameters which will be used to filter the discovery service's "
+"search/all endpoint results, specified as a JSON object."
+msgstr ""
+"معاملات الاستعلام التي ستُستخدم لتصفية نتائج نقطة نهاية البحث/الكل لخدمة "
+"الاكتشاف، محددة ككائن JSON."
+
+#: enterprise_catalog/apps/catalog/models.py:110
+msgid "Catalog Query"
+msgstr "استعلام الكتالوج"
+
+#: enterprise_catalog/apps/catalog/models.py:111
+msgid "Catalog Queries"
+msgstr "استعلامات الكتالوج"
+
+#: enterprise_catalog/apps/catalog/models.py:231
+msgid ""
+"Ordered list of enrollment modes which can be displayed to learners for "
+"course runs in this catalog."
+msgstr ""
+"قائمة مرتبة من أوضاع التسجيل التي يمكن عرضها للمتعلمين للدورات في هذا "
+"الكتالوج."
+
+#: enterprise_catalog/apps/catalog/models.py:237
+msgid ""
+"Specifies whether courses should be published with direct-to-audit "
+"enrollment URLs."
+msgstr "يحدد ما إذا كان يجب نشر الدورات مع روابط تسجيل مباشرة للتدقيق."
+
+#: enterprise_catalog/apps/catalog/models.py:244
+msgid "Enterprise Catalog"
+msgstr "كتالوج المؤسسات"
+
+#: enterprise_catalog/apps/catalog/models.py:245
+msgid "Enterprise Catalogs"
+msgstr "كتالوجات المؤسسات"
+
+#: enterprise_catalog/apps/catalog/models.py:685
+msgid ""
+"The UUID that represents a piece of content. This value is usually a "
+"secondary identifier to content_key in the enterprise environment."
+msgstr ""
+"المعرف الفريد (UUID) الذي يمثل قطعة من المحتوى. هذه القيمة عادةً ما تكون "
+"معرفًا ثانويًا لـ content_key في بيئة المؤسسات."
+
+#: enterprise_catalog/apps/catalog/models.py:695
+#: enterprise_catalog/apps/catalog/models.py:840
+msgid ""
+"The key that represents a piece of content, such as a course, course run, or"
+" program."
+msgstr ""
+"المفتاح الذي يمثل قطعة من المحتوى، مثل دورة تعليمية، أو تشغيل الدورة، أو "
+"برنامج."
+
+#: enterprise_catalog/apps/catalog/models.py:710
+msgid ""
+"The key represents this content's parent. For example for course_runs "
+"content their parent course key."
+msgstr ""
+"المفتاح يمثل الأصل لهذا المحتوى. على سبيل المثال، بالنسبة لمحتوى تشغيل "
+"الدورات فإن مفتاح الدورة الأب هو الأصل."
+
+#: enterprise_catalog/apps/catalog/models.py:721
+msgid ""
+"The metadata about a particular piece content as retrieved from the "
+"discovery service's search/all endpoint results, specified as a JSON object."
+msgstr ""
+"البيانات الوصفية حول قطعة محتوى معينة كما تم استردادها من نتائج نقطة نهاية "
+"البحث/الكل لخدمة الاكتشاف، محددة ككائن JSON."
+
+#: enterprise_catalog/apps/catalog/models.py:777
+#: enterprise_catalog/apps/catalog/models.py:778
+msgid "Content Metadata"
+msgstr "البيانات الوصفية للمحتوى"
+
+#: enterprise_catalog/apps/catalog/models.py:824
+#: enterprise_catalog/apps/catalog/models.py:825
+msgid "Restricted Course Metadata"
+msgstr "البيانات الوصفية للدورة المقيدة"
+
+#: enterprise_catalog/apps/catalog/models.py:1718
+msgid ""
+"If true, will force the command's underlying celery tasks to run regardless "
+"of how recently the same task, on the same input, has been successfully "
+"executed."
+msgstr ""
+"إذا كان صحيحًا، سيتم فرض تشغيل مهام celery الأساسية للأمر بغض النظر عن المدة"
+" التي مرت على نجاح تنفيذ نفس المهمة على نفس المدخلات."
+
+#: enterprise_catalog/apps/catalog/models.py:1726
+msgid ""
+"If true, for management commands that respect this field, celery tasks will "
+"not be apply_async()'d, but instead exectue as regular python functions."
+msgstr ""
+"إذا كان صحيحًا، بالنسبة لأوامر الإدارة التي تحترم هذا الحقل، لن يتم تشغيل "
+"مهام celery باستخدام apply_async()، بل ستُنفذ كدوال بايثون عادية."
+
+#: enterprise_catalog/apps/catalog/models.py:1759
+msgid "The content metadata this translation belongs to"
+msgstr "البيانات الوصفية للمحتوى التي تنتمي إليها هذه الترجمة"
+
+#: enterprise_catalog/apps/catalog/models.py:1763
+msgid "ISO 639-1 language code (e.g., 'es' for Spanish)"
+msgstr "رمز اللغة حسب معيار ISO 639-1 (على سبيل المثال، 'es' للإسبانية)"
+
+#: enterprise_catalog/apps/catalog/models.py:1771
+msgid "Translated title"
+msgstr "العنوان المترجم"
+
+#: enterprise_catalog/apps/catalog/models.py:1776
+msgid "Translated short description"
+msgstr "الوصف القصير المترجم"
+
+#: enterprise_catalog/apps/catalog/models.py:1781
+msgid "Translated full description"
+msgstr "الوصف الكامل المترجم"
+
+#: enterprise_catalog/apps/catalog/models.py:1786
+msgid "Translated learning outcomes"
+msgstr "نتائج التعلم المترجمة"
+
+#: enterprise_catalog/apps/catalog/models.py:1791
+msgid "Translated prerequisites"
+msgstr "المتطلبات المسبقة المترجمة"
+
+#: enterprise_catalog/apps/catalog/models.py:1797
+msgid "Translated subtitle"
+msgstr "العنوان الفرعي المترجم"
+
+#: enterprise_catalog/apps/catalog/models.py:1803
+msgid "SHA256 hash of source content to detect changes"
+msgstr "هاش SHA256 للمحتوى الأصلي لاكتشاف التغييرات"
+
+#: enterprise_catalog/apps/catalog/models.py:1807
+msgid "Content Translation"
+msgstr "ترجمة المحتوى"
+
+#: enterprise_catalog/apps/catalog/models.py:1808
+msgid "Content Translations"
+msgstr "ترجمات المحتوى"
+
+#: enterprise_catalog/apps/core/admin.py:16
+msgid "Personal info"
+msgstr "المعلومات الشخصية"
+
+#: enterprise_catalog/apps/core/admin.py:17
+msgid "Permissions"
+msgstr "الأذونات"
+
+#: enterprise_catalog/apps/core/admin.py:19
+msgid "Important dates"
+msgstr "التواريخ الهامة"
+
+#: enterprise_catalog/apps/core/models.py:17
+msgid "Full Name"
+msgstr "الاسم الكامل"
+
+#: enterprise_catalog/apps/core/models.py:21
+msgid "first name"
+msgstr "الاسم الأول"
+
+#: enterprise_catalog/apps/curation/models.py:54
+msgid "Enterprise curation"
+msgstr "تنسيق المؤسسات"
+
+#: enterprise_catalog/apps/curation/models.py:55
+msgid "Enterprise curations"
+msgstr "تنسيقات المؤسسات"
+
+#: enterprise_catalog/apps/curation/models.py:176
+msgid "Sort order for favorited items, in ascending order (0=first)"
+msgstr "ترتيب العناصر المفضلة، بترتيب تصاعدي (0=أولاً)"
+
+#: enterprise_catalog/apps/jobs/models.py:16
+msgid "The job ID received from API."
+msgstr "معرّف الوظيفة المستلم من API."
+
+#: enterprise_catalog/apps/jobs/models.py:21
+msgid "The external identifier for the job received from API."
+msgstr "المعرّف الخارجي للوظيفة المستلم من API."
+
+#: enterprise_catalog/apps/jobs/models.py:24
+msgid "Job title"
+msgstr "عنوان الوظيفة"
+
+#: enterprise_catalog/apps/jobs/models.py:25
+msgid "Job description."
+msgstr "وصف الوظيفة."
+
+#: enterprise_catalog/apps/jobs/models.py:30
+msgid "Job"
+msgstr "وظيفة"
+
+#: enterprise_catalog/apps/jobs/models.py:31
+msgid "Jobs"
+msgstr "وظائف"
+
+#: enterprise_catalog/apps/jobs/models.py:53
+#: enterprise_catalog/apps/video_catalog/models.py:180
+msgid "Skill id"
+msgstr "معرف المهارة"
+
+#: enterprise_catalog/apps/jobs/models.py:54
+#: enterprise_catalog/apps/video_catalog/models.py:181
+msgid "Skill name"
+msgstr "اسم المهارة"
+
+#: enterprise_catalog/apps/jobs/models.py:58
+msgid "The significance of skill for the job."
+msgstr "أهمية المهارة للوظيفة."
+
+#: enterprise_catalog/apps/jobs/models.py:65
+msgid "Job Skill"
+msgstr "مهارة الوظيفة"
+
+#: enterprise_catalog/apps/jobs/models.py:66
+msgid "Job Skills"
+msgstr "مهارات الوظيفة"
+
+#: enterprise_catalog/apps/jobs/models.py:97
+msgid "Job Enterprise"
+msgstr "مؤسسة الوظيفة"
+
+#: enterprise_catalog/apps/jobs/models.py:98
+msgid "Job Enterprises"
+msgstr "مؤسسات الوظيفة"
+
+#: enterprise_catalog/apps/video_catalog/models.py:66
+msgid "EdX video id"
+msgstr "معرف فيديو EdX"
+
+#: enterprise_catalog/apps/video_catalog/models.py:67
+msgid "Client video id"
+msgstr "معرف فيديو العميل"
+
+#: enterprise_catalog/apps/video_catalog/models.py:68
+#: enterprise_catalog/apps/video_catalog/models.py:145
+msgid "Video title"
+msgstr "عنوان الفيديو"
+
+#: enterprise_catalog/apps/video_catalog/models.py:69
+#: enterprise_catalog/apps/video_catalog/models.py:144
+msgid "Video Xblock Usage Key"
+msgstr "مفتاح استخدام Xblock للفيديو"
+
+#: enterprise_catalog/apps/video_catalog/models.py:82
+msgid ""
+"The metadata about a particular video as retrieved from the LMS service, "
+"specified as a JSON object."
+msgstr ""
+"البيانات الوصفية حول فيديو معين كما تم استردادها من خدمة LMS، محددة ككائن "
+"JSON."
+
+#: enterprise_catalog/apps/video_catalog/models.py:90
+msgid "Video"
+msgstr "فيديو"
+
+#: enterprise_catalog/apps/video_catalog/models.py:91
+msgid "Videos"
+msgstr "فيديوهات"
+
+#: enterprise_catalog/apps/video_catalog/models.py:115
+msgid "Video transcript summary"
+msgstr "ملخص نص الفيديو"
+
+#: enterprise_catalog/apps/video_catalog/models.py:120
+msgid "Video Transcript Summary"
+msgstr "ملخص نص الفيديو"
+
+#: enterprise_catalog/apps/video_catalog/models.py:121
+msgid "Video Transcript Summaries"
+msgstr "ملخصات نص الفيديو"
+
+#: enterprise_catalog/apps/video_catalog/models.py:148
+msgid "Flag for row level filtering of processed rows."
+msgstr "علم لتصفية الصفوف على مستوى السطر للصفوف المعالجة."
+
+#: enterprise_catalog/apps/video_catalog/models.py:152
+msgid "Shortlisted Video"
+msgstr "فيديو مختار"
+
+#: enterprise_catalog/apps/video_catalog/models.py:153
+msgid "Shortlisted Videos"
+msgstr "فيديوهات مختارة"
+
+#: enterprise_catalog/apps/video_catalog/models.py:186
+msgid "Video Skill"
+msgstr "مهارة الفيديو"
+
+#: enterprise_catalog/apps/video_catalog/models.py:187
+msgid "Video Skills"
+msgstr "مهارات الفيديو"
