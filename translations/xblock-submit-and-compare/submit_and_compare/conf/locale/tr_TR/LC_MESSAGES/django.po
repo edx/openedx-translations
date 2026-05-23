@@ -1,0 +1,110 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1a\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2023-06-13 08:00+0000\n"
+"PO-Revision-Date: 2026-05-23 07:26+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: templates/edit.html:8
+msgid "Display Name"
+msgstr "Görünen İsim"
+
+#: templates/edit.html:11
+msgid "This name appears in the horizontal navigation at the top of the page"
+msgstr "Bu isim, sayfanın üstündeki yatay gezinme alanında görünür"
+
+#: templates/edit.html:16
+msgid "Weight"
+msgstr "Ağırlık"
+
+#: templates/edit.html:19
+msgid "This assigns an integer value representing the weight of this problem"
+msgstr "Bu, problemin ağırlığını temsil eden bir tamsayı değeri atar"
+
+#: templates/edit.html:24
+msgid "Max Attempts"
+msgstr "Maksimum Deneme"
+
+#: templates/edit.html:27
+msgid ""
+"This assigns an integer value representing the maximum number of times a "
+"student can attempt the problem"
+msgstr ""
+"Bu, öğrencinin probleme maksimum kaç kez deneme yapabileceğini temsil eden "
+"bir tamsayı değeri atar"
+
+#: templates/edit.html:32
+msgid "Label for Student Answer"
+msgstr "Öğrenci Cevabı Etiketi"
+
+#: templates/edit.html:35
+msgid "Label for the text area containing the student's answer"
+msgstr "Öğrencinin cevabını içeren metin alanı için etiket"
+
+#: templates/edit.html:40
+msgid "Label for Expert Answer"
+msgstr "Uzman Cevabı Etiketi"
+
+#: templates/edit.html:43
+msgid "Label for the 'expert' answer"
+msgstr "Uzman Cevabı için Etiket"
+
+#: templates/edit.html:48
+msgid "Label for Submit Button"
+msgstr "Gönder Butonu Etiketi"
+
+#: templates/edit.html:51
+msgid "Label for the submit button"
+msgstr "Gönder Butonu Etiketi"
+
+#: templates/edit.html:56
+msgid "Definition"
+msgstr "Tanım"
+
+#: templates/edit.html:57
+msgid "The XML definition for the question and expert answer"
+msgstr "Soru ve uzman cevabı için XML tanımı"
+
+#: templates/edit.html:69
+msgid "Save"
+msgstr "Kaydet"
+
+#: templates/edit.html:72
+msgid "Cancel"
+msgstr "İptal"
+
+#: views.py:223
+#, python-brace-format
+msgid "Hint ({number} of {total}): {hint}"
+msgstr "İpucu ({number}/{total}): {hint}"
+
+#: views.py:244
+#, python-brace-format
+msgid "You have used {count_attempts} of {max_attempts} submission"
+msgid_plural "You have used {count_attempts} of {max_attempts} submissions"
+msgstr[0] ""
+"Toplam {max_attempts} gönderimden {count_attempts} gönderim kullandınız."
+msgstr[1] ""
+"Toplam {max_attempts} gönderimden {count_attempts} gönderimler kullandınız."
+
+#: views.py:287
+#, python-brace-format
+msgid "{weight} point possible"
+msgid_plural "{weight} points possible"
+msgstr[0] "{weight} puan mümkün"
+msgstr[1] "{weight} puan mümkün"
+
+#: views.py:299
+#, python-brace-format
+msgid "/{weight} point"
+msgid_plural "/{weight} points"
+msgstr[0] "/{weight} puan"
+msgstr[1] "/{weight} puan"
