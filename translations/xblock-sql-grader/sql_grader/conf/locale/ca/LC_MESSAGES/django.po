@@ -4,58 +4,60 @@ msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2026-05-23 07:13+0000\n"
+"PO-Revision-Date: 2026-05-23 07:12+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: id\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: mixins/grading.py:72
 msgid "We could not execute your query; please try again."
-msgstr "Kami tidak dapat menjalankan kueri Anda; silakan coba lagi."
+msgstr ""
+"No hem pogut executar la teva consulta; si us plau, intenta-ho de nou."
 
 #: mixins/grading.py:89
 msgid "Weight"
-msgstr "Bobot"
+msgstr "Pes"
 
 #: mixins/grading.py:91
 msgid "This assigns an integer value representing the weight of this problem"
-msgstr "Ini menetapkan nilai bilangan bulat yang mewakili bobot masalah ini."
+msgstr "Això assigna un valor enter que representa el pes d’aquest problema"
 
 #: mixins/grading.py:170
 msgid "Display Name"
-msgstr "Nama Tampilan"
+msgstr "Nom per mostrar"
 
 #: mixins/grading.py:171
 msgid "The display name for this component."
-msgstr "Nama tampilan untuk komponen ini."
+msgstr "El nom que es mostra per aquest component."
 
 #: mixins/grading.py:172
 msgid "SQL Problem"
-msgstr "Soal SQL"
+msgstr "Problema SQL"
 
 #: mixins/grading.py:176
 msgid "Dataset"
-msgstr "Dataset"
+msgstr "Conjunt de dades"
 
 #: mixins/grading.py:177
 msgid "Which initial dataset/database to be used for queries"
-msgstr "Dataset/database awal yang akan digunakan untuk kueri"
+msgstr ""
+"Quin conjunt de dades/base de dades inicial s’utilitzarà per a les consultes"
 
 #: mixins/grading.py:183
 msgid "Answer Query"
-msgstr "Kueri Jawaban"
+msgstr "Consulta de resposta"
 
 #: mixins/grading.py:184
 msgid "A correct response SQL query"
-msgstr "Kueri SQL jawaban yang benar"
+msgstr "Una consulta SQL de resposta correcta"
 
 #: mixins/grading.py:190
 msgid "Verify Query"
-msgstr "Verifikasi Kueri"
+msgstr "Verifica la consulta"
 
 #: mixins/grading.py:192
 msgid ""
@@ -63,45 +65,45 @@ msgid ""
 "the database (UPDATE, INSERT, DELETE, etc.). Only enter a single SELECT "
 "query here, which is used for matching the answer"
 msgstr ""
-"Kueri SQL verifikasi sekunder, yang digunakan jika answer_query memodifikasi"
-" basis data (UPDATE, INSERT, DELETE, dll.). Masukkan hanya satu kueri SELECT"
-" di sini, yang digunakan untuk mencocokkan jawaban."
+"Una consulta SQL de verificació secundària, que s’utilitzarà si la consulta "
+"de resposta modifica la base de dades (UPDATE, INSERT, DELETE, etc.). Només "
+"introdueix una consulta SELECT aquí, que s’utilitza per comparar la resposta"
 
 #: mixins/grading.py:202
 msgid "Modification query statements"
-msgstr "Pernyataan kueri modifikasi"
+msgstr "Sentències de consulta de modificació"
 
 #: mixins/grading.py:204
 msgid ""
 "Optional SQL statements, to be executed after the user-submitted query, but "
 "before the verify_query."
 msgstr ""
-"Perintah SQL opsional, yang dijalankan setelah kueri yang dikirim oleh "
-"pengguna, tetapi sebelum verifikasi kueri."
+"Sentències SQL opcionals, per executar-se després de la consulta enviada per"
+" l’usuari, però abans de la consulta de verificació."
 
 #: mixins/grading.py:212
 msgid "Is Ordered?"
-msgstr "Apakah Terurut?"
+msgstr "Està ordenat?"
 
 #: mixins/grading.py:213
 msgid "Should results be in order?"
-msgstr "Apakah hasilnya harus berurutan?"
+msgstr "Els resultats han d’estar ordenats?"
 
 #: mixins/grading.py:228
 msgid "Prompt"
-msgstr "Petunjuk"
+msgstr "Indicació"
 
 #: mixins/grading.py:229
 msgid "Explanatory text to accompany the problem"
-msgstr "Teks penjelasan yang menyertai soal"
+msgstr "Text explicatiu per acompanyar el problema"
 
 #: mixins/grading.py:234
 msgid "Submission Query"
-msgstr "Kueri Pengiriman"
+msgstr "Consulta de presentació"
 
 #: mixins/grading.py:235
 msgid "A Submission Query"
-msgstr "Kueri Pengiriman"
+msgstr "Una consulta de presentació"
 
 #: templates/view.html:6
 #, python-format
@@ -115,62 +117,65 @@ msgid_plural ""
 "        "
 msgstr[0] ""
 "\n"
-"            %(score_weighted)s/%(max_score)s points (graded)\n"
+"            %(score_weighted)s/%(max_score)s punt (avaluat)\n"
 "        "
 msgstr[1] ""
+"\n"
+"            %(score_weighted)s/%(max_score)s punts (avaluats)\n"
+"        "
 
 #: templates/view.html:12
 msgid "0 points (ungraded)"
-msgstr "0 poin (tidak dinilai)"
+msgstr "0 punts (no avaluat)"
 
 #: templates/view.html:21
 msgid "Note:"
-msgstr "Catatan:"
+msgstr "Nota:"
 
 #: templates/view.html:22
 msgid ""
 "Your queries are executed using SQLite, so you must conform to the SQL "
 "constructs supported by SQLite."
 msgstr ""
-"Kueri Anda dijalankan menggunakan SQLite, jadi Anda harus mematuhi "
-"konstruksi SQL yang didukung oleh SQLite."
+"Les teves consultes s'executen utilitzant SQLite, així que has d'ajustar-te "
+"als constructs SQL suportats per SQLite."
 
 #: templates/view.html:27
 msgid "Press ESC then TAB or click outside of the code editor to exit"
-msgstr "Tekan ESC lalu TAB atau klik di luar editor kode untuk keluar"
+msgstr "Prem ESC, després TAB, o fes clic fora de l'editor de codi per sortir"
 
 #: templates/view.html:33
 msgid "Submit"
-msgstr "Kirim"
+msgstr "Envia"
 
 #: templates/view.html:40
 msgid "Show Answer"
-msgstr "Tampilkan Jawaban"
+msgstr "Mostra la resposta"
 
 #: templates/view.html:50
 msgid "Correct"
-msgstr "Benar"
+msgstr "Correcte"
 
 #: templates/view.html:52
 msgid "Incorrect"
-msgstr "Salah"
+msgstr "Incorrecte"
 
 #: templates/view.html:55
 msgid "Unanswered"
-msgstr "Belum Dijawab"
+msgstr "Sense resposta"
 
 #: templates/view.html:63
 msgid ""
 "To check your data modification statement, we ran the following query after "
 "your modification:"
 msgstr ""
-"Untuk memeriksa pernyataan modifikasi data Anda, kami menjalankan kueri "
-"berikut setelah modifikasi:"
+"Per comprovar la teva instrucció de modificació de dades, hem executat la "
+"següent consulta després de la teva modificació:"
 
 #: templates/view.html:75
 msgid "Your Query Result:"
-msgstr "Hasil Kueri Anda:"
+msgstr "El resultat de la teva consulta:"
 
 #: templates/view.html:80
 msgid "Expected Query Result:"
-msgstr "Hasil Kueri yang Diharapkan:"
+msgstr "Resultat esperat de la consulta:"
