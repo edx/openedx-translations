@@ -4,80 +4,84 @@ msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2026-05-23 06:47+0000\n"
+"PO-Revision-Date: 2026-05-23 06:36+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: he\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? 2 : 3);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lti_1p3/extensions/rest_framework/authentication.py:41
 msgid "Missing LTI 1.3 authentication token."
-msgstr "חסר אסימון אימות LTI 1.3."
+msgstr "No s'ha trobat el token d'autenticació LTI 1.3."
 
 #: lti_1p3/extensions/rest_framework/authentication.py:45
 msgid "Invalid token header. No credentials provided."
-msgstr "כותרת אסימון לא חוקית. לא סופקו אישורים."
+msgstr "Capçalera de token no vàlida. No s'han proporcionat credencials."
 
 #: lti_1p3/extensions/rest_framework/authentication.py:49
 msgid "Invalid token header. Token string should not contain spaces."
-msgstr "כותרת אסימון לא חוקית. מחרוזת אסימון לא צריכה להכיל רווחים."
+msgstr ""
+"Capçalera de token no vàlida. La cadena del token no ha de contenir espais."
 
 #: lti_1p3/extensions/rest_framework/authentication.py:57
 msgid "LTI configuration not found."
-msgstr "תצורת LTI לא נמצאה."
+msgstr "No s'ha trobat la configuració LTI."
 
 #: lti_1p3/extensions/rest_framework/authentication.py:66
 msgid "Invalid token signature."
-msgstr "חתימת אסימון לא חוקית."
+msgstr "Signatura de token no vàlida."
 
 #: lti_xblock.py:134
 msgid "No valid user id found in endpoint URL"
-msgstr "לא נמצא מזהה משתמש חוקי בכתובת האתר של נקודת הקצה"
+msgstr ""
+"No s'ha trobat cap identificador d'usuari vàlid a l'URL del punt final."
 
 #: lti_xblock.py:147
 msgid "New"
-msgstr "חדש"
+msgstr "Nou"
 
 #: lti_xblock.py:151
 msgid "Database"
-msgstr "מסד נתונים"
+msgstr "Base de dades"
 
 #: lti_xblock.py:154
 msgid "Existing"
-msgstr "קיים"
+msgstr "Existent"
 
 #: lti_xblock.py:262
 msgid "Display Name"
-msgstr "שם לתצוגה"
+msgstr "Nom per a mostrar"
 
 #: lti_xblock.py:264
 msgid ""
 "Enter the name learners see for this component. This name may also appear in"
 " reports."
-msgstr "הזן את השם שהתלמידים רואים עבור רכיב זה. שם זה עשוי להופיע גם בדוחות."
+msgstr ""
+"Introduïu el nom que veuen els estudiants per a aquest component. Aquest nom"
+" també pot aparèixer en els informes."
 
 #: lti_xblock.py:267
 msgid "LTI Consumer"
-msgstr "צרכן LTI"
+msgstr "Consumidor LTI"
 
 #: lti_xblock.py:270
 msgid "Data Sharing Notice"
-msgstr "הודעת שיתוף נתונים"
+msgstr "Avís de compartició de dades"
 
 #: lti_xblock.py:272
 msgid ""
 "Enter a short notice about the tool. Use this field to explain why learner "
 "data may be shared with it."
 msgstr ""
-"הזן הודעה קצרה על הכלי. השתמש בשדה זה כדי להסביר מדוע נתוני התלמיד עשויים "
-"להיות משותפים עם הכלי."
+"Introduïu un avís breu sobre l'eina. Feu servir aquest camp per explicar per"
+" què es poden compartir les dades dels estudiants amb ella."
 
 #: lti_xblock.py:278
 msgid "Configuration Type"
-msgstr "סוג תצורה"
+msgstr "Tipus de configuració"
 
 #: lti_xblock.py:283
 msgid ""
@@ -85,60 +89,61 @@ msgid ""
 "with ID of an existing reusable tool configuration, select 'Existing' and "
 "enter it in the text field on the right."
 msgstr ""
-"בחר ב'חדש' כדי להגדיר כלי LTI חדש. אם המנהל שלך סיפק לך מזהה של קונפיגורציה "
-"קיימת לשימוש חוזר, בחר ב'קיים' והזן אותו בשדה הטקסט שבצד."
+"Seleccioneu 'Nou' per configurar una nova eina LTI. Si l'administrador us ha"
+" proporcionat l'identificador d'una configuració d'eina reutilitzable "
+"existent, seleccioneu 'Existent' i introduïu-lo al camp de text de la dreta."
 
 #: lti_xblock.py:289
 msgid "LTI Version"
-msgstr "גרסת LTI"
+msgstr "Versió LTI"
 
 #: lti_xblock.py:297
 msgid "Select the LTI version supported by your tool."
-msgstr "בחר את גרסת LTI הנתמכת על ידי הכלי שלך."
+msgstr "Seleccioneu la versió LTI que suporta la vostra eina."
 
 #: lti_xblock.py:302
 msgid "LTI Reusability ID"
-msgstr "מזהה שימוש חוזר ב-LTI"
+msgstr "ID de reutilització LTI"
 
 #: lti_xblock.py:304
 msgid "Enter the ID of an existing reusable tool configuration."
-msgstr "הזן את המזהה של קונפיגורציית כלי קיימת לשימוש חוזר."
+msgstr "Introduïu l'ID d'una configuració d'eina reutilitzable existent."
 
 #: lti_xblock.py:309
 msgid "Lti 1.3 passport ID that points to Lti1p3Passport table"
-msgstr "מזהה דרכון LTI 1.3 שמצביע לטבלת Lti1p3Passport"
+msgstr "ID de passaport LTI 1.3 que apunta a la taula Lti1p3Passport"
 
 #: lti_xblock.py:312
 msgid "Passport ID for a reusable keys."
-msgstr "מזהה הדרכון למפתחות לשימוש חוזר."
+msgstr "ID de passaport per a claus reutilitzables."
 
 #: lti_xblock.py:316
 msgid "Launch URL"
-msgstr "כתובת השקה"
+msgstr "URL de llançament"
 
 #: lti_xblock.py:320
 msgid ""
 "Enter the launch URL for this tool. For LTI 1.3, this is the URL Open edX "
 "uses to launch the tool."
 msgstr ""
-"הזן את כתובת ההשקה של הכלי. עבור LTI 1.3, זו הכתובת שבה Open edX משתמשת כדי "
-"להשיק את הכלי."
+"Introduïu l'URL de llançament per a aquesta eina. Per a LTI 1.3, aquesta és "
+"l'URL que utilitza Open edX per llançar l'eina."
 
 #: lti_xblock.py:324
 msgid "Tool Initiate Login URL (OIDC)"
-msgstr "כתובת URL לייזום התחברות (OIDC)"
+msgstr "URL d'inici de sessió de l'eina (OIDC)"
 
 #: lti_xblock.py:328
 msgid ""
 "Enter the tool’s OIDC login initiation URL. Open edX uses this URL to start "
 "the LTI 1.3 login flow."
 msgstr ""
-"הזן את כתובת ה-OIDC להתחברות הכלי. Open edX משתמשת בכתובת זו כדי להתחיל את "
-"תהליך ההתחברות של LTI 1.3."
+"Introduïu l'URL d'inici de sessió OIDC de l'eina. Open edX utilitza aquesta "
+"URL per iniciar el flux d'inici de sessió LTI 1.3."
 
 #: lti_xblock.py:332
 msgid "Registered Redirect URIs"
-msgstr "URI רשומים להפניה מחדש"
+msgstr "URIs de redirecció registrades"
 
 #: lti_xblock.py:334
 msgid ""
@@ -146,96 +151,103 @@ msgid ""
 "[\"https://tool.com\", \"https://tool_deeplink.com\"]. Leave this blank to "
 "use the launch URL and deep linking URL by default."
 msgstr ""
-"הזן את רשימת ה-redirect URIs שהכלי מורשה להשתמש בהן במהלך ההתחברות, למשל "
-"[\"https://tool.com\", \"https://tool_deeplink.com\"]. השאר שדה זה ריק כדי "
-"להשתמש כברירת מחדל בכתובת ההשקה ובכתובת הקישור המעמיק."
+"Introduïu les URIs de redirecció que aquesta eina pot utilitzar durant "
+"l'inici de sessió, per exemple [\"https://tool.com\", "
+"\"https://tool_deeplink.com\"]. Deixeu-ho en blanc per a usar per defecte "
+"l'URL de llançament i l'URL de deep linking."
 
 #: lti_xblock.py:342
 msgid "Tool Public Key Mode"
-msgstr "מצב מפתח ציבורי של כלי"
+msgstr "Mode de clau pública de l'eina"
 
 #: lti_xblock.py:350
 msgid ""
 "Choose how Open edX will get the tool’s public key for validating signed "
 "messages."
-msgstr "בחר כיצד Open edX תקבל את המפתח הציבורי של הכלי לאימות הודעות חתומות."
+msgstr ""
+"Trieu com obtindrà Open edX la clau pública de l'eina per validar missatges "
+"signats."
 
 #: lti_xblock.py:354
 msgid "Tool Keyset URL"
-msgstr "כתובת אתר של ערכת מפתחות של כלי"
+msgstr "URL del conjunt de claus de l'eina"
 
 #: lti_xblock.py:358
 msgid ""
 "Enter the URL of the tool’s JWK keyset. Open edX uses this URL to retrieve "
 "the public keys needed to validate signed messages."
 msgstr ""
-"הזן את כתובת ה-URL של קבוצת המפתחות JWK של הכלי. Open edX משתמשת בכתובת זו "
-"כדי לאחזר את המפתחות הציבוריים הדרושים לאימות הודעות חתומות."
+"Introduïu l'URL del conjunt de claus JWK de l'eina. Open edX utilitza "
+"aquesta URL per obtenir les claus públiques necessàries per validar "
+"missatges signats."
 
 #: lti_xblock.py:363
 msgid "Tool Public Key"
-msgstr "מפתח ציבורי של כלי"
+msgstr "Clau pública de l'eina"
 
 #: lti_xblock.py:368
 msgid ""
 "Enter the tool’s public key in PEM format (starts with -----BEGIN PUBLIC "
 "KEY-----). Use this when the tool provides a static public key directly."
 msgstr ""
-"הזן את המפתח הציבורי של הכלי בפורמט PEM (מתחיל עם -----BEGIN PUBLIC "
-"KEY-----). השתמש בזה כאשר הכלי מספק מפתח ציבורי סטטי ישירות."
+"Introduïu la clau pública de l'eina en format PEM (comença amb -----BEGIN "
+"PUBLIC KEY-----). Utilitzeu això quan l'eina proporcioni directament una "
+"clau pública estàtica."
 
 #: lti_xblock.py:374
 msgid "Names & Roles (NRPS)"
-msgstr "שמות ותפקידים (NRPS)"
+msgstr "Noms i rols (NRPS)"
 
 #: lti_xblock.py:376
 msgid ""
 "Enable this to allow the tool to access the names and roles of enrolled "
 "learners, if the tool supports NRPS."
 msgstr ""
-"אפשר זאת כדי לאפשר לכלי גישה לשמות ולתפקידים של תלמידים נרשמים, במידה והכלי "
-"תומך ב-NRPS."
+"Activeu això per permetre que l'eina accedeixi als noms i rols dels "
+"estudiants inscrits, si l'eina admet NRPS."
 
 #: lti_xblock.py:385
 msgid "Deep linking"
-msgstr "קישור עמוק"
+msgstr "Deep linking"
 
 #: lti_xblock.py:387
 msgid ""
 "Enable this if you want to deep link content from within the tool, in "
 "Studio."
-msgstr "אפשר זאת אם ברצונך לקשר תוכן לעומק מתוך הכלי, ב-Studio."
+msgstr ""
+"Activeu això si voleu enllaçar en profunditat contingut des de dins de "
+"l'eina, a Studio."
 
 #: lti_xblock.py:393
 msgid "Deep Linking Launch URL"
-msgstr "כתובת אתר השקת קישור עמוק"
+msgstr "URL de llançament de deep linking"
 
 #: lti_xblock.py:397
 msgid ""
 "Enter the deep linking URL for this tool. If the tool does not specify one, "
 "enter the 'Launch URL' here."
 msgstr ""
-"הזן את כתובת ה-URL לקישור מעמיק עבור הכלי. אם הכלי אינו מציין כתובת כזו, הזן"
-" כאן את 'כתובת ההשקה'."
+"Introduïu l'URL de deep linking per a aquesta eina. Si l'eina no "
+"n'especifica cap, introduïu aquí l'\"URL de llançament\"."
 
 #: lti_xblock.py:401
 msgid "Assignment and Grades"
-msgstr "מטלות וציונים"
+msgstr "Tasques i qualificacions"
 
 #: lti_xblock.py:403
 msgid "Declarative"
-msgstr "דקלרטיבי"
+msgstr "Declaratiu"
 
 #: lti_xblock.py:404
 msgid "Programmatic"
-msgstr "תכנותי"
+msgstr "Programàtic"
 
 #: lti_xblock.py:405 templates/html/lti_studio_edit/_step_advantage.html:30
 #: templates/html/lti_studio_edit/_step_advantage.html:114
 #: templates/html/lti_studio_edit/_step_review.html:97
 #: templates/html/lti_studio_edit/_step_review.html:218
 msgid "Disabled"
-msgstr "מושבת"
+msgstr "Desactivat"
 
 #: lti_xblock.py:410
 msgid ""
@@ -243,589 +255,633 @@ msgid ""
 " existing line item. 'Programmatic' allows tools to create and manage line "
 "items."
 msgstr ""
-"הפעל את AGS ובחר בפונקציונליות. 'דקלרטיבי' מספק לכלי פריט קיים, בעוד "
-"'תכנותי' מאפשר לכלי ליצור ולנהל פריטים."
+"Activeu AGS i seleccioneu la funcionalitat. 'Declaratiu' proporciona a "
+"l'eina un element de línia existent. 'Programàtic' permet que les eines "
+"creïn i gestionin elements de línia."
 
 #: lti_xblock.py:417
 msgid "LTI Passport ID"
-msgstr "מזהה דרכון LTI"
+msgstr "ID de passaport LTI"
 
 #: lti_xblock.py:419
 msgid ""
 "Select the LTI passport ID for this tool. This is the ID of the LTI passport"
 " that you created on Advanced Settings page."
 msgstr ""
-"בחר את מזהה הדרכון של LTI עבור הכלי. זהו המזהה של דרכון LTI שיצרת בדף "
-"ההגדרות המתקדמות."
+"Seleccioneu l'ID de passaport LTI per a aquesta eina. Aquest és l'ID del "
+"passaport LTI que heu creat a la pàgina de Configuració avançada."
 
 #: lti_xblock.py:426
 msgid "LTI URL"
-msgstr "כתובת URL של LTI"
+msgstr "URL LTI"
 
 #: lti_xblock.py:428
 msgid ""
 "Enter the launch URL for this tool. For LTI 1.1/1.2, this is the URL Open "
 "edX uses to launch the tool."
 msgstr ""
-"הזן את כתובת ההשקה של הכלי. עבור LTI 1.1/1.2, זו הכתובת שבה Open edX משתמשת "
-"כדי להשיק את הכלי."
+"Introduïu l'URL de llançament per a aquesta eina. Per a LTI 1.1/1.2, aquesta"
+" és l'URL que utilitza Open edX per llançar l'eina."
 
 #: lti_xblock.py:436
 msgid "Custom Parameters"
-msgstr "משתנים בהתאמה אישית"
+msgstr "Paràmetres personalitzats"
 
 #: lti_xblock.py:438
 msgid ""
 "Enter key-value pairs to send with each launch e.g. [\"page=1\", "
 "\"color=white\"]."
-msgstr "הזן זוגות מפתח-ערך לשליחה עם כל השקה, למשל [\"page=1\", \"color=white\"]."
+msgstr ""
+"Introduïu parells clau-valor per enviar amb cada llançament, per exemple "
+"[\"page=1\", \"color=white\"]."
 
 #: lti_xblock.py:443
 msgid "Open tool in"
-msgstr "פתח את הכלי ב"
+msgstr "Obrir l'eina a"
 
 #: lti_xblock.py:445
 msgid ""
 "Choose how the tool opens for learners: inline in the page, in a modal, or "
 "in a new window."
-msgstr "בחר כיצד הכלי נפתח עבור התלמידים: בתוך הדף, במודאל, או בחלון חדש."
+msgstr ""
+"Seleccioneu com s'obre l'eina per als estudiants: en línia a la pàgina, en "
+"una finestra modal o en una nova finestra."
 
 #: lti_xblock.py:456
 msgid "Launch Button Text"
-msgstr "טקסט כפתור ההשקה"
+msgstr "Text del botó de llançament"
 
 #: lti_xblock.py:458
 msgid ""
 "Enter the label shown on the launch button when the tool opens in a modal or"
 " new window."
 msgstr ""
-"הזן את התווית אשר תופיע על כפתור ההשקה כאשר הכלי נפתח במודאל או בחלון חדש."
+"Introduïu l'etiqueta que es mostra al botó de llançament quan l'eina s'obre "
+"en una finestra modal o en una nova finestra."
 
 #: lti_xblock.py:464
 msgid "Inline Height (px)"
-msgstr "גובה מוטמע (פיקסלים)"
+msgstr "Alçada en línia (px)"
 
 #: lti_xblock.py:466
 msgid "Enter the height of the inline iframe in pixels."
-msgstr "הזן את הגובה של ה-iframe המוטמע בפיקסלים."
+msgstr "Introduïu l'alçada de l'iframe en línia en píxels."
 
 #: lti_xblock.py:472
 msgid "Modal Height (%)"
-msgstr "גובה מודאל (%)"
+msgstr "Alçada modal (%)"
 
 #: lti_xblock.py:474
 msgid "Enter the modal height as a percentage of the browser window."
-msgstr "הזן את גובה המודאל כאחוז מגודל חלון הדפדפן."
+msgstr ""
+"Introduïu l'alçada modal com un percentatge de la finestra del navegador."
 
 #: lti_xblock.py:480
 msgid "Modal Width (%)"
-msgstr "רוחב מודאל (%)"
+msgstr "Amplada modal (%)"
 
 #: lti_xblock.py:482
 msgid "Enter the modal width as a percentage of the browser window."
-msgstr "הזן את רוחב המודאל כאחוז מגודל חלון הדפדפן."
+msgstr ""
+"Introduïu l'amplada modal com un percentatge de la finestra del navegador."
 
 #: lti_xblock.py:488
 msgid "This activity is graded"
-msgstr "פעילות זו נמדדת"
+msgstr "Aquesta activitat es qualifica"
 
 #: lti_xblock.py:489
 msgid "Enable this if the tool sends a numeric score back to Open edX."
-msgstr "אפשר זאת אם הכלי שולח ציון מספרי חזרה ל-Open edX."
+msgstr "Activeu això si l'eina envia una puntuació numèrica a Open edX."
 
 #: lti_xblock.py:494
 msgid "Grade Weight"
-msgstr "משקל ציון"
+msgstr "Pes de la qualificació"
 
 #: lti_xblock.py:496
 msgid "Enter the maximum number of points for this component."
-msgstr "הזן את מספר הנקודות המקסימלי עבור רכיב זה."
+msgstr "Introduïu el nombre màxim de punts per a aquest component."
 
 #: lti_xblock.py:503
 msgid ""
 "The score kept in the xblock KVS -- duplicate of the published score in "
 "django DB"
-msgstr "הציון נשמר ב-xblock KVS -- שכפל את הציון שפורסם ב-django DB"
+msgstr ""
+"La puntuació emmagatzemada al KVS de l'xblock -- duplicat de la puntuació "
+"publicada a la base de dades de Django"
 
 #: lti_xblock.py:508
 msgid "Comment as returned from grader, LTI2.0 spec"
-msgstr "הערה כפי שחזרה ממעניק הציון, LTI2.0 spec"
+msgstr "Comentari tal com retorna el corrector, especificació LTI 2.0"
 
 #: lti_xblock.py:513
 msgid "Hide External Tool"
-msgstr "הסתר כלי חיצוני"
+msgstr "Amaga l'eina externa"
 
 #: lti_xblock.py:515
 msgid ""
 "Enable this to hide launch button and iframe so you use the component for "
 "grade sync etc."
 msgstr ""
-"אפשר זאת כדי להסתיר את כפתור ההשקה וה-iframe, וכך להשתמש ברכיב לסנכרון "
-"ציונים וכדומה."
+"Activeu això per amagar el botó de llançament i l'iframe, de manera que es "
+"faci servir el component per sincronitzar qualificacions, etc."
 
 #: lti_xblock.py:521
 msgid "Accept grades after due date"
-msgstr "קבל ציונים לאחר תאריך היעד"
+msgstr "Acceptar qualificacions després de la data límit"
 
 #: lti_xblock.py:522
 msgid ""
 "Enable this to allow the tool to send grades after the due date has passed."
-msgstr "אפשר זאת כדי לאפשר לכלי לשלוח ציונים לאחר תום תאריך היעד."
+msgstr ""
+"Activeu això per permetre que l'eina enviï qualificacions després que hagi "
+"passat la data límit."
 
 #: lti_xblock.py:530
 msgid "Share Username"
-msgstr "שתף שם משתמש"
+msgstr "Compartir nom d'usuari"
 
 #. Translators: This is used to request the user's username for a third party
 #. service.
 #: lti_xblock.py:532
 msgid "Enable this to send the learner’s username to the tool."
-msgstr "אפשר זאת כדי לשלוח את שם המשתמש של התלמיד לכלי."
+msgstr "Activeu això per enviar el nom d'usuari de l'estudiant a l'eina."
 
 #: lti_xblock.py:537
 msgid "Share Full name"
-msgstr "שתף שם מלא"
+msgstr "Compartir nom complet"
 
 #. Translators: This is used to request the user's full name for a third party
 #. service.
 #: lti_xblock.py:539
 msgid "Enable this to send the learner’s full name to the tool."
-msgstr "אפשר זאת כדי לשלוח את השם המלא של התלמיד לכלי."
+msgstr "Activeu això per enviar el nom complet de l'estudiant a l'eina."
 
 #: lti_xblock.py:544
 msgid "Share Email"
-msgstr "שתף אימייל"
+msgstr "Compartir correu electrònic"
 
 #. Translators: This is used to request the user's email for a third party
 #. service.
 #: lti_xblock.py:546
 msgid "Enable this to send the learner’s email address to the tool."
-msgstr "אפשר זאת כדי לשלוח את כתובת הדוא״ל של התלמיד לכלי."
+msgstr ""
+"Activeu això per enviar l'adreça de correu electrònic de l'estudiant a "
+"l'eina."
 
 #: lti_xblock.py:552
 msgid "Send extra parameters"
-msgstr "שלח פרמטרים נוספים"
+msgstr "Enviar paràmetres addicionals"
 
 #: lti_xblock.py:553
 msgid ""
 "Enable this to send extra parameters (may contain PII). Consult site admin "
 "for details."
 msgstr ""
-"אפשר זאת כדי לשלוח פרמטרים נוספים (עלולים להכיל מידע אישי). התייעץ עם מנהל "
-"האתר לפרטים."
+"Activeu això per enviar paràmetres addicionals (podrien contenir Dades "
+"d'Identificació Personal). Consulteu l'administrador del lloc per obtenir "
+"més detalls."
 
 #: lti_xblock.py:627
 msgid "Custom Parameters must be a list"
-msgstr "פרמטרים מותאמים אישית חייבים להיות רשימה"
+msgstr "Els paràmetres personalitzats han de ser una llista"
 
 #: lti_xblock.py:634
 msgid "Custom Parameters should be strings in \"x=y\" format."
-msgstr "פרמטרים מותאמים אישית צריכים להיות מחרוזות בפורמט &quot;x=y&quot;."
+msgstr "Els paràmetres personalitzats han de ser cadenes en format \"x=y\"."
 
 #: lti_xblock.py:644
 msgid ""
 "Reusable configuration ID must be set when using external config (Example: "
 "\"x:y\")."
 msgstr ""
-"יש להגדיר מזהה תצורה לשימוש חוזר בעת שימוש בתצורה חיצונית (דוגמה: "
-"&quot;x:y&quot;)."
+"S'ha d'establir l'ID de configuració reutilitzable quan s'utilitza una "
+"configuració externa (exemple: \"x:y\")."
 
 #: lti_xblock.py:668
 msgid ""
 "The specified LTI ID is not configured in this course's Advanced Settings."
-msgstr "מזהה ה-LTI שצוין אינו מוגדר בהגדרות המתקדמות של קורס זה."
+msgstr ""
+"L'ID LTI especificat no està configurat en la Configuració avançada d'aquest"
+" curs."
 
 #: lti_xblock.py:802 lti_xblock.py:1119
 msgid "Could not get user data for current request"
-msgstr "לא ניתן היה לקבל נתוני משתמש עבור הבקשה הנוכחית"
+msgstr ""
+"No s'ha pogut obtenir les dades de l'usuari per a la sol·licitud actual."
 
 #: lti_xblock.py:842
 msgid ""
 "Could not parse LTI passport: {lti_passport!r}. Should be \"id:key:secret\" "
 "string."
 msgstr ""
-"לא ניתן לנתח דרכון LTI: {lti_passport!r}. צריכה להיות מחרוזת "
-"&quot;id:key:secret&quot;."
+"No s'ha pogut analitzar el passaport LTI: {lti_passport!r}. Ha de ser una "
+"cadena de tipus \"id:key:secret\"."
 
 #: lti_xblock.py:860 lti_xblock.py:874 lti_xblock.py:890
 msgid "Could not get user id for current request"
-msgstr "לא ניתן היה לקבל מזהה משתמש עבור הבקשה הנוכחית"
+msgstr "No s'ha pogut obtenir l'ID d'usuari per a la sol·licitud actual."
 
 #: lti_xblock.py:1052
 msgid ""
 "Could not parse custom parameter: {custom_parameter!r}. Should be \"x=y\" "
 "string."
 msgstr ""
-"לא ניתן לנתח פרמטר מותאם אישית: {custom_parameter!r}. צריכה להיות מחרוזת "
-"&quot;x=y&quot;."
+"No s'ha pogut analitzar el paràmetre personalitzat: {custom_parameter!r}. Ha"
+" de ser una cadena de tipus \"x=y\"."
 
 #: lti_xblock.py:1507
 msgid "[LTI]: Real user not found against anon_id: {}"
-msgstr "[LTI]: משתמש אמיתי לא נמצא נגד anon_id: {}"
+msgstr "[LTI]: No s'ha trobat un usuari real per anon_id: {}"
 
 #: models.py:61
 msgid "Platform's generated Private key. Keep this value secret."
-msgstr "המפתח הפרטי שנוצר על ידי הפלטפורמה. שמור את הערך הזה בסוד."
+msgstr ""
+"Clau privada generada per la plataforma. Manteniu aquest valor en secret."
 
 #: models.py:67
 msgid "Platform's generated Private key ID"
-msgstr "מזהה המפתח הפרטי שנוצר על ידי הפלטפורמה"
+msgstr "ID de la clau privada generada per la plataforma"
 
 #: models.py:72
 msgid "Platform's generated JWK keyset."
-msgstr "ערכת מפתחות JWK שנוצרה בפלטפורמה."
+msgstr "Conjunt de claus JWK generat per la plataforma."
 
 #: models.py:78
 msgid "Client ID used by LTI tool"
-msgstr "מזהה לקוח בשימוש בכלי LTI"
+msgstr "ID de client utilitzat per l'eina LTI"
 
 #: models.py:159
 msgid ""
 "LTI Configuration stored on the model for LTI 1.3 must have a value for one "
 "of lti_1p3_tool_public_key or lti_1p3_tool_keyset_url."
 msgstr ""
-"תצורת LTI המאוחסנת בדגם עבור LTI 1.3 חייבת להיות בעלת ערך אחד של "
-"lti_1p3_tool_public_key או lti_1p3_tool_keyset_url."
+"La configuració LTI emmagatzemada en el model per a LTI 1.3 ha de tenir un "
+"valor per a una de les claus: lti_1p3_tool_public_key o "
+"lti_1p3_tool_keyset_url."
 
 #: models.py:203
 msgid "Configuration Stored on XBlock fields"
-msgstr "תצורה מאוחסנת בשדות XBlock"
+msgstr "Configuració emmagatzemada en els camps de l'XBlock"
 
 #: models.py:204
 msgid "Configuration Stored on this model"
-msgstr "תצורה מאוחסנת בדגם זה"
+msgstr "Configuració emmagatzemada en aquest model"
 
 #: models.py:205
 msgid "Configuration Stored on external service"
-msgstr "תצורה מאוחסנת בשירות חיצוני"
+msgstr "Configuració emmagatzemada en un servei extern"
 
 #: models.py:239
 msgid "LTI configuration data."
-msgstr "נתוני תצורת LTI."
+msgstr "Dades de configuració LTI."
 
 #: models.py:246
 msgid "The URL of the external tool that initiates the launch."
-msgstr "כתובת האתר של הכלי החיצוני שמתחיל את ההשקה."
+msgstr "L'URL de l'eina externa que inicia el llançament."
 
 #: models.py:251
 msgid "Client key provided by the LTI tool provider."
-msgstr "מפתח לקוח מסופק על ידי ספק כלי ה-LTI."
+msgstr "Clau de client proporcionada pel proveïdor de l'eina LTI."
 
 #: models.py:257
 msgid "Client secret provided by the LTI tool provider."
-msgstr "סוד הלקוח מסופק על ידי ספק כלי ה-LTI."
+msgstr "Secret de client proporcionat pel proveïdor de l'eina LTI."
 
 #: models.py:346
 msgid "LTI Configuration stores on XBlock needs a block location set."
-msgstr "חנויות LTI Configuration ב-XBlock צריכות ערכת מיקום בלוק."
+msgstr ""
+"La configuració LTI emmagatzemada a l'XBlock necessita una ubicació de bloc "
+"definida."
 
 #: models.py:351
 msgid ""
 "LTI Configuration using reusable configuration needs a external ID in "
 "\"x:y\" format."
 msgstr ""
-"תצורת LTI באמצעות תצורה ניתנת לשימוש חוזר זקוקה למזהה חיצוני בפורמט "
-"&quot;x:y&quot;."
+"La configuració LTI que utilitza una configuració reutilitzable necessita un"
+" ID extern en format \"x:y\"."
 
 #: models.py:356
 msgid "LTI Configuration for 1.3 requires passport to be set."
-msgstr "הגדרות LTI עבור 1.3 דורשות הגדרת דרכון."
+msgstr ""
+"La configuració LTI per a 1.3 requereix que el passaport estigui configurat."
 
 #: models.py:361
 msgid ""
 "CONFIG_ON_XBLOCK and CONFIG_EXTERNAL are not supported for LTI 1.3 "
 "Proctoring Services."
 msgstr ""
-"CONFIG_ON_XBLOCK ו-CONFIG_EXTERNAL אינם נתמכים עבור שירותי LTI 1.3 "
-"Proctoring."
+"CONFIG_ON_XBLOCK i CONFIG_EXTERNAL no són compatibles amb els serveis de "
+"proctoring LTI 1.3."
 
 #: models.py:369
 msgid "Invalid LTI configuration."
-msgstr "תצורת LTI לא חוקית."
+msgstr "Configuració LTI no vàlida."
 
 #: plugin/views.py:620
 msgid "The selected content type is not supported by Open edX."
-msgstr "סוג התוכן שנבחר אינו נתמך על ידי Open edX."
+msgstr "El tipus de contingut seleccionat no és compatible amb Open edX."
 
 #: plugin/views.py:635
 msgid "You don't have access to save LTI Content Items."
-msgstr "אין לך גישה לשמור פריטי תוכן LTI."
+msgstr "No teniu accés per desar elements de contingut LTI."
 
 #: plugin/views.py:636
 msgid ""
 "Please check that you have course staff permissions and double check this "
 "block's LTI settings."
 msgstr ""
-"אנא בדוק שיש לך הרשאות צוות הקורס ובדוק שוב את הגדרות ה-LTI של הבלוק הזה."
+"Comproveu que teniu permisos de personal del curs i reviseu novament la "
+"configuració LTI d'aquest bloc."
 
 #: templates/html/lti-dl/dl_response_error.html:6
 msgid "LTI Deep Linking failed."
-msgstr "קישור עומק LTI נכשל."
+msgstr "Ha fallat el deep linking LTI."
 
 #: templates/html/lti-dl/dl_response_saved.html:6
 msgid "LTI Deep Linking"
-msgstr "קישור מעמיק ב-LTI"
+msgstr "Deep Linking LTI"
 
 #: templates/html/lti-dl/dl_response_saved.html:10
 msgid "The LTI Deep Linking content was successfully saved in the LMS."
-msgstr "תוכן LTI Deep Linking נשמר בהצלחה ב-LMS."
+msgstr "El contingut de deep linking LTI s'ha desat correctament a l'LMS."
 
 #: templates/html/lti-dl/dl_response_saved.html:13
 msgid "You can safely close this page now."
-msgstr "אתה יכול בבטחה לסגור את הדף הזה עכשיו."
+msgstr "Podeu tancar aquesta pàgina de manera segura ara."
 
 #: templates/html/lti_1p3_permission_error.html:10
 msgid "Unauthorized."
-msgstr "לא מורשה."
+msgstr "No autoritzat."
 
 #: templates/html/lti_1p3_permission_error.html:13
 msgid ""
 "Students don't have permissions to perform LTI Deep Linking configuration "
 "launches."
-msgstr "לסטודנטים אין הרשאות לבצע השקות תצורת LTI Deep Linking."
+msgstr ""
+"Els estudiants no tenen permisos per realitzar llançaments de configuració "
+"de Deep Linking LTI."
 
 #: templates/html/lti_1p3_studio.html:3
 msgid "LTI 1.3 Launches can only be performed from the LMS."
-msgstr "ניתן לבצע השקות LTI 1.3 רק מה-LMS."
+msgstr "Els llançaments LTI 1.3 només es poden realitzar des de l'LMS."
 
 #: templates/html/lti_1p3_studio.html:7
 msgid ""
 "To set up the LTI integration, you need to register the LMS in the tool with"
 " the information provided below."
 msgstr ""
-"כדי להגדיר את שילוב ה-LTI, עליך לרשום את ה-LMS בכלי עם המידע המופיע להלן."
+"Per configurar la integració LTI, cal registrar l'LMS a l'eina amb la "
+"informació proporcionada a continuació."
 
 #: templates/html/lti_1p3_studio.html:11
 msgid "Client ID: "
-msgstr "מזהה לקוח: "
+msgstr "ID de client: "
 
 #: templates/html/lti_1p3_studio.html:16
 msgid "Deployment ID: "
-msgstr "מזהה פריסה: "
+msgstr "ID de desplegament: "
 
 #: templates/html/lti_1p3_studio.html:21
 msgid "Keyset URL: "
-msgstr "כתובת אתר של ערכת מפתחות: "
+msgstr "URL del conjunt de claus: "
 
 #: templates/html/lti_1p3_studio.html:26
 msgid "Access Token URL: "
-msgstr "כתובת URL של אסימון גישה: "
+msgstr "URL del token d'accés: "
 
 #: templates/html/lti_1p3_studio.html:31
 msgid "Login URL: "
-msgstr "כתובת אתר כניסה: "
+msgstr "URL d'inici de sessió: "
 
 #: templates/html/lti_1p3_studio.html:39
 msgid "Deep Linking is configured on this tool."
-msgstr "קישור עומק מוגדר בכלי זה."
+msgstr "El deep linking està configurat en aquesta eina."
 
 #: templates/html/lti_1p3_studio.html:40
 msgid "The Deep Linking configuration stored is presented below:"
-msgstr "תצורת הקישור העמוק המאוחסנת מוצגת להלן:"
+msgstr "La configuració de deep linking desada es presenta a continuació:"
 
 #: templates/html/lti_1p3_studio.html:45
 msgid "If you run deep linking again, the content above will be replaced."
-msgstr "אם תפעיל שוב קישור עומק, התוכן שלמעלה יוחלף."
+msgstr ""
+"Si executeu de nou el deep linking, el contingut anterior serà substituït."
 
 #: templates/html/lti_1p3_studio.html:49
 msgid "You can configure this tool's content using LTI Deep Linking."
-msgstr "אתה יכול להגדיר את התוכן של הכלי הזה באמצעות LTI Deep Linking."
+msgstr ""
+"Podeu configurar el contingut d'aquesta eina utilitzant el deep linking LTI."
 
 #: templates/html/lti_1p3_studio.html:50
 msgid "To do that, make sure the block is published and click the link below:"
-msgstr "כדי לעשות זאת, ודא שהחסימה מפורסם ולחץ על הקישור למטה:"
+msgstr ""
+"Per fer-ho, assegureu-vos que el bloc està publicat i feu clic al següent "
+"enllaç:"
 
 #: templates/html/lti_1p3_studio.html:53
 msgid "Deep Linking Launch - Configure tool"
-msgstr "השקת קישור עמוק - כלי קביעת תצורה"
+msgstr "Llançament de Deep Linking - Configurar eina"
 
 #: templates/html/lti_launch.html:27
 msgid "Press to Launch"
-msgstr "לחץ על מנת להפעיל "
+msgstr "Premeu per llançar"
 
 #: templates/html/lti_launch_error.html:10
 msgid "There was an error while launching the LTI tool: "
-msgstr "אירעה שגיאה בעת הפעלת כלי ה-LTI: "
+msgstr "S'ha produït un error en llançar l'eina LTI: "
 
 #: templates/html/lti_launch_error.html:16
 #: templates/html/lti_proctoring_start_error.html:13
 msgid ""
 "If you're seeing this on a live course, please contact the course staff."
-msgstr "אם אתה רואה את זה בקורס חי, אנא צור קשר עם צוות הקורס."
+msgstr ""
+"Si esteu veient això en un curs en directe, poseu-vos en contacte amb el "
+"personal del curs."
 
 #: templates/html/lti_proctoring_start_error.html:10
 msgid "There was an error while starting your LTI proctored assessment."
-msgstr "אירעה שגיאה במהלך התחלת הערכת ה-LTI שלך."
+msgstr "S'ha produït un error en iniciar la vostra avaluació supervisada LTI."
 
 #: templates/html/lti_start_assessment.html:11
 msgid "Sending you back to your exam."
-msgstr "שולחת אותך חזרה לבחינה שלך."
+msgstr "Us estem enviant de tornada al vostre examen."
 
 #: templates/html/lti_start_assessment.html:15
 msgid "Return to exam."
-msgstr "חזור לבחינה."
+msgstr "Tornar a l'examen."
 
 #: templates/html/lti_studio_edit/_actions.html:5
 msgid "Previous"
-msgstr "קודם"
+msgstr "Anterior"
 
 #: templates/html/lti_studio_edit/_actions.html:10
 #: static/js/xblock_lti_consumer.js:143
 msgid "Cancel"
-msgstr "ביטול"
+msgstr "Cancel·la"
 
 #: templates/html/lti_studio_edit/_actions.html:13
 msgid "Next"
-msgstr "הבא"
+msgstr "Següent"
 
 #: templates/html/lti_studio_edit/_actions.html:16
 msgid "Save"
-msgstr "שמור"
+msgstr "Desa"
 
 #: templates/html/lti_studio_edit/_step_advantage.html:20
 #: templates/html/lti_studio_edit/_step_advantage.html:104
 #: templates/html/lti_studio_edit/_step_review.html:87
 #: templates/html/lti_studio_edit/_step_review.html:208
 msgid "Enabled"
-msgstr "מופעל"
+msgstr "Activat"
 
 #: templates/html/lti_studio_edit/_step_advantage.html:142
 msgid "Public Key"
-msgstr "מפתח ציבורי"
+msgstr "Clau pública"
 
 #: templates/html/lti_studio_edit/_step_advantage.html:152
 msgid "Keyset URL"
-msgstr "כתובת URL של קבוצת מפתחות"
+msgstr "URL del conjunt de claus"
 
 #: templates/html/lti_studio_edit/_step_review.html:22
 msgid "Grading"
-msgstr "הערכת ציונים"
+msgstr "Qualificació"
 
 #: templates/html/lti_studio_edit/_step_review.html:39
 msgid "Graded"
-msgstr "מדורג"
+msgstr "Qualificat"
 
 #: templates/html/lti_studio_edit/_step_review.html:49
 msgid "Ungraded"
-msgstr "לא מדורג"
+msgstr "Sense qualificació"
 
 #: templates/html/lti_studio_edit/_step_review.html:108
 msgid "Advanced Information Sharing"
-msgstr "שיתוף מידע מתקדם"
+msgstr "Compartició avançada d'informació"
 
 #: templates/html/lti_studio_edit/_step_review.html:174
 msgid "Administrators can enable advanced sharing options for LTI components."
-msgstr "מנהלים יכולים להפעיל אפשרויות שיתוף מתקדמות עבור רכיבי LTI."
+msgstr ""
+"Els administradors poden activar opcions avançades de compartició per als "
+"components LTI."
 
 #: templates/html/lti_studio_edit/_step_review.html:179
 msgid "Learn more."
-msgstr "למידע נוסף."
+msgstr "Més informació."
 
 #: templates/html/lti_studio_edit/_step_review.html:229
 msgid "Appearance Options"
-msgstr "אפשרויות מראה"
+msgstr "Opcions d'aparença"
 
 #: templates/html/lti_studio_edit/_step_review.html:246
 msgid "True"
-msgstr "נכון"
+msgstr "Cert"
 
 #: templates/html/lti_studio_edit/_step_review.html:256
 msgid "False"
-msgstr "לא נכון"
+msgstr "Fals"
 
 #: templates/html/lti_studio_edit/_step_setup.html:5
 msgid "LTI Configuration"
-msgstr "הגדרות LTI"
+msgstr "Configuració LTI"
 
 #: templates/html/lti_studio_edit/_step_setup.html:105
 msgid "LTI 1.1/1.2 Configuration"
-msgstr "הגדרות LTI 1.1/1.2"
+msgstr "Configuració LTI 1.1/1.2"
 
 #: templates/html/lti_studio_edit/_step_setup.html:119
 msgid "LTI 1.3 Configuration"
-msgstr "הגדרות LTI 1.3"
+msgstr "Configuració LTI 1.3"
 
 #: templates/html/lti_studio_edit/_stepper_header.html:10
 msgid "Setup"
-msgstr "הגדרה"
+msgstr "Configuració"
 
 #: templates/html/lti_studio_edit/_stepper_header.html:21
 msgid "Advantage Settings"
-msgstr "הגדרות Advantage"
+msgstr "Configuració d'avantatge"
 
 #: templates/html/lti_studio_edit/_stepper_header.html:33
 msgid "Review Options"
-msgstr "אפשרויות סקירה"
+msgstr "Opcions de revisió"
 
 #: static/js/xblock_lti_consumer.js:145
 msgid "OK"
-msgstr "בסדר"
+msgstr "D'acord"
 
 #: static/js/xblock_lti_consumer.js:174
 msgid ""
 "Click OK to have your username, full name, and e-mail address sent to a 3rd "
 "party application."
 msgstr ""
-"לחץ על אישור כדי לשלוח את שם המשתמש, השם המלא וכתובת הדואר האלקטרוני שלך "
-"לאפליקציה של צד שלישי."
+"Feu clic a D'acord per enviar el vostre nom d'usuari, nom complet i adreça "
+"de correu electrònic a una aplicació de tercers."
 
 #: static/js/xblock_lti_consumer.js:178
 msgid ""
 "Click OK to have your username and e-mail address sent to a 3rd party "
 "application."
 msgstr ""
-"לחץ על אישור כדי לשלוח את שם המשתמש וכתובת הדואר האלקטרוני שלך לאפליקציה של "
-"צד שלישי."
+"Feu clic a D'acord per enviar el vostre nom d'usuari i adreça de correu "
+"electrònic a una aplicació de tercers."
 
 #: static/js/xblock_lti_consumer.js:181
 msgid ""
 "Click OK to have your username and full name sent to a 3rd party "
 "application."
 msgstr ""
-"לחץ על אישור כדי לשלוח את שם המשתמש והשם המלא שלך לאפליקציה של צד שלישי."
+"Feu clic a D'acord per enviar el vostre nom d'usuari i nom complet a una "
+"aplicació de tercers."
 
 #: static/js/xblock_lti_consumer.js:184
 msgid ""
 "Click OK to have your full name and e-mail address sent to a 3rd party "
 "application."
 msgstr ""
-"לחץ על אישור כדי שהשם המלא וכתובת הדואר האלקטרוני שלך יישלחו לאפליקציה של צד"
-" שלישי."
+"Feu clic a D'acord per enviar el vostre nom complet i adreça de correu "
+"electrònic a una aplicació de tercers."
 
 #: static/js/xblock_lti_consumer.js:187
 msgid "Click OK to have your username sent to a 3rd party application."
-msgstr "לחץ על אישור כדי לשלוח את שם המשתמש שלך לאפליקציה של צד שלישי."
+msgstr ""
+"Feu clic a D'acord per enviar el vostre nom d'usuari a una aplicació de "
+"tercers."
 
 #: static/js/xblock_lti_consumer.js:189
 msgid "Click OK to have your full name sent to a 3rd party application."
-msgstr "לחץ על אישור כדי לשלוח את שמך המלא לאפליקציה של צד שלישי."
+msgstr ""
+"Feu clic a D'acord per enviar el vostre nom complet a una aplicació de "
+"tercers."
 
 #: static/js/xblock_lti_consumer.js:191
 msgid "Click OK to have your e-mail address sent to a 3rd party application."
 msgstr ""
-"לחץ על אישור כדי לשלוח את כתובת הדואר האלקטרוני שלך לאפליקציה של צד שלישי."
+"Feu clic a D'acord per enviar la vostra adreça de correu electrònic a una "
+"aplicació de tercers."
 
 #: static/js/xblock_lti_consumer.js:198
 msgid "Click Cancel to return to this page without sending your information."
-msgstr "לחץ על ביטול כדי לחזור לדף זה מבלי לשלוח את המידע שלך."
+msgstr ""
+"Feu clic a Cancel·la per tornar a aquesta pàgina sense enviar la vostra "
+"informació."
 
 #: static/js/xblock_studio_view.js:476 static/js/xblock_studio_view.js:490
 #: static/js/xblock_studio_view.js:526
 msgid "Unable to update settings"
-msgstr "לא ניתן לעדכן את ההגדרות"
+msgstr "No s'ha pogut actualitzar la configuració"
 
 #: static/js/xblock_studio_view.js:477
 msgid "Unable to parse the custom parameters."
-msgstr "לא ניתן לנתח את הפרמטרים המותאמים."
+msgstr "No s'han pogut analitzar els paràmetres personalitzats."
 
 #: static/js/xblock_studio_view.js:491
 msgid "Unable to parse the redirect URIs."
-msgstr "לא ניתן לנתח את ה-redirect URIs."
+msgstr "No s'han pogut analitzar les URIs de redirecció."
 
 #: static/js/xblock_studio_view.js:511
 msgid ""
 "This may be happening because of an error with our server or your internet "
 "connection. Try refreshing the page or making sure you are online."
 msgstr ""
-"ייתכן שזה קורה עקב שגיאה בשרת שלנו או בחריכת האינטרנט שלך. נסה לרענן את הדף "
-"או לוודא שאתה מקוון."
+"Això pot estar passant a causa d'un error en el nostre servidor o la vostra "
+"connexió a Internet. Proveu de refrescar la pàgina o assegureu-vos que esteu"
+" en línia."
