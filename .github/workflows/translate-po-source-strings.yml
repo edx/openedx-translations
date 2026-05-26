@@ -16,10 +16,6 @@ on:
         description: 'Language code in edX format (e.g. es-419 or pt-PT), case insensitive. Leave blank to run all.'
         required: false
         type: string
-      large_application_name:
-        description: 'Python application/repository to translate, case sensitive Intended for applications with a large number of strings. This will create a job per language. Leave blank to run all.'
-        required: false
-        type: string
 
 env:
   # Maximum number of PO entries to send in a single API request.
@@ -33,38 +29,6 @@ jobs:
       config_key: pythonApplications
       application_name: ${{ inputs.application_name || '' }}
       translation_language: ${{ inputs.translation_language || '' }}
-
-  setup-large:
-    if: ${{ inputs.large_application_name != '' }}
-    uses: ./.github/workflows/_translate-setup.yml
-    with:
-      config_key: pythonApplications
-      application_name: ${{ inputs.large_application_name }}
-      translation_language: ${{ inputs.translation_language || '' }}
-
-  setup-regular:
-    runs-on: ubuntu-latest
-    needs: [setup]
-    outputs:
-      has_applications: ${{ steps.filter_regular_apps.outputs.has_applications }}
-      applications: ${{ steps.filter_regular_apps.outputs.applications }}
-    steps:
-      - uses: actions/github-script@v7
-        id: filter_regular_apps
-        env:
-          INPUT_LARGE_APPLICATION_NAME: ${{ inputs.large_application_name || '' }}
-          INPUT_APPLICATIONS: ${{ needs.setup.outputs.applications }}
-        with:
-          script: |
-            const largeApp = process.env.INPUT_LARGE_APPLICATION_NAME || '';
-            const applications = JSON.parse(process.env.INPUT_APPLICATIONS || '[]');
-
-            const regularApplications = largeApp === ''
-              ? applications
-              : applications.filter((application) => application.appName !== largeApp);
-
-            core.setOutput('applications', regularApplications);
-            core.setOutput('has_applications', regularApplications.length > 0);
 
   setup-branch:
     uses: ./.github/workflows/_translate-setup-branch.yml
@@ -81,14 +45,14 @@ jobs:
     secrets: inherit
 
   translate:
-    if: ${{ fromJson(needs.setup-regular.outputs.has_applications) == true }}
-    needs: [setup, setup-regular, setup-branch, validate]
+    if: ${{ fromJson(needs.setup.outputs.has_applications) == true }}
+    needs: [setup, setup-branch, validate]
     runs-on: ubuntu-latest
     strategy:
       # using max-parallel to avoid git push/pull issues when running in parallel
       max-parallel: 1
       matrix:
-        application: ${{ fromJson(needs.setup-regular.outputs.applications) }}
+        application: ${{ fromJson(needs.setup.outputs.applications) }}
       fail-fast: false
     permissions:
       contents: write
@@ -119,75 +83,247 @@ jobs:
           LMS_ACCESS_TOKEN_URL: ${{ vars.LMS_ACCESS_TOKEN_URL }}
           EDX_TRANSLATIONS_PROD_CLIENT_ID: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}
           EDX_TRANSLATIONS_PROD_CLIENT_SECRET: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}
-          APP_NAME: ${{ matrix.application.appName }}
-          LANGUAGE_MODE: all
-          TRANSLATION_LANGUAGES_JSON: ${{ needs.setup.outputs.translation_languages }}
-          TRANSLATION_ENDPOINT: ${{ vars.AI_TRANSLATIONS_FETCH_PO_TRANSLATIONS_URL }}
         run: |
-          chmod +x .github/scripts/translate_po_source_strings.sh
-          .github/scripts/translate_po_source_strings.sh
+          . .github/scripts/fetch_jwt.sh
 
-  translate-large-by-language:
-    if: ${{ !cancelled() && fromJson(needs.setup-large.outputs.has_applications) == true }}
-    needs: [setup-large, setup-branch, validate]
-    runs-on: ubuntu-latest
-    strategy:
-      # Keep language jobs bounded to reduce branch update churn while still parallelizing.
-      max-parallel: 3
-      matrix:
-        application: ${{ fromJson(needs.setup-large.outputs.applications) }}
-        translation_language: ${{ fromJson(needs.setup-large.outputs.translation_languages) }}
-      fail-fast: false
-    permissions:
-      contents: write
-      pull-requests: write
+          num_failures=0
+          num_attempted=0
+          translation_languages='${{ needs.setup.outputs.translation_languages }}'
+          app_dir="translations/${{ matrix.application.appName }}"
 
-    steps:
-      - name: Clone ${{ github.repository }}
-        uses: actions/checkout@v5
-        with:
-          ref: ${{ needs.setup-branch.outputs.branch }}
-          fetch-depth: 0
+          # Skip the application entirely if its translations directory hasn't been
+          # populated yet (e.g. a newly added app with no extracted strings).
+          if [ ! -d "$app_dir" ]; then
+            echo "Application directory does not exist: $app_dir. Skipping application."
+            exit 0
+          fi
 
-      - name: Configure git identity
-        run: |
-          git config --global user.name "edx-translations-app"
-          git config --global user.email "edx-translations-app@users.noreply.github.com"
+          locale_base=$(find "$app_dir" -type d -path "*/conf/locale" | head -1)
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+          if [ -z "$locale_base" ]; then
+            echo "No conf/locale directory found under $app_dir. Skipping."
+            exit 0
+          fi
 
-      - name: Install translation script requirements
-        run: pip install -r requirements/translations.txt
+          echo "Found locale base: $locale_base"
 
-      - name: Translate PO source strings for ${{ matrix.application.appName }} (${{ matrix.translation_language.edxLang }})
-        env:
-          LMS_ACCESS_TOKEN_URL: ${{ vars.LMS_ACCESS_TOKEN_URL }}
-          EDX_TRANSLATIONS_PROD_CLIENT_ID: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}
-          EDX_TRANSLATIONS_PROD_CLIENT_SECRET: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}
-          APP_NAME: ${{ matrix.application.appName }}
-          LANGUAGE_MODE: single
-          SINGLE_TRANSLATION_LANGUAGE_JSON: ${{ toJSON(matrix.translation_language) }}
-          TRANSLATION_ENDPOINT: ${{ vars.AI_TRANSLATIONS_FETCH_PO_TRANSLATIONS_URL }}
-        run: |
-          chmod +x .github/scripts/translate_po_source_strings.sh
-          .github/scripts/translate_po_source_strings.sh
+          en_dir="${locale_base}/en/LC_MESSAGES"
+
+          if [ ! -d "$en_dir" ]; then
+            echo "::warning::No English source directory found at $en_dir. Skipping."
+            exit 0
+          fi
+
+          # Validate chunk size once per job; fall back to 500 if unset or invalid.
+          if [[ "$TRANSLATION_CHUNK_SIZE" =~ ^[1-9][0-9]*$ ]]; then
+            chunk_size="$TRANSLATION_CHUNK_SIZE"
+          else
+            echo "::warning::TRANSLATION_CHUNK_SIZE ('$TRANSLATION_CHUNK_SIZE') is not a positive integer. Falling back to 500."
+            chunk_size=500
+          fi
+
+          # Loop through selected languages
+          while IFS= read -r lang; do
+            # Re-fetch JWT per language to prevent token expiry on long-running jobs.
+            fetch_jwt || exit 1
+
+            edxLang=$(echo "$lang" | jq -r '.edxLang')
+            repoLang=$(echo "$lang" | jq -r '.repoLang')
+
+            echo "Processing language $edxLang for application ${{ matrix.application.appName }}."
+
+            for source_file in "$en_dir"/*.po; do
+              [ -f "$source_file" ] || continue
+              po_filename=$(basename "$source_file")
+
+              echo "Processing $po_filename for language $edxLang."
+
+              chunk_dir="/tmp/po_translate_chunks_${{ matrix.application.appName }}_${po_filename}_${edxLang}"
+              chunk_list_file="/tmp/po_translate_chunk_list_${{ matrix.application.appName }}_${po_filename}_${edxLang}.txt"
+              rm -rf "$chunk_dir"
+
+              split_exit_code=0
+              python scripts/split_po_file.py \
+                --input "$source_file" \
+                --output-dir "$chunk_dir" \
+                --chunk-size "$chunk_size" > "$chunk_list_file" || split_exit_code=$?
+
+              if [ "$split_exit_code" -ne 0 ]; then
+                echo "::warning::Failed to split $po_filename into chunks (exit code $split_exit_code). Skipping."
+                num_failures=$((num_failures+1))
+                echo ""
+                rm -f "$chunk_list_file"
+                rm -rf "$chunk_dir"
+                continue
+              fi
+
+              mapfile -t chunk_files < "$chunk_list_file"
+
+              if [ "${#chunk_files[@]}" -eq 0 ]; then
+                echo "::warning::Source file has no entries: $source_file. Skipping."
+                echo ""
+                rm -f "$chunk_list_file"
+                rm -rf "$chunk_dir"
+                continue
+              fi
+
+              num_chunks="${#chunk_files[@]}"
+              echo "Split into $num_chunks chunk(s)."
+
+              output_file="${locale_base}/${repoLang}/LC_MESSAGES/${po_filename}"
+              response_dir="/tmp/po_translate_responses_${{ matrix.application.appName }}_${po_filename}_${edxLang}"
+              rm -rf "$response_dir"
+              mkdir -p "$response_dir"
+
+              file_failed=0
+              chunk_504=0
+              response_files=()
+
+              for chunk_idx in "${!chunk_files[@]}"; do
+                chunk_file="${chunk_files[$chunk_idx]}"
+                chunk_response="$response_dir/chunk_$(printf '%04d' "$chunk_idx").po"
+                response_files+=("$chunk_response")
+
+                echo "Translating chunk $((chunk_idx + 1)) of $num_chunks for language $edxLang."
+
+                # The fetch translations endpoint occasionally times out with a 504 Gateway Timeout error.
+                # --retry-all-errors ensures curl retries on 504 responses (not just network errors).
+                # Requests that still fail after all retries are soft-failed with a warning.
+                curl_exit_code=0
+                status_code=$(curl -sS --connect-timeout 10 --max-time 180 --retry 3 --retry-delay 60 --retry-all-errors \
+                  -w "%{http_code}" \
+                  -o "$chunk_response" \
+                  -X POST "${{ vars.AI_TRANSLATIONS_FETCH_PO_TRANSLATIONS_URL }}" \
+                  -F "source_file=@$chunk_file;filename=$po_filename" \
+                  -F "application_name=${{ matrix.application.appName }}" \
+                  -F "translation_language=$edxLang" \
+                  -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
+
+                if [ "$curl_exit_code" -ne 0 ]; then
+                  echo "::warning::Curl request failed for chunk $((chunk_idx + 1)) of $num_chunks, language $edxLang, $po_filename, ${{ matrix.application.appName }} with exit code $curl_exit_code."
+                  [ -s "$chunk_response" ] && cat "$chunk_response"
+                  file_failed=1
+                  break
+                fi
+
+                if [ "$status_code" -eq 504 ]; then
+                  echo "::warning::API call timed out (504) for chunk $((chunk_idx + 1)) of $num_chunks, language $edxLang, $po_filename, ${{ matrix.application.appName }} after retries. Skipping — will retry on next run."
+                  [ -s "$chunk_response" ] && cat "$chunk_response"
+                  chunk_504=1
+                  break
+                fi
+
+                if [ "$status_code" -ne 200 ]; then
+                  echo "::warning::API call failed for chunk $((chunk_idx + 1)) of $num_chunks, language $edxLang, $po_filename, ${{ matrix.application.appName }} with status code $status_code."
+                  [ -s "$chunk_response" ] && cat "$chunk_response"
+                  file_failed=1
+                  break
+                fi
+
+                echo "Chunk $((chunk_idx + 1)) of $num_chunks succeeded for language $edxLang."
+              done
+
+              if [ "$chunk_504" -eq 1 ]; then
+                echo ""
+                rm -f "$chunk_list_file"
+                rm -rf "$chunk_dir" "$response_dir"
+                continue
+              fi
+
+              if [ "$file_failed" -eq 1 ]; then
+                num_failures=$((num_failures+1))
+                echo ""
+                rm -f "$chunk_list_file"
+                rm -rf "$chunk_dir" "$response_dir"
+                continue
+              fi
+
+              # Validate that all response chunks are valid PO files before merging.
+              all_valid=1
+              for response_file in "${response_files[@]}"; do
+                if ! CHUNK_FILE="$response_file" python3 -c "import polib,os; polib.pofile(os.environ['CHUNK_FILE'])" 2>/dev/null; then
+                  echo "::warning::A response chunk for language $edxLang for $po_filename in ${{ matrix.application.appName }} is not a valid PO file. Skipping."
+                  all_valid=0
+                  break
+                fi
+              done
+              if [ "$all_valid" -eq 0 ]; then
+                num_failures=$((num_failures+1))
+                echo ""
+                rm -f "$chunk_list_file"
+                rm -rf "$chunk_dir" "$response_dir"
+                continue
+              fi
+
+              mkdir -p "$(dirname "$output_file")"
+
+              if ! python scripts/merge_po_chunks.py \
+                --output "${output_file}.tmp" \
+                "${response_files[@]}"; then
+                echo "::warning::Failed to merge translated chunks for language $edxLang for $po_filename in ${{ matrix.application.appName }}. Skipping."
+                rm -f "${output_file}.tmp"
+                num_failures=$((num_failures+1))
+                echo ""
+                rm -f "$chunk_list_file"
+                rm -rf "$chunk_dir" "$response_dir"
+                continue
+              fi
+
+              mv "${output_file}.tmp" "$output_file"
+              git add "$output_file"
+              num_attempted=$((num_attempted+1))
+
+              rm -f "$chunk_list_file"
+              rm -rf "$chunk_dir" "$response_dir"
+              echo ""
+            done
+
+            echo ""
+          done < <(echo "$translation_languages" | jq -c '.[]')
+
+          # Check if there are any changes to commit. If so, commit and push.
+          GIT_STATUS=$(git status "translations/${{ matrix.application.appName }}" -s | wc -l)
+          if [ "$GIT_STATUS" -gt 0 ]; then
+            git commit -m "chore: add AI translated PO strings for ${{ matrix.application.appName }}"
+            max_push_attempts=3
+            push_attempt=1
+            push_succeeded=0
+            while [ "$push_attempt" -le "$max_push_attempts" ]; do
+              if git pull --rebase && git push; then
+                push_succeeded=1
+                break
+              fi
+              if [ "$push_attempt" -lt "$max_push_attempts" ]; then
+                echo "git push failed due to a concurrent branch update. Retrying ($push_attempt/$max_push_attempts)..."
+                sleep $((push_attempt * 5))
+              fi
+              push_attempt=$((push_attempt+1))
+            done
+            if [ "$push_succeeded" -ne 1 ]; then
+              echo "::error::Failed to push translated strings after $max_push_attempts attempts due to concurrent branch updates."
+              exit 1
+            fi
+          fi
+
+          if [ "$num_attempted" -eq 0 ]; then
+            echo "Warning: No translations were written for application ${{ matrix.application.appName }}. Check that source PO files exist at the expected path."
+          fi
+
+          if [ "$num_failures" -ne 0 ]; then
+            echo "One or more languages for application ${{ matrix.application.appName }} failed to be translated. Failing job."
+            exit 1
+          fi
 
   merge:
     uses: ./.github/workflows/_translate-merge.yml
-    needs: [setup, setup-large, setup-regular, setup-branch, validate, translate, translate-large-by-language]
+    needs: [setup, setup-branch, validate, translate]
     # Run even if translate fails (partial translations are still worth merging).
     if: >-
       ${{
         !cancelled() &&
         needs.setup.result == 'success' &&
-        (needs.setup-large.result == 'success' || needs.setup-large.result == 'skipped') &&
-        needs.setup-regular.result == 'success' &&
         needs.setup-branch.result == 'success' &&
-        needs.translate.result != 'cancelled' &&
-        needs.translate-large-by-language.result != 'cancelled'
+        needs.translate.result != 'cancelled'
       }}
     with:
       branch: ${{ needs.setup-branch.outputs.branch }}
