@@ -249,6 +249,8 @@ jobs:
       - name: prepare the environment with edx-platform specific changes
         if: matrix.repo_config.repo == 'edx-platform'
         run: |
+          # Update package list to avoid 404 errors
+          sudo apt update
           # This is needed for edx-platform base.txt packages
           sudo apt install -y libxml2-dev libxmlsec1-dev libxslt1-dev
 
@@ -277,7 +279,8 @@ jobs:
           EDX_BASE_REQS=translations/edx-platform/requirements/edx/base.txt
           if test -f $EDX_BASE_REQS; then
             # Install edx-platform specific apps (e.g. wiki) which is required to extract translations from
-            pip install -r $EDX_BASE_REQS
+            # Use --no-build-isolation to avoid issues with legacy packages (e.g., loremipsum) that have broken build systems
+            pip install --no-build-isolation -r $EDX_BASE_REQS
           fi
 
           APP_BASE="translations/${{ matrix.repo_config.repo }}"
@@ -297,7 +300,7 @@ jobs:
             for req_file in "${REQ_FILES[@]}"; do
               if test -f "$req_file"; then
                 echo "Installing $req_file for ${{ matrix.repo_config.repo }}"
-                pip install -r "$req_file" || echo "Failed to install $req_file, continuing..."
+                pip install --no-build-isolation -r "$req_file" || echo "Failed to install $req_file, continuing..."
                 break
               fi
             done
@@ -307,12 +310,33 @@ jobs:
       - name: verify extraction setup
         run: |
           echo "Checking pybabel installation..."
-          which pybabel
+          PYBABEL_PATH=$(which pybabel)
+          echo "pybabel location: $PYBABEL_PATH"
+          
+          # Fail if pybabel is from system (/usr/bin) instead of virtualenv
+          if [[ "$PYBABEL_PATH" == "/usr/bin/pybabel" ]]; then
+            echo "ERROR: System pybabel detected instead of virtualenv pybabel"
+            echo "This means python3-babel removal didn't work or PATH is incorrect"
+            exit 1
+          fi
+          
+          # Verify pybabel is from the current Python environment
+          PYTHON_PREFIX=$(python -c "import sys; print(sys.prefix)")
+          if [[ "$PYBABEL_PATH" != "$PYTHON_PREFIX"* ]]; then
+            echo "ERROR: pybabel is not from the current Python environment"
+            echo "Expected: $PYTHON_PREFIX/bin/pybabel"
+            echo "Got: $PYBABEL_PATH"
+            exit 1
+          fi
+          
+          echo "pybabel is from correct environment: $PYBABEL_PATH"
           pybabel --version
+          
           echo "Verifying mako babel plugin..."
-          python -c "from mako.ext.babelplugin import extract; print('✓ Mako babel plugin available')"
+          python -c "from mako.ext.babelplugin import extract; print('Mako babel plugin available')"
+          
           echo "Verifying enmerkar-underscore plugin..."
-          python -c "from enmerkar_underscore import extract; print('✓ Underscore extraction plugin available')"
+          python -c "from enmerkar_underscore import extract; print('Underscore extraction plugin available')"
 
       # Extracts the translation source files
       - name: extract translation source files
