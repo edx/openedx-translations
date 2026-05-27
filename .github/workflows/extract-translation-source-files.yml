@@ -223,7 +223,9 @@ jobs:
 
       # Installs gettext, a dependency for extracting translation source files in django
       - name: install gettext
-        run: sudo apt install -y gettext
+        run: |
+          sudo apt update
+          sudo apt install -y gettext
 
       # Clones the edx/openedx-translations repository
       - name: clone ${github.repository}
