@@ -117,8 +117,8 @@ jobs:
       - name: Translate PO source strings for ${{ matrix.application.appName }}
         env:
           LMS_ACCESS_TOKEN_URL: ${{ vars.LMS_ACCESS_TOKEN_URL }}
-          EDX_TRANSLATIONS_PROD_CLIENT_ID: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}
-          EDX_TRANSLATIONS_PROD_CLIENT_SECRET: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}
+          EDX_TRANSLATIONS_STAGE_CLIENT_ID: ${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_ID }}
+          EDX_TRANSLATIONS_STAGE_CLIENT_SECRET: ${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_SECRET }}
           APP_NAME: ${{ matrix.application.appName }}
           LANGUAGE_MODE: all
           TRANSLATION_LANGUAGES_JSON: ${{ needs.setup.outputs.translation_languages }}
@@ -165,8 +165,8 @@ jobs:
       - name: Translate PO source strings for ${{ matrix.application.appName }} (${{ matrix.translation_language.edxLang }})
         env:
           LMS_ACCESS_TOKEN_URL: ${{ vars.LMS_ACCESS_TOKEN_URL }}
-          EDX_TRANSLATIONS_PROD_CLIENT_ID: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}
-          EDX_TRANSLATIONS_PROD_CLIENT_SECRET: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}
+          EDX_TRANSLATIONS_STAGE_CLIENT_ID: ${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_ID }}
+          EDX_TRANSLATIONS_STAGE_CLIENT_SECRET: ${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_SECRET }}
           APP_NAME: ${{ matrix.application.appName }}
           LANGUAGE_MODE: single
           SINGLE_TRANSLATION_LANGUAGE_JSON: ${{ toJSON(matrix.translation_language) }}
