@@ -26,6 +26,15 @@ if [ -z "${TRANSLATION_ENDPOINT:-}" ]; then
   exit 1
 fi
 
+log_git_state() {
+  echo "--- git status --short (including untracked) ---"
+  git status --short --untracked-files=all || true
+  echo "--- git diff --name-status ---"
+  git diff --name-status || true
+  echo "--- git diff --cached --name-status ---"
+  git diff --cached --name-status || true
+}
+
 . .github/scripts/fetch_jwt.sh
 
 num_failures=0
@@ -231,22 +240,10 @@ if [ "$LANGUAGE_MODE" = "all" ]; then
   fi
   while IFS= read -r lang; do
     process_language "$lang"
-
-log_git_state() {
-  echo "--- git status --short (including untracked) ---"
-  git status --short --untracked-files=all || true
-  echo "--- git diff --name-status ---"
-  git diff --name-status || true
-  echo "--- git diff --cached --name-status ---"
-  git diff --cached --name-status || true
-}
   done < <(echo "$TRANSLATION_LANGUAGES_JSON" | jq -c '.[]')
 else
   if [ -z "${SINGLE_TRANSLATION_LANGUAGE_JSON:-}" ]; then
     echo "::error::SINGLE_TRANSLATION_LANGUAGE_JSON is required when LANGUAGE_MODE=single."
-  echo "Detected pending changes before commit. Current git state:"
-  log_git_state
-
     exit 1
   fi
   process_language "$SINGLE_TRANSLATION_LANGUAGE_JSON"
