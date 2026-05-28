@@ -124,8 +124,7 @@ jobs:
           TRANSLATION_LANGUAGES_JSON: ${{ needs.setup.outputs.translation_languages }}
           TRANSLATION_ENDPOINT: ${{ vars.AI_TRANSLATIONS_FETCH_PO_TRANSLATIONS_URL }}
         run: |
-          chmod +x .github/scripts/translate_po_source_strings.sh
-          .github/scripts/translate_po_source_strings.sh
+          bash .github/scripts/translate_po_source_strings.sh
 
   translate-large-by-language:
     if: ${{ !cancelled() && inputs.large_application_name != '' && fromJson(needs.setup-large.outputs.has_applications) == true }}
@@ -171,8 +170,7 @@ jobs:
           SINGLE_TRANSLATION_LANGUAGE_JSON: ${{ toJSON(matrix.translation_language) }}
           TRANSLATION_ENDPOINT: ${{ vars.AI_TRANSLATIONS_FETCH_PO_TRANSLATIONS_URL }}
         run: |
-          chmod +x .github/scripts/translate_po_source_strings.sh
-          .github/scripts/translate_po_source_strings.sh
+          bash .github/scripts/translate_po_source_strings.sh
 
   merge:
     uses: ./.github/workflows/_translate-merge.yml
