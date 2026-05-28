@@ -1,81 +1,73 @@
-# edX translation file.
-# Copyright (C) 2024 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2024.
-# 
-# Translators:
-# Brian Smith, 2024
-# Nathan Robertson, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2023-04-25 01:51+0000\n"
-"Last-Translator: Nathan Robertson, 2024\n"
-"Language-Team: Thai (https://app.transifex.com/open-edx/teams/6205/th/)\n"
+"PO-Revision-Date: 2026-05-28 18:27+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: th\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: done.py:41
+#: done.py:39
 msgid "Is the student done?"
-msgstr "นักเรียนเสร็จแล้วเหรอ?"
+msgstr "นักเรียนทำเสร็จหรือยัง?"
 
-#: done.py:47
+#: done.py:45
 msgid "Align left/right/center"
-msgstr "จัดชิดซ้าย/ขวา/กึ่งกลาง"
+msgstr "จัดชิดซ้าย/ขวา/กลาง"
 
-#: done.py:134
+#: done.py:132
 msgid "Display name"
-msgstr "ชื่อที่แสดง"
+msgstr "แสดงชื่อ"
 
-#: done.py:139
+#: done.py:137
 msgid ""
 "ISO-8601 formatted string representing the start date of this assignment. We"
 " ignore this."
 msgstr ""
-"สตริงที่จัดรูปแบบ ISO-8601 ซึ่งแสดงถึงวันที่เริ่มต้นของงานนี้ "
-"เราเพิกเฉยต่อสิ่งนี้"
+"สตริงที่จัดรูปแบบตาม ISO-8601 แสดงวันที่เริ่มต้นของการมอบหมายนี้ "
+"เราไม่สนใจส่วนนี้"
 
-#: done.py:144
+#: done.py:142
 msgid ""
 "ISO-8601 formatted string representing the due date of this assignment. We "
 "ignore this."
 msgstr ""
-"สตริงที่จัดรูปแบบ ISO-8601 ซึ่งแสดงถึงวันครบกำหนดของงานนี้ "
-"เราเพิกเฉยต่อสิ่งนี้"
+"สตริงที่จัดรูปแบบตาม ISO-8601 แสดงวันที่กำหนดส่งของการมอบหมายนี้ "
+"เราไม่สนใจส่วนนี้"
 
-#: done.py:148
+#: done.py:146
 msgid "Problem Weight"
 msgstr "น้ำหนักของปัญหา"
 
-#: done.py:150
+#: done.py:148
 msgid ""
 "Defines the number of points each problem is worth. If the value is not set,"
 " the problem is worth the sum of the option point values."
 msgstr ""
-"กำหนดจำนวนคะแนนที่แต่ละปัญหามีค่า หากไม่ได้ตั้งค่าไว้ "
-"ปัญหาจะมีมูลค่าเท่ากับผลรวมของค่าจุดตัวเลือก"
+"กำหนดจุดคะแนนสำหรับโจทย์แต่ละข้อ หากไม่ได้ตั้งค่าไว้ "
+"โจทย์จะมีคะแนนเท่ากับผลรวมของค่าของตัวเลือก"
 
 #: templates/done.html:8
 msgid "X"
-msgstr "เอ็กซ์"
+msgstr "X"
 
 #: templates/done.html:9
 msgid "I have completed this"
-msgstr "ฉันได้ทำสิ่งนี้เสร็จแล้ว"
+msgstr "ฉันทำเสร็จแล้ว"
 
 #: templates/done.html:11
 msgid "Unmark"
-msgstr "ยกเลิกการทำเครื่องหมาย"
+msgstr "ยกเลิกเครื่องหมาย"
 
 #: templates/done.html:12
 msgid "Mark as complete"
-msgstr "ทำเครื่องหมายว่าเสร็จสมบูรณ์"
+msgstr "ทำเครื่องหมายว่าสำเร็จ"
 
 #: templates/studioview.html:4
 msgid ""
@@ -85,24 +77,23 @@ msgid ""
 "component, and students can see in their progress page which portions are "
 "completed and  which still need to be watched or read."
 msgstr ""
-"นี่เป็นองค์ประกอบที่เรียบง่ายมากโดยไม่มีตัวเลือกการกำหนดค่า "
-"ใช้เพื่อช่วยให้นักเรียนติดตามว่าเรียนจบส่วนใดของหลักสูตรแล้ว ตัวอย่างเช่น "
-"คุณอาจวางส่วนนี้ไว้ข้างใต้ส่วนประกอบข้อความและวิดีโอแต่ละรายการ "
-"และนักเรียนสามารถดูได้ในหน้าความคืบหน้าว่าส่วนไหนที่เสร็จสมบูรณ์แล้วและส่วนไหนยังต้องดูหรืออ่าน"
+"นี่คือส่วนประกอบที่เรียบง่ายมากโดยไม่มีตัวเลือกการตั้งค่าใดๆ "
+"ใช้สำหรับช่วยนักเรียนติดตามส่วนของคอร์สที่พวกเขาได้ทำเสร็จแล้ว ตัวอย่างเช่น "
+"คุณอาจวางส่วนนี้ไว้ใต้ส่วนประกอบข้อความและวิดีโอแต่ละส่วน "
+"เพื่อให้นักเรียนเห็นในหน้าความก้าวหน้าว่าส่วนไหนเสร็จแล้วและส่วนไหนยังต้องดูหรืออ่าน"
 
 #: templates/studioview.html:6
 msgid ""
 "It is also helpful to give students a way to sign off on having completed "
 "something. They are less likely to skip material that way."
 msgstr ""
-"นอกจากนี้ "
-"การเปิดโอกาสให้นักเรียนลงนามเมื่อทำบางอย่างเสร็จแล้วยังเป็นประโยชน์อีกด้วย "
-"พวกเขามีโอกาสน้อยที่จะข้ามเนื้อหาในลักษณะนั้น"
+"นอกจากนี้ยังเป็นประโยชน์ที่จะให้นักเรียนมีวิธียืนยันการทำเสร็จสิ้น "
+"ซึ่งจะทำให้นักเรียนมีแนวโน้มที่จะไม่ข้ามเนื้อหา"
 
 #: templates/studioview.html:8
 msgid ""
 "(If you're a real power-user, in OLX, we do allow you to add an align tag, "
 "which can left-, center-, or right-justify the XBlock)"
 msgstr ""
-"(หากคุณเป็นผู้ใช้งานระดับสูงจริงๆ ใน OLX เราอนุญาตให้คุณเพิ่มแท็กจัดเรียง "
-"ซึ่งสามารถจัดชิดซ้าย กึ่งกลาง หรือชิดขวาให้กับ XBlock ได้)"
+"(หากคุณเป็นผู้ใช้ขั้นสูง ใน OLX เราให้คุณเพิ่มแท็กจัดตำแหน่ง "
+"ซึ่งสามารถปรับให้จัดชิดซ้าย ชิดกลาง หรือชิดขวาสำหรับ XBlock)"

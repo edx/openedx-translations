@@ -1,69 +1,61 @@
-# edX translation file.
-# Copyright (C) 2024 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2024.
-# 
-# Translators:
-# Brian Smith, 2023
-# Nathan Robertson, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2023-04-25 01:51+0000\n"
-"Last-Translator: Nathan Robertson, 2024\n"
-"Language-Team: Greek (https://app.transifex.com/open-edx/teams/6205/el/)\n"
+"PO-Revision-Date: 2026-05-28 18:26+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: done.py:41
+#: done.py:39
 msgid "Is the student done?"
-msgstr "Έχει ολοκληρώσει ο μαθητής;"
+msgstr "Ο μαθητής έχει τελειώσει;"
 
-#: done.py:47
+#: done.py:45
 msgid "Align left/right/center"
 msgstr "Στοίχιση αριστερά/δεξιά/κέντρο"
 
-#: done.py:134
+#: done.py:132
 msgid "Display name"
-msgstr "Εμφανιζόμενο όνομα"
+msgstr "Όνομα εμφάνισης"
 
-#: done.py:139
+#: done.py:137
 msgid ""
 "ISO-8601 formatted string representing the start date of this assignment. We"
 " ignore this."
 msgstr ""
-"Συμβολοσειρά μορφοποιημένη υπό το πρότυπο ISO-8601 που αναπαριστά την "
-"ημερομηνία έναρξης αυτής της εργασίας. Αυτό το αγνοούμε."
+"Συμβολοσειρά σε μορφή ISO-8601 που αναπαριστά την ημερομηνία έναρξης αυτής "
+"της εργασίας. Το αγνοούμε."
 
-#: done.py:144
+#: done.py:142
 msgid ""
 "ISO-8601 formatted string representing the due date of this assignment. We "
 "ignore this."
 msgstr ""
-"Συμβολοσειρά μορφοποιημένη υπό το πρότυπο ISO-8601 που αναπαριστά την "
-"καταληκτική ημερομηνία αυτής της εργασίας. Αυτό το αγνοούμε."
+"Συμβολοσειρά σε μορφή ISO-8601 που αναπαριστά την προθεσμία αυτής της "
+"εργασίας. Το αγνοούμε."
+
+#: done.py:146
+msgid "Problem Weight"
+msgstr "Βάρος προβλήματος"
 
 #: done.py:148
-msgid "Problem Weight"
-msgstr "Βαρύτητα προβλήματος"
-
-#: done.py:150
 msgid ""
 "Defines the number of points each problem is worth. If the value is not set,"
 " the problem is worth the sum of the option point values."
 msgstr ""
-"Καθορίζει τον αριθμό των βαθμών που αξίζει κάθε πρόβλημα. Εάν η τιμή δεν "
-"έχει οριστεί, το πρόβλημα αξίζει το άθροισμα των τιμών των σημείων επιλογής."
+"Ορίζει τον αριθμό των βαθμών που αξίζει κάθε πρόβλημα. Εάν δεν έχει οριστεί "
+"τιμή, το πρόβλημα αξίζει το άθροισμα των βαθμών των επιλογών."
 
 #: templates/done.html:8
 msgid "X"
-msgstr "Χ"
+msgstr "X"
 
 #: templates/done.html:9
 msgid "I have completed this"
@@ -71,11 +63,11 @@ msgstr "Το έχω ολοκληρώσει"
 
 #: templates/done.html:11
 msgid "Unmark"
-msgstr "Κατάργηση επισήμανσης"
+msgstr "Αποεπιλέξτε"
 
 #: templates/done.html:12
 msgid "Mark as complete"
-msgstr "Επισήμανση ως ολοκληρωμένου"
+msgstr "Σημειώστε ως ολοκληρωμένο"
 
 #: templates/studioview.html:4
 msgid ""
@@ -86,26 +78,26 @@ msgid ""
 "completed and  which still need to be watched or read."
 msgstr ""
 "Αυτό είναι ένα πολύ απλό στοιχείο χωρίς επιλογές διαμόρφωσης. "
-"Χρησιμοποιείται για να βοηθήσει τους μαθητές να παρακολουθούν το τμήμα ενός "
-"μαθήματος που έχουν ολοκληρώσει. Για παράδειγμα, μπορείτε να το τοποθετήσετε"
-" κάτω από κάθε στοιχείο κειμένου και βίντεο και οι μαθητές μπορούν να δουν "
-"στη σελίδα προόδου τους ποια τμήματα έχουν ολοκληρωθεί και ποια πρέπει ακόμα"
-" να παρακολουθήσουν ή να διαβάσουν."
+"Χρησιμοποιείται για να βοηθήσει τους μαθητές να παρακολουθούν ποιο μέρος "
+"ενός μαθήματος έχουν ολοκληρώσει. Για παράδειγμα, μπορείτε να το "
+"τοποθετήσετε κάτω από κάθε στοιχείο κειμένου και βίντεο, ώστε οι μαθητές να "
+"βλέπουν στη σελίδα προόδου τους ποια μέρη έχουν ολοκληρωθεί και ποια πρέπει "
+"ακόμα να παρακολουθηθούν ή να διαβαστούν."
 
 #: templates/studioview.html:6
 msgid ""
 "It is also helpful to give students a way to sign off on having completed "
 "something. They are less likely to skip material that way."
 msgstr ""
-"Είναι επίσης χρήσιμο να δίνετε στους μαθητές έναν τρόπο να υπογράψουν ότι "
-"έχουν ολοκληρώσει κάτι. Είναι λιγότερο πιθανό να παραλείψουν υλικό με αυτόν "
-"τον τρόπο."
+"Είναι επίσης χρήσιμο να δίνεται στους μαθητές ο τρόπος να δηλώνουν ότι κάτι "
+"έχει ολοκληρωθεί. Με αυτόν τον τρόπο, είναι λιγότερο πιθανό να παραλείψουν "
+"το υλικό."
 
 #: templates/studioview.html:8
 msgid ""
 "(If you're a real power-user, in OLX, we do allow you to add an align tag, "
 "which can left-, center-, or right-justify the XBlock)"
 msgstr ""
-"(Εάν είστε πραγματικός χρήστης ισχύος, στο OLX, σας επιτρέπουμε να "
-"προσθέσετε μια ετικέτα στοίχισης, η οποία μπορεί να δικαιολογήσει το XBlock "
-"αριστερά, κέντρο ή δεξιά)"
+"(Εάν είστε ένας πραγματικός power-user, στο OLX επιτρέπεται να προσθέσετε "
+"μια ετικέτα στοίχισης, η οποία μπορεί να στοιχίσει το XBlock αριστερά, στο "
+"κέντρο ή δεξιά)"
