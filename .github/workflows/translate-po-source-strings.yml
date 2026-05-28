@@ -132,8 +132,7 @@ jobs:
     needs: [setup-large, setup-branch, validate]
     runs-on: ubuntu-latest
     strategy:
-      # Keep language jobs bounded to reduce branch update churn while still parallelizing.
-      max-parallel: 3
+      max-parallel: 1
       matrix:
         application: ${{ fromJson(needs.setup-large.outputs.applications) }}
         translation_language: ${{ fromJson(needs.setup-large.outputs.translation_languages) }}
