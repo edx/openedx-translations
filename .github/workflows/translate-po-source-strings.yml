@@ -2,6 +2,31 @@
 # translate endpoint for each application and language code combination, using existing source PO files.
 # If successful, it commits the translated output and opens a pull request. In a select set of conditions,
 # it auto-merges the pull request.
+#
+# Run modes (workflow_dispatch inputs):
+# 
+#   Note that a "large app" is one that has too many translations to handle within one job. Applications
+#   specified via this option will be split into one job per language instead.
+#
+#   All apps, all languages:
+#     (leave all inputs blank)
+#
+#   All apps, one language:
+#     translation_language: <lang
+#
+#   One app as non-large (one job for all languages):
+#     application_name: <app>
+#
+#   One app as large only (one job per language):
+#     large_application_name: <app>
+#     large_app_only: true
+#
+#   One large app + all other apps, all languages:
+#     large_application_name: <app>
+#
+#   One large app + all other apps, one language:
+#     large_application_name: <app>
+#     translation_language: <lang>
 
 name: Translate PO source strings
 
@@ -9,17 +34,22 @@ on:
   workflow_dispatch:
     inputs:
       application_name:
-        description: 'Python application/repository to translate, case sensitive. Leave blank to run all.'
+        description: 'Regular app to translate (case sensitive). Leave blank for all apps.'
         required: false
         type: string
       translation_language:
-        description: 'Language code in edX format (e.g. es-419 or pt-PT), case insensitive. Leave blank to run all.'
+        description: 'Language code, e.g. es-419 or pt-PT (case insensitive). Leave blank for all languages.'
         required: false
         type: string
       large_application_name:
-        description: 'Python application/repository to translate, case sensitive. Intended for applications with a large number of strings. This will create a job per language. Leave blank to skip large-application jobs.'
+        description: 'App to translate as large (one job per language, case sensitive). Leave blank to skip.'
         required: false
         type: string
+      large_app_only:
+        description: 'Skip all regular application jobs. Only applies when large_application_name is set.'
+        required: false
+        type: boolean
+        default: false
 
 env:
   # Maximum number of PO entries to send in a single API request.
@@ -54,16 +84,24 @@ jobs:
         env:
           INPUT_LARGE_APPLICATION_NAME: ${{ inputs.large_application_name || '' }}
           INPUT_APPLICATIONS: ${{ needs.setup.outputs.applications }}
+          INPUT_LARGE_APP_ONLY: ${{ inputs.large_app_only || false }}
         with:
           script: |
             const largeApp = process.env.INPUT_LARGE_APPLICATION_NAME || '';
+            const largeAppOnly = process.env.INPUT_LARGE_APP_ONLY === 'true';
             const applications = JSON.parse(process.env.INPUT_APPLICATIONS || '[]');
+
+            if (largeAppOnly) {
+              core.setOutput('applications', JSON.stringify([]));
+              core.setOutput('has_applications', false);
+              return;
+            }
 
             const regularApplications = largeApp === ''
               ? applications
               : applications.filter((application) => application.appName !== largeApp);
 
-            core.setOutput('applications', regularApplications);
+            core.setOutput('applications', JSON.stringify(regularApplications));
             core.setOutput('has_applications', regularApplications.length > 0);
 
   setup-branch:
