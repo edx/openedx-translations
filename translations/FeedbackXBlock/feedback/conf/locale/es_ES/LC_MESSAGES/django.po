@@ -1,27 +1,43 @@
-# edX translation file.
-# Copyright (C) 2025 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
-# 
-# Translators:
-# Cristhian Garcia, 2023
-# Nathan Robertson, 2024
-# Brian Smith, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2023-06-06 00:53+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025\n"
-"Language-Team: Spanish (Spain) (https://app.transifex.com/open-edx/teams/6205/es_ES/)\n"
+"PO-Revision-Date: 2026-05-28 18:31+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_ES\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: feedback.py:30
+msgid "What did you learn from this? What was missing?"
+msgstr "¿Qué aprendiste de esto? ¿Qué faltaba?"
+
+#: feedback.py:31
+msgid "How would you rate this as a learning experience?"
+msgstr "¿Cómo calificarías esto como experiencia de aprendizaje?"
+
+#: feedback.py:33
+msgid ""
+"Think about the material, and try to synthesize key lessons learned, as well"
+" as key gaps in our presentation."
+msgstr ""
+"Piensa en el material y trata de sintetizar las lecciones clave aprendidas, "
+"así como los principales vacíos en nuestra presentación."
+
+#: feedback.py:37
+msgid ""
+"Take a little bit of time to reflect here. Research shows that a meaningful "
+"synthesis will help you better understand and remember material from this "
+"course."
+msgstr ""
+"Tómate un momento para reflexionar aquí. La investigación demuestra que una "
+"síntesis significativa te ayudará a comprender y recordar mejor el material "
+"de este curso."
 
 #: feedback.py:43 feedback.py:164
 msgid "Excellent"
@@ -29,31 +45,31 @@ msgstr "Excelente"
 
 #: feedback.py:43 feedback.py:165
 msgid "Good"
-msgstr "Buena"
+msgstr "Bueno"
 
 #: feedback.py:43 feedback.py:166
 msgid "Average"
-msgstr "Promedio"
+msgstr "Regular"
 
 #: feedback.py:43 feedback.py:167
 msgid "Fair"
-msgstr "Regular"
+msgstr "Aceptable"
 
 #: feedback.py:43 feedback.py:168
 msgid "Poor"
-msgstr "Deficiente"
+msgstr "Malo"
 
 #: feedback.py:78
 msgid "Freeform user prompt"
-msgstr "Comentario libre del usuario"
+msgstr "Solicitud de respuesta libre"
 
 #: feedback.py:84 feedback.py:100
 msgid "Random number generated for p. -1 if uninitialized"
-msgstr "Número aleatorio generado por usuario. -1 si no se ha generado"
+msgstr "Número aleatorio generado para p. -1 si no está inicializado"
 
 #: feedback.py:89
 msgid "How user voted. -1 if didn't vote"
-msgstr "¿Cómo votó el usuario? -1 si no votó"
+msgstr "Cómo votó el usuario. -1 si no votó"
 
 #: feedback.py:95
 msgid "What percent of the time should this show?"
@@ -61,7 +77,7 @@ msgstr "¿Qué porcentaje del tiempo debería mostrarse esto?"
 
 #: feedback.py:105
 msgid "A list of user votes"
-msgstr "Una lista de votos de usuarios"
+msgstr "Una lista de votos de los usuarios"
 
 #: feedback.py:109
 msgid "Feedback"
@@ -69,7 +85,7 @@ msgstr "Retroalimentación"
 
 #: feedback.py:112
 msgid "Display Name"
-msgstr "Nombre a mostrar"
+msgstr "Nombre para mostrar"
 
 #: feedback.py:113
 msgid "Provide Feedback"
@@ -89,35 +105,67 @@ msgstr "Mensaje de retroalimentación"
 
 #: feedback.py:125
 msgid "Thank you for your feedback!"
-msgstr "¡Gracias por tu comentario!"
+msgstr "¡Gracias por tu retroalimentación!"
 
 #: feedback.py:130
 msgid "Show aggregate to students"
-msgstr "Mostar reporte agregado a estudiantes"
+msgstr "Mostrar resumen a los estudiantes"
 
 #: feedback.py:159
 msgid "Please reflect on this course material"
-msgstr "Por favor reflexiona sobre el material de este curso"
+msgstr "Por favor, reflexiona sobre el material de este curso"
 
 #: feedback.py:160
 msgid ""
 "Please take time to meaningfully reflect on your experience with this course"
 " material."
 msgstr ""
-"Por favor, tómese el tiempo para reflexionar de manera significativa sobre "
-"su experiencia con el material de este curso."
+"Por favor, tómate el tiempo para reflexionar de manera significativa sobre "
+"tu experiencia con el material de este curso."
 
 #: feedback.py:163
 msgid "Please rate your overall experience"
-msgstr "Por favor, califique su experiencia general."
+msgstr "Por favor, califica tu experiencia en general"
 
-#: feedback.py:389
+#: feedback.py:170
+msgid "Please take a moment to thoughtfully reflect."
+msgstr "Por favor, tómate un momento para reflexionar detenidamente."
+
+#: feedback.py:387
 msgid "Please vote!"
-msgstr "Por favor, vota"
+msgstr "¡Por favor, vota!"
+
+#: static/html/feedback_instructor.html:10
+msgid "Component"
+msgstr "Componente"
+
+#: static/html/feedback_instructor.html:13
+msgid "Number of ratings"
+msgstr "Número de valoraciones"
+
+#: static/html/feedback_instructor.html:16
+msgid "Average rating"
+msgstr "Calificación promedio"
+
+#: static/html/feedback_instructor.html:19
+msgid "Feedback "
+msgstr "Retroalimentación "
+
+#: static/html/feedback_instructor.html:40
+msgid "Comment"
+msgstr "Comentario"
+
+#: static/html/feedback_instructor.html:40
+msgid "Vote"
+msgstr "Votar"
+
+#: static/html/feedback_instructor.html:40
+msgid "No vote"
+msgstr "Sin voto"
 
 #: templates/html/feedback.html:17
 msgid "Submit Feedback"
-msgstr "Enviar comentario"
+msgstr "Enviar retroalimentación"
 
 #: templates/html/studio_view.html:5
 msgid ""
@@ -125,29 +173,31 @@ msgid ""
 "This may be helpful either for course improvement, or to give students a "
 "chance to reflect on what they have done."
 msgstr ""
-"Este XBlock permite recopilar comentarios de los estudiantes sobre partes "
-"del curso. Esto puede ser útil tanto para mejorar el curso como para dar a "
-"los estudiantes la oportunidad de reflexionar sobre lo que han hecho."
+"Este XBlock te permite recopilar la retroalimentación de los estudiantes "
+"sobre partes del curso. Esto puede ser útil tanto para mejorar el curso como"
+" para dar a los estudiantes la oportunidad de reflexionar sobre lo que han "
+"hecho."
 
 #: templates/html/studio_view.html:9
 msgid "Display name"
-msgstr "Nombre a mostrar"
+msgstr "Nombre para mostrar"
 
 #: templates/html/studio_view.html:12
 msgid "The name of the component."
-msgstr "El nombre del componente"
+msgstr "El nombre del componente."
 
 #: templates/html/studio_view.html:20
 msgid "The message to show after user vote."
-msgstr "El mensaje a mostrar después que el usuario vote."
+msgstr "El mensaje que se mostrará después del voto del usuario."
 
 #: templates/html/studio_view.html:28
 msgid "The message to show after user feedback."
-msgstr "El mensaje a mostrar después que el usuario deje un comentario."
+msgstr ""
+"El mensaje que se mostrará después de la retroalimentación del usuario."
 
 #: templates/html/studio_view.html:33
 msgid "Show aggregate report to students"
-msgstr "Mostrar reporte agregado a los estudiantes"
+msgstr "Mostrar informe agregado a los estudiantes."
 
 #: templates/html/studio_view.html:35
 msgid "False"
@@ -157,81 +207,99 @@ msgstr "Falso"
 msgid "True"
 msgstr "Verdadero"
 
+#: templates/html/studio_view.html:39
+msgid "Whether to show the aggregate report to students."
+msgstr "Si se debe mostrar el informe agregado a los estudiantes."
+
 #: templates/html/studio_view.html:44
 msgid "Freeform prompt"
-msgstr "Indicación del comentario libre del usuario"
+msgstr "Solicitud de respuesta libre"
 
 #: templates/html/studio_view.html:47
 msgid "Example: Please provide us feedback on this section."
-msgstr "Ejemplo: Por favor, proporciónenos comentarios sobre esta sección."
+msgstr "Ejemplo: Por favor, danos tu retroalimentación sobre esta sección."
 
 #: templates/html/studio_view.html:52
 msgid "Freeform placeholder"
-msgstr "Texto del comentario libre del usuario"
+msgstr "Marcador de posición para respuesta libre"
 
 #: templates/html/studio_view.html:55
 msgid "This is shown as grayed out text before the student has answered."
-msgstr "Esto es mostrado como texto gris antes que el usuario haya contestado"
+msgstr ""
+"Esto se muestra como un texto en gris antes de que el estudiante responda."
 
 #: templates/html/studio_view.html:60
 msgid "Likert icon set"
-msgstr "Grupo de íconos"
+msgstr "Conjunto de íconos Likert"
 
 #: templates/html/studio_view.html:62
 msgid "Faces (happy to sad)"
-msgstr "Caras (feliz a triste)"
+msgstr "Caras (de felices a tristes)"
+
+#: templates/html/studio_view.html:63
+msgid "Faces (sad to happy)"
+msgstr "Caras (de tristes a felices)"
 
 #: templates/html/studio_view.html:64
 msgid "Numeric"
 msgstr "Numérico"
 
+#: templates/html/studio_view.html:65
+msgid "Stars"
+msgstr "Estrellas"
+
+#: templates/html/studio_view.html:68
+msgid "We can either show happy/sad faces, numbers 1-5 or stars."
+msgstr ""
+"Podemos mostrar caras felices/tristes, números del 1 al 5 o estrellas."
+
 #: templates/html/studio_view.html:73
 msgid "Likert prompt"
-msgstr "Texto del likert"
+msgstr "Solicitud Likert"
 
 #: templates/html/studio_view.html:76
 msgid "Example: Please rate your overall experience with this section."
-msgstr "Ejemplo: Por favor califique su experiencia general con esta sección"
+msgstr "Ejemplo: Por favor, califica tu experiencia general con esta sección."
 
 #: templates/html/studio_view.html:81
 msgid "Likert option 1"
-msgstr "Opción 1 del likert"
+msgstr "Opción Likert 1"
 
 #: templates/html/studio_view.html:84
 msgid "Example: Excellent!"
-msgstr "Ejemplo: ¡Excellente!"
+msgstr "Ejemplo: ¡Excelente!"
 
 #: templates/html/studio_view.html:89
 msgid "Likert option 2"
-msgstr "Opción 2 del likert"
+msgstr "Opción Likert 2"
 
 #: templates/html/studio_view.html:92
 msgid "Example: Good"
-msgstr "Ejemplo: Bueno"
+msgstr "Ejemplo: ¡Bueno!"
 
 #: templates/html/studio_view.html:97
 msgid "Likert option 3"
-msgstr "Opción 3 del likert"
+msgstr "Opción Likert 3"
 
 #: templates/html/studio_view.html:100
 msgid "Example: Average"
-msgstr "Ejemplo: Promedio"
+msgstr "Ejemplo: ¡Regular!"
 
 #: templates/html/studio_view.html:105
 msgid "Likert option 4"
-msgstr "Opción 4 del likert"
+msgstr "Opción Likert 4"
 
 #: templates/html/studio_view.html:108
 msgid "Example: Fair"
-msgstr "Ejemplo: Regular"
+msgstr "Ejemplo: ¡Aceptable!"
 
 #: templates/html/studio_view.html:113
 msgid "Likert option 5"
-msgstr "Opción 5 del likert"
+msgstr "Opción Likert 5"
 
 #: templates/html/studio_view.html:116
 msgid "Example: Poor"
-msgstr "Ejemplo: Deficiente"
+msgstr "Ejemplo: ¡Malo!"
 
 #: templates/html/studio_view.html:123
 msgid "Save"

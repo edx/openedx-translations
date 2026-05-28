@@ -1,151 +1,143 @@
-# edX translation file.
-# Copyright (C) 2024 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2024.
-# 
-# Translators:
-# Brian Smith, 2024
-# Nathan Robertson, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2023-06-06 00:53+0000\n"
-"Last-Translator: Nathan Robertson, 2024\n"
-"Language-Team: Ukrainian (https://app.transifex.com/open-edx/teams/6205/uk/)\n"
+"PO-Revision-Date: 2026-05-28 18:51+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
-#: feedback.py:28
+#: feedback.py:30
 msgid "What did you learn from this? What was missing?"
-msgstr "Що ви з цього навчилися? Чого не вистачало?"
-
-#: feedback.py:29
-msgid "How would you rate this as a learning experience?"
-msgstr "Як би ви оцінили це як навчальний досвід?"
+msgstr "Що ви дізналися з цього? Чого не вистачало?"
 
 #: feedback.py:31
+msgid "How would you rate this as a learning experience?"
+msgstr "Як би ви оцінили це як освітній досвід?"
+
+#: feedback.py:33
 msgid ""
 "Think about the material, and try to synthesize key lessons learned, as well"
 " as key gaps in our presentation."
 msgstr ""
-"Подумайте про матеріал і спробуйте синтезувати ключові засвоєні уроки, а "
-"також ключові прогалини в нашій презентації."
+"Подумайте про матеріал і спробуйте узагальнити основні здобуті знання, а "
+"також ключові недоліки нашої презентації."
 
-#: feedback.py:35
+#: feedback.py:37
 msgid ""
 "Take a little bit of time to reflect here. Research shows that a meaningful "
 "synthesis will help you better understand and remember material from this "
 "course."
 msgstr ""
-"Знайдіть трохи часу, щоб поміркувати тут. Дослідження показують, що "
-"змістовний синтез допоможе вам краще зрозуміти та запам’ятати матеріал цього"
-" курсу."
+"Виділіть трохи часу для роздумів. Дослідження показують, що осмислене "
+"узагальнення допоможе вам краще зрозуміти та запам'ятати матеріал цього "
+"курсу."
 
-#: feedback.py:41 feedback.py:163
+#: feedback.py:43 feedback.py:164
 msgid "Excellent"
-msgstr "Чудово"
+msgstr "Відмінно"
 
-#: feedback.py:41 feedback.py:164
+#: feedback.py:43 feedback.py:165
 msgid "Good"
 msgstr "Добре"
 
-#: feedback.py:41 feedback.py:165
+#: feedback.py:43 feedback.py:166
 msgid "Average"
-msgstr "Середньо"
+msgstr "Задовільно"
 
-#: feedback.py:41 feedback.py:166
+#: feedback.py:43 feedback.py:167
 msgid "Fair"
-msgstr "ярмарок"
+msgstr "Посередньо"
 
-#: feedback.py:41 feedback.py:167
+#: feedback.py:43 feedback.py:168
 msgid "Poor"
-msgstr "Бідний"
+msgstr "Погано"
 
-#: feedback.py:76
+#: feedback.py:78
 msgid "Freeform user prompt"
-msgstr "Підказка користувача у довільній формі"
+msgstr "Вільний запит користувача"
 
-#: feedback.py:82 feedback.py:98
+#: feedback.py:84 feedback.py:100
 msgid "Random number generated for p. -1 if uninitialized"
-msgstr "Випадкове число, згенероване для стор. -1, якщо неініціалізовано"
+msgstr "Випадкове число, згенероване для p. -1, якщо не ініціалізовано"
 
-#: feedback.py:87
+#: feedback.py:89
 msgid "How user voted. -1 if didn't vote"
-msgstr "Як проголосував користувач. -1 якщо не голосував"
+msgstr "Як користувач проголосував. -1, якщо не голосував"
 
-#: feedback.py:93
+#: feedback.py:95
 msgid "What percent of the time should this show?"
-msgstr "Який відсоток часу це має відображатися?"
+msgstr "Скільки відсотків часу це має відображатися?"
 
-#: feedback.py:103
+#: feedback.py:105
 msgid "A list of user votes"
 msgstr "Список голосів користувачів"
 
-#: feedback.py:107
+#: feedback.py:109
 msgid "Feedback"
-msgstr "Відгук"
+msgstr "Зворотний зв'язок"
 
-#: feedback.py:110
+#: feedback.py:112
 msgid "Display Name"
-msgstr "Назва, що відображається"
+msgstr "Відображуване ім'я"
 
-#: feedback.py:111
+#: feedback.py:113
 msgid "Provide Feedback"
-msgstr "Забезпечити зворотній звязок"
+msgstr "Надати зворотний зв'язок"
 
-#: feedback.py:116 templates/html/studio_view.html:17
+#: feedback.py:118 templates/html/studio_view.html:17
 msgid "Voting message"
-msgstr "Повідомлення про голосування"
+msgstr "Повідомлення голосування"
 
-#: feedback.py:117
+#: feedback.py:119
 msgid "Thank you for voting!"
-msgstr "Дякуємо за голосування!"
+msgstr "Дякуємо за ваш голос!"
 
-#: feedback.py:122 templates/html/studio_view.html:25
+#: feedback.py:124 templates/html/studio_view.html:25
 msgid "Feedback message"
-msgstr "Повідомлення зворотного зв&#39;язку"
+msgstr "Повідомлення зі зворотного зв'язку"
 
-#: feedback.py:123
+#: feedback.py:125
 msgid "Thank you for your feedback!"
-msgstr "Спасибі за ваш відгук!"
+msgstr "Дякуємо за ваш зворотний зв'язок!"
 
-#: feedback.py:128
+#: feedback.py:130
 msgid "Show aggregate to students"
-msgstr "Показати сукупність учням"
-
-#: feedback.py:158
-msgid "Please reflect on this course material"
-msgstr "Будь ласка, поміркуйте над цим матеріалом курсу"
+msgstr "Показувати агреговані результати студентам"
 
 #: feedback.py:159
+msgid "Please reflect on this course material"
+msgstr "Будь ласка, розміркуйте над матеріалом курсу"
+
+#: feedback.py:160
 msgid ""
 "Please take time to meaningfully reflect on your experience with this course"
 " material."
 msgstr ""
-"Будь ласка, виділіть час, щоб осмислено обміркувати свій досвід роботи з цим"
-" матеріалом курсу."
+"Будь ласка, виділіть час для осмисленого розгляду свого досвіду з цим "
+"матеріалом курсу."
 
-#: feedback.py:162
+#: feedback.py:163
 msgid "Please rate your overall experience"
 msgstr "Будь ласка, оцініть свій загальний досвід"
 
-#: feedback.py:169
+#: feedback.py:170
 msgid "Please take a moment to thoughtfully reflect."
-msgstr "Будь ласка, знайдіть хвилинку, щоб вдумливо поміркувати."
+msgstr "Будь ласка, знайдіть хвилину для обдуманого роздуму."
 
-#: feedback.py:388
+#: feedback.py:387
 msgid "Please vote!"
-msgstr "Будь ласка, проголосуйте!"
+msgstr "Будь ласка, голосуйте!"
 
 #: static/html/feedback_instructor.html:10
-msgid "Unit"
-msgstr "Блок"
+msgid "Component"
+msgstr "Компонент"
 
 #: static/html/feedback_instructor.html:13
 msgid "Number of ratings"
@@ -157,11 +149,7 @@ msgstr "Середня оцінка"
 
 #: static/html/feedback_instructor.html:19
 msgid "Feedback "
-msgstr "Зворотній зв&#39;язок "
-
-#: static/html/feedback_instructor.html:27
-msgid "See Unit"
-msgstr "Див. Одиниця"
+msgstr "Зворотній зв'язок "
 
 #: static/html/feedback_instructor.html:40
 msgid "Comment"
@@ -169,15 +157,15 @@ msgstr "Коментар"
 
 #: static/html/feedback_instructor.html:40
 msgid "Vote"
-msgstr "Голосуйте"
+msgstr "Голос"
 
 #: static/html/feedback_instructor.html:40
 msgid "No vote"
-msgstr "Без голосування"
+msgstr "Без голосу"
 
 #: templates/html/feedback.html:17
 msgid "Submit Feedback"
-msgstr "Надіслати відгук"
+msgstr "Надіслати зворотний зв'язок"
 
 #: templates/html/studio_view.html:5
 msgid ""
@@ -185,9 +173,9 @@ msgid ""
 "This may be helpful either for course improvement, or to give students a "
 "chance to reflect on what they have done."
 msgstr ""
-"Цей XBlock дозволяє збирати відгуки студентів про частини курсу. Це може "
-"бути корисним або для покращення курсу, або для того, щоб дати студентам "
-"можливість обміркувати те, що вони зробили."
+"Цей XBlock дозволяє збирати зворотний зв'язок від студентів щодо частин "
+"курсу. Це може бути корисно як для покращення курсу, так і для того, щоб "
+"дати студентам можливість обміркувати свою роботу."
 
 #: templates/html/studio_view.html:9
 msgid "Display name"
@@ -199,55 +187,59 @@ msgstr "Назва компонента."
 
 #: templates/html/studio_view.html:20
 msgid "The message to show after user vote."
-msgstr "Повідомлення, яке буде показано після голосування користувача."
+msgstr "Повідомлення, яке показується після голосування користувача."
 
 #: templates/html/studio_view.html:28
 msgid "The message to show after user feedback."
-msgstr "Повідомлення, яке буде показано після відгуку користувача."
+msgstr ""
+"Повідомлення, яке показується після отримання зворотного зв'язку від "
+"користувача."
 
 #: templates/html/studio_view.html:33
 msgid "Show aggregate report to students"
-msgstr "Показати зведений звіт студентам"
+msgstr "Показувати агрегований звіт студентам"
 
 #: templates/html/studio_view.html:35
 msgid "False"
-msgstr "Неправильно"
+msgstr "Неправда"
 
 #: templates/html/studio_view.html:36
 msgid "True"
-msgstr "Правильно"
+msgstr "Правда"
 
 #: templates/html/studio_view.html:39
-msgid "Wheter to show the aggregate report to students."
-msgstr "Чи показувати зведений звіт студентам."
+msgid "Whether to show the aggregate report to students."
+msgstr "Чи показувати агрегований звіт студентам."
 
 #: templates/html/studio_view.html:44
 msgid "Freeform prompt"
-msgstr "Підказка довільної форми"
+msgstr "Вільний запит"
 
 #: templates/html/studio_view.html:47
 msgid "Example: Please provide us feedback on this section."
-msgstr "Приклад: надайте нам відгук про цей розділ."
+msgstr ""
+"Наприклад: Будь ласка, надайте нам зворотний зв'язок щодо цього розділу."
 
 #: templates/html/studio_view.html:52
 msgid "Freeform placeholder"
-msgstr "Заповнювач довільної форми"
+msgstr "Приклад вільного запиту"
 
 #: templates/html/studio_view.html:55
 msgid "This is shown as grayed out text before the student has answered."
-msgstr "Це відображається як сірий текст до того, як учень відповість."
+msgstr ""
+"Це відображається як текст сірого кольору до того, як студент відповість."
 
 #: templates/html/studio_view.html:60
 msgid "Likert icon set"
-msgstr "Лайкерт набір іконок"
+msgstr "Набір іконок Лайкерта"
 
 #: templates/html/studio_view.html:62
 msgid "Faces (happy to sad)"
-msgstr "Обличчя (від радісних до сумних)"
+msgstr "Обличчя (від щасливих до сумних)"
 
 #: templates/html/studio_view.html:63
-msgid "Faces (sad to happy to sad)"
-msgstr "Обличчя (від сумного до щасливого до сумного)"
+msgid "Faces (sad to happy)"
+msgstr "Обличчя (від сумних до щасливих)"
 
 #: templates/html/studio_view.html:64
 msgid "Numeric"
@@ -259,16 +251,17 @@ msgstr "Зірки"
 
 #: templates/html/studio_view.html:68
 msgid "We can either show happy/sad faces, numbers 1-5 or stars."
-msgstr "Ми можемо показувати щасливі/сумні обличчя, цифри 1-5 або зірочки."
+msgstr ""
+"Ми можемо показувати або обличчя з посмішкою/сумом, або числа від 1 до 5, "
+"або зірки."
 
 #: templates/html/studio_view.html:73
 msgid "Likert prompt"
-msgstr "Підказка Лайкерта"
+msgstr "Запит Лайкерта"
 
 #: templates/html/studio_view.html:76
 msgid "Example: Please rate your overall experience with this section."
-msgstr ""
-"Приклад: будь ласка, оцініть свій загальний досвід роботи з цим розділом."
+msgstr "Наприклад: Будь ласка, оцініть свій загальний досвід із цим розділом."
 
 #: templates/html/studio_view.html:81
 msgid "Likert option 1"
@@ -276,7 +269,7 @@ msgstr "Варіант Лайкерта 1"
 
 #: templates/html/studio_view.html:84
 msgid "Example: Excellent!"
-msgstr "Приклад: Відмінно!"
+msgstr "Наприклад: Відмінно!"
 
 #: templates/html/studio_view.html:89
 msgid "Likert option 2"
@@ -284,7 +277,7 @@ msgstr "Варіант Лайкерта 2"
 
 #: templates/html/studio_view.html:92
 msgid "Example: Good"
-msgstr "Приклад: Добре"
+msgstr "Наприклад: Добре"
 
 #: templates/html/studio_view.html:97
 msgid "Likert option 3"
@@ -292,7 +285,7 @@ msgstr "Варіант Лайкерта 3"
 
 #: templates/html/studio_view.html:100
 msgid "Example: Average"
-msgstr "Приклад: Середній"
+msgstr "Наприклад: Задовільно"
 
 #: templates/html/studio_view.html:105
 msgid "Likert option 4"
@@ -300,7 +293,7 @@ msgstr "Варіант Лайкерта 4"
 
 #: templates/html/studio_view.html:108
 msgid "Example: Fair"
-msgstr "Приклад: Ярмарок"
+msgstr "Наприклад: Посередньо"
 
 #: templates/html/studio_view.html:113
 msgid "Likert option 5"
@@ -308,7 +301,7 @@ msgstr "Варіант Лайкерта 5"
 
 #: templates/html/studio_view.html:116
 msgid "Example: Poor"
-msgstr "Приклад: Бідний"
+msgstr "Наприклад: Погано"
 
 #: templates/html/studio_view.html:123
 msgid "Save"
