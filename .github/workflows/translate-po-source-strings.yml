@@ -17,7 +17,7 @@ on:
         required: false
         type: string
       large_application_name:
-        description: 'Python application/repository to translate, case sensitive Intended for applications with a large number of strings. This will create a job per language. Leave blank to run all.'
+        description: 'Python application/repository to translate, case sensitive. Intended for applications with a large number of strings. This will create a job per language. Leave blank to skip large-application jobs.'
         required: false
         type: string
 
@@ -128,7 +128,7 @@ jobs:
           .github/scripts/translate_po_source_strings.sh
 
   translate-large-by-language:
-    if: ${{ !cancelled() && fromJson(needs.setup-large.outputs.has_applications) == true }}
+    if: ${{ !cancelled() && inputs.large_application_name != '' && fromJson(needs.setup-large.outputs.has_applications) == true }}
     needs: [setup-large, setup-branch, validate]
     runs-on: ubuntu-latest
     strategy:
