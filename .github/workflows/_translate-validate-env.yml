@@ -20,9 +20,9 @@ on:
         required: true
         type: string
     secrets:
-      EDX_TRANSLATIONS_PROD_CLIENT_ID:
+      EDX_TRANSLATIONS_STAGE_CLIENT_ID:
         required: true
-      EDX_TRANSLATIONS_PROD_CLIENT_SECRET:
+      EDX_TRANSLATIONS_STAGE_CLIENT_SECRET:
         required: true
 
 jobs:
@@ -43,16 +43,16 @@ jobs:
           fi
 
           # Mask the client ID and secret to prevent them from being logged
-          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}"
-          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}"
+          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_ID }}"
+          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_SECRET }}"
 
-          if [ -z "${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}" ]; then
-            echo "Required secret EDX_TRANSLATIONS_PROD_CLIENT_ID is not set."
+          if [ -z "${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_ID }}" ]; then
+            echo "Required secret EDX_TRANSLATIONS_STAGE_CLIENT_ID is not set."
             missing=$((missing+1))
           fi
 
-          if [ -z "${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}" ]; then
-            echo "Required secret EDX_TRANSLATIONS_PROD_CLIENT_SECRET is not set."
+          if [ -z "${{ secrets.EDX_TRANSLATIONS_STAGE_CLIENT_SECRET }}" ]; then
+            echo "Required secret EDX_TRANSLATIONS_STAGE_CLIENT_SECRET is not set."
             missing=$((missing+1))
           fi
 
