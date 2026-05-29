@@ -1,26 +1,17 @@
-# #-#-#-#-#  django.po (edx-proctoring)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2018 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2018.
-# 
-# Translators:
-# Brian Smith, 2023
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-proctoring\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 00:34+0000\n"
-"PO-Revision-Date: 2023-05-10 00:48+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025\n"
-"Language-Team: Italian (Italy) (https://app.transifex.com/open-edx/teams/6205/it_IT/)\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-05-05 00:53+0000\n"
+"PO-Revision-Date: 2026-05-29 14:12+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it_IT\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: admin.py:112
 msgid "internally reviewed"
@@ -210,6 +201,18 @@ msgstr ""
 "        Il risultato sarà visibile dopo <strong id=\"wait_deadline\"> Caricamento in corso... </strong>\n"
 "    "
 
+#: templates/emails/proctoring_attempt_satisfactory_email.html:5
+#: templates/emails/proctoring_attempt_submitted_email.html:5
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:5
+msgid ""
+"\n"
+"        Hello,\n"
+"    "
+msgstr ""
+"\n"
+"        Ciao,\n"
+"    "
+
 #: templates/emails/proctoring_attempt_satisfactory_email.html:12
 #, python-format
 msgid ""
@@ -240,6 +243,22 @@ msgstr ""
 "        <a href=\"%(contact_url)s\">\n"
 "            %(contact_url_text)s\n"
 "        </a>.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_submitted_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was submitted\n"
+"        successfully and will now be reviewed to ensure all exam\n"
+"        rules were followed. You should receive an email with your exam\n"
+"        status within 5 business days. Final grades may take longer.\n"
+"    "
+msgstr ""
+"\n"
+"        Il tuo esame supervisionato \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> è stato inviato con successo e ora sarà revisionato per verificare che tutte le regole dell'esame siano state rispettate. Dovresti ricevere un'email con lo stato del tuo esame entro 5 giorni lavorativi. I voti finali potrebbero richiedere più tempo.\n"
 "    "
 
 #: templates/emails/proctoring_attempt_unsatisfactory_email.html:12
@@ -1633,7 +1652,7 @@ msgstr "Inserisci una username o email valida"
 
 #: views.py:1758
 msgid "user_info"
-msgstr "user_info"
+msgstr "informazioni utente"
 
 #: views.py:1771
 msgid "Enter a valid positive value number"
