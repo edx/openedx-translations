@@ -1,6 +1,6 @@
 #!/bin/bash
 # Fetches a fresh LMS JWT into $JWT_TOKEN.
-# Requires env vars: LMS_ACCESS_TOKEN_URL, EDX_TRANSLATIONS_PROD_CLIENT_ID, EDX_TRANSLATIONS_PROD_CLIENT_SECRET
+# Requires env vars: LMS_ACCESS_TOKEN_URL, EDX_TRANSLATIONS_STAGE_CLIENT_ID, EDX_TRANSLATIONS_STAGE_CLIENT_SECRET
 fetch_jwt() {
   local response_file
   response_file=$(mktemp)
@@ -11,8 +11,8 @@ fetch_jwt() {
     -o "$response_file" \
     -X POST "$LMS_ACCESS_TOKEN_URL" \
     -d "grant_type=client_credentials" \
-    --data-urlencode "client_id=$EDX_TRANSLATIONS_PROD_CLIENT_ID" \
-    --data-urlencode "client_secret=$EDX_TRANSLATIONS_PROD_CLIENT_SECRET" \
+    --data-urlencode "client_id=$EDX_TRANSLATIONS_STAGE_CLIENT_ID" \
+    --data-urlencode "client_secret=$EDX_TRANSLATIONS_STAGE_CLIENT_SECRET" \
     -d "token_type=jwt") || curl_exit_code=$?
 
   if [ "$curl_exit_code" -ne 0 ]; then
