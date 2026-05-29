@@ -4,9 +4,10 @@
 # it auto-merges the pull request.
 #
 # Run modes (workflow_dispatch inputs):
-# 
-#   Note that a "large app" is one that has too many translations to handle within one job. Applications
-#   specified via this option will be split into one job per language instead.
+#
+#   "Batched" mode processes all languages for an application in a single job.
+#   "Per-language" mode creates one job per language, for applications with too many strings
+#   to translate within a single job.
 #
 #   All apps, all languages:
 #     (leave all inputs blank)
@@ -14,18 +15,18 @@
 #   All apps, one language:
 #     translation_language: <lang>
 #
-#   One app as non-large (one job for all languages):
+#   One app, batched (one job for all languages):
 #     application_name: <app>
 #
-#   One app as large only (one job per language):
-#     large_application_name: <app>
-#     large_app_only: true
+#   One app, per-language only (one job per language):
+#     per_language_application: <app>
+#     per_language_only: true
 #
-#   One large app + all other apps, all languages:
-#     large_application_name: <app>
+#   One per-language app + all other apps, all languages:
+#     per_language_application: <app>
 #
-#   One large app + all other apps, one language:
-#     large_application_name: <app>
+#   One per-language app + all other apps, one language:
+#     per_language_application: <app>
 #     translation_language: <lang>
 
 name: Translate PO source strings
@@ -41,12 +42,12 @@ on:
         description: 'Language code in edX format (e.g. es-419 or pt-PT), case insensitive. Leave blank to run all.'
         required: false
         type: string
-      large_application_name:
-        description: 'Python application/repository to translate as large (one job per language), case sensitive. Leave blank to skip.'
+      per_language_application:
+        description: 'App to translate per-language (one job per language), case sensitive. Leave blank to skip.'
         required: false
         type: string
-      large_app_only:
-        description: 'Skip all regular application jobs. Only applies when large_application_name is set to run just that application.'
+      per_language_only:
+        description: 'Skip all batched application jobs. Only applies when per_language_application is set.'
         required: false
         type: boolean
         default: false
@@ -64,45 +65,45 @@ jobs:
       application_name: ${{ inputs.application_name || '' }}
       translation_language: ${{ inputs.translation_language || '' }}
 
-  setup-large:
-    if: ${{ inputs.large_application_name != '' }}
+  setup-per-language:
+    if: ${{ inputs.per_language_application != '' }}
     uses: ./.github/workflows/_translate-setup.yml
     with:
       config_key: pythonApplications
-      application_name: ${{ inputs.large_application_name }}
+      application_name: ${{ inputs.per_language_application }}
       translation_language: ${{ inputs.translation_language || '' }}
 
-  setup-regular:
+  setup-batched:
     runs-on: ubuntu-latest
     needs: [setup]
     outputs:
-      has_applications: ${{ steps.filter_regular_apps.outputs.has_applications }}
-      applications: ${{ steps.filter_regular_apps.outputs.applications }}
+      has_applications: ${{ steps.filter_batched_apps.outputs.has_applications }}
+      applications: ${{ steps.filter_batched_apps.outputs.applications }}
     steps:
       - uses: actions/github-script@v7
-        id: filter_regular_apps
+        id: filter_batched_apps
         env:
-          INPUT_LARGE_APPLICATION_NAME: ${{ inputs.large_application_name || '' }}
+          INPUT_PER_LANGUAGE_APPLICATION: ${{ inputs.per_language_application || '' }}
           INPUT_APPLICATIONS: ${{ needs.setup.outputs.applications }}
-          INPUT_LARGE_APP_ONLY: ${{ inputs.large_app_only || false }}
+          INPUT_PER_LANGUAGE_ONLY: ${{ inputs.per_language_only || false }}
         with:
           script: |
-            const largeApp = process.env.INPUT_LARGE_APPLICATION_NAME || '';
-            const largeAppOnly = process.env.INPUT_LARGE_APP_ONLY === 'true';
+            const perLanguageApp = process.env.INPUT_PER_LANGUAGE_APPLICATION || '';
+            const perLanguageOnly = process.env.INPUT_PER_LANGUAGE_ONLY === 'true';
             const applications = JSON.parse(process.env.INPUT_APPLICATIONS || '[]');
 
-             if (largeAppOnly && largeApp !== '') {
+            if (perLanguageOnly && perLanguageApp !== '') {
               core.setOutput('applications', JSON.stringify([]));
               core.setOutput('has_applications', false);
               return;
             }
 
-            const regularApplications = largeApp === ''
+            const batchedApplications = perLanguageApp === ''
               ? applications
-              : applications.filter((application) => application.appName !== largeApp);
+              : applications.filter((application) => application.appName !== perLanguageApp);
 
-            core.setOutput('applications', JSON.stringify(regularApplications));
-            core.setOutput('has_applications', regularApplications.length > 0);
+            core.setOutput('applications', JSON.stringify(batchedApplications));
+            core.setOutput('has_applications', batchedApplications.length > 0);
 
   setup-branch:
     uses: ./.github/workflows/_translate-setup-branch.yml
@@ -118,15 +119,15 @@ jobs:
       lms_access_token_url: ${{ vars.LMS_ACCESS_TOKEN_URL }}
     secrets: inherit
 
-  translate:
-    if: ${{ fromJson(needs.setup-regular.outputs.has_applications) == true }}
-    needs: [setup, setup-regular, setup-branch, validate]
+  translate-batched:
+    if: ${{ fromJson(needs.setup-batched.outputs.has_applications) == true }}
+    needs: [setup, setup-batched, setup-branch, validate]
     runs-on: ubuntu-latest
     strategy:
       # using max-parallel to avoid git push/pull issues when running in parallel
       max-parallel: 1
       matrix:
-        application: ${{ fromJson(needs.setup-regular.outputs.applications) }}
+        application: ${{ fromJson(needs.setup-batched.outputs.applications) }}
       fail-fast: false
     permissions:
       contents: write
@@ -165,15 +166,15 @@ jobs:
           chmod +x .github/scripts/translate_po_source_strings.sh
           .github/scripts/translate_po_source_strings.sh
 
-  translate-large-by-language:
-    if: ${{ !cancelled() && inputs.large_application_name != '' && fromJson(needs.setup-large.outputs.has_applications) == true }}
-    needs: [setup-large, setup-branch, validate]
+  translate-per-language:
+    if: ${{ !cancelled() && inputs.per_language_application != '' && fromJson(needs.setup-per-language.outputs.has_applications) == true }}
+    needs: [setup-per-language, setup-branch, validate]
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
       matrix:
-        application: ${{ fromJson(needs.setup-large.outputs.applications) }}
-        translation_language: ${{ fromJson(needs.setup-large.outputs.translation_languages) }}
+        application: ${{ fromJson(needs.setup-per-language.outputs.applications) }}
+        translation_language: ${{ fromJson(needs.setup-per-language.outputs.translation_languages) }}
       fail-fast: false
     permissions:
       contents: write
@@ -214,17 +215,17 @@ jobs:
 
   merge:
     uses: ./.github/workflows/_translate-merge.yml
-    needs: [setup, setup-large, setup-regular, setup-branch, validate, translate, translate-large-by-language]
+    needs: [setup, setup-per-language, setup-batched, setup-branch, validate, translate-batched, translate-per-language]
     # Run even if translate fails (partial translations are still worth merging).
     if: >-
       ${{
         !cancelled() &&
         needs.setup.result == 'success' &&
-        (needs.setup-large.result == 'success' || needs.setup-large.result == 'skipped') &&
-        needs.setup-regular.result == 'success' &&
+        (needs.setup-per-language.result == 'success' || needs.setup-per-language.result == 'skipped') &&
+        needs.setup-batched.result == 'success' &&
         needs.setup-branch.result == 'success' &&
-        needs.translate.result != 'cancelled' &&
-        needs.translate-large-by-language.result != 'cancelled'
+        needs.translate-batched.result != 'cancelled' &&
+        needs.translate-per-language.result != 'cancelled'
       }}
     with:
       branch: ${{ needs.setup-branch.outputs.branch }}
