@@ -1,48 +1,19 @@
-# #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
-# edX translation file.
-# Copyright (C) 2025 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
-# 
-# #-#-#-#-#  wiki.po (0.1a)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2025 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
-# 
-# #-#-#-#-#  edx_proctoring_proctortrack.po (0.1a)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2025 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
-# 
-# #-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#
-# Translations template for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
-# 
-# Translators:
-# Felipe Sologuren, 2024
-# Valentina Morelli, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
-# Brian Smith, 2025
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-09-18 00:40+0000\n"
-"PO-Revision-Date: 2023-11-20 11:35+0000\n"
-"Last-Translator: Brian Smith, 2025\n"
-"Language-Team: Spanish (Latin America) (https://app.transifex.com/open-edx/teams/6205/es_419/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2025-09-19 00:44+0000\n"
+"PO-Revision-Date: 2026-06-01 23:34+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es_419\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: cms/djangoapps/api/v1/serializers/course_runs.py:49
 msgid "Course team user does not exist"
@@ -306,9 +277,75 @@ msgstr ""
 "Tome el curso especificado e intente exportarlo a un repositorio de git\n"
 ". El directorio del curso ya debe ser un repositorio de git. El comando a utilizar es:  git_export <course_loc> <git_url>"
 
+#: cms/djangoapps/contentstore/management/commands/recreate_upstream_links.py:46
+msgid "COURSE_KEY"
+msgstr "Clave de curso"
+
+#: cms/djangoapps/contentstore/management/commands/recreate_upstream_links.py:48
+msgid ""
+"Recreate links for xblocks under given course keys. For eg. "
+"course-v1:edX+DemoX.1+2014"
+msgstr ""
+"Recrear enlaces para xblocks en las claves de curso indicadas. Por ej., "
+"course-v1:edX+DemoX.1+2014"
+
+#: cms/djangoapps/contentstore/management/commands/recreate_upstream_links.py:55
+msgid ""
+"Recreate links for xblocks under all courses. NOTE: this can take long time "
+"depending on number of course and xblocks"
+msgstr ""
+"Recrear enlaces para xblocks en todos los cursos. NOTA: esto puede tomar "
+"mucho tiempo dependiendo del número de cursos y xblocks"
+
+#: cms/djangoapps/contentstore/management/commands/recreate_upstream_links.py:62
+msgid "Recreate links even for completely processed courses."
+msgstr "Recrear enlaces incluso para cursos completamente procesados."
+
+#: cms/djangoapps/contentstore/management/commands/recreate_upstream_links.py:67
+msgid "Delete all and create links for given course(s)."
+msgstr "Eliminar todo y crear enlaces para el/los curso(s) dado(s)."
+
+#: cms/djangoapps/contentstore/models.py:96
+msgid "Upstream context key i.e., learning_package/library key"
+msgstr ""
+"Clave de contexto upstream, es decir, clave de learning_package/library"
+
+#: cms/djangoapps/contentstore/models.py:151
+msgid ""
+"Upstream block usage key, this value cannot be null and useful to track "
+"upstream library blocks that do not exist yet"
+msgstr ""
+"Clave de uso del bloque upstream, este valor no puede ser nulo y es útil "
+"para rastrear bloques de la biblioteca upstream que aún no existen"
+
+#: cms/djangoapps/contentstore/models.py:157
+msgid "Component Link"
+msgstr "Enlace del componente"
+
+#: cms/djangoapps/contentstore/models.py:158
+msgid "Component Links"
+msgstr "Enlaces de componentes"
+
 #: cms/djangoapps/contentstore/models.py:184
 msgid "The component must be published to access `published_at`"
 msgstr "El componente debe publicarse para acceder a `published_at`"
+
+#: cms/djangoapps/contentstore/models.py:321
+msgid ""
+"Upstream block key (e.g. lct:...), this value cannot be null and is useful "
+"to track upstream library blocks that do not exist yet or were deleted."
+msgstr ""
+"Clave del bloque upstream (p. ej., lct:...), este valor no puede ser nulo y "
+"es útil para rastrear bloques de la biblioteca upstream que aún no existen o"
+" fueron eliminados."
+
+#: cms/djangoapps/contentstore/models.py:328
+msgid "Container Link"
+msgstr "Enlace del contenedor"
+
+#: cms/djangoapps/contentstore/models.py:329
+msgid "Container Links"
+msgstr "Enlaces de contenedores"
 
 #: cms/djangoapps/contentstore/models.py:355
 msgid "The container must be published to access `published_at`"
@@ -324,6 +361,10 @@ msgstr "El contenedor debe publicarse para acceder a `published_at`"
 msgid "Pending"
 msgstr "Pendiente"
 
+#: cms/djangoapps/contentstore/models.py:536
+msgid "Processing"
+msgstr "Procesando"
+
 #. Translators: This is the status for a video that the servers have failed to
 #. process
 #: cms/djangoapps/contentstore/models.py:537
@@ -335,6 +376,19 @@ msgstr "Falló"
 #: lms/templates/vert_module.html:28
 msgid "Completed"
 msgstr "Completado"
+
+#: cms/djangoapps/contentstore/models.py:550
+msgid "Linking status for course context key"
+msgstr "Estado de enlace para la clave de contexto del curso"
+
+#: cms/djangoapps/contentstore/models.py:555
+msgid "Status of links in given learning context/course."
+msgstr "Estado de los enlaces en el contexto de aprendizaje/curso dado."
+
+#: cms/djangoapps/contentstore/models.py:561
+#: cms/djangoapps/contentstore/models.py:562
+msgid "Learning Context Links status"
+msgstr "Estado de los enlaces en el contexto de aprendizaje"
 
 #: cms/djangoapps/contentstore/rest_api/v0/serializers/advanced_settings.py:47
 msgid "Marks a field as deprecated."
@@ -591,14 +645,14 @@ msgstr "ID del video"
 
 #: cms/djangoapps/contentstore/video_storage_handlers.py:520
 msgid "Status"
-msgstr "Status"
+msgstr "Estado"
 
 #. Translators: This is the suggested filename when downloading the URL
 #. listing for videos uploaded through Studio
 #: cms/djangoapps/contentstore/video_storage_handlers.py:566
 #, python-brace-format
 msgid "{course}_video_urls"
-msgstr "{course}_video_urls"
+msgstr "{course}_urls_de_video"
 
 #: cms/djangoapps/contentstore/video_storage_handlers.py:956
 msgid "A non zero positive integer is expected"
@@ -943,6 +997,10 @@ msgstr "Se requiere ID de YouTube."
 msgid "There is a problem with the YouTube transcript file."
 msgstr "Hay un problema con el archivo de transcripción  de YouTube."
 
+#: cms/djangoapps/contentstore/views/transcripts_ajax.py:774
+msgid "Transcripts are not yet supported for this type of block"
+msgstr "Las transcripciones aún no son compatibles con este tipo de bloque"
+
 #: cms/djangoapps/contentstore/views/user.py:98
 msgid "Insufficient permissions"
 msgstr "Permisos insuficientes"
@@ -1107,6 +1165,30 @@ msgid "Grant the user the permission to create courses in ALL organizations"
 msgstr ""
 "Conceder al usuario el permiso para crear cursos en TODAS las organizaciones"
 
+#: cms/djangoapps/maintenance/views.py:32
+msgid "Edit Announcements"
+msgstr "Editar anuncios"
+
+#: cms/djangoapps/maintenance/views.py:35
+msgid ""
+"This view shows the announcement editor to create or alter announcements "
+"that are shown on the rightside of the dashboard."
+msgstr ""
+"Esta vista muestra el editor de anuncios para crear o modificar los anuncios"
+" que se muestran en el lado derecho del panel."
+
+#: cms/djangoapps/maintenance/views.py:43
+msgid "Please provide course id."
+msgstr "Por favor, proporciona el ID del curso."
+
+#: cms/djangoapps/maintenance/views.py:44
+msgid "Invalid course key."
+msgstr "Clave de curso no válida."
+
+#: cms/djangoapps/maintenance/views.py:45
+msgid "No matching course found."
+msgstr "No se encontró ningún curso que coincida."
+
 #: cms/djangoapps/models/settings/course_metadata.py:229
 #, python-brace-format
 msgid "Incorrect format for field '{name}'. {detailed_message}"
@@ -1120,6 +1202,12 @@ msgstr "Diccionario con etiquetas disponibles"
 msgid "Content is not linked to a Content Library."
 msgstr "El contenido no está vinculado a una biblioteca de contenido."
 
+#: cms/lib/xblock/upstream_sync.py:244
+msgid "Downstream is not an XBlock or is missing required UpstreamSyncMixin"
+msgstr ""
+"El elemento downstream no es un XBlock o le falta el UpstreamSyncMixin "
+"requerido."
+
 #: cms/lib/xblock/upstream_sync.py:248
 msgid "Cannot update content because it does not belong to a course."
 msgstr "No se puede actualizar el contenido porque no pertenece a un curso."
@@ -1128,9 +1216,37 @@ msgstr "No se puede actualizar el contenido porque no pertenece a un curso."
 msgid "Reference to linked library item is malformed"
 msgstr "La referencia al elemento de la biblioteca vinculada está mal formada"
 
+#: cms/lib/xblock/upstream_sync.py:264
+msgid ""
+"Updating content with children is not yet supported unless the upstream is a"
+" container."
+msgstr ""
+"La actualización de contenido con hijos aún no es compatible, a menos que el"
+" upstream sea un contenedor."
+
+#: cms/lib/xblock/upstream_sync.py:270
+msgid "Linked upstream library block was not found in the system"
+msgstr ""
+"El bloque de la biblioteca upstream vinculado no se encontró en el sistema."
+
+#: cms/lib/xblock/upstream_sync.py:277
+msgid "Linked upstream library container was not found in the system"
+msgstr ""
+"El contenedor de la biblioteca upstream vinculado no se encontró en el "
+"sistema."
+
 #: cms/lib/xblock/upstream_sync.py:281
 msgid "Linked `upstream_key` is not a valid key"
 msgstr "La clave `upstream_key` vinculada no es una clave válida"
+
+#: cms/lib/xblock/upstream_sync.py:290
+#, python-brace-format
+msgid ""
+"Content type mismatch: {downstream_id} ({downstream_type}) cannot be linked "
+"to {upstream_id}."
+msgstr ""
+"Incompatibilidad de tipo de contenido: {downstream_id} ({downstream_type}) "
+"no se puede vincular a {upstream_id}."
 
 #: cms/lib/xblock/upstream_sync_block.py:108
 msgid "Linked library item could not be loaded: {}"
@@ -2030,7 +2146,7 @@ msgstr "%H:%M:%S"
 #: common/djangoapps/util/date_utils.py:263
 msgctxt "am/pm indicator"
 msgid "AM"
-msgstr "AM"
+msgstr "a. m."
 
 #. Translators: This is an AM/PM indicator for displaying times.  It is
 #. used for the %p directive in date-time formats. See http://strftime.org
@@ -2038,7 +2154,7 @@ msgstr "AM"
 #: common/djangoapps/util/date_utils.py:267
 msgctxt "am/pm indicator"
 msgid "PM"
-msgstr "PM"
+msgstr "p. m."
 
 #. Translators: this is a weekday name that will be used when displaying
 #. dates, as in "Monday Februrary 10, 2014". It is used for the %A
@@ -2166,7 +2282,7 @@ msgstr "Ene"
 #: common/djangoapps/util/date_utils.py:340
 msgctxt "abbreviated month name"
 msgid "Feb"
-msgstr "Feb"
+msgstr "feb"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Mar 10, 2014". It is used for the %b
@@ -2174,7 +2290,7 @@ msgstr "Feb"
 #: common/djangoapps/util/date_utils.py:344
 msgctxt "abbreviated month name"
 msgid "Mar"
-msgstr "Mar"
+msgstr "mar"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Apr 10, 2014". It is used for the %b
@@ -2198,7 +2314,7 @@ msgstr "mayo"
 #: common/djangoapps/util/date_utils.py:356
 msgctxt "abbreviated month name"
 msgid "Jun"
-msgstr "Jun"
+msgstr "jun"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Jul 10, 2014". It is used for the %b
@@ -2206,7 +2322,7 @@ msgstr "Jun"
 #: common/djangoapps/util/date_utils.py:360
 msgctxt "abbreviated month name"
 msgid "Jul"
-msgstr "Jul"
+msgstr "jul"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Aug 10, 2014". It is used for the %b
@@ -2222,7 +2338,7 @@ msgstr "Ago"
 #: common/djangoapps/util/date_utils.py:368
 msgctxt "abbreviated month name"
 msgid "Sep"
-msgstr "Sep"
+msgstr "sep"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Oct 10, 2014". It is used for the %b
@@ -2230,7 +2346,7 @@ msgstr "Sep"
 #: common/djangoapps/util/date_utils.py:372
 msgctxt "abbreviated month name"
 msgid "Oct"
-msgstr "Oct"
+msgstr "oct"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Nov 10, 2014". It is used for the %b
@@ -2238,7 +2354,7 @@ msgstr "Oct"
 #: common/djangoapps/util/date_utils.py:376
 msgctxt "abbreviated month name"
 msgid "Nov"
-msgstr "Nov"
+msgstr "nov"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Dec 10, 2014". It is used for the %b
@@ -3844,6 +3960,65 @@ msgstr "Examen cronometrado"
 msgid "Exam"
 msgstr "Examen"
 
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:33
+msgid "There’s still time to reach your goal"
+msgstr "Aún hay tiempo para alcanzar tu meta"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:41
+#, python-format
+msgid ""
+"\n"
+"            You’re almost there, %(user_name)s!\n"
+"        "
+msgstr ""
+"\n"
+"            ¡Ya casi llegas, %(user_name)s!\n"
+"        "
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:49
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"                    You set a goal of learning {start_bold}%(days_per_week)s time a week in %(course_name)s{end_bold}. Now it’s up to you to make those goals a reality.\n"
+"                    "
+msgid_plural ""
+"\n"
+"                    You set a goal of learning {start_bold}%(days_per_week)s times a week in %(course_name)s{end_bold}. Now it’s up to you to make those goals a reality.\n"
+"                "
+msgstr[0] ""
+"Has establecido el objetivo de aprender {start_bold}%(days_per_week)s vez a "
+"la semana en %(course_name)s{end_bold}. Ahora depende de ti hacer realidad "
+"ese objetivo."
+msgstr[1] ""
+"Has establecido el objetivo de aprender {start_bold}%(days_per_week)s veces "
+"a la semana en %(course_name)s{end_bold}. Ahora depende de ti hacer realidad"
+" esos objetivos."
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:79
+msgid ""
+"\n"
+"                        Jump back in\n"
+"                    "
+msgstr ""
+"\n"
+"                        Vuelve a participar\n"
+"                    "
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:98
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:117
+msgid "Remember: the best goal is one that you can stick to. "
+msgstr "Recuerda: la mejor meta es aquella a la que puedes comprometerte."
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:99
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:118
+msgid "You can always"
+msgstr "Siempre puedes"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:101
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:120
+msgid "if you need to."
+msgstr "si lo necesitas."
+
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:144
 msgid ""
 "\n"
@@ -3852,6 +4027,16 @@ msgid ""
 msgstr ""
 "\n"
 "Desinscribirse de correos de recordatorio de objetivo para este curso"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:158
+msgid ""
+"\n"
+"                                Unsubscribe from goal reminder emails for this course\n"
+"                                "
+msgstr ""
+"\n"
+"                                Cancelar la suscripción a los correos de recordatorio de metas para este curso\n"
+"                                "
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.txt:2
 msgid "You're almost there!"
@@ -3937,6 +4122,11 @@ msgstr "Descárgate la app iOS en la Apple Store"
 #: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:153
 msgid "Download the Android app on the Google Play Store"
 msgstr "Descárgate la app Android en la Google Play Store"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:174
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:174
+msgid "edX is the trusted platform for education and learning"
+msgstr "edX es la plataforma de confianza para la educación y el aprendizaje"
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:180
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:240
@@ -4515,6 +4705,10 @@ msgstr ""
 "Después de que el curso termine oficialmente, recibirás una notificación de "
 "correo electrónico con tu certificación."
 
+#: lms/djangoapps/courseware/views/views.py:244
+msgid "Your certificate will be available after the indicated date"
+msgstr "Tu certificado estará disponible después de la fecha indicada"
+
 #: lms/djangoapps/courseware/views/views.py:255
 msgid "Your certificate is available"
 msgstr "Tu certificado está disponible"
@@ -5088,6 +5282,10 @@ msgstr "Idioma"
 msgid "Location"
 msgstr "Ubicación"
 
+#: lms/djangoapps/instructor/views/api.py:1509
+msgid "Birth Year"
+msgstr "Año de nacimiento"
+
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: This label appears above a dropdown menu used to select
 #. the user's gender.
@@ -5162,6 +5360,11 @@ msgstr "País"
 #: lms/djangoapps/instructor_task/api_helper.py:111
 msgid "enrollment"
 msgstr "inscripción"
+
+#: lms/djangoapps/instructor/views/api.py:1622
+#: lms/djangoapps/instructor_task/api_helper.py:117
+msgid "inactive enrollment"
+msgstr "Inscripción inactiva"
 
 #: lms/djangoapps/instructor/views/api.py:1652
 msgid "The file must contain a 'cohort' column containing cohort names."
@@ -5359,6 +5562,21 @@ msgstr "calificación"
 #: lms/djangoapps/instructor_task/api_helper.py:108
 msgid "problem grade"
 msgstr "calificación del problema"
+
+#: lms/djangoapps/instructor/views/api.py:3204
+msgid "All fields must be filled out"
+msgstr "Todos los campos deben completarse"
+
+#: lms/djangoapps/instructor/views/api.py:3210
+#, python-brace-format
+msgid "Could not find student matching identifier: {student}"
+msgstr ""
+"No se pudo encontrar al estudiante que coincida con el identificador: "
+"{student}"
+
+#: lms/djangoapps/instructor/views/api.py:3219
+msgid "The extension due date and time format is incorrect"
+msgstr "El formato de fecha y hora de la prórroga es incorrecto"
 
 #: lms/djangoapps/instructor/views/api.py:3230
 #, python-brace-format
@@ -5667,6 +5885,24 @@ msgstr "Nombre del rol"
 msgid "Invalid role name."
 msgstr "Nombre de rol no válido."
 
+#: lms/djangoapps/instructor/views/serializer.py:344
+msgid "The URL name of the problem to reset."
+msgstr "El nombre URL del problema a reiniciar."
+
+#: lms/djangoapps/instructor/views/serializer.py:346
+#: lms/djangoapps/instructor/views/serializer.py:567
+msgid "Problem URL name cannot be blank."
+msgstr "El nombre URL del problema no puede quedar en blanco."
+
+#: lms/djangoapps/instructor/views/serializer.py:351
+msgid "Whether to reset the problem for all students."
+msgstr "Si se debe reiniciar el problema para todos los estudiantes."
+
+#: lms/djangoapps/instructor/views/serializer.py:361
+#: lms/djangoapps/instructor/views/serializer.py:508
+msgid "unique student identifier."
+msgstr "identificador único del estudiante."
+
 #: lms/djangoapps/instructor/views/serializer.py:496
 msgid "Whether to reset for all students."
 msgstr "Si se debe restablecer para todos los estudiantes."
@@ -5683,6 +5919,14 @@ msgstr "all_students y unique_student_identifier son mutuamente exclusivos."
 #: lms/djangoapps/instructor/views/serializer.py:539
 msgid "all_students and delete_module are mutually exclusive."
 msgstr "all_students y delete_module son mutuamente exclusivos."
+
+#: lms/djangoapps/instructor/views/serializer.py:543
+msgid ""
+"You must provide either unique_student_identifier or set all_students to "
+"True."
+msgstr ""
+"Debes proporcionar unique_student_identifier o establecer all_students en "
+"True."
 
 #: lms/djangoapps/instructor/views/serializer.py:565
 msgid "The URL name of the problem to override the score for."
@@ -6272,11 +6516,11 @@ msgstr "nombre de usuario"
 
 #: lms/djangoapps/support/views/manage_user.py:36
 msgid "user_support_url"
-msgstr "user_support_url"
+msgstr "url_de_soporte_del_usuario"
 
 #: lms/djangoapps/support/views/manage_user.py:37
 msgid "user_detail_url"
-msgstr "user_detail_url"
+msgstr "url_de_detalle_del_usuario"
 
 #: lms/djangoapps/support/views/manage_user.py:62
 #: lms/djangoapps/support/views/manage_user.py:90
@@ -7489,7 +7733,7 @@ msgstr "Previsualizar esta revisión"
 
 #: lms/templates/wiki/history.html:152 wiki/templates/wiki/history.html:105
 msgid "Auto log:"
-msgstr "Auto log:"
+msgstr "Registro automático:"
 
 #: lms/templates/wiki/history.html:160 wiki/templates/wiki/history.html:113
 #: cms/templates/videos_index_pagination.html:23
@@ -7599,7 +7843,7 @@ msgstr ""
 
 #: lms/templates/wiki/includes/cheatsheet.html:23
 msgid "[Article Name](wiki:ArticleName)"
-msgstr "[Article Name](wiki:ArticleName)"
+msgstr "[Nombre del artículo](wiki:ArticleName)"
 
 #: lms/templates/wiki/includes/cheatsheet.html:26
 #, python-format
@@ -9004,6 +9248,24 @@ msgstr ""
 msgid "<{p}><{strong}>{course_update_content}</{strong}></{p}>"
 msgstr "<{p}><{strong}>{course_update_content}</{strong}></{p}>"
 
+#: openedx/core/djangoapps/notifications/base_notification.py:202
+#, python-brace-format
+msgid ""
+"<{p}>You have a new open response submission awaiting review for "
+"<{strong}>{ora_name}</{strong}></{p}>"
+msgstr ""
+"<{p}>Tienes un nuevo envío de respuesta abierta pendiente de revisión para "
+"<{strong}>{ora_name}</{strong}></{p}>"
+
+#: openedx/core/djangoapps/notifications/base_notification.py:204
+#, python-brace-format
+msgid ""
+"<{p}>You have multiple submissions awaiting review for "
+"<{strong}>{ora_name}</{strong}></{p}>"
+msgstr ""
+"<{p}>Tienes múltiples envíos pendientes de revisión para "
+"<{strong}>{ora_name}</{strong}></{p}>"
+
 #: openedx/core/djangoapps/notifications/base_notification.py:223
 #, python-brace-format
 msgid ""
@@ -9012,6 +9274,11 @@ msgid ""
 msgstr ""
 "<{p}>Has recibido {points_earned} de {points_possible} en tu evaluación: "
 "<{strong}>{ora_name}</{strong}></{p}>"
+
+#: openedx/core/djangoapps/notifications/base_notification.py:243
+#, python-brace-format
+msgid "<{p}>Your instructor posted <{strong}>{post_title}</{strong}></{p}>"
+msgstr "<{p}>Tu instructor publicó <{strong}>{post_title}</{strong}></{p}>"
 
 #: openedx/core/djangoapps/notifications/base_notification.py:256
 msgid ""
@@ -9030,6 +9297,24 @@ msgstr ""
 msgid "Notifications for submission grading."
 msgstr "Notificaciones de calificación de envíos."
 
+#: openedx/core/djangoapps/notifications/email/tasks.py:144
+msgid "New Course Update"
+msgstr "Nueva actualización del curso"
+
+#: openedx/core/djangoapps/notifications/email/tasks.py:152
+msgid ""
+"You are receiving this email because you are enrolled in the edX course "
+msgstr ""
+"Recibes este correo electrónico porque estás inscrito en el curso edX "
+
+#: openedx/core/djangoapps/notifications/email/utils.py:136
+msgid "Total Notifications"
+msgstr "Notificaciones totales"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:212
+msgid "Today"
+msgstr "Hoy"
+
 #: openedx/core/djangoapps/notifications/email/utils.py:441
 #: openedx/features/course_experience/plugins.py:34
 #: cms/templates/widgets/header.html:115 cms/templates/widgets/header.html:120
@@ -9038,6 +9323,22 @@ msgstr "Notificaciones de calificación de envíos."
 #: openedx/features/course_experience/templates/course_experience/course-updates-fragment.html:25
 msgid "Updates"
 msgstr "Actualizaciones"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:442
+msgid "Grades"
+msgstr "Calificaciones"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:463
+msgid "discussion"
+msgstr "discusión"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:464
+msgid "update"
+msgstr "actualizar"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:465
+msgid "assessment"
+msgstr "evaluación"
 
 #: openedx/core/djangoapps/notifications/email_notifications.py:16
 msgid "Daily"
@@ -9057,12 +9358,37 @@ msgstr "Inmediatamente"
 msgid "Never"
 msgstr "Nunca"
 
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:15
+msgid "View all"
+msgstr "Ver todo"
+
 #: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:50
 #: openedx/core/djangoapps/notifications/templates/notifications/immediate_email_content.html:27
 #: wiki/templates/wiki/includes/article_menu.html:49
 #: lms/templates/wiki/includes/article_menu.html:13
 msgid "View"
 msgstr "Ver"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:63
+msgid "more"
+msgstr "más"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:38
+msgid ""
+"You are receiving this email because you have subscribed to email digest"
+msgstr ""
+"Estás recibiendo este correo electrónico porque te has suscrito al resumen "
+"de correo."
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:43
+msgid "Notification Settings"
+msgstr "Configuración de notificaciones"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:46
+msgid "Unsubscribe from email digest for learning activity"
+msgstr ""
+"Darse de baja del resumen de correo electrónico para la actividad de "
+"aprendizaje"
 
 #: openedx/core/djangoapps/notifications/templates/notifications/digest_header.html:12
 #: openedx/core/djangoapps/notifications/templates/notifications/immediate_email_content.html:8
@@ -9072,6 +9398,24 @@ msgstr "Ver"
 #: lms/templates/bulk_email/unsubscribe_success.html:18
 msgid "Unsubscribe"
 msgstr "Darse de baja"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_header.html:25
+msgid "Weekly Notifications Digest"
+msgstr "Resumen semanal de notificaciones"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_header.html:27
+msgid "Daily Notifications Digest"
+msgstr "Resumen diario de notificaciones"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/body.txt:4
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/subject.txt:4
+msgid "Weekly Notifications Digest for the Week of"
+msgstr "Resumen semanal de notificaciones para la semana de"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/body.txt:6
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/subject.txt:6
+msgid "Daily Notifications Digest for"
+msgstr "Resumen diario de notificaciones para"
 
 #: openedx/core/djangoapps/notifications/templates/notifications/email_digest_preference_update.html:5
 msgid "Email Digest Preferences Updated"
@@ -9287,6 +9631,41 @@ msgstr " Antes de %(filter_title)s "
 #, python-format
 msgid "Welcome to week %(week_num)s of %(course_name)s!"
 msgstr "Bienvenido/a a la semana %(week_num)s de %(course_name)s!"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:22
+#, python-format
+msgid ""
+"This is a routed Account Activation email for %(routed_profile_name)s "
+"(%(routed_user_email)s): %(routed_profile_name)s"
+msgstr ""
+"Este es un correo electrónico de activación de cuenta redirigido para "
+"%(routed_profile_name)s (%(routed_user_email)s): %(routed_profile_name)s"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:36
+msgid "Welcome to edX. It’s time for your next career move"
+msgstr "Bienvenido a edX. Es hora de tu próximo paso profesional"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:62
+msgid "Resume your course "
+msgstr "Reanuda tu curso "
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:82
+msgid "Your focused attention will pay off in the end!"
+msgstr "¡Tu atención concentrada dará frutos al final!"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:84
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:101
+msgid ""
+"With self-paced courses, you learn on your own schedule. It’s a good idea to"
+" spend time with the course each week and check in with your goals often."
+msgstr ""
+"Con cursos a tu propio ritmo, aprendes según tu propio horario. Es una buena"
+" idea dedicar tiempo al curso cada semana y revisar tus metas "
+"frecuentemente."
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:100
+msgid "Your focused attention will pay off in the end! "
+msgstr "¡Tu atención concentrada dará frutos al final! "
 
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.txt:4
 #, python-format
@@ -11728,6 +12107,14 @@ msgstr ""
 "para su curso, o reportar algún problema, contacte a "
 "moocsupport@mathworks.com."
 
+#: xmodule/capa_block.py:344
+msgid ""
+"Indicates if the problem was edited using the Markdown editor in the "
+"Authoring MFE."
+msgstr ""
+"Indica si el problema fue editado usando el editor Markdown en el Authoring "
+"MFE."
+
 #: xmodule/capa_block.py:435
 msgid ""
 "We're sorry, there was an error with processing your request. Please try "
@@ -12751,6 +13138,19 @@ msgstr "Especifique el idioma del curso."
 msgid "Teams Configuration"
 msgstr "Configuración de equipos"
 
+#: xmodule/course_block.py:843
+msgid ""
+"Configure team sets, limit team sizes, and set visibility settings using "
+"JSON. See <a target=\"&#95;blank\" "
+"href=\"https://docs.openedx.org/en/latest/educators/references/advanced_features/teams_configuration_options.html>teams"
+" configuration documentation</a> for help and examples."
+msgstr ""
+"Configura conjuntos de equipos, limita el tamaño de los equipos y establece "
+"la configuración de visibilidad usando JSON. Consulta la <a "
+"target=\"&#95;blank\" "
+"href=\"https://docs.openedx.org/en/latest/educators/references/advanced_features/teams_configuration_options.html>documentación"
+" de configuración de equipos</a> para obtener ayuda y ejemplos."
+
 #: xmodule/course_block.py:852
 msgid "Enable Proctored Exams"
 msgstr "Habilitar examenes supervisados"
@@ -13069,24 +13469,24 @@ msgstr "Generado"
 
 #. Translators: "Homework 1 - Unreleased - 0% (?/?)" The section has not been
 #. released for viewing.
-#: xmodule/graders.py:402
+#: xmodule/graders.py:403
 #, python-brace-format
 msgid "{section_type} {index} Unreleased - 0% (?/?)"
 msgstr "{section_type} {index} No publicado - 0% (?/?)"
 
-#: xmodule/graders.py:415
+#: xmodule/graders.py:417
 #, python-brace-format
 msgid "The lowest {drop_count} {section_type} scores are dropped."
 msgstr "Los puntajes más bajos {drop_count} {section_type} se descartan."
 
 #. Translators: "Homework Average = 0%"
-#: xmodule/graders.py:433
+#: xmodule/graders.py:436
 #, python-brace-format
 msgid "{section_type} Average = {percent:.2%}"
 msgstr "{section_type} Promedio = {percent:.2%}"
 
 #. Translators: Avg is short for Average
-#: xmodule/graders.py:438
+#: xmodule/graders.py:441
 #, python-brace-format
 msgid "{short_label} Avg"
 msgstr "{short_label} Promedio"
@@ -13342,7 +13742,7 @@ msgstr ""
 
 #: xmodule/lti_block.py:140
 msgid "LTI ID"
-msgstr "LTI ID"
+msgstr "ID LTI"
 
 #: xmodule/lti_block.py:142
 #, python-brace-format
@@ -13360,7 +13760,7 @@ msgstr ""
 
 #: xmodule/lti_block.py:155
 msgid "LTI URL"
-msgstr "LTI URL"
+msgstr "URL LTI"
 
 #: xmodule/lti_block.py:157
 #, python-brace-format
@@ -19372,6 +19772,14 @@ msgstr ""
 "Proviene de una biblioteca, pero el enlace de origen está roto o es "
 "inválido."
 
+#: cms/templates/studio_xblock_wrapper.html:123
+msgid ""
+"Sourced from a library - but has been modified locally.Sourced from a "
+"library."
+msgstr ""
+"Obtenido de una biblioteca - pero ha sido modificado localmente.Obtenido de "
+"una biblioteca."
+
 #: cms/templates/studio_xblock_wrapper.html:127
 msgid "Sourced from a library - but has been modified locally."
 msgstr "Obtenido de una biblioteca, pero ha sido modificado localmente."
@@ -19630,6 +20038,15 @@ msgstr ""
 " URL para ver los detalles de la tarea o para descargar cualquier archivo "
 "creado: {detail_url}"
 
+#: cms/templates/emails/user_task_complete_email.txt:8
+#, python-brace-format
+msgid ""
+"Your {task_name} task has completed with the status '{task_status}'. Sign in"
+" to view the details of your task."
+msgstr ""
+"Tu {task_name} ha finalizado con el estado '{task_status}'. Inicia sesión "
+"para ver los detalles de tu tarea."
+
 #: cms/templates/emails/user_task_complete_email.txt:12
 #, python-brace-format
 msgid ""
@@ -19654,16 +20071,57 @@ msgstr "Errores: "
 msgid "Warnings: "
 msgstr "Alertas:"
 
+#: cms/templates/emails/user_task_complete_email_subject.txt:5
+#, python-brace-format
+msgid "{platform_name} {studio_name}: Course Optimizer Status Update"
+msgstr ""
+"{platform_name} {studio_name}: Actualización de estado de Course Optimizer"
+
 #: cms/templates/emails/user_task_complete_email_subject.txt:9
 #, python-brace-format
 msgid "{platform_name} {studio_name}: Task Status Update"
 msgstr "{platform_name} {studio_name}: Estado de la Tarea Actualizado"
+
+#: cms/templates/maintenance/_announcement_delete.html:8
+#: cms/templates/maintenance/_announcement_delete.html:11
+msgid "Delete Announcement"
+msgstr "Eliminar anuncio"
+
+#: cms/templates/maintenance/_announcement_delete.html:22
+msgid "Are you sure you want to delete this Announcement?"
+msgstr "¿Estás seguro de que deseas eliminar este anuncio?"
+
+#: cms/templates/maintenance/_announcement_delete.html:35
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: cms/templates/maintenance/_announcement_edit.html:8
+#: cms/templates/maintenance/_announcement_edit.html:11
+msgid "Edit Announcement"
+msgstr "Editar anuncio"
 
 #: cms/templates/maintenance/_announcement_edit.html:26
 #: lms/templates/problem.html:37 lms/templates/problem.html:38
 #: lms/templates/word_cloud.html:40
 msgid "Save"
 msgstr "Guardar"
+
+#: cms/templates/maintenance/_announcement_index.html:42
+msgid "Create New"
+msgstr "Crear nuevo"
+
+#: cms/templates/maintenance/_announcement_index.html:47
+msgid "previous"
+msgstr "anterior"
+
+#: cms/templates/maintenance/_announcement_index.html:53
+msgid "next"
+msgstr "siguiente"
+
+#: cms/templates/maintenance/base.html:14
+#: cms/templates/maintenance/index.html:8
+msgid "Maintenance Dashboard"
+msgstr "Panel de mantenimiento"
 
 #: cms/templates/registration/activation_complete.html:22
 msgid "Thanks for activating your account."
@@ -19784,6 +20242,10 @@ msgstr "Importar"
 msgid "Export"
 msgstr "Exportar"
 
+#: cms/templates/widgets/header.html:267
+msgid "Course Optimizer"
+msgstr "Course Optimizer"
+
 #: cms/templates/widgets/header.html:285
 msgid "Current Library:"
 msgstr "Librería actual"
@@ -19894,6 +20356,10 @@ msgstr "Ocultar la ayuda de {studio_name}"
 msgid "{studio_name} Documentation"
 msgstr "Documentación de {studio_name} "
 
+#: cms/templates/widgets/sock_links.html:14
+msgid "Access edx.org documentation on http://docs.edx.org"
+msgstr "Accede a la documentación de edx.org en http://docs.edx.org"
+
 #: cms/templates/widgets/sock_links.html:15
 msgid "edX Documentation"
 msgstr "Documentación de edX"
@@ -19936,6 +20402,10 @@ msgstr "nombre"
 #: cms/templates/widgets/user_dropdown.html:13
 msgid "Currently signed in as:"
 msgstr "Ha iniciado sesión como:"
+
+#: cms/templates/widgets/user_dropdown.html:26
+msgid "Maintenance"
+msgstr "Mantenimiento"
 
 #: cms/templates/widgets/user_dropdown.html:30
 #: lms/templates/header/user_dropdown.html:52
@@ -22121,6 +22591,17 @@ msgstr ""
 "Usa las teclas de dirección para navegar entre las recomendaciones o usa la "
 "tecla de tabulación para volver a la calculadora"
 
+#: lms/templates/calculator/toggle_calculator.html:27
+#, python-brace-format
+msgid ""
+"For detailed information, see {math_link_start}Entering Mathematical and "
+"Scientific Expressions{math_link_end} in the {guide_link_start}Open edX "
+"Guide for Students{guide_link_end}."
+msgstr ""
+"Para obtener información detallada, consulta {math_link_start}Ingresar "
+"Expresiones Matemáticas y Científicas{math_link_end} en {guide_link_start}la"
+" Guía de Open edX para Estudiantes{guide_link_end}."
+
 #: lms/templates/calculator/toggle_calculator.html:36
 msgid "Tips"
 msgstr "Consejos"
@@ -23142,7 +23623,7 @@ msgstr "Información acerca de requerimientos de créditos para el curso"
 
 #: lms/templates/courseware/progress.html:127
 msgid "display_name"
-msgstr "display_name"
+msgstr "nombre para mostrar"
 
 #: lms/templates/courseware/progress.html:135
 msgid "Verification Submitted"
@@ -24879,6 +25360,18 @@ msgstr ""
 msgid "Download a CSV of learners who can enroll"
 msgstr "Descargar la lista de estudiantes que pueden inscribirse al curso."
 
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:40
+msgid ""
+"Click to generate a CSV file that lists learners who are enrolled in the "
+"course but have not yet activated their account."
+msgstr ""
+"Haz clic para generar un archivo CSV que enumere a los estudiantes inscritos"
+" en el curso pero que aún no han activado su cuenta."
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:42
+msgid "Download a CSV of learners who have not activated their account"
+msgstr "Descarga un CSV de los estudiantes que no han activado su cuenta"
+
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html:44
 msgid "Click to download a CSV of anonymized student IDs:"
 msgstr ""
@@ -25718,6 +26211,10 @@ msgstr "Para usar la herramienta de correo electrónico, visite el"
 msgid "new experience"
 msgstr "nueva experiencia"
 
+#: lms/templates/instructor/instructor_dashboard_2/send_email.html:13
+msgid "Opens in a new tab"
+msgstr "Se abre en una nueva pestaña"
+
 #: lms/templates/instructor/instructor_dashboard_2/send_email.html:19
 #: lms/templates/instructor/instructor_dashboard_2/send_email.html:23
 msgid "Send to:"
@@ -26217,6 +26714,14 @@ msgid ""
 msgstr ""
 "Haz clic para generar un documento CSV que liste todos los estudiantes que "
 "pueden inscribirse en el curso, pero que aún no lo han hecho. "
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:102
+msgid ""
+"Click to generate a CSV file                 that lists learners who are "
+"enrolled in the course but have not yet activated their account."
+msgstr ""
+"Haz clic para generar un archivo CSV                 que enumera a los "
+"estudiantes inscritos en el curso pero que aún no han activado su cuenta."
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:105
 msgid ""
