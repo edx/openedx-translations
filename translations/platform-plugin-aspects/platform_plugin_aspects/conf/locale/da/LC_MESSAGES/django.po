@@ -7,101 +7,103 @@ msgstr ""
 "PO-Revision-Date: 2026-06-01 23:54+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: ar\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: extensions/filters.py:58
 msgid "Reports"
-msgstr "التقارير"
+msgstr "Rapporter"
 
 #: settings/common.py:31
 msgid "Course Dashboard"
-msgstr "لوحة تحكم الدورة"
+msgstr "Kursusdashboard"
 
 #: settings/common.py:37
 msgid "Individual Learner Dashboard"
-msgstr "لوحة تحكم المتعلم الفردية"
+msgstr "Individuelt studerendashboard"
 
 #: settings/common.py:43
 msgid "At-Risk Learners Dashboard"
-msgstr "لوحة تحكم المتعلمين المعرضين للخطر"
+msgstr "Dashboard for elever i risikozonen"
 
 #: settings/common.py:114
 msgid "Course"
-msgstr "المساق"
+msgstr "Kursus"
 
 #: settings/common.py:122
 msgid "Graded Subsection"
-msgstr "الأقسام الفرعية المقيّمة"
+msgstr "Bedømt delafsnit"
 
 #: settings/common.py:130
 msgid "Problem"
-msgstr "المسألة"
+msgstr "Problem"
 
 #: settings/common.py:138
 msgid "Video"
-msgstr "فيديو"
+msgstr "Video"
 
 #: static/html/superset.html:9
 msgid ""
 "Superset is not configured properly. Please contact your system "
 "administrator."
-msgstr "لم يتم تكوين Superset بشكل صحيح. من فضلك تواصل مع مسؤول نظامك."
+msgstr ""
+"Superset er ikke konfigureret korrekt. Kontakt venligst din "
+"systemadministrator."
 
 #: static/html/superset_student.html:4
 msgid ""
 "Superset is only visible to course staff and instructors. Please contact "
 "your system administrator."
 msgstr ""
-"تكون المجموعة الشاملة مرئية فقط لطاقم الدورة التدريبية والمدرسين. من فضلك "
-"تواصل مع مسؤول نظامك."
+"Superset er kun synligt for kursuspersonale og undervisere. Kontakt venligst"
+" din systemadministrator."
 
 #: views.py:87
 #, python-brace-format
 msgid "Course not found: '{course_id}'"
-msgstr "لم يتم العثور على الدورة التدريبية: &#39;{course_id}&#39;"
+msgstr "Kursus ikke fundet: '{course_id}'"
 
 #: views.py:114
 #, python-brace-format
 msgid "Invalid course id: '{course_id}'"
-msgstr "معرّف مساق غير صالح: '{course_id}'"
+msgstr "Ugyldigt kursus-id: '{course_id}'"
 
 #: views.py:179
 #, python-brace-format
 msgid "Invalid usage id: '{usage_id}'"
-msgstr "معرّف استخدام غير صالح: '{usage_id}'"
+msgstr "Ugyldigt brug-id: '{usage_id}'"
 
 #: views.py:208
 #, python-brace-format
 msgid "No dashboard for block type: '{block_type}'"
-msgstr "لا يوجد لوحة تحكم لنوع الكتلة: '{block_type}'"
+msgstr "Intet dashboard for bloktype: '{block_type}'"
 
 #: xblock.py:48 xblock.py:49
 msgid "Display name"
-msgstr "عرض الاسم"
+msgstr "Visningsnavn"
 
 #: xblock.py:50
 msgid "Superset Dashboard"
-msgstr "لوحة القيادة سوبرسيت"
+msgstr "Superset-dashboard"
 
 #: xblock.py:55
 msgid "Dashboard UUID"
-msgstr "UUID للوحة المعلومات"
+msgstr "Dashboard UUID"
 
 #: xblock.py:57
 msgid ""
 "The ID of the dashboard to embed. Available in the Superset embed dashboard "
 "UI."
 msgstr ""
-"معرف لوحة المعلومات المراد تضمينها. متوفر في واجهة مستخدم لوحة معلومات تضمين"
-" Superset."
+"ID'et for dashboardet, der skal indlejres. Findes i Superset embed "
+"dashboard-grænsefladen."
 
 #: xblock.py:64
 msgid "Filters"
-msgstr "المرشحات"
+msgstr "Filtre"
 
 #: xblock.py:66
 msgid ""
@@ -110,7 +112,6 @@ msgid ""
 "               The fields used here must be available on every dataset used by the dashboard.\n"
 "               "
 msgstr ""
-"قائمة مرشحات SQL التي سيتم تطبيقها على\n"
-" لوحة القيادة. على سبيل المثال: [&quot;org=&#39;edX&#39;&quot;، &quot;البلد في (&#39;نحن&#39;، &#39;co&#39;)&quot;]\n"
-" يجب أن تكون الحقول المستخدمة هنا متاحة في كل مجموعة بيانات تستخدمها لوحة المعلومات.\n"
+"Liste over SQL-filtre, der skal anvendes på dashboardet. F.eks.: [\"org='edX'\", \"country in ('us', 'co')\"]\n"
+"               De anvendte felter skal være tilgængelige i hvert datasæt, der benyttes af dashboardet.\n"
 "               "
