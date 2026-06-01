@@ -7,7 +7,7 @@ msgstr ""
 "PO-Revision-Date: 2026-06-01 23:56+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: es_ES\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,203 +15,200 @@ msgstr ""
 
 #: models.py:39
 msgid "Display Correctness?"
-msgstr "Mostrar grado de exactitud"
+msgstr "Mostrar correcció?"
 
 #: models.py:41
 msgid ""
 "This is a flag that indicates if the indicator icon should be displayed "
 "after a student enters their response"
 msgstr ""
-"Esta es una bandera que indica si el icono del indicador debe mostrarse "
-"después de que un estudiante escriba su respuesta"
+"Aquest és un indicador que indica si s'ha de mostrar la icona d'indicació "
+"després que un estudiant introdueixi la seva resposta"
 
 #: models.py:49
 msgid "Display Other Student Responses"
-msgstr "Mostrar las respuestas de otros estudiantes"
+msgstr "Mostrar altres respostes d'estudiants"
 
 #: models.py:51
 msgid ""
 "This will display other student responses to the student after they submit "
 "their response."
 msgstr ""
-"Esto mostrará otras respuestas de los estudiantes después de que el "
-"estudiante envíe su respuesta."
+"Això mostrarà altres respostes d'estudiants a l'estudiant després que aquest"
+" hagi enviat la seva resposta"
 
 #: models.py:60
 msgid "System selected answers to give to students"
-msgstr ""
-"El sistema ha seleccionado las respuestas a proporcionar a los estudiantes"
+msgstr "Respostes seleccionades pel sistema per donar als estudiants"
 
 #: models.py:63
 msgid "Display Name"
-msgstr "Nombre para mostrar"
+msgstr "Mostrar nom"
 
 #: models.py:65
 msgid "This is the title for this question type"
-msgstr "Este es el título para este tipo de pregunta"
+msgstr "Aquest és el títol per a aquest tipus de pregunta"
 
 #: models.py:71
 msgid "Full-Credit Key Phrases"
-msgstr "Frases clave para conseguir la puntuación total"
+msgstr "Frases clau per a crèdit complet"
 
 #: models.py:73
 msgid ""
 "This is a list of words or phrases, one of which must be present in order "
 "for the student's answer to receive full credit"
 msgstr ""
-"Esta es una lista de palabras o frases, una de las cuales debe estar "
-"presente para que la respuesta del estudiante reciba la puntuación total"
+"Això és una llista de paraules o frases, una de les quals ha d'estar present"
+" perquè la resposta de l'estudiant rebi crèdit complet"
 
 #: models.py:81
 msgid "Half-Credit Key Phrases"
-msgstr "Frases clave para conseguir una puntuación parcial"
+msgstr "Frases clau per a mig crèdit"
 
 #: models.py:83
 msgid ""
 "This is a list of words or phrases, one of which must be present in order "
 "for the student's answer to receive half credit"
 msgstr ""
-"Esta es una lista de palabras o frases, una de las cuales debe estar "
-"presente para que la respuesta del estudiante reciba una puntuación parcial"
+"Això és una llista de paraules o frases, una de les quals ha d'estar present"
+" perquè la resposta de l'estudiant rebi mig crèdit"
 
 #: models.py:91
 msgid "Maximum Number of Attempts"
-msgstr "Número máximo de intentos"
+msgstr "Nombre màxim d'intents"
 
 #: models.py:93
 msgid ""
 "This is the maximum number of times a student is allowed to attempt the "
 "problem"
 msgstr ""
-"Este es el número máximo de veces que un estudiante puede intentar resolver "
+"Aquest és el nombre màxim de vegades que un estudiant pot intentar resoldre "
 "el problema"
 
 #: models.py:101
 msgid "Maximum Word Count"
-msgstr "Número máximo de palabras"
+msgstr "Nombre màxim de paraules"
 
 #: models.py:103
 msgid "This is the maximum number of words allowed for this question"
-msgstr "Este es el número máximo de palabras permitidas para esta pregunta"
+msgstr "Aquest és el nombre màxim de paraules permeses per a aquesta pregunta"
 
 #: models.py:111
 msgid "Minimum Word Count"
-msgstr "Número mínimo de palabras"
+msgstr "Nombre mínim de paraules"
 
 #: models.py:113
 msgid "This is the minimum number of words required for this question"
-msgstr "Este es el número mínimo de palabras requeridas para esta pregunta"
+msgstr ""
+"Aquest és el nombre mínim de paraules requerides per a aquesta pregunta"
 
 #: models.py:121
 msgid "Prompt"
-msgstr "Enunciado "
+msgstr "Enunciat"
 
 #: models.py:123
 msgid ""
 "This is the prompt students will see when asked to enter their response"
 msgstr ""
-"Este es el mensaje que los estudiantes verán cuando se les pida que escriban"
-" su respuesta"
+"Aquest és l'enunciat que els estudiants veuran quan se'ls demani que "
+"introdueixin la seva resposta"
 
 #: models.py:131
 msgid "Submission Received Message"
-msgstr "Mensaje de recepción de la entrega"
+msgstr "Missatge de recepció d'enviament"
 
 #: models.py:133
 msgid "This is the message students will see upon submitting their response"
-msgstr "Este es el mensaje que los estudiantes verán tras enviar su respuesta"
+msgstr ""
+"Aquest és el missatge que els estudiants veuran en enviar la seva resposta"
 
 #: models.py:140
 msgid "Weight"
-msgstr "Valor"
+msgstr "Pes"
 
 #: models.py:142
 msgid "This assigns an integer value representing the weight of this problem"
-msgstr "Esto asigna un número entero que representa el valor de este problema"
+msgstr "Aquest assigna un valor enter que representa el pes d'aquest problema"
 
 #: models.py:150
 msgid "Draft Received Message"
-msgstr "Mensaje de recepción del borrador de la entrega"
+msgstr "Missatge de recepció de l'esborrany"
 
 #: models.py:152
 msgid "This is the message students will see upon submitting a draft response"
 msgstr ""
-"Este es el mensaje que los estudiantes verán tras enviar su borrador de la "
-"respuesta"
+"Aquest és el missatge que els estudiants veuran en enviar una resposta "
+"d'esborrany"
 
 #: templates/view.html:15
 msgid ""
 "Allow my response to possibly be visible by other learners after submitting "
 "their response"
 msgstr ""
-"Permitir que mi respuesta sea visible para otros estudiantes después de "
-"enviar su respuesta"
+"Permet que la meva resposta es pugui veure per altres estudiants després "
+"d'enviar-la"
 
 #: templates/view.html:21 templates/view.html:24
 msgid "Checking..."
-msgstr "Comprobando..."
+msgstr "Comprovant..."
 
 #: templates/view.html:21 templates/view.html:22
 msgid "Submit"
-msgstr "Enviar"
+msgstr "Envia"
 
 #: templates/view.html:24 templates/view.html:25
 msgid "Save"
-msgstr "Guardar"
+msgstr "Desa"
 
 #: templates/view.html:34
 msgid "Hide"
-msgstr "Ocultar"
+msgstr "Amaga"
 
 #: templates/view.html:35
 msgid "Show"
-msgstr "Mostrar"
+msgstr "Mostra"
 
 #: templates/view.html:36
 msgid "peer responses"
-msgstr "respuestas de los compañeros"
+msgstr "Respostes dels companys"
 
 #: templates/view.html:38
 msgid "Submissions by others"
-msgstr "Entregas de los demás"
+msgstr "Enviaments d'altres estudiants"
 
 #: templates/view.html:39 templates/view.html:43
 msgid "No responses to show at this time"
-msgstr "No hay respuestas para mostrar en este momento"
+msgstr "No hi ha respostes per mostrar en aquest moment"
 
 #: views.py:126
 #, python-brace-format
 msgid "{weight} point possible"
 msgid_plural "{weight} points possible"
-msgstr[0] "{weight} puntos posibles"
-msgstr[1] "{weight} puntos posibles"
-msgstr[2] "{weight} puntos posibles"
+msgstr[0] "{weight} punt possible"
+msgstr[1] "{weight} punts possibles"
 
 #: views.py:134
 #, python-brace-format
 msgid "{score_string}/{weight} point"
 msgid_plural "{score_string}/{weight} points"
-msgstr[0] "{score_string}/{weight} puntos"
-msgstr[1] "{score_string}/{weight} puntos"
-msgstr[2] "{score_string}/{weight} puntos"
+msgstr[0] "{score_string}/{weight} punt"
+msgstr[1] "{score_string}/{weight} punts"
 
 #: views.py:147
 #, python-brace-format
 msgid "You have used {count_attempts} of {max_attempts} submission"
 msgid_plural "You have used {count_attempts} of {max_attempts} submissions"
-msgstr[0] "Has utilizado {count_attempts} de {max_attempts} entregas posibles"
-msgstr[1] "Has utilizado {count_attempts} de {max_attempts} entregas posibles"
-msgstr[2] "Has utilizado {count_attempts} de {max_attempts} entregas posibles"
+msgstr[0] "Has utilitzat {count_attempts} de {max_attempts} intent"
+msgstr[1] "Has utilitzat {count_attempts} de {max_attempts} intents"
 
 #: views.py:171
 #, python-brace-format
 msgid "Your response must be between {min} and {max} word."
 msgid_plural "Your response must be between {min} and {max} words."
-msgstr[0] "Tu respuesta debe tener entre {min} y {max} palabras."
-msgstr[1] "Tu respuesta debe tener entre {min} y {max} palabras."
-msgstr[2] "Tu respuesta debe tener entre {min} y {max} palabras."
+msgstr[0] "La teva resposta ha de tenir entre {min} i {max} paraula"
+msgstr[1] "La teva resposta ha de tenir entre {min} i {max} paraules"
 
 #: views.py:267
 #, python-brace-format
 msgid "Invalid Word Count. {word_count_message}"
-msgstr "Número de palabras no válido. {word_count_message}"
+msgstr "Nombre de paraules no vàlid. {word_count_message}"
