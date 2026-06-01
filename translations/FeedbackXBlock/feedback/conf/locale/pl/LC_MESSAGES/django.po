@@ -7,27 +7,27 @@ msgstr ""
 "PO-Revision-Date: 2026-06-01 23:30+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: tr_TR\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #: feedback.py:30
 msgid "What did you learn from this? What was missing?"
-msgstr "Bundan ne öğrendin? Eksik olan şey neydi?"
+msgstr "Czego się z tego nauczyłeś? Co było pominięte?"
 
 #: feedback.py:31
 msgid "How would you rate this as a learning experience?"
-msgstr "Bunu bir öğrenme deneyimi olarak nasıl değerlendirirsiniz?"
+msgstr "Jak oceniasz to doświadczenie edukacyjne?"
 
 #: feedback.py:33
 msgid ""
 "Think about the material, and try to synthesize key lessons learned, as well"
 " as key gaps in our presentation."
 msgstr ""
-"Materyali düşünün ve öğrenilen önemli derslerin yanı sıra sunumumuzdaki "
-"önemli boşlukları sentezlemeye çalışın."
+"Przemyśl materiał i spróbuj wyciągnąć główne wnioski, a także zidentyfikować"
+" luki w naszej prezentacji."
 
 #: feedback.py:37
 msgid ""
@@ -35,137 +35,136 @@ msgid ""
 "synthesis will help you better understand and remember material from this "
 "course."
 msgstr ""
-"Burada düşünmek için biraz zaman ayırın. Araştırmalar anlamlı bir sentezin "
-"bu dersteki materyalleri daha iyi anlamanıza ve hatırlamanıza yardımcı "
-"olacağını gösteriyor."
+"Poświęć trochę czasu na refleksję. Badania pokazują, że sensowna synteza "
+"pomoże Ci lepiej zrozumieć i zapamiętać materiał z tego kursu."
 
 #: feedback.py:43 feedback.py:164
 msgid "Excellent"
-msgstr "Harika"
+msgstr "Doskonały"
 
 #: feedback.py:43 feedback.py:165
 msgid "Good"
-msgstr "İyi"
+msgstr "Dobry"
 
 #: feedback.py:43 feedback.py:166
 msgid "Average"
-msgstr "Ortalama"
+msgstr "Przeciętny"
 
 #: feedback.py:43 feedback.py:167
 msgid "Fair"
-msgstr "Geçer"
+msgstr "Dostateczny"
 
 #: feedback.py:43 feedback.py:168
 msgid "Poor"
-msgstr "Zayıf"
+msgstr "Słaby"
 
 #: feedback.py:78
 msgid "Freeform user prompt"
-msgstr "Serbest biçimli kullanıcı istemi"
+msgstr "Swobodna odpowiedź użytkownika"
 
 #: feedback.py:84 feedback.py:100
 msgid "Random number generated for p. -1 if uninitialized"
-msgstr "P için oluşturulan rastgele sayı. -1 eğer başlatılmamışsa"
+msgstr "Losowa liczba wygenerowana dla p. -1, jeśli nie została zainicjowana"
 
 #: feedback.py:89
 msgid "How user voted. -1 if didn't vote"
-msgstr "Kullanıcı nasıl oy verdi? -1 eğer oy vermediyse"
+msgstr "Jak użytkownik zagłosował. -1, jeśli nie oddał głosu"
 
 #: feedback.py:95
 msgid "What percent of the time should this show?"
-msgstr "Bu zamanın yüzde kaçını göstermeli?"
+msgstr "Jaki procent czasu powinno się to pokazywać?"
 
 #: feedback.py:105
 msgid "A list of user votes"
-msgstr "Kullanıcı oylarının listesi"
+msgstr "Lista głosów użytkowników"
 
 #: feedback.py:109
 msgid "Feedback"
-msgstr "Geri Bildirim"
+msgstr "Informacja zwrotna"
 
 #: feedback.py:112
 msgid "Display Name"
-msgstr "Görünen Ad"
+msgstr "Wyświetlana nazwa"
 
 #: feedback.py:113
 msgid "Provide Feedback"
-msgstr "Geribildirim Sağla"
+msgstr "Przekaż opinię"
 
 #: feedback.py:118 templates/html/studio_view.html:17
 msgid "Voting message"
-msgstr "Oylama mesajı"
+msgstr "Komunikat głosowania"
 
 #: feedback.py:119
 msgid "Thank you for voting!"
-msgstr "Oy verdiğiniz için teşekkürler!"
+msgstr "Dziękujemy za głosowanie!"
 
 #: feedback.py:124 templates/html/studio_view.html:25
 msgid "Feedback message"
-msgstr "Geri bildirim mesajı"
+msgstr "Komunikat opinii"
 
 #: feedback.py:125
 msgid "Thank you for your feedback!"
-msgstr "Geri bildiriminiz için teşekkür ederiz!"
+msgstr "Dziękujemy za opinię!"
 
 #: feedback.py:130
 msgid "Show aggregate to students"
-msgstr "Öğrencilere toplamı göster"
+msgstr "Pokaż zbiorcze wyniki studentom"
 
 #: feedback.py:159
 msgid "Please reflect on this course material"
-msgstr "Lütfen bu ders materyali üzerinde düşünün"
+msgstr "Proszę zastanowić się nad materiałem kursu"
 
 #: feedback.py:160
 msgid ""
 "Please take time to meaningfully reflect on your experience with this course"
 " material."
 msgstr ""
-"Lütfen bu ders materyaliyle ilgili deneyiminizi anlamlı bir şekilde "
-"yansıtmak için zaman ayırın."
+"Proszę poświęć chwilę, aby sensownie przemyśleć swoje doświadczenia z tym "
+"materiałem kursowym."
 
 #: feedback.py:163
 msgid "Please rate your overall experience"
-msgstr "Lütfen genel deneyiminizi değerlendirin"
+msgstr "Proszę oceń swoje ogólne doświadczenie"
 
 #: feedback.py:170
 msgid "Please take a moment to thoughtfully reflect."
-msgstr "Lütfen bir dakikanızı ayırıp düşünceli bir şekilde düşünün."
+msgstr "Proszę, poświęć chwilę, aby gruntownie się zastanowić."
 
 #: feedback.py:387
 msgid "Please vote!"
-msgstr "Lütfen oy verin!"
+msgstr "Proszę, zagłosuj!"
 
 #: static/html/feedback_instructor.html:10
 msgid "Component"
-msgstr "Bileşen"
+msgstr "Komponent"
 
 #: static/html/feedback_instructor.html:13
 msgid "Number of ratings"
-msgstr "Derecelendirme sayısı"
+msgstr "Liczba ocen"
 
 #: static/html/feedback_instructor.html:16
 msgid "Average rating"
-msgstr "Ortalama puan"
+msgstr "Średnia ocena"
 
 #: static/html/feedback_instructor.html:19
 msgid "Feedback "
-msgstr "Geri Bildirim "
+msgstr "Informacja zwrotna "
 
 #: static/html/feedback_instructor.html:40
 msgid "Comment"
-msgstr "Yorum"
+msgstr "Komentarz"
 
 #: static/html/feedback_instructor.html:40
 msgid "Vote"
-msgstr "Oy"
+msgstr "Głos"
 
 #: static/html/feedback_instructor.html:40
 msgid "No vote"
-msgstr "Oy yok"
+msgstr "Brak głosu"
 
 #: templates/html/feedback.html:17
 msgid "Submit Feedback"
-msgstr "Geri Bildirim Gönder"
+msgstr "Wyślij opinię"
 
 #: templates/html/studio_view.html:5
 msgid ""
@@ -173,136 +172,139 @@ msgid ""
 "This may be helpful either for course improvement, or to give students a "
 "chance to reflect on what they have done."
 msgstr ""
-"Bu XBlock, dersin bölümleri hakkında öğrenci geri bildirimi toplamanıza "
-"olanak tanır. Bu, dersin iyileştirilmesi açısından yararlı olabilir ya da "
-"öğrencilere yaptıkları şey üzerinde düşünme şansı vermek açısından yararlı "
-"olabilir."
+"Ten XBlock pozwala na zbieranie opinii studentów na temat fragmentów kursu. "
+"Może to być pomocne zarówno przy ulepszaniu kursu, jak i dać studentom "
+"szansę na refleksję nad tym, co zrobili."
 
 #: templates/html/studio_view.html:9
 msgid "Display name"
-msgstr "Görünen ad"
+msgstr "Wyświetlana nazwa"
 
 #: templates/html/studio_view.html:12
 msgid "The name of the component."
-msgstr "Bileşenin adı."
+msgstr "Nazwa komponentu."
 
 #: templates/html/studio_view.html:20
 msgid "The message to show after user vote."
-msgstr "Kullanıcı oyu sonrasında gösterilecek mesaj."
+msgstr "Komunikat wyświetlany po głosowaniu użytkownika."
 
 #: templates/html/studio_view.html:28
 msgid "The message to show after user feedback."
-msgstr "Kullanıcı geri bildiriminden sonra gösterilecek mesaj."
+msgstr "Komunikat wyświetlany po przekazaniu opinii przez użytkownika."
 
 #: templates/html/studio_view.html:33
 msgid "Show aggregate report to students"
-msgstr "Toplu raporu öğrencilere göster"
+msgstr "Pokaż zbiorczy raport studentom"
 
 #: templates/html/studio_view.html:35
 msgid "False"
-msgstr "Yanlış"
+msgstr "Fałsz"
 
 #: templates/html/studio_view.html:36
 msgid "True"
-msgstr "Doğru"
+msgstr "Prawda"
 
 #: templates/html/studio_view.html:39
 msgid "Whether to show the aggregate report to students."
-msgstr "Toplu raporun öğrencilere gösterilip gösterilmeyeceği."
+msgstr "Czy pokazywać zbiorczy raport studentom."
 
 #: templates/html/studio_view.html:44
 msgid "Freeform prompt"
-msgstr "Serbest biçimli istem"
+msgstr "Swobodna zachęta"
 
 #: templates/html/studio_view.html:47
 msgid "Example: Please provide us feedback on this section."
-msgstr "Örnek: Lütfen bu bölümle ilgili bize geri bildirimde bulunun."
+msgstr "Przykład: Proszę przekaż nam opinię dotyczącą tej sekcji."
 
 #: templates/html/studio_view.html:52
 msgid "Freeform placeholder"
-msgstr "Serbest biçimli yer tutucu"
+msgstr "Miejsce na swobodną odpowiedź"
 
 #: templates/html/studio_view.html:55
 msgid "This is shown as grayed out text before the student has answered."
-msgstr "Bu, öğrenci cevaplamadan önce gri renkli metin olarak gösterilir."
+msgstr ""
+"Jest wyświetlane jako tekst wyszarzony przed udzieleniem odpowiedzi przez "
+"studenta."
 
 #: templates/html/studio_view.html:60
 msgid "Likert icon set"
-msgstr "Likert simge seti"
+msgstr "Zestaw ikon Likerta"
 
 #: templates/html/studio_view.html:62
 msgid "Faces (happy to sad)"
-msgstr "Yüzler (mutludan üzgüne)"
+msgstr "Twarze (od radosnych do smutnych)"
 
 #: templates/html/studio_view.html:63
 msgid "Faces (sad to happy)"
-msgstr "Yüzler (üzgünden mutluya)"
+msgstr "Twarze (od smutnych do radosnych)"
 
 #: templates/html/studio_view.html:64
 msgid "Numeric"
-msgstr "Sayısal"
+msgstr "Liczbowy"
 
 #: templates/html/studio_view.html:65
 msgid "Stars"
-msgstr "Yıldızlar"
+msgstr "Gwiazdy"
 
 #: templates/html/studio_view.html:68
 msgid "We can either show happy/sad faces, numbers 1-5 or stars."
 msgstr ""
-"Mutlu/üzgün yüzleri, 1-5 arasındaki sayıları veya yıldızları gösterebiliriz."
+"Możemy wyświetlać albo twarze (uśmiechnięte i smutne), albo liczby od 1 do "
+"5, albo gwiazdy."
 
 #: templates/html/studio_view.html:73
 msgid "Likert prompt"
-msgstr "Likert istemi"
+msgstr "Pytanie Likerta"
 
 #: templates/html/studio_view.html:76
 msgid "Example: Please rate your overall experience with this section."
-msgstr "Örnek: Lütfen bu bölümle ilgili genel deneyiminizi değerlendirin."
+msgstr ""
+"Przykład: Proszę oceń swoje ogólne doświadczenie związane z tą sekcją."
 
 #: templates/html/studio_view.html:81
 msgid "Likert option 1"
-msgstr "Likert seçeneği 1"
+msgstr "Opcja Likerta 1"
 
 #: templates/html/studio_view.html:84
 msgid "Example: Excellent!"
-msgstr "Örnek: Mükemmel!"
+msgstr "Przykład: Doskonały!"
 
 #: templates/html/studio_view.html:89
 msgid "Likert option 2"
-msgstr "Likert seçeneği 2"
+msgstr "Opcja Likerta 2"
 
 #: templates/html/studio_view.html:92
 msgid "Example: Good"
-msgstr "Örnek: İyi"
+msgstr "Przykład: Dobry"
 
 #: templates/html/studio_view.html:97
 msgid "Likert option 3"
-msgstr "Likert seçeneği 3"
+msgstr "Opcja Likerta 3"
 
 #: templates/html/studio_view.html:100
 msgid "Example: Average"
-msgstr "Örnek: Orta"
+msgstr "Przykład: Przeciętny"
 
 #: templates/html/studio_view.html:105
 msgid "Likert option 4"
-msgstr "Likert seçeneği 4"
+msgstr "Opcja Likerta 4"
 
 #: templates/html/studio_view.html:108
 msgid "Example: Fair"
-msgstr "Örnek: Geçer"
+msgstr "Przykład: Dostateczny"
 
 #: templates/html/studio_view.html:113
 msgid "Likert option 5"
-msgstr "Likert seçeneği 5"
+msgstr "Opcja Likerta 5"
 
 #: templates/html/studio_view.html:116
 msgid "Example: Poor"
-msgstr "Örnek: Zayıf"
+msgstr "Przykład: Słaby"
 
 #: templates/html/studio_view.html:123
 msgid "Save"
-msgstr "Kaydet"
+msgstr "Zapisz"
 
 #: templates/html/studio_view.html:126
 msgid "Cancel"
-msgstr "İptal"
+msgstr "Anuluj"
