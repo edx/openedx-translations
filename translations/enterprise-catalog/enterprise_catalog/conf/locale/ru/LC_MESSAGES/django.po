@@ -1,0 +1,357 @@
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-03-16 00:39+0000\n"
+"PO-Revision-Date: 2026-06-01 23:48+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+#: enterprise_catalog/apps/academy/models.py:22
+msgid "Tag title"
+msgstr "Заголовок тега"
+
+#: enterprise_catalog/apps/academy/models.py:23
+msgid "Tag description."
+msgstr "Описание тега."
+
+#: enterprise_catalog/apps/academy/models.py:27
+msgid "Tag"
+msgstr "Тег"
+
+#: enterprise_catalog/apps/academy/models.py:28
+msgid "Tags"
+msgstr "Теги"
+
+#: enterprise_catalog/apps/academy/models.py:46
+msgid "Academy title"
+msgstr "Заголовок академии"
+
+#: enterprise_catalog/apps/academy/models.py:48
+msgid "Short description of the academy."
+msgstr "Краткое описание академии."
+
+#: enterprise_catalog/apps/academy/models.py:49
+msgid "Long description of the academy."
+msgstr "Подробное описание академии."
+
+#: enterprise_catalog/apps/academy/models.py:50
+msgid "URL of the image shown on academy card on the frontend."
+msgstr "URL изображения, отображаемого на карточке академии на фронтенде."
+
+#: enterprise_catalog/apps/academy/models.py:55
+msgid "Academy"
+msgstr "Академия"
+
+#: enterprise_catalog/apps/academy/models.py:56
+msgid "Academies"
+msgstr "Академии"
+
+#: enterprise_catalog/apps/catalog/algolia_utils.py:859
+msgid "Available now"
+msgstr "Доступно сейчас"
+
+#: enterprise_catalog/apps/catalog/models.py:86
+msgid ""
+"Query parameters which will be used to filter the discovery service's "
+"search/all endpoint results, specified as a JSON object."
+msgstr ""
+"Параметры запроса, которые будут использоваться для фильтрации результатов "
+"конечной точки search/all службы обнаружения, заданные в виде объекта JSON."
+
+#: enterprise_catalog/apps/catalog/models.py:110
+msgid "Catalog Query"
+msgstr "Запрос каталога"
+
+#: enterprise_catalog/apps/catalog/models.py:111
+msgid "Catalog Queries"
+msgstr "Запросы каталога"
+
+#: enterprise_catalog/apps/catalog/models.py:231
+msgid ""
+"Ordered list of enrollment modes which can be displayed to learners for "
+"course runs in this catalog."
+msgstr ""
+"Упорядоченный список режимов зачисления, который может отображаться учащимся"
+" для курсов в данном каталоге."
+
+#: enterprise_catalog/apps/catalog/models.py:237
+msgid ""
+"Specifies whether courses should be published with direct-to-audit "
+"enrollment URLs."
+msgstr ""
+"Определяет, должны ли курсы публиковаться с прямыми URL для зачисления на "
+"аудит."
+
+#: enterprise_catalog/apps/catalog/models.py:244
+msgid "Enterprise Catalog"
+msgstr "Корпоративный каталог"
+
+#: enterprise_catalog/apps/catalog/models.py:245
+msgid "Enterprise Catalogs"
+msgstr "Корпоративные каталоги"
+
+#: enterprise_catalog/apps/catalog/models.py:685
+msgid ""
+"The UUID that represents a piece of content. This value is usually a "
+"secondary identifier to content_key in the enterprise environment."
+msgstr ""
+"UUID, который представляет элемент контента. Это значение обычно является "
+"вторичным идентификатором по отношению к content_key в корпоративной среде."
+
+#: enterprise_catalog/apps/catalog/models.py:695
+#: enterprise_catalog/apps/catalog/models.py:840
+msgid ""
+"The key that represents a piece of content, such as a course, course run, or"
+" program."
+msgstr ""
+"Ключ, представляющий элемент контента, например, курс, сессию курса или "
+"программу."
+
+#: enterprise_catalog/apps/catalog/models.py:710
+msgid ""
+"The key represents this content's parent. For example for course_runs "
+"content their parent course key."
+msgstr ""
+"Ключ, представляющий родительский элемент данного контента. Например, для "
+"контента course_runs это ключ родительского курса."
+
+#: enterprise_catalog/apps/catalog/models.py:721
+msgid ""
+"The metadata about a particular piece content as retrieved from the "
+"discovery service's search/all endpoint results, specified as a JSON object."
+msgstr ""
+"Метаданные о конкретном элементе контента, полученные из результатов "
+"конечной точки search/all службы обнаружения, заданные в виде объекта JSON."
+
+#: enterprise_catalog/apps/catalog/models.py:777
+#: enterprise_catalog/apps/catalog/models.py:778
+msgid "Content Metadata"
+msgstr "Метаданные контента"
+
+#: enterprise_catalog/apps/catalog/models.py:824
+#: enterprise_catalog/apps/catalog/models.py:825
+msgid "Restricted Course Metadata"
+msgstr "Ограниченные метаданные курса"
+
+#: enterprise_catalog/apps/catalog/models.py:1718
+msgid ""
+"If true, will force the command's underlying celery tasks to run regardless "
+"of how recently the same task, on the same input, has been successfully "
+"executed."
+msgstr ""
+"Если установлено в true, принудительно запускает связанные celery задачи "
+"команды, независимо от того, когда аналогичная задача с тем же входом была "
+"успешно выполнена."
+
+#: enterprise_catalog/apps/catalog/models.py:1726
+msgid ""
+"If true, for management commands that respect this field, celery tasks will "
+"not be apply_async()'d, but instead exectue as regular python functions."
+msgstr ""
+"Если установлено в true, для управляющих команд, учитывающих это поле, "
+"celery задачи не будут запускаться с помощью apply_async(), а выполнятся как"
+" обычные python функции."
+
+#: enterprise_catalog/apps/catalog/models.py:1759
+msgid "The content metadata this translation belongs to"
+msgstr "Метаданные контента, к которому принадлежит этот перевод"
+
+#: enterprise_catalog/apps/catalog/models.py:1763
+msgid "ISO 639-1 language code (e.g., 'es' for Spanish)"
+msgstr "Код языка по стандарту ISO 639-1 (например, 'es' для испанского)"
+
+#: enterprise_catalog/apps/catalog/models.py:1771
+msgid "Translated title"
+msgstr "Переведённый заголовок"
+
+#: enterprise_catalog/apps/catalog/models.py:1776
+msgid "Translated short description"
+msgstr "Переведённое краткое описание"
+
+#: enterprise_catalog/apps/catalog/models.py:1781
+msgid "Translated full description"
+msgstr "Переведённое подробное описание"
+
+#: enterprise_catalog/apps/catalog/models.py:1786
+msgid "Translated learning outcomes"
+msgstr "Переведённые результаты обучения"
+
+#: enterprise_catalog/apps/catalog/models.py:1791
+msgid "Translated prerequisites"
+msgstr "Переведённые предварительные требования"
+
+#: enterprise_catalog/apps/catalog/models.py:1797
+msgid "Translated subtitle"
+msgstr "Переведённый подзаголовок"
+
+#: enterprise_catalog/apps/catalog/models.py:1803
+msgid "SHA256 hash of source content to detect changes"
+msgstr "Хэш SHA256 исходного контента для обнаружения изменений"
+
+#: enterprise_catalog/apps/catalog/models.py:1807
+msgid "Content Translation"
+msgstr "Перевод контента"
+
+#: enterprise_catalog/apps/catalog/models.py:1808
+msgid "Content Translations"
+msgstr "Переводы контента"
+
+#: enterprise_catalog/apps/core/admin.py:16
+msgid "Personal info"
+msgstr "Личная информация"
+
+#: enterprise_catalog/apps/core/admin.py:17
+msgid "Permissions"
+msgstr "Разрешения"
+
+#: enterprise_catalog/apps/core/admin.py:19
+msgid "Important dates"
+msgstr "Важные даты"
+
+#: enterprise_catalog/apps/core/models.py:17
+msgid "Full Name"
+msgstr "Полное имя"
+
+#: enterprise_catalog/apps/core/models.py:21
+msgid "first name"
+msgstr "имя"
+
+#: enterprise_catalog/apps/curation/models.py:54
+msgid "Enterprise curation"
+msgstr "Курация предприятия"
+
+#: enterprise_catalog/apps/curation/models.py:55
+msgid "Enterprise curations"
+msgstr "Курация предприятий"
+
+#: enterprise_catalog/apps/curation/models.py:176
+msgid "Sort order for favorited items, in ascending order (0=first)"
+msgstr "Порядок сортировки избранных элементов, по возрастанию (0 = первый)"
+
+#: enterprise_catalog/apps/jobs/models.py:16
+msgid "The job ID received from API."
+msgstr "ID задачи, полученный из API."
+
+#: enterprise_catalog/apps/jobs/models.py:21
+msgid "The external identifier for the job received from API."
+msgstr "Внешний идентификатор задачи, полученный из API."
+
+#: enterprise_catalog/apps/jobs/models.py:24
+msgid "Job title"
+msgstr "Заголовок задачи"
+
+#: enterprise_catalog/apps/jobs/models.py:25
+msgid "Job description."
+msgstr "Описание задачи."
+
+#: enterprise_catalog/apps/jobs/models.py:30
+msgid "Job"
+msgstr "Задача"
+
+#: enterprise_catalog/apps/jobs/models.py:31
+msgid "Jobs"
+msgstr "Задачи"
+
+#: enterprise_catalog/apps/jobs/models.py:53
+#: enterprise_catalog/apps/video_catalog/models.py:180
+msgid "Skill id"
+msgstr "ID навыка"
+
+#: enterprise_catalog/apps/jobs/models.py:54
+#: enterprise_catalog/apps/video_catalog/models.py:181
+msgid "Skill name"
+msgstr "Название навыка"
+
+#: enterprise_catalog/apps/jobs/models.py:58
+msgid "The significance of skill for the job."
+msgstr "Значимость навыка для задачи."
+
+#: enterprise_catalog/apps/jobs/models.py:65
+msgid "Job Skill"
+msgstr "Навык задачи"
+
+#: enterprise_catalog/apps/jobs/models.py:66
+msgid "Job Skills"
+msgstr "Навыки задачи"
+
+#: enterprise_catalog/apps/jobs/models.py:97
+msgid "Job Enterprise"
+msgstr "Предприятие задачи"
+
+#: enterprise_catalog/apps/jobs/models.py:98
+msgid "Job Enterprises"
+msgstr "Предприятия задачи"
+
+#: enterprise_catalog/apps/video_catalog/models.py:66
+msgid "EdX video id"
+msgstr "ID видео EdX"
+
+#: enterprise_catalog/apps/video_catalog/models.py:67
+msgid "Client video id"
+msgstr "ID видео клиента"
+
+#: enterprise_catalog/apps/video_catalog/models.py:68
+#: enterprise_catalog/apps/video_catalog/models.py:145
+msgid "Video title"
+msgstr "Заголовок видео"
+
+#: enterprise_catalog/apps/video_catalog/models.py:69
+#: enterprise_catalog/apps/video_catalog/models.py:144
+msgid "Video Xblock Usage Key"
+msgstr "Ключ использования Xblock для видео"
+
+#: enterprise_catalog/apps/video_catalog/models.py:82
+msgid ""
+"The metadata about a particular video as retrieved from the LMS service, "
+"specified as a JSON object."
+msgstr ""
+"Метаданные о конкретном видео, полученные из сервиса LMS, заданные в виде "
+"объекта JSON."
+
+#: enterprise_catalog/apps/video_catalog/models.py:90
+msgid "Video"
+msgstr "Видео"
+
+#: enterprise_catalog/apps/video_catalog/models.py:91
+msgid "Videos"
+msgstr "Видео"
+
+#: enterprise_catalog/apps/video_catalog/models.py:115
+msgid "Video transcript summary"
+msgstr "Краткое содержание стенограммы видео"
+
+#: enterprise_catalog/apps/video_catalog/models.py:120
+msgid "Video Transcript Summary"
+msgstr "Краткое содержание транскрипта видео"
+
+#: enterprise_catalog/apps/video_catalog/models.py:121
+msgid "Video Transcript Summaries"
+msgstr "Краткие содержания транскриптов видео"
+
+#: enterprise_catalog/apps/video_catalog/models.py:148
+msgid "Flag for row level filtering of processed rows."
+msgstr "Флаг для фильтрации обработанных строк на уровне отдельных записей."
+
+#: enterprise_catalog/apps/video_catalog/models.py:152
+msgid "Shortlisted Video"
+msgstr "Выбранное видео"
+
+#: enterprise_catalog/apps/video_catalog/models.py:153
+msgid "Shortlisted Videos"
+msgstr "Выбранные видео"
+
+#: enterprise_catalog/apps/video_catalog/models.py:186
+msgid "Video Skill"
+msgstr "Навык видео"
+
+#: enterprise_catalog/apps/video_catalog/models.py:187
+msgid "Video Skills"
+msgstr "Навыки видео"
