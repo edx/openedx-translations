@@ -7,48 +7,48 @@ msgstr ""
 "PO-Revision-Date: 2026-06-01 23:36+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: el\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #: templates/edx.org/_footer.html:7
 msgid "Legal Policies"
-msgstr "Νομικές Πολιτικές"
+msgstr "Polityki prawne"
 
 #: templates/edx.org/_footer.html:11
 msgid "Terms of Service & Honor Code"
-msgstr "Όροι χρήσης και Κώδικας τιμής"
+msgstr "Warunki korzystania z usługi i kodeks honorowy"
 
 #: templates/edx.org/_footer.html:16
 msgid "Privacy Policy"
-msgstr "Πολιτική προστασίας δεδομένων"
+msgstr "Polityka prywatności"
 
 #: templates/edx.org/_footer.html:21
 msgid "Cookie Policy"
-msgstr "Πολιτική cookie"
+msgstr "Polityka plików cookie"
 
 #: templates/edx.org/_footer.html:26
 msgid "Your Privacy Choices"
-msgstr "Οι επιλογές απορρήτου σας"
+msgstr "Twoje wybory dotyczące prywatności"
 
 #: templates/edx.org/_footer.html:36
 msgid ""
 "All rights reserved except where noted. edX, Open edX and the edX and Open "
 "edX logos are registered trademarks or trademarks of edX Inc."
 msgstr ""
-"Με την επιφύλαξη παντός δικαιώματος, εκτός εάν σημειώνεται. Το edX, το Open "
-"edX και τα λογότυπα edX και Open edX είναι σήματα κατατεθέντα ή εμπορικά "
-"σήματα της edX Inc."
+"Wszelkie prawa zastrzeżone, chyba że podano inaczej. edX, Open edX oraz "
+"logotypy edX i Open edX są zastrzeżonymi znakami towarowymi lub znakami "
+"towarowymi firmy edX Inc."
 
 #: templates/edx.org/_footer.html:46
 msgid "Powered by"
-msgstr "Τροφοδοτείται από"
+msgstr "Napędzane przez"
 
 #: templates/edx.org/credentials/programs/base.html:30
 msgid "About edX"
-msgstr "Σχετικά με το edX"
+msgstr "O edX"
 
 #: templates/edx.org/credentials/programs/base.html:33
 #, python-brace-format
@@ -58,11 +58,10 @@ msgid ""
 "of Texas, and many others. edX is an online initiative created by founding "
 "partners Harvard and MIT."
 msgstr ""
-"{link_start} edX {link_end} προσφέρει διαδραστικά διαδικτυακά μαθήματα και "
-"MOOC από τα καλύτερα πανεπιστήμια του κόσμου, όπως το MIT, το Χάρβαρντ, το "
-"Μπέρκλεϋ, το Πανεπιστήμιο του Τέξας και πολλά άλλα. Το edX είναι μια "
-"διαδικτυακή πρωτοβουλία που δημιουργήθηκε από τους ιδρυτικούς εταίρους "
-"Harvard και MIT."
+"{link_start} edX{link_end} oferuje interaktywne zajęcia online oraz kursy "
+"MOOC z najlepszych uniwersytetów na świecie, w tym MIT, Harvard, Berkeley, "
+"University of Texas i wielu innych. edX to inicjatywa internetowa stworzona "
+"przez założycieli, Harvard i MIT."
 
 #. Translators: MicroBachelors should not be translated, this phrase is
 #. preceded by the learner's name and followed by a program title
@@ -71,18 +70,18 @@ msgid ""
 "has successfully completed all courses and received passing grades to earn a"
 " MicroBachelors program certificate in"
 msgstr ""
-"έχει ολοκληρώσει επιτυχώς όλα τα μαθήματα και έχει λάβει επιτυχείς βαθμούς "
-"για να αποκτήσει πιστοποιητικό προγράμματος MicroBachelors"
+"pomyślnie ukończył wszystkie kursy i otrzymał oceny zaliczające, aby uzyskać"
+" certyfikat programu MicroBachelors w"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:12
 msgid "MicroBachelors program certificate"
-msgstr "Πιστοποιητικό προγράμματος MicroBachelors"
+msgstr "Certyfikat programu MicroBachelors"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:17
 msgid "About the edX MicroBachelors program certificate"
-msgstr "Σχετικά με το πιστοποιητικό προγράμματος edX MicroBachelors"
+msgstr "O certyfikacie programu MicroBachelors od edX"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:22
@@ -94,11 +93,11 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the program."
 msgstr ""
-"Ένα διαπιστευτήριο edX MicroBachelors σημαίνει ότι ο εκπαιδευόμενος έχει "
-"ολοκληρώσει μια ομάδα μαθημάτων που προσθέτουν μια πλούσια κατανόηση ενός "
-"τομέα σπουδών. Η ολοκλήρωση των προγραμμάτων MicroBachelors απαιτεί οι "
-"εκπαιδευόμενοι να κερδίζουν {link_start} επαληθευμένα πιστοποιητικά "
-"{link_end} από καθένα από τα μαθήματα που περιλαμβάνονται στο πρόγραμμα."
+"Certyfikat MicroBachelors od edX oznacza, że uczestnik ukończył grupę "
+"kursów, które łącznie zapewniają dogłębną wiedzę w danej dziedzinie. "
+"Ukończenie programów MicroBachelors wymaga, aby uczestnicy zdobyli "
+"{link_start}Zweryfikowane Certyfikaty{link_end} z każdego kursu wchodzącego "
+"w skład programu."
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:8
@@ -107,8 +106,8 @@ msgid ""
 "You worked hard to earn your MicroMasters Credential from "
 "%(organization_name)s."
 msgstr ""
-"Δουλέψατε σκληρά για να κερδίσετε τα διαπιστευτήριά σας MicroMasters από "
-"%(organization_name)s ."
+"Ciężko pracowałeś, aby zdobyć swój certyfikat MicroMasters od "
+"%(organization_name)s."
 
 #. Translators: MicroMasters should not be translated, this phrase is preceded
 #. by the learner's name and followed by a program title
@@ -117,18 +116,18 @@ msgid ""
 "has successfully completed all courses and received passing grades to earn a"
 " MicroMasters program certificate in"
 msgstr ""
-"έχει ολοκληρώσει επιτυχώς όλα τα μαθήματα και έχει λάβει επιτυχείς βαθμούς "
-"για να αποκτήσει πιστοποιητικό προγράμματος MicroMasters"
+"pomyślnie ukończył wszystkie kursy i otrzymał oceny zaliczające, aby uzyskać"
+" certyfikat programu MicroMasters w"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:21
 msgid "MicroMasters program certificate"
-msgstr "Πιστοποιητικό προγράμματος MicroMasters"
+msgstr "Certyfikat programu MicroMasters"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:26
 msgid "About the edX MicroMasters credential"
-msgstr "Σχετικά με τα διαπιστευτήρια edX MicroMasters"
+msgstr "O certyfikacie MicroMasters od edX"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:31
@@ -140,11 +139,11 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
-"Ένα διαπιστευτήριο edX MicroMasters σημαίνει ότι ο εκπαιδευόμενος έχει "
-"ολοκληρώσει μια ομάδα μαθημάτων που προσθέτουν μια πλούσια κατανόηση ενός "
-"τομέα σπουδών. Η ολοκλήρωση των Προγραμμάτων MicroMasters απαιτεί οι "
-"εκπαιδευόμενοι να κερδίζουν {link_start} επαληθευμένα πιστοποιητικά "
-"{link_end} από καθένα από τα μαθήματα που περιλαμβάνονται στο Πρόγραμμα."
+"Certyfikat MicroMasters od edX oznacza, że uczestnik ukończył grupę kursów, "
+"które łącznie zapewniają dogłębną wiedzę w danej dziedzinie. Ukończenie "
+"programów MicroMasters wymaga, aby uczestnicy zdobyli "
+"{link_start}Zweryfikowane Certyfikaty{link_end} z każdego kursu wchodzącego "
+"w skład programu."
 
 #. Translators: This phrase is preceded by the learner's name and followed by
 #. a program title
@@ -153,16 +152,16 @@ msgid ""
 "successfully completed all courses and received passing grades for a "
 "Professional Certificate in"
 msgstr ""
-"ολοκλήρωσε επιτυχώς όλα τα μαθήματα και έλαβε βαθμούς προαγωγής για "
-"Επαγγελματικό πιστοποιητικό στο"
+"pomyślnie ukończył wszystkie kursy i otrzymał oceny zaliczające, aby uzyskać"
+" certyfikat zawodowy w"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:11
 msgid "Professional Certificate"
-msgstr "Επαγγελματική βεβαίωση"
+msgstr "Certyfikat zawodowy"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:15
 msgid "About the edX Professional Certificate"
-msgstr "Σχετικά με το edX Professional Certificate"
+msgstr "O certyfikacie zawodowym od edX"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:19
 #, python-brace-format
@@ -173,12 +172,11 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
-"Ένα edX Professional Certificate σημαίνει ότι ο εκπαιδευόμενος έχει "
-"ολοκληρώσει μια ομάδα μαθημάτων που προσθέτουν μια πλούσια κατανόηση ενός "
-"τομέα σπουδών. Η ολοκλήρωση των προγραμμάτων επαγγελματικών πιστοποιητικών "
-"απαιτεί οι εκπαιδευόμενοι να κερδίζουν {link_start} επαληθευμένα "
-"πιστοποιητικά {link_end} από καθένα από τα μαθήματα που περιλαμβάνονται στο "
-"Πρόγραμμα."
+"Certyfikat zawodowy od edX oznacza, że uczestnik ukończył grupę kursów, "
+"które łącznie zapewniają dogłębną wiedzę w danej dziedzinie. Ukończenie "
+"programów certyfikatów zawodowych wymaga, aby uczestnicy zdobyli "
+"{link_start}Zweryfikowane Certyfikaty{link_end} z każdego kursu wchodzącego "
+"w skład programu."
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:8
@@ -187,8 +185,8 @@ msgid ""
 "You worked hard to earn your XSeries Program certificate from "
 "%(organization_name)s."
 msgstr ""
-"Δουλέψατε σκληρά για να αποκτήσετε το πιστοποιητικό προγράμματος XSeries από"
-" %(organization_name)s ."
+"Ciężko pracowałeś, aby zdobyć certyfikat programu XSeries od "
+"%(organization_name)s."
 
 #. Translators: XSeries should not be translated, this phrase is preceded by
 #. the learner's name and followed by a program title
@@ -197,18 +195,18 @@ msgid ""
 "has successfully completed all courses and received passing grades for an "
 "XSeries Program certificate in"
 msgstr ""
-"έχει ολοκληρώσει επιτυχώς όλα τα μαθήματα και έχει λάβει επιτυχείς βαθμούς "
-"για ένα πιστοποιητικό προγράμματος XSeries στο"
+"pomyślnie ukończył wszystkie kursy i otrzymał oceny zaliczające, aby uzyskać"
+" certyfikat programu XSeries w"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:21
 msgid "XSeries Program certificate"
-msgstr "Πιστοποιητικό προγράμματος XSeries"
+msgstr "Certyfikat programu XSeries"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:26
 msgid "About the edX XSeries Program certificate"
-msgstr "Σχετικά με το πιστοποιητικό προγράμματος edX XSeries"
+msgstr "O certyfikacie programu XSeries od edX"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:31
@@ -220,8 +218,8 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
-"Ένα πιστοποιητικό προγράμματος edX XSeries σημαίνει ότι ο εκπαιδευόμενος "
-"έχει ολοκληρώσει μια ομάδα μαθημάτων που προσθέτουν μια πλούσια κατανόηση "
-"ενός τομέα σπουδών. Η ολοκλήρωση των προγραμμάτων XSeries απαιτεί οι "
-"εκπαιδευόμενοι να κερδίζουν {link_start} επαληθευμένα πιστοποιητικά "
-"{link_end} από καθένα από τα μαθήματα που περιλαμβάνονται στο Πρόγραμμα."
+"Certyfikat programu XSeries od edX oznacza, że uczestnik ukończył grupę "
+"kursów, które łącznie zapewniają dogłębną wiedzę w danej dziedzinie. "
+"Ukończenie programów XSeries wymaga, aby uczestnicy zdobyli "
+"{link_start}Zweryfikowane Certyfikaty{link_end} z każdego kursu wchodzącego "
+"w skład programu."
