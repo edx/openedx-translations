@@ -7,55 +7,57 @@ msgstr ""
 "PO-Revision-Date: 2026-06-02 00:06+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: he\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? 2 : 3);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: mixins/grading.py:72
 msgid "We could not execute your query; please try again."
-msgstr "לא יכולנו לבצע את השאילתה שלך; בבקשה נסה שוב."
+msgstr "Nous n'avons pas pu exécuter votre requête ; veuillez réessayer."
 
 #: mixins/grading.py:89
 msgid "Weight"
-msgstr "משקל"
+msgstr "Poids"
 
 #: mixins/grading.py:91
 msgid "This assigns an integer value representing the weight of this problem"
-msgstr "זה מקצה ערך שלם המייצג את המשקל של בעיה זו"
+msgstr "Cela attribue une valeur entière représentant le poids de ce problème"
 
 #: mixins/grading.py:170
 msgid "Display Name"
-msgstr "שם לתצוגה"
+msgstr "Nom d'affichage"
 
 #: mixins/grading.py:171
 msgid "The display name for this component."
-msgstr "שם התצוגה עבור רכיב זה"
+msgstr "Le nom d'affichage pour ce composant."
 
 #: mixins/grading.py:172
 msgid "SQL Problem"
-msgstr "בעיית SQL"
+msgstr "Problème SQL"
 
 #: mixins/grading.py:176
 msgid "Dataset"
-msgstr "מערך נתונים"
+msgstr "Jeu de données"
 
 #: mixins/grading.py:177
 msgid "Which initial dataset/database to be used for queries"
-msgstr "באיזה מערך נתונים/בסיס נתונים ראשוניים יש להשתמש עבור שאילתות"
+msgstr ""
+"Quel jeu de données/base de données initial doit être utilisé pour les "
+"requêtes"
 
 #: mixins/grading.py:183
 msgid "Answer Query"
-msgstr "ענה לשאילתה"
+msgstr "Requête de réponse"
 
 #: mixins/grading.py:184
 msgid "A correct response SQL query"
-msgstr "שאילתת SQL תגובה נכונה"
+msgstr "Une requête SQL de réponse correcte"
 
 #: mixins/grading.py:190
 msgid "Verify Query"
-msgstr "אמת שאילתה"
+msgstr "Requête de vérification"
 
 #: mixins/grading.py:192
 msgid ""
@@ -63,45 +65,45 @@ msgid ""
 "the database (UPDATE, INSERT, DELETE, etc.). Only enter a single SELECT "
 "query here, which is used for matching the answer"
 msgstr ""
-"שאילתת SQL אימות משנית, לשימוש אם ה-answer_query משנה את מסד הנתונים "
-"(UPDATE, INSERT, DELETE וכו&#39;). הזן כאן שאילתת SELECT יחידה בלבד, המשמשת "
-"להתאמת התשובה"
+"Une requête SQL de vérification secondaire, à utiliser si la requête de "
+"réponse modifie la base de données (UPDATE, INSERT, DELETE, etc.). N'entrez "
+"ici qu'une seule requête SELECT, qui sera utilisée pour comparer la réponse"
 
 #: mixins/grading.py:202
 msgid "Modification query statements"
-msgstr "הצהרות שאילתות שינוי"
+msgstr "Instructions de requête de modification"
 
 #: mixins/grading.py:204
 msgid ""
 "Optional SQL statements, to be executed after the user-submitted query, but "
 "before the verify_query."
 msgstr ""
-"הצהרות SQL אופציונליות, לביצוע לאחר השאילתה שנשלחה על ידי המשתמש, אך לפני "
-"ה-verify_query."
+"Instructions SQL optionnelles, à exécuter après la requête soumise par "
+"l'utilisateur, mais avant la requête de vérification."
 
 #: mixins/grading.py:212
 msgid "Is Ordered?"
-msgstr "הוזמן?"
+msgstr "Est ordonné ?"
 
 #: mixins/grading.py:213
 msgid "Should results be in order?"
-msgstr "האם התוצאות צריכות להיות מסודרות?"
+msgstr "Les résultats doivent-ils être ordonnés ?"
 
 #: mixins/grading.py:228
 msgid "Prompt"
-msgstr "הנחיה"
+msgstr "Invite"
 
 #: mixins/grading.py:229
 msgid "Explanatory text to accompany the problem"
-msgstr "טקסט הסבר שילווה את הבעיה"
+msgstr "Texte explicatif pour accompagner le problème"
 
 #: mixins/grading.py:234
 msgid "Submission Query"
-msgstr "שאילתת הגשה"
+msgstr "Requête de soumission"
 
 #: mixins/grading.py:235
 msgid "A Submission Query"
-msgstr "שאילתת הגשה"
+msgstr "Une requête de soumission"
 
 #: templates/view.html:6
 #, python-format
@@ -115,72 +117,67 @@ msgid_plural ""
 "        "
 msgstr[0] ""
 "\n"
-"            %(score_weighted)s/%(max_score)s נקודה (מדורגת)\n"
+"            %(score_weighted)s/%(max_score)s point (noté)\n"
 "        "
 msgstr[1] ""
 "\n"
-"            %(score_weighted)s/%(max_score)s שתי נקודות (מדורגות)\n"
-"        "
-msgstr[2] ""
-"\n"
-"            %(score_weighted)s/%(max_score)s נקודות (מדורגות)\n"
-"        "
-msgstr[3] ""
-"\n"
-"            %(score_weighted)s/%(max_score)s נקודות (מדורגות)\n"
+"            %(score_weighted)s/%(max_score)s points (notés)\n"
 "        "
 
 #: templates/view.html:12
 msgid "0 points (ungraded)"
-msgstr "0 נקודות (לא מדורג)"
+msgstr "0 points (non noté)"
 
 #: templates/view.html:21
 msgid "Note:"
-msgstr "הערה:"
+msgstr "Remarque :"
 
 #: templates/view.html:22
 msgid ""
 "Your queries are executed using SQLite, so you must conform to the SQL "
 "constructs supported by SQLite."
 msgstr ""
-"השאילתות שלך מבוצעות באמצעות SQLite, לכן עליך להתאים את ה-SQL מבנים הנתמכים "
-"על ידי SQLite."
+"Vos requêtes sont exécutées avec SQLite, vous devez donc respecter les "
+"constructions SQL supportées par SQLite."
 
 #: templates/view.html:27
 msgid "Press ESC then TAB or click outside of the code editor to exit"
-msgstr "כדי לצאת, הקש ESC ולאחר מכן TAB או לחץ מחוץ לעורך הקוד."
+msgstr ""
+"Appuyez sur ESC puis TAB ou cliquez en dehors de l'éditeur de code pour "
+"quitter"
 
 #: templates/view.html:33
 msgid "Submit"
-msgstr "שלח"
+msgstr "Soumettre"
 
 #: templates/view.html:40
 msgid "Show Answer"
-msgstr "הצג תשובה"
+msgstr "Afficher la réponse"
 
 #: templates/view.html:50
 msgid "Correct"
-msgstr "נכון"
+msgstr "Correct"
 
 #: templates/view.html:52
 msgid "Incorrect"
-msgstr "לא נכון"
+msgstr "Incorrect"
 
 #: templates/view.html:55
 msgid "Unanswered"
-msgstr "לא נענה"
+msgstr "Sans réponse"
 
 #: templates/view.html:63
 msgid ""
 "To check your data modification statement, we ran the following query after "
 "your modification:"
 msgstr ""
-"כדי לבדוק את הצהרת שינוי הנתונים שלך, הרצנו את השאילתה הבאה לאחר השינוי שלך:"
+"Pour vérifier votre instruction de modification de données, nous avons "
+"exécuté la requête suivante après votre modification :"
 
 #: templates/view.html:75
 msgid "Your Query Result:"
-msgstr "תוצאת השאילתה שלך:"
+msgstr "Le résultat de votre requête :"
 
 #: templates/view.html:80
 msgid "Expected Query Result:"
-msgstr "תוצאת שאילתה צפויה:"
+msgstr "Le résultat de requête attendu :"

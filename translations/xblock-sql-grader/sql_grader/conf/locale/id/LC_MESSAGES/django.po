@@ -1,48 +1,41 @@
-# edX translation file.
-# Copyright (C) 2024 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2024.
-# 
-# Translators:
-# Adit Ur <dhiets85@gmail.com>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2023-05-31 00:54+0000\n"
-"Last-Translator: Adit Ur <dhiets85@gmail.com>, 2024\n"
-"Language-Team: Indonesian (https://app.transifex.com/open-edx/teams/6205/id/)\n"
+"PO-Revision-Date: 2026-06-02 00:06+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: mixins/grading.py:72
 msgid "We could not execute your query; please try again."
-msgstr "We could not execute your query; please try again."
+msgstr "Kami tidak dapat menjalankan kueri Anda; silakan coba lagi."
 
 #: mixins/grading.py:89
 msgid "Weight"
-msgstr "Weight"
+msgstr "Bobot"
 
 #: mixins/grading.py:91
 msgid "This assigns an integer value representing the weight of this problem"
-msgstr "This assigns an integer value representing the weight of this problem"
+msgstr "Ini menetapkan nilai bilangan bulat yang mewakili bobot masalah ini."
 
 #: mixins/grading.py:170
 msgid "Display Name"
-msgstr "Display Name"
+msgstr "Nama Tampilan"
 
 #: mixins/grading.py:171
 msgid "The display name for this component."
-msgstr "The display name for this component."
+msgstr "Nama tampilan untuk komponen ini."
 
 #: mixins/grading.py:172
 msgid "SQL Problem"
-msgstr "SQL Problem"
+msgstr "Soal SQL"
 
 #: mixins/grading.py:176
 msgid "Dataset"
@@ -50,19 +43,19 @@ msgstr "Dataset"
 
 #: mixins/grading.py:177
 msgid "Which initial dataset/database to be used for queries"
-msgstr "Which initial dataset/database to be used for queries"
+msgstr "Dataset/database awal yang akan digunakan untuk kueri"
 
 #: mixins/grading.py:183
 msgid "Answer Query"
-msgstr "Answer Query"
+msgstr "Kueri Jawaban"
 
 #: mixins/grading.py:184
 msgid "A correct response SQL query"
-msgstr "A correct response SQL query"
+msgstr "Kueri SQL jawaban yang benar"
 
 #: mixins/grading.py:190
 msgid "Verify Query"
-msgstr "Verify Query"
+msgstr "Verifikasi Kueri"
 
 #: mixins/grading.py:192
 msgid ""
@@ -70,45 +63,45 @@ msgid ""
 "the database (UPDATE, INSERT, DELETE, etc.). Only enter a single SELECT "
 "query here, which is used for matching the answer"
 msgstr ""
-"A secondary verification SQL query, to be used if the answer_query modifies "
-"the database (UPDATE, INSERT, DELETE, etc.). Only enter a single SELECT "
-"query here, which is used for matching the answer"
+"Kueri SQL verifikasi sekunder, yang digunakan jika answer_query memodifikasi"
+" basis data (UPDATE, INSERT, DELETE, dll.). Masukkan hanya satu kueri SELECT"
+" di sini, yang digunakan untuk mencocokkan jawaban."
 
 #: mixins/grading.py:202
 msgid "Modification query statements"
-msgstr "Modification query statements"
+msgstr "Pernyataan kueri modifikasi"
 
 #: mixins/grading.py:204
 msgid ""
 "Optional SQL statements, to be executed after the user-submitted query, but "
 "before the verify_query."
 msgstr ""
-"Optional SQL statements, to be executed after the user-submitted query, but "
-"before the verify_query."
+"Perintah SQL opsional, yang dijalankan setelah kueri yang dikirim oleh "
+"pengguna, tetapi sebelum verifikasi kueri."
 
 #: mixins/grading.py:212
 msgid "Is Ordered?"
-msgstr "Is Ordered?"
+msgstr "Apakah Terurut?"
 
 #: mixins/grading.py:213
 msgid "Should results be in order?"
-msgstr "Should results be in order?"
+msgstr "Apakah hasilnya harus berurutan?"
 
 #: mixins/grading.py:228
 msgid "Prompt"
-msgstr "Prompt"
+msgstr "Petunjuk"
 
 #: mixins/grading.py:229
 msgid "Explanatory text to accompany the problem"
-msgstr "Explanatory text to accompany the problem"
+msgstr "Teks penjelasan yang menyertai soal"
 
 #: mixins/grading.py:234
 msgid "Submission Query"
-msgstr "Submission Query"
+msgstr "Kueri Pengiriman"
 
 #: mixins/grading.py:235
 msgid "A Submission Query"
-msgstr "A Submission Query"
+msgstr "Kueri Pengiriman"
 
 #: templates/view.html:6
 #, python-format
@@ -124,59 +117,60 @@ msgstr[0] ""
 "\n"
 "            %(score_weighted)s/%(max_score)s points (graded)\n"
 "        "
+msgstr[1] ""
 
 #: templates/view.html:12
 msgid "0 points (ungraded)"
-msgstr "0 points (ungraded)"
+msgstr "0 poin (tidak dinilai)"
 
 #: templates/view.html:21
 msgid "Note:"
-msgstr "Note:"
+msgstr "Catatan:"
 
 #: templates/view.html:22
 msgid ""
 "Your queries are executed using SQLite, so you must conform to the SQL "
 "constructs supported by SQLite."
 msgstr ""
-"Your queries are executed using SQLite, so you must conform to the SQL "
-"constructs supported by SQLite."
+"Kueri Anda dijalankan menggunakan SQLite, jadi Anda harus mematuhi "
+"konstruksi SQL yang didukung oleh SQLite."
 
 #: templates/view.html:27
 msgid "Press ESC then TAB or click outside of the code editor to exit"
-msgstr "Press ESC then TAB or click outside of the code editor to exit"
+msgstr "Tekan ESC lalu TAB atau klik di luar editor kode untuk keluar"
 
 #: templates/view.html:33
 msgid "Submit"
-msgstr "Submit"
+msgstr "Kirim"
 
 #: templates/view.html:40
 msgid "Show Answer"
-msgstr "Show Answer"
+msgstr "Tampilkan Jawaban"
 
 #: templates/view.html:50
 msgid "Correct"
-msgstr "Correct"
+msgstr "Benar"
 
 #: templates/view.html:52
 msgid "Incorrect"
-msgstr "Incorrect"
+msgstr "Salah"
 
 #: templates/view.html:55
 msgid "Unanswered"
-msgstr "Unanswered"
+msgstr "Belum Dijawab"
 
 #: templates/view.html:63
 msgid ""
 "To check your data modification statement, we ran the following query after "
 "your modification:"
 msgstr ""
-"To check your data modification statement, we ran the following query after "
-"your modification:"
+"Untuk memeriksa pernyataan modifikasi data Anda, kami menjalankan kueri "
+"berikut setelah modifikasi:"
 
 #: templates/view.html:75
 msgid "Your Query Result:"
-msgstr "Your Query Result:"
+msgstr "Hasil Kueri Anda:"
 
 #: templates/view.html:80
 msgid "Expected Query Result:"
-msgstr "Expected Query Result:"
+msgstr "Hasil Kueri yang Diharapkan:"
