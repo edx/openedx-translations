@@ -1,74 +1,82 @@
-#
+# edX translation file.
+# Copyright (C) 2024 EdX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2024.
+# 
+# Translators:
+# Brian Smith, 2024
+# Nathan Robertson, 2024
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: @content-aurora\n"
+"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2026-06-01 23:31+0000\n"
-"Last-Translator: AI Translation Service, 2026\n"
-"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: he\n"
+"PO-Revision-Date: 2023-06-03 00:54+0000\n"
+"Last-Translator: Nathan Robertson, 2024\n"
+"Language-Team: Hebrew (https://app.transifex.com/open-edx/teams/6205/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? 2 : 3);\n"
+"Language: he\n"
+"Plural-Forms: nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;\n"
 
-#: recommender.py:314
+#: recommender.py:313
 msgid "Invalid location URL provided"
 msgstr "סופקה כתובת אתר לא חוקית של מיקום"
 
-#: recommender.py:325
+#: recommender.py:324
 msgid "The resource you are attempting to provide already exists"
 msgstr "המשאב שאתה מנסה לספק כבר קיים"
 
-#: recommender.py:338
+#: recommender.py:337
 msgid ""
 "The resource you are attempting to provide has been disallowed by the staff."
 " Reason: "
 msgstr "המשאב שאתה מנסה לספק נאסר על ידי הצוות. סיבה: "
 
-#: recommender.py:355
+#: recommender.py:354
 msgid "The selected resource does not exist"
 msgstr "המשאב שנבחר אינו קיים"
 
-#: recommender.py:403
+#: recommender.py:402
 msgid "Size of uploaded file exceeds threshold"
 msgstr "גודל הקובץ שהועלה חורג מהסף"
 
-#: recommender.py:414
+#: recommender.py:413
 msgid "The configuration of pyfs is not properly set"
 msgstr "התצורה של pyfs אינה מוגדרת כראוי"
 
-#: recommender.py:753
+#: recommender.py:752
 msgid "Endorse resource without permission"
 msgstr "אישור משאב ללא רשות"
 
-#: recommender.py:797
+#: recommender.py:796
 msgid "You don't have the permission to remove this resource"
 msgstr "אין לך הרשאה להסיר משאב זה"
 
-#: recommender.py:848
+#: recommender.py:847
 msgid "Only staff can import resources"
 msgstr "רק צוות יכול לייבא משאבים"
 
-#: recommender.py:859 recommender.py:886
+#: recommender.py:858 recommender.py:885
 msgid ""
 "Please submit the JSON file obtained with the download resources button"
 msgstr "נא לשלוח את קובץ ה-JSON שהושג באמצעות לחצן ההורדה משאבים"
 
-#: recommender.py:899
+#: recommender.py:898
 msgid "Tried to access flagged resources without staff permission"
 msgstr "ניסה לגשת למשאבים שסומנו ללא הרשאת צוות"
 
-#: templates/recommender.html:85
+#: templates/recommender.html:83
 msgid "This is a list of recommended resources. If you\\"
 msgstr "זוהי רשימה של משאבים מומלצים. אם אתה\\"
 
-#: templates/recommender.html:86 static/js/src/cats.js:158
+#: templates/recommender.html:84 static/js/src/cats.js:158
 msgid "Show related resources"
 msgstr "הצג משאבים קשורים"
 
-#: templates/recommender.html:93
+#: templates/recommender.html:91
 msgid ""
 "This will be a list of resources your fellow students thought might be "
 "helpful, but it is empty currently. If you find useful resources, either on "
@@ -77,23 +85,23 @@ msgstr ""
 "זו תהיה רשימה של משאבים שעמיתיך חשבו שעשויים להיות מועילים, אבל היא ריקה "
 "כרגע. אם אתה מוצא משאבים שימושיים, ב-edx.org או במקום אחר, הוסף אותם."
 
-#: templates/recommender.html:120
+#: templates/recommender.html:118
 msgid "Add new resource &gt;&gt;"
 msgstr "הוסף משאב חדש &gt;&gt;"
 
-#: templates/recommender.html:121
+#: templates/recommender.html:119
 msgid "Download resources"
 msgstr "הורד משאבים"
 
-#: templates/recommender.html:122 templates/recommender.html:148
+#: templates/recommender.html:120 templates/recommender.html:146
 msgid "Upload resources"
 msgstr "העלה משאבים"
 
-#: templates/recommender.html:124
+#: templates/recommender.html:122
 msgid "mode"
 msgstr "מצב"
 
-#: templates/recommender.html:133
+#: templates/recommender.html:131
 msgid ""
 "This is a list of resources your fellow students thought might be helpful. "
 "If you find another useful resource, either on edx.org or elsewhere, please "
@@ -108,92 +116,92 @@ msgstr ""
 "אם זה לא כל כך מועיל, הצביע נגד זה. אם יש לו בעיות (חומר לא חוקי, שגוי "
 "וכו&#39;), אנא סמן אותו ודווח לנו על הסיבה."
 
-#: templates/recommender.html:141
+#: templates/recommender.html:139
 msgid "cancel and go back to resource list"
 msgstr "בטל וחזור לרשימת המשאבים"
 
-#: templates/recommender.html:141
+#: templates/recommender.html:139
 msgid "&lt; Related resources"
 msgstr "&lt; משאבים קשורים"
 
-#: templates/recommender.html:147
+#: templates/recommender.html:145
 msgid "Resources (in JSON format):"
 msgstr "משאבים (בפורמט JSON):"
 
-#: templates/recommender.html:147
+#: templates/recommender.html:145
 msgid "Provide a file of resource list in JSON format"
 msgstr "ספק קובץ של רשימת משאבים בפורמט JSON"
 
-#: templates/recommender.html:153 templates/recommender.html:163
-#: templates/recommender.html:173
+#: templates/recommender.html:151 templates/recommender.html:161
+#: templates/recommender.html:171
 msgid "Reason"
 msgstr "סיבה"
 
-#: templates/recommender.html:157
+#: templates/recommender.html:155
 msgid "Reason for why this resource should be removed"
 msgstr "סיבה מדוע יש להסיר משאב זה"
 
-#: templates/recommender.html:167
+#: templates/recommender.html:165
 msgid "Reason for why this resource should be endorsed"
 msgstr "סיבה למה יש לאשר משאב זה"
 
-#: templates/recommender.html:177
+#: templates/recommender.html:175
 msgid "Reason for why this resource should be flagged"
 msgstr "סיבה מדוע יש לסמן את המשאב הזה"
 
-#: templates/recommender.html:183 templates/recommender.html:208
+#: templates/recommender.html:181 templates/recommender.html:206
 msgid "Title"
 msgstr "כותרת"
 
-#: templates/recommender.html:185 templates/recommender.html:210
+#: templates/recommender.html:183 templates/recommender.html:208
 msgid "Provide a resource title, required"
 msgstr "ספק כותרת משאב, חובה"
 
-#: templates/recommender.html:187 templates/recommender.html:212
+#: templates/recommender.html:185 templates/recommender.html:210
 msgid ""
 "Provide a meaningful title so other students know whether this is useful to "
 "them"
 msgstr "ספק כותרת משמעותית כדי שתלמידים אחרים ידעו אם זה שימושי עבורם"
 
-#: templates/recommender.html:189
+#: templates/recommender.html:187
 msgid "Location"
 msgstr "מיקום"
 
-#: templates/recommender.html:191 templates/recommender.html:216
+#: templates/recommender.html:189 templates/recommender.html:214
 msgid "Provide a resource location in url, required"
 msgstr "ספק מיקום משאב ב-URL, נדרש"
 
-#: templates/recommender.html:195 templates/recommender.html:220
+#: templates/recommender.html:193 templates/recommender.html:218
 msgid "Description"
 msgstr "תיאור"
 
-#: templates/recommender.html:199 templates/recommender.html:224
+#: templates/recommender.html:197 templates/recommender.html:222
 msgid ""
 "Provide a meaningful description so other students know whether this is "
 "useful to them"
 msgstr "ספק תיאור משמעותי כדי שתלמידים אחרים ידעו אם זה שימושי עבורם"
 
-#: templates/recommender.html:202
+#: templates/recommender.html:200
 msgid "Preview screenshot:"
 msgstr "תצוגה מקדימה של צילום מסך:"
 
-#: templates/recommender.html:202
+#: templates/recommender.html:200
 msgid "Provide a resource screenshot"
 msgstr "ספק צילום מסך של משאבים"
 
-#: templates/recommender.html:203
+#: templates/recommender.html:201
 msgid "Save change"
 msgstr "שמור שינוי"
 
-#: templates/recommender.html:222
+#: templates/recommender.html:220
 msgid "Provide a resource description"
 msgstr "ספק תיאור משאב"
 
-#: templates/recommender.html:227
+#: templates/recommender.html:225
 msgid "Provide a file of resource screenshot"
 msgstr "ספק קובץ של צילום מסך של משאבים"
 
-#: templates/recommender.html:228
+#: templates/recommender.html:226
 msgid "Add resource"
 msgstr "הוסף משאב"
 

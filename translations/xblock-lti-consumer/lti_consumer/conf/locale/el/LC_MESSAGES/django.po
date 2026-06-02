@@ -1,16 +1,24 @@
-#
+# edX translation file.
+# Copyright (C) 2024 EdX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2024.
+# 
+# Translators:
+# Brian Smith, 2024
+# Nathan Robertson, 2024
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: @content-aurora\n"
+"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2026-06-02 00:04+0000\n"
-"Last-Translator: AI Translation Service, 2026\n"
-"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: el\n"
+"PO-Revision-Date: 2023-06-24 01:02+0000\n"
+"Last-Translator: Nathan Robertson, 2024\n"
+"Language-Team: Greek (https://app.transifex.com/open-edx/teams/6205/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lti_1p3/extensions/rest_framework/authentication.py:41
@@ -35,22 +43,22 @@ msgstr "Δεν βρέθηκε η διαμόρφωση LTI."
 msgid "Invalid token signature."
 msgstr "Μη έγκυρη συμβολική υπογραφή."
 
-#: lti_xblock.py:134
+#: lti_xblock.py:135
 msgid "No valid user id found in endpoint URL"
 msgstr ""
 "Δεν βρέθηκε έγκυρο αναγνωριστικό χρήστη στη διεύθυνση URL τελικού σημείου"
 
-#: lti_xblock.py:147
-msgid "New"
-msgstr "Νέο"
+#: lti_xblock.py:148
+msgid "Configuration on block"
+msgstr "Διαμόρφωση στο μπλοκ"
 
-#: lti_xblock.py:151
-msgid "Database"
-msgstr "Βάση δεδομένων"
+#: lti_xblock.py:152
+msgid "Database Configuration"
+msgstr "Διαμόρφωση βάσης δεδομένων"
 
-#: lti_xblock.py:154
-msgid "Existing"
-msgstr "Υπάρχον"
+#: lti_xblock.py:155
+msgid "Reusable Configuration"
+msgstr "Επαναχρησιμοποιήσιμη διαμόρφωση"
 
 #: lti_xblock.py:262
 msgid "Display Name"
@@ -58,321 +66,398 @@ msgstr "Εμφανιζόμενο όνομα"
 
 #: lti_xblock.py:264
 msgid ""
-"Enter the name learners see for this component. This name may also appear in"
-" reports."
+"Enter the name that students see for this component. Analytics reports may "
+"also use the display name to identify this component."
 msgstr ""
-"Εισάγετε το όνομα που βλέπουν οι μαθητές για αυτή τη συνιστώσα. Αυτό το "
-"όνομα μπορεί επίσης να εμφανίζεται στις αναφορές."
+"Εισαγάγετε το όνομα που βλέπουν οι μαθητές για αυτό το στοιχείο. Οι αναφορές"
+" του Analytics ενδέχεται επίσης να χρησιμοποιούν το εμφανιζόμενο όνομα για "
+"τον προσδιορισμό αυτού του στοιχείου."
 
-#: lti_xblock.py:267
+#: lti_xblock.py:268
 msgid "LTI Consumer"
 msgstr "Καταναλωτής LTI"
 
-#: lti_xblock.py:270
-msgid "Data Sharing Notice"
-msgstr "Ειδοποίηση Κοινοποίησης Δεδομένων"
+#: lti_xblock.py:271
+msgid "LTI Application Information"
+msgstr "Πληροφορίες εφαρμογής LTI"
 
-#: lti_xblock.py:272
+#: lti_xblock.py:273
 msgid ""
-"Enter a short notice about the tool. Use this field to explain why learner "
-"data may be shared with it."
+"Enter a description of the third party application. If requesting username "
+"and/or email, use this text box to inform users why their username and/or "
+"email will be forwarded to a third party application."
 msgstr ""
-"Εισάγετε μια σύντομη ειδοποίηση σχετικά με το εργαλείο. Χρησιμοποιήστε αυτό "
-"το πεδίο για να εξηγήσετε γιατί μπορεί να κοινοποιηθούν τα δεδομένα των "
-"μαθητών."
+"Εισαγάγετε μια περιγραφή της εφαρμογής τρίτων. Εάν ζητάτε όνομα χρήστη και/ή"
+" email, χρησιμοποιήστε αυτό το πλαίσιο κειμένου για να ενημερώσετε τους "
+"χρήστες γιατί το όνομα χρήστη και/ή το email τους θα προωθηθεί σε εφαρμογή "
+"τρίτων."
 
-#: lti_xblock.py:278
+#: lti_xblock.py:281
 msgid "Configuration Type"
 msgstr "Τύπος διαμόρφωσης"
 
-#: lti_xblock.py:283
+#: lti_xblock.py:286
 msgid ""
-"Select 'New' to configure a new LTI Tool. If your admin has provided you "
-"with ID of an existing reusable tool configuration, select 'Existing' and "
-"enter it in the text field on the right."
+"Select 'Configuration on block' to configure a new LTI Tool. If the support "
+"staff provided you with a pre-configured LTI reusable Tool ID, "
+"select'Reusable Configuration' and enter it in the text field below."
 msgstr ""
-"Επιλέξτε 'Νέο' για να διαμορφώσετε ένα νέο LTI εργαλείο. Αν ο διαχειριστής "
-"σας σας έχει παράσχει το αναγνωριστικό μιας υπάρχουσας επαναχρησιμοποιήσιμης"
-" διαμόρφωσης εργαλείου, επιλέξτε 'Υπάρχον' και εισάγετέ το στο πεδίο "
-"κειμένου στα δεξιά."
+"Επιλέξτε «Διαμόρφωση σε μπλοκ» για να διαμορφώσετε ένα νέο εργαλείο LTI. Εάν"
+" το προσωπικό υποστήριξης σάς παρείχε ένα προρυθμισμένο αναγνωριστικό "
+"εργαλείου LTI επαναχρησιμοποιήσιμο, επιλέξτε «Επαναχρησιμοποιήσιμη "
+"διαμόρφωση» και εισαγάγετε το στο πεδίο κειμένου παρακάτω."
 
-#: lti_xblock.py:289
+#: lti_xblock.py:293
 msgid "LTI Version"
 msgstr "Έκδοση LTI"
 
-#: lti_xblock.py:297
-msgid "Select the LTI version supported by your tool."
-msgstr "Επιλέξτε την έκδοση LTI που υποστηρίζεται από το εργαλείο σας."
-
-#: lti_xblock.py:302
-msgid "LTI Reusability ID"
-msgstr "Αναγνωριστικό Επαναχρησιμοποίησης LTI"
-
-#: lti_xblock.py:304
-msgid "Enter the ID of an existing reusable tool configuration."
-msgstr ""
-"Εισάγετε το αναγνωριστικό μιας υπάρχουσας επαναχρησιμοποιήσιμης διαμόρφωσης "
-"εργαλείου."
-
-#: lti_xblock.py:309
-msgid "Lti 1.3 passport ID that points to Lti1p3Passport table"
-msgstr ""
-"Αναγνωριστικό διαβατηρίου LTI 1.3 που δείχνει στον πίνακα Lti1p3Passport"
-
-#: lti_xblock.py:312
-msgid "Passport ID for a reusable keys."
-msgstr "Αναγνωριστικό διαβατηρίου για επαναχρησιμοποιήσιμα κλειδιά."
-
-#: lti_xblock.py:316
-msgid "Launch URL"
-msgstr "URL Εκκίνησης"
-
-#: lti_xblock.py:320
+#: lti_xblock.py:301
 msgid ""
-"Enter the launch URL for this tool. For LTI 1.3, this is the URL Open edX "
-"uses to launch the tool."
+"Select the LTI version that your tool supports.<br />The XBlock LTI Consumer"
+" fully supports LTI 1.1.1, LTI 1.3 and LTI Advantage features."
 msgstr ""
-"Εισάγετε το URL εκκίνησης για αυτό το εργαλείο. Για το LTI 1.3, αυτό είναι "
-"το URL που χρησιμοποιεί το Open edX για να εκκινήσει το εργαλείο."
+"Επιλέξτε την έκδοση LTI που υποστηρίζει το εργαλείο σας.<br /> Το XBlock LTI"
+" Consumer υποστηρίζει πλήρως τις δυνατότητες LTI 1.1.1, LTI 1.3 και LTI "
+"Advantage."
+
+#: lti_xblock.py:308
+msgid "LTI Reusable Configuration ID"
+msgstr "Αναγνωριστικό διαμόρφωσης επαναχρησιμοποιήσιμου LTI"
+
+#: lti_xblock.py:310
+msgid ""
+"Enter the reusable LTI external configuration ID provided by the support "
+"staff."
+msgstr ""
+"Εισαγάγετε το επαναχρησιμοποιήσιμο αναγνωριστικό εξωτερικής διαμόρφωσης LTI "
+"που παρέχεται από το προσωπικό υποστήριξης."
+
+#: lti_xblock.py:315
+msgid "Tool Launch URL"
+msgstr "Διεύθυνση URL εκκίνησης εργαλείου"
+
+#: lti_xblock.py:319
+msgid ""
+"Enter the LTI 1.3 Tool Launch URL. <br />This is the URL the LMS will use to"
+" launch the LTI Tool."
+msgstr ""
+"Εισαγάγετε τη διεύθυνση URL εκκίνησης του Εργαλείου LTI 1.3.<br /> Αυτή "
+"είναι η διεύθυνση URL που θα χρησιμοποιήσει το LMS για την εκκίνηση του "
+"Εργαλείου LTI."
 
 #: lti_xblock.py:324
-msgid "Tool Initiate Login URL (OIDC)"
-msgstr "URL Εκκίνησης Σύνδεσης Εργαλείου (OIDC)"
+msgid "Tool Initiate Login URL"
+msgstr "Εργαλείο Έναρξη URL σύνδεσης"
 
 #: lti_xblock.py:328
 msgid ""
-"Enter the tool’s OIDC login initiation URL. Open edX uses this URL to start "
-"the LTI 1.3 login flow."
+"Enter the LTI 1.3 Tool OIDC Authorization url (can also be called login or "
+"login initiation URL).<br />This is the URL the LMS will use to start a LTI "
+"authorization prior to doing the launch request."
 msgstr ""
-"Εισάγετε το URL εκκίνησης σύνδεσης OIDC του εργαλείου. Το Open edX "
-"χρησιμοποιεί αυτό το URL για να ξεκινήσει η ροή σύνδεσης LTI 1.3."
+"Εισαγάγετε τη διεύθυνση url εξουσιοδότησης OIDC του Εργαλείου LTI 1.3 "
+"(μπορεί επίσης να ονομάζεται διεύθυνση URL έναρξης σύνδεσης ή σύνδεσης).<br "
+"/> Αυτή είναι η διεύθυνση URL που θα χρησιμοποιήσει το LMS για να ξεκινήσει "
+"μια εξουσιοδότηση LTI πριν από την εκτέλεση του αιτήματος εκκίνησης."
 
-#: lti_xblock.py:332
+#: lti_xblock.py:334
 msgid "Registered Redirect URIs"
 msgstr "Εγγεγραμμένα URI ανακατεύθυνσης"
 
-#: lti_xblock.py:334
+#: lti_xblock.py:336
 msgid ""
-"Enter the redirect URIs this tool is allowed to use during login e.g. "
-"[\"https://tool.com\", \"https://tool_deeplink.com\"]. Leave this blank to "
-"use the launch URL and deep linking URL by default."
+"Valid urls the Tool may request us to redirect the id token to. The redirect"
+" uris are often the same as the launch url/deep linking url so if this field"
+" is empty, it will use them as the default. If you need to use different "
+"redirect uri's, enter them here. If you use this field you must enter all "
+"valid redirect uri's the tool may request."
 msgstr ""
-"Εισάγετε τα URI ανακατεύθυνσης που επιτρέπεται να χρησιμοποιήσει αυτό το "
-"εργαλείο κατά τη σύνδεση, π.χ. [\"https://tool.com\", "
-"\"https://tool_deeplink.com\"]. Αφήστε το κενό για να χρησιμοποιηθούν εξ "
-"ορισμού το URL εκκίνησης και το URL για βαθύ σύνδεσμο."
+"Έγκυρες διευθύνσεις URL το Εργαλείο μπορεί να μας ζητήσει να ανακατευθύνουμε"
+" το διακριτικό αναγνωριστικού. Τα uris ανακατεύθυνσης είναι συχνά τα ίδια με"
+" το url εκκίνησης/διεύθυνση url σύνδεσης σε βάθος, οπότε αν αυτό το πεδίο "
+"είναι κενό, θα τα χρησιμοποιήσει ως προεπιλογή. Εάν χρειάζεται να "
+"χρησιμοποιήσετε διαφορετικά uri ανακατεύθυνσης, εισαγάγετέ τα εδώ. Εάν "
+"χρησιμοποιείτε αυτό το πεδίο, πρέπει να εισαγάγετε όλα τα έγκυρα uri "
+"ανακατεύθυνσης που μπορεί να ζητήσει το εργαλείο."
 
-#: lti_xblock.py:342
+#: lti_xblock.py:346
 msgid "Tool Public Key Mode"
 msgstr "Λειτουργία δημόσιου κλειδιού εργαλείου"
 
-#: lti_xblock.py:350
-msgid ""
-"Choose how Open edX will get the tool’s public key for validating signed "
-"messages."
-msgstr ""
-"Επιλέξτε πώς το Open edX θα λάβει το δημόσιο κλειδί του εργαλείου για την "
-"επικύρωση των υπογεγραμμένων μηνυμάτων."
-
 #: lti_xblock.py:354
+msgid "Select how the tool's public key information will be specified."
+msgstr ""
+"Επιλέξτε πώς θα προσδιορίζονται οι πληροφορίες δημόσιου κλειδιού του "
+"εργαλείου."
+
+#: lti_xblock.py:358
 msgid "Tool Keyset URL"
 msgstr "Διεύθυνση URL συνόλου εργαλείων"
 
-#: lti_xblock.py:358
+#: lti_xblock.py:362
 msgid ""
-"Enter the URL of the tool’s JWK keyset. Open edX uses this URL to retrieve "
-"the public keys needed to validate signed messages."
+"Enter the LTI 1.3 Tool's JWK keysets URL.<br />This link should retrieve a "
+"JSON file containing public keys and signature algorithm information, so "
+"that the LMS can check if the messages and launch requests received have the"
+" signature from the tool.<br /><b>This is not required when doing LTI 1.3 "
+"Launches without LTI Advantage nor Basic Outcomes requests.</b>"
 msgstr ""
-"Εισάγετε το URL του συνόλου κλειδιών JWK του εργαλείου. Το Open edX "
-"χρησιμοποιεί αυτό το URL για να ανακτήσει τα δημόσια κλειδιά που χρειάζονται"
-" για την επικύρωση των υπογεγραμμένων μηνυμάτων."
+"Εισαγάγετε τη διεύθυνση URL των συνόλων κλειδιών JWK του Εργαλείου LTI "
+"1.3.<br /> Αυτός ο σύνδεσμος θα πρέπει να ανακτήσει ένα αρχείο JSON που "
+"περιέχει δημόσια κλειδιά και πληροφορίες αλγορίθμου υπογραφής, έτσι ώστε το "
+"LMS να μπορεί να ελέγξει εάν τα μηνύματα και τα αιτήματα εκκίνησης που "
+"λαμβάνονται έχουν την υπογραφή από το εργαλείο.<br /> <b>Αυτό δεν απαιτείται"
+" όταν εκτελείτε εκκινήσεις LTI 1.3 χωρίς αιτήματα LTI Advantage ή Basic "
+"Outcomes.</b>"
 
-#: lti_xblock.py:363
+#: lti_xblock.py:372
 msgid "Tool Public Key"
 msgstr "Δημόσιο κλειδί εργαλείου"
 
-#: lti_xblock.py:368
+#: lti_xblock.py:377
 msgid ""
-"Enter the tool’s public key in PEM format (starts with -----BEGIN PUBLIC "
-"KEY-----). Use this when the tool provides a static public key directly."
+"Enter the LTI 1.3 Tool's public key.<br />This is a string that starts with "
+"'-----BEGIN PUBLIC KEY-----' and is required so that the LMS can check if "
+"the messages and launch requests received have the signature from the "
+"tool.<br /><b>This is not required when doing LTI 1.3 Launches without LTI "
+"Advantage nor Basic Outcomes requests.</b>"
 msgstr ""
-"Εισάγετε το δημόσιο κλειδί του εργαλείου σε μορφή PEM (ξεκινά με -----BEGIN "
-"PUBLIC KEY-----). Χρησιμοποιήστε το όταν το εργαλείο παρέχει απευθείας ένα "
-"στατικό δημόσιο κλειδί."
+"Εισαγάγετε το δημόσιο κλειδί του Εργαλείου LTI 1.3.<br /> Αυτή είναι μια "
+"συμβολοσειρά που ξεκινά με &#39;-----BEGIN PUBLIC KEY-----&#39; και "
+"απαιτείται ώστε το LMS να μπορεί να ελέγξει εάν τα μηνύματα και τα αιτήματα "
+"εκκίνησης που λαμβάνονται έχουν την υπογραφή από το εργαλείο.<br /> <b>Αυτό "
+"δεν απαιτείται όταν εκτελείτε εκκινήσεις LTI 1.3 χωρίς αιτήματα LTI "
+"Advantage ή Basic Outcomes.</b>"
 
-#: lti_xblock.py:374
-msgid "Names & Roles (NRPS)"
-msgstr "Ονόματα & Ρόλοι (NRPS)"
+#: lti_xblock.py:387
+msgid "Enable LTI NRPS"
+msgstr "Ενεργοποίηση LTI NRPS"
 
-#: lti_xblock.py:376
-msgid ""
-"Enable this to allow the tool to access the names and roles of enrolled "
-"learners, if the tool supports NRPS."
+#: lti_xblock.py:388
+msgid "Enable LTI Names and Role Provisioning Services."
+msgstr "Ενεργοποιήστε τις υπηρεσίες ονομάτων LTI και παροχής ρόλων."
+
+#: lti_xblock.py:395
+msgid "LTI 1.3 Block Client ID - DEPRECATED"
+msgstr "LTI 1.3 Αποκλεισμός αναγνωριστικού πελάτη - ΚΑΤΑΡΓΗΘΗΚΕ"
+
+#: lti_xblock.py:398
+msgid "DEPRECATED - This is now stored in the LtiConfiguration model."
 msgstr ""
-"Ενεργοποιήστε αυτό για να επιτρέψετε στο εργαλείο να έχει πρόσβαση στα "
-"ονόματα και τους ρόλους των εγγεγραμμένων μαθητών, εφόσον υποστηρίζει NRPS."
+"ΚΑΤΑΡΓΗΘΗΚΕ - Αυτό είναι πλέον αποθηκευμένο στο μοντέλο LtiConfiguration."
 
-#: lti_xblock.py:385
+#: lti_xblock.py:401
+msgid "LTI 1.3 Block Key - DEPRECATED"
+msgstr "Κλειδί μπλοκ LTI 1.3 - ΚΑΤΑΡΓΗΘΗΚΕ"
+
+#: lti_xblock.py:408
 msgid "Deep linking"
 msgstr "Βαθιά σύνδεση"
 
-#: lti_xblock.py:387
-msgid ""
-"Enable this if you want to deep link content from within the tool, in "
-"Studio."
+#: lti_xblock.py:409
+msgid "Select True if you want to enable LTI Advantage Deep Linking."
 msgstr ""
-"Ενεργοποιήστε αυτό αν θέλετε να πραγματοποιήσετε βαθύ σύνδεσμο περιεχομένου "
-"μέσα στο εργαλείο, στο Studio."
+"Επιλέξτε True εάν θέλετε να ενεργοποιήσετε το LTI Advantage Deep Linking."
 
-#: lti_xblock.py:393
+#: lti_xblock.py:414
 msgid "Deep Linking Launch URL"
 msgstr "Διεύθυνση URL εκκίνησης Deep Linking"
 
-#: lti_xblock.py:397
+#: lti_xblock.py:418
 msgid ""
-"Enter the deep linking URL for this tool. If the tool does not specify one, "
-"enter the 'Launch URL' here."
+"Enter the LTI Advantage Deep Linking Launch URL. If the tool does not "
+"specify one, use the same value as 'Tool Launch URL'."
 msgstr ""
-"Εισάγετε το URL βαθύ σύνδεσης για αυτό το εργαλείο. Αν το εργαλείο δεν "
-"ορίζει κάποιο, εισάγετε εδώ το 'URL Εκκίνησης'."
+"Εισαγάγετε τη διεύθυνση URL εκκίνησης του LTI Advantage Deep Linking. Εάν το"
+" εργαλείο δεν καθορίζει ένα, χρησιμοποιήστε την ίδια τιμή με το &#39;Tool "
+"Launch URL&#39;."
 
-#: lti_xblock.py:401
-msgid "Assignment and Grades"
-msgstr "Εργασία και Βαθμοί"
+#: lti_xblock.py:423
+msgid "LTI Assignment and Grades Service"
+msgstr "Υπηρεσία ανάθεσης και βαθμών LTI"
 
-#: lti_xblock.py:403
-msgid "Declarative"
-msgstr "Δηλωτικό"
-
-#: lti_xblock.py:404
-msgid "Programmatic"
-msgstr "Προγραμματικό"
-
-#: lti_xblock.py:405 templates/html/lti_studio_edit/_step_advantage.html:30
-#: templates/html/lti_studio_edit/_step_advantage.html:114
-#: templates/html/lti_studio_edit/_step_review.html:97
-#: templates/html/lti_studio_edit/_step_review.html:218
+#: lti_xblock.py:425
 msgid "Disabled"
 msgstr "Απενεργοποιημένο"
 
-#: lti_xblock.py:410
-msgid ""
-"Enable AGS and select functionality. 'Declarative' provides the tool with an"
-" existing line item. 'Programmatic' allows tools to create and manage line "
-"items."
-msgstr ""
-"Ενεργοποιήστε το AGS και επιλέξτε τη λειτουργικότητα. Το 'Δηλωτικό' παρέχει "
-"στο εργαλείο ένα υπάρχον στοιχείο σειράς. Το 'Προγραμματικό' επιτρέπει στα "
-"εργαλεία να δημιουργούν και να διαχειρίζονται στοιχεία σειράς."
-
-#: lti_xblock.py:417
-msgid "LTI Passport ID"
-msgstr "Αναγνωριστικό Διαβατηρίου LTI"
-
-#: lti_xblock.py:419
-msgid ""
-"Select the LTI passport ID for this tool. This is the ID of the LTI passport"
-" that you created on Advanced Settings page."
-msgstr ""
-"Επιλέξτε το αναγνωριστικό διαβατηρίου LTI για αυτό το εργαλείο. Αυτό "
-"αποτελεί το αναγνωριστικό του διαβατηρίου LTI που δημιουργήσατε στη σελίδα "
-"Προηγμένων Ρυθμίσεων."
-
 #: lti_xblock.py:426
-msgid "LTI URL"
-msgstr "URL LTI"
+msgid "Allow tools to submit grades only (declarative)"
+msgstr "Να επιτρέπεται στα εργαλεία να υποβάλλουν μόνο βαθμούς (δηλωτικά)"
 
-#: lti_xblock.py:428
-msgid ""
-"Enter the launch URL for this tool. For LTI 1.1/1.2, this is the URL Open "
-"edX uses to launch the tool."
+#: lti_xblock.py:427
+msgid "Allow tools to manage and submit grade (programmatic)"
 msgstr ""
-"Εισάγετε το URL εκκίνησης για αυτό το εργαλείο. Για το LTI 1.1/1.2, αυτό "
-"είναι το URL που χρησιμοποιεί το Open edX για να εκκινήσει το εργαλείο."
+"Να επιτρέπεται στα εργαλεία να διαχειρίζονται και να υποβάλλουν βαθμό "
+"(προγραμματικά)"
 
-#: lti_xblock.py:436
+#: lti_xblock.py:432
+msgid ""
+"Enable the LTI-AGS service and select the functionality enabled for LTI "
+"tools. The 'declarative' mode (default) will provide a tool with a LineItem "
+"created from the XBlock settings, while the 'programmatic' one will allow "
+"tools to manage, create and link the grades."
+msgstr ""
+"Ενεργοποιήστε την υπηρεσία LTI-AGS και επιλέξτε τη λειτουργικότητα που είναι"
+" ενεργοποιημένη για τα εργαλεία LTI. Η λειτουργία &quot;δηλωτική&quot; "
+"(προεπιλογή) θα παρέχει ένα εργαλείο με ένα LineItem που δημιουργήθηκε από "
+"τις ρυθμίσεις XBlock, ενώ η &quot;προγραμματική&quot; θα επιτρέπει στα "
+"εργαλεία να διαχειρίζονται, να δημιουργούν και να συνδέουν τους βαθμούς."
+
+#: lti_xblock.py:440
+msgid "LTI ID"
+msgstr "LTI ID"
+
+#: lti_xblock.py:442
+#, python-brace-format
+msgid ""
+"Enter the LTI ID for the external LTI provider. This value must be the same "
+"LTI ID that you entered in the LTI Passports setting on the Advanced "
+"Settings page.<br />See the {docs_anchor_open}edX LTI "
+"documentation{anchor_close} for more details on this setting."
+msgstr ""
+"Εισαγάγετε το αναγνωριστικό LTI για τον εξωτερικό πάροχο LTI. Αυτή η τιμή "
+"πρέπει να είναι το ίδιο LTI ID που εισαγάγατε στη ρύθμιση LTI Passports στη "
+"σελίδα Advanced Settings.<br /> Ανατρέξτε στην τεκμηρίωση {docs_anchor_open}"
+" edX LTI {anchor_close} για περισσότερες λεπτομέρειες σχετικά με αυτήν τη "
+"ρύθμιση."
+
+#: lti_xblock.py:454
+msgid "LTI URL"
+msgstr "LTI URL"
+
+#: lti_xblock.py:456
+#, python-brace-format
+msgid ""
+"Enter the URL of the external tool that this component launches. This "
+"setting is only used when Hide External Tool is set to False.<br />See the "
+"{docs_anchor_open}edX LTI documentation{anchor_close} for more details on "
+"this setting."
+msgstr ""
+"Εισαγάγετε τη διεύθυνση URL του εξωτερικού εργαλείου που εκκινεί αυτό το "
+"στοιχείο. Αυτή η ρύθμιση χρησιμοποιείται μόνο όταν το Hide External Tool "
+"έχει οριστεί σε False.<br /> Ανατρέξτε στην τεκμηρίωση {docs_anchor_open} "
+"edX LTI {anchor_close} για περισσότερες λεπτομέρειες σχετικά με αυτήν τη "
+"ρύθμιση."
+
+#: lti_xblock.py:469
 msgid "Custom Parameters"
 msgstr "Εξατομικευμένες παράμετροι"
 
-#: lti_xblock.py:438
+#: lti_xblock.py:471
+#, python-brace-format
 msgid ""
-"Enter key-value pairs to send with each launch e.g. [\"page=1\", "
-"\"color=white\"]."
+"Add the key/value pair for any custom parameters, such as the page your "
+"e-book should open to or the background color for this component. Ex. "
+"[\"page=1\", \"color=white\"]<br />See the {docs_anchor_open}edX LTI "
+"documentation{anchor_close} for more details on this setting."
 msgstr ""
-"Εισάγετε ζεύγη-κλειδί τιμών για αποστολή με κάθε εκκίνηση, π.χ. [\"page=1\","
-" \"color=white\"]."
+"Προσθέστε το ζεύγος κλειδιού/τιμής για τυχόν προσαρμοσμένες παραμέτρους, "
+"όπως τη σελίδα στην οποία πρέπει να ανοίξει το ηλεκτρονικό σας βιβλίο ή το "
+"χρώμα φόντου για αυτό το στοιχείο. Πρώην. [&quot;page=1&quot;, "
+"&quot;color=white&quot;]<br /> Ανατρέξτε στην τεκμηρίωση {docs_anchor_open} "
+"edX LTI {anchor_close} για περισσότερες λεπτομέρειες σχετικά με αυτήν τη "
+"ρύθμιση."
 
-#: lti_xblock.py:443
-msgid "Open tool in"
-msgstr "Άνοιγμα εργαλείου σε"
+#: lti_xblock.py:481
+msgid "LTI Launch Target"
+msgstr "Στόχος εκκίνησης LTI"
 
-#: lti_xblock.py:445
+#: lti_xblock.py:483
 msgid ""
-"Choose how the tool opens for learners: inline in the page, in a modal, or "
-"in a new window."
+"Select Inline if you want the LTI content to open in an IFrame in the "
+"current page. Select Modal if you want the LTI content to open in a modal "
+"window in the current page. Select New Window if you want the LTI content to"
+" open in a new browser window. This setting is only used when Hide External "
+"Tool is set to False."
 msgstr ""
-"Επιλέξτε πώς ανοίγει το εργαλείο για τους μαθητές: ενσωματωμένα στη σελίδα, "
-"σε παράθυρο διαλόγου ή σε νέο παράθυρο."
+"Επιλέξτε Inline εάν θέλετε το περιεχόμενο LTI να ανοίγει σε ένα IFrame στην "
+"τρέχουσα σελίδα. Επιλέξτε Modal εάν θέλετε το περιεχόμενο LTI να ανοίξει σε "
+"ένα παράθυρο modal στην τρέχουσα σελίδα. Επιλέξτε Νέο παράθυρο εάν θέλετε το"
+" περιεχόμενο LTI να ανοίξει σε ένα νέο παράθυρο του προγράμματος περιήγησης."
+" Αυτή η ρύθμιση χρησιμοποιείται μόνο όταν το Hide External Tool έχει οριστεί"
+" σε False."
 
-#: lti_xblock.py:456
-msgid "Launch Button Text"
-msgstr "Κείμενο Κουμπιού Εκκίνησης"
+#: lti_xblock.py:497
+msgid "Button Text"
+msgstr "Κείμενο κουμπιού"
 
-#: lti_xblock.py:458
+#: lti_xblock.py:499
 msgid ""
-"Enter the label shown on the launch button when the tool opens in a modal or"
-" new window."
+"Enter the text on the button used to launch the third party application. "
+"This setting is only used when Hide External Tool is set to False and LTI "
+"Launch Target is set to Modal or New Window."
 msgstr ""
-"Εισάγετε την ετικέτα που εμφανίζεται στο κουμπί εκκίνησης όταν το εργαλείο "
-"ανοίγει σε παράθυρο διαλόγου ή σε νέο παράθυρο."
+"Εισαγάγετε το κείμενο στο κουμπί που χρησιμοποιείται για την εκκίνηση της "
+"εφαρμογής τρίτου μέρους. Αυτή η ρύθμιση χρησιμοποιείται μόνο όταν το Hide "
+"External Tool έχει οριστεί σε False και το LTI Launch Target έχει οριστεί σε"
+" Modal ή New Window."
 
-#: lti_xblock.py:464
-msgid "Inline Height (px)"
-msgstr "Ύψος Ενσωματωμένης Περιοχής (px)"
+#: lti_xblock.py:507
+msgid "Inline Height"
+msgstr "Ενσωματωμένο ύψος"
 
-#: lti_xblock.py:466
-msgid "Enter the height of the inline iframe in pixels."
-msgstr "Εισάγετε το ύψος του ενσωματωμένου iframe σε pixels."
-
-#: lti_xblock.py:472
-msgid "Modal Height (%)"
-msgstr "Ύψος Διαλόγου (%)"
-
-#: lti_xblock.py:474
-msgid "Enter the modal height as a percentage of the browser window."
+#: lti_xblock.py:509
+msgid ""
+"Enter the desired pixel height of the iframe which will contain the LTI "
+"tool. This setting is only used when Hide External Tool is set to False and "
+"LTI Launch Target is set to Inline."
 msgstr ""
-"Εισάγετε το ύψος του παραθύρου διαλόγου ως ποσοστό του παραθύρου του "
-"προγράμματος περιήγησης."
+"Εισαγάγετε το επιθυμητό ύψος pixel του iframe που θα περιέχει το εργαλείο "
+"LTI. Αυτή η ρύθμιση χρησιμοποιείται μόνο όταν το Hide External Tool έχει "
+"οριστεί σε False και το LTI Launch Target έχει οριστεί σε Inline."
 
-#: lti_xblock.py:480
-msgid "Modal Width (%)"
-msgstr "Πλάτος Διαλόγου (%)"
+#: lti_xblock.py:517
+msgid "Modal Height"
+msgstr "Τροπικό ύψος"
 
-#: lti_xblock.py:482
-msgid "Enter the modal width as a percentage of the browser window."
+#: lti_xblock.py:519
+msgid ""
+"Enter the desired viewport percentage height of the modal overlay which will"
+" contain the LTI tool. This setting is only used when Hide External Tool is "
+"set to False and LTI Launch Target is set to Modal."
 msgstr ""
-"Εισάγετε το πλάτος του παραθύρου διαλόγου ως ποσοστό του παραθύρου του "
-"προγράμματος περιήγησης."
+"Εισαγάγετε το επιθυμητό ποσοστό ύψους θυρίδας προβολής της τροπικής "
+"επικάλυψης που θα περιέχει το εργαλείο LTI. Αυτή η ρύθμιση χρησιμοποιείται "
+"μόνο όταν το Hide External Tool έχει οριστεί σε False και το LTI Launch "
+"Target έχει οριστεί σε Modal."
 
-#: lti_xblock.py:488
-msgid "This activity is graded"
-msgstr "Αυτή η δραστηριότητα βαθμολογείται"
+#: lti_xblock.py:527
+msgid "Modal Width"
+msgstr "Μορφικό πλάτος"
 
-#: lti_xblock.py:489
-msgid "Enable this if the tool sends a numeric score back to Open edX."
+#: lti_xblock.py:529
+msgid ""
+"Enter the desired viewport percentage width of the modal overlay which will "
+"contain the LTI tool. This setting is only used when Hide External Tool is "
+"set to False and LTI Launch Target is set to Modal."
 msgstr ""
-"Ενεργοποιήστε αυτό αν το εργαλείο αποστέλλει αριθμητική βαθμολογία πίσω στο "
-"Open edX."
+"Εισαγάγετε το επιθυμητό ποσοστό πλάτους της θύρας προβολής της τροπικής "
+"επικάλυψης που θα περιέχει το εργαλείο LTI. Αυτή η ρύθμιση χρησιμοποιείται "
+"μόνο όταν το Hide External Tool έχει οριστεί σε False και το LTI Launch "
+"Target έχει οριστεί σε Modal."
 
-#: lti_xblock.py:494
-msgid "Grade Weight"
-msgstr "Βάρος Βαθμολογίας"
+#: lti_xblock.py:537
+msgid "Scored"
+msgstr "Σκόραρε"
 
-#: lti_xblock.py:496
-msgid "Enter the maximum number of points for this component."
-msgstr "Εισάγετε τον μέγιστο αριθμό βαθμών για αυτή τη συνιστώσα."
+#: lti_xblock.py:538
+msgid ""
+"Select True if this component will receive a numerical score from the "
+"external LTI system."
+msgstr ""
+"Επιλέξτε True εάν αυτό το στοιχείο θα λάβει μια αριθμητική βαθμολογία από το"
+" εξωτερικό σύστημα LTI."
 
-#: lti_xblock.py:503
+#: lti_xblock.py:545
+msgid ""
+"Enter the number of points possible for this component.  The default value "
+"is 1.0.  This setting is only used when Scored is set to True."
+msgstr ""
+"Εισαγάγετε τον αριθμό των δυνατών πόντων για αυτό το στοιχείο. Η "
+"προεπιλεγμένη τιμή είναι 1.0. Αυτή η ρύθμιση χρησιμοποιείται μόνο όταν το "
+"«Σκόραρε» έχει οριστεί σε True."
+
+#: lti_xblock.py:554
 msgid ""
 "The score kept in the xblock KVS -- duplicate of the published score in "
 "django DB"
@@ -380,93 +465,92 @@ msgstr ""
 "Το σκορ διατηρείται στο xblock KVS -- αντίγραφο του δημοσιευμένου σκορ στο "
 "Django DB"
 
-#: lti_xblock.py:508
+#: lti_xblock.py:559
 msgid "Comment as returned from grader, LTI2.0 spec"
 msgstr "Σχόλιο όπως επιστράφηκε από βαθμολογητή, LTI2.0 spec"
 
-#: lti_xblock.py:513
+#: lti_xblock.py:564
 msgid "Hide External Tool"
 msgstr "Απόκρυψη εξωτερικού εργαλείου"
 
-#: lti_xblock.py:515
+#: lti_xblock.py:566
 msgid ""
-"Enable this to hide launch button and iframe so you use the component for "
-"grade sync etc."
+"Select True if you want to use this component as a placeholder for syncing "
+"with an external grading  system rather than launch an external tool.  This "
+"setting hides the Launch button and any IFrames for this component."
 msgstr ""
-"Ενεργοποιήστε αυτό για να αποκρύψετε το κουμπί εκκίνησης και το iframe, ώστε"
-" να χρησιμοποιείτε τη συνιστώσα για συγχρονισμό βαθμολογιών κ.λπ."
+"Επιλέξτε True εάν θέλετε να χρησιμοποιήσετε αυτό το στοιχείο ως \"σύμβολο "
+"κράτησης θέσης\" (placeholder) για συγχρονισμό με ένα εξωτερικό σύστημα "
+"βαθμολόγησης αντί για εκκίνηση ενός εξωτερικού εργαλείου. Αυτή η ρύθμιση "
+"κρύβει το κουμπί «Εκκίνηση» και τυχόν πλαίσια για αυτό το στοιχείο."
 
-#: lti_xblock.py:521
-msgid "Accept grades after due date"
-msgstr "Αποδοχή βαθμολογιών μετά την προθεσμία"
+#: lti_xblock.py:574
+msgid "Accept grades past deadline"
+msgstr "Αποδοχή βαθμολογίας εκπρόθεσμα"
 
-#: lti_xblock.py:522
+#: lti_xblock.py:575
 msgid ""
-"Enable this to allow the tool to send grades after the due date has passed."
+"Select True to allow third party systems to post grades past the deadline."
 msgstr ""
-"Ενεργοποιήστε αυτό για να επιτρέψετε στο εργαλείο να αποστέλλει βαθμολογίες "
-"αφού έχει παρέλθει η προθεσμία."
+"Επιλέξτε True για να επιτρέψετε στα συστήματα τρίτων να δημοσιεύουν βαθμούς "
+"μετά την προθεσμία."
 
-#: lti_xblock.py:530
-msgid "Share Username"
-msgstr "Κοινοποίηση Ονόματος Χρήστη"
+#: lti_xblock.py:583
+msgid "Request user's username"
+msgstr "Ζητήστε το όνομα χρήστη"
 
 #. Translators: This is used to request the user's username for a third party
 #. service.
-#: lti_xblock.py:532
-msgid "Enable this to send the learner’s username to the tool."
-msgstr ""
-"Ενεργοποιήστε αυτό για να αποστέλλεται το όνομα χρήστη του μαθητή στο "
-"εργαλείο."
+#: lti_xblock.py:585
+msgid "Select True to request the user's username."
+msgstr "Επιλέξτε True για να ζητήσετε το όνομα χρήστη."
 
-#: lti_xblock.py:537
-msgid "Share Full name"
-msgstr "Κοινοποίηση Ονοματεπώνυμου"
+#: lti_xblock.py:590
+msgid "Request user's full name"
+msgstr "Ζητήστε το πλήρες όνομα του χρήστη"
 
 #. Translators: This is used to request the user's full name for a third party
 #. service.
-#: lti_xblock.py:539
-msgid "Enable this to send the learner’s full name to the tool."
-msgstr ""
-"Ενεργοποιήστε αυτό για να αποστέλλεται το ονοματεπώνυμο του μαθητή στο "
-"εργαλείο."
+#: lti_xblock.py:592
+msgid "Select True to request the user's full name."
+msgstr "Επιλέξτε True για να ζητήσετε το πλήρες όνομα του χρήστη."
 
-#: lti_xblock.py:544
-msgid "Share Email"
-msgstr "Κοινοποίηση Email"
+#: lti_xblock.py:597
+msgid "Request user's email"
+msgstr "Ζητήστε τη διεύθυνση ηλ. ταχυδρομείου του χρήστη"
 
 #. Translators: This is used to request the user's email for a third party
 #. service.
-#: lti_xblock.py:546
-msgid "Enable this to send the learner’s email address to the tool."
-msgstr ""
-"Ενεργοποιήστε αυτό για να αποστέλλεται η διεύθυνση email του μαθητή στο "
-"εργαλείο."
+#: lti_xblock.py:599
+msgid "Select True to request the user's email address."
+msgstr "Επιλέξτε True για να ζητήσετε τη διεύθυνση email του χρήστη."
 
-#: lti_xblock.py:552
+#: lti_xblock.py:605
 msgid "Send extra parameters"
 msgstr "Στείλτε επιπλέον παραμέτρους"
 
-#: lti_xblock.py:553
+#: lti_xblock.py:606
 msgid ""
-"Enable this to send extra parameters (may contain PII). Consult site admin "
-"for details."
+"Select True to send the extra parameters, which might contain Personally "
+"Identifiable Information. The processors are site-wide, please consult the "
+"site administrator if you have any questions."
 msgstr ""
-"Ενεργοποιήστε αυτό για να αποστέλλονται επιπλέον παράμετροι (ενδέχεται να "
-"περιέχουν προσωπικά δεδομένα). Επικοινωνήστε με τον διαχειριστή της "
-"ιστοσελίδας για λεπτομέρειες."
+"Επιλέξτε True για να στείλετε τις επιπλέον παραμέτρους, οι οποίες ενδέχεται "
+"να περιέχουν Προσωπικά Αναγνωρίσιμα στοιχεία. Οι επεξεργαστές είναι σε "
+"ολόκληρο τον ιστότοπο, συμβουλευτείτε τον διαχειριστή του ιστότοπου εάν "
+"έχετε οποιεσδήποτε ερωτήσεις."
 
-#: lti_xblock.py:627
+#: lti_xblock.py:686
 msgid "Custom Parameters must be a list"
 msgstr "Οι προσαρμοσμένες παράμετροι πρέπει να είναι μια λίστα"
 
-#: lti_xblock.py:634
+#: lti_xblock.py:693
 msgid "Custom Parameters should be strings in \"x=y\" format."
 msgstr ""
 "Οι προσαρμοσμένες παράμετροι πρέπει να είναι συμβολοσειρές σε μορφή "
 "&quot;x=y&quot;."
 
-#: lti_xblock.py:644
+#: lti_xblock.py:703
 msgid ""
 "Reusable configuration ID must be set when using external config (Example: "
 "\"x:y\")."
@@ -474,18 +558,18 @@ msgstr ""
 "Το αναγνωριστικό επαναχρησιμοποιήσιμης διαμόρφωσης πρέπει να οριστεί όταν "
 "χρησιμοποιείτε εξωτερική διαμόρφωση (Παράδειγμα: &quot;x:y&quot;)."
 
-#: lti_xblock.py:668
+#: lti_xblock.py:726
 msgid ""
 "The specified LTI ID is not configured in this course's Advanced Settings."
 msgstr ""
 "Το καθορισμένο αναγνωριστικό LTI δεν έχει διαμορφωθεί στις Ρυθμίσεις για "
 "προχωρημένους αυτού του μαθήματος."
 
-#: lti_xblock.py:802 lti_xblock.py:1119
+#: lti_xblock.py:855 lti_xblock.py:1133
 msgid "Could not get user data for current request"
 msgstr "Δεν ήταν δυνατή η λήψη δεδομένων χρήστη για το τρέχον αίτημα"
 
-#: lti_xblock.py:842
+#: lti_xblock.py:882
 msgid ""
 "Could not parse LTI passport: {lti_passport!r}. Should be \"id:key:secret\" "
 "string."
@@ -493,11 +577,11 @@ msgstr ""
 "Δεν ήταν δυνατή η ανάλυση του διαβατηρίου LTI: {lti_passport!r}. Θα πρέπει "
 "να είναι συμβολοσειρά &quot;id:key:secret&quot;."
 
-#: lti_xblock.py:860 lti_xblock.py:874 lti_xblock.py:890
+#: lti_xblock.py:900 lti_xblock.py:914 lti_xblock.py:930
 msgid "Could not get user id for current request"
 msgstr "Δεν ήταν δυνατή η λήψη του αναγνωριστικού χρήστη για το τρέχον αίτημα"
 
-#: lti_xblock.py:1052
+#: lti_xblock.py:1066
 msgid ""
 "Could not parse custom parameter: {custom_parameter!r}. Should be \"x=y\" "
 "string."
@@ -505,29 +589,71 @@ msgstr ""
 "Δεν ήταν δυνατή η ανάλυση της προσαρμοσμένης παραμέτρου: "
 "{custom_parameter!r}. Θα πρέπει να είναι συμβολοσειρά &quot;x=y&quot;."
 
-#: lti_xblock.py:1507
+#: lti_xblock.py:1428
 msgid "[LTI]: Real user not found against anon_id: {}"
 msgstr "[LTI]: Δεν βρέθηκε πραγματικός χρήστης έναντι του anon_id: {}"
 
-#: models.py:61
+#: models.py:84
+msgid "Configuration Stored on XBlock fields"
+msgstr "Διαμόρφωση αποθηκευμένη σε πεδία XBlock"
+
+#: models.py:85
+msgid "Configuration Stored on this model"
+msgstr "Διαμόρφωση αποθηκευμένη σε αυτό το μοντέλο"
+
+#: models.py:86
+msgid "Configuration Stored on external service"
+msgstr "Διαμόρφωση Αποθηκευμένη σε εξωτερική υπηρεσία"
+
+#: models.py:118
+msgid "LTI configuration data."
+msgstr "Δεδομένα διαμόρφωσης LTI."
+
+#: models.py:125
+msgid "The URL of the external tool that initiates the launch."
+msgstr "Το URL του εξωτερικού εργαλείου που ξεκινά την εκκίνηση."
+
+#: models.py:130
+msgid "Client key provided by the LTI tool provider."
+msgstr "Κλειδί πελάτη που παρέχεται από τον πάροχο εργαλείων LTI."
+
+#: models.py:136
+msgid "Client secret provided by the LTI tool provider."
+msgstr "Το μυστικό πελάτη παρέχεται από τον πάροχο εργαλείων LTI."
+
+#: models.py:142
 msgid "Platform's generated Private key. Keep this value secret."
 msgstr ""
 "Ιδιωτικό κλειδί που δημιουργήθηκε από την πλατφόρμα. Κρατήστε αυτή την τιμή "
 "μυστική."
 
-#: models.py:67
+#: models.py:148
 msgid "Platform's generated Private key ID"
 msgstr "Αναγνωριστικό ιδιωτικού κλειδιού που δημιουργήθηκε από την πλατφόρμα"
 
-#: models.py:72
+#: models.py:153
 msgid "Platform's generated JWK keyset."
 msgstr "Σύνολο κλειδιών JWK που δημιουργήθηκε από την πλατφόρμα."
 
-#: models.py:78
+#: models.py:159
 msgid "Client ID used by LTI tool"
 msgstr "Αναγνωριστικό πελάτη που χρησιμοποιείται από το εργαλείο LTI"
 
-#: models.py:159
+#: models.py:255
+msgid "LTI Configuration stores on XBlock needs a block location set."
+msgstr ""
+"Το LTI Configuration stores στο XBlock χρειάζεται ένα σύνολο τοποθεσίας "
+"μπλοκ."
+
+#: models.py:260
+msgid ""
+"LTI Configuration using reusable configuration needs a external ID in "
+"\"x:y\" format."
+msgstr ""
+"Η διαμόρφωση LTI που χρησιμοποιεί επαναχρησιμοποιήσιμη διαμόρφωση χρειάζεται"
+" εξωτερικό αναγνωριστικό σε μορφή &quot;x:y&quot;."
+
+#: models.py:267
 msgid ""
 "LTI Configuration stored on the model for LTI 1.3 must have a value for one "
 "of lti_1p3_tool_public_key or lti_1p3_tool_keyset_url."
@@ -536,54 +662,7 @@ msgstr ""
 " έχει μια τιμή για ένα από τα lti_1p3_tool_public_key ή "
 "lti_1p3_tool_keyset_url."
 
-#: models.py:203
-msgid "Configuration Stored on XBlock fields"
-msgstr "Διαμόρφωση αποθηκευμένη σε πεδία XBlock"
-
-#: models.py:204
-msgid "Configuration Stored on this model"
-msgstr "Διαμόρφωση αποθηκευμένη σε αυτό το μοντέλο"
-
-#: models.py:205
-msgid "Configuration Stored on external service"
-msgstr "Διαμόρφωση Αποθηκευμένη σε εξωτερική υπηρεσία"
-
-#: models.py:239
-msgid "LTI configuration data."
-msgstr "Δεδομένα διαμόρφωσης LTI."
-
-#: models.py:246
-msgid "The URL of the external tool that initiates the launch."
-msgstr "Το URL του εξωτερικού εργαλείου που ξεκινά την εκκίνηση."
-
-#: models.py:251
-msgid "Client key provided by the LTI tool provider."
-msgstr "Κλειδί πελάτη που παρέχεται από τον πάροχο εργαλείων LTI."
-
-#: models.py:257
-msgid "Client secret provided by the LTI tool provider."
-msgstr "Το μυστικό πελάτη παρέχεται από τον πάροχο εργαλείων LTI."
-
-#: models.py:346
-msgid "LTI Configuration stores on XBlock needs a block location set."
-msgstr ""
-"Το LTI Configuration stores στο XBlock χρειάζεται ένα σύνολο τοποθεσίας "
-"μπλοκ."
-
-#: models.py:351
-msgid ""
-"LTI Configuration using reusable configuration needs a external ID in "
-"\"x:y\" format."
-msgstr ""
-"Η διαμόρφωση LTI που χρησιμοποιεί επαναχρησιμοποιήσιμη διαμόρφωση χρειάζεται"
-" εξωτερικό αναγνωριστικό σε μορφή &quot;x:y&quot;."
-
-#: models.py:356
-msgid "LTI Configuration for 1.3 requires passport to be set."
-msgstr ""
-"Η διαμόρφωση LTI για την έκδοση 1.3 απαιτεί να έχει οριστεί διαβατήριο."
-
-#: models.py:361
+#: models.py:274
 msgid ""
 "CONFIG_ON_XBLOCK and CONFIG_EXTERNAL are not supported for LTI 1.3 "
 "Proctoring Services."
@@ -591,19 +670,19 @@ msgstr ""
 "Τα CONFIG_ON_XBLOCK και CONFIG_EXTERNAL δεν υποστηρίζονται για τις Υπηρεσίες"
 " Proctoring LTI 1.3."
 
-#: models.py:369
+#: models.py:282
 msgid "Invalid LTI configuration."
 msgstr "Μη έγκυρη διαμόρφωση LTI."
 
-#: plugin/views.py:620
+#: plugin/views.py:561
 msgid "The selected content type is not supported by Open edX."
 msgstr "Ο επιλεγμένος τύπος περιεχομένου δεν υποστηρίζεται από το Open edX."
 
-#: plugin/views.py:635
+#: plugin/views.py:576
 msgid "You don't have access to save LTI Content Items."
 msgstr "Δεν έχετε πρόσβαση για αποθήκευση στοιχείων περιεχομένου LTI."
 
-#: plugin/views.py:636
+#: plugin/views.py:577
 msgid ""
 "Please check that you have course staff permissions and double check this "
 "block's LTI settings."
@@ -617,7 +696,7 @@ msgstr "Η βαθιά σύνδεση LTI απέτυχε."
 
 #: templates/html/lti-dl/dl_response_saved.html:6
 msgid "LTI Deep Linking"
-msgstr "Βαθύς Σύνδεσμος LTI"
+msgstr "LTI Deep Linking"
 
 #: templates/html/lti-dl/dl_response_saved.html:10
 msgid "The LTI Deep Linking content was successfully saved in the LMS."
@@ -729,105 +808,15 @@ msgstr "Σας στέλνω πίσω στις εξετάσεις σας."
 msgid "Return to exam."
 msgstr "Επιστροφή στις εξετάσεις."
 
-#: templates/html/lti_studio_edit/_actions.html:5
-msgid "Previous"
-msgstr "Προηγούμενο"
-
-#: templates/html/lti_studio_edit/_actions.html:10
 #: static/js/xblock_lti_consumer.js:143
 msgid "Cancel"
 msgstr "Ακύρωση"
-
-#: templates/html/lti_studio_edit/_actions.html:13
-msgid "Next"
-msgstr "Επόμενο"
-
-#: templates/html/lti_studio_edit/_actions.html:16
-msgid "Save"
-msgstr "Αποθήκευση"
-
-#: templates/html/lti_studio_edit/_step_advantage.html:20
-#: templates/html/lti_studio_edit/_step_advantage.html:104
-#: templates/html/lti_studio_edit/_step_review.html:87
-#: templates/html/lti_studio_edit/_step_review.html:208
-msgid "Enabled"
-msgstr "Ενεργοποιημένο"
-
-#: templates/html/lti_studio_edit/_step_advantage.html:142
-msgid "Public Key"
-msgstr "Δημόσιο Κλειδί"
-
-#: templates/html/lti_studio_edit/_step_advantage.html:152
-msgid "Keyset URL"
-msgstr "URL Συνόλου Κλειδιών"
-
-#: templates/html/lti_studio_edit/_step_review.html:22
-msgid "Grading"
-msgstr "Βαθμολόγηση"
-
-#: templates/html/lti_studio_edit/_step_review.html:39
-msgid "Graded"
-msgstr "Βαθμολογημένο"
-
-#: templates/html/lti_studio_edit/_step_review.html:49
-msgid "Ungraded"
-msgstr "Μη βαθμολογημένο"
-
-#: templates/html/lti_studio_edit/_step_review.html:108
-msgid "Advanced Information Sharing"
-msgstr "Προηγμένη Κοινοποίηση Πληροφοριών"
-
-#: templates/html/lti_studio_edit/_step_review.html:174
-msgid "Administrators can enable advanced sharing options for LTI components."
-msgstr ""
-"Οι διαχειριστές μπορούν να ενεργοποιήσουν προηγμένες επιλογές κοινοποίησης "
-"για τα στοιχεία LTI."
-
-#: templates/html/lti_studio_edit/_step_review.html:179
-msgid "Learn more."
-msgstr "Μάθετε περισσότερα."
-
-#: templates/html/lti_studio_edit/_step_review.html:229
-msgid "Appearance Options"
-msgstr "Επιλογές Εμφάνισης"
-
-#: templates/html/lti_studio_edit/_step_review.html:246
-msgid "True"
-msgstr "Αληθές"
-
-#: templates/html/lti_studio_edit/_step_review.html:256
-msgid "False"
-msgstr "Ψευδές"
-
-#: templates/html/lti_studio_edit/_step_setup.html:5
-msgid "LTI Configuration"
-msgstr "Διαμόρφωση LTI"
-
-#: templates/html/lti_studio_edit/_step_setup.html:105
-msgid "LTI 1.1/1.2 Configuration"
-msgstr "Διαμόρφωση LTI 1.1/1.2"
-
-#: templates/html/lti_studio_edit/_step_setup.html:119
-msgid "LTI 1.3 Configuration"
-msgstr "Διαμόρφωση LTI 1.3"
-
-#: templates/html/lti_studio_edit/_stepper_header.html:10
-msgid "Setup"
-msgstr "Ρύθμιση"
-
-#: templates/html/lti_studio_edit/_stepper_header.html:21
-msgid "Advantage Settings"
-msgstr "Ρυθμίσεις Πλεονεκτήματος"
-
-#: templates/html/lti_studio_edit/_stepper_header.html:33
-msgid "Review Options"
-msgstr "Επιλογές Ανασκόπησης"
 
 #: static/js/xblock_lti_consumer.js:145
 msgid "OK"
 msgstr "Εντάξει"
 
-#: static/js/xblock_lti_consumer.js:174
+#: static/js/xblock_lti_consumer.js:176
 msgid ""
 "Click OK to have your username, full name, and e-mail address sent to a 3rd "
 "party application."
@@ -835,7 +824,7 @@ msgstr ""
 "Κάντε κλικ στο OK για να σταλούν το όνομα χρήστη, το πλήρες όνομα και η "
 "διεύθυνση e-mail σας σε μια εφαρμογή τρίτου μέρους."
 
-#: static/js/xblock_lti_consumer.js:178
+#: static/js/xblock_lti_consumer.js:180
 msgid ""
 "Click OK to have your username and e-mail address sent to a 3rd party "
 "application."
@@ -843,7 +832,7 @@ msgstr ""
 "Κάντε κλικ στο OK για να σταλούν το όνομα χρήστη και η διεύθυνση e-mail σας "
 "σε μια εφαρμογή τρίτου μέρους."
 
-#: static/js/xblock_lti_consumer.js:181
+#: static/js/xblock_lti_consumer.js:183
 msgid ""
 "Click OK to have your username and full name sent to a 3rd party "
 "application."
@@ -851,7 +840,7 @@ msgstr ""
 "Κάντε κλικ στο OK για να σταλούν το όνομα χρήστη και το πλήρες όνομά σας σε "
 "μια εφαρμογή τρίτου μέρους."
 
-#: static/js/xblock_lti_consumer.js:184
+#: static/js/xblock_lti_consumer.js:186
 msgid ""
 "Click OK to have your full name and e-mail address sent to a 3rd party "
 "application."
@@ -859,48 +848,26 @@ msgstr ""
 "Κάντε κλικ στο OK για να σταλούν το πλήρες όνομά σας και η διεύθυνση e-mail "
 "σας σε μια εφαρμογή τρίτου μέρους."
 
-#: static/js/xblock_lti_consumer.js:187
+#: static/js/xblock_lti_consumer.js:189
 msgid "Click OK to have your username sent to a 3rd party application."
 msgstr ""
 "Κάντε κλικ στο OK για να σταλεί το όνομα χρήστη σας σε μια εφαρμογή τρίτου "
 "μέρους."
 
-#: static/js/xblock_lti_consumer.js:189
+#: static/js/xblock_lti_consumer.js:191
 msgid "Click OK to have your full name sent to a 3rd party application."
 msgstr ""
 "Κάντε κλικ στο OK για να σταλεί το πλήρες όνομά σας σε μια εφαρμογή τρίτου "
 "μέρους."
 
-#: static/js/xblock_lti_consumer.js:191
+#: static/js/xblock_lti_consumer.js:193
 msgid "Click OK to have your e-mail address sent to a 3rd party application."
 msgstr ""
 "Κάντε κλικ στο OK για να σταλεί η διεύθυνση e-mail σας σε μια εφαρμογή "
 "τρίτου μέρους."
 
-#: static/js/xblock_lti_consumer.js:198
+#: static/js/xblock_lti_consumer.js:200
 msgid "Click Cancel to return to this page without sending your information."
 msgstr ""
 "Κάντε κλικ στην Ακύρωση για να επιστρέψετε σε αυτήν τη σελίδα χωρίς να "
 "στείλετε τα στοιχεία σας."
-
-#: static/js/xblock_studio_view.js:476 static/js/xblock_studio_view.js:490
-#: static/js/xblock_studio_view.js:526
-msgid "Unable to update settings"
-msgstr "Δεν ήταν δυνατή η ενημέρωση των ρυθμίσεων"
-
-#: static/js/xblock_studio_view.js:477
-msgid "Unable to parse the custom parameters."
-msgstr "Δεν ήταν δυνατή η ανάλυση των προσαρμοσμένων παραμέτρων."
-
-#: static/js/xblock_studio_view.js:491
-msgid "Unable to parse the redirect URIs."
-msgstr "Δεν ήταν δυνατή η ανάλυση των URI ανακατεύθυνσης."
-
-#: static/js/xblock_studio_view.js:511
-msgid ""
-"This may be happening because of an error with our server or your internet "
-"connection. Try refreshing the page or making sure you are online."
-msgstr ""
-"Αυτό μπορεί να συμβαίνει λόγω σφάλματος στον διακομιστή μας ή στη σύνδεσή "
-"σας στο διαδίκτυο. Δοκιμάστε να ανανεώσετε τη σελίδα ή να βεβαιωθείτε ότι "
-"είστε συνδεδεμένοι στο διαδίκτυο."

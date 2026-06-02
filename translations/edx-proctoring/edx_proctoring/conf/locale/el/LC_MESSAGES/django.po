@@ -1,16 +1,26 @@
-#
+# #-#-#-#-#  django.po (edx-proctoring)  #-#-#-#-#
+# edX translation file
+# Copyright (C) 2018 edX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2018.
+# 
+# Translators:
+# Brian Smith, 2024
+# Nathan Robertson, 2024
+# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-proctoring\n"
-"Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-05-05 00:53+0000\n"
-"PO-Revision-Date: 2026-06-01 23:53+0000\n"
-"Last-Translator: AI Translation Service, 2026\n"
-"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: el\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-20 00:31+0000\n"
+"PO-Revision-Date: 2023-05-10 00:48+0000\n"
+"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024\n"
+"Language-Team: Greek (https://app.transifex.com/open-edx/teams/6205/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: admin.py:112
@@ -101,65 +111,65 @@ msgstr "Ενσωμάτωση σε εκκρεμότητα"
 msgid "Onboarding Expired"
 msgstr "Η ενσωμάτωση έληξε"
 
-#: api.py:824 views.py:1297
+#: api.py:822 views.py:1276
 #, python-brace-format
 msgid "you have {remaining_time} remaining"
 msgstr "σας απομένει {remaining_time}"
 
-#: api.py:1654
+#: api.py:1651
 msgid "your course"
 msgstr "ο κύκλος μαθημάτων σας"
 
-#: api.py:1745
+#: api.py:1741
 #, python-brace-format
 msgid "Proctoring Results For {course_name} {exam_name}"
 msgstr "Αποτελέσματα Proctoring για {course_name} {exam_name}"
 
-#: api.py:2238
+#: api.py:2234
 msgid "Taking As Proctored Exam"
 msgstr "Συμμετοχή ως επιτηρούμενη εξέταση"
 
-#: api.py:2243
+#: api.py:2239
 msgid "Proctored Option Available"
 msgstr "Διαθέσιμη επιλογή επιτήρησης"
 
-#: api.py:2248
+#: api.py:2244
 msgid "Taking As Open Exam"
 msgstr "Λήψη ως ανοικτή εξέταση"
 
-#: api.py:2253 api.py:2258
+#: api.py:2249 api.py:2254
 msgid "Pending Session Review"
 msgstr "Αναθεώρηση συνεδρίας σε εκκρεμότητα"
 
-#: api.py:2263
+#: api.py:2259
 msgid "Passed Proctoring"
 msgstr "Πέρασε την επιτήρηση"
 
-#: api.py:2268 api.py:2273
+#: api.py:2264 api.py:2269
 msgid "Failed Proctoring"
 msgstr "Αποτυχία επιτήρησης"
 
-#: api.py:2278
+#: api.py:2274
 msgid "Proctored Option No Longer Available"
 msgstr "Η επιλογή επιτήρησης δεν είναι πλέον διαθέσιμη"
 
-#: api.py:2287
+#: api.py:2283
 msgid "Ungraded Practice Exam"
 msgstr "Αβαθμολόγητη πρακτική εξέταση"
 
-#: api.py:2292
+#: api.py:2288
 msgid "Practice Exam Completed"
 msgstr "Ολοκληρώθηκε η πρακτική εξέταση"
 
-#: api.py:2297
+#: api.py:2293
 msgid "Practice Exam Failed"
 msgstr "Η πρακτική εξέταση απέτυχε"
 
-#: api.py:2305
+#: api.py:2301
 msgid "Timed Exam"
 msgstr "Χρονομετρημένη εξέταση"
 
-#: api.py:2888
+#: api.py:2884
 msgid "Onboarding status question"
 msgstr "Ερώτηση κατάστασης ενσωμάτωσης"
 
@@ -183,11 +193,11 @@ msgstr "Έτοιμο για Συνέχιση"
 msgid "Resumed"
 msgstr "Συνέχισε"
 
-#: models.py:524
+#: models.py:523
 msgid "Additional Time (minutes)"
 msgstr "Επιπλέον χρόνος (minutes)"
 
-#: models.py:525
+#: models.py:524
 msgid "Review Policy Exception"
 msgstr "Αναθεώρηση πολιτικής εξαίρεσης"
 
@@ -253,12 +263,15 @@ msgid ""
 "        <a href=\"%(course_url)s\">%(course_name)s</a> was submitted\n"
 "        successfully and will now be reviewed to ensure all exam\n"
 "        rules were followed. You should receive an email with your exam\n"
-"        status within 5 business days. Final grades may take longer.\n"
+"        status within 5 business days.\n"
 "    "
 msgstr ""
 "\n"
-"        Η επιτηρούμενη εξέταση \"%(exam_name)s\" στο\n"
-"        <a href=\"%(course_url)s\">%(course_name)s</a> υποβλήθηκε με επιτυχία και θα αξιολογηθεί για να διασφαλιστεί ότι τηρήθηκαν όλοι οι κανόνες της εξέτασης. Θα πρέπει να λάβετε ένα email με την κατάσταση της εξέτασής σας εντός 5 εργάσιμων ημερών. Οι τελικές βαθμολογίες μπορεί να χρειαστούν περισσότερο χρόνο.\n"
+"Η προβλεπόμενη εξέταση &quot; %(exam_name)s &quot; σε\n"
+" <a href=\"%(course_url)s\">%(course_name)s</a> υποβλήθηκε\n"
+" με επιτυχία και τώρα θα ελεγχθεί για να διασφαλιστεί ότι όλες οι εξετάσεις\n"
+" τηρήθηκαν κανόνες. Θα πρέπει να λάβετε ένα email με τις εξετάσεις σας\n"
+" κατάσταση εντός 5 εργάσιμων ημερών.\n"
 "    "
 
 #: templates/emails/proctoring_attempt_unsatisfactory_email.html:12
@@ -1709,75 +1722,75 @@ msgstr "μια ενσωματωμένη εξέταση"
 msgid "a practice exam"
 msgstr "μια πρακτική εξέταση"
 
-#: views.py:152
+#: views.py:151
 msgid "could not determine the course_id"
 msgstr "δεν μπόρεσε να προσδιορίσει το course_id"
 
-#: views.py:161 views.py:676
+#: views.py:160 views.py:675
 msgid "Must be a Staff User to Perform this request."
 msgstr "Πρέπει να είναι χρήστης προσωπικού για να εκτελέσει αυτό το αίτημα."
 
-#: views.py:664
+#: views.py:663
 msgid "Missing required query parameter course_id"
 msgstr "Λείπει η απαιτούμενη παράμετρος ερωτήματος course_id"
 
-#: views.py:694 views.py:875
+#: views.py:683 views.py:854
 msgid "There is no onboarding exam related to this course id."
 msgstr ""
 "Δεν υπάρχει ενσωματωμένη εξέταση που να σχετίζεται με αυτό το αναγνωριστικό "
 "μαθήματος."
 
-#: views.py:723
+#: views.py:712
 msgid "There is no onboarding exam accessible to this user."
 msgstr "Δεν υπάρχει καμία εξέταση ενσωμάτωσης προσβάσιμη σε αυτόν τον χρήστη."
 
-#: views.py:773
+#: views.py:762
 #, python-brace-format
 msgid "No onboarding status API for {proctor_service}"
 msgstr "Δεν υπάρχει API κατάστασης ενσωμάτωσης για το {proctor_service}"
 
-#: views.py:925
+#: views.py:904
 msgid ""
 "The onboarding service is temporarily unavailable. Please try again later."
 msgstr ""
 "Η υπηρεσία επιβίβασης δεν είναι προσωρινά διαθέσιμη. Παρακαλώ δοκιμάστε ξανά"
 " αργότερα."
 
-#: views.py:1303
+#: views.py:1282
 msgid "you have less than a minute remaining"
 msgstr "σας απομένει λιγότερο από ένα λεπτό"
 
-#: views.py:1758
+#: views.py:1737
 msgid "Enter a valid username or email"
 msgstr "Εισαγάγετε ένα έγκυρο όνομα χρήστη ή email"
 
-#: views.py:1758
+#: views.py:1737
 msgid "user_info"
-msgstr "πληροφορίες χρήστη"
+msgstr "user_info"
 
-#: views.py:1771
+#: views.py:1750
 msgid "Enter a valid positive value number"
 msgstr "Εισαγάγετε έναν έγκυρο αριθμό θετικής τιμής"
 
-#: views.py:1771
+#: views.py:1750
 msgid "allowance_value"
 msgstr "επίδομα_αξία"
 
-#: views.py:1858
+#: views.py:1837
 msgid "Cannot update attempt review status"
 msgstr "Δεν είναι δυνατή η ενημέρωση της κατάστασης προσπάθειας ελέγχου"
 
-#: views.py:2158
+#: views.py:2137
 #, python-brace-format
 msgid "No exams in course {course_id}."
 msgstr "Δεν υπάρχουν εξετάσεις στο μάθημα {course_id} ."
 
-#: views.py:2164
+#: views.py:2143
 #, python-brace-format
 msgid "No proctored exams in course {course_id}"
 msgstr "Δεν υπάρχουν ειδικές εξετάσεις στο μάθημα {course_id}"
 
-#: views.py:2191
+#: views.py:2170
 #, python-brace-format
 msgid "No instructor dashboard for {proctor_service}"
 msgstr "Δεν υπάρχει πίνακας εργαλείων εκπαιδευτή για {proctor_service}"

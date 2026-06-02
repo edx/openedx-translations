@@ -1,19 +1,36 @@
-#
+# #-#-#-#-#  djangojs.po (0.1a)  #-#-#-#-#
+# edX translation file.
+# Copyright (C) 2025 EdX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2025.
+# 
+# #-#-#-#-#  underscore.po (PROJECT VERSION)  #-#-#-#-#
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# 
+# Translators:
+# Brian Smith, 2024
+# Omar Al-Ithawi <i@omardo.com>, 2024
+# Pierre Mailhot <pierre.mailhot@gmail.com>, 2024
+# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2025-09-19 00:44+0000\n"
-"PO-Revision-Date: 2026-06-01 23:39+0000\n"
-"Last-Translator: AI Translation Service, 2026\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fr_CA\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-07-23 00:45+0000\n"
+"PO-Revision-Date: 2023-11-20 11:35+0000\n"
+"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025\n"
+"Language-Team: French (Canada) (https://app.transifex.com/open-edx/teams/6205/fr_CA/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.17.0\n"
+"Language: fr_CA\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: cms/static/cms/js/main.js:38
 #: cms/static/js/views/active_video_upload_list.js:36
@@ -679,15 +696,9 @@ msgstr "Téléverser un nouveau fichier"
 msgid "Load Another File"
 msgstr "Envoyer un autre fichier"
 
-#. Translators: "title" is the name of the current component being edited.
-#: cms/static/js/views/components/add_library_content.js:23
-#: cms/static/js/views/modals/select_v2_library_content.js:18
-msgid "Add library content"
-msgstr "Ajouter le contenu de la bibliothèque"
-
 #: cms/static/js/views/components/add_xblock.js:120
 #: cms/static/js/views/components/add_xblock.js:131
-#: cms/static/js/views/pages/container.js:652
+#: cms/static/js/views/pages/container.js:647
 #: cms/static/js/views/utils/xblock_utils.js:55
 msgid "Adding"
 msgstr "Ajout"
@@ -706,8 +717,8 @@ msgstr "Êtes vous sur de vouloir supprimer cette mise à jour?"
 #: cms/static/js/views/course_info_update.js:241
 #: cms/static/js/views/course_outline.js:390
 #: cms/static/js/views/course_outline.js:402
-#: cms/static/js/views/pages/container.js:424
-#: cms/static/js/views/pages/container.js:436 cms/static/js/views/tabs.js:164
+#: cms/static/js/views/pages/container.js:419
+#: cms/static/js/views/pages/container.js:431 cms/static/js/views/tabs.js:164
 #: cms/static/js/views/utils/xblock_utils.js:101
 #: cms/static/js/views/utils/xblock_utils.js:113
 #: lms/static/js/Markdown.Editor.js:1091 xmodule/js/src/html/edit.js:885
@@ -717,42 +728,38 @@ msgid "OK"
 msgstr "OK"
 
 #: cms/static/js/views/course_outline.js:242
-#: cms/static/js/views/pages/container.js:779
+#: cms/static/js/views/pages/container.js:774
 #: cms/static/js/views/pages/container_subviews.js:187
 msgid "Copying"
 msgstr "Copier"
 
-#: cms/static/js/views/course_outline.js:331
-msgid "Copy of \"{componentDisplayName}\""
-msgstr "Copie de \"{componentDisplayName}\""
-
 #: cms/static/js/views/course_outline.js:367
-#: cms/static/js/views/pages/container.js:395
+#: cms/static/js/views/pages/container.js:390
 #: cms/static/js/views/utils/xblock_utils.js:79
 msgid "Pasting"
 msgstr "Coller"
 
 #: cms/static/js/views/course_outline.js:385
-#: cms/static/js/views/pages/container.js:419
+#: cms/static/js/views/pages/container.js:414
 #: cms/static/js/views/utils/xblock_utils.js:96
 msgid "Some errors occurred"
 msgstr "Certaines erreurs se sont produites"
 
 #: cms/static/js/views/course_outline.js:387
-#: cms/static/js/views/pages/container.js:421
+#: cms/static/js/views/pages/container.js:416
 #: cms/static/js/views/utils/xblock_utils.js:98
 msgid "The following required files could not be added to the course:"
 msgstr "Les fichiers requis suivants n'ont pas pu être ajoutés au cours :"
 
 #: cms/static/js/views/course_outline.js:395
-#: cms/static/js/views/pages/container.js:429
+#: cms/static/js/views/pages/container.js:424
 #: cms/static/js/views/utils/xblock_utils.js:106
 msgid "You may need to update a file(s) manually"
 msgstr ""
 "Vous devrez peut-être mettre à jour un ou plusieurs fichiers manuellement"
 
 #: cms/static/js/views/course_outline.js:398
-#: cms/static/js/views/pages/container.js:432
+#: cms/static/js/views/pages/container.js:427
 #: cms/static/js/views/utils/xblock_utils.js:109
 msgid ""
 "The following files already exist in this course but don't match the version"
@@ -762,25 +769,25 @@ msgstr ""
 " à la version utilisée par le composant que vous avez collé :"
 
 #: cms/static/js/views/course_outline.js:407
-#: cms/static/js/views/pages/container.js:441
+#: cms/static/js/views/pages/container.js:436
 #: cms/static/js/views/utils/xblock_utils.js:118
 msgid "New file(s) added to Files & Uploads."
 msgstr "Nouveau(x) fichier(s) ajouté(s) aux fichiers et téléchargements."
 
 #: cms/static/js/views/course_outline.js:409
-#: cms/static/js/views/pages/container.js:443
+#: cms/static/js/views/pages/container.js:438
 #: cms/static/js/views/utils/xblock_utils.js:120
 msgid "The following required files were imported to this course:"
 msgstr "Les fichiers requis suivants ont été importés dans ce cours :"
 
 #: cms/static/js/views/course_outline.js:414
-#: cms/static/js/views/pages/container.js:448
+#: cms/static/js/views/pages/container.js:443
 #: cms/static/js/views/utils/xblock_utils.js:125
 msgid "View files"
 msgstr "Afficher les fichiers"
 
 #: cms/static/js/views/course_outline.js:422
-#: cms/static/js/views/pages/container.js:457
+#: cms/static/js/views/pages/container.js:452
 #: cms/static/js/views/utils/xblock_utils.js:134
 msgid "Dismiss"
 msgstr "Rejeter"
@@ -1258,42 +1265,12 @@ msgstr "Choisissez un emplacement où déplacer votre composant"
 msgid "Move: {displayName}"
 msgstr "Déplacer : {displayName}"
 
-#. Translators: "title" is the name of the current component being edited.
-#: cms/static/js/views/modals/preview_v2_library_changes.js:23
-msgid "Preview changes to: {title}"
-msgstr "Prévisualiser les modifications pour : {title}"
-
-#: cms/static/js/views/modals/preview_v2_library_changes.js:35
-msgid "Accept changes"
-msgstr "Accepter les modifications"
-
-#: cms/static/js/views/modals/preview_v2_library_changes.js:36
-msgid "Ignore changes"
-msgstr "Ignorer les modifications"
-
-#: cms/static/js/views/modals/preview_v2_library_changes.js:99
-msgid "Ignore these changes?"
-msgstr "Ignorer ces modifications ?"
-
-#: cms/static/js/views/modals/preview_v2_library_changes.js:100
-msgid ""
-"Would you like to permanently ignore this updated version? If so, you won't "
-"be able to update this until a newer version is published (in the library)."
-msgstr ""
-"Voulez-vous ignorer définitivement cette version mise à jour ? Dans ce cas, "
-"vous ne pourrez pas la mettre à jour tant qu'une version plus récente ne "
-"sera pas publiée (dans la bibliothèque)."
-
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
 #: cms/static/js/views/modals/preview_v2_library_changes.js:101
 #: xmodule/js/src/html/edit.js:695
 msgid "Ignore"
 msgstr "Ignorer"
-
-#: cms/static/js/views/modals/select_v2_library_content.js:59
-msgid "Add selected components"
-msgstr "Ajouter les composants sélectionnés"
 
 #: cms/static/js/views/modals/validation_error_modal.js:16
 msgid "Validation Error While Saving"
@@ -1344,7 +1321,7 @@ msgstr "Date ajoutée"
 
 #. Translators: "title" is the name of the current component or unit being
 #. edited.
-#: cms/static/js/views/pages/container.js:731
+#: cms/static/js/views/pages/container.js:726
 msgid "Editing access for: {title}"
 msgstr "Éditer l'accès pour : {title}"
 
@@ -1800,7 +1777,7 @@ msgid ""
 "{ReqTextSpanStart}Requirements{spanEnd}{lineBreak}{InstructionsSpanStart}{videoImageResoultion}{lineBreak}"
 " {videoImageSupportedFileFormats}{spanEnd}"
 msgstr ""
-"{ReqTextSpanStart}Exigences{spanEnd}{lineBreak}{InstructionsSpanStart}{videoImageResoultion}{lineBreak}"
+"{ReqTextSpanStart}Requirements{spanEnd}{lineBreak}{InstructionsSpanStart}{videoImageResoultion}{lineBreak}"
 " {videoImageSupportedFileFormats}{spanEnd}"
 
 #. Translators: message will be like 1280x720 pixels
@@ -2329,6 +2306,7 @@ msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minute"
 msgstr[1] "%d minutes"
+msgstr[2] "%d minutes"
 
 #: common/static/js/src/jquery.timeago.locale.js:9
 msgid "about an hour"
@@ -3912,14 +3890,6 @@ msgstr ""
 "Erreur lors de la génération de la liste des étudiants pouvant s'inscrire. "
 "Merci d'essayer de nouveau."
 
-#: lms/static/js/instructor_dashboard/data_download.js:327
-msgid ""
-"Error generating list of inactive students who are enrolled in a course. "
-"Please try again."
-msgstr ""
-"Erreur lors de la génération de la liste des étudiants inactifs inscrits à "
-"un cours. Veuillez réessayer."
-
 #: lms/static/js/instructor_dashboard/data_download.js:359
 msgid "Error retrieving grading configuration."
 msgstr "Erreur lors de la récupération de la configuration de la notation."
@@ -4135,29 +4105,11 @@ msgid "Successfully enrolled the following users:"
 msgstr "Inscription réussie pour les utilisateurs suivants :"
 
 #. Translators: A list of users appears after this sentence;
-#: lms/static/js/instructor_dashboard/membership.js:792
-msgid ""
-"Email was sent to the following users. They will be allowed to enroll once "
-"they register:"
-msgstr ""
-"Un courriel a été envoyé aux utilisateurs suivants. Ils pourront s'inscrire "
-"une fois qu'ils se seront enregistrés:"
-
-#. Translators: A list of users appears after this sentence;
 #: lms/static/js/instructor_dashboard/membership.js:804
 msgid "These users will be allowed to enroll once they register:"
 msgstr ""
 "Ces étudiants seront autorisés à s'inscrire une fois qu'il se seront "
 "enregistrés sur la plateforme : "
-
-#. Translators: A list of users appears after this sentence;
-#: lms/static/js/instructor_dashboard/membership.js:816
-msgid ""
-"Email was sent to the following users. They will be enrolled once they "
-"register:"
-msgstr ""
-"Un courriel a été envoyé aux utilisateurs suivants. Ils seront inscrits une "
-"fois qu'ils se seront enregistrés:"
 
 #. Translators: A list of users appears after this sentence;
 #: lms/static/js/instructor_dashboard/membership.js:828
@@ -5002,14 +4954,6 @@ msgstr ""
 msgid "Terms of Service and Honor Code"
 msgstr "Conditions générales du service et code d'honneur"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:71
-msgid "query param next is provide"
-msgstr "Le paramètre de requête next est fourni"
-
-#: lms/static/js/student_account/views/FinishAuthView.js:73
-msgid "query param next is internal"
-msgstr "Le paramètre de requête next est interne"
-
 #: lms/static/js/student_account/views/FinishAuthView.js:111
 msgid "Saving your email preference"
 msgstr "Sauvegarde de vos préférences de messagerie"
@@ -5018,21 +4962,9 @@ msgstr "Sauvegarde de vos préférences de messagerie"
 msgid "Enrolling you in the selected course"
 msgstr "Inscription en cours"
 
-#: lms/static/js/student_account/views/FinishAuthView.js:140
-msgid "course mode param is not provided"
-msgstr "Le paramètre de mode du cours n'est pas fourni"
-
-#: lms/static/js/student_account/views/FinishAuthView.js:148
-msgid "course mode param is provided"
-msgstr "Le paramètre de mode du cours est fourni"
-
 #: lms/static/js/student_account/views/FinishAuthView.js:163
 msgid "Adding the selected course to your cart"
 msgstr "Ajout du cours sélectionné dans votre panier d'achat"
-
-#: lms/static/js/student_account/views/FinishAuthView.js:167
-msgid " redirect the user to the next page"
-msgstr " rediriger l'utilisateur vers la page suivante"
 
 #: lms/static/js/student_account/views/FinishAuthView.js:177
 msgid "Loading your courses"
@@ -5331,15 +5263,15 @@ msgstr ""
 
 #: lms/static/js/views/image_field.js:222
 msgid "bytes"
-msgstr "octets"
+msgstr "bytes"
 
 #: lms/static/js/views/image_field.js:222
 msgid "KB"
-msgstr "Ko"
+msgstr "KB"
 
 #: lms/static/js/views/image_field.js:222
 msgid "MB"
-msgstr "Mo"
+msgstr "MB"
 
 #: lms/static/lms/js/preview/preview_factory.js:13
 msgid "Course is not yet visible to students."
@@ -5362,7 +5294,7 @@ msgid "Bookmark this page"
 msgstr "Marquer cette page"
 
 #: openedx/features/course_bookmarks/static/course_bookmarks/js/views/bookmark_button.js:10
-#: xmodule/js/src/sequence/display.js:521
+#: xmodule/js/src/sequence/display.js:445
 msgid "Bookmarked"
 msgstr "Ajouté aux favoris"
 
@@ -5389,15 +5321,15 @@ msgstr "{start_strong}{total}{end_strong} mots soumis au total."
 
 #: xmodule/assets/word_cloud/src/js/word_cloud_main.js:285
 msgid "text_word_{uniqueId} title_word_{uniqueId}"
-msgstr "texte_mot_{uniqueId} titre_mot_{uniqueId}"
+msgstr "text_word_{uniqueId} title_word_{uniqueId}"
 
 #: xmodule/assets/word_cloud/src/js/word_cloud_main.js:295
 msgid "title_word_{uniqueId}"
-msgstr "titre_mot_{uniqueId}"
+msgstr "title_word_{uniqueId}"
 
 #: xmodule/assets/word_cloud/src/js/word_cloud_main.js:317
 msgid "text_word_{uniqueId}"
-msgstr "texte_mot_{uniqueId}"
+msgstr "text_word_{uniqueId}"
 
 #: xmodule/js/src/annotatable/display.js:283
 msgid "Show Annotations"
@@ -5481,17 +5413,17 @@ msgstr[0] "{earned}/{possible} point (pas noté)"
 msgstr[1] "{earned}/{possible} points (pas noté)"
 msgstr[2] "{earned}/{possible} points (pas noté)"
 
-#: xmodule/js/src/capa/display.js:356
+#: xmodule/js/src/capa/display.js:349
 msgid "The grading process is still running. Refresh the page to see updates."
 msgstr ""
 "Le processus de note est toujours en cours. Rafraississez la page pour voir "
 "les mises-à-jour."
 
-#: xmodule/js/src/capa/display.js:465
+#: xmodule/js/src/capa/display.js:458
 msgid "Could not grade your answer. The submission was aborted."
 msgstr "Impossible de noter votre réponse. La soumission a été interrompue."
 
-#: xmodule/js/src/capa/display.js:529
+#: xmodule/js/src/capa/display.js:522
 msgid ""
 "Submission aborted! Sorry, your browser does not support file uploads. If "
 "you can, please use Chrome or Safari which have been verified to support "
@@ -5502,35 +5434,35 @@ msgstr ""
 "qui ont été vérifiés comme pouvant prendre en charge les téléversements de "
 "fichiers."
 
-#: xmodule/js/src/capa/display.js:555
+#: xmodule/js/src/capa/display.js:548
 msgid "You submitted {filename}; only {allowedFiles} are allowed."
 msgstr ""
 "Vous avez soumis {filename}; seuls les fichiers {allowedFiles} sont permis."
 
-#: xmodule/js/src/capa/display.js:568
+#: xmodule/js/src/capa/display.js:561
 msgid "Your file {filename} is too large (max size: {maxSize}MB)."
 msgstr ""
 "Votre fichier {filename} est trop lourd (taille maximale : {maxSize} Mo)."
 
-#: xmodule/js/src/capa/display.js:584
+#: xmodule/js/src/capa/display.js:577
 msgid "You did not submit the required files: {requiredFiles}."
 msgstr "Vous n'avez pas soumis les fichiers requis : {requiredFiles}."
 
-#: xmodule/js/src/capa/display.js:594
+#: xmodule/js/src/capa/display.js:587
 msgid "You did not select any files to submit."
 msgstr "Vous n'avez sélectionné aucun fichier à soumettre."
 
 #. Translators: This is only translated to allow for reordering of label and
 #. associated status.;
-#: xmodule/js/src/capa/display.js:688
+#: xmodule/js/src/capa/display.js:681
 msgid "{label}: {status}"
 msgstr "{label} : {status}"
 
-#: xmodule/js/src/capa/display.js:719
+#: xmodule/js/src/capa/display.js:712
 msgid "This problem has been reset."
 msgstr "Ce problème a été réinitialisé."
 
-#: xmodule/js/src/capa/display.js:1025
+#: xmodule/js/src/capa/display.js:1018
 msgid "unsubmitted"
 msgstr "non soumis"
 
@@ -6682,7 +6614,7 @@ msgstr "Capitale Romain"
 #. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:1195
 msgid "Url"
-msgstr "URL"
+msgstr "Url"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -6821,7 +6753,7 @@ msgstr ""
 msgid "Explanation"
 msgstr "Explication"
 
-#: xmodule/js/src/sequence/display.js:406
+#: xmodule/js/src/sequence/display.js:330
 msgid ""
 "Sequence error! Cannot navigate to %(tab_name)s in the current "
 "SequenceModule. Please contact the course staff."
@@ -6957,6 +6889,7 @@ msgid "%(value)s minute"
 msgid_plural "%(value)s minutes"
 msgstr[0] "%(value)s minute"
 msgstr[1] "%(value)s minutes"
+msgstr[2] "%(value)s minutes"
 
 #: xmodule/js/src/video/06_video_progress_slider.js:330
 msgid "%(value)s second"
@@ -7134,10 +7067,6 @@ msgstr "détails sur l'échec"
 #: cms/templates/js/add-xblock-component-button.underscore:7
 msgid "Add Component:"
 msgstr "Ajouter un composant :"
-
-#: cms/templates/js/add-xblock-component-button.underscore:10
-msgid "Beta"
-msgstr "Bêta"
 
 #: cms/templates/js/add-xblock-component-menu-problem.underscore:3
 #: cms/templates/js/add-xblock-component-menu.underscore:4
@@ -7538,10 +7467,6 @@ msgstr ""
 #: cms/templates/js/course-instructor-details.underscore:36
 msgid "Upload Photo"
 msgstr "Téléverser une photo"
-
-#: cms/templates/js/course-manage-tags.underscore:3
-msgid "Course tags"
-msgstr "Étiquettes du cours"
 
 #: cms/templates/js/course-manage-tags.underscore:7
 #: cms/templates/js/tag-list.underscore:28
@@ -8062,23 +7987,6 @@ msgstr "Ajouter un chapitre"
 #: cms/templates/js/edit-title-button.underscore:1
 msgid "Edit Title"
 msgstr "Modifier le titre"
-
-#: cms/templates/js/edit-upstream-alert.underscore:4
-msgid "You are editing content from a Library."
-msgstr "Vous modifiez le contenu d'une bibliothèque."
-
-#: cms/templates/js/edit-upstream-alert.underscore:6
-msgid ""
-"Edits made here will only be reflected in this course. These edits may be "
-"overridden later if updates are accepted."
-msgstr ""
-"Les modifications apportées ici ne s'appliqueront qu'à ce cours. Ces "
-"modifications pourraient être remplacées ultérieurement si des mises à jour "
-"sont acceptées."
-
-#: cms/templates/js/edit-upstream-alert.underscore:14
-msgid "View in Library"
-msgstr "Voir dans la bibliothèque"
 
 #: cms/templates/js/embed-link-share-link-editor.underscore:5
 msgid ""
@@ -10563,11 +10471,11 @@ msgstr "Inscrivez-vous maintenant"
 msgid "Coming Soon"
 msgstr "Bientôt"
 
-#: lms/templates/learner_dashboard/course_enroll.underscore:48
+#: lms/templates/learner_dashboard/course_enroll.underscore:47
 msgid "Enrollment Opens on"
 msgstr "Les inscriptions ouvrent le"
 
-#: lms/templates/learner_dashboard/course_enroll.underscore:56
+#: lms/templates/learner_dashboard/course_enroll.underscore:54
 msgid "Not Currently Available"
 msgstr "Non disponible actuellement"
 

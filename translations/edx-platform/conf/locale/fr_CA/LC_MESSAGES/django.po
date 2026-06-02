@@ -1,19 +1,48 @@
-#
+# #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+# edX translation file.
+# Copyright (C) 2025 EdX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2025.
+# 
+# #-#-#-#-#  wiki.po (0.1a)  #-#-#-#-#
+# edX translation file
+# Copyright (C) 2025 edX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2025.
+# 
+# #-#-#-#-#  edx_proctoring_proctortrack.po (0.1a)  #-#-#-#-#
+# edX translation file
+# Copyright (C) 2025 edX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2025.
+# 
+# #-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# 
+# Translators:
+# Gabriel D'Amours <gabriel@opencraft.com>, 2024
+# Pierre Mailhot <pierre.mailhot@gmail.com>, 2024
+# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
+# Brian Smith, 2025
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2025-09-19 00:44+0000\n"
-"PO-Revision-Date: 2026-06-01 23:39+0000\n"
-"Last-Translator: AI Translation Service, 2026\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fr_CA\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-09-18 00:40+0000\n"
+"PO-Revision-Date: 2023-11-20 11:35+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
+"Language-Team: French (Canada) (https://app.transifex.com/open-edx/teams/6205/fr_CA/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.17.0\n"
+"Language: fr_CA\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: cms/djangoapps/api/v1/serializers/course_runs.py:49
 msgid "Course team user does not exist"
@@ -262,11 +291,6 @@ msgstr "Exercice"
 msgid "Library Content"
 msgstr "Contenu de la bibliothèque"
 
-#: cms/djangoapps/contentstore/helpers.py:224
-#: cms/djangoapps/contentstore/views/component.py:288
-msgid "Problem Bank"
-msgstr "Banque de problèmes"
-
 #: cms/djangoapps/contentstore/management/commands/git_export.py:33
 msgid ""
 "Take the specified course and attempt to export it to a git repository\n"
@@ -275,74 +299,9 @@ msgstr ""
 "Prenez le cours choisi et tentez de l'exporter vers un dépôt git.\n"
 "Le répertoire de cours doit déjà être un dépôt git. Utilisation : git_export<course_loc> <git_url>"
 
-#: cms/djangoapps/contentstore/management/commands/recreate_upstream_links.py:46
-msgid "COURSE_KEY"
-msgstr "COURSE_KEY"
-
-#: cms/djangoapps/contentstore/management/commands/recreate_upstream_links.py:48
-msgid ""
-"Recreate links for xblocks under given course keys. For eg. "
-"course-v1:edX+DemoX.1+2014"
-msgstr ""
-"Recréer les liens pour les xblocks sous les clés de cours données. Par ex. "
-"course-v1:edX+DemoX.1+2014"
-
-#: cms/djangoapps/contentstore/management/commands/recreate_upstream_links.py:55
-msgid ""
-"Recreate links for xblocks under all courses. NOTE: this can take long time "
-"depending on number of course and xblocks"
-msgstr ""
-"Recréer les liens pour les xblocks dans tous les cours. REMARQUE : cela peut"
-" prendre beaucoup de temps selon le nombre de cours et de xblocks"
-
-#: cms/djangoapps/contentstore/management/commands/recreate_upstream_links.py:62
-msgid "Recreate links even for completely processed courses."
-msgstr "Recréer les liens même pour les cours entièrement traités."
-
-#: cms/djangoapps/contentstore/management/commands/recreate_upstream_links.py:67
-msgid "Delete all and create links for given course(s)."
-msgstr "Supprimer tout et créer des liens pour le(s) cours donnés."
-
-#: cms/djangoapps/contentstore/models.py:96
-msgid "Upstream context key i.e., learning_package/library key"
-msgstr "Clé de contexte amont, c.-à-d. la clé du learning_package/library"
-
-#: cms/djangoapps/contentstore/models.py:151
-msgid ""
-"Upstream block usage key, this value cannot be null and useful to track "
-"upstream library blocks that do not exist yet"
-msgstr ""
-"Clé d'utilisation du bloc amont, cette valeur ne peut être nulle et sert à "
-"suivre les blocs de bibliothèque en amont qui n'existent pas encore"
-
-#: cms/djangoapps/contentstore/models.py:157
-msgid "Component Link"
-msgstr "Lien du composant"
-
-#: cms/djangoapps/contentstore/models.py:158
-msgid "Component Links"
-msgstr "Liens des composants"
-
 #: cms/djangoapps/contentstore/models.py:184
 msgid "The component must be published to access `published_at`"
 msgstr "Le composant doit être publié pour accéder à `published_at`"
-
-#: cms/djangoapps/contentstore/models.py:321
-msgid ""
-"Upstream block key (e.g. lct:...), this value cannot be null and is useful "
-"to track upstream library blocks that do not exist yet or were deleted."
-msgstr ""
-"Clé du bloc amont (ex. lct:...), cette valeur ne peut être nulle et est "
-"utile pour suivre les blocs de bibliothèque en amont qui n'existent pas "
-"encore ou ont été supprimés."
-
-#: cms/djangoapps/contentstore/models.py:328
-msgid "Container Link"
-msgstr "Lien du conteneur"
-
-#: cms/djangoapps/contentstore/models.py:329
-msgid "Container Links"
-msgstr "Liens du conteneur"
 
 #: cms/djangoapps/contentstore/models.py:355
 msgid "The container must be published to access `published_at`"
@@ -358,10 +317,6 @@ msgstr "Le conteneur doit être publié pour accéder à `published_at`"
 msgid "Pending"
 msgstr "En attente"
 
-#: cms/djangoapps/contentstore/models.py:536
-msgid "Processing"
-msgstr "Traitement"
-
 #. Translators: This is the status for a video that the servers have failed to
 #. process
 #: cms/djangoapps/contentstore/models.py:537
@@ -373,19 +328,6 @@ msgstr "Échec"
 #: lms/templates/vert_module.html:28
 msgid "Completed"
 msgstr "Terminé"
-
-#: cms/djangoapps/contentstore/models.py:550
-msgid "Linking status for course context key"
-msgstr "Statut de liaison pour la clé de contexte du cours"
-
-#: cms/djangoapps/contentstore/models.py:555
-msgid "Status of links in given learning context/course."
-msgstr "Statut des liens dans le contexte d'apprentissage/du cours donné."
-
-#: cms/djangoapps/contentstore/models.py:561
-#: cms/djangoapps/contentstore/models.py:562
-msgid "Learning Context Links status"
-msgstr "Statut des liens dans le contexte d'apprentissage"
 
 #: cms/djangoapps/contentstore/rest_api/v0/serializers/advanced_settings.py:47
 msgid "Marks a field as deprecated."
@@ -617,7 +559,7 @@ msgstr "Un fichier image est requis."
 #: cms/djangoapps/contentstore/video_storage_handlers.py:511
 #, python-brace-format
 msgid "{profile_name} URL"
-msgstr "URL de {profile_name}"
+msgstr "{profile_name} URL"
 
 #: cms/djangoapps/contentstore/video_storage_handlers.py:516
 #: lms/djangoapps/instructor/views/api.py:1505
@@ -754,10 +696,6 @@ msgstr "Vidéo"
 #: cms/djangoapps/contentstore/views/component.py:285
 msgid "Open Response"
 msgstr "Réponse ouverte"
-
-#: cms/djangoapps/contentstore/views/component.py:286
-msgid "Legacy Library"
-msgstr "Bibliothèque héritée"
 
 #: cms/djangoapps/contentstore/views/component.py:289
 msgid "Drag and Drop"
@@ -990,11 +928,6 @@ msgstr "L'identifiant YouTube est requis."
 msgid "There is a problem with the YouTube transcript file."
 msgstr "Il y a un problème avec le fichier de transcription YouTube."
 
-#: cms/djangoapps/contentstore/views/transcripts_ajax.py:774
-msgid "Transcripts are not yet supported for this type of block"
-msgstr ""
-"Les transcriptions ne sont pas encore prises en charge pour ce type de bloc"
-
 #: cms/djangoapps/contentstore/views/user.py:98
 msgid "Insufficient permissions"
 msgstr "Permissions insuffisantes"
@@ -1161,30 +1094,6 @@ msgstr ""
 "Accordez à l'usager la permission de créer des cours pour TOUTES les "
 "organisations"
 
-#: cms/djangoapps/maintenance/views.py:32
-msgid "Edit Announcements"
-msgstr "Modifier les annonces"
-
-#: cms/djangoapps/maintenance/views.py:35
-msgid ""
-"This view shows the announcement editor to create or alter announcements "
-"that are shown on the rightside of the dashboard."
-msgstr ""
-"Cette vue affiche l'éditeur d'annonces pour créer ou modifier les annonces "
-"affichées sur le côté droit du tableau de bord."
-
-#: cms/djangoapps/maintenance/views.py:43
-msgid "Please provide course id."
-msgstr "Veuillez fournir l'identifiant du cours."
-
-#: cms/djangoapps/maintenance/views.py:44
-msgid "Invalid course key."
-msgstr "Clé de cours invalide."
-
-#: cms/djangoapps/maintenance/views.py:45
-msgid "No matching course found."
-msgstr "Aucun cours correspondant trouvé."
-
 #: cms/djangoapps/models/settings/course_metadata.py:229
 #, python-brace-format
 msgid "Incorrect format for field '{name}'. {detailed_message}"
@@ -1194,60 +1103,9 @@ msgstr "Format incorrect pour le champ '{name}'. {detailed_message}"
 msgid "Dictionary with the available tags"
 msgstr "Dictionnaire avec les tags disponibles"
 
-#: cms/lib/xblock/upstream_sync.py:72
-msgid "Content is not linked to a Content Library."
-msgstr "Le contenu n'est pas lié à une bibliothèque de contenu."
-
-#: cms/lib/xblock/upstream_sync.py:244
-msgid "Downstream is not an XBlock or is missing required UpstreamSyncMixin"
-msgstr ""
-"Le flux descendant n'est pas un XBlock ou il manque l'UpstreamSyncMixin "
-"requis"
-
-#: cms/lib/xblock/upstream_sync.py:248
-msgid "Cannot update content because it does not belong to a course."
-msgstr ""
-"Impossible de mettre à jour le contenu car il n'appartient à aucun cours."
-
-#: cms/lib/xblock/upstream_sync.py:258
-msgid "Reference to linked library item is malformed"
-msgstr "La référence à l'élément de bibliothèque lié est mal formée"
-
-#: cms/lib/xblock/upstream_sync.py:264
-msgid ""
-"Updating content with children is not yet supported unless the upstream is a"
-" container."
-msgstr ""
-"La mise à jour du contenu avec des enfants n'est pas encore prise en charge,"
-" sauf si l'élément en amont est un conteneur."
-
-#: cms/lib/xblock/upstream_sync.py:270
-msgid "Linked upstream library block was not found in the system"
-msgstr ""
-"Le bloc de bibliothèque en amont lié n'a pas été trouvé dans le système."
-
-#: cms/lib/xblock/upstream_sync.py:277
-msgid "Linked upstream library container was not found in the system"
-msgstr ""
-"Le conteneur de bibliothèque en amont lié n'a pas été trouvé dans le "
-"système."
-
 #: cms/lib/xblock/upstream_sync.py:281
 msgid "Linked `upstream_key` is not a valid key"
 msgstr "La clé `upstream_key` liée n'est pas valide"
-
-#: cms/lib/xblock/upstream_sync.py:290
-#, python-brace-format
-msgid ""
-"Content type mismatch: {downstream_id} ({downstream_type}) cannot be linked "
-"to {upstream_id}."
-msgstr ""
-"Incompatibilité de type de contenu : {downstream_id} ({downstream_type}) ne "
-"peut pas être lié à {upstream_id}."
-
-#: cms/lib/xblock/upstream_sync_block.py:108
-msgid "Linked library item could not be loaded: {}"
-msgstr "L'élément de bibliothèque lié n'a pas pu être chargé : {}"
 
 #: cms/templates/admin/base_site.html:4 lms/templates/admin/base_site.html:3
 msgid "Django site admin"
@@ -1436,7 +1294,7 @@ msgstr ""
 #: common/djangoapps/course_modes/models.py:925
 #, python-brace-format
 msgid "{currency_symbol}{price}"
-msgstr "{price} {currency_symbol}"
+msgstr "{currency_symbol}{price}"
 
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: This refers to the cost of the course. In this case, the
@@ -1468,20 +1326,6 @@ msgstr "Montant sélectionné invalide"
 #: common/djangoapps/course_modes/views.py:323
 msgid "No selected price or selected price is too low."
 msgstr "Aucun prix sélectionné ou prix sélectionné trop bas."
-
-#: common/djangoapps/student/admin.py:319
-#, python-format
-msgid "Successfully reverted %(count)d selected history entry."
-msgid_plural "Successfully reverted %(count)d selected history entries."
-msgstr[0] "Rétabli avec succès %(count)d entrée d'historique sélectionnée."
-msgstr[1] "Rétabli avec succès %(count)d entrées d'historique sélectionnées."
-
-#: common/djangoapps/student/admin.py:349
-#, python-format
-msgid "Successfully deleted %(count)d selected history entry."
-msgid_plural "Successfully deleted %(count)d selected history entries."
-msgstr[0] "Supprimé avec succès %(count)d entrée d'historique sélectionnée."
-msgstr[1] "Supprimé avec succès %(count)d entrées d'historique sélectionnées."
 
 #: common/djangoapps/student/admin.py:520
 msgid "User profile"
@@ -2258,7 +2102,7 @@ msgstr "dim"
 #: common/djangoapps/util/date_utils.py:336
 msgctxt "abbreviated month name"
 msgid "Jan"
-msgstr "janv."
+msgstr "Jan"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Feb 10, 2014". It is used for the %b
@@ -2274,7 +2118,7 @@ msgstr "Fév"
 #: common/djangoapps/util/date_utils.py:344
 msgctxt "abbreviated month name"
 msgid "Mar"
-msgstr "mars"
+msgstr "Mar"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Apr 10, 2014". It is used for the %b
@@ -2298,7 +2142,7 @@ msgstr "Mai"
 #: common/djangoapps/util/date_utils.py:356
 msgctxt "abbreviated month name"
 msgid "Jun"
-msgstr "juin"
+msgstr "Jun"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Jul 10, 2014". It is used for the %b
@@ -2322,7 +2166,7 @@ msgstr "Août"
 #: common/djangoapps/util/date_utils.py:368
 msgctxt "abbreviated month name"
 msgid "Sep"
-msgstr "sept."
+msgstr "Sep"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Oct 10, 2014". It is used for the %b
@@ -2330,7 +2174,7 @@ msgstr "sept."
 #: common/djangoapps/util/date_utils.py:372
 msgctxt "abbreviated month name"
 msgid "Oct"
-msgstr "oct."
+msgstr "Oct"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Nov 10, 2014". It is used for the %b
@@ -2338,7 +2182,7 @@ msgstr "oct."
 #: common/djangoapps/util/date_utils.py:376
 msgctxt "abbreviated month name"
 msgid "Nov"
-msgstr "nov."
+msgstr "Nov"
 
 #. Translators: this is an abbreviated month name that will be used when
 #. displaying dates, as in "Dec 10, 2014". It is used for the %b
@@ -3960,67 +3804,6 @@ msgstr "Examen chronométré"
 msgid "Exam"
 msgstr "Examen"
 
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:33
-msgid "There’s still time to reach your goal"
-msgstr "Il reste encore du temps pour atteindre votre objectif"
-
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:41
-#, python-format
-msgid ""
-"\n"
-"            You’re almost there, %(user_name)s!\n"
-"        "
-msgstr ""
-"\n"
-"            Vous y êtes presque, %(user_name)s!\n"
-"        "
-
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:49
-#, python-format, python-brace-format
-msgid ""
-"\n"
-"                    You set a goal of learning {start_bold}%(days_per_week)s time a week in %(course_name)s{end_bold}. Now it’s up to you to make those goals a reality.\n"
-"                    "
-msgid_plural ""
-"\n"
-"                    You set a goal of learning {start_bold}%(days_per_week)s times a week in %(course_name)s{end_bold}. Now it’s up to you to make those goals a reality.\n"
-"                "
-msgstr[0] ""
-"Vous vous êtes fixé comme objectif d'apprendre {start_bold}%(days_per_week)s"
-" fois par semaine dans %(course_name)s{end_bold}. Maintenant, c'est à vous "
-"de concrétiser cet objectif."
-msgstr[1] ""
-"Vous vous êtes fixé comme objectif d'apprendre {start_bold}%(days_per_week)s"
-" fois par semaine dans %(course_name)s{end_bold}. Maintenant, c'est à vous "
-"de concrétiser ces objectifs."
-
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:79
-msgid ""
-"\n"
-"                        Jump back in\n"
-"                    "
-msgstr ""
-"\n"
-"                        Revenez vite\n"
-"                    "
-
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:98
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:117
-msgid "Remember: the best goal is one that you can stick to. "
-msgstr ""
-"Rappelez-vous : le meilleur objectif est celui auquel vous pouvez vous "
-"tenir."
-
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:99
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:118
-msgid "You can always"
-msgstr "Vous pouvez toujours"
-
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:101
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:120
-msgid "if you need to."
-msgstr "si vous en avez besoin."
-
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:144
 msgid ""
 "\n"
@@ -4030,16 +3813,6 @@ msgstr ""
 "\n"
 "                        Se désabonner des courriels de rappel des objectifs de ce cours\n"
 "                    "
-
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:158
-msgid ""
-"\n"
-"                                Unsubscribe from goal reminder emails for this course\n"
-"                                "
-msgstr ""
-"\n"
-"                                Se désabonner des courriels de rappel d’objectif pour ce cours\n"
-"                                "
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.txt:2
 msgid "You're almost there!"
@@ -4126,12 +3899,6 @@ msgstr "Téléchargez l'application iOS sur l'Apple Store"
 msgid "Download the Android app on the Google Play Store"
 msgstr "Téléchargez l'application Android sur le Google Play Store"
 
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:174
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:174
-msgid "edX is the trusted platform for education and learning"
-msgstr ""
-"edX est la plateforme de confiance pour l’éducation et l’apprentissage"
-
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:180
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:240
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:180
@@ -4185,8 +3952,9 @@ msgstr "Désactivé"
 #, python-brace-format
 msgid "({number} Question)"
 msgid_plural "({number} Questions)"
-msgstr[0] "({number} question)"
-msgstr[1] "({number} questions)"
+msgstr[0] "({number} Question)"
+msgstr[1] "({number} Questions)"
+msgstr[2] "({number} Questions)"
 
 #: lms/djangoapps/course_home_api/outline/views.py:293
 #, python-brace-format
@@ -4610,17 +4378,6 @@ msgid "Provide additional course content and resources with custom pages"
 msgstr ""
 "Fournir du contenu et des ressources de cours avec des pages personnalisées"
 
-#: lms/djangoapps/courseware/plugins.py:271
-msgid "Flexible Peer Grading for ORAs"
-msgstr "Évaluation par les pairs flexible pour les ORA"
-
-#: lms/djangoapps/courseware/plugins.py:272
-msgid ""
-"Course level settings for Flexible Peer Grading Open Response Assessments."
-msgstr ""
-"Paramètres du cours pour l’évaluation par les pairs flexible des évaluations"
-" à réponse ouverte."
-
 #: lms/djangoapps/courseware/tabs.py:36
 #: lms/djangoapps/courseware/views/views.py:2239
 #: openedx/features/course_experience/__init__.py:91 xmodule/tabs.py:490
@@ -4634,7 +4391,7 @@ msgstr "Cours"
 #: lms/djangoapps/courseware/tabs.py:63
 #: lms/templates/courseware/syllabus.html:21
 msgid "Syllabus"
-msgstr "Plan de cours"
+msgstr "Syllabus"
 
 #: lms/djangoapps/courseware/tabs.py:307
 msgid "Dates"
@@ -4707,10 +4464,6 @@ msgid ""
 msgstr ""
 "Après la fin officielle de ce cours, vous recevrez une notification par "
 "courriel avec votre attestation."
-
-#: lms/djangoapps/courseware/views/views.py:244
-msgid "Your certificate will be available after the indicated date"
-msgstr "Votre certificat sera disponible après la date indiquée"
 
 #: lms/djangoapps/courseware/views/views.py:255
 msgid "Your certificate is available"
@@ -4808,22 +4561,6 @@ msgstr "L'attestation a déjà été créée."
 msgid "Certificate is being created."
 msgstr "L'attestation est en cours de création."
 
-#: lms/djangoapps/courseware/views/views.py:2051
-msgid ""
-"We plan to use this information to evaluate your application for financial assistance and to further develop our financial assistance program. \n"
-"Please note that while assistance is available in most courses that offer verified certificates, a few courses and programs are not eligible. You must complete a separate application for each course you take. You may be approved for financial assistance five (5) times each year (based on 12-month period from you first approval). \n"
-"To apply for financial assistance: \n"
-"1. Enroll in the audit track for an eligible course that offers Verified Certificates. \n"
-"2. Complete this application. \n"
-"3. Check your email, please allow 4 weeks for your application to be processed."
-msgstr ""
-"Nous prévoyons utiliser ces informations pour évaluer votre demande d’aide financière et pour développer davantage notre programme d’aide financière. \n"
-"Veuillez noter que, bien que l’aide soit disponible dans la plupart des cours offrant des certificats vérifiés, quelques cours et programmes ne sont pas admissibles. Vous devez remplir une demande distincte pour chaque cours suivi. Vous pouvez être approuvé pour l’aide financière cinq (5) fois par an (sur la base d’une période de 12 mois à compter de votre première approbation). \n"
-"Pour faire une demande d’aide financière : \n"
-"1. Inscrivez-vous en audit dans un cours éligible offrant des certificats vérifiés. \n"
-"2. Remplissez cette demande. \n"
-"3. Vérifiez votre courriel, veuillez prévoir 4 semaines pour le traitement de votre demande."
-
 #: lms/djangoapps/courseware/views/views.py:2246
 msgid ""
 "Select the course for which you want to earn a verified certificate. If the "
@@ -4905,16 +4642,6 @@ msgstr "votre"
 msgid "their"
 msgstr "leur"
 
-#: lms/djangoapps/discussion/templates/discussion/edx_ace/commentnotification/push/body.txt:2
-#, python-format
-msgid "%(comment_username)s commented to %(thread_title)s:"
-msgstr "%(comment_username)s a commenté sur %(thread_title)s:"
-
-#: lms/djangoapps/discussion/templates/discussion/edx_ace/commentnotification/push/title.txt:2
-#, python-format
-msgid "Comment to %(thread_title)s"
-msgstr "Commentaire sur %(thread_title)s"
-
 #: lms/djangoapps/discussion/templates/discussion/edx_ace/reportedcontentnotification/email/body.html:12
 #, python-format
 msgid ""
@@ -4962,15 +4689,6 @@ msgstr "%(comment_username)s a répondu à <b>%(thread_title)s</b>:"
 #, python-format
 msgid "Response to %(thread_title)s"
 msgstr "Réponse à %(thread_title)s"
-
-#: lms/djangoapps/discussion/templates/discussion/edx_ace/responsenotification/push/body.txt:2
-#, python-format
-msgid ""
-"%(comment_username)s replied to %(thread_title)s: "
-"%(comment_body|truncatechars:200)s"
-msgstr ""
-"%(comment_username)s a répondu à %(thread_title)s: "
-"%(comment_body|truncatechars:200)s"
 
 #: lms/djangoapps/discussion/views.py:80
 msgid "Access to this discussion is restricted to team members and staff."
@@ -5282,10 +5000,6 @@ msgstr "Langue"
 msgid "Location"
 msgstr "Adresse"
 
-#: lms/djangoapps/instructor/views/api.py:1509
-msgid "Birth Year"
-msgstr "Année de naissance"
-
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: This label appears above a dropdown menu used to select
 #. the user's gender.
@@ -5361,11 +5075,6 @@ msgstr "Pays"
 msgid "enrollment"
 msgstr "inscription"
 
-#: lms/djangoapps/instructor/views/api.py:1622
-#: lms/djangoapps/instructor_task/api_helper.py:117
-msgid "inactive enrollment"
-msgstr "Inscription inactive"
-
 #: lms/djangoapps/instructor/views/api.py:1652
 msgid "The file must contain a 'cohort' column containing cohort names."
 msgstr ""
@@ -5419,12 +5128,6 @@ msgstr "Le module n'existe pas."
 #: lms/djangoapps/instructor/views/api.py:2007
 msgid "An error occurred while deleting the score."
 msgstr "Une erreur est survenue lors de la suppression de la note."
-
-#: lms/djangoapps/instructor/views/api.py:2017
-msgid "An error occurred while attempting to reset for all students."
-msgstr ""
-"Une erreur s'est produite lors de la tentative de réinitialisation pour tous"
-" les étudiants."
 
 #: lms/djangoapps/instructor/views/api.py:2077
 #: lms/djangoapps/instructor/views/api.py:2316
@@ -5560,21 +5263,6 @@ msgstr "note"
 #: lms/djangoapps/instructor_task/api_helper.py:108
 msgid "problem grade"
 msgstr "note du problème"
-
-#: lms/djangoapps/instructor/views/api.py:3204
-msgid "All fields must be filled out"
-msgstr "Tous les champs doivent être remplis"
-
-#: lms/djangoapps/instructor/views/api.py:3210
-#, python-brace-format
-msgid "Could not find student matching identifier: {student}"
-msgstr ""
-"Impossible de trouver l'étudiant correspondant à l'identifiant: {student}"
-
-#: lms/djangoapps/instructor/views/api.py:3219
-msgid "The extension due date and time format is incorrect"
-msgstr ""
-"Le format de la date et de l'heure d'échéance de l'extension est incorrect"
 
 #: lms/djangoapps/instructor/views/api.py:3230
 #, python-brace-format
@@ -5878,34 +5566,6 @@ msgstr "Complété"
 msgid "Incomplete"
 msgstr "Incomplet"
 
-#: lms/djangoapps/instructor/views/serializer.py:31
-#: lms/djangoapps/instructor/views/serializer.py:89
-msgid "Role name"
-msgstr "Nom du rôle"
-
-#: lms/djangoapps/instructor/views/serializer.py:38
-#: lms/djangoapps/instructor/views/serializer.py:99
-msgid "Invalid role name."
-msgstr "Nom du rôle invalide."
-
-#: lms/djangoapps/instructor/views/serializer.py:344
-msgid "The URL name of the problem to reset."
-msgstr "Le nom d'URL du problème à réinitialiser."
-
-#: lms/djangoapps/instructor/views/serializer.py:346
-#: lms/djangoapps/instructor/views/serializer.py:567
-msgid "Problem URL name cannot be blank."
-msgstr "Le nom d'URL du problème ne peut pas être vide."
-
-#: lms/djangoapps/instructor/views/serializer.py:351
-msgid "Whether to reset the problem for all students."
-msgstr "Indique s'il faut réinitialiser le problème pour tous les étudiants."
-
-#: lms/djangoapps/instructor/views/serializer.py:361
-#: lms/djangoapps/instructor/views/serializer.py:508
-msgid "unique student identifier."
-msgstr "identifiant unique de l'étudiant."
-
 #: lms/djangoapps/instructor/views/serializer.py:496
 msgid "Whether to reset for all students."
 msgstr "Faut-il réinitialiser pour tous les apprenants ?"
@@ -6111,7 +5771,7 @@ msgstr "cohorté"
 #. {attempted} so far"
 #: lms/djangoapps/instructor_task/tasks.py:326
 msgid "generate_anonymized_id"
-msgstr "générer_un_identifiant_anonymisé"
+msgstr "generate_anonymized_id"
 
 #: lms/djangoapps/instructor_task/tasks.py:349
 msgid "compressed"
@@ -7010,31 +6670,6 @@ msgstr ""
 msgid "You have been invited to a beta test for %(course_name)s"
 msgstr "Vous avez été invité à un bêta-test de %(course_name)s"
 
-#: lms/templates/instructor/edx_ace/addbetatester/push/body.txt:3
-#: lms/templates/instructor/edx_ace/enrolledunenroll/push/body.txt:3
-#: lms/templates/instructor/edx_ace/enrollenrolled/push/body.txt:3
-#: lms/templates/instructor/edx_ace/removebetatester/push/body.txt:3
-#, python-format
-msgid "Dear %(full_name)s,"
-msgstr "Cher %(full_name)s,"
-
-#: lms/templates/instructor/edx_ace/addbetatester/push/body.txt:4
-#, python-format
-msgid ""
-"You have been invited to be a beta tester for %(course_name)s at "
-"%(site_name)s."
-msgstr ""
-"Vous avez été invité à devenir testeur bêta pour %(course_name)s sur "
-"%(site_name)s."
-
-#: lms/templates/instructor/edx_ace/addbetatester/push/title.txt:3
-#, python-format
-msgid ""
-"You have been invited to a beta test for %(course_name)s at %(site_name)s."
-msgstr ""
-"Vous avez été invité à participer à un test bêta pour %(course_name)s sur "
-"%(site_name)s."
-
 #: lms/templates/instructor/edx_ace/allowedenroll/email/body.html:12
 #, python-format
 msgid "You have been invited to %(course_name)s"
@@ -7140,20 +6775,6 @@ msgstr ""
 msgid "You have been invited to register for %(course_name)s"
 msgstr "Vous avez été invité à vous inscrire à  %(course_name)s"
 
-#: lms/templates/instructor/edx_ace/allowedenroll/push/body.txt:3
-#, python-format
-msgid ""
-"You have been enrolled in %(course_name)s at %(site_name)s. This course will"
-" now appear on your %(site_name)s dashboard."
-msgstr ""
-"Vous avez été inscrit à %(course_name)s sur %(site_name)s. Ce cours "
-"apparaîtra désormais sur votre tableau de bord de %(site_name)s."
-
-#: lms/templates/instructor/edx_ace/allowedenroll/push/title.txt:3
-#, python-format
-msgid "You have been invited to register for %(course_name)s."
-msgstr "Vous avez été invité à vous inscrire à %(course_name)s."
-
 #: lms/templates/instructor/edx_ace/allowedunenroll/email/body.html:12
 #: lms/templates/instructor/edx_ace/allowedunenroll/email/subject.txt:3
 #: lms/templates/instructor/edx_ace/allowedunenroll/push/title.txt:3
@@ -7176,15 +6797,6 @@ msgstr ""
 #: lms/templates/instructor/edx_ace/allowedunenroll/email/body.txt:1
 msgid "Dear Student,"
 msgstr "Cher étudiant,"
-
-#: lms/templates/instructor/edx_ace/allowedunenroll/push/body.txt:3
-#, python-format
-msgid ""
-"You have been unenrolled from the course %(course_name)s. Please disregard "
-"the invitation previously sent."
-msgstr ""
-"Vous avez été désinscrit du cours %(course_name)s. Veuillez ignorer "
-"l'invitation précédemment envoyée."
 
 #: lms/templates/instructor/edx_ace/enrolledunenroll/email/body.html:12
 #, python-format
@@ -7225,15 +6837,6 @@ msgid "This email was automatically sent from %(site_name)s to %(full_name)s"
 msgstr ""
 "Ce courriel a été envoyé automatiquement de %(site_name)s à %(full_name)s"
 
-#: lms/templates/instructor/edx_ace/enrolledunenroll/push/body.txt:4
-#, python-format
-msgid ""
-"You have been unenrolled from %(course_name)s at %(site_name)s. This course "
-"will no longer appear on your %(site_name)s dashboard."
-msgstr ""
-"Vous avez été désinscrit de %(course_name)s sur %(site_name)s. Ce cours "
-"n'apparaîtra plus sur votre tableau de bord de %(site_name)s."
-
 #: lms/templates/instructor/edx_ace/enrollenrolled/email/body.html:12
 #, python-format
 msgid ""
@@ -7260,11 +6863,6 @@ msgstr ""
 #: lms/templates/instructor/edx_ace/enrollenrolled/email/body.html:27
 msgid "Access the Course Materials Now"
 msgstr "Accédez au matériel de cours maintenant"
-
-#: lms/templates/instructor/edx_ace/enrollenrolled/push/body.txt:4
-#, python-format
-msgid "You have been invited to join %(course_name)s at %(site_name)s."
-msgstr "Vous avez été invité à rejoindre %(course_name)s sur %(site_name)s."
 
 #: lms/templates/instructor/edx_ace/removebetatester/email/body.html:12
 #, python-format
@@ -7307,25 +6905,6 @@ msgstr ""
 #, python-format
 msgid "You have been removed from a beta test for %(course_name)s"
 msgstr "Vous avez été retiré d'un bêta test pour %(course_name)s"
-
-#: lms/templates/instructor/edx_ace/removebetatester/push/body.txt:4
-#, python-format
-msgid ""
-"You have been removed as a beta tester for %(course_name)s at %(site_name)s."
-" This course will remain on your dashboard, but you will no longer be part "
-"of the beta testing group."
-msgstr ""
-"Vous avez été retiré en tant que testeur bêta pour %(course_name)s sur "
-"%(site_name)s. Ce cours restera sur votre tableau de bord, mais vous ne "
-"ferez plus partie du groupe de test bêta."
-
-#: lms/templates/instructor/edx_ace/removebetatester/push/title.txt:3
-#, python-format
-msgid ""
-"You have been removed as a beta tester for %(course_name)s at %(site_name)s."
-msgstr ""
-"Vous avez été retiré en tant que testeur bêta pour %(course_name)s sur "
-"%(site_name)s."
 
 #: lms/templates/logout.html:5
 msgid "Signed Out"
@@ -8081,7 +7660,7 @@ msgstr "Administration du LMS"
 
 #: openedx/core/djangoapps/ace_common/apps.py:18
 msgid "ACE Common"
-msgstr "ACE commun"
+msgstr "ACE Common"
 
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:97
 #: cms/templates/index.html:335 cms/templates/index.html:337
@@ -8554,13 +8133,6 @@ msgstr ""
 msgid ""
 "The authorized LTI profile that launched the resource (identifies the user)."
 msgstr "Le profil autorisé qui a lancé la ressource (identifie l'usager)."
-
-#: openedx/core/djangoapps/content_libraries/models.py:480
-msgid ""
-"The usage key string of the resource serving the content of this launch."
-msgstr ""
-"La chaîne de clé d’usage de la ressource qui fournit le contenu de ce "
-"lancement."
 
 #: openedx/core/djangoapps/content_libraries/models.py:486
 msgid ""
@@ -9148,22 +8720,6 @@ msgstr "Application de notifications"
 msgid "Notification Type"
 msgstr "Type de notification"
 
-#: openedx/core/djangoapps/notifications/admin.py:71
-msgid ""
-"Search by username, course_id. Specify fields with username: or course_id: prefixes. If no prefix is specified, search will be done on username. \n"
-"Examples: \n"
-" - testuser (default username search) \n"
-" - username:testuser (username keyword search) \n"
-" - course_id:course-v1:edX+DemoX+Demo_Course (course_id keyword search) \n"
-" - username:testuser, course_id:course-v1:edX+DemoX+Demo_Course (combined keyword search) \n"
-msgstr ""
-"Rechercher par nom d’utilisateur, course_id. Spécifiez les champs avec les préfixes username: ou course_id:. Si aucun préfixe n’est spécifié, la recherche se fera par nom d’utilisateur. \n"
-"Exemples: \n"
-" - testuser (recherche de nom d’utilisateur par défaut) \n"
-" - username:testuser (recherche par mot-clé de nom d’utilisateur) \n"
-" - course_id:course-v1:edX+DemoX+Demo_Course (recherche par mot-clé course_id) \n"
-" - username:testuser, course_id:course-v1:edX+DemoX+Demo_Course (recherche combinée par mots-clés) \n"
-
 #: openedx/core/djangoapps/notifications/base_notification.py:19
 #, python-brace-format
 msgid ""
@@ -9202,15 +8758,6 @@ msgstr ""
 "<{p}><{strong}>{username}</{strong}> a publié "
 "<{strong}>{post_title}</{strong}></{p}>"
 
-#: openedx/core/djangoapps/notifications/base_notification.py:66
-#, python-brace-format
-msgid ""
-"<{p}><{strong}>{replier_name}</{strong}> and others started new "
-"discussions</{p}>"
-msgstr ""
-"<{p}><{strong}>{replier_name}</{strong}> et d’autres ont lancé de nouvelles "
-"discussions</{p}>"
-
 #: openedx/core/djangoapps/notifications/base_notification.py:85
 #, python-brace-format
 msgid ""
@@ -9229,17 +8776,6 @@ msgstr ""
 "<{p}><{strong}>{replier_name}</{strong}> a répondu à un message que vous "
 "suivez : <{strong}>{post_title}</{strong}></{p}>"
 
-#: openedx/core/djangoapps/notifications/base_notification.py:114
-#, python-brace-format
-msgid ""
-"<{p}><{strong}>{replier_name}</{strong}> commented on "
-"<{strong}>{author_name}</{strong}> response in a post you’re following "
-"<{strong}>{post_title}</{strong}></{p}>"
-msgstr ""
-"<{p}><{strong}>{replier_name}</{strong}> a commenté sur la réponse de "
-"<{strong}>{author_name}</{strong}> dans un message que vous suivez "
-"<{strong}>{post_title}</{strong}></{p}>"
-
 #: openedx/core/djangoapps/notifications/base_notification.py:135
 #, python-brace-format
 msgid ""
@@ -9248,62 +8784,6 @@ msgid ""
 msgstr ""
 "<p>le {content_type} de <strong>{username}</strong> a été signalé "
 "<strong>{content}</strong></p>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:152
-#, python-brace-format
-msgid ""
-"<{p}><{strong}>{replier_name}'s</{strong}> response has been endorsed in "
-"your post <{strong}>{post_title}</{strong}></{p}>"
-msgstr ""
-"<{p}>La réponse de <{strong}>{replier_name}</{strong}> a été approuvée dans "
-"votre message <{strong}>{post_title}</{strong}></{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:167
-#, python-brace-format
-msgid ""
-"<{p}>Your response has been endorsed on the post "
-"<{strong}>{post_title}</{strong}></{p}>"
-msgstr ""
-"<{p}>Votre réponse a été approuvée sur le message "
-"<{strong}>{post_title}</{strong}></{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:185
-#, python-brace-format
-msgid "<{p}><{strong}>{course_update_content}</{strong}></{p}>"
-msgstr "<{p}><{strong}>{course_update_content}</{strong}></{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:202
-#, python-brace-format
-msgid ""
-"<{p}>You have a new open response submission awaiting review for "
-"<{strong}>{ora_name}</{strong}></{p}>"
-msgstr ""
-"<{p}>Vous avez une nouvelle soumission de réponse ouverte en attente de "
-"révision pour <{strong}>{ora_name}</{strong}></{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:204
-#, python-brace-format
-msgid ""
-"<{p}>You have multiple submissions awaiting review for "
-"<{strong}>{ora_name}</{strong}></{p}>"
-msgstr ""
-"<{p}>Vous avez plusieurs soumissions en attente de révision pour "
-"<{strong}>{ora_name}</{strong}></{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:223
-#, python-brace-format
-msgid ""
-"<{p}>You have received {points_earned} out of {points_possible} on your "
-"assessment: <{strong}>{ora_name}</{strong}></{p}>"
-msgstr ""
-"<{p}>Vous avez reçu {points_earned} sur {points_possible} à votre évaluation"
-" : <{strong}>{ora_name}</{strong}></{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:243
-#, python-brace-format
-msgid "<{p}>Your instructor posted <{strong}>{post_title}</{strong}></{p}>"
-msgstr ""
-"<{p}>Votre instructeur a publié <{strong}>{post_title}</{strong}></{p}>"
 
 #: openedx/core/djangoapps/notifications/base_notification.py:256
 msgid ""
@@ -9320,27 +8800,6 @@ msgstr ""
 "Notifications pour les nouvelles annonces et mises à jour de l'équipe du "
 "cours."
 
-#: openedx/core/djangoapps/notifications/base_notification.py:275
-msgid "Notifications for submission grading."
-msgstr "Notifications pour la notation des soumissions."
-
-#: openedx/core/djangoapps/notifications/email/tasks.py:144
-msgid "New Course Update"
-msgstr "Nouvelle mise à jour du cours"
-
-#: openedx/core/djangoapps/notifications/email/tasks.py:152
-msgid ""
-"You are receiving this email because you are enrolled in the edX course "
-msgstr "Vous recevez ce courriel parce que vous êtes inscrit au cours edX "
-
-#: openedx/core/djangoapps/notifications/email/utils.py:136
-msgid "Total Notifications"
-msgstr "Total des notifications"
-
-#: openedx/core/djangoapps/notifications/email/utils.py:212
-msgid "Today"
-msgstr "Aujourd’hui"
-
 #: openedx/core/djangoapps/notifications/email/utils.py:441
 #: openedx/features/course_experience/plugins.py:34
 #: cms/templates/widgets/header.html:115 cms/templates/widgets/header.html:120
@@ -9349,22 +8808,6 @@ msgstr "Aujourd’hui"
 #: openedx/features/course_experience/templates/course_experience/course-updates-fragment.html:25
 msgid "Updates"
 msgstr "Annonces"
-
-#: openedx/core/djangoapps/notifications/email/utils.py:442
-msgid "Grades"
-msgstr "Notes"
-
-#: openedx/core/djangoapps/notifications/email/utils.py:463
-msgid "discussion"
-msgstr "discussion"
-
-#: openedx/core/djangoapps/notifications/email/utils.py:464
-msgid "update"
-msgstr "mettre à jour"
-
-#: openedx/core/djangoapps/notifications/email/utils.py:465
-msgid "assessment"
-msgstr "évaluation"
 
 #: openedx/core/djangoapps/notifications/email_notifications.py:16
 msgid "Daily"
@@ -9384,35 +8827,12 @@ msgstr "Immédiatement"
 msgid "Never"
 msgstr "Jamais"
 
-#: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:15
-msgid "View all"
-msgstr "Voir tout"
-
 #: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:50
 #: openedx/core/djangoapps/notifications/templates/notifications/immediate_email_content.html:27
 #: wiki/templates/wiki/includes/article_menu.html:49
 #: lms/templates/wiki/includes/article_menu.html:13
 msgid "View"
 msgstr "Consulter"
-
-#: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:63
-msgid "more"
-msgstr "plus"
-
-#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:38
-msgid ""
-"You are receiving this email because you have subscribed to email digest"
-msgstr ""
-"Vous recevez cet e-mail parce que vous vous êtes abonné au résumé par "
-"courriel"
-
-#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:43
-msgid "Notification Settings"
-msgstr "Paramètres de notification"
-
-#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:46
-msgid "Unsubscribe from email digest for learning activity"
-msgstr "Se désabonner du résumé par courriel pour l'activité d'apprentissage"
 
 #: openedx/core/djangoapps/notifications/templates/notifications/digest_header.html:12
 #: openedx/core/djangoapps/notifications/templates/notifications/immediate_email_content.html:8
@@ -9422,35 +8842,6 @@ msgstr "Se désabonner du résumé par courriel pour l'activité d'apprentissage
 #: lms/templates/bulk_email/unsubscribe_success.html:18
 msgid "Unsubscribe"
 msgstr "Désinscription"
-
-#: openedx/core/djangoapps/notifications/templates/notifications/digest_header.html:25
-msgid "Weekly Notifications Digest"
-msgstr "Résumé hebdomadaire des notifications"
-
-#: openedx/core/djangoapps/notifications/templates/notifications/digest_header.html:27
-msgid "Daily Notifications Digest"
-msgstr "Résumé quotidien des notifications"
-
-#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/body.txt:4
-#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/subject.txt:4
-msgid "Weekly Notifications Digest for the Week of"
-msgstr "Résumé hebdomadaire des notifications de la semaine du"
-
-#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/body.txt:6
-#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/subject.txt:6
-msgid "Daily Notifications Digest for"
-msgstr "Résumé quotidien des notifications pour"
-
-#: openedx/core/djangoapps/notifications/templates/notifications/email_digest_preference_update.html:5
-msgid "Email Digest Preferences Updated"
-msgstr "Préférences pour le résumé par courriel mises à jour"
-
-#: openedx/core/djangoapps/notifications/templates/notifications/email_digest_preference_update.html:9
-msgid ""
-"You have successfully unsubscribed from email digest for learning activity"
-msgstr ""
-"Vous vous êtes désabonné avec succès du résumé par courriel pour l'activité "
-"d'apprentissage"
 
 #: openedx/core/djangoapps/notifications/views.py:174
 msgid "Invalid app name."
@@ -9559,15 +8950,15 @@ msgstr ""
 
 #: openedx/core/djangoapps/profile_images/images.py:242
 msgid "bytes"
-msgstr "octets"
+msgstr "bytes"
 
 #: openedx/core/djangoapps/profile_images/images.py:242
 msgid "KB"
-msgstr "Ko"
+msgstr "KB"
 
 #: openedx/core/djangoapps/profile_images/images.py:242
 msgid "MB"
-msgstr "Mo"
+msgstr "MB"
 
 #: openedx/core/djangoapps/profile_images/views.py:136
 msgid "No file provided for profile image"
@@ -9654,42 +9045,6 @@ msgstr "Par %(filter_title)s"
 #, python-format
 msgid "Welcome to week %(week_num)s of %(course_name)s!"
 msgstr "Bienvenue à la semaine %(week_num)s sur %(course_name)s!"
-
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:22
-#, python-format
-msgid ""
-"This is a routed Account Activation email for %(routed_profile_name)s "
-"(%(routed_user_email)s): %(routed_profile_name)s"
-msgstr ""
-"Ceci est un courriel d'activation de compte redirigé pour "
-"%(routed_profile_name)s (%(routed_user_email)s) : %(routed_profile_name)s"
-
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:36
-msgid "Welcome to edX. It’s time for your next career move"
-msgstr ""
-"Bienvenue sur edX. Il est temps de faire le prochain pas dans votre carrière"
-
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:62
-msgid "Resume your course "
-msgstr "Reprenez votre cours "
-
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:82
-msgid "Your focused attention will pay off in the end!"
-msgstr "Votre attention soutenue finira par porter ses fruits !"
-
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:84
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:101
-msgid ""
-"With self-paced courses, you learn on your own schedule. It’s a good idea to"
-" spend time with the course each week and check in with your goals often."
-msgstr ""
-"Avec des cours à votre rythme, vous apprenez selon votre propre horaire. Il "
-"est recommandé de consacrer du temps au cours chaque semaine et de vérifier "
-"régulièrement vos objectifs."
-
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:100
-msgid "Your focused attention will pay off in the end! "
-msgstr "Votre attention soutenue finira par porter ses fruits ! "
 
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.txt:4
 #, python-format
@@ -10019,10 +9374,6 @@ msgid ""
 msgstr ""
 "Il semble que {email_address} appartient à un compte existant. Essayez "
 "encore avec une adresse courriel différente."
-
-#: openedx/core/djangoapps/user_api/accounts/__init__.py:64
-msgid "This email is already associated with an existing account"
-msgstr "Ce courriel est déjà associé à un compte existant"
 
 #: openedx/core/djangoapps/user_api/accounts/__init__.py:66
 msgid "This email is associated to a retired account."
@@ -10712,14 +10063,6 @@ msgstr "Une adresse courriel valide est requise"
 msgid "Your legal name must be a minimum of one character long"
 msgstr "Votre nom légal doit faire au moins un caractère de long"
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:149
-#, python-format
-msgid ""
-"Your legal name is too long. It must not exceed %(max_length)s characters"
-msgstr ""
-"Votre nom légal est trop long. Il ne doit pas dépasser %(max_length)s "
-"caractères"
-
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:161
 #, python-format
 msgid "Email cannot be more than %(limit_value)s characters long"
@@ -10777,11 +10120,6 @@ msgid ""
 msgstr ""
 "Il semblerait que {email} appartient à un compte existant. Réessayez avec "
 "une adresse courriel différente."
-
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:311
-msgid "Registration from this country is not allowed due to restrictions."
-msgstr ""
-"L'inscription depuis ce pays n'est pas autorisée en raison de restrictions."
 
 #. Translators: These instructions appear on the registration form,
 #. immediately
@@ -11312,10 +10650,6 @@ msgstr ""
 #: lms/templates/peer_grading/peer_grading_problem.html:68
 msgid "Continue"
 msgstr "Continuer"
-
-#: openedx/features/personalized_learner_schedules/call_to_action.py:121
-msgid "The deadline to complete this assignment has passed."
-msgstr "La date limite pour compléter ce devoir est dépassée."
 
 #: openedx/features/personalized_learner_schedules/call_to_action.py:127
 msgid "Shift due dates"
@@ -12150,14 +11484,6 @@ msgstr ""
 "Pour obtenir une clé pour votre cours ou pour signaler un problème, s'il "
 "vous plaît contacter moocsupport@mathworks.com"
 
-#: xmodule/capa_block.py:344
-msgid ""
-"Indicates if the problem was edited using the Markdown editor in the "
-"Authoring MFE."
-msgstr ""
-"Indique si le problème a été modifié à l’aide de l’éditeur Markdown dans "
-"l’interface d’édition MFE."
-
 #: xmodule/capa_block.py:435
 msgid ""
 "We're sorry, there was an error with processing your request. Please try "
@@ -12239,7 +11565,8 @@ msgstr ""
 msgid "Incorrect ({progress} point)"
 msgid_plural "Incorrect ({progress} points)"
 msgstr[0] "Incorrect ({progress} point)"
-msgstr[1] "Incorrect ({progress} points)"
+msgstr[1] "Incorrect ({progress} points)"
+msgstr[2] "Incorrect ({progress} points)"
 
 #: xmodule/capa_block.py:1402
 #, python-brace-format
@@ -12247,6 +11574,7 @@ msgid "Correct ({progress} point)"
 msgid_plural "Correct ({progress} points)"
 msgstr[0] "Correct ({progress} point)"
 msgstr[1] "Correct ({progress} points)"
+msgstr[2] "Correct ({progress} points)"
 
 #: xmodule/capa_block.py:1411
 #, python-brace-format
@@ -12304,6 +11632,7 @@ msgid "{num_minute} minute"
 msgid_plural "{num_minute} minutes"
 msgstr[0] "{num_minute} minute"
 msgstr[1] "{num_minute} minutes"
+msgstr[2] "{num_minute} minutes"
 
 #: xmodule/capa_block.py:2021
 #, python-brace-format
@@ -13174,19 +12503,6 @@ msgstr "Spécifier la langue de votre cours."
 msgid "Teams Configuration"
 msgstr "Configuration d'équipes"
 
-#: xmodule/course_block.py:843
-msgid ""
-"Configure team sets, limit team sizes, and set visibility settings using "
-"JSON. See <a target=\"&#95;blank\" "
-"href=\"https://docs.openedx.org/en/latest/educators/references/advanced_features/teams_configuration_options.html>teams"
-" configuration documentation</a> for help and examples."
-msgstr ""
-"Configurez les ensembles d'équipes, limitez la taille des équipes et "
-"définissez les paramètres de visibilité à l'aide de JSON. Consultez la <a "
-"target=\"&#95;blank\" "
-"href=\"https://docs.openedx.org/en/latest/educators/references/advanced_features/teams_configuration_options.html\">documentation"
-" de configuration des équipes</a> pour obtenir de l'aide et des exemples."
-
 #: xmodule/course_block.py:852
 msgid "Enable Proctored Exams"
 msgstr "Activer les examens surveillés"
@@ -13506,24 +12822,18 @@ msgstr "Généré"
 
 #. Translators: "Homework 1 - Unreleased - 0% (?/?)" The section has not been
 #. released for viewing.
-#: xmodule/graders.py:403
+#: xmodule/graders.py:402
 #, python-brace-format
 msgid "{section_type} {index} Unreleased - 0% (?/?)"
 msgstr "{section_type} {index} Indisponible - 0% (?/?)"
 
-#: xmodule/graders.py:417
+#: xmodule/graders.py:415
 #, python-brace-format
 msgid "The lowest {drop_count} {section_type} scores are dropped."
 msgstr "Les {drop_count} {section_type} scores les plus bas sont ignorés."
 
-#. Translators: "Homework Average = 0%"
-#: xmodule/graders.py:436
-#, python-brace-format
-msgid "{section_type} Average = {percent:.2%}"
-msgstr "Moyenne de {section_type} = {percent:.2%}"
-
 #. Translators: Avg is short for Average
-#: xmodule/graders.py:441
+#: xmodule/graders.py:438
 #, python-brace-format
 msgid "{short_label} Avg"
 msgstr "{short_label} Moy"
@@ -13615,29 +12925,6 @@ msgstr ""
 "Détermine si un bouton 'Réinitialiser les problèmes' est affiché, afin que "
 "les utilisateurs puissent réinitialiser leurs réponses et remanier les "
 "éléments sélectionnés."
-
-#: xmodule/item_bank_block.py:474
-#, python-brace-format
-msgid ""
-"The problem bank has been configured to show {count} problems. Please "
-"specify a positive number of problems, or specify -1 to show all problems."
-msgstr ""
-"La banque de problèmes a été configurée pour afficher {count} problèmes. "
-"Veuillez spécifier un nombre positif de problèmes, ou indiquer -1 pour "
-"afficher tous les problèmes."
-
-#: xmodule/item_bank_block.py:478 xmodule/item_bank_block.py:490
-msgid "Edit the problem bank configuration."
-msgstr "Modifier la configuration de la banque de problèmes."
-
-#: xmodule/item_bank_block.py:486
-#, python-brace-format
-msgid ""
-"The problem bank has been configured to show {count} problems, but only "
-"{actual} have been selected."
-msgstr ""
-"La banque de problèmes a été configurée pour afficher {count} problèmes, "
-"mais seulement {actual} ont été sélectionnés."
 
 #: xmodule/library_content_block.py:51
 msgid "Any Type"
@@ -14510,57 +13797,6 @@ msgstr ""
 msgid "External Discussion"
 msgstr "Discussion externe"
 
-#: xmodule/templates/item_bank/author_view.html:8
-#: xmodule/templates/item_bank/author_view.html:18
-#, python-format
-msgid ""
-"\n"
-"                Learners will see the selected component:\n"
-"                "
-msgid_plural ""
-"\n"
-"                Learners will see all of the %(num_selected)s selected components, in random order:\n"
-"                "
-msgstr[0] ""
-"\n"
-"                Les apprenants verront le composant sélectionné :\n"
-"                "
-msgstr[1] ""
-"\n"
-"                Les apprenants verront tous les %(num_selected)s composants sélectionnés, dans un ordre aléatoire :\n"
-"                "
-
-#: xmodule/templates/item_bank/author_view.html:32
-#, python-brace-format
-msgid ""
-"Press {link_start}View{link_end} to preview, sync/update, and/or remove the "
-"selected components."
-msgstr ""
-"Appuyez sur {link_start}Afficher{link_end} pour prévisualiser, "
-"synchroniser/mettre à jour, et/ou supprimer les composants sélectionnés."
-
-#: xmodule/templates/item_bank/author_view.html:38
-#, python-brace-format
-msgid ""
-"Press {link_start}Edit{link_end} to configure how many will be shown and "
-"other settings."
-msgstr ""
-"Appuyez sur {link_start}Modifier{link_end} pour configurer le nombre affiché"
-" et d'autres paramètres."
-
-#: xmodule/templates/item_bank/author_view.html:44
-msgid "You have not selected any components yet."
-msgstr "Vous n'avez pas encore sélectionné de composants."
-
-#: xmodule/templates/item_bank/author_view_add.html:11
-#, python-brace-format
-msgid ""
-"{button_start}Add components{button_end} from a content library to this "
-"problem bank."
-msgstr ""
-"{button_start}Ajouter des composants{button_end} de la bibliothèque de "
-"contenu à cette banque de problèmes."
-
 #: xmodule/vertical_block.py:45
 msgid "Enable in-context discussions for the Unit"
 msgstr "Activer les discussions contextuelles pour cet unité"
@@ -15185,7 +14421,7 @@ msgstr "Priver tous les utilisateurs du droit d'édition de cet article."
 
 #: wiki/forms.py:267
 msgid "Permissions"
-msgstr "Autorisations"
+msgstr "Permissions"
 
 #: wiki/forms.py:271
 msgid "Owner"
@@ -16050,7 +15286,7 @@ msgstr "article,articles"
 
 #: wiki/templates/wiki/dir.html:40
 msgid "matches,match"
-msgstr "matchs,match"
+msgstr "matches,match"
 
 #: wiki/templates/wiki/dir.html:42
 #, python-format
@@ -19815,11 +19051,6 @@ msgstr "Déplier ou Replier"
 msgid "Select this problem"
 msgstr "Sélectionnez ce problème"
 
-#: cms/templates/studio_xblock_wrapper.html:117
-#: cms/templates/studio_xblock_wrapper.html:120
-msgid "Sourced from a library - but the upstream link is broken/invalid."
-msgstr "Issu d'une bibliothèque - mais le lien en amont est cassé/invalide."
-
 #: cms/templates/studio_xblock_wrapper.html:123
 msgid ""
 "Sourced from a library - but has been modified locally.Sourced from a "
@@ -19832,22 +19063,10 @@ msgstr ""
 msgid "Sourced from a library - but has been modified locally."
 msgstr "Provenant d'une bibliothèque - mais a été modifié localement."
 
-#: cms/templates/studio_xblock_wrapper.html:129
-msgid "Sourced from a library."
-msgstr "Issu d'une bibliothèque."
-
 #: cms/templates/studio_xblock_wrapper.html:144
 #: cms/templates/studio_xblock_wrapper.html:146
 msgid "Edit Title"
 msgstr "Modifier le titre"
-
-#: cms/templates/studio_xblock_wrapper.html:155
-msgid "Update available - click to sync"
-msgstr "Mise à jour disponible - cliquez pour synchroniser"
-
-#: cms/templates/studio_xblock_wrapper.html:158
-msgid "Update available"
-msgstr "Mise à jour disponible"
 
 #: cms/templates/studio_xblock_wrapper.html:184
 msgid "Manage Access"
@@ -20027,15 +19246,6 @@ msgid "{email} has requested {studio_name} course creator privileges on edge"
 msgstr ""
 "{email} a demandé les droits de création de cours {studio_name} sur edge"
 
-#: cms/templates/emails/course_creator_admin_user_pending.txt:2
-#, python-brace-format
-msgid ""
-"User '{user}' with e-mail {email} has requested {studio_name} course creator"
-" privileges."
-msgstr ""
-"L'utilisateur '{user}' avec l'e-mail {email} a demandé des privilèges de "
-"créateur de cours pour {studio_name}."
-
 #: cms/templates/emails/course_creator_admin_user_pending.txt:5
 msgid "To grant or deny this request, use the course creator admin table."
 msgstr ""
@@ -20087,15 +19297,6 @@ msgstr ""
 "Utilisez ce URL pour afficher les détails de la tâche ou télécharger les "
 "fichiers créés : {detail_url}"
 
-#: cms/templates/emails/user_task_complete_email.txt:8
-#, python-brace-format
-msgid ""
-"Your {task_name} task has completed with the status '{task_status}'. Sign in"
-" to view the details of your task."
-msgstr ""
-"Votre tâche {task_name} est terminée avec le statut '{task_status}'. "
-"Connectez-vous pour voir les détails de votre tâche."
-
 #: cms/templates/emails/user_task_complete_email.txt:12
 #, python-brace-format
 msgid ""
@@ -20120,58 +19321,16 @@ msgstr "Erreurs :"
 msgid "Warnings: "
 msgstr "Avertissements :"
 
-#: cms/templates/emails/user_task_complete_email_subject.txt:5
-#, python-brace-format
-msgid "{platform_name} {studio_name}: Course Optimizer Status Update"
-msgstr ""
-"{platform_name} {studio_name} : Mise à jour du statut de l'optimiseur de "
-"cours"
-
 #: cms/templates/emails/user_task_complete_email_subject.txt:9
 #, python-brace-format
 msgid "{platform_name} {studio_name}: Task Status Update"
 msgstr "{platform_name} {studio_name} : Mise à jour de la tâche"
-
-#: cms/templates/maintenance/_announcement_delete.html:8
-#: cms/templates/maintenance/_announcement_delete.html:11
-msgid "Delete Announcement"
-msgstr "Supprimer l'annonce"
-
-#: cms/templates/maintenance/_announcement_delete.html:22
-msgid "Are you sure you want to delete this Announcement?"
-msgstr "Êtes-vous certain de vouloir supprimer cette annonce ?"
-
-#: cms/templates/maintenance/_announcement_delete.html:35
-msgid "Confirm"
-msgstr "Confirmer"
-
-#: cms/templates/maintenance/_announcement_edit.html:8
-#: cms/templates/maintenance/_announcement_edit.html:11
-msgid "Edit Announcement"
-msgstr "Modifier l'annonce"
 
 #: cms/templates/maintenance/_announcement_edit.html:26
 #: lms/templates/problem.html:37 lms/templates/problem.html:38
 #: lms/templates/word_cloud.html:40
 msgid "Save"
 msgstr "Sauvegarder"
-
-#: cms/templates/maintenance/_announcement_index.html:42
-msgid "Create New"
-msgstr "Créer nouveau"
-
-#: cms/templates/maintenance/_announcement_index.html:47
-msgid "previous"
-msgstr "précédent"
-
-#: cms/templates/maintenance/_announcement_index.html:53
-msgid "next"
-msgstr "suivant"
-
-#: cms/templates/maintenance/base.html:14
-#: cms/templates/maintenance/index.html:8
-msgid "Maintenance Dashboard"
-msgstr "Tableau de bord de maintenance"
 
 #: cms/templates/registration/activation_complete.html:22
 msgid "Thanks for activating your account."
@@ -20260,7 +19419,7 @@ msgid ""
 "edX, Open edX, and the edX and Open edX logos are registered trademarks of "
 "{link_start}edX Inc.{link_end}"
 msgstr ""
-"edX, Open edX et les logos d'edX et Open edX sont des marques déposées de "
+"edX, Open edX, and the edX and Open edX logos are registered trademarks of "
 "{link_start}edX Inc.{link_end}"
 
 #: cms/templates/widgets/header.html:74
@@ -20292,10 +19451,6 @@ msgstr "Importer"
 #: cms/templates/widgets/header.html:318
 msgid "Export"
 msgstr "Exporter"
-
-#: cms/templates/widgets/header.html:267
-msgid "Course Optimizer"
-msgstr "Optimiseur de cours"
 
 #: cms/templates/widgets/header.html:285
 msgid "Current Library:"
@@ -20390,7 +19545,7 @@ msgstr "Aide Markdown"
 
 #: cms/templates/widgets/problem-edit.html:148
 msgid "Label"
-msgstr "Étiquette"
+msgstr "Label"
 
 #: cms/templates/widgets/sock.html:12
 #, python-brace-format
@@ -20406,10 +19561,6 @@ msgstr "Cachez l'aide {studio_name}"
 #, python-brace-format
 msgid "{studio_name} Documentation"
 msgstr "Documentation {studio_name}"
-
-#: cms/templates/widgets/sock_links.html:14
-msgid "Access edx.org documentation on http://docs.edx.org"
-msgstr "Accéder à la documentation de edx.org sur http://docs.edx.org"
 
 #: cms/templates/widgets/sock_links.html:15
 msgid "edX Documentation"
@@ -20453,10 +19604,6 @@ msgstr "nom"
 #: cms/templates/widgets/user_dropdown.html:13
 msgid "Currently signed in as:"
 msgstr "Actuellement connecté en tant que :"
-
-#: cms/templates/widgets/user_dropdown.html:26
-msgid "Maintenance"
-msgstr "Maintenance"
 
 #: cms/templates/widgets/user_dropdown.html:30
 #: lms/templates/header/user_dropdown.html:52
@@ -21234,7 +20381,7 @@ msgstr ""
 
 #: lms/templates/seq_block.html:35
 msgid "Important!"
-msgstr "Important !"
+msgstr "Important!"
 
 #. Translators: A button for showing the Previous Unit
 #: lms/templates/seq_block.html:49 lms/templates/seq_block.html:160
@@ -21798,32 +20945,30 @@ msgid ""
 " you do not understand or do not wish to be bound by the Terms, you should "
 "not use the APIs."
 msgstr ""
-"Bienvenue sur {platform_name}. Merci d'utiliser l'API de découverte de cours"
-" de {platform_name}, l'API Entreprise et/ou toutes les autres API que nous "
-"pouvons proposer de temps à autre (collectivement, les « API »). Veuillez "
-"lire ces Conditions d'utilisation avant d'accéder ou d'utiliser les API. Ces"
-" Conditions d'utilisation, ainsi que tous les termes additionnels figurant "
-"dans la documentation de l'API, et toutes les politiques et lignes "
-"directrices applicables que {platform_name} met à disposition et/ou met à "
-"jour de temps à autre, constituent des accords (collectivement, les « "
-"Conditions ») entre vous et {platform_name}. Ces Conditions sont émises dans"
-" le cadre de l'entente de produit entreprise, de l'entente de participation "
-"des membres, ou de toute autre entente directe régissant l'achat de produits"
-" {platform_name}, le cas échéant (l'« Entente »), signée par vous ou par la "
-"partie pour le compte de laquelle vous accédez ou utilisez les API et "
-"{platform_name}. Dans le cas où vous auriez une telle Entente qui s'applique"
-" à votre utilisation des API, ladite Entente prévaudra en cas de conflit "
-"entre elle et ces Conditions. En accédant ou en utilisant les API, vous "
-"acceptez et consentez à être juridiquement lié par les Conditions, que vous "
-"soyez ou non un utilisateur enregistré. Si vous accédez ou utilisez les API "
-"pour le compte d'une entreprise, d'une organisation ou d'une autre entité "
-"légale, vous acceptez ces Conditions pour ladite entité et vous garantissez "
-"auprès de {platform_name} que vous avez pleine autorité pour accepter et "
-"convenir de ces Conditions pour cette entité, auquel cas les termes « vous "
-"», « votre » ou termes apparentés ici se réfèreront à ladite entité pour le "
-"compte de laquelle vous accédez ou utilisez les API. Si vous n'avez pas "
-"cette autorisation ou si vous ne comprenez pas ou ne souhaitez pas être lié "
-"par ces Conditions, vous ne devez pas utiliser les API."
+"Welcome to {platform_name}. Thank you for using {platform_name}'s Course "
+"Discovery API, Enterprise API and/or any additional APIs that we may offer "
+"from time to time (collectively, the \"APIs\"). Please read these Terms of "
+"Service prior to accessing or using the APIs. These Terms of Service, any "
+"additional terms within accompanying API documentation, and any applicable "
+"policies and guidelines that {platform_name} makes available and/or updates "
+"from time to time are agreements (collectively, the \"Terms\") between you "
+"and {platform_name}. These Terms are issued under the enterprise product "
+"agreement, member participation agreement, or other direct agreement "
+"governing the purchase of {platform_name} products, if any (the "
+"\"Agreement\"), executed by you or the party on whose behalf you are "
+"accessing or using the APIs and {platform_name}.  In the event that you have"
+" such an Agreement that applies to your use of the APIs, the Agreement will "
+"control in the event of any conflict between it and these Terms. By "
+"accessing or using the APIs, you accept and agree to be legally bound by the"
+" Terms, whether or not you are a registered user. If you are accessing or "
+"using the APIs on behalf of a company, organization or other legal entity, "
+"you are agreeing to these Terms for that entity and representing and "
+"warranting to {platform_name} that you have full authority to accept and "
+"agree to these Terms for such entity, in which case the terms \"you,\" "
+"\"your\" or related terms herein shall refer to such entity on whose behalf "
+"you are accessing or using the APIs. If you do not have such authority or if"
+" you do not understand or do not wish to be bound by the Terms, you should "
+"not use the APIs."
 
 #: lms/templates/api_admin/terms_of_service.html:17
 msgid "API Access"
@@ -21843,17 +20988,16 @@ msgid ""
 "provide you with instructions for obtaining your API shared secret and "
 "client ID."
 msgstr ""
-"Pour accéder aux APIs, vous devez créer un compte utilisateur "
-"{platform_name} pour votre application (et non pour un usage personnel). Ce "
-"compte vous donnera accès à notre page de demande d’API à {request_url}. Sur"
-" cette page, vous devez remplir le formulaire de demande d’API en y incluant"
-" une description de vos usages envisagés des APIs. Toute information "
-"relative au compte et à l’inscription que vous fournissez à {platform_name} "
-"doit être exacte et à jour, et vous vous engagez à nous informer rapidement "
-"de tout changement. {platform_name_capitalized} examinera votre formulaire "
-"de demande d’API et, dès son approbation à la seule discrétion de "
-"{platform_name}, vous fournira les instructions pour obtenir votre secret "
-"partagé et votre identifiant client."
+"To access the APIs, you will need to create an {platform_name} user account "
+"for your application (not for personal use). This account will provide you "
+"with access to our API request page at {request_url}. On that page, you must"
+" complete the API request form including a description of your proposed uses"
+" for the APIs. Any account and registration information that you provide to "
+"{platform_name} must be accurate and up to date, and you agree to inform us "
+"promptly of any changes. {platform_name_capitalized} will review your API "
+"request form and, upon approval in {platform_name}'s sole discretion, will "
+"provide you with instructions for obtaining your API shared secret and "
+"client ID."
 
 #: lms/templates/api_admin/terms_of_service.html:21
 msgid "Permissible Use"
@@ -21876,6 +21020,19 @@ msgid ""
 "credentials anywhere other than on the {platform_name} website at "
 "{platform_url}."
 msgstr ""
+"You agree to use the APIs solely for the purpose of delivering content that "
+"is accessed through the APIs (the \"API Content\") to your own website, "
+"mobile site, app, blog, email distribution list, or social media property "
+"(\"Your Application\") or for another commercial use that you described in "
+"your request for access and that {platform_name} has approved on a case-by-"
+"case basis. {platform_name_capitalized} may monitor your use of the APIs for"
+" compliance with the Terms and may deny your access or shut down your "
+"integration if you attempt to go around or exceed the requirements and "
+"limitations set by {platform_name}. Your Application or other approved use "
+"of the API or the API Content must not prompt your end users to provide "
+"their {platform_name} username, password or other {platform_name} user "
+"credentials anywhere other than on the {platform_name} website at "
+"{platform_url}."
 
 #: lms/templates/api_admin/terms_of_service.html:25
 msgid "Prohibited Uses and Activities"
@@ -21890,12 +21047,11 @@ msgid ""
 "at any time, in its sole discretion, does not benefit or serve the best "
 "interests of {platform_name}, its users and its partners."
 msgstr ""
-"{platform_name_capitalized} aura le droit exclusif de déterminer si une "
-"utilisation particulière des APIs est acceptable, et {platform_name} se "
-"réserve le droit de révoquer l’accès aux APIs pour toute utilisation que "
-"{platform_name} jugera, à sa seule discrétion, ne pas être bénéfique ou ne "
-"pas servir au mieux les intérêts de {platform_name}, de ses utilisateurs et "
-"de ses partenaires."
+"{platform_name_capitalized} shall have the sole right to determine whether "
+"or not any given use of the APIs is acceptable, and {platform_name} reserves"
+" the right to revoke API access for any use that {platform_name} determines "
+"at any time, in its sole discretion, does not benefit or serve the best "
+"interests of {platform_name}, its users and its partners."
 
 #: lms/templates/api_admin/terms_of_service.html:29
 msgid ""
@@ -21984,11 +21140,10 @@ msgid ""
 "calls made by you or Your Application to the APIs. You must not attempt to "
 "circumvent any restrictions or limitations imposed by {platform_name}."
 msgstr ""
-"{platform_name_capitalized} se réserve le droit, à sa discrétion, d’imposer "
-"des restrictions et limitations raisonnables sur le nombre et la fréquence "
-"des appels effectués par vous ou Votre Application aux APIs. Vous ne devez "
-"pas tenter de contourner les restrictions ou limitations imposées par "
-"{platform_name}."
+"{platform_name_capitalized} reserves the right, in its discretion, to impose"
+" reasonable restrictions and limitations on the number and frequency of "
+"calls made by you or Your Application to the APIs. You must not attempt to "
+"circumvent any restrictions or limitations imposed by {platform_name}."
 
 #: lms/templates/api_admin/terms_of_service.html:46
 msgid "Compliance"
@@ -22007,16 +21162,15 @@ msgid ""
 "or mask either your identity or Your Application's identity when using the "
 "APIs."
 msgstr ""
-"Vous acceptez de respecter toutes les lois, réglementations et droits de "
-"tiers applicables (y compris, sans s’y limiter, les lois relatives à "
-"l’importation ou à l’exportation de données ou de logiciels, à la vie "
-"privée, au droit d’auteur et aux lois locales). Vous n’utiliserez pas les "
-"APIs pour encourager ou promouvoir une activité illégale ou la violation des"
-" droits de tiers. Vous ne violerez aucune autre condition de service de "
-"{platform_name}. Vous n’accéderez (ni n’essaierez d’accéder) à une API que "
-"par les moyens décrits dans la documentation de celle-ci. Vous ne modifierez"
-" ni ne masquerez votre identité ou celle de Votre Application lors de "
-"l’utilisation des APIs."
+"You agree to comply with all applicable laws, regulations, and third party "
+"rights (including without limitation laws regarding the import or export of "
+"data or software, privacy, copyright, and local laws). You will not use the "
+"APIs to encourage or promote illegal activity or violation of third party "
+"rights. You will not violate any other terms of service with "
+"{platform_name}. You will only access (or attempt to access) an API by the "
+"means described in the documentation of that API. You will not misrepresent "
+"or mask either your identity or Your Application's identity when using the "
+"APIs."
 
 #: lms/templates/api_admin/terms_of_service.html:50
 msgid "Ownership"
@@ -22039,22 +21193,19 @@ msgid ""
 "distribute or modify the APIs or any API Content (including adaptation, "
 "editing, excerpting, or creating derivative works)."
 msgstr ""
-"Vous reconnaissez et acceptez que les APIs et l’ensemble du Contenu API "
-"recèlent une propriété intellectuelle précieuse appartenant à "
-"{platform_name} et à ses partenaires. Les APIs et l’ensemble du Contenu API "
-"sont protégés par les lois américaines et étrangères concernant le droit "
-"d’auteur, les marques déposées et d’autres régulations. Tous les droits "
-"afférents aux APIs et au Contenu API, s’ils ne sont pas expressément "
-"accordés, sont réservés. En utilisant les APIs ou tout Contenu API, vous "
-"n’acquérez aucun droit de propriété sur ceux-ci. Vous ne devez pas prétendre"
-" ou tenter de revendiquer la propriété des APIs ou de tout Contenu API ni "
-"vous présenter, vous ou votre entreprise ou Votre Application, comme étant à"
-" l’origine de quelque Contenu API que ce soit. Vous ne pouvez pas non plus "
-"modifier, créer des œuvres dérivées, tenter d’utiliser, de concéder une "
-"licence ou exploiter, de quelque manière que ce soit, tout ou partie du "
-"Contenu API pour votre propre compte ou pour celui d’un tiers. Vous ne "
-"pouvez pas distribuer ou modifier les APIs ou tout Contenu API (y compris "
-"par adaptation, modification, extraction ou création d’œuvres dérivées)."
+"You acknowledge and agree that the APIs and all API Content contain valuable"
+" intellectual property of {platform_name} and its partners. The APIs and all"
+" API Content are protected by United States and foreign copyright, "
+"trademark, and other laws. All rights in the APIs and the API Content, if "
+"not expressly granted, are reserved. By using the APIs or any API Content, "
+"you do not acquire ownership of any rights in the APIs or API Content. You "
+"must not claim or attempt to claim ownership in the APIs or any API Content "
+"or misrepresent yourself or your company or your Application as being the "
+"source of any API Content. You may not modify, create derivative works of, "
+"or attempt to use, license, or in any way exploit any API Content in whole "
+"or in part on your own behalf or on behalf of any third party. You may not "
+"distribute or modify the APIs or any API Content (including adaptation, "
+"editing, excerpting, or creating derivative works)."
 
 #: lms/templates/api_admin/terms_of_service.html:54
 #, python-brace-format
@@ -22074,21 +21225,20 @@ msgid ""
 "other entities providing information, API Content or services for the APIs, "
 "the course instructors and their staffs."
 msgstr ""
-"Tous les noms, logos et sceaux (les « Marques déposées ») figurant dans les "
-"APIs, dans le Contenu API ou sur les services mis à disposition par les "
-"APIs, le cas échéant, sont la propriété de leurs détenteurs respectifs. Vous"
-" ne pouvez pas retirer, modifier ou masquer les avis relatifs aux droits "
-"d’auteur, aux marques déposées ou à d’autres droits de propriété figurant ou"
-" accompagnant le Contenu API. Si un Participant {platform_name} (tel que "
-"défini ci-après) ou un tiers révoque l’accès au Contenu API détenu ou "
-"contrôlé par ce Participant {platform_name} ou ce tiers, y compris, sans s’y"
-" limiter, toute Marque déposée, vous devez veiller à ce que tout Contenu API"
-" relatif à ce Participant {platform_name} ou à ce tiers soit supprimé de "
-"Votre Application ainsi que de vos réseaux, systèmes et serveurs dès que "
-"raisonnablement possible. « Participants {platform_name_capitalized} » "
-"désigne MIT, Harvard et les autres entités fournissant des informations, du "
-"Contenu API ou des services pour les APIs, ainsi que les instructeurs de "
-"cours et leur personnel."
+"All names, logos and seals (\"Trademarks\") that appear in the APIs, API "
+"Content, or on or through the services made available on or through the "
+"APIs, if any, are the property of their respective owners. You may not "
+"remove, alter, or obscure any copyright, Trademark, or other proprietary "
+"rights notices incorporated in or accompanying the API Content. If any "
+"{platform_name} Participant (as hereinafter defined) or other third party "
+"revokes access to API Content owned or controlled by that {platform_name} "
+"Participant or third party, including without limitation any Trademarks, you"
+" must ensure that all API Content pertaining to that {platform_name} "
+"Participant or third party is deleted from Your Application and your "
+"networks, systems and servers as soon as reasonably possible. "
+"\"{platform_name_capitalized} Participants\" means MIT, Harvard, and the "
+"other entities providing information, API Content or services for the APIs, "
+"the course instructors and their staffs."
 
 #: lms/templates/api_admin/terms_of_service.html:56
 #, python-brace-format
@@ -22102,15 +21252,14 @@ msgid ""
 "content, in whole or in part, in any form and in any media formats and "
 "through any media channels (now known or hereafter developed)."
 msgstr ""
-"Dans la mesure où vous soumettez du contenu à {platform_name} dans le cadre "
-"de votre utilisation des APIs ou de tout Contenu API, vous accordez à "
-"{platform_name} un droit et une licence mondiaux, non exclusifs, "
-"transférables, cessibles, sous-licenciables, entièrement réglés, exempts de "
-"redevances, perpétuels et irrévocables pour héberger, transférer, afficher, "
-"exécuter, reproduire, modifier, distribuer, rediffuser, re-licencier et "
-"exploiter ce contenu, en tout ou en partie, sous quelque forme ou dans "
-"quelque format que ce soit et par tout canal de diffusion, existant ou "
-"ultérieurement développé."
+"To the extent that you submit any content to {platform_name} in connection "
+"with your use of the APIs or any API Content, you hereby grant to "
+"{platform_name} a worldwide, non-exclusive, transferable, assignable, sub "
+"licensable, fully paid-up, royalty-free, perpetual, irrevocable right and "
+"license to host, transfer, display, perform, reproduce, modify, distribute, "
+"re-distribute, relicense and otherwise use, make available and exploit such "
+"content, in whole or in part, in any form and in any media formats and "
+"through any media channels (now known or hereafter developed)."
 
 #: lms/templates/api_admin/terms_of_service.html:58
 msgid "Privacy"
@@ -22126,14 +21275,12 @@ msgid ""
 " collect and how you may use and share such information (including for "
 "advertising) with {platform_name} and other third parties."
 msgstr ""
-"Vous acceptez de respecter toutes les lois et réglementations en matière de "
-"protection de la vie privée applicables et de faire preuve de transparence "
-"quant à la collecte et à l’utilisation des données des utilisateurs finaux. "
-"Vous devez fournir et respecter une politique de confidentialité pour Votre "
-"Application qui décrit de manière claire et précise aux utilisateurs finaux "
-"les informations que vous collectez ainsi que la manière dont vous pouvez "
-"utiliser et partager ces informations (y compris à des fins publicitaires) "
-"avec {platform_name} et d’autres tiers."
+"You agree to comply with all applicable privacy laws and regulations and to "
+"be transparent with respect to any collection and use of end user data. You "
+"will provide and adhere to a privacy policy for Your Application that "
+"clearly and accurately describes to your end users what user information you"
+" collect and how you may use and share such information (including for "
+"advertising) with {platform_name} and other third parties."
 
 #: lms/templates/api_admin/terms_of_service.html:62
 msgid "Right to Charge"
@@ -22146,9 +21293,9 @@ msgid ""
 "{platform_name} reserves the right to charge fees for future use or access "
 "to the APIs."
 msgstr ""
-"L’accès aux APIs peut être offert gratuitement, mais {platform_name} se "
-"réserve le droit de facturer des frais pour une utilisation ou un accès "
-"ultérieur aux APIs."
+"Certain access to the APIs may be provided free of charge, but "
+"{platform_name} reserves the right to charge fees for future use or access "
+"to the APIs."
 
 #: lms/templates/api_admin/terms_of_service.html:68
 #, python-brace-format
@@ -22161,14 +21308,13 @@ msgid ""
 "changes.  Be sure to return to this page periodically to ensure familiarity "
 "with the most current version of the Terms."
 msgstr ""
-"{platform_name_capitalized} se réserve le droit de modifier les Conditions à"
-" tout moment sans préavis. Toute modification prendra effet immédiatement "
-"dès sa publication sur cette page, avec une date d’effet mise à jour. En "
-"accédant aux APIs ou en les utilisant après modification, vous acceptez, à "
-"titre prospectif, les Conditions modifiées ainsi que l’ensemble des "
-"changements. Veuillez consulter cette page périodiquement afin de vous "
-"assurer que vous êtes au courant de la version la plus récente des "
-"Conditions."
+"{platform_name_capitalized} reserves the right to modify the Terms at any "
+"time without advance notice.  Any changes to the Terms will be effective "
+"immediately upon posting on this page, with an updated effective date.  By "
+"accessing or using the APIs after any changes have been made, you signify "
+"your agreement on a prospective basis to the modified Terms and all of the "
+"changes.  Be sure to return to this page periodically to ensure familiarity "
+"with the most current version of the Terms."
 
 #: lms/templates/api_admin/terms_of_service.html:70
 #, python-brace-format
@@ -22179,12 +21325,11 @@ msgid ""
 "that is unacceptable to you, you should stop using the APIs. Continued use "
 "of the APIs means you accept the change."
 msgstr ""
-"{platform_name_capitalized} peut également mettre à jour ou modifier les "
-"APIs de temps à autre sans préavis. Ces modifications peuvent affecter votre"
-" utilisation des APIs ou la manière dont votre intégration interagit avec "
-"l’API. Si une modification vous paraît inacceptable, vous devriez cesser "
-"d’utiliser les APIs. L’utilisation continue des APIs signifie que vous "
-"acceptez la modification."
+"{platform_name_capitalized} may also update or modify the APIs from time to "
+"time without advance notice.  These changes may affect your use of the APIs "
+"or the way your integration interacts with the API.  If we make a change "
+"that is unacceptable to you, you should stop using the APIs. Continued use "
+"of the APIs means you accept the change."
 
 #: lms/templates/api_admin/terms_of_service.html:72
 msgid "Confidentiality"
@@ -22197,10 +21342,10 @@ msgid ""
 "discourage others from using your credentials. Your credentials may not be "
 "embedded in open source projects."
 msgstr ""
-"Vos identifiants (tels que le secret client et les identifiants) sont "
-"destinés à être utilisés uniquement par vous. Vous devez les garder "
-"confidentiels et empêcher ou décourager toute utilisation par des tiers. Ils"
-" ne doivent pas être intégrés dans des projets open source."
+"Your credentials (such as client secret and IDs) are intended to be used "
+"solely by you. You will keep your credentials confidential and prevent and "
+"discourage others from using your credentials. Your credentials may not be "
+"embedded in open source projects."
 
 #: lms/templates/api_admin/terms_of_service.html:76
 #, python-brace-format
@@ -22221,23 +21366,21 @@ msgid ""
 "to do so by law if you provide {platform_name} with reasonable prior notice,"
 " unless a court orders that {platform_name} not receive notice."
 msgstr ""
-"Dans le cas où {platform_name} vous donnerait accès à des informations "
-"spécifiques à {platform_name} et/ou aux APIs, indiquées comme « "
-"Confidentielles » ou qu’une personne raisonnable considérerait comme "
-"confidentielles ou exclusives compte tenu des conditions de divulgation (les"
-" « Informations Confidentielles »), vous acceptez d’utiliser ces "
-"informations uniquement pour exploiter et développer les APIs. Vous ne "
-"pouvez divulguer les Informations Confidentielles à quiconque sans le "
-"consentement écrit préalable de {platform_name}, et vous vous engagez à les "
-"protéger contre toute utilisation ou divulgation non autorisée, de la même "
-"manière que vous protégeriez vos propres informations confidentielles. Les "
-"Informations Confidentielles n’incluent pas les informations que vous avez "
-"développées de manière indépendante, celles qui vous ont été légitimement "
-"communiquées par un tiers sans obligation de confidentialité, ou celles qui "
-"deviennent publiques sans que cela ne soit de votre fait. Vous pouvez "
-"divulguer des Informations Confidentielles si la loi vous y oblige, à "
-"condition d’en avertir raisonnablement {platform_name} au préalable, sauf si"
-" un tribunal ordonne que {platform_name} ne soit pas averti."
+"In the event that {platform_name} provides you with access to information "
+"specific to {platform_name} and/or the APIs that is either marked as "
+"\"Confidential\" or which a reasonable person would assume to be "
+"confidential or proprietary given the terms of its disclosure "
+"(\"Confidential Information\"), you agree to use this information only to "
+"use and build with the APIs. You may not disclose the Confidential "
+"Information to anyone without {platform_name}'s prior written consent, and "
+"you agree to protect the Confidential Information from unauthorized use and "
+"disclosure in the same way that you would protect your own confidential "
+"information. Confidential Information does not include information that you "
+"independently developed, that was rightfully given to you by a third party "
+"without any confidentiality obligation, or that becomes public through no "
+"fault of your own. You may disclose Confidential Information when compelled "
+"to do so by law if you provide {platform_name} with reasonable prior notice,"
+" unless a court orders that {platform_name} not receive notice."
 
 #: lms/templates/api_admin/terms_of_service.html:78
 msgid "Disclaimer of Warranty / Limitation of Liabilities"
@@ -22252,13 +21395,12 @@ msgid ""
 "PARTICULAR PURPOSE AND NON-INFRINGEMENT, EXCEPT INSOFAR AS ANY SUCH IMPLIED "
 "WARRANTIES MAY NOT BE DISCLAIMED UNDER APPLICABLE LAW."
 msgstr ""
-"LES APIS ET TOUTE INFORMATION, CONTENU API OU SERVICE MIS À DISPOSITION PAR "
-"L’INTERMÉDIAIRE DES APIS SONT FOURNIS « EN L’ÉTAT » ET « SELON DISPONIBILITÉ"
-" » SANS AUCUNE GARANTIE D’AUCUNE SORTE (EXPLICITE, IMPLICITE OU AUTRE), Y "
-"COMPRIS, SANS LIMITATION, TOUTES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE, "
-"D’ADAPTATION À UN USAGE PARTICULIER ET DE NON-VIOLATION, SAUF DANS LA MESURE"
-" OÙ CES GARANTIES IMPLICITES NE PEUVENT ÊTRE DÉCLINÉES SELON LA LOI "
-"APPLICABLE."
+"THE APIS AND ANY INFORMATION, API CONTENT OR SERVICES MADE AVAILABLE ON OR "
+"THROUGH THE APIS ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT "
+"WARRANTY OF ANY KIND (EXPRESS, IMPLIED OR OTHERWISE), INCLUDING, WITHOUT "
+"LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A "
+"PARTICULAR PURPOSE AND NON-INFRINGEMENT, EXCEPT INSOFAR AS ANY SUCH IMPLIED "
+"WARRANTIES MAY NOT BE DISCLAIMED UNDER APPLICABLE LAW."
 
 #: lms/templates/api_admin/terms_of_service.html:82
 #, python-brace-format
@@ -22271,13 +21413,13 @@ msgid ""
 "COMPLETENESS, TIMELINESS, OR QUALITY OF THE APIS OR ANY API CONTENT, OR THAT"
 " ANY PARTICULAR API CONTENT WILL CONTINUE TO BE MADE AVAILABLE."
 msgstr ""
-"{platform_name} ET LES PARTICIPANTS {platform_name} NE GARANTISSENT PAS QUE "
-"LES APIS FONCTIONNERONT DE MANIÈRE ININTERROMPUE OU SANS ERREUR, NI QUE LES "
-"APIS SONT EXEMPTS DE VIRUS OU D’AUTRES COMPOSANTS NOCIFS, NI QUE LES APIS OU"
-" LE CONTENU API FOURNI RÉPONDRONT À VOS BESOINS OU ATTENTES. {platform_name}"
-" ET LES PARTICIPANTS {platform_name} NE GARANTISSENT PAS NON PLUS "
-"L’EXACTITUDE, L’EXHAUSTIVITÉ, L’ACTUALITÉ OU LA QUALITÉ DES APIS OU DE TOUT "
-"CONTENU API, NI QUE TEL CONTENU API RESTERA DISPONIBLE."
+"{platform_name} AND THE {platform_name} PARTICIPANTS DO NOT WARRANT THAT THE"
+" APIS WILL OPERATE IN AN UNINTERRUPTED OR ERROR-FREE MANNER, THAT THE APIS "
+"ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS, OR THAT THE APIS OR API "
+"CONTENT PROVIDED WILL MEET YOUR NEEDS OR EXPECTATIONS. {platform_name} AND "
+"THE {platform_name} PARTICIPANTS ALSO MAKE NO WARRANTY ABOUT THE ACCURACY, "
+"COMPLETENESS, TIMELINESS, OR QUALITY OF THE APIS OR ANY API CONTENT, OR THAT"
+" ANY PARTICULAR API CONTENT WILL CONTINUE TO BE MADE AVAILABLE."
 
 #: lms/templates/api_admin/terms_of_service.html:84
 #, python-brace-format
@@ -22290,15 +21432,13 @@ msgid ""
 "DOWNLOAD OR USE OF SUCH INFORMATION, MATERIALS OR DATA, UNLESS OTHERWISE "
 "EXPRESSLY PROVIDED FOR IN THE {platform_name} PRIVACY POLICY."
 msgstr ""
-"L’UTILISATION DES APIS, DU CONTENU API ET DE TOUS LES SERVICES OBTENUS PAR "
-"L’INTERMÉDIAIRE DES APIS SE FAIT À VOS PROPRES RISQUES. VOTRE ACCÈS OU "
-"TÉLÉCHARGEMENT D’INFORMATIONS, DE MATÉRIELS OU DE DONNÉES PAR "
-"L’INTERMÉDIAIRE DES APIS SE RÉALISE À VOTRE ENTIER RISQUE, ET VOUS SEREZ "
-"EXCLUSIVEMENT RESPONSABLE DE TOUT DOMMAGE CAUSÉ À VOS BIENS (Y COMPRIS VOTRE"
-" SYSTÈME INFORMATIQUE) OU DE TOUTE PERTE DE DONNÉES RÉSULTANT DU "
-"TÉLÉCHARGEMENT OU DE L’UTILISATION DE CES INFORMATIONS, MATÉRIELS OU "
-"DONNÉES, SAUF DISPOSITION EXPRESSE CONTRAIRE DANS LA POLITIQUE DE "
-"CONFIDENTIALITÉ DE {platform_name}."
+"USE OF THE APIS, AND THE API CONTENT AND ANY SERVICES OBTAINED FROM OR "
+"THROUGH THE APIS, IS AT YOUR OWN RISK. YOUR ACCESS TO OR DOWNLOAD OF "
+"INFORMATION, MATERIALS OR DATA THROUGH THE APIS IS AT YOUR OWN DISCRETION "
+"AND RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR PROPERTY"
+" (INCLUDING YOUR COMPUTER SYSTEM) OR LOSS OF DATA THAT RESULTS FROM THE "
+"DOWNLOAD OR USE OF SUCH INFORMATION, MATERIALS OR DATA, UNLESS OTHERWISE "
+"EXPRESSLY PROVIDED FOR IN THE {platform_name} PRIVACY POLICY."
 
 #: lms/templates/api_admin/terms_of_service.html:86
 #, python-brace-format
@@ -22311,14 +21451,13 @@ msgid ""
 "INFORMATION OBTAINED FROM OR THROUGH THE APIS, WHETHER YOUR CLAIM IS BASED "
 "IN CONTRACT, TORT, STATUTORY OR OTHER LAW."
 msgstr ""
-"DANS LA MESURE MAXIMALE PERMISE PAR LA LOI APPLICABLE, VOUS ACCEPTEZ QUE NI "
-"{platform_name} NI AUCUN DES PARTICIPANTS {platform_name} NE SERONT TENUS "
-"RESPONSABLES ENVERS VOUS DE QUELQUES PERTES OU DOMMAGES, QU’ILS SOIENT RÉELS"
-" OU INDIRECTS, DÉCOULANT DES CONDITIONS OU DE VOTRE UTILISATION (OU DE VOTRE"
-" INCAPACITÉ À UTILISER) DES APIS OU DE TOUT CONTENU API, OU DE VOTRE "
-"CONFIANCE DANS LES INFORMATIONS OBTENUES PAR L’INTERMÉDIAIRE DES APIS, QUE "
-"VOTRE RÉCLAMATION SOIT BASÉE SUR un contrat, un délit, une loi statutaire ou"
-" autre."
+"TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, YOU AGREE THAT NEITHER "
+"{platform_name} NOR ANY OF THE {platform_name} PARTICIPANTS WILL BE LIABLE "
+"TO YOU FOR ANY LOSS OR DAMAGES, EITHER ACTUAL OR CONSEQUENTIAL, ARISING OUT "
+"OF OR RELATING TO THE TERMS, OR YOUR (OR ANY THIRD PARTY'S) USE OF OR "
+"INABILITY TO USE THE APIS OR ANY API CONTENT, OR YOUR RELIANCE UPON "
+"INFORMATION OBTAINED FROM OR THROUGH THE APIS, WHETHER YOUR CLAIM IS BASED "
+"IN CONTRACT, TORT, STATUTORY OR OTHER LAW."
 
 #: lms/templates/api_admin/terms_of_service.html:88
 #, python-brace-format
@@ -22332,14 +21471,14 @@ msgid ""
 "DEFAMATION, ERRORS, LOSS OF PROFITS, LOSS OF DATA OR INTERRUPTION IN "
 "AVAILABILITY OF DATA)."
 msgstr ""
-"EN PARTICULIER, DANS LA MESURE MAXIMALE PERMISE PAR LA LOI APPLICABLE, NI "
-"{platform_name} NI AUCUN DES PARTICIPANTS {platform_name} NE SERONT "
-"RESPONSABLES DES DOMMAGES INDIRECTS, CONSÉCUTIFS, PUNITIFS, SPÉCIAUX, "
-"EXEMPLAIRES OU ACCESSOIRES, QU’ILS SOIENT PRÉVISIBLES OU NON, ET QUE "
-"{platform_name} OU L’UN DES PARTICIPANTS {platform_name} AIT FAIT preuve de "
-"négligence ou non (y compris, mais sans s’y limiter, les réclamations pour "
-"diffamation, erreurs, perte de profits, perte de données ou interruption de "
-"la disponibilité des données)."
+"IN PARTICULAR, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, NEITHER "
+"{platform_name} NOR ANY OF THE {platform_name} PARTICIPANTS WILL HAVE ANY "
+"LIABILITY FOR ANY CONSEQUENTIAL, INDIRECT, PUNITIVE, SPECIAL, EXEMPLARY OR "
+"INCIDENTAL DAMAGES, WHETHER FORESEEABLE OR UNFORESEEABLE AND WHETHER OR NOT "
+"{platform_name} OR ANY OF THE {platform_name} PARTICIPANTS HAS BEEN "
+"NEGLIGENT OR OTHERWISE AT FAULT (INCLUDING, BUT NOT LIMITED TO, CLAIMS FOR "
+"DEFAMATION, ERRORS, LOSS OF PROFITS, LOSS OF DATA OR INTERRUPTION IN "
+"AVAILABILITY OF DATA)."
 
 #: lms/templates/api_admin/terms_of_service.html:90
 msgid ""
@@ -22348,11 +21487,10 @@ msgid ""
 " OR ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MAY NOT APPLY "
 "TO YOU, AND YOU MIGHT HAVE ADDITIONAL RIGHTS."
 msgstr ""
-"CERTAINES LOIS D’ÉTAT N’AUTORISENT PAS LA LIMITATION DES GARANTIES "
-"IMPLICITES NI L’EXCLUSION OU LA LIMITATION DE CERTAINS DOMMAGES. SI CES LOIS"
-" S’APPLIQUENT À VOUS, une partie ou la totalité des clauses de non-"
-"responsabilité, exclusions ou limitations ci-dessus pourraient ne pas "
-"s’appliquer, et vous pourriez bénéficier de droits supplémentaires."
+"CERTAIN STATE LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE "
+"EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME"
+" OR ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MAY NOT APPLY "
+"TO YOU, AND YOU MIGHT HAVE ADDITIONAL RIGHTS."
 
 #: lms/templates/api_admin/terms_of_service.html:92
 #, python-brace-format
@@ -22365,14 +21503,13 @@ msgid ""
 "that may be offered at these third-party sites. If you decide to access "
 "linked third-party websites, you do so at your own risk."
 msgstr ""
-"Les APIs et le Contenu API peuvent inclure des hyperliens vers des sites "
-"maintenus ou contrôlés par des tiers non affiliés à {platform_name} ou "
-"placés hors de son contrôle. {platform_name_capitalized} et les Participants"
-" {platform_name} ne sont pas responsables et n’effectuent pas de "
-"vérification systématique, d’approbation, de révision ou de cautionnement "
-"quant au contenu ou à l’utilisation des produits ou services qui pourraient "
-"être proposés sur ces sites tiers. Si vous décidez d’accéder à ces sites, "
-"cela se fera à vos propres risques."
+"The APIs and API Content may include hyperlinks to sites maintained or "
+"controlled by others and not affiliated with or under the control of "
+"{platform_name}. {platform_name_capitalized} and the {platform_name} "
+"Participants are not responsible for and do not routinely screen, approve, "
+"review or endorse the contents of or use of any of the products or services "
+"that may be offered at these third-party sites. If you decide to access "
+"linked third-party websites, you do so at your own risk."
 
 #: lms/templates/api_admin/terms_of_service.html:96
 #, python-brace-format
@@ -22389,18 +21526,17 @@ msgid ""
 "{platform_name} or one of the {platform_name} Participants will provide you "
 "with written notice of such claim, action or demand."
 msgstr ""
-"Dans la mesure maximale permise par la loi applicable, vous acceptez de "
-"défendre, d’indemniser et de dégager de toute responsabilité {platform_name}"
-" ainsi que les Participants {platform_name} et leurs filiales, sociétés "
-"affiliées, dirigeants, membres du corps enseignant, étudiants, boursiers, "
-"membres du conseil d’administration, agents et employés, contre toute "
-"réclamation, action ou demande de tiers découlant de, résultant de ou liée, "
-"de quelque manière que ce soit, à votre utilisation des APIs et de tout "
-"Contenu API, y compris toute dépense ou responsabilité liée à toutes "
-"réclamations, pertes, dommages (directs et indirects), poursuites, "
-"jugements, frais de litige et honoraires d’avocat de toute nature. Dans un "
-"tel cas, {platform_name} ou l’un des Participants {platform_name} vous en "
-"informera par écrit."
+"To the maximum extent permitted by applicable law, you agree to defend, hold"
+" harmless and indemnify {platform_name} and the {platform_name} "
+"Participants, and their respective subsidiaries, affiliates, officers, "
+"faculty, students, fellows, governing board members, agents and employees "
+"from and against any third-party claims, actions or demands arising out of, "
+"resulting from or in any way related to your use of the APIs and any API "
+"Content, including any liability or expense arising from any and all claims,"
+" losses, damages (actual and consequential), suits, judgments, litigation "
+"costs and attorneys' fees, of every kind and nature. In such a case, "
+"{platform_name} or one of the {platform_name} Participants will provide you "
+"with written notice of such claim, action or demand."
 
 #: lms/templates/api_admin/terms_of_service.html:98
 msgid "General Legal Terms"
@@ -22423,20 +21559,19 @@ msgid ""
 "you by {platform_name} under these Terms, {platform_name} may notify you via"
 " the email address associated with your {platform_name} account."
 msgstr ""
-"Les Conditions constituent l’intégralité de l’accord entre vous et "
-"{platform_name} relatif à votre utilisation des APIs et du Contenu API, et "
-"annulent tout accord antérieur à ce sujet entre vous et {platform_name}. Le "
-"fait que {platform_name} n’exerce pas ou n’applique pas un droit ou une "
-"disposition des Conditions ne constitue pas une renonciation à ce droit ou à"
-" cette disposition. Si une disposition des Conditions est jugée invalide par"
-" un tribunal compétent, les parties conviennent néanmoins que le tribunal "
-"devra s’efforcer de donner effet aux intentions des parties telles qu’elles "
-"transparaissent dans ladite disposition, les autres dispositions restant "
-"pleinement en vigueur. Les Conditions ne créent aucun droit au bénéfice d’un"
-" tiers, ni un lien d’agence, de partenariat ou de coentreprise. Pour tout "
-"avis qui vous serait adressé par {platform_name} en vertu des présentes "
-"Conditions, {platform_name} pourra vous notifier via l’adresse e-mail "
-"associée à votre compte {platform_name}."
+"The Terms constitute the entire agreement between you and {platform_name} "
+"with respect to your use of the APIs and API Content, superseding any prior "
+"agreements between you and {platform_name} regarding your use of the APIs "
+"and API Content. The failure of {platform_name} to exercise or enforce any "
+"right or provision of the Terms shall not constitute a waiver of such right "
+"or provision. If any provision of the Terms is found by a court of competent"
+" jurisdiction to be invalid, the parties nevertheless agree that the court "
+"should endeavor to give effect to the parties' intentions as reflected in "
+"the provision and the other provisions of the Terms shall remain in full "
+"force and effect. The Terms do not create any third party beneficiary rights"
+" or any agency, partnership, or joint venture. For any notice provided to "
+"you by {platform_name} under these Terms, {platform_name} may notify you via"
+" the email address associated with your {platform_name} account."
 
 #: lms/templates/api_admin/terms_of_service.html:102
 #, python-brace-format
@@ -22454,17 +21589,18 @@ msgid ""
 "still be allowed to apply for injunctive remedies (or an equivalent type of "
 "urgent legal relief) in any jurisdiction."
 msgstr ""
-"Vous acceptez que les Conditions, les APIs et toute réclamation ou litige "
-"découlant des Conditions ou des APIs soient régis par les lois du "
-"Commonwealth du Massachusetts, à l’exception de ses règles relatives aux "
-"conflits de lois. Vous acceptez que toutes ces revendications et litiges "
-"soient exclusivement portés devant les tribunaux fédéraux ou d’État situés à"
-" Cambridge, Massachusetts, aux États-Unis. Vous consentez à la compétence "
-"personnelle de ces tribunaux à votre égard et renoncez à toute objection "
-"concernant cette compétence ou l’inconvénient du lieu de juridiction. "
-"Nonobstant ce qui précède, vous acceptez que {platform_name} puisse toujours"
-" solliciter des mesures injonctives (ou un recours juridique équivalent en "
-"urgence) dans toute juridiction."
+"You agree that the Terms, the APIs, and any claim or dispute arising out of "
+"or relating to the Terms or the APIs will be governed by the laws of the "
+"Commonwealth of Massachusetts, excluding its conflicts of law provisions. "
+"You agree that all such claims and disputes will be heard and resolved "
+"exclusively in the federal or state courts located in and serving Cambridge,"
+" Massachusetts, U.S.A. You consent to the personal jurisdiction of those "
+"courts over you for this purpose, and you waive and agree not to assert any "
+"objection to such proceedings in those courts (including any defense or "
+"objection of lack of proper jurisdiction or venue or inconvenience of "
+"forum). Notwithstanding the foregoing, you agree that {platform_name} shall "
+"still be allowed to apply for injunctive remedies (or an equivalent type of "
+"urgent legal relief) in any jurisdiction."
 
 #: lms/templates/api_admin/terms_of_service.html:104
 msgid "Termination"
@@ -22478,10 +21614,10 @@ msgid ""
 "any API Content for any reason or no reason, without prior notice or "
 "liability."
 msgstr ""
-"Vous pouvez cesser d’utiliser les APIs à tout moment. Vous acceptez que "
-"{platform_name}, à sa seule discrétion et à tout moment, puisse résilier "
-"votre utilisation des APIs ou de tout Contenu API, pour quelque raison que "
-"ce soit ou sans raison, sans préavis ni responsabilité."
+"You may stop using the APIs at any time. You agree that {platform_name}, in "
+"its sole discretion and at any time, may terminate your use of the APIs or "
+"any API Content for any reason or no reason, without prior notice or "
+"liability."
 
 #: lms/templates/api_admin/terms_of_service.html:108
 #, python-brace-format
@@ -22494,13 +21630,13 @@ msgid ""
 "{platform_name} Participants will have any liability to you for such an "
 "action."
 msgstr ""
-"{platform_name_capitalized} et les Participants {platform_name} se réservent"
-" le droit, à leur seule discrétion, d’annuler, de reporter, de reprogrammer "
-"ou de modifier le format de toute API ou de tout Contenu API proposé via "
-"{platform_name}, ou de cesser de fournir tout ou partie des APIs, du Contenu"
-" API ou des services associés, et vous acceptez qu’aucun {platform_name} ni "
-"aucun des Participants {platform_name} ne pourra être tenu responsable "
-"envers vous pour une telle décision."
+"{platform_name_capitalized} and the {platform_name} Participants reserve the"
+" right at any time in their sole discretion to cancel, delay, reschedule or "
+"alter the format of any API or API Content offered through {platform_name}, "
+"or to cease providing any part or all of the APIs or API Content or related "
+"services, and you agree that neither {platform_name} nor any of the "
+"{platform_name} Participants will have any liability to you for such an "
+"action."
 
 #: lms/templates/api_admin/terms_of_service.html:110
 #, python-brace-format
@@ -22518,20 +21654,18 @@ msgid ""
 "you otherwise may have to {platform_name}, including without limitation any "
 "indemnification obligations contained herein."
 msgstr ""
-"En cas de résiliation des Conditions ou de cessation de votre accès à une "
-"API pour quelque raison que ce soit, votre droit d’utiliser les APIs et le "
-"Contenu API prendra immédiatement fin. Vous devez cesser immédiatement "
-"d’utiliser les APIs et supprimer tout Contenu API mis en cache ou stocké de "
-"Votre Application ainsi que de vos réseaux, systèmes et serveurs dès que "
-"raisonnablement possible. Toutes les dispositions des Conditions qui, de par"
-" leur nature, doivent survivre à la résiliation resteront en vigueur, y "
-"compris, sans limitation, les dispositions relatives à la propriété, les "
-"clauses de non-garantie et les limitations de responsabilité. La résiliation"
-" de votre accès et de votre utilisation des APIs et du Contenu API ne vous "
-"exonère pas des obligations nées ou accumulées avant cette résiliation, ni "
-"ne limite toute responsabilité que vous pourriez avoir envers "
-"{platform_name}, y compris, sans limitation, toute obligation "
-"d’indemnisation."
+"Upon any termination of the Terms or discontinuation of your access to an "
+"API for any reason, your right to use any API and API Content will "
+"immediately cease. You will immediately stop using the APIs and delete any "
+"cached or stored API Content from Your Application and your networks, "
+"systems and servers as soon as reasonably possible. All provisions of the "
+"Terms that by their nature should survive termination shall survive "
+"termination, including, without limitation, ownership provisions, warranty "
+"disclaimers, and limitations of liability. Termination of your access to and"
+" use of the APIs and API Content shall not relieve you of any obligations "
+"arising or accruing prior to such termination or limit any liability that "
+"you otherwise may have to {platform_name}, including without limitation any "
+"indemnification obligations contained herein."
 
 #: lms/templates/api_admin/catalogs/edit.html:12
 #, python-brace-format
@@ -22633,17 +21767,6 @@ msgid ""
 msgstr ""
 "Utiliser les flèches pour naviguer aux travers des astuces ou utiliser la "
 "touche TAB pour retourner à la calculatrice"
-
-#: lms/templates/calculator/toggle_calculator.html:27
-#, python-brace-format
-msgid ""
-"For detailed information, see {math_link_start}Entering Mathematical and "
-"Scientific Expressions{math_link_end} in the {guide_link_start}Open edX "
-"Guide for Students{guide_link_end}."
-msgstr ""
-"Pour obtenir des informations détaillées, consultez {math_link_start}la "
-"saisie d'expressions mathématiques et scientifiques{math_link_end} dans le "
-"{guide_link_start}Guide Open edX pour les étudiants{guide_link_end}."
 
 #: lms/templates/calculator/toggle_calculator.html:36
 msgid "Tips"
@@ -22772,7 +21895,7 @@ msgstr "10^ et l'exposant"
 #. http://en.wikipedia.org/wiki/Scientific_notation#E_notation
 #: lms/templates/calculator/toggle_calculator.html:132
 msgid "e notation"
-msgstr "notation exponentielle"
+msgstr "e notation"
 
 #. Translators: 1e is a mathematical symbol. Please do not translate.
 #: lms/templates/calculator/toggle_calculator.html:134
@@ -24954,16 +24077,6 @@ msgstr ""
 "situation financière, obtenir une attestation et partager votre succès avec "
 "les autres."
 
-#. Translators: This string will not be used in Open edX installations. Do not
-#. translate the name "Anant".
-#: lms/templates/financial-assistance/financial-assistance.html:39
-msgid "Sincerely,"
-msgstr "Cordialement,"
-
-#: lms/templates/financial-assistance/financial-assistance.html:40
-msgid "Anant"
-msgstr "Anant"
-
 #: lms/templates/financial-assistance/financial-assistance.html:47
 msgid "Apply for Financial Assistance"
 msgstr "Postuler à l'aide financière"
@@ -25400,18 +24513,6 @@ msgstr ""
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html:38
 msgid "Download a CSV of learners who can enroll"
 msgstr "Télécharger au format CSV une liste des apprenants pouvant s'inscrire"
-
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:40
-msgid ""
-"Click to generate a CSV file that lists learners who are enrolled in the "
-"course but have not yet activated their account."
-msgstr ""
-"Cliquez pour générer un fichier CSV listant les apprenants inscrits au cours"
-" mais qui n'ont pas encore activé leur compte."
-
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:42
-msgid "Download a CSV of learners who have not activated their account"
-msgstr "Téléchargez un CSV des apprenants n'ayant pas activé leur compte"
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html:44
 msgid "Click to download a CSV of anonymized student IDs:"
@@ -26065,7 +25166,7 @@ msgstr "Ajouter un personnel restreint"
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:199
 msgid "Admin"
-msgstr "Administrateur"
+msgstr "Admin"
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:201
 msgid ""
@@ -26113,24 +25214,6 @@ msgstr "Ajouter un Bêta-testeur"
 msgid "Discussion Admins"
 msgstr "Administrateurs de discussion"
 
-#: lms/templates/instructor/instructor_dashboard_2/membership.html:229
-msgid ""
-"Discussion Admins can edit or delete any post, clear misuse flags, close and"
-" re-open threads, endorse responses, and see posts from all groups. Their "
-"posts are marked as 'staff'. They can also add and remove the discussion "
-"moderation roles to manage course team membership. Any users not yet "
-"enrolled in the course will be automatically enrolled when added as "
-"Discussion Admin"
-msgstr ""
-"Les administrateurs de discussion peuvent modifier ou supprimer n'importe "
-"quel message, effacer les signalements abusifs, fermer et rouvrir les fils "
-"de discussion, approuver des réponses et consulter les messages de tous les "
-"groupes. Leurs messages sont marqués comme « staff ». Ils peuvent également "
-"ajouter ou retirer les rôles de modération de discussion pour gérer "
-"l'appartenance à l'équipe du cours. Tout utilisateur non encore inscrit au "
-"cours sera automatiquement inscrit lorsqu'il sera ajouté en tant "
-"qu'administrateur de discussion."
-
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:237
 msgid "Add Discussion Admin"
 msgstr "Ajouter un Administrateur de discussion"
@@ -26158,24 +25241,6 @@ msgstr "Ajouter un chercheur des données du cours"
 msgid "Discussion Moderators"
 msgstr "Modérateurs de discussion"
 
-#: lms/templates/instructor/instructor_dashboard_2/membership.html:258
-msgid ""
-"Discussion Moderators can edit or delete any post, clear misuse flags, close"
-" and re-open threads, endorse responses, and see posts from all groups. "
-"Their posts are marked as 'staff'. They cannot manage course team membership"
-" by adding or removing discussion moderation roles. Any users not yet "
-"enrolled in the course will be automatically enrolled when added as "
-"Discussion Moderator"
-msgstr ""
-"Les modérateurs de discussion peuvent modifier ou supprimer n'importe quel "
-"message, effacer les signalements abusifs, fermer et rouvrir les fils de "
-"discussion, approuver des réponses et consulter les messages de tous les "
-"groupes. Leurs messages sont marqués comme « staff ». Ils ne peuvent pas "
-"gérer l'appartenance à l'équipe du cours en ajoutant ou en retirant les "
-"rôles de modération de discussion. Tout utilisateur non encore inscrit au "
-"cours sera automatiquement inscrit lorsqu'il sera ajouté en tant que "
-"modérateur de discussion."
-
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:265
 msgid "Add Moderator"
 msgstr "Ajouter un Modérateur"
@@ -26184,47 +25249,9 @@ msgstr "Ajouter un Modérateur"
 msgid "Group Community TA"
 msgstr "Assistant d'enseignement de groupe"
 
-#: lms/templates/instructor/instructor_dashboard_2/membership.html:272
-msgid ""
-"Group Community TAs are members of the community who help course teams "
-"moderate discussions. Group Community TAs see only posts by learners in "
-"their assigned group. They can edit or delete posts, clear flags, close and "
-"re-open threads, and endorse responses, but only for posts by learners in "
-"their group. Their posts are marked as 'Community TA'. Any users not yet "
-"enrolled in the course will be automatically enrolled when added as Group "
-"Community TA"
-msgstr ""
-"Les assistants communautaires de groupe sont des membres de la communauté "
-"qui aident les équipes de cours à modérer les discussions. Ils ne voient que"
-" les messages des apprenants de leur groupe assigné. Ils peuvent modifier ou"
-" supprimer les messages, effacer les signalements, fermer et rouvrir les "
-"fils de discussion, et approuver des réponses, mais uniquement pour les "
-"messages des apprenants de leur groupe. Leurs messages sont marqués comme « "
-"Community TA ». Tout utilisateur non encore inscrit au cours sera "
-"automatiquement inscrit lorsqu'il sera ajouté en tant qu'assistant "
-"communautaire de groupe."
-
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:279
 msgid "Add Group Community TA"
 msgstr "Ajouter un assistant d'enseignement de groupe"
-
-#: lms/templates/instructor/instructor_dashboard_2/membership.html:286
-msgid ""
-"Community TAs are members of the community who help course teams moderate "
-"discussions. They can see posts by learners in their assigned cohort or "
-"enrollment track, and can edit or delete posts, clear flags, close or re-"
-"open threads, and endorse responses. Their posts are marked as 'Community "
-"TA'. Any users not yet enrolled in the course will be automatically enrolled"
-" when added as Community TA"
-msgstr ""
-"Les assistants communautaires sont des membres de la communauté qui aident "
-"les équipes de cours à modérer les discussions. Ils peuvent consulter les "
-"messages des apprenants dans leur cohorte assignée ou dans leur trajectoire "
-"d'inscription, et peuvent modifier ou supprimer les messages, effacer les "
-"signalements, fermer ou rouvrir les fils de discussion, et approuver des "
-"réponses. Leurs messages sont marqués comme « Community TA ». Tout "
-"utilisateur non encore inscrit au cours sera automatiquement inscrit "
-"lorsqu'il sera ajouté en tant qu'assistant communautaire."
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:292
 msgid "Add Community TA"
@@ -26256,10 +25283,6 @@ msgstr "Pour utiliser l'outil de messagerie, visitez la"
 #: lms/templates/instructor/instructor_dashboard_2/send_email.html:13
 msgid "new experience"
 msgstr "nouvelle expérience"
-
-#: lms/templates/instructor/instructor_dashboard_2/send_email.html:13
-msgid "Opens in a new tab"
-msgstr "S'ouvre dans un nouvel onglet"
 
 #: lms/templates/instructor/instructor_dashboard_2/send_email.html:19
 #: lms/templates/instructor/instructor_dashboard_2/send_email.html:23
@@ -26681,7 +25704,7 @@ msgstr "Afficher l'état des tâches que vous avez soumises pour ce problème."
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/grading.html:11
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:10
 msgid "Note"
-msgstr "Remarque"
+msgstr "Note"
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/problem_report.html:10
 msgid ""
@@ -26762,14 +25785,6 @@ msgid ""
 msgstr ""
 "Cliquez pour générer un fichier CSV qui répertorie les apprenants qui "
 "peuvent s'inscrire au cours mais ne l'ont pas encore fait."
-
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:102
-msgid ""
-"Click to generate a CSV file                 that lists learners who are "
-"enrolled in the course but have not yet activated their account."
-msgstr ""
-"Cliquez pour générer un fichier CSV                 qui répertorie les "
-"apprenants inscrits au cours mais n'ayant pas encore activé leur compte."
 
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:105
 msgid ""
