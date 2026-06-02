@@ -1,82 +1,74 @@
-# edX translation file.
-# Copyright (C) 2024 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2024.
-# 
-# Translators:
-# Brian Smith, 2024
-# Nathan Robertson, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2023-06-03 00:54+0000\n"
-"Last-Translator: Nathan Robertson, 2024\n"
-"Language-Team: Spanish (Spain) (https://app.transifex.com/open-edx/teams/6205/es_ES/)\n"
+"PO-Revision-Date: 2026-06-01 23:31+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_ES\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: recommender.py:313
+#: recommender.py:314
 msgid "Invalid location URL provided"
 msgstr "URL de ubicación no válida proporcionada"
 
-#: recommender.py:324
+#: recommender.py:325
 msgid "The resource you are attempting to provide already exists"
 msgstr "El recurso que intenta proporcionar ya existe"
 
-#: recommender.py:337
+#: recommender.py:338
 msgid ""
 "The resource you are attempting to provide has been disallowed by the staff."
 " Reason: "
 msgstr "El personal ha rechazado el recurso que intenta proporcionar. Razón: "
 
-#: recommender.py:354
+#: recommender.py:355
 msgid "The selected resource does not exist"
 msgstr "El recurso seleccionado no existe"
 
-#: recommender.py:402
+#: recommender.py:403
 msgid "Size of uploaded file exceeds threshold"
 msgstr "El tamaño del archivo subido supera el umbral"
 
-#: recommender.py:413
+#: recommender.py:414
 msgid "The configuration of pyfs is not properly set"
 msgstr "La configuración de pyfs no está configurada correctamente"
 
-#: recommender.py:752
+#: recommender.py:753
 msgid "Endorse resource without permission"
 msgstr "Respaldar recurso sin permiso"
 
-#: recommender.py:796
+#: recommender.py:797
 msgid "You don't have the permission to remove this resource"
 msgstr "No tienes permiso para eliminar este recurso."
 
-#: recommender.py:847
+#: recommender.py:848
 msgid "Only staff can import resources"
 msgstr "Sólo el personal puede importar recursos"
 
-#: recommender.py:858 recommender.py:885
+#: recommender.py:859 recommender.py:886
 msgid ""
 "Please submit the JSON file obtained with the download resources button"
 msgstr "Envíe el archivo JSON obtenido con el botón de descarga de recursos."
 
-#: recommender.py:898
+#: recommender.py:899
 msgid "Tried to access flagged resources without staff permission"
 msgstr "Intentó acceder a recursos marcados sin el permiso del personal"
 
-#: templates/recommender.html:83
+#: templates/recommender.html:85
 msgid "This is a list of recommended resources. If you\\"
 msgstr "Esta es una lista de recursos recomendados. Si usted\\"
 
-#: templates/recommender.html:84 static/js/src/cats.js:158
+#: templates/recommender.html:86 static/js/src/cats.js:158
 msgid "Show related resources"
 msgstr "Mostrar recursos relacionados"
 
-#: templates/recommender.html:91
+#: templates/recommender.html:93
 msgid ""
 "This will be a list of resources your fellow students thought might be "
 "helpful, but it is empty currently. If you find useful resources, either on "
@@ -86,23 +78,23 @@ msgstr ""
 "podrían ser útiles, pero actualmente está vacía. Si encuentra recursos "
 "útiles, ya sea en edx.org o en otro lugar, agréguelos."
 
-#: templates/recommender.html:118
+#: templates/recommender.html:120
 msgid "Add new resource &gt;&gt;"
 msgstr "Agregar nuevo recurso &gt;&gt;"
 
-#: templates/recommender.html:119
+#: templates/recommender.html:121
 msgid "Download resources"
 msgstr "Descargar recursos"
 
-#: templates/recommender.html:120 templates/recommender.html:146
+#: templates/recommender.html:122 templates/recommender.html:148
 msgid "Upload resources"
 msgstr "Subir recursos"
 
-#: templates/recommender.html:122
+#: templates/recommender.html:124
 msgid "mode"
 msgstr "modo"
 
-#: templates/recommender.html:131
+#: templates/recommender.html:133
 msgid ""
 "This is a list of resources your fellow students thought might be helpful. "
 "If you find another useful resource, either on edx.org or elsewhere, please "
@@ -118,48 +110,48 @@ msgstr ""
 "tan útil, vota en contra. Si tiene problemas (material ilegal, incorrecto, "
 "etc.), márquelo y háganos saber el motivo."
 
-#: templates/recommender.html:139
+#: templates/recommender.html:141
 msgid "cancel and go back to resource list"
 msgstr "cancelar y volver a la lista de recursos"
 
-#: templates/recommender.html:139
+#: templates/recommender.html:141
 msgid "&lt; Related resources"
 msgstr "&lt; Recursos relacionados"
 
-#: templates/recommender.html:145
+#: templates/recommender.html:147
 msgid "Resources (in JSON format):"
 msgstr "Recursos (en formato JSON):"
 
-#: templates/recommender.html:145
+#: templates/recommender.html:147
 msgid "Provide a file of resource list in JSON format"
 msgstr "Proporcionar un archivo de lista de recursos en formato JSON"
 
-#: templates/recommender.html:151 templates/recommender.html:161
-#: templates/recommender.html:171
+#: templates/recommender.html:153 templates/recommender.html:163
+#: templates/recommender.html:173
 msgid "Reason"
 msgstr "razonamiento"
 
-#: templates/recommender.html:155
+#: templates/recommender.html:157
 msgid "Reason for why this resource should be removed"
 msgstr "Razón por la que se debe eliminar este recurso"
 
-#: templates/recommender.html:165
+#: templates/recommender.html:167
 msgid "Reason for why this resource should be endorsed"
 msgstr "Razón por la cual se debe respaldar este recurso"
 
-#: templates/recommender.html:175
+#: templates/recommender.html:177
 msgid "Reason for why this resource should be flagged"
 msgstr "Motivo por el que se debe marcar este recurso"
 
-#: templates/recommender.html:181 templates/recommender.html:206
+#: templates/recommender.html:183 templates/recommender.html:208
 msgid "Title"
 msgstr "Título"
 
-#: templates/recommender.html:183 templates/recommender.html:208
+#: templates/recommender.html:185 templates/recommender.html:210
 msgid "Provide a resource title, required"
 msgstr "Proporcionar un título de recurso, obligatorio"
 
-#: templates/recommender.html:185 templates/recommender.html:210
+#: templates/recommender.html:187 templates/recommender.html:212
 msgid ""
 "Provide a meaningful title so other students know whether this is useful to "
 "them"
@@ -167,19 +159,19 @@ msgstr ""
 "Proporcione un título significativo para que otros estudiantes sepan si les "
 "resulta útil."
 
-#: templates/recommender.html:187
+#: templates/recommender.html:189
 msgid "Location"
 msgstr "Ubicación"
 
-#: templates/recommender.html:189 templates/recommender.html:214
+#: templates/recommender.html:191 templates/recommender.html:216
 msgid "Provide a resource location in url, required"
 msgstr "Proporcione una ubicación de recurso en la URL, obligatorio"
 
-#: templates/recommender.html:193 templates/recommender.html:218
+#: templates/recommender.html:195 templates/recommender.html:220
 msgid "Description"
 msgstr "Descripción"
 
-#: templates/recommender.html:197 templates/recommender.html:222
+#: templates/recommender.html:199 templates/recommender.html:224
 msgid ""
 "Provide a meaningful description so other students know whether this is "
 "useful to them"
@@ -187,27 +179,27 @@ msgstr ""
 "Proporcione una descripción significativa para que otros estudiantes sepan "
 "si les resulta útil."
 
-#: templates/recommender.html:200
+#: templates/recommender.html:202
 msgid "Preview screenshot:"
 msgstr "Captura de pantalla de vista previa:"
 
-#: templates/recommender.html:200
+#: templates/recommender.html:202
 msgid "Provide a resource screenshot"
 msgstr "Proporcionar una captura de pantalla del recurso"
 
-#: templates/recommender.html:201
+#: templates/recommender.html:203
 msgid "Save change"
 msgstr "Guardar cambios"
 
-#: templates/recommender.html:220
+#: templates/recommender.html:222
 msgid "Provide a resource description"
 msgstr "Proporcionar una descripción del recurso"
 
-#: templates/recommender.html:225
+#: templates/recommender.html:227
 msgid "Provide a file of resource screenshot"
 msgstr "Proporcionar un archivo de captura de pantalla del recurso"
 
-#: templates/recommender.html:226
+#: templates/recommender.html:228
 msgid "Add resource"
 msgstr "Agregar recurso"
 

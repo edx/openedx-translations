@@ -1,34 +1,24 @@
-# #-#-#-#-#  django.po (course-discovery)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2018 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# 
-# Translators:
-# Translators:
-# Brian Smith, 2024
-# Nathan Robertson, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-16 00:21+0000\n"
-"PO-Revision-Date: 2023-01-26 15:39+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024\n"
-"Language-Team: Greek (https://app.transifex.com/open-edx/teams/6205/el/)\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-04-27 00:38+0000\n"
+"PO-Revision-Date: 2026-06-01 23:33+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: English (http://www.transifex.com/open-edx/edx-platform/language/en/)\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps/api/filters.py:47
+#: apps/api/filters.py:48
 #, python-brace-format
 msgid "No user with the username [{username}] exists."
 msgstr "Δεν υπάρχει χρήστης με το ψευδώνυμο [{username}]."
 
-#: apps/api/filters.py:50
+#: apps/api/filters.py:51
 msgid ""
 "Only staff users are permitted to filter by username. Remove the username "
 "parameter."
@@ -36,70 +26,70 @@ msgstr ""
 "Tο φιλτράρισμα βάσει ονόματος χρήστη επιτρέπεται μόνο σε χρήστες που ανήκουν"
 " στο προσωπικό. Αφαιρέστε την παράμετρο του ονόματος χρήστη."
 
-#: apps/api/serializers.py:818
+#: apps/api/serializers.py:850
 msgid "Number of courses contained in this catalog"
 msgstr "Ο αριθμός των μαθημάτων που εμπεριέχεται σε αυτόν τον κατάλογο"
 
-#: apps/api/serializers.py:821
+#: apps/api/serializers.py:853
 msgid "Usernames of users with explicit access to view this catalog"
 msgstr ""
 "Τα ονόματα των χρηστών που έχουν αποκλειστικό δικαίωμα εισόδου, για την "
 "προβολή αυτού του καταλόγου"
 
-#: apps/api/serializers.py:989
+#: apps/api/serializers.py:1023
 msgid "Start date cannot be after the End date"
 msgstr "Η ημερομηνία έναρξης δεν μπορεί να είναι μετά την ημερομηνία λήξης"
 
-#: apps/api/serializers.py:994
+#: apps/api/serializers.py:1028
 msgid "Term cannot be changed"
 msgstr "Ο όρος δεν μπορεί να αλλάξει"
 
-#: apps/api/serializers.py:1014
+#: apps/api/serializers.py:1048
 msgid "Language in which the course is administered"
 msgstr "Γλώσσα στην οποία παρέχεται το μάθημα"
 
-#: apps/api/serializers.py:1112
+#: apps/api/serializers.py:1152
 msgid "Course cannot be changed for an existing course run"
 msgstr "Το μάθημα δεν μπορεί να αλλάξει για μια υπάρχουσα σειρά μαθημάτων"
 
-#: apps/api/serializers.py:1117
+#: apps/api/serializers.py:1157
 msgid "Minimum effort cannot be greater than Maximum effort"
 msgstr ""
 "Η ελάχιστη προσπάθεια δεν μπορεί να είναι μεγαλύτερη από τη μέγιστη "
 "προσπάθεια"
 
-#: apps/api/serializers.py:1119
+#: apps/api/serializers.py:1159
 msgid "Minimum effort and Maximum effort cannot be the same"
 msgstr ""
 "Η ελάχιστη προσπάθεια και η μέγιστη προσπάθεια δεν μπορούν να είναι ίδια"
 
-#: apps/api/serializers.py:1165
+#: apps/api/serializers.py:1205
 msgid "Dictionary mapping course run IDs to boolean values"
 msgstr ""
 "Αντιστοίχιση λεξικού αναγνωριστικών εκτέλεσης μαθήματος σε τιμές boolean"
 
-#: apps/api/serializers.py:1269
+#: apps/api/serializers.py:1309
 msgid "Restriction Type cannot be empty"
 msgstr "Ο Τύπος περιορισμού δεν μπορεί να είναι κενός"
 
-#: apps/api/serializers.py:1717
+#: apps/api/serializers.py:1775
 msgid "Dictionary mapping course IDs to boolean values"
 msgstr "Αντιστοίχιση λεξικού αναγνωριστικών μαθήματος σε τιμές boolean"
 
-#: apps/api/serializers.py:2184
+#: apps/api/serializers.py:2242
 msgid "Languages that course runs in this program are offered in."
 msgstr ""
 "Οι γλώσσες στις οποίες προσφέρονται οι κανονικές εκτελέσεις σ' αυτό το "
 "πρόγραμμα του κύκλου μαθημάτων."
 
-#: apps/api/serializers.py:2188
+#: apps/api/serializers.py:2246
 msgid ""
 "Languages that course runs in this program have available transcripts in."
 msgstr ""
 "Οι γλώσσες στις οποίες διατίθενται οι μεταγραφές για τις κανονικές "
 "εκτελέσεις σ' αυτό το πρόγραμμα του κύκλου μαθημάτων."
 
-#: apps/api/utils.py:327
+#: apps/api/utils.py:346
 #, python-brace-format
 msgid ""
 "An error occurred while setting the course run image for [{key}] in studio. "
@@ -118,59 +108,68 @@ msgid "You must include a course_uuid in your query parameters."
 msgstr ""
 "Πρέπει να συμπεριλάβετε ένα course_uuid στις παραμέτρους του ερωτήματός σας."
 
-#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:192
+#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:205
 #, python-brace-format
 msgid "Missing value for: [{name}]. "
 msgstr "Λείπει τιμή για: [ {name} ]. "
 
-#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:203
+#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:216
 msgid "Incorrect data sent. "
 msgstr "Εσφαλμένα δεδομένα στάλθηκαν. "
 
-#: apps/api/v1/views/course_runs.py:46
+#: apps/api/v1/views/course_runs.py:49
 msgid "Failed to set course run data: {}"
 msgstr "Αποτυχία ορισμού δεδομένων εκτέλεσης μαθημάτων: {}"
 
-#: apps/api/v1/views/course_runs.py:313
+#: apps/api/v1/views/course_runs.py:328
 msgid "Can only update status, ofac restrictions, and ofac comment"
 msgstr ""
 "Μπορεί να ενημερώσει μόνο την κατάσταση, τους περιορισμούς ofac και το "
 "σχόλιο ofac"
 
-#: apps/api/v1/views/course_runs.py:352
+#: apps/api/v1/views/course_runs.py:363
+#, python-brace-format
+msgid ""
+"The course run type '{course_run_type}' is not valid for this course type "
+"'{course_type}'."
+msgstr ""
+"Ο τύπος διεξαγωγής του μαθήματος '{course_run_type}' δεν είναι έγκυρος για "
+"αυτό το είδος μαθήματος '{course_type}'."
+
+#: apps/api/v1/views/course_runs.py:381
 msgid "Course run is in review. Editing disabled."
 msgstr ""
 "Η πορεία του μαθήματος είναι υπό εξέταση. Η επεξεργασία απενεργοποιήθηκε."
 
-#: apps/api/v1/views/course_runs.py:359
+#: apps/api/v1/views/course_runs.py:388
 msgid "Invalid parameter"
 msgstr "Μη έγκυρη παράμετρος"
 
-#: apps/api/v1/views/courses.py:59
+#: apps/api/v1/views/courses.py:62
 msgid "Failed to set data: {}"
 msgstr "Αποτυχία ορισμού δεδομένων: {}"
 
-#: apps/api/v1/views/courses.py:194
+#: apps/api/v1/views/courses.py:207
 #, python-brace-format
 msgid "Organization [{org}] does not exist. "
 msgstr "Ο οργανισμός [ {org} ] δεν υπάρχει. "
 
-#: apps/api/v1/views/courses.py:196
+#: apps/api/v1/views/courses.py:209
 #, python-brace-format
 msgid "Course Type [{course_type}] does not exist. "
 msgstr "Ο τύπος μαθήματος [ {course_type} ] δεν υπάρχει. "
 
-#: apps/api/v1/views/courses.py:199
+#: apps/api/v1/views/courses.py:212
 #, python-brace-format
 msgid "Product Source [{product_source}] does not exist. "
 msgstr "Η πηγή προϊόντος [ {product_source} ] δεν υπάρχει. "
 
-#: apps/api/v1/views/courses.py:217
+#: apps/api/v1/views/courses.py:229
 #, python-brace-format
 msgid "A course with key [{key}] already exists."
 msgstr "Υπάρχει ήδη ένα μάθημα με κλειδί [ {key} ]."
 
-#: apps/api/v1/views/courses.py:225
+#: apps/api/v1/views/courses.py:237
 #, python-brace-format
 msgid ""
 "Course creation was unsuccessful. The course URL slug ‘[{url_slug}]’ is "
@@ -180,7 +179,7 @@ msgstr ""
 "του μαθήματος &quot;[ {url_slug} ]&quot; χρησιμοποιείται ήδη. Ενημερώστε "
 "αυτό το πεδίο και δοκιμάστε ξανά."
 
-#: apps/api/v1/views/courses.py:284
+#: apps/api/v1/views/courses.py:298
 msgid ""
 "Switching entitlement types after being reviewed is not supported. Please "
 "reach out to your project coordinator for additional help if necessary."
@@ -189,7 +188,7 @@ msgstr ""
 "Επικοινωνήστε με τον συντονιστή του έργου σας για πρόσθετη βοήθεια εάν είναι"
 " απαραίτητο."
 
-#: apps/api/v1/views/courses.py:394
+#: apps/api/v1/views/courses.py:408
 #, python-brace-format
 msgid ""
 "Course edit was unsuccessful. The course URL slug ‘[{url_slug}]’ is already "
@@ -199,7 +198,7 @@ msgstr ""
 " του μαθήματος &quot;[ {url_slug} ]&quot; χρησιμοποιείται ήδη. Ενημερώστε "
 "αυτό το πεδίο και δοκιμάστε ξανά."
 
-#: apps/api/views.py:58
+#: apps/api/views.py:57
 msgid "You are not permitted to access the API documentation."
 msgstr "Δεν σας επιτρέπεται η πρόσβαση στην τεκμηρίωση API."
 
@@ -413,7 +412,7 @@ msgstr "Είναι Salesforce Sandbox;"
 msgid "Case Record Type Id"
 msgstr "Αναγνωριστικό τύπου αρχείου υπόθεσης"
 
-#: apps/course_metadata/admin.py:36
+#: apps/course_metadata/admin.py:38
 #, python-brace-format
 msgid ""
 "An error occurred while publishing the {model} to the marketing site. Please"
@@ -423,78 +422,83 @@ msgstr ""
 "μάρκετινγκ. Παρακαλώ ξαναπροσπαθήστε. Αν το σφάλμα παραμένει, παρακαλώ "
 "επικοινωνήστε με την Ομάδα Μηχανικών"
 
-#: apps/course_metadata/admin.py:56
+#: apps/course_metadata/admin.py:65
 msgid "eligible for one-click purchase"
 msgstr "πληροί τις προϋποθέσεις για αγορά με ένα κλικ"
 
-#: apps/course_metadata/admin.py:61
+#: apps/course_metadata/admin.py:70
 msgid "Yes"
 msgstr "Ναι"
 
-#: apps/course_metadata/admin.py:62
+#: apps/course_metadata/admin.py:71
 msgid "No"
 msgstr "Όχι"
 
-#: apps/course_metadata/admin.py:427 apps/course_metadata/admin.py:712
+#: apps/course_metadata/admin.py:538 apps/course_metadata/admin.py:883
 msgid "Included course runs"
 msgstr "Περιλαμβανόμενες εκτελέσεις κύκλου μαθημάτων"
 
-#: apps/course_metadata/admin.py:718
+#: apps/course_metadata/admin.py:889
 msgid "Edit link"
 msgstr "Επεξεργασία συνδέσμου"
 
-#: apps/course_metadata/admin.py:726
+#: apps/course_metadata/admin.py:897
 msgid "Edit course run exclusions"
 msgstr "Επεξεργασία εξαιρέσεων εκτέλεσης μαθημάτων"
 
-#: apps/course_metadata/admin.py:728
+#: apps/course_metadata/admin.py:899
 msgid "(save and continue editing to create a link)"
 msgstr ""
 "(αποθηκεύστε και συνεχίστε την επεξεργασία για να δημιουργήσετε έναν "
 "σύνδεσμο)"
 
-#: apps/course_metadata/admin.py:854
+#: apps/course_metadata/admin.py:1037
 #, python-format
 msgid "Successfully %(status)s %(count)d %(items)s."
 msgstr "Επιτυχώς %(status)s %(count)d %(items)s ."
 
-#: apps/course_metadata/algolia_models.py:95
-#: apps/course_metadata/algolia_models.py:637
+#: apps/course_metadata/algolia_models.py:54
+msgid "Certificates"
+msgstr "Πιστοποιητικά"
+
+#: apps/course_metadata/algolia_models.py:55
+msgid "Pathways to Degrees"
+msgstr "Διαδρομές για Ακαδημαϊκούς Τίτλους"
+
+#: apps/course_metadata/algolia_models.py:58
+msgid "Boot Camps"
+msgstr "Εντατικά προγράμματα εκπαίδευσης"
+
+#: apps/course_metadata/algolia_models.py:65
+msgid "Bachelor’s"
+msgstr "Προπτυχιακό"
+
+#: apps/course_metadata/algolia_models.py:66
+msgid "Master’s"
+msgstr "Μεταπτυχιακό"
+
+#: apps/course_metadata/algolia_models.py:116
+#: apps/course_metadata/algolia_models.py:667
 msgid "Available now"
 msgstr "Διαθέσιμο τώρα"
 
-#: apps/course_metadata/algolia_models.py:97
-#: apps/course_metadata/models.py:2556
+#: apps/course_metadata/algolia_models.py:118
+#: apps/course_metadata/models.py:2757
 msgid "Upcoming"
 msgstr "Επερχόμενο"
 
-#: apps/course_metadata/algolia_models.py:99
-#: apps/course_metadata/choices.py:71 apps/course_metadata/models.py:2550
-#: apps/course_metadata/models.py:2566
+#: apps/course_metadata/algolia_models.py:120
+#: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2751
+#: apps/course_metadata/models.py:2767
 msgid "Archived"
 msgstr "Αρχειοθετημένο"
 
-#: apps/course_metadata/algolia_models.py:304
-#: apps/course_metadata/algolia_models.py:314
-#: apps/course_metadata/algolia_models.py:581
-msgid "Certificate courses"
-msgstr "Πιστοποιητικά μαθήματα"
-
-#: apps/course_metadata/algolia_models.py:316
-#: apps/course_metadata/algolia_models.py:587
-msgid "Degrees"
-msgstr "Πτυχία"
-
-#: apps/course_metadata/algolia_models.py:318
-#: apps/course_metadata/algolia_models.py:589
-msgid "Paths to degrees"
-msgstr "Διαδρομές σε μοίρες"
-
-#: apps/course_metadata/algolia_models.py:648
+#: apps/course_metadata/algolia_models.py:678
 msgid "Available by subscription"
 msgstr "Διατίθεται με συνδρομή"
 
-#: apps/course_metadata/choices.py:6 apps/course_metadata/choices.py:30
+#: apps/course_metadata/choices.py:6 apps/course_metadata/choices.py:22
+#: apps/course_metadata/choices.py:36
 msgid "Unpublished"
 msgstr "Αδημοσίευτο"
 
@@ -510,122 +514,171 @@ msgstr "Εν αναμονή εσωτερικής αναθεώρησης"
 msgid "Reviewed"
 msgstr "Αναθεωρήθηκε"
 
-#: apps/course_metadata/choices.py:10 apps/course_metadata/choices.py:72
+#: apps/course_metadata/choices.py:10 apps/course_metadata/choices.py:23
+#: apps/course_metadata/choices.py:101
 msgid "Published"
 msgstr "Δημοσιευμένο"
+
+#: apps/course_metadata/choices.py:24 apps/course_metadata/choices.py:38
+msgid "Retired"
+msgstr "Αποσυρμένο"
 
 #. Translators: Instructor-paced refers to course runs that operate on a
 #. schedule set by the instructor,
 #. similar to a normal university course.
-#: apps/course_metadata/choices.py:24
+#: apps/course_metadata/choices.py:30
 msgid "Instructor-paced"
 msgstr "Ρυθμιζόμενης διάρκειας από τον διδάσκοντα"
 
 #. Translators: Self-paced refers to course runs that operate on the student's
 #. schedule.
-#: apps/course_metadata/choices.py:26
+#: apps/course_metadata/choices.py:32
 msgid "Self-paced"
 msgstr "Αυτορυθμιζόμενης διάρκειας"
 
-#: apps/course_metadata/choices.py:31 apps/learner_pathway/choices.py:6
+#: apps/course_metadata/choices.py:37 apps/learner_pathway/choices.py:6
 msgid "Active"
 msgstr "Ενεργό"
 
-#: apps/course_metadata/choices.py:32
-msgid "Retired"
-msgstr "Αποσυρμένο"
-
-#: apps/course_metadata/choices.py:33
+#: apps/course_metadata/choices.py:39
 msgid "Deleted"
 msgstr "Διαγράφηκε"
 
-#: apps/course_metadata/choices.py:37
+#: apps/course_metadata/choices.py:43
 msgid "mooc"
-msgstr "mooc"
+msgstr "Μαζικό Ανοικτό Διαδικτυακό Μάθημα"
 
-#: apps/course_metadata/choices.py:38
+#: apps/course_metadata/choices.py:44
 msgid "spoc"
-msgstr "spoc"
+msgstr "Μικρό Ιδιωτικό Διαδικτυακό Μάθημα"
 
-#: apps/course_metadata/choices.py:39
+#: apps/course_metadata/choices.py:45
 msgid "test"
 msgstr "δοκιμή"
 
-#: apps/course_metadata/choices.py:40
+#: apps/course_metadata/choices.py:46
 msgid "demo"
 msgstr "διαδήλωση"
 
-#: apps/course_metadata/choices.py:41
+#: apps/course_metadata/choices.py:47
 msgid "other"
 msgstr "άλλα"
 
-#: apps/course_metadata/choices.py:45
-msgid "Honor"
-msgstr "Με κώδικα τιμής"
+#: apps/course_metadata/choices.py:54
+msgid "Course Create"
+msgstr "Δημιουργία Μαθήματος"
 
-#: apps/course_metadata/choices.py:46
-msgid "Credit"
-msgstr "Αναγνώριση (ακαδ. μονάδων)"
+#: apps/course_metadata/choices.py:55
+msgid "Partial Update"
+msgstr "Μερική Ενημέρωση"
 
-#: apps/course_metadata/choices.py:47
+#: apps/course_metadata/choices.py:56
+msgid "Course Rerun"
+msgstr "Επανάληψη Μαθήματος"
+
+#: apps/course_metadata/choices.py:57
+msgid "Course Editor Update"
+msgstr "Ενημέρωση Επεξεργαστή Μαθήματος"
+
+#: apps/course_metadata/choices.py:64
+msgid "Pending"
+msgstr "Εκκρεμεί"
+
+#: apps/course_metadata/choices.py:65 apps/course_metadata/choices.py:76
 msgid "Verified"
 msgstr "Επαληθευμένοι"
 
-#: apps/course_metadata/choices.py:48
+#: apps/course_metadata/choices.py:66
+msgid "Processing"
+msgstr "Σε Επεξεργασία"
+
+#: apps/course_metadata/choices.py:67
+msgid "Completed"
+msgstr "Ολοκληρωμένο"
+
+#: apps/course_metadata/choices.py:68
+msgid "Failed"
+msgstr "Αποτυχημένο"
+
+#: apps/course_metadata/choices.py:69
+msgid "Partially Completed"
+msgstr "Μερικώς Ολοκληρωμένο"
+
+#: apps/course_metadata/choices.py:70
+msgid "Errored"
+msgstr "Με σφάλμα"
+
+#: apps/course_metadata/choices.py:74
+msgid "Honor"
+msgstr "Με κώδικα τιμής"
+
+#: apps/course_metadata/choices.py:75
+msgid "Credit"
+msgstr "Αναγνώριση (ακαδ. μονάδων)"
+
+#: apps/course_metadata/choices.py:77
 msgid "Professional"
 msgstr "Επαγγελματίες"
 
-#: apps/course_metadata/choices.py:49
+#: apps/course_metadata/choices.py:78
 msgid "Executive Education"
 msgstr "Εκπαίδευση στελεχών"
 
-#: apps/course_metadata/choices.py:50
+#: apps/course_metadata/choices.py:79
 msgid "Paid Executive Education"
 msgstr "Αμειβόμενη Εκπαίδευση Στελεχών"
 
-#: apps/course_metadata/choices.py:51
+#: apps/course_metadata/choices.py:80
 msgid "Unpaid Executive Education"
 msgstr "Απλήρωτη Εκπαίδευση Στελεχών"
 
-#: apps/course_metadata/choices.py:52
+#: apps/course_metadata/choices.py:81
 msgid "Paid Bootcamp"
 msgstr "Πληρωμένο Bootcamp"
 
-#: apps/course_metadata/choices.py:53
+#: apps/course_metadata/choices.py:82
 msgid "Unpaid Bootcamp"
 msgstr "Απλήρωτο Bootcamp"
 
-#: apps/course_metadata/choices.py:57
+#: apps/course_metadata/choices.py:86
 msgid "Platform"
 msgstr "Πλατφόρμα"
 
-#: apps/course_metadata/choices.py:58
+#: apps/course_metadata/choices.py:87
 msgid "Organization"
 msgstr "Τομέας"
 
-#: apps/course_metadata/choices.py:62
+#: apps/course_metadata/choices.py:91
 msgid "Short"
 msgstr "Μικρός"
 
-#: apps/course_metadata/choices.py:63
+#: apps/course_metadata/choices.py:92
 msgid "Medium"
 msgstr "Μεσαίο"
 
-#: apps/course_metadata/choices.py:64
+#: apps/course_metadata/choices.py:93
 msgid "Long"
 msgstr "Μακρύς"
 
-#: apps/course_metadata/choices.py:79
+#: apps/course_metadata/choices.py:108
 msgid "Short Course"
 msgstr "Σύντομο μάθημα"
 
-#: apps/course_metadata/choices.py:80
+#: apps/course_metadata/choices.py:109
 msgid "Sprint"
 msgstr "Τρέχω"
 
-#: apps/course_metadata/choices.py:81
+#: apps/course_metadata/choices.py:110
 msgid "Course Stack"
 msgstr "Στοίβα μαθημάτων"
+
+#: apps/course_metadata/choices.py:114
+msgid "Custom B2B Enterprise"
+msgstr "Προσαρμοσμένο B2B Επιχειρηματικό"
+
+#: apps/course_metadata/choices.py:115
+msgid "Custom B2C"
+msgstr "Προσαρμοσμένο B2C"
 
 #: apps/course_metadata/data_loaders/course_type.py:27
 #, python-brace-format
@@ -664,7 +717,7 @@ msgid "Could not convert course {key} ({id}) to type {type}"
 msgstr ""
 "Δεν ήταν δυνατή η μετατροπή του μαθήματος {key} ( {id} ) σε τύπο {type}"
 
-#: apps/course_metadata/emails.py:36
+#: apps/course_metadata/emails.py:37
 #, python-brace-format
 msgid ""
 "Not sending notification email for template {template} because no "
@@ -673,7 +726,7 @@ msgstr ""
 "Δεν αποστέλλεται μήνυμα ηλεκτρονικού ταχυδρομείου ειδοποίησης για το πρότυπο"
 " {template} επειδή δεν έχει οριστεί οργανισμός για το μάθημα {course}"
 
-#: apps/course_metadata/emails.py:41
+#: apps/course_metadata/emails.py:42
 #, python-brace-format
 msgid ""
 "Not sending notification email for template {template} because no project "
@@ -683,7 +736,7 @@ msgstr ""
 " {template} επειδή δεν έχει οριστεί συντονιστής έργου για τον οργανισμό "
 "{org}"
 
-#: apps/course_metadata/emails.py:95
+#: apps/course_metadata/emails.py:96
 #, python-brace-format
 msgid ""
 "Not sending notification email for template {template} because no publisher "
@@ -693,7 +746,7 @@ msgstr ""
 " {template} επειδή δεν έχει οριστεί διεύθυνση URL εκδότη για συνεργάτη "
 "{partner}"
 
-#: apps/course_metadata/emails.py:103
+#: apps/course_metadata/emails.py:104
 #, python-brace-format
 msgid ""
 "Not sending notification email for template {template} because no studio URL"
@@ -702,49 +755,49 @@ msgstr ""
 "Δεν αποστέλλεται μήνυμα ηλεκτρονικού ταχυδρομείου ειδοποίησης για το πρότυπο"
 " {template} επειδή δεν έχει οριστεί URL στούντιο για συνεργάτη {partner}"
 
-#: apps/course_metadata/emails.py:169
+#: apps/course_metadata/emails.py:170
 msgid "legal team"
 msgstr "νομική ομάδα"
 
-#: apps/course_metadata/emails.py:187
+#: apps/course_metadata/emails.py:188
 msgid "Project Coordinator team"
 msgstr "Ομάδα συντονιστή έργου"
 
-#: apps/course_metadata/emails.py:211
+#: apps/course_metadata/emails.py:212
 msgid "course team"
 msgstr "ομάδα μαθημάτων"
 
-#: apps/course_metadata/emails.py:220
+#: apps/course_metadata/emails.py:221
 #, python-brace-format
 msgid "Legal review requested: {title}"
 msgstr "Ζητήθηκε νομικός έλεγχος: {title}"
 
-#: apps/course_metadata/emails.py:233
+#: apps/course_metadata/emails.py:234
 #, python-brace-format
 msgid "Course URL for {title}"
 msgstr "Διεύθυνση URL μαθήματος για {title}"
 
-#: apps/course_metadata/emails.py:279
+#: apps/course_metadata/emails.py:280
 #, python-brace-format
 msgid "Review requested: {key} - {title}"
 msgstr "Ζητήθηκε έλεγχος: {key} - {title}"
 
-#: apps/course_metadata/emails.py:291
+#: apps/course_metadata/emails.py:292
 #, python-brace-format
 msgid "Review complete: {title}"
 msgstr "Η αξιολόγηση ολοκληρώθηκε: {title}"
 
-#: apps/course_metadata/emails.py:307
+#: apps/course_metadata/emails.py:308
 #, python-brace-format
 msgid "Published: {title}"
 msgstr "Δημοσιεύθηκε: {title}"
 
-#: apps/course_metadata/emails.py:311
+#: apps/course_metadata/emails.py:312
 #, python-brace-format
 msgid "Published: {key} - {title}"
 msgstr "Δημοσιεύθηκε: {key} - {title}"
 
-#: apps/course_metadata/emails.py:326
+#: apps/course_metadata/emails.py:327
 #, python-brace-format
 msgid "Comment added: {title}"
 msgstr "Προστέθηκε σχόλιο: {title}"
@@ -758,7 +811,7 @@ msgstr ""
 "Εισαγάγετε ένα έγκυρο &quot;slug&quot; που αποτελείται από γράμματα, "
 "αριθμούς, κάθετες, κάτω παύλες ή παύλες."
 
-#: apps/course_metadata/forms.py:66
+#: apps/course_metadata/forms.py:102
 msgid "Programs can only be activated if they have a banner image."
 msgstr "Τα προγράμματα μπορούν να ενεργοποιηθούν μόνο εάν έχουν εικόνα πανό."
 
@@ -797,14 +850,14 @@ msgid "Short code for a partner."
 msgstr "Σύντομος κωδικός για έναν συνεργάτη."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:20
-#: apps/course_metadata/models.py:233 apps/course_metadata/models.py:488
-#: apps/course_metadata/models.py:636 apps/course_metadata/models.py:669
-#: apps/course_metadata/models.py:693 apps/course_metadata/models.py:732
-#: apps/course_metadata/models.py:1003 apps/course_metadata/models.py:1144
-#: apps/course_metadata/models.py:1306 apps/course_metadata/models.py:2100
-#: apps/course_metadata/models.py:3110 apps/course_metadata/models.py:4041
-#: apps/course_metadata/models.py:4133 apps/learner_pathway/models.py:35
-#: apps/learner_pathway/models.py:84 apps/learner_pathway/models.py:159
+#: apps/course_metadata/models.py:238 apps/course_metadata/models.py:493
+#: apps/course_metadata/models.py:641 apps/course_metadata/models.py:674
+#: apps/course_metadata/models.py:698 apps/course_metadata/models.py:737
+#: apps/course_metadata/models.py:1054 apps/course_metadata/models.py:1275
+#: apps/course_metadata/models.py:1452 apps/course_metadata/models.py:2288
+#: apps/course_metadata/models.py:3372 apps/course_metadata/models.py:4422
+#: apps/course_metadata/models.py:4563 apps/learner_pathway/models.py:34
+#: apps/learner_pathway/models.py:83 apps/learner_pathway/models.py:158
 msgid "UUID"
 msgstr "UUID"
 
@@ -995,21 +1048,21 @@ msgid "Path {url_path} not in use, nothing to delete"
 msgstr ""
 "Η διαδρομή {url_path} δεν χρησιμοποιείται, δεν υπάρχει τίποτα για διαγραφή"
 
-#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:42
+#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:44
 msgid "One or more courses failed to unpublish."
 msgstr "Απέτυχε η κατάργηση ενός ή περισσότερων μαθημάτων."
 
-#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:48
+#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:50
 #, python-brace-format
 msgid "Successfully unpublished runs in course {key}"
 msgstr "Επιτυχώς καταργήθηκαν οι εκδόσεις στο μάθημα {key}"
 
-#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:51
+#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:53
 #, python-brace-format
 msgid "Failed to unpublish runs in course {key}"
 msgstr "Απέτυχε η κατάργηση της δημοσίευσης των εκτελέσεων στο μάθημα {key}"
 
-#: apps/course_metadata/models.py:234
+#: apps/course_metadata/models.py:239
 msgid ""
 "Please do not use any spaces or special characters other than period, "
 "underscore or hyphen. This key will be used in the course's course key."
@@ -1017,16 +1070,16 @@ msgstr ""
 "Μην χρησιμοποιείτε κενά ή ειδικούς χαρακτήρες εκτός από τελεία, κάτω παύλα ή"
 " παύλα. Αυτό το κλειδί θα χρησιμοποιηθεί στο κλειδί μαθημάτων του μαθήματος."
 
-#: apps/course_metadata/models.py:239
+#: apps/course_metadata/models.py:244
 msgid "If populated, this field will overwrite name in platform."
 msgstr ""
 "Εάν συμπληρωθεί, αυτό το πεδίο θα αντικαταστήσει το όνομα στην πλατφόρμα."
 
-#: apps/course_metadata/models.py:244
+#: apps/course_metadata/models.py:249
 msgid "Spanish Description"
 msgstr "Ισπανική περιγραφή"
 
-#: apps/course_metadata/models.py:245
+#: apps/course_metadata/models.py:250
 msgid ""
 "For seo, this field allows for alternate spanish description to be manually "
 "inputted"
@@ -1034,8 +1087,8 @@ msgstr ""
 "Για SEO, αυτό το πεδίο επιτρέπει τη μη αυτόματη εισαγωγή εναλλακτικής "
 "περιγραφής στα Ισπανικά"
 
-#: apps/course_metadata/models.py:270 apps/course_metadata/models.py:1383
-#: apps/course_metadata/models.py:2177
+#: apps/course_metadata/models.py:275 apps/course_metadata/models.py:1529
+#: apps/course_metadata/models.py:2372
 msgid ""
 "Pick a tag from the suggestions. To make a new tag, add a comma after the "
 "tag name."
@@ -1043,11 +1096,11 @@ msgstr ""
 "Επιλέξτε μια ετικέτα από τις προτάσεις. Για να δημιουργήσετε μια νέα "
 "ετικέτα, προσθέστε ένα κόμμα μετά το όνομα της ετικέτας."
 
-#: apps/course_metadata/models.py:274
+#: apps/course_metadata/models.py:279
 msgid "Automatically generate course run keys"
 msgstr "Αυτόματη δημιουργία κλειδιών εκτέλεσης μαθημάτων"
 
-#: apps/course_metadata/models.py:276
+#: apps/course_metadata/models.py:281
 msgid ""
 "When this flag is enabled, the key of a new course run will be auto "
 "generated.  When this flag is disabled, the key can be manually set."
@@ -1056,7 +1109,7 @@ msgstr ""
 "μαθήματος θα δημιουργηθεί αυτόματα. Όταν αυτή η σημαία είναι "
 "απενεργοποιημένη, το κλειδί μπορεί να οριστεί χειροκίνητα."
 
-#: apps/course_metadata/models.py:282
+#: apps/course_metadata/models.py:287
 msgid ""
 "This field signifies if any of this org's courses are in the enterprise "
 "subscription catalog"
@@ -1064,7 +1117,7 @@ msgstr ""
 "Αυτό το πεδίο υποδηλώνει εάν κάποιο από τα μαθήματα αυτού του οργανισμού "
 "βρίσκεται στον κατάλογο συνδρομών επιχειρήσεων"
 
-#: apps/course_metadata/models.py:285
+#: apps/course_metadata/models.py:290
 msgid ""
 "The 6 character-hex-value of the orgnization theme color,\n"
 "            all related course under same organization will use this color as theme color.\n"
@@ -1074,13 +1127,13 @@ msgstr ""
 " όλα τα σχετικά μαθήματα στον ίδιο οργανισμό θα χρησιμοποιούν αυτό το χρώμα ως χρώμα θέματος.\n"
 " (π.χ. &quot;#ff0000&quot; που ισούται με κόκκινο) Δεν χρειάζεται να παρέχετε το &quot;#&quot;."
 
-#: apps/course_metadata/models.py:301
+#: apps/course_metadata/models.py:306
 msgid "The timestamp of the last time the organization data was modified."
 msgstr ""
 "Η χρονική σήμανση της τελευταίας φοράς που τροποποιήθηκαν τα δεδομένα του "
 "οργανισμού."
 
-#: apps/course_metadata/models.py:317
+#: apps/course_metadata/models.py:322
 msgid ""
 "Please do not use any spaces or special characters other than period, "
 "underscore or hyphen in the key field."
@@ -1088,15 +1141,15 @@ msgstr ""
 "Μην χρησιμοποιείτε κενά ή ειδικούς χαρακτήρες εκτός από τελεία, κάτω παύλα ή"
 " παύλα στο πεδίο κλειδιού."
 
-#: apps/course_metadata/models.py:388
+#: apps/course_metadata/models.py:393
 msgid "Corresponding organization code in an external product source"
 msgstr "Αντίστοιχος κωδικός οργανισμού σε εξωτερική πηγή προϊόντος"
 
-#: apps/course_metadata/models.py:445
+#: apps/course_metadata/models.py:450
 msgid "LevelType model translations"
 msgstr "Μεταφράσεις μοντέλων LevelType"
 
-#: apps/course_metadata/models.py:470
+#: apps/course_metadata/models.py:475
 msgid ""
 "Seat types that qualify for completion of programs of this type. Learners "
 "completing associated courses, but enrolled in other seat types, will NOT "
@@ -1109,42 +1162,42 @@ msgstr ""
 "προσμετρηθεί η ολοκλήρωση του κύκλου μαθημάτων στην ολοκλήρωση του συνολικού"
 " προγράμματος."
 
-#: apps/course_metadata/models.py:484
+#: apps/course_metadata/models.py:489
 msgid "Please provide an image file with transparent background"
 msgstr "Παρέχετε ένα αρχείο εικόνας με διαφανές φόντο"
 
-#: apps/course_metadata/models.py:487 apps/course_metadata/models.py:531
-#: apps/course_metadata/models.py:697 apps/course_metadata/models.py:735
-#: apps/course_metadata/models.py:1318 apps/course_metadata/models.py:3124
+#: apps/course_metadata/models.py:492 apps/course_metadata/models.py:536
+#: apps/course_metadata/models.py:702 apps/course_metadata/models.py:740
+#: apps/course_metadata/models.py:1464 apps/course_metadata/models.py:3386
 msgid "Leave this field blank to have the value generated automatically."
 msgstr "Αφήστε αυτό το πεδίο κενό, ώστε να δημιουργηθεί μια τιμή αυτόματα."
 
-#: apps/course_metadata/models.py:528
+#: apps/course_metadata/models.py:533
 msgid "Name of the external source."
 msgstr "Όνομα της εξωτερικής πηγής."
 
-#: apps/course_metadata/models.py:533
+#: apps/course_metadata/models.py:538
 msgid "Description of the external source."
 msgstr "Περιγραφή της εξωτερικής πηγής."
 
-#: apps/course_metadata/models.py:538
+#: apps/course_metadata/models.py:543
 msgid "Programs of these types will be OFAC restricted"
 msgstr "Προγράμματα αυτού του τύπου θα έχουν περιορισμό OFAC"
 
-#: apps/course_metadata/models.py:552
+#: apps/course_metadata/models.py:557
 msgid "ProgramType model translations"
 msgstr "Μεταφράσεις μοντέλου ProgramType"
 
-#: apps/course_metadata/models.py:566
+#: apps/course_metadata/models.py:571
 msgid "This mode requires ID verification."
 msgstr "Αυτή η λειτουργία απαιτεί επαλήθευση ταυτότητας."
 
-#: apps/course_metadata/models.py:569
+#: apps/course_metadata/models.py:574
 msgid "Completion can grant credit toward an organization’s degree."
 msgstr ""
 "Η ολοκλήρωση μπορεί να χορηγήσει πίστωση για το πτυχίο ενός οργανισμού."
 
-#: apps/course_metadata/models.py:573
+#: apps/course_metadata/models.py:578
 msgid ""
 "Certificate type granted if this mode is eligible for a certificate, or "
 "blank if not."
@@ -1152,7 +1205,7 @@ msgstr ""
 "Ο τύπος πιστοποιητικού χορηγείται εάν αυτή η λειτουργία είναι κατάλληλη για "
 "πιστοποιητικό ή κενός εάν όχι."
 
-#: apps/course_metadata/models.py:577
+#: apps/course_metadata/models.py:582
 msgid ""
 "Who gets paid for the course? Platform is the site owner, Organization is "
 "the school."
@@ -1160,11 +1213,11 @@ msgstr ""
 "Ποιος πληρώνεται για το μάθημα; Η πλατφόρμα είναι ο ιδιοκτήτης του "
 "ιστότοπου, ο οργανισμός είναι το σχολείο."
 
-#: apps/course_metadata/models.py:674
+#: apps/course_metadata/models.py:679
 msgid "Sets the order for displaying Course Run Types."
 msgstr "Ορίζει τη σειρά για την εμφάνιση των τύπων εκτέλεσης μαθημάτων."
 
-#: apps/course_metadata/models.py:677
+#: apps/course_metadata/models.py:682
 msgid ""
 "Leave this blank to allow all orgs. Otherwise, specifies which orgs can see "
 "this course type in Publisher."
@@ -1172,19 +1225,19 @@ msgstr ""
 "Αφήστε αυτό το κενό για να επιτρέψετε όλα τα όργανα. Διαφορετικά, καθορίζει "
 "ποιοι οργανισμοί μπορούν να δουν αυτόν τον τύπο μαθήματος στον Publisher."
 
-#: apps/course_metadata/models.py:727
+#: apps/course_metadata/models.py:732
 msgid "Subject model translations"
 msgstr "Μεταφράσεις υποδειγμάτων θεμάτων"
 
-#: apps/course_metadata/models.py:774
+#: apps/course_metadata/models.py:779
 msgid "Topic model translations"
 msgstr "Μεταφράσεις μοντέλων θεμάτων"
 
-#: apps/course_metadata/models.py:833
+#: apps/course_metadata/models.py:846
 msgid "SEO Meta tags for Products"
 msgstr "SEO Meta tags για προϊόντα"
 
-#: apps/course_metadata/models.py:863
+#: apps/course_metadata/models.py:881
 msgid ""
 "The ID of the Taxi Form (by 2U) that would be rendered in place of the "
 "hubspot capture form"
@@ -1192,7 +1245,7 @@ msgstr ""
 "Το αναγνωριστικό της φόρμας ταξί (από 2U) που θα αποδιδόταν στη θέση της "
 "φόρμας λήψης hubspot"
 
-#: apps/course_metadata/models.py:869
+#: apps/course_metadata/models.py:887
 msgid ""
 "The grouping of the Taxi Form (by 2U) that would be rendered instead of the "
 "hubspot capture form"
@@ -1200,50 +1253,50 @@ msgstr ""
 "Η ομαδοποίηση της Φόρμας Ταξί (κατά 2U) που θα αποδιδόταν αντί της φόρμας "
 "λήψης hubspot"
 
-#: apps/course_metadata/models.py:893
+#: apps/course_metadata/models.py:933
 msgid "The URL of the paid landing page on external site"
 msgstr "Το URL της πληρωμένης σελίδας προορισμού σε εξωτερικό ιστότοπο"
 
-#: apps/course_metadata/models.py:899
+#: apps/course_metadata/models.py:939
 msgid "The URL of the organic landing page on external site"
 msgstr "Το URL της οργανικής σελίδας προορισμού σε εξωτερικό ιστότοπο"
 
-#: apps/course_metadata/models.py:910
+#: apps/course_metadata/models.py:950
 msgid "The start date of the external course offering for marketing purpose"
 msgstr ""
 "Η ημερομηνία έναρξης της προσφοράς εξωτερικού μαθήματος για σκοπούς "
 "μάρκετινγκ"
 
-#: apps/course_metadata/models.py:914
+#: apps/course_metadata/models.py:954
 msgid "The ends date of the external course offering for marketing purpose"
 msgstr ""
 "Η ημερομηνία λήξης της προσφοράς εξωτερικού μαθήματος για σκοπούς μάρκετινγκ"
 
-#: apps/course_metadata/models.py:918
+#: apps/course_metadata/models.py:958
 msgid "The suggested deadline for enrollment for marketing purpose"
 msgstr "Η προτεινόμενη προθεσμία εγγραφής για σκοπούς μάρκετινγκ"
 
-#: apps/course_metadata/models.py:922
+#: apps/course_metadata/models.py:962
 msgid "The identifier for a product variant."
 msgstr "Το αναγνωριστικό για μια παραλλαγή προϊόντος."
 
-#: apps/course_metadata/models.py:926
+#: apps/course_metadata/models.py:966
 msgid "Course override"
 msgstr "Παράκαμψη πορείας"
 
-#: apps/course_metadata/models.py:927
+#: apps/course_metadata/models.py:967
 msgid "This field allows for override the default course term"
 msgstr ""
 "Αυτό το πεδίο επιτρέπει την παράκαμψη του προεπιλεγμένου όρου μαθήματος"
 
-#: apps/course_metadata/models.py:945
+#: apps/course_metadata/models.py:993
 msgid ""
 "This field contain external course marketing type specific to product lines"
 msgstr ""
 "Αυτό το πεδίο περιέχει τον τύπο μάρκετινγκ εξωτερικού μαθήματος που είναι "
 "συγκεκριμένος για τις σειρές προϊόντων"
 
-#: apps/course_metadata/models.py:954
+#: apps/course_metadata/models.py:1002
 msgid ""
 "Determines weather the course should be displayed on the owning "
 "organization's page"
@@ -1251,72 +1304,72 @@ msgstr ""
 "Καθορίζει τον καιρό που το μάθημα θα πρέπει να εμφανίζεται στη σελίδα του "
 "ιδιοκτήτη του οργανισμού"
 
-#: apps/course_metadata/models.py:1022
+#: apps/course_metadata/models.py:1073
 msgid "A list of major works by this person. Must be valid HTML."
 msgstr ""
 "Μια λίστα με τα σημαντικότερα έργα αυτού του ατόμου. Πρέπει να είναι έγκυρο "
 "HTML."
 
-#: apps/course_metadata/models.py:1030
+#: apps/course_metadata/models.py:1081
 msgid "People"
 msgstr "Άνθρωποι"
 
-#: apps/course_metadata/models.py:1141
+#: apps/course_metadata/models.py:1272
 msgid ""
 "Add the collaborator image, please make sure its dimensions are 200x100px"
 msgstr ""
 "Προσθέστε την εικόνα συνεργάτη, βεβαιωθείτε ότι οι διαστάσεις της είναι "
 "200x100px"
 
-#: apps/course_metadata/models.py:1165
+#: apps/course_metadata/models.py:1296
 msgid "U.S. Value Per Lead"
 msgstr "Αξία ΗΠΑ ανά μόλυβδο"
 
-#: apps/course_metadata/models.py:1166
+#: apps/course_metadata/models.py:1297
 msgid "U.S. value per lead in U.S. dollars."
 msgstr "Αξία ΗΠΑ ανά μόλυβδο σε δολάρια ΗΠΑ."
 
-#: apps/course_metadata/models.py:1171
+#: apps/course_metadata/models.py:1302
 msgid "International Value Per Lead"
 msgstr "Διεθνής Αξία ανά Μόλυβδο"
 
-#: apps/course_metadata/models.py:1172
+#: apps/course_metadata/models.py:1303
 msgid "International value per lead in U.S. dollars."
 msgstr "Διεθνής αξία ανά μόλυβδο σε δολάρια ΗΠΑ."
 
-#: apps/course_metadata/models.py:1177
+#: apps/course_metadata/models.py:1308
 msgid "U.S. Value Per Click"
 msgstr "Αξία ανά κλικ στις ΗΠΑ"
 
-#: apps/course_metadata/models.py:1178
+#: apps/course_metadata/models.py:1309
 msgid "U.S. value per click in U.S. dollars."
 msgstr "Αξία ΗΠΑ ανά κλικ σε δολάρια ΗΠΑ."
 
-#: apps/course_metadata/models.py:1183
+#: apps/course_metadata/models.py:1314
 msgid "International Value Per Click"
 msgstr "Διεθνής αξία ανά κλικ"
 
-#: apps/course_metadata/models.py:1184
+#: apps/course_metadata/models.py:1315
 msgid "International value per click in U.S. dollars."
 msgstr "Διεθνής αξία ανά κλικ σε δολάρια ΗΠΑ."
 
-#: apps/course_metadata/models.py:1222
+#: apps/course_metadata/models.py:1359
 msgid "Latitude"
 msgstr "Γεωγραφικό πλάτος"
 
-#: apps/course_metadata/models.py:1229
+#: apps/course_metadata/models.py:1366
 msgid "Longitude"
 msgstr "Γεωγραφικό μήκος"
 
-#: apps/course_metadata/models.py:1266
+#: apps/course_metadata/models.py:1409
 msgid "Allowlist"
 msgstr "Λίστα επιτρεπόμενων"
 
-#: apps/course_metadata/models.py:1267
+#: apps/course_metadata/models.py:1410
 msgid "Blocklist"
 msgstr "Λίστα των μπλοκαρισμένων"
 
-#: apps/course_metadata/models.py:1314
+#: apps/course_metadata/models.py:1460
 msgid ""
 "When making reruns for this course, they will use this key instead of the "
 "course key."
@@ -1324,7 +1377,7 @@ msgstr ""
 "Όταν κάνουν επαναλήψεις για αυτό το μάθημα, θα χρησιμοποιήσουν αυτό το "
 "κλειδί αντί για το κλειδί του μαθήματος."
 
-#: apps/course_metadata/models.py:1331
+#: apps/course_metadata/models.py:1477
 msgid ""
 "The actual duration of this course as experienced by learners who complete "
 "it."
@@ -1332,19 +1385,19 @@ msgstr ""
 "Η πραγματική διάρκεια αυτού του μαθήματος όπως βιώνεται από τους "
 "εκπαιδευόμενους που το ολοκληρώνουν."
 
-#: apps/course_metadata/models.py:1352
+#: apps/course_metadata/models.py:1498
 msgid "Add the course image"
 msgstr "Προσθέστε την εικόνα του μαθήματος"
 
-#: apps/course_metadata/models.py:1355 apps/course_metadata/models.py:3096
+#: apps/course_metadata/models.py:1501 apps/course_metadata/models.py:3358
 msgid "FAQ"
 msgstr "Συχνές ερωτήσεις"
 
-#: apps/course_metadata/models.py:1358
+#: apps/course_metadata/models.py:1504
 msgid "Total number of learners who have enrolled in this course"
 msgstr "Συνολικός αριθμός μαθητών που έχουν εγγραφεί σε αυτό το μάθημα"
 
-#: apps/course_metadata/models.py:1363
+#: apps/course_metadata/models.py:1509
 msgid ""
 "Total number of learners who have enrolled in this course in the last 6 "
 "months"
@@ -1352,20 +1405,20 @@ msgstr ""
 "Συνολικός αριθμός μαθητών που έχουν εγγραφεί σε αυτό το μάθημα τους "
 "τελευταίους 6 μήνες"
 
-#: apps/course_metadata/models.py:1377
+#: apps/course_metadata/models.py:1523
 msgid "Course number format e.g CS002x, BIO1.1x, BIO1.2x"
 msgstr "Μορφή αριθμού μαθήματος, π.χ. CS002x, BIO1.1x, BIO1.2x"
 
-#: apps/course_metadata/models.py:1391
+#: apps/course_metadata/models.py:1537
 msgid "Additional Information"
 msgstr "Συμπληρωματικές πληροφορίες"
 
-#: apps/course_metadata/models.py:1413
+#: apps/course_metadata/models.py:1559
 msgid "The last time this course was modified in the database."
 msgstr ""
 "Την τελευταία φορά που αυτό το μάθημα τροποποιήθηκε στη βάση δεδομένων."
 
-#: apps/course_metadata/models.py:1418
+#: apps/course_metadata/models.py:1564
 msgid ""
 "This field signifies if this course is in the enterprise subscription "
 "catalog"
@@ -1373,7 +1426,7 @@ msgstr ""
 "Αυτό το πεδίο υποδηλώνει εάν αυτό το μάθημα βρίσκεται στον κατάλογο "
 "συνδρομών επιχειρήσεων"
 
-#: apps/course_metadata/models.py:1426 apps/course_metadata/models.py:3255
+#: apps/course_metadata/models.py:1572 apps/course_metadata/models.py:3517
 msgid ""
 "If checked, this item will not be indexed in Algolia and will not show up in"
 " search results."
@@ -1381,16 +1434,16 @@ msgstr ""
 "Εάν επιλεγεί, αυτό το στοιχείο δεν θα ευρετηριαστεί στην Αλγολία και δεν θα "
 "εμφανίζεται στα αποτελέσματα αναζήτησης."
 
-#: apps/course_metadata/models.py:1434 apps/course_metadata/models.py:3263
+#: apps/course_metadata/models.py:1580 apps/course_metadata/models.py:3525
 msgid "If checked, the About Page will have a meta tag with noindex value"
 msgstr ""
 "Εάν επιλεγεί, η Σελίδα Πληροφορίες θα έχει μια μετα-ετικέτα με τιμή noindex"
 
-#: apps/course_metadata/models.py:1439
+#: apps/course_metadata/models.py:1585
 msgid "Watchers"
 msgstr "Παρατηρητές"
 
-#: apps/course_metadata/models.py:1441
+#: apps/course_metadata/models.py:1587
 msgid ""
 "The list of email addresses that will be notified if any of the course runs "
 "is published or scheduled."
@@ -1398,23 +1451,23 @@ msgstr ""
 "Δημοσιεύτηκε ή προγραμματιστεί η λίστα με τις διευθύνσεις email που θα "
 "ειδοποιηθούν σε περίπτωση διεξαγωγής μαθημάτων."
 
-#: apps/course_metadata/models.py:1680
+#: apps/course_metadata/models.py:1832
 msgid "Future"
 msgstr "Μελλοντικός"
 
-#: apps/course_metadata/models.py:1682
+#: apps/course_metadata/models.py:1834
 msgid "Past"
 msgstr "Το παρελθόν"
 
-#: apps/course_metadata/models.py:2093 apps/course_metadata/models.py:3107
+#: apps/course_metadata/models.py:2276 apps/course_metadata/models.py:3369
 msgid "Blocked"
 msgstr "Αποκλεισμένος"
 
-#: apps/course_metadata/models.py:2094 apps/course_metadata/models.py:3108
+#: apps/course_metadata/models.py:2277 apps/course_metadata/models.py:3370
 msgid "Unrestricted"
 msgstr "Απεριόριστος"
 
-#: apps/course_metadata/models.py:2110
+#: apps/course_metadata/models.py:2298
 msgid ""
 "Title specific for this run of a course. Leave this value blank to default "
 "to the parent course's title."
@@ -1422,7 +1475,7 @@ msgstr ""
 "Τίτλος συγκεκριμένος για αυτήν την πορεία ενός μαθήματος. Αφήστε αυτήν την "
 "τιμή κενή ως προεπιλογή στον τίτλο του γονικού μαθήματος."
 
-#: apps/course_metadata/models.py:2119
+#: apps/course_metadata/models.py:2307
 msgid ""
 "Short description specific for this run of a course. Leave this value blank "
 "to default to the parent course's short_description attribute."
@@ -1431,7 +1484,7 @@ msgstr ""
 "την τιμή κενή για προεπιλογή στο χαρακτηριστικό short_description του "
 "γονικού μαθήματος."
 
-#: apps/course_metadata/models.py:2123
+#: apps/course_metadata/models.py:2311
 msgid ""
 "Full description specific for this run of a course. Leave this value blank "
 "to default to the parent course's full_description attribute."
@@ -1440,31 +1493,41 @@ msgstr ""
 " κενή ως προεπιλογή στο χαρακτηριστικό full_description του γονικού "
 "μαθήματος."
 
-#: apps/course_metadata/models.py:2128
+#: apps/course_metadata/models.py:2316
 msgid ""
 "Estimated minimum number of hours per week needed to complete a course run."
 msgstr ""
 "Εκτιμώμενος ελάχιστος αριθμός ωρών την εβδομάδα που απαιτούνται για την "
 "ολοκλήρωση ενός κύκλου μαθημάτων."
 
-#: apps/course_metadata/models.py:2131
+#: apps/course_metadata/models.py:2319
 msgid ""
 "Estimated maximum number of hours per week needed to complete a course run."
 msgstr ""
 "Εκτιμώμενος μέγιστος αριθμός ωρών την εβδομάδα που απαιτούνται για την "
 "ολοκλήρωση ενός κύκλου μαθημάτων."
 
-#: apps/course_metadata/models.py:2134
+#: apps/course_metadata/models.py:2322
 msgid "Estimated number of weeks needed to complete this course run."
 msgstr ""
 "Εκτιμώμενος αριθμός εβδομάδων που απαιτούνται για την ολοκλήρωση αυτού του "
 "κύκλου μαθημάτων."
 
-#: apps/course_metadata/models.py:2141
+#: apps/course_metadata/models.py:2329
+msgid ""
+"A JSON dict detailing the available translations and transcriptions for this"
+" run. The dict has two keys: translation_languages and "
+"transcription_languages."
+msgstr ""
+"Ένα λεξικό JSON που αναφέρει τις διαθέσιμες μεταφράσεις και μεταγραφές για "
+"αυτή τη διεξαγωγή. Το λεξικό έχει δύο κλειδιά: translation_languages και "
+"transcription_languages."
+
+#: apps/course_metadata/models.py:2336
 msgid "Total number of learners who have enrolled in this course run"
 msgstr "Συνολικός αριθμός μαθητών που έχουν εγγραφεί σε αυτό το μάθημα τρέχει"
 
-#: apps/course_metadata/models.py:2145
+#: apps/course_metadata/models.py:2340
 msgid ""
 "Total number of learners who have enrolled in this course run in the last 6 "
 "months"
@@ -1472,7 +1535,7 @@ msgstr ""
 "Συνολικός αριθμός μαθητών που έχουν εγγραφεί σε αυτό το μάθημα τρέχει τους "
 "τελευταίους 6 μήνες"
 
-#: apps/course_metadata/models.py:2158
+#: apps/course_metadata/models.py:2353
 msgid ""
 "Whether this run should be hidden from API responses.  Do not edit here - "
 "this value will be overwritten by the \"Course Visibility In Catalog\" field"
@@ -1483,11 +1546,11 @@ msgstr ""
 "&quot;Ορατότητα μαθήματος στον κατάλογο&quot; στο Studio μέσω Ανανέωσης "
 "Μεταδεδομένων Μαθήματος."
 
-#: apps/course_metadata/models.py:2164
+#: apps/course_metadata/models.py:2359
 msgid "Indicates whether the course relation has been manually overridden."
 msgstr "Υποδεικνύει εάν η σχέση μαθήματος έχει παρακαμφθεί χειροκίνητα."
 
-#: apps/course_metadata/models.py:2171
+#: apps/course_metadata/models.py:2366
 msgid ""
 "'What You Will Learn' description for this particular course run. Leave this"
 " value blank to default to the parent course's Outcome attribute."
@@ -1496,13 +1559,13 @@ msgstr ""
 "την τιμή κενή για προεπιλογή στο χαρακτηριστικό Outcome του γονικού "
 "μαθήματος."
 
-#: apps/course_metadata/models.py:2184 apps/course_metadata/models.py:3291
+#: apps/course_metadata/models.py:2379 apps/course_metadata/models.py:3553
 msgid "Add OFAC restriction text to the FAQ section of the Marketing site"
 msgstr ""
 "Προσθέστε κείμενο περιορισμού OFAC στην ενότητα Συχνές ερωτήσεις του "
 "ιστότοπου μάρκετινγκ"
 
-#: apps/course_metadata/models.py:2204
+#: apps/course_metadata/models.py:2399
 msgid ""
 "This calculated field signifies if this course run is in the enterprise "
 "subscription catalog"
@@ -1510,7 +1573,7 @@ msgstr ""
 "Αυτό το υπολογιζόμενο πεδίο υποδηλώνει εάν αυτή η εκτέλεση μαθημάτων "
 "βρίσκεται στον κατάλογο συνδρομών επιχειρήσεων"
 
-#: apps/course_metadata/models.py:2210
+#: apps/course_metadata/models.py:2405
 msgid ""
 "The identifier for a product variant. This is used to link a course run to a"
 " product variant for external LOBs (i.e; ExecEd & Bootcamps)."
@@ -1519,15 +1582,15 @@ msgstr ""
 "σύνδεση μιας εκτέλεσης μαθημάτων με μια παραλλαγή προϊόντος για εξωτερικά "
 "LOB (π.χ. ExecEd &amp; Bootcamps)."
 
-#: apps/course_metadata/models.py:2552 apps/course_metadata/models.py:2565
+#: apps/course_metadata/models.py:2753 apps/course_metadata/models.py:2766
 msgid "Current"
 msgstr "Τρέχον"
 
-#: apps/course_metadata/models.py:2554
+#: apps/course_metadata/models.py:2755
 msgid "Starting Soon"
 msgstr "Ξεκινάει σύντομα"
 
-#: apps/course_metadata/models.py:2604
+#: apps/course_metadata/models.py:2805
 msgid ""
 "Switching seat types after being reviewed is not supported. Please reach out"
 " to your project coordinator for additional help if necessary."
@@ -1535,43 +1598,43 @@ msgstr ""
 "Η εναλλαγή τύπων καθισμάτων μετά από έλεγχο δεν υποστηρίζεται. Επικοινωνήστε"
 " με τον συντονιστή του έργου σας για πρόσθετη βοήθεια εάν είναι απαραίτητο."
 
-#: apps/course_metadata/models.py:2906
+#: apps/course_metadata/models.py:3159
 msgid "Change careers"
 msgstr "Αλλάξτε καριέρα"
 
-#: apps/course_metadata/models.py:2907
+#: apps/course_metadata/models.py:3160
 msgid "Job advancement"
 msgstr "Επαγγελματική ανέλιξη"
 
-#: apps/course_metadata/models.py:2908
+#: apps/course_metadata/models.py:3161
 msgid "Learn valuable skills"
 msgstr "Μάθετε πολύτιμες δεξιότητες"
 
-#: apps/course_metadata/models.py:2909
+#: apps/course_metadata/models.py:3162
 msgid "Learn for fun"
 msgstr "Μάθετε για διασκέδαση"
 
-#: apps/course_metadata/models.py:3097
+#: apps/course_metadata/models.py:3359
 msgid "FAQs"
 msgstr "Συχνές ερωτήσεις"
 
-#: apps/course_metadata/models.py:3112
+#: apps/course_metadata/models.py:3374
 msgid "The user-facing display title for this Program."
 msgstr "Ο τίτλος εμφάνισης στον χρήστη για αυτό το Πρόγραμμα."
 
-#: apps/course_metadata/models.py:3114
+#: apps/course_metadata/models.py:3376
 msgid "A brief, descriptive subtitle for the Program."
 msgstr "Ένας σύντομος, περιγραφικός υπότιτλος για το Πρόγραμμα."
 
-#: apps/course_metadata/models.py:3116
+#: apps/course_metadata/models.py:3378
 msgid "A brief hook for the marketing website"
 msgstr "Ένα σύντομο άγκιστρο για τον ιστότοπο μάρκετινγκ"
 
-#: apps/course_metadata/models.py:3119
+#: apps/course_metadata/models.py:3381
 msgid "The lifecycle status of this Program."
 msgstr "Η κατάσταση του κύκλου ζωής αυτού του Προγράμματος."
 
-#: apps/course_metadata/models.py:3131
+#: apps/course_metadata/models.py:3393
 msgid ""
 "If this box is not checked, courses will be ordered as in the courses select"
 " box above."
@@ -1579,7 +1642,7 @@ msgstr ""
 "Εάν αυτό το πλαίσιο δεν είναι επιλεγμένο, τα μαθήματα θα ταξινομηθούν όπως "
 "στο παραπάνω πλαίσιο επιλογής μαθημάτων."
 
-#: apps/course_metadata/models.py:3146
+#: apps/course_metadata/models.py:3408
 msgid ""
 "This field is now deprecated (ECOM-6021).Estimated number of weeks needed to"
 " complete a course run belonging to this program."
@@ -1588,11 +1651,11 @@ msgstr ""
 "εβδομάδων που απαιτούνται για την ολοκλήρωση μιας σειράς μαθημάτων που "
 "ανήκει σε αυτό το πρόγραμμα."
 
-#: apps/course_metadata/models.py:3172
+#: apps/course_metadata/models.py:3434
 msgid "DEPRECATED: Use the card image field"
 msgstr "ΚΑΤΑΡΓΗΘΗΚΕ: Χρησιμοποιήστε το πεδίο εικόνας κάρτας"
 
-#: apps/course_metadata/models.py:3179
+#: apps/course_metadata/models.py:3441
 msgid ""
 "This field can be used by API clients to determine the order in which "
 "instructors will be displayed on program pages. Instructors in this list "
@@ -1604,18 +1667,18 @@ msgstr ""
 "πριν από όλους τους άλλους που σχετίζονται με την εκτέλεση των μαθημάτων "
 "αυτού του προγράμματος."
 
-#: apps/course_metadata/models.py:3190
+#: apps/course_metadata/models.py:3452
 msgid "The description of credit redemption for courses in program"
 msgstr ""
 "Η περιγραφή της εξαγοράς πίστωσης ακαδ. μονάδων για μαθήματα στο πρόγραμμα"
 
-#: apps/course_metadata/models.py:3195
+#: apps/course_metadata/models.py:3457
 msgid "Allow courses in this program to be purchased in a single transaction"
 msgstr ""
 "Να επιτρέπεται η αγορά σειράς μαθημάτων σε αυτό το πρόγραμμα σε μία μόνο "
 "συναλλαγή"
 
-#: apps/course_metadata/models.py:3199
+#: apps/course_metadata/models.py:3461
 msgid ""
 "Hide program on marketing site landing and search pages. This program MAY "
 "have a detail page."
@@ -1623,13 +1686,13 @@ msgstr ""
 "Απόκρυψη προγράμματος σε σελίδες προορισμού και αναζήτησης ιστότοπου "
 "μάρκετινγκ. Αυτό το πρόγραμμα ΜΠΟΡΕΙ να έχει μια σελίδα λεπτομερειών."
 
-#: apps/course_metadata/models.py:3202
+#: apps/course_metadata/models.py:3464
 msgid "Total number of learners who have enrolled in courses this program"
 msgstr ""
 "Συνολικός αριθμός μαθητών που έχουν εγγραφεί σε μαθήματα αυτού του "
 "προγράμματος"
 
-#: apps/course_metadata/models.py:3207
+#: apps/course_metadata/models.py:3469
 msgid ""
 "Total number of learners who have enrolled in courses in this program in the"
 " last 6 months"
@@ -1637,7 +1700,7 @@ msgstr ""
 "Συνολικός αριθμός μαθητών που έχουν εγγραφεί σε μαθήματα σε αυτό το "
 "πρόγραμμα τους τελευταίους 6 μήνες"
 
-#: apps/course_metadata/models.py:3212
+#: apps/course_metadata/models.py:3474
 msgid ""
 "Number of credits a learner will earn upon successful completion of the "
 "program"
@@ -1645,7 +1708,7 @@ msgstr ""
 "Αριθμός μονάδων που θα κερδίσει ένας μαθητής με την επιτυχή ολοκλήρωση του "
 "προγράμματος"
 
-#: apps/course_metadata/models.py:3216
+#: apps/course_metadata/models.py:3478
 msgid ""
 "This calculated field signifies if all the courses in this program are "
 "included in the enterprise subscription catalog "
@@ -1653,20 +1716,20 @@ msgstr ""
 "Αυτό το υπολογιζόμενο πεδίο υποδηλώνει εάν όλα τα μαθήματα σε αυτό το "
 "πρόγραμμα περιλαμβάνονται στον κατάλογο συνδρομών επιχειρήσεων "
 
-#: apps/course_metadata/models.py:3220
+#: apps/course_metadata/models.py:3482
 msgid ""
 "A field to override Organization short code alias specific for this program."
 msgstr ""
 "Ένα πεδίο για την παράκαμψη του ψευδώνυμου σύντομου κώδικα οργανισμού για "
 "αυτό το πρόγραμμα."
 
-#: apps/course_metadata/models.py:3227
+#: apps/course_metadata/models.py:3489
 msgid "A field to override Organization logo specific for this program."
 msgstr ""
 "Ένα πεδίο για παράκαμψη του λογότυπου οργανισμού ειδικά για αυτό το "
 "πρόγραμμα."
 
-#: apps/course_metadata/models.py:3231
+#: apps/course_metadata/models.py:3493
 msgid ""
 "Primary subject field specific for this program. Useful field in case there "
 "are no courses associated with this program."
@@ -1674,7 +1737,7 @@ msgstr ""
 "Πρωτεύον θεματικό πεδίο ειδικό για αυτό το πρόγραμμα. Χρήσιμο πεδίο σε "
 "περίπτωση που δεν υπάρχουν μαθήματα που να σχετίζονται με αυτό το πρόγραμμα."
 
-#: apps/course_metadata/models.py:3236
+#: apps/course_metadata/models.py:3498
 msgid ""
 "Level type specific for this program. Useful field in case there are no "
 "courses associated with this program."
@@ -1682,7 +1745,7 @@ msgstr ""
 "Τύπος επιπέδου συγκεκριμένου για αυτό το πρόγραμμα. Χρήσιμο πεδίο σε "
 "περίπτωση που δεν υπάρχουν μαθήματα που να σχετίζονται με αυτό το πρόγραμμα."
 
-#: apps/course_metadata/models.py:3241
+#: apps/course_metadata/models.py:3503
 msgid ""
 "Language code specific for this program. Useful field in case there are no "
 "courses associated with this program."
@@ -1690,7 +1753,7 @@ msgstr ""
 "Κωδικός γλώσσας συγκεκριμένος για αυτό το πρόγραμμα. Χρήσιμο πεδίο σε "
 "περίπτωση που δεν υπάρχουν μαθήματα που να σχετίζονται με αυτό το πρόγραμμα."
 
-#: apps/course_metadata/models.py:3275
+#: apps/course_metadata/models.py:3537
 msgid ""
 "Useful field to overwrite the duration of a program. It can be a text "
 "describing a period of time, Ex: 6-9 months."
@@ -1698,7 +1761,7 @@ msgstr ""
 "Χρήσιμο πεδίο για την αντικατάσταση της διάρκειας ενός προγράμματος. Μπορεί "
 "να είναι ένα κείμενο που περιγράφει μια χρονική περίοδο, π.χ.: 6-9 μήνες."
 
-#: apps/course_metadata/models.py:3284
+#: apps/course_metadata/models.py:3546
 msgid ""
 "Pick a tag/label from the suggestions. To make a new tag, add a comma after "
 "the tag name."
@@ -1706,35 +1769,35 @@ msgstr ""
 "Επιλέξτε μια ετικέτα/ετικέτα από τις προτάσεις. Για να δημιουργήσετε μια νέα"
 " ετικέτα, προσθέστε ένα κόμμα μετά το όνομα της ετικέτας."
 
-#: apps/course_metadata/models.py:3295
+#: apps/course_metadata/models.py:3557
 msgid "The last time this program was modified."
 msgstr "Την τελευταία φορά που τροποποιήθηκε αυτό το πρόγραμμα."
 
-#: apps/course_metadata/models.py:3723 apps/course_metadata/models.py:3740
+#: apps/course_metadata/models.py:4009 apps/course_metadata/models.py:4026
 msgid "ID"
 msgstr "Ταυτότητα"
 
-#: apps/course_metadata/models.py:3759
+#: apps/course_metadata/models.py:4045
 msgid "The actual rank number"
 msgstr "Ο πραγματικός αριθμός κατάταξης"
 
-#: apps/course_metadata/models.py:3760
+#: apps/course_metadata/models.py:4046
 msgid "What does the rank number mean"
 msgstr "Τι σημαίνει ο αριθμός κατάταξης"
 
-#: apps/course_metadata/models.py:3761
+#: apps/course_metadata/models.py:4047
 msgid "From where the rank is obtained"
 msgstr "Από όπου προκύπτει ο βαθμός"
 
-#: apps/course_metadata/models.py:3777
+#: apps/course_metadata/models.py:4094
 msgid "Callback URL to partner application flow"
 msgstr "URL επιστροφής κλήσης στη ροή εφαρμογών συνεργάτη"
 
-#: apps/course_metadata/models.py:3780
+#: apps/course_metadata/models.py:4097
 msgid "Overall program ranking (e.g. \"#1 in the U.S.\")"
 msgstr "Συνολική κατάταξη προγράμματος (π.χ. &quot;#1 στις ΗΠΑ&quot;)"
 
-#: apps/course_metadata/models.py:3785
+#: apps/course_metadata/models.py:4102
 msgid ""
 "The 6 character hex value of the color to make the banner borders\n"
 "            (e.g. \"#ff0000\" which equals red) No need to provide the `#`"
@@ -1742,53 +1805,53 @@ msgstr ""
 "Η εξαγωνική τιμή 6 χαρακτήρων του χρώματος για τη δημιουργία περιγράμματος του banner\n"
 " (π.χ. &quot;#ff0000&quot; που ισούται με κόκκινο) Δεν χρειάζεται να παρέχετε το &quot;#&quot;."
 
-#: apps/course_metadata/models.py:3794
+#: apps/course_metadata/models.py:4111
 msgid "Provide a campus image for the header of the degree"
 msgstr "Παρέχετε μια εικόνα πανεπιστημιούπολης για την κεφαλίδα του πτυχίου"
 
-#: apps/course_metadata/models.py:3800
+#: apps/course_metadata/models.py:4117
 msgid "Provide a background image for the title section of the degree"
 msgstr "Δώστε μια εικόνα φόντου για την ενότητα τίτλου του πτυχίου"
 
-#: apps/course_metadata/models.py:3805
+#: apps/course_metadata/models.py:4122
 msgid "The fine print that displays at the Tuition section's bottom"
 msgstr ""
 "Τα ψιλά γράμματα που εμφανίζονται στο κάτω μέρος της ενότητας Δίδακτρα"
 
-#: apps/course_metadata/models.py:3810
+#: apps/course_metadata/models.py:4127
 msgid "The fine print that displays at the Deadline section's bottom"
 msgstr ""
 "Τα ψιλά γράμματα που εμφανίζονται στο κάτω μέρος της ενότητας Προθεσμία"
 
-#: apps/course_metadata/models.py:3817
+#: apps/course_metadata/models.py:4134
 msgid "The sailthru email list name to capture leads"
 msgstr "Το όνομα της λίστας email sailthru για τη λήψη δυνητικών πελατών"
 
-#: apps/course_metadata/models.py:3831
+#: apps/course_metadata/models.py:4148
 msgid "Please provide an image file for the lead capture banner."
 msgstr "Παρέχετε ένα αρχείο εικόνας για το banner λήψης δυνητικού πελάτη."
 
-#: apps/course_metadata/models.py:3834
+#: apps/course_metadata/models.py:4151
 msgid "The Hubspot form ID for the lead capture form"
 msgstr "Το αναγνωριστικό φόρμας Hubspot για τη φόρμα λήψης δυνητικού πελάτη"
 
-#: apps/course_metadata/models.py:3840
+#: apps/course_metadata/models.py:4157
 msgid "URL to micromasters landing page"
 msgstr "URL στη σελίδα προορισμού micromasters"
 
-#: apps/course_metadata/models.py:3846
+#: apps/course_metadata/models.py:4163
 msgid "Micromasters verbose title"
 msgstr "Περιεκτικός τίτλος Micromasters"
 
-#: apps/course_metadata/models.py:3852
+#: apps/course_metadata/models.py:4169
 msgid "Micromasters descriptive paragraph"
 msgstr "Περιγραφική παράγραφος Micromasters"
 
-#: apps/course_metadata/models.py:3865
+#: apps/course_metadata/models.py:4182
 msgid "Customized background image for the MicroMasters section."
 msgstr "Προσαρμοσμένη εικόνα φόντου για την ενότητα MicroMasters."
 
-#: apps/course_metadata/models.py:3869
+#: apps/course_metadata/models.py:4186
 msgid ""
 "Override org name if micromasters program comes from different organization "
 "than Masters program"
@@ -1796,19 +1859,19 @@ msgstr ""
 "Αντικαταστήστε το όνομα του οργανισμού εάν το πρόγραμμα micromasters "
 "προέρχεται από διαφορετικό οργανισμό από το πρόγραμμα Master"
 
-#: apps/course_metadata/models.py:3876
+#: apps/course_metadata/models.py:4193
 msgid "Ranking display for search card (e.g. \"#1 in the U.S.\""
 msgstr "Οθόνη κατάταξης για κάρτα αναζήτησης (π.χ. &quot;#1 στις ΗΠΑ&quot;"
 
-#: apps/course_metadata/models.py:3882
+#: apps/course_metadata/models.py:4199
 msgid "Cost display for search card (e.g. \"$9,999\""
 msgstr "Ένδειξη κόστους για κάρτα αναζήτησης (π.χ. &quot;9.999 $&quot;"
 
-#: apps/course_metadata/models.py:3888
+#: apps/course_metadata/models.py:4205
 msgid "Number of courses for search card (e.g. \"11 Courses\""
 msgstr "Αριθμός μαθημάτων για κάρτα αναζήτησης (π.χ. &quot;11 μαθήματα&quot;"
 
-#: apps/course_metadata/models.py:3896
+#: apps/course_metadata/models.py:4213
 msgid ""
 "Designates whether the degree should be displayed on the owning "
 "organization's page"
@@ -1816,102 +1879,102 @@ msgstr ""
 "Καθορίζει εάν το πτυχίο θα πρέπει να εμφανίζεται στη σελίδα του οργανισμού "
 "που κατέχει"
 
-#: apps/course_metadata/models.py:3913
+#: apps/course_metadata/models.py:4232
 msgid "The redirect URL of the degree on external site"
 msgstr "Η διεύθυνση URL ανακατεύθυνσης του πτυχίου σε εξωτερικό ιστότοπο"
 
-#: apps/course_metadata/models.py:3918
+#: apps/course_metadata/models.py:4237
 msgid "The URL of the landing page on external site"
 msgstr "Το URL της σελίδας προορισμού σε εξωτερικό ιστότοπο"
 
-#: apps/course_metadata/models.py:3953
+#: apps/course_metadata/models.py:4288
 msgid "Bell"
 msgstr "Κουδούνι"
 
-#: apps/course_metadata/models.py:3954
+#: apps/course_metadata/models.py:4289
 msgid "Certificate"
 msgstr "Βεβαίωση"
 
-#: apps/course_metadata/models.py:3955
+#: apps/course_metadata/models.py:4290
 msgid "Checkmark"
 msgstr "Σημάδι ελέγχου"
 
-#: apps/course_metadata/models.py:3956
+#: apps/course_metadata/models.py:4291
 msgid "Clock"
 msgstr "Ρολόι"
 
-#: apps/course_metadata/models.py:3957
+#: apps/course_metadata/models.py:4292
 msgid "Desktop"
 msgstr "Επιφάνεια εργασίας"
 
-#: apps/course_metadata/models.py:3958
+#: apps/course_metadata/models.py:4293
 msgid "Info"
 msgstr "Πληροφορίες"
 
-#: apps/course_metadata/models.py:3959
+#: apps/course_metadata/models.py:4294
 msgid "Sitemap"
 msgstr "Χάρτης ιστότοπου"
 
-#: apps/course_metadata/models.py:3960
+#: apps/course_metadata/models.py:4295
 msgid "User"
 msgstr "Χρήστης"
 
-#: apps/course_metadata/models.py:3961
+#: apps/course_metadata/models.py:4296
 msgid "Dollar"
 msgstr "Δολάριο"
 
-#: apps/course_metadata/models.py:3962
+#: apps/course_metadata/models.py:4297
 msgid "Book"
 msgstr "Βιβλίο"
 
-#: apps/course_metadata/models.py:3963
+#: apps/course_metadata/models.py:4298
 msgid "Mortar Board"
 msgstr "Σανίδα κονιάματος"
 
-#: apps/course_metadata/models.py:3964
+#: apps/course_metadata/models.py:4299
 msgid "Star"
 msgstr "Αστέρι"
 
-#: apps/course_metadata/models.py:3965
+#: apps/course_metadata/models.py:4300
 msgid "Trophy"
 msgstr "Τρόπαιο"
 
-#: apps/course_metadata/models.py:3969
+#: apps/course_metadata/models.py:4304
 msgid "Icon FA class"
 msgstr "Εικονίδιο κατηγορία FA"
 
-#: apps/course_metadata/models.py:3970
+#: apps/course_metadata/models.py:4305
 msgid "Paired text"
 msgstr "Ζευγαρωμένο κείμενο"
 
-#: apps/course_metadata/models.py:3989
+#: apps/course_metadata/models.py:4340
 msgid "Deadline applies for this semester (e.g. Spring 2019"
 msgstr "Η προθεσμία ισχύει για αυτό το εξάμηνο (π.χ. Άνοιξη 2019"
 
-#: apps/course_metadata/models.py:3993
+#: apps/course_metadata/models.py:4344
 msgid "Describes the deadline (e.g. Early Admission Deadline)"
 msgstr "Περιγράφει την προθεσμία (π.χ. Πρόωρη προθεσμία εισαγωγής)"
 
-#: apps/course_metadata/models.py:3997
+#: apps/course_metadata/models.py:4348
 msgid "The date after which the deadline expires (e.g. January 1, 2019)"
 msgstr ""
 "Η ημερομηνία μετά την οποία λήγει η προθεσμία (π.χ. 1 Ιανουαρίου 2019)"
 
-#: apps/course_metadata/models.py:4001
+#: apps/course_metadata/models.py:4352
 msgid "The time after which the deadline expires (e.g. 11:59 PM EST)."
 msgstr "Η ώρα μετά την οποία λήγει η προθεσμία (π.χ. 11:59 PM EST)."
 
-#: apps/course_metadata/models.py:4022
+#: apps/course_metadata/models.py:4388
 msgid "Describes what the cost is for (e.g. Tuition)"
 msgstr "Περιγράφει το κόστος (π.χ. δίδακτρα)"
 
-#: apps/course_metadata/models.py:4026
+#: apps/course_metadata/models.py:4392
 msgid "String-based field stating how much the cost is (e.g. $1000)."
 msgstr ""
 "Πεδίο που βασίζεται σε συμβολοσειρά που αναφέρει πόσο είναι το κόστος (π.χ. "
 "1000 $)."
 
-#: apps/course_metadata/models.py:4054
+#: apps/course_metadata/models.py:4435
 msgid ""
 "A high-level overview of the degree's courseware. The \"brief\"\n"
 "            text is the first 750 characters of \"marketing_text\" and must be\n"
@@ -1921,37 +1984,37 @@ msgstr ""
 " Το κείμενο είναι οι πρώτοι 750 χαρακτήρες του &quot;marketing_text&quot; και πρέπει να είναι\n"
 " έγκυρο HTML."
 
-#: apps/course_metadata/models.py:4062
+#: apps/course_metadata/models.py:4443
 msgid "A high-level overview of the degree's courseware."
 msgstr "Μια επισκόπηση υψηλού επιπέδου του προγράμματος σπουδών του πτυχίου."
 
-#: apps/course_metadata/models.py:4138
+#: apps/course_metadata/models.py:4568
 msgid "Organization name"
 msgstr "Ονομα Οργανισμού"
 
-#: apps/course_metadata/models.py:4160
+#: apps/course_metadata/models.py:4595
 msgid "These programs are for a different partner than the pathway itself: {}"
 msgstr ""
 "Αυτά τα προγράμματα είναι για διαφορετικό συνεργάτη από το ίδιο το μονοπάτι:"
 " {}"
 
-#: apps/course_metadata/models.py:4187
+#: apps/course_metadata/models.py:4622
 msgid "Facebook"
 msgstr "Facebook"
 
-#: apps/course_metadata/models.py:4188
+#: apps/course_metadata/models.py:4623
 msgid "Twitter"
 msgstr "Twitter"
 
-#: apps/course_metadata/models.py:4189
+#: apps/course_metadata/models.py:4624
 msgid "Blog"
 msgstr "Ιστολόγιο"
 
-#: apps/course_metadata/models.py:4190
+#: apps/course_metadata/models.py:4625
 msgid "Others"
 msgstr "Λοιπά"
 
-#: apps/course_metadata/models.py:4250
+#: apps/course_metadata/models.py:4685
 #, python-brace-format
 msgid ""
 "Partner {partner_key} and course partner {course_partner_key} do not match "
@@ -1960,7 +2023,7 @@ msgstr ""
 "Ο συνεργάτης {partner_key} και ο συνεργάτης μαθήματος {course_partner_key} "
 "δεν ταιριάζουν κατά την προσπάθεια αποθήκευσης του url slug {url_slug}"
 
-#: apps/course_metadata/models.py:4270
+#: apps/course_metadata/models.py:4705
 #, python-brace-format
 msgid ""
 "Partner {partner_key} and course partner {course_partner_key} do not match "
@@ -1969,14 +2032,19 @@ msgstr ""
 "Ο συνεργάτης {partner_key} και ο συνεργάτης μαθήματος {course_partner_key} "
 "δεν ταιριάζουν κατά την προσπάθεια αποθήκευσης ανακατεύθυνσης url {url_path}"
 
-#: apps/course_metadata/models.py:4291
+#: apps/course_metadata/models.py:4726
 msgid "It expects the data will be provided in a csv file format "
 msgstr "Αναμένει ότι τα δεδομένα θα παρέχονται σε μορφή αρχείου csv "
 
-#: apps/course_metadata/models.py:4303 apps/course_metadata/models.py:4316
-#: apps/course_metadata/models.py:4329 apps/course_metadata/models.py:4349
-#: apps/course_metadata/models.py:4362 apps/course_metadata/models.py:4381
-#: apps/course_metadata/models.py:4401 apps/course_metadata/models.py:4416
+#: apps/course_metadata/models.py:4738
+msgid "A csv file containing uuid of the courses to be archived"
+msgstr "Ένα αρχείο CSV που περιέχει uuid των μαθημάτων για αρχειοθέτηση"
+
+#: apps/course_metadata/models.py:4752 apps/course_metadata/models.py:4765
+#: apps/course_metadata/models.py:4778 apps/course_metadata/models.py:4813
+#: apps/course_metadata/models.py:4826 apps/course_metadata/models.py:4845
+#: apps/course_metadata/models.py:4865 apps/course_metadata/models.py:4880
+#: apps/course_metadata/models.py:5033
 msgid ""
 "It expects the data will be provided in a csv file format with first row "
 "containing all the headers."
@@ -1984,49 +2052,78 @@ msgstr ""
 "Αναμένει ότι τα δεδομένα θα παρέχονται σε μορφή αρχείου csv με την πρώτη "
 "σειρά να περιέχει όλες τις κεφαλίδες."
 
-#: apps/course_metadata/models.py:4373
+#: apps/course_metadata/models.py:4837
 msgid "Open Courses"
 msgstr "Ανοιχτά Μαθήματα"
 
-#: apps/course_metadata/models.py:4374
+#: apps/course_metadata/models.py:4838
 msgid "2U Executive Education Courses"
 msgstr "2U Μαθήματα Εκπαίδευσης Στελεχών"
 
-#: apps/course_metadata/models.py:4375
+#: apps/course_metadata/models.py:4839
 msgid "Bootcamps"
 msgstr "Bootcamps"
 
-#: apps/course_metadata/models.py:4386 apps/course_metadata/models.py:4490
+#: apps/course_metadata/models.py:4850 apps/course_metadata/models.py:4954
 msgid "Course UUIDs"
 msgstr "UUID μαθημάτων"
 
-#: apps/course_metadata/models.py:4466
+#: apps/course_metadata/models.py:4930
 msgid "Course Run IDs"
 msgstr "Αναγνωριστικά εκτέλεσης μαθημάτων"
 
-#: apps/course_metadata/models.py:4482
+#: apps/course_metadata/models.py:4946
 msgid "Profile Image UUIDs"
 msgstr "UUID εικόνας προφίλ"
 
-#: apps/course_metadata/models.py:4489
+#: apps/course_metadata/models.py:4953
 msgid "Tag"
 msgstr "Ετικέτα"
 
-#: apps/course_metadata/models.py:4505
+#: apps/course_metadata/models.py:4969
 msgid "Remove All Redirects"
 msgstr "Κατάργηση όλων των ανακατευθύνσεων"
 
-#: apps/course_metadata/models.py:4506
+#: apps/course_metadata/models.py:4970
 msgid "Url Paths"
-msgstr "Url Paths"
+msgstr "Μονοπάτια URL"
 
-#: apps/course_metadata/models.py:4514
+#: apps/course_metadata/models.py:4978
 msgid "Add redirects from all published course url slugs"
 msgstr "Προσθέστε ανακατευθύνσεις από όλα τα δημοσιευμένα url slugs μαθημάτων"
 
-#: apps/course_metadata/models.py:4515 apps/taxonomy_support/models.py:55
+#: apps/course_metadata/models.py:4979 apps/taxonomy_support/models.py:55
 msgid "Course uuids"
 msgstr "Uuids μαθημάτων"
+
+#: apps/course_metadata/models.py:5044
+msgid "User who uploaded the file"
+msgstr "Ο χρήστης που ανέβασε το αρχείο"
+
+#: apps/course_metadata/models.py:5049
+msgid "Summary of the task"
+msgstr "Περίληψη της εργασίας"
+
+#: apps/course_metadata/models.py:5052
+msgid "Task Type"
+msgstr "Τύπος εργασίας"
+
+#: apps/course_metadata/models.py:5055
+msgid "Type of Bulk Task to be performed"
+msgstr "Τύπος μαζικής εργασίας που θα εκτελεστεί"
+
+#: apps/course_metadata/models.py:5058
+msgid "Status"
+msgstr "Κατάσταση"
+
+#: apps/course_metadata/models.py:5061
+msgid "Status of the Bulk Task"
+msgstr "Κατάσταση της μαζικής εργασίας"
+
+#: apps/course_metadata/models.py:5069
+msgid "Identifier of the celery task associated with this bulk task"
+msgstr ""
+"Ταυτοποιητής της εργασίας celery που σχετίζεται με αυτή τη μαζική εργασία"
 
 #: apps/course_metadata/salesforce.py:78
 msgid "Attempted to query Salesforce with no client for partner={}"
@@ -2062,12 +2159,12 @@ msgstr "Δεξιότητες Μαθημάτων"
 #: apps/course_metadata/templates/admin/course_metadata/refresh_course_skills.html:22
 #: apps/course_metadata/templates/admin/course_metadata/refresh_course_skills.html:32
 msgid "Refresh Course Skills"
-msgstr "Refresh Course Skills"
+msgstr "Ανανέωση δεξιοτήτων μαθήματος"
 
 #: apps/course_metadata/templates/admin/course_metadata/refresh_program_skills.html:22
 #: apps/course_metadata/templates/admin/course_metadata/refresh_program_skills.html:32
 msgid "Refresh Program Skills"
-msgstr "Refresh Program Skills"
+msgstr "Ανανέωση δεξιοτήτων προγράμματος"
 
 #: apps/course_metadata/templates/course_metadata/email/comment.html:7
 #, python-format
@@ -2097,36 +2194,147 @@ msgstr ""
 "%(user_name)s έκανε το ακόλουθο σχόλιο στο %(course_name)s %(date)s στο "
 "%(time)s"
 
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:7
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:3
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:9
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:3
-#: apps/course_metadata/templates/course_metadata/email/internal_review.html:9
-#: apps/course_metadata/templates/course_metadata/email/internal_review.txt:3
-#: apps/course_metadata/templates/course_metadata/email/legal_review.html:9
-#: apps/course_metadata/templates/course_metadata/email/legal_review.txt:3
-#: apps/course_metadata/templates/course_metadata/email/reviewed.html:9
-#: apps/course_metadata/templates/course_metadata/email/reviewed.txt:3
+msgid "Hi Course Team,"
+msgstr "Γεια σας, ομάδα μαθήματος,"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:12
 #, python-format
-msgid "Dear %(recipient_name)s,"
-msgstr "Αγαπητέ/ή %(recipient_name)s,"
+msgid ""
+"\n"
+"        This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
+"        "
+msgstr ""
+"\n"
+"        Αυτή είναι μια αυτοματοποιημένη υπενθύμιση ότι το μάθημα \"%(course_name)s\" (κλειδί μαθήματος: %(course_key)s) πρόκειται να λήξει σε %(days)s στις %(course_end_date)s.\n"
+"        "
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:16
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:16
+msgid ""
+"To ensure uninterrupted learner access and enrollment, please take one of "
+"the following actions:"
+msgstr ""
+"Για να εξασφαλιστεί η απρόσκοπτη πρόσβαση και εγγραφή των μαθητών, παρακαλώ "
+"κάντε μία από τις ακόλουθες ενέργειες:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:19
+#, python-format
+msgid ""
+"\n"
+"        This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) has officially ended as of %(course_end_date)s.\n"
+"        "
+msgstr ""
+"\n"
+"        Αυτή είναι μια αυτοματοποιημένη υπενθύμιση ότι το μάθημα \"%(course_name)s\" (κλειδί μαθήματος: %(course_key)s) έχει επίσημα λήξει από τις %(course_end_date)s.\n"
+"        "
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:23
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:18
+msgid ""
+"If this was intentional, no action is needed. However, if this course was "
+"meant to remain available, you have two options to restore access:"
+msgstr ""
+"Αν αυτό έγινε με πρόθεση, δε χρειάζεται καμία ενέργεια. Ωστόσο, εάν το "
+"μάθημα έπρεπε να παραμείνει διαθέσιμο, έχετε δύο επιλογές για την "
+"αποκατάσταση της πρόσβασης:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:29
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:21
+msgid ""
+"Extend the current course run’s end date if the same course is meant to "
+"remain available."
+msgstr ""
+"Παρατείνετε την τρέχουσα ημερομηνία λήξης του κύκλου του μαθήματος εάν το "
+"ίδιο μάθημα πρέπει να παραμείνει διαθέσιμο."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:31
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:22
+msgid ""
+"Create a new course run if you are planning to offer this course again with "
+"updated content, pacing, or a new cohort of learners."
+msgstr ""
+"Δημιουργήστε έναν νέο κύκλο μαθήματος εάν σκοπεύετε να προσφέρετε ξανά αυτό "
+"το μάθημα με ενημερωμένο περιεχόμενο, ρυθμό ή μια νέα ομάδα μαθητών."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:32
+msgid "Visit the Course in Publisher"
+msgstr "Επισκεφθείτε το μάθημα στον Publisher"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:37
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:25
+msgid "You can review and modify the course end settings here:"
+msgstr ""
+"Μπορείτε να ελέγξετε και να τροποποιήσετε τις ρυθμίσεις λήξης του μαθήματος "
+"εδώ:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:41
+#, python-format
+msgid ""
+"\n"
+"        If no action is taken, the course will no longer be available for enrollment or access by learners on \n"
+"        <a href=\"%(partner_marketing_site_url)s\">%(partner_marketing_site_url)s</a> after the end date.\n"
+"        "
+msgstr ""
+"\n"
+"        Εάν δεν γίνει καμία ενέργεια, το μάθημα δεν θα είναι πλέον διαθέσιμο για εγγραφή ή πρόσβαση από τους μαθητές στο \n"
+"        <a href=\"%(partner_marketing_site_url)s\">%(partner_marketing_site_url)s</a> μετά την ημερομηνία λήξης.\n"
+"        "
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:47
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:34
+msgid "Thanks"
+msgstr "Ευχαριστώ"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:6
+#, python-format
+msgid ""
+"\n"
+"This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
+msgstr ""
+"\n"
+"Αυτή είναι μια αυτοματοποιημένη υπενθύμιση ότι το μάθημα \"%(course_name)s\" (κλειδί μαθήματος: %(course_key)s) πρόκειται να λήξει σε %(days)s στις %(course_end_date)s.\n"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:10
+#, python-format
+msgid ""
+"\n"
+"This is an automated reminder that the course \"%(course_name)s\" (Course Key: %(course_key)s) has officially ended as of %(course_end_date)s.\n"
+msgstr ""
+"\n"
+"Αυτή είναι μια αυτοματοποιημένη υπενθύμιση ότι το μάθημα \"%(course_name)s\" (κλειδί μαθήματος: %(course_key)s) έχει επίσημα λήξει από τις %(course_end_date)s.\n"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:23
+msgid "Visit the Course in Publisher:"
+msgstr "Επισκεφθείτε το μάθημα στον Publisher:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:29
+#, python-format
+msgid ""
+"\n"
+"If no action is taken, the course will no longer be available for enrollment or access by learners on %(partner_marketing_site_url)s after the end date.\n"
+msgstr ""
+"\n"
+"Εάν δεν γίνει καμία ενέργεια, το μάθημα δεν θα είναι πλέον διαθέσιμο για εγγραφή ή πρόσβαση από τους μαθητές στο %(partner_marketing_site_url)s μετά την ημερομηνία λήξης.\n"
 
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:17
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:7
 #, python-format
 msgid ""
 "The About page for the %(course_run_number)s course run of %(course_name)s "
-"has been published. No further action is necessary."
+"has been submitted for publishing. The new session will appear on the edX "
+"website following the next couple of deployments—typically within 24 to 48 "
+"business hours."
 msgstr ""
-"Η σελίδα 'Πληροφορίες' για την εκτέλεση μαθημάτων %(course_run_number)s του "
-"%(course_name)s έχει δημοσιευτεί. Δεν απαιτείται περαιτέρω ενέργεια."
+"Η σελίδα About για τον κύκλο μαθήματος %(course_run_number)s του "
+"%(course_name)s έχει υποβληθεί για δημοσίευση. Η νέα συνεδρία θα εμφανιστεί "
+"στην ιστοσελίδα edX μετά από τις επόμενες μερικές αναπτύξεις — συνήθως εντός"
+" 24 έως 48 εργάσιμων ωρών."
 
-#: apps/course_metadata/templates/course_metadata/email/go_live.html:24
-#, python-brace-format
-msgid "{link_start}{preview_url}{link_middle}View this About page.{link_end}"
-msgstr ""
-"{link_start} {preview_url} {link_middle} Δείτε αυτήν τη σελίδα Πληροφορίες. "
-"{link_end}"
-
-#: apps/course_metadata/templates/course_metadata/email/go_live.html:33
+#: apps/course_metadata/templates/course_metadata/email/go_live.html:26
 #: apps/course_metadata/templates/course_metadata/email/legal_review.html:23
 #: apps/course_metadata/templates/course_metadata/email/reviewed.html:38
 #, python-brace-format
@@ -2136,20 +2344,23 @@ msgstr ""
 "{link_start} {contact_us_email} {link_middle} {contact_us_email} {link_end}"
 
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:11
-#, python-format
-msgid "View this About page. %(preview_url)s"
-msgstr "Προβολή αυτής της σελίδας Πληροφορίες. %(preview_url)s"
-
-#: apps/course_metadata/templates/course_metadata/email/go_live.txt:15
-#: apps/course_metadata/templates/course_metadata/email/legal_review.txt:15
-#: apps/course_metadata/templates/course_metadata/email/reviewed.txt:25
 msgid ""
-"Note: This email address is unable to receive replies. For questions or "
-"comments, please contact your Project Coordinator(s):"
+"Note: This is a no-reply email. For any questions or comments, please "
+"contact your Project Coordinator at"
 msgstr ""
-"Σημείωση: Αυτή η διεύθυνση ηλεκτρονικού ταχυδρομείου δεν μπορεί να λάβει "
-"απαντήσεις. Για ερωτήσεις ή σχόλια, επικοινωνήστε με τον συντονιστή του "
-"έργου σας:"
+"Σημείωση: Αυτό είναι ένα email χωρίς δυνατότητα απάντησης. Για οποιεσδήποτε "
+"ερωτήσεις ή σχόλια, παρακαλώ επικοινωνήστε με τον Συντονιστή του έργου σας "
+"στο"
+
+#: apps/course_metadata/templates/course_metadata/email/internal_review.html:9
+#: apps/course_metadata/templates/course_metadata/email/internal_review.txt:3
+#: apps/course_metadata/templates/course_metadata/email/legal_review.html:9
+#: apps/course_metadata/templates/course_metadata/email/legal_review.txt:3
+#: apps/course_metadata/templates/course_metadata/email/reviewed.html:9
+#: apps/course_metadata/templates/course_metadata/email/reviewed.txt:3
+#, python-format
+msgid "Dear %(recipient_name)s,"
+msgstr "Αγαπητέ/ή %(recipient_name)s,"
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.html:14
 #, python-brace-format
@@ -2222,6 +2433,16 @@ msgid "View this course run in Publisher above to determine OFAC status."
 msgstr ""
 "Δείτε αυτό το μάθημα που εκτελείται στον Publisher παραπάνω για να "
 "προσδιορίσετε την κατάσταση OFAC."
+
+#: apps/course_metadata/templates/course_metadata/email/legal_review.txt:15
+#: apps/course_metadata/templates/course_metadata/email/reviewed.txt:25
+msgid ""
+"Note: This email address is unable to receive replies. For questions or "
+"comments, please contact your Project Coordinator(s):"
+msgstr ""
+"Σημείωση: Αυτή η διεύθυνση ηλεκτρονικού ταχυδρομείου δεν μπορεί να λάβει "
+"απαντήσεις. Για ερωτήσεις ή σχόλια, επικοινωνήστε με τον συντονιστή του "
+"έργου σας:"
 
 #: apps/course_metadata/templates/course_metadata/email/reviewed.html:15
 #, python-brace-format
@@ -2307,7 +2528,7 @@ msgstr ""
 "Το μάθημα &#39; %(course_name)s &#39; ελέγχθηκε με επιτυχία από το edX και είναι τώρα έτοιμο για δημοσίευση. Το μάθημα θα δημοσιευτεί στο %(course_publish_date)s .\n"
 " Για να δείτε μια προεπισκόπηση της σελίδας Course About, μεταβείτε εδώ: %(course_preview_url)s\n"
 
-#: apps/course_metadata/utils.py:380
+#: apps/course_metadata/utils.py:391
 msgid "Special characters not allowed in Course Number."
 msgstr "Οι ειδικοί χαρακτήρες δεν επιτρέπονται στον αριθμό μαθήματος."
 
@@ -2371,54 +2592,54 @@ msgstr "Μεταφράσεις μοντέλου LanguageTag"
 msgid "Inactive"
 msgstr "Ανενεργό"
 
-#: apps/learner_pathway/models.py:85
+#: apps/learner_pathway/models.py:84
 msgid "Title of the learner pathway."
 msgstr "Τίτλος της διαδρομής μαθητή."
 
-#: apps/learner_pathway/models.py:88
+#: apps/learner_pathway/models.py:87
 msgid "Course/Program associated pathways also appear in search results"
 msgstr ""
 "Τα μονοπάτια που σχετίζονται με το μάθημα/το πρόγραμμα εμφανίζονται επίσης "
 "στα αποτελέσματα αναζήτησης"
 
-#: apps/learner_pathway/models.py:91
+#: apps/learner_pathway/models.py:90
 msgid "The active/inactive status of this Pathway."
 msgstr "Η ενεργή/ανενεργή κατάσταση αυτής της διαδρομής."
 
-#: apps/learner_pathway/models.py:119
+#: apps/learner_pathway/models.py:118
 msgid "Learner Pathway"
 msgstr "Διαδρομή μαθητή"
 
-#: apps/learner_pathway/models.py:120
+#: apps/learner_pathway/models.py:119
 msgid "Learner Pathways"
 msgstr "Διαδρομές Μαθητών"
 
-#: apps/learner_pathway/models.py:166
+#: apps/learner_pathway/models.py:165
 msgid "Minimum number of nodes to complete this step of the pathway"
 msgstr ""
 "Ελάχιστος αριθμός κόμβων για την ολοκλήρωση αυτού του βήματος της διαδρομής"
 
-#: apps/learner_pathway/models.py:170
+#: apps/learner_pathway/models.py:169
 msgid "Learner Pathway Step"
 msgstr "Βήμα διαδρομής μαθητή"
 
-#: apps/learner_pathway/models.py:171
+#: apps/learner_pathway/models.py:170
 msgid "Learner Pathway Steps"
 msgstr "Βήματα διαδρομής μαθητή"
 
-#: apps/learner_pathway/models.py:238
+#: apps/learner_pathway/models.py:237
 msgid "Learner Pathway Course"
 msgstr "Μάθημα διαδρομής μαθητή"
 
-#: apps/learner_pathway/models.py:239
+#: apps/learner_pathway/models.py:238
 msgid "Learner Pathway Courses"
 msgstr "Μαθήματα μαθησιακής διαδρομής"
 
-#: apps/learner_pathway/models.py:276
+#: apps/learner_pathway/models.py:275
 msgid "Learner Pathway Program"
 msgstr "Πρόγραμμα Μαθητικής Διαδρομής"
 
-#: apps/learner_pathway/models.py:277
+#: apps/learner_pathway/models.py:276
 msgid "Learner Pathway Programs"
 msgstr "Προγράμματα Διαδρομών Εκμάθησης"
 
@@ -2490,10 +2711,10 @@ msgstr ""
 "Προσθέτει συστάσεις για μαθήματα που δημιουργήθηκαν ή τροποποιήθηκαν τις "
 "τελευταίες ημέρες"
 
-#: apps/taxonomy_support/providers.py:162
+#: apps/taxonomy_support/providers.py:198
 msgid "No partner object found!"
 msgstr "Δεν βρέθηκε αντικείμενο συνεργάτη!"
 
 #: urls.py:32
 msgid "Discovery Service Administration"
-msgstr "Discovery Service Administration"
+msgstr "Διαχείριση Υπηρεσίας Ανακάλυψης"

@@ -1,0 +1,112 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1a\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2025-10-23 00:53+0000\n"
+"PO-Revision-Date: 2026-06-01 23:54+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? 2 : 3);\n"
+
+#: extensions/filters.py:58
+msgid "Reports"
+msgstr "דוחות"
+
+#: settings/common.py:31
+msgid "Course Dashboard"
+msgstr "לוח מחוונים של הקורס"
+
+#: settings/common.py:37
+msgid "Individual Learner Dashboard"
+msgstr "לוח מחוונים של לומד יחיד"
+
+#: settings/common.py:43
+msgid "At-Risk Learners Dashboard"
+msgstr "לוח מחוונים ללומדים בסיכון"
+
+#: settings/common.py:114
+msgid "Course"
+msgstr "קורס"
+
+#: settings/common.py:122
+msgid "Graded Subsection"
+msgstr "תת-סעיף עם ציון"
+
+#: settings/common.py:130
+msgid "Problem"
+msgstr "בעיה"
+
+#: settings/common.py:138
+msgid "Video"
+msgstr "וידאו"
+
+#: static/html/superset.html:9
+msgid ""
+"Superset is not configured properly. Please contact your system "
+"administrator."
+msgstr "Superset לא מוגדר כראוי. אנא פנה למנהל המערכת שלך."
+
+#: static/html/superset_student.html:4
+msgid ""
+"Superset is only visible to course staff and instructors. Please contact "
+"your system administrator."
+msgstr "Superset זמין רק לצוות הקורס ולמדריכים. אנא פנה למנהל המערכת שלך."
+
+#: views.py:87
+#, python-brace-format
+msgid "Course not found: '{course_id}'"
+msgstr "לא נמצא קורס: '{course_id}'"
+
+#: views.py:114
+#, python-brace-format
+msgid "Invalid course id: '{course_id}'"
+msgstr "מזהה קורס לא חוקי: '{course_id}'"
+
+#: views.py:179
+#, python-brace-format
+msgid "Invalid usage id: '{usage_id}'"
+msgstr "מזהה שימוש לא חוקי: '{usage_id}'"
+
+#: views.py:208
+#, python-brace-format
+msgid "No dashboard for block type: '{block_type}'"
+msgstr "אין לוח מחוונים עבור סוג בלוק: '{block_type}'"
+
+#: xblock.py:48 xblock.py:49
+msgid "Display name"
+msgstr "שם תצוגה"
+
+#: xblock.py:50
+msgid "Superset Dashboard"
+msgstr "לוח מחוונים של Superset"
+
+#: xblock.py:55
+msgid "Dashboard UUID"
+msgstr "UUID של לוח מחוונים"
+
+#: xblock.py:57
+msgid ""
+"The ID of the dashboard to embed. Available in the Superset embed dashboard "
+"UI."
+msgstr "המזהה של לוח המחוונים להטמעה. זמין בממשק ההטמעה של Superset."
+
+#: xblock.py:64
+msgid "Filters"
+msgstr "מסננים"
+
+#: xblock.py:66
+msgid ""
+"List of SQL filters to apply to the\n"
+"               dashboard. E.g: [\"org='edX'\", \"country in ('us', 'co')\"]\n"
+"               The fields used here must be available on every dataset used by the dashboard.\n"
+"               "
+msgstr ""
+"רשימה של מסנני SQL להחלה על\n"
+"               לוח המחוונים. לדוגמה: [\"org='edX'\", \"country in ('us', 'co')\"]\n"
+"               השדות המשמשים כאן חייבים להיות זמינים בכל מערכת נתונים בה נעשה שימוש בלוח המחוונים.\n"
+"               "

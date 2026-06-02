@@ -1,28 +1,17 @@
-# #-#-#-#-#  django.po (edx-proctoring)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2018 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2018.
-# 
-# Translators:
-# Brian Smith, 2023
-# Nathan Robertson, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024
-# Omar Al-Ithawi <i@omardo.com>, 2025
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-proctoring\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-23 00:45+0000\n"
-"PO-Revision-Date: 2023-05-10 00:48+0000\n"
-"Last-Translator: Omar Al-Ithawi <i@omardo.com>, 2025\n"
-"Language-Team: Hebrew (https://app.transifex.com/open-edx/teams/6205/he/)\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-05-05 00:53+0000\n"
+"PO-Revision-Date: 2026-06-01 23:54+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: he\n"
-"Plural-Forms: nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? 2 : 3);\n"
 
 #: admin.py:112
 msgid "internally reviewed"
@@ -96,6 +85,22 @@ msgstr "נדחה"
 msgid "Error"
 msgstr "שגיאה"
 
+#: admin.py:407
+msgid "Onboarding Missing"
+msgstr "תהליך קליטה חסר"
+
+#: admin.py:408
+msgid "Onboarding Failed"
+msgstr "תהליך קליטה נכשל"
+
+#: admin.py:409
+msgid "Onboarding Pending"
+msgstr "תהליך קליטה ממתין"
+
+#: admin.py:410
+msgid "Onboarding Expired"
+msgstr "תהליך קליטה פג תוקף"
+
 #: api.py:824 views.py:1297
 #, python-brace-format
 msgid "you have {remaining_time} remaining"
@@ -104,6 +109,11 @@ msgstr "נותרה לך {remaining_time}"
 #: api.py:1654
 msgid "your course"
 msgstr "הקורס שלך"
+
+#: api.py:1745
+#, python-brace-format
+msgid "Proctoring Results For {course_name} {exam_name}"
+msgstr "תוצאות הפיקוח עבור {exam_name} בקורס {course_name}"
 
 #: api.py:2238
 msgid "Taking As Proctored Exam"
@@ -149,6 +159,10 @@ msgstr "מבחן תרגול שנכשל"
 msgid "Timed Exam"
 msgstr "מבחן מתוזמן"
 
+#: api.py:2888
+msgid "Onboarding status question"
+msgstr "שאלת סטטוס קליטה"
+
 #: models.py:391
 msgid "Taking as Proctored"
 msgstr "בחירה בפיקוח"
@@ -156,6 +170,18 @@ msgstr "בחירה בפיקוח"
 #: models.py:395
 msgid "Is Sample Attempt"
 msgstr "דוגמת ניסיון"
+
+#: models.py:413
+msgid "Is Resumable"
+msgstr "ניתן להמשיך"
+
+#: models.py:418
+msgid "Ready to Resume"
+msgstr "מוכן להמשך"
+
+#: models.py:421
+msgid "Resumed"
+msgstr "המשיך"
 
 #: models.py:524
 msgid "Additional Time (minutes)"
@@ -165,9 +191,443 @@ msgstr "תוספת זמן (דקות)"
 msgid "Review Policy Exception"
 msgstr "סקירת מדיניות בנוגע למקרים חריגים"
 
+#: templates/common/waiting_banner.html:3
+msgid ""
+"\n"
+"        The result will be visible after <strong id=\"wait_deadline\"> Loading... </strong>\n"
+"    "
+msgstr ""
+"\n"
+"        התוצאה תוצג לאחר <strong id=\"wait_deadline\">טעינה...</strong>\n"
+"    "
+
+#: templates/emails/proctoring_attempt_satisfactory_email.html:5
+#: templates/emails/proctoring_attempt_submitted_email.html:5
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:5
+msgid ""
+"\n"
+"        Hello,\n"
+"    "
+msgstr ""
+"\n"
+"        שלום,\n"
+"    "
+
+#: templates/emails/proctoring_attempt_satisfactory_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was reviewed and you\n"
+"        met all proctoring requirements.\n"
+"    "
+msgstr ""
+"\n"
+"        המבחן בפיקוח \"%(exam_name)s\" ב\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> נבדק ועברת את כל דרישות הפיקוח.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_satisfactory_email.html:21
+#, python-format
+msgid ""
+"\n"
+"    If you have any questions about your results, you can reach out at \n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+msgstr ""
+"\n"
+"    אם יש לך שאלות לגבי התוצאות, תוכל לפנות ל\n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_submitted_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was submitted\n"
+"        successfully and will now be reviewed to ensure all exam\n"
+"        rules were followed. You should receive an email with your exam\n"
+"        status within 5 business days. Final grades may take longer.\n"
+"    "
+msgstr ""
+"\n"
+"        המבחן בפיקוח שלך \"%(exam_name)s\" ב\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> נשלח בהצלחה ועתה ייבדק כדי לוודא שכל כללי המבחן נשמרו. עליך לקבל דואר אלקטרוני עם מצב המבחן תוך 5 ימי עסקים. הציונים הסופיים עשויים לקחת זמן רב יותר.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:12
+#, python-format
+msgid ""
+"\n"
+"        Your proctored exam \"%(exam_name)s\" in\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> was reviewed and the\n"
+"        course team has identified one or more violations of the proctored exam rules. Examples\n"
+"        of issues that may result in a rules violation include browsing\n"
+"        the internet, blurry or missing photo identification, using a phone,\n"
+"        or getting help from another person. As a result of the identified issue(s),\n"
+"        you did not successfully meet the proctored exam requirements.\n"
+"    "
+msgstr ""
+"\n"
+"        המבחן בפיקוח שלך \"%(exam_name)s\" ב\n"
+"        <a href=\"%(course_url)s\">%(course_name)s</a> נבדק וצוות הקורס זיהה הפרה אחת או יותר מכללי המבחן בפיקוח. דוגמאות לבעיות שעשויות להוביל להפרה כוללות גלישה באינטרנט, תעודת זיהוי מטושטשת או חסרה, שימוש בטלפון, או קבלת עזרה מאדם אחר. כתוצאה מהבעיות שזוהו, לא עמדת בדרישות המבחן בפיקוח.\n"
+"    "
+
+#: templates/emails/proctoring_attempt_unsatisfactory_email.html:25
+#, python-format
+msgid ""
+"\n"
+"        To appeal your proctored exam results, please reach out with any relevant information\n"
+"        about your exam at \n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+msgstr ""
+"\n"
+"        כדי לערער על תוצאות המבחן בפיקוח, אנא פנה עם כל מידע רלוונטי לגבי המבחן שלך ל\n"
+"        <a href=\"%(contact_url)s\">\n"
+"            %(contact_url_text)s\n"
+"        </a>.\n"
+"    "
+
+#: templates/onboarding_exam/entrance.html:5
+msgid ""
+"\n"
+"    Proctoring onboarding exam\n"
+"  "
+msgstr ""
+"\n"
+"    מבחן קליטת משתמשים בפיקוח\n"
+"  "
+
+#: templates/onboarding_exam/entrance.html:12
+msgid ""
+"\n"
+"      Why this is important to you:\n"
+"    "
+msgstr ""
+"\n"
+"      למה זה חשוב לך:\n"
+"    "
+
+#: templates/onboarding_exam/entrance.html:18
+msgid ""
+"\n"
+"        Establish your identity with the proctoring system to take a proctored exam\n"
+"      "
+msgstr ""
+"\n"
+"        אימשר את זהותך במערכת הפיקוח כדי לגשת למבחן בפיקוח\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:23
+msgid ""
+"\n"
+"        Create your onboarding profile for faster access in the future\n"
+"      "
+msgstr ""
+"\n"
+"        צור את פרופיל הקליטה שלך לגישה מהירה יותר בעתיד\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:28
+msgid ""
+"\n"
+"        Practice taking a proctored test\n"
+"      "
+msgstr ""
+"\n"
+"        תרגל ניהול מבחן בפיקוח\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:34
+#, python-format
+msgid ""
+"\n"
+"      Proctoring for this course is provided via %(provider_name)s.  Onboarding review, including identity verification, can take 2+ business days.\n"
+"    "
+msgstr ""
+"\n"
+"      הפיקוח עבור הקורס הזה מסופק על ידי %(provider_name)s. בדיקת הקליטה, כולל אימות זהות, עשויה לקחת יותר מ-2 ימי עסקים.\n"
+"    "
+
+#: templates/onboarding_exam/entrance.html:40
+#, python-format
+msgid ""
+"\n"
+"        Once your profile has been reviewed, you will receive an email with review results. The email will come from\n"
+"        <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
+"        Make sure this email has been added to your inbox filter.\n"
+"      "
+msgstr ""
+"\n"
+"        לאחר בדיקת הפרופיל שלך, תקבל דואר אלקטרוני עם תוצאות הבדיקה. הודעת הדוא\"ל תישלח מהכתובת\n"
+"        <a href=\"mailto:%(learner_notification_from_email)s\">%(learner_notification_from_email)s</a>.\n"
+"        ודא/י ששמת את הודעה זו במסנן תיבת הדואר שלך.\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:49
+#, python-format
+msgid ""
+"\n"
+"        Please contact\n"
+"        <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>\n"
+"        if you have questions.\n"
+"      "
+msgstr ""
+"\n"
+"        אנא פנה/י ל\n"
+"        <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>\n"
+"        אם יש לך שאלות.\n"
+"      "
+
+#: templates/onboarding_exam/entrance.html:58
+msgid "Continue to onboarding"
+msgstr "המשך לקליטה"
+
+#: templates/onboarding_exam/entrance.html:62
+msgid ""
+"\n"
+"    You will be guided through online proctoring software set up and identity verification.\n"
+"  "
+msgstr ""
+"\n"
+"    תועבר/י בתהליך הגדרת תוכנת פיקוח מקוונת ואימות זהות.\n"
+"  "
+
+#: templates/onboarding_exam/error.html:4
+msgid ""
+"\n"
+"    Error: There was a problem with your onboarding session\n"
+"  "
+msgstr ""
+"\n"
+"    שגיאה: התרחשה בעיה עם מושב הקליטה שלך\n"
+"  "
+
+#: templates/onboarding_exam/error.html:13
+msgid ""
+"\n"
+"    Your proctoring session ended before you completed this onboarding exam.\n"
+"    You should retry this onboarding exam.\n"
+"  "
+msgstr ""
+"\n"
+"    מושב הפיקוח הסתיים לפני שהשלמת את מבחן הקליטה הזה.\n"
+"    עליך לנסות שוב את מבחן הקליטה.\n"
+"  "
+
+#: templates/onboarding_exam/ready_to_submit.html:6
+#, python-format
+msgid ""
+"\n"
+"      You are taking \"%(exam_display_name)s\" as an onboarding exam. You must click “Yes, end my proctored exam” and submit your proctoring session to complete onboarding.\n"
+"    "
+msgstr ""
+"\n"
+"      את/ה ניגש/ת ל\"%(exam_display_name)s\" כמבחן קליטה. עליך ללחוץ על \"כן, סיים את המבחן בפיקוח שלי\" ולהגיש את מושב הפיקוח על מנת להשלים את תהליך הקליטה.\n"
+"    "
+
+#: templates/onboarding_exam/rejected.html:5
+msgid ""
+"\n"
+"    Your onboarding session was reviewed, but did not pass all requirements\n"
+"  "
+msgstr ""
+"\n"
+"    מושב הקליטה שלך נבדק, אך לא עמד בכל הדרישות\n"
+"  "
+
+#: templates/onboarding_exam/rejected.html:12
+#, python-format
+msgid ""
+"\n"
+"      Please contact\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a> if you have questions. You may retake this onboarding exam by clicking \"Retry my exam\".\n"
+"    "
+msgstr ""
+"\n"
+"      אנא פנה/י\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a> אם יש לך שאלות. ניתן להתנבחן במבחן הקליטה הזה שוב על ידי לחיצה על \"נסה שוב את המבחן שלי\".\n"
+"    "
+
+#: templates/onboarding_exam/rejected.html:20
+#: templates/onboarding_exam/submitted.html:47
+#: templates/practice_exam/error.html:29
+#: templates/practice_exam/submitted.html:18
+msgid "Retry my exam"
+msgstr "נסה שוב את המבחן שלי"
+
+#: templates/onboarding_exam/rejected.html:21
+#: templates/practice_exam/error.html:30
+#: templates/practice_exam/submitted.html:19
+msgid "Resetting Onboarding Exam"
+msgstr "איפוס מבחן הקליטה"
+
+#: templates/onboarding_exam/submitted.html:4
+msgid ""
+"\n"
+"    You have submitted this onboarding exam\n"
+"  "
+msgstr ""
+"\n"
+"    הגשת את מבחן הקליטה הזה\n"
+"  "
+
+#: templates/onboarding_exam/submitted.html:11
+msgid ""
+"\n"
+"      If you do not have an onboarding profile with the system,\n"
+"      Verificient will review your submission and create an onboarding\n"
+"      profile to grant you access to proctored exams. Onboarding\n"
+"      profile review can take 2+ business days.\n"
+"    "
+msgstr ""
+"\n"
+"      אם אין לך פרופיל קליטה במערכת, חברת Verificient תבדוק את ההגשה שלך ותיצור פרופיל קליטה שיאפשר לך גישה למבחנים בפיקוח. בדיקת פרופיל הקליטה עשויה לקחת יותר מ-2 ימי עסקים.\n"
+"    "
+
+#: templates/onboarding_exam/submitted.html:19
+#, python-format
+msgid ""
+"\n"
+"      Once your profile has been reviewed, you will receive an email\n"
+"      with review results. The email will come from\n"
+"      <a href=\"mailto:%(learner_notification_from_email)s\">\n"
+"        %(learner_notification_from_email)s\n"
+"      </a>,\n"
+"      so make sure this email has been added to your inbox filter.\n"
+"    "
+msgstr ""
+"\n"
+"      לאחר בדיקת הפרופיל שלך, תקבל דוא\"ל עם תוצאות הבדיקה. הודעת הדוא\"ל תישלח מהכתובת\n"
+"      <a href=\"mailto:%(learner_notification_from_email)s\">\n"
+"        %(learner_notification_from_email)s\n"
+"      </a>,\n"
+"      לכן ודא/י שהמייל נוסף למסנן תיבת הדואר שלך.\n"
+"    "
+
+#: templates/onboarding_exam/submitted.html:29
+msgid ""
+"\n"
+"      If you already have an onboarding profile approved through another course,\n"
+"      this submission will not be reviewed. You may retry this exam at any time\n"
+"      to validate that your setup still meets the requirements for proctoring.\n"
+"    "
+msgstr ""
+"\n"
+"      אם כבר יש לך פרופיל קליטה שאושר דרך קורס אחר, הגשה זו לא תיבדק. באפשרותך לנסות את המבחן הזה בכל עת כדי לוודא שההגדרות שלך עדיין עומדות בדרישות הפיקוח.\n"
+"    "
+
+#: templates/onboarding_exam/submitted.html:36
+msgid ""
+"\n"
+"      If you have made an error in this submission you may restart the onboarding process. \n"
+"      Your current submission will be removed and will not receive a review.\n"
+"    "
+msgstr ""
+"\n"
+"      אם עשית טעות בהגשה זו, באפשרותך להפעיל מחדש את תהליך הקליטה. \n"
+"      ההגשה הנוכחית שלך תוסר ולא תיבדק.\n"
+"    "
+
+#: templates/onboarding_exam/submitted.html:41
+msgid "I understand and want to reset this onboarding exam."
+msgstr "אני מבין/ה ורוצה לאפס את מבחן הקליטה הזה."
+
+#: templates/onboarding_exam/submitted.html:53
+#: templates/onboarding_exam/verified.html:16
+#, python-format
+msgid ""
+"\n"
+"      Please contact\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a> if you have questions.\n"
+"    "
+msgstr ""
+"\n"
+"      אנא פנה/י\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">\n"
+"        %(integration_specific_email)s\n"
+"      </a> אם יש לך שאלות.\n"
+"    "
+
+#: templates/onboarding_exam/verified.html:4
+msgid ""
+"\n"
+"    Your onboarding profile was reviewed successfully\n"
+"  "
+msgstr ""
+"\n"
+"    פרופיל הקליטה שלך אושר בהצלחה\n"
+"  "
+
+#: templates/onboarding_exam/verified.html:11
+msgid ""
+"\n"
+"      Your profile has been established, and you're ready to take proctored exams in this course.\n"
+"    "
+msgstr ""
+"\n"
+"      הפרופיל שלך הוקם, ואת/ה מוכן/ה לבצע מבחנים בפיקוח בקורס זה.\n"
+"    "
+
+#: templates/practice_exam/entrance.html:5
+msgid ""
+"\n"
+"        Try a proctored exam\n"
+"      "
+msgstr ""
+"\n"
+"        נסה/י מבחן בפיקוח\n"
+"      "
+
+#: templates/practice_exam/entrance.html:12
+msgid ""
+"\n"
+"        Get familiar with proctoring for real exams later in the course. This practice exam has no impact\n"
+"        on your grade in the course.\n"
+"      "
+msgstr ""
+"\n"
+"        התנסה/י במבחן לפיקוח כדי להתרגל – מבחן התנסות זה אינו משפיע\n"
+"        על הציון שלך בקורס.\n"
+"      "
+
 #: templates/practice_exam/entrance.html:20
 msgid "Continue to my practice exam"
 msgstr "המשך למבחן התרגול שלי"
+
+#: templates/practice_exam/entrance.html:25
+msgid ""
+"\n"
+"          You will be guided through steps to set up online proctoring software and verify your identity.\n"
+"        "
+msgstr ""
+"\n"
+"          תועבר/י בתהליך הגדרת תוכנת פיקוח מקוונת ואימות הזהות שלך.\n"
+"        "
+
+#: templates/practice_exam/error.html:5
+msgid ""
+"\n"
+"        There was a problem with your practice proctoring session\n"
+"      "
+msgstr ""
+"\n"
+"        אירעה בעיה במושב הפיקוח להתנסות שלך\n"
+"      "
 
 #: templates/practice_exam/error.html:13
 msgid ""
@@ -178,6 +638,40 @@ msgstr ""
 "\n"
 "תוצאות התרגול תחת פיקוח: <b class=\"failure\">  חוסר שביעות רצון </b>"
 
+#: templates/practice_exam/error.html:21
+msgid ""
+"\n"
+"        Your proctoring session ended before you completed this practice exam.\n"
+"        You can retry this practice exam if you had problems setting up the online proctoring software.\n"
+"      "
+msgstr ""
+"\n"
+"        מושב הפיקוח שלך הסתיים לפני שהשלמת את מבחן ההתנסות הזה.\n"
+"        תוכל/י לנסות שוב את מבחן ההתנסות אם נתקלת בבעיות בהגדרת תוכנת הפיקוח המקוונת.\n"
+"      "
+
+#: templates/practice_exam/submitted.html:5
+msgid ""
+"\n"
+"        You have submitted this practice proctored exam\n"
+"      "
+msgstr ""
+"\n"
+"        הגשת את מבחן הפיקוח להתנסות הזה\n"
+"      "
+
+#: templates/practice_exam/submitted.html:13
+msgid ""
+"\n"
+"        Practice exams do not affect your grade.\n"
+"        You have completed this practice exam and can continue with your course work.\n"
+"      "
+msgstr ""
+"\n"
+"        מבחני התנסות אינם משפיעים על הציון שלך.\n"
+"        השלמת את מבחן ההתנסות הזה ואת/ה יכול/ה להמשיך בעבודת הקורס שלך.\n"
+"      "
+
 #: templates/proctored_exam/confirm-decline.html:5
 msgid ""
 "\n"
@@ -186,6 +680,16 @@ msgid ""
 msgstr ""
 "\n"
 "האם אתה בטוח שאתה רוצה להיבחן במבחן זה ללא פיקוח?"
+
+#: templates/proctored_exam/confirm-decline.html:10
+msgid ""
+"\n"
+"        If you take this exam without proctoring, you will not be eligible for course credit or the MicroMasters credential if either applies to this course.\n"
+"      "
+msgstr ""
+"\n"
+"        אם תגש/י למבחן זה ללא פיקוח, לא תהיה/י זכאי/ת לזכות בקורס או לתעודת MicroMasters, אם אחד מהם חל על הקורס.\n"
+"      "
 
 #: templates/proctored_exam/confirm-decline.html:16
 msgid "Continue Exam Without Proctoring"
@@ -206,6 +710,34 @@ msgstr ""
 "\n"
 "מבחן זה נמצא תחת פיקוח."
 
+#: templates/proctored_exam/entrance.html:9
+msgid ""
+"\n"
+"      To be eligible for credit or the program credential associated with this course, you must pass the proctoring review for this exam.\n"
+"\n"
+"    "
+msgstr ""
+"\n"
+"      כדי להיות זכאי/ת לזכות או לתעודת התוכנית המשויכת לקורס זה, עליך לעבור את בדיקת הפיקוח למבחן זה.\n"
+"\n"
+"    "
+
+#: templates/proctored_exam/entrance.html:15
+#: templates/proctored_exam/ready_to_resume.html:19
+msgid "Continue to my proctored exam."
+msgstr "המשך למבחן הפיקוח שלי."
+
+#: templates/proctored_exam/entrance.html:18
+#: templates/proctored_exam/ready_to_resume.html:22
+msgid ""
+"\n"
+"        You will be guided through steps to set up online proctoring software and verify your identity.</br>\n"
+"      "
+msgstr ""
+"\n"
+"        תועבר/י בתהליך הגדרת תוכנת פיקוח מקוונת ואימות הזהות שלך.</br>\n"
+"      "
+
 #: templates/proctored_exam/error.html:4
 #: templates/proctored_exam/error_wrong_browser.html:4
 msgid ""
@@ -216,9 +748,65 @@ msgstr ""
 "\n"
 "טעות במבחן תחת פיקוח"
 
+#: templates/proctored_exam/error.html:11
+#, python-format
+msgid ""
+"\n"
+"        A system error has occurred with your proctored exam. Please reach out to your course \n"
+"        team at <a href=\"mailto:%(proctoring_escalation_email)s\">%(proctoring_escalation_email)s</a> \n"
+"        for assistance, and return to the exam once you receive further instructions.\n"
+"      "
+msgstr ""
+"\n"
+"        אירעה שגיאת מערכת במבחן הפיקוח שלך. אנא פנה/י לצוות הקורס שלך ב\n"
+"        <a href=\"mailto:%(proctoring_escalation_email)s\">%(proctoring_escalation_email)s</a> \n"
+"        לקבלת עזרה, וחזור/י למבחן לאחר שתקבל/י הנחיות נוספות.\n"
+"      "
+
+#: templates/proctored_exam/error.html:17
+#, python-format
+msgid ""
+"\n"
+"        A system error has occurred with your proctored exam. Please reach out to \n"
+"        <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">%(platform_name)s Support</a> for \n"
+"        assistance, and return to the exam once you receive further instructions.\n"
+"      "
+msgstr ""
+"\n"
+"        אירעה שגיאת מערכת במבחן הפיקוח שלך. אנא פנה/י ל\n"
+"        <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">תמיכת %(platform_name)s</a> לקבלת עזרה, וחזור/י למבחן לאחר שתקבל/י הנחיות נוספות.\n"
+"      "
+
 #: templates/proctored_exam/error_modal.html:7
 msgid "Close"
 msgstr "סגור"
+
+#: templates/proctored_exam/error_wrong_browser.html:10
+msgid ""
+"\n"
+"      The content of this exam can only be viewed through the RPNow\n"
+"      application. If you have yet to complete your exam, please\n"
+"      return to the RPNow application to proceed.\n"
+"    "
+msgstr ""
+"\n"
+"      תוכן המבחן הזה ניתן לצפייה רק דרך האפליקציה של RPNow.\n"
+"      אם עדיין לא השלמת את המבחן, אנא חזור/י לאפליקציית RPNow כדי להמשיך.\n"
+"    "
+
+#: templates/proctored_exam/error_wrong_browser.html:17
+msgid ""
+"\n"
+"      Alternatively, you can end your exam.\n"
+"    "
+msgstr ""
+"\n"
+"      לחלופין, תוכל/י לסיים את המבחן.\n"
+"    "
+
+#: templates/proctored_exam/error_wrong_browser.html:22
+msgid "End My Exam"
+msgstr "סיים את המבחן שלי"
 
 #: templates/proctored_exam/expired.html:4 templates/timed_exam/expired.html:4
 msgid ""
@@ -238,6 +826,16 @@ msgstr ""
 "\n"
 "היות ותאריך היעד עבר, אינך זכאי עוד להיבחן במבחן זה."
 
+#: templates/proctored_exam/failed-prerequisites.html:9
+msgid ""
+"\n"
+"    You did not satisfy the requirements for taking this exam with proctoring.\n"
+"    "
+msgstr ""
+"\n"
+"    לא עמדת בדרישות כדי לגשת למבחן זה עם פיקוח.\n"
+"    "
+
 #: templates/proctored_exam/failed-prerequisites.html:14
 msgid ""
 "\n"
@@ -256,6 +854,17 @@ msgstr ""
 "\n"
 "הודות לחוסר שביעות בדרישות מקדימות, תוכל להיבחן במבחן זה ללא פיקוח."
 
+#: templates/proctored_exam/failed-prerequisites.html:40
+#, python-format
+msgid ""
+"\n"
+"      If you have questions about the status of your requirements, contact %(platform_name)s Support.\n"
+"    "
+msgstr ""
+"\n"
+"      אם יש לך שאלות לגבי מצב הדרישות, פנה/י לתמיכת %(platform_name)s.\n"
+"    "
+
 #: templates/proctored_exam/footer.html:5
 msgid ""
 "\n"
@@ -265,15 +874,286 @@ msgstr ""
 "\n"
 "אודות המבחנים תחת פיקוח"
 
+#: templates/proctored_exam/inactive_account.html:4
+msgid ""
+"\n"
+"      You have not activated your account.\n"
+"    "
+msgstr ""
+"\n"
+"      לא הפעלת את חשבונך.\n"
+"    "
+
+#: templates/proctored_exam/inactive_account.html:10
+#, python-format
+msgid ""
+"\n"
+"      Your %(platform_name)s account has not yet been activated. To take the proctored exam,\n"
+"      you are required to activate your account.\n"
+"    "
+msgstr ""
+"\n"
+"      חשבון %(platform_name)s שלך עדיין לא הופעל. כדי לגשת למבחן בפיקוח, עליך להפעיל את חשבונך.\n"
+"    "
+
+#: templates/proctored_exam/inactive_account.html:16
+#, python-format
+msgid ""
+"\n"
+"      Please check your registered email's Inbox and Spam folders for an activation email from\n"
+"      %(platform_name)s.\n"
+"    "
+msgstr ""
+"\n"
+"      אנא בדוק/י את תיבת הדואר והספאם של הדואר הרשום שלך עבור דואר הפעלה מה- %(platform_name)s.\n"
+"    "
+
+#: templates/proctored_exam/inactive_account.html:21
+#, python-format
+msgid ""
+"\n"
+"        If you cannot find this email, you can <a href=\"%(reset_link)s\" target=\"_blank\">reset your password</a> to\n"
+"        activate your account.\n"
+"      "
+msgstr ""
+"\n"
+"        אם אינך מוצא/ת את הדוא\"ל הזה, תוכל/י <a href=\"%(reset_link)s\" target=\"_blank\">לאפס את סיסמתך</a> כדי\n"
+"        להפעיל את חשבונך.\n"
+"      "
+
+#: templates/proctored_exam/inactive_account.html:26
+msgid ""
+"\n"
+"        If you cannot find this email, you can reset your password to activate your account.\n"
+"      "
+msgstr ""
+"\n"
+"        אם אינך מוצא/ת את הדוא\"ל הזה, תוכל/י לאפס את סיסמתך כדי להפעיל את חשבונך.\n"
+"      "
+
+#: templates/proctored_exam/inactive_account.html:32
+#, python-format
+msgid ""
+"\n"
+"      If you continue to have trouble please contact <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">\n"
+"      %(platform_name)s Support</a>.\n"
+"    "
+msgstr ""
+"\n"
+"      אם הבעיות נמשכות, אנא פנה/י ל <a href=\"%(link_urls.contact_us)s\" target=\"_blank\">\n"
+"      תמיכת %(platform_name)s</a>.\n"
+"    "
+
+#: templates/proctored_exam/instructions.html:6
+msgid ""
+"\n"
+"      Set up and start your proctored exam\n"
+"    "
+msgstr ""
+"\n"
+"      הגדר והתחל את מבחן הפיקוח שלך\n"
+"    "
+
+#: templates/proctored_exam/instructions.html:12
+msgid ""
+"\n"
+"          Note: As part of the proctored exam setup, you will be asked\n"
+"          to verify your identity. Before you begin, make sure you are\n"
+"          on a computer with a webcam, and that you have a valid form\n"
+"          of photo identification such as a driver’s license or\n"
+"          passport.\n"
+"        "
+msgstr ""
+"\n"
+"          הערה: כחלק מהגדרת מבחן הפיקוח, תתבקש/י לאמת את זהותך. לפני שתתחיל/י, ודא/י שאתה נמצא/ת על מחשב עם מצלמה, ושיש לך תעודת זהות תקפה כגון רישיון נהיגה או דרכון.\n"
+"        "
+
+#: templates/proctored_exam/instructions.html:27
+#, python-format
+msgid ""
+"\n"
+"            If you have issues relating to proctoring, you can contact %(provider_name)s technical support by emailing %(provider_tech_support_email)s  or by calling %(provider_tech_support_phone)s.\n"
+"          "
+msgstr ""
+"\n"
+"            אם יש לך בעיות הקשורות לפיקוח, תוכל/י לפנות לתמיכה הטכנית של %(provider_name)s באמצעות מייל ל%(provider_tech_support_email)s או בטלפון %(provider_tech_support_phone)s.\n"
+"          "
+
 #: templates/proctored_exam/instructions.html:33
 #: templates/proctored_exam/instructions.html:78
 msgid "Start System Check"
 msgstr "התחל בבדיקת מערכת"
 
+#: templates/proctored_exam/instructions.html:36
+msgid "Start Exam"
+msgstr "התחל את המבחן"
+
+#: templates/proctored_exam/instructions.html:40
+msgid ""
+"\n"
+"          Step 1\n"
+"        "
+msgstr ""
+"\n"
+"          שלב 1\n"
+"        "
+
+#: templates/proctored_exam/instructions.html:45
+msgid ""
+"\n"
+"          Copy this unique exam code. You will be prompted to paste this code later before you start the exam.\n"
+"        "
+msgstr ""
+"\n"
+"          העתק את קוד המבחן הייחודי הזה. תתבקש/י להדביק קוד זה מאוחר יותר לפני התחלת המבחן.\n"
+"        "
+
+#: templates/proctored_exam/instructions.html:51
+msgid "Copy Exam Code"
+msgstr "העתק קוד מבחן"
+
+#: templates/proctored_exam/instructions.html:54
+msgid ""
+"\n"
+"        Select the exam code, then copy it using Control + C (Windows) or Command + C (Mac).\n"
+"      "
+msgstr ""
+"\n"
+"        בחר/י את קוד המבחן, ואז העתק/י אותו באמצעות Control + C (Windows) או Command + C (Mac).\n"
+"      "
+
+#: templates/proctored_exam/instructions.html:59
+msgid ""
+"\n"
+"          Step 2\n"
+"        "
+msgstr ""
+"\n"
+"          שלב 2\n"
+"        "
+
+#: templates/proctored_exam/instructions.html:64
+msgid ""
+"\n"
+"        Start your system check now. A new window will open for this step and you will verify your identity.\n"
+"      "
+msgstr ""
+"\n"
+"        התחל/י את בדיקת המערכת כעת. חלון חדש ייפתח לשלב זה ותאמת/י את זהותך.\n"
+"      "
+
+#: templates/proctored_exam/instructions.html:69
+msgid ""
+"\n"
+"        Make sure you:\n"
+"      "
+msgstr ""
+"\n"
+"        ודא/י כי:\n"
+"      "
+
+#: templates/proctored_exam/instructions.html:74
+msgid "Have a computer with a functioning webcam"
+msgstr "היה/י מחובר/ת למחשב עם מצלמה פעילה"
+
+#: templates/proctored_exam/instructions.html:75
+msgid "Have your valid photo ID (e.g. driver's license or passport) ready"
+msgstr "הכן/י את תעודת הזהות עם תמונה (למשל: רישיון נהיגה או דרכון)"
+
+#: templates/proctored_exam/instructions.html:81
+msgid ""
+"\n"
+"          Step 3\n"
+"        "
+msgstr ""
+"\n"
+"          שלב 3\n"
+"        "
+
+#: templates/proctored_exam/instructions.html:86
+msgid ""
+"\n"
+"          For security and exam integrity reasons, we ask you to sign in to your edX account. Then we will direct you to the RPNow proctoring experience.\n"
+"        "
+msgstr ""
+"\n"
+"          מטעמי ביטחון ושלמות המבחן, אנו מבקשים שתתחבר/י לחשבון edX שלך. לאחר מכן, נכוון אותך לחוויית הפיקוח של RPNow.\n"
+"        "
+
 #: templates/proctored_exam/instructions.html:100
 #: templates/proctored_exam/proctoring_opt_out_button.html:5
 msgid "Take this exam without proctoring."
 msgstr "היבחן במבחן זה ללא פיקוח."
+
+#: templates/proctored_exam/onboarding_error.html:4
+msgid ""
+"\n"
+"      You must complete an onboarding exam before taking this proctored exam\n"
+"    "
+msgstr ""
+"\n"
+"      עליך להשלים מבחן קליטה לפני גישה למבחן בפיקוח\n"
+"    "
+
+#: templates/proctored_exam/onboarding_error.html:11
+msgid ""
+"\n"
+"      Please complete an onboarding exam before attempting this exam.\n"
+"    "
+msgstr ""
+"\n"
+"      אנא השלם/י מבחן קליטה לפני ניסיון לגשת למבחן זה.\n"
+"    "
+
+#: templates/proctored_exam/onboarding_error.html:17
+#: templates/proctored_exam/onboarding_error.html:32
+msgid "Navigate to onboarding exam"
+msgstr "נווט/י למבחן הקליטה"
+
+#: templates/proctored_exam/onboarding_error.html:21
+msgid ""
+"\n"
+"    Your onboarding exam is being reviewed. Before attempting this exam, please allow 2+ business days for your onboarding exam to be reviewed.\n"
+"  "
+msgstr ""
+"\n"
+"    מבחן הקליטה שלך נמצא בבדיקה. לפני ניסיון לגשת למבחן זה, אנא המתן/י יותר מ-2 ימי עסקים לבדיקה.\n"
+"  "
+
+#: templates/proctored_exam/onboarding_error.html:26
+msgid ""
+"\n"
+"      Your onboarding exam failed to pass all requirements.\n"
+"    "
+msgstr ""
+"\n"
+"      מבחן הקליטה שלך לא עמד בכל הדרישות.\n"
+"    "
+
+#: templates/proctored_exam/onboarding_error.html:38
+#, python-format
+msgid ""
+"\n"
+"      Proctoring for your exam is provided via %(provider_name)s.\n"
+"      If you have questions about the status of your onboarding exam, contact\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>.\n"
+"    "
+msgstr ""
+"\n"
+"      הפיקוח עבור המבחן שלך מסופק על ידי %(provider_name)s.\n"
+"      אם יש לך שאלות לגבי מצב מבחן הקליטה, פנה/י ל\n"
+"      <a href=\"mailto:%(integration_specific_email)s\">%(integration_specific_email)s</a>.\n"
+"    "
+
+#: templates/proctored_exam/pending-prerequisites.html:9
+msgid ""
+"\n"
+"    You have not completed the prerequisites for this exam. All requirements must be satisfied before you can take this proctored exam.\n"
+"    "
+msgstr ""
+"\n"
+"    לא השלמת את הדרישות המקדימות למבחן זה. עליך לעמוד בכל הדרישות לפני שאתה יכול לגשת למבחן בפיקוח.\n"
+"    "
 
 #: templates/proctored_exam/pending-prerequisites.html:14
 msgid ""
@@ -283,6 +1163,16 @@ msgid ""
 msgstr ""
 "\n"
 "הדרישות המקדימות שלהלן נמצאות <strong> בתהליך </strong> בדיקה וחייבות להסתיים בהצלחה לפני שתוכל להמשיך:"
+
+#: templates/proctored_exam/pending-prerequisites.html:30
+msgid ""
+"\n"
+"    You can take this exam with proctoring only when all prerequisites have been successfully completed.\n"
+"    "
+msgstr ""
+"\n"
+"    תוכל לגשת למבחן זה בפיקוח רק כאשר כל הדרישות המקדימות הושלמו בהצלחה.\n"
+"    "
 
 #: templates/proctored_exam/proctoring_launch_callback.html:164
 msgid " Your Proctoring Session Has Started "
@@ -322,6 +1212,132 @@ msgstr ""
 "ותסמן אותו כגמור, תוכל לסגור את החלון הזה על מנת לסיים את המפגש תחת פיקוח\n"
 "ולהעלות את המידע על המפגש תחת פיקוח לצורך סקירה."
 
+#: templates/proctored_exam/ready_to_resume.html:4
+msgid ""
+"\n"
+"      Your exam is ready to be resumed.\n"
+"    "
+msgstr ""
+"\n"
+"      המבחן שלך מוכן להמשך.\n"
+"    "
+
+#: templates/proctored_exam/ready_to_resume.html:9
+#, python-format
+msgid ""
+"\n"
+"        You will have %(total_time)s to complete your exam.\n"
+"    "
+msgstr ""
+"\n"
+"        יהיה לך %(total_time)s להשלמת המבחן שלך.\n"
+"    "
+
+#: templates/proctored_exam/ready_to_resume.html:14
+msgid ""
+"\n"
+"        To be eligible for credit or the program credential associated with this course, you must pass the proctoring review for this exam.\n"
+"    "
+msgstr ""
+"\n"
+"        כדי להיות זכאי/ת לזכאות או לתעודת התוכנית המקושרת לקורס זה, עליך לעבור את בדיקת הפיקוח למבחן זה.\n"
+"    "
+
+#: templates/proctored_exam/ready_to_start.html:5
+msgid ""
+"\n"
+"      Important\n"
+"    "
+msgstr ""
+"\n"
+"      חשוב\n"
+"    "
+
+#: templates/proctored_exam/ready_to_start.html:10
+#, python-format
+msgid ""
+"\n"
+"        &#8226; You have %(total_time)s to complete this exam. </br>\n"
+"        &#8226; Once you start the exam, you cannot stop the timer. </br>\n"
+"        &#8226; For all question types, you must click \"submit\" to complete your answer. </br>\n"
+"        &#8226; If time expires before you click \"End My Exam\", only your submitted answers will be graded.\n"
+"      "
+msgstr ""
+"\n"
+"        &#8226; יהיה לך %(total_time)s להשלמת המבחן. </br>\n"
+"        &#8226; ברגע שתתחיל/י את המבחן, לא תוכל/י לעצור את הטיימר. </br>\n"
+"        &#8226; עבור כל סוגי השאלות, עליך ללחוץ \"שלח\" כדי להשלים את תשובתך. </br>\n"
+"        &#8226; אם הזמן יוקצב לפני שתלחץ/י \"סיים את המבחן שלי\", רק התשובות שהוגשו ייקבלו ציון.\n"
+"      "
+
+#: templates/proctored_exam/ready_to_start.html:18
+msgid ""
+"\n"
+"      Proctored Exam Rules\n"
+"    "
+msgstr ""
+"\n"
+"      כללי המבחן בפיקוח\n"
+"    "
+
+#: templates/proctored_exam/ready_to_start.html:23
+msgid ""
+"\n"
+"         You must adhere to the following rules while you complete this exam.\n"
+"         <strong>If you violate these rules, you will receive a score of 0 on the exam, and you will not be eligible for academic course credit.\n"
+"         </strong></br>\n"
+"      "
+msgstr ""
+"\n"
+"         עליך להקפיד על הכללים הבאים במהלך ביצוע המבחן הזה.\n"
+"         <strong>אם תפר/י את הכללים האלה, תקבל/י ציון 0 במבחן ולא תהיה/י זכאי/ת לזכות בקורס האקדמי.\n"
+"         </strong></br>\n"
+"      "
+
+#: templates/proctored_exam/ready_to_start.html:29
+#, python-format
+msgid ""
+"\n"
+"          %(platform_name)s Rules for Online Proctored Exams\n"
+"      "
+msgstr ""
+"\n"
+"          כללי %(platform_name)s למבחנים מקוונים בפיקוח\n"
+"      "
+
+#: templates/proctored_exam/ready_to_start.html:36
+msgid ""
+"\n"
+"      Additional Exam Rules\n"
+"    "
+msgstr ""
+"\n"
+"      כללים נוספים למבחן\n"
+"    "
+
+#: templates/proctored_exam/ready_to_start.html:41
+#, python-format
+msgid ""
+"\n"
+"        The following additional rules apply to this exam. These rules take precedence over the Rules for Online Proctored Exams.</br> </br>\n"
+"\n"
+"        %(exam_review_policy)s </br>\n"
+"      "
+msgstr ""
+"\n"
+"        הכללים הנוספים הבאים חלים על מבחן זה. כללים אלו קודמים לכללי המבחנים המקוונים בפיקוח.</br> </br>\n"
+"\n"
+"        %(exam_review_policy)s </br>\n"
+"      "
+
+#: templates/proctored_exam/ready_to_start.html:49
+msgid "Start my exam"
+msgstr "התחל את המבחן שלי"
+
+#: templates/proctored_exam/ready_to_start.html:50
+msgid "Starting Exam"
+msgstr "המבחן מתחיל"
+
 #: templates/proctored_exam/ready_to_submit.html:4
 msgid ""
 "\n"
@@ -330,6 +1346,28 @@ msgid ""
 msgstr ""
 "\n"
 "האם אתה בטוח שאתה רוצה לסיים את ה'מבחן תחת פיקוח' שלך?"
+
+#: templates/proctored_exam/ready_to_submit.html:10
+msgid ""
+"Make sure that you have selected \"Submit\" for each answer before you "
+"submit your exam."
+msgstr "ודא/י שבחרת \"שלח\" עבור כל תשובה לפני שתגיש/י את המבחן שלך."
+
+#: templates/proctored_exam/ready_to_submit.html:12
+msgid ""
+"Once you click \"Yes, end my proctored exam\", the exam will be closed, and "
+"your proctoring session will be submitted for review."
+msgstr ""
+"ברגע שתלחץ/י \"כן, סיים את המבחן בפיקוח שלי\", המבחן ייסגר ומושב הפיקוח שלך "
+"יוגש לבדיקה."
+
+#: templates/proctored_exam/ready_to_submit.html:15
+msgid "Yes, end my proctored exam"
+msgstr "כן, סיים את המבחן בפיקוח שלי"
+
+#: templates/proctored_exam/ready_to_submit.html:16
+msgid "Ending Exam"
+msgstr "מסיים את המבחן"
 
 #: templates/proctored_exam/ready_to_submit.html:21
 msgid ""
@@ -340,6 +1378,37 @@ msgstr ""
 "\n"
 "לא, אני רוצה להמשיך לעבוד."
 
+#: templates/proctored_exam/rejected.html:5
+msgid ""
+"\n"
+"        Your proctoring session was reviewed, but did not pass all requirements\n"
+"      "
+msgstr ""
+"\n"
+"        מושב הפיקוח שלך נבדק, אך לא עמד בכל הדרישות\n"
+"      "
+
+#: templates/proctored_exam/rejected.html:13
+#, python-format
+msgid ""
+"\n"
+"        If you have questions about the status of your proctoring session results, contact %(platform_name)s Support.\n"
+"      "
+msgstr ""
+"\n"
+"        אם יש לך שאלות לגבי מצב תוצאות מושב הפיקוח שלך, פנה/י לתמיכת %(platform_name)s.\n"
+"      "
+
+#: templates/proctored_exam/rejected.html:23
+msgid ""
+"\n"
+"        If you have concerns about your proctoring session results, contact your course team.\n"
+"      "
+msgstr ""
+"\n"
+"        אם יש לך חששות לגבי תוצאות מושב הפיקוח, פנה/י לצוות הקורס.\n"
+"      "
+
 #: templates/proctored_exam/submitted.html:4
 msgid ""
 "\n"
@@ -348,6 +1417,24 @@ msgid ""
 msgstr ""
 "\n"
 "הגשת לסקירה את ה'מבחן תחת פיקוח' שלך."
+
+#: templates/proctored_exam/submitted.html:9
+msgid "Your recorded data should now be uploaded for review."
+msgstr "הנתונים ההוקלטו שלך הועלו כעת לבדיקה."
+
+#: templates/proctored_exam/submitted.html:11
+msgid ""
+"If the proctoring software window is still open, close it now and confirm "
+"that you want to quit the application."
+msgstr ""
+"אם חלון תוכנת הפיקוח עדיין פתוח, סגור/י אותו כעת ואשר/י כי ברצונך לצאת "
+"מהאפליקציה."
+
+#: templates/proctored_exam/submitted.html:13
+msgid ""
+"Proctoring results are usually available within 5 business days after you "
+"submit your exam."
+msgstr "תוצאות הפיקוח זמינות בדרך כלל תוך 5 ימי עסקים לאחר הגשת המבחן שלך."
 
 #: templates/proctored_exam/submitted.html:19
 #, python-format
@@ -358,6 +1445,16 @@ msgid ""
 msgstr ""
 "\n"
 "במידה ויש לך שאלות אודות סטטוס תוצאות המבחן תחת פיקוח שלך, צור קשר עם צוות התמיכה של  %(platform_name)s."
+
+#: templates/proctored_exam/verified.html:5
+msgid ""
+"\n"
+"                Your proctoring session was reviewed successfully. Go to your progress page to view your exam grade.\n"
+"            "
+msgstr ""
+"\n"
+"                מושב הפיקוח שלך נבדק בהצלחה. עבור/י לעמוד ההתקדמות שלך כדי להציג את הציון במבחן.\n"
+"            "
 
 #: templates/proctored_exam/visit_exam_content.html:5
 msgid ""
@@ -479,6 +1576,38 @@ msgstr ""
 "\n"
 "לא, אני מעוניין להמשיך לעבוד."
 
+#: templates/timed_exam/submitted.html:6
+msgid ""
+"\n"
+"                The time allotted for this exam has expired. Your exam has been submitted and any work you completed\n"
+"                will be graded.\n"
+"            "
+msgstr ""
+"\n"
+"                הזמן המוקצב למבחן זה פג. המבחן שלך הוגש וכל עבודה שביצעת\n"
+"                תוערך.\n"
+"            "
+
+#: templates/timed_exam/submitted.html:11
+msgid ""
+"\n"
+"                You have submitted your timed exam.\n"
+"            "
+msgstr ""
+"\n"
+"                הגשת את המבחן הממועד שלך.\n"
+"            "
+
+#: templates/timed_exam/submitted.html:21
+msgid ""
+"\n"
+"                After the due date has passed, you can review the exam, but you cannot change your answers.\n"
+"            "
+msgstr ""
+"\n"
+"                לאחר תום המועד, תוכל/י לעיין במבחן, אך לא תוכל/י לשנות את תשובותיך.\n"
+"            "
+
 #: utils.py:87
 #, python-brace-format
 msgid "{num_of_hours} hour"
@@ -509,6 +1638,22 @@ msgstr " {num_of_minutes} דקה"
 msgid " and {num_of_minutes} minutes"
 msgstr "ו-  {num_of_minutes} דקות"
 
+#: utils.py:342
+msgid "a proctored exam"
+msgstr "מבחן בפיקוח"
+
+#: utils.py:345
+msgid "a timed exam"
+msgstr "מבחן ממועד"
+
+#: utils.py:348
+msgid "an onboarding exam"
+msgstr "מבחן קליטה"
+
+#: utils.py:350
+msgid "a practice exam"
+msgstr "מבחן התנסות"
+
 #: views.py:152
 msgid "could not determine the course_id"
 msgstr "לא ניתן להגדיר את מזהה הקורס"
@@ -517,6 +1662,63 @@ msgstr "לא ניתן להגדיר את מזהה הקורס"
 msgid "Must be a Staff User to Perform this request."
 msgstr "חייב להיות משתמש צוות על מנת לבצע בקשה זו."
 
+#: views.py:664
+msgid "Missing required query parameter course_id"
+msgstr "פרמטר שאילתא דרוש חסר: course_id"
+
+#: views.py:694 views.py:875
+msgid "There is no onboarding exam related to this course id."
+msgstr "אין מבחן קליטה הקשור למזהה הקורס הזה."
+
+#: views.py:723
+msgid "There is no onboarding exam accessible to this user."
+msgstr "אין מבחן קליטה זמין למשתמש זה."
+
+#: views.py:773
+#, python-brace-format
+msgid "No onboarding status API for {proctor_service}"
+msgstr "אין ממשק API לסטטוס קליטה עבור {proctor_service}"
+
+#: views.py:925
+msgid ""
+"The onboarding service is temporarily unavailable. Please try again later."
+msgstr "שירות הקליטה אינו זמין כרגע. אנא נסה שנית מאוחר יותר."
+
 #: views.py:1303
 msgid "you have less than a minute remaining"
 msgstr "נותרה לך פחות מדקה"
+
+#: views.py:1758
+msgid "Enter a valid username or email"
+msgstr "הזן/י שם משתמש או דוא\"ל תקינים"
+
+#: views.py:1758
+msgid "user_info"
+msgstr "מידע משתמש"
+
+#: views.py:1771
+msgid "Enter a valid positive value number"
+msgstr "הזן/י מספר חיובי תקין"
+
+#: views.py:1771
+msgid "allowance_value"
+msgstr "ערך הקצאה"
+
+#: views.py:1858
+msgid "Cannot update attempt review status"
+msgstr "לא ניתן לעדכן את סטטוס בדיקת הניסיון"
+
+#: views.py:2158
+#, python-brace-format
+msgid "No exams in course {course_id}."
+msgstr "אין מבחנים בקורס {course_id}."
+
+#: views.py:2164
+#, python-brace-format
+msgid "No proctored exams in course {course_id}"
+msgstr "אין מבחנים בפיקוח בקורס {course_id}"
+
+#: views.py:2191
+#, python-brace-format
+msgid "No instructor dashboard for {proctor_service}"
+msgstr "אין לוח בקרה למורה עבור {proctor_service}"

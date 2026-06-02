@@ -1,0 +1,117 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1a\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2025-10-23 00:53+0000\n"
+"PO-Revision-Date: 2026-06-01 23:55+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+#: extensions/filters.py:58
+msgid "Reports"
+msgstr "Звіти"
+
+#: settings/common.py:31
+msgid "Course Dashboard"
+msgstr "Панель курсу"
+
+#: settings/common.py:37
+msgid "Individual Learner Dashboard"
+msgstr "Панель окремого учня"
+
+#: settings/common.py:43
+msgid "At-Risk Learners Dashboard"
+msgstr "Панель учнів, які перебувають у зоні ризику"
+
+#: settings/common.py:114
+msgid "Course"
+msgstr "Курс"
+
+#: settings/common.py:122
+msgid "Graded Subsection"
+msgstr "Оцінюваний підрозділ"
+
+#: settings/common.py:130
+msgid "Problem"
+msgstr "Завдання"
+
+#: settings/common.py:138
+msgid "Video"
+msgstr "Відео"
+
+#: static/html/superset.html:9
+msgid ""
+"Superset is not configured properly. Please contact your system "
+"administrator."
+msgstr ""
+"Superset не налаштовано належним чином. Будь ласка, зверніться до системного"
+" адміністратора."
+
+#: static/html/superset_student.html:4
+msgid ""
+"Superset is only visible to course staff and instructors. Please contact "
+"your system administrator."
+msgstr ""
+"Superset видимий лише для співробітників курсу та викладачів. Будь ласка, "
+"зверніться до системного адміністратора."
+
+#: views.py:87
+#, python-brace-format
+msgid "Course not found: '{course_id}'"
+msgstr "Курс не знайдено: '{course_id}'"
+
+#: views.py:114
+#, python-brace-format
+msgid "Invalid course id: '{course_id}'"
+msgstr "Недійсний ідентифікатор курсу: '{course_id}'"
+
+#: views.py:179
+#, python-brace-format
+msgid "Invalid usage id: '{usage_id}'"
+msgstr "Недійсний ідентифікатор використання: '{usage_id}'"
+
+#: views.py:208
+#, python-brace-format
+msgid "No dashboard for block type: '{block_type}'"
+msgstr "Не знайдено панелі для типу блоку: '{block_type}'"
+
+#: xblock.py:48 xblock.py:49
+msgid "Display name"
+msgstr "Відображуване ім'я"
+
+#: xblock.py:50
+msgid "Superset Dashboard"
+msgstr "Панель Superset"
+
+#: xblock.py:55
+msgid "Dashboard UUID"
+msgstr "UUID панелі"
+
+#: xblock.py:57
+msgid ""
+"The ID of the dashboard to embed. Available in the Superset embed dashboard "
+"UI."
+msgstr ""
+"Ідентифікатор панелі, яку потрібно вбудувати. Доступний у інтерфейсі "
+"вбудовування панелі Superset."
+
+#: xblock.py:64
+msgid "Filters"
+msgstr "Фільтри"
+
+#: xblock.py:66
+msgid ""
+"List of SQL filters to apply to the\n"
+"               dashboard. E.g: [\"org='edX'\", \"country in ('us', 'co')\"]\n"
+"               The fields used here must be available on every dataset used by the dashboard.\n"
+"               "
+msgstr ""
+"Список SQL-фільтрів для застосування до панелі. Наприклад: [\"org='edX'\", "
+"\"country in ('us', 'co')\"]. Поля, що використовуються тут, повинні бути "
+"доступні у кожному наборі даних, використовуваному панеллю."

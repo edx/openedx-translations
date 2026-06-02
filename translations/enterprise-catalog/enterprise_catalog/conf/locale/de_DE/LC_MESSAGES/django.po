@@ -1,0 +1,361 @@
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-03-16 00:39+0000\n"
+"PO-Revision-Date: 2026-06-01 23:48+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: enterprise_catalog/apps/academy/models.py:22
+msgid "Tag title"
+msgstr "Tag-Titel"
+
+#: enterprise_catalog/apps/academy/models.py:23
+msgid "Tag description."
+msgstr "Tag-Beschreibung."
+
+#: enterprise_catalog/apps/academy/models.py:27
+msgid "Tag"
+msgstr "Tag"
+
+#: enterprise_catalog/apps/academy/models.py:28
+msgid "Tags"
+msgstr "Tags"
+
+#: enterprise_catalog/apps/academy/models.py:46
+msgid "Academy title"
+msgstr "Titel der Akademie"
+
+#: enterprise_catalog/apps/academy/models.py:48
+msgid "Short description of the academy."
+msgstr "Kurze Beschreibung der Akademie."
+
+#: enterprise_catalog/apps/academy/models.py:49
+msgid "Long description of the academy."
+msgstr "Ausführliche Beschreibung der Akademie."
+
+#: enterprise_catalog/apps/academy/models.py:50
+msgid "URL of the image shown on academy card on the frontend."
+msgstr "URL des Bildes, das auf der Akademiekarte im Frontend angezeigt wird."
+
+#: enterprise_catalog/apps/academy/models.py:55
+msgid "Academy"
+msgstr "Akademie"
+
+#: enterprise_catalog/apps/academy/models.py:56
+msgid "Academies"
+msgstr "Akademien"
+
+#: enterprise_catalog/apps/catalog/algolia_utils.py:859
+msgid "Available now"
+msgstr "Jetzt verfügbar"
+
+#: enterprise_catalog/apps/catalog/models.py:86
+msgid ""
+"Query parameters which will be used to filter the discovery service's "
+"search/all endpoint results, specified as a JSON object."
+msgstr ""
+"Abfrageparameter, die zur Filterung der Ergebnisse des "
+"\"search/all\"-Endpunkts des Discovery-Service verwendet werden, angegeben "
+"als JSON-Objekt."
+
+#: enterprise_catalog/apps/catalog/models.py:110
+msgid "Catalog Query"
+msgstr "Katalogabfrage"
+
+#: enterprise_catalog/apps/catalog/models.py:111
+msgid "Catalog Queries"
+msgstr "Katalogabfragen"
+
+#: enterprise_catalog/apps/catalog/models.py:231
+msgid ""
+"Ordered list of enrollment modes which can be displayed to learners for "
+"course runs in this catalog."
+msgstr ""
+"Sortierte Liste der Einschreibemodi, die Lernenden für Kursdurchläufe in "
+"diesem Katalog angezeigt werden können."
+
+#: enterprise_catalog/apps/catalog/models.py:237
+msgid ""
+"Specifies whether courses should be published with direct-to-audit "
+"enrollment URLs."
+msgstr ""
+"Gibt an, ob Kurse mit direkten Audit-Einschreibungs-URLs veröffentlicht "
+"werden sollen."
+
+#: enterprise_catalog/apps/catalog/models.py:244
+msgid "Enterprise Catalog"
+msgstr "Enterprise-Katalog"
+
+#: enterprise_catalog/apps/catalog/models.py:245
+msgid "Enterprise Catalogs"
+msgstr "Enterprise-Kataloge"
+
+#: enterprise_catalog/apps/catalog/models.py:685
+msgid ""
+"The UUID that represents a piece of content. This value is usually a "
+"secondary identifier to content_key in the enterprise environment."
+msgstr ""
+"Die UUID, die ein Inhaltselement repräsentiert. Dieser Wert ist in der "
+"Unternehmensumgebung in der Regel ein sekundärer Bezeichner zum content_key."
+
+#: enterprise_catalog/apps/catalog/models.py:695
+#: enterprise_catalog/apps/catalog/models.py:840
+msgid ""
+"The key that represents a piece of content, such as a course, course run, or"
+" program."
+msgstr ""
+"Der Schlüssel, der ein Inhaltselement repräsentiert, wie etwa einen Kurs, "
+"Kursdurchlauf oder ein Programm."
+
+#: enterprise_catalog/apps/catalog/models.py:710
+msgid ""
+"The key represents this content's parent. For example for course_runs "
+"content their parent course key."
+msgstr ""
+"Der Schlüssel repräsentiert das übergeordnete Element dieses Inhalts. Zum "
+"Beispiel den Schlüssel des zugehörigen Kurses für Kursdurchläufe."
+
+#: enterprise_catalog/apps/catalog/models.py:721
+msgid ""
+"The metadata about a particular piece content as retrieved from the "
+"discovery service's search/all endpoint results, specified as a JSON object."
+msgstr ""
+"Die Metadaten zu einem bestimmten Inhaltselement, wie sie von den "
+"Ergebnissen des \"search/all\"-Endpunkts des Discovery-Service abgerufen "
+"werden, angegeben als JSON-Objekt."
+
+#: enterprise_catalog/apps/catalog/models.py:777
+#: enterprise_catalog/apps/catalog/models.py:778
+msgid "Content Metadata"
+msgstr "Inhaltsmetadaten"
+
+#: enterprise_catalog/apps/catalog/models.py:824
+#: enterprise_catalog/apps/catalog/models.py:825
+msgid "Restricted Course Metadata"
+msgstr "Eingeschränkte Kursmetadaten"
+
+#: enterprise_catalog/apps/catalog/models.py:1718
+msgid ""
+"If true, will force the command's underlying celery tasks to run regardless "
+"of how recently the same task, on the same input, has been successfully "
+"executed."
+msgstr ""
+"Wenn wahr, werden die zugrunde liegenden Celery-Aufgaben des Befehls "
+"erzwungen ausgeführt, unabhängig davon, wie kürzlich dieselbe Aufgabe mit "
+"denselben Eingabedaten erfolgreich ausgeführt wurde."
+
+#: enterprise_catalog/apps/catalog/models.py:1726
+msgid ""
+"If true, for management commands that respect this field, celery tasks will "
+"not be apply_async()'d, but instead exectue as regular python functions."
+msgstr ""
+"Wenn wahr, werden für Verwaltungsbefehle, die dieses Feld berücksichtigen, "
+"Celery-Aufgaben nicht asynchron mittels apply_async() ausgeführt, sondern "
+"als reguläre Python-Funktionen."
+
+#: enterprise_catalog/apps/catalog/models.py:1759
+msgid "The content metadata this translation belongs to"
+msgstr "Die Inhaltsmetadaten, zu denen diese Übersetzung gehört"
+
+#: enterprise_catalog/apps/catalog/models.py:1763
+msgid "ISO 639-1 language code (e.g., 'es' for Spanish)"
+msgstr "ISO 639-1 Sprachcode (z.B. 'es' für Spanisch)"
+
+#: enterprise_catalog/apps/catalog/models.py:1771
+msgid "Translated title"
+msgstr "Übersetzter Titel"
+
+#: enterprise_catalog/apps/catalog/models.py:1776
+msgid "Translated short description"
+msgstr "Übersetzte Kurzbeschreibung"
+
+#: enterprise_catalog/apps/catalog/models.py:1781
+msgid "Translated full description"
+msgstr "Übersetzte vollständige Beschreibung"
+
+#: enterprise_catalog/apps/catalog/models.py:1786
+msgid "Translated learning outcomes"
+msgstr "Übersetzte Lernergebnisse"
+
+#: enterprise_catalog/apps/catalog/models.py:1791
+msgid "Translated prerequisites"
+msgstr "Übersetzte Voraussetzungen"
+
+#: enterprise_catalog/apps/catalog/models.py:1797
+msgid "Translated subtitle"
+msgstr "Übersetzter Untertitel"
+
+#: enterprise_catalog/apps/catalog/models.py:1803
+msgid "SHA256 hash of source content to detect changes"
+msgstr "SHA256-Hash des Quellinhalts zur Erkennung von Änderungen"
+
+#: enterprise_catalog/apps/catalog/models.py:1807
+msgid "Content Translation"
+msgstr "Inhaltsübersetzung"
+
+#: enterprise_catalog/apps/catalog/models.py:1808
+msgid "Content Translations"
+msgstr "Inhaltsübersetzungen"
+
+#: enterprise_catalog/apps/core/admin.py:16
+msgid "Personal info"
+msgstr "Persönliche Informationen"
+
+#: enterprise_catalog/apps/core/admin.py:17
+msgid "Permissions"
+msgstr "Berechtigungen"
+
+#: enterprise_catalog/apps/core/admin.py:19
+msgid "Important dates"
+msgstr "Wichtige Termine"
+
+#: enterprise_catalog/apps/core/models.py:17
+msgid "Full Name"
+msgstr "Vollständiger Name"
+
+#: enterprise_catalog/apps/core/models.py:21
+msgid "first name"
+msgstr "Vorname"
+
+#: enterprise_catalog/apps/curation/models.py:54
+msgid "Enterprise curation"
+msgstr "Enterprise-Kuration"
+
+#: enterprise_catalog/apps/curation/models.py:55
+msgid "Enterprise curations"
+msgstr "Enterprise-Kurationen"
+
+#: enterprise_catalog/apps/curation/models.py:176
+msgid "Sort order for favorited items, in ascending order (0=first)"
+msgstr ""
+"Sortierreihenfolge für favorisierte Elemente in aufsteigender Reihenfolge "
+"(0=erstes)"
+
+#: enterprise_catalog/apps/jobs/models.py:16
+msgid "The job ID received from API."
+msgstr "Die Job-ID, die von der API empfangen wurde."
+
+#: enterprise_catalog/apps/jobs/models.py:21
+msgid "The external identifier for the job received from API."
+msgstr "Der externe Identifikator für den von der API empfangenen Job."
+
+#: enterprise_catalog/apps/jobs/models.py:24
+msgid "Job title"
+msgstr "Jobtitel"
+
+#: enterprise_catalog/apps/jobs/models.py:25
+msgid "Job description."
+msgstr "Jobbeschreibung."
+
+#: enterprise_catalog/apps/jobs/models.py:30
+msgid "Job"
+msgstr "Job"
+
+#: enterprise_catalog/apps/jobs/models.py:31
+msgid "Jobs"
+msgstr "Jobs"
+
+#: enterprise_catalog/apps/jobs/models.py:53
+#: enterprise_catalog/apps/video_catalog/models.py:180
+msgid "Skill id"
+msgstr "Skill-ID"
+
+#: enterprise_catalog/apps/jobs/models.py:54
+#: enterprise_catalog/apps/video_catalog/models.py:181
+msgid "Skill name"
+msgstr "Skill-Name"
+
+#: enterprise_catalog/apps/jobs/models.py:58
+msgid "The significance of skill for the job."
+msgstr "Die Bedeutung der Fähigkeit für den Job."
+
+#: enterprise_catalog/apps/jobs/models.py:65
+msgid "Job Skill"
+msgstr "Job-Skill"
+
+#: enterprise_catalog/apps/jobs/models.py:66
+msgid "Job Skills"
+msgstr "Job-Skills"
+
+#: enterprise_catalog/apps/jobs/models.py:97
+msgid "Job Enterprise"
+msgstr "Job Enterprise"
+
+#: enterprise_catalog/apps/jobs/models.py:98
+msgid "Job Enterprises"
+msgstr "Job Enterprises"
+
+#: enterprise_catalog/apps/video_catalog/models.py:66
+msgid "EdX video id"
+msgstr "EdX-Video-ID"
+
+#: enterprise_catalog/apps/video_catalog/models.py:67
+msgid "Client video id"
+msgstr "Client-Video-ID"
+
+#: enterprise_catalog/apps/video_catalog/models.py:68
+#: enterprise_catalog/apps/video_catalog/models.py:145
+msgid "Video title"
+msgstr "Videotitel"
+
+#: enterprise_catalog/apps/video_catalog/models.py:69
+#: enterprise_catalog/apps/video_catalog/models.py:144
+msgid "Video Xblock Usage Key"
+msgstr "Video-Xblock-Nutzungsschlüssel"
+
+#: enterprise_catalog/apps/video_catalog/models.py:82
+msgid ""
+"The metadata about a particular video as retrieved from the LMS service, "
+"specified as a JSON object."
+msgstr ""
+"Die Metadaten zu einem bestimmten Video, wie sie vom LMS-Service abgerufen "
+"werden, angegeben als JSON-Objekt."
+
+#: enterprise_catalog/apps/video_catalog/models.py:90
+msgid "Video"
+msgstr "Video"
+
+#: enterprise_catalog/apps/video_catalog/models.py:91
+msgid "Videos"
+msgstr "Videos"
+
+#: enterprise_catalog/apps/video_catalog/models.py:115
+msgid "Video transcript summary"
+msgstr "Zusammenfassung des Videotranskripts"
+
+#: enterprise_catalog/apps/video_catalog/models.py:120
+msgid "Video Transcript Summary"
+msgstr "Zusammenfassung des Videotranskripts"
+
+#: enterprise_catalog/apps/video_catalog/models.py:121
+msgid "Video Transcript Summaries"
+msgstr "Zusammenfassungen der Videotranskripte"
+
+#: enterprise_catalog/apps/video_catalog/models.py:148
+msgid "Flag for row level filtering of processed rows."
+msgstr "Flag für zeilenbasierte Filterung verarbeiteter Zeilen."
+
+#: enterprise_catalog/apps/video_catalog/models.py:152
+msgid "Shortlisted Video"
+msgstr "Ausgewähltes Video"
+
+#: enterprise_catalog/apps/video_catalog/models.py:153
+msgid "Shortlisted Videos"
+msgstr "Ausgewählte Videos"
+
+#: enterprise_catalog/apps/video_catalog/models.py:186
+msgid "Video Skill"
+msgstr "Video-Skill"
+
+#: enterprise_catalog/apps/video_catalog/models.py:187
+msgid "Video Skills"
+msgstr "Video-Skills"

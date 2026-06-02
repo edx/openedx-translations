@@ -1,0 +1,351 @@
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-03-16 00:39+0000\n"
+"PO-Revision-Date: 2026-06-01 23:48+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: enterprise_catalog/apps/academy/models.py:22
+msgid "Tag title"
+msgstr "ชื่อแท็ก"
+
+#: enterprise_catalog/apps/academy/models.py:23
+msgid "Tag description."
+msgstr "คำอธิบายแท็ก"
+
+#: enterprise_catalog/apps/academy/models.py:27
+msgid "Tag"
+msgstr "แท็ก"
+
+#: enterprise_catalog/apps/academy/models.py:28
+msgid "Tags"
+msgstr "แท็ก"
+
+#: enterprise_catalog/apps/academy/models.py:46
+msgid "Academy title"
+msgstr "ชื่อสถาบัน"
+
+#: enterprise_catalog/apps/academy/models.py:48
+msgid "Short description of the academy."
+msgstr "คำอธิบายสั้น ๆ ของสถาบัน"
+
+#: enterprise_catalog/apps/academy/models.py:49
+msgid "Long description of the academy."
+msgstr "คำอธิบายยาวของสถาบัน"
+
+#: enterprise_catalog/apps/academy/models.py:50
+msgid "URL of the image shown on academy card on the frontend."
+msgstr "URL ของรูปภาพที่แสดงบนบัตรสถาบันในหน้าเว็บ"
+
+#: enterprise_catalog/apps/academy/models.py:55
+msgid "Academy"
+msgstr "สถาบัน"
+
+#: enterprise_catalog/apps/academy/models.py:56
+msgid "Academies"
+msgstr "สถาบัน"
+
+#: enterprise_catalog/apps/catalog/algolia_utils.py:859
+msgid "Available now"
+msgstr "มีใช้งานแล้ว"
+
+#: enterprise_catalog/apps/catalog/models.py:86
+msgid ""
+"Query parameters which will be used to filter the discovery service's "
+"search/all endpoint results, specified as a JSON object."
+msgstr ""
+"พารามิเตอร์การค้นหาที่จะใช้กรองผลลัพธ์ของบริการค้นพบจาก endpoint "
+"การค้นหา/ทั้งหมด โดยกำหนดในรูปแบบอ็อบเจกต์ JSON"
+
+#: enterprise_catalog/apps/catalog/models.py:110
+msgid "Catalog Query"
+msgstr "การสอบถามแคตตาล็อก"
+
+#: enterprise_catalog/apps/catalog/models.py:111
+msgid "Catalog Queries"
+msgstr "การสอบถามแคตตาล็อก"
+
+#: enterprise_catalog/apps/catalog/models.py:231
+msgid ""
+"Ordered list of enrollment modes which can be displayed to learners for "
+"course runs in this catalog."
+msgstr ""
+"รายการที่เรียงลำดับของโหมดการลงทะเบียนที่สามารถแสดงให้ผู้เรียนสำหรับการเปิดคอร์สในแคตตาล็อกนี้"
+
+#: enterprise_catalog/apps/catalog/models.py:237
+msgid ""
+"Specifies whether courses should be published with direct-to-audit "
+"enrollment URLs."
+msgstr "ระบุว่าคอร์สควรถูกเผยแพร่ด้วย URL ลงทะเบียนตรงสำหรับการตรวจสอบหรือไม่"
+
+#: enterprise_catalog/apps/catalog/models.py:244
+msgid "Enterprise Catalog"
+msgstr "แคตตาล็อกสำหรับองค์กร"
+
+#: enterprise_catalog/apps/catalog/models.py:245
+msgid "Enterprise Catalogs"
+msgstr "แคตตาล็อกสำหรับองค์กร"
+
+#: enterprise_catalog/apps/catalog/models.py:685
+msgid ""
+"The UUID that represents a piece of content. This value is usually a "
+"secondary identifier to content_key in the enterprise environment."
+msgstr ""
+"UUID ที่แทนเนื้อหาแต่ละชิ้น ค่านี้มักเป็นตัวระบุรองจาก content_key "
+"ในสภาพแวดล้อมองค์กร"
+
+#: enterprise_catalog/apps/catalog/models.py:695
+#: enterprise_catalog/apps/catalog/models.py:840
+msgid ""
+"The key that represents a piece of content, such as a course, course run, or"
+" program."
+msgstr "คีย์ที่แทนเนื้อหาแต่ละชิ้น เช่น คอร์ส การเปิดคอร์ส หรือโปรแกรม"
+
+#: enterprise_catalog/apps/catalog/models.py:710
+msgid ""
+"The key represents this content's parent. For example for course_runs "
+"content their parent course key."
+msgstr ""
+"คีย์นี้แทนสื่อหลักของเนื้อหา เช่น สำหรับเนื้อหา course_runs คีย์หลักคือคอร์ส"
+
+#: enterprise_catalog/apps/catalog/models.py:721
+msgid ""
+"The metadata about a particular piece content as retrieved from the "
+"discovery service's search/all endpoint results, specified as a JSON object."
+msgstr ""
+"เมตาดาตาเกี่ยวกับเนื้อหาแต่ละชิ้นตามที่ดึงมาจากผลลัพธ์ของ endpoint "
+"การค้นหาหรือทั้งหมดของบริการค้นพบ โดยระบุในรูปแบบอ็อบเจกต์ JSON"
+
+#: enterprise_catalog/apps/catalog/models.py:777
+#: enterprise_catalog/apps/catalog/models.py:778
+msgid "Content Metadata"
+msgstr "เมตาดาตาเนื้อหา"
+
+#: enterprise_catalog/apps/catalog/models.py:824
+#: enterprise_catalog/apps/catalog/models.py:825
+msgid "Restricted Course Metadata"
+msgstr "เมตาดาตาคอร์สที่มีข้อจำกัด"
+
+#: enterprise_catalog/apps/catalog/models.py:1718
+msgid ""
+"If true, will force the command's underlying celery tasks to run regardless "
+"of how recently the same task, on the same input, has been successfully "
+"executed."
+msgstr ""
+"ถ้าเป็นจริง จะบังคับให้งาน celery "
+"ที่เกี่ยวข้องกับคำสั่งนั้นทำงานโดยไม่คำนึงถึงความถี่ที่งานเดียวกันบนอินพุตเดียวกันถูกดำเนินการสำเร็จล่าสุด"
+
+#: enterprise_catalog/apps/catalog/models.py:1726
+msgid ""
+"If true, for management commands that respect this field, celery tasks will "
+"not be apply_async()'d, but instead exectue as regular python functions."
+msgstr ""
+"ถ้าเป็นจริง สำหรับคำสั่งจัดการที่รองรับฟิลด์นี้ งาน celery จะไม่ถูกเรียกด้วย"
+" apply_async() แต่จะถูกดำเนินการเป็นฟังก์ชัน Python ธรรมดา"
+
+#: enterprise_catalog/apps/catalog/models.py:1759
+msgid "The content metadata this translation belongs to"
+msgstr "เมตาดาตาเนื้อหาที่คำแปลนี้สังกัด"
+
+#: enterprise_catalog/apps/catalog/models.py:1763
+msgid "ISO 639-1 language code (e.g., 'es' for Spanish)"
+msgstr "รหัสภาษา ISO 639-1 (เช่น 'es' สำหรับภาษาสเปน)"
+
+#: enterprise_catalog/apps/catalog/models.py:1771
+msgid "Translated title"
+msgstr "ชื่อที่แปลแล้ว"
+
+#: enterprise_catalog/apps/catalog/models.py:1776
+msgid "Translated short description"
+msgstr "คำอธิบายสั้นที่แปลแล้ว"
+
+#: enterprise_catalog/apps/catalog/models.py:1781
+msgid "Translated full description"
+msgstr "คำอธิบายเต็มที่แปลแล้ว"
+
+#: enterprise_catalog/apps/catalog/models.py:1786
+msgid "Translated learning outcomes"
+msgstr "ผลลัพธ์การเรียนรู้ที่แปลแล้ว"
+
+#: enterprise_catalog/apps/catalog/models.py:1791
+msgid "Translated prerequisites"
+msgstr "ข้อกำหนดเบื้องต้นที่แปลแล้ว"
+
+#: enterprise_catalog/apps/catalog/models.py:1797
+msgid "Translated subtitle"
+msgstr "คำบรรยายที่แปลแล้ว"
+
+#: enterprise_catalog/apps/catalog/models.py:1803
+msgid "SHA256 hash of source content to detect changes"
+msgstr "ค่าแฮช SHA256 ของเนื้อหาต้นทางเพื่อตรวจจับการเปลี่ยนแปลง"
+
+#: enterprise_catalog/apps/catalog/models.py:1807
+msgid "Content Translation"
+msgstr "การแปลเนื้อหา"
+
+#: enterprise_catalog/apps/catalog/models.py:1808
+msgid "Content Translations"
+msgstr "การแปลเนื้อหา"
+
+#: enterprise_catalog/apps/core/admin.py:16
+msgid "Personal info"
+msgstr "ข้อมูลส่วนบุคคล"
+
+#: enterprise_catalog/apps/core/admin.py:17
+msgid "Permissions"
+msgstr "สิทธิ์การเข้าถึง"
+
+#: enterprise_catalog/apps/core/admin.py:19
+msgid "Important dates"
+msgstr "วันที่สำคัญ"
+
+#: enterprise_catalog/apps/core/models.py:17
+msgid "Full Name"
+msgstr "ชื่อเต็ม"
+
+#: enterprise_catalog/apps/core/models.py:21
+msgid "first name"
+msgstr "ชื่อ"
+
+#: enterprise_catalog/apps/curation/models.py:54
+msgid "Enterprise curation"
+msgstr "คัดเลือกสำหรับองค์กร"
+
+#: enterprise_catalog/apps/curation/models.py:55
+msgid "Enterprise curations"
+msgstr "การคัดเลือกสำหรับองค์กร"
+
+#: enterprise_catalog/apps/curation/models.py:176
+msgid "Sort order for favorited items, in ascending order (0=first)"
+msgstr ""
+"ลำดับการเรียงสำหรับรายการที่ถูกเพิ่มในรายการโปรด โดยเรียงจากน้อยไปมาก (0 = "
+"รายการแรก)"
+
+#: enterprise_catalog/apps/jobs/models.py:16
+msgid "The job ID received from API."
+msgstr "รหัสงานที่ได้รับจาก API"
+
+#: enterprise_catalog/apps/jobs/models.py:21
+msgid "The external identifier for the job received from API."
+msgstr "ตัวระบุภายนอกสำหรับงานที่ได้รับจาก API"
+
+#: enterprise_catalog/apps/jobs/models.py:24
+msgid "Job title"
+msgstr "ชื่องาน"
+
+#: enterprise_catalog/apps/jobs/models.py:25
+msgid "Job description."
+msgstr "คำอธิบายงาน"
+
+#: enterprise_catalog/apps/jobs/models.py:30
+msgid "Job"
+msgstr "งาน"
+
+#: enterprise_catalog/apps/jobs/models.py:31
+msgid "Jobs"
+msgstr "งาน"
+
+#: enterprise_catalog/apps/jobs/models.py:53
+#: enterprise_catalog/apps/video_catalog/models.py:180
+msgid "Skill id"
+msgstr "รหัสทักษะ"
+
+#: enterprise_catalog/apps/jobs/models.py:54
+#: enterprise_catalog/apps/video_catalog/models.py:181
+msgid "Skill name"
+msgstr "ชื่อทักษะ"
+
+#: enterprise_catalog/apps/jobs/models.py:58
+msgid "The significance of skill for the job."
+msgstr "ความสำคัญของทักษะสำหรับงาน"
+
+#: enterprise_catalog/apps/jobs/models.py:65
+msgid "Job Skill"
+msgstr "ทักษะสำหรับงาน"
+
+#: enterprise_catalog/apps/jobs/models.py:66
+msgid "Job Skills"
+msgstr "ทักษะสำหรับงาน"
+
+#: enterprise_catalog/apps/jobs/models.py:97
+msgid "Job Enterprise"
+msgstr "องค์กรสำหรับงาน"
+
+#: enterprise_catalog/apps/jobs/models.py:98
+msgid "Job Enterprises"
+msgstr "องค์กรสำหรับงาน"
+
+#: enterprise_catalog/apps/video_catalog/models.py:66
+msgid "EdX video id"
+msgstr "รหัสวิดีโอ EdX"
+
+#: enterprise_catalog/apps/video_catalog/models.py:67
+msgid "Client video id"
+msgstr "รหัสวิดีโอของลูกค้า"
+
+#: enterprise_catalog/apps/video_catalog/models.py:68
+#: enterprise_catalog/apps/video_catalog/models.py:145
+msgid "Video title"
+msgstr "ชื่อวิดีโอ"
+
+#: enterprise_catalog/apps/video_catalog/models.py:69
+#: enterprise_catalog/apps/video_catalog/models.py:144
+msgid "Video Xblock Usage Key"
+msgstr "คีย์การใช้งาน Xblock ของวิดีโอ"
+
+#: enterprise_catalog/apps/video_catalog/models.py:82
+msgid ""
+"The metadata about a particular video as retrieved from the LMS service, "
+"specified as a JSON object."
+msgstr ""
+"เมตาดาตาเกี่ยวกับวิดีโอแต่ละชิ้นตามที่ดึงมาจากบริการ LMS "
+"โดยระบุในรูปแบบอ็อบเจกต์ JSON"
+
+#: enterprise_catalog/apps/video_catalog/models.py:90
+msgid "Video"
+msgstr "วิดีโอ"
+
+#: enterprise_catalog/apps/video_catalog/models.py:91
+msgid "Videos"
+msgstr "วิดีโอ"
+
+#: enterprise_catalog/apps/video_catalog/models.py:115
+msgid "Video transcript summary"
+msgstr "สรุปบทถอดความวิดีโอ"
+
+#: enterprise_catalog/apps/video_catalog/models.py:120
+msgid "Video Transcript Summary"
+msgstr "สรุปบทถอดความวิดีโอ"
+
+#: enterprise_catalog/apps/video_catalog/models.py:121
+msgid "Video Transcript Summaries"
+msgstr "สรุปบทถอดความวิดีโอ"
+
+#: enterprise_catalog/apps/video_catalog/models.py:148
+msgid "Flag for row level filtering of processed rows."
+msgstr "ตัวบ่งชี้สำหรับการกรองแถวในระดับแถวของข้อมูลที่ผ่านการประมวลผล"
+
+#: enterprise_catalog/apps/video_catalog/models.py:152
+msgid "Shortlisted Video"
+msgstr "วิดีโอที่ถูกเลือก"
+
+#: enterprise_catalog/apps/video_catalog/models.py:153
+msgid "Shortlisted Videos"
+msgstr "วิดีโอที่ถูกเลือก"
+
+#: enterprise_catalog/apps/video_catalog/models.py:186
+msgid "Video Skill"
+msgstr "ทักษะของวิดีโอ"
+
+#: enterprise_catalog/apps/video_catalog/models.py:187
+msgid "Video Skills"
+msgstr "ทักษะของวิดีโอ"

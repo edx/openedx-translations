@@ -1,52 +1,19 @@
-# #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
-# edX translation file.
-# Copyright (C) 2025 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
-# 
-# #-#-#-#-#  wiki.po (0.1a)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2025 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
-# 
-# #-#-#-#-#  edx_proctoring_proctortrack.po (0.1a)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2025 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
-# 
-# #-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#
-# Translations template for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
-# 
-# Translators:
-# Carolina Amado, 2024
-# Eden Huthmacher, 2024
-# Ivo Branco <ivo.branco@fccn.pt>, 2025
-# Pedro Cabral, 2025
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
-# Brian Smith, 2025
-# Cátia Lopes <catia.lopes@bridgelk.com>, 2025
-# Gerardo Núñez, 2025
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2025-09-19 00:44+0000\n"
-"PO-Revision-Date: 2023-11-20 11:35+0000\n"
-"Last-Translator: Gerardo Núñez, 2025\n"
-"Language-Team: Portuguese (Portugal) (https://app.transifex.com/open-edx/teams/6205/pt_PT/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"PO-Revision-Date: 2026-06-02 02:12+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_PT\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: cms/djangoapps/api/v1/serializers/course_runs.py:49
 msgid "Course team user does not exist"
@@ -646,7 +613,7 @@ msgstr "É obrigatório um ficheiro de imagem."
 #: cms/djangoapps/contentstore/video_storage_handlers.py:511
 #, python-brace-format
 msgid "{profile_name} URL"
-msgstr "{profile_name} URL"
+msgstr "URL de {profile_name}"
 
 #: cms/djangoapps/contentstore/video_storage_handlers.py:516
 #: lms/djangoapps/instructor/views/api.py:1505
@@ -676,7 +643,7 @@ msgstr "Estado"
 #: cms/djangoapps/contentstore/video_storage_handlers.py:566
 #, python-brace-format
 msgid "{course}_video_urls"
-msgstr "{course}_video_urls"
+msgstr "URLs de vídeo para {course}"
 
 #: cms/djangoapps/contentstore/video_storage_handlers.py:956
 msgid "A non zero positive integer is expected"
@@ -2129,7 +2096,7 @@ msgstr "Por favor aguarde"
 #. See http://strftime.org for details.
 #: common/djangoapps/util/date_utils.py:145
 msgid "LONG_DATE_FORMAT"
-msgstr "LONG_DATE_FORMAT"
+msgstr "j \\d\\e F \\d\\e Y"
 
 #. Translators: the translation for "DATE_TIME_FORMAT" must be a format
 #. string for formatting dates with times.  For example, the American
@@ -2137,7 +2104,7 @@ msgstr "LONG_DATE_FORMAT"
 #. See http://strftime.org for details.
 #: common/djangoapps/util/date_utils.py:153
 msgid "DATE_TIME_FORMAT"
-msgstr "DATE_TIME_FORMAT"
+msgstr "j \\d\\e F \\d\\e Y H:i"
 
 #. Translators: the translation for "SHORT_DATE_FORMAT" must be a
 #. format string for formatting dates in a brief form.  For example,
@@ -2145,14 +2112,14 @@ msgstr "DATE_TIME_FORMAT"
 #. See http://strftime.org for details.
 #: common/djangoapps/util/date_utils.py:189
 msgid "SHORT_DATE_FORMAT"
-msgstr "SHORT_DATE_FORMAT"
+msgstr "d/m/Y"
 
 #. Translators: the translation for "TIME_FORMAT" must be a format
 #. string for formatting times.  For example, the American English
 #. form is "%H:%M:%S". See http://strftime.org for details.
 #: common/djangoapps/util/date_utils.py:201
 msgid "TIME_FORMAT"
-msgstr "TIME_FORMAT"
+msgstr "H:i"
 
 #. Translators: This is an AM/PM indicator for displaying times.  It is
 #. used for the %p directive in date-time formats. See http://strftime.org
@@ -2160,7 +2127,7 @@ msgstr "TIME_FORMAT"
 #: common/djangoapps/util/date_utils.py:263
 msgctxt "am/pm indicator"
 msgid "AM"
-msgstr "AM"
+msgstr "a.m."
 
 #. Translators: This is an AM/PM indicator for displaying times.  It is
 #. used for the %p directive in date-time formats. See http://strftime.org
@@ -2168,7 +2135,7 @@ msgstr "AM"
 #: common/djangoapps/util/date_utils.py:267
 msgctxt "am/pm indicator"
 msgid "PM"
-msgstr "PM"
+msgstr "p.m."
 
 #. Translators: this is a weekday name that will be used when displaying
 #. dates, as in "Monday Februrary 10, 2014". It is used for the %A
@@ -3269,7 +3236,7 @@ msgstr ""
 #: cms/templates/widgets/footer.html:59
 #: themes/red-theme/lms/templates/footer.html:113
 msgid "Powered by Open edX"
-msgstr "Powered by Open edX"
+msgstr "Impulsionado por Open edX"
 
 #: lms/djangoapps/branding/api.py:254 lms/djangoapps/branding/api.py:291
 #: lms/templates/static_templates/blog.html:5
@@ -5273,7 +5240,7 @@ msgstr "Nome de utilizador"
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:53
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:66
 msgid "Email"
-msgstr "Email"
+msgstr "Correio eletrónico"
 
 #: lms/djangoapps/instructor/views/api.py:1507
 msgid "Language"
@@ -6517,11 +6484,11 @@ msgstr "nome de utilizador"
 
 #: lms/djangoapps/support/views/manage_user.py:36
 msgid "user_support_url"
-msgstr "user_support_url"
+msgstr "URL de suporte do utilizador"
 
 #: lms/djangoapps/support/views/manage_user.py:37
 msgid "user_detail_url"
-msgstr "user_detail_url"
+msgstr "URL de detalhes do utilizador"
 
 #: lms/djangoapps/support/views/manage_user.py:62
 #: lms/djangoapps/support/views/manage_user.py:90
@@ -6865,7 +6832,7 @@ msgstr "As informações de login da sua conta seguem:"
 #: lms/templates/instructor/edx_ace/accountcreationandenrollment/email/body.txt:5
 #, python-format
 msgid "email: %(email_address)s"
-msgstr "email: %(email_address)s"
+msgstr "Correio electrónico: %(email_address)s"
 
 #: lms/templates/instructor/edx_ace/accountcreationandenrollment/email/body.html:33
 #: lms/templates/instructor/edx_ace/accountcreationandenrollment/email/body.txt:6
@@ -7841,7 +7808,7 @@ msgstr ""
 
 #: lms/templates/wiki/includes/cheatsheet.html:23
 msgid "[Article Name](wiki:ArticleName)"
-msgstr "[Article Name](wiki:ArticleName)"
+msgstr "[Nome do Artigo](wiki:ArticleName)"
 
 #: lms/templates/wiki/includes/cheatsheet.html:26
 #, python-format
@@ -7863,7 +7830,7 @@ msgstr "Wikipédia"
 #: lms/templates/wiki/includes/cheatsheet.html:37
 #, python-format
 msgid "%(platform_name)s Wiki"
-msgstr "%(platform_name)s Wiki"
+msgstr "Wiki do %(platform_name)s"
 
 #: lms/templates/wiki/includes/cheatsheet.html:40
 msgid "Huge Header"
@@ -8414,7 +8381,7 @@ msgstr "Todos os direitos reservados."
 
 #: openedx/core/djangoapps/content_libraries/constants.py:16
 msgid "Creative Commons Attribution 4.0"
-msgstr "Creative Commons Attribution 4.0"
+msgstr "Creative Commons Atribuição 4.0"
 
 #: openedx/core/djangoapps/content_libraries/constants.py:17
 msgid "Creative Commons Attribution-NonCommercial 4.0"
@@ -11434,7 +11401,7 @@ msgstr ""
 #: xmodule/capa/inputtypes.py:819
 #, python-brace-format
 msgid "{programming_language} editor"
-msgstr "{programming_language} editor"
+msgstr "Editor de {programming_language}"
 
 #: xmodule/capa/inputtypes.py:822
 msgid "Press ESC then TAB or click outside of the code editor to exit"
@@ -13695,7 +13662,7 @@ msgstr ""
 
 #: xmodule/lti_block.py:140
 msgid "LTI ID"
-msgstr "LTI ID"
+msgstr "ID LTI"
 
 #: xmodule/lti_block.py:142
 #, python-brace-format
@@ -15799,7 +15766,7 @@ msgstr ""
 
 #: wiki/plugins/links/wiki_plugin.py:19
 msgid "Links"
-msgstr "Links"
+msgstr "Ligações"
 
 #: wiki/plugins/links/templates/wiki/plugins/links/sidebar.html:2
 msgid "Link to another wiki page"
@@ -20338,7 +20305,7 @@ msgstr "Formulário de feedback"
 #: common/templates/emails/contact_us_feedback_email_body.txt:4
 #, python-brace-format
 msgid "Email: {email}"
-msgstr "Email: {email}"
+msgstr "Correio eletrónico: {email}"
 
 #: common/templates/emails/contact_us_feedback_email_body.txt:5
 #, python-brace-format
@@ -21031,7 +20998,7 @@ msgstr ""
 #: themes/stanford-style/lms/templates/register-form.html:127
 #: themes/stanford-style/lms/templates/register-shib.html:134
 msgid "E-mail"
-msgstr "E-mail"
+msgstr "Correio eletrónico"
 
 #: lms/templates/provider_login.html:51
 #, python-format
@@ -21348,7 +21315,7 @@ msgstr "data e hora"
 
 #: lms/templates/tracking_log.html:6
 msgid "ipaddr"
-msgstr "ipaddr"
+msgstr "endereço IP"
 
 #: lms/templates/tracking_log.html:6
 msgid "source"
@@ -27311,7 +27278,7 @@ msgstr ""
 #: themes/stanford-style/lms/templates/footer.html:21
 #: themes/stanford-style/lms/templates/static_templates/tos.html:23
 msgid "Copyright"
-msgstr "Copyright"
+msgstr "Direitos de autor"
 
 #: themes/stanford-style/lms/templates/footer.html:36
 #, python-brace-format

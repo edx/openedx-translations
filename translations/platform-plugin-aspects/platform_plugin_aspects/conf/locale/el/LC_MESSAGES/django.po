@@ -1,0 +1,118 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1a\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2025-10-23 00:53+0000\n"
+"PO-Revision-Date: 2026-06-01 23:54+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: extensions/filters.py:58
+msgid "Reports"
+msgstr "Αναφορές"
+
+#: settings/common.py:31
+msgid "Course Dashboard"
+msgstr "Πίνακας Ελέγχου Μαθήματος"
+
+#: settings/common.py:37
+msgid "Individual Learner Dashboard"
+msgstr "Πίνακας Ελέγχου Ατομικού Μαθητή"
+
+#: settings/common.py:43
+msgid "At-Risk Learners Dashboard"
+msgstr "Πίνακας Ελέγχου Μαθητών σε Κίνδυνο"
+
+#: settings/common.py:114
+msgid "Course"
+msgstr "Μάθημα"
+
+#: settings/common.py:122
+msgid "Graded Subsection"
+msgstr "Βαθμολογημένη Υποενότητα"
+
+#: settings/common.py:130
+msgid "Problem"
+msgstr "Πρόβλημα"
+
+#: settings/common.py:138
+msgid "Video"
+msgstr "Βίντεο"
+
+#: static/html/superset.html:9
+msgid ""
+"Superset is not configured properly. Please contact your system "
+"administrator."
+msgstr ""
+"Το Superset δεν έχει ρυθμιστεί σωστά. Παρακαλώ επικοινωνήστε με τον "
+"διαχειριστή του συστήματος."
+
+#: static/html/superset_student.html:4
+msgid ""
+"Superset is only visible to course staff and instructors. Please contact "
+"your system administrator."
+msgstr ""
+"Το Superset είναι ορατό μόνο στο προσωπικό του μαθήματος και στους "
+"καθηγητές. Παρακαλώ επικοινωνήστε με τον διαχειριστή του συστήματος."
+
+#: views.py:87
+#, python-brace-format
+msgid "Course not found: '{course_id}'"
+msgstr "Δεν βρέθηκε μάθημα: '{course_id}'"
+
+#: views.py:114
+#, python-brace-format
+msgid "Invalid course id: '{course_id}'"
+msgstr "Μη έγκυρο αναγνωριστικό μαθήματος: '{course_id}'"
+
+#: views.py:179
+#, python-brace-format
+msgid "Invalid usage id: '{usage_id}'"
+msgstr "Μη έγκυρο αναγνωριστικό χρήσης: '{usage_id}'"
+
+#: views.py:208
+#, python-brace-format
+msgid "No dashboard for block type: '{block_type}'"
+msgstr "Δεν υπάρχει πίνακας ελέγχου για τον τύπο μπλοκ: '{block_type}'"
+
+#: xblock.py:48 xblock.py:49
+msgid "Display name"
+msgstr "Εμφανιζόμενο όνομα"
+
+#: xblock.py:50
+msgid "Superset Dashboard"
+msgstr "Πίνακας Ελέγχου Superset"
+
+#: xblock.py:55
+msgid "Dashboard UUID"
+msgstr "UUID πίνακα ελέγχου"
+
+#: xblock.py:57
+msgid ""
+"The ID of the dashboard to embed. Available in the Superset embed dashboard "
+"UI."
+msgstr ""
+"Το αναγνωριστικό του πίνακα ελέγχου για ενσωμάτωση. Διαθέσιμο στη διεπαφή "
+"ενσωμάτωσης του Superset."
+
+#: xblock.py:64
+msgid "Filters"
+msgstr "Φίλτρα"
+
+#: xblock.py:66
+msgid ""
+"List of SQL filters to apply to the\n"
+"               dashboard. E.g: [\"org='edX'\", \"country in ('us', 'co')\"]\n"
+"               The fields used here must be available on every dataset used by the dashboard.\n"
+"               "
+msgstr ""
+"Λίστα φίλτρων SQL για εφαρμογή στο\n"
+"               πίνακα ελέγχου. Π.χ.: [\"org='edX'\", \"country in ('us', 'co')\"]\n"
+"               Τα πεδία που χρησιμοποιούνται εδώ πρέπει να είναι διαθέσιμα σε κάθε σύνολο δεδομένων που χρησιμοποιείται από τον πίνακα ελέγχου.\n"
+"               "

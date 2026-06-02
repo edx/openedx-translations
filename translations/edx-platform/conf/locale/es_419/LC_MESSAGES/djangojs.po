@@ -1,35 +1,19 @@
-# #-#-#-#-#  djangojs.po (0.1a)  #-#-#-#-#
-# edX translation file.
-# Copyright (C) 2025 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
-# 
-# #-#-#-#-#  underscore.po (PROJECT VERSION)  #-#-#-#-#
-# Translations template for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
-# 
-# Translators:
-# Brian Smith, 2024
-# Valentina Morelli, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2025-09-19 00:44+0000\n"
-"PO-Revision-Date: 2023-11-20 11:35+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025\n"
-"Language-Team: Spanish (Latin America) (https://app.transifex.com/open-edx/teams/6205/es_419/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"PO-Revision-Date: 2026-06-01 23:34+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es_419\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: cms/static/cms/js/main.js:38
 #: cms/static/js/views/active_video_upload_list.js:36
@@ -1469,7 +1453,7 @@ msgstr ""
 #. "Showing 0-9 out of 25 total".
 #: cms/static/js/views/paging_header.js:99
 msgid "{totalItems} total"
-msgstr "{totalItems} total"
+msgstr "En total: {totalItems}"
 
 #. Translators: This refers to a content group that can be linked to a student
 #. cohort.
@@ -1807,7 +1791,7 @@ msgid ""
 "{ReqTextSpanStart}Requirements{spanEnd}{lineBreak}{InstructionsSpanStart}{videoImageResoultion}{lineBreak}"
 " {videoImageSupportedFileFormats}{spanEnd}"
 msgstr ""
-"{ReqTextSpanStart}Requirements{spanEnd}{lineBreak}{InstructionsSpanStart}{videoImageResoultion}{lineBreak}"
+"{ReqTextSpanStart}Requisitos{spanEnd}{lineBreak}{InstructionsSpanStart}{videoImageResoultion}{lineBreak}"
 " {videoImageSupportedFileFormats}{spanEnd}"
 
 #. Translators: message will be like 1280x720 pixels
@@ -4992,6 +4976,10 @@ msgstr ""
 msgid "Terms of Service and Honor Code"
 msgstr "Términos del servicio y código de honor"
 
+#: lms/static/js/student_account/views/FinishAuthView.js:71
+msgid "query param next is provide"
+msgstr "El parámetro de consulta next se proporciona"
+
 #: lms/static/js/student_account/views/FinishAuthView.js:73
 msgid "query param next is internal"
 msgstr "el parámetro de consulta siguiente es interno"
@@ -5378,15 +5366,15 @@ msgstr "{start_strong}{total}{end_strong} palabras enviadas en total."
 
 #: xmodule/assets/word_cloud/src/js/word_cloud_main.js:285
 msgid "text_word_{uniqueId} title_word_{uniqueId}"
-msgstr "text_word_{uniqueId} title_word_{uniqueId}"
+msgstr "texto_palabra_{uniqueId} título_palabra_{uniqueId}"
 
 #: xmodule/assets/word_cloud/src/js/word_cloud_main.js:295
 msgid "title_word_{uniqueId}"
-msgstr "title_word_{uniqueId}"
+msgstr "título_palabra_{uniqueId}"
 
 #: xmodule/assets/word_cloud/src/js/word_cloud_main.js:317
 msgid "text_word_{uniqueId}"
-msgstr "text_word_{uniqueId}"
+msgstr "texto_palabra_{uniqueId}"
 
 #: xmodule/js/src/annotatable/display.js:283
 msgid "Show Annotations"
@@ -6353,7 +6341,7 @@ msgstr "Pegar"
 #. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:930
 msgid "Poster"
-msgstr "Poster"
+msgstr "Póster"
 
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
@@ -7205,7 +7193,7 @@ msgstr "Abrir / descargar este archivo"
 
 #: cms/templates/js/asset.underscore:23
 msgid "Studio:"
-msgstr "Studio:"
+msgstr "Estudio:"
 
 #: cms/templates/js/asset.underscore:29
 msgid "Web:"
@@ -7351,7 +7339,7 @@ msgstr ""
 
 #: cms/templates/js/content-group-editor.underscore:10
 msgid "Content Group Name"
-msgstr "Content Group Name"
+msgstr "Nombre del grupo de contenido"
 
 #: cms/templates/js/content-group-editor.underscore:13
 msgid "Content Group ID"
@@ -7995,7 +7983,7 @@ msgstr "Recursos del capítulo"
 #: cms/templates/js/edit-chapter.underscore:10
 #, python-brace-format
 msgid "path/to/introductionToCookieBaking-CH{order}.pdf"
-msgstr "path/to/introductionToCookieBaking-CH{order}.pdf"
+msgstr "ruta/a/introductionToCookieBaking-CH{order}.pdf"
 
 #: cms/templates/js/edit-chapter.underscore:11
 msgid "upload a PDF file or provide the path to a Studio asset file"
