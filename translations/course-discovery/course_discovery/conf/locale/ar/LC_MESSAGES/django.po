@@ -1,17 +1,30 @@
-#
+# #-#-#-#-#  django.po (course-discovery)  #-#-#-#-#
+# edX translation file
+# Copyright (C) 2018 edX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# 
+# Translators:
+# Translators:
+# Omar Al-Ithawi <i@omardo.com>, 2023
+# Brian Smith, 2023
+# Sarina Canelake <sarina@tcril.org>, 2023
+# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024
+# Menna Mamdouh <menna.mamdouh@notionwave.com>, 2024
+# Sulaiman Muthanna, 2025
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
-"Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-04-27 00:38+0000\n"
-"PO-Revision-Date: 2026-06-01 23:33+0000\n"
-"Last-Translator: AI Translation Service, 2026\n"
-"Language-Team: English (http://www.transifex.com/open-edx/edx-platform/language/en/)\n"
-"Language: ar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-27 00:28+0000\n"
+"PO-Revision-Date: 2023-01-26 15:39+0000\n"
+"Last-Translator: Sulaiman Muthanna, 2025\n"
+"Language-Team: Arabic (https://app.transifex.com/open-edx/teams/6205/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: apps/api/filters.py:48
 #, python-brace-format
@@ -180,7 +193,7 @@ msgstr ""
 "فشلت عملية تحرير المساق، وما زال العنوان المختصر ‘[{url_slug}]’ لرابط المساق"
 " قيد الاستخدام، يرجى تحديث الحقل وإعادة المحاولة مرة أخرى."
 
-#: apps/api/views.py:57
+#: apps/api/views.py:58
 msgid "You are not permitted to access the API documentation."
 msgstr "لا يُسمح لك بالوصول إلى وثائق API. "
 
@@ -519,11 +532,11 @@ msgstr "محذوف"
 
 #: apps/course_metadata/choices.py:43
 msgid "mooc"
-msgstr "دورة مفتوحة على الإنترنت"
+msgstr "mooc"
 
 #: apps/course_metadata/choices.py:44
 msgid "spoc"
-msgstr "دورة خاصة على الإنترنت"
+msgstr "spoc"
 
 #: apps/course_metadata/choices.py:45
 msgid "test"
@@ -640,10 +653,6 @@ msgstr "دورات قصيرة"
 #: apps/course_metadata/choices.py:109
 msgid "Sprint"
 msgstr "سبرينت"
-
-#: apps/course_metadata/choices.py:110
-msgid "Course Stack"
-msgstr "مجموعة الدورات"
 
 #: apps/course_metadata/choices.py:114
 msgid "Custom B2B Enterprise"
@@ -1793,7 +1802,7 @@ msgstr "شهادة"
 
 #: apps/course_metadata/models.py:4290
 msgid "Checkmark"
-msgstr "علامة الاختيار"
+msgstr "Checkmark"
 
 #: apps/course_metadata/models.py:4291
 msgid "Clock"
@@ -2001,17 +2010,9 @@ msgstr "ملخص المهمة"
 msgid "Task Type"
 msgstr "نوع المهمة"
 
-#: apps/course_metadata/models.py:5055
-msgid "Type of Bulk Task to be performed"
-msgstr "نوع المهمة الجماعية التي سيتم تنفيذها"
-
 #: apps/course_metadata/models.py:5058
 msgid "Status"
 msgstr "الحالة"
-
-#: apps/course_metadata/models.py:5061
-msgid "Status of the Bulk Task"
-msgstr "حالة المهمة الجماعية"
 
 #: apps/course_metadata/models.py:5069
 msgid "Identifier of the celery task associated with this bulk task"
@@ -2207,19 +2208,6 @@ msgstr ""
 "\n"
 "إذا لم يُتخَذ أيّ إجراء، فلن يكون بإمكان المتعلمين التسجيل في المساق أو الوصول إليه  في %(partner_marketing_site_url)s بعد تاريح الانتهاء.\n"
 
-#: apps/course_metadata/templates/course_metadata/email/go_live.html:17
-#: apps/course_metadata/templates/course_metadata/email/go_live.txt:7
-#, python-format
-msgid ""
-"The About page for the %(course_run_number)s course run of %(course_name)s "
-"has been submitted for publishing. The new session will appear on the edX "
-"website following the next couple of deployments—typically within 24 to 48 "
-"business hours."
-msgstr ""
-"تم تقديم صفحة حول الدورة %(course_run_number)s من %(course_name)s للنشر. "
-"ستظهر الجلسة الجديدة على موقع edX بعد عدة نشرات قادمة — عادةً خلال 24 إلى 48"
-" ساعة عمل."
-
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:26
 #: apps/course_metadata/templates/course_metadata/email/legal_review.html:23
 #: apps/course_metadata/templates/course_metadata/email/reviewed.html:38
@@ -2228,14 +2216,6 @@ msgid ""
 "{link_start}{contact_us_email}{link_middle}{contact_us_email}{link_end}"
 msgstr ""
 "{link_start}{contact_us_email}{link_middle}{contact_us_email} {link_end}"
-
-#: apps/course_metadata/templates/course_metadata/email/go_live.txt:11
-msgid ""
-"Note: This is a no-reply email. For any questions or comments, please "
-"contact your Project Coordinator at"
-msgstr ""
-"ملاحظة: هذه رسالة بريد إلكتروني غير قابلة للرد. لأي استفسارات أو تعليقات، "
-"يرجى التواصل مع منسق مشروعك على"
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.html:9
 #: apps/course_metadata/templates/course_metadata/email/internal_review.txt:3

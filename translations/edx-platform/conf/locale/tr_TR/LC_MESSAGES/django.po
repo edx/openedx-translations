@@ -1,19 +1,47 @@
-#
+# #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
+# edX translation file.
+# Copyright (C) 2025 EdX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2025.
+# 
+# #-#-#-#-#  wiki.po (0.1a)  #-#-#-#-#
+# edX translation file
+# Copyright (C) 2025 edX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2025.
+# 
+# #-#-#-#-#  edx_proctoring_proctortrack.po (0.1a)  #-#-#-#-#
+# edX translation file
+# Copyright (C) 2025 edX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2025.
+# 
+# #-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# 
+# Translators:
+# Ali Işıngör <ali@artistanbul.io>, 2025
+# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
+# Brian Smith, 2025
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2025-09-19 00:44+0000\n"
-"PO-Revision-Date: 2026-06-02 05:55+0000\n"
-"Last-Translator: AI Translation Service, 2026\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: tr_TR\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-09-18 00:40+0000\n"
+"PO-Revision-Date: 2023-11-20 11:35+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
+"Language-Team: Turkish (Turkey) (https://app.transifex.com/open-edx/teams/6205/tr_TR/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.17.0\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: cms/djangoapps/api/v1/serializers/course_runs.py:49
 msgid "Course team user does not exist"
@@ -251,7 +279,7 @@ msgstr "Ünite"
 #: cms/djangoapps/contentstore/helpers.py:220
 #: cms/djangoapps/contentstore/views/component.py:283
 msgid "Problem"
-msgstr "Sorun"
+msgstr "Problem"
 
 #: cms/djangoapps/contentstore/helpers.py:222
 #: cms/djangoapps/contentstore/views/component.py:287
@@ -319,11 +347,6 @@ msgstr "Bileşen Bağlantısı"
 msgid "Component Links"
 msgstr "Bileşen Bağlantıları"
 
-#: cms/djangoapps/contentstore/models.py:184
-msgid "The component must be published to access `published_at`"
-msgstr ""
-"Bileşen, `published_at` alanına erişebilmek için yayınlanmış olmalıdır."
-
 #: cms/djangoapps/contentstore/models.py:321
 msgid ""
 "Upstream block key (e.g. lct:...), this value cannot be null and is useful "
@@ -339,11 +362,6 @@ msgstr "Konteyner Bağlantısı"
 #: cms/djangoapps/contentstore/models.py:329
 msgid "Container Links"
 msgstr "Konteyner Bağlantıları"
-
-#: cms/djangoapps/contentstore/models.py:355
-msgid "The container must be published to access `published_at`"
-msgstr ""
-"Konteyner, `published_at` alanına erişebilmek için yayınlanmış olmalıdır."
 
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: This is listed as the duration for a video that has not
@@ -493,7 +511,7 @@ msgstr "Silinmiş Grup"
 #: cms/djangoapps/contentstore/utils.py:933
 #, python-brace-format
 msgid "{previous_groups}, {current_group}"
-msgstr "Önceki gruplar: {previous_groups}, Şu anki grup: {current_group}"
+msgstr "{previous_groups}, {current_group}"
 
 #: cms/djangoapps/contentstore/utils.py:1096
 #: cms/djangoapps/contentstore/views/block.py:277
@@ -642,7 +660,7 @@ msgstr "Durum"
 #: cms/djangoapps/contentstore/video_storage_handlers.py:566
 #, python-brace-format
 msgid "{course}_video_urls"
-msgstr "{course}_video_url'leri"
+msgstr "{course}_video_urls"
 
 #: cms/djangoapps/contentstore/video_storage_handlers.py:956
 msgid "A non zero positive integer is expected"
@@ -3859,23 +3877,6 @@ msgstr ""
 "            Neredeyse başardın, %(user_name)s!\n"
 "        "
 
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:49
-#, python-format, python-brace-format
-msgid ""
-"\n"
-"                    You set a goal of learning {start_bold}%(days_per_week)s time a week in %(course_name)s{end_bold}. Now it’s up to you to make those goals a reality.\n"
-"                    "
-msgid_plural ""
-"\n"
-"                    You set a goal of learning {start_bold}%(days_per_week)s times a week in %(course_name)s{end_bold}. Now it’s up to you to make those goals a reality.\n"
-"                "
-msgstr[0] ""
-"Haftada {start_bold}%(days_per_week)s kez %(course_name)s kursunda öğrenmeyi"
-" hedeflediniz{end_bold}. Şimdi bu hedefi gerçeğe dönüştürmek size kalmış."
-msgstr[1] ""
-"Haftada {start_bold}%(days_per_week)s kez %(course_name)s kursunda öğrenmeyi"
-" hedeflediniz{end_bold}. Şimdi bu hedefleri gerçeğe dönüştürmek size kalmış."
-
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:79
 msgid ""
 "\n"
@@ -4577,10 +4578,6 @@ msgstr ""
 "Bu ders resmen sona erdikten sonra, sertifikanızla birlikte bir e-posta "
 "bildirimi alacaksınız. "
 
-#: lms/djangoapps/courseware/views/views.py:244
-msgid "Your certificate will be available after the indicated date"
-msgstr "Sertifikanız, belirtilen tarihten sonra erişime açılacaktır."
-
 #: lms/djangoapps/courseware/views/views.py:255
 msgid "Your certificate is available"
 msgstr "Sertifikanız hazır"
@@ -5144,10 +5141,6 @@ msgstr "Dil"
 msgid "Location"
 msgstr "Yer"
 
-#: lms/djangoapps/instructor/views/api.py:1509
-msgid "Birth Year"
-msgstr "Doğum Yılı"
-
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: This label appears above a dropdown menu used to select
 #. the user's gender.
@@ -5222,11 +5215,6 @@ msgstr "Ülke"
 #: lms/djangoapps/instructor_task/api_helper.py:111
 msgid "enrollment"
 msgstr "kayıtlanma"
-
-#: lms/djangoapps/instructor/views/api.py:1622
-#: lms/djangoapps/instructor_task/api_helper.py:117
-msgid "inactive enrollment"
-msgstr "Pasif kayıt"
 
 #: lms/djangoapps/instructor/views/api.py:1652
 msgid "The file must contain a 'cohort' column containing cohort names."
@@ -5420,19 +5408,6 @@ msgstr "puanlama"
 #: lms/djangoapps/instructor_task/api_helper.py:108
 msgid "problem grade"
 msgstr "problem notu"
-
-#: lms/djangoapps/instructor/views/api.py:3204
-msgid "All fields must be filled out"
-msgstr "Tüm alanların doldurulması gerekir"
-
-#: lms/djangoapps/instructor/views/api.py:3210
-#, python-brace-format
-msgid "Could not find student matching identifier: {student}"
-msgstr "Tanımlayıcıya uyan öğrenci bulunamadı: {student}"
-
-#: lms/djangoapps/instructor/views/api.py:3219
-msgid "The extension due date and time format is incorrect"
-msgstr "Uzatma teslim tarihi ve saat biçimi hatalı"
 
 #: lms/djangoapps/instructor/views/api.py:3230
 #, python-brace-format
@@ -5752,14 +5727,6 @@ msgstr "Problemin tüm öğrenciler için sıfırlanması isteniyor mu?"
 msgid "unique student identifier."
 msgstr "benzersiz öğrenci tanımlayıcısı."
 
-#: lms/djangoapps/instructor/views/serializer.py:496
-msgid "Whether to reset for all students."
-msgstr "Tüm öğrenciler için sıfırlanıp sıfırlanmayacağı"
-
-#: lms/djangoapps/instructor/views/serializer.py:501
-msgid "Whether to delete entrance exam state for the student."
-msgstr "Öğrenci için giriş sınavı durumunun silinip silinmeyeceği"
-
 #: lms/djangoapps/instructor/views/serializer.py:535
 msgid "all_students and unique_student_identifier are mutually exclusive."
 msgstr "tüm_öğrenciler ve benzersiz_öğrenci_tanımlayıcı birbirini dışlar."
@@ -5768,21 +5735,9 @@ msgstr "tüm_öğrenciler ve benzersiz_öğrenci_tanımlayıcı birbirini dışl
 msgid "all_students and delete_module are mutually exclusive."
 msgstr "tüm_öğrenciler ve modül_sil birbirini dışlar."
 
-#: lms/djangoapps/instructor/views/serializer.py:543
-msgid ""
-"You must provide either unique_student_identifier or set all_students to "
-"True."
-msgstr ""
-"unique_student_identifier sağlanmalı veya all_students True olarak "
-"ayarlanmalıdır"
-
 #: lms/djangoapps/instructor/views/serializer.py:565
 msgid "The URL name of the problem to override the score for."
 msgstr "Sorunun puanını geçersiz kılmak için URL adı."
-
-#: lms/djangoapps/instructor/views/serializer.py:571
-msgid "The overriding score to set."
-msgstr "Ayarlanacak geçersiz kılma skoru"
 
 #: lms/djangoapps/instructor/views/tools.py:79
 #, python-brace-format
@@ -6262,16 +6217,6 @@ msgstr ""
 "için yüklenecektir. Bu yalnızca öğrenci hesaplarını LTI tüketicisine "
 "bağlamak için gereklidir. Daha fazla ayrıntı için Open edX LTI Sağlayıcı "
 "belgelerine bakın."
-
-#: lms/djangoapps/lti_provider/models.py:44
-msgid ""
-"When checked, the platform will automatically use any personal information "
-"provided via LTI to create an account. Otherwise an anonymous account will "
-"be created."
-msgstr ""
-"İşaretlendiğinde, platform LTI üzerinden sağlanan kişisel bilgileri otomatik"
-" olarak kullanarak bir hesap oluşturacaktır. Aksi halde anonim bir hesap "
-"oluşturulacaktır."
 
 #: lms/djangoapps/program_enrollments/models.py:57
 msgid "One of user or external_user_key must not be null."
@@ -7696,7 +7641,7 @@ msgstr "Vikipedi"
 #: lms/templates/wiki/includes/cheatsheet.html:37
 #, python-format
 msgid "%(platform_name)s Wiki"
-msgstr "%(platform_name)s Viki"
+msgstr "%(platform_name)s Wiki"
 
 #: lms/templates/wiki/includes/cheatsheet.html:40
 msgid "Huge Header"
@@ -7897,7 +7842,7 @@ msgstr "LMS Yönetimi"
 
 #: openedx/core/djangoapps/ace_common/apps.py:18
 msgid "ACE Common"
-msgstr "ACE Ortak"
+msgstr "ACE Common"
 
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:97
 #: cms/templates/index.html:335 cms/templates/index.html:337
@@ -8077,7 +8022,7 @@ msgstr "usage_id kimlikli yer imi: {usage_id} mevcut değil."
 #: openedx/core/djangoapps/catalog/models.py:24
 #: openedx/core/djangoapps/video_pipeline/models.py:37
 msgid "Internal API URL"
-msgstr "Dahili API URL"
+msgstr "Internal API URL"
 
 #: openedx/core/djangoapps/catalog/models.py:26
 msgid "DEPRECATED: Use the setting COURSE_CATALOG_API_URL."
@@ -8521,10 +8466,6 @@ msgstr "Dahili Hizmet URL'si"
 msgid "Public Service URL"
 msgstr "Herkese Açık Hizmet URL'si"
 
-#: openedx/core/djangoapps/credentials/models.py:46
-msgid "Enable Learner Issuance"
-msgstr "Öğrenci Sertifika Verimini Etkinleştir"
-
 #: openedx/core/djangoapps/credentials/models.py:49
 msgid "Enable issuance of credentials via Credential Service."
 msgstr ""
@@ -8966,17 +8907,6 @@ msgstr ""
 "<{p}><{strong}>{replier_name}</{strong}> gönderdiğiniz yanıta yorum "
 "yazdı<{strong}>{post_title}</{strong}></{p}>"
 
-#: openedx/core/djangoapps/notifications/base_notification.py:32
-#, python-brace-format
-msgid ""
-"<{p}><{strong}>{replier_name}</{strong}> commented on "
-"<{strong}>{author_name}</{strong}> response to your post "
-"<{strong}>{post_title}</{strong}></{p}>"
-msgstr ""
-"<{p}><{strong}>{replier_name}</{strong}> gönderinize yapılan "
-"<{strong}>{author_name}</{strong}> yanıtına yorum yaptı: "
-"<{strong}>{post_title}</{strong}></{p}>"
-
 #: openedx/core/djangoapps/notifications/base_notification.py:46
 #, python-brace-format
 msgid ""
@@ -8995,15 +8925,6 @@ msgstr ""
 "<{p}><{strong}>{username}</{strong}> gönderdi "
 "<{strong}>{post_title}</{strong}></{p}>"
 
-#: openedx/core/djangoapps/notifications/base_notification.py:66
-#, python-brace-format
-msgid ""
-"<{p}><{strong}>{replier_name}</{strong}> and others started new "
-"discussions</{p}>"
-msgstr ""
-"<{p}><{strong}>{replier_name}</{strong}> ve diğerleri yeni tartışmalar "
-"başlattı</{p}>"
-
 #: openedx/core/djangoapps/notifications/base_notification.py:85
 #, python-brace-format
 msgid ""
@@ -9013,91 +8934,10 @@ msgstr ""
 "<{p}><{strong}>{username}</{strong}> sordu "
 "<{strong}>{post_title}</{strong}></{p}>"
 
-#: openedx/core/djangoapps/notifications/base_notification.py:99
-#, python-brace-format
-msgid ""
-"<{p}><{strong}>{replier_name}</{strong}> responded to a post you’re "
-"following: <{strong}>{post_title}</{strong}></{p}>"
-msgstr ""
-"<{p}><{strong}>{replier_name}</{strong}> takip ettiğiniz bir gönderiye yanıt"
-" verdi: <{strong}>{post_title}</{strong}></{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:114
-#, python-brace-format
-msgid ""
-"<{p}><{strong}>{replier_name}</{strong}> commented on "
-"<{strong}>{author_name}</{strong}> response in a post you’re following "
-"<{strong}>{post_title}</{strong}></{p}>"
-msgstr ""
-"<{p}><{strong}>{replier_name}</{strong}>, takip ettiğiniz gönderide "
-"<{strong}>{author_name}</{strong}> yanıtına yorum yaptı: "
-"<{strong}>{post_title}</{strong}></{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:135
-#, python-brace-format
-msgid ""
-"<p><strong>{username}’s </strong> {content_type} has been reported <strong> "
-"{content}</strong></p>"
-msgstr ""
-"<p><strong>{username}’in </strong> {content_type} bildirildi "
-"<strong>{content}</strong></p>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:152
-#, python-brace-format
-msgid ""
-"<{p}><{strong}>{replier_name}'s</{strong}> response has been endorsed in "
-"your post <{strong}>{post_title}</{strong}></{p}>"
-msgstr ""
-"<{p}><{strong}>{replier_name}'in</{strong}> yanıtı, gönderinizde onaylandı "
-"<{strong}>{post_title}</{strong}></{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:167
-#, python-brace-format
-msgid ""
-"<{p}>Your response has been endorsed on the post "
-"<{strong}>{post_title}</{strong}></{p}>"
-msgstr ""
-"<{p}>Gönderinizde yanıtınız onaylandı "
-"<{strong}>{post_title}</{strong}></{p}>"
-
 #: openedx/core/djangoapps/notifications/base_notification.py:185
 #, python-brace-format
 msgid "<{p}><{strong}>{course_update_content}</{strong}></{p}>"
 msgstr "<{p}><{strong}>{course_update_content}</{strong}></{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:202
-#, python-brace-format
-msgid ""
-"<{p}>You have a new open response submission awaiting review for "
-"<{strong}>{ora_name}</{strong}></{p}>"
-msgstr ""
-"<{p}>Değerlendirme bekleyen yeni bir açık yanıt gönderimi var: "
-"<{strong}>{ora_name}</{strong}></{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:204
-#, python-brace-format
-msgid ""
-"<{p}>You have multiple submissions awaiting review for "
-"<{strong}>{ora_name}</{strong}></{p}>"
-msgstr ""
-"<{p}>Değerlendirme bekleyen birden fazla gönderiminiz var: "
-"<{strong}>{ora_name}</{strong}></{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:223
-#, python-brace-format
-msgid ""
-"<{p}>You have received {points_earned} out of {points_possible} on your "
-"assessment: <{strong}>{ora_name}</{strong}></{p}>"
-msgstr ""
-"<{p}>Değerlendirmenizde <{strong}>{ora_name}</{strong}> için, mümkün olan "
-"{points_possible} puandan {points_earned} puan aldınız</{p}>"
-
-#: openedx/core/djangoapps/notifications/base_notification.py:243
-#, python-brace-format
-msgid "<{p}>Your instructor posted <{strong}>{post_title}</{strong}></{p}>"
-msgstr ""
-"<{p}>Öğretmeniniz <{strong}>{post_title}</{strong}> gönderisini "
-"paylaştı</{p}>"
 
 #: openedx/core/djangoapps/notifications/base_notification.py:256
 msgid ""
@@ -9443,15 +9283,6 @@ msgstr "%(filter_title)s İle"
 msgid "Welcome to week %(week_num)s of %(course_name)s!"
 msgstr "%(course_name)s dersinin %(week_num)s. haftasına hoş geldiniz!"
 
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:22
-#, python-format
-msgid ""
-"This is a routed Account Activation email for %(routed_profile_name)s "
-"(%(routed_user_email)s): %(routed_profile_name)s"
-msgstr ""
-"Bu, %(routed_profile_name)s (%(routed_user_email)s) için yönlendirilmiş "
-"Hesap Etkinleştirme e-postasıdır: %(routed_profile_name)s"
-
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:36
 msgid "Welcome to edX. It’s time for your next career move"
 msgstr "edX'e hoş geldiniz. Bir sonraki kariyer hamlenizin zamanı geldi"
@@ -9473,10 +9304,6 @@ msgstr ""
 "Kendi hızınızda ilerleyen derslerle kendi programınıza göre öğrenirsiniz. "
 "Her hafta derse vakit ayırmak ve hedeflerinizi sık sık kontrol etmek, iyi "
 "bir yöntemdir."
-
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:100
-msgid "Your focused attention will pay off in the end! "
-msgstr "Odaklanmış dikkatiniz sonunda meyvesini verecek! "
 
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.txt:4
 #, python-format
@@ -10724,11 +10551,6 @@ msgstr "Alan düzenlenebilir değildir"
 msgid "%(min_score)s is not a valid grade percentage"
 msgstr "%(min_score)s geçerli bir not yüzdesi değil"
 
-#: openedx/core/lib/gating/api.py:186
-#, python-brace-format
-msgid "Gating milestone for {usage_key}"
-msgstr "Gating kilometre taşı {usage_key} için"
-
 #: openedx/core/lib/license/mixin.py:26
 msgid "License"
 msgstr "Lisans"
@@ -10744,10 +10566,6 @@ msgstr ""
 #, python-brace-format
 msgid "Team Group: {team_set_name}"
 msgstr "Takım Grubu: {team_set_name}"
-
-#: openedx/core/lib/teams_config.py:387
-msgid "Partition for segmenting users by team-set"
-msgstr "Takım setine göre kullanıcıları bölümlere ayırmak için bölüm"
 
 #: openedx/features/calendar_sync/ics.py:36
 #, python-brace-format
@@ -10831,11 +10649,6 @@ msgstr ""
 "Bedava Tur Kayıtlanması görünürlüğünün Studio'da bileşen bazında geçersiz "
 "kılınmasına izin verin."
 
-#: openedx/features/content_type_gating/models.py:91
-#: openedx/features/course_duration_limits/models.py:91
-msgid "enabled_as_of must be set when enabled is True"
-msgstr "enabled True olduğunda enabled_as_of ayarlanmalıdır"
-
 #: openedx/features/content_type_gating/partitions.py:70
 msgid "Partition for segmenting users by access to gated content types"
 msgstr ""
@@ -10903,19 +10716,6 @@ msgstr ""
 "{strong_open}Gözlemci Erişimi Sonu "
 "{expiration_date}{strong_close}{line_break}Bu derse erişiminiz, tüm "
 "ilerlemenizle beraber {expiration_date} tarihinde sonlanır."
-
-#: openedx/features/course_duration_limits/access.py:167
-#, python-brace-format
-msgid ""
-"{line_break}Upgrade by {upgrade_deadline} to get unlimited access to the "
-"course as long as it exists on the site. {a_open}Upgrade "
-"now{sronly_span_open} to retain access past "
-"{expiration_date}{span_close}{a_close}"
-msgstr ""
-"{line_break}Sitede mevcut olduğu sürece kursa sınırsız erişim elde etmek "
-"için {upgrade_deadline}'e kadar yükseltme yapın. {a_open}Hemen "
-"yükseltin{sronly_span_open} {expiration_date}'den sonrasına erişimi "
-"sürdürmek için{span_close}{a_close}"
 
 #: openedx/features/course_experience/api/v1/views.py:64
 msgid "'course_key' is required."
@@ -13226,24 +13026,24 @@ msgstr "Oluşturuldu"
 
 #. Translators: "Homework 1 - Unreleased - 0% (?/?)" The section has not been
 #. released for viewing.
-#: xmodule/graders.py:403
+#: xmodule/graders.py:402
 #, python-brace-format
 msgid "{section_type} {index} Unreleased - 0% (?/?)"
 msgstr "{section_type} {index} Yayınlanmamış - %0 (?/?)"
 
-#: xmodule/graders.py:417
+#: xmodule/graders.py:415
 #, python-brace-format
 msgid "The lowest {drop_count} {section_type} scores are dropped."
 msgstr "En düşük {drop_count} {section_type} not göz ardı edildi."
 
 #. Translators: "Homework Average = 0%"
-#: xmodule/graders.py:436
+#: xmodule/graders.py:433
 #, python-brace-format
 msgid "{section_type} Average = {percent:.2%}"
 msgstr "{section_type} Ortalama = {percent:.2%}"
 
 #. Translators: Avg is short for Average
-#: xmodule/graders.py:441
+#: xmodule/graders.py:438
 #, python-brace-format
 msgid "{short_label} Avg"
 msgstr "{short_label} Ort."
@@ -13261,10 +13061,6 @@ msgstr ""
 #: xmodule/html_block.py:447
 msgid "Html contents to display for this block"
 msgstr "Bu block için gösterilecek Html içerikleri"
-
-#: xmodule/html_block.py:65
-msgid "Upstream html contents to store upstream data field"
-msgstr "Upstream veri alanını saklamak için upstream HTML içeriği"
 
 #: xmodule/html_block.py:72
 msgid "Source code for LaTeX documents. This feature is not well-supported."
@@ -14144,10 +13940,6 @@ msgstr ""
 #: xmodule/split_test_block.py:98
 msgid "Group Configuration"
 msgstr "Grup Yapılandırma"
-
-#: xmodule/split_test_block.py:109
-msgid "Which child block students in a particular group_id should see"
-msgstr "Belirli bir group_id'deki öğrenciler hangi çocuk bloğunu görmeli?"
 
 #: xmodule/split_test_block.py:295
 #, python-brace-format
@@ -15708,15 +15500,6 @@ msgstr "madde,maddeler"
 #: wiki/templates/wiki/dir.html:40
 msgid "matches,match"
 msgstr "eşleşenler,eşleşen"
-
-#: wiki/templates/wiki/dir.html:42
-#, python-format
-msgid "%(cnt)s %(articles_plur)s in this level %(match_plur)s your search."
-msgstr "Bu seviyede, aramanızla %(match_plur)s %(cnt)s %(articles_plur)s var."
-
-#: wiki/templates/wiki/dir.html:44
-msgid "is,are"
-msgstr "vardır"
 
 #: wiki/templates/wiki/dir.html:46
 #, python-format
@@ -18326,25 +18109,6 @@ msgstr ""
 "dizinlerinizi kontrol edin. Hala e-posta doğrulamasını bulamadınız mı? "
 "Aşağıdaki bağlantıdan yardım isteyin."
 
-#: cms/templates/library-block-author-preview-header.html:8
-#, python-brace-format
-msgid ""
-"Showing all matching content eligible to be added into {display_name}. Each "
-"student will be assigned {max_count} component drawn randomly from this "
-"list."
-msgid_plural ""
-"Showing all matching content eligible to be added into {display_name}. Each "
-"student will be assigned {max_count} components drawn randomly from this "
-"list."
-msgstr[0] ""
-"Eklenecek {display_name} için uygun olan tüm eşleşen içerikler gösteriliyor."
-" Her öğrenciye, bu listeden rastgele seçilen {max_count} bileşen "
-"atanacaktır."
-msgstr[1] ""
-"Eklenecek {display_name} için uygun olan tüm eşleşen içerikler gösteriliyor."
-" Her öğrenciye, bu listeden rastgele seçilen {max_count} bileşenler "
-"atanacaktır."
-
 #: cms/templates/library.html:49
 msgid "Content Library"
 msgstr "İçerik Kütüphanesi"
@@ -19399,10 +19163,6 @@ msgstr ""
 "Bir kütüphaneden alınmış - ancak yerel olarak değiştirilmiş. Bir "
 "kütüphaneden alınmış."
 
-#: cms/templates/studio_xblock_wrapper.html:127
-msgid "Sourced from a library - but has been modified locally."
-msgstr "Bir kütüphaneden alınmış - ancak yerel olarak değiştirilmiştir."
-
 #: cms/templates/studio_xblock_wrapper.html:129
 msgid "Sourced from a library."
 msgstr "Bir kütüphaneden alınmıştır."
@@ -19655,15 +19415,6 @@ msgstr ""
 "{task_name} göreviniz '{task_status}' durumuyla tamamlandı. Görevinizin "
 "ayrıntılarını görmek veya oluşturulan dosyaları indirmek için lütfen bu "
 "bağlantıyı kullanın: {detail_url}"
-
-#: cms/templates/emails/user_task_complete_email.txt:8
-#, python-brace-format
-msgid ""
-"Your {task_name} task has completed with the status '{task_status}'. Sign in"
-" to view the details of your task."
-msgstr ""
-"Göreviniz {task_name} '{task_status}' durumu ile tamamlandı. Görevinizin "
-"ayrıntılarını görmek için oturum açın."
 
 #: cms/templates/emails/user_task_complete_email.txt:12
 #, python-brace-format
@@ -21814,77 +21565,6 @@ msgstr ""
 "BU TÜR ZIMNİ GARANTİLER GEÇERLİ YASALAR KAPSAMINDA REDDEDİLMEDİĞİ KADAR "
 "DIŞINDA."
 
-#: lms/templates/api_admin/terms_of_service.html:82
-#, python-brace-format
-msgid ""
-"{platform_name} AND THE {platform_name} PARTICIPANTS DO NOT WARRANT THAT THE"
-" APIS WILL OPERATE IN AN UNINTERRUPTED OR ERROR-FREE MANNER, THAT THE APIS "
-"ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS, OR THAT THE APIS OR API "
-"CONTENT PROVIDED WILL MEET YOUR NEEDS OR EXPECTATIONS. {platform_name} AND "
-"THE {platform_name} PARTICIPANTS ALSO MAKE NO WARRANTY ABOUT THE ACCURACY, "
-"COMPLETENESS, TIMELINESS, OR QUALITY OF THE APIS OR ANY API CONTENT, OR THAT"
-" ANY PARTICULAR API CONTENT WILL CONTINUE TO BE MADE AVAILABLE."
-msgstr ""
-"{platform_name} VE {platform_name} KATILIMCILARI, API'LERİN kesintisiz veya "
-"hatasız çalışacağını, API'lerin virüs veya diğer zararlı bileşenlerden "
-"arınmış olduğunu ve sağlanan API veya API içeriğinin ihtiyaçlarınızı ya da "
-"beklentilerinizi karşılayacağını garanti etmezler. {platform_name} VE "
-"{platform_name} KATILIMCILARI, ayrıca API'LERİN veya herhangi bir API "
-"içeriğinin doğruluğu, bütünlüğü, güncelliği veya kalitesi hakkında da "
-"herhangi bir garanti vermezler ve belirli bir API içeriğinin erişilebilir "
-"olmaya devam edeceğini de taahhüt etmezler."
-
-#: lms/templates/api_admin/terms_of_service.html:84
-#, python-brace-format
-msgid ""
-"USE OF THE APIS, AND THE API CONTENT AND ANY SERVICES OBTAINED FROM OR "
-"THROUGH THE APIS, IS AT YOUR OWN RISK. YOUR ACCESS TO OR DOWNLOAD OF "
-"INFORMATION, MATERIALS OR DATA THROUGH THE APIS IS AT YOUR OWN DISCRETION "
-"AND RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR PROPERTY"
-" (INCLUDING YOUR COMPUTER SYSTEM) OR LOSS OF DATA THAT RESULTS FROM THE "
-"DOWNLOAD OR USE OF SUCH INFORMATION, MATERIALS OR DATA, UNLESS OTHERWISE "
-"EXPRESSLY PROVIDED FOR IN THE {platform_name} PRIVACY POLICY."
-msgstr ""
-"API'LERİN, API İÇERİĞİNİN ve API'LER aracılığıyla temin edilen hizmetlerin "
-"kullanımı tamamen kendi riskiniz altındadır. API'ler aracılığıyla bilgi, "
-"materyal veya veriye erişiminiz ya da bunların indirilmesi de kendi "
-"takdiriniz ve riskinizdedir; aksi {platform_name} GİZLİLİK POLİTİKASI'nda "
-"açıkça belirtilmedikçe, bu bilgilerin, materyallerin veya verilerin "
-"indirilmesi ya da kullanılması sonucunda mülkünüze (bilgisayar sisteminiz "
-"dahil) verilebilecek herhangi bir zarar veya veri kaybından yalnızca siz "
-"sorumlu olacaksınız."
-
-#: lms/templates/api_admin/terms_of_service.html:86
-#, python-brace-format
-msgid ""
-"TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, YOU AGREE THAT NEITHER "
-"{platform_name} NOR ANY OF THE {platform_name} PARTICIPANTS WILL BE LIABLE "
-"TO YOU FOR ANY LOSS OR DAMAGES, EITHER ACTUAL OR CONSEQUENTIAL, ARISING OUT "
-"OF OR RELATING TO THE TERMS, OR YOUR (OR ANY THIRD PARTY'S) USE OF OR "
-"INABILITY TO USE THE APIS OR ANY API CONTENT, OR YOUR RELIANCE UPON "
-"INFORMATION OBTAINED FROM OR THROUGH THE APIS, WHETHER YOUR CLAIM IS BASED "
-"IN CONTRACT, TORT, STATUTORY OR OTHER LAW."
-msgstr ""
-"İlgili yasanın izin verdiği en geniş ölçüde, {platform_name} veya "
-"{platform_name} KATILIMCILARI'nın, ŞARTLAR'dan veya sizin (ya da üçüncü "
-"tarafların) API'leri veya herhangi bir API içeriğini kullanmanız ya da "
-"kullanamamanızdan ya da API'lerden ya da bu yolla elde edilen bilgilere "
-"dayanmanızdan kaynaklanan gerçek veya dolaylı zarar veya kayıplardan ötürü "
-"size karşı sorumlu tutulamayacağını kabul ediyorsunuz."
-
-#: lms/templates/api_admin/terms_of_service.html:88
-#, python-brace-format
-msgid ""
-"IN PARTICULAR, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, NEITHER "
-"{platform_name} NOR ANY OF THE {platform_name} PARTICIPANTS WILL HAVE ANY "
-"LIABILITY FOR ANY CONSEQUENTIAL, INDIRECT, PUNITIVE, SPECIAL, EXEMPLARY OR "
-"INCIDENTAL DAMAGES, WHETHER FORESEEABLE OR UNFORESEEABLE AND WHETHER OR NOT "
-"{platform_name} OR ANY OF THE {platform_name} PARTICIPANTS HAS BEEN "
-"NEGLIGENT OR OTHERWISE AT FAULT (INCLUDING, BUT NOT LIMITED TO, CLAIMS FOR "
-"DEFAMATION, ERRORS, LOSS OF PROFITS, LOSS OF DATA OR INTERRUPTION IN "
-"AVAILABILITY OF DATA)."
-msgstr ""
-
 #: lms/templates/api_admin/terms_of_service.html:90
 msgid ""
 "CERTAIN STATE LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE "
@@ -21917,32 +21597,6 @@ msgstr ""
 "rutin olarak taramaz, onaylamaz, incelemez veya desteklemez. Bağlantılı "
 "üçüncü taraf web sitelerine erişmeye karar verirseniz, bunun riski size "
 "aittir."
-
-#: lms/templates/api_admin/terms_of_service.html:96
-#, python-brace-format
-msgid ""
-"To the maximum extent permitted by applicable law, you agree to defend, hold"
-" harmless and indemnify {platform_name} and the {platform_name} "
-"Participants, and their respective subsidiaries, affiliates, officers, "
-"faculty, students, fellows, governing board members, agents and employees "
-"from and against any third-party claims, actions or demands arising out of, "
-"resulting from or in any way related to your use of the APIs and any API "
-"Content, including any liability or expense arising from any and all claims,"
-" losses, damages (actual and consequential), suits, judgments, litigation "
-"costs and attorneys' fees, of every kind and nature. In such a case, "
-"{platform_name} or one of the {platform_name} Participants will provide you "
-"with written notice of such claim, action or demand."
-msgstr ""
-"İlgili yasanın izin verdiği en geniş ölçüde, {platform_name} ve "
-"{platform_name} katılımcıları ile onların bağlı kuruluşları, yan "
-"kuruluşları, yöneticileri, fakülteleri, öğrencileri, bursiyerleri, yönetim "
-"kurulu üyeleri, temsilcileri ve çalışanlarını, API'leri ve herhangi bir API "
-"içeriğini kullanmanızdan kaynaklanan, bunun sonucunda ortaya çıkan veya buna"
-" ilişkin herhangi bir üçüncü taraf iddiası, işlemi veya talebine karşı "
-"savunmayı, zarar görmeyi önlemeyi ve tazmin etmeyi kabul ediyorsunuz. Böyle "
-"bir durumda, {platform_name} veya {platform_name} katılımcılarından biri, "
-"söz konusu iddia, işlem veya talep hakkında size yazılı bildirimde "
-"bulunacaktır."
 
 #: lms/templates/api_admin/terms_of_service.html:98
 msgid "General Legal Terms"
@@ -21979,34 +21633,6 @@ msgstr ""
 "ortak girişim oluşturmaz. Bu Şartlar kapsamında {platform_name} tarafından "
 "size sağlanan herhangi bir bildirim için {platform_name}, {platform_name} "
 "hesabınızla ilişkili e-posta adresi aracılığıyla sizi bilgilendirebilir."
-
-#: lms/templates/api_admin/terms_of_service.html:102
-#, python-brace-format
-msgid ""
-"You agree that the Terms, the APIs, and any claim or dispute arising out of "
-"or relating to the Terms or the APIs will be governed by the laws of the "
-"Commonwealth of Massachusetts, excluding its conflicts of law provisions. "
-"You agree that all such claims and disputes will be heard and resolved "
-"exclusively in the federal or state courts located in and serving Cambridge,"
-" Massachusetts, U.S.A. You consent to the personal jurisdiction of those "
-"courts over you for this purpose, and you waive and agree not to assert any "
-"objection to such proceedings in those courts (including any defense or "
-"objection of lack of proper jurisdiction or venue or inconvenience of "
-"forum). Notwithstanding the foregoing, you agree that {platform_name} shall "
-"still be allowed to apply for injunctive remedies (or an equivalent type of "
-"urgent legal relief) in any jurisdiction."
-msgstr ""
-"Şartların, API'lerin ve Şartlar ya da API'lerle ilgili ortaya çıkan herhangi"
-" bir iddia veya anlaşmazlığın, Massachusetts Eyaleti kanunları (hukuk "
-"çakışması hükümleri hariç) tarafından yönetileceğini kabul ediyorsunuz. Tüm "
-"bu iddia ve anlaşmazlıkların yalnızca Massachusetts, Cambridge'de bulunan ve"
-" hizmet veren federal veya eyalet mahkemelerinde görüleceğini kabul ediyor, "
-"bu mahkemelerin şahsi yargı yetkisini de kabul ederken, bu mahkemelerdeki "
-"işlemlere (yeterli yargı yetkisi, uygun yargı yeri veya forum zorluğu "
-"itirazları dahil) itiraz etmeyeceğinizi beyan ediyorsunuz. Buna rağmen, "
-"{platform_name}'in herhangi bir yargı alanında ihtiyati tedbirler (veya "
-"eşdeğer acil yasal çare) başvurusunda bulunmasına izin verileceğini de kabul"
-" ediyorsunuz."
 
 #: lms/templates/api_admin/terms_of_service.html:104
 msgid "Termination"
@@ -22045,35 +21671,6 @@ msgstr ""
 "veya ilgili hizmetlere dair, ne {platform_name} platformunun ne de "
 "{platform_name} Katılımcılarından herhangi birinin bu tür bir eylem için "
 "size karşı herhangi bir yükümlülüğü olmayacağını baştan kabul edersiniz."
-
-#: lms/templates/api_admin/terms_of_service.html:110
-#, python-brace-format
-msgid ""
-"Upon any termination of the Terms or discontinuation of your access to an "
-"API for any reason, your right to use any API and API Content will "
-"immediately cease. You will immediately stop using the APIs and delete any "
-"cached or stored API Content from Your Application and your networks, "
-"systems and servers as soon as reasonably possible. All provisions of the "
-"Terms that by their nature should survive termination shall survive "
-"termination, including, without limitation, ownership provisions, warranty "
-"disclaimers, and limitations of liability. Termination of your access to and"
-" use of the APIs and API Content shall not relieve you of any obligations "
-"arising or accruing prior to such termination or limit any liability that "
-"you otherwise may have to {platform_name}, including without limitation any "
-"indemnification obligations contained herein."
-msgstr ""
-"Şartların sona erdirilmesi veya herhangi bir nedenle API erişiminizin "
-"kesilmesi durumunda, API ve API içeriğini kullanma hakkınız derhal sona "
-"erecektir. API'leri kullanmayı hemen bırakmalı ve mümkün olan en kısa sürede"
-" Uygulamanızdan ve ağlarınızdan, sistemlerinizden ve sunucularınızdan "
-"önbelleğe alınmış veya depolanmış API içeriğini silmelisiniz. Doğası gereği "
-"sona erme sonrası devam etmesi gereken tüm Şart maddeleri (mülkiyet "
-"hükümleri, garanti reddetmeleri ve sorumluluk sınırlamaları dahil) "
-"yürürlükte kalacaktır. API'lere ve API içeriğine erişiminizin ve "
-"kullanımınızın sona erdirilmesi, bu sona ermeden önce doğan "
-"yükümlülüklerinizi ortadan kaldırmaz veya {platform_name}'e karşı sahip "
-"olabileceğiniz herhangi bir sorumluluğu (bundan kaynaklanan tazminat "
-"yükümlülükleri dahil) sınırlandırmaz."
 
 #: lms/templates/api_admin/catalogs/edit.html:12
 #, python-brace-format
@@ -22172,17 +21769,6 @@ msgid ""
 msgstr ""
 "Ok tuşlarını kullanarak ipuçlarında gezinebilir ve tab düğmesiyle hesap "
 "makinesine dönebilirsiniz"
-
-#: lms/templates/calculator/toggle_calculator.html:27
-#, python-brace-format
-msgid ""
-"For detailed information, see {math_link_start}Entering Mathematical and "
-"Scientific Expressions{math_link_end} in the {guide_link_start}Open edX "
-"Guide for Students{guide_link_end}."
-msgstr ""
-"Detaylı bilgi için, {math_link_start}Matematiksel ve Bilimsel İfadelerin "
-"Girilmesi{math_link_end} bölümüne, {guide_link_start}Open edX Öğrenciler "
-"Kılavuzu'nda{guide_link_end} bakınız."
 
 #: lms/templates/calculator/toggle_calculator.html:36
 msgid "Tips"
@@ -23175,7 +22761,7 @@ msgstr "Ders kredisi gereklilikleri hakkındaki bilgiler"
 
 #: lms/templates/courseware/progress.html:127
 msgid "display_name"
-msgstr "görünen ad"
+msgstr "display_name"
 
 #: lms/templates/courseware/progress.html:135
 msgid "Verification Submitted"
@@ -24889,19 +24475,6 @@ msgstr ""
 msgid "Download a CSV of learners who can enroll"
 msgstr "Kayıt olabilecek öğrencilerin CSV dosyasını indir"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:40
-msgid ""
-"Click to generate a CSV file that lists learners who are enrolled in the "
-"course but have not yet activated their account."
-msgstr ""
-"Kursa kayıtlı ancak henüz hesaplarını etkinleştirmemiş öğrencileri "
-"listeleyen bir CSV dosyası oluşturmak için tıklayın."
-
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:42
-msgid "Download a CSV of learners who have not activated their account"
-msgstr ""
-"Hesaplarını henüz etkinleştirmemiş öğrencilerin CSV dosyasını indirin."
-
 #: lms/templates/instructor/instructor_dashboard_2/data_download.html:44
 msgid "Click to download a CSV of anonymized student IDs:"
 msgstr ""
@@ -25494,20 +25067,6 @@ msgstr ""
 "eklemeniz için size yönetici rolü veya tartışma moderatörü ve asistan "
 "eklemek için Tartışma Yöneticisi rolü vermesi gerekir."
 
-#: lms/templates/instructor/instructor_dashboard_2/membership.html:172
-msgid ""
-"Course team members with the Staff role help you manage your course. Staff "
-"can enroll and unenroll learners, as well as modify their grades and access "
-"all course data. Staff also have access to your course in Studio and "
-"Insights. Any users not yet enrolled in the course will be automatically "
-"enrolled when added as Staff."
-msgstr ""
-"Kurs ekibindeki Staff rolüne sahip üyeler, kursunuzu yönetmenize yardımcı "
-"olur. Staff, öğrencileri kaydedip kayıttan çıkarabilir, ayrıca notlarını "
-"değiştirebilir ve tüm kurs verilerine erişebilir. Staff, kursunuza Studio ve"
-" Insights üzerinden de erişim sağlar. Kursa henüz kayıtlı olmayan "
-"kullanıcılar, Staff olarak eklendiklerinde otomatik olarak kaydedilecektir."
-
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:179
 msgid "Add Staff"
 msgstr "Personel Ekle"
@@ -25515,21 +25074,6 @@ msgstr "Personel Ekle"
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:184
 msgid "Limited Staff"
 msgstr "Sınırlı Personel"
-
-#: lms/templates/instructor/instructor_dashboard_2/membership.html:186
-msgid ""
-"Course team members with the Limited Staff role help you manage your course."
-" Limited Staff can enroll and unenroll learners, as well as modify their "
-"grades and access all course data. Limited Staff don't have access to your "
-"course in Studio. Any users not yet enrolled in the course will be "
-"automatically enrolled when added as Limited Staff."
-msgstr ""
-"Kurs ekibindeki Limited Staff rolüne sahip üyeler, kursunuzu yönetmenize "
-"yardımcı olur. Limited Staff, öğrencileri kaydedip kayıttan çıkarabilir, "
-"ayrıca notlarını değiştirebilir ve tüm kurs verilerine erişebilir. Limited "
-"Staff'ın Studio üzerinden kursunuza erişimi yoktur. Kursa henüz kayıtlı "
-"olmayan kullanıcılar, Limited Staff olarak eklendiklerinde otomatik olarak "
-"kaydedilecektir."
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:193
 msgid "Add Limited Staff"
@@ -25563,18 +25107,6 @@ msgstr "Yönetici Ekle"
 msgid "Beta Testers"
 msgstr "Beta Sınayıcılar"
 
-#: lms/templates/instructor/instructor_dashboard_2/membership.html:216
-msgid ""
-"Beta Testers can see course content before other learners. They can make "
-"sure that the content works, but have no additional privileges. Any users "
-"not yet enrolled in the course will be automatically enrolled when added as "
-"Beta Tester."
-msgstr ""
-"Beta Test kullanıcıları, diğer öğrencilerden önce kurs içeriğini görebilir. "
-"İçeriğin düzgün çalıştığından emin olabilirler, ancak başka ayrıcalıklara "
-"sahip değillerdir. Kursa henüz kayıtlı olmayan kullanıcılar, Beta Tester "
-"olarak eklendiklerinde otomatik olarak kaydedilecektir."
-
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:222
 msgid "Add Beta Tester"
 msgstr "Beta Sınayıcısı Ekle"
@@ -25582,23 +25114,6 @@ msgstr "Beta Sınayıcısı Ekle"
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:227
 msgid "Discussion Admins"
 msgstr "Tartışma Yöneticileri"
-
-#: lms/templates/instructor/instructor_dashboard_2/membership.html:229
-msgid ""
-"Discussion Admins can edit or delete any post, clear misuse flags, close and"
-" re-open threads, endorse responses, and see posts from all groups. Their "
-"posts are marked as 'staff'. They can also add and remove the discussion "
-"moderation roles to manage course team membership. Any users not yet "
-"enrolled in the course will be automatically enrolled when added as "
-"Discussion Admin"
-msgstr ""
-"Tartışma Yöneticileri, herhangi bir yayını düzenleyip silebilir, yanlış "
-"kullanım bayraklarını temizleyebilir, konuları kapatıp yeniden açabilir, "
-"yanıtları onaylayabilir ve tüm gruplardan gönderileri görebilir. Gönderileri"
-" 'staff' olarak işaretlenir. Ayrıca kurs ekibi üyeliğini yönetmek için "
-"tartışma moderasyon rollerini ekleyip kaldırabilirler. Kursa henüz kayıtlı "
-"olmayan kullanıcılar, Discussion Admin olarak eklendiklerinde otomatik "
-"olarak kaydedilecektir."
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:237
 msgid "Add Discussion Admin"
@@ -25626,23 +25141,6 @@ msgstr "Ders Veri Araştırmacısı Ekle"
 msgid "Discussion Moderators"
 msgstr "Tartışma Moderatörleri"
 
-#: lms/templates/instructor/instructor_dashboard_2/membership.html:258
-msgid ""
-"Discussion Moderators can edit or delete any post, clear misuse flags, close"
-" and re-open threads, endorse responses, and see posts from all groups. "
-"Their posts are marked as 'staff'. They cannot manage course team membership"
-" by adding or removing discussion moderation roles. Any users not yet "
-"enrolled in the course will be automatically enrolled when added as "
-"Discussion Moderator"
-msgstr ""
-"Tartışma Moderatörleri, herhangi bir yayını düzenleyip silebilir, yanlış "
-"kullanım bayraklarını temizleyebilir, konuları kapatıp yeniden açabilir, "
-"yanıtları onaylayabilir ve tüm gruplardan gönderileri görebilir. Gönderileri"
-" 'staff' olarak işaretlenir. Tartışma moderasyon rollerini ekleyip "
-"kaldırarak kurs ekibi üyeliğini yönetemezler. Kursa henüz kayıtlı olmayan "
-"kullanıcılar, Discussion Moderator olarak eklendiklerinde otomatik olarak "
-"kaydedilecektir."
-
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:265
 msgid "Add Moderator"
 msgstr "Moderatör Ekle"
@@ -25651,45 +25149,9 @@ msgstr "Moderatör Ekle"
 msgid "Group Community TA"
 msgstr "Grup Topluluk Öğretim Elemanı"
 
-#: lms/templates/instructor/instructor_dashboard_2/membership.html:272
-msgid ""
-"Group Community TAs are members of the community who help course teams "
-"moderate discussions. Group Community TAs see only posts by learners in "
-"their assigned group. They can edit or delete posts, clear flags, close and "
-"re-open threads, and endorse responses, but only for posts by learners in "
-"their group. Their posts are marked as 'Community TA'. Any users not yet "
-"enrolled in the course will be automatically enrolled when added as Group "
-"Community TA"
-msgstr ""
-"Grup Community TA'ları, kurs ekiplerine tartışmaları moderatörlük etmede "
-"yardımcı olan topluluk üyeleridir. Grup Community TA'ları, yalnızca "
-"atandıkları gruptaki öğrencilerin gönderilerini görür. Kendi gruplarındaki "
-"öğrencilerin gönderileri için, gönderileri düzenleyip silebilir, bayrakları "
-"temizleyebilir, konuları kapatıp yeniden açabilir ve yanıtları "
-"onaylayabilirler. Gönderileri 'Community TA' olarak işaretlenir. Kursa henüz"
-" kayıtlı olmayan kullanıcılar, Group Community TA olarak eklendiklerinde "
-"otomatik olarak kaydedilecektir."
-
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:279
 msgid "Add Group Community TA"
 msgstr "Grup Topluluk Öğretim Elemanı Ekle"
-
-#: lms/templates/instructor/instructor_dashboard_2/membership.html:286
-msgid ""
-"Community TAs are members of the community who help course teams moderate "
-"discussions. They can see posts by learners in their assigned cohort or "
-"enrollment track, and can edit or delete posts, clear flags, close or re-"
-"open threads, and endorse responses. Their posts are marked as 'Community "
-"TA'. Any users not yet enrolled in the course will be automatically enrolled"
-" when added as Community TA"
-msgstr ""
-"Community TA'ları, kurs ekiplerine tartışmaları moderatörlük etmede yardımcı"
-" olan topluluk üyeleridir. Atandıkları kohort veya kayıt yolundaki "
-"öğrencilerin gönderilerini görebilir, gönderileri düzenleyip silebilir, "
-"bayrakları temizleyebilir, konuları kapatıp yeniden açabilir ve yanıtları "
-"onaylayabilirler. Gönderileri 'Community TA' olarak işaretlenir. Kursa henüz"
-" kayıtlı olmayan kullanıcılar, Community TA olarak eklendiklerinde otomatik "
-"olarak kaydedilecektir."
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:292
 msgid "Add Community TA"
@@ -26213,14 +25675,6 @@ msgstr ""
 "Bu derse kaydolabilecek ama henüz kaydolmayan öğrencileri listeleyen"
 "                          CSV dosyasını oluşturmak için tıklayın."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:102
-msgid ""
-"Click to generate a CSV file                 that lists learners who are "
-"enrolled in the course but have not yet activated their account."
-msgstr ""
-"Henüz hesaplarını etkinleştirmemiş, derse kayıtlı öğrencileri listeleyen bir"
-" CSV dosyası oluşturmak için tıklayın."
-
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:105
 msgid ""
 "Click to generate a CSV file                 of all proctored exam results "
@@ -26657,10 +26111,6 @@ msgstr "Öğrenci Destek: Kayıtlanma"
 #: lms/templates/support/feature_based_enrollments.html:16
 msgid "Student Support: Feature Based Enrollments"
 msgstr "Öğrenci Destek: Bedava Tur Kayıtlanmaları"
-
-#: lms/templates/support/feature_based_enrollments.html:33
-msgid "Content Type Gating"
-msgstr "İçerik Türü Kısıtlaması"
 
 #: lms/templates/support/feature_based_enrollments.html:34
 msgid "Course Duration Limits"
