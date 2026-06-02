@@ -7,52 +7,52 @@ msgstr ""
 "PO-Revision-Date: 2026-06-02 00:05+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: sw\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #: models.py:24
 msgid "Display Name:"
-msgstr "Jina la Onyesho:"
+msgstr "Wyświetlana nazwa:"
 
 #: models.py:28
 msgid "This name appears in the horizontal navigation at the top of the page."
-msgstr "Jina hili linaonekana katika usogezaji mlalo juu ya ukurasa."
+msgstr "Ta nazwa pojawia się w poziomym menu na górze strony."
 
 #: models.py:33
 msgid "Link Text:"
-msgstr "Maandishi ya Kiungo:"
+msgstr "Tekst linku:"
 
 #: models.py:36
 msgid "This is the text that will link to your survey."
-msgstr "Haya ndiyo maandishi yatakayounganishwa na uchunguzi wako."
+msgstr "To jest tekst, który będzie odnośnikiem do Twojej ankiety."
 
 #: models.py:39
 msgid "Message:"
-msgstr "Ujumbe:"
+msgstr "Wiadomość:"
 
 #: models.py:43
 msgid "This is the text that will be displayed above the link to your survey."
 msgstr ""
-"Haya ndiyo maandishi yatakayoonyeshwa juu ya kiungo cha uchunguzi wako."
+"To jest tekst, który zostanie wyświetlony nad linkiem do Twojej ankiety."
 
 #: models.py:48
 msgid "Param Name:"
-msgstr "Jina la Param:"
+msgstr "Nazwa parametru:"
 
 #: models.py:52
 msgid ""
 "This is the name for the User ID parameter in the url. If blank, User ID is "
 "ommitted from the url."
 msgstr ""
-"Hili ni jina la kigezo cha Kitambulisho cha Mtumiaji kwenye url. Ikiwa tupu,"
-" Kitambulisho cha Mtumiaji kitaachwa kwenye url."
+"To jest nazwa parametru identyfikatora użytkownika w adresie URL. Jeśli "
+"puste, identyfikator użytkownika zostanie pominięty w adresie URL."
 
 #: models.py:57
 msgid "Survey ID:"
-msgstr "Kitambulisho cha Utafiti:"
+msgstr "Identyfikator ankiety:"
 
 #: models.py:61
 msgid ""
@@ -60,14 +60,14 @@ msgid ""
 " and letters, and should be entered in the following format: "
 "SV_###############"
 msgstr ""
-"Hiki ndicho kitambulisho ambacho Qualtrics hutumia kwa ajili ya utafiti, "
-"ambacho kinaweza kujumuisha nambari na herufi, na kinapaswa kuandikwa katika"
-" muundo ufuatao: SV_#################"
+"To jest identyfikator używany przez Qualtrics dla ankiety, który może "
+"zawierać cyfry oraz litery i powinien być wprowadzony w następującym "
+"formacie: SV_###############"
 
 #: models.py:67
 msgid "Your University:"
-msgstr "Chuo Kikuu chako:"
+msgstr "Twoja uczelnia:"
 
 #: models.py:70
 msgid "This is the name of your university."
-msgstr "Hili ndilo jina la chuo kikuu chako."
+msgstr "To jest nazwa Twojej uczelni."
