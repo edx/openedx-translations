@@ -1,0 +1,110 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1a\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2023-06-13 08:00+0000\n"
+"PO-Revision-Date: 2026-06-02 00:07+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: sw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/edit.html:8
+msgid "Display Name"
+msgstr "Jina linaloonyeshwa"
+
+#: templates/edit.html:11
+msgid "This name appears in the horizontal navigation at the top of the page"
+msgstr ""
+"Jina hili linaonekana kwenye orodha ya usafirishaji wa mlalo juu ya ukurasa"
+
+#: templates/edit.html:16
+msgid "Weight"
+msgstr "Uzito"
+
+#: templates/edit.html:19
+msgid "This assigns an integer value representing the weight of this problem"
+msgstr ""
+"Hii inaweka thamani ya nambari mzima inayoashiria uzito wa tatizo hili"
+
+#: templates/edit.html:24
+msgid "Max Attempts"
+msgstr "Majaribio ya Kiwango cha juu"
+
+#: templates/edit.html:27
+msgid ""
+"This assigns an integer value representing the maximum number of times a "
+"student can attempt the problem"
+msgstr ""
+"Hii inaweka thamani ya nambari mzima inayoashiria idadi ya juu ya mara "
+"ambayo mwanafunzi anaweza kujaribu tatizo hili"
+
+#: templates/edit.html:32
+msgid "Label for Student Answer"
+msgstr "Lebeli ya Jibu la Mwanafunzi"
+
+#: templates/edit.html:35
+msgid "Label for the text area containing the student's answer"
+msgstr "Lebeli ya eneo la maandishi linalo na jibu la mwanafunzi"
+
+#: templates/edit.html:40
+msgid "Label for Expert Answer"
+msgstr "Lebeli ya Jibu la Mtaalamu"
+
+#: templates/edit.html:43
+msgid "Label for the 'expert' answer"
+msgstr "Lebeli ya jibu la 'mtaalamu'"
+
+#: templates/edit.html:48
+msgid "Label for Submit Button"
+msgstr "Lebeli ya Kitufe cha Kutuma"
+
+#: templates/edit.html:51
+msgid "Label for the submit button"
+msgstr "Lebeli ya kitufe cha kutuma"
+
+#: templates/edit.html:56
+msgid "Definition"
+msgstr "Ufafanuzi"
+
+#: templates/edit.html:57
+msgid "The XML definition for the question and expert answer"
+msgstr "Ufafanuzi wa XML kwa swali na jibu la mtaalamu"
+
+#: templates/edit.html:69
+msgid "Save"
+msgstr "Hifadhi"
+
+#: templates/edit.html:72
+msgid "Cancel"
+msgstr "Ghairi"
+
+#: views.py:223
+#, python-brace-format
+msgid "Hint ({number} of {total}): {hint}"
+msgstr "Kidokezo ({number} ya {total}): {hint}"
+
+#: views.py:244
+#, python-brace-format
+msgid "You have used {count_attempts} of {max_attempts} submission"
+msgid_plural "You have used {count_attempts} of {max_attempts} submissions"
+msgstr[0] "Umetumia {count_attempts} ya {max_attempts} wasilisho"
+msgstr[1] "Umetumia {count_attempts} ya {max_attempts} mawasilisho"
+
+#: views.py:287
+#, python-brace-format
+msgid "{weight} point possible"
+msgid_plural "{weight} points possible"
+msgstr[0] "{weight} nukta inawezekana"
+msgstr[1] "{weight} nukta zinawezekana"
+
+#: views.py:299
+#, python-brace-format
+msgid "/{weight} point"
+msgid_plural "/{weight} points"
+msgstr[0] "/{weight} nukta inawezekana"
+msgstr[1] "/{weight} nukta zinawezekana"

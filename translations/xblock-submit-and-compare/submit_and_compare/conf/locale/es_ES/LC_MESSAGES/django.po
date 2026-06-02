@@ -1,0 +1,111 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1a\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2023-06-13 08:00+0000\n"
+"PO-Revision-Date: 2026-06-02 00:07+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/edit.html:8
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#: templates/edit.html:11
+msgid "This name appears in the horizontal navigation at the top of the page"
+msgstr ""
+"Este nombre aparece en la navegación horizontal en la parte superior de la "
+"página"
+
+#: templates/edit.html:16
+msgid "Weight"
+msgstr "Peso"
+
+#: templates/edit.html:19
+msgid "This assigns an integer value representing the weight of this problem"
+msgstr "Esto asigna un valor entero que representa el peso de este problema"
+
+#: templates/edit.html:24
+msgid "Max Attempts"
+msgstr "Intentos máximos"
+
+#: templates/edit.html:27
+msgid ""
+"This assigns an integer value representing the maximum number of times a "
+"student can attempt the problem"
+msgstr ""
+"Esto asigna un valor entero que representa el número máximo de veces que un "
+"estudiante puede intentar el problema"
+
+#: templates/edit.html:32
+msgid "Label for Student Answer"
+msgstr "Etiqueta para la respuesta del estudiante"
+
+#: templates/edit.html:35
+msgid "Label for the text area containing the student's answer"
+msgstr ""
+"Etiqueta para el área de texto que contiene la respuesta del estudiante"
+
+#: templates/edit.html:40
+msgid "Label for Expert Answer"
+msgstr "Etiqueta para la respuesta del experto"
+
+#: templates/edit.html:43
+msgid "Label for the 'expert' answer"
+msgstr "Etiqueta para la respuesta del 'experto'"
+
+#: templates/edit.html:48
+msgid "Label for Submit Button"
+msgstr "Etiqueta para el botón de envío"
+
+#: templates/edit.html:51
+msgid "Label for the submit button"
+msgstr "Etiqueta para el botón de envío"
+
+#: templates/edit.html:56
+msgid "Definition"
+msgstr "Definición"
+
+#: templates/edit.html:57
+msgid "The XML definition for the question and expert answer"
+msgstr "La definición XML para la pregunta y la respuesta del experto"
+
+#: templates/edit.html:69
+msgid "Save"
+msgstr "Guardar"
+
+#: templates/edit.html:72
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: views.py:223
+#, python-brace-format
+msgid "Hint ({number} of {total}): {hint}"
+msgstr "Pista ({number} de {total}): {hint}"
+
+#: views.py:244
+#, python-brace-format
+msgid "You have used {count_attempts} of {max_attempts} submission"
+msgid_plural "You have used {count_attempts} of {max_attempts} submissions"
+msgstr[0] "Has usado {count_attempts} de {max_attempts} envío"
+msgstr[1] "Has usado {count_attempts} de {max_attempts} envíos"
+
+#: views.py:287
+#, python-brace-format
+msgid "{weight} point possible"
+msgid_plural "{weight} points possible"
+msgstr[0] "{weight} punto posible"
+msgstr[1] "{weight} puntos posibles"
+
+#: views.py:299
+#, python-brace-format
+msgid "/{weight} point"
+msgid_plural "/{weight} points"
+msgstr[0] "/{weight} punto"
+msgstr[1] "/{weight} puntos"
