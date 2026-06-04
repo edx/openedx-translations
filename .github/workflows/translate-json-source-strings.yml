@@ -25,106 +25,35 @@ env:
 
 jobs:
   setup:
-    runs-on: ubuntu-latest
-    outputs:
-      has_javascript_applications: ${{ steps.generate_repo_matrix.outputs.has_javascript_applications }}
-      has_javascript_repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.has_javascript_repos_with_subpackages }}
-      javascript_applications: ${{ steps.generate_repo_matrix.outputs.javascript_applications }}
-      javascript_repos_with_subpackages: ${{ steps.generate_repo_matrix.outputs.javascript_repos_with_subpackages }}
-      translation_languages: ${{ steps.generate_repo_matrix.outputs.translation_languages }}
-    steps:
-      - uses: actions/checkout@v5
-
-      - uses: actions/github-script@v7
-        id: generate_repo_matrix
-        with:
-          script: |
-            const fs = require('fs');
-            const { javascriptApplications: allJavascriptApps, languages } = JSON.parse(
-              fs.readFileSync('.github/translations-config.json', 'utf8')
-            );
-
-            // In order to efficiently query for details about a selected language, we maintain a mapping from edX language codes
-            // to the object that describes the language.
-            const languageMap = languages.reduce((acc, lang) => {
-              acc[lang.edxLang] = lang;
-              return acc;
-            }, {});
-
-            // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
-            // const appInput = core.getInput('application_name');
-            // const languageInput = core.getInput('translation_language');
-
-            const appInput = ${{ toJSON(github.event.inputs.application_name) }} || '';
-            const languageInput = ${{ toJSON(github.event.inputs.translation_language) }} || '';
-            const selectedApp = appInput ? appInput.toLowerCase() : '';
-            const selectedLanguage = languageInput ? languageInput.toLowerCase() : '';
-
-            if (selectedApp !== '' && !Object.keys(allJavascriptApps).includes(selectedApp)) {
-              core.setFailed(`Selected application "${selectedApp}" is not a valid option.`);
-              throw new Error(`Selected application "${selectedApp}" is not a valid option.`);
-            }
-            if (selectedLanguage !== '' && !Object.keys(languageMap).includes(selectedLanguage)) {
-              core.setFailed(`Selected language "${selectedLanguage}" is not a valid option.`);
-              throw new Error(`Selected language "${selectedLanguage}" is not a valid option.`);
-            }
-
-            const javascriptRepos = Object.entries(allJavascriptApps).filter(([, config]) => !config.subpackages);
-            const javascriptSubpackageRepos = Object.entries(allJavascriptApps).filter(([, config]) => config.subpackages);
-
-            const javascriptApplications = selectedApp === ''
-              ? javascriptRepos.map(([appName, config]) => ({ appName, ...config }))
-              : javascriptRepos.filter(([appName]) => appName === selectedApp).map(([appName, config]) => ({ appName, ...config }));
-
-            const javascriptReposWithSubpackages = selectedApp === ''
-              ? javascriptSubpackageRepos.map(([repo, config]) => ({ repo, owner: config.owner ?? 'edx', packages: config.subpackages }))
-              : javascriptSubpackageRepos.filter(([repo]) => repo === selectedApp).map(([repo, config]) => ({ repo, owner: config.owner ?? 'edx', packages: config.subpackages }));
-
-            const translationLanguages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
-
-            core.setOutput('has_javascript_applications', javascriptApplications.length > 0);
-            core.setOutput('has_javascript_repos_with_subpackages', javascriptReposWithSubpackages.length > 0);
-            core.setOutput('javascript_applications', javascriptApplications);
-            core.setOutput('javascript_repos_with_subpackages', javascriptReposWithSubpackages);
-            core.setOutput('translation_languages', translationLanguages);
+    uses: ./.github/workflows/_translate-setup.yml
+    with:
+      config_key: javascriptApplications
+      application_name: ${{ inputs.application_name || '' }}
+      translation_language: ${{ inputs.translation_language || '' }}
 
   setup-branch:
-    runs-on: ubuntu-latest
-    needs: [setup]
-    outputs:
-      branch: ${{ steps.dynamic_branch.outputs.branch }}
-    permissions:
-      contents: write
-      pull-requests: write
+    uses: ./.github/workflows/_translate-setup-branch.yml
+    with:
+      branch_prefix: automated/translate-json-source-strings
+    secrets: inherit
 
-    steps:
-      - name: Dynamically set branch name
-        id: dynamic_branch
-        run: echo "branch=automated/translate-source-strings-$(date +'%Y%m%dT%H%M%S')" >> $GITHUB_OUTPUT
-
-      - name: Clone ${{ github.repository }}
-        uses: actions/checkout@v5
-
-      # Note that when using a workflow_dispatch, this step will create a branch off the specified ref, which may not be the default branch.
-      # This is useful for testing changes to the workflow during development. However, it will generate a branch with the changes on the
-      # specified branch and any generated translations files.
-      # The merge step prevents auto-merge in this case.
-      - name: Create and push branch
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git checkout -b ${{ steps.dynamic_branch.outputs.branch }}
-          git push --set-upstream origin ${{ steps.dynamic_branch.outputs.branch }}
+  validate:
+    uses: ./.github/workflows/_translate-validate-env.yml
+    with:
+      fetch_translations_url: ${{ vars.AI_TRANSLATIONS_FETCH_JSON_TRANSLATIONS_URL }}
+      fetch_translations_url_name: AI_TRANSLATIONS_FETCH_JSON_TRANSLATIONS_URL
+      lms_access_token_url: ${{ vars.LMS_ACCESS_TOKEN_URL }}
+    secrets: inherit
 
   translate:
-    if: ${{ fromJson(needs.setup.outputs.has_javascript_applications) == true }}
-    needs: [setup, setup-branch]
+    if: ${{ fromJson(needs.setup.outputs.has_applications) == true }}
+    needs: [setup, setup-branch, validate]
     runs-on: ubuntu-latest
     strategy:
       # using max-parallel to avoid git push/pull issues when running in parallel
       max-parallel: 1
       matrix:
-        application: ${{ fromJson(needs.setup.outputs.javascript_applications) }}
+        application: ${{ fromJson(needs.setup.outputs.applications) }}
       fail-fast: false
     permissions:
       contents: write
@@ -140,40 +69,6 @@ jobs:
         run: |
           git config --global user.name "edx-translations-app"
           git config --global user.email "edx-translations-app@users.noreply.github.com"
-
-      - name: Validate required environment variables
-        run: |
-          missing=0
-
-          if [ -z "${{ vars.LMS_ACCESS_TOKEN_URL }}" ]; then
-            echo "Required variable LMS_ACCESS_TOKEN_URL is not set."
-            missing=$((missing+1))
-          fi
-          if [ -z "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" ]; then
-            echo "Required variable AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL is not set."
-            missing=$((missing+1))
-          fi
-
-          # Mask the client ID and secret to prevent it from being logged
-          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}"
-          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}"
-
-          # Validate that the client ID is defined
-          if [ -z "${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}" ]; then
-            echo "Required secret EDX_TRANSLATIONS_PROD_CLIENT_ID is not set."
-            missing=$((missing+1))
-          fi
-
-          # Validate that the client secret is defined
-          if [ -z "${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}" ]; then
-            echo "Required secret EDX_TRANSLATIONS_PROD_CLIENT_SECRET is not set."
-            missing=$((missing+1))
-          fi
-
-          if [ "$missing" -ne 0 ]; then
-            echo "One or more required variables or secrets are missing. Please configure them in the repository settings under Secrets and variables."
-            exit 1
-          fi
 
       - name: Translate source strings for ${{ matrix.application.appName }}
         env:
@@ -264,10 +159,10 @@ jobs:
               status_code=$(curl -sS --connect-timeout 10 --max-time 180 --retry 3 --retry-delay 60 --retry-all-errors \
                 -w "%{http_code}" \
                 -o "$chunk_response" \
-                -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
-                -F "file=@$chunk_source" \
+                -X POST "${{ vars.AI_TRANSLATIONS_FETCH_JSON_TRANSLATIONS_URL }}" \
+                -F "source_file=@$chunk_source" \
                 -F "application_name=${{ matrix.application.appName }}" \
-                -F "language=$edxLang" \
+                -F "translation_language=$edxLang" \
                 -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
 
               # On a chunk failure, early exit the chunk loop to avoid unnecessary API calls.
@@ -385,13 +280,13 @@ jobs:
           fi
 
   translate-js-repos-with-subpackages:
-    if: ${{ !cancelled() && fromJson(needs.setup.outputs.has_javascript_repos_with_subpackages) == true }}
-    needs: [setup, setup-branch]
+    if: ${{ !cancelled() && fromJson(needs.setup.outputs.has_repos_with_subpackages) == true }}
+    needs: [setup, setup-branch, validate]
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
       matrix:
-        repo_config: ${{ fromJson(needs.setup.outputs.javascript_repos_with_subpackages) }}
+        repo_config: ${{ fromJson(needs.setup.outputs.repos_with_subpackages) }}
       fail-fast: false
     permissions:
       contents: write
@@ -407,37 +302,6 @@ jobs:
         run: |
           git config --global user.name "edx-translations-app"
           git config --global user.email "edx-translations-app@users.noreply.github.com"
-
-      - name: Validate required environment variables
-        run: |
-          missing=0
-
-          if [ -z "${{ vars.LMS_ACCESS_TOKEN_URL }}" ]; then
-            echo "Required variable LMS_ACCESS_TOKEN_URL is not set."
-            missing=$((missing+1))
-          fi
-          if [ -z "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" ]; then
-            echo "Required variable AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL is not set."
-            missing=$((missing+1))
-          fi
-
-          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}"
-          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}"
-
-          if [ -z "${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}" ]; then
-            echo "Required secret EDX_TRANSLATIONS_PROD_CLIENT_ID is not set."
-            missing=$((missing+1))
-          fi
-
-          if [ -z "${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}" ]; then
-            echo "Required secret EDX_TRANSLATIONS_PROD_CLIENT_SECRET is not set."
-            missing=$((missing+1))
-          fi
-
-          if [ "$missing" -ne 0 ]; then
-            echo "One or more required variables or secrets are missing. Please configure them in the repository settings under Secrets and variables."
-            exit 1
-          fi
 
       - name: Translate source strings for ${{ matrix.repo_config.repo }} subpackages
         env:
@@ -480,10 +344,10 @@ jobs:
               status_code=$(curl -sS --connect-timeout 10 --max-time 180 --retry 3 --retry-delay 60 --retry-all-errors \
                 -w "%{http_code}" \
                 -o "$response_file" \
-                -X POST "${{ vars.AI_TRANSLATIONS_FETCH_TRANSLATIONS_URL }}" \
-                -F "file=@$source_strings_file_path" \
+                -X POST "${{ vars.AI_TRANSLATIONS_FETCH_JSON_TRANSLATIONS_URL }}" \
+                -F "source_file=@$source_strings_file_path" \
                 -F "application_name=${{ matrix.repo_config.repo }}/${package}" \
-                -F "language=$edxLang" \
+                -F "translation_language=$edxLang" \
                 -H "Authorization: JWT ${JWT_TOKEN}") || curl_exit_code=$?
 
               if [ "$curl_exit_code" -ne 0 ]; then
@@ -555,8 +419,8 @@ jobs:
           fi
 
   merge:
-    runs-on: ubuntu-latest
-    needs: [setup, setup-branch, translate, translate-js-repos-with-subpackages]
+    uses: ./.github/workflows/_translate-merge.yml
+    needs: [setup, setup-branch, validate, translate, translate-js-repos-with-subpackages]
     # Run even if a translate job fails (partial translations are still worth merging) or is skipped
     # (e.g. only monorepos or only regular apps were selected). Explicitly checking each result
     # prevents GitHub from auto-skipping this job when a needed job was skipped.
@@ -568,49 +432,7 @@ jobs:
         needs.translate.result != 'cancelled' &&
         needs.translate-js-repos-with-subpackages.result != 'cancelled'
       }}
-    permissions:
-      contents: write
-      pull-requests: write
-
-    steps:
-      - name: Clone ${{ github.repository }}
-        uses: actions/checkout@v5
-        with:
-          ref: ${{ needs.setup-branch.outputs.branch }}
-          fetch-depth: 0
-
-      - name: Create pull request
-        id: createPR
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          REPO="${{ github.repository }}"
-          COMMIT_COUNT=$(git rev-list HEAD ^origin/main | wc -l | tr -d ' ')
-          echo "COMMIT_COUNT=$COMMIT_COUNT" >> $GITHUB_ENV
-
-          if [ "$COMMIT_COUNT" -gt 0 ]; then
-            PR_URL=$(gh pr create \
-              --repo "$REPO" \
-              --title "chore: add AI translated strings" \
-              --body "This PR is auto-generated by [translate-source-strings](https://github.com/${REPO}/blob/main/.github/workflows/translate-source-strings.yml).")
-            echo "PR_URL=$PR_URL" >> $GITHUB_ENV
-            echo "PR_URL=$PR_URL"
-          fi
-
-      - name: Merge pull request
-        id: mergePR
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # Do not automerge if any of the following are true.
-        # 1. the job is not running on the main branch
-        # 2. the job is not running as the result of a scheduled trigger (i.e. a cron)
-        # 3. there are 0 commits
-        if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'schedule' && env.COMMIT_COUNT > 0 }}
-        run: gh pr merge ${{ env.PR_URL }} --merge --auto
-
-      # Notify that branch did not merge and delete the branch now that it is unnecessary.
-      - name: Notify of empty branch and delete branch
-        if: ${{ steps.mergePR.outcome == 'skipped' }}
-        run: |
-          echo "The branch was not merged and was deleted because the workflow was not run on the main branch, was not scheduled (i.e. a cron), or the branch had 0 commits."
-          git push origin -d ${{ needs.setup-branch.outputs.branch }}
+    with:
+      branch: ${{ needs.setup-branch.outputs.branch }}
+      workflow_name: translate-json-source-strings
+    secrets: inherit

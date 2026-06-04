@@ -1,0 +1,62 @@
+# Reusable workflow: validates that all required variables and secrets for translation workflows are set.
+# Run this as a separate job before the translate matrix so validation happens once rather than
+# once per matrix entry.
+
+name: _Translate validate environment
+
+on:
+  workflow_call:
+    inputs:
+      fetch_translations_url:
+        description: 'Resolved value of the fetch translations URL variable.'
+        required: true
+        type: string
+      fetch_translations_url_name:
+        description: 'Name of the repository variable for the fetch translations URL (used in error messages).'
+        required: true
+        type: string
+      lms_access_token_url:
+        description: 'Resolved value of the LMS access token URL variable.'
+        required: true
+        type: string
+    secrets:
+      EDX_TRANSLATIONS_PROD_CLIENT_ID:
+        required: true
+      EDX_TRANSLATIONS_PROD_CLIENT_SECRET:
+        required: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate required environment variables
+        run: |
+          missing=0
+
+          if [ -z "${{ inputs.lms_access_token_url }}" ]; then
+            echo "Required variable LMS_ACCESS_TOKEN_URL is not set."
+            missing=$((missing+1))
+          fi
+          if [ -z "${{ inputs.fetch_translations_url }}" ]; then
+            echo "Required variable ${{ inputs.fetch_translations_url_name }} is not set."
+            missing=$((missing+1))
+          fi
+
+          # Mask the client ID and secret to prevent them from being logged
+          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}"
+          echo "::add-mask::${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}"
+
+          if [ -z "${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}" ]; then
+            echo "Required secret EDX_TRANSLATIONS_PROD_CLIENT_ID is not set."
+            missing=$((missing+1))
+          fi
+
+          if [ -z "${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}" ]; then
+            echo "Required secret EDX_TRANSLATIONS_PROD_CLIENT_SECRET is not set."
+            missing=$((missing+1))
+          fi
+
+          if [ "$missing" -ne 0 ]; then
+            echo "One or more required variables or secrets are missing. Please configure them in the repository settings under Secrets and variables."
+            exit 1
+          fi
