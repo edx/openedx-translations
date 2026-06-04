@@ -304,10 +304,24 @@ jobs:
               "$APP_BASE/requirements/base.txt"
             )
 
+            # Enterprise repos have their problematic dependencies pre-installed, so fail loudly if there are issues
+            IS_ENTERPRISE_REPO=false
+            if [[ "${{ matrix.repo_config.repo }}" == "enterprise-access" || \
+                  "${{ matrix.repo_config.repo }}" == "enterprise-catalog" || \
+                  "${{ matrix.repo_config.repo }}" == "enterprise-subsidy" ]]; then
+              IS_ENTERPRISE_REPO=true
+            fi
+
             for req_file in "${REQ_FILES[@]}"; do
               if test -f "$req_file"; then
                 echo "Installing $req_file for ${{ matrix.repo_config.repo }}"
-                pip install -r "$req_file" || echo "Failed to install $req_file, continuing..."
+                if [ "$IS_ENTERPRISE_REPO" = true ]; then
+                  # Enterprise repos: fail if requirements installation fails
+                  pip install -r "$req_file"
+                else
+                  # Other repos: continue even if requirements installation fails
+                  pip install -r "$req_file" || echo "Failed to install $req_file, continuing..."
+                fi
                 break
               fi
             done
