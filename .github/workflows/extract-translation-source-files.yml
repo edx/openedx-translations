@@ -249,12 +249,24 @@ jobs:
           # There is a theme directory with it's own conf/locale directory, we need to remove that
           rm -rf translations/${{ matrix.repo_config.repo }}/themes/conf
 
+      - name: prepare the environment with enterprise-access specific changes
+        if: matrix.repo_config.repo == 'enterprise-access'
+        run: |
+          # This is needed for confluent-kafka[avro,schema-registry] in base.txt
+          sudo apt install -y librdkafka-dev
+
+      - name: prepare the environment with course-discovery specific changes
+        if: matrix.repo_config.repo == 'course-discovery'
+        run: |
+          # This is needed for Pillow (image processing library) in base.txt
+          sudo apt install -y libjpeg-dev zlib1g-dev
+
       # Setup Python
       - name: setup python
         uses: actions/setup-python@v5
         id: setup_python
         with:
-          python-version: '3.11'
+          python-version: '3.12'
           cache: pip
           # The `edx-platf*rm` wildcard will be expanded to `edx-platform` if its requirement file exists,
           # otherwise it will be omitted
@@ -265,6 +277,9 @@ jobs:
       # Installs Python requirements from translations.txt
       - name: install requirements
         run: |
+          # Python 3.12 no longer includes pkg_resources by default, install setuptools
+          pip install --upgrade setuptools wheel
+          
           # Install requirements for all packages
           pip install -r requirements/translations.txt
 
