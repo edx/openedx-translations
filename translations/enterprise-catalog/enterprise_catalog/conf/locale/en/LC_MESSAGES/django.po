@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 00:39+0000\n"
+"POT-Creation-Date: 2026-06-04 12:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,145 +57,145 @@ msgstr ""
 msgid "Academies"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/algolia_utils.py:859
+#: enterprise_catalog/apps/catalog/algolia_utils.py:876
 msgid "Available now"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:86
+#: enterprise_catalog/apps/catalog/models.py:87
 msgid ""
 "Query parameters which will be used to filter the discovery service's search/"
 "all endpoint results, specified as a JSON object."
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:110
+#: enterprise_catalog/apps/catalog/models.py:111
 msgid "Catalog Query"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:111
+#: enterprise_catalog/apps/catalog/models.py:112
 msgid "Catalog Queries"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:231
+#: enterprise_catalog/apps/catalog/models.py:232
 msgid ""
 "Ordered list of enrollment modes which can be displayed to learners for "
 "course runs in this catalog."
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:237
+#: enterprise_catalog/apps/catalog/models.py:238
 msgid ""
 "Specifies whether courses should be published with direct-to-audit "
 "enrollment URLs."
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:244
+#: enterprise_catalog/apps/catalog/models.py:245
 msgid "Enterprise Catalog"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:245
+#: enterprise_catalog/apps/catalog/models.py:246
 msgid "Enterprise Catalogs"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:685
+#: enterprise_catalog/apps/catalog/models.py:686
 msgid ""
 "The UUID that represents a piece of content. This value is usually a "
 "secondary identifier to content_key in the enterprise environment."
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:695
-#: enterprise_catalog/apps/catalog/models.py:840
+#: enterprise_catalog/apps/catalog/models.py:696
+#: enterprise_catalog/apps/catalog/models.py:841
 msgid ""
 "The key that represents a piece of content, such as a course, course run, or "
 "program."
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:710
+#: enterprise_catalog/apps/catalog/models.py:711
 msgid ""
 "The key represents this content's parent. For example for course_runs "
 "content their parent course key."
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:721
+#: enterprise_catalog/apps/catalog/models.py:722
 msgid ""
 "The metadata about a particular piece content as retrieved from the "
 "discovery service's search/all endpoint results, specified as a JSON object."
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:777
 #: enterprise_catalog/apps/catalog/models.py:778
+#: enterprise_catalog/apps/catalog/models.py:779
 msgid "Content Metadata"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:824
 #: enterprise_catalog/apps/catalog/models.py:825
+#: enterprise_catalog/apps/catalog/models.py:826
 msgid "Restricted Course Metadata"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1718
+#: enterprise_catalog/apps/catalog/models.py:1858
 msgid ""
 "If true, will force the command's underlying celery tasks to run regardless "
 "of how recently the same task, on the same input, has been successfully "
 "executed."
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1726
+#: enterprise_catalog/apps/catalog/models.py:1866
 msgid ""
 "If true, for management commands that respect this field, celery tasks will "
 "not be apply_async()'d, but instead exectue as regular python functions."
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1759
+#: enterprise_catalog/apps/catalog/models.py:1899
 msgid "The content metadata this translation belongs to"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1763
+#: enterprise_catalog/apps/catalog/models.py:1903
 msgid "ISO 639-1 language code (e.g., 'es' for Spanish)"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1771
+#: enterprise_catalog/apps/catalog/models.py:1911
 msgid "Translated title"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1776
+#: enterprise_catalog/apps/catalog/models.py:1916
 msgid "Translated short description"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1781
+#: enterprise_catalog/apps/catalog/models.py:1921
 msgid "Translated full description"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1786
+#: enterprise_catalog/apps/catalog/models.py:1926
 msgid "Translated learning outcomes"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1791
+#: enterprise_catalog/apps/catalog/models.py:1931
 msgid "Translated prerequisites"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1797
+#: enterprise_catalog/apps/catalog/models.py:1937
 msgid "Translated subtitle"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1803
+#: enterprise_catalog/apps/catalog/models.py:1943
 msgid "SHA256 hash of source content to detect changes"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1807
+#: enterprise_catalog/apps/catalog/models.py:1947
 msgid "Content Translation"
 msgstr ""
 
-#: enterprise_catalog/apps/catalog/models.py:1808
+#: enterprise_catalog/apps/catalog/models.py:1948
 msgid "Content Translations"
 msgstr ""
 
-#: enterprise_catalog/apps/core/admin.py:16
+#: enterprise_catalog/apps/core/admin.py:24
 msgid "Personal info"
 msgstr ""
 
-#: enterprise_catalog/apps/core/admin.py:17
+#: enterprise_catalog/apps/core/admin.py:25
 msgid "Permissions"
 msgstr ""
 
-#: enterprise_catalog/apps/core/admin.py:19
+#: enterprise_catalog/apps/core/admin.py:27
 msgid "Important dates"
 msgstr ""
 
@@ -216,7 +216,9 @@ msgid "Enterprise curations"
 msgstr ""
 
 #: enterprise_catalog/apps/curation/models.py:176
-msgid "Sort order for favorited items, in ascending order (0=first)"
+msgid ""
+"Sort order for favorited items (only used when is_favorite=True), in "
+"ascending order (0=first)"
 msgstr ""
 
 #: enterprise_catalog/apps/jobs/models.py:16
