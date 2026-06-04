@@ -268,6 +268,16 @@ jobs:
             requirements/translations.txt
             translations/edx-platf*rm/requirements/edx/base.txt
 
+      # Pre-install confluent-kafka for enterprise repos
+      - name: install confluent-kafka for enterprise repos
+        if: |
+          matrix.repo_config.repo == 'enterprise-access' ||
+          matrix.repo_config.repo == 'enterprise-catalog' ||
+          matrix.repo_config.repo == 'enterprise-subsidy'
+        run: |
+          # Install confluent-kafka separately to avoid issues with base.txt installation
+          pip install 'confluent-kafka[avro,schema-registry]'
+
       # Installs Python requirements from translations.txt
       - name: install requirements
         run: |
