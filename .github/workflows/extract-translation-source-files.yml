@@ -277,9 +277,6 @@ jobs:
       # Installs Python requirements from translations.txt
       - name: install requirements
         run: |
-          # Python 3.12 no longer includes pkg_resources by default, install setuptools
-          pip install --upgrade setuptools wheel
-          
           # Install requirements for all packages
           pip install -r requirements/translations.txt
 
@@ -288,6 +285,10 @@ jobs:
             # Install edx-platform specific apps (e.g. wiki) which is required to extract translations from
             pip install -r $EDX_BASE_REQS
           fi
+          
+          # Python 3.12 no longer includes pkg_resources by default
+          # Install setuptools AFTER other requirements to ensure it's not overridden
+          pip install --upgrade setuptools
 
           APP_BASE="translations/${{ matrix.repo_config.repo }}"
           REQ_FILES=(
