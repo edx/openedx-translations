@@ -249,12 +249,29 @@ jobs:
           # There is a theme directory with it's own conf/locale directory, we need to remove that
           rm -rf translations/${{ matrix.repo_config.repo }}/themes/conf
 
+      - name: prepare the environment with enterprise repos specific changes
+        if: |
+          matrix.repo_config.repo == 'enterprise-access' ||
+          matrix.repo_config.repo == 'enterprise-catalog' ||
+          matrix.repo_config.repo == 'enterprise-subsidy'
+        run: |
+          # This is needed for confluent-kafka[avro,schema-registry] in base.txt
+          sudo apt install -y librdkafka-dev
+
       # Setup Python
       - name: setup python
         uses: actions/setup-python@v5
         id: setup_python
         with:
-          python-version: '3.11'
+          # Enterprise repos require Python 3.12 due to code-annotations==3.0.0 in base.txt
+          # Note: This creates a minor version mismatch with requirements/translations.txt (pinned for 3.11),
+          # but the packages are compatible with both versions.
+          python-version: |
+            ${{(
+              matrix.repo_config.repo == 'enterprise-access' ||
+              matrix.repo_config.repo == 'enterprise-catalog' ||
+              matrix.repo_config.repo == 'enterprise-subsidy'
+            ) && '3.12' || '3.11'}}
           cache: pip
           # The `edx-platf*rm` wildcard will be expanded to `edx-platform` if its requirement file exists,
           # otherwise it will be omitted
@@ -273,7 +290,7 @@ jobs:
             # Install edx-platform specific apps (e.g. wiki) which is required to extract translations from
             pip install -r $EDX_BASE_REQS
           fi
-
+          
           APP_BASE="translations/${{ matrix.repo_config.repo }}"
           REQ_FILES=(
             "$APP_BASE/requirements/base.txt"
