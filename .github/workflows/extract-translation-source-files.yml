@@ -260,7 +260,14 @@ jobs:
         uses: actions/setup-python@v5
         id: setup_python
         with:
-          python-version: '3.11'
+          # Enterprise repos (enterprise-access, enterprise-catalog, enterprise-subsidy) require Python 3.12
+          # due to code-annotations==3.0.0 dependency
+          python-version: |
+            ${{
+              (matrix.repo_config.repo == 'enterprise-access' ||
+               matrix.repo_config.repo == 'enterprise-catalog' ||
+               matrix.repo_config.repo == 'enterprise-subsidy') && '3.12' || '3.11'
+            }}
           cache: pip
           # The `edx-platf*rm` wildcard will be expanded to `edx-platform` if its requirement file exists,
           # otherwise it will be omitted
