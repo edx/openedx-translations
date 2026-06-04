@@ -36,7 +36,7 @@ Decision
 Migrate translation management from Transifex to the internal `ai-translations`_
 service. The migration is being done incrementally:
 
-1. **JavaScript/frontend apps** — Migrated first. The ``translate-source-strings.yml``
+1. **JavaScript/frontend apps** — Migrated first. The ``translate-json-source-strings.yml``
    workflow calls the ai-translations service API to fetch translated ``.json`` files
    for ~22 frontend applications across ~21 languages.
 

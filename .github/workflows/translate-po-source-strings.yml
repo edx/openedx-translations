@@ -1,0 +1,231 @@
+# This workflow fetches translations for Python applications by calling the AI translations
+# translate endpoint for each application and language code combination, using existing source PO files.
+# If successful, it commits the translated output and opens a pull request. In a select set of conditions,
+# it auto-merges the pull request.
+#
+# Run modes (workflow_dispatch inputs):
+#
+#   "Batched" mode processes all languages for an application in a single job.
+#   "Per-language" mode creates one job per language, for applications with too many strings
+#   to translate within a single job.
+#
+#   All apps, all languages:
+#     (leave all inputs blank)
+#
+#   All apps, one language:
+#     translation_language: <lang>
+#
+#   One app, batched (one job for all languages):
+#     application_name: <app>
+#
+#   One app, per-language only (one job per language):
+#     per_language_application: <app>
+#     per_language_only: true
+#
+#   One per-language app + all other apps, all languages:
+#     per_language_application: <app>
+#
+#   One per-language app + all other apps, one language:
+#     per_language_application: <app>
+#     translation_language: <lang>
+
+name: Translate PO source strings
+
+on:
+  workflow_dispatch:
+    inputs:
+      application_name:
+        description: 'Python application/repository to translate, case sensitive. Leave blank to run all.'
+        required: false
+        type: string
+      translation_language:
+        description: 'Language code in edX format (e.g. es-419 or pt-PT), case insensitive. Leave blank to run all.'
+        required: false
+        type: string
+      per_language_application:
+        description: 'App to translate per-language (one job per language), case sensitive. Leave blank to skip.'
+        required: false
+        type: string
+      per_language_only:
+        description: 'Skip all batched application jobs. Only applies when per_language_application is set.'
+        required: false
+        type: boolean
+        default: false
+
+env:
+  # Maximum number of PO entries to send in a single API request.
+  # Can be overridden by setting the TRANSLATION_CHUNK_SIZE repository variable.
+  TRANSLATION_CHUNK_SIZE: ${{ vars.TRANSLATION_CHUNK_SIZE || 500 }}
+
+jobs:
+  setup:
+    uses: ./.github/workflows/_translate-setup.yml
+    with:
+      config_key: pythonApplications
+      application_name: ${{ inputs.application_name || '' }}
+      translation_language: ${{ inputs.translation_language || '' }}
+
+  setup-per-language:
+    if: ${{ inputs.per_language_application != '' }}
+    uses: ./.github/workflows/_translate-setup.yml
+    with:
+      config_key: pythonApplications
+      application_name: ${{ inputs.per_language_application }}
+      translation_language: ${{ inputs.translation_language || '' }}
+
+  setup-batched:
+    runs-on: ubuntu-latest
+    needs: [setup]
+    outputs:
+      has_applications: ${{ steps.filter_batched_apps.outputs.has_applications }}
+      applications: ${{ steps.filter_batched_apps.outputs.applications }}
+    steps:
+      - uses: actions/github-script@v7
+        id: filter_batched_apps
+        env:
+          INPUT_PER_LANGUAGE_APPLICATION: ${{ inputs.per_language_application || '' }}
+          INPUT_APPLICATIONS: ${{ needs.setup.outputs.applications }}
+          INPUT_PER_LANGUAGE_ONLY: ${{ inputs.per_language_only || false }}
+        with:
+          script: |
+            const perLanguageApp = process.env.INPUT_PER_LANGUAGE_APPLICATION || '';
+            const perLanguageOnly = process.env.INPUT_PER_LANGUAGE_ONLY === 'true';
+            const applications = JSON.parse(process.env.INPUT_APPLICATIONS || '[]');
+
+            if (perLanguageOnly && perLanguageApp !== '') {
+              core.setOutput('applications', JSON.stringify([]));
+              core.setOutput('has_applications', false);
+              return;
+            }
+
+            const batchedApplications = perLanguageApp === ''
+              ? applications
+              : applications.filter((application) => application.appName !== perLanguageApp);
+
+            core.setOutput('applications', JSON.stringify(batchedApplications));
+            core.setOutput('has_applications', batchedApplications.length > 0);
+
+  setup-branch:
+    uses: ./.github/workflows/_translate-setup-branch.yml
+    with:
+      branch_prefix: automated/translate-po-source-strings
+    secrets: inherit
+
+  validate:
+    uses: ./.github/workflows/_translate-validate-env.yml
+    with:
+      fetch_translations_url: ${{ vars.AI_TRANSLATIONS_FETCH_PO_TRANSLATIONS_URL }}
+      fetch_translations_url_name: AI_TRANSLATIONS_FETCH_PO_TRANSLATIONS_URL
+      lms_access_token_url: ${{ vars.LMS_ACCESS_TOKEN_URL }}
+    secrets: inherit
+
+  translate-batched:
+    if: ${{ fromJson(needs.setup-batched.outputs.has_applications) == true }}
+    needs: [setup, setup-batched, setup-branch, validate]
+    runs-on: ubuntu-latest
+    strategy:
+      # using max-parallel to avoid git push/pull issues when running in parallel
+      max-parallel: 1
+      matrix:
+        application: ${{ fromJson(needs.setup-batched.outputs.applications) }}
+      fail-fast: false
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Clone ${{ github.repository }}
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
+          fetch-depth: 0
+
+      - name: Configure git identity
+        run: |
+          git config --global user.name "edx-translations-app"
+          git config --global user.email "edx-translations-app@users.noreply.github.com"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install translation script requirements
+        run: pip install -r requirements/translations.txt
+
+      - name: Translate PO source strings for ${{ matrix.application.appName }}
+        env:
+          LMS_ACCESS_TOKEN_URL: ${{ vars.LMS_ACCESS_TOKEN_URL }}
+          EDX_TRANSLATIONS_PROD_CLIENT_ID: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}
+          EDX_TRANSLATIONS_PROD_CLIENT_SECRET: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}
+          APP_NAME: ${{ matrix.application.appName }}
+          LANGUAGE_MODE: all
+          TRANSLATION_LANGUAGES_JSON: ${{ needs.setup.outputs.translation_languages }}
+          TRANSLATION_ENDPOINT: ${{ vars.AI_TRANSLATIONS_FETCH_PO_TRANSLATIONS_URL }}
+        run: |
+          bash .github/scripts/translate_po_source_strings.sh
+
+  translate-per-language:
+    if: ${{ !cancelled() && inputs.per_language_application != '' && fromJson(needs.setup-per-language.outputs.has_applications) == true }}
+    needs: [setup-per-language, setup-branch, validate]
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        application: ${{ fromJson(needs.setup-per-language.outputs.applications) }}
+        translation_language: ${{ fromJson(needs.setup-per-language.outputs.translation_languages) }}
+      fail-fast: false
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Clone ${{ github.repository }}
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ needs.setup-branch.outputs.branch }}
+          fetch-depth: 0
+
+      - name: Configure git identity
+        run: |
+          git config --global user.name "edx-translations-app"
+          git config --global user.email "edx-translations-app@users.noreply.github.com"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install translation script requirements
+        run: pip install -r requirements/translations.txt
+
+      - name: Translate PO source strings for ${{ matrix.application.appName }} (${{ matrix.translation_language.edxLang }})
+        env:
+          LMS_ACCESS_TOKEN_URL: ${{ vars.LMS_ACCESS_TOKEN_URL }}
+          EDX_TRANSLATIONS_PROD_CLIENT_ID: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_ID }}
+          EDX_TRANSLATIONS_PROD_CLIENT_SECRET: ${{ secrets.EDX_TRANSLATIONS_PROD_CLIENT_SECRET }}
+          APP_NAME: ${{ matrix.application.appName }}
+          LANGUAGE_MODE: single
+          SINGLE_TRANSLATION_LANGUAGE_JSON: ${{ toJSON(matrix.translation_language) }}
+          TRANSLATION_ENDPOINT: ${{ vars.AI_TRANSLATIONS_FETCH_PO_TRANSLATIONS_URL }}
+        run: |
+          bash .github/scripts/translate_po_source_strings.sh
+
+  merge:
+    uses: ./.github/workflows/_translate-merge.yml
+    needs: [setup, setup-per-language, setup-batched, setup-branch, validate, translate-batched, translate-per-language]
+    # Run even if translate fails (partial translations are still worth merging).
+    if: >-
+      ${{
+        !cancelled() &&
+        needs.setup.result == 'success' &&
+        (needs.setup-per-language.result == 'success' || needs.setup-per-language.result == 'skipped') &&
+        needs.setup-batched.result == 'success' &&
+        needs.setup-branch.result == 'success' &&
+        needs.translate-batched.result != 'cancelled' &&
+        needs.translate-per-language.result != 'cancelled'
+      }}
+    with:
+      branch: ${{ needs.setup-branch.outputs.branch }}
+      workflow_name: translate-po-source-strings
+    secrets: inherit
