@@ -249,6 +249,12 @@ jobs:
           # There is a theme directory with it's own conf/locale directory, we need to remove that
           rm -rf translations/${{ matrix.repo_config.repo }}/themes/conf
 
+      - name: prepare the environment with enterprise-access specific changes
+        if: matrix.repo_config.repo == 'enterprise-access'
+        run: |
+          # This is needed for confluent-kafka[avro,schema-registry] in base.txt
+          sudo apt install -y librdkafka-dev
+
       # Setup Python
       - name: setup python
         uses: actions/setup-python@v5
@@ -273,7 +279,7 @@ jobs:
             # Install edx-platform specific apps (e.g. wiki) which is required to extract translations from
             pip install -r $EDX_BASE_REQS
           fi
-
+          
           APP_BASE="translations/${{ matrix.repo_config.repo }}"
           REQ_FILES=(
             "$APP_BASE/requirements/base.txt"
