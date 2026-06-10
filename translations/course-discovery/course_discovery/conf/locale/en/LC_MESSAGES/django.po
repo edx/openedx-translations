@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-27 00:38+0000\n"
+"POT-Creation-Date: 2026-06-10 00:54+0000\n"
 "PO-Revision-Date: 2016-05-25 15:41+0000\n"
 "Last-Translator: Muhammad Ayub khan <ayubkhan@edx.org>\n"
 "Language-Team: English (http://www.transifex.com/open-edx/edx-platform/"
@@ -1949,114 +1949,233 @@ msgid ""
 "%(time)s"
 msgstr ""
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:7
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:8
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:3
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:9
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:3
 msgid "Hi Course Team,"
 msgstr ""
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:12
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:14
 #, python-format
 msgid ""
 "\n"
-"        This is an automated reminder that the course "
-"\"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in "
-"%(days)s on %(course_end_date)s.\n"
-"        "
-msgstr ""
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:16
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:16
-msgid ""
-"To ensure uninterrupted learner access and enrollment, please take one of "
-"the following actions:"
-msgstr ""
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:19
-#, python-format
-msgid ""
-"\n"
-"        This is an automated reminder that the course "
-"\"%(course_name)s\" (Course Key: %(course_key)s) has officially ended as of "
+"    This is an automated reminder that the course "
+"\"%(course_name)s\" (%(course_key)s) is scheduled to end in %(days)s on "
 "%(course_end_date)s.\n"
-"        "
+"    "
 msgstr ""
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:23
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:18
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:20
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:11
 msgid ""
-"If this was intentional, no action is needed. However, if this course was "
-"meant to remain available, you have two options to restore access:"
+"If no action is taken, the course will be automatically archived after this "
+"date. If you decide not to extend the course or create a new run at this "
+"time, please inform your dedicated Project Coordinator and share your plans. "
+"This helps ensure our internal teams remain aligned and can support you "
+"effectively."
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:24
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:13
+msgid ""
+"To ensure a smooth experience for our edX Learners, please take one of the "
+"following actions:"
 msgstr ""
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:29
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:21
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:64
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:99
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:15
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:33
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:51
+msgid "Create a New Course Run:"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:30
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:65
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:100
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:16
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:34
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:52
 msgid ""
-"Extend the current course run’s end date if the same course is meant to "
-"remain available."
+"Planning to update the content or offer the course to a new cohort? We "
+"recommend setting up a new course run in Publisher."
 msgstr ""
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:31
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:22
-msgid ""
-"Create a new course run if you are planning to offer this course again with "
-"updated content, pacing, or a new cohort of learners."
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:66
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:101
+msgid "You can get started"
 msgstr ""
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:32
-msgid "Visit the Course in Publisher"
-msgstr ""
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:37
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:25
-msgid "You can review and modify the course end settings here:"
-msgstr ""
-
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:33
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:41
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:68
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:76
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:103
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:111
+msgid "here"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:38
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:73
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:108
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:19
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:37
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:55
+msgid "Extend the Course End Date:"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:39
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:74
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:109
+msgid ""
+"If the content is still relevant, you can extend the course end date in "
+"Studio. Simply visit the Schedule and Details tab"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:49
 #, python-format
 msgid ""
 "\n"
-"        If no action is taken, the course will no longer be available for "
-"enrollment or access by learners on \n"
-"        <a "
-"href=\"%(partner_marketing_site_url)s\">%(partner_marketing_site_url)s</a> "
-"after the end date.\n"
-"        "
+"    Our records indicate that the course \"%(course_name)s\" (Course Key: "
+"%(course_key)s) is scheduled to end in 7 days on %(course_end_date)s. "
+"Despite previous reminders, we’ve noticed that no action has been taken "
+"yet.\n"
+"    "
 msgstr ""
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:47
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:34
-msgid "Thanks"
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:55
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:29
+msgid ""
+"Important: If no action is taken, the course will be automatically archived "
+"after the current end date. If you choose not to extend or create a new "
+"course run at this time, you must inform your dedicated Project Coordinator "
+"with your reasons. This will ensure our internal teams are properly informed "
+"about your plans."
 msgstr ""
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:6
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:59
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:31
+msgid ""
+"To prevent disruption to learner access, please choose one of the following "
+"options:"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:84
 #, python-format
 msgid ""
 "\n"
-"This is an automated reminder that the course \"%(course_name)s\" (Course "
-"Key: %(course_key)s) is scheduled to end in %(days)s on "
+"    Our records show that the course \"%(course_name)s\" (Course Key: "
+"%(course_key)s) officially ended on %(course_end_date)s and has now entered "
+"the archived state. Despite our previous reminders, it appears no action has "
+"been taken yet.\n"
+"    "
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:90
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:47
+msgid ""
+"Important: If you decide not to extend the course or create a new course run "
+"at this time, you must inform your dedicated Project Coordinator with the "
+"reasons behind this. This will help ensure our internal teams are fully "
+"updated on your plans for the course."
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:94
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:49
+msgid ""
+"If you wish to keep this course active, please choose one of the following "
+"options:"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:121
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:63
+msgid ""
+"NOTE: This email address isn’t monitored for replies. If you have any "
+"questions or need assistance, please reach out to your dedicated Project "
+"Coordinator at"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:124
+#: apps/course_metadata/templates/course_metadata/email/go_live.html:26
+#: apps/course_metadata/templates/course_metadata/email/legal_review.html:23
+#: apps/course_metadata/templates/course_metadata/email/reviewed.html:38
+#, python-brace-format
+msgid "{link_start}{contact_us_email}{link_middle}{contact_us_email}{link_end}"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:137
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:74
+msgid ""
+"NOTE: This email address isn’t monitored for replies. If you have any "
+"questions or need assistance, please reach out to your dedicated Project "
+"Coordinator."
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:143
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:78
+msgid "Thank you for your attention to this—looking forward to your updates!"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:147
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:80
+msgid "Best,"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:149
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:81
+msgid "edX Operational Team"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:7
+#, python-format
+msgid ""
+"\n"
+"This is an automated reminder that the course "
+"\"%(course_name)s\" (%(course_key)s) is scheduled to end in %(days)s on "
 "%(course_end_date)s.\n"
 msgstr ""
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:10
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:17
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:35
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:53
+msgid "You can get started here:"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:20
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:38
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:56
+msgid ""
+"If the content is still relevant, you can extend the course end date in "
+"Studio."
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:21
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:39
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:57
+msgid "Simply visit the Schedule and Details tab here:"
+msgstr ""
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:25
 #, python-format
 msgid ""
 "\n"
-"This is an automated reminder that the course \"%(course_name)s\" (Course "
-"Key: %(course_key)s) has officially ended as of %(course_end_date)s.\n"
+"Our records indicate that the course \"%(course_name)s\" (Course Key: "
+"%(course_key)s) is scheduled to end in 7 days on %(course_end_date)s. "
+"Despite previous reminders, we’ve noticed that no action has been taken "
+"yet.\n"
 msgstr ""
 
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:23
-msgid "Visit the Course in Publisher:"
-msgstr ""
-
-#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:29
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:43
 #, python-format
 msgid ""
 "\n"
-"If no action is taken, the course will no longer be available for enrollment "
-"or access by learners on %(partner_marketing_site_url)s after the end date.\n"
+"Our records show that the course \"%(course_name)s\" (Course Key: "
+"%(course_key)s) officially ended on %(course_end_date)s and has now entered "
+"the archived state. Despite our previous reminders, it appears no action has "
+"been taken yet.\n"
 msgstr ""
 
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:17
@@ -2067,13 +2186,6 @@ msgid ""
 "has been submitted for publishing. The new session will appear on the edX "
 "website following the next couple of deployments—typically within 24 to 48 "
 "business hours."
-msgstr ""
-
-#: apps/course_metadata/templates/course_metadata/email/go_live.html:26
-#: apps/course_metadata/templates/course_metadata/email/legal_review.html:23
-#: apps/course_metadata/templates/course_metadata/email/reviewed.html:38
-#, python-brace-format
-msgid "{link_start}{contact_us_email}{link_middle}{contact_us_email}{link_end}"
 msgstr ""
 
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:11
