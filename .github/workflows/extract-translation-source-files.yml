@@ -272,8 +272,10 @@ jobs:
           if test -f $EDX_BASE_REQS; then
             # Install edx-platform specific apps (e.g. wiki) which is required to extract translations from
             pip install -r $EDX_BASE_REQS
+            if [[ "${{ matrix.repo_config.repo }}" == "edx-platform" ]]; then
+              pip install edx-proctoring-proctortrack==1.2.1
+            fi
           fi
-
           APP_BASE="translations/${{ matrix.repo_config.repo }}"
           REQ_FILES=(
             "$APP_BASE/requirements/base.txt"
