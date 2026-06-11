@@ -32,6 +32,7 @@ def test_get_translation_files():
         'demo-microfrontend/src/i18n/messages/es.json',
         'demo-microfrontend/src/i18n/messages/fr.json',
         'demo-xblock/conf/locale/ar/LC_MESSAGES/django.po',
+        'demo-xblock/conf/locale/ar/LC_MESSAGES/django_large.po',
         'demo-xblock/conf/locale/de_DE/LC_MESSAGES/django.po',
         'demo-xblock/conf/locale/hi/LC_MESSAGES/django.po',
     ]
