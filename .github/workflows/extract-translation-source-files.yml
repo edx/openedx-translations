@@ -74,6 +74,7 @@ jobs:
               { owner: 'edx', repo: 'xblock-qualtrics-survey' },
               { owner: 'edx', repo: 'xblock-sql-grader' },
               { owner: 'edx', repo: 'xblock-submit-and-compare' },
+              { owner: 'verificient', repo: 'edx-proctoring-proctortrack' },
             ];
 
             const javascriptRepos = Object.entries(javascriptApplications)
@@ -273,7 +274,6 @@ jobs:
             # Install edx-platform specific apps (e.g. wiki) which is required to extract translations from
             pip install -r $EDX_BASE_REQS
           fi
-
           APP_BASE="translations/${{ matrix.repo_config.repo }}"
           REQ_FILES=(
             "$APP_BASE/requirements/base.txt"
