@@ -31,7 +31,7 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-            const { javascriptApplications } = JSON.parse(
+            const { javascriptApplications, pythonApplications } = JSON.parse(
               fs.readFileSync('.github/translations-config.json', 'utf8')
             );
 
@@ -39,42 +39,10 @@ jobs:
             // const selectedRepo = core.getInput('repo');
             const selectedRepo = ${{ toJSON(github.event.inputs.repo) }} ?? '';
 
-            const allPythonRepos = [
-              { owner: 'edx', repo: 'AudioXBlock' },
-              { owner: 'edx', repo: 'DoneXBlock' },
-              { owner: 'openedx', repo: 'FeedbackXBlock' },
-              { owner: 'edx', repo: 'RecommenderXBlock' },
-              { owner: 'edx', repo: 'ai-translations' },
-              { owner: 'edx', repo: 'commerce-coordinator' },
-              { owner: 'edx', repo: 'course-discovery' },
-              { owner: 'edx', repo: 'credentials' },
-              { owner: 'edx', repo: 'credentials-themes' },
-              { owner: 'edx', repo: 'edx-ace' },
-              { owner: 'edx', repo: 'edx-exams' },
-              { owner: 'edx', repo: 'edx-platform' },
-              { owner: 'edx', repo: 'portal-designer' },
-              { owner: 'edx', repo: 'registrar' },
-              { owner: 'edx', repo: 'enterprise-access' },
-              { owner: 'edx', repo: 'enterprise-catalog' },
-              { owner: 'edx', repo: 'enterprise-subsidy' },
-              { owner: 'edx', repo: 'financial-assistance' },
-              { owner: 'edx', repo: 'order-fulfillment' },
-              { owner: 'edx', repo: 'sanctions' },
-              { owner: 'edx', repo: 'video-encode-manager' },
-              { owner: 'openedx', repo: 'edx-bulk-grades' },
-              { owner: 'openedx', repo: 'edx-ora2' },
-              { owner: 'edx', repo: 'edx-proctoring' },
-              { owner: 'edx', repo: 'platform-plugin-aspects' },
-              { owner: 'openedx', repo: 'xblock-drag-and-drop-v2' },
-              { owner: 'edx', repo: 'xblock-free-text-response' },
-              { owner: 'openedx', repo: 'xblock-google-drive' },
-              { owner: 'openedx', repo: 'xblock-image-explorer' },
-              { owner: 'edx', repo: 'xblock-image-modal' },
-              { owner: 'edx', repo: 'xblock-lti-consumer' },
-              { owner: 'edx', repo: 'xblock-qualtrics-survey' },
-              { owner: 'edx', repo: 'xblock-sql-grader' },
-              { owner: 'edx', repo: 'xblock-submit-and-compare' },
-            ];
+            const pythonRepos = Object.entries(pythonApplications).map(([repo, config]) => ({
+              owner: config.owner ?? 'edx',
+              repo,
+            }));
 
             const javascriptRepos = Object.entries(javascriptApplications)
               .filter(([, config]) => !config.subpackages)
@@ -108,20 +76,20 @@ jobs:
             //  },
             //]
 
-            core.setOutput('hasPythonRepos', true);
+            core.setOutput('hasPythonRepos', pythonRepos.length > 0);
             core.setOutput('hasJavascriptRepos', true);
             core.setOutput('hasJavascriptReposWithSubpackages', javascriptReposWithSubpackages.length > 0);
             core.setOutput('hasGenericRepos', false);
 
             if (selectedRepo === '') {
-              core.setOutput('pythonRepos', allPythonRepos);
+              core.setOutput('pythonRepos', pythonRepos);
               core.setOutput('javascriptRepos', javascriptRepos);
               core.setOutput('javascriptReposWithSubpackages', javascriptReposWithSubpackages);
               //core.setOutput('genericRepos', allGenericRepos);
               return;
             }
 
-            const pythonRepo = allPythonRepos.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
+            const pythonRepo = pythonRepos.find(repo => `${repo.owner}/${repo.repo}` === selectedRepo);
             if (pythonRepo) {
               core.setOutput('pythonRepos', [pythonRepo]);
             } else {
@@ -223,7 +191,9 @@ jobs:
 
       # Installs gettext, a dependency for extracting translation source files in django
       - name: install gettext
-        run: sudo apt install -y gettext
+        run: |
+          sudo apt update
+          sudo apt install -y gettext
 
       # Clones the edx/openedx-translations repository
       - name: clone ${github.repository}
@@ -433,7 +403,21 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
+
+      - name: fix outdated i18n extraction config
+        run: |
+          cd translations/${{ matrix.repo_config.repo }}
+          # Update package.json i18n_extract script if it uses the old babel method
+          if grep -q '"i18n_extract"[[:space:]]*:[[:space:]]*"[^"]*BABEL_ENV=i18n' package.json 2>/dev/null; then
+            echo "Patching package.json to use fedx-scripts formatjs extract..."
+            sed -i 's/"i18n_extract"[[:space:]]*:[[:space:]]*"[^"]*BABEL_ENV=i18n[^"]*"/"i18n_extract": "fedx-scripts formatjs extract"/' package.json
+          fi
+          # Update Makefile transifex_temp directory if it references the old plugin path
+          if grep -q 'transifex_temp.*babel-plugin-react-intl' Makefile 2>/dev/null; then
+            echo "Patching Makefile transifex_temp to use babel-plugin-formatjs output directory..."
+            sed -i '/transifex_temp/ s|babel-plugin-react-intl|babel-plugin-formatjs|g' Makefile
+          fi
 
       # Extracts the translation source files
       - name: extract translation source files
