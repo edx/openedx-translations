@@ -43,10 +43,6 @@ jobs:
             // Need to use a workaround until https://github.com/actions/toolkit/issues/1576 is fixed
             // const selectedRepo = core.getInput('repo');
             const selectedRepo = ${{ toJSON(github.event.inputs.repo) }} ?? '';
-            const pythonRepos = Object.entries(pythonApplications).map(([repo, config]) => ({
-              owner: config.owner ?? 'edx',
-              repo,
-            }));
             const allPythonRepos = [
               { owner: 'edx', repo: 'AudioXBlock' },
               { owner: 'edx', repo: 'DoneXBlock' },
