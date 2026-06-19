@@ -109,6 +109,15 @@ git:
     mode: onlyreviewed
     translation_files_expression: 'translations/edx-proctoring/edx_proctoring/conf/locale/<lang>/'
 
+  # edx-proctoring-proctortrack
+  - filter_type: dir
+    file_format: PO
+    source_file_extension: po
+    source_language: en
+    source_file_dir: translations/edx-proctoring-proctortrack/edx_proctoring_proctortrack/conf/locale/en/
+    mode: onlyreviewed
+    translation_files_expression: 'translations/edx-proctoring-proctortrack/edx_proctoring_proctortrack/conf/locale/<lang>/'
+
   # FeedbackXBlock
   - filter_type: dir
     file_format: PO
