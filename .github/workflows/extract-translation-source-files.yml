@@ -16,6 +16,11 @@ on:
         required: false
         default: ''
         type: string
+      repository_override:
+        description: 'TEMPORARY/TESTING ONLY: override which owner/repo to actually clone (e.g. a personal fork), while still using "repo" to select the matrix entry/Makefile config. Leave blank for normal runs. Remove before merging.'
+        required: false
+        default: ''
+        type: string
   schedule:
     - cron: '0 0 * * *'  # every day at midnight UTC
 
@@ -42,43 +47,6 @@ jobs:
               owner: config.owner ?? 'edx',
               repo,
             }));
-            const allPythonRepos = [
-              { owner: 'edx', repo: 'AudioXBlock' },
-              { owner: 'edx', repo: 'DoneXBlock' },
-              { owner: 'openedx', repo: 'FeedbackXBlock' },
-              { owner: 'edx', repo: 'RecommenderXBlock' },
-              { owner: 'edx', repo: 'ai-translations' },
-              { owner: 'edx', repo: 'commerce-coordinator' },
-              { owner: 'edx', repo: 'course-discovery' },
-              { owner: 'edx', repo: 'credentials' },
-              { owner: 'edx', repo: 'credentials-themes' },
-              { owner: 'edx', repo: 'edx-ace' },
-              { owner: 'edx', repo: 'edx-exams' },
-              { owner: 'edx', repo: 'edx-platform' },
-              { owner: 'edx', repo: 'portal-designer' },
-              { owner: 'edx', repo: 'registrar' },
-              { owner: 'edx', repo: 'enterprise-access' },
-              { owner: 'edx', repo: 'enterprise-catalog' },
-              { owner: 'edx', repo: 'enterprise-subsidy' },
-              { owner: 'edx', repo: 'financial-assistance' },
-              { owner: 'edx', repo: 'order-fulfillment' },
-              { owner: 'edx', repo: 'sanctions' },
-              { owner: 'edx', repo: 'video-encode-manager' },
-              { owner: 'openedx', repo: 'edx-bulk-grades' },
-              { owner: 'openedx', repo: 'edx-ora2' },
-              { owner: 'edx', repo: 'edx-proctoring' },
-              { owner: 'edx', repo: 'platform-plugin-aspects' },
-              { owner: 'openedx', repo: 'xblock-drag-and-drop-v2' },
-              { owner: 'edx', repo: 'xblock-free-text-response' },
-              { owner: 'openedx', repo: 'xblock-google-drive' },
-              { owner: 'openedx', repo: 'xblock-image-explorer' },
-              { owner: 'edx', repo: 'xblock-image-modal' },
-              { owner: 'edx', repo: 'xblock-lti-consumer' },
-              { owner: 'edx', repo: 'xblock-qualtrics-survey' },
-              { owner: 'edx', repo: 'xblock-sql-grader' },
-              { owner: 'edx', repo: 'xblock-submit-and-compare' },
-              { owner: 'verificient', repo: 'edx-proctoring-proctortrack' },
-            ];
 
             const javascriptRepos = Object.entries(javascriptApplications)
               .filter(([, config]) => !config.subpackages)
@@ -241,7 +209,7 @@ jobs:
       - name: clone ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
         uses: actions/checkout@v5
         with:
-          repository: ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
+          repository: ${{ github.event.inputs.repository_override != '' && github.event.inputs.repository_override || format('{0}/{1}', matrix.repo_config.owner, matrix.repo_config.repo) }}
           ref: ${{ github.event.inputs.ref }}
           path: translations/${{ matrix.repo_config.repo }}
           token: ${{ steps.generate_token.outputs.token }}
@@ -429,7 +397,7 @@ jobs:
       - name: clone ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
         uses: actions/checkout@v5
         with:
-          repository: ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
+          repository: ${{ github.event.inputs.repository_override != '' && github.event.inputs.repository_override || format('{0}/{1}', matrix.repo_config.owner, matrix.repo_config.repo) }}
           ref: ${{ github.event.inputs.ref }}
           path: translations/${{ matrix.repo_config.repo }}
           token: ${{ steps.generate_token.outputs.token }}
@@ -524,7 +492,7 @@ jobs:
       - name: clone ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
         uses: actions/checkout@v5
         with:
-          repository: ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
+          repository: ${{ github.event.inputs.repository_override != '' && github.event.inputs.repository_override || format('{0}/{1}', matrix.repo_config.owner, matrix.repo_config.repo) }}
           ref: ${{ github.event.inputs.ref }}
           path: translations/${{ matrix.repo_config.repo }}
           token: ${{ steps.generate_token.outputs.token }}
