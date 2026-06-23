@@ -16,11 +16,6 @@ on:
         required: false
         default: ''
         type: string
-      repository_override:
-        description: 'TEMPORARY/TESTING ONLY: override which owner/repo to actually clone (e.g. a personal fork), while still using "repo" to select the matrix entry/Makefile config. Leave blank for normal runs. Remove before merging.'
-        required: false
-        default: ''
-        type: string
   schedule:
     - cron: '0 0 * * *'  # every day at midnight UTC
 
@@ -209,7 +204,7 @@ jobs:
       - name: clone ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
         uses: actions/checkout@v5
         with:
-          repository: ${{ github.event.inputs.repository_override != '' && github.event.inputs.repository_override || format('{0}/{1}', matrix.repo_config.owner, matrix.repo_config.repo) }}
+          repository: ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
           ref: ${{ github.event.inputs.ref }}
           path: translations/${{ matrix.repo_config.repo }}
           token: ${{ steps.generate_token.outputs.token }}
@@ -397,7 +392,7 @@ jobs:
       - name: clone ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
         uses: actions/checkout@v5
         with:
-          repository: ${{ github.event.inputs.repository_override != '' && github.event.inputs.repository_override || format('{0}/{1}', matrix.repo_config.owner, matrix.repo_config.repo) }}
+          repository: ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
           ref: ${{ github.event.inputs.ref }}
           path: translations/${{ matrix.repo_config.repo }}
           token: ${{ steps.generate_token.outputs.token }}
@@ -492,7 +487,7 @@ jobs:
       - name: clone ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
         uses: actions/checkout@v5
         with:
-          repository: ${{ github.event.inputs.repository_override != '' && github.event.inputs.repository_override || format('{0}/{1}', matrix.repo_config.owner, matrix.repo_config.repo) }}
+          repository: ${{ matrix.repo_config.owner }}/${{ matrix.repo_config.repo }}
           ref: ${{ github.event.inputs.ref }}
           path: translations/${{ matrix.repo_config.repo }}
           token: ${{ steps.generate_token.outputs.token }}
