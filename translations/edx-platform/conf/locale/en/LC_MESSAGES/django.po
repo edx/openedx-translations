@@ -47,7 +47,7 @@ msgstr ""
 "#-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-06-23 00:56+0000\n"
+"POT-Creation-Date: 2026-06-24 00:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -318,39 +318,39 @@ msgstr ""
 msgid "Upstream context key i.e., learning_package/library key"
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:152
+#: cms/djangoapps/contentstore/models.py:154
 msgid ""
 "Upstream block usage key, this value cannot be null and useful to track "
 "upstream library blocks that do not exist yet"
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:158
+#: cms/djangoapps/contentstore/models.py:160
 msgid "Component Link"
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:159
+#: cms/djangoapps/contentstore/models.py:161
 msgid "Component Links"
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:185
+#: cms/djangoapps/contentstore/models.py:187
 msgid "The component must be published to access `published_at`"
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:324
+#: cms/djangoapps/contentstore/models.py:328
 msgid ""
 "Upstream block key (e.g. lct:...), this value cannot be null and is useful "
 "to track upstream library blocks that do not exist yet or were deleted."
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:331
+#: cms/djangoapps/contentstore/models.py:335
 msgid "Container Link"
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:332
+#: cms/djangoapps/contentstore/models.py:336
 msgid "Container Links"
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:358
+#: cms/djangoapps/contentstore/models.py:362
 msgid "The container must be published to access `published_at`"
 msgstr ""
 
@@ -358,38 +358,38 @@ msgstr ""
 #. Translators: This is listed as the duration for a video that has not
 #. yet reached the point in its processing by the servers where its
 #. duration is determined.
-#: cms/djangoapps/contentstore/models.py:540
+#: cms/djangoapps/contentstore/models.py:544
 #: cms/djangoapps/contentstore/video_storage_handlers.py:529
 #: openedx/core/djangoapps/api_admin/models.py:42 cms/templates/index.html:483
 msgid "Pending"
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:541
+#: cms/djangoapps/contentstore/models.py:545
 msgid "Processing"
 msgstr ""
 
 #. Translators: This is the status for a video that the servers have failed to
 #. process
-#: cms/djangoapps/contentstore/models.py:542
+#: cms/djangoapps/contentstore/models.py:546
 #: cms/djangoapps/contentstore/video_storage_handlers.py:123
 msgid "Failed"
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:543 lms/templates/seq_block.html:93
+#: cms/djangoapps/contentstore/models.py:547 lms/templates/seq_block.html:93
 #: lms/templates/vert_module.html:28
 msgid "Completed"
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:555
+#: cms/djangoapps/contentstore/models.py:561
 msgid "Linking status for course context key"
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:560
+#: cms/djangoapps/contentstore/models.py:566
 msgid "Status of links in given learning context/course."
 msgstr ""
 
-#: cms/djangoapps/contentstore/models.py:566
-#: cms/djangoapps/contentstore/models.py:567
+#: cms/djangoapps/contentstore/models.py:572
+#: cms/djangoapps/contentstore/models.py:573
 msgid "Learning Context Links status"
 msgstr ""
 
@@ -1137,70 +1137,70 @@ msgstr ""
 msgid "Incorrect format for field '{name}'. {detailed_message}"
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:32
+#: cms/djangoapps/modulestore_migrator/models.py:51
 msgid "Key of the content source (a course or a legacy library)"
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:39
+#: cms/djangoapps/modulestore_migrator/models.py:58
 msgid ""
 "If set, the system will forward references of this source over to the target "
 "of this migration"
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:73
+#: cms/djangoapps/modulestore_migrator/models.py:94
 msgid "Migrated content version, the hash of published content version"
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:79
+#: cms/djangoapps/modulestore_migrator/models.py:100
 msgid ""
 "Maximum hierachy level at which content should be aggregated in target "
 "library"
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:86
+#: cms/djangoapps/modulestore_migrator/models.py:107
 msgid ""
 "If a piece of content already exists in the content library, choose how to "
 "handle it."
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:92
+#: cms/djangoapps/modulestore_migrator/models.py:113
 msgid ""
 "Should the migration preserve the location IDs of the existing blocks?If "
 "not, then new, unique human-readable IDs will be generated based on the "
 "block titles."
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:99
+#: cms/djangoapps/modulestore_migrator/models.py:120
 msgid "Content will be imported into this library"
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:106
+#: cms/djangoapps/modulestore_migrator/models.py:127
 msgid ""
 "Optional - Collection (within the target library) into which imported "
 "content will be grouped"
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:113
+#: cms/djangoapps/modulestore_migrator/models.py:134
 msgid "Tracks the status of the task which is executing this migration"
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:119
+#: cms/djangoapps/modulestore_migrator/models.py:140
 msgid ""
 "Changelog entry in the target learning package which records this migration"
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:126
+#: cms/djangoapps/modulestore_migrator/models.py:147
 msgid ""
 "Modulestore content is processed and staged before importing it to a "
 "learning packge. We temporarily save the staged content to allow for "
 "troubleshooting of failed migrations."
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:156
+#: cms/djangoapps/modulestore_migrator/models.py:182
 msgid "Original usage key of the XBlock that has been imported."
 msgstr ""
 
-#: cms/djangoapps/modulestore_migrator/models.py:163
+#: cms/djangoapps/modulestore_migrator/models.py:189
 msgid ""
 "If set, the system will forward references of this block source over to the "
 "target of this block migration"
@@ -1619,64 +1619,64 @@ msgstr ""
 msgid "Other education"
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1398
+#: common/djangoapps/student/models/user.py:1400
 #, python-brace-format
 msgid "{platform_name} Honor Code Certificate for {course_name}"
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1399
+#: common/djangoapps/student/models/user.py:1401
 #, python-brace-format
 msgid "{platform_name} Verified Certificate for {course_name}"
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1400
-#: common/djangoapps/student/models/user.py:1401
+#: common/djangoapps/student/models/user.py:1402
+#: common/djangoapps/student/models/user.py:1403
 #, python-brace-format
 msgid "{platform_name} Professional Certificate for {course_name}"
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1407
+#: common/djangoapps/student/models/user.py:1409
 msgid ""
 "Your organization ID (if your organization has an existing page on LinkedIn) "
 "e.g 1337. If not provided, will default to sending Platform Name (e.g. edX) "
 "instead."
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1463
+#: common/djangoapps/student/models/user.py:1465
 #, python-brace-format
 msgid "{platform_name} Certificate for {course_name}"
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1540
-#: common/djangoapps/student/models/user.py:1572
+#: common/djangoapps/student/models/user.py:1542
+#: common/djangoapps/student/models/user.py:1574
 msgid "The ISO 639-1 language code for this language."
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1603
+#: common/djangoapps/student/models/user.py:1605
 msgid "Name of the UTM cookie"
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1608
+#: common/djangoapps/student/models/user.py:1610
 msgid "Name of the affiliate cookie"
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1631
+#: common/djangoapps/student/models/user.py:1633
 msgid "Name of this user attribute."
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1632
+#: common/djangoapps/student/models/user.py:1634
 msgid "Value of this user attribute."
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1697
+#: common/djangoapps/student/models/user.py:1699
 msgid "Secondary email address"
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1698
+#: common/djangoapps/student/models/user.py:1700
 msgid "Secondary email address to recover linked account."
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1756
+#: common/djangoapps/student/models/user.py:1765
 msgid ""
 "An employee (a user whose email has current site's domain name) whose email "
 "exists in this model, can be able to login from login screen through email "
@@ -1684,14 +1684,14 @@ msgid ""
 "that employee can login via third party authentication backend only."
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1771
+#: common/djangoapps/student/models/user.py:1780
 msgid ""
 "It expect that the data will be provided in a csv file format "
 "with                     first row being the header and columns will be as "
 "follows:                     username, current_email, desired_email"
 msgstr ""
 
-#: common/djangoapps/student/models/user.py:1953
+#: common/djangoapps/student/models/user.py:1962
 msgid "Add a reason"
 msgstr ""
 
@@ -3899,33 +3899,31 @@ msgstr ""
 msgid "Visit a course wiki to add an article."
 msgstr ""
 
-#: lms/djangoapps/courseware/access_response.py:135
-#: lms/djangoapps/courseware/access_response.py:160
+#: lms/djangoapps/courseware/access_response.py:146
 msgid "Course has not started"
 msgstr ""
 
-#: lms/djangoapps/courseware/access_response.py:138
-#: lms/djangoapps/courseware/access_response.py:165
+#: lms/djangoapps/courseware/access_response.py:149
 msgid "Course does not start until {}"
 msgstr ""
 
-#: lms/djangoapps/courseware/access_response.py:181
+#: lms/djangoapps/courseware/access_response.py:170
 msgid "You have unfulfilled milestones"
 msgstr ""
 
-#: lms/djangoapps/courseware/access_response.py:198
+#: lms/djangoapps/courseware/access_response.py:187
 msgid "You do not have access to this course"
 msgstr ""
 
-#: lms/djangoapps/courseware/access_response.py:213
+#: lms/djangoapps/courseware/access_response.py:202
 msgid "You do not have access to this course on a mobile device"
 msgstr ""
 
-#: lms/djangoapps/courseware/access_response.py:253
+#: lms/djangoapps/courseware/access_response.py:242
 msgid "You must be enrolled in the course"
 msgstr ""
 
-#: lms/djangoapps/courseware/access_response.py:264
+#: lms/djangoapps/courseware/access_response.py:253
 #, python-brace-format
 msgid ""
 "You are enrolled in this course with '{enrollment_enterprise_name}'. "
@@ -3933,15 +3931,15 @@ msgid ""
 "Please log in with '{enrollment_enterprise_name}' to access this course."
 msgstr ""
 
-#: lms/djangoapps/courseware/access_response.py:280
+#: lms/djangoapps/courseware/access_response.py:269
 msgid "You must give Data Sharing Consent for the course"
 msgstr ""
 
-#: lms/djangoapps/courseware/access_response.py:291
+#: lms/djangoapps/courseware/access_response.py:280
 msgid "You must be logged in to see this course"
 msgstr ""
 
-#: lms/djangoapps/courseware/access_response.py:302
+#: lms/djangoapps/courseware/access_response.py:291
 #, python-brace-format
 msgid "{course_name} is no longer available."
 msgstr ""
@@ -7633,7 +7631,7 @@ msgstr ""
 msgid "Learning Sequences and Outlines"
 msgstr ""
 
-#: openedx/core/djangoapps/content/search/models.py:28
+#: openedx/core/djangoapps/content/search/models.py:30
 msgid ""
 "Numeric ID for each Course / Library context. This ID will generally require "
 "fewer bits than the full LearningContextKey, allowing more courses and "
@@ -7820,11 +7818,11 @@ msgstr ""
 msgid "Expired"
 msgstr ""
 
-#: openedx/core/djangoapps/content_staging/models.py:43
+#: openedx/core/djangoapps/content_staging/models.py:45
 msgid "Staged Content"
 msgstr ""
 
-#: openedx/core/djangoapps/content_staging/models.py:55
+#: openedx/core/djangoapps/content_staging/models.py:57
 msgid ""
 "\n"
 "            What type of content is staged. Only OLX content is supported, "
@@ -7835,11 +7833,11 @@ msgid ""
 "        "
 msgstr ""
 
-#: openedx/core/djangoapps/content_staging/models.py:72
+#: openedx/core/djangoapps/content_staging/models.py:74
 msgid "Content tags applied to these blocks"
 msgstr ""
 
-#: openedx/core/djangoapps/content_staging/models.py:116
+#: openedx/core/djangoapps/content_staging/models.py:122
 msgid "Original usage key/ID of the thing that is in the clipboard."
 msgstr ""
 
