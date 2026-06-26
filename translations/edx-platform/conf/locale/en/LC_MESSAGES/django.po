@@ -47,7 +47,7 @@ msgstr ""
 "#-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-06-24 00:51+0000\n"
+"POT-Creation-Date: 2026-06-25 00:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3923,23 +3923,11 @@ msgstr ""
 msgid "You must be enrolled in the course"
 msgstr ""
 
-#: lms/djangoapps/courseware/access_response.py:253
-#, python-brace-format
-msgid ""
-"You are enrolled in this course with '{enrollment_enterprise_name}'. "
-"However, you are currently logged in as a '{active_enterprise_name}' user. "
-"Please log in with '{enrollment_enterprise_name}' to access this course."
-msgstr ""
-
-#: lms/djangoapps/courseware/access_response.py:269
-msgid "You must give Data Sharing Consent for the course"
-msgstr ""
-
-#: lms/djangoapps/courseware/access_response.py:280
+#: lms/djangoapps/courseware/access_response.py:262
 msgid "You must be logged in to see this course"
 msgstr ""
 
-#: lms/djangoapps/courseware/access_response.py:291
+#: lms/djangoapps/courseware/access_response.py:273
 #, python-brace-format
 msgid "{course_name} is no longer available."
 msgstr ""
@@ -3948,33 +3936,33 @@ msgstr ""
 msgid "Financial Assistance"
 msgstr ""
 
-#: lms/djangoapps/courseware/courses.py:648
+#: lms/djangoapps/courseware/courses.py:656
 msgid "Assignment"
 msgstr ""
 
-#: lms/djangoapps/courseware/courses.py:739
+#: lms/djangoapps/courseware/courses.py:747
 msgid "Open Response Assessment"
 msgstr ""
 
-#: lms/djangoapps/courseware/courses.py:762
+#: lms/djangoapps/courseware/courses.py:770
 msgid ""
 "This Open Response Assessment's due dates are set by your instructor and "
 "can't be shifted."
 msgstr ""
 
-#: lms/djangoapps/courseware/courses.py:773
+#: lms/djangoapps/courseware/courses.py:781
 msgid "Self Assessment"
 msgstr ""
 
-#: lms/djangoapps/courseware/courses.py:775
+#: lms/djangoapps/courseware/courses.py:783
 msgid "Peer Assessment"
 msgstr ""
 
-#: lms/djangoapps/courseware/courses.py:777
+#: lms/djangoapps/courseware/courses.py:785
 msgid "Staff Assessment"
 msgstr ""
 
-#: lms/djangoapps/courseware/courses.py:779
+#: lms/djangoapps/courseware/courses.py:787
 msgid "Submission"
 msgstr ""
 
@@ -10079,7 +10067,7 @@ msgid ""
 "in csv because no enrollment found for these records: {error_line_numbers}"
 msgstr ""
 
-#: openedx/features/enterprise_support/api.py:851
+#: openedx/features/enterprise_support/api.py:666
 #, python-brace-format
 msgid ""
 "You have access to the {bold_start}{enterprise_name}{bold_end} dashboard. To "
@@ -10087,12 +10075,12 @@ msgid ""
 "visit the {enterprise_name} dashboard{link_end}."
 msgstr ""
 
-#: openedx/features/enterprise_support/api.py:952
+#: openedx/features/enterprise_support/api.py:767
 #, python-brace-format
 msgid "Enrollment in {course_title} was not complete."
 msgstr ""
 
-#: openedx/features/enterprise_support/api.py:956
+#: openedx/features/enterprise_support/api.py:771
 #, python-brace-format
 msgid ""
 "If you have concerns about sharing your data, please contact your "
