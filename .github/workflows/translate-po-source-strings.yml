@@ -35,7 +35,7 @@ on:
   workflow_dispatch:
     inputs:
       application_name:
-        description: 'Python application/repository to translate, case sensitive. Leave blank to run all.'
+        description: 'Python application(s)/repository(ies) to translate (comma-separated), case sensitive. Leave blank to run all.'
         required: false
         type: string
       translation_language:
