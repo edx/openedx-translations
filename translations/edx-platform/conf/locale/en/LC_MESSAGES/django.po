@@ -47,7 +47,7 @@ msgstr ""
 "#-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-03 00:45+0000\n"
+"POT-Creation-Date: 2026-08-12 00:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1317,7 +1317,7 @@ msgstr ""
 #: common/djangoapps/course_modes/helpers.py:48
 #: lms/djangoapps/branding/api.py:329 lms/djangoapps/branding/api.py:404
 #: lms/djangoapps/courseware/views/views.py:2297
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:1079
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1096
 #: lms/templates/static_templates/honor.html:5
 #: lms/templates/static_templates/honor.html:10
 #: themes/stanford-style/lms/templates/footer.html:20
@@ -1431,19 +1431,19 @@ msgstr ""
 msgid "The time period before a course ends in which a course mode will expire"
 msgstr ""
 
-#: common/djangoapps/course_modes/views.py:268
+#: common/djangoapps/course_modes/views.py:279
 msgid "Enrollment is closed"
 msgstr ""
 
-#: common/djangoapps/course_modes/views.py:283
+#: common/djangoapps/course_modes/views.py:294
 msgid "Enrollment mode not supported"
 msgstr ""
 
-#: common/djangoapps/course_modes/views.py:314
+#: common/djangoapps/course_modes/views.py:325
 msgid "Invalid amount selected."
 msgstr ""
 
-#: common/djangoapps/course_modes/views.py:323
+#: common/djangoapps/course_modes/views.py:334
 msgid "No selected price or selected price is too low."
 msgstr ""
 
@@ -1476,8 +1476,8 @@ msgstr ""
 #. Translators: This label appears above a field on the registration form
 #. meant to hold the user's password.
 #: common/djangoapps/student/admin.py:543
-#: openedx/core/djangoapps/user_authn/views/login_form.py:118
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:656
+#: openedx/core/djangoapps/user_authn/views/login_form.py:97
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:673
 #: lms/templates/provider_login.html:48 lms/templates/provider_login.html:49
 #: lms/templates/signup_modal.html:44
 #: themes/stanford-style/lms/templates/register-form.html:101
@@ -1878,28 +1878,28 @@ msgstr ""
 msgid "Unable to connect with the external provider, please try again"
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:86
+#: common/djangoapps/third_party_auth/models.py:87
 msgid "Authentication with {} is currently unavailable."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:148
+#: common/djangoapps/third_party_auth/models.py:149
 msgid ""
 "Secondary providers are displayed less prominently, in a separate list of "
 "\"Institution\" login providers."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:158
+#: common/djangoapps/third_party_auth/models.py:159
 msgid ""
 "optional. If this provider is an Organization, this attribute can be used "
 "reference users in that Organization"
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:167
+#: common/djangoapps/third_party_auth/models.py:168
 msgid "The Site that this provider configuration belongs to."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:174
-#: common/djangoapps/third_party_auth/models.py:725
+#: common/djangoapps/third_party_auth/models.py:175
+#: common/djangoapps/third_party_auth/models.py:729
 msgid ""
 "If this option is enabled, users that visit a \"TPA hinted\" URL for this "
 "provider (e.g. a URL ending with `?tpa_hint=[provider_name]`) will be "
@@ -1907,35 +1907,35 @@ msgid ""
 "prompted with a login dialog."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:182
-#: common/djangoapps/third_party_auth/models.py:733
+#: common/djangoapps/third_party_auth/models.py:183
+#: common/djangoapps/third_party_auth/models.py:737
 msgid ""
 "If this option is enabled, users will not be asked to confirm their details "
 "(name, email, etc.) during the registration process. Only select this option "
 "for trusted providers that are known to provide accurate user information."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:190
-#: common/djangoapps/third_party_auth/models.py:741
+#: common/djangoapps/third_party_auth/models.py:191
+#: common/djangoapps/third_party_auth/models.py:745
 msgid ""
 "If this option is selected, users will not be required to confirm their "
 "email, and their account will be activated immediately upon registration."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:197
+#: common/djangoapps/third_party_auth/models.py:198
 msgid ""
 "If this option is selected, users will be sent a welcome email upon "
 "registration."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:203
+#: common/djangoapps/third_party_auth/models.py:204
 msgid ""
 "If this option is not selected, users will not be presented with the "
 "provider as an option to authenticate with on the login screen, but manual "
 "authentication using the correct link is still possible."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:214
+#: common/djangoapps/third_party_auth/models.py:215
 msgid ""
 "If this option is set, then users logging in using this SSO provider will "
 "have their session length limited to no longer than this value. If set to 0 "
@@ -1943,15 +1943,15 @@ msgid ""
 "blank, the Django platform session default length will be used."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:223
-#: common/djangoapps/third_party_auth/models.py:748
+#: common/djangoapps/third_party_auth/models.py:224
+#: common/djangoapps/third_party_auth/models.py:752
 msgid ""
 "If this option is selected, users will be directed to the registration page "
 "immediately after authenticating with the third party instead of the login "
 "page."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:230
+#: common/djangoapps/third_party_auth/models.py:231
 msgid ""
 "Synchronize user profile data received from the identity provider with the "
 "edX user account on each SSO login. The user will be notified if the email "
@@ -1959,26 +1959,26 @@ msgid ""
 "synchronization."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:248
+#: common/djangoapps/third_party_auth/models.py:249
 msgid ""
 "IDPs with this set to True will be excluded from the dropdown IDP selection "
 "in the EnterpriseCustomer Django Admin form."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:483
+#: common/djangoapps/third_party_auth/models.py:487
 msgid "The Site that this SAML configuration belongs to."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:578
+#: common/djangoapps/third_party_auth/models.py:582
 #, python-brace-format
 msgid "{platform_name} Support"
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:633
+#: common/djangoapps/third_party_auth/models.py:637
 msgid "A configuration nickname."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:755
+#: common/djangoapps/third_party_auth/models.py:759
 msgid ""
 "If enabled, optional checkboxes (marketing emails opt-in, etc.) will not be "
 "rendered on the registration form for users registering via this provider. "
@@ -1986,7 +1986,7 @@ msgid ""
 "out)."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:763
+#: common/djangoapps/third_party_auth/models.py:767
 msgid ""
 "If enabled, and the identity provider supplies an email address, the email "
 "field on the SSO registration form will be read-only and users will not be "
@@ -2935,7 +2935,7 @@ msgstr ""
 #. meant to confirm the user's email address.
 #: common/templates/student/edx_ace/recoveryemailcreate/email/body.html:24
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:360
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:580
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:597
 msgid "Confirm Email"
 msgstr ""
 
@@ -3093,7 +3093,7 @@ msgstr ""
 #. in order to register a new account.
 #: lms/djangoapps/branding/api.py:328 lms/djangoapps/branding/api.py:403
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:331
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:1152
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1169
 #: cms/templates/widgets/footer.html:25
 #: lms/templates/static_templates/tos.html:5
 #: lms/templates/static_templates/tos.html:10
@@ -4796,9 +4796,9 @@ msgstr ""
 #. meant to hold the user's email address.
 #: lms/djangoapps/instructor/views/api.py:1507
 #: lms/djangoapps/instructor/views/instructor_dashboard.py:722
-#: openedx/core/djangoapps/user_authn/views/login_form.py:97
+#: openedx/core/djangoapps/user_authn/views/login_form.py:76
 #: openedx/core/djangoapps/user_authn/views/password_reset.py:91
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:553
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:570
 #: lms/templates/ccx/enrollment.html:84
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:53
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:66
@@ -4824,7 +4824,7 @@ msgstr ""
 #. form used to select the user's gender.
 #: lms/djangoapps/instructor/views/api.py:1511
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:117
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:706
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:723
 #: lms/templates/signup_modal.html:94
 #: themes/stanford-style/lms/templates/register-form.html:193
 msgid "Gender"
@@ -4879,7 +4879,7 @@ msgstr ""
 #. which allows the user to input the city in which they live.
 #: lms/djangoapps/instructor/views/api.py:1537
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:290
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:914
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:931
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:88
 #: themes/stanford-style/lms/templates/register-form.html:160
 msgid "City"
@@ -5445,7 +5445,7 @@ msgstr ""
 #. Translators: This label appears above a field on the registration form
 #. meant to hold the user's full name.
 #: lms/djangoapps/instructor/views/tools.py:221
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:603
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:620
 #: lms/templates/signup_modal.html:50
 #: themes/stanford-style/lms/templates/register-form.html:88
 #: themes/stanford-style/lms/templates/register-form.html:142
@@ -9132,7 +9132,7 @@ msgid "Full name can't be longer than 255 symbols"
 msgstr ""
 
 #: openedx/core/djangoapps/user_api/accounts/api.py:454
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:114
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:117
 msgid "Enter a valid name"
 msgstr ""
 
@@ -9151,7 +9151,7 @@ msgid ""
 msgstr ""
 
 #: openedx/core/djangoapps/user_api/accounts/views.py:648
-#: openedx/core/djangoapps/user_authn/views/login.py:311
+#: openedx/core/djangoapps/user_authn/views/login.py:309
 #: lms/templates/provider_login.html:43
 msgid "Email or password is incorrect."
 msgstr ""
@@ -9266,7 +9266,7 @@ msgstr ""
 #. Translators: This label appears above a dropdown menu on the registration
 #. form used to select the user's highest completed level of education.
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:94
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:676
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:693
 msgid "Highest level of education completed"
 msgstr ""
 
@@ -9276,7 +9276,7 @@ msgstr ""
 #. Translators: This label appears above a dropdown menu on the registration
 #. form used to select the user's year of birth.
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:136
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:729
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:746
 #: lms/templates/signup_modal.html:108
 msgid "Year of birth"
 msgstr ""
@@ -9286,7 +9286,7 @@ msgstr ""
 #. Translators: This phrase appears above a field on the registration form
 #. meant to hold the user's reasons for registering with edX.
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:154
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:890
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:907
 #, python-brace-format
 msgid "Tell us why you're interested in {platform_name}"
 msgstr ""
@@ -9296,7 +9296,7 @@ msgstr ""
 #. Translators: This label appears above a dropdown menu on the registration
 #. form used to select the user's profession
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:172
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:839
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:856
 msgid "Profession"
 msgstr ""
 
@@ -9305,7 +9305,7 @@ msgstr ""
 #. Translators: This label appears above a dropdown menu on the registration
 #. form used to select the user's specialty
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:184
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:855
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:872
 msgid "Specialty"
 msgstr ""
 
@@ -9314,7 +9314,7 @@ msgstr ""
 #. Translators: This label appears above a field on the registration form
 #. which allows the user to input the Company
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:196
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:952
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:969
 msgid "Company"
 msgstr ""
 
@@ -9324,7 +9324,7 @@ msgstr ""
 #. Translators: This label appears above a field on the registration form
 #. which allows the user to input the Title
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:206
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:969
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:986
 #: wiki/forms.py:37 wiki/forms.py:45 wiki/forms.py:206
 #: wiki/templates/wiki/dir.html:54
 msgid "Title"
@@ -9335,7 +9335,7 @@ msgstr ""
 #. Translators: This label appears above a field on the registration form
 #. which allows the user to input the Job Title
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:216
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:986
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1003
 msgid "Job Title"
 msgstr ""
 
@@ -9344,7 +9344,7 @@ msgstr ""
 #. Translators: This label appears above a field on the registration form
 #. which allows the user to input the First Name
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:226
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:1003
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1020
 msgid "First Name"
 msgstr ""
 
@@ -9353,7 +9353,7 @@ msgstr ""
 #. Translators: This label appears above a field on the registration form
 #. which allows the user to input the First Name
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:242
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:1020
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1037
 msgid "Last Name"
 msgstr ""
 
@@ -9363,7 +9363,7 @@ msgstr ""
 #. Translators: This label appears above a field on the registration form
 #. meant to hold the user's mailing address.
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:258
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:868
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:885
 #: lms/templates/signup_modal.html:122
 msgid "Mailing address"
 msgstr ""
@@ -9375,7 +9375,7 @@ msgstr ""
 #. which allows the user to input the State/Province/Region in which they
 #. live.
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:274
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:935
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:952
 msgid "State/Province/Region"
 msgstr ""
 
@@ -9463,7 +9463,7 @@ msgstr ""
 msgid "Account creation not allowed."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:91
+#: openedx/core/djangoapps/user_authn/views/login.py:89
 #, python-brace-format
 msgid ""
 "You've successfully signed in to your {provider_name} account, but this "
@@ -9474,17 +9474,17 @@ msgid ""
 "yet, click {register_label_strong} at the top of the page."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:102
+#: openedx/core/djangoapps/user_authn/views/login.py:100
 #: lms/templates/navigation/navbar-not-authenticated.html:38
 #: themes/stanford-style/lms/templates/register-form.html:272
 msgid "Register"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:138
+#: openedx/core/djangoapps/user_authn/views/login.py:136
 msgid "There was an error receiving your login information. Please email us."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:172
+#: openedx/core/djangoapps/user_authn/views/login.py:170
 #, python-brace-format
 msgid ""
 "To protect your account, it’s been temporarily locked. Try again in "
@@ -9492,11 +9492,11 @@ msgid ""
 "your password {link_start}here{link_end} before you try again."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:243
+#: openedx/core/djangoapps/user_authn/views/login.py:241
 msgid "Too many failed login attempts. Try again later."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:285
+#: openedx/core/djangoapps/user_authn/views/login.py:283
 #, python-brace-format
 msgid ""
 "Email or password is incorrect.{li_start}You have {remaining_attempts} more "
@@ -9505,7 +9505,7 @@ msgid ""
 "{li_end}"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:393
+#: openedx/core/djangoapps/user_authn/views/login.py:391
 #, python-brace-format
 msgid ""
 "As {allowed_domain} user, You must login with your {allowed_domain} "
@@ -9517,7 +9517,7 @@ msgstr ""
 #. Translators: These instructions appear on the password reset form,
 #. immediately below a field meant to hold the user's email address.
 #. pylint: disable=no-member
-#: openedx/core/djangoapps/user_authn/views/login_form.py:101
+#: openedx/core/djangoapps/user_authn/views/login_form.py:80
 #: openedx/core/djangoapps/user_authn/views/password_reset.py:100
 #, python-brace-format
 msgid "The email address you used to register with {platform_name}"
@@ -9602,102 +9602,102 @@ msgstr ""
 msgid "The provided access_token is not valid."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:112
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:115
 msgid "Full Name cannot contain the following characters: < >"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:152
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:155
 msgid "A properly formatted e-mail is required"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:153
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:156
 msgid "Your legal name must be a minimum of one character long"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:154
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:157
 #, python-format
 msgid ""
 "Your legal name is too long. It must not exceed %(max_length)s characters"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:166
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:169
 #, python-format
 msgid "Email cannot be more than %(limit_value)s characters long"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:198
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:201
 msgid "You must accept the terms of service."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:202
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:205
 msgid "A level of education is required"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:203
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:206
 msgid "Your gender is required"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:204
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:207
 msgid "Your year of birth is required"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:205
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:208
 msgid "Your mailing address is required"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:206
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:209
 msgid "A description of your goals is required"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:207
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:210
 msgid "A city is required"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:208
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:211
 msgid "A country is required"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:216
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:219
 msgid "To enroll, you must follow the honor code."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:224
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:227
 msgid "You are missing one or more required fields"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:276
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:279
 msgid "Unauthorized email address."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:280
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:283
 #, python-brace-format
 msgid ""
 "It looks like {email} belongs to an existing account. Try again with a "
 "different email address."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:316
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:319
 msgid "Registration from this country is not allowed due to restrictions."
 msgstr ""
 
 #. Translators: These instructions appear on the registration form,
 #. immediately
 #. below a field meant to hold the user's email address.
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:557
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:574
 msgid "This is what you will use to login."
 msgstr ""
 
 #. Translators: These instructions appear on the registration form,
 #. immediately
 #. below a field meant to hold the user's full name.
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:607
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:624
 msgid "This name will be used on any certificates that you earn."
 msgstr ""
 
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: This label appears above a field on the registration form
 #. meant to hold the user's public username.
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:628
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:645
 #: lms/templates/signup_modal.html:47 lms/templates/signup_modal.html:59
 #: themes/stanford-style/lms/templates/register-form.html:93
 #: themes/stanford-style/lms/templates/register-shib.html:126
@@ -9707,36 +9707,36 @@ msgstr ""
 #. Translators: These instructions appear on the registration form,
 #. immediately
 #. below a field meant to hold the user's public username.
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:633
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:650
 msgid ""
 "The name that will identify you in your courses. It cannot be changed later."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:754
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:771
 #, python-brace-format
 msgid "I agree that {platform_name} may send me marketing messages."
 msgstr ""
 
 #. Translators: This label appears above a dropdown menu on the registration
 #. form used to select the country in which the user lives.
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:1037
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1054
 msgid "Country or Region of Residence"
 msgstr ""
 
 #. Translators: These instructions appear on the registration form,
 #. immediately
 #. below a field meant to hold the user's country.
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:1048
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1065
 msgid "The country or region where you live."
 msgstr ""
 
 #. Translators: This is a legal document users must agree to
 #. in order to register a new account.
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:1086
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1103
 msgid "Terms of Service and Honor Code"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:1092
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1109
 #, python-brace-format
 msgid ""
 "I agree to the {platform_name} {terms_of_service_link_start}"
@@ -9747,13 +9747,13 @@ msgstr ""
 #. in order to register a new account.
 #. Translators: "Terms of service" is a legal document users must agree to
 #. in order to register a new account.
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:1104
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:1168
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1121
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1185
 #, python-brace-format
 msgid "You must agree to the {platform_name} {terms_of_service}"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:1115
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1132
 #, python-brace-format
 msgid ""
 "By creating an account, you agree to the                   "
@@ -9766,14 +9766,14 @@ msgstr ""
 
 #. Translators: "Terms of service" is a legal document users must agree to
 #. in order to register a new account.
-#: openedx/core/djangoapps/user_authn/views/registration_form.py:1157
+#: openedx/core/djangoapps/user_authn/views/registration_form.py:1174
 #, python-brace-format
 msgid ""
 "I agree to the {platform_name} {tos_link_start}{terms_of_service}"
 "{tos_link_end}"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/utils.py:53
+#: openedx/core/djangoapps/user_authn/views/utils.py:54
 msgid "Create Account"
 msgstr ""
 
