@@ -47,7 +47,7 @@ msgstr ""
 "#-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-19 00:23+0000\n"
+"POT-Creation-Date: 2026-08-31 00:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1316,7 +1316,7 @@ msgstr ""
 
 #: common/djangoapps/course_modes/helpers.py:48
 #: lms/djangoapps/branding/api.py:329 lms/djangoapps/branding/api.py:404
-#: lms/djangoapps/courseware/views/views.py:2297
+#: lms/djangoapps/courseware/views/views.py:2305
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:1096
 #: lms/templates/static_templates/honor.html:5
 #: lms/templates/static_templates/honor.html:10
@@ -1899,7 +1899,7 @@ msgid "The Site that this provider configuration belongs to."
 msgstr ""
 
 #: common/djangoapps/third_party_auth/models.py:175
-#: common/djangoapps/third_party_auth/models.py:729
+#: common/djangoapps/third_party_auth/models.py:733
 msgid ""
 "If this option is enabled, users that visit a \"TPA hinted\" URL for this "
 "provider (e.g. a URL ending with `?tpa_hint=[provider_name]`) will be "
@@ -1908,7 +1908,7 @@ msgid ""
 msgstr ""
 
 #: common/djangoapps/third_party_auth/models.py:183
-#: common/djangoapps/third_party_auth/models.py:737
+#: common/djangoapps/third_party_auth/models.py:741
 msgid ""
 "If this option is enabled, users will not be asked to confirm their details "
 "(name, email, etc.) during the registration process. Only select this option "
@@ -1916,7 +1916,7 @@ msgid ""
 msgstr ""
 
 #: common/djangoapps/third_party_auth/models.py:191
-#: common/djangoapps/third_party_auth/models.py:745
+#: common/djangoapps/third_party_auth/models.py:750
 msgid ""
 "If this option is selected, users will not be required to confirm their "
 "email, and their account will be activated immediately upon registration."
@@ -1944,7 +1944,7 @@ msgid ""
 msgstr ""
 
 #: common/djangoapps/third_party_auth/models.py:224
-#: common/djangoapps/third_party_auth/models.py:752
+#: common/djangoapps/third_party_auth/models.py:757
 msgid ""
 "If this option is selected, users will be directed to the registration page "
 "immediately after authenticating with the third party instead of the login "
@@ -1978,7 +1978,7 @@ msgstr ""
 msgid "A configuration nickname."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:759
+#: common/djangoapps/third_party_auth/models.py:764
 msgid ""
 "If enabled, optional checkboxes (marketing emails opt-in, etc.) will not be "
 "rendered on the registration form for users registering via this provider. "
@@ -1986,7 +1986,7 @@ msgid ""
 "out)."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:767
+#: common/djangoapps/third_party_auth/models.py:773
 msgid ""
 "If enabled, and the identity provider supplies an email address, the email "
 "field on the SSO registration form will be read-only and users will not be "
@@ -3589,13 +3589,13 @@ msgstr ""
 #: lms/djangoapps/commerce/models.py:38
 #: openedx/core/djangoapps/catalog/models.py:31
 #: openedx/core/djangoapps/credentials/models.py:60
-#: openedx/core/djangoapps/credit/models.py:785
+#: openedx/core/djangoapps/credit/models.py:793
 msgid "Cache Time To Live"
 msgstr ""
 
 #: lms/djangoapps/commerce/models.py:41
 #: openedx/core/djangoapps/credentials/models.py:63
-#: openedx/core/djangoapps/credit/models.py:788
+#: openedx/core/djangoapps/credit/models.py:796
 msgid ""
 "Specified in seconds. Enable caching by setting this to a value greater than "
 "0."
@@ -4131,13 +4131,13 @@ msgstr ""
 msgid "Financial Assistance Backend API Base URL."
 msgstr ""
 
-#: lms/djangoapps/courseware/models.py:572
+#: lms/djangoapps/courseware/models.py:573
 msgid ""
 "Username created for Financial Assistance Backend, e.g. "
 "financial_assistance_service_user."
 msgstr ""
 
-#: lms/djangoapps/courseware/models.py:577
+#: lms/djangoapps/courseware/models.py:578
 msgid "Percentage of courses allowed to use edx-financial-assistance"
 msgstr ""
 
@@ -4202,7 +4202,7 @@ msgid ""
 msgstr ""
 
 #: lms/djangoapps/courseware/tabs.py:36
-#: lms/djangoapps/courseware/views/views.py:2250
+#: lms/djangoapps/courseware/views/views.py:2258
 #: openedx/features/course_experience/__init__.py:91 xmodule/tabs.py:490
 #: cms/templates/widgets/header.html:89 cms/templates/widgets/header.html:93
 #: cms/templates/widgets/header.html:164 cms/templates/widgets/header.html:292
@@ -4371,7 +4371,7 @@ msgstr ""
 msgid "Certificate is being created."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2062
+#: lms/djangoapps/courseware/views/views.py:2070
 msgid ""
 "We plan to use this information to evaluate your application for financial "
 "assistance and to further develop our financial assistance program. \n"
@@ -4388,29 +4388,29 @@ msgid ""
 "processed."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2257
+#: lms/djangoapps/courseware/views/views.py:2265
 msgid ""
 "Select the course for which you want to earn a verified certificate. If the "
 "course does not appear in the list, make sure that you have enrolled in the "
 "audit track for the course."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2264
+#: lms/djangoapps/courseware/views/views.py:2272
 msgid "I certify that: "
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2271
+#: lms/djangoapps/courseware/views/views.py:2279
 msgid ""
 "Paying the verified certificate fee for the above course would cause me "
 "economic hardship"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2283
+#: lms/djangoapps/courseware/views/views.py:2291
 msgid ""
 "I will work diligently to complete the course work and receive a certificate"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2295
+#: lms/djangoapps/courseware/views/views.py:2303
 #, python-brace-format
 msgid ""
 "I have read, understand, and will abide by the {honor_code_link} for the edX "
@@ -7530,17 +7530,17 @@ msgid ""
 "responses by setting this to a value greater than 0."
 msgstr ""
 
-#: openedx/core/djangoapps/catalog/models.py:53
+#: openedx/core/djangoapps/catalog/models.py:54
 msgid ""
 "Username created for Course Catalog Integration, e.g. "
 "lms_catalog_service_user."
 msgstr ""
 
-#: openedx/core/djangoapps/catalog/models.py:58
+#: openedx/core/djangoapps/catalog/models.py:59
 msgid "Page Size"
 msgstr ""
 
-#: openedx/core/djangoapps/catalog/models.py:61
+#: openedx/core/djangoapps/catalog/models.py:62
 msgid ""
 "Maximum number of records in paginated response of a single request to "
 "catalog service."
@@ -8006,29 +8006,29 @@ msgid ""
 "credit provider."
 msgstr ""
 
-#: openedx/core/djangoapps/credit/models.py:121
+#: openedx/core/djangoapps/credit/models.py:122
 msgid ""
 "Plain text or html content for displaying custom message inside credit "
 "eligibility email content which is sent when user has met all credit "
 "eligibility requirements."
 msgstr ""
 
-#: openedx/core/djangoapps/credit/models.py:130
+#: openedx/core/djangoapps/credit/models.py:132
 msgid ""
 "Plain text or html content for displaying custom message inside credit "
 "receipt email content which is sent *after* paying to get credit for a "
 "credit course."
 msgstr ""
 
-#: openedx/core/djangoapps/credit/models.py:140
+#: openedx/core/djangoapps/credit/models.py:142
 msgid "Thumbnail image url of the credit provider."
 msgstr ""
 
-#: openedx/core/djangoapps/credit/models.py:449
+#: openedx/core/djangoapps/credit/models.py:453
 msgid "Credit requirement statuses"
 msgstr ""
 
-#: openedx/core/djangoapps/credit/models.py:560
+#: openedx/core/djangoapps/credit/models.py:566
 msgid "Deadline for purchasing and requesting credit."
 msgstr ""
 
@@ -9801,7 +9801,7 @@ msgstr ""
 msgid "video encode manager API URL."
 msgstr ""
 
-#: openedx/core/djangoapps/video_pipeline/models.py:46
+#: openedx/core/djangoapps/video_pipeline/models.py:47
 msgid "Username created for VEM Integration, e.g. vem_service_user."
 msgstr ""
 
@@ -9985,14 +9985,14 @@ msgstr ""
 msgid "Access to the course you were looking for expired on {expiration_date}"
 msgstr ""
 
-#: openedx/features/course_duration_limits/access.py:204
+#: openedx/features/course_duration_limits/access.py:203
 #, python-brace-format
 msgid ""
 "This learner does not have access to this course. Their access expired on "
 "{expiration_date}."
 msgstr ""
 
-#: openedx/features/course_duration_limits/access.py:210
+#: openedx/features/course_duration_limits/access.py:209
 #, python-brace-format
 msgid ""
 "{strong_open}Audit Access Expires {expiration_date}{strong_close}{line_break}"
@@ -10000,7 +10000,7 @@ msgid ""
 "{expiration_date}."
 msgstr ""
 
-#: openedx/features/course_duration_limits/access.py:213
+#: openedx/features/course_duration_limits/access.py:212
 #, python-brace-format
 msgid ""
 "{line_break}Upgrade by {upgrade_deadline} to get unlimited access to the "
@@ -18999,8 +18999,26 @@ msgstr ""
 msgid "Past due"
 msgstr ""
 
-#: lms/templates/vert_module.html:74
+#: lms/templates/vert_module.html:81
+#, python-brace-format
+msgid "Loading question {number}"
+msgstr ""
+
+#: lms/templates/vert_module.html:94
 msgid "Reset Problems"
+msgstr ""
+
+#: lms/templates/vert_module_lazy_bootstrap.html:28
+#, python-brace-format
+msgid "Loading question {loaded} of {total}..."
+msgstr ""
+
+#: lms/templates/vert_module_lazy_bootstrap.html:29
+msgid "Some questions could not be loaded."
+msgstr ""
+
+#: lms/templates/vert_module_lazy_bootstrap.html:30
+msgid "Retry"
 msgstr ""
 
 #: lms/templates/video.html:28
