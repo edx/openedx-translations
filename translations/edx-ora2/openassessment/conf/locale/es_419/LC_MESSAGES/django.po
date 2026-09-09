@@ -1,38 +1,30 @@
-# #-#-#-#-#  django.po (edx-ora2)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2018 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2018.
-# 
-# Translators:
-# Brian Smith, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-ora2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-13 17:55-0500\n"
-"PO-Revision-Date: 2023-05-10 00:48+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024\n"
-"Language-Team: Spanish (Latin America) (https://app.transifex.com/open-edx/teams/6205/es_419/)\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-05-05 00:52+0000\n"
+"PO-Revision-Date: 2026-09-09 12:20+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: es_419\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_419\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: assessment/api/student_training.py:179
 msgid "Could not parse serialized rubric"
-msgstr "No se pudo analizar la rúbrica serializada."
+msgstr "No se pudo analizar la rúbrica serializada"
 
 #: assessment/api/student_training.py:191
 msgid ""
 "If your assignment includes a learner training step, the rubric must have at"
 " least one criterion, and that criterion must have at least one option."
 msgstr ""
-"Si sus ejercicios incluyen un paso de entrenamiento del estudiante, la "
-"rúbrica debe tener al menos un criterio, y ese criterio al menos una opción."
+"Si tu asignación incluye un paso de formación para estudiantes, la rúbrica "
+"debe tener al menos un criterio y ese criterio debe tener al menos una "
+"opción."
 
 #: assessment/api/student_training.py:203
 #, python-brace-format
@@ -57,12 +49,11 @@ msgstr ""
 #: assessment/api/student_training.py:240
 #, python-brace-format
 msgid "Example {example_number} is missing an option for \"{criterion_name}\""
-msgstr ""
-"El ejemplo {example_number} es una opción faltante para \"{criterion_name}\""
+msgstr "El ejemplo {example_number} no tiene una opción para \"{criterion_name}\""
 
 #: assessment/score_type_constants.py:21 xblock/grade_mixin.py:547
 msgid "Peer"
-msgstr "Par"
+msgstr "Compañero"
 
 #: assessment/score_type_constants.py:22
 msgid "Self"
@@ -70,7 +61,7 @@ msgstr "Auto"
 
 #: assessment/score_type_constants.py:23
 msgid "Staff"
-msgstr "Equipo"
+msgstr "Personal"
 
 #: assessment/score_type_constants.py:25
 msgid "Unknown"
@@ -89,88 +80,88 @@ msgstr "Puntos {number}"
 #: data.py:587
 #, python-brace-format
 msgid "Median Score {number}"
-msgstr "Puntaje Medio {number}"
+msgstr "Puntuación mediana {number}"
 
 #: data.py:588
 #, python-brace-format
 msgid "Feedback {number}"
-msgstr "Realimentación {number}"
+msgstr "Retroalimentación {number}"
 
 #: data.py:917
 msgid "Item ID"
-msgstr "ID de elemento"
+msgstr "ID del ítem"
 
 #: data.py:918
 msgid "Submission ID"
-msgstr "Entrega de Indentificación"
+msgstr "ID de envío"
 
 #: data.py:930
 msgid "Anonymized Student ID"
-msgstr "Indetificaciones Anonimas de Usuario"
+msgstr "ID de estudiante anonimizado"
 
 #: data.py:961
 msgid "Assessment ID"
-msgstr "Identificación de la prueba"
+msgstr "ID de evaluación"
 
 #: data.py:962
 msgid "Assessment Scored Date"
-msgstr "Fecha de calificación de la prueba"
+msgstr "Fecha en que se calificó la evaluación"
 
 #: data.py:963
 msgid "Assessment Scored Time"
-msgstr "Prueba de Tiempo Calificado"
+msgstr "Hora en que se calificó la evaluación"
 
 #: data.py:964
 msgid "Assessment Type"
-msgstr "Tipo de Prueba"
+msgstr "Tipo de evaluación"
 
 #: data.py:965
 msgid "Anonymous Scorer Id"
-msgstr "Identificación de Calificación Anonima"
+msgstr "ID de evaluador anónimo"
 
 #: data.py:967
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:59
 msgid "Overall Feedback"
-msgstr "Retroalimentación General"
+msgstr "Retroalimentación general"
 
 #: data.py:968
 msgid "Assessment Score Earned"
-msgstr "Puntaje de Prueba Obtenido"
+msgstr "Puntuación obtenida en la evaluación"
 
 #: data.py:969
 msgid "Assessment Scored At"
-msgstr "Prueba Calificada En "
+msgstr "Evaluado en"
 
 #: data.py:970
 msgid "Date/Time Final Score Given"
-msgstr "Fecha/Tiempo de Entrega del Puntaje Final"
+msgstr "Fecha/Hora de la calificación final"
 
 #: data.py:971
 msgid "Final Score Earned"
-msgstr "Calificación Final Obtenida"
+msgstr "Puntuación final obtenida"
 
 #: data.py:972
 msgid "Final Score Possible"
-msgstr "Posible Calificación Final"
+msgstr "Puntuación final posible"
 
 #: data.py:973
 msgid "Feedback Statements Selected"
-msgstr "Declaraciones de Retroalimentación Seleccionados"
+msgstr "Declaraciones de retroalimentación seleccionadas"
 
 #: data.py:974
 msgid "Feedback on Assessment"
-msgstr "Retroalimentación de la Prueba"
+msgstr "Retroalimentación sobre la evaluación"
 
 #: data.py:976
 msgid "Response Files"
-msgstr "Documentos de Respuesta"
+msgstr "Archivos de respuesta"
 
 #: data.py:1367
 msgid "No description provided."
-msgstr "No se suministró descripción."
+msgstr "No se proporcionó descripción."
 
 #: data.py:1626 templates/legacy/edit/oa_edit_criterion.html:54
-#: xblock/studio_mixin.py:57
+#: xblock/studio_mixin.py:58
 msgid "None"
 msgstr "Ninguno"
 
@@ -189,18 +180,19 @@ msgid ""
 " can be enabled, disable, and ordered for a flexible set of pedagogical "
 "needs."
 msgstr ""
-"Las pruebas de respuesta abierta te permiten configurar únicos o varios "
-"pasos en una rúbrica basada en una secuencia de prueba de respuesta abierta."
-" Los pasos disponibles a continuación pueden ser habilitados, inhabilitados,"
-" y ordenados para un set flexible de necesidades pedagógicas."
+"Las evaluaciones de respuesta abierta te permiten configurar uno o varios "
+"pasos en una secuencia de evaluación de respuesta abierta basada en "
+"rúbricas. Los pasos disponibles a continuación pueden ser habilitados, "
+"deshabilitados y ordenados para satisfacer un conjunto flexible de "
+"necesidades pedagógicas."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:5
 msgid "Display Name "
-msgstr "Nombre para mostrar"
+msgstr "Nombre para mostrar "
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:8
 msgid "The display name for this component."
-msgstr "El nombre para mostrar de este componente. "
+msgstr "El nombre para mostrar de este componente."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:12
 msgid "Text Response"
@@ -211,36 +203,36 @@ msgid ""
 "Specify whether learners must include a text based response to this "
 "problem's prompt."
 msgstr ""
-"Especifique si los estudiantes deben incluir una respuesta textual a esta "
-"pregunta o planteamiento del ejercicio."
+"Especifica si los estudiantes deben incluir una respuesta basada en texto al"
+" enunciado de este problema."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:25
 msgid "Response Editor"
-msgstr "Editor de Respuesta"
+msgstr "Editor de respuesta"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:33
 msgid ""
 "Select which editor learners will use to include a text based response to "
 "this problem's prompt."
 msgstr ""
-"Selecciona cuál editor será usado por los estudiantes para incluir textos "
-"basados en respuestas de problemas inmediatos."
+"Selecciona qué editor usarán los estudiantes para incluir una respuesta "
+"basada en texto al enunciado de este problema."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:38
 msgid "File Uploads Response"
-msgstr "Respuesta de carga de archivos"
+msgstr "Respuesta con carga de archivos"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:46
 msgid ""
 "Specify whether learners are able to upload files as a part of their "
 "response."
 msgstr ""
-"Especifique si los estudiantes pueden subir archivos como parte de su "
+"Especifica si los estudiantes pueden subir archivos como parte de su "
 "respuesta."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:50
 msgid "Allow Multiple Files"
-msgstr "Habilita Múltiples Documentos"
+msgstr "Permitir múltiples archivos"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:52
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:93
@@ -266,9 +258,9 @@ msgid ""
 "if File Uploads Response is set to None. This is automatically set to True "
 "for Team Assignments. "
 msgstr ""
-"Específica si los estudiantes pueden subir más de un documento. Esto no "
-"tendrá efecto si la Respuesta de Carga de Archivo está configurado como "
-"Ninguno. Esto automáticamente configura a Verdadero para Pruebas de Equipo."
+"Especifica si los estudiantes pueden subir más de un archivo. Esto no tiene "
+"efecto si Respuesta con carga de archivos se establece en Ninguno. Esto se "
+"configura automáticamente en Verdadero para asignaciones en equipo. "
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:58
 msgid "File Upload Types"
@@ -276,43 +268,43 @@ msgstr "Tipos de carga de archivos"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:60
 msgid "PDF or Image Files"
-msgstr "Archivos PDF o Imágenes"
+msgstr "Archivos PDF o de imagen"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:61
 msgid "Image Files"
-msgstr "Archivos de Imágenes"
+msgstr "Archivos de imagen"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:62
 msgid "Custom File Types"
-msgstr "Tipos de archivos personalizados"
+msgstr "Tipos de archivo personalizados"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:66
 msgid ""
 "Specify whether learners can submit files along with their text responses."
 msgstr ""
-"Específica si los estudiantes pueden cargar documentos junto con sus "
+"Especifica si los estudiantes pueden enviar archivos junto con sus "
 "respuestas de texto."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:70
 msgid "File Types"
-msgstr "Tipos de archivos"
+msgstr "Tipos de archivo"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:79
 msgid ""
 "Enter the file extensions, separated by commas, that you want learners to be"
 " able to upload. For example: pdf,doc,docx."
 msgstr ""
-"Ingrese separadas por comas las extensiones de archivo que los estudiantes "
-"podrán cargar. Por ejemplo: pdf,doc,docx."
+"Ingresa las extensiones de archivo, separadas por comas, que quieres que los"
+" estudiantes puedan subir. Por ejemplo: pdf,doc,docx."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:84
 msgid ""
 "To add more file extensions, select Custom File Types and enter the full "
 "list of acceptable file extensions to be included."
 msgstr ""
-"Para agregar más extensiones de documentos, selecciona Tipos de Documento "
-"Personalizables e ingresa la lista completa de las extensiones aceptadas de "
-"archivos que deban incluirse."
+"Para agregar más extensiones de archivo, selecciona Tipos de archivo "
+"personalizados e ingresa la lista completa de extensiones de archivo "
+"aceptables que se incluirán."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:91
 msgid "Allow LaTeX Responses"
@@ -320,17 +312,18 @@ msgstr "Permitir respuestas en LaTeX"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:97
 msgid "Specify whether learners can write LaTeX formatted strings"
-msgstr "Especificar si los estudiantes pueden escribir texto en LaTeX"
+msgstr ""
+"Especifica si los estudiantes pueden escribir cadenas formateadas en LaTeX"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:102
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:8
 #: templates/legacy/leaderboard/oa_leaderboard_waiting.html:10
 msgid "Top Responses"
-msgstr "Cantidad de respuestas destacadas"
+msgstr "Respuestas principales"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:104
 msgid " (Disabled)"
-msgstr "(Deshabilitado)"
+msgstr " (Deshabilitado)"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:117
 msgid ""
@@ -338,16 +331,16 @@ msgid ""
 " submitted a response. Valid numbers are 0 to 99. If the number is 0, the "
 "Top Responses section does not appear to learners."
 msgstr ""
-"Especifique el número de respuestas con la puntuación más alta que se "
-"mostrarán después de que el alumno haya enviado una respuesta. Los números "
-"válidos son del 0 al 99. Si el número es 0, la sección Respuestas "
-"principales no se muestra a los alumnos."
+"Especifica el número de respuestas con mayor puntuación que se mostrarán "
+"después de que el estudiante haya enviado una respuesta. Los números válidos"
+" son de 0 a 99. Si el número es 0, la sección de Respuestas principales no "
+"se muestra a los estudiantes."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:122
 msgid "When Teams Enabled is set to true, Top Responses will be disabled."
 msgstr ""
-"Cuando la Habilitación de Equipo esta configurada verdadera, Respuestas "
-"Superiores serán inhabilitadas."
+"Cuando Equipos Habilitados está en verdadero, las Respuestas principales se "
+"desactivarán."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:129
 msgid "Teams Enabled"
@@ -355,40 +348,39 @@ msgstr "Equipos habilitados"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:136
 msgid "Specify whether team submissions are allowed for this response."
-msgstr ""
-"Especifique si los envíos en un equipo están permitidos para esta respuesta."
+msgstr "Especifica si se permiten envíos en equipo para esta respuesta."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:141
 msgid "Select Team-Set"
-msgstr "Selecciona la Configuración de Equipo"
+msgstr "Selecciona conjunto de equipos"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:155
 msgid "Show Rubric During Response"
-msgstr "Mostrar Rubrica Durante la Respuesta"
+msgstr "Mostrar rúbrica durante la respuesta"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:162
 msgid ""
 "Specify whether learners can see the rubric while they are working on their "
 "response."
 msgstr ""
-"Especifica si los estudiantes pueden ver la rúbrica mientras se encuentran "
-"formulando su respuesta."
+"Especifica si los estudiantes pueden ver la rúbrica mientras trabajan en su "
+"respuesta."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:167
 msgid "Allow Learner Resubmissions"
-msgstr "Permitir reenvíos de alumnos"
+msgstr "Permitir reenvíos de estudiantes"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:174
 msgid ""
 "Set to TRUE to allow learners to resubmit ungraded work. Set to FALSE if "
 "resubmissions are not allowed."
 msgstr ""
-"Configúrelo en VERDADERO para permitir a los alumnos volver a enviar "
-"trabajos sin calificar. Establezca en FALSO si no se permiten reenvíos."
+"Establece en VERDADERO para permitir que los estudiantes reenvíen trabajos "
+"no calificados. Establece en FALSO si no se permiten reenvíos."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:178
 msgid "Resubmission Grace Period"
-msgstr "Período de gracia de reenvío"
+msgstr "Período de gracia para reenvío"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:187
 msgid ""
@@ -397,10 +389,10 @@ msgid ""
 " been graded. The grace period starts once the learner has submitted their "
 "response."
 msgstr ""
-"Especifique el período máximo durante el cual se permiten reenvíos. Si se "
-"deja en blanco, los alumnos podrán restablecer su envío siempre que no haya "
-"sido calificado. El período de gracia comienza una vez que el alumno ha "
-"enviado su respuesta."
+"Especifica el período máximo durante el cual se permiten los reenvíos. Si se"
+" deja en blanco, los estudiantes podrán reiniciar su envío siempre que no "
+"haya sido calificado. El período de gracia comienza una vez que el "
+"estudiante ha enviado su respuesta."
 
 #: templates/legacy/edit/oa_edit_criterion.html:6
 #: templates/legacy/staff_area/oa_student_info.html:122
@@ -411,7 +403,8 @@ msgstr "Criterio"
 #: templates/legacy/edit/oa_edit_criterion.html:7
 msgid "You cannot delete a criterion after the assignment has been released."
 msgstr ""
-"No puede borrar un criterio después de que el ejercicio ha sido liberado."
+"No puedes eliminar un criterio después de que la asignación ha sido "
+"publicada."
 
 #: templates/legacy/edit/oa_edit_criterion.html:9
 #: templates/legacy/edit/oa_edit_option.html:7
@@ -426,24 +419,24 @@ msgstr "Nombre del criterio"
 
 #: templates/legacy/edit/oa_edit_criterion.html:29
 msgid "Criterion Prompt"
-msgstr "Texto para describir el criterio"
+msgstr "Enunciado del criterio"
 
 #: templates/legacy/edit/oa_edit_criterion.html:44
 msgid "Add Option"
-msgstr "Añadir opción"
+msgstr "Agregar opción"
 
 #: templates/legacy/edit/oa_edit_criterion.html:52
 msgid "Feedback for This Criterion"
 msgstr "Retroalimentación para este criterio"
 
-#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:56
+#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:57
 msgid "Optional"
 msgstr "Opcional"
 
 #: templates/legacy/edit/oa_edit_criterion.html:56
 #: templates/legacy/oa_rubric.html:13
 #: templates/legacy/student_training/student_training.html:93
-#: xblock/studio_mixin.py:55
+#: xblock/studio_mixin.py:56
 msgid "Required"
 msgstr "Requerido"
 
@@ -453,16 +446,16 @@ msgid ""
 "will have to provide criterion feedback."
 msgstr ""
 "Selecciona una de las opciones anteriores. Esto describe si el revisor "
-"tendrá o no criterio de retroalimentación."
+"tendrá que proporcionar retroalimentación sobre el criterio."
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:3
 msgid "Open Response Assessment"
-msgstr "Calificación de respuestas abiertas"
+msgstr "Evaluación de respuesta abierta"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:8
 #: templates/legacy/edit/oa_edit_prompt.html:7
 msgid "Prompt"
-msgstr "Planteamiento"
+msgstr "Enunciado"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:15
 msgid "Rubric"
@@ -470,11 +463,11 @@ msgstr "Rúbrica"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:22
 msgid "Schedule"
-msgstr "Calendario"
+msgstr "Programar"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:29
 msgid "Assessment steps"
-msgstr "Pasos de la Prueba"
+msgstr "Pasos de evaluación"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:36
 msgid "Settings"
@@ -498,7 +491,7 @@ msgstr "Explicación de la opción"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:10
 msgid "Step: Peer Assessment"
-msgstr "Paso: Calificación por pares"
+msgstr "Paso: Evaluación entre pares"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:15
 msgid ""
@@ -506,11 +499,10 @@ msgid ""
 "also receive feedback from others in their final grade. Often, though not "
 "always, this step is preceded by Self Assessment or Learner Training steps."
 msgstr ""
-"La Evaluación de Pares le permite a los estudiantes proveer "
-"retroalimentación a otros estudiantes y también de recibir retroalimentación"
-" de otros al en su calificación final. A menudo, sin embargo no siempre, "
-"este paso es precedido por Auto Evolución o Pasos de Entrenamiento del "
-"Estudiante."
+"La evaluación entre pares permite que los estudiantes brinden "
+"retroalimentación a otros estudiantes y también reciban retroalimentación de"
+" otros en su calificación final. A menudo, aunque no siempre, este paso es "
+"precedido por la autoevaluación o los pasos de formación para estudiantes."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:18
 msgid ""
@@ -518,26 +510,26 @@ msgid ""
 " peer reviews a student will be assessed with, and the number of peer a "
 "student must grade. Additional options can be specified."
 msgstr ""
-"Configuración: Para configurar este paso debes primero especificar el número"
-" de revisiones por pares que un estudiante será asignado, y el número de "
-"revisiones un estudiante debe obtener. Opciones adicionales pueden ser "
-"especificadas."
+"Configuración: Para configurar este paso, debes especificar el número de "
+"evaluaciones entre pares con las que se evaluará a un estudiante, y el "
+"número de pares que un estudiante debe calificar. Se pueden especificar "
+"opciones adicionales."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:23
 msgid "View Options & Configuration"
-msgstr "Mirar Opciones & Configuración"
+msgstr "Ver opciones y configuración"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:29
 msgid "Must Grade"
-msgstr "Debe Calificar"
+msgstr "Debe calificar"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:32
 msgid ""
 "Specify the number of peer assessments that each learner must complete. "
 "Valid numbers are 1 to 99."
 msgstr ""
-"Específica el número de revisiones de prueba que cada estudiante debe "
-"completar. Los números válidos son del 1 al 99."
+"Especifica el número de evaluaciones entre pares que cada estudiante debe "
+"completar. Los números válidos son de 1 a 99."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:36
 msgid "Graded By"
@@ -548,20 +540,20 @@ msgid ""
 "Specify the number of learners that each response must be assessed by. Valid"
 " numbers are 1 to 99."
 msgstr ""
-"Específica el número de estudiantes que debe evaluar cada respuesta. Los "
-"números válidos son del 1 al 99."
+"Especifica el número de estudiantes por los que cada respuesta debe ser "
+"evaluada. Los números válidos son de 1 a 99."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:43
 msgid "Enable Flexible Peer Grade Averaging"
-msgstr "Habilite el promedio flexible de calificaciones de pares"
+msgstr "Habilitar el promedio flexible de calificaciones entre pares"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:49
 #, python-format
 msgid ""
 "When enabled, learners who have received at least 30%% of the required \\"
 msgstr ""
-"Cuando este habilitado, estudiantes que reciban al menos 30%% de los "
-"requeridos \\"
+"Cuando está habilitado, los estudiantes que hayan recibido al menos el 30%% "
+"de lo requerido \\"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:53
 msgid ""
@@ -569,21 +561,21 @@ msgid ""
 "under the Open Response Assessment Settings card on the Pages & Resources "
 "studio page."
 msgstr ""
-"Esta característica está siendo habilitada por la configuración del nivel "
-"del curso. Se puede encontrar en la tarjeta Configuración de evaluación de "
-"respuesta abierta en la página del estudio Páginas y recursos."
+"Esta función se habilita mediante la configuración a nivel de curso. Se "
+"encuentra en la tarjeta de Configuración de Evaluación de Respuesta Abierta "
+"en la página de Páginas y Recursos del estudio."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:60
 msgid "Grading strategy for the peer assessment"
-msgstr "Estrategia de calificación para la evaluación por pares"
+msgstr "Estrategia de calificación para la evaluación entre pares"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:62
 msgid "Mean"
-msgstr "Significar"
+msgstr "Media"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:63
 msgid "Median (default)"
-msgstr "Mediana (predeterminada)"
+msgstr "Mediana (predeterminado)"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:66
 msgid ""
@@ -591,36 +583,36 @@ msgid ""
 "the median across all peer reviews is used to calculate the final grade. If "
 "you select the mean, the average of all peer reviews will be used."
 msgstr ""
-"Seleccione la estrategia de calificación preferida para la evaluación por "
-"pares. De forma predeterminada, se utiliza la mediana de todas las "
-"revisiones por pares para calcular la calificación final. Si selecciona la "
-"media, se utilizará el promedio de todas las revisiones por pares."
+"Selecciona la estrategia de calificación preferida para la evaluación entre "
+"pares. Por defecto, se utiliza la mediana de todas las evaluaciones para "
+"calcular la calificación final. Si seleccionas la media, se usará el "
+"promedio de todas las evaluaciones entre pares."
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:5
 msgid "Peer Assessment Deadlines"
-msgstr "Fechas Límites de Prueba de Pares "
+msgstr "Fechas límite para la evaluación entre pares"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:10
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:10
 msgid "Start Date"
-msgstr "Fecha inicial:"
+msgstr "Fecha de inicio"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:19
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:19
 msgid "Start Time"
-msgstr "Hora inicial:"
+msgstr "Hora de inicio"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:27
 msgid "The date and time when learners can begin assessing peer responses."
 msgstr ""
-" Fecha y tiempo en el que los estudiantes pueden empezar a evaluar a los "
-"compañeros."
+"La fecha y hora en que los estudiantes pueden comenzar a evaluar las "
+"respuestas de sus compañeros."
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:31
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:119
 msgid "Due Date"
-msgstr "Fecha límite de entrega"
+msgstr "Fecha de entrega"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:40
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:40
@@ -629,25 +621,27 @@ msgstr "Hora de entrega"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:48
 msgid "The date and time when all peer assessments must be complete."
-msgstr "Fecha y tiempo en el que todas las pruebas deben estar completadas. "
+msgstr ""
+"La fecha y hora en que todas las evaluaciones entre pares deben estar "
+"completas."
 
 #: templates/legacy/edit/oa_edit_prompt.html:8
 msgid "You cannot delete a prompt after the assignment has been released."
 msgstr ""
-"No puede borrar la pregunta o planteamiento del ejercicio después de que la "
-"tarea ha sido liberada."
+"No puedes eliminar un enunciado después de que la asignación ha sido "
+"publicada."
 
 #: templates/legacy/edit/oa_edit_prompts.html:10
 msgid ""
 "Prompts. Replace the sample text with your own text. For more information, "
 "see the ORA documentation."
 msgstr ""
-"Preguntas y planteamientos del ejercicio. Reemplace el texto de muestra con "
-"su propio texto.  Para mayor información, vea la documentación de ORA."
+"Enunciados. Reemplaza el texto de muestra con tu propio texto. Para más "
+"información, consulta la documentación de ORA."
 
 #: templates/legacy/edit/oa_edit_prompts.html:22
 msgid "Add Prompt"
-msgstr "Añadir pregunta o planteamiento del ejercicio"
+msgstr "Agregar enunciado"
 
 #: templates/legacy/edit/oa_edit_rubric.html:14
 msgid ""
@@ -656,15 +650,14 @@ msgid ""
 "and their options. Replace the sample text with your own text. For more "
 "information, see the ORA documentation."
 msgstr ""
-"Las rúbricas o firmas se componen de criterios, que usualmente contienen una"
-" o más opciones. Cada opción tiene un valor en puntos. Esta plantilla "
-"contiene algunos criterios de ejemplo y sus correspondientes opciones. "
-"Reemplace los textos de ejemplo con sus propios textos. Para más "
-"información, visite la documentación de ORA."
+"Las rúbricas se componen de criterios, que usualmente contienen una o más "
+"opciones. Cada opción tiene un valor en puntos. Esta plantilla contiene dos "
+"criterios de ejemplo y sus opciones. Reemplaza el texto de muestra con tu "
+"propio texto. Para más información, consulta la documentación de ORA."
 
 #: templates/legacy/edit/oa_edit_rubric.html:29
 msgid "Add Criterion"
-msgstr "Añadir criterio"
+msgstr "Agregar criterio"
 
 #: templates/legacy/edit/oa_edit_rubric.html:35
 msgid "Feedback for This Response"
@@ -672,124 +665,124 @@ msgstr "Retroalimentación para esta respuesta"
 
 #: templates/legacy/edit/oa_edit_rubric.html:40
 msgid "Feedback Instructions"
-msgstr "Instrucciones para la retroalimentación"
+msgstr "Instrucciones de retroalimentación"
 
 #: templates/legacy/edit/oa_edit_rubric.html:44
 msgid ""
 "Encourage learners to provide feedback on the response they have graded. You"
 " can replace the sample text with your own."
 msgstr ""
-"Motive a los estudiantes a dar retroalimentación a las respuestas que ellos "
-"han calificado.  Puede reemplazar el texto de muestra por su propio texto."
+"Anima a los estudiantes a proporcionar retroalimentación sobre la respuesta "
+"que han calificado. Puedes reemplazar el texto de muestra con el tuyo."
 
 #: templates/legacy/edit/oa_edit_rubric.html:49
 msgid "Default Feedback Text"
-msgstr "Texto de retroalimentación por defecto"
+msgstr "Texto de retroalimentación predeterminado"
 
 #: templates/legacy/edit/oa_edit_rubric.html:53
 msgid ""
 "Enter feedback text that learners will see before they enter their own "
 "feedback. Use this text to show learners a good example peer assessment."
 msgstr ""
-"Ingrese el texto que los estudiantes verán antes de ingresar su "
-"retroalimentación. Use este texto para mostrar a los estudiantes un buen "
-"ejemplo de calificación entre pares."
+"Ingresa el texto de retroalimentación que los estudiantes verán antes de que"
+" ingresen su propia retroalimentación. Usa este texto para mostrar a los "
+"estudiantes un buen ejemplo de evaluación entre pares."
 
 #: templates/legacy/edit/oa_edit_schedule.html:5
 msgid "Deadlines Configuration"
-msgstr "Configuración de plazos"
+msgstr "Configuración de fechas límite"
 
 #: templates/legacy/edit/oa_edit_schedule.html:9
 msgid "Select a deadline configuration option"
-msgstr "Seleccione una opción de configuración de fecha límite"
+msgstr "Selecciona una opción de configuración de fechas límite"
 
 #: templates/legacy/edit/oa_edit_schedule.html:14
 msgid "Configure deadlines manually"
-msgstr "Configurar plazos manualmente"
+msgstr "Configurar fechas límite manualmente"
 
 #: templates/legacy/edit/oa_edit_schedule.html:18
 msgid "Match deadlines to the subsection due date"
-msgstr ""
-"Hacer coincidir los plazos con la fecha de vencimiento de la subsección"
+msgstr "Igualar las fechas límite con la fecha de entrega de la subsección"
 
 #: templates/legacy/edit/oa_edit_schedule.html:22
 msgid "Match deadlines to the course end date"
-msgstr "Hacer coincidir los plazos con la fecha de finalización del curso."
+msgstr "Igualar las fechas límite con la fecha de finalización del curso"
 
 #: templates/legacy/edit/oa_edit_schedule.html:25
 msgid "Learn more about open response date settings"
 msgstr ""
-"Obtenga más información sobre la configuración de fecha de respuesta abierta"
+"Aprende más sobre la configuración de fechas en evaluaciones de respuesta "
+"abierta"
 
 #: templates/legacy/edit/oa_edit_schedule.html:35
 msgid "Response Start Date"
-msgstr "Fecha de inicio de respuestas"
+msgstr "Fecha de inicio de la respuesta"
 
 #: templates/legacy/edit/oa_edit_schedule.html:48
 msgid "Response Start Time"
-msgstr "Hora de inicio de respuestas"
+msgstr "Hora de inicio de la respuesta"
 
 #: templates/legacy/edit/oa_edit_schedule.html:57
 msgid "The date and time when learners can begin submitting responses."
 msgstr ""
-"La fecha y hora cuando los estudiantes pueden empezar a enviar las "
-"respuestas."
+"La fecha y hora en que los estudiantes pueden comenzar a enviar respuestas."
 
 #: templates/legacy/edit/oa_edit_schedule.html:65
 msgid "Response Due Date"
-msgstr "Fecha límite de entrega de respuestas"
+msgstr "Fecha límite de la respuesta"
 
 #: templates/legacy/edit/oa_edit_schedule.html:78
 msgid "Response Due Time"
-msgstr "Hora de entrega de respuestas"
+msgstr "Hora límite de la respuesta"
 
 #: templates/legacy/edit/oa_edit_schedule.html:87
 msgid "The date and time when learners can no longer submit responses."
-msgstr "Fecha y hora cuando los estudiantes ya no pueden enviar respuestas."
+msgstr ""
+"La fecha y hora en que los estudiantes ya no pueden enviar respuestas."
 
 #: templates/legacy/edit/oa_edit_self_assessment.html:8
 msgid "Step: Self Assessment"
-msgstr "Paso: Auto Calificación"
+msgstr "Paso: Autoevaluación"
 
 #: templates/legacy/edit/oa_edit_self_assessment.html:12
 msgid ""
 "Self Assessment asks learners to grade their own submissions against the "
 "rubric."
 msgstr ""
-"La Auto Evaluación le solicita a los estudiantes calificar sus propias "
-"respuestas enviadas contra la rúbrica."
+"La autoevaluación pide a los estudiantes que califiquen sus propias "
+"respuestas según la rúbrica."
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:5
 msgid "Self Assessment Deadlines"
-msgstr "Fechas de Entrega de Auto Evaluación"
+msgstr "Fechas límite para la autoevaluación"
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:27
 msgid "The date and time when learners can begin assessing their responses."
 msgstr ""
-"Fecha y hora en que los estudiantes pueden comenzar a calificar sus "
+"La fecha y hora en que los estudiantes pueden comenzar a evaluar sus "
 "respuestas."
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:48
 msgid "The date and time when all self assessments must be complete."
 msgstr ""
-"Fecha y tiempo en el que todas las autoevaluaciones deben ser completadas."
+"La fecha y hora en que todas las autoevaluaciones deben estar completas."
 
 #: templates/legacy/edit/oa_edit_staff_assessment.html:8
 msgid "Step: Staff Assessment"
-msgstr "Paso: Evaluación del equipo del curso"
+msgstr "Paso: Evaluación por el personal"
 
 #: templates/legacy/edit/oa_edit_staff_assessment.html:12
 msgid ""
 "Staff Assessment gates sets the final grade for students if enabled with "
 "other steps, though it can also be used as a standalone step."
 msgstr ""
-"La prueba del personal establece la calificación final para los estudiantes "
-"si están habilitadas con otros pasos, a través de estos también se pueden "
-"usar como un paso independiente."
+"La evaluación por el personal establece la calificación final para los "
+"estudiantes si se habilita junto con otros pasos, aunque también se puede "
+"utilizar como un paso independiente."
 
 #: templates/legacy/edit/oa_edit_student_training.html:9
 msgid "Step: Learner Training"
-msgstr "Paso: Entrenamiento del Estudiante"
+msgstr "Paso: Formación para estudiantes"
 
 #: templates/legacy/edit/oa_edit_student_training.html:14
 msgid ""
@@ -797,11 +790,10 @@ msgid ""
 "submission in order to train them on the rubric and ensure learner's "
 "understand the rubric for either Self or Peer Assessment steps."
 msgstr ""
-"El entrenamiento del estudiante es usado para ayudar a los estudiantes "
-"practicando a través de la calificación de una entrega de pares simulada, "
-"con el fin de entrenarlos en la rúbrica y asegurar que el estudiante "
-"entiende la rúbrica ya sea para los pasos de Auto Evaluación o Evaluación de"
-" Pares. "
+"La formación para estudiantes se utiliza para ayudar a los alumnos a "
+"practicar la calificación de una respuesta simulada de un compañero, a fin "
+"de entrenarlos en el uso de la rúbrica y asegurar que comprendan la rúbrica "
+"tanto en la autoevaluación como en la evaluación entre pares."
 
 #: templates/legacy/edit/oa_edit_student_training.html:17
 msgid ""
@@ -810,23 +802,23 @@ msgid ""
 " to advance and are provided feedback when their score doesn't match the "
 "sample response."
 msgstr ""
-"Configuración: Para que este paso este completamente configurado debes "
-"proveer uno o más respuestas de ejemplo calificables. Los estudiantes deben "
-"luego encajar el puntaje de instructor ha avanzado y se proveerá "
-"retroalimentación cuando los puntajes no encajen con las respuestas de "
-"ejemplo. "
+"Configuración: Para que este paso esté completamente configurado, debes "
+"proporcionar una o más respuestas de muestra calificadas. Luego, los "
+"estudiantes deben igualar esta calificación del instructor para avanzar y se"
+" les proporciona retroalimentación cuando su calificación no coincide con la"
+" respuesta de muestra."
 
 #: templates/legacy/edit/oa_edit_student_training.html:22
 msgid "View / Add Sample Responses"
-msgstr "Ver / Agregar Preguntas de Ejemplo"
+msgstr "Ver / Agregar respuestas de muestra"
 
 #: templates/legacy/edit/oa_edit_student_training.html:32
 msgid "Add Sample Response"
-msgstr "Añadir respuesta de muestra"
+msgstr "Agregar respuesta de muestra"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:4
 msgid "Clone Rubric"
-msgstr "Duplicar Rubrica"
+msgstr "Clonar rúbrica"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:7
 msgid ""
@@ -835,39 +827,39 @@ msgid ""
 "after cloning will only affect the rubric being modified, and will not "
 "modify any rubric it was cloned from."
 msgstr ""
-"Para clonar una rúbrica a partir de un borrador publicado o no publicado, "
-"puede buscar por el ID del bloque. Ten en cuenta que la clonación es "
-"unidireccional, lo que significa que los cambios realizados después de la "
-"clonación solo afectarán a la rúbrica que se está modificando, y no "
-"modificarán ninguna rúbrica de la que se haya clonado."
+"Para clonar una rúbrica de un borrador existente publicado o no, puedes "
+"buscar por el ID de bloque. Ten en cuenta que la clonación es "
+"unidireccional, lo que significa que los cambios realizados después de "
+"clonar solo afectarán a la rúbrica que se está modificando, y no modificarán"
+" ninguna rúbrica de la que se haya clonado."
 
 #: templates/legacy/edit/oa_rubric_reuse.html:9
 msgid "Block ID For this ORA:"
-msgstr "Indentificación de Bloque para este ejercicio ORA:"
+msgstr "ID de bloque para esta ORA:"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:19
 msgid "Block ID"
-msgstr "Identificación de Bloque"
+msgstr "ID de bloque"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:21
 msgid "No other Open Response Assessments found in course"
-msgstr "No se encontraron otras Pruebas de Respuestas Abiertas en este curso"
+msgstr "No se encontraron otras evaluaciones de respuesta abierta en el curso"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:31
 msgid "Clone"
-msgstr "Duplicar"
+msgstr "Clonar"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:37
 msgid "Rubric Successfully Cloned from Block ID: "
-msgstr "Rubrica clonada de manera exitosa de la identificación de bloque: "
+msgstr "Rúbrica clonada exitosamente desde el ID de bloque: "
 
 #: templates/legacy/edit/oa_training_example.html:7
 msgid "Scored Response"
-msgstr "Respuesta de muestra para calificar"
+msgstr "Respuesta calificada"
 
 #: templates/legacy/edit/oa_training_example.html:16
 msgid "Response Score"
-msgstr "Puntaje para la respuesta"
+msgstr "Puntuación de la respuesta"
 
 #: templates/legacy/edit/oa_training_example.html:27
 msgid "Response"
@@ -891,7 +883,8 @@ msgid ""
 "              "
 msgstr ""
 "\n"
-"%(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s"
+"                %(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s\n"
+"              "
 
 #: templates/legacy/grade/oa_assessment_title.html:7
 #, python-format
@@ -905,21 +898,21 @@ msgid_plural ""
 "                  "
 msgstr[0] ""
 "\n"
-"%(assessment_title)s - %(points)s punto\n"
+"                      %(assessment_title)s - %(points)s punto\n"
 "                  "
 msgstr[1] ""
 "\n"
-"%(assessment_title)s - %(points)s puntos\n"
+"                      %(assessment_title)s - %(points)s puntos\n"
 "                  "
 msgstr[2] ""
 "\n"
-"%(assessment_title)s - %(points)s puntos\n"
+"                      %(assessment_title)s - %(points)s puntos\n"
 "                  "
 
 #: templates/legacy/grade/oa_assessment_title.html:24
 #, python-format
 msgid "More information about %(name)s"
-msgstr "Más información acerca de %(name)s"
+msgstr "Más información sobre %(name)s"
 
 #: templates/legacy/grade/oa_grade_cancelled.html:14
 #: templates/legacy/grade/oa_grade_complete.html:15
@@ -928,7 +921,7 @@ msgstr "Más información acerca de %(name)s"
 #: templates/legacy/grade/oa_grade_not_started.html:14
 #: templates/legacy/grade/oa_grade_waiting.html:14
 msgid "Your Grade"
-msgstr "Su Nota"
+msgstr "Tu calificación"
 
 #: templates/legacy/grade/oa_grade_cancelled.html:19
 #, python-format
@@ -943,7 +936,7 @@ msgstr ""
 
 #: templates/legacy/grade/oa_grade_cancelled.html:38
 msgid "Your submission has been cancelled."
-msgstr "Su envío ha sido cancelado"
+msgstr "Tu envío ha sido cancelado."
 
 #: templates/legacy/grade/oa_grade_complete.html:19
 #, python-format
@@ -953,20 +946,21 @@ msgid ""
 "                                        "
 msgstr ""
 "\n"
-"%(points_earned)s de %(points_possible)s"
+"                                            %(points_earned)s de %(points_possible)s\n"
+"                                        "
 
 #: templates/legacy/grade/oa_grade_complete.html:38
 #: templates/legacy/response/oa_response.html:29
 msgid "Your Response"
-msgstr "Su respuesta."
+msgstr "Tu respuesta"
 
 #: templates/legacy/grade/oa_grade_complete.html:41
 msgid "Your Upload"
-msgstr "Su archivo cargado"
+msgstr "Tu carga"
 
 #: templates/legacy/grade/oa_grade_complete.html:46
 msgid "Assessments of Your Response"
-msgstr "Evaluaciones de su respuesta"
+msgstr "Evaluaciones de tu respuesta"
 
 #: templates/legacy/grade/oa_grade_complete.html:50
 #: templates/legacy/grade/oa_grade_complete.html:132
@@ -1001,53 +995,53 @@ msgstr "Puntos"
 
 #: templates/legacy/grade/oa_grade_complete.html:96
 msgid "Additional comments on your response"
-msgstr "Comentarios adicionales en su respuesta"
+msgstr "Comentarios adicionales sobre tu respuesta"
 
 #: templates/legacy/grade/oa_grade_complete.html:117
 msgid "Provide feedback on peer assessments"
-msgstr "Proporcione sus comentarios sobre la evaluación por pares"
+msgstr "Proporciona retroalimentación sobre las evaluaciones entre pares"
 
 #: templates/legacy/grade/oa_grade_complete.html:126
 msgid "Submitting Feedback"
-msgstr "Publicar retroalimentación"
+msgstr "Enviando retroalimentación"
 
 #: templates/legacy/grade/oa_grade_complete.html:134
 msgid ""
 "Your feedback has been submitted. Course staff will be able to see this "
 "feedback when they review course records."
 msgstr ""
-"Sus comentarios han sido enviados!. El equipo del curso los verá cuando "
-"revisen los registros del curso."
+"Tu retroalimentación ha sido enviada. El personal del curso podrá verla "
+"cuando revisen los registros del curso."
 
 #: templates/legacy/grade/oa_grade_complete.html:140
 msgid ""
 "Course staff will be able to see any feedback that you provide here when "
 "they review course records."
 msgstr ""
-"El equipo del curso podrá ver todos los comentarios que publique aquí cuando"
-" revisen los registros del curso."
+"El personal del curso podrá ver cualquier retroalimentación que proporciones"
+" aquí cuando revisen los registros del curso."
 
 #: templates/legacy/grade/oa_grade_complete.html:146
 msgid ""
 "Select the statements below that best reflect your experience with peer "
 "assessments."
 msgstr ""
-"Seleccione las declaraciones de abajo que mejor reflejen sus experiencias "
-"con la evaluación entre pares."
+"Selecciona las afirmaciones a continuación que mejor reflejen tu experiencia"
+" con las evaluaciones entre pares."
 
 #: templates/legacy/grade/oa_grade_complete.html:155
 msgid "These assessments were useful."
-msgstr "Estas valoraciones fueron útiles."
+msgstr "Estas evaluaciones fueron útiles."
 
 #: templates/legacy/grade/oa_grade_complete.html:164
 msgid "These assessments were not useful."
-msgstr "Estas valoraciones no fueron útiles."
+msgstr "Estas evaluaciones no fueron útiles."
 
 #: templates/legacy/grade/oa_grade_complete.html:173
 msgid "I disagree with one or more of the peer assessments of my response."
 msgstr ""
-"No estoy de acuerdo con una o más de las evaluaciones brindadas por mis "
-"compañeros a mi respuesta."
+"No estoy de acuerdo con una o más de las evaluaciones entre pares de mi "
+"respuesta."
 
 #: templates/legacy/grade/oa_grade_complete.html:182
 msgid "Some comments I received were inappropriate."
@@ -1057,40 +1051,40 @@ msgstr "Algunos comentarios que recibí fueron inapropiados."
 msgid ""
 "Provide feedback on the grade or comments that you received from your peers."
 msgstr ""
-"Por favor brinde retroalimentación a la calificación o comentarios recibidos"
-" de sus compañeros"
+"Proporciona retroalimentación sobre la calificación o los comentarios que "
+"recibiste de tus compañeros."
 
 #: templates/legacy/grade/oa_grade_complete.html:190
 msgid "I feel the feedback I received was..."
-msgstr "Pienso que la retroalimentación que recibí fue..."
+msgstr "Siento que la retroalimentación que recibí fue..."
 
 #: templates/legacy/grade/oa_grade_complete.html:200
 msgid "We could not submit your feedback"
-msgstr "No se ha podido enviar su comentario."
+msgstr "No pudimos enviar tu retroalimentación"
 
 #: templates/legacy/grade/oa_grade_complete.html:206
 msgid "Submit feedback on peer assessments"
-msgstr "Enviar comentarios sobre la calificación de los pares."
+msgstr "Enviar retroalimentación sobre las evaluaciones entre pares"
 
 #: templates/legacy/grade/oa_grade_incomplete.html:16
 msgid "Not Completed"
-msgstr "Falta por completar"
+msgstr "No completado"
 
 #: templates/legacy/grade/oa_grade_incomplete.html:33
 msgid "You have not completed all the steps of this problem."
-msgstr "No ha completado todos los pasos de este problema."
+msgstr "No has completado todos los pasos de este problema."
 
 #: templates/legacy/grade/oa_grade_not_started.html:16
 msgid "Not Started"
-msgstr "No Comenzado"
+msgstr "No iniciado"
 
 #: templates/legacy/grade/oa_grade_not_started.html:27
 msgid "You have not started this problem yet."
-msgstr "Usted no ha iniciado el problema. "
+msgstr "Aún no has comenzado este problema."
 
 #: templates/legacy/grade/oa_grade_waiting.html:16
 msgid "Waiting for Assessments"
-msgstr "Esperando las Evaluaciones "
+msgstr "Esperando evaluaciones"
 
 #: templates/legacy/grade/oa_grade_waiting.html:33
 msgid ""
@@ -1099,10 +1093,10 @@ msgid ""
 "complete, you will see feedback from everyone who assessed your response, "
 "and you will receive your final grade."
 msgstr ""
-"Ha completado los pasos en la tarea, pero algunas evaluaciones aún no se han"
-" realizado sobre su respuesta. Cuando las evaluaciones de su respuesta hayan"
-" sido terminadas, podrá ver los comentarios de las personas que evaluaron su"
-" respuesta, así como su calificación final."
+"Has completado los pasos de la asignación, pero aún faltan evaluaciones en "
+"tu respuesta. Cuando se completen las evaluaciones, verás la "
+"retroalimentación de todos los que evaluaron tu respuesta y recibirás tu "
+"calificación final."
 
 #: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:15
 #: templates/legacy/staff_area/oa_staff_area.html:16
@@ -1116,24 +1110,24 @@ msgid ""
 "Grade Available Responses is unavailable. This item is not configured for "
 "Staff Assessment."
 msgstr ""
-"Calificar Respuestas Disponibles no está disponible. Este artículo no está "
-"configurado para Revisión por el equipo del curso."
+"La opción Calificar respuestas disponibles no está disponible. Este elemento"
+" no está configurado para la evaluación por el personal."
 
 #: templates/legacy/instructor_dashboard/oa_listing.html:6
 msgid "Please wait"
-msgstr "Por favor espere"
+msgstr "Por favor, espera"
 
 #: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:15
 msgid "Waiting Step Details"
-msgstr "Detalles de Pasos de Espera"
+msgstr "Detalles del paso en espera"
 
 #: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:24
 msgid ""
 "Waiting Step details view is unavailable. This item is not configured for "
 "peer assessments."
 msgstr ""
-"Los detalles de pasos de espera no están disponibles. Este ítem no está "
-"configurado con las pruebas en parejas."
+"La vista de detalles del paso en espera no está disponible. Este elemento no"
+" está configurado para las evaluaciones entre pares."
 
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:20
 #, python-format
@@ -1144,15 +1138,15 @@ msgstr "%(num_points)s puntos"
 #: templates/legacy/peer/oa_peer_assessment.html:84
 #: templates/legacy/peer/oa_peer_turbo_mode.html:53
 msgid "Your peer's response to the prompt above"
-msgstr "La respuesta de su compañero a la pregunta o planteamiento anterior"
+msgstr "La respuesta de tu compañero al enunciado anterior"
 
 #: templates/legacy/leaderboard/oa_leaderboard_waiting.html:19
 msgid ""
 "After you complete all the steps of this assignment, you can see the top-"
 "scoring responses from your peers."
 msgstr ""
-"Después de completar todos los pasos de esta tarea, podrá ver las respuestas"
-" de sus pares con mas alto puntaje."
+"Después de completar todos los pasos de esta asignación, podrás ver las "
+"respuestas con mayor puntuación de tus compañeros."
 
 #: templates/legacy/message/oa_message_cancelled.html:8
 msgid ""
@@ -1160,65 +1154,66 @@ msgid ""
 " zero unless course staff resets your assessment to allow the team to "
 "resubmit a response."
 msgstr ""
-"La entrega de tu equipo ha sido cancelada. Tu equipo recibirá una "
-"calificación de cero a no ser que el personal del curso restablezca tu "
-"prueba para permitir que el equipo pueda enviar nuevamente una respuesta."
+"El envío de tu equipo ha sido cancelado. Tu equipo recibirá una calificación"
+" de cero a menos que el personal del curso restablezca la evaluación para "
+"permitir que el equipo reenvíe una respuesta."
 
 #: templates/legacy/message/oa_message_cancelled.html:10
 msgid ""
 "Your submission has been cancelled. You will receive a grade of zero unless "
 "course staff resets your assessment to allow you to resubmit a response."
 msgstr ""
-"Tu entrega ha sido cancelada. Recibirás una calificación de cero a no ser "
-"que el personal del grupo restablezca tu prueba y te permita reenviar las "
-"respuestas "
+"Tu envío ha sido cancelado. Recibirás una calificación de cero a menos que "
+"el personal del curso restablezca tu evaluación para permitirte reenviar una"
+" respuesta."
 
 #: templates/legacy/message/oa_message_closed.html:8
 msgid ""
 "This task is not yet available. Check back to complete the assignment once "
 "this section has opened."
 msgstr ""
-"Esta tarea todavía no está disponible. Regrese a esta sección a completar la"
-" tarea cuando esté abierta."
+"Esta tarea aún no está disponible. Vuelve a consultarla para completarla una"
+" vez que esta sección se haya abierto."
 
 #: templates/legacy/message/oa_message_closed.html:10
 msgid ""
 "This assignment has closed. One or more deadlines for this assignment have "
 "passed. You will receive an incomplete grade for this assignment."
 msgstr ""
-"Esta tarea está cerrada. Una o más fechas límites para esta tarea han "
-"pasado. Recibirá un nota de incompleto para esta tarea."
+"Esta asignación ha finalizado. Una o más fechas límite han pasado. Recibirás"
+" una calificación incompleta para esta asignación."
 
 #: templates/legacy/message/oa_message_complete.html:8
 msgid ""
 "You have completed this assignment. Your final grade will be available when "
 "the assessments of your response are complete."
 msgstr ""
-"Ha completado esta tarea. Su nota final estará disponible cuando las "
-"revisiones de su respuesta hayan sido completadas."
+"Has completado esta asignación. Tu calificación final estará disponible "
+"cuando se completen las evaluaciones de tu respuesta."
 
 #: templates/legacy/message/oa_message_complete.html:10
 msgid ""
 "You have completed this assignment. Review your grade and your assessment "
 "details."
 msgstr ""
-"Ha completado esta tarea. Revise su calificación y los detalles de su "
-"evaluación."
+"Has completado esta asignación. Revisa tu calificación y los detalles de tus"
+" evaluaciones."
 
 #: templates/legacy/message/oa_message_incomplete.html:9
 msgid ""
 "This assignment is in progress. Learner training will close soon. Complete "
 "the learner training step to move on."
 msgstr ""
-"Esta tarea está en proceso. El paso de entrenamiento del estudiante "
-"terminará pronto. Complete el paso de entrenamiento para avanzar."
+"Esta asignación está en progreso. La formación para estudiantes se cerrará "
+"pronto. Completa el paso de formación para continuar."
 
 #: templates/legacy/message/oa_message_incomplete.html:11
 msgid ""
 "This assignment is in progress. Complete the learner training step to move "
 "on."
 msgstr ""
-"Esta tarea está en proceso. Complete el paso de entrenamiento para avanzar."
+"Esta asignación está en progreso. Completa el paso de formación para "
+"continuar."
 
 #: templates/legacy/message/oa_message_incomplete.html:15
 #: templates/legacy/message/oa_message_incomplete.html:33
@@ -1226,8 +1221,8 @@ msgid ""
 "This assignment is in progress. Check back later when the assessment period "
 "has started."
 msgstr ""
-"Esta tarea está en proceso. Vuelva a revisar mas tarde, cuando se haya "
-"iniciado el periodo de evaluación."
+"Esta asignación está en progreso. Vuelve a consultarla más tarde cuando "
+"comience el período de evaluación."
 
 #: templates/legacy/message/oa_message_incomplete.html:20
 #, python-format
@@ -1237,7 +1232,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"%(start_strong)sEsta tarea está en proceso. El paso de auto-calificación se va a cerrar pronto.%(end_strong)sUsted todavía necesita completar el paso de %(start_link)sauto-calificación%(end_link)s."
+"                                    %(start_strong)sEsta asignación está en progreso. El paso de autoevaluación se cerrará pronto.%(end_strong)s Aún debes completar el paso de %(start_link)sa autoevaluación%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:24
 #, python-format
@@ -1247,7 +1243,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Esta tarea está en proceso. Usted todavía necesita completar el paso de %(start_link)sauto-calificación%(end_link)s."
+"                                    Esta asignación está en progreso. Aún debes completar el paso de %(start_link)sa autoevaluación%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:38
 #, python-format
@@ -1257,7 +1254,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Esta tarea está en proceso. %(start_strong)sEl paso de calificación entre pares va a cerrar pronto.%(end_strong)s Se han calificado todas las respuestas enviadas por los compañeros. Revise más tarde para ver si otros estudiantes han enviado respuestas. Usted  todavía necesita completar el paso de %(start_link)scalificación entre pares%(end_link)s."
+"                                    Esta asignación está en progreso.%(start_strong)sEl paso de evaluación entre pares se cerrará pronto.%(end_strong)s Todas las respuestas de los compañeros enviadas han sido evaluadas. Vuelve a consultarla más tarde para ver si más estudiantes han enviado respuestas. Aún debes completar el paso de %(start_link)sevaluación entre pares%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:42
 #, python-format
@@ -1267,7 +1265,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Esta tarea está en proceso. Ya se han calificado todas las respuestas enviadas por sus pares. Revise de nuevo más tarde para ver si otros estudiantes han enviado respuestas. Usted todavía necesita completar el paso de %(start_link)scalificación entre pares%(end_link)s."
+"                                    Esta asignación está en progreso. Todas las respuestas de los compañeros enviadas han sido evaluadas. Vuelve a consultarla más tarde para ver si más estudiantes han enviado respuestas. Aún debes completar el paso de %(start_link)sevaluación entre pares%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:46
 #, python-format
@@ -1277,7 +1276,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Esta tarea está en proceso. %(start_strong)sEl paso de calificación entre pares se va a cerrar pronto.%(end_strong)s Usted todavía necesita completar el paso de %(start_link)scalificación entre pares%(end_link)s."
+"                                    Esta asignación está en progreso. %(start_strong)sEl paso de evaluación entre pares se cerrará pronto.%(end_strong)s Aún debes completar el paso de %(start_link)sevaluación entre pares%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:50
 #, python-format
@@ -1287,11 +1287,12 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Esta tarea está en proceso. Usted todavía necesita completar el paso de %(start_link)scalificación entre pares%(end_link)s."
+"                                    Esta asignación está en progreso. Aún debes completar el paso de %(start_link)sevaluación entre pares%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_no_team.html:4
 msgid "Team membership is required to view this assignment"
-msgstr "Se requiere membresía de equipo para ver esta asignación"
+msgstr "Se requiere pertenencia a un equipo para ver esta asignación"
 
 #: templates/legacy/message/oa_message_no_team.html:7
 #, python-format
@@ -1303,9 +1304,9 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            Este es la tarea de equipo para el conjunto de equipos  \"%(teamset_name)s\".\n"
-"            No te encuentras actualmente en un equipo del conjunto de equipos \"%(teamset_name)s\".\n"
-"            Debes de estar en un equipo del conjunto de equipos \"%(teamset_name)s\" para acceder a esta tarea.\n"
+"            Esta es una asignación en equipo para el conjunto de equipos \"%(teamset_name)s\".\n"
+"            Actualmente no perteneces a un equipo en el conjunto \"%(teamset_name)s\".\n"
+"            Debes estar en un equipo en el conjunto \"%(teamset_name)s\" para acceder a esta asignación en equipo.\n"
 "            "
 
 #: templates/legacy/message/oa_message_open.html:7
@@ -1316,7 +1317,7 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                    Los envíos de las tareas cerrarán pronto. Para recibir una calificación, primero de una respuesta a la pregunta o planteamiento del ejercicio, luego complete los pasos debajo del campo %(start_tag)sSu Respuesta%(end_tag)s.\n"
+"                    Las entregas de la asignación se cerrarán pronto. Para recibir una calificación, primero proporciona una respuesta al enunciado, luego completa los pasos debajo del campo %(start_tag)sTu respuesta%(end_tag)s.\n"
 "                "
 
 #: templates/legacy/message/oa_message_open.html:11
@@ -1327,7 +1328,7 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"Esta tarea tiene varios pasos. En el primer paso, dará una respuesta a la pregunta o planteamiento del ejercicio. Los otros pasos aparecen debajo del campo  %(start_tag)s\"Su Respuesta\"%(end_tag)s.\n"
+"                    Esta asignación tiene varios pasos. En el primer paso, proporcionarás una respuesta al enunciado. Los otros pasos aparecen debajo del campo %(start_tag)sTu respuesta%(end_tag)s.\n"
 "                "
 
 #: templates/legacy/message/oa_message_unavailable.html:4
@@ -1336,7 +1337,7 @@ msgstr "Instrucciones no disponibles"
 
 #: templates/legacy/message/oa_message_unavailable.html:6
 msgid "The instructions for this step could not be loaded."
-msgstr "Las instrucciones para este paso no pueden ser cargadas."
+msgstr "No se pudieron cargar las instrucciones para este paso."
 
 #: templates/legacy/oa_base.html:16 templates/openassessmentblock/base.html:22
 msgid ""
@@ -1344,9 +1345,9 @@ msgid ""
 "response to the prompt. The other steps appear below the Your Response "
 "field."
 msgstr ""
-"Esta tarea tiene varios pasos. En el primero, dará una respuesta a la "
-"pregunta o planteamiento del ejercicio. Los otros pasos aparecen abajo del "
-"campo  \"Su respuesta\"."
+"Esta asignación tiene varios pasos. En el primer paso, proporcionarás una "
+"respuesta al enunciado. Los otros pasos aparecen debajo del campo Tu "
+"respuesta."
 
 #: templates/legacy/oa_base.html:37 templates/openassessmentblock/base.html:56
 #: templates/openassessmentblock/base.html:105
@@ -1359,11 +1360,11 @@ msgstr "Vista previa en LaTeX"
 
 #: templates/legacy/oa_latex_preview.html:9
 msgid "Click to preview your submission in LaTeX."
-msgstr "Haga clic para previsualizar su envío en LaTeX."
+msgstr "Haz clic para ver una vista previa de tu envío en LaTeX."
 
 #: templates/legacy/oa_latex_preview.html:14
 msgid "Preview Response"
-msgstr "Previsualizar respuesta"
+msgstr "Vista previa de respuesta"
 
 #: templates/legacy/oa_rubric.html:53
 msgid "Comments"
@@ -1375,12 +1376,12 @@ msgstr "La pregunta para esta sección"
 
 #: templates/legacy/oa_team_uploaded_files.html:9
 msgid "Files that were uploaded by your teammates:"
-msgstr "Archivos que fueron cargados por sus compañeros de equipo:"
+msgstr "Archivos subidos por tus compañeros de equipo:"
 
 #: templates/legacy/oa_team_uploaded_files.html:28
 #: templates/legacy/oa_uploaded_file.html:34
 msgid "View the files associated with this submission:"
-msgstr "Ver los archivos asociados con este envío:"
+msgstr "Ver los archivos asociados a este envío:"
 
 #: templates/legacy/oa_team_uploaded_files.html:32
 msgid "Uploaded by"
@@ -1388,7 +1389,7 @@ msgstr "Subido por"
 
 #: templates/legacy/oa_uploaded_file.html:16
 msgid "Files that were uploaded by you:"
-msgstr "Archivos que usted cargó:"
+msgstr "Archivos que subiste:"
 
 #: templates/legacy/oa_uploaded_file.html:48
 msgid ""
@@ -1396,14 +1397,14 @@ msgid ""
 "been verified, screened, approved, reviewed, or endorsed by the site "
 "administrator. If you access the files, you do so at your own risk.)"
 msgstr ""
-"Cuidado: Estos archivos fueron subidos por otro estudiante en el curso y no "
-"han sido verificados, filtrados, aprobados, revisados, o respaldados por el "
-"administrador del sitio. Si abre los archivos, los abre bajo su propio "
+"Precaución: Estos archivos fueron subidos por otro estudiante del curso y no"
+" han sido verificados, examinados, aprobados, revisados ni avalados por el "
+"administrador del sitio. Si accedes a ellos, lo haces bajo tu propio "
 "riesgo.)"
 
 #: templates/legacy/peer/oa_peer_assessment.html:36
 msgid "Assess Peers"
-msgstr "Evaluar compañeros"
+msgstr "Evaluar a compañeros"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 00:00 UTC (in
@@ -1441,14 +1442,13 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                    En proceso (%(review_number)s de%(num_must_grade)s)\n"
+"                    En progreso (%(review_number)s de %(num_must_grade)s)\n"
 "                "
 
 #: templates/legacy/peer/oa_peer_assessment.html:75
 #: templates/legacy/peer/oa_peer_turbo_mode.html:45
 msgid "Read and assess the following response from one of your peers."
-msgstr ""
-"Lea y evalúe la siguiente respuesta al problema dada por uno de sus pares."
+msgstr "Lee y evalúa la siguiente respuesta de uno de tus compañeros."
 
 #: templates/legacy/peer/oa_peer_assessment.html:87
 #: templates/legacy/peer/oa_peer_turbo_mode.html:56
@@ -1457,7 +1457,7 @@ msgstr ""
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:38
 #: templates/legacy/staff_area/oa_student_info.html:63
 msgid "Associated Files"
-msgstr "Archivos Relacionados"
+msgstr "Archivos asociados"
 
 #: templates/legacy/peer/oa_peer_assessment.html:101
 #: templates/legacy/peer/oa_peer_turbo_mode.html:70
@@ -1465,7 +1465,7 @@ msgstr "Archivos Relacionados"
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:57
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:50
 msgid "We could not submit your assessment"
-msgstr "No pudimos subir su evaluación"
+msgstr "No pudimos enviar tu evaluación"
 
 #: templates/legacy/peer/oa_peer_cancelled.html:19
 #: templates/legacy/response/oa_response_cancelled.html:21
@@ -1491,13 +1491,13 @@ msgid ""
 "longer complete peer assessments or continue with this assignment, and you "
 "will receive a grade of Incomplete."
 msgstr ""
-"La fecha límite para este paso se ha vencido. El paso está cerrado. Ya no "
-"puede completar calificaciones entre pares o seguir con esta tarea, y "
-"recibirá una calificación de Incompleto."
+"La fecha límite para este paso ha pasado. Este paso está ahora cerrado. Ya "
+"no puedes completar evaluaciones entre pares ni continuar con esta "
+"asignación, y recibirás una calificación de Incompleto."
 
 #: templates/legacy/peer/oa_peer_complete.html:13
 msgid "Completed"
-msgstr "Finalizado"
+msgstr "Completado"
 
 #: templates/legacy/peer/oa_peer_complete.html:31
 #: templates/legacy/peer/oa_peer_turbo_mode.html:41
@@ -1507,17 +1507,18 @@ msgid ""
 "this assignment. You may assess additional peer responses if you want to. "
 "Completing additional assessments will not affect your final grade."
 msgstr ""
-"Ha completado con éxito todas las evaluaciones de los compañeros necesarios "
-"para esta tarea. Es posible evaluar las respuestas de pares adicionales si "
-"así lo desea. Estas adiciones no afectarán a su calificación final."
+"Has completado con éxito todas las evaluaciones entre pares requeridas para "
+"esta asignación. Puedes evaluar respuestas adicionales de tus compañeros si "
+"lo deseas. Completar evaluaciones adicionales no afectará tu calificación "
+"final."
 
 #: templates/legacy/peer/oa_peer_complete.html:36
 msgid "We could not retrieve additional submissions for assessment"
-msgstr "No pudimos recuperar presentaciones adicionales para la revisión."
+msgstr "No pudimos recuperar envíos adicionales para evaluación"
 
 #: templates/legacy/peer/oa_peer_complete.html:43
 msgid "Continue Assessing Peers"
-msgstr "Continúe la evaluación de pares."
+msgstr "Continúa evaluando a tus compañeros"
 
 #: templates/legacy/peer/oa_peer_turbo_mode.html:26
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:20
@@ -1528,7 +1529,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Completo (%(num_graded)s)\n"
+"        Completado (%(num_graded)s)\n"
 "      "
 
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:38
@@ -1536,8 +1537,8 @@ msgid ""
 "All submitted peer responses have been assessed. Check back later to see if "
 "more learners have submitted responses."
 msgstr ""
-"Se han calificado todas las respuestas enviadas por sus compañeros. Vuelva "
-"más tarde a ver si más estudiantes han enviado respuestas."
+"Todas las respuestas entre pares enviadas han sido evaluadas. Vuelve a "
+"consultarla más tarde para ver si más estudiantes han enviado respuestas."
 
 #: templates/legacy/peer/oa_peer_unavailable.html:16
 #: templates/legacy/response/oa_response_unavailable.html:17
@@ -1554,7 +1555,8 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"En proceso (%(review_number)s de %(num_must_grade)s)"
+"          En progreso (%(review_number)s de %(num_must_grade)s)\n"
+"        "
 
 #: templates/legacy/peer/oa_peer_waiting.html:37
 msgid ""
@@ -1563,15 +1565,14 @@ msgid ""
 "you've completed all the steps for this problem and your peers have assessed"
 " your response."
 msgstr ""
-"Se han calificado todas las respuestas disponibles enviadas por sus "
-"compañeros. Revise de nuevo más tarde para ver si más estudiantes han "
-"enviado respuestas. Usted recibirá su nota después de que haya completado "
-"todos los pasos para este problema y que sus compañeros hayan calificado su "
-"respuesta."
+"Se han evaluado todas las respuestas de los compañeros disponibles. Vuelve "
+"más tarde para ver si más estudiantes han enviado respuestas. Recibirás tu "
+"calificación después de que hayas completado todos los pasos de este "
+"problema y tus compañeros hayan evaluado tu respuesta."
 
 #: templates/legacy/response/oa_response.html:27
 msgid "Your Team's Response"
-msgstr "La respuesta de tu equipo"
+msgstr "Respuesta de tu equipo"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 (in 5 days and
@@ -1604,11 +1605,11 @@ msgstr ""
 #: templates/legacy/response/oa_response.html:54
 #: templates/legacy/self/oa_self_assessment.html:56
 msgid "In Progress"
-msgstr "En proceso"
+msgstr "En progreso"
 
 #: templates/legacy/response/oa_response.html:66
 msgid "Enter your team's response to the prompt."
-msgstr "Ingresa la respuesta de tu equipo a la solicitud."
+msgstr "Ingresa la respuesta de tu equipo al enunciado."
 
 #: templates/legacy/response/oa_response.html:68
 msgid ""
@@ -1617,7 +1618,8 @@ msgid ""
 "                      "
 msgstr ""
 "\n"
-"Su trabajo se guardará automáticamente y podrá regresar para completar la respuesta de su equipo en cualquier momento antes de la fecha de vencimiento"
+"                        Tu trabajo se guardará automáticamente y puedes regresar para completar la respuesta de tu equipo en cualquier momento antes de la fecha límite\n"
+"                      "
 
 #: templates/legacy/response/oa_response.html:81
 msgid ""
@@ -1626,70 +1628,70 @@ msgid ""
 "                      "
 msgstr ""
 "\n"
-"Su trabajo se guardará automáticamente y podrá volver para completar la respuesta de su equipo en cualquier momento."
+"                        Tu trabajo se guardará automáticamente y puedes regresar para completar la respuesta de tu equipo en cualquier momento.\n"
+"                      "
 
 #: templates/legacy/response/oa_response.html:86
 msgid ""
 "After you submit a response on behalf of your team, it cannot be edited."
 msgstr ""
-"Después de enviar la respuesta en nombre del equipo, no podrá editarse."
+"Después de enviar una respuesta en nombre de tu equipo, no se podrá editar."
 
 #: templates/legacy/response/oa_response.html:89
 msgid "Enter your response to the prompt."
-msgstr "Ingrese su respuesta a la pregunta o planteamiento del ejercicio."
+msgstr "Ingresa tu respuesta al enunciado."
 
 #: templates/legacy/response/oa_response.html:92
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the subsection due date "
 msgstr ""
-"Su trabajo se guardará automáticamente y podrá regresar para completar su "
-"respuesta en cualquier momento antes de la fecha de vencimiento de la "
-"subsección."
+"Tu trabajo se guardará automáticamente y puedes regresar para completar tu "
+"respuesta en cualquier momento antes de la fecha límite de la subsección"
 
 #: templates/legacy/response/oa_response.html:94
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the course ends "
 msgstr ""
-"Tu trabajo se guardará automáticamente y podrás regresar para completar tu "
-"respuesta en cualquier momento antes de que finalice el curso."
+"Tu trabajo se guardará automáticamente y puedes regresar para completar tu "
+"respuesta en cualquier momento antes de que finalice el curso"
 
 #: templates/legacy/response/oa_response.html:96
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the due date "
 msgstr ""
-"Su trabajo se guardará automáticamente y podrá regresar para completar su "
-"respuesta en cualquier momento antes de la fecha límite."
+"Tu trabajo se guardará automáticamente y puedes regresar para completar tu "
+"respuesta en cualquier momento antes de la fecha límite"
 
 #: templates/legacy/response/oa_response.html:108
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time."
 msgstr ""
-"Su trabajo se guardará automáticamente y podrá volver para completar su "
+"Tu trabajo se guardará automáticamente y puedes regresar para completar tu "
 "respuesta en cualquier momento."
 
 #: templates/legacy/response/oa_response.html:110
 msgid "After you submit your response, you cannot edit it"
-msgstr "Tras subir su respuesta no podrá editarla"
+msgstr "Después de enviar tu respuesta, no se podrá editar."
 
 #: templates/legacy/response/oa_response.html:120
 msgid "What will this assignment be graded on?"
-msgstr "¿En qué se calificará esta prueba? "
+msgstr "¿En qué se basará la calificación de esta tarea?"
 
 #: templates/legacy/response/oa_response.html:134
 msgid "The prompt for this section"
-msgstr "La pregunta o planteamiento del ejercicio para esta sección."
+msgstr "El enunciado para esta sección"
 
 #: templates/legacy/response/oa_response.html:148
 msgid "You are on team "
-msgstr "Está en un equipo"
+msgstr "Estás en el equipo "
 
 #: templates/legacy/response/oa_response.html:150
 msgid "Team Members: "
-msgstr "Miembros del equipo:"
+msgstr "Miembros del equipo: "
 
 #: templates/legacy/response/oa_response.html:155
 #, python-format
@@ -1702,22 +1704,22 @@ msgid ""
 msgstr ""
 "\n"
 "                                              %(team_members_with_external_submissions)s\n"
-"                                              Ha enviado una respuesta a esta prueba con otro equipo,\n"
-"                                              y no será parte de la entrega de tu equipo ni de la calificación de la prueba.\n"
+"                                              ya han enviado una respuesta a esta tarea con otro equipo,\n"
+"                                              y no formarán parte de la entrega de tu equipo ni contarán para la calificación de la tarea.\n"
 "                                          "
 
 #: templates/legacy/response/oa_response.html:171
 msgid "Team Response "
-msgstr "La respuesta de equipo"
+msgstr "Respuesta del equipo "
 
 #: templates/legacy/response/oa_response.html:173
 msgid "Your Response "
-msgstr "Tu Respuesta"
+msgstr "Tu respuesta "
 
 #: templates/legacy/response/oa_response.html:177
 #: templates/legacy/response/oa_response.html:247
 msgid "(Required)"
-msgstr "(Requerido)"
+msgstr "(Obligatorio)"
 
 #: templates/legacy/response/oa_response.html:179
 #: templates/legacy/response/oa_response.html:249
@@ -1735,17 +1737,16 @@ msgid ""
 "                                          "
 msgstr ""
 "\n"
-"                                              El equipo debe designar un miembro para que haga el envío de la respuesta a nombre de\n"
-"                                              el equipo completo. Todos los miembros del equipo peden usar este espacio para trabajar en respuestas de borrador ,\n"
-"                                              Pero no se te será permitido ver los borradores de los otros integrantes de tu equipo, así que\n"
-"                                              por favor coordina con ellos para decidir en la respuesta final del equipo que el miembro \n"
-"                                              designado debe enviar.\n"
+"                                              Los equipos deben designar a un miembro para enviar una respuesta en nombre de\n"
+"                                              todo el equipo. Todos los miembros pueden usar este espacio para trabajar en respuestas\n"
+"                                              provisionales, pero no podrás ver los borradores de tus compañeros, así que\n"
+"                                              coordina con ellos para decidir cuál es la respuesta final que el miembro designado\n"
+"                                              debe enviar.\n"
 "                                          "
 
 #: templates/legacy/response/oa_response.html:197
 msgid "Enter your response to the prompt above."
-msgstr ""
-"Ingrese una respuesta a la pregunta o planteamiento del ejercicio anterior."
+msgstr "Ingresa tu respuesta al enunciado anterior."
 
 #: templates/legacy/response/oa_response.html:211
 #, python-format
@@ -1759,24 +1760,24 @@ msgid ""
 "                                  "
 msgstr ""
 "\n"
-"                                      Actualmente te encuentras en el equipo %(team_name)s. Ya que estabas en el equipo %(previous_team_name)s\n"
-"                                      cuando ellos enviaron la respuesta para esta prueba, estás viendo la respuesta del equipo %(previous_team_name)s\n"
-"                                      y recibirás la misma calificación que tus compañeros.\n"
-"                                      No serás parte del envío del equipo %(team_name)s para esta prueba y no recibirás\n"
-"                                      una calificación para ese envío.\n"
+"                                      Actualmente estás en el equipo %(team_name)s. Dado que formaste parte del equipo %(previous_team_name)s\n"
+"                                      cuando enviaron una respuesta a esta tarea, estás viendo la respuesta del equipo %(previous_team_name)s\n"
+"                                      y recibirás la misma calificación que tus antiguos compañeros. \n"
+"                                      No formarás parte de la entrega del equipo %(team_name)s para esta tarea y no\n"
+"                                      recibirás calificación por su entrega.\n"
 "                                  "
 
 #: templates/legacy/response/oa_response.html:224
 msgid "We could not save your progress"
-msgstr "No pudimos guardar su progreso."
+msgstr "No se pudo guardar tu progreso"
 
 #: templates/legacy/response/oa_response.html:232
 msgid "Status of Your Response"
-msgstr "Estado de su respuesta"
+msgstr "Estado de tu respuesta"
 
 #: templates/legacy/response/oa_response.html:245
 msgid "File Uploads "
-msgstr "Documentos Subidos"
+msgstr "Subida de archivos "
 
 #: templates/legacy/response/oa_response.html:253
 msgid ""
@@ -1786,90 +1787,90 @@ msgid ""
 "                              "
 msgstr ""
 "\n"
-"                                 Sube archivos y revisa los archivos subidos por ti y tus compañeros. Asegúrate de agregar\n"
-"                                  descripciones a tus archivos para ayudar a tus compañeros a identificarlos.\n"
+"                                  Sube archivos y revisa los archivos subidos por ti y tus compañeros a continuación. Asegúrate de agregar\n"
+"                                  descripciones a tus archivos para que tus compañeros puedan identificarlos.\n"
 "                              "
 
 #: templates/legacy/response/oa_response.html:261
 msgid "We could not upload files"
-msgstr "No pudimos subir archivos"
+msgstr "No se pudieron subir los archivos"
 
 #: templates/legacy/response/oa_response.html:267
 msgid "We could not delete files"
-msgstr "No pudimos Eliminar los archivos"
+msgstr "No se pudieron eliminar los archivos"
 
 #: templates/legacy/response/oa_response.html:274
 msgid "Select one or more files to upload for this submission."
-msgstr "Selecciona uno o más archivos subidos para esta entrega."
+msgstr "Selecciona uno o más archivos para subir en esta entrega."
 
 #: templates/legacy/response/oa_response.html:276
 msgid "Select a file to upload for this submission."
-msgstr "Seleccione un archivo para subir en la respuesta."
+msgstr "Selecciona un archivo para subir en esta entrega."
 
 #: templates/legacy/response/oa_response.html:280
 msgid "Supported file types: "
-msgstr "Tipos de archivos de apoyo:"
+msgstr "Tipos de archivo soportados: "
 
-#: templates/legacy/response/oa_response.html:285
+#: templates/legacy/response/oa_response.html:286
 msgid "Upload files"
 msgstr "Subir archivos"
 
-#: templates/legacy/response/oa_response.html:287
+#: templates/legacy/response/oa_response.html:288
 msgid "Upload file"
 msgstr "Subir archivo"
 
-#: templates/legacy/response/oa_response.html:304
+#: templates/legacy/response/oa_response.html:305
 msgid "This is a team submission."
-msgstr "Esto es una entrega de equipo."
+msgstr "Esta es una entrega de equipo."
 
-#: templates/legacy/response/oa_response.html:306
+#: templates/legacy/response/oa_response.html:307
 msgid ""
 "One team member should submit a response with the team’s shared files and a "
 "text response on behalf of the entire team."
 msgstr ""
-"Uno de los miembros del equipo debe enviar una respuesta con los archivos "
-"compartidos del equipo y un texto de respuesta a nombre de todo el equipo."
+"Un miembro del equipo debe enviar una respuesta con los archivos compartidos"
+" del equipo y una respuesta en texto en nombre de todo el equipo."
 
-#: templates/legacy/response/oa_response.html:308
+#: templates/legacy/response/oa_response.html:309
 msgid ""
 "One team member should submit a response with the team’s shared files on "
 "behalf of the entire team."
 msgstr ""
-"Uno de los miembros del equipo debe enviar una respuesta con los archivos "
-"compartidos del equipo respuesta a nombre de todo el equipo."
+"Un miembro del equipo debe enviar una respuesta con los archivos compartidos"
+" del equipo en nombre de todo el equipo."
 
-#: templates/legacy/response/oa_response.html:310
+#: templates/legacy/response/oa_response.html:311
 msgid ""
 "One team member should submit a text response on behalf of the entire team."
 msgstr ""
-"Un miembro del equipo debe enviar una respuesta de texto a nombre de todo el"
-" equipo."
+"Un miembro del equipo debe enviar una respuesta en texto en nombre de todo "
+"el equipo."
 
-#: templates/legacy/response/oa_response.html:312
+#: templates/legacy/response/oa_response.html:313
 msgid "One team member should submit on behalf of the entire team."
-msgstr ""
-"Un miembro del equipo debe enviar las respuestas a nombre de todo el equipo."
+msgstr "Un miembro del equipo debe enviar en nombre de todo el equipo."
 
-#: templates/legacy/response/oa_response.html:314
+#: templates/legacy/response/oa_response.html:315
 msgid ""
 "\n"
 "                  Learn more about team assignments here: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
 "                  "
 msgstr ""
 "\n"
-"Obtenga más información sobre las asignaciones de equipo aquí: ( <a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">enlace</a> )"
+"                  Aprende más sobre las tareas en equipo aquí: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">enlace</a>)\n"
+"                  "
 
-#: templates/legacy/response/oa_response.html:322
+#: templates/legacy/response/oa_response.html:323
 msgid "We could not submit your response"
-msgstr "No pudimos subir su respuesta"
+msgstr "No se pudo enviar tu respuesta"
 
-#: templates/legacy/response/oa_response.html:333
+#: templates/legacy/response/oa_response.html:334
 msgid "Submit your response and move to the next step"
-msgstr "Publique su respuesta y continúe con el siguiente paso"
+msgstr "Envía tu respuesta y pasa al siguiente paso"
 
 #: templates/legacy/response/oa_response_cancelled.html:34
 msgid "Your submission was cancelled. "
-msgstr "Su envío fue cancelado."
+msgstr "Tu entrega fue cancelada. "
 
 #: templates/legacy/response/oa_response_cancelled.html:37
 #, python-format
@@ -1879,8 +1880,8 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"Su envío ha sido cancelado por %(removed_by_username)s el %(removed_datetime)s\n"
-"                    "
+"                                Tu entrega ha sido cancelada por %(removed_by_username)s el %(removed_datetime)s\n"
+"                            "
 
 #: templates/legacy/response/oa_response_cancelled.html:41
 #, python-format
@@ -1890,7 +1891,8 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"Su envío fue cancelado el %(removed_datetime)s"
+"                               Tu entrega fue cancelada el %(removed_datetime)s\n"
+"                            "
 
 #: templates/legacy/response/oa_response_cancelled.html:48
 #, python-format
@@ -1916,10 +1918,10 @@ msgid ""
 " a grade of Incomplete. If you saved but did not submit a response, the "
 "response appears in the course records."
 msgstr ""
-"La fecha límite para este paso se ha vencido. El paso está cerrado. Ya no "
-"puede completar calificaciones entre pares ni seguir con esta tarea, y "
-"recibirá una calificación de Incompleto. Si usted guardó una respuesta pero "
-"no la envió, la respuesta aparece en el registro del curso."
+"La fecha límite para este paso ha pasado. Este paso ahora está cerrado. Ya "
+"no puedes enviar una respuesta ni continuar con este problema, y recibirás "
+"una calificación de Incompleto. Si guardaste pero no enviaste una respuesta,"
+" ésta aparecerá en los registros del curso."
 
 #: templates/legacy/response/oa_response_graded.html:20
 #: templates/legacy/response/oa_response_submitted.html:20
@@ -1932,20 +1934,20 @@ msgstr "Completo"
 #: templates/legacy/response/oa_response_submitted.html:51
 #: templates/legacy/self/oa_self_assessment.html:67
 msgid "Your response"
-msgstr "Su respuesta"
+msgstr "Tu respuesta"
 
 #: templates/legacy/response/oa_response_graded.html:33
 #: templates/legacy/response/oa_response_submitted.html:54
 msgid "Your Uploaded Files"
-msgstr "Tus Archivos Subidos"
+msgstr "Tus archivos subidos"
 
 #: templates/legacy/response/oa_response_submitted.html:32
 msgid ""
 "Your response has been submitted. You will receive your grade after all "
 "steps are complete and your response is fully assessed."
 msgstr ""
-"Su respuesta ha sido enviada. Recibirá su nota una vez que todos los pasos "
-"estén completos y su respuesta haya sido calificada."
+"Tu respuesta ha sido enviada. Recibirás tu calificación después de que todos"
+" los pasos estén completos y tu respuesta sea evaluada completamente."
 
 #: templates/legacy/response/oa_response_submitted.html:34
 #, python-format
@@ -1955,7 +1957,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Todavía debe completar los pasos de %(peer_start_tag)scalificación por pares%(end_tag)s y %(self_start_tag)sauto calificación%(end_tag)s.\n"
+"                        Aún necesitas completar los pasos de %(peer_start_tag)sevaluación por pares%(end_tag)s y %(self_start_tag)sevaluación propia%(end_tag)s.\n"
 "                    "
 
 #: templates/legacy/response/oa_response_submitted.html:38
@@ -1966,7 +1968,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Todavía debe completar la %(start_tag)setapa de calificación por pares%(end_tag)s.\n"
+"                        Aún necesitas completar el paso de %(start_tag)sevaluación por pares%(end_tag)s.\n"
 "                    "
 
 #: templates/legacy/response/oa_response_submitted.html:42
@@ -1977,16 +1979,16 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Todavía debe completar la %(start_tag)setapa de auto evaluación%(end_tag)s.\n"
+"                        Aún necesitas completar el paso de %(start_tag)sevaluación propia%(end_tag)s.\n"
 "                    "
 
 #: templates/legacy/response/oa_response_submitted.html:63
 msgid "We could not reset your response"
-msgstr "No pudimos restablecer tu respuesta."
+msgstr "No se pudo restablecer tu respuesta"
 
 #: templates/legacy/response/oa_response_submitted.html:69
 msgid "Reset response and submit again"
-msgstr "Restablecer respuesta y enviar de nuevo"
+msgstr "Restablecer la respuesta y enviar de nuevo"
 
 #: templates/legacy/response/oa_response_team_already_submitted.html:15
 msgid "Error"
@@ -2003,15 +2005,15 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                            Te uniste al equipo %(team_name)sdespués de que ellos enviaron una respuesta para esta tarea\n"
-"                            y no recibirás una calificación por su respuesta. También anteriormente no has enviado\n"
-"                            una respuesta para esta tarea con otro equipo. Por favor ponte en contacto con el personal encargado del curso para discutir tus \n"
-"                            alternativas para esta tarea.\n"
+"                            Te uniste al equipo %(team_name)s después de que se enviara una respuesta para esta tarea\n"
+"                            y no recibirás calificación por esa respuesta. Tampoco has enviado previamente\n"
+"                            una respuesta para esta tarea con otro equipo. Por favor, contacta al personal del curso para discutir\n"
+"                            tus opciones para esta tarea.\n"
 "                        "
 
 #: templates/legacy/self/oa_self_assessment.html:33
 msgid "Assess Your Response"
-msgstr "Evalúe su respuesta"
+msgstr "Evalúa tu respuesta"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 (in 5 days and
@@ -2043,7 +2045,7 @@ msgstr ""
 
 #: templates/legacy/self/oa_self_assessment.html:88
 msgid "Submit your assessment"
-msgstr "Envíe su evaluación"
+msgstr "Envía tu evaluación"
 
 #: templates/legacy/self/oa_self_closed.html:32
 msgid ""
@@ -2051,22 +2053,22 @@ msgid ""
 "longer complete a self assessment or continue with this assignment, and you "
 "will receive a grade of Incomplete."
 msgstr ""
-"La fecha límite para este paso se ha vencido. El paso está cerrado. Ya no "
-"puede completar su auto-calificación ni seguir con esta tarea. Así mismo, "
-"recibirá una calificación de Incompleto."
+"La fecha límite para este paso ha pasado. Este paso ahora está cerrado. Ya "
+"no puedes completar una autoevaluación ni continuar con esta tarea, y "
+"recibirás una calificación de Incompleto."
 
 #: templates/legacy/staff/oa_staff_grade.html:13 xblock/grade_mixin.py:369
 msgid "Staff Grade"
-msgstr "Calificación del Personal de soporte"
+msgstr "Calificación del personal"
 
 #: templates/legacy/staff_area/oa_staff_area.html:8
 #: templates/legacy/staff_area/oa_staff_area.html:35
 msgid "Manage Individual Learners"
-msgstr "Gestionar estudiantes individualmente"
+msgstr "Administrar estudiantes individuales"
 
 #: templates/legacy/staff_area/oa_staff_area.html:10
 msgid "Manage Team Responses"
-msgstr "Administra las respuestas de equipo"
+msgstr "Administrar respuestas de equipo"
 
 #: templates/legacy/staff_area/oa_staff_area.html:13
 #: templates/legacy/staff_area/oa_staff_area.html:71
@@ -2075,11 +2077,11 @@ msgstr "Ver estadísticas de la tarea"
 
 #: templates/legacy/staff_area/oa_staff_area.html:22
 msgid "Demo the new Grading Experience"
-msgstr "Demostración de la nueva experiencia de calificación"
+msgstr "Demuestra la nueva experiencia de calificación"
 
 #: templates/legacy/staff_area/oa_staff_area.html:26
 msgid "View ORA in Studio"
-msgstr "Mirar ORA en Studio"
+msgstr "Ver ORA en Studio"
 
 #: templates/legacy/staff_area/oa_staff_area.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:69
@@ -2089,15 +2091,19 @@ msgstr "Cerrar"
 
 #: templates/legacy/staff_area/oa_staff_area.html:37
 msgid "Manage Teams"
-msgstr "Gestionar Equipos"
+msgstr "Administrar equipos"
 
 #: templates/legacy/staff_area/oa_staff_area.html:50
 msgid "Enter an individual learner's username or email"
-msgstr "Ingrese el email o usuario del estudiante"
+msgstr ""
+"Ingresa el nombre de usuario o correo electrónico de un estudiante "
+"individual"
 
 #: templates/legacy/staff_area/oa_staff_area.html:52
 msgid "Enter a team member's username or edX email"
-msgstr "Ingresa un nombre de usuario de miembro o un correo electrónico edX"
+msgstr ""
+"Ingresa el nombre de usuario o correo electrónico de edX de un miembro del "
+"equipo"
 
 #: templates/legacy/staff_area/oa_staff_area.html:56
 msgid "Submit"
@@ -2105,7 +2111,7 @@ msgstr "Enviar"
 
 #: templates/legacy/staff_area/oa_staff_area.html:78
 msgid "Response total"
-msgstr "Respuesta total"
+msgstr "Total de respuestas"
 
 #: templates/legacy/staff_area/oa_staff_area.html:84
 msgid "Location"
@@ -2113,16 +2119,16 @@ msgstr "Ubicación"
 
 #: templates/legacy/staff_area/oa_staff_area.html:90
 msgid "Learner Progress"
-msgstr "Progreso de Estudiantes"
+msgstr "Progreso del estudiante"
 
 #: templates/legacy/staff_area/oa_staff_area.html:94
 #: templates/legacy/staff_area/oa_staff_area.html:117
 msgid "Problem Step"
-msgstr "Etapa del problema"
+msgstr "Paso del problema"
 
 #: templates/legacy/staff_area/oa_staff_area.html:95
 msgid "Active Learners in Step"
-msgstr "Estudiantes activos"
+msgstr "Estudiantes activos en el paso"
 
 #: templates/legacy/staff_area/oa_staff_area.html:113
 msgid "Dates"
@@ -2130,7 +2136,7 @@ msgstr "Fechas"
 
 #: templates/legacy/staff_area/oa_staff_area.html:118
 msgid "Release Date"
-msgstr "Fecha de liberación"
+msgstr "Fecha de lanzamiento"
 
 #: templates/legacy/staff_area/oa_staff_area.html:131
 #: templates/legacy/staff_area/oa_staff_area.html:137
@@ -2139,16 +2145,16 @@ msgstr "N/D"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners.html:7
 msgid "Staff Assessment"
-msgstr "Evaluación del equipo del curso"
+msgstr "Evaluación del personal"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:14
 msgid "Give this team a grade using the problem's rubric."
-msgstr "Califique a este equipo con la rúbrica del problema."
+msgstr "Asigna a este equipo una calificación usando la rúbrica del problema."
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:16
 msgid "Give this learner a grade using the problem's rubric."
 msgstr ""
-"Otorgue una calificación al estudiante usando la rúbrica del problema."
+"Asigna a este estudiante una calificación usando la rúbrica del problema."
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:26
 #, python-format
@@ -2158,7 +2164,7 @@ msgid ""
 "                                    "
 msgstr ""
 "\n"
-"                                       Respuesta para el equipo: %(team_name)scon  %(team_usernames)s\n"
+"                                        Respuesta para: %(team_name)s con %(team_usernames)s\n"
 "                                    "
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:30
@@ -2170,30 +2176,28 @@ msgid ""
 "                                    "
 msgstr ""
 "\n"
-"Respuesta para: %(student_username)s\n"
+"                                        Respuesta para: %(student_username)s\n"
 "                                    "
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:34
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:24
 msgid "Learner Response"
-msgstr "Respuesta de estudiante"
+msgstr "Respuesta del estudiante"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:39
 msgid "The teams's response to the prompt above"
-msgstr "La respuesta del equipo a la pregunta anterior"
+msgstr "La respuesta del equipo al enunciado anterior"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:41
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:32
 #: templates/legacy/staff_area/oa_student_info.html:57
 msgid "The learner's response to the prompt above"
-msgstr ""
-"La respuesta del estudiante a la pregunta o planteamiento del ejercicio "
-"anterior."
+msgstr "La respuesta del estudiante al enunciado anterior"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:64
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:57
 msgid "Submit assessment"
-msgstr "Enviar revisión"
+msgstr "Enviar evaluación"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:70
 msgid "Submit assessment and continue grading"
@@ -2207,27 +2211,29 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"%(ungraded)s disponibles y %(in_progress)s revisadas\n"
+"                %(ungraded)s Disponible y %(in_progress)s Revisado\n"
 "            "
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:7
 msgid "Override this learner's current grade using the problem's rubric."
 msgstr ""
-"Reemplazar la calificación de este estudiante usando la rúbrica del "
+"Sobrescribe la calificación actual de este estudiante usando la rúbrica del "
 "problema."
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:9
 msgid "Override this team's current grade using the problem's rubric."
-msgstr "Anula la nota actual de este equipo usando la rúbrica de problema."
+msgstr ""
+"Sobrescribe la calificación actual de este equipo usando la rúbrica del "
+"problema."
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:27
 msgid "Team Response"
-msgstr "Respuesta de Equipo"
+msgstr "Respuesta del equipo"
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:34
 #: templates/legacy/staff_area/oa_student_info.html:59
 msgid "The team's response to the prompt above"
-msgstr "La respuesta del equipo en la solicitud a continuación"
+msgstr "La respuesta del equipo al enunciado anterior"
 
 #: templates/legacy/staff_area/oa_student_info.html:11
 #, python-format
@@ -2237,7 +2243,7 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                    Mirando estudiante: %(learner)s\n"
+"                    Visualizando estudiante: %(learner)s\n"
 "                "
 
 #: templates/legacy/staff_area/oa_student_info.html:15
@@ -2248,7 +2254,7 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                   Mirando equipo: %(team)s\n"
+"                    Visualizando equipo: %(team)s\n"
 "                "
 
 #: templates/legacy/staff_area/oa_student_info.html:28
@@ -2267,7 +2273,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                            Envío del estudiante eliminado por %(removed_by_username)s el %(removed_datetime)s\n"
+"                            Envío del estudiante removido por %(removed_by_username)s el %(removed_datetime)s\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:43
@@ -2278,7 +2284,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                            Envío del estudiante eliminado el %(removed_datetime)s\n"
+"                            Envío del estudiante removido el %(removed_datetime)s\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:50
@@ -2294,23 +2300,23 @@ msgstr ""
 
 #: templates/legacy/staff_area/oa_student_info.html:71
 msgid "Peer Assessments for This Learner"
-msgstr "Revisiones de pares para este estudiante"
+msgstr "Evaluaciones por pares para este estudiante"
 
 #: templates/legacy/staff_area/oa_student_info.html:76
 msgid "Peer Assessments Completed by This Learner"
-msgstr "Revisiones de pares completadas por este estudiante"
+msgstr "Evaluaciones por pares completadas por este estudiante"
 
 #: templates/legacy/staff_area/oa_student_info.html:81
 msgid "Learner's Self Assessment"
-msgstr "Auto evaluación del estudiante"
+msgstr "Autoevaluación del estudiante"
 
 #: templates/legacy/staff_area/oa_student_info.html:87
 msgid "Staff Assessment for This Learner"
-msgstr "Revisión del equipo del curso para este estudiante"
+msgstr "Evaluación del personal para este estudiante"
 
 #: templates/legacy/staff_area/oa_student_info.html:89
 msgid "Staff Assessment for this Team"
-msgstr "Auto Evaluación para este Equipo"
+msgstr "Evaluación del personal para este equipo"
 
 #: templates/legacy/staff_area/oa_student_info.html:100
 msgid "Learner's Final Grade"
@@ -2318,7 +2324,7 @@ msgstr "Calificación final del estudiante"
 
 #: templates/legacy/staff_area/oa_student_info.html:102
 msgid "Team's Final Grade"
-msgstr "Nota final del equipo"
+msgstr "Calificación final del equipo"
 
 #: templates/legacy/staff_area/oa_student_info.html:112
 #, python-format
@@ -2328,7 +2334,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"Calificación final: %(points_earned)s de %(points_possible)s\n"
+"                            Calificación final: %(points_earned)s de %(points_possible)s\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:119
@@ -2347,24 +2353,24 @@ msgid_plural ""
 "                                    "
 msgstr[0] ""
 "\n"
-"%(assessment_label)s - %(points)s punto\n"
+"                                        %(assessment_label)s - %(points)s punto\n"
 "                                    "
 msgstr[1] ""
 "\n"
-"%(assessment_label)s - %(points)s puntos\n"
+"                                        %(assessment_label)s - %(points)s puntos\n"
 "                                    "
 msgstr[2] ""
 "\n"
-"%(assessment_label)s - %(points)s puntos\n"
+"                                        %(assessment_label)s - %(points)s puntos\n"
 "                                    "
 
 #: templates/legacy/staff_area/oa_student_info.html:154
 msgid "Feedback Recorded"
-msgstr "Comentarios registrados"
+msgstr "Retroalimentación registrada"
 
 #: templates/legacy/staff_area/oa_student_info.html:165
 msgid "The submission is waiting for assessments."
-msgstr "El envío está esperando las evaluaciones ."
+msgstr "La entrega está a la espera de evaluaciones."
 
 #: templates/legacy/staff_area/oa_student_info.html:170
 msgid ""
@@ -2372,10 +2378,9 @@ msgid ""
 "receives a grade of zero unless you delete the learner's state for the "
 "problem to allow them to resubmit a response."
 msgstr ""
-"El envío del estudiante ha sido eliminado de la evaluación por pares. El "
-"estudiante recibirá una calificación de cero a menos de que borre el estado "
-"del estudiante para el problema, dándole la oportunidad de enviar nuevamente"
-" una respuesta."
+"La entrega del estudiante ha sido removida de la evaluación por pares. El "
+"estudiante recibe una calificación de cero a menos que elimines el estado "
+"del estudiante para el problema, permitiéndole reenviar una respuesta."
 
 #: templates/legacy/staff_area/oa_student_info.html:172
 msgid ""
@@ -2383,9 +2388,9 @@ msgid ""
 "grade of zero unless you delete the a team member’s state for the problem to"
 " allow the team to resubmit a response."
 msgstr ""
-"La entrega del equipo se ha eliminado de la calificación. El equipo recibe "
-"una nota de cero a menos que elimines la respuesta del equipo para el "
-"problema para permitirle al equipo enviar nuevamente una respuesta."
+"La entrega del equipo ha sido removida de la calificación. El equipo recibe "
+"una calificación de cero a menos que elimines el estado de un miembro del "
+"equipo para el problema, permitiendo que el equipo reenvíe una respuesta."
 
 #: templates/legacy/staff_area/oa_student_info.html:177
 msgid "The problem has not been started."
@@ -2397,24 +2402,23 @@ msgstr "El problema no ha sido completado."
 
 #: templates/legacy/staff_area/oa_student_info.html:193
 msgid "Submit Assessment Grade Override"
-msgstr "Enviar reemplazo de la calificación"
+msgstr "Enviar anulación de calificación de evaluación"
 
 #: templates/legacy/staff_area/oa_student_info.html:195
 msgid "Submit Team Grade Override"
-msgstr "Anular la entrega de calificación del equipo"
+msgstr "Enviar anulación de calificación del equipo"
 
 #: templates/legacy/staff_area/oa_student_info.html:204
 msgid "Unable to perform grade override"
-msgstr "Inhabilitado de realizar la anulación de la nota"
+msgstr "No es posible realizar la anulación de calificación"
 
 #: templates/legacy/staff_area/oa_student_info.html:207
 msgid ""
 "Grades are frozen. Grades are automatically frozen 30 days after the course "
 "end date."
 msgstr ""
-"Las calificaciones están bloqueadas. Las calificaciones están "
-"automáticamente bloqueadas 30 días después de la fecha de finalización del "
-"curso."
+"Las calificaciones están congeladas. Se congelan automáticamente 30 días "
+"después de la fecha de finalización del curso."
 
 #: templates/legacy/staff_area/oa_student_info.html:212
 msgid ""
@@ -2422,13 +2426,13 @@ msgid ""
 "documentation for how to delete the learner’s state for this problem to "
 "allow them to resubmit."
 msgstr ""
-"La entrega ha sido cancelada y no podrá recibir una calificación. Refiérete "
-"a la documentación para conocer como eliminar la respuesta del estudiante "
-"para este problema para permitirle reenviar la respuesta."
+"Esta entrega ha sido cancelada y no puede recibir calificación. Consulta la "
+"documentación sobre cómo eliminar el estado del estudiante para este "
+"problema para permitirle reenviar."
 
 #: templates/legacy/staff_area/oa_student_info.html:230
 msgid "Remove Submission From Peer Grading"
-msgstr "Eliminar envío de la calificación por pares"
+msgstr "Eliminar la entrega de la evaluación por pares"
 
 #: templates/legacy/staff_area/oa_student_info.html:232
 msgid "Remove Team Submission from Grading"
@@ -2436,22 +2440,22 @@ msgstr "Eliminar la entrega del equipo de la calificación"
 
 #: templates/legacy/staff_area/oa_student_info.html:242
 msgid "Caution: This Action Cannot Be Undone"
-msgstr "Cuidado: Esta acción no se puede deshacer"
+msgstr "Precaución: Esta acción no se puede deshacer"
 
 #: templates/legacy/staff_area/oa_student_info.html:244
 msgid ""
 "Removing a learner's submission cannot be undone and should be done with "
 "caution."
 msgstr ""
-"Borrar un envío de estudiante es algo que no se puede deshacer y debe "
-"realizarse con mucho cuidado."
+"Eliminar la entrega de un estudiante no se puede deshacer y debe hacerse con"
+" precaución."
 
 #: templates/legacy/staff_area/oa_student_info.html:246
 msgid ""
 "Removing a team's submission cannot be undone and should be done with "
 "caution."
 msgstr ""
-"La eliminación de una entrega de equipo no tiene reversa y debe hacerse con "
+"Eliminar la entrega de un equipo no se puede deshacer y debe hacerse con "
 "precaución."
 
 #: templates/legacy/staff_area/oa_student_info.html:252
@@ -2460,7 +2464,7 @@ msgstr "Comentarios:"
 
 #: templates/legacy/staff_area/oa_student_info.html:261
 msgid "Remove submission"
-msgstr "Eliminar envío"
+msgstr "Eliminar entrega"
 
 #: templates/legacy/staff_area/oa_student_info.html:276
 msgid "A response was not found for this learner."
@@ -2479,7 +2483,7 @@ msgstr ""
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:22
 msgid "Assessment Details"
-msgstr "Detalles de evaluación"
+msgstr "Detalles de la evaluación"
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:26
 msgid "Selected Option"
@@ -2495,7 +2499,7 @@ msgstr "Puntos posibles"
 
 #: templates/legacy/student_training/student_training.html:18
 msgid "Learn to Assess Responses"
-msgstr "Aprenda a Asesorar Respuestas"
+msgstr "Aprende a evaluar respuestas"
 
 #: templates/legacy/student_training/student_training.html:27
 #, python-format
@@ -2505,7 +2509,7 @@ msgid ""
 "                  "
 msgstr ""
 "\n"
-"                      En Proceso (%(current_progress_num)s de %(training_available_num)s)\n"
+"                      En progreso (%(current_progress_num)s de %(training_available_num)s)\n"
 "                  "
 
 #. Translators: This string displays a date to the user, then tells them the
@@ -2539,7 +2543,7 @@ msgstr ""
 #: templates/legacy/student_training/student_training.html:58
 #: templates/legacy/student_training/student_training.html:66
 msgid "Learning to Assess Responses"
-msgstr "Aprendendiendo a Asesorar Respuestas"
+msgstr "Aprendiendo a evaluar respuestas"
 
 #: templates/legacy/student_training/student_training.html:61
 msgid ""
@@ -2549,11 +2553,11 @@ msgid ""
 "instructor selected, you'll move to the next step. If you don't select the "
 "same options, you'll review the response and try again."
 msgstr ""
-"Antes de que comience la evaluación de las respuestas de sus compañeros, "
-"debe aprender cómo se lleva a cabo la evaluación de pares mediante la "
-"revisión de las respuestas que los profesores ya hicieron.  Si selecciona "
-"las mismas opciones de respuesta que los profesores pasará al siguiente "
-"paso, en caso contrario, podrá revisarlas e intentarlo nuevamente."
+"Antes de comenzar a evaluar las respuestas de tus compañeros, aprenderás "
+"cómo completar las evaluaciones entre pares revisando las respuestas que los"
+" instructores ya han evaluado. Si seleccionas las mismas opciones que "
+"seleccionó el instructor, avanzarás al siguiente paso. Si no seleccionas las"
+" mismas opciones, revisarás la respuesta e intentarás de nuevo."
 
 #: templates/legacy/student_training/student_training.html:69
 msgid ""
@@ -2561,40 +2565,38 @@ msgid ""
 "Review the response and consider why the instructor may have assessed it "
 "differently. Then, try the assessment again."
 msgstr ""
-"Su evaluación difiere de la evaluación del instructor en esta respuesta. "
-"Revísela y considere por qué el instructor puede haberla evaluado de manera "
-"diferente. Luego, intente evaluar nuevamente."
+"Tu evaluación difiere de la evaluación del instructor para esta respuesta. "
+"Revisa la respuesta y considera por qué el instructor pudo haberla evaluado "
+"de manera diferente. Luego, intenta evaluar de nuevo."
 
 #: templates/legacy/student_training/student_training.html:76
 msgid "The response to the prompt above:"
-msgstr "Respuesta a la pregunta o planteamiento del ejercicio anterior."
+msgstr "La respuesta al enunciado anterior:"
 
 #: templates/legacy/student_training/student_training.html:98
 msgid "Selected Options Agree"
-msgstr "Las opciones selleccionadas coinciden."
+msgstr "Las opciones seleccionadas concuerdan"
 
 #: templates/legacy/student_training/student_training.html:101
 msgid "The option you selected is the option that the instructor selected."
-msgstr "La opción que seleccionaste es la que el instructor seleccionó."
+msgstr "La opción que seleccionaste es la que seleccionó el instructor."
 
 #: templates/legacy/student_training/student_training.html:105
 msgid "Selected Options Differ"
-msgstr "Las opciones selleccionadas difieren."
+msgstr "Las opciones seleccionadas difieren"
 
 #: templates/legacy/student_training/student_training.html:108
 msgid ""
 "The option you selected is not the option that the instructor selected."
-msgstr ""
-"La opción seleccionada por usted no es la misma seleccionada por el "
-"instructor."
+msgstr "La opción que seleccionaste no es la que seleccionó el instructor."
 
 #: templates/legacy/student_training/student_training.html:144
 msgid "We could not check your assessment"
-msgstr "No se ha podido validar su revisión"
+msgstr "No se pudo verificar tu evaluación"
 
 #: templates/legacy/student_training/student_training.html:151
 msgid "Compare your selections with the instructor's selections"
-msgstr "Compara tus selecciones con las del instructor."
+msgstr "Compara tus selecciones con las del instructor"
 
 #: templates/legacy/student_training/student_training_closed.html:29
 msgid ""
@@ -2602,18 +2604,18 @@ msgid ""
 "longer continue with this assignment, and you will receive a grade of "
 "Incomplete."
 msgstr ""
-"La fecha límite para este paso se ha vencido. El paso está cerrado. Ya no "
-"puede seguir con esta tarea, y recibirá una calificación de Incompleto."
+"La fecha límite para este paso ha pasado. Este paso ahora está cerrado. Ya "
+"no puedes continuar con esta tarea, y recibirás una calificación de "
+"Incompleto."
 
 #: templates/legacy/student_training/student_training_error.html:18
 msgid "Error Loading Learner Training Examples"
-msgstr "Error cargando los ejemplos de práctica de estudiantes"
+msgstr "Error al cargar los ejemplos de entrenamiento para estudiantes"
 
 #: templates/legacy/student_training/student_training_error.html:21
 msgid "The Learner Training Step of this assignment could not be loaded."
 msgstr ""
-"No se pudo cargar el paso de entrenamiento del estudiante para este "
-"problema."
+"No se pudo cargar el paso de entrenamiento para estudiantes de esta tarea."
 
 #: templates/openassessmentblock/base.html:69
 msgid "Loading Open Response Assessment..."
@@ -2629,63 +2631,62 @@ msgstr "Evaluación por pares"
 
 #: xblock/grade_mixin.py:182
 msgid "Self Assessment"
-msgstr "Auto revisión"
+msgstr "Autoevaluación"
 
 #: xblock/grade_mixin.py:222
 msgid "Assessment feedback could not be saved."
-msgstr "Los comentarios sobre la revisión no pudieron ser guardados."
+msgstr "No se pudo guardar la retroalimentación de la evaluación."
 
 #: xblock/grade_mixin.py:233
 msgid "Feedback saved."
-msgstr "Comentarios guardados."
+msgstr "Retroalimentación guardada."
 
 #: xblock/grade_mixin.py:370 xblock/grade_mixin.py:535
 msgid "Staff Comments"
-msgstr "Comentarios del equipo del curso"
+msgstr "Comentarios del personal"
 
 #: xblock/grade_mixin.py:383 xblock/grade_mixin.py:542
 #, python-brace-format
 msgid "Peer {peer_index}"
-msgstr "Par {peer_index}"
+msgstr "Compañero {peer_index}"
 
 #: xblock/grade_mixin.py:384
 msgid "Peer Comments"
-msgstr "Comentarios de pares"
+msgstr "Comentarios de compañeros"
 
 #: xblock/grade_mixin.py:394
 msgid "Self Assessment Grade"
-msgstr "Auto calificación"
+msgstr "Calificación de autoevaluación"
 
 #: xblock/grade_mixin.py:394
 msgid "Your Self Assessment"
-msgstr "Su auto evaluación"
+msgstr "Tu autoevaluación"
 
 #: xblock/grade_mixin.py:395 xblock/grade_mixin.py:554
 msgid "Your Comments"
-msgstr "Sus comentarios"
+msgstr "Tus comentarios"
 
 #: xblock/grade_mixin.py:429
 msgid "Peer Mean Grade"
-msgstr "Calificación media de los pares"
+msgstr "Calificación media de compañeros"
 
 #: xblock/grade_mixin.py:430
 msgid "Peer Median Grade"
-msgstr "Calificación mediana de los pares"
+msgstr "Calificación mediana de compañeros"
 
 #: xblock/grade_mixin.py:508
 msgid "Waiting for peer reviews"
-msgstr "Esperando por las revisiones de los pares"
+msgstr "En espera de evaluaciones por pares"
 
 #: xblock/grade_mixin.py:677
 msgid "The grade for this problem is determined by your Staff Grade."
 msgstr ""
-"La calificación para este problema es determinado por su personal de "
-"calificaciones."
+"La calificación de este problema se determina por tu Calificación del "
+"Personal."
 
 #: xblock/grade_mixin.py:681
 msgid "The grade for this problem is determined by your Self Assessment."
-msgstr ""
-"La calificación para este problema está determinada por tu auto evaluación."
+msgstr "La calificación de este problema se determina por tu Autoevaluación."
 
 #: xblock/grade_mixin.py:687
 #, python-brace-format
@@ -2693,89 +2694,88 @@ msgid ""
 "You have successfully completed this problem and received a "
 "{earned_points}/{total_points}."
 msgstr ""
-"Has completado exitosamente este problema y obtenido una calificación total "
-"de  {earned_points}/{total_points}."
+"Has completado con éxito este problema y recibido "
+"{earned_points}/{total_points}."
 
 #: xblock/grade_mixin.py:695
 msgid ""
 "You have not yet received all necessary peer reviews to determine your final"
 " grade."
 msgstr ""
-"Aún no has recibido las revisiones pares necesarias para determinar tu "
-"calificación final."
+"Aún no has recibido todas las evaluaciones por pares necesarias para "
+"determinar tu calificación final."
 
 #: xblock/grade_mixin.py:710
 msgid ""
 "The grade for this problem is determined by the median score of your Peer "
 "Assessments."
 msgstr ""
-"La calificación para este problema es determinada por la media de tus "
-"evaluaciones pares."
+"La calificación de este problema se determina por la puntuación mediana de "
+"tus evaluaciones por pares."
 
 #: xblock/grade_mixin.py:715
 msgid ""
 "The grade for this problem is determined by the mean score of your Peer "
 "Assessments."
 msgstr ""
-"La calificación de este problema está determinada por la puntuación media de"
-" sus evaluaciones de pares."
+"La calificación de este problema se determina por la puntuación media de tus"
+" evaluaciones por pares."
 
 #: xblock/openassesment_template_mixin.py:66
 msgid "Peer Assessment Only"
-msgstr "Solo Evaluación Par"
+msgstr "Solo evaluación por pares"
 
 #: xblock/openassesment_template_mixin.py:67
 msgid "Self Assessment Only"
-msgstr "Solo Auto Evaluación "
+msgstr "Solo autoevaluación"
 
 #: xblock/openassesment_template_mixin.py:68
 msgid "Staff Assessment Only"
-msgstr "Solo Evaluación del Personal"
+msgstr "Solo evaluación del personal"
 
 #: xblock/openassesment_template_mixin.py:69
 msgid "Self Assessment to Peer Assessment"
-msgstr "Auto Evaluación a Evaluación Par"
+msgstr "De autoevaluación a evaluación por pares"
 
 #: xblock/openassesment_template_mixin.py:70
 msgid "Self Assessment to Staff Assessment"
-msgstr "Auto Evaluación a Evaluación del Personal"
+msgstr "De autoevaluación a evaluación del personal"
 
-#: xblock/openassessmentblock.py:1358
+#: xblock/openassessmentblock.py:1365
 msgid "You can't reset your submission."
-msgstr "No puedes restablecer tu envío."
+msgstr "No puedes restablecer tu entrega."
 
-#: xblock/openassessmentblock.py:1371
+#: xblock/openassessmentblock.py:1378
 msgid "The user does not exist."
 msgstr "El usuario no existe."
 
-#: xblock/openassessmentblock.py:1374
+#: xblock/openassessmentblock.py:1381
 msgid "There is no submission to reset."
-msgstr "No hay ningún envío para restablecer."
+msgstr "No hay ninguna entrega para restablecer."
 
-#: xblock/openassessmentblock.py:1376
+#: xblock/openassessmentblock.py:1383
 msgid "Submission reset successfully."
-msgstr "El envío se restableció correctamente."
+msgstr "Entrega restablecida con éxito."
 
 #: xblock/rubric_reuse_mixin.py:62
 msgid "You must specify a block id from which to copy a rubric."
-msgstr ""
-"Debes especificar un ID del bloque a partir del cual copiar una rúbrica."
+msgstr "Debes especificar un id de bloque desde el cual copiar una rúbrica."
 
 #: xblock/rubric_reuse_mixin.py:66
 msgid "Invalid block id."
-msgstr "ID de bloque inválido."
+msgstr "Id de bloque inválido."
 
 #: xblock/rubric_reuse_mixin.py:72
 #, python-brace-format
 msgid ""
 "No Open Response Assessment found in {course_id} with block id {block_id}"
 msgstr ""
-"No se encontró ninguna prueba de respuesta abierta en {course_id} con una "
-"identificación de bloque de {block_id}"
+"No se encontró Evaluación de Respuesta Abierta en {course_id} con el id de "
+"bloque {block_id}"
 
 #: xblock/staff_area_mixin.py:42
 msgid "You do not have permission to schedule training"
-msgstr "No tiene permiso para programar las prácticas"
+msgstr "No tienes permiso para programar entrenamiento"
 
 #: xblock/staff_area_mixin.py:43
 msgid "You do not have permission to reschedule tasks."
@@ -2783,17 +2783,16 @@ msgstr "No tienes permiso para reprogramar tareas."
 
 #: xblock/staff_area_mixin.py:69
 msgid "You do not have permission to access the ORA staff area"
-msgstr "No tiene permisos para acceder el área del equipo del curso para ORA"
+msgstr "No tienes permiso para acceder al área del personal de ORA"
 
 #: xblock/staff_area_mixin.py:70
 msgid "You do not have permission to access ORA learner information."
-msgstr "No tiene permiso para acceder la información de estudiantes de ORA."
+msgstr ""
+"No tienes permiso para acceder a la información de los estudiantes de ORA."
 
 #: xblock/staff_area_mixin.py:71
 msgid "You do not have permission to access ORA staff grading."
-msgstr ""
-"No tiene permisos para acceder a la calificación de miembros del equipo de "
-"curso de ORA."
+msgstr "No tienes permiso para acceder a la calificación del personal de ORA."
 
 #: xblock/staff_area_mixin.py:241
 msgid "Pending"
@@ -2801,15 +2800,15 @@ msgstr "Pendiente"
 
 #: xblock/staff_area_mixin.py:242
 msgid "Complete/Overwritten"
-msgstr "Completo / Sobrescrito"
+msgstr "Completo/Sobrescrito"
 
 #: xblock/staff_area_mixin.py:245
 msgid "Not applicable"
-msgstr "No aplica"
+msgstr "No aplicable"
 
 #: xblock/staff_area_mixin.py:246
 msgid "Not submitted"
-msgstr "No entregado"
+msgstr "No enviado"
 
 #: xblock/staff_area_mixin.py:247
 msgid "Submitted"
@@ -2817,11 +2816,11 @@ msgstr "Enviado"
 
 #: xblock/staff_area_mixin.py:341
 msgid "Error getting learner information."
-msgstr "Error al obtener la información del estudiante."
+msgstr "Error al obtener información del estudiante."
 
 #: xblock/staff_area_mixin.py:384
 msgid "Error loading the checked out learner response."
-msgstr "Error cargando la respuesta elegida por el estudiante."
+msgstr "Error al cargar la respuesta del estudiante seleccionada."
 
 #: xblock/staff_area_mixin.py:385
 msgid "No other learner responses are available for grading at this time."
@@ -2831,15 +2830,17 @@ msgstr ""
 
 #: xblock/staff_area_mixin.py:387
 msgid "Error getting staff grade information."
-msgstr "Error obteniendo la información de calificación del equipo del curso."
+msgstr "Error al obtener información de la calificación del personal."
 
 #: xblock/staff_area_mixin.py:408
 msgid "Error getting staff grade ungraded and checked out counts."
-msgstr "Error obteniendo el conteo de respuestas enviadas y no calificadas."
+msgstr ""
+"Error al obtener los conteos de calificaciones sin evaluar y seleccionadas "
+"del personal."
 
 #: xblock/staff_area_mixin.py:703
 msgid "Please enter valid reason to remove the submission."
-msgstr "Por favor ingrese una razón válida para eliminar este envío."
+msgstr "Por favor, ingresa una razón válida para eliminar la entrega."
 
 #: xblock/staff_area_mixin.py:714
 msgid "Submission not found"
@@ -2848,8 +2849,7 @@ msgstr "Entrega no encontrada"
 #: xblock/staff_area_mixin.py:725
 msgid "Submission for team assignment has no associated team submission"
 msgstr ""
-"Entrega para el trabajo de grupo no cuenta con ninguna entrega asociada al "
-"equipo"
+"La entrega para la tarea en equipo no tiene una entrega de equipo asociada"
 
 #: xblock/staff_area_mixin.py:754
 msgid ""
@@ -2857,10 +2857,9 @@ msgid ""
 "receives a grade of zero unless you delete the learner's state for the "
 "problem to allow them to resubmit a response."
 msgstr ""
-"El envío del estudiante ha sido eliminado de la evaluación por pares. El "
-"estudiante recibirá una calificación de cero a menos de que borre el estado "
-"del estudiante para el problema, dándole la oportunidad de enviar nuevamente"
-" una respuesta."
+"La entrega del estudiante ha sido removida de la evaluación por pares. El "
+"estudiante recibe una calificación de cero a menos que elimines el estado "
+"del estudiante para el problema, permitiéndole reenviar una respuesta."
 
 #: xblock/staff_area_mixin.py:789
 msgid ""
@@ -2868,55 +2867,55 @@ msgid ""
 "grade of zero unless you delete a team member’s state for the problem to "
 "allow the team to resubmit a response."
 msgstr ""
-"La entrega del equipo ha sido eliminada de ser calificable. El equipo "
-"recibirá una nota de cero a menos que elimines una de las respuestas de los "
-"integrantes del equipo para el problema para permitirle al equipo enviar "
-"nuevamente una respuesta."
+"La entrega del equipo ha sido removida de la calificación. El equipo recibe "
+"una calificación de cero a menos que elimines el estado de un miembro del "
+"equipo para el problema, permitiendo que el equipo reenvíe una respuesta."
 
-#: xblock/studio_mixin.py:246 xblock/studio_mixin.py:258
+#: xblock/studio_mixin.py:247 xblock/studio_mixin.py:259
 msgid "Error updating XBlock configuration"
 msgstr "Error al actualizar la configuración del XBlock"
 
-#: xblock/studio_mixin.py:263
+#: xblock/studio_mixin.py:264
 msgid "Error: Text Response and File Upload Response cannot both be disabled"
 msgstr ""
-"Error: Texto de Respuesta y Archivo de Respuesta Cargado no pueden ser ambos"
-" inhabilitados"
+"Error: La respuesta en texto y la respuesta por subida de archivos no pueden"
+" estar ambas deshabilitadas"
 
-#: xblock/studio_mixin.py:267
+#: xblock/studio_mixin.py:268
 msgid ""
 "Error: When Text Response is disabled, File Upload Response must be Required"
 msgstr ""
-"Error: Cuando el Texto de Respuesta es inhabilitado, es requerido el Archivo"
-" de Respuesta Cargado"
+"Error: Cuando la respuesta en texto está deshabilitada, la respuesta por "
+"subida de archivos debe ser Obligatoria"
 
-#: xblock/studio_mixin.py:270
+#: xblock/studio_mixin.py:271
 msgid ""
 "Error: When File Upload Response is disabled, Text Response must be Required"
 msgstr ""
-"Error: Cuando el Archivo de Respuesta Cargado es inhabilitado, es requerido "
-"el Texto de Respuesta"
+"Error: Cuando la respuesta por subida de archivos está deshabilitada, la "
+"respuesta en texto debe ser Obligatoria"
 
-#: xblock/studio_mixin.py:294
+#: xblock/studio_mixin.py:295
 #, python-brace-format
 msgid "Validation error: {error}"
 msgstr "Error de validación: {error}"
 
-#: xblock/studio_mixin.py:328
+#: xblock/studio_mixin.py:329
 msgid "Successfully updated OpenAssessment XBlock"
-msgstr "Se actualizó correctamente el OpenAssessment XBlock"
+msgstr "XBlock de OpenAssessment actualizado con éxito"
 
 #: xblock/utils/data_conversion.py:315
 msgid "You must provide options selected in the assessment."
-msgstr "Debe suministrar una selección de opción en la evaluación."
+msgstr "Debes proporcionar las opciones seleccionadas en la evaluación."
 
 #: xblock/utils/data_conversion.py:318
 msgid "You must provide overall feedback in the assessment."
-msgstr "Debe suministrar un comentario general en la evaluación."
+msgstr "Debes proporcionar retroalimentación general en la evaluación."
 
 #: xblock/utils/data_conversion.py:321
 msgid "You must provide feedback for criteria in the assessment."
-msgstr "Debe suministrar un comentario para los criterios de la evaluación."
+msgstr ""
+"Debes proporcionar retroalimentación para los criterios en la evaluación."
 
 #: xblock/utils/resolve_dates.py:52
 #, python-brace-format
@@ -2924,13 +2923,13 @@ msgid ""
 "'{date}' is an invalid date format. Make sure the date is formatted as YYYY-"
 "MM-DDTHH:MM:SS."
 msgstr ""
-"'{date}' es un formato inválido de fecha. Asegúrate que el formato es YYYY-"
-"MM-DDTHH:MM:SS."
+"'{date}' es un formato de fecha inválido. Asegúrate de que la fecha esté en "
+"el formato YYYY-MM-DDTHH:MM:SS."
 
 #: xblock/utils/resolve_dates.py:57
 #, python-brace-format
 msgid "'{date}' must be a date string or datetime"
-msgstr "'{date}' debe ser una fecha en serie o fecha y hora"
+msgstr "'{date}' debe ser una cadena de fecha o un datetime"
 
 #: xblock/utils/resolve_dates.py:210
 #, python-brace-format
@@ -2938,8 +2937,8 @@ msgid ""
 "This step's start date '{start}' cannot be earlier than the previous step's "
 "start date '{prev}'."
 msgstr ""
-"Fecha de inicio de este paso '{start}' no puede ser antes que la fecha de "
-"inicio de la etapa anterior '{prev}'."
+"La fecha de inicio de este paso '{start}' no puede ser anterior a la fecha "
+"de inicio del paso previo '{prev}'."
 
 #: xblock/utils/resolve_dates.py:218
 #, python-brace-format
@@ -2947,142 +2946,143 @@ msgid ""
 "This step's due date '{due}' cannot be later than the next step's due date "
 "'{prev}'."
 msgstr ""
-"Fecha de cierre de este paso '{due}' no puede ser posterior a la fecha de "
-"cierre del siguiente paso '{prev}'."
+"La fecha límite de este paso '{due}' no puede ser posterior a la fecha "
+"límite del siguiente paso '{prev}'."
 
 #: xblock/utils/resolve_dates.py:234
 #, python-brace-format
 msgid "The start date '{start}' cannot be later than the due date '{due}'"
 msgstr ""
-"La fecha de comienzo '{start}' no puede ser después que la fecha límite "
+"La fecha de inicio '{start}' no puede ser posterior a la fecha límite "
 "'{due}'"
 
 #: xblock/utils/validation.py:120
 msgid "This problem must include at least one assessment."
-msgstr "Este problema debe incluir por lo menos una valoración"
+msgstr "Este problema debe incluir al menos una evaluación."
 
 #: xblock/utils/validation.py:124
 msgid "The assessment order you selected is invalid."
-msgstr "El orden de revisión que seleccionó es inválido."
+msgstr "El orden de evaluación que seleccionaste es inválido."
 
 #: xblock/utils/validation.py:134
 msgid "In peer assessment, the \"Must Grade\" value must be a positive integer."
 msgstr ""
-"En las revisiones por pares, el valor de \"Revisiones requeridas\"  debe ser"
-" un entero positivo."
+"En la evaluación por pares, el valor \"Must Grade\" debe ser un entero "
+"positivo."
 
 #: xblock/utils/validation.py:137
 msgid "In peer assessment, the \"Graded By\" value must be a positive integer."
 msgstr ""
-"En la calificación por pares, el valor de \"Calificado por\" debe ser un "
-"número entero positivo."
+"En la evaluación por pares, el valor \"Graded By\" debe ser un entero "
+"positivo."
 
 #: xblock/utils/validation.py:141
 msgid ""
 "In peer assessment, the \"Must Grade\" value must be greater than or equal "
 "to the \"Graded By\" value."
 msgstr ""
-"En la calificación por pares, el valor de \"Revisiones requeridas\" debe ser"
-" mayor o igual al valor de \"debe ser calificado por\"."
+"En la evaluación por pares, el valor \"Must Grade\" debe ser mayor o igual "
+"que el valor \"Graded By\"."
 
 #: xblock/utils/validation.py:150
 msgid "You must provide at least one example response for learner training."
 msgstr ""
-"Debe proporcionar al menos una respuesta de ejemplo para el entrenamiento de"
-" los estudiantes."
+"Debes proporcionar al menos un ejemplo de respuesta para el entrenamiento de"
+" estudiantes."
 
 #: xblock/utils/validation.py:153
 msgid "Each example response for learner training must be unique."
 msgstr ""
-"Cada respuesta de ejemplo para el entrenamiento de los estudiantes debe ser "
+"Cada ejemplo de respuesta para el entrenamiento de estudiantes debe ser "
 "único."
 
 #: xblock/utils/validation.py:160
 msgid "The \"required\" value must be true if staff assessment is the only step."
 msgstr ""
-"El valor \"requerido\" debe estar en true si la calificación de miembros del"
-" equipo del curso es el único paso."
+"El valor \"required\" debe ser verdadero si la evaluación del personal es el"
+" único paso."
 
 #: xblock/utils/validation.py:164
 msgid ""
 "The number of assessments cannot be changed after the problem has been "
 "released."
 msgstr ""
-"El número de valoraciones no puede ser cambiado luego de que el problema "
-"haya sido liberado."
+"El número de evaluaciones no puede cambiarse después de que el problema se "
+"haya publicado."
 
 #: xblock/utils/validation.py:169
 msgid ""
 "The assessment type cannot be changed after the problem has been released."
 msgstr ""
-"El tipo de evaluación no se puede cambiar después de que el problema ha sido"
-" liberado."
+"El tipo de evaluación no puede cambiarse después de que el problema se haya "
+"publicado."
 
 #: xblock/utils/validation.py:176
 msgid ""
 "The grading strategy for peer assessments cannot be changed after the "
 "problem has been released."
 msgstr ""
-"La estrategia de calificación para las evaluaciones de pares no se puede "
-"cambiar una vez que se haya publicado el problema."
+"La estrategia de calificación para las evaluaciones por pares no puede "
+"cambiarse después de que el problema se haya publicado."
 
 #: xblock/utils/validation.py:200
 msgid "This rubric definition is not valid."
-msgstr "La definición de esta rúbrica no es válida"
+msgstr "Esta definición de rúbrica no es válida."
 
 #: xblock/utils/validation.py:203
 msgid "You must provide at least one prompt."
-msgstr "Debe proporcionar al menos un mensaje."
+msgstr "Debes proporcionar al menos un enunciado."
 
 #: xblock/utils/validation.py:209
 #, python-brace-format
 msgid "Options in '{criterion}' have duplicate name(s): {duplicates}"
 msgstr ""
-"Las opciones en '{criterion}' tiene el nombre(s):  duplicado {duplicates}"
+"Las opciones en '{criterion}' tienen nombre(s) duplicado(s): {duplicates}"
 
 #: xblock/utils/validation.py:217
 msgid "Criteria with no options must require written feedback."
-msgstr "Criterios sin opciones deben requerir retroalimentación escrita."
+msgstr "Los criterios sin opciones deben requerir retroalimentación escrita."
 
 #: xblock/utils/validation.py:226
 msgid "Prompts cannot be created or deleted after a problem is released."
 msgstr ""
-"Las preguntas o planteamientos del ejercicio no se pueden crear o borrar "
-"luego de que un problema ha sido liberado."
+"Los enunciados no pueden ser creados ni eliminados después de que el "
+"problema se haya publicado."
 
 #: xblock/utils/validation.py:230
 msgid "The number of criteria cannot be changed after a problem is released."
 msgstr ""
-"El número de criterios no puede ser cambiado después de que un problema ha "
-"sido liberado."
+"El número de criterios no puede cambiarse después de que el problema se haya"
+" publicado."
 
 #: xblock/utils/validation.py:243
 msgid "Criteria names cannot be changed after a problem is released"
 msgstr ""
-"Los nombres de los criterios no pueden cambiarse después de que un problema "
-"ha sido liberado."
+"Los nombres de los criterios no pueden cambiarse después de que el problema "
+"se haya publicado"
 
 #: xblock/utils/validation.py:248
 msgid "The number of options cannot be changed after a problem is released."
 msgstr ""
-"El número de opciones no puede ser cambiado después de que un problema ha "
-"sido liberado."
+"El número de opciones no puede cambiarse después de que el problema se haya "
+"publicado."
 
 #: xblock/utils/validation.py:253
 msgid "Point values cannot be changed after a problem is released."
 msgstr ""
-"Los valores de puntaje no puede ser cambiados después de que un problema ha "
-"sido liberado."
+"Los valores de los puntos no pueden cambiarse después de que el problema se "
+"haya publicado."
 
 #: xblock/utils/validation.py:304
 msgid "Learner training must have at least one training example."
-msgstr "El entrenamiento del estudiante debe tener al menos un ejemplo."
+msgstr ""
+"El entrenamiento del estudiante debe tener al menos un ejemplo de "
+"entrenamiento."
 
 #: xblock/utils/validation.py:369
 msgid "Leaderboard number is invalid."
-msgstr ""
-"El número ingresado para el tablero de estudiantes destacados es inválido."
+msgstr "El número del ranking es inválido."
 
 #: xblock/utils/validation.py:392
 msgid "The submission format is invalid."
-msgstr "El formato del envío es inválido"
+msgstr "El formato de la presentación es inválido."
