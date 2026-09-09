@@ -1,38 +1,29 @@
-# #-#-#-#-#  django.po (edx-ora2)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2018 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2018.
-# 
-# Translators:
-# Brian Smith, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-ora2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-13 17:55-0500\n"
-"PO-Revision-Date: 2023-05-10 00:48+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024\n"
-"Language-Team: Danish (https://app.transifex.com/open-edx/teams/6205/da/)\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-05-05 00:52+0000\n"
+"PO-Revision-Date: 2026-09-09 13:14+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: assessment/api/student_training.py:179
 msgid "Could not parse serialized rubric"
-msgstr "Kunne ikke parse serialiseret rubrik"
+msgstr "Kunne ikke fortolke den serialiserede rubric"
 
 #: assessment/api/student_training.py:191
 msgid ""
 "If your assignment includes a learner training step, the rubric must have at"
 " least one criterion, and that criterion must have at least one option."
 msgstr ""
-"Hvis din opgave indeholder et elevtræningstrin, skal rubrikken have mindst "
-"ét kriterium, og det kriterium skal have mindst én mulighed."
+"Hvis din opgave indeholder et trin for elevtræning, skal rubricen have "
+"mindst ét kriterium, og dette kriterium skal have mindst én mulighed."
 
 #: assessment/api/student_training.py:203
 #, python-brace-format
@@ -45,29 +36,49 @@ msgid ""
 "Example {example_number} has an invalid option for \"{criterion_name}\": "
 "\"{option_name}\""
 msgstr ""
-"Eksempel {example_number} har en ugyldig indstilling for \" {criterion_name}"
-" \": \" {option_name} \""
+"Eksempel {example_number} har en ugyldig mulighed for \"{criterion_name}\": "
+"\"{option_name}\""
 
 #: assessment/api/student_training.py:227
 #, python-brace-format
 msgid "Example {example_number} has an extra option for \"{criterion_name}\""
-msgstr ""
-"Eksempel {example_number} har en ekstra mulighed for \" {criterion_name} \""
+msgstr "Eksempel {example_number} har en ekstra mulighed for \"{criterion_name}\""
 
 #: assessment/api/student_training.py:240
 #, python-brace-format
 msgid "Example {example_number} is missing an option for \"{criterion_name}\""
-msgstr ""
-"Eksempel {example_number} mangler en indstilling for \" {criterion_name} \""
+msgstr "Eksempel {example_number} mangler en mulighed for \"{criterion_name}\""
 
 #: assessment/score_type_constants.py:21 xblock/grade_mixin.py:547
 msgid "Peer"
-msgstr "Peer"
+msgstr "Medstuderende"
+
+#: assessment/score_type_constants.py:22
+msgid "Self"
+msgstr "Selv"
+
+#: assessment/score_type_constants.py:23
+msgid "Staff"
+msgstr "Personalet"
+
+#: assessment/score_type_constants.py:25
+msgid "Unknown"
+msgstr "Ukendt"
+
+#: data.py:584
+#, python-brace-format
+msgid "Criterion {number}: {label}"
+msgstr "Kriterium {number}: {label}"
 
 #: data.py:586
 #, python-brace-format
 msgid "Points {number}"
 msgstr "Point {number}"
+
+#: data.py:587
+#, python-brace-format
+msgid "Median Score {number}"
+msgstr "Median score {number}"
 
 #: data.py:588
 #, python-brace-format
@@ -76,35 +87,35 @@ msgstr "Feedback {number}"
 
 #: data.py:917
 msgid "Item ID"
-msgstr "Vare-id"
+msgstr "Element-ID"
 
 #: data.py:918
 msgid "Submission ID"
-msgstr "Indsendelses-id"
+msgstr "Indsendelses-ID"
 
 #: data.py:930
 msgid "Anonymized Student ID"
-msgstr "Anonymiseret studie-id"
+msgstr "Anonymiseret elev-ID"
 
 #: data.py:961
 msgid "Assessment ID"
-msgstr "Vurderings-id"
+msgstr "Bedømmelses-ID"
 
 #: data.py:962
 msgid "Assessment Scored Date"
-msgstr "Vurderingsscoredato"
+msgstr "Bedømmelsesdato"
 
 #: data.py:963
 msgid "Assessment Scored Time"
-msgstr "Vurdering scoret tid"
+msgstr "Bedømmelsestid"
 
 #: data.py:964
 msgid "Assessment Type"
-msgstr "Vurderingstype"
+msgstr "Bedømmelsestype"
 
 #: data.py:965
 msgid "Anonymous Scorer Id"
-msgstr "Anonym scorer-id"
+msgstr "Anonym bedømmer-ID"
 
 #: data.py:967
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:59
@@ -113,31 +124,52 @@ msgstr "Overordnet feedback"
 
 #: data.py:968
 msgid "Assessment Score Earned"
-msgstr "Optjent vurderingsscore"
+msgstr "Opnået bedømmelsesscore"
 
 #: data.py:969
 msgid "Assessment Scored At"
-msgstr "Vurdering scoret ved"
+msgstr "Bedømmelse udført kl."
+
+#: data.py:970
+msgid "Date/Time Final Score Given"
+msgstr "Dato/tid for endelig score"
+
+#: data.py:971
+msgid "Final Score Earned"
+msgstr "Endelig score opnået"
+
+#: data.py:972
+msgid "Final Score Possible"
+msgstr "Mulig endelig score"
 
 #: data.py:973
 msgid "Feedback Statements Selected"
-msgstr "Valgte feedbackerklæringer"
+msgstr "Valgte feedbackudtalelser"
 
 #: data.py:974
 msgid "Feedback on Assessment"
-msgstr "Feedback på vurdering"
+msgstr "Feedback på bedømmelse"
 
 #: data.py:976
 msgid "Response Files"
 msgstr "Svarfiler"
 
+#: data.py:1367
+msgid "No description provided."
+msgstr "Ingen beskrivelse angivet."
+
+#: data.py:1626 templates/legacy/edit/oa_edit_criterion.html:54
+#: xblock/studio_mixin.py:58
+msgid "None"
+msgstr "Ingen"
+
 #: templates/legacy/edit/oa_edit.html:28
 msgid "Save"
-msgstr "Gemme"
+msgstr "Gem"
 
 #: templates/legacy/edit/oa_edit.html:32
 msgid "Cancel"
-msgstr "Afbestille"
+msgstr "Annuller"
 
 #: templates/legacy/edit/oa_edit_assessment_steps.html:6
 msgid ""
@@ -146,14 +178,18 @@ msgid ""
 " can be enabled, disable, and ordered for a flexible set of pedagogical "
 "needs."
 msgstr ""
-"Open Response Assessments giver dig mulighed for at konfigurere enkelte "
-"eller flere trin i en rubrikbaseret åben responsvurderingssekvens. De "
-"tilgængelige trin nedenfor kan aktiveres, deaktiveres og bestilles til et "
+"Åbne responsbedømmelser giver dig mulighed for at konfigurere enkeltstående "
+"eller flere trin i en rubric-baseret åben responsbedømmelsesrække. Trinene "
+"nedenfor kan aktiveres, deaktiveres og arrangeres for at imødekomme et "
 "fleksibelt sæt pædagogiske behov."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:5
 msgid "Display Name "
-msgstr "Vist navn"
+msgstr "Visningsnavn "
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:8
+msgid "The display name for this component."
+msgstr "Visningsnavnet for denne komponent."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:12
 msgid "Text Response"
@@ -164,27 +200,30 @@ msgid ""
 "Specify whether learners must include a text based response to this "
 "problem's prompt."
 msgstr ""
-"Angiv, om eleverne skal inkludere et tekstbaseret svar på dette problems "
+"Angiv, om eleverne skal inkludere et tekstbaseret svar til denne opgaves "
 "prompt."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:25
+msgid "Response Editor"
+msgstr "Responsredaktør"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:33
 msgid ""
 "Select which editor learners will use to include a text based response to "
 "this problem's prompt."
 msgstr ""
-"Vælg, hvilken editor eleverne vil bruge til at inkludere et tekstbaseret "
-"svar på dette problems prompt."
+"Vælg hvilken editor eleverne skal bruge til at inkludere et tekstbaseret "
+"svar til denne opgaves prompt."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:38
 msgid "File Uploads Response"
-msgstr "Fil uploads svar"
+msgstr "Filupload-svar"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:46
 msgid ""
 "Specify whether learners are able to upload files as a part of their "
 "response."
-msgstr ""
-"Angiv, om eleverne er i stand til at uploade filer som en del af deres svar."
+msgstr "Angiv, om eleverne kan uploade filer som en del af deres svar."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:50
 msgid "Allow Multiple Files"
@@ -206,7 +245,7 @@ msgstr "Falsk"
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:170
 #: templates/legacy/edit/oa_edit_peer_assessment.html:46
 msgid "True"
-msgstr "Rigtigt"
+msgstr "Sandt"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:56
 msgid ""
@@ -215,16 +254,16 @@ msgid ""
 "for Team Assignments. "
 msgstr ""
 "Angiv, om eleverne kan uploade mere end én fil. Dette har ingen effekt, hvis"
-" File Uploads Response er sat til None. Dette indstilles automatisk til True"
-" for Team Assignments."
+" Filupload-svar er sat til 'Ingen'. Dette sættes automatisk til Sandt for "
+"gruppeopgaver. "
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:58
 msgid "File Upload Types"
-msgstr "Filoverførselstyper"
+msgstr "Filuploadtyper"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:60
 msgid "PDF or Image Files"
-msgstr "PDF- eller billedfiler"
+msgstr "PDF eller billedfiler"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:61
 msgid "Image Files"
@@ -232,7 +271,7 @@ msgstr "Billedfiler"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:62
 msgid "Custom File Types"
-msgstr "Brugerdefinerede filtyper"
+msgstr "Tilpassede filtyper"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:66
 msgid ""
@@ -248,24 +287,34 @@ msgid ""
 "Enter the file extensions, separated by commas, that you want learners to be"
 " able to upload. For example: pdf,doc,docx."
 msgstr ""
-"Indtast de filtypenavne, adskilt af kommaer, som du ønsker, at eleverne skal"
-" kunne uploade. For eksempel: pdf,doc,docx."
+"Indtast de filendelser, adskilt af kommaer, som du ønsker, at eleverne skal "
+"kunne uploade. For eksempel: pdf,doc,docx."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:84
 msgid ""
 "To add more file extensions, select Custom File Types and enter the full "
 "list of acceptable file extensions to be included."
 msgstr ""
-"For at tilføje flere filtypenavne, vælg Brugerdefinerede filtyper og indtast"
-" den fulde liste over acceptable filtypenavne, der skal inkluderes."
+"For at tilføje flere filendelser, vælg Tilpassede filtyper og indtast hele "
+"listen over acceptable filendelser."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:91
+msgid "Allow LaTeX Responses"
+msgstr "Tillad LaTeX-svar"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:97
 msgid "Specify whether learners can write LaTeX formatted strings"
-msgstr "Angiv, om elever kan skrive LaTeX-formaterede strenge"
+msgstr "Angiv, om eleverne kan skrive LaTeX-formaterede strenge"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:102
+#: templates/legacy/leaderboard/oa_leaderboard_show.html:8
+#: templates/legacy/leaderboard/oa_leaderboard_waiting.html:10
+msgid "Top Responses"
+msgstr "Bedste svar"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:104
 msgid " (Disabled)"
-msgstr "(Handicappet)"
+msgstr " (Deaktiveret)"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:117
 msgid ""
@@ -273,50 +322,87 @@ msgid ""
 " submitted a response. Valid numbers are 0 to 99. If the number is 0, the "
 "Top Responses section does not appear to learners."
 msgstr ""
-"Angiv antallet af topscoresvar, der skal vises, efter at eleven har indsendt"
-" et svar. Gyldige tal er 0 til 99. Hvis tallet er 0, vises afsnittet Topsvar"
-" ikke for eleverne."
+"Angiv antallet af de højst scorende svar, der skal vises, efter eleven har "
+"indsendt et svar. Gyldige tal er 0 til 99. Hvis tallet er 0, vises sektionen"
+" 'Bedste svar' ikke for eleverne."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:122
 msgid "When Teams Enabled is set to true, Top Responses will be disabled."
-msgstr "Når Teams Enabled er sat til sand, deaktiveres Top Responses."
+msgstr "Når Teams Enabled er sat til sandt, deaktiveres Bedste svar."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:129
+msgid "Teams Enabled"
+msgstr "Team Aktiveret"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:136
 msgid "Specify whether team submissions are allowed for this response."
-msgstr "Angiv, om teamindsendelser er tilladt for dette svar."
+msgstr "Angiv, om teamsubmissioner er tilladt for dette svar."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:141
 msgid "Select Team-Set"
-msgstr "Vælg Team-Set"
+msgstr "Vælg team-sæt"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:155
 msgid "Show Rubric During Response"
-msgstr "Vis rubrik under svar"
+msgstr "Vis rubric under svar"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:162
 msgid ""
 "Specify whether learners can see the rubric while they are working on their "
 "response."
-msgstr "Angiv, om eleverne kan se rubrikken, mens de arbejder på deres svar."
+msgstr "Angiv, om eleverne kan se rubricen, mens de arbejder på deres svar."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:167
+msgid "Allow Learner Resubmissions"
+msgstr "Tillad elevgenindsendelser"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:174
+msgid ""
+"Set to TRUE to allow learners to resubmit ungraded work. Set to FALSE if "
+"resubmissions are not allowed."
+msgstr ""
+"Indstil til TRUE for at tillade elever at genindsende ikke-bedømte opgaver. "
+"Indstil til FALSE, hvis genindsendelser ikke er tilladt."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:178
+msgid "Resubmission Grace Period"
+msgstr "Nådeperiode for genindsendelse"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:187
+msgid ""
+"Specify the maximum period during which resubmissions are allowed. If left "
+"blank, learners will be able to reset their submission as long as it has not"
+" been graded. The grace period starts once the learner has submitted their "
+"response."
+msgstr ""
+"Angiv den maksimale periode, hvor genindsendelser er tilladt. Hvis feltet "
+"efterlades tomt, kan eleverne nulstille deres indsendelse, så længe den ikke"
+" er bedømt. Nådeperioden starter, når eleven har indsendt deres svar."
+
+#: templates/legacy/edit/oa_edit_criterion.html:6
+#: templates/legacy/staff_area/oa_student_info.html:122
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:25
+msgid "Criterion"
+msgstr "Kriterium"
 
 #: templates/legacy/edit/oa_edit_criterion.html:7
 msgid "You cannot delete a criterion after the assignment has been released."
-msgstr "Du kan ikke slette et kriterium, efter at opgaven er frigivet."
+msgstr "Du kan ikke slette et kriterium, efter opgaven er frigivet."
 
 #: templates/legacy/edit/oa_edit_criterion.html:9
 #: templates/legacy/edit/oa_edit_option.html:7
 #: templates/legacy/edit/oa_edit_prompt.html:10
 #: templates/legacy/edit/oa_training_example.html:10
 msgid "Remove"
-msgstr "Fjerne"
+msgstr "Fjern"
 
 #: templates/legacy/edit/oa_edit_criterion.html:17
 msgid "Criterion Name"
-msgstr "Kriteriets navn"
+msgstr "Kriterienavn"
 
 #: templates/legacy/edit/oa_edit_criterion.html:29
 msgid "Criterion Prompt"
-msgstr "Kriterium Spørgsmål"
+msgstr "Kriterieanvisning"
 
 #: templates/legacy/edit/oa_edit_criterion.html:44
 msgid "Add Option"
@@ -324,16 +410,16 @@ msgstr "Tilføj mulighed"
 
 #: templates/legacy/edit/oa_edit_criterion.html:52
 msgid "Feedback for This Criterion"
-msgstr "Feedback til dette kriterium"
+msgstr "Feedback for dette kriterium"
 
-#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:56
+#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:57
 msgid "Optional"
 msgstr "Valgfri"
 
 #: templates/legacy/edit/oa_edit_criterion.html:56
 #: templates/legacy/oa_rubric.html:13
 #: templates/legacy/student_training/student_training.html:93
-#: xblock/studio_mixin.py:55
+#: xblock/studio_mixin.py:56
 msgid "Required"
 msgstr "Påkrævet"
 
@@ -342,21 +428,33 @@ msgid ""
 "Select one of the options above. This describes whether or not the reviewer "
 "will have to provide criterion feedback."
 msgstr ""
-"Vælg en af mulighederne ovenfor. Dette beskriver, hvorvidt anmelderen skal "
-"give kriteriefeedback eller ej."
+"Vælg en af mulighederne ovenfor. Dette angiver, om bedømmeren skal levere "
+"feedback på kriteriet eller ej."
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:3
 msgid "Open Response Assessment"
-msgstr "Åben svarvurdering"
+msgstr "Åben responsbedømmelse"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:8
 #: templates/legacy/edit/oa_edit_prompt.html:7
 msgid "Prompt"
-msgstr "Hurtig"
+msgstr "Prompt"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:15
+msgid "Rubric"
+msgstr "Rubrik"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:22
+msgid "Schedule"
+msgstr "Tidsplan"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:29
 msgid "Assessment steps"
-msgstr "Vurderingstrin"
+msgstr "Bedømmelsestrin"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:36
+msgid "Settings"
+msgstr "Indstillinger"
 
 #: templates/legacy/edit/oa_edit_option.html:5
 msgid "Option"
@@ -364,19 +462,19 @@ msgstr "Mulighed"
 
 #: templates/legacy/edit/oa_edit_option.html:16
 msgid "Option Name"
-msgstr "Indstillingsnavn"
+msgstr "Mulighedsnavn"
 
 #: templates/legacy/edit/oa_edit_option.html:29
 msgid "Option Points"
-msgstr "Option Points"
+msgstr "Mulighedspoint"
 
 #: templates/legacy/edit/oa_edit_option.html:42
 msgid "Option Explanation"
-msgstr "Mulighed Forklaring"
+msgstr "Mulighedsforklaring"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:10
 msgid "Step: Peer Assessment"
-msgstr "Trin: Peer-vurdering"
+msgstr "Trin: Medstuderende bedømmelse"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:15
 msgid ""
@@ -384,9 +482,9 @@ msgid ""
 "also receive feedback from others in their final grade. Often, though not "
 "always, this step is preceded by Self Assessment or Learner Training steps."
 msgstr ""
-"Peer Assessment giver eleverne mulighed for at give feedback til andre "
-"elever og også modtage feedback fra andre i deres endelige karakter. Ofte, "
-"men ikke altid, indledes dette trin af trin til selvvurdering eller "
+"Medstuderende bedømmelse giver eleverne mulighed for at give feedback til "
+"andre elever og også modtage feedback fra andre i deres endelige karakter. "
+"Ofte, men ikke altid, efterfølges dette trin af selvbedømmelse eller "
 "elevtræning."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:18
@@ -395,24 +493,24 @@ msgid ""
 " peer reviews a student will be assessed with, and the number of peer a "
 "student must grade. Additional options can be specified."
 msgstr ""
-"Konfiguration: For at dette trin skal konfigureres, skal du angive antallet "
-"af peer reviews en elev vil blive bedømt med, og antallet af peer en elev "
-"skal bedømme. Yderligere muligheder kan specificeres."
+"Konfiguration: For at dette trin kan konfigureres, skal du angive antallet "
+"af peer bedømmelser, som en elev vil blive vurderet med, og antallet af "
+"peers, en elev skal bedømme. Yderligere muligheder kan specificeres."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:23
 msgid "View Options & Configuration"
-msgstr "Se indstillinger og konfiguration"
+msgstr "Vis muligheder og konfiguration"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:29
 msgid "Must Grade"
-msgstr "Skal bedømmes"
+msgstr "Skal bedømme"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:32
 msgid ""
 "Specify the number of peer assessments that each learner must complete. "
 "Valid numbers are 1 to 99."
 msgstr ""
-"Angiv antallet af peer-vurderinger, som hver elev skal gennemføre. Gyldige "
+"Angiv antallet af peer bedømmelser, som hver elev skal gennemføre. Gyldige "
 "tal er 1 til 99."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:36
@@ -424,20 +522,19 @@ msgid ""
 "Specify the number of learners that each response must be assessed by. Valid"
 " numbers are 1 to 99."
 msgstr ""
-"Angiv antallet af elever, som hver besvarelse skal vurderes af. Gyldige tal "
-"er 1 til 99."
+"Angiv antallet af elever, der skal bedømme hvert svar. Gyldige tal er 1 til "
+"99."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:43
 msgid "Enable Flexible Peer Grade Averaging"
-msgstr "Aktiver fleksibel peer-karaktergennemsnit"
+msgstr "Aktivér fleksibel gennemsnitlig peer-bedømmelse"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:49
 #, python-format
 msgid ""
 "When enabled, learners who have received at least 30%% of the required \\"
 msgstr ""
-"Når det er aktiveret, vil elever, der har modtaget mindst 30 %% af de "
-"påkrævede \\"
+"Når aktiveret, vil elever, der har modtaget mindst 30%% af det krævede \\"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:53
 msgid ""
@@ -445,40 +542,76 @@ msgid ""
 "under the Open Response Assessment Settings card on the Pages & Resources "
 "studio page."
 msgstr ""
-"Denne funktion aktiveres af indstillingen på kursusniveau. Det kan findes "
-"under kortet Open Response Assessment Settings på siden Pages &amp; "
-"Resources Studio."
+"Denne funktion aktiveres via kursusindstillingen. Den kan findes under "
+"kortet 'Open Response Assessment Settings' på Pages & Resources-studiosiden."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:60
+msgid "Grading strategy for the peer assessment"
+msgstr "Bedømmelsesstrategi for peer bedømmelse"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:62
+msgid "Mean"
+msgstr "Gennemsnit"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:63
+msgid "Median (default)"
+msgstr "Median (standard)"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:66
+msgid ""
+"Select the preferred grading strategy for the peer assessment. By default, "
+"the median across all peer reviews is used to calculate the final grade. If "
+"you select the mean, the average of all peer reviews will be used."
+msgstr ""
+"Vælg den foretrukne bedømmelsesstrategi for peer bedømmelsen. Som standard "
+"anvendes medianen af alle peer bedømmelser til at beregne den endelige "
+"karakter. Hvis du vælger gennemsnit, anvendes gennemsnittet af alle peer "
+"bedømmelser."
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:5
 msgid "Peer Assessment Deadlines"
-msgstr "Peer Assessment Frister"
+msgstr "Tidsfrister for peer bedømmelse"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:10
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:10
+msgid "Start Date"
+msgstr "Startdato"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:19
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:19
+msgid "Start Time"
+msgstr "Starttid"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:27
 msgid "The date and time when learners can begin assessing peer responses."
-msgstr ""
-"Datoen og tidspunktet, hvor eleverne kan begynde at vurdere peer-svar."
+msgstr "Dato og tid, hvor eleverne kan begynde at vurdere peer svar."
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:31
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:119
 msgid "Due Date"
-msgstr "Afleveringsdato"
+msgstr "Forfaldsdato"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:40
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:40
+msgid "Due Time"
+msgstr "Forfaldstid"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:48
 msgid "The date and time when all peer assessments must be complete."
-msgstr "Datoen og tidspunktet, hvor alle peer-vurderinger skal være færdige."
+msgstr "Dato og tid, hvor alle peer bedømmelser skal være gennemført."
 
 #: templates/legacy/edit/oa_edit_prompt.html:8
 msgid "You cannot delete a prompt after the assignment has been released."
-msgstr "Du kan ikke slette en prompt, efter at opgaven er blevet frigivet."
+msgstr "Du kan ikke slette en prompt, efter opgaven er frigivet."
 
 #: templates/legacy/edit/oa_edit_prompts.html:10
 msgid ""
 "Prompts. Replace the sample text with your own text. For more information, "
 "see the ORA documentation."
 msgstr ""
-"Spørger. Erstat eksempelteksten med din egen tekst. For mere information, se"
-" ORA-dokumentationen."
+"Prompter. Erstat eksempelteksen med din egen tekst. Se ORA-dokumentationen "
+"for mere information."
 
 #: templates/legacy/edit/oa_edit_prompts.html:22
 msgid "Add Prompt"
@@ -491,10 +624,10 @@ msgid ""
 "and their options. Replace the sample text with your own text. For more "
 "information, see the ORA documentation."
 msgstr ""
-"Rubrikker er opbygget af kriterier, som normalt indeholder en eller flere "
+"Rubrics består af kriterier, som typisk indeholder en eller flere "
 "muligheder. Hver mulighed har en pointværdi. Denne skabelon indeholder to "
-"prøvekriterier og deres muligheder. Erstat eksempelteksten med din egen "
-"tekst. For mere information, se ORA-dokumentationen."
+"eksempelkriterier og deres muligheder. Erstat eksempelteksen med din egen "
+"tekst. Se ORA-dokumentationen for mere information."
 
 #: templates/legacy/edit/oa_edit_rubric.html:29
 msgid "Add Criterion"
@@ -502,19 +635,19 @@ msgstr "Tilføj kriterium"
 
 #: templates/legacy/edit/oa_edit_rubric.html:35
 msgid "Feedback for This Response"
-msgstr "Feedback til dette svar"
+msgstr "Feedback for dette svar"
 
 #: templates/legacy/edit/oa_edit_rubric.html:40
 msgid "Feedback Instructions"
-msgstr "Feedback instruktioner"
+msgstr "Feedbackinstruktioner"
 
 #: templates/legacy/edit/oa_edit_rubric.html:44
 msgid ""
 "Encourage learners to provide feedback on the response they have graded. You"
 " can replace the sample text with your own."
 msgstr ""
-"Tilskynd eleverne til at give feedback på det svar, de har givet karakter. "
-"Du kan erstatte eksempelteksten med din egen."
+"Opfordr eleverne til at give feedback på det svar, de har bedømt. Du kan "
+"erstatte eksempelteksen med din egen."
 
 #: templates/legacy/edit/oa_edit_rubric.html:49
 msgid "Default Feedback Text"
@@ -526,81 +659,93 @@ msgid ""
 "feedback. Use this text to show learners a good example peer assessment."
 msgstr ""
 "Indtast feedbacktekst, som eleverne vil se, før de indtaster deres egen "
-"feedback. Brug denne tekst til at vise eleverne et godt eksempel på peer-"
-"vurdering."
+"feedback. Brug denne tekst til at vise eleverne et godt eksempel på en peer-"
+"bedømmelse."
 
 #: templates/legacy/edit/oa_edit_schedule.html:5
 msgid "Deadlines Configuration"
-msgstr "Deadlines Konfiguration"
+msgstr "Konfiguration af tidsfrister"
 
 #: templates/legacy/edit/oa_edit_schedule.html:9
 msgid "Select a deadline configuration option"
-msgstr "Vælg en deadline-konfigurationsmulighed"
+msgstr "Vælg en tidsfristkonfigurationsmulighed"
 
 #: templates/legacy/edit/oa_edit_schedule.html:14
 msgid "Configure deadlines manually"
-msgstr "Konfigurer deadlines manuelt"
+msgstr "Konfigurer tidsfrister manuelt"
 
 #: templates/legacy/edit/oa_edit_schedule.html:18
 msgid "Match deadlines to the subsection due date"
-msgstr "Match deadlines til underafdelingens forfaldsdato"
+msgstr "Tilpas tidsfrister til underafsnittets forfaldsdato"
 
 #: templates/legacy/edit/oa_edit_schedule.html:22
 msgid "Match deadlines to the course end date"
-msgstr "Match deadlines til kursets slutdato"
+msgstr "Tilpas tidsfrister til kursets slutdato"
 
 #: templates/legacy/edit/oa_edit_schedule.html:25
 msgid "Learn more about open response date settings"
-msgstr "Få mere at vide om åbne svardatoindstillinger"
+msgstr "Lær mere om indstillinger for datoer for åbne responser"
+
+#: templates/legacy/edit/oa_edit_schedule.html:35
+msgid "Response Start Date"
+msgstr "Svarstartdato"
+
+#: templates/legacy/edit/oa_edit_schedule.html:48
+msgid "Response Start Time"
+msgstr "Svarstarttid"
 
 #: templates/legacy/edit/oa_edit_schedule.html:57
 msgid "The date and time when learners can begin submitting responses."
-msgstr "Dato og tidspunkt, hvor eleverne kan begynde at indsende svar."
+msgstr "Dato og tid, hvor eleverne kan begynde at indsende svar."
 
 #: templates/legacy/edit/oa_edit_schedule.html:65
 msgid "Response Due Date"
-msgstr "Forfaldsdato for svar"
+msgstr "Svar forfaldsdato"
+
+#: templates/legacy/edit/oa_edit_schedule.html:78
+msgid "Response Due Time"
+msgstr "Svar forfaldstid"
 
 #: templates/legacy/edit/oa_edit_schedule.html:87
 msgid "The date and time when learners can no longer submit responses."
-msgstr "Dato og tidspunkt, hvor eleverne ikke længere kan indsende svar."
+msgstr "Dato og tid, hvor eleverne ikke længere kan indsende svar."
 
 #: templates/legacy/edit/oa_edit_self_assessment.html:8
 msgid "Step: Self Assessment"
-msgstr "Trin: Selvvurdering"
+msgstr "Trin: Selvbedømmelse"
 
 #: templates/legacy/edit/oa_edit_self_assessment.html:12
 msgid ""
 "Self Assessment asks learners to grade their own submissions against the "
 "rubric."
 msgstr ""
-"Selvvurdering beder eleverne om at bedømme deres egne afleveringer i forhold"
-" til rubrikken."
+"Selvbedømmelse beder eleverne vurdere deres egne indsendelser i forhold til "
+"rubricen."
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:5
 msgid "Self Assessment Deadlines"
-msgstr "Selvvurderingsfrister"
+msgstr "Tidsfrister for selvbedømmelse"
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:27
 msgid "The date and time when learners can begin assessing their responses."
-msgstr "Dato og tidspunkt, hvor eleverne kan begynde at vurdere deres svar."
+msgstr "Dato og tid, hvor eleverne kan begynde at vurdere deres svar."
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:48
 msgid "The date and time when all self assessments must be complete."
-msgstr "Dato og klokkeslæt, hvor alle selvvurderinger skal være færdige."
+msgstr "Dato og tid, hvor alle selvbedømmelser skal være gennemført."
 
 #: templates/legacy/edit/oa_edit_staff_assessment.html:8
 msgid "Step: Staff Assessment"
-msgstr "Trin: Personalevurdering"
+msgstr "Trin: Personalebedømmelse"
 
 #: templates/legacy/edit/oa_edit_staff_assessment.html:12
 msgid ""
 "Staff Assessment gates sets the final grade for students if enabled with "
 "other steps, though it can also be used as a standalone step."
 msgstr ""
-"Staff Assessment Gates angiver den endelige karakter for eleverne, hvis den "
-"er aktiveret med andre trin, selvom den også kan bruges som et selvstændigt "
-"trin."
+"Personalebedømmelse sætter den endelige karakter for elever, hvis den "
+"aktiveres sammen med andre trin, men den kan også bruges som et selvstændigt"
+" trin."
 
 #: templates/legacy/edit/oa_edit_student_training.html:9
 msgid "Step: Learner Training"
@@ -613,8 +758,8 @@ msgid ""
 "understand the rubric for either Self or Peer Assessment steps."
 msgstr ""
 "Elevtræning bruges til at hjælpe eleverne med at øve sig i at bedømme en "
-"simuleret peer-indsendelse for at træne dem i rubrikken og sikre, at "
-"eleverne forstår rubrikken for enten selv- eller peer-vurderingstrin."
+"simuleret peer-indsendelse, for at træne dem i rubricen og sikre, at de "
+"forstår rubricen for både selv- og peerbedømmelsestrin."
 
 #: templates/legacy/edit/oa_edit_student_training.html:17
 msgid ""
@@ -623,18 +768,18 @@ msgid ""
 " to advance and are provided feedback when their score doesn't match the "
 "sample response."
 msgstr ""
-"Konfiguration: For at dette trin skal være fuldt konfigureret, skal du "
-"angive et eller flere graderede prøvesvar. Eleverne skal derefter matche "
-"denne instruktørscore for at komme videre og får feedback, når deres score "
-"ikke stemmer overens med prøvesvaret."
+"Konfiguration: For at dette trin er fuldt konfigureret, skal du levere en "
+"eller flere bedømte eksempelsvar. Eleverne skal herefter matche denne "
+"instruktørscore for at komme videre og vil få feedback, hvis deres score "
+"ikke stemmer overens med eksempelsvaret."
 
 #: templates/legacy/edit/oa_edit_student_training.html:22
 msgid "View / Add Sample Responses"
-msgstr "Se/tilføj prøvesvar"
+msgstr "Vis / Tilføj eksempelsvar"
 
 #: templates/legacy/edit/oa_edit_student_training.html:32
 msgid "Add Sample Response"
-msgstr "Tilføj prøvesvar"
+msgstr "Tilføj eksempelsvar"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:4
 msgid "Clone Rubric"
@@ -647,26 +792,42 @@ msgid ""
 "after cloning will only affect the rubric being modified, and will not "
 "modify any rubric it was cloned from."
 msgstr ""
-"For at klone en rubrik fra en eksisterende publiceret eller ikke-publiceret "
-"kladde kan du søge efter blok-id&#39;et. Bemærk, at kloning er envejs, "
-"hvilket betyder, at ændringer foretaget efter kloning kun vil påvirke den "
-"rubrik, der ændres, og vil ikke ændre nogen rubrik, den blev klonet fra."
+"For at klone en rubrik fra et eksisterende udgivet eller ikke-udgivet "
+"udkast, kan du søge efter Block ID. Bemærk, at kloning er envejs, hvilket "
+"betyder, at ændringer efter kloningen kun påvirker den rubrik, der bliver "
+"ændret, og ikke nogen rubrik den blev klonet fra."
 
 #: templates/legacy/edit/oa_rubric_reuse.html:9
 msgid "Block ID For this ORA:"
-msgstr "Blok ID for denne ORA:"
+msgstr "Block ID for denne ORA:"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:19
+msgid "Block ID"
+msgstr "Block ID"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:21
 msgid "No other Open Response Assessments found in course"
-msgstr "Ingen andre Open Response Assessments fundet i kurset"
+msgstr "Ingen andre åbne responsbedømmelser fundet på kurset"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:31
+msgid "Clone"
+msgstr "Klon"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:37
 msgid "Rubric Successfully Cloned from Block ID: "
-msgstr "Rubrik klonet fra blok-id:"
+msgstr "Rubrik klonet med succes fra Block ID: "
+
+#: templates/legacy/edit/oa_training_example.html:7
+msgid "Scored Response"
+msgstr "Bedømt svar"
+
+#: templates/legacy/edit/oa_training_example.html:16
+msgid "Response Score"
+msgstr "Svarscore"
 
 #: templates/legacy/edit/oa_training_example.html:27
 msgid "Response"
-msgstr "Respons"
+msgstr "Svar"
 
 #: templates/legacy/edit/oa_training_example_criterion.html:10
 msgid "Not Selected"
@@ -689,10 +850,29 @@ msgstr ""
 "                %(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s\n"
 "              "
 
+#: templates/legacy/grade/oa_assessment_title.html:7
+#, python-format
+msgid ""
+"\n"
+"                      %(assessment_title)s - %(points)s point\n"
+"                  "
+msgid_plural ""
+"\n"
+"                      %(assessment_title)s - %(points)s points\n"
+"                  "
+msgstr[0] ""
+"\n"
+"                      %(assessment_title)s - %(points)s point\n"
+"                  "
+msgstr[1] ""
+"\n"
+"                      %(assessment_title)s - %(points)s point\n"
+"                  "
+
 #: templates/legacy/grade/oa_assessment_title.html:24
 #, python-format
 msgid "More information about %(name)s"
-msgstr "Flere oplysninger om %(name)s"
+msgstr "Mere information om %(name)s"
 
 #: templates/legacy/grade/oa_grade_cancelled.html:14
 #: templates/legacy/grade/oa_grade_complete.html:15
@@ -729,9 +909,40 @@ msgstr ""
 "                                            %(points_earned)s ud af %(points_possible)s\n"
 "                                        "
 
+#: templates/legacy/grade/oa_grade_complete.html:38
+#: templates/legacy/response/oa_response.html:29
+msgid "Your Response"
+msgstr "Dit svar"
+
 #: templates/legacy/grade/oa_grade_complete.html:41
 msgid "Your Upload"
-msgstr "Din upload"
+msgstr "Dit upload"
+
+#: templates/legacy/grade/oa_grade_complete.html:46
+msgid "Assessments of Your Response"
+msgstr "Bedømmelser af dit svar"
+
+#: templates/legacy/grade/oa_grade_complete.html:50
+#: templates/legacy/grade/oa_grade_complete.html:132
+#: templates/legacy/grade/oa_grade_incomplete.html:28
+#: templates/legacy/grade/oa_grade_waiting.html:28
+#: templates/legacy/message/oa_message_cancelled.html:4
+#: templates/legacy/message/oa_message_closed.html:4
+#: templates/legacy/message/oa_message_complete.html:4
+#: templates/legacy/message/oa_message_incomplete.html:4
+#: templates/legacy/peer/oa_peer_closed.html:33
+#: templates/legacy/peer/oa_peer_complete.html:30
+#: templates/legacy/peer/oa_peer_turbo_mode.html:40
+#: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:34
+#: templates/legacy/peer/oa_peer_waiting.html:34
+#: templates/legacy/response/oa_response_cancelled.html:31
+#: templates/legacy/response/oa_response_closed.html:29
+#: templates/legacy/response/oa_response_submitted.html:30
+#: templates/legacy/response/oa_response_team_already_submitted.html:25
+#: templates/legacy/self/oa_self_closed.html:30
+#: templates/legacy/student_training/student_training_closed.html:27
+msgid "Status"
+msgstr "Status"
 
 #: templates/legacy/grade/oa_grade_complete.html:65
 msgid "Overall Grade"
@@ -740,70 +951,85 @@ msgstr "Samlet karakter"
 #: templates/legacy/grade/oa_grade_complete.html:70
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:28
 msgid "Points"
-msgstr "Points"
+msgstr "Point"
+
+#: templates/legacy/grade/oa_grade_complete.html:96
+msgid "Additional comments on your response"
+msgstr "Yderligere kommentarer til dit svar"
 
 #: templates/legacy/grade/oa_grade_complete.html:117
 msgid "Provide feedback on peer assessments"
-msgstr "Giv feedback på peer-vurderinger"
+msgstr "Giv feedback på peer bedømmelser"
+
+#: templates/legacy/grade/oa_grade_complete.html:126
+msgid "Submitting Feedback"
+msgstr "Indsender feedback"
 
 #: templates/legacy/grade/oa_grade_complete.html:134
 msgid ""
 "Your feedback has been submitted. Course staff will be able to see this "
 "feedback when they review course records."
 msgstr ""
-"Din feedback er blevet sendt. Kursuspersonale vil kunne se denne feedback, "
-"når de gennemgår kursusrekorder."
+"Din feedback er blevet indsendt. Kursuspersonalet vil kunne se denne "
+"feedback, når de gennemgår kursusoptegnelserne."
 
 #: templates/legacy/grade/oa_grade_complete.html:140
 msgid ""
 "Course staff will be able to see any feedback that you provide here when "
 "they review course records."
 msgstr ""
-"Kursuspersonale vil kunne se enhver feedback, du giver her, når de gennemgår"
-" kursusrekorder."
+"Kursuspersonalet vil kunne se al den feedback, du leverer her, når de "
+"gennemgår kursusoptegnelserne."
 
 #: templates/legacy/grade/oa_grade_complete.html:146
 msgid ""
 "Select the statements below that best reflect your experience with peer "
 "assessments."
 msgstr ""
-"Vælg de udsagn nedenfor, der bedst afspejler din erfaring med peer-"
-"vurderinger."
+"Vælg de udsagn nedenfor, der bedst afspejler din erfaring med peer "
+"bedømmelser."
+
+#: templates/legacy/grade/oa_grade_complete.html:155
+msgid "These assessments were useful."
+msgstr "Disse bedømmelser var nyttige."
+
+#: templates/legacy/grade/oa_grade_complete.html:164
+msgid "These assessments were not useful."
+msgstr "Disse bedømmelser var ikke nyttige."
 
 #: templates/legacy/grade/oa_grade_complete.html:173
 msgid "I disagree with one or more of the peer assessments of my response."
-msgstr "Jeg er uenig i en eller flere af peer-vurderingerne af mit svar."
+msgstr "Jeg er uenig i en eller flere af de peer bedømmelser af mit svar."
 
 #: templates/legacy/grade/oa_grade_complete.html:182
 msgid "Some comments I received were inappropriate."
-msgstr "Nogle kommentarer, jeg modtog, var upassende."
+msgstr "Nogle af de kommentarer, jeg modtog, var upassende."
 
 #: templates/legacy/grade/oa_grade_complete.html:187
 msgid ""
 "Provide feedback on the grade or comments that you received from your peers."
 msgstr ""
-"Giv feedback på karakteren eller kommentarer, som du har modtaget fra dine "
-"kammerater."
+"Giv feedback på den karakter eller de kommentarer, du modtog fra dine peers."
 
 #: templates/legacy/grade/oa_grade_complete.html:190
 msgid "I feel the feedback I received was..."
-msgstr "Jeg føler, at den feedback, jeg fik, var..."
+msgstr "Jeg synes, at den feedback, jeg modtog, var..."
 
 #: templates/legacy/grade/oa_grade_complete.html:200
 msgid "We could not submit your feedback"
-msgstr "Vi kunne ikke sende din feedback"
+msgstr "Vi kunne ikke indsende din feedback"
 
 #: templates/legacy/grade/oa_grade_complete.html:206
 msgid "Submit feedback on peer assessments"
-msgstr "Indsend feedback på peer-vurderinger"
+msgstr "Indsend feedback på peer bedømmelser"
 
 #: templates/legacy/grade/oa_grade_incomplete.html:16
 msgid "Not Completed"
-msgstr "Ikke afsluttet"
+msgstr "Ikke fuldført"
 
 #: templates/legacy/grade/oa_grade_incomplete.html:33
 msgid "You have not completed all the steps of this problem."
-msgstr "Du har ikke fuldført alle trinene i dette problem."
+msgstr "Du har ikke fuldført alle trin i denne opgave."
 
 #: templates/legacy/grade/oa_grade_not_started.html:16
 msgid "Not Started"
@@ -811,7 +1037,11 @@ msgstr "Ikke startet"
 
 #: templates/legacy/grade/oa_grade_not_started.html:27
 msgid "You have not started this problem yet."
-msgstr "Du har ikke startet dette problem endnu."
+msgstr "Du er endnu ikke startet med denne opgave."
+
+#: templates/legacy/grade/oa_grade_waiting.html:16
+msgid "Waiting for Assessments"
+msgstr "Venter på bedømmelser"
 
 #: templates/legacy/grade/oa_grade_waiting.html:33
 msgid ""
@@ -820,37 +1050,41 @@ msgid ""
 "complete, you will see feedback from everyone who assessed your response, "
 "and you will receive your final grade."
 msgstr ""
-"Du har gennemført dine trin i opgaven, men der skal stadig laves nogle "
-"vurderinger på din besvarelse. Når vurderingerne af dit svar er færdige, vil"
-" du se feedback fra alle, der har vurderet dit svar, og du vil modtage din "
-"endelige karakter."
+"Du har gennemført dine trin i opgaven, men nogle bedømmelser skal stadig "
+"foretages af dit svar. Når bedømmelserne af dit svar er færdige, vil du se "
+"feedback fra alle, der bedømte dit svar, og du vil modtage din endelige "
+"karakter."
 
 #: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:15
 #: templates/legacy/staff_area/oa_staff_area.html:16
 #: templates/legacy/staff_area/oa_staff_area.html:18
 #: templates/legacy/staff_area/oa_staff_area.html:153
 msgid "Grade Available Responses"
-msgstr "Grader tilgængelige svar"
+msgstr "Bedøm tilgængelige svar"
 
 #: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:26
 msgid ""
 "Grade Available Responses is unavailable. This item is not configured for "
 "Staff Assessment."
 msgstr ""
-"Grader tilgængelige svar er ikke tilgængelig. Dette element er ikke "
-"konfigureret til personalevurdering."
+"Bedøm tilgængelige svar er ikke tilgængelig. Dette element er ikke "
+"konfigureret til personalebedømmelse."
+
+#: templates/legacy/instructor_dashboard/oa_listing.html:6
+msgid "Please wait"
+msgstr "Vent venligst"
 
 #: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:15
 msgid "Waiting Step Details"
-msgstr "Oplysninger om ventetrin"
+msgstr "Detaljer for ventende trin"
 
 #: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:24
 msgid ""
 "Waiting Step details view is unavailable. This item is not configured for "
 "peer assessments."
 msgstr ""
-"Visningen med detaljer om ventetrin er ikke tilgængelig. Dette element er "
-"ikke konfigureret til peer-vurderinger."
+"Visningen for detaljer om ventende trin er ikke tilgængelig. Dette element "
+"er ikke konfigureret til peer bedømmelser."
 
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:20
 #, python-format
@@ -861,15 +1095,15 @@ msgstr "%(num_points)s point"
 #: templates/legacy/peer/oa_peer_assessment.html:84
 #: templates/legacy/peer/oa_peer_turbo_mode.html:53
 msgid "Your peer's response to the prompt above"
-msgstr "Din kollegas svar på ovenstående prompt"
+msgstr "Din peers svar på prompten ovenfor"
 
 #: templates/legacy/leaderboard/oa_leaderboard_waiting.html:19
 msgid ""
 "After you complete all the steps of this assignment, you can see the top-"
 "scoring responses from your peers."
 msgstr ""
-"Når du har fuldført alle trinene i denne opgave, kan du se de bedste "
-"resultater fra dine jævnaldrende."
+"Når du har gennemført alle trin i denne opgave, kan du se de bedst scorende "
+"svar fra dine peers."
 
 #: templates/legacy/message/oa_message_cancelled.html:8
 msgid ""
@@ -877,57 +1111,57 @@ msgid ""
 " zero unless course staff resets your assessment to allow the team to "
 "resubmit a response."
 msgstr ""
-"Dit teams indsendelse er blevet annulleret. Dit hold vil modtage en karakter"
-" på nul, medmindre kursuspersonalet nulstiller din vurdering for at give "
-"holdet mulighed for at genindsende et svar."
+"Dit teams indsendelse er blevet annulleret. Dit team vil få en karakter på "
+"nul, medmindre kursuspersonalet nulstiller din bedømmelse for at tillade "
+"teamet at genindsende et svar."
 
 #: templates/legacy/message/oa_message_cancelled.html:10
 msgid ""
 "Your submission has been cancelled. You will receive a grade of zero unless "
 "course staff resets your assessment to allow you to resubmit a response."
 msgstr ""
-"Din indsendelse er blevet annulleret. Du vil modtage karakteren nul, "
-"medmindre kursuspersonalet nulstiller din vurdering, så du kan genindsende "
-"et svar."
+"Din indsendelse er blevet annulleret. Du vil få en karakter på nul, "
+"medmindre kursuspersonalet nulstiller din bedømmelse for at tillade, at du "
+"kan genindsende et svar."
 
 #: templates/legacy/message/oa_message_closed.html:8
 msgid ""
 "This task is not yet available. Check back to complete the assignment once "
 "this section has opened."
 msgstr ""
-"Denne opgave er endnu ikke tilgængelig. Vend tilbage for at fuldføre "
-"opgaven, når dette afsnit er åbnet."
+"Denne opgave er endnu ikke tilgængelig. Kom tilbage, når denne sektion er "
+"åbnet, for at fuldføre opgaven."
 
 #: templates/legacy/message/oa_message_closed.html:10
 msgid ""
 "This assignment has closed. One or more deadlines for this assignment have "
 "passed. You will receive an incomplete grade for this assignment."
 msgstr ""
-"Denne opgave er afsluttet. En eller flere deadlines for denne opgave er "
-"overskredet. Du får en ufuldstændig karakter for denne opgave."
+"Denne opgave er lukket. En eller flere tidsfrister for denne opgave er "
+"overskredet. Du vil modtage en ufuldstændig karakter for denne opgave."
 
 #: templates/legacy/message/oa_message_complete.html:8
 msgid ""
 "You have completed this assignment. Your final grade will be available when "
 "the assessments of your response are complete."
 msgstr ""
-"Du har gennemført denne opgave. Din endelige karakter vil være tilgængelig, "
-"når vurderingerne af dit svar er færdige."
+"Du har fuldført denne opgave. Din endelige karakter vil være tilgængelig, "
+"når bedømmelserne af dit svar er færdige."
 
 #: templates/legacy/message/oa_message_complete.html:10
 msgid ""
 "You have completed this assignment. Review your grade and your assessment "
 "details."
 msgstr ""
-"Du har gennemført denne opgave. Gennemgå din karakter og dine "
-"vurderingsdetaljer."
+"Du har fuldført denne opgave. Gennemgå din karakter og dine "
+"bedømmelsesdetaljer."
 
 #: templates/legacy/message/oa_message_incomplete.html:9
 msgid ""
 "This assignment is in progress. Learner training will close soon. Complete "
 "the learner training step to move on."
 msgstr ""
-"Denne opgave er i gang. Elevuddannelsen lukker snart. Gennemfør "
+"Denne opgave er i gang. Elevtræningen lukker snart. Fuldfør "
 "elevtræningstrinnet for at komme videre."
 
 #: templates/legacy/message/oa_message_incomplete.html:11
@@ -935,7 +1169,7 @@ msgid ""
 "This assignment is in progress. Complete the learner training step to move "
 "on."
 msgstr ""
-"Denne opgave er i gang. Gennemfør elevtræningstrinnet for at komme videre."
+"Denne opgave er i gang. Fuldfør elevtræningstrinnet for at komme videre."
 
 #: templates/legacy/message/oa_message_incomplete.html:15
 #: templates/legacy/message/oa_message_incomplete.html:33
@@ -943,7 +1177,7 @@ msgid ""
 "This assignment is in progress. Check back later when the assessment period "
 "has started."
 msgstr ""
-"Denne opgave er i gang. Vend tilbage senere, når vurderingsperioden er "
+"Denne opgave er i gang. Tjek tilbage senere, når bedømmelsesperioden er "
 "startet."
 
 #: templates/legacy/message/oa_message_incomplete.html:20
@@ -954,7 +1188,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"%(start_strong)s Denne opgave er i gang. Selvevalueringstrinnet lukker snart. %(end_strong)s Du skal stadig fuldføre trinnet %(start_link)s selvvurdering %(end_link)s ."
+"                                    %(start_strong)sDenne opgave er i gang. Trinnet for selvbedømmelse lukker snart.%(end_strong)s Du skal stadig fuldføre %(start_link)sselvbedømmelse%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:24
 #, python-format
@@ -964,7 +1199,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Denne opgave er i gang. Du skal stadig gennemføre %(start_link)s selvvurdering %(end_link)s trinnet."
+"                                    Denne opgave er i gang. Du skal stadig fuldføre %(start_link)sselvbedømmelse%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:38
 #, python-format
@@ -974,7 +1210,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Denne opgave er i gang. %(start_strong)s Peervurderingstrinnet lukker snart. %(end_strong)s Alle indsendte peer-svar er blevet vurderet. Kom tilbage senere for at se, om flere elever har indsendt svar. Du skal stadig gennemføre %(start_link)s peer assessment %(end_link)s trinnet."
+"                                    Denne opgave er i gang.%(start_strong)sTrinnet for peer bedømmelse lukker snart.%(end_strong)s Alle indsendte peer-svar er blevet bedømt. Tjek tilbage senere for at se, om flere elever har indsendt svar. Du skal stadig fuldføre %(start_link)speer bedømmelse%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:42
 #, python-format
@@ -984,7 +1221,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Denne opgave er i gang. Alle indsendte peer-svar er blevet vurderet. Kom tilbage senere for at se, om flere elever har indsendt svar. Du skal stadig gennemføre %(start_link)s peer assessment %(end_link)s trinnet."
+"                                    Denne opgave er i gang. Alle indsendte peer-svar er blevet bedømt. Tjek tilbage senere for at se, om flere elever har indsendt svar. Du skal stadig fuldføre %(start_link)speer bedømmelse%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:46
 #, python-format
@@ -994,7 +1232,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Denne opgave er i gang. %(start_strong)s Peervurderingstrinnet lukker snart. %(end_strong)s Du skal stadig gennemføre %(start_link)s peer assessment %(end_link)s trinnet."
+"                                    Denne opgave er i gang. %(start_strong)sTrinnet for peer bedømmelse lukker snart.%(end_strong)s Du skal stadig fuldføre %(start_link)speer bedømmelse%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:50
 #, python-format
@@ -1004,7 +1243,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Denne opgave er i gang. Du skal stadig gennemføre %(start_link)s peer assessment %(end_link)s trinnet."
+"                                    Denne opgave er i gang. Du skal stadig fuldføre %(start_link)speer bedømmelse%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_no_team.html:4
 msgid "Team membership is required to view this assignment"
@@ -1020,9 +1260,10 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"Dette er en teamopgave for teamsættet \"%(teamset_name)s \".\n"
-" Du er i øjeblikket ikke på et hold i teamsættet \"%(teamset_name)s \".\n"
-" Du skal være på et hold i teamsættet \"%(teamset_name)s \"for at få adgang til denne teamopgave."
+"            Dette er en teamopgave for team-sættet \"%(teamset_name)s\".\n"
+"            Du er i øjeblikket ikke på et team i team-sættet \"%(teamset_name)s\".\n"
+"            Du skal være på et team i team-sættet \"%(teamset_name)s\" for at få adgang til denne teamopgave.\n"
+"            "
 
 #: templates/legacy/message/oa_message_open.html:7
 #, python-format
@@ -1032,7 +1273,8 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"Aflevering af opgaver lukker snart. For at modtage en karakter skal du først give et svar på prompten og derefter udføre trinene under %(start_tag)s Dit svar %(end_tag)s -feltet."
+"                    Indsendelser til opgaven lukker snart. For at få en karakter skal du først levere et svar på prompten, og derefter fuldføre trinene under %(start_tag)sDit svar%(end_tag)s-feltet.\n"
+"                "
 
 #: templates/legacy/message/oa_message_open.html:11
 #, python-format
@@ -1042,11 +1284,16 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"Denne opgave har flere trin. I det første trin giver du et svar på prompten. De andre trin vises under feltet %(start_tag)s Dit svar %(end_tag)s ."
+"                    Denne opgave har flere trin. I det første trin skal du levere et svar på prompten. De øvrige trin vises under %(start_tag)sDit svar%(end_tag)s-feltet.\n"
+"                "
+
+#: templates/legacy/message/oa_message_unavailable.html:4
+msgid "Instructions Unavailable"
+msgstr "Instruktioner ikke tilgængelige"
 
 #: templates/legacy/message/oa_message_unavailable.html:6
 msgid "The instructions for this step could not be loaded."
-msgstr "Instruktionerne til dette trin kunne ikke indlæses."
+msgstr "Instruktionerne for dette trin kunne ikke indlæses."
 
 #: templates/legacy/oa_base.html:16 templates/openassessmentblock/base.html:22
 msgid ""
@@ -1054,20 +1301,25 @@ msgid ""
 "response to the prompt. The other steps appear below the Your Response "
 "field."
 msgstr ""
-"Denne opgave har flere trin. I det første trin giver du et svar på prompten."
-" De andre trin vises under feltet Dit svar."
+"Denne opgave har flere trin. I det første trin skal du levere et svar på "
+"prompten. De øvrige trin vises under feltet 'Dit svar'."
+
+#: templates/legacy/oa_base.html:37 templates/openassessmentblock/base.html:56
+#: templates/openassessmentblock/base.html:105
+msgid "Loading"
+msgstr "Indlæser"
 
 #: templates/legacy/oa_latex_preview.html:6
 msgid "Preview in LaTeX"
-msgstr "Forhåndsvisning i LaTeX"
+msgstr "Forhåndsvis i LaTeX"
 
 #: templates/legacy/oa_latex_preview.html:9
 msgid "Click to preview your submission in LaTeX."
-msgstr "Klik for at få vist din indsendelse i LaTeX."
+msgstr "Klik for at forhåndsvise din indsendelse i LaTeX."
 
 #: templates/legacy/oa_latex_preview.html:14
 msgid "Preview Response"
-msgstr "Forhåndsvisning af svar"
+msgstr "Forhåndsvis svar"
 
 #: templates/legacy/oa_rubric.html:53
 msgid "Comments"
@@ -1075,16 +1327,16 @@ msgstr "Kommentarer"
 
 #: templates/legacy/oa_submission_answer.html:8
 msgid "The question for this section"
-msgstr "Spørgsmålet til dette afsnit"
+msgstr "Spørgsmålet for denne sektion"
 
 #: templates/legacy/oa_team_uploaded_files.html:9
 msgid "Files that were uploaded by your teammates:"
-msgstr "Filer, der blev uploadet af dine holdkammerater:"
+msgstr "Filer, som dine holdkammerater har uploadet:"
 
 #: templates/legacy/oa_team_uploaded_files.html:28
 #: templates/legacy/oa_uploaded_file.html:34
 msgid "View the files associated with this submission:"
-msgstr "Se de filer, der er knyttet til denne indsendelse:"
+msgstr "Vis filerne tilknyttet denne indsendelse:"
 
 #: templates/legacy/oa_team_uploaded_files.html:32
 msgid "Uploaded by"
@@ -1092,7 +1344,7 @@ msgstr "Uploadet af"
 
 #: templates/legacy/oa_uploaded_file.html:16
 msgid "Files that were uploaded by you:"
-msgstr "Filer, der blev uploadet af dig:"
+msgstr "Filer, som du har uploadet:"
 
 #: templates/legacy/oa_uploaded_file.html:48
 msgid ""
@@ -1100,13 +1352,13 @@ msgid ""
 "been verified, screened, approved, reviewed, or endorsed by the site "
 "administrator. If you access the files, you do so at your own risk.)"
 msgstr ""
-"Forsigtig: Disse filer blev uploadet af en anden kursist og er ikke blevet "
-"bekræftet, screenet, godkendt, gennemgået eller godkendt af webstedets "
-"administrator. Hvis du får adgang til filerne, gør du det på eget ansvar.)"
+"Advarsel: Disse filer er uploadet af en anden kursuselev og er ikke blevet "
+"verificeret, screenet, godkendt, gennemgået eller anbefalet af site-"
+"administratoren. Hvis du tilgår filerne, gør du det på egen risiko.)"
 
 #: templates/legacy/peer/oa_peer_assessment.html:36
 msgid "Assess Peers"
-msgstr "Vurder jævnaldrende"
+msgstr "Bedøm peers"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 00:00 UTC (in
@@ -1144,12 +1396,13 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"I gang ( %(review_number)s af %(num_must_grade)s )"
+"                    I gang (%(review_number)s af %(num_must_grade)s)\n"
+"                "
 
 #: templates/legacy/peer/oa_peer_assessment.html:75
 #: templates/legacy/peer/oa_peer_turbo_mode.html:45
 msgid "Read and assess the following response from one of your peers."
-msgstr "Læs og vurder følgende svar fra en af dine jævnaldrende."
+msgstr "Læs og bedøm følgende svar fra en af dine peers."
 
 #: templates/legacy/peer/oa_peer_assessment.html:87
 #: templates/legacy/peer/oa_peer_turbo_mode.html:56
@@ -1166,14 +1419,14 @@ msgstr "Tilknyttede filer"
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:57
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:50
 msgid "We could not submit your assessment"
-msgstr "Vi kunne ikke indsende din vurdering"
+msgstr "Vi kunne ikke indsende din bedømmelse"
 
 #: templates/legacy/peer/oa_peer_cancelled.html:19
 #: templates/legacy/response/oa_response_cancelled.html:21
 #: templates/legacy/self/oa_self_cancelled.html:21
 #: templates/legacy/student_training/student_training_cancelled.html:18
 msgid "Cancelled"
-msgstr "Aflyst"
+msgstr "Annulleret"
 
 #: templates/legacy/peer/oa_peer_closed.html:20
 #, python-format
@@ -1183,7 +1436,8 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"Ufuldstændig ( %(num_graded)s af %(num_must_grade)s )"
+"            Ufuldstændig (%(num_graded)s af %(num_must_grade)s)\n"
+"        "
 
 #: templates/legacy/peer/oa_peer_closed.html:35
 msgid ""
@@ -1192,12 +1446,12 @@ msgid ""
 "will receive a grade of Incomplete."
 msgstr ""
 "Forfaldsdatoen for dette trin er overskredet. Dette trin er nu lukket. Du "
-"kan ikke længere gennemføre peer-vurderinger eller fortsætte med denne "
-"opgave, og du får karakteren Ufuldstændig."
+"kan ikke længere fuldføre peer bedømmelser eller fortsætte med denne opgave,"
+" og du vil modtage en ufuldstændig karakter."
 
 #: templates/legacy/peer/oa_peer_complete.html:13
 msgid "Completed"
-msgstr "Afsluttet"
+msgstr "Fuldført"
 
 #: templates/legacy/peer/oa_peer_complete.html:31
 #: templates/legacy/peer/oa_peer_turbo_mode.html:41
@@ -1207,13 +1461,17 @@ msgid ""
 "this assignment. You may assess additional peer responses if you want to. "
 "Completing additional assessments will not affect your final grade."
 msgstr ""
-"Du har gennemført alle de nødvendige peer-evalueringer til denne opgave. Du "
-"kan vurdere yderligere peer-svar, hvis du ønsker det. At gennemføre "
-"yderligere vurderinger vil ikke påvirke din endelige karakter."
+"Du har med succes fuldført alle de påkrævede peer bedømmelser for denne "
+"opgave. Du kan bedømme yderligere peer-svar, hvis du ønsker det. Yderligere "
+"bedømmelser vil ikke påvirke din endelige karakter."
 
 #: templates/legacy/peer/oa_peer_complete.html:36
 msgid "We could not retrieve additional submissions for assessment"
-msgstr "Vi kunne ikke hente yderligere indlæg til vurdering"
+msgstr "Vi kunne ikke hente yderligere indsendelser til bedømmelse"
+
+#: templates/legacy/peer/oa_peer_complete.html:43
+msgid "Continue Assessing Peers"
+msgstr "Fortsæt med at bedømme peers"
 
 #: templates/legacy/peer/oa_peer_turbo_mode.html:26
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:20
@@ -1224,7 +1482,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"        Complete (%(num_graded)s)\n"
+"        Fuldført (%(num_graded)s)\n"
 "      "
 
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:38
@@ -1232,8 +1490,15 @@ msgid ""
 "All submitted peer responses have been assessed. Check back later to see if "
 "more learners have submitted responses."
 msgstr ""
-"Alle indsendte peer-svar er blevet vurderet. Kom tilbage senere for at se, "
-"om flere elever har indsendt svar."
+"Alle indsendte peer-svar er blevet bedømt. Tjek tilbage senere for at se, om"
+" flere elever har indsendt svar."
+
+#: templates/legacy/peer/oa_peer_unavailable.html:16
+#: templates/legacy/response/oa_response_unavailable.html:17
+#: templates/legacy/self/oa_self_unavailable.html:17
+#: templates/legacy/student_training/student_training_unavailable.html:16
+msgid "Not Available"
+msgstr "Ikke tilgængelig"
 
 #: templates/legacy/peer/oa_peer_waiting.html:20
 #, python-format
@@ -1243,7 +1508,8 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"I gang ( %(review_number)s af %(num_must_grade)s )"
+"          I gang (%(review_number)s af %(num_must_grade)s)\n"
+"        "
 
 #: templates/legacy/peer/oa_peer_waiting.html:37
 msgid ""
@@ -1252,10 +1518,10 @@ msgid ""
 "you've completed all the steps for this problem and your peers have assessed"
 " your response."
 msgstr ""
-"Alle tilgængelige peer-svar er blevet vurderet. Kom tilbage senere for at "
-"se, om flere elever har indsendt svar. Du modtager din karakter, når du har "
-"gennemført alle trinene for dette problem, og dine jævnaldrende har vurderet"
-" dit svar."
+"Alle tilgængelige kollegiale svar er blevet vurderet. Kom tilbage senere for"
+" at se, om flere elever har indsendt svar. Du vil modtage din karakter, "
+"efter du har fuldført alle trin for denne opgave, og dine medstuderende har "
+"vurderet dit svar."
 
 #: templates/legacy/response/oa_response.html:27
 msgid "Your Team's Response"
@@ -1296,7 +1562,7 @@ msgstr "I gang"
 
 #: templates/legacy/response/oa_response.html:66
 msgid "Enter your team's response to the prompt."
-msgstr "Indtast dit teams svar på prompten."
+msgstr "Indtast dit teams svar på opgaven."
 
 #: templates/legacy/response/oa_response.html:68
 msgid ""
@@ -1305,7 +1571,8 @@ msgid ""
 "                      "
 msgstr ""
 "\n"
-"Dit arbejde gemmes automatisk, og du kan vende tilbage for at fuldføre dit teams svar til enhver tid inden forfaldsdatoen"
+"                        Dit arbejde gemmes automatisk, og du kan vende tilbage for at færdiggøre dit teams svar, når som helst inden forfaldsdatoen\n"
+"                      "
 
 #: templates/legacy/response/oa_response.html:81
 msgid ""
@@ -1314,7 +1581,8 @@ msgid ""
 "                      "
 msgstr ""
 "\n"
-"Dit arbejde gemmes automatisk, og du kan til enhver tid vende tilbage for at fuldføre dit teams svar."
+"                        Dit arbejde gemmes automatisk, og du kan vende tilbage for at færdiggøre dit teams svar, når som helst.\n"
+"                      "
 
 #: templates/legacy/response/oa_response.html:86
 msgid ""
@@ -1324,43 +1592,43 @@ msgstr ""
 
 #: templates/legacy/response/oa_response.html:89
 msgid "Enter your response to the prompt."
-msgstr "Indtast dit svar på prompten."
+msgstr "Indtast dit svar på opgaven."
 
 #: templates/legacy/response/oa_response.html:92
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the subsection due date "
 msgstr ""
-"Dit arbejde gemmes automatisk, og du kan vende tilbage for at fuldføre dit "
-"svar til enhver tid inden underafsnittets forfaldsdato"
+"Dit arbejde gemmes automatisk, og du kan vende tilbage for at færdiggøre dit"
+" svar, når som helst inden underafsnittets forfaldsdato "
 
 #: templates/legacy/response/oa_response.html:94
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the course ends "
 msgstr ""
-"Dit arbejde gemmes automatisk, og du kan vende tilbage for at fuldføre dit "
-"svar til enhver tid, inden kurset slutter"
+"Dit arbejde gemmes automatisk, og du kan vende tilbage for at færdiggøre dit"
+" svar, når som helst inden kurset slutter "
 
 #: templates/legacy/response/oa_response.html:96
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the due date "
 msgstr ""
-"Dit arbejde gemmes automatisk, og du kan vende tilbage for at fuldføre dit "
-"svar til enhver tid inden forfaldsdatoen"
+"Dit arbejde gemmes automatisk, og du kan vende tilbage for at færdiggøre dit"
+" svar, når som helst inden forfaldsdatoen "
 
 #: templates/legacy/response/oa_response.html:108
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time."
 msgstr ""
-"Dit arbejde gemmes automatisk, og du kan til enhver tid vende tilbage for at"
-" fuldføre dit svar."
+"Dit arbejde gemmes automatisk, og du kan vende tilbage for at færdiggøre dit"
+" svar, når som helst."
 
 #: templates/legacy/response/oa_response.html:110
 msgid "After you submit your response, you cannot edit it"
-msgstr "Når du har indsendt dit svar, kan du ikke redigere det"
+msgstr "Når du har indsendt dit svar, kan det ikke redigeres"
 
 #: templates/legacy/response/oa_response.html:120
 msgid "What will this assignment be graded on?"
@@ -1368,15 +1636,15 @@ msgstr "Hvad vil denne opgave blive bedømt på?"
 
 #: templates/legacy/response/oa_response.html:134
 msgid "The prompt for this section"
-msgstr "Spørgsmålet til dette afsnit"
+msgstr "Opgaven for dette afsnit"
 
 #: templates/legacy/response/oa_response.html:148
 msgid "You are on team "
-msgstr "Du er på holdet"
+msgstr "Du er på hold "
 
 #: templates/legacy/response/oa_response.html:150
 msgid "Team Members: "
-msgstr "Holdkammerater:"
+msgstr "Holdmedlemmer: "
 
 #: templates/legacy/response/oa_response.html:155
 #, python-format
@@ -1388,13 +1656,18 @@ msgid ""
 "                                          "
 msgstr ""
 "\n"
-"%(team_members_with_external_submissions)s\n"
-" har/har allerede afgivet et svar på denne opgave med et andet team,\n"
-" og vil ikke være en del af dit teams afleverings- eller opgavekarakter."
+"                                              %(team_members_with_external_submissions)s\n"
+"                                              har allerede indsendt et svar til denne opgave med et andet hold,\n"
+"                                              og vil ikke være en del af dit holds indsendelse eller opgavekarakter.\n"
+"                                          "
 
 #: templates/legacy/response/oa_response.html:171
 msgid "Team Response "
-msgstr "Team Respons"
+msgstr "Holdets svar "
+
+#: templates/legacy/response/oa_response.html:173
+msgid "Your Response "
+msgstr "Dit svar "
 
 #: templates/legacy/response/oa_response.html:177
 #: templates/legacy/response/oa_response.html:247
@@ -1404,7 +1677,7 @@ msgstr "(Påkrævet)"
 #: templates/legacy/response/oa_response.html:179
 #: templates/legacy/response/oa_response.html:249
 msgid "(Optional)"
-msgstr "(Valgfri)"
+msgstr "(Valgfrit)"
 
 #: templates/legacy/response/oa_response.html:183
 msgid ""
@@ -1417,19 +1690,34 @@ msgid ""
 "                                          "
 msgstr ""
 "\n"
-"Teams bør udpege ét teammedlem til at indsende et svar på vegne af\n"
-" hele holdet. Alle teammedlemmer kan bruge denne plads til at arbejde med udkast til svar,\n"
-" men du vil ikke kunne se dine holdkammeraters udkast lavet i dette rum, så\n"
-" koordiner venligst med dem for at beslutte om det endelige svar det udpegede team\n"
-" medlem skal indsende."
+"                                              Holdet bør udpege ét holdmedlem til at indsende et svar på vegne af hele holdet. Alle holdmedlemmer kan bruge dette område til at arbejde på udkast til svar, men du vil ikke kunne se dine holdkammeraters udkast, der er lavet i dette område, så vær venlig at koordinere med dem for at beslutte det endelige svar, som det udpegede holdmedlem skal indsende.\n"
+"                                          "
 
 #: templates/legacy/response/oa_response.html:197
 msgid "Enter your response to the prompt above."
-msgstr "Indtast dit svar på prompten ovenfor."
+msgstr "Indtast dit svar på ovenstående opgave."
+
+#: templates/legacy/response/oa_response.html:211
+#, python-format
+msgid ""
+"\n"
+"                                      You are currently on Team %(team_name)s. Since you were on Team %(previous_team_name)s\n"
+"                                      when they submitted a response to this assignment, you are seeing Team %(previous_team_name)s’s\n"
+"                                      response and will receive the same grade for this assignment as your former teammates.\n"
+"                                      You will not be part of Team %(team_name)s’s submission for this assignment and will not\n"
+"                                      receive a grade for their submission.\n"
+"                                  "
+msgstr ""
+"\n"
+"                                      Du er i øjeblikket på hold %(team_name)s. Da du var på hold %(previous_team_name)s\n"
+"                                      da de indsendte et svar til denne opgave, ser du nu hold %(previous_team_name)s’ svar og vil modtage den samme karakter for denne opgave som dine tidligere holdkammerater.\n"
+"                                      Du vil ikke være en del af hold %(team_name)s' indsendelse for denne opgave og vil ikke\n"
+"                                      modtage en karakter for deres indsendelse.\n"
+"                                  "
 
 #: templates/legacy/response/oa_response.html:224
 msgid "We could not save your progress"
-msgstr "Vi kunne ikke gemme dine fremskridt"
+msgstr "Vi kunne ikke gemme din fremgang"
 
 #: templates/legacy/response/oa_response.html:232
 msgid "Status of Your Response"
@@ -1437,7 +1725,19 @@ msgstr "Status for dit svar"
 
 #: templates/legacy/response/oa_response.html:245
 msgid "File Uploads "
-msgstr "Fil uploads"
+msgstr "Filupload "
+
+#: templates/legacy/response/oa_response.html:253
+msgid ""
+"\n"
+"                                  Upload files and review files uploaded by you and your teammates below. Be sure to add\n"
+"                                  descriptions to your files to help your teammates identify them.\n"
+"                              "
+msgstr ""
+"\n"
+"                                  Upload filer og gennemse filer uploadet af dig og dine holdkammerater nedenfor. Sørg for at tilføje\n"
+"                                  beskrivelser til dine filer, så dine holdkammerater kan identificere dem.\n"
+"                              "
 
 #: templates/legacy/response/oa_response.html:261
 msgid "We could not upload files"
@@ -1449,64 +1749,113 @@ msgstr "Vi kunne ikke slette filer"
 
 #: templates/legacy/response/oa_response.html:274
 msgid "Select one or more files to upload for this submission."
-msgstr "Vælg en eller flere filer, der skal uploades til denne indsendelse."
+msgstr "Vælg en eller flere filer til upload for denne indsendelse."
 
 #: templates/legacy/response/oa_response.html:276
 msgid "Select a file to upload for this submission."
-msgstr "Vælg en fil, der skal uploades til denne indsendelse."
+msgstr "Vælg en fil til upload for denne indsendelse."
 
 #: templates/legacy/response/oa_response.html:280
 msgid "Supported file types: "
-msgstr "Understøttede filtyper:"
+msgstr "Understøttede filtyper: "
 
-#: templates/legacy/response/oa_response.html:285
+#: templates/legacy/response/oa_response.html:286
 msgid "Upload files"
 msgstr "Upload filer"
 
-#: templates/legacy/response/oa_response.html:287
+#: templates/legacy/response/oa_response.html:288
 msgid "Upload file"
 msgstr "Upload fil"
 
-#: templates/legacy/response/oa_response.html:304
+#: templates/legacy/response/oa_response.html:305
 msgid "This is a team submission."
-msgstr "Dette er en teamindsendelse."
+msgstr "Dette er en holdindsendelse."
 
-#: templates/legacy/response/oa_response.html:306
+#: templates/legacy/response/oa_response.html:307
 msgid ""
 "One team member should submit a response with the team’s shared files and a "
 "text response on behalf of the entire team."
 msgstr ""
-"Et teammedlem skal indsende et svar med teamets delte filer og et tekstsvar "
-"på vegne af hele teamet."
+"Én holdkammerat skal indsende et svar med holdets delte filer og et "
+"tekstsvar på vegne af hele holdet."
 
-#: templates/legacy/response/oa_response.html:308
+#: templates/legacy/response/oa_response.html:309
 msgid ""
 "One team member should submit a response with the team’s shared files on "
 "behalf of the entire team."
 msgstr ""
-"Et teammedlem skal indsende et svar med teamets delte filer på vegne af hele"
-" teamet."
+"Én holdkammerat skal indsende et svar med holdets delte filer på vegne af "
+"hele holdet."
 
-#: templates/legacy/response/oa_response.html:310
+#: templates/legacy/response/oa_response.html:311
 msgid ""
 "One team member should submit a text response on behalf of the entire team."
-msgstr "Et teammedlem skal indsende et tekstsvar på vegne af hele teamet."
+msgstr "Én holdkammerat skal indsende et tekstsvar på vegne af hele holdet."
 
-#: templates/legacy/response/oa_response.html:312
+#: templates/legacy/response/oa_response.html:313
 msgid "One team member should submit on behalf of the entire team."
-msgstr "Et teammedlem skal indsende på vegne af hele teamet."
+msgstr "Én holdkammerat skal indsende på vegne af hele holdet."
 
-#: templates/legacy/response/oa_response.html:322
+#: templates/legacy/response/oa_response.html:315
+msgid ""
+"\n"
+"                  Learn more about team assignments here: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
+"                  "
+msgstr ""
+"\n"
+"                  Læs mere om holdopgaver her: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
+"                  "
+
+#: templates/legacy/response/oa_response.html:323
 msgid "We could not submit your response"
-msgstr "Vi kunne ikke sende dit svar"
+msgstr "Vi kunne ikke indsende dit svar"
 
-#: templates/legacy/response/oa_response.html:333
+#: templates/legacy/response/oa_response.html:334
 msgid "Submit your response and move to the next step"
-msgstr "Send dit svar og gå videre til næste trin"
+msgstr "Indsend dit svar og gå videre til næste trin"
 
 #: templates/legacy/response/oa_response_cancelled.html:34
 msgid "Your submission was cancelled. "
-msgstr "Din indsendelse blev annulleret."
+msgstr "Din indsendelse blev annulleret. "
+
+#: templates/legacy/response/oa_response_cancelled.html:37
+#, python-format
+msgid ""
+"\n"
+"                                Your submission has been cancelled by %(removed_by_username)s on %(removed_datetime)s\n"
+"                            "
+msgstr ""
+"\n"
+"                                Din indsendelse er blevet annulleret af %(removed_by_username)s den %(removed_datetime)s\n"
+"                            "
+
+#: templates/legacy/response/oa_response_cancelled.html:41
+#, python-format
+msgid ""
+"\n"
+"                               Your submission was cancelled on %(removed_datetime)s\n"
+"                            "
+msgstr ""
+"\n"
+"                               Din indsendelse blev annulleret den %(removed_datetime)s\n"
+"                            "
+
+#: templates/legacy/response/oa_response_cancelled.html:48
+#, python-format
+msgid ""
+"\n"
+"                            Comments: %(comments)s\n"
+"                        "
+msgstr ""
+"\n"
+"                            Kommentarer: %(comments)s\n"
+"                        "
+
+#: templates/legacy/response/oa_response_closed.html:19
+#: templates/legacy/self/oa_self_closed.html:20
+#: templates/legacy/student_training/student_training_closed.html:17
+msgid "Incomplete"
+msgstr "Ufuldstændig"
 
 #: templates/legacy/response/oa_response_closed.html:32
 msgid ""
@@ -1516,16 +1865,22 @@ msgid ""
 "response appears in the course records."
 msgstr ""
 "Forfaldsdatoen for dette trin er overskredet. Dette trin er nu lukket. Du "
-"kan ikke længere indsende et svar eller fortsætte med dette problem, og du "
-"vil modtage karakteren Ufuldstændig. Hvis du har gemt, men ikke har afgivet "
-"et svar, vises svaret i kursusregistrene."
+"kan ikke længere indsende et svar eller fortsætte med denne opgave, og du "
+"vil modtage en karakter som Ufuldstændig. Hvis du har gemt, men ikke "
+"indsendt et svar, vises svaret i kursusregistrene."
 
 #: templates/legacy/response/oa_response_graded.html:20
 #: templates/legacy/response/oa_response_submitted.html:20
 #: templates/legacy/self/oa_self_complete.html:18
 #: templates/legacy/student_training/student_training_complete.html:17
 msgid "Complete"
-msgstr "Komplet"
+msgstr "Færdig"
+
+#: templates/legacy/response/oa_response_graded.html:30
+#: templates/legacy/response/oa_response_submitted.html:51
+#: templates/legacy/self/oa_self_assessment.html:67
+msgid "Your response"
+msgstr "Dit svar"
 
 #: templates/legacy/response/oa_response_graded.html:33
 #: templates/legacy/response/oa_response_submitted.html:54
@@ -1537,12 +1892,74 @@ msgid ""
 "Your response has been submitted. You will receive your grade after all "
 "steps are complete and your response is fully assessed."
 msgstr ""
-"Dit svar er blevet sendt. Du vil modtage din karakter, når alle trin er "
-"gennemført, og dit svar er fuldt vurderet."
+"Dit svar er blevet indsendt. Du vil modtage din karakter, efter at alle trin"
+" er fuldførte, og dit svar er fuldt vurderet."
+
+#: templates/legacy/response/oa_response_submitted.html:34
+#, python-format
+msgid ""
+"\n"
+"                        You still need to complete the %(peer_start_tag)speer assessment%(end_tag)s and %(self_start_tag)sself assessment%(end_tag)s steps.\n"
+"                    "
+msgstr ""
+"\n"
+"                        Du skal stadig fuldføre %(peer_start_tag)skollegial vurdering%(end_tag)s og %(self_start_tag)selsvurdering%(end_tag)s trinene.\n"
+"                    "
+
+#: templates/legacy/response/oa_response_submitted.html:38
+#, python-format
+msgid ""
+"\n"
+"                        You still need to complete the %(start_tag)speer assessment%(end_tag)s step.\n"
+"                    "
+msgstr ""
+"\n"
+"                        Du skal stadig fuldføre %(start_tag)skollegial vurdering%(end_tag)s trinet.\n"
+"                    "
+
+#: templates/legacy/response/oa_response_submitted.html:42
+#, python-format
+msgid ""
+"\n"
+"                        You still need to complete the %(start_tag)sself assessment%(end_tag)s step.\n"
+"                    "
+msgstr ""
+"\n"
+"                        Du skal stadig fuldføre %(start_tag)selsvurdering%(end_tag)s trinet.\n"
+"                    "
+
+#: templates/legacy/response/oa_response_submitted.html:63
+msgid "We could not reset your response"
+msgstr "Vi kunne ikke nulstille dit svar"
+
+#: templates/legacy/response/oa_response_submitted.html:69
+msgid "Reset response and submit again"
+msgstr "Nulstil svar og indsend igen"
+
+#: templates/legacy/response/oa_response_team_already_submitted.html:15
+msgid "Error"
+msgstr "Fejl"
+
+#: templates/legacy/response/oa_response_team_already_submitted.html:29
+#, python-format
+msgid ""
+"\n"
+"                            You joined Team %(team_name)s after they submitted a response for this assignment\n"
+"                            and you will not receive a grade for their response. You have also not previously submitted\n"
+"                            a response to this assignment with another team. Please contact course staff to discuss your\n"
+"                            options for this assignment.\n"
+"                        "
+msgstr ""
+"\n"
+"                            Du tilsluttede dig hold %(team_name)s, efter at de indsendte et svar til denne opgave,\n"
+"                            og du vil ikke modtage en karakter for deres svar. Du har heller ikke tidligere indsendt\n"
+"                            et svar til denne opgave med et andet hold. Kontakt venligst kursusadministrationen for at drøfte dine\n"
+"                            muligheder for denne opgave.\n"
+"                        "
 
 #: templates/legacy/self/oa_self_assessment.html:33
 msgid "Assess Your Response"
-msgstr "Vurder dit svar"
+msgstr "Vurdér dit svar"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 (in 5 days and
@@ -1584,11 +2001,11 @@ msgid ""
 msgstr ""
 "Forfaldsdatoen for dette trin er overskredet. Dette trin er nu lukket. Du "
 "kan ikke længere gennemføre en selvvurdering eller fortsætte med denne "
-"opgave, og du får karakteren Ufuldstændig."
+"opgave, og du vil modtage en karakter som Ufuldstændig."
 
 #: templates/legacy/staff/oa_staff_grade.html:13 xblock/grade_mixin.py:369
 msgid "Staff Grade"
-msgstr "Personaleklasse"
+msgstr "Medarbejderkarakter"
 
 #: templates/legacy/staff_area/oa_staff_area.html:8
 #: templates/legacy/staff_area/oa_staff_area.html:35
@@ -1597,26 +2014,30 @@ msgstr "Administrer individuelle elever"
 
 #: templates/legacy/staff_area/oa_staff_area.html:10
 msgid "Manage Team Responses"
-msgstr "Administrer teamsvar"
+msgstr "Administrer holdesvar"
 
 #: templates/legacy/staff_area/oa_staff_area.html:13
 #: templates/legacy/staff_area/oa_staff_area.html:71
 msgid "View Assignment Statistics"
-msgstr "Se opgavestatistikker"
+msgstr "Se opgavestatistik"
 
 #: templates/legacy/staff_area/oa_staff_area.html:22
 msgid "Demo the new Grading Experience"
-msgstr "Demo den nye karakteroplevelse"
+msgstr "Demonstrer den nye bedømmelsesoplevelse"
 
 #: templates/legacy/staff_area/oa_staff_area.html:26
 msgid "View ORA in Studio"
-msgstr "Se ORA i studiet"
+msgstr "Vis ORA i Studio"
 
 #: templates/legacy/staff_area/oa_staff_area.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:69
 #: templates/legacy/staff_area/oa_staff_area.html:151
 msgid "Close"
-msgstr "Tæt"
+msgstr "Luk"
+
+#: templates/legacy/staff_area/oa_staff_area.html:37
+msgid "Manage Teams"
+msgstr "Administrer hold"
 
 #: templates/legacy/staff_area/oa_staff_area.html:50
 msgid "Enter an individual learner's username or email"
@@ -1624,24 +2045,32 @@ msgstr "Indtast en individuel elevs brugernavn eller e-mail"
 
 #: templates/legacy/staff_area/oa_staff_area.html:52
 msgid "Enter a team member's username or edX email"
-msgstr "Indtast et teammedlems brugernavn eller edX-e-mail"
+msgstr "Indtast en holdkammerats brugernavn eller edX-e-mail"
+
+#: templates/legacy/staff_area/oa_staff_area.html:56
+msgid "Submit"
+msgstr "Indsend"
+
+#: templates/legacy/staff_area/oa_staff_area.html:78
+msgid "Response total"
+msgstr "Samlet svar"
 
 #: templates/legacy/staff_area/oa_staff_area.html:84
 msgid "Location"
-msgstr "Beliggenhed"
+msgstr "Placering"
 
 #: templates/legacy/staff_area/oa_staff_area.html:90
 msgid "Learner Progress"
-msgstr "Elevens fremskridt"
+msgstr "Elevens fremgang"
 
 #: templates/legacy/staff_area/oa_staff_area.html:94
 #: templates/legacy/staff_area/oa_staff_area.html:117
 msgid "Problem Step"
-msgstr "Problem Trin"
+msgstr "Problemetrin"
 
 #: templates/legacy/staff_area/oa_staff_area.html:95
 msgid "Active Learners in Step"
-msgstr "Aktive elever i Trin"
+msgstr "Aktive elever i trin"
 
 #: templates/legacy/staff_area/oa_staff_area.html:113
 msgid "Dates"
@@ -1649,7 +2078,7 @@ msgstr "Datoer"
 
 #: templates/legacy/staff_area/oa_staff_area.html:118
 msgid "Release Date"
-msgstr "Udgivelses dato"
+msgstr "Udgivelsesdato"
 
 #: templates/legacy/staff_area/oa_staff_area.html:131
 #: templates/legacy/staff_area/oa_staff_area.html:137
@@ -1658,30 +2087,53 @@ msgstr "N/A"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners.html:7
 msgid "Staff Assessment"
-msgstr "Personalevurdering"
+msgstr "Medarbejdervurdering"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:14
 msgid "Give this team a grade using the problem's rubric."
-msgstr "Giv dette hold en karakter ved hjælp af opgavens rubrik."
+msgstr "Giv dette hold en karakter ved hjælp af problemets bedømmelsesskema."
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:16
 msgid "Give this learner a grade using the problem's rubric."
-msgstr "Giv denne elev en karakter ved hjælp af opgavens rubrik."
+msgstr "Giv denne elev en karakter ved hjælp af problemets bedømmelsesskema."
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:26
+#, python-format
+msgid ""
+"\n"
+"                                        Response for: %(team_name)s with %(team_usernames)s\n"
+"                                    "
+msgstr ""
+"\n"
+"                                        Svar for: %(team_name)s med %(team_usernames)s\n"
+"                                    "
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:30
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:20
+#, python-format
+msgid ""
+"\n"
+"                                        Response for: %(student_username)s\n"
+"                                    "
+msgstr ""
+"\n"
+"                                        Svar for: %(student_username)s\n"
+"                                    "
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:34
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:24
 msgid "Learner Response"
-msgstr "Elevens svar"
+msgstr "Elevsvar"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:39
 msgid "The teams's response to the prompt above"
-msgstr "Holdenes svar på ovenstående prompt"
+msgstr "Holdets svar på ovenstående opgave"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:41
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:32
 #: templates/legacy/staff_area/oa_student_info.html:57
 msgid "The learner's response to the prompt above"
-msgstr "Elevens svar på ovenstående prompt"
+msgstr "Elevens svar på ovenstående opgave"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:64
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:57
@@ -1690,26 +2142,61 @@ msgstr "Indsend vurdering"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:70
 msgid "Submit assessment and continue grading"
-msgstr "Indsend vurdering og fortsæt med karaktergivning"
+msgstr "Indsend vurdering og fortsæt med bedømmelsen"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_count.html:6
+#, python-format
+msgid ""
+"\n"
+"                %(ungraded)s Available and %(in_progress)s Checked Out\n"
+"            "
+msgstr ""
+"\n"
+"                %(ungraded)s Tilgængelige og %(in_progress)s Udleverede\n"
+"            "
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:7
 msgid "Override this learner's current grade using the problem's rubric."
 msgstr ""
-"Tilsidesæt denne elevs nuværende karakter ved hjælp af opgavens rubrik."
+"Overskriv denne elevs nuværende karakter ved hjælp af problemets "
+"bedømmelsesskema."
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:9
 msgid "Override this team's current grade using the problem's rubric."
 msgstr ""
-"Tilsidesæt dette teams aktuelle karakter ved hjælp af opgavens rubrik."
+"Overskriv dette holds nuværende karakter ved hjælp af problemets "
+"bedømmelsesskema."
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:27
 msgid "Team Response"
-msgstr "Team Respons"
+msgstr "Teamrespons"
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:34
 #: templates/legacy/staff_area/oa_student_info.html:59
 msgid "The team's response to the prompt above"
-msgstr "Teamets svar på ovenstående prompt"
+msgstr "Holdets svar på ovenstående opgave"
+
+#: templates/legacy/staff_area/oa_student_info.html:11
+#, python-format
+msgid ""
+"\n"
+"                    Viewing learner: %(learner)s\n"
+"                "
+msgstr ""
+"\n"
+"                    Viser elev: %(learner)s\n"
+"                "
+
+#: templates/legacy/staff_area/oa_student_info.html:15
+#, python-format
+msgid ""
+"\n"
+"                    Viewing team: %(team)s\n"
+"                "
+msgstr ""
+"\n"
+"                    Viser hold: %(team)s\n"
+"                "
 
 #: templates/legacy/staff_area/oa_student_info.html:28
 msgid "Learner's Response"
@@ -1717,15 +2204,48 @@ msgstr "Elevens svar"
 
 #: templates/legacy/staff_area/oa_student_info.html:30
 msgid "Team's Response"
-msgstr "Teamets svar"
+msgstr "Holdets svar"
+
+#: templates/legacy/staff_area/oa_student_info.html:39
+#, python-format
+msgid ""
+"\n"
+"                            Learner submission removed by %(removed_by_username)s on %(removed_datetime)s\n"
+"                        "
+msgstr ""
+"\n"
+"                            Elevens indsendelse fjernet af %(removed_by_username)s den %(removed_datetime)s\n"
+"                        "
+
+#: templates/legacy/staff_area/oa_student_info.html:43
+#, python-format
+msgid ""
+"\n"
+"                            Learner submission removed on %(removed_datetime)s\n"
+"                        "
+msgstr ""
+"\n"
+"                            Elevens indsendelse fjernet den %(removed_datetime)s\n"
+"                        "
+
+#: templates/legacy/staff_area/oa_student_info.html:50
+#, python-format
+msgid ""
+"\n"
+"                        Comments: %(comments)s\n"
+"                    "
+msgstr ""
+"\n"
+"                        Kommentarer: %(comments)s\n"
+"                    "
 
 #: templates/legacy/staff_area/oa_student_info.html:71
 msgid "Peer Assessments for This Learner"
-msgstr "Peer-vurderinger for denne elev"
+msgstr "Kollegiale vurderinger for denne elev"
 
 #: templates/legacy/staff_area/oa_student_info.html:76
 msgid "Peer Assessments Completed by This Learner"
-msgstr "Peer-vurderinger udført af denne elev"
+msgstr "Kollegiale vurderinger gennemført af denne elev"
 
 #: templates/legacy/staff_area/oa_student_info.html:81
 msgid "Learner's Self Assessment"
@@ -1733,11 +2253,11 @@ msgstr "Elevens selvvurdering"
 
 #: templates/legacy/staff_area/oa_student_info.html:87
 msgid "Staff Assessment for This Learner"
-msgstr "Personalevurdering for denne elev"
+msgstr "Medarbejdervurdering for denne elev"
 
 #: templates/legacy/staff_area/oa_student_info.html:89
 msgid "Staff Assessment for this Team"
-msgstr "Personalevurdering for dette team"
+msgstr "Medarbejdervurdering for dette hold"
 
 #: templates/legacy/staff_area/oa_student_info.html:100
 msgid "Learner's Final Grade"
@@ -1745,11 +2265,41 @@ msgstr "Elevens endelige karakter"
 
 #: templates/legacy/staff_area/oa_student_info.html:102
 msgid "Team's Final Grade"
-msgstr "Holdets sidste karakter"
+msgstr "Holdets endelige karakter"
+
+#: templates/legacy/staff_area/oa_student_info.html:112
+#, python-format
+msgid ""
+"\n"
+"                            Final grade: %(points_earned)s out of %(points_possible)s\n"
+"                        "
+msgstr ""
+"\n"
+"                            Endelig karakter: %(points_earned)s ud af %(points_possible)s\n"
+"                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:119
 msgid "Final Grade Details"
-msgstr "Detaljer om endelig karakter"
+msgstr "Detaljer for endelig karakter"
+
+#: templates/legacy/staff_area/oa_student_info.html:139
+#, python-format
+msgid ""
+"\n"
+"                                        %(assessment_label)s - %(points)s point\n"
+"                                    "
+msgid_plural ""
+"\n"
+"                                        %(assessment_label)s - %(points)s points\n"
+"                                    "
+msgstr[0] ""
+"\n"
+"                                        %(assessment_label)s - %(points)s point\n"
+"                                    "
+msgstr[1] ""
+"\n"
+"                                        %(assessment_label)s - %(points)s point\n"
+"                                    "
 
 #: templates/legacy/staff_area/oa_student_info.html:154
 msgid "Feedback Recorded"
@@ -1757,7 +2307,7 @@ msgstr "Feedback registreret"
 
 #: templates/legacy/staff_area/oa_student_info.html:165
 msgid "The submission is waiting for assessments."
-msgstr "Indsendelsen afventer vurderinger."
+msgstr "Indsendelsen venter på vurderinger."
 
 #: templates/legacy/staff_area/oa_student_info.html:170
 msgid ""
@@ -1765,9 +2315,9 @@ msgid ""
 "receives a grade of zero unless you delete the learner's state for the "
 "problem to allow them to resubmit a response."
 msgstr ""
-"Elevens aflevering er blevet fjernet fra peer-vurdering. Eleven får "
-"karakteren nul, medmindre du sletter elevens tilstand for problemet for at "
-"give dem mulighed for at genindsende et svar."
+"Elevens indsendelse er blevet fjernet fra den kollegiale vurdering. Eleven "
+"modtager en karakter på nul, medmindre du sletter elevens tilstand for "
+"problemet for at give dem mulighed for at indsende et svar igen."
 
 #: templates/legacy/staff_area/oa_student_info.html:172
 msgid ""
@@ -1775,9 +2325,9 @@ msgid ""
 "grade of zero unless you delete the a team member’s state for the problem to"
 " allow the team to resubmit a response."
 msgstr ""
-"Holdets indsendelse er blevet fjernet fra karaktergivning. Teamet modtager "
-"en karakter på nul, medmindre du sletter et teammedlems tilstand for "
-"problemet for at give teamet mulighed for at genindsende et svar."
+"Holdets indsendelse er blevet fjernet fra vurderingen. Holdet modtager en "
+"karakter på nul, medmindre du sletter en holdmedlems tilstand for problemet "
+"for at give holdet mulighed for at indsende et svar igen."
 
 #: templates/legacy/staff_area/oa_student_info.html:177
 msgid "The problem has not been started."
@@ -1785,27 +2335,27 @@ msgstr "Problemet er ikke startet."
 
 #: templates/legacy/staff_area/oa_student_info.html:181
 msgid "The problem has not been completed."
-msgstr "Problemet er ikke løst."
+msgstr "Problemet er ikke fuldført."
 
 #: templates/legacy/staff_area/oa_student_info.html:193
 msgid "Submit Assessment Grade Override"
-msgstr "Indsend tilsidesættelse af vurderingskarakter"
+msgstr "Indsend overskrivning af vurderingskarakter"
 
 #: templates/legacy/staff_area/oa_student_info.html:195
 msgid "Submit Team Grade Override"
-msgstr "Indsend tilsidesættelse af teamkarakter"
+msgstr "Indsend overskrivning af holdkarakter"
 
 #: templates/legacy/staff_area/oa_student_info.html:204
 msgid "Unable to perform grade override"
-msgstr "Kan ikke udføre tilsidesættelse af karakter"
+msgstr "Kunne ikke udføre overskrivning af karakter"
 
 #: templates/legacy/staff_area/oa_student_info.html:207
 msgid ""
 "Grades are frozen. Grades are automatically frozen 30 days after the course "
 "end date."
 msgstr ""
-"Karakterer er frosset. Karakterer fryses automatisk 30 dage efter kursets "
-"slutdato."
+"Karakterer er frosne. Karakterer bliver automatisk frosne 30 dage efter "
+"kursets slutdato."
 
 #: templates/legacy/staff_area/oa_student_info.html:212
 msgid ""
@@ -1814,27 +2364,27 @@ msgid ""
 "allow them to resubmit."
 msgstr ""
 "Denne indsendelse er blevet annulleret og kan ikke modtage en karakter. Se "
-"dokumentationen for, hvordan man sletter elevens tilstand for dette problem "
-"for at give dem mulighed for at genindsende."
+"dokumentationen for, hvordan du sletter elevens tilstand for dette problem "
+"for at give dem mulighed for at indsende igen."
 
 #: templates/legacy/staff_area/oa_student_info.html:230
 msgid "Remove Submission From Peer Grading"
-msgstr "Fjern indsendelse fra peer-gradering"
+msgstr "Fjern indsendelse fra kollegial bedømmelse"
 
 #: templates/legacy/staff_area/oa_student_info.html:232
 msgid "Remove Team Submission from Grading"
-msgstr "Fjern teamafsendelse fra karaktergivning"
+msgstr "Fjern holdindsendelse fra vurdering"
 
 #: templates/legacy/staff_area/oa_student_info.html:242
 msgid "Caution: This Action Cannot Be Undone"
-msgstr "Forsigtig: Denne handling kan ikke fortrydes"
+msgstr "Advarsel: Denne handling kan ikke fortrydes"
 
 #: templates/legacy/staff_area/oa_student_info.html:244
 msgid ""
 "Removing a learner's submission cannot be undone and should be done with "
 "caution."
 msgstr ""
-"Fjernelse af en elevs aflevering kan ikke fortrydes og bør ske med "
+"At fjerne en elevs indsendelse kan ikke fortrydes og bør kun ske med "
 "forsigtighed."
 
 #: templates/legacy/staff_area/oa_student_info.html:246
@@ -1842,8 +2392,12 @@ msgid ""
 "Removing a team's submission cannot be undone and should be done with "
 "caution."
 msgstr ""
-"Fjernelse af et teams indsendelse kan ikke fortrydes og bør ske med "
+"At fjerne et holds indsendelse kan ikke fortrydes og bør kun ske med "
 "forsigtighed."
+
+#: templates/legacy/staff_area/oa_student_info.html:252
+msgid "Comments:"
+msgstr "Kommentarer:"
 
 #: templates/legacy/staff_area/oa_student_info.html:261
 msgid "Remove submission"
@@ -1852,6 +2406,17 @@ msgstr "Fjern indsendelse"
 #: templates/legacy/staff_area/oa_student_info.html:276
 msgid "A response was not found for this learner."
 msgstr "Der blev ikke fundet et svar for denne elev."
+
+#: templates/legacy/staff_area/oa_student_info_assessment_detail.html:16
+#, python-format
+msgid ""
+"\n"
+"                            Assessment %(assessment_num)s:\n"
+"                        "
+msgstr ""
+"\n"
+"                            Vurdering %(assessment_num)s:\n"
+"                        "
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:22
 msgid "Assessment Details"
@@ -1867,16 +2432,55 @@ msgstr "Feedback"
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:29
 msgid "Points Possible"
-msgstr "Point muligt"
+msgstr "Mulige point"
 
 #: templates/legacy/student_training/student_training.html:18
 msgid "Learn to Assess Responses"
 msgstr "Lær at vurdere svar"
 
+#: templates/legacy/student_training/student_training.html:27
+#, python-format
+msgid ""
+"\n"
+"                      In Progress (%(current_progress_num)s of %(training_available_num)s)\n"
+"                  "
+msgstr ""
+"\n"
+"                      I gang (%(current_progress_num)s af %(training_available_num)s)\n"
+"                  "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/student_training/student_training.html:38
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/student_training/student_training.html:45
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
 #: templates/legacy/student_training/student_training.html:58
 #: templates/legacy/student_training/student_training.html:66
 msgid "Learning to Assess Responses"
-msgstr "Lær at vurdere svar"
+msgstr "At lære at vurdere svar"
 
 #: templates/legacy/student_training/student_training.html:61
 msgid ""
@@ -1886,10 +2490,10 @@ msgid ""
 "instructor selected, you'll move to the next step. If you don't select the "
 "same options, you'll review the response and try again."
 msgstr ""
-"Før du begynder at vurdere dine kammeraters svar, lærer du, hvordan du "
-"gennemfører kammeratvurderinger ved at gennemgå svar, som instruktører "
+"Før du begynder at vurdere dine medstuderendes svar, vil du lære, hvordan du"
+" gennemfører kollegiale vurderinger ved at gennemse svar, som underviserne "
 "allerede har vurderet. Hvis du vælger de samme muligheder for svaret, som "
-"instruktøren valgte, går du videre til næste trin. Hvis du ikke vælger de "
+"underviseren valgte, går du videre til næste trin. Hvis du ikke vælger de "
 "samme muligheder, gennemgår du svaret og prøver igen."
 
 #: templates/legacy/student_training/student_training.html:69
@@ -1898,41 +2502,38 @@ msgid ""
 "Review the response and consider why the instructor may have assessed it "
 "differently. Then, try the assessment again."
 msgstr ""
-"Din vurdering afviger fra instruktørens vurdering af dette svar. Gennemgå "
-"svaret og overvej, hvorfor instruktøren kan have vurderet det anderledes. "
+"Din vurdering afviger fra underviserens vurdering af dette svar. Gennemgå "
+"svaret og overvej, hvorfor underviseren måske har vurderet det anderledes. "
 "Prøv derefter vurderingen igen."
 
 #: templates/legacy/student_training/student_training.html:76
 msgid "The response to the prompt above:"
-msgstr "Svaret på ovenstående prompt:"
+msgstr "Svaret på ovenstående opgave:"
 
 #: templates/legacy/student_training/student_training.html:98
 msgid "Selected Options Agree"
-msgstr "Valgte indstillinger er enig"
+msgstr "Valgte muligheder er enige"
 
 #: templates/legacy/student_training/student_training.html:101
 msgid "The option you selected is the option that the instructor selected."
-msgstr ""
-"Den indstilling, du valgte, er den indstilling, som instruktøren valgte."
+msgstr "Den mulighed, du har valgt, er den mulighed, som underviseren valgte."
 
 #: templates/legacy/student_training/student_training.html:105
 msgid "Selected Options Differ"
-msgstr "Valgte indstillinger er forskellige"
+msgstr "Valgte muligheder er forskellige"
 
 #: templates/legacy/student_training/student_training.html:108
 msgid ""
 "The option you selected is not the option that the instructor selected."
-msgstr ""
-"Den indstilling, du valgte, er ikke den indstilling, som instruktøren "
-"valgte."
+msgstr "Den mulighed, du har valgt, er ikke den, som underviseren valgte."
 
 #: templates/legacy/student_training/student_training.html:144
 msgid "We could not check your assessment"
-msgstr "Vi kunne ikke kontrollere din vurdering"
+msgstr "Vi kunne ikke tjekke din vurdering"
 
 #: templates/legacy/student_training/student_training.html:151
 msgid "Compare your selections with the instructor's selections"
-msgstr "Sammenlign dine valg med instruktørens valg"
+msgstr "Sammenlign dine valg med underviserens valg"
 
 #: templates/legacy/student_training/student_training_closed.html:29
 msgid ""
@@ -1941,24 +2542,28 @@ msgid ""
 "Incomplete."
 msgstr ""
 "Forfaldsdatoen for dette trin er overskredet. Dette trin er nu lukket. Du "
-"kan ikke længere fortsætte med denne opgave, og du får karakteren "
-"Ufuldstændig."
+"kan ikke længere fortsætte med denne opgave, og du vil modtage en karakter "
+"som Ufuldstændig."
 
 #: templates/legacy/student_training/student_training_error.html:18
 msgid "Error Loading Learner Training Examples"
-msgstr "Fejl ved indlæsning af eksempler på elevtræning"
+msgstr "Fejl ved indlæsning af elevtræningseksempler"
 
 #: templates/legacy/student_training/student_training_error.html:21
 msgid "The Learner Training Step of this assignment could not be loaded."
-msgstr "Elevtræningstrinnet i denne opgave kunne ikke indlæses."
+msgstr "Elevtræningstrinnet for denne opgave kunne ikke indlæses."
+
+#: templates/openassessmentblock/base.html:69
+msgid "Loading Open Response Assessment..."
+msgstr "Indlæser vurdering af åbent svar..."
 
 #: xblock/grade_mixin.py:78 xblock/leaderboard_mixin.py:61
 msgid "An unexpected error occurred."
-msgstr "Der opstod en uventet fejl."
+msgstr "En uventet fejl opstod."
 
 #: xblock/grade_mixin.py:180
 msgid "Peer Assessment"
-msgstr "Peer vurdering"
+msgstr "Kollegial vurdering"
 
 #: xblock/grade_mixin.py:182
 msgid "Self Assessment"
@@ -1974,16 +2579,16 @@ msgstr "Feedback gemt."
 
 #: xblock/grade_mixin.py:370 xblock/grade_mixin.py:535
 msgid "Staff Comments"
-msgstr "Personalekommentarer"
+msgstr "Medarbejderkommentarer"
 
 #: xblock/grade_mixin.py:383 xblock/grade_mixin.py:542
 #, python-brace-format
 msgid "Peer {peer_index}"
-msgstr "Peer {peer_index}"
+msgstr "Kollega {peer_index}"
 
 #: xblock/grade_mixin.py:384
 msgid "Peer Comments"
-msgstr "Peer-kommentarer"
+msgstr "Kollegiale kommentarer"
 
 #: xblock/grade_mixin.py:394
 msgid "Self Assessment Grade"
@@ -1993,17 +2598,25 @@ msgstr "Selvvurderingskarakter"
 msgid "Your Self Assessment"
 msgstr "Din selvvurdering"
 
+#: xblock/grade_mixin.py:395 xblock/grade_mixin.py:554
+msgid "Your Comments"
+msgstr "Dine kommentarer"
+
+#: xblock/grade_mixin.py:429
+msgid "Peer Mean Grade"
+msgstr "Gennemsnitlig kollegial karakter"
+
 #: xblock/grade_mixin.py:430
 msgid "Peer Median Grade"
-msgstr "Peer median karakter"
+msgstr "Median for kollegial karakter"
 
 #: xblock/grade_mixin.py:508
 msgid "Waiting for peer reviews"
-msgstr "Venter på peer reviews"
+msgstr "Afventer kollegiale vurderinger"
 
 #: xblock/grade_mixin.py:677
 msgid "The grade for this problem is determined by your Staff Grade."
-msgstr "Karakteren for dette problem bestemmes af din personalekarakter."
+msgstr "Karakteren for dette problem bestemmes af din medarbejderkarakter."
 
 #: xblock/grade_mixin.py:681
 msgid "The grade for this problem is determined by your Self Assessment."
@@ -2015,28 +2628,36 @@ msgid ""
 "You have successfully completed this problem and received a "
 "{earned_points}/{total_points}."
 msgstr ""
-"Du har fuldført dette problem og modtaget en {earned_points} / "
-"{total_points} ."
+"Du har med succes fuldført dette problem og modtaget "
+"{earned_points}/{total_points}."
 
 #: xblock/grade_mixin.py:695
 msgid ""
 "You have not yet received all necessary peer reviews to determine your final"
 " grade."
 msgstr ""
-"Du har endnu ikke modtaget alle de nødvendige peer reviews for at bestemme "
-"din endelige karakter."
+"Du har endnu ikke modtaget alle nødvendige kollegiale vurderinger for at "
+"bestemme din endelige karakter."
 
 #: xblock/grade_mixin.py:710
 msgid ""
 "The grade for this problem is determined by the median score of your Peer "
 "Assessments."
 msgstr ""
-"Karakteren for dette problem bestemmes af median-score for dine peer-"
+"Karakteren for dette problem bestemmes af medianen af dine kollegiale "
+"vurderinger."
+
+#: xblock/grade_mixin.py:715
+msgid ""
+"The grade for this problem is determined by the mean score of your Peer "
+"Assessments."
+msgstr ""
+"Karakteren for dette problem bestemmes af gennemsnittet af dine kollegiale "
 "vurderinger."
 
 #: xblock/openassesment_template_mixin.py:66
 msgid "Peer Assessment Only"
-msgstr "Kun peer-vurdering"
+msgstr "Kun kollegial vurdering"
 
 #: xblock/openassesment_template_mixin.py:67
 msgid "Self Assessment Only"
@@ -2044,19 +2665,35 @@ msgstr "Kun selvvurdering"
 
 #: xblock/openassesment_template_mixin.py:68
 msgid "Staff Assessment Only"
-msgstr "Kun personalevurdering"
+msgstr "Kun medarbejdervurdering"
 
 #: xblock/openassesment_template_mixin.py:69
 msgid "Self Assessment to Peer Assessment"
-msgstr "Selvvurdering til Peer-vurdering"
+msgstr "Selvvurdering til kollegial vurdering"
 
 #: xblock/openassesment_template_mixin.py:70
 msgid "Self Assessment to Staff Assessment"
-msgstr "Selvevaluering til personalevurdering"
+msgstr "Selvvurdering til medarbejdervurdering"
+
+#: xblock/openassessmentblock.py:1365
+msgid "You can't reset your submission."
+msgstr "Du kan ikke nulstille din indsendelse."
+
+#: xblock/openassessmentblock.py:1378
+msgid "The user does not exist."
+msgstr "Brugeren eksisterer ikke."
+
+#: xblock/openassessmentblock.py:1381
+msgid "There is no submission to reset."
+msgstr "Der er ingen indsendelse at nulstille."
+
+#: xblock/openassessmentblock.py:1383
+msgid "Submission reset successfully."
+msgstr "Indsendelse nulstillet med succes."
 
 #: xblock/rubric_reuse_mixin.py:62
 msgid "You must specify a block id from which to copy a rubric."
-msgstr "Du skal angive et blok-id, som du vil kopiere en rubrik fra."
+msgstr "Du skal angive et blok-id, hvorfra en rubric skal kopieres."
 
 #: xblock/rubric_reuse_mixin.py:66
 msgid "Invalid block id."
@@ -2066,7 +2703,8 @@ msgstr "Ugyldigt blok-id."
 #, python-brace-format
 msgid ""
 "No Open Response Assessment found in {course_id} with block id {block_id}"
-msgstr "Ingen åben svarvurdering fundet i {course_id} med blok-id {block_id}"
+msgstr ""
+"Ingen vurdering af åbent svar fundet i {course_id} med blok-id {block_id}"
 
 #: xblock/staff_area_mixin.py:42
 msgid "You do not have permission to schedule training"
@@ -2074,11 +2712,11 @@ msgstr "Du har ikke tilladelse til at planlægge træning"
 
 #: xblock/staff_area_mixin.py:43
 msgid "You do not have permission to reschedule tasks."
-msgstr "Du har ikke tilladelse til at omlægge opgaver."
+msgstr "Du har ikke tilladelse til at omplanlægge opgaver."
 
 #: xblock/staff_area_mixin.py:69
 msgid "You do not have permission to access the ORA staff area"
-msgstr "Du har ikke tilladelse til at få adgang til ORAs personaleområde"
+msgstr "Du har ikke tilladelse til at få adgang til ORA-medarbejderområdet"
 
 #: xblock/staff_area_mixin.py:70
 msgid "You do not have permission to access ORA learner information."
@@ -2086,19 +2724,24 @@ msgstr "Du har ikke tilladelse til at få adgang til ORA-elevinformation."
 
 #: xblock/staff_area_mixin.py:71
 msgid "You do not have permission to access ORA staff grading."
-msgstr "Du har ikke tilladelse til at få adgang til ORA-personalebedømmelse."
+msgstr ""
+"Du har ikke tilladelse til at få adgang til ORA-medarbejderbedømmelse."
 
 #: xblock/staff_area_mixin.py:241
 msgid "Pending"
-msgstr "Verserende"
+msgstr "Afventer"
 
 #: xblock/staff_area_mixin.py:242
 msgid "Complete/Overwritten"
-msgstr "Komplet/overskrevet"
+msgstr "Færdig/overskrevet"
 
 #: xblock/staff_area_mixin.py:245
 msgid "Not applicable"
-msgstr "Ikke anvendelig"
+msgstr "Ikke relevant"
+
+#: xblock/staff_area_mixin.py:246
+msgid "Not submitted"
+msgstr "Ikke indsendt"
 
 #: xblock/staff_area_mixin.py:247
 msgid "Submitted"
@@ -2106,38 +2749,37 @@ msgstr "Indsendt"
 
 #: xblock/staff_area_mixin.py:341
 msgid "Error getting learner information."
-msgstr "Fejl ved hentning af elevoplysninger."
+msgstr "Fejl ved hentning af elevinformation."
 
 #: xblock/staff_area_mixin.py:384
 msgid "Error loading the checked out learner response."
-msgstr "Fejl ved indlæsning af det tjekkede elevsvar."
+msgstr "Fejl ved indlæsning af den udleverede elevsvar."
 
 #: xblock/staff_area_mixin.py:385
 msgid "No other learner responses are available for grading at this time."
-msgstr ""
-"Ingen andre elevsvar er tilgængelige for karaktergivning på nuværende "
-"tidspunkt."
+msgstr "Ingen andre elevsvar er tilgængelige for bedømmelse i øjeblikket."
 
 #: xblock/staff_area_mixin.py:387
 msgid "Error getting staff grade information."
-msgstr "Fejl ved hentning af oplysninger om personalekarakter."
+msgstr "Fejl ved hentning af medarbejderkarakterinformation."
 
 #: xblock/staff_area_mixin.py:408
 msgid "Error getting staff grade ungraded and checked out counts."
 msgstr ""
-"Fejl ved at få personalekarakteren ukarakteriseret og udtjekket tæller."
+"Fejl ved hentning af antallet af uvurderede og udleverede "
+"medarbejderkarakterer."
 
 #: xblock/staff_area_mixin.py:703
 msgid "Please enter valid reason to remove the submission."
-msgstr "Angiv en gyldig grund til at fjerne indsendelsen."
+msgstr "Indtast venligst en gyldig grund til at fjerne indsendelsen."
 
 #: xblock/staff_area_mixin.py:714
 msgid "Submission not found"
-msgstr "Indsendelsen blev ikke fundet"
+msgstr "Indsendelse ikke fundet"
 
 #: xblock/staff_area_mixin.py:725
 msgid "Submission for team assignment has no associated team submission"
-msgstr "Aflevering til teamopgave har ingen tilknyttet teamaflevering"
+msgstr "Indsendelse for holdopgave har ingen tilknyttet holdindsendelse"
 
 #: xblock/staff_area_mixin.py:754
 msgid ""
@@ -2145,9 +2787,9 @@ msgid ""
 "receives a grade of zero unless you delete the learner's state for the "
 "problem to allow them to resubmit a response."
 msgstr ""
-"Elevindsendelsen er blevet fjernet fra peer assessment. Eleven får "
-"karakteren nul, medmindre du sletter elevens tilstand for problemet for at "
-"give dem mulighed for at genindsende et svar."
+"Elevens indsendelse er blevet fjernet fra den kollegiale vurdering. Eleven "
+"modtager en karakter på nul, medmindre du sletter elevens tilstand for "
+"problemet for at give dem mulighed for at indsende et svar igen."
 
 #: xblock/staff_area_mixin.py:789
 msgid ""
@@ -2155,46 +2797,62 @@ msgid ""
 "grade of zero unless you delete a team member’s state for the problem to "
 "allow the team to resubmit a response."
 msgstr ""
-"Holdets indsendelse er blevet fjernet fra karaktergivning. Teamet modtager "
-"en karakter på nul, medmindre du sletter et teammedlems tilstand for "
-"problemet for at give teamet mulighed for at genindsende et svar."
+"Holdets indsendelse er blevet fjernet fra vurderingen. Holdet modtager en "
+"karakter på nul, medmindre du sletter en holdmedlems tilstand for problemet "
+"for at give holdet mulighed for at indsende et svar igen."
 
-#: xblock/studio_mixin.py:246 xblock/studio_mixin.py:258
+#: xblock/studio_mixin.py:247 xblock/studio_mixin.py:259
 msgid "Error updating XBlock configuration"
-msgstr "Fejl under opdatering af XBlock-konfiguration"
+msgstr "Fejl ved opdatering af XBlock-konfiguration"
 
-#: xblock/studio_mixin.py:263
+#: xblock/studio_mixin.py:264
 msgid "Error: Text Response and File Upload Response cannot both be disabled"
-msgstr "Fejl: Tekstrespons og filoverførselssvar kan ikke begge deaktiveres"
+msgstr "Fejl: Tekstsvar og filupload-svar kan ikke begge være deaktiveret"
 
-#: xblock/studio_mixin.py:267
+#: xblock/studio_mixin.py:268
 msgid ""
 "Error: When Text Response is disabled, File Upload Response must be Required"
-msgstr ""
-"Fejl: Når tekstsvar er deaktiveret, skal filoverførselssvar være påkrævet"
+msgstr "Fejl: Når textsvar er deaktiveret, skal filupload-svar være påkrævet"
 
-#: xblock/studio_mixin.py:270
+#: xblock/studio_mixin.py:271
 msgid ""
 "Error: When File Upload Response is disabled, Text Response must be Required"
-msgstr ""
-"Fejl: Når svar på filoverførsel er deaktiveret, skal tekstsvar være påkrævet"
+msgstr "Fejl: Når filupload-svar er deaktiveret, skal textsvar være påkrævet"
 
-#: xblock/studio_mixin.py:294
+#: xblock/studio_mixin.py:295
 #, python-brace-format
 msgid "Validation error: {error}"
 msgstr "Valideringsfejl: {error}"
 
+#: xblock/studio_mixin.py:329
+msgid "Successfully updated OpenAssessment XBlock"
+msgstr "Opdaterede OpenAssessment XBlock med succes"
+
 #: xblock/utils/data_conversion.py:315
 msgid "You must provide options selected in the assessment."
-msgstr "Du skal angive valgmuligheder, der er valgt i vurderingen."
+msgstr "Du skal angive de valgmuligheder, der er valgt i vurderingen."
 
 #: xblock/utils/data_conversion.py:318
 msgid "You must provide overall feedback in the assessment."
-msgstr "Du skal give overordnet feedback i vurderingen."
+msgstr "Du skal angive overordnet feedback i vurderingen."
 
 #: xblock/utils/data_conversion.py:321
 msgid "You must provide feedback for criteria in the assessment."
-msgstr "Du skal give feedback til kriterier i vurderingen."
+msgstr "Du skal angive feedback for kriterierne i vurderingen."
+
+#: xblock/utils/resolve_dates.py:52
+#, python-brace-format
+msgid ""
+"'{date}' is an invalid date format. Make sure the date is formatted as YYYY-"
+"MM-DDTHH:MM:SS."
+msgstr ""
+"'{date}' er et ugyldigt datoformat. Sørg for, at datoen er formateret som "
+"YYYY-MM-DDTHH:MM:SS."
+
+#: xblock/utils/resolve_dates.py:57
+#, python-brace-format
+msgid "'{date}' must be a date string or datetime"
+msgstr "'{date}' skal være en datostreng eller datetime"
 
 #: xblock/utils/resolve_dates.py:210
 #, python-brace-format
@@ -2202,8 +2860,8 @@ msgid ""
 "This step's start date '{start}' cannot be earlier than the previous step's "
 "start date '{prev}'."
 msgstr ""
-"Dette trins startdato &#39;{start}&#39; kan ikke være tidligere end det "
-"forrige trins startdato &#39;{prev}&#39;."
+"Startdatoen for dette trin '{start}' kan ikke være tidligere end startdatoen"
+" for det foregående trin '{prev}'."
 
 #: xblock/utils/resolve_dates.py:218
 #, python-brace-format
@@ -2211,52 +2869,54 @@ msgid ""
 "This step's due date '{due}' cannot be later than the next step's due date "
 "'{prev}'."
 msgstr ""
-"Dette trins forfaldsdato &#39;{due}&#39; må ikke være senere end det næste "
-"trins forfaldsdato &#39;{prev}&#39;."
+"Forfaldsdatoen for dette trin '{due}' kan ikke være senere end den næste "
+"trins forfaldsdato '{prev}'."
 
 #: xblock/utils/resolve_dates.py:234
 #, python-brace-format
 msgid "The start date '{start}' cannot be later than the due date '{due}'"
-msgstr ""
-"Startdatoen &#39;{start}&#39; må ikke være senere end forfaldsdatoen "
-"&#39;{due}&#39;"
+msgstr "Startdatoen '{start}' kan ikke være senere end forfaldsdatoen '{due}'"
 
 #: xblock/utils/validation.py:120
 msgid "This problem must include at least one assessment."
-msgstr "Dette problem skal omfatte mindst én vurdering."
+msgstr "Dette problem skal indeholde mindst én vurdering."
 
 #: xblock/utils/validation.py:124
 msgid "The assessment order you selected is invalid."
-msgstr "Den vurderingsrækkefølge, du valgte, er ugyldig."
+msgstr "Den vurderingsrækkefølge, du har valgt, er ugyldig."
 
 #: xblock/utils/validation.py:134
 msgid "In peer assessment, the \"Must Grade\" value must be a positive integer."
-msgstr "I peer assessment skal værdien \"Must Grade\" være et positivt heltal."
+msgstr ""
+"I kollegial vurdering skal værdien for \"Must Grade\" være et positivt "
+"heltal."
 
 #: xblock/utils/validation.py:137
 msgid "In peer assessment, the \"Graded By\" value must be a positive integer."
-msgstr "Ved peer-vurdering skal værdien \"Graded By\" være et positivt heltal."
+msgstr ""
+"I kollegial vurdering skal værdien for \"Graded By\" være et positivt "
+"heltal."
 
 #: xblock/utils/validation.py:141
 msgid ""
 "In peer assessment, the \"Must Grade\" value must be greater than or equal "
 "to the \"Graded By\" value."
 msgstr ""
-"Ved peer assessment skal værdien \"Skal bedømmes\" være større end eller lig"
-" med værdien \"Bedømt efter\"."
+"I kollegial vurdering skal værdien for \"Must Grade\" være større end eller "
+"lig med værdien for \"Graded By\"."
 
 #: xblock/utils/validation.py:150
 msgid "You must provide at least one example response for learner training."
-msgstr "Du skal give mindst ét eksempelsvar til elevtræning."
+msgstr "Du skal angive mindst ét eksempel på et svar til elevtræning."
 
 #: xblock/utils/validation.py:153
 msgid "Each example response for learner training must be unique."
-msgstr "Hvert eksempelsvar for elevtræning skal være unikt."
+msgstr "Hvert eksempel på et svar til elevtræning skal være unikt."
 
 #: xblock/utils/validation.py:160
 msgid "The \"required\" value must be true if staff assessment is the only step."
 msgstr ""
-"Den \"påkrævede\" værdi skal være sand, hvis personalevurdering er det "
+"Værdien for \"required\" skal være sand, hvis medarbejdervurdering er det "
 "eneste trin."
 
 #: xblock/utils/validation.py:164
@@ -2264,50 +2924,60 @@ msgid ""
 "The number of assessments cannot be changed after the problem has been "
 "released."
 msgstr ""
-"Antallet af vurderinger kan ikke ændres, efter at problemet er blevet "
-"frigivet."
+"Antallet af vurderinger kan ikke ændres, efter at problemet er udgivet."
 
 #: xblock/utils/validation.py:169
 msgid ""
 "The assessment type cannot be changed after the problem has been released."
+msgstr "Vurderingstypen kan ikke ændres, efter at problemet er udgivet."
+
+#: xblock/utils/validation.py:176
+msgid ""
+"The grading strategy for peer assessments cannot be changed after the "
+"problem has been released."
 msgstr ""
-"Vurderingstypen kan ikke ændres, efter at problemet er blevet frigivet."
+"Bedømmelsesstrategien for kollegiale vurderinger kan ikke ændres, efter at "
+"problemet er udgivet."
 
 #: xblock/utils/validation.py:200
 msgid "This rubric definition is not valid."
-msgstr "Denne rubrikdefinition er ikke gyldig."
+msgstr "Denne rubric-definition er ikke gyldig."
+
+#: xblock/utils/validation.py:203
+msgid "You must provide at least one prompt."
+msgstr "Du skal angive mindst én opgave."
 
 #: xblock/utils/validation.py:209
 #, python-brace-format
 msgid "Options in '{criterion}' have duplicate name(s): {duplicates}"
-msgstr "Indstillinger i &#39;{criterion}&#39; har duplikatnavne: {duplicates}"
+msgstr "Mulighederne i '{criterion}' har duplikerede navn(e): {duplicates}"
 
 #: xblock/utils/validation.py:217
 msgid "Criteria with no options must require written feedback."
-msgstr "Kriterier uden valgmuligheder skal kræve skriftlig feedback."
+msgstr "Kriterier uden muligheder skal kræve skriftlig feedback."
 
 #: xblock/utils/validation.py:226
 msgid "Prompts cannot be created or deleted after a problem is released."
 msgstr ""
-"Prompter kan ikke oprettes eller slettes, efter at et problem er frigivet."
+"Opgaver kan ikke oprettes eller slettes, efter at et problem er udgivet."
 
 #: xblock/utils/validation.py:230
 msgid "The number of criteria cannot be changed after a problem is released."
 msgstr ""
-"Antallet af kriterier kan ikke ændres, efter at et problem er frigivet."
+"Antallet af kriterier kan ikke ændres, efter at et problem er udgivet."
 
 #: xblock/utils/validation.py:243
 msgid "Criteria names cannot be changed after a problem is released"
-msgstr "Kriterienavne kan ikke ændres, efter at et problem er frigivet"
+msgstr "Kriterienavne kan ikke ændres, efter at et problem er udgivet"
 
 #: xblock/utils/validation.py:248
 msgid "The number of options cannot be changed after a problem is released."
 msgstr ""
-"Antallet af muligheder kan ikke ændres, efter at et problem er frigivet."
+"Antallet af muligheder kan ikke ændres, efter at et problem er udgivet."
 
 #: xblock/utils/validation.py:253
 msgid "Point values cannot be changed after a problem is released."
-msgstr "Punktværdier kan ikke ændres, efter at et problem er udløst."
+msgstr "Pointværdier kan ikke ændres, efter at et problem er udgivet."
 
 #: xblock/utils/validation.py:304
 msgid "Learner training must have at least one training example."
@@ -2315,7 +2985,7 @@ msgstr "Elevtræning skal have mindst ét træningseksempel."
 
 #: xblock/utils/validation.py:369
 msgid "Leaderboard number is invalid."
-msgstr "Leaderboard-nummeret er ugyldigt."
+msgstr "Rangliste nummeret er ugyldigt."
 
 #: xblock/utils/validation.py:392
 msgid "The submission format is invalid."
