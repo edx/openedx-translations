@@ -7,59 +7,57 @@ msgstr ""
 "PO-Revision-Date: 2026-09-10 09:55+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: de_DE\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: mixins/grading.py:72
 msgid "We could not execute your query; please try again."
-msgstr "Wir konnten Ihre Anfrage nicht ausführen; Bitte versuche es erneut."
+msgstr ""
+"No hem pogut executar la teva consulta; si us plau, intenta-ho de nou."
 
 #: mixins/grading.py:89
 msgid "Weight"
-msgstr "Gewichtung"
+msgstr "Pes"
 
 #: mixins/grading.py:91
 msgid "This assigns an integer value representing the weight of this problem"
-msgstr ""
-"Dies ist ein Wert, welcher die Gewichtung der Aufgabe in der Gesamtwertung "
-"bekommt"
+msgstr "Això assigna un valor enter que representa el pes d’aquest problema"
 
 #: mixins/grading.py:170
 msgid "Display Name"
-msgstr "Anzeigename"
+msgstr "Nom per mostrar"
 
 #: mixins/grading.py:171
 msgid "The display name for this component."
-msgstr "Anzeigename für diese Komponente"
+msgstr "El nom que es mostra per aquest component."
 
 #: mixins/grading.py:172
 msgid "SQL Problem"
-msgstr "SQL-Problem"
+msgstr "Problema SQL"
 
 #: mixins/grading.py:176
 msgid "Dataset"
-msgstr "Datensatz"
+msgstr "Conjunt de dades"
 
 #: mixins/grading.py:177
 msgid "Which initial dataset/database to be used for queries"
 msgstr ""
-"Welcher Ausgangsdatensatz/welche Ausgangsdatenbank für Abfragen verwendet "
-"werden soll"
+"Quin conjunt de dades/base de dades inicial s’utilitzarà per a les consultes"
 
 #: mixins/grading.py:183
 msgid "Answer Query"
-msgstr "Beantworten Sie die Anfrage"
+msgstr "Consulta de resposta"
 
 #: mixins/grading.py:184
 msgid "A correct response SQL query"
-msgstr "Eine SQL-Abfrage mit korrekter Antwort"
+msgstr "Una consulta SQL de resposta correcta"
 
 #: mixins/grading.py:190
 msgid "Verify Query"
-msgstr "Abfrage überprüfen"
+msgstr "Verifica la consulta"
 
 #: mixins/grading.py:192
 msgid ""
@@ -67,46 +65,45 @@ msgid ""
 "the database (UPDATE, INSERT, DELETE, etc.). Only enter a single SELECT "
 "query here, which is used for matching the answer"
 msgstr ""
-"Eine sekundäre SQL-Verifizierungsabfrage, die verwendet wird, wenn die "
-"Antwortabfrage die Datenbank ändert (UPDATE, INSERT, DELETE usw.). Geben Sie"
-" hier nur eine einzelne SELECT-Abfrage ein, die zum Abgleich der Antwort "
-"verwendet wird"
+"Una consulta SQL de verificació secundària, que s’utilitzarà si la consulta "
+"de resposta modifica la base de dades (UPDATE, INSERT, DELETE, etc.). Només "
+"introdueix una consulta SELECT aquí, que s’utilitza per comparar la resposta"
 
 #: mixins/grading.py:202
 msgid "Modification query statements"
-msgstr "Änderungsabfrageanweisungen"
+msgstr "Sentències de consulta de modificació"
 
 #: mixins/grading.py:204
 msgid ""
 "Optional SQL statements, to be executed after the user-submitted query, but "
 "before the verify_query."
 msgstr ""
-"Optionale SQL-Anweisungen, die nach der vom Benutzer übermittelten Abfrage, "
-"aber vor der verify_query ausgeführt werden sollen."
+"Sentències SQL opcionals, per executar-se després de la consulta enviada per"
+" l’usuari, però abans de la consulta de verificació."
 
 #: mixins/grading.py:212
 msgid "Is Ordered?"
-msgstr "Ist bestellt?"
+msgstr "Està ordenat?"
 
 #: mixins/grading.py:213
 msgid "Should results be in order?"
-msgstr "Sollten die Ergebnisse in Ordnung sein?"
+msgstr "Els resultats han d’estar ordenats?"
 
 #: mixins/grading.py:228
 msgid "Prompt"
-msgstr "Aufgabe"
+msgstr "Indicació"
 
 #: mixins/grading.py:229
 msgid "Explanatory text to accompany the problem"
-msgstr "Erklärender Text zum Problem"
+msgstr "Text explicatiu per acompanyar el problema"
 
 #: mixins/grading.py:234
 msgid "Submission Query"
-msgstr "Übermittlungsabfrage"
+msgstr "Consulta de presentació"
 
 #: mixins/grading.py:235
 msgid "A Submission Query"
-msgstr "Eine Übermittlungsabfrage"
+msgstr "Una consulta de presentació"
 
 #: templates/view.html:6
 #, python-format
@@ -120,67 +117,66 @@ msgid_plural ""
 "        "
 msgstr[0] ""
 "\n"
-"%(score_weighted)s / %(max_score)s Punkt (benotet)\n"
-"        "
+"%(score_weighted)s/%(max_score)s punt (avaluat)"
 msgstr[1] ""
 "\n"
-"%(score_weighted)s / %(max_score)s Punkte (benotet)\n"
-"        "
+"%(score_weighted)s/%(max_score)s punt (avaluat)"
+msgstr[2] ""
+"\n"
+"%(score_weighted)s/%(max_score)s punts (avaluats)"
 
 #: templates/view.html:12
 msgid "0 points (ungraded)"
-msgstr "0 Punkte (unbenotet)"
+msgstr "0 punts (no avaluat)"
 
 #: templates/view.html:21
 msgid "Note:"
-msgstr "Achtung:"
+msgstr "Nota:"
 
 #: templates/view.html:22
 msgid ""
 "Your queries are executed using SQLite, so you must conform to the SQL "
 "constructs supported by SQLite."
 msgstr ""
-"Ihre Abfragen werden mit SQLite ausgeführt, daher müssen Sie den von SQLite "
-"unterstützten SQL-Konstrukten entsprechen."
+"Les teves consultes s'executen utilitzant SQLite, així que has d'ajustar-te "
+"als constructs SQL suportats per SQLite."
 
 #: templates/view.html:27
 msgid "Press ESC then TAB or click outside of the code editor to exit"
-msgstr ""
-"Klicken Sie die ESC- und TAP-Taste oder außerhalb des Codeeditors, um zu "
-"beenden."
+msgstr "Prem ESC, després TAB, o fes clic fora de l'editor de codi per sortir"
 
 #: templates/view.html:33
 msgid "Submit"
-msgstr "Absenden"
+msgstr "Envia"
 
 #: templates/view.html:40
 msgid "Show Answer"
-msgstr "Antwort zeigen"
+msgstr "Mostra la resposta"
 
 #: templates/view.html:50
 msgid "Correct"
-msgstr "richtig"
+msgstr "Correcte"
 
 #: templates/view.html:52
 msgid "Incorrect"
-msgstr "Falsch"
+msgstr "Incorrecte"
 
 #: templates/view.html:55
 msgid "Unanswered"
-msgstr "Unbeantwortet"
+msgstr "Sense resposta"
 
 #: templates/view.html:63
 msgid ""
 "To check your data modification statement, we ran the following query after "
 "your modification:"
 msgstr ""
-"Um Ihre Datenänderungserklärung zu überprüfen, haben wir nach Ihrer Änderung"
-" die folgende Abfrage ausgeführt:"
+"Per comprovar la teva instrucció de modificació de dades, hem executat la "
+"següent consulta després de la teva modificació:"
 
 #: templates/view.html:75
 msgid "Your Query Result:"
-msgstr "Ihr Abfrageergebnis:"
+msgstr "El resultat de la teva consulta:"
 
 #: templates/view.html:80
 msgid "Expected Query Result:"
-msgstr "Erwartetes Abfrageergebnis:"
+msgstr "Resultat esperat de la consulta:"

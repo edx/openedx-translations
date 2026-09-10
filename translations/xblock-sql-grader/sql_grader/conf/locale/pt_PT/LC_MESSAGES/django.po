@@ -1,30 +1,21 @@
-# edX translation file.
-# Copyright (C) 2025 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
-# 
-# Translators:
-# Brian Smith, 2024
-# Ivo Branco <ivo.branco@fccn.pt>, 2024
-# Cátia Lopes <catia.lopes@bridgelk.com>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2023-05-31 00:54+0000\n"
-"Last-Translator: Cátia Lopes <catia.lopes@bridgelk.com>, 2024\n"
-"Language-Team: Portuguese (Portugal) (https://app.transifex.com/open-edx/teams/6205/pt_PT/)\n"
+"PO-Revision-Date: 2026-09-10 10:14+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_PT\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: mixins/grading.py:72
 msgid "We could not execute your query; please try again."
-msgstr "Não foi possível executar a sua consulta; tente novamente."
+msgstr "Não foi possível executar a sua consulta; por favor, tente novamente."
 
 #: mixins/grading.py:89
 msgid "Weight"
@@ -36,15 +27,15 @@ msgstr "Isto atribui um valor inteiro que representa o peso deste problema"
 
 #: mixins/grading.py:170
 msgid "Display Name"
-msgstr "Nome a Exibir"
+msgstr "Nome de exibição"
 
 #: mixins/grading.py:171
 msgid "The display name for this component."
-msgstr "O nome exibido para este componente."
+msgstr "O nome de exibição para este componente."
 
 #: mixins/grading.py:172
 msgid "SQL Problem"
-msgstr "Problema de SQL"
+msgstr "Problema SQL"
 
 #: mixins/grading.py:176
 msgid "Dataset"
@@ -53,11 +44,12 @@ msgstr "Conjunto de dados"
 #: mixins/grading.py:177
 msgid "Which initial dataset/database to be used for queries"
 msgstr ""
-"Qual o conjunto de dados/base de dados inicial a utilizar para as consultas"
+"Qual o conjunto de dados/base de dados inicial a ser utilizado para as "
+"consultas"
 
 #: mixins/grading.py:183
 msgid "Answer Query"
-msgstr "Responder à consulta"
+msgstr "Consulta de resposta"
 
 #: mixins/grading.py:184
 msgid "A correct response SQL query"
@@ -73,21 +65,20 @@ msgid ""
 "the database (UPDATE, INSERT, DELETE, etc.). Only enter a single SELECT "
 "query here, which is used for matching the answer"
 msgstr ""
-"Uma consulta SQL de verificação secundária, a ser utilizada se a consulta "
-"answer_query modificar a base de dados (UPDATE, INSERT, DELETE, etc.). "
-"Introduza aqui apenas uma única consulta SELECT, que é utilizada para fazer "
-"corresponder a resposta"
+"Uma consulta SQL de verificação secundária, a ser usada se a answer_query "
+"modificar a base de dados (UPDATE, INSERT, DELETE, etc.). Insira apenas uma "
+"única consulta SELECT aqui, que será usada para comparar a resposta"
 
 #: mixins/grading.py:202
 msgid "Modification query statements"
-msgstr "Instruções de consulta de modificação"
+msgstr "Declarações de consulta de modificação"
 
 #: mixins/grading.py:204
 msgid ""
 "Optional SQL statements, to be executed after the user-submitted query, but "
 "before the verify_query."
 msgstr ""
-"Instruções SQL opcionais, a executar depois da consulta submetida pelo "
+"Instruções SQL opcionais, a serem executadas após a consulta submetida pelo "
 "utilizador, mas antes da verify_query."
 
 #: mixins/grading.py:212
@@ -96,11 +87,11 @@ msgstr "Está ordenado?"
 
 #: mixins/grading.py:213
 msgid "Should results be in order?"
-msgstr "Os resultados devem estar por ordem?"
+msgstr "Os resultados devem estar ordenados?"
 
 #: mixins/grading.py:228
 msgid "Prompt"
-msgstr "Enunciado"
+msgstr "Indicação"
 
 #: mixins/grading.py:229
 msgid "Explanatory text to accompany the problem"
@@ -108,11 +99,11 @@ msgstr "Texto explicativo para acompanhar o problema"
 
 #: mixins/grading.py:234
 msgid "Submission Query"
-msgstr "Consulta de apresentação"
+msgstr "Consulta de submissão"
 
 #: mixins/grading.py:235
 msgid "A Submission Query"
-msgstr "Uma consulta de apresentação"
+msgstr "Uma consulta de submissão"
 
 #: templates/view.html:6
 #, python-format
@@ -126,20 +117,20 @@ msgid_plural ""
 "        "
 msgstr[0] ""
 "\n"
-"            %(score_weighted)s/%(max_score)s ponto (classificado)\n"
+"            %(score_weighted)s/%(max_score)s ponto (avaliado)\n"
 "        "
 msgstr[1] ""
 "\n"
-"            %(score_weighted)s/%(max_score)s pontos (classificados)\n"
+"            %(score_weighted)s/%(max_score)s ponto (avaliado)\n"
 "        "
 msgstr[2] ""
 "\n"
-"            %(score_weighted)s/%(max_score)s pontos (classificados)\n"
+"            %(score_weighted)s/%(max_score)s pontos (avaliados)\n"
 "        "
 
 #: templates/view.html:12
 msgid "0 points (ungraded)"
-msgstr "0 pontos (não classificados)"
+msgstr "0 pontos (não avaliados)"
 
 #: templates/view.html:21
 msgid "Note:"
@@ -150,13 +141,12 @@ msgid ""
 "Your queries are executed using SQLite, so you must conform to the SQL "
 "constructs supported by SQLite."
 msgstr ""
-"As suas consultas são executadas utilizando o SQLite, pelo que tem de estar "
-"em conformidade com as construções SQL suportadas pelo SQLite."
+"As suas consultas são executadas usando SQLite, por isso deve respeitar os "
+"construtos SQL suportados pelo SQLite."
 
 #: templates/view.html:27
 msgid "Press ESC then TAB or click outside of the code editor to exit"
-msgstr ""
-"Pressione ESC e depois TAB ou clique fora do editor de código para sair"
+msgstr "Prima ESC e depois TAB ou clique fora do editor de código para sair"
 
 #: templates/view.html:33
 msgid "Submit"
@@ -164,7 +154,7 @@ msgstr "Submeter"
 
 #: templates/view.html:40
 msgid "Show Answer"
-msgstr "Mostrar Resposta"
+msgstr "Mostrar resposta"
 
 #: templates/view.html:50
 msgid "Correct"
@@ -183,13 +173,13 @@ msgid ""
 "To check your data modification statement, we ran the following query after "
 "your modification:"
 msgstr ""
-"Para verificar a sua declaração de modificação de dados, executámos a "
+"Para verificar a sua instrução de modificação de dados, executámos a "
 "seguinte consulta após a sua modificação:"
 
 #: templates/view.html:75
 msgid "Your Query Result:"
-msgstr "Resultado da sua consulta:"
+msgstr "O resultado da sua consulta:"
 
 #: templates/view.html:80
 msgid "Expected Query Result:"
-msgstr "Resultado esperado da consulta:"
+msgstr "Resultado de consulta esperado:"
