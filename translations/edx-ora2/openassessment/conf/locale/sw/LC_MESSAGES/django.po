@@ -4,31 +4,31 @@ msgstr ""
 "Project-Id-Version: edx-ora2\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2026-05-05 00:52+0000\n"
-"PO-Revision-Date: 2026-09-10 11:32+0000\n"
+"PO-Revision-Date: 2026-09-10 12:03+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: fa\n"
+"Language: sw\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: assessment/api/student_training.py:179
 msgid "Could not parse serialized rubric"
-msgstr "سرفصل سریالی تحلیل نشد"
+msgstr "Haiwezekana kuchambua rubric iliyosindikiza."
 
 #: assessment/api/student_training.py:191
 msgid ""
 "If your assignment includes a learner training step, the rubric must have at"
 " least one criterion, and that criterion must have at least one option."
 msgstr ""
-"اگر تکلیف شما شامل یک مرحله از آموزش فراگیرنده باشد، سرفصل باید حداقل یک "
-"معیار و آن معیار حداقل یک گزینه داشته باشد."
+"Ikiwa kazi yako ina hatua ya mafunzo kwa mwanafunzi, rubric lazima iwe na "
+"angalau kigezo kimoja, na kigezo hicho lazima kiwe na chaguo angalau moja."
 
 #: assessment/api/student_training.py:203
 #, python-brace-format
 msgid "Example {example_number} has a validation error: {error}"
-msgstr "مثال {example_number} دارای یک خطای اعتبارسنجی است: {error}"
+msgstr "Mfano {example_number} una kosa la uthibitishaji: {error}"
 
 #: assessment/api/student_training.py:217
 #, python-brace-format
@@ -36,140 +36,140 @@ msgid ""
 "Example {example_number} has an invalid option for \"{criterion_name}\": "
 "\"{option_name}\""
 msgstr ""
-"مثال {example_number} یک گزینه نامعتبر برای  \"{criterion_name}\": "
-"\"{option_name}\" دارد "
+"Mfano {example_number} una chaguo lisilo sahihi kwa \"{criterion_name}\": "
+"\"{option_name}\""
 
 #: assessment/api/student_training.py:227
 #, python-brace-format
 msgid "Example {example_number} has an extra option for \"{criterion_name}\""
-msgstr "مثال {example_number} یک گزینه اضافی برای  \"{criterion_name}\"  دارد"
+msgstr "Mfano {example_number} una chaguo ziada kwa \"{criterion_name}\""
 
 #: assessment/api/student_training.py:240
 #, python-brace-format
 msgid "Example {example_number} is missing an option for \"{criterion_name}\""
-msgstr "نمونه {example_number} گزینه‌ای برای  \"{criterion_name}\" وجود ندارد"
+msgstr "Mfano {example_number} hauko na chaguo kwa \"{criterion_name}\""
 
 #: assessment/score_type_constants.py:21 xblock/grade_mixin.py:547
 msgid "Peer"
-msgstr "همتا"
+msgstr "Wenzako"
 
 #: assessment/score_type_constants.py:22
 msgid "Self"
-msgstr "خود"
+msgstr "Binafsi"
 
 #: assessment/score_type_constants.py:23
 msgid "Staff"
-msgstr "کارکنان"
+msgstr "Wafanyakazi"
 
 #: assessment/score_type_constants.py:25
 msgid "Unknown"
-msgstr "ناشناخته"
+msgstr "Haijulikani"
 
 #: data.py:584
 #, python-brace-format
 msgid "Criterion {number}: {label}"
-msgstr "معیار {number} : {label}"
+msgstr "Kigezo {number}: {label}"
 
 #: data.py:586
 #, python-brace-format
 msgid "Points {number}"
-msgstr "امتیاز {number}"
+msgstr "Alama {number}"
 
 #: data.py:587
 #, python-brace-format
 msgid "Median Score {number}"
-msgstr "میانگین امتیاز {number}"
+msgstr "Alama ya Kati {number}"
 
 #: data.py:588
 #, python-brace-format
 msgid "Feedback {number}"
-msgstr "بازخورد {number}"
+msgstr "Maoni {number}"
 
 #: data.py:917
 msgid "Item ID"
-msgstr "شناسۀ مورد"
+msgstr "Kitambulisho cha Kitu"
 
 #: data.py:918
 msgid "Submission ID"
-msgstr "شناسۀ ثبت"
+msgstr "Kitambulisho cha Uwasilishaji"
 
 #: data.py:930
 msgid "Anonymized Student ID"
-msgstr "شناسۀ دانشجویی ناشناس"
+msgstr "Kitambulisho cha Mwanafunzi Kilichofichwa"
 
 #: data.py:961
 msgid "Assessment ID"
-msgstr "شناسۀ ارزیابی"
+msgstr "Kitambulisho cha Tathmini"
 
 #: data.py:962
 msgid "Assessment Scored Date"
-msgstr "تاریخ امتیازدهی ارزیابی"
+msgstr "Tarehe ya Alama ya Tathmini"
 
 #: data.py:963
 msgid "Assessment Scored Time"
-msgstr "زمان امتیازدهی ارزیابی"
+msgstr "Muda wa Alama ya Tathmini"
 
 #: data.py:964
 msgid "Assessment Type"
-msgstr "نوع ارزیابی"
+msgstr "Aina ya Tathmini"
 
 #: data.py:965
 msgid "Anonymous Scorer Id"
-msgstr "شناسۀ مصحح ناشناس"
+msgstr "Kitambulisho cha Mkadiria Usiojulikana"
 
 #: data.py:967
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:59
 msgid "Overall Feedback"
-msgstr "بازخورد کلی"
+msgstr "Maoni kwa Jumla"
 
 #: data.py:968
 msgid "Assessment Score Earned"
-msgstr "امتیاز ارزیابی کسب شد"
+msgstr "Alama ya Tathmini Iliyopatikana"
 
 #: data.py:969
 msgid "Assessment Scored At"
-msgstr "ارزیابی با امتیاز"
+msgstr "Tathmini Ilipatikana Wakati"
 
 #: data.py:970
 msgid "Date/Time Final Score Given"
-msgstr "تاریخ/زمان امتیاز نهایی داده شده‌است"
+msgstr "Tarehe/Muda Alama ya Mwisho Iliyotolewa"
 
 #: data.py:971
 msgid "Final Score Earned"
-msgstr "امتیاز نهایی کسب‌شده"
+msgstr "Alama ya Mwisho Iliyopatikana"
 
 #: data.py:972
 msgid "Final Score Possible"
-msgstr "امتیاز نهایی احتمالی"
+msgstr "Alama ya Mwisho Inayowezekana"
 
 #: data.py:973
 msgid "Feedback Statements Selected"
-msgstr "اظهارات بازخورد انتخاب شد"
+msgstr "Kauli za Maoni Zilizochaguliwa"
 
 #: data.py:974
 msgid "Feedback on Assessment"
-msgstr "بازخورد دربارۀ ارزیابی"
+msgstr "Maoni juu ya Tathmini"
 
 #: data.py:976
 msgid "Response Files"
-msgstr "فایل های پاسخ"
+msgstr "Faili za Majibu"
 
 #: data.py:1367
 msgid "No description provided."
-msgstr "هیچ توضیحی ارائه نشده است."
+msgstr "Hakuna maelezo yaliyoingizwa."
 
 #: data.py:1626 templates/legacy/edit/oa_edit_criterion.html:54
 #: xblock/studio_mixin.py:58
 msgid "None"
-msgstr "هیچ یک"
+msgstr "Hakuna"
 
 #: templates/legacy/edit/oa_edit.html:28
 msgid "Save"
-msgstr "ذخیره کردن"
+msgstr "Hifadhi"
 
 #: templates/legacy/edit/oa_edit.html:32
 msgid "Cancel"
-msgstr "لغو کردن"
+msgstr "Ghairi"
 
 #: templates/legacy/edit/oa_edit_assessment_steps.html:6
 msgid ""
@@ -178,57 +178,57 @@ msgid ""
 " can be enabled, disable, and ordered for a flexible set of pedagogical "
 "needs."
 msgstr ""
-"ارزیابی‌های پاسخ باز به شما این امکان را می‌دهد که مراحل تک یا چندگانه را در"
-" یک توالی ارزیابی پاسخ باز مبتنی بر سرفصل پیکربندی کنید. مراحل موجود زیر را "
-"می‌توان برای مجموعه‌ای منعطف از نیازهای آموزشی فعال، غیرفعال و سفارشی شوند."
+"Tathmini za Majibu ya Wazi zinakuwezesha kuweka hatua moja au nyingi katika "
+"mfuatano wa tathmini za majibu ya wazi yanayotumia rubric. Hatua zilizopo "
+"hapa chini zinaweza kuzimwa, kuwezeshwa na kuorodheshwa kulingana na "
+"mahitaji ya kielimu yanayobadilika."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:5
 msgid "Display Name "
-msgstr "نام نمایشی "
+msgstr "Jina la Onyesho "
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:8
 msgid "The display name for this component."
-msgstr "نام نمایشی این مؤلفه"
+msgstr "Jina linaloonyeshwa kwa kipengele hiki."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:12
 msgid "Text Response"
-msgstr "پاسخ متنی"
+msgstr "Jibu la Maandishi"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:20
 msgid ""
 "Specify whether learners must include a text based response to this "
 "problem's prompt."
 msgstr ""
-"مشخص کنید که آیا فراگیران باید پاسخی مبتنی بر متن به درخواست این مساله ارائه"
-" دهند یا خیر."
+"Eleza ikiwa wanafunzi lazima wajumuishe jibu la maandishi kwenye mwaliko wa "
+"tatizo hili."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:25
 msgid "Response Editor"
-msgstr "ویرایشگر پاسخ"
+msgstr "Mhariri wa Majibu"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:33
 msgid ""
 "Select which editor learners will use to include a text based response to "
 "this problem's prompt."
 msgstr ""
-"انتخاب کنید که فراگیران از کدام ویرایشگر برای درج پاسخ متنی به درخواست این "
-"مساله استفاده کنند."
+"Chagua mhariri ambao wanafunzi watatumia kuingiza jibu la maandishi kwa "
+"ajili ya mwaliko wa tatizo hili."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:38
 msgid "File Uploads Response"
-msgstr "بارگذاری فایل پاسخ"
+msgstr "Majibu ya Kupakia Faili"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:46
 msgid ""
 "Specify whether learners are able to upload files as a part of their "
 "response."
 msgstr ""
-"مشخص کنید که آیا فراگیران قادر به بارگذاری پوشه به‌عنوان بخشی از پاسخ خود "
-"هستند یا خیر."
+"Eleza ikiwa wanafunzi wanaweza kupakia faili kama sehemu ya majibu yao."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:50
 msgid "Allow Multiple Files"
-msgstr "امکان بارگذاری چند فایل"
+msgstr "Ruhusu Faili Nyingi"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:52
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:93
@@ -237,7 +237,7 @@ msgstr "امکان بارگذاری چند فایل"
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:169
 #: templates/legacy/edit/oa_edit_peer_assessment.html:45
 msgid "False"
-msgstr "نادرست"
+msgstr "Sio kweli"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:53
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:94
@@ -246,7 +246,7 @@ msgstr "نادرست"
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:170
 #: templates/legacy/edit/oa_edit_peer_assessment.html:46
 msgid "True"
-msgstr "درست"
+msgstr "Kweli"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:56
 msgid ""
@@ -254,72 +254,71 @@ msgid ""
 "if File Uploads Response is set to None. This is automatically set to True "
 "for Team Assignments. "
 msgstr ""
-"مشخص کنید که آیا زبان آموزان می توانند بیش از یک فایل آپلود کنند یا خیر. اگر"
-" File Uploads Response روی None تنظیم شده باشد، این تاثیری ندارد. این به طور"
-" خودکار روی True برای تکالیف تیم تنظیم می شود. "
+"Eleza ikiwa wanafunzi wanaweza kupakia zaidi ya faili moja. Hii haina athari"
+" ikiwa Majibu ya Kupakia Faili imesetiwa kuwa Hakuna. Hii inawekwa moja kwa "
+"moja kuwa Kweli kwa Majukumu ya Timu. "
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:58
 msgid "File Upload Types"
-msgstr "انواع آپلود فایل"
+msgstr "Aina za Kufanyia Kupakia Faili"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:60
 msgid "PDF or Image Files"
-msgstr "فایل های PDF یا تصویری"
+msgstr "Faili za PDF au Picha"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:61
 msgid "Image Files"
-msgstr "فایل های تصویری"
+msgstr "Faili za Picha"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:62
 msgid "Custom File Types"
-msgstr "انواع فایل های سفارشی"
+msgstr "Aina za Faili Zilizobinafsishwa"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:66
 msgid ""
 "Specify whether learners can submit files along with their text responses."
 msgstr ""
-"مشخص کنید که آیا زبان آموزان می توانند فایل ها را همراه با پاسخ های متنی خود"
-" ارسال کنند یا خیر."
+"Eleza ikiwa wanafunzi wanaweza kuwasilisha faili pamoja na majibu yao ya "
+"maandishi."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:70
 msgid "File Types"
-msgstr "انواع فایل"
+msgstr "Aina za Faili"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:79
 msgid ""
 "Enter the file extensions, separated by commas, that you want learners to be"
 " able to upload. For example: pdf,doc,docx."
 msgstr ""
-"پسوندهای پوشه‌ها درحالی که با کاما از هم جدا شده‌اند وارد کنید تا فراگیران "
-"بتوانند آن را بارگذاری کنند. به‌عنوان نمونه: pdf,doc,docx."
+"Weka viendelezi vya faili, vimetenganishwa na koma, ambavyo unataka "
+"wanafunzi waweze kupakia. Kwa mfano: pdf,doc,docx."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:84
 msgid ""
 "To add more file extensions, select Custom File Types and enter the full "
 "list of acceptable file extensions to be included."
 msgstr ""
-"برای افزودن پسوندهای بیشتر، Custom File Types را انتخاب کنید و فهرست کامل "
-"پسوندهای قابل قبول را وارد کنید."
+"Ili kuongeza viendelezi vingine vya faili, chagua Aina za Faili "
+"Zilizobinafsishwa na weka orodha kamili ya viendelezi vinavyokubalika."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:91
 msgid "Allow LaTeX Responses"
-msgstr "پاسخ های LaTeX را مجاز کنید"
+msgstr "Ruhusu Majibu ya LaTeX"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:97
 msgid "Specify whether learners can write LaTeX formatted strings"
 msgstr ""
-"مشخص کنید که آیا زبان آموزان می توانند رشته های قالب بندی شده LaTeX بنویسند "
-"یا خیر"
+"Eleza ikiwa wanafunzi wanaweza kuandika mistari iliyopangwa kwa LaTeX."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:102
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:8
 #: templates/legacy/leaderboard/oa_leaderboard_waiting.html:10
 msgid "Top Responses"
-msgstr "پاسخ های برتر"
+msgstr "Majibu Bora"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:104
 msgid " (Disabled)"
-msgstr " (غیرفعال)"
+msgstr " (Imezimwa)"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:117
 msgid ""
@@ -327,54 +326,53 @@ msgid ""
 " submitted a response. Valid numbers are 0 to 99. If the number is 0, the "
 "Top Responses section does not appear to learners."
 msgstr ""
-" برای نمایش پس از ارسال پاسخ توسط فراگیرنده، تعداد پاسخ‌هایی را مشخص کنید که"
-" امتیاز بالاتری دارند . اعداد معتبر 0 تا 99 هستند. اگر عدد 0 باشد، قسمت "
-"پاسخ‌های برتر برای فراگیران ظاهر نمی‌شود."
+"Eleza idadi ya majibu yenye alama za juu ya kuonyeshwa baada ya mwanafunzi "
+"kuwasilisha jibu. Nambari halali ni 0 hadi 99. Ikiwa nambari ni 0, sehemu ya"
+" Majibu Bora haitaonekana kwa wanafunzi."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:122
 msgid "When Teams Enabled is set to true, Top Responses will be disabled."
-msgstr ""
-"وقتی تیم فعال باشد یعنی روی گزینۀ «درست» تنظیم شود، پاسخ‌ها، غیرفعال می‌شود."
+msgstr "Wakati Timu Zimewezeshwa zimewekwa kuwa kweli, Majibu Bora yatazimwa."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:129
 msgid "Teams Enabled"
-msgstr "تیم فعال شد"
+msgstr "Timu Zimewezeshwa"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:136
 msgid "Specify whether team submissions are allowed for this response."
-msgstr "مشخص کنید که آیا ارسال تیم برای این پاسخ مجاز است یا خیر."
+msgstr "Eleza ikiwa kuwasilisha majibu kwa timu kunaruhusiwa kwa jibu hili."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:141
 msgid "Select Team-Set"
-msgstr "تنظیم-تیم را انتخاب کنید"
+msgstr "Chagua Seti ya Timu"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:155
 msgid "Show Rubric During Response"
-msgstr "نمایش سرفصل در حین پاسخ"
+msgstr "Onyesha Rubric Wakati wa Kujibu"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:162
 msgid ""
 "Specify whether learners can see the rubric while they are working on their "
 "response."
 msgstr ""
-"مشخص کنید که آیا فراگیران می‌توانند در حین کار بر روی پاسخ خود، سرفصل را "
-"ببینند یا خیر."
+"Eleza ikiwa wanafunzi wanaweza kuona rubric wakati wanapofanya kazi kwenye "
+"jibu lao."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:167
 msgid "Allow Learner Resubmissions"
-msgstr "اجازه ارسال مجدد توسط فراگیرنده"
+msgstr "Ruhusu Uwasilishaji upya wa Wanafunzi"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:174
 msgid ""
 "Set to TRUE to allow learners to resubmit ungraded work. Set to FALSE if "
 "resubmissions are not allowed."
 msgstr ""
-"روی «درست» تنظیم کنید تا به فراگیران امکان ارسال مجدد کار بدون نمره داده "
-"شود. اگر ارسال مجدد مجاز نباشد، روی «نادرست» تنظیم کنید."
+"Weka kuwa KWELI ili kuwaruhusu wanafunzi kuwasilisha tena kazi ambazo "
+"hazijakadiria. Weka kuwa SIO KWELI ikiwa kuwasilisha tena hakuruhusiwi."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:178
 msgid "Resubmission Grace Period"
-msgstr "مدت زمان مهلت ارسال مجدد"
+msgstr "Kipindi cha Ukarimu kwa Kuwasilisha Tena"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:187
 msgid ""
@@ -383,107 +381,107 @@ msgid ""
 " been graded. The grace period starts once the learner has submitted their "
 "response."
 msgstr ""
-"حداکثر دوره‌ای را که طی آن ارسال مجدد مجاز است مشخص کنید. در صورت خالی "
-"ماندن، فراگیران می‌توانند تا زمانی که به مطالب ارسالی‌شان نمره داده نشده "
-"باشد، آن‌ها را بازنشانی کنند. این مدت زمانی آغاز می‌شود که فراگیر پاسخ خود "
-"را ارسال کند."
+"Eleza kipindi cha juu kabisa ambacho kuwasilisha tena kunaruhusiwa. Ikiwa "
+"utaacha tupu, wanafunzi wataweza kuweka upya uwasilishaji wao mradi "
+"haujakadiria. Kipindi cha ukarimu huanza mara tu mwanafunzi anapowasilisha "
+"jibu lake."
 
 #: templates/legacy/edit/oa_edit_criterion.html:6
 #: templates/legacy/staff_area/oa_student_info.html:122
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:25
 msgid "Criterion"
-msgstr "معیار"
+msgstr "Kigezo"
 
 #: templates/legacy/edit/oa_edit_criterion.html:7
 msgid "You cannot delete a criterion after the assignment has been released."
-msgstr "پس از انتشار تکلیف امکان حذف معیار را ندارید."
+msgstr "Huwezi kufuta kigezo baada ya kazi kutolewa."
 
 #: templates/legacy/edit/oa_edit_criterion.html:9
 #: templates/legacy/edit/oa_edit_option.html:7
 #: templates/legacy/edit/oa_edit_prompt.html:10
 #: templates/legacy/edit/oa_training_example.html:10
 msgid "Remove"
-msgstr "حذف"
+msgstr "Ondoa"
 
 #: templates/legacy/edit/oa_edit_criterion.html:17
 msgid "Criterion Name"
-msgstr "نام معیار"
+msgstr "Jina la Kigezo"
 
 #: templates/legacy/edit/oa_edit_criterion.html:29
 msgid "Criterion Prompt"
-msgstr "درخواست معیار"
+msgstr "Mwaliko wa Kigezo"
 
 #: templates/legacy/edit/oa_edit_criterion.html:44
 msgid "Add Option"
-msgstr "افزودن گزینه"
+msgstr "Ongeza Chaguo"
 
 #: templates/legacy/edit/oa_edit_criterion.html:52
 msgid "Feedback for This Criterion"
-msgstr "بازخورد این معیار"
+msgstr "Maoni kwa Kigezo Hiki"
 
 #: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:57
 msgid "Optional"
-msgstr "اختیاری"
+msgstr "Hiari"
 
 #: templates/legacy/edit/oa_edit_criterion.html:56
 #: templates/legacy/oa_rubric.html:13
 #: templates/legacy/student_training/student_training.html:93
 #: xblock/studio_mixin.py:56
 msgid "Required"
-msgstr "ضروری"
+msgstr "Wahitajika"
 
 #: templates/legacy/edit/oa_edit_criterion.html:61
 msgid ""
 "Select one of the options above. This describes whether or not the reviewer "
 "will have to provide criterion feedback."
 msgstr ""
-"یکی از گزینه‌های بالا را انتخاب کنید. این مورد توضیح می‌دهد که آیا بازبین "
-"باید بازخورد معیار را ارائه دهد یا خیر."
+"Chagua moja kati ya chaguzi zilizo hapo juu. Hii inaelezea ikiwa mkaguzi "
+"atalazimika kutoa maoni juu ya kigezo au la."
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:3
 msgid "Open Response Assessment"
-msgstr "ارزیابی پاسخ باز"
+msgstr "Tathmini ya Majibu ya Wazi"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:8
 #: templates/legacy/edit/oa_edit_prompt.html:7
 msgid "Prompt"
-msgstr "سریع"
+msgstr "Mwaliko"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:15
 msgid "Rubric"
-msgstr "سرفصل"
+msgstr "Rubric"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:22
 msgid "Schedule"
-msgstr "برنامه"
+msgstr "Ratiba"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:29
 msgid "Assessment steps"
-msgstr "مراحل ارزیابی"
+msgstr "Hatua za Tathmini"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:36
 msgid "Settings"
-msgstr "تنظیمات"
+msgstr "Mipangilio"
 
 #: templates/legacy/edit/oa_edit_option.html:5
 msgid "Option"
-msgstr "گزینه"
+msgstr "Chaguo"
 
 #: templates/legacy/edit/oa_edit_option.html:16
 msgid "Option Name"
-msgstr "نام گزینه"
+msgstr "Jina la Chaguo"
 
 #: templates/legacy/edit/oa_edit_option.html:29
 msgid "Option Points"
-msgstr "امتیاز گزینه"
+msgstr "Alama za Chaguo"
 
 #: templates/legacy/edit/oa_edit_option.html:42
 msgid "Option Explanation"
-msgstr "توضیح گزینه"
+msgstr "Maelezo ya Chaguo"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:10
 msgid "Step: Peer Assessment"
-msgstr "مرحله: ارزیابی همتایان"
+msgstr "Hatua: Tathmini ya Wenzako"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:15
 msgid ""
@@ -491,10 +489,10 @@ msgid ""
 "also receive feedback from others in their final grade. Often, though not "
 "always, this step is preceded by Self Assessment or Learner Training steps."
 msgstr ""
-"ارزیابی همتا به فراگیران این امکان را می‌دهد تا بازخورد خود را به سایر "
-"فراگیران ارائه دهند و نیز در کلاس پایانی خود از دیگران بازخورد دریافت کنند. "
-"اغلب، البته نه همیشه، این مرحله پیش از مراحل خود ارزیابی یا آموزش فراگیرنده "
-"است."
+"Tathmini ya Wenzako inaruhusu wanafunzi kutoa maoni kwa wanafunzi wengine na"
+" pia kupokea maoni kutoka kwa wengine katika alama yao ya mwisho. Mara "
+"nyingi, ingawa si kila wakati, hatua hii inafuatwa na Tathmini ya Binafsi au"
+" hatua za Mafunzo kwa Wanafunzi."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:18
 msgid ""
@@ -502,49 +500,49 @@ msgid ""
 " peer reviews a student will be assessed with, and the number of peer a "
 "student must grade. Additional options can be specified."
 msgstr ""
-"پیکربندی: برای پیکربندی این مرحله، باید تعداد بررسی‌های همتا را مشخص کنید که"
-" فراگیر با آن‌ها ارزیابی می‌شود، و تعداد همتاهایی که یک فرد بایدبه آن‌ها "
-"نمره دهد. گزینه‌های اضافی را می‌توان مشخص کرد."
+"Usanidi: Kwa hatua hii kusanidiwe, lazima ueleze idadi ya tathmini za "
+"wenzako ambazo mwanafunzi atapimwa nazo, na idadi ya wenzako ambazo "
+"mwanafunzi lazima apate alama. Chaguzi za ziada zinaweza kuelezwa."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:23
 msgid "View Options & Configuration"
-msgstr "مشاهدۀ گزینه‌ها و پیکربندی"
+msgstr "Angalia Chaguzi na Usanidi"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:29
 msgid "Must Grade"
-msgstr "باید نمره داده شود"
+msgstr "Lazima Kipime"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:32
 msgid ""
 "Specify the number of peer assessments that each learner must complete. "
 "Valid numbers are 1 to 99."
 msgstr ""
-"تعداد ارزیابی‌های همتا را مشخص کنید که هر فراگیرنده باید انجام دهد. اعداد از"
-" 1 تا 99 معتبر هستند."
+"Eleza idadi ya tathmini za wenzako ambazo kila mwanafunzi lazima akamilishe."
+" Nambari halali ni 1 hadi 99."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:36
 msgid "Graded By"
-msgstr "نمره داده‌شده توسط"
+msgstr "Palipimwa Na"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:39
 msgid ""
 "Specify the number of learners that each response must be assessed by. Valid"
 " numbers are 1 to 99."
 msgstr ""
-"تعداد فراگیرانی را مشخص کنید که هر پاسخ باید توسط آنها ارزیابی شود. اعداد از"
-" 1 تا 99 معتبر هستند."
+"Eleza idadi ya wanafunzi ambao kila jibu lazima litathminwe nao. Nambari "
+"halali ni 1 hadi 99."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:43
 msgid "Enable Flexible Peer Grade Averaging"
-msgstr "فعال‌سازی میانگین نمرات همتا منعطف"
+msgstr "Wezesha wastani unaobadilika wa alama za wenzako."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:49
 #, python-format
 msgid ""
 "When enabled, learners who have received at least 30%% of the required \\"
 msgstr ""
-"وقتی فعال باشد، فراگیرانی که حداقل 30%% از موارد مورد نیاز \\ را دریافت "
-"کرده‌اند"
+"Wakati imewezeshwa, wanafunzi ambao wamepokea angalau 30%% ya zilizohitajika"
+" \\"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:53
 msgid ""
@@ -552,20 +550,21 @@ msgid ""
 "under the Open Response Assessment Settings card on the Pages & Resources "
 "studio page."
 msgstr ""
-"این ویژگی توسط تنظیمات سطح دوره فعال می‌شود. می‌توانید آن را در کارت تنظیمات"
-" ارزیابی پاسخ باز در صفحۀ استودیو صفحات و منابع بیابید."
+"Kipengele hiki kinawezeshwa na mipangilio ya kiwango cha kozi. Kinaweza "
+"kupatikana chini ya kadi ya Mipangilio ya Tathmini za Majibu ya Wazi juu ya "
+"ukurasa wa Pages & Resources wa studio."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:60
 msgid "Grading strategy for the peer assessment"
-msgstr "استراتژی نمره برای ارزیابی همتایان"
+msgstr "Mikakati ya upimaji kwa tathmini ya wenzako"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:62
 msgid "Mean"
-msgstr "میانگین"
+msgstr "Wastani"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:63
 msgid "Median (default)"
-msgstr "میانه (پیش‌فرض)"
+msgstr "Kati (mchaguo-msingi)"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:66
 msgid ""
@@ -573,59 +572,61 @@ msgid ""
 "the median across all peer reviews is used to calculate the final grade. If "
 "you select the mean, the average of all peer reviews will be used."
 msgstr ""
-"استراتژی نمره‌دهی ترجیحی برای ارزیابی همتا انتخاب کنید. به‌طور پیش‌فرض، "
-"میانه در تمام بررسی‌های همتا برای محاسبۀ نمره نهایی استفاده می‌شود. اگر "
-"میانگین را انتخاب کنید، از میانگین همه بررسی‌های همتا استفاده خواهدشد."
+"Chagua mkakati unaopendekezwa wa upimaji kwa tathmini ya wenzako. Kwa "
+"chaguo-msingi, alama ya kati kati ya tathmini zote za wenzako hutumika "
+"kukokotoa alama ya mwisho. Ikiwa utachagua wastani, wastani wa tathmini zote"
+" za wenzako utatumika."
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:5
 msgid "Peer Assessment Deadlines"
-msgstr "مهلت‌های ارزیابی همتایان"
+msgstr "Muda wa Mwisho wa Tathmini ya Wenzako"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:10
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:10
 msgid "Start Date"
-msgstr "تاریخ شروع"
+msgstr "Tarehe ya Kuanzia"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:19
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:19
 msgid "Start Time"
-msgstr "زمان شروع"
+msgstr "Muda wa Kuanzia"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:27
 msgid "The date and time when learners can begin assessing peer responses."
 msgstr ""
-"تاریخ و زمانی که فراگیران می‌توانند ارزیابی پاسخ‌های همتایان را آغاز کنند."
+"Tarehe na muda ambapo wanafunzi wanaweza kuanza kutathmini majibu ya "
+"wenzako."
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:31
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:119
 msgid "Due Date"
-msgstr "سررسید"
+msgstr "Tarehe ya Kukabidhiwa"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:40
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:40
 msgid "Due Time"
-msgstr "زمان مقرر"
+msgstr "Muda wa Kukabidhiwa"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:48
 msgid "The date and time when all peer assessments must be complete."
-msgstr "تاریخ و زمانی که تمام ارزیابی‌های همتا باید کامل شود."
+msgstr "Tarehe na muda ambapo tathmini zote za wenzako lazima zimalizike."
 
 #: templates/legacy/edit/oa_edit_prompt.html:8
 msgid "You cannot delete a prompt after the assignment has been released."
-msgstr "امکان حذف درخواست پس از انتشار تکلیف وجود ندارد."
+msgstr "Huwezi kufuta mwaliko baada ya kazi kutolewa."
 
 #: templates/legacy/edit/oa_edit_prompts.html:10
 msgid ""
 "Prompts. Replace the sample text with your own text. For more information, "
 "see the ORA documentation."
 msgstr ""
-"مهلت‌ها. متن نمونه را با متن خود جایگزین کنید. برای اطلاعات بیشتر، به "
-"مستندات ORA مراجعه کنید."
+"Mwaliko. Badilisha maandishi ya sampuli na maandishi yako mwenyewe. Kwa "
+"maelezo zaidi, angalia nyaraka za ORA."
 
 #: templates/legacy/edit/oa_edit_prompts.html:22
 msgid "Add Prompt"
-msgstr "افزودن درخواست"
+msgstr "Ongeza Mwaliko"
 
 #: templates/legacy/edit/oa_edit_rubric.html:14
 msgid ""
@@ -634,134 +635,132 @@ msgid ""
 "and their options. Replace the sample text with your own text. For more "
 "information, see the ORA documentation."
 msgstr ""
-"سرفصل‌ها از معیارهایی تشکیل شده‌اند که معمولاً شامل یک یا چند گزینه هستند. "
-"هر گزینه یک مقدار امتیاز دارد. این الگو شامل دو معیار نمونه و گزینه‌های "
-"آن‌هاست. متن نمونه را با متن خود جایگزین کنید. برای اطلاعات بیشتر، به "
-"مستندات ORA مراجعه کنید."
+"Rubric zinaundwa na vigezo, ambavyo kawaida vina chaguo moja au zaidi. Kila "
+"chaguo lina thamani ya alama. Kiolezo hiki kina vigezo viwili vya sampuli na"
+" chaguzi zao. Badilisha maandishi ya sampuli na maandishi yako mwenyewe. Kwa"
+" maelezo zaidi, angalia nyaraka za ORA."
 
 #: templates/legacy/edit/oa_edit_rubric.html:29
 msgid "Add Criterion"
-msgstr "افزودن معیار "
+msgstr "Ongeza Kigezo"
 
 #: templates/legacy/edit/oa_edit_rubric.html:35
 msgid "Feedback for This Response"
-msgstr "بازخورد برای این پاسخ"
+msgstr "Maoni kwa Jibu Hili"
 
 #: templates/legacy/edit/oa_edit_rubric.html:40
 msgid "Feedback Instructions"
-msgstr "دستورالعمل بازخورد"
+msgstr "Maelekezo ya Maoni"
 
 #: templates/legacy/edit/oa_edit_rubric.html:44
 msgid ""
 "Encourage learners to provide feedback on the response they have graded. You"
 " can replace the sample text with your own."
 msgstr ""
-"فراگیران را تشویق کنید تا دربارۀ پاسخی که به آن نمره داده‌اند بازخورد ارائه "
-"کنند. می‌توانید متن نمونه را با متن خود جایگزین کنید."
+"Hamasi wanafunzi kutoa maoni juu ya jibu ambalo wamepimwa. Unaweza "
+"kubadilisha maandishi ya sampuli na yako mwenyewe."
 
 #: templates/legacy/edit/oa_edit_rubric.html:49
 msgid "Default Feedback Text"
-msgstr "متن بازخورد پیش‌فرض"
+msgstr "Maandishi ya Maoni Chaguo-msingi"
 
 #: templates/legacy/edit/oa_edit_rubric.html:53
 msgid ""
 "Enter feedback text that learners will see before they enter their own "
 "feedback. Use this text to show learners a good example peer assessment."
 msgstr ""
-"متن بازخوردی را وارد کنید که فراگیران قبل از واردکردن بازخورد خود می‌بینند. "
-"از این متن برای نمایش یک نمونه خوب از ارزیابی همتایان به فراگیران استفاده "
-"کنید."
+"Weka maandishi ya maoni ambayo wanafunzi wataona kabla ya kuingiza maoni yao"
+" wenyewe. Tumia maandishi haya kuonyesha mfano mzuri wa tathmini ya wenzako."
 
 #: templates/legacy/edit/oa_edit_schedule.html:5
 msgid "Deadlines Configuration"
-msgstr "پیکربندی مهلت‌ها"
+msgstr "Usanidi wa Muda wa Mwisho"
 
 #: templates/legacy/edit/oa_edit_schedule.html:9
 msgid "Select a deadline configuration option"
-msgstr "انتخاب گزینۀ پیکربندی مهلت"
+msgstr "Chagua chaguo la usanidi wa muda wa mwisho"
 
 #: templates/legacy/edit/oa_edit_schedule.html:14
 msgid "Configure deadlines manually"
-msgstr "پیگیری دستی مهلت‌ها"
+msgstr "Sanya mipaka ya muda kwa mkono"
 
 #: templates/legacy/edit/oa_edit_schedule.html:18
 msgid "Match deadlines to the subsection due date"
-msgstr "تطبیق مهلت‌ها با تاریخ سررسید فرعی "
+msgstr "Linganya mipaka ya muda na tarehe ya kukabidhiwa ya sehemu ndogo"
 
 #: templates/legacy/edit/oa_edit_schedule.html:22
 msgid "Match deadlines to the course end date"
-msgstr "تطبیق مهلت‌ها با تاریخ پایان دوره "
+msgstr "Linganya mipaka ya muda na tarehe ya kumalizika kwa kozi"
 
 #: templates/legacy/edit/oa_edit_schedule.html:25
 msgid "Learn more about open response date settings"
-msgstr "اطلاعات بیشتر دربارۀ تنظیمات تاریخ پاسخ باز "
+msgstr "Jifunze zaidi kuhusu mipangilio ya tarehe kwa majibu ya wazi"
 
 #: templates/legacy/edit/oa_edit_schedule.html:35
 msgid "Response Start Date"
-msgstr "تاریخ آغاز پاسخ"
+msgstr "Tarehe ya Kuanzia kwa Majibu"
 
 #: templates/legacy/edit/oa_edit_schedule.html:48
 msgid "Response Start Time"
-msgstr "زمان آغاز پاسخ"
+msgstr "Muda wa Kuanzia kwa Majibu"
 
 #: templates/legacy/edit/oa_edit_schedule.html:57
 msgid "The date and time when learners can begin submitting responses."
-msgstr "تاریخ و زمانی که فراگیران می‌توانند ارسال پاسخ را آغاز کنند."
+msgstr "Tarehe na muda ambapo wanafunzi wanaweza kuanza kuwasilisha majibu."
 
 #: templates/legacy/edit/oa_edit_schedule.html:65
 msgid "Response Due Date"
-msgstr "تاریخ سررسید پاسخ"
+msgstr "Tarehe ya Kukabidhiwa kwa Majibu"
 
 #: templates/legacy/edit/oa_edit_schedule.html:78
 msgid "Response Due Time"
-msgstr "زمان مقرر پاسخگویی"
+msgstr "Muda wa Kukabidhiwa kwa Majibu"
 
 #: templates/legacy/edit/oa_edit_schedule.html:87
 msgid "The date and time when learners can no longer submit responses."
-msgstr ""
-"تاریخ و زمانی که فراگیران پس از آن دیگر نمی‌توانند پاسخ را ارسال کنند."
+msgstr "Tarehe na muda ambapo wanafunzi hawawezi tena kuwasilisha majibu."
 
 #: templates/legacy/edit/oa_edit_self_assessment.html:8
 msgid "Step: Self Assessment"
-msgstr "مرحله: خودارزیابی"
+msgstr "Hatua: Tathmini ya Binafsi"
 
 #: templates/legacy/edit/oa_edit_self_assessment.html:12
 msgid ""
 "Self Assessment asks learners to grade their own submissions against the "
 "rubric."
 msgstr ""
-"خودارزیابی از فراگیران می‌خواهد تا مطالب ارسالی خود را بر اساس این عنوان "
-"نمره‌دهی کنند."
+"Tathmini ya Binafsi inauliza wanafunzi kupima uwasilishaji wao binafsi "
+"kulingana na rubric."
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:5
 msgid "Self Assessment Deadlines"
-msgstr "مهلت‌های خودارزیابی"
+msgstr "Muda wa Mwisho wa Tathmini ya Binafsi"
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:27
 msgid "The date and time when learners can begin assessing their responses."
 msgstr ""
-"تاریخ و زمانی که فراگیران می‌توانند ارزیابی پاسخ های خود را آغاز کنند."
+"Tarehe na muda ambapo wanafunzi wanaweza kuanza kutathmini majibu yao."
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:48
 msgid "The date and time when all self assessments must be complete."
-msgstr "تاریخ و زمانی که همۀ خودارزیابی‌هاباید کامل شوند."
+msgstr "Tarehe na muda ambapo tathmini zote za binafsi lazima zimalizike."
 
 #: templates/legacy/edit/oa_edit_staff_assessment.html:8
 msgid "Step: Staff Assessment"
-msgstr "مرحله: ارزیابی کارکنان"
+msgstr "Hatua: Tathmini ya Wafanyakazi"
 
 #: templates/legacy/edit/oa_edit_staff_assessment.html:12
 msgid ""
 "Staff Assessment gates sets the final grade for students if enabled with "
 "other steps, though it can also be used as a standalone step."
 msgstr ""
-"دروازه‌های ارزیابی کارکنان، نمرۀ نهایی را برای فراگیران تعیین می‌کند، اگر "
-"همراه با مراحل دیگر فعال باشد، می‌توان از آن به‌عنوان یک مرحلۀ مستقل نیز "
-"استفاده کرد."
+"Hatua ya Tathmini ya Wafanyakazi inaweka alama ya mwisho kwa wanafunzi ikiwa"
+" imewezeshwa pamoja na hatua nyingine, ingawa pia inaweza kutumika kama "
+"hatua inayojitenga."
 
 #: templates/legacy/edit/oa_edit_student_training.html:9
 msgid "Step: Learner Training"
-msgstr "مرحله: آموزش فراگیرنده"
+msgstr "Hatua: Mafunzo kwa Wanafunzi"
 
 #: templates/legacy/edit/oa_edit_student_training.html:14
 msgid ""
@@ -769,9 +768,10 @@ msgid ""
 "submission in order to train them on the rubric and ensure learner's "
 "understand the rubric for either Self or Peer Assessment steps."
 msgstr ""
-"آموزش فراگیرنده برای کمک به فراگیران برای تمرین نمره‌دهی به یک ارسال "
-"شبیه‌سازی‌شده توسط همتایان است تا آن‌ها را به این شکل آموزش دهند و اطمینان "
-"حاصل کنند که وی این موضوع را برای مراحل ارزیابی خود یا همتایان درک می‌کند."
+"Mafunzo kwa Wanafunzi hutumika kuwasaidia wanafunzi kufanya mazoezi ya "
+"kupima uwasilishaji wa mfano wa wenzako ili kuwafundisha kuhusu rubric na "
+"kuhakikisha wanafunzi wanaelewa rubric kwa hatua za Tathmini ya Binafsi au "
+"Wenzako."
 
 #: templates/legacy/edit/oa_edit_student_training.html:17
 msgid ""
@@ -780,22 +780,22 @@ msgid ""
 " to advance and are provided feedback when their score doesn't match the "
 "sample response."
 msgstr ""
-"پیکربندی: برای اینکه این مرحله به‌طور کامل پیکربندی شود، باید یک یا چند پاسخ"
-" نمونه نمره‌دار ارائه دهید. سپس فراگیران برای پیشرفت باید این امتیاز مربی را"
-" مطابقت دهند و زمانی که نمرۀ آن‌ها با پاسخ نمونه مطابقت نداشته باشد بازخورد "
-"دریافت می‌کنند."
+"Usanidi: Ili hatua hii ikamilike, lazima utoe jibu la sampuli lililopimwa "
+"moja au zaidi. Kisha wanafunzi lazima wafanye mkilinganyo wa alama hii ya "
+"mkufunzi ili kusonga mbele, na wanapewa maoni wakati alama yao hayalingani "
+"na jibu la sampuli."
 
 #: templates/legacy/edit/oa_edit_student_training.html:22
 msgid "View / Add Sample Responses"
-msgstr "مشاهده/افزودن نمونۀ پاسخ‌ها"
+msgstr "Angalia / Ongeza Majibu ya Sampuli"
 
 #: templates/legacy/edit/oa_edit_student_training.html:32
 msgid "Add Sample Response"
-msgstr "افزودن نمونۀ پاسخ"
+msgstr "Ongeza Jibu la Sampuli"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:4
 msgid "Clone Rubric"
-msgstr "شبیه‌سازی سرفصل"
+msgstr "Nakili Rubric"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:7
 msgid ""
@@ -804,52 +804,53 @@ msgid ""
 "after cloning will only affect the rubric being modified, and will not "
 "modify any rubric it was cloned from."
 msgstr ""
-"برای شبیه‌سازی یک سرفصل از پیش‌نویس موجود یا منتشرنشده، می‌توانید با شناسۀ "
-"Block جستجو کنید. توجه کنید که شبیه‌سازی یک طرفه است، یعنی تغییراتی که پس از"
-" شبیه‌سازی ایجاد می‌شود، فقط بر روی سرفصلی که در حال تغییر است تأثیر "
-"می‌گذارد و سرفصلی را که از آن شبیه‌سازی شده‌است، تغییر نخواهد داد."
+"Ili kunakili rubric kutoka rasibu iliyochapishwa au isiyochapishwa, unaweza "
+"kutafuta kwa kutumia Kitambulisho cha Block. Kumbuka kwamba kunakili ni "
+"mfululizo wa kuelekea mmoja, ikimaanisha mabadiliko yanayofanywa baada ya "
+"kunakili yataathiri tu rubric inayorekebishwa, na hayataathiri rubric yoyote"
+" iliyokopiwa."
 
 #: templates/legacy/edit/oa_rubric_reuse.html:9
 msgid "Block ID For this ORA:"
-msgstr "شناسۀ بلاک برای این ORA:"
+msgstr "Kitambulisho cha Block kwa ORA hiki:"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:19
 msgid "Block ID"
-msgstr "شناسۀ بلاک"
+msgstr "Kitambulisho cha Block"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:21
 msgid "No other Open Response Assessments found in course"
-msgstr "هیچ ارزیابی پاسخ باز دیگری در دوره یافت نشد"
+msgstr "Hakuna Tathmini nyingine za Majibu ya Wazi zilizopatikana katika kozi"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:31
 msgid "Clone"
-msgstr "شبیه‌سازی"
+msgstr "Nakili"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:37
 msgid "Rubric Successfully Cloned from Block ID: "
-msgstr "سرفصل با موفقیت از Block ID شبیه‌سازی شد: "
+msgstr "Rubric imenakiliwa kwa mafanikio kutoka Kitambulisho cha Block: "
 
 #: templates/legacy/edit/oa_training_example.html:7
 msgid "Scored Response"
-msgstr "پاسخ نمره‌دار"
+msgstr "Jibu Limepimwa"
 
 #: templates/legacy/edit/oa_training_example.html:16
 msgid "Response Score"
-msgstr "نمرۀ پاسخ"
+msgstr "Alama ya Jibu"
 
 #: templates/legacy/edit/oa_training_example.html:27
 msgid "Response"
-msgstr "پاسخ"
+msgstr "Jibu"
 
 #: templates/legacy/edit/oa_training_example_criterion.html:10
 msgid "Not Selected"
-msgstr "انتخاب‌نشده"
+msgstr "Haichaguliwi"
 
 #: templates/legacy/edit/oa_training_example_criterion.html:15
 #: templates/legacy/oa_rubric.html:43
 #: templates/legacy/student_training/student_training.html:128
 msgid "points"
-msgstr "امتیازات"
+msgstr "alama"
 
 #: templates/legacy/grade/oa_assessment_feedback.html:8
 #, python-format
@@ -859,7 +860,7 @@ msgid ""
 "              "
 msgstr ""
 "\n"
-"%(start_tag)s %(title)s %(end_tag)s %(start_grade_tag)s - %(grade)s %(end_tag)s\n"
+"                %(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s\n"
 "              "
 
 #: templates/legacy/grade/oa_assessment_title.html:7
@@ -874,17 +875,17 @@ msgid_plural ""
 "                  "
 msgstr[0] ""
 "\n"
-"%(assessment_title)s - نقطه %(points)s\n"
+"                      %(assessment_title)s - %(points)s alama\n"
 "                  "
 msgstr[1] ""
 "\n"
-"%(assessment_title)s - %(points)s امتیاز\n"
+"                      %(assessment_title)s - %(points)s alama\n"
 "                  "
 
 #: templates/legacy/grade/oa_assessment_title.html:24
 #, python-format
 msgid "More information about %(name)s"
-msgstr "اطلاعات بیشتر دربارۀ %(name)s"
+msgstr "Taarifa zaidi kuhusu %(name)s"
 
 #: templates/legacy/grade/oa_grade_cancelled.html:14
 #: templates/legacy/grade/oa_grade_complete.html:15
@@ -893,7 +894,7 @@ msgstr "اطلاعات بیشتر دربارۀ %(name)s"
 #: templates/legacy/grade/oa_grade_not_started.html:14
 #: templates/legacy/grade/oa_grade_waiting.html:14
 msgid "Your Grade"
-msgstr "نمرۀ شما"
+msgstr "Alama Yako"
 
 #: templates/legacy/grade/oa_grade_cancelled.html:19
 #, python-format
@@ -903,12 +904,12 @@ msgid ""
 "                                    "
 msgstr ""
 "\n"
-"%(points_earned)s از %(points_possible)s\n"
+"                                        %(points_earned)s kati ya %(points_possible)s\n"
 "                                    "
 
 #: templates/legacy/grade/oa_grade_cancelled.html:38
 msgid "Your submission has been cancelled."
-msgstr "ارسال شما لغو شد."
+msgstr "Uwasilishaji wako umeghairiwa."
 
 #: templates/legacy/grade/oa_grade_complete.html:19
 #, python-format
@@ -918,21 +919,21 @@ msgid ""
 "                                        "
 msgstr ""
 "\n"
-"%(points_earned)s از %(points_possible)s\n"
+"                                            %(points_earned)s kati ya %(points_possible)s\n"
 "                                        "
 
 #: templates/legacy/grade/oa_grade_complete.html:38
 #: templates/legacy/response/oa_response.html:29
 msgid "Your Response"
-msgstr "پاسخ شما"
+msgstr "Jibu Lako"
 
 #: templates/legacy/grade/oa_grade_complete.html:41
 msgid "Your Upload"
-msgstr "بارگذاری شما"
+msgstr "Uwasilishaji Wako"
 
 #: templates/legacy/grade/oa_grade_complete.html:46
 msgid "Assessments of Your Response"
-msgstr "ارزیابی‌های پاسخ شما"
+msgstr "Tathmini za Jibu Lako"
 
 #: templates/legacy/grade/oa_grade_complete.html:50
 #: templates/legacy/grade/oa_grade_complete.html:132
@@ -954,105 +955,106 @@ msgstr "ارزیابی‌های پاسخ شما"
 #: templates/legacy/self/oa_self_closed.html:30
 #: templates/legacy/student_training/student_training_closed.html:27
 msgid "Status"
-msgstr "وضعیت"
+msgstr "Hali"
 
 #: templates/legacy/grade/oa_grade_complete.html:65
 msgid "Overall Grade"
-msgstr "نمرۀ کلی"
+msgstr "Alama ya Jumla"
 
 #: templates/legacy/grade/oa_grade_complete.html:70
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:28
 msgid "Points"
-msgstr "امتیازات"
+msgstr "Alama"
 
 #: templates/legacy/grade/oa_grade_complete.html:96
 msgid "Additional comments on your response"
-msgstr "نظرات بیشتر دربارۀ پاسخ شما"
+msgstr "Maoni ya ziada juu ya jibu lako"
 
 #: templates/legacy/grade/oa_grade_complete.html:117
 msgid "Provide feedback on peer assessments"
-msgstr "ارائه بازخورد دربارۀ ارزیابی همتایان"
+msgstr "Toa maoni juu ya tathmini za wenzako"
 
 #: templates/legacy/grade/oa_grade_complete.html:126
 msgid "Submitting Feedback"
-msgstr "ثبت بازخورد"
+msgstr "Kutuma Maoni"
 
 #: templates/legacy/grade/oa_grade_complete.html:134
 msgid ""
 "Your feedback has been submitted. Course staff will be able to see this "
 "feedback when they review course records."
 msgstr ""
-"بازخورد شما ارسال شد. کارکنان دوره، زمانی که سوابق دوره را بررسی می‌کنند، "
-"می‌توانند این بازخورد را ببینند."
+"Maoni yako yamewasilishwa. Wafanyakazi wa kozi wataweza kuona maoni haya "
+"wanapokagua kumbukumbu za kozi."
 
 #: templates/legacy/grade/oa_grade_complete.html:140
 msgid ""
 "Course staff will be able to see any feedback that you provide here when "
 "they review course records."
 msgstr ""
-"کارکنان دوره می‌توانند هر بازخوردی را که در اینجا ارائه می‌دهید، هنگام بررسی"
-" سوابق دوره مشاهده کنند."
+"Wafanyakazi wa kozi wataweza kuona maoni yoyote unayotoa hapa wanapokagua "
+"kumbukumbu za kozi."
 
 #: templates/legacy/grade/oa_grade_complete.html:146
 msgid ""
 "Select the statements below that best reflect your experience with peer "
 "assessments."
 msgstr ""
-"عبارات زیر را انتخاب کنید که بهترین منعکس‌کننده تجربۀ شما از ارزیابی همتایان"
-" باشد."
+"Chagua kauli zilizo hapa chini ambazo zinaakisi uzoefu wako vizuri kuhusu "
+"tathmini za wenzako."
 
 #: templates/legacy/grade/oa_grade_complete.html:155
 msgid "These assessments were useful."
-msgstr "این ارزیابی‌ها مفید بود."
+msgstr "Tathmini hizi zilikuwa na manufaa."
 
 #: templates/legacy/grade/oa_grade_complete.html:164
 msgid "These assessments were not useful."
-msgstr "این ارزیابی‌ها مفید نبودند."
+msgstr "Tathmini hizi hazikuwa na manufaa."
 
 #: templates/legacy/grade/oa_grade_complete.html:173
 msgid "I disagree with one or more of the peer assessments of my response."
-msgstr "من با یک یا چند مورد از ارزیابی‌های همتا از پاسخ خود مخالفم."
+msgstr ""
+"Sikubaliani na moja au zaidi ya tathmini za wenzangu kuhusu jibu langu."
 
 #: templates/legacy/grade/oa_grade_complete.html:182
 msgid "Some comments I received were inappropriate."
-msgstr "برخی از نظراتی که دریافت کردم امناسب نبود."
+msgstr "Baadhi ya maoni niliyopokea hayakuwa ya kufaa."
 
 #: templates/legacy/grade/oa_grade_complete.html:187
 msgid ""
 "Provide feedback on the grade or comments that you received from your peers."
-msgstr "ارائۀ بازخورد دربارۀ نمره یا نظراتی که از همسالان خود دریافت کرده‌اید"
+msgstr "Toa maoni juu ya alama au maoni uliyopokea kutoka kwa wenzako."
 
 #: templates/legacy/grade/oa_grade_complete.html:190
 msgid "I feel the feedback I received was..."
-msgstr "احساس می‌کنم بازخوردی که دریافت کردم ..."
+msgstr "Nahisi maoni niliyopokea yalikuwa..."
 
 #: templates/legacy/grade/oa_grade_complete.html:200
 msgid "We could not submit your feedback"
-msgstr "ما نتوانستیم بازخورد شما را ارسال کنیم"
+msgstr "Hatukuweza kutuma maoni yako."
 
 #: templates/legacy/grade/oa_grade_complete.html:206
 msgid "Submit feedback on peer assessments"
-msgstr "ارائه بازخورد دربارۀ ارزیابی همتایان"
+msgstr "Tuma maoni juu ya tathmini za wenzako."
 
 #: templates/legacy/grade/oa_grade_incomplete.html:16
 msgid "Not Completed"
-msgstr "ناکامل"
+msgstr "Haikamilika"
 
 #: templates/legacy/grade/oa_grade_incomplete.html:33
 msgid "You have not completed all the steps of this problem."
-msgstr "شما همۀ مراحل این مشکل را کامل نکرده‌اید."
+msgstr "Hujakamilisha hatua zote za tatizo hili."
 
 #: templates/legacy/grade/oa_grade_not_started.html:16
 msgid "Not Started"
-msgstr "شروع نشده‌است"
+msgstr "Haijaanza"
 
 #: templates/legacy/grade/oa_grade_not_started.html:27
 msgid "You have not started this problem yet."
-msgstr "شما هنوز این مشکل را آغاز نکرده‌اید."
+msgstr "Hujawahi kuanza tatizo hili bado."
 
 #: templates/legacy/grade/oa_grade_waiting.html:16
 msgid "Waiting for Assessments"
-msgstr "در انتظار ارزیابی‌ها"
+msgstr "Inasubiri tathmini."
 
 #: templates/legacy/grade/oa_grade_waiting.html:33
 msgid ""
@@ -1061,60 +1063,60 @@ msgid ""
 "complete, you will see feedback from everyone who assessed your response, "
 "and you will receive your final grade."
 msgstr ""
-"شما مراحل خود را در تکلیف طی کردید، اما هنوز باید برخی ارزیابی‌ها دربارۀ "
-"پاسخ شما انجام شود. هنگامی که ارزیابی پاسخ شما کامل شد، بازخوردی را از همۀ "
-"کسانی که پاسخ شما را ارزیابی کردند مشاهده و نمرۀ نهایی خود را دریافت خواهید "
-"کرد."
+"Umefanya hatua zako katika kazi, lakini bado kuna tathmini zinazohitajika "
+"kufanywa juu ya jibu lako. Wakati tathmini za jibu lako zimekamilika, utaona"
+" maoni kutoka kwa kila mtu aliyepewa tathmini ya jibu lako, na utapokea "
+"alama yako ya mwisho."
 
 #: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:15
 #: templates/legacy/staff_area/oa_staff_area.html:16
 #: templates/legacy/staff_area/oa_staff_area.html:18
 #: templates/legacy/staff_area/oa_staff_area.html:153
 msgid "Grade Available Responses"
-msgstr "پاسخ‌های موجود نمره"
+msgstr "Pima Majibu Yanayopatikana."
 
 #: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:26
 msgid ""
 "Grade Available Responses is unavailable. This item is not configured for "
 "Staff Assessment."
 msgstr ""
-"درجه پاسخ‌های موجود در دسترس نیست. این مورد برای ارزیابی کارکنان پیکربندی "
-"نشده‌است."
+"Pimaji Majibu Yanayopatikana hayapatikani. Kitu hiki hakijasanidiwa kwa "
+"Tathmini ya Wafanyakazi."
 
 #: templates/legacy/instructor_dashboard/oa_listing.html:6
 msgid "Please wait"
-msgstr "لطفاً صبر کنید"
+msgstr "Tafadhali subiri."
 
 #: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:15
 msgid "Waiting Step Details"
-msgstr "جزئیات مرحلۀ انتظار"
+msgstr "Maelezo ya Hatua Zinazosubiri."
 
 #: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:24
 msgid ""
 "Waiting Step details view is unavailable. This item is not configured for "
 "peer assessments."
 msgstr ""
-"نمای جزئیات مرحلۀ انتظار در دسترس نیست. این مورد برای ارزیابی همتایان "
-"پیکربندی نشده‌است."
+"Muonekano wa maelezo ya hatua inayosubiri haupatikani. Kitu hiki "
+"hakijasanidiwa kwa tathmini za wenzako."
 
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:20
 #, python-format
 msgid "%(num_points)s points"
-msgstr "%(num_points)s امتیاز"
+msgstr "%(num_points)s alama"
 
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:24
 #: templates/legacy/peer/oa_peer_assessment.html:84
 #: templates/legacy/peer/oa_peer_turbo_mode.html:53
 msgid "Your peer's response to the prompt above"
-msgstr "پاسخ همتای شما به درخواست بالا"
+msgstr "Jibu la mwenzako kwa mwaliko uliomo juu."
 
 #: templates/legacy/leaderboard/oa_leaderboard_waiting.html:19
 msgid ""
 "After you complete all the steps of this assignment, you can see the top-"
 "scoring responses from your peers."
 msgstr ""
-"پس از تکمیل همۀ مراحل این تکلیف، می‌توانید پاسخ‌های امتیازدهی بالا را از "
-"همتایان خود مشاهده کنید."
+"Baada ya kumaliza hatua zote za kazi hii, utaona majibu yenye alama za juu "
+"kutoka kwa wenzako."
 
 #: templates/legacy/message/oa_message_cancelled.html:8
 msgid ""
@@ -1122,64 +1124,63 @@ msgid ""
 " zero unless course staff resets your assessment to allow the team to "
 "resubmit a response."
 msgstr ""
-"ارسال تیم شما لغو شده‌است. تیم شما نمرۀ صفر دریافت خواهد کرد مگر اینکه "
-"کارکنان دوره، ارزیابی شما را مجدداً تنظیم کنند تا به تیم اجازه ارسال دوبارۀ "
-"پاسخ داده شود."
+"Uwasilishaji wa timu yako umekataliwa. Timu yako itapokea alama ya sifuri "
+"isipokuwa wafanyakazi wa kozi watapanga upya tathmini yako ili kuwaruhusu "
+"timu kuwasilisha tena jibu."
 
 #: templates/legacy/message/oa_message_cancelled.html:10
 msgid ""
 "Your submission has been cancelled. You will receive a grade of zero unless "
 "course staff resets your assessment to allow you to resubmit a response."
 msgstr ""
-"ارسال شما لغو شده است. شما نمرۀ صفر دریافت خواهید کرد مگر اینکه کارکنان "
-"دوره، ارزیابی شما را مجدداً تنظیم کنند تا به شما اجازۀ ارسال دوبارۀ پاسخ "
-"داده شود."
+"Uwasilishaji wako umekataliwa. Utapokea alama ya sifuri isipokuwa "
+"wafanyakazi wa kozi wapange upya tathmini yako ili kuruhusu wewe kuwasilisha"
+" tena jibu."
 
 #: templates/legacy/message/oa_message_closed.html:8
 msgid ""
 "This task is not yet available. Check back to complete the assignment once "
 "this section has opened."
 msgstr ""
-"این کار هنوز در دسترس نیست. پس از بازشدن این بخش، دوباره بررسی کنید تا تکلیف"
-" را تکمیل کنید."
+"Kazi hii haijalipatikana bado. Angalia tena ili kumaliza kazi mara sehemu "
+"hii inapofunguliwa."
 
 #: templates/legacy/message/oa_message_closed.html:10
 msgid ""
 "This assignment has closed. One or more deadlines for this assignment have "
 "passed. You will receive an incomplete grade for this assignment."
 msgstr ""
-"این تکلیف بسته است. یک یا چند مهلت این تکلیف سپری شده است. برای این تکلیف، "
-"نمرۀ ناقص دریافت خواهید کرد."
+"Kazi hii imefunga. Muda wa mwisho wa kazi hii (au baadhi yao) umepita. "
+"Utapokea alama ya kutokamilika katika kazi hii."
 
 #: templates/legacy/message/oa_message_complete.html:8
 msgid ""
 "You have completed this assignment. Your final grade will be available when "
 "the assessments of your response are complete."
 msgstr ""
-"شما این تکلیف را انجام داده‌اید. نمرۀ نهایی شما زمانی در دسترس خواهد بود که "
-"ارزیابی پاسخ شما کامل شود."
+"Umefanya kazi hii. Alama yako ya mwisho itapatikana wakati tathmini za jibu "
+"lako zimekamilika."
 
 #: templates/legacy/message/oa_message_complete.html:10
 msgid ""
 "You have completed this assignment. Review your grade and your assessment "
 "details."
-msgstr ""
-"شما این تکلیف را انجام داده‌اید. نمره و جزئیات ارزیابی خود را مرور کنید."
+msgstr "Umefanya kazi hii. Angalia alama yako na maelezo ya tathmini yako."
 
 #: templates/legacy/message/oa_message_incomplete.html:9
 msgid ""
 "This assignment is in progress. Learner training will close soon. Complete "
 "the learner training step to move on."
 msgstr ""
-"این تکلیف درحال انجام است. آموزش فراگیران به‌زودی بسته می‌شود. برای ادامه، "
-"مرحلۀ آموزش فراگیرنده را کامل کنید."
+"Kazi hii inaendelea. Mafunzo kwa wanafunzi yatakuja kufungwa hivi karibuni. "
+"Kamalisha hatua ya mafunzo kwa wanafunzi ili uendelee."
 
 #: templates/legacy/message/oa_message_incomplete.html:11
 msgid ""
 "This assignment is in progress. Complete the learner training step to move "
 "on."
 msgstr ""
-"این تکلیف درحال انجام است. برای ادامه، مرحلۀ آموزش فراگیرنده را کامل کنید."
+"Kazi hii inaendelea. Kamalisha hatua ya mafunzo kwa wanafunzi ili uendelee."
 
 #: templates/legacy/message/oa_message_incomplete.html:15
 #: templates/legacy/message/oa_message_incomplete.html:33
@@ -1187,8 +1188,8 @@ msgid ""
 "This assignment is in progress. Check back later when the assessment period "
 "has started."
 msgstr ""
-"این تکلیف درحال انجام است. بعداً وقتی دوره ارزیابی شروع شد دوباره بررسی "
-"کنید."
+"Kazi hii inaendelea. Angalia tena baadaye wakati kipindi cha tathmini "
+"kimeanza."
 
 #: templates/legacy/message/oa_message_incomplete.html:20
 #, python-format
@@ -1198,7 +1199,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"%(start_strong)s این تکلیف درحال انجام است. مرحلۀ خودارزیابی به‌زودی بسته می‌شود. %(end_strong)s هنوز باید مرحلۀ خودارزیابی %(start_link)s %(end_link)s را تکمیل کنید.\n"
+"                                    %(start_strong)sKazi hii inaendelea. Hatua ya tathmini ya binafsi itafungwa hivi karibuni.%(end_strong)s Bado unahitajika kumaliza hatua ya %(start_link)stathmini ya binafsi%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:24
@@ -1209,7 +1210,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"این تکلیف درحال انجام است. هنوز باید مرحلۀ %(start_link)s خود ارزیابی %(end_link)s را تکمیل کنید.\n"
+"                                    Kazi hii inaendelea. Bado unahitaji kumaliza hatua ya %(start_link)stathmini ya binafsi%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:38
@@ -1220,7 +1221,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"این تکلیف درحال انجام است. %(start_strong)s مرحلۀ ارزیابی همتا به‌زودی بسته می‌شود. %(end_strong)s همۀ پاسخ‌های ارسالی همتا ارزیابی شده‌اند. بعداً دوباره بررسی کنید تا ببینید آیا فراگیران بیشتری پاسخ‌ را ارسال کرده‌اند یا خیر. هنوز باید مرحلۀ %(start_link)s ارزیابی همتا %(end_link)s را تکمیل کنید.\n"
+"                                    Kazi hii inaendelea. %(start_strong)sHatua ya tathmini ya wenzako itafungwa hivi karibuni.%(end_strong)s Majibu yote ya wenzako yaliyowasilishwa yamepimwa. Angalia tena baadaye ili kuona kama wanafunzi zaidi wamewasilisha majibu. Bado unahitaji kumaliza hatua ya %(start_link)speer assessment%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:42
@@ -1231,7 +1232,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"این تکلیف در حال انجام است. همۀ پاسخ‌های ارسالی همتایان ارزیابی شده‌اند. بعداً دوباره بررسی کنید تا ببینید آیا فراگیران بیشتری پاسخ‌ را ارسال کرده‌اند یا خیر. هنوز باید مرحلۀ%(start_link)s ارزیابی همتا %(end_link)s را تکمیل کنید.\n"
+"                                    Kazi hii inaendelea. Majibu yote ya wenzako yaliyowasilishwa yamepimwa. Angalia tena baadaye kuona kama wanafunzi zaidi wamewasilisha majibu. Bado unahitaji kumaliza hatua ya %(start_link)speer assessment%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:46
@@ -1242,7 +1243,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"این تکلیف در حال انجام است. %(start_strong)s مرحلۀ ارزیابی همتا به‌زودی بسته می‌شود. %(end_strong)s شما هنوز باید مرحلۀ ارزیابی همتا %(start_link)s %(end_link)s را تکمیل کنید.\n"
+"                                    Kazi hii inaendelea. %(start_strong)sHatua ya tathmini ya wenzako itafungwa hivi karibuni.%(end_strong)s Bado unahitaji kumaliza hatua ya %(start_link)speer assessment%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:50
@@ -1253,12 +1254,12 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"این تکلیف در حال انجام است. هنوز باید مرحلۀ %(start_link)s ارزیابی همتا %(end_link)s را تکمیل کنید.\n"
+"                                    Kazi hii inaendelea. Bado unahitaji kumaliza hatua ya %(start_link)speer assessment%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_no_team.html:4
 msgid "Team membership is required to view this assignment"
-msgstr "عضویت تیم برای مشاهده این تکلیف الزامی است"
+msgstr "Uwepo katika timu unahitajika kuona kazi hii."
 
 #: templates/legacy/message/oa_message_no_team.html:7
 #, python-format
@@ -1270,9 +1271,9 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"این یک تکلیف تیمی برای مجموعۀ تیمی &quot; %(teamset_name)s &quot; است.\n"
-" شما درحال حاضر در تیمی در مجموعۀ تیمی &quot; %(teamset_name)s &quot; نیستید.\n"
-" برای دسترسی به این تکلیف تیمی باید در یک تیم در مجموعۀ تیمی &quot; %(teamset_name)s &quot; باشید.\n"
+"            Hii ni kazi ya timu kwa seti ya timu \"%(teamset_name)s\".\n"
+"            Hivi sasa haupo katika timu yoyote katika seti ya timu \"%(teamset_name)s\".\n"
+"            Lazima uwe ndani ya timu katika seti ya timu \"%(teamset_name)s\" ili kufikia kazi hii ya timu.\n"
 "            "
 
 #: templates/legacy/message/oa_message_open.html:7
@@ -1283,7 +1284,7 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"ارسال تکالیف به زودی بسته خواهد شد. برای دریافت نمره، ابتدا به درخواست پاسخ دهید، سپس مراحل زیر را در قسمت %(start_tag)s Your Response %(end_tag)s کامل کنید.\n"
+"                    Uwasilishaji wa kazi utafunga hivi karibuni. Ili kupokea alama, kwanza toa jibu kwa mwaliko, kisha kamalisha hatua zilizo chini ya sehemu ya %(start_tag)sYour Response%(end_tag)s.\n"
 "                "
 
 #: templates/legacy/message/oa_message_open.html:11
@@ -1294,16 +1295,16 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"این تکلیف چندین مرحله دارد. در مرحله اول، پاسخی به درخواست ارائه می‌دهید. سایر مراحل در زیر قسمت %(start_tag)s پاسخ شما%(end_tag)s ظاهر می‌شود.\n"
+"                    Kazi hii ina hatua kadhaa. Katika hatua ya kwanza, utatoa jibu kwa mwaliko. Hatua zingine zinaonekana chini ya sehemu ya %(start_tag)sYour Response%(end_tag)s.\n"
 "                "
 
 #: templates/legacy/message/oa_message_unavailable.html:4
 msgid "Instructions Unavailable"
-msgstr "دستورالعمل‌ها در دسترس نیستند"
+msgstr "Maelekezo Hayapatikani"
 
 #: templates/legacy/message/oa_message_unavailable.html:6
 msgid "The instructions for this step could not be loaded."
-msgstr "دستورالعمل‌های این مرحله بارگیری نشدند."
+msgstr "Maelekezo ya hatua hii hayakuweza kupakiwa."
 
 #: templates/legacy/oa_base.html:16 templates/openassessmentblock/base.html:22
 msgid ""
@@ -1311,50 +1312,50 @@ msgid ""
 "response to the prompt. The other steps appear below the Your Response "
 "field."
 msgstr ""
-"این تکلیف چندین مرحله دارد. در مرحلۀ اول، پاسخی به درخواست ارائه می‌دهید. "
-"سایر مراحل در زیر قسمت «پاسخ شما» ظاهر می‌شود."
+"Kazi hii ina hatua kadhaa. Katika hatua ya kwanza, utatoa jibu kwa mwaliko. "
+"Hatua zingine zinaonekana chini ya sehemu ya Your Response."
 
 #: templates/legacy/oa_base.html:37 templates/openassessmentblock/base.html:56
 #: templates/openassessmentblock/base.html:105
 msgid "Loading"
-msgstr "درحال بارگذاری"
+msgstr "Inapakia"
 
 #: templates/legacy/oa_latex_preview.html:6
 msgid "Preview in LaTeX"
-msgstr "پیش‌نمایش در LaTeX"
+msgstr "Angalia Mjaribio kwa LaTeX"
 
 #: templates/legacy/oa_latex_preview.html:9
 msgid "Click to preview your submission in LaTeX."
-msgstr "برای پیش‌نمایش مطالب ارسالی خود در LaTeX کلیک کنید."
+msgstr "Bofya ili kuangalia mjaribio wa uwasilishaji wako kwa LaTeX."
 
 #: templates/legacy/oa_latex_preview.html:14
 msgid "Preview Response"
-msgstr "پیش‌نمایش پاسخ"
+msgstr "Angalia Mjaribio wa Jibu"
 
 #: templates/legacy/oa_rubric.html:53
 msgid "Comments"
-msgstr "نظرات"
+msgstr "Maoni"
 
 #: templates/legacy/oa_submission_answer.html:8
 msgid "The question for this section"
-msgstr "سوال این بخش"
+msgstr "Swali kwa ajili ya sehemu hii."
 
 #: templates/legacy/oa_team_uploaded_files.html:9
 msgid "Files that were uploaded by your teammates:"
-msgstr "پوشه‌هایی که توسط هم‌تیمی های شما بارگذاری شده‌اند:"
+msgstr "Faili zilizopakiwa na wenzako wa timu:"
 
 #: templates/legacy/oa_team_uploaded_files.html:28
 #: templates/legacy/oa_uploaded_file.html:34
 msgid "View the files associated with this submission:"
-msgstr "مشاهدۀ پوشه‌های مرتبط با این ارسال:"
+msgstr "Angalia faili zinazohusiana na uwasilishaji huu:"
 
 #: templates/legacy/oa_team_uploaded_files.html:32
 msgid "Uploaded by"
-msgstr "بارگذاری‌ توسط"
+msgstr "Imepakiwa na"
 
 #: templates/legacy/oa_uploaded_file.html:16
 msgid "Files that were uploaded by you:"
-msgstr "پوشه‌هایی که توسط شما بارگذاری شده‌اند:"
+msgstr "Faili ulizopakia nawe:"
 
 #: templates/legacy/oa_uploaded_file.html:48
 msgid ""
@@ -1362,13 +1363,14 @@ msgid ""
 "been verified, screened, approved, reviewed, or endorsed by the site "
 "administrator. If you access the files, you do so at your own risk.)"
 msgstr ""
-"احتیاط: این پوشه‌ها توسط یک فراگیر از دوره‌ای دیگر بارگذاری شده‌اند و توسط "
-"مدیر وبگاه تایید، غربالگری، تایید، بررسی یا تایید نشده‌اند. اگر به آن‌ها "
-"دسترسی دارید، این کار را با مسئولیت خود انجام می‌دهید.)"
+"Tahadhari: Faili hizi ziliwasilishwa na mwanafunzi mwingine wa kozi na "
+"hazijathibitishwa, kupimwa, kukubaliwa, kukaguliwa, au kuthibitishwa na "
+"msimamizi wa tovuti. Ukifikia faili hizi, unafanya hivyo kwa hatari yako "
+"mwenyewe.)"
 
 #: templates/legacy/peer/oa_peer_assessment.html:36
 msgid "Assess Peers"
-msgstr "ارزیابی همتایان "
+msgstr "Thamini Wenzako"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 00:00 UTC (in
@@ -1406,13 +1408,13 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"درحال انجام ( %(review_number)s از %(num_must_grade)s )\n"
+"                    Inayendelea (%(review_number)s kati ya %(num_must_grade)s)\n"
 "                "
 
 #: templates/legacy/peer/oa_peer_assessment.html:75
 #: templates/legacy/peer/oa_peer_turbo_mode.html:45
 msgid "Read and assess the following response from one of your peers."
-msgstr "پاسخ زیر را از یکی از همتایان خود بخوانید و ارزیابی کنید."
+msgstr "Soma na tathmini jibu linalofuata kutoka kwa mmoja wa wenzako."
 
 #: templates/legacy/peer/oa_peer_assessment.html:87
 #: templates/legacy/peer/oa_peer_turbo_mode.html:56
@@ -1421,7 +1423,7 @@ msgstr "پاسخ زیر را از یکی از همتایان خود بخوانی
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:38
 #: templates/legacy/staff_area/oa_student_info.html:63
 msgid "Associated Files"
-msgstr "پوشه‌های مرتبط"
+msgstr "Faili Zinazohusiana"
 
 #: templates/legacy/peer/oa_peer_assessment.html:101
 #: templates/legacy/peer/oa_peer_turbo_mode.html:70
@@ -1429,14 +1431,14 @@ msgstr "پوشه‌های مرتبط"
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:57
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:50
 msgid "We could not submit your assessment"
-msgstr "ما نتوانستیم ارزیابی شما را ارسال کنیم"
+msgstr "Hatukuweza kutuma tathmini yako."
 
 #: templates/legacy/peer/oa_peer_cancelled.html:19
 #: templates/legacy/response/oa_response_cancelled.html:21
 #: templates/legacy/self/oa_self_cancelled.html:21
 #: templates/legacy/student_training/student_training_cancelled.html:18
 msgid "Cancelled"
-msgstr "لغو شد"
+msgstr "Imeghairiwa"
 
 #: templates/legacy/peer/oa_peer_closed.html:20
 #, python-format
@@ -1446,7 +1448,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"ناقص ( %(num_graded)s از %(num_must_grade)s )\n"
+"            Haikamilika (%(num_graded)s kati ya %(num_must_grade)s)\n"
 "        "
 
 #: templates/legacy/peer/oa_peer_closed.html:35
@@ -1455,13 +1457,13 @@ msgid ""
 "longer complete peer assessments or continue with this assignment, and you "
 "will receive a grade of Incomplete."
 msgstr ""
-"تاریخ سررسید این مرحله به پایان رسیده‌است. این مرحله اکنون بسته است. دیگر "
-"نمی‌توانید ارزیابی‌های همتا را تکمیل کنید یا به این تکلیف ادامه دهید و نمرۀ "
-"ناقص دریافت خواهید کرد."
+"Tarehe ya kukabidhiwa kwa hatua hii imepitwa. Hatua hii sasa imefungwa. "
+"Huwezi tena kumaliza tathmini za wenzako wala kuendelea na kazi hii, na "
+"utapokea alama ya kutokamilika."
 
 #: templates/legacy/peer/oa_peer_complete.html:13
 msgid "Completed"
-msgstr "تکمیل شد"
+msgstr "Imefanyika."
 
 #: templates/legacy/peer/oa_peer_complete.html:31
 #: templates/legacy/peer/oa_peer_turbo_mode.html:41
@@ -1471,17 +1473,17 @@ msgid ""
 "this assignment. You may assess additional peer responses if you want to. "
 "Completing additional assessments will not affect your final grade."
 msgstr ""
-"شما همۀ ارزیابی‌های ضروری برای این تکلیف را با موفقیت انجام دادید. در صورت "
-"تمایل می‌توانید پاسخ‌های دیگر همتایان را ارزیابی کنید. تکمیل ارزیابی‌های "
-"بیشتر بر نمرۀ نهایی شما تأثیری نخواهد داشت."
+"Umefikia mafanikio kumaliza tathmini zote za wenzako zinazohitajika kwa kazi"
+" hii. Unaweza kuthamini majibu ya ziada ya wenzako ikiwa ungependa. Kumaliza"
+" tathmini za ziada hakutabadili alama yako ya mwisho."
 
 #: templates/legacy/peer/oa_peer_complete.html:36
 msgid "We could not retrieve additional submissions for assessment"
-msgstr "ما نتوانستیم موارد ارسالی بیشتری را برای ارزیابی بازیابی کنیم"
+msgstr "Hatukuweza kupata uwasilishaji wa ziada kwa ajili ya tathmini."
 
 #: templates/legacy/peer/oa_peer_complete.html:43
 msgid "Continue Assessing Peers"
-msgstr "به ارزیابی همتایان ادامه دهید"
+msgstr "Endelea Kutathmini Wenzako."
 
 #: templates/legacy/peer/oa_peer_turbo_mode.html:26
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:20
@@ -1492,7 +1494,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"کامل ( %(num_graded)s )\n"
+"        Kamilisha (%(num_graded)s)\n"
 "      "
 
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:38
@@ -1500,15 +1502,15 @@ msgid ""
 "All submitted peer responses have been assessed. Check back later to see if "
 "more learners have submitted responses."
 msgstr ""
-"همۀ پاسخ‌های ارسالی توسط همتایان ارزیابی شده‌است. بعداً دوباره بررسی کنید تا"
-" ببینید آیا فراگیران بیشتری پاسخ‌هایی را ارسال کرده‌اند یا خیر."
+"Majibu yote ya wenzako yaliyowasilishwa yamepimwa. Angalia tena baadaye "
+"kuona kama wanafunzi zaidi wamewasilisha majibu."
 
 #: templates/legacy/peer/oa_peer_unavailable.html:16
 #: templates/legacy/response/oa_response_unavailable.html:17
 #: templates/legacy/self/oa_self_unavailable.html:17
 #: templates/legacy/student_training/student_training_unavailable.html:16
 msgid "Not Available"
-msgstr "در دسترس نیست"
+msgstr "Hayapatikani."
 
 #: templates/legacy/peer/oa_peer_waiting.html:20
 #, python-format
@@ -1518,7 +1520,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"درحال انجام ( %(review_number)s از %(num_must_grade)s )\n"
+"          Inaendelea (%(review_number)s ya %(num_must_grade)s)\n"
 "        "
 
 #: templates/legacy/peer/oa_peer_waiting.html:37
@@ -1528,14 +1530,13 @@ msgid ""
 "you've completed all the steps for this problem and your peers have assessed"
 " your response."
 msgstr ""
-"تمام پاسخ های همتایان موجود ارزیابی شده‌است. بعداً دوباره بررسی کنید تا "
-"ببینید آیا فراگیران بیشتری پاسخ‌هایی را ارسال کرده‌اند یا خیر. بعد از اینکه "
-"تمام مراحل این مشکل را کامل کردید و همتایانتان پاسخ شما را ارزیابی کردند، "
-"نمرۀ خود را دریافت خواهید کرد."
+"Majibu yote ya wenzao yanayopatikana yamekaguliwa. Angalia tena baadaye "
+"kuona kama wanafunzi wengine wamewasilisha majibu. Utapokea alama zako baada"
+" ya kumaliza hatua zote za tatizo hili na wenzao wamekagudia jibu lako."
 
 #: templates/legacy/response/oa_response.html:27
 msgid "Your Team's Response"
-msgstr "پاسخ تیم شما"
+msgstr "Jibu la Timu Yako"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 (in 5 days and
@@ -1568,11 +1569,11 @@ msgstr ""
 #: templates/legacy/response/oa_response.html:54
 #: templates/legacy/self/oa_self_assessment.html:56
 msgid "In Progress"
-msgstr "درحال پیشرفت"
+msgstr "Inaendelea"
 
 #: templates/legacy/response/oa_response.html:66
 msgid "Enter your team's response to the prompt."
-msgstr "پاسخ تیم خود به درخواست را وارد کنید."
+msgstr "Andika jibu la timu yako kwa ombi."
 
 #: templates/legacy/response/oa_response.html:68
 msgid ""
@@ -1581,7 +1582,7 @@ msgid ""
 "                      "
 msgstr ""
 "\n"
-"کار شما به‌طور خودکار ذخیره می‌شود و می‌توانید در هرزمانی پیش از موعد مقرر، برای تکمیل پاسخ تیم خود بازگردید\n"
+"                        Kazi yako itaweka hifadhi kiotomatiki na unaweza kurudi kukamilisha jibu la timu yako wakati wowote kabla ya tarehe ya mwisho\n"
 "                      "
 
 #: templates/legacy/response/oa_response.html:81
@@ -1591,69 +1592,70 @@ msgid ""
 "                      "
 msgstr ""
 "\n"
-"کار شما به‌طور خودکار ذخیره می‌شود و می‌توانید در هرزمان برای تکمیل پاسخ تیم خود بازگردید.\n"
+"                        Kazi yako itaweka hifadhi kiotomatiki na unaweza kurudi kukamilisha jibu la timu yako wakati wowote.\n"
 "                      "
 
 #: templates/legacy/response/oa_response.html:86
 msgid ""
 "After you submit a response on behalf of your team, it cannot be edited."
-msgstr "پس از ارسال پاسخ از طرف تیم خود، امکان ویرایش آن را ندارید."
+msgstr ""
+"Baada ya kuwasilisha jibu kwa niaba ya timu yako, haliwezi kubadilishwa."
 
 #: templates/legacy/response/oa_response.html:89
 msgid "Enter your response to the prompt."
-msgstr "پاسخ خود را به درخواست وارد کنید."
+msgstr "Ingiza jibu lako kwa ombi."
 
 #: templates/legacy/response/oa_response.html:92
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the subsection due date "
 msgstr ""
-"کار شما به‌طور خودکار ذخیره می‌شود و می‌توانید در هر زمان قبل از موعد مقرر "
-"برای تکمیل پاسخ خود بازگردید "
+"Kazi yako itaweka hifadhi kiotomatiki na unaweza kurudi kukamilisha jibu "
+"lako wakati wowote kabla ya tarehe ya mwisho ya sehemu ndogo "
 
 #: templates/legacy/response/oa_response.html:94
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the course ends "
 msgstr ""
-"کار شما به‌طور خودکار ذخیره می‌شود و می‌توانید در هر زمانی پیش از پایان "
-"دوره، برای تکمیل پاسخ خود بازگردید "
+"Kazi yako itaweka hifadhi kiotomatiki na unaweza kurudi kukamilisha jibu "
+"lako wakati wowote kabla ya kumalizika kwa kozi "
 
 #: templates/legacy/response/oa_response.html:96
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the due date "
 msgstr ""
-"کار شما به‌طور خودکار ذخیره می‌شود و می‌توانید در هر زمانی قبل از موعد مقرر،"
-" برای تکمیل پاسخ خود بازگردید "
+"Kazi yako itaweka hifadhi kiotomatiki na unaweza kurudi kukamilisha jibu "
+"lako wakati wowote kabla ya tarehe ya mwisho "
 
 #: templates/legacy/response/oa_response.html:108
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time."
 msgstr ""
-"کار شما به‌طور خودکار ذخیره می‌شود و می‌توانید در هر زمان برای تکمیل پاسخ "
-"خود بازگردید."
+"Kazi yako itaweka hifadhi kiotomatiki na unaweza kurudi kukamilisha jibu "
+"lako wakati wowote."
 
 #: templates/legacy/response/oa_response.html:110
 msgid "After you submit your response, you cannot edit it"
-msgstr "پس از ارسال پاسخ، امکان ویرایش آن را ندارید"
+msgstr "Baada ya kuwasilisha jibu lako, haliwezi kuhaririwa."
 
 #: templates/legacy/response/oa_response.html:120
 msgid "What will this assignment be graded on?"
-msgstr "این تکلیف بر چه اساسی نمره می‌گیرد؟"
+msgstr "Kazi hii litapimwa juu ya nini?"
 
 #: templates/legacy/response/oa_response.html:134
 msgid "The prompt for this section"
-msgstr "درخواست این بخش"
+msgstr "Ombi la sehemu hii"
 
 #: templates/legacy/response/oa_response.html:148
 msgid "You are on team "
-msgstr "شما در تیم هستید "
+msgstr "Upo kwenye timu "
 
 #: templates/legacy/response/oa_response.html:150
 msgid "Team Members: "
-msgstr "اعضای تیم: "
+msgstr "Wajumbe wa Timu: "
 
 #: templates/legacy/response/oa_response.html:155
 #, python-format
@@ -1665,28 +1667,28 @@ msgid ""
 "                                          "
 msgstr ""
 "\n"
-"%(team_members_with_external_submissions)s\n"
-" قبلاً پاسخی به این تکلیف با تیم دیگری ارسال کرده است،\n"
-" و بخشی از نمره ارسال یا تکلیف تیم شما نخواهد بود.\n"
+"                                              %(team_members_with_external_submissions)s\n"
+"                                              tayari wamewasilisha jibu kwa kazi hii na timu nyingine,\n"
+"                                              na hawatakuwa sehemu ya uchapisho wa timu yako au alama ya kazi hii.\n"
 "                                          "
 
 #: templates/legacy/response/oa_response.html:171
 msgid "Team Response "
-msgstr "پاسخ تیم "
+msgstr "Jibu la Timu "
 
 #: templates/legacy/response/oa_response.html:173
 msgid "Your Response "
-msgstr "پاسخ شما "
+msgstr "Jibu Lako "
 
 #: templates/legacy/response/oa_response.html:177
 #: templates/legacy/response/oa_response.html:247
 msgid "(Required)"
-msgstr "(ضروری)"
+msgstr "(Wahitajika)"
 
 #: templates/legacy/response/oa_response.html:179
 #: templates/legacy/response/oa_response.html:249
 msgid "(Optional)"
-msgstr "(اختیاری)"
+msgstr "(Chaguo)"
 
 #: templates/legacy/response/oa_response.html:183
 msgid ""
@@ -1699,16 +1701,15 @@ msgid ""
 "                                          "
 msgstr ""
 "\n"
-"تیم ها باید یک عضو تیم را برای ارسال پاسخ از طرف تیم تعیین کنند\n"
-" کل تیم همه اعضای تیم می توانند از این فضا برای کار بر روی پیش نویس پاسخ ها استفاده کنند،\n"
-" اما شما نمی توانید پیش نویس های هم تیمی های خود را در این فضا ببینید، بنابراین\n"
-" لطفا با آنها هماهنگ کنید تا در مورد پاسخ نهایی تیم تعیین شده تصمیم گیری کنید\n"
-" عضو باید ارسال کند\n"
+"                                              Timu zinapaswa kuamua mwanachama mmoja kuwasilisha jibu kwa niaba ya\n"
+"                                              timu yote. Wajumbe wote wa timu wanaweza kutumia eneo hili kufanya rasimu ya majibu,\n"
+"                                              lakini hauwezi kuona rasimu ya majibu ya wenzako ambayo yanawandaliwa hapa, hivyo\n"
+"                                              tafadhali shiriki nao ili kuamua jibu la mwisho ambalo mwanachama aliyechaguliwa atawasilisha.\n"
 "                                          "
 
 #: templates/legacy/response/oa_response.html:197
 msgid "Enter your response to the prompt above."
-msgstr "پاسخ خود را به درخواست بالا وارد کنید."
+msgstr "Ingiza jibu lako kwa ombi lililoko hapo juu."
 
 #: templates/legacy/response/oa_response.html:211
 #, python-format
@@ -1722,24 +1723,23 @@ msgid ""
 "                                  "
 msgstr ""
 "\n"
-"شما در حال حاضر در تیم %(team_name)s هستید. از آنجایی که در تیم %(previous_team_name)s بودید\n"
-" وقتی آن‌ها پاسخی برای این تکلیف ارسال کردند، تیم %(previous_team_name)s را مشاهده می‌کنید\n"
-" پاسخ دهید و برای این تکلیف نمرۀ مشابهی با هم‌تیمی‌های سابق خود دریافت خواهید کرد.\n"
-" شما بخشی از ارسالی تیم %(team_name)s برای این تکلیف نخواهید بود و نخواهید بود\n"
-" برای ارسال آنها نمره دریافت می‌کنند.\n"
+"                                      Hivi sasa uko kwenye Timu %(team_name)s. Kwa kuwa ulikuwa kwenye Timu %(previous_team_name)s\n"
+"                                      wakati walipowasilisha jibu kwa kazi hii, unaona jibu la Timu %(previous_team_name)s\n"
+"                                      na utapokea alama sawa na wenzako wa zamani.\n"
+"                                      Hautakuwa sehemu ya usajili wa Timu %(team_name)s katika kazi hii na hautapokea alama kwa usajili wao.\n"
 "                                  "
 
 #: templates/legacy/response/oa_response.html:224
 msgid "We could not save your progress"
-msgstr "ما نتوانستیم پیشرفت شما را ذخیره کنیم"
+msgstr "Hatukuweza kuhifadhi maendeleo yako"
 
 #: templates/legacy/response/oa_response.html:232
 msgid "Status of Your Response"
-msgstr "وضعیت پاسخ شما"
+msgstr "Hali ya Jibu Lako"
 
 #: templates/legacy/response/oa_response.html:245
 msgid "File Uploads "
-msgstr "بارگذاری‌ها"
+msgstr "Upakiaji wa Faili "
 
 #: templates/legacy/response/oa_response.html:253
 msgid ""
@@ -1749,66 +1749,68 @@ msgid ""
 "                              "
 msgstr ""
 "\n"
-"پوشه‌ها را بارگذاری کنید و سپس آن‌ها را خودتان یا اعضای تیم‌تان بررسی کنید. اطمینان حاصل کنید که توضیحی دربارۀ آن‌ها ارائه کنید \n"
-" برای کمک به هم‌تیمی های خود در شناسایی آن‌ها.\n"
+"                                  Pakia faili na angalia faili zilizopakiwa wewe na wenzako hapa chini. Hakikisha unaongeza\n"
+"                                  maelezo kwenye faili zako ili kuwasaidia wenzako kuzitambua.\n"
 "                              "
 
 #: templates/legacy/response/oa_response.html:261
 msgid "We could not upload files"
-msgstr "ما نتوانستیم پوشه‌ها را بارگذاری کنیم"
+msgstr "Hatukuweza kupakia faili"
 
 #: templates/legacy/response/oa_response.html:267
 msgid "We could not delete files"
-msgstr "ما نتوانستیم پوشه‌ها را حذف کنیم"
+msgstr "Hatukuweza kufuta faili"
 
 #: templates/legacy/response/oa_response.html:274
 msgid "Select one or more files to upload for this submission."
-msgstr "یک یا چند پوشه را برای بارگذاری برای این ارسال انتخاب کنید."
+msgstr "Chagua faili moja au zaidi kupakia kwa ajili ya usajili huu."
 
 #: templates/legacy/response/oa_response.html:276
 msgid "Select a file to upload for this submission."
-msgstr "پوشه‌ای را برای بارگذاری برای این ارسال انتخاب کنید."
+msgstr "Chagua faili moja kupakia kwa ajili ya usajili huu."
 
 #: templates/legacy/response/oa_response.html:280
 msgid "Supported file types: "
-msgstr "انواع پوشه‌های پشتیبانی‌شده: "
+msgstr "Aina za faili zinazouidhinishwa: "
 
 #: templates/legacy/response/oa_response.html:286
 msgid "Upload files"
-msgstr "بارگذاری پوشه‌ها"
+msgstr "Pakia faili"
 
 #: templates/legacy/response/oa_response.html:288
 msgid "Upload file"
-msgstr "بارگذاری پوشه"
+msgstr "Pakia faili"
 
 #: templates/legacy/response/oa_response.html:305
 msgid "This is a team submission."
-msgstr "این ارسال توسط یک تیم است."
+msgstr "Huu ni usajili wa timu."
 
 #: templates/legacy/response/oa_response.html:307
 msgid ""
 "One team member should submit a response with the team’s shared files and a "
 "text response on behalf of the entire team."
 msgstr ""
-"یکی از اعضای تیم باید یک پاسخ با پوشه‌های مشترک تیم و یک پاسخ متنی از طرف کل"
-" تیم ارسال کند."
+"Mwanachama mmoja wa timu anapaswa kuwasilisha jibu na faili zilizoshirikiwa "
+"za timu pamoja na jibu la maandishi kwa niaba ya timu yote."
 
 #: templates/legacy/response/oa_response.html:309
 msgid ""
 "One team member should submit a response with the team’s shared files on "
 "behalf of the entire team."
 msgstr ""
-"یکی از اعضای تیم باید از طرف کل تیم پاسخی را با پوشه‌های مشترک تیم ارسال "
-"کند."
+"Mwanachama mmoja wa timu anapaswa kuwasilisha jibu na faili zilizoshirikiwa "
+"za timu kwa niaba ya timu yote."
 
 #: templates/legacy/response/oa_response.html:311
 msgid ""
 "One team member should submit a text response on behalf of the entire team."
-msgstr "یک عضو از تیم باید یک پاسخ متنی از طرف کل تیم ارسال کند."
+msgstr ""
+"Mwanachama mmoja wa timu anapaswa kuwasilisha jibu la maandishi kwa niaba ya"
+" timu yote."
 
 #: templates/legacy/response/oa_response.html:313
 msgid "One team member should submit on behalf of the entire team."
-msgstr "یک عضو از تیم باید به نمایندگی از کل تیم ارسال کند."
+msgstr "Mwanachama mmoja wa timu anapaswa kuwasilisha kwa niaba ya timu yote."
 
 #: templates/legacy/response/oa_response.html:315
 msgid ""
@@ -1817,20 +1819,20 @@ msgid ""
 "                  "
 msgstr ""
 "\n"
-"دربارۀ تکالیف تیمی بیشتر بدانید: ( <a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">لینک</a> )\n"
+"                  Jifunze zaidi kuhusu majukumu ya timu hapa: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">kiungo</a>)\n"
 "                  "
 
 #: templates/legacy/response/oa_response.html:323
 msgid "We could not submit your response"
-msgstr "ما نتوانستیم پاسخ شما را ارسال کنیم"
+msgstr "Hatukuweza kuwasilisha jibu lako"
 
 #: templates/legacy/response/oa_response.html:334
 msgid "Submit your response and move to the next step"
-msgstr "پاسخ خود را ارسال کنید و به مرحلۀ بعدی بروید"
+msgstr "Wasilisha jibu lako na uende hatua inayofuata"
 
 #: templates/legacy/response/oa_response_cancelled.html:34
 msgid "Your submission was cancelled. "
-msgstr "ارسال شما لغو شد. "
+msgstr "Usajili wako ulifutwa. "
 
 #: templates/legacy/response/oa_response_cancelled.html:37
 #, python-format
@@ -1840,7 +1842,7 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"ارسال شما توسط %(removed_by_username)s در %(removed_datetime)s لغو شده‌است\n"
+"                                Usajili wako umefutwa na %(removed_by_username)s tarehe %(removed_datetime)s\n"
 "                            "
 
 #: templates/legacy/response/oa_response_cancelled.html:41
@@ -1851,7 +1853,7 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"ارسال شما در %(removed_datetime)s لغو شد\n"
+"                               Usajili wako ulifutwa tarehe %(removed_datetime)s\n"
 "                            "
 
 #: templates/legacy/response/oa_response_cancelled.html:48
@@ -1862,14 +1864,14 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"نظرات: %(comments)s\n"
+"                            Maoni: %(comments)s\n"
 "                        "
 
 #: templates/legacy/response/oa_response_closed.html:19
 #: templates/legacy/self/oa_self_closed.html:20
 #: templates/legacy/student_training/student_training_closed.html:17
 msgid "Incomplete"
-msgstr "ناقص"
+msgstr "Haikamilika"
 
 #: templates/legacy/response/oa_response_closed.html:32
 msgid ""
@@ -1878,36 +1880,36 @@ msgid ""
 " a grade of Incomplete. If you saved but did not submit a response, the "
 "response appears in the course records."
 msgstr ""
-"تاریخ سررسید این مرحله به پایان رسیده‌است. این مرحله اکنون بسته است. دیگر "
-"نمی‌توانید پاسخی ارسال کنید یا با این مشکل ادامه دهید و نمرۀ ناقص دریافت "
-"خواهید کرد. اگر ذخیره کرده‌اید اما پاسخی ارسال نکرده‌اید، پاسخ در سوابق دوره"
-" ظاهر می‌شود."
+"Tarehe ya mwisho ya hatua hii imepita. Hatua hii sasa imefungwa. Huwezi "
+"kuwasilisha jibu au kuendelea na tatizo hili, na utapokea alama ya "
+"Haikamilika. Ikiwa ulishika lakini hukuiwasilisha jibu, jibu litapoonekana "
+"katika rekodi za kozi."
 
 #: templates/legacy/response/oa_response_graded.html:20
 #: templates/legacy/response/oa_response_submitted.html:20
 #: templates/legacy/self/oa_self_complete.html:18
 #: templates/legacy/student_training/student_training_complete.html:17
 msgid "Complete"
-msgstr "کامل"
+msgstr "Kamilika"
 
 #: templates/legacy/response/oa_response_graded.html:30
 #: templates/legacy/response/oa_response_submitted.html:51
 #: templates/legacy/self/oa_self_assessment.html:67
 msgid "Your response"
-msgstr "پاسخ شما"
+msgstr "Jibu lako"
 
 #: templates/legacy/response/oa_response_graded.html:33
 #: templates/legacy/response/oa_response_submitted.html:54
 msgid "Your Uploaded Files"
-msgstr "پوشه‌های بارگذاری‌شدۀ شما"
+msgstr "Faili Zilizopakiwa Zako"
 
 #: templates/legacy/response/oa_response_submitted.html:32
 msgid ""
 "Your response has been submitted. You will receive your grade after all "
 "steps are complete and your response is fully assessed."
 msgstr ""
-"پاسخ شما ارسال شد. پس از تکمیل تمام مراحل و ارزیابی کامل پاسخ شما، نمره خود "
-"را دریافت خواهید کرد."
+"Jibu lako limewasilishwa. Utapokea alama zako baada ya hatua zote kukamilika"
+" na jibu lako kukaguliwa kikamilifu."
 
 #: templates/legacy/response/oa_response_submitted.html:34
 #, python-format
@@ -1917,7 +1919,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"هنوز باید مراحل ارزیابی همتا %(peer_start_tag)s %(end_tag)s و %(self_start_tag)s %(end_tag)s را تکمیل کنید.\n"
+"                        Bado unahitaji kukamilisha hatua za %(peer_start_tag)s tathmini ya wenzao %(end_tag)s na %(self_start_tag)s tathmini ya mwenyewe %(end_tag)s\n"
 "                    "
 
 #: templates/legacy/response/oa_response_submitted.html:38
@@ -1928,7 +1930,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"هنوز باید مرحلۀ %(start_tag)s ارزیابی همتا %(end_tag)s را تکمیل کنید.\n"
+"                        Bado unahitaji kukamilisha hatua ya %(start_tag)s tathmini ya wenzao %(end_tag)s\n"
 "                    "
 
 #: templates/legacy/response/oa_response_submitted.html:42
@@ -1939,20 +1941,20 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"هنوز باید مرحلۀ %(start_tag)s خودارزیابی %(end_tag)s را تکمیل کنید.\n"
+"                        Bado unahitaji kukamilisha hatua ya %(start_tag)s tathmini ya mwenyewe %(end_tag)s\n"
 "                    "
 
 #: templates/legacy/response/oa_response_submitted.html:63
 msgid "We could not reset your response"
-msgstr "ما نتوانستیم پاسخ شما را بازنشانی کنیم"
+msgstr "Hatukuweza kurekebisha upya jibu lako"
 
 #: templates/legacy/response/oa_response_submitted.html:69
 msgid "Reset response and submit again"
-msgstr "بازنشانی پاسخ و ثبت دوباره"
+msgstr "Rekebisha upya jibu na uwasilishe tena"
 
 #: templates/legacy/response/oa_response_team_already_submitted.html:15
 msgid "Error"
-msgstr "خطا"
+msgstr "Hitilafu"
 
 #: templates/legacy/response/oa_response_team_already_submitted.html:29
 #, python-format
@@ -1965,15 +1967,13 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"شما پس از ارسال پاسخی برای این تکلیف به تیم %(team_name)s پیوستید\n"
-" و برای پاسخ آنها نمره‌ای دریافت نخواهید کرد. شما همچنین قبلاً ارسال نکرده‌اید\n"
-" پاسخ به این تکلیف با تیم دیگری. لطفاً با کارکنان دوره تماس بگیرید تا دربارۀ خود صحبت کنید\n"
-" گزینه‌های این تکلیف\n"
+"                            Umejiunga na Timu %(team_name)s baada ya walipowasilisha jibu kwa kazi hii\n"
+"                            na hautapokea alama kwa jibu lao. Pia haujaawasilisha jibu kwa kazi hii na timu nyingine hapo awali. Tafadhali wasiliana na wafanyakazi wa kozi kujadili chaguo zako kwa kazi hii.\n"
 "                        "
 
 #: templates/legacy/self/oa_self_assessment.html:33
 msgid "Assess Your Response"
-msgstr "ارزیابی پاسخ "
+msgstr "Kagua Jibu Lako"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 (in 5 days and
@@ -2005,7 +2005,7 @@ msgstr ""
 
 #: templates/legacy/self/oa_self_assessment.html:88
 msgid "Submit your assessment"
-msgstr "ثبت ارزیابی "
+msgstr "Wasilisha tathmini yako"
 
 #: templates/legacy/self/oa_self_closed.html:32
 msgid ""
@@ -2013,103 +2013,103 @@ msgid ""
 "longer complete a self assessment or continue with this assignment, and you "
 "will receive a grade of Incomplete."
 msgstr ""
-"تاریخ سررسید این مرحله به پایان رسیده‌است. این مرحله اکنون بسته است. شما "
-"دیگر نمی‌توانید خودارزیابی را تکمیل کنید یا به این تکلیف ادامه دهید و نمرۀ "
-"ناقص دریافت خواهید کرد."
+"Tarehe ya mwisho ya hatua hii imepita. Hatua hii sasa imefungwa. Huwezi "
+"kumaliza tathmini ya mwenyewe au kuendelea na kazi hii, na utapokea alama ya"
+" Haikamilika."
 
 #: templates/legacy/staff/oa_staff_grade.html:13 xblock/grade_mixin.py:369
 msgid "Staff Grade"
-msgstr "نمرۀ کارکنان"
+msgstr "Alama za Wafanyakazi"
 
 #: templates/legacy/staff_area/oa_staff_area.html:8
 #: templates/legacy/staff_area/oa_staff_area.html:35
 msgid "Manage Individual Learners"
-msgstr "مدیریت فراگیران فردی "
+msgstr "Simamia Wanafunzi Binafsi"
 
 #: templates/legacy/staff_area/oa_staff_area.html:10
 msgid "Manage Team Responses"
-msgstr "مدیریت پاسخ‌های تیم"
+msgstr "Simamia Majibu ya Timu"
 
 #: templates/legacy/staff_area/oa_staff_area.html:13
 #: templates/legacy/staff_area/oa_staff_area.html:71
 msgid "View Assignment Statistics"
-msgstr "مشاهدۀ آمار تکالیف"
+msgstr "Angalia Takwimu za Kazi"
 
 #: templates/legacy/staff_area/oa_staff_area.html:22
 msgid "Demo the new Grading Experience"
-msgstr "نمایش تجربۀ نمره‌دهی جدید"
+msgstr "Onyesha Demo ya Uzoefu Mpya wa Upimaji"
 
 #: templates/legacy/staff_area/oa_staff_area.html:26
 msgid "View ORA in Studio"
-msgstr "مشاهدۀ ORA در استودیو "
+msgstr "Angalia ORA katika Studio"
 
 #: templates/legacy/staff_area/oa_staff_area.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:69
 #: templates/legacy/staff_area/oa_staff_area.html:151
 msgid "Close"
-msgstr "بستن"
+msgstr "Funga"
 
 #: templates/legacy/staff_area/oa_staff_area.html:37
 msgid "Manage Teams"
-msgstr "مدیریت تیم‌ها"
+msgstr "Simamia Timu"
 
 #: templates/legacy/staff_area/oa_staff_area.html:50
 msgid "Enter an individual learner's username or email"
-msgstr "نام کاربری یا آدرس رایانامه یک فراگیرنده را وارد کنید"
+msgstr "Weka jina la mtumiaji au barua pepe ya mwanafunzi binafsi"
 
 #: templates/legacy/staff_area/oa_staff_area.html:52
 msgid "Enter a team member's username or edX email"
-msgstr "نام کاربری یا آدرس رایانامه edX یکی از اعضای تیم را وارد کنید"
+msgstr "Weka jina la mtumiaji au barua pepe ya edX ya mwanachama wa timu"
 
 #: templates/legacy/staff_area/oa_staff_area.html:56
 msgid "Submit"
-msgstr "ثبت"
+msgstr "Wasilisha"
 
 #: templates/legacy/staff_area/oa_staff_area.html:78
 msgid "Response total"
-msgstr "کل پاسخ"
+msgstr "Jumla ya majibu"
 
 #: templates/legacy/staff_area/oa_staff_area.html:84
 msgid "Location"
-msgstr "محل"
+msgstr "Eneo"
 
 #: templates/legacy/staff_area/oa_staff_area.html:90
 msgid "Learner Progress"
-msgstr "پیشرفت فراگیرنده"
+msgstr "Maendeleo ya Mwanafunzi"
 
 #: templates/legacy/staff_area/oa_staff_area.html:94
 #: templates/legacy/staff_area/oa_staff_area.html:117
 msgid "Problem Step"
-msgstr "مرحلۀ مشکل"
+msgstr "Hatua ya Tatizo"
 
 #: templates/legacy/staff_area/oa_staff_area.html:95
 msgid "Active Learners in Step"
-msgstr "فراگیران فعال در این مرحله"
+msgstr "Wanafunzi Wanaofanya kazi katika Hatua"
 
 #: templates/legacy/staff_area/oa_staff_area.html:113
 msgid "Dates"
-msgstr "تاریخ"
+msgstr "Tarehe"
 
 #: templates/legacy/staff_area/oa_staff_area.html:118
 msgid "Release Date"
-msgstr "تاریخ انتشار"
+msgstr "Tarehe ya Kutolewa"
 
 #: templates/legacy/staff_area/oa_staff_area.html:131
 #: templates/legacy/staff_area/oa_staff_area.html:137
 msgid "N/A"
-msgstr "ناموجود"
+msgstr "S/H"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners.html:7
 msgid "Staff Assessment"
-msgstr "ارزیابی کارکنان"
+msgstr "Tathmini ya Wafanyakazi"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:14
 msgid "Give this team a grade using the problem's rubric."
-msgstr "با استفاده از سرفصل مساله به این تیم نمره بدهید."
+msgstr "Peana timu hii alama kwa kutumia ratiba ya tatizo."
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:16
 msgid "Give this learner a grade using the problem's rubric."
-msgstr "با استفاده از سرفصل مساله به این فراگیرنده نمره بدهید."
+msgstr "Peana mwanafunzi huyu alama kwa kutumia ratiba ya tatizo."
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:26
 #, python-format
@@ -2119,7 +2119,7 @@ msgid ""
 "                                    "
 msgstr ""
 "\n"
-"پاسخ برای: %(team_name)s با %(team_usernames)s\n"
+"                                        Jibu kwa: %(team_name)s pamoja na %(team_usernames)s\n"
 "                                    "
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:30
@@ -2131,32 +2131,32 @@ msgid ""
 "                                    "
 msgstr ""
 "\n"
-"پاسخ برای: %(student_username)s\n"
+"                                        Jibu kwa: %(student_username)s\n"
 "                                    "
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:34
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:24
 msgid "Learner Response"
-msgstr "پاسخ فراگیرنده"
+msgstr "Jibu la Mwanafunzi"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:39
 msgid "The teams's response to the prompt above"
-msgstr "پاسخ تیم‌ها به درخواست بالا"
+msgstr "Jibu la timu kwa ombi lililoko hapo juu"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:41
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:32
 #: templates/legacy/staff_area/oa_student_info.html:57
 msgid "The learner's response to the prompt above"
-msgstr "پاسخ فراگیر به درخواست بالا"
+msgstr "Jibu la mwanafunzi kwa ombi lililoko hapo juu"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:64
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:57
 msgid "Submit assessment"
-msgstr "ارسال ارزیابی "
+msgstr "Wasilisha tathmini"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:70
 msgid "Submit assessment and continue grading"
-msgstr "ارسال ارزیابی  و ادامۀ نمره‌گذاری"
+msgstr "Wasilisha tathmini na endelea upimaji"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_count.html:6
 #, python-format
@@ -2166,25 +2166,26 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"%(ungraded)s موجود و %(in_progress)s بررسی شد\n"
+"                %(ungraded)s Hazijapimwa na %(in_progress)s Inaendelea\n"
 "            "
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:7
 msgid "Override this learner's current grade using the problem's rubric."
-msgstr "با استفاده از سرفصل مساله، نمرۀ فعلی این فراگیرنده را نادیده بگیرید."
+msgstr ""
+"Bainisha alama za sasa za mwanafunzi huyu kwa kutumia ratiba ya tatizo."
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:9
 msgid "Override this team's current grade using the problem's rubric."
-msgstr "با استفاده از سرفصل مساله، نمرۀ فعلی این تیم را لغو کنید."
+msgstr "Bainisha alama za sasa za timu hii kwa kutumia ratiba ya tatizo."
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:27
 msgid "Team Response"
-msgstr "پاسخ تیم"
+msgstr "Jibu la Timu"
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:34
 #: templates/legacy/staff_area/oa_student_info.html:59
 msgid "The team's response to the prompt above"
-msgstr "پاسخ تیم به درخواست بالا"
+msgstr "Jibu la timu kwa ombi lililoko hapo juu"
 
 #: templates/legacy/staff_area/oa_student_info.html:11
 #, python-format
@@ -2194,7 +2195,7 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"درحال مشاهدۀ فراگیرنده: %(learner)s\n"
+"                    Unaangalia mwanafunzi: %(learner)s\n"
 "                "
 
 #: templates/legacy/staff_area/oa_student_info.html:15
@@ -2205,16 +2206,16 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"تیم مشاهده: %(team)s\n"
+"                    Unaangalia timu: %(team)s\n"
 "                "
 
 #: templates/legacy/staff_area/oa_student_info.html:28
 msgid "Learner's Response"
-msgstr "پاسخ فراگیرنده"
+msgstr "Jibu la Mwanafunzi"
 
 #: templates/legacy/staff_area/oa_student_info.html:30
 msgid "Team's Response"
-msgstr "پاسخ تیم"
+msgstr "Jibu la Timu"
 
 #: templates/legacy/staff_area/oa_student_info.html:39
 #, python-format
@@ -2224,7 +2225,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"ارسال فراگیرنده توسط %(removed_by_username)s در %(removed_datetime)s حذف شد\n"
+"                            Uwasilishaji wa mwanafunzi umeondolewa na %(removed_by_username)s tarehe %(removed_datetime)s\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:43
@@ -2235,7 +2236,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"ارسال فراگیرنده در %(removed_datetime)s حذف شد\n"
+"                            Uwasilishaji wa mwanafunzi umeondolewa tarehe %(removed_datetime)s\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:50
@@ -2246,36 +2247,36 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"نظرات: %(comments)s\n"
+"                        Maoni: %(comments)s\n"
 "                    "
 
 #: templates/legacy/staff_area/oa_student_info.html:71
 msgid "Peer Assessments for This Learner"
-msgstr "ارزیابی همتایان برای این فراگیرنده"
+msgstr "Tathmini za Wenzao kwa Mwanafunzi Huyu"
 
 #: templates/legacy/staff_area/oa_student_info.html:76
 msgid "Peer Assessments Completed by This Learner"
-msgstr "ارزیابی‌های همتا توسط این فرد تکمیل شد"
+msgstr "Tathmini za Wenzao Zilizookolewa na Mwanafunzi Huyu"
 
 #: templates/legacy/staff_area/oa_student_info.html:81
 msgid "Learner's Self Assessment"
-msgstr "خودارزیابی فراگیرنده"
+msgstr "Tathmini ya Mwenyewe ya Mwanafunzi"
 
 #: templates/legacy/staff_area/oa_student_info.html:87
 msgid "Staff Assessment for This Learner"
-msgstr "ارزیابی کارکنان از این فراگیرنده"
+msgstr "Tathmini ya Wafanyakazi kwa Mwanafunzi Huyu"
 
 #: templates/legacy/staff_area/oa_student_info.html:89
 msgid "Staff Assessment for this Team"
-msgstr "ارزیابی کارکنان برای این تیم"
+msgstr "Tathmini ya Wafanyakazi kwa Timu Hii"
 
 #: templates/legacy/staff_area/oa_student_info.html:100
 msgid "Learner's Final Grade"
-msgstr "نمرۀ نهایی فراگیرنده"
+msgstr "Alama ya Mwisho ya Mwanafunzi"
 
 #: templates/legacy/staff_area/oa_student_info.html:102
 msgid "Team's Final Grade"
-msgstr "نمرۀ نهایی تیم"
+msgstr "Alama ya Mwisho ya Timu"
 
 #: templates/legacy/staff_area/oa_student_info.html:112
 #, python-format
@@ -2285,12 +2286,12 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"نمرۀ نهایی: %(points_earned)s از %(points_possible)s\n"
+"                            Alama ya mwisho: %(points_earned)s kati ya %(points_possible)s\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:119
 msgid "Final Grade Details"
-msgstr "جزئیات نمرۀ نهایی"
+msgstr "Maelezo ya Alama ya Mwisho"
 
 #: templates/legacy/staff_area/oa_student_info.html:139
 #, python-format
@@ -2304,20 +2305,20 @@ msgid_plural ""
 "                                    "
 msgstr[0] ""
 "\n"
-"%(assessment_label)s - نقطه %(points)s\n"
+"                                        %(assessment_label)s - %(points)s alama\n"
 "                                    "
 msgstr[1] ""
 "\n"
-"%(assessment_label)s - %(points)s امتیاز\n"
+"                                        %(assessment_label)s - %(points)s alama\n"
 "                                    "
 
 #: templates/legacy/staff_area/oa_student_info.html:154
 msgid "Feedback Recorded"
-msgstr "بازخورد ثبت شد"
+msgstr "Maoni Yamehifadhiwa"
 
 #: templates/legacy/staff_area/oa_student_info.html:165
 msgid "The submission is waiting for assessments."
-msgstr "ارسال در انتظار ارزیابی است."
+msgstr "Uwasilishaji unasubiri tathmini."
 
 #: templates/legacy/staff_area/oa_student_info.html:170
 msgid ""
@@ -2325,9 +2326,9 @@ msgid ""
 "receives a grade of zero unless you delete the learner's state for the "
 "problem to allow them to resubmit a response."
 msgstr ""
-"ارسال فراگیرنده از ارزیابی همتا حذف شده‌است. فراگیرنده، نمرۀ صفر دریافت "
-"می‌کند مگر اینکه وضعیت وی را برای این مساله حذف کنید تا به او اجازه ارسال "
-"مجدد پاسخ داده شود."
+"Uwasilishaji wa mwanafunzi umeondolewa kutoka tathmini ya wenzao. Mwanafunzi"
+" atapokea alama ya sufuri isipokuwa ukifuta hali ya mwanafunzi kwa tatizo "
+"ili kuwaruhusu kuwasilisha tena jibu."
 
 #: templates/legacy/staff_area/oa_student_info.html:172
 msgid ""
@@ -2335,37 +2336,37 @@ msgid ""
 "grade of zero unless you delete the a team member’s state for the problem to"
 " allow the team to resubmit a response."
 msgstr ""
-"ارسالی تیم از نمره‌دهی حذف شده‌است. تیم نمرۀ صفر دریافت می‌کند مگر اینکه "
-"وضعیت یکی از اعضای تیم را برای این مساله حذف کنید تا به تیم اجازه ارسال مجدد"
-" پاسخ را داده شود."
+"Uwasilishaji wa timu umeondolewa kutoka upimaji. Timu itapokea alama ya "
+"sufuri isipokuwa ukifuta hali ya mwanachama wa timu kwa tatizo ili "
+"kuwaruhusu timu kuwasilisha tena jibu."
 
 #: templates/legacy/staff_area/oa_student_info.html:177
 msgid "The problem has not been started."
-msgstr "این مساله شروع نشده‌است."
+msgstr "Tatizo halijaanzishwa."
 
 #: templates/legacy/staff_area/oa_student_info.html:181
 msgid "The problem has not been completed."
-msgstr "مشکل تکمیل نشده‌است."
+msgstr "Tatizo halijakamilika."
 
 #: templates/legacy/staff_area/oa_student_info.html:193
 msgid "Submit Assessment Grade Override"
-msgstr "ثبت لغو نمرۀ ارزیابی"
+msgstr "Wasilisha Mabadiliko ya Tathmini ya Alama"
 
 #: templates/legacy/staff_area/oa_student_info.html:195
 msgid "Submit Team Grade Override"
-msgstr "ثبت لغو نمرۀ تیم"
+msgstr "Wasilisha Mabadiliko ya Alama ya Timu"
 
 #: templates/legacy/staff_area/oa_student_info.html:204
 msgid "Unable to perform grade override"
-msgstr "لغو نمره انجام نشد"
+msgstr "Haiwezekani kufanya mabadiliko ya alama"
 
 #: templates/legacy/staff_area/oa_student_info.html:207
 msgid ""
 "Grades are frozen. Grades are automatically frozen 30 days after the course "
 "end date."
 msgstr ""
-"نمرات منجمد شده‌اند. نمرات به‌طور خودکار 30 روز پس از تاریخ پایان دوره، "
-"منجمد می‌شوند."
+"Alama zimefanywa zama. Alama huwekwa kwa hali ya zama moja kwa moja siku 30 "
+"baada ya tarehe ya kumalizika kwa kozi."
 
 #: templates/legacy/staff_area/oa_student_info.html:212
 msgid ""
@@ -2373,45 +2374,49 @@ msgid ""
 "documentation for how to delete the learner’s state for this problem to "
 "allow them to resubmit."
 msgstr ""
-"این ارسال لغو شده‌است و نمی‌تواند نمره ای دریافت کند. برای دریافت نحوۀ حذف "
-"وضعیت فراگیرنده برای این مساله به مستندات مراجعه کنید تا به آن‌ها اجازۀ "
-"ارسال مجدد داده شود."
+"Uwasilishaji huu umefutwa na hauwezi kupokea alama. Angalia nyaraka kwa "
+"jinsi ya kufuta hali ya mwanafunzi kwa tatizo hili ili kuwaruhusu "
+"kuwasilisha tena."
 
 #: templates/legacy/staff_area/oa_student_info.html:230
 msgid "Remove Submission From Peer Grading"
-msgstr "حذف ارسال از نمره‌دهی همتا"
+msgstr "Ondoa Uwasilishaji Kutoka Katika Tathmini ya Wenzao"
 
 #: templates/legacy/staff_area/oa_student_info.html:232
 msgid "Remove Team Submission from Grading"
-msgstr "حذف ارسال تیم از نمره‌دهی "
+msgstr "Ondoa Uwasilishaji wa Timu Kutoka Katika Upimaji"
 
 #: templates/legacy/staff_area/oa_student_info.html:242
 msgid "Caution: This Action Cannot Be Undone"
-msgstr "احتیاط: این عمل قابل لغو نیست"
+msgstr "Tahadhari: Hatua hii haiwezi kuthanishwa tena"
 
 #: templates/legacy/staff_area/oa_student_info.html:244
 msgid ""
 "Removing a learner's submission cannot be undone and should be done with "
 "caution."
-msgstr "حذف مطالب ارسالی فراگیرنده، قابل لغو نیست و باید با احتیاط انجام شود."
+msgstr ""
+"Kufuta uwasilishaji wa mwanafunzi haiwezi kurudishwa nyuma na inapaswa "
+"kufanywa kwa tahadhari."
 
 #: templates/legacy/staff_area/oa_student_info.html:246
 msgid ""
 "Removing a team's submission cannot be undone and should be done with "
 "caution."
-msgstr "حذف ارسال یک تیم،  قابل لغو نیست و باید با احتیاط انجام شود."
+msgstr ""
+"Kufuta uwasilishaji wa timu haiwezi kurudishwa nyuma na inapaswa kufanywa "
+"kwa tahadhari."
 
 #: templates/legacy/staff_area/oa_student_info.html:252
 msgid "Comments:"
-msgstr "نظرات:"
+msgstr "Maoni:"
 
 #: templates/legacy/staff_area/oa_student_info.html:261
 msgid "Remove submission"
-msgstr "حذف ارسال"
+msgstr "Ondoa uwasilishaji"
 
 #: templates/legacy/staff_area/oa_student_info.html:276
 msgid "A response was not found for this learner."
-msgstr "پاسخی برای این فراگیرنده یافت نشد."
+msgstr "Hakuna jibu lililopatikana kwa mwanafunzi huyu."
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:16
 #, python-format
@@ -2421,28 +2426,28 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"ارزیابی %(assessment_num)s :\n"
+"                            Tathmini %(assessment_num)s:\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:22
 msgid "Assessment Details"
-msgstr "جزئیات ارزیابی"
+msgstr "Maelezo ya Tathmini"
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:26
 msgid "Selected Option"
-msgstr "گزینۀ منتخب"
+msgstr "Chaguo Lililochaguliwa"
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:27
 msgid "Feedback"
-msgstr "بازخورد"
+msgstr "Maoni"
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:29
 msgid "Points Possible"
-msgstr "امتیازات احتمالی"
+msgstr "Alama Zinazowezekana"
 
 #: templates/legacy/student_training/student_training.html:18
 msgid "Learn to Assess Responses"
-msgstr "یادگیری ارزیابی پاسخ‌ها"
+msgstr "Jifunze Kutathmini Majibu"
 
 #: templates/legacy/student_training/student_training.html:27
 #, python-format
@@ -2452,7 +2457,7 @@ msgid ""
 "                  "
 msgstr ""
 "\n"
-"درحال انجام ( %(current_progress_num)s از %(training_available_num)s )\n"
+"                      Inaendelea (%(current_progress_num)s ya %(training_available_num)s)\n"
 "                  "
 
 #. Translators: This string displays a date to the user, then tells them the
@@ -2486,7 +2491,7 @@ msgstr ""
 #: templates/legacy/student_training/student_training.html:58
 #: templates/legacy/student_training/student_training.html:66
 msgid "Learning to Assess Responses"
-msgstr "یادگیری ارزیابی پاسخ‌ها"
+msgstr "Kujifunza Kutathmini Majibu"
 
 #: templates/legacy/student_training/student_training.html:61
 msgid ""
@@ -2496,11 +2501,11 @@ msgid ""
 "instructor selected, you'll move to the next step. If you don't select the "
 "same options, you'll review the response and try again."
 msgstr ""
-"قبل از اینکه شروع به ارزیابی پاسخ‌های همتایان خود کنید، می‌آموزید که چگونه "
-"ارزیابی‌های همتا را با مرور پاسخ‌هایی که مدرسان قبلا ارزیابی کرده‌اند کامل "
-"کنید. اگر همان گزینه‌ها را برای پاسخی که مدرس انتخاب کرده انتخاب کنید، به "
-"مرحلۀ بعد می‌روید. اگر همان گزینه‌ها را انتخاب نکنید، پاسخ را مرور کرده و "
-"دوباره امتحان می‌کنید."
+"Kabla hujaanza kutathmini majibu ya wenzao, utajifunza jinsi ya kukamilisha "
+"tathmini ya wenzao kwa kuchunguza majibu ambayo waanzilishi tayari "
+"wameyayatathmini. Ikiwa utachagua chaguo zile zile kama aliyoteuliwa na "
+"mwalimu, utaendelea kwenye hatua inayofuata. Ikiwa hutachagua chaguo zile "
+"zile, utaangalia tena jibu na ujaribu tena."
 
 #: templates/legacy/student_training/student_training.html:69
 msgid ""
@@ -2508,38 +2513,38 @@ msgid ""
 "Review the response and consider why the instructor may have assessed it "
 "differently. Then, try the assessment again."
 msgstr ""
-"ارزیابی شما با ارزیابی مربی از این پاسخ متفاوت است. پاسخ را مرور کنید و در "
-"نظر بگیرید که چرا مربی ممکن است آن را متفاوت ارزیابی کرده باشد. سپس، دوباره "
-"ارزیابی را امتحان کنید."
+"Tathmini yako inatofautiana na tathmini ya mwalimu juu ya jibu hili. Angalia"
+" jibu na fikiria kwa nini mwalimu alitathmini tofauti. Kisha, jaribu tena "
+"tathmini."
 
 #: templates/legacy/student_training/student_training.html:76
 msgid "The response to the prompt above:"
-msgstr "پاسخ به درخواست بالا:"
+msgstr "Jibu kwa ombi lililoko hapo juu:"
 
 #: templates/legacy/student_training/student_training.html:98
 msgid "Selected Options Agree"
-msgstr "با گزینه‌های منتخب موافقم"
+msgstr "Chaguo Lililochaguliwa Zinaridhiana"
 
 #: templates/legacy/student_training/student_training.html:101
 msgid "The option you selected is the option that the instructor selected."
-msgstr "گزین‌ه‌ای که انتخاب کردید گزینه‌ای است که مدرس انتخاب کرده است."
+msgstr "Chaguo uliyolichagua ndilo kile ambacho mwalimu alichagua."
 
 #: templates/legacy/student_training/student_training.html:105
 msgid "Selected Options Differ"
-msgstr "گزینه‌های منتخب متفاوت هستند"
+msgstr "Chaguo Lililochaguliwa Linatofautiana"
 
 #: templates/legacy/student_training/student_training.html:108
 msgid ""
 "The option you selected is not the option that the instructor selected."
-msgstr "گزینه‌ای که انتخاب کردید گزینه‌ای نیست که مدرس انتخاب کرده است."
+msgstr "Chaguo uliyolichagua si kile ambacho mwalimu alichagua."
 
 #: templates/legacy/student_training/student_training.html:144
 msgid "We could not check your assessment"
-msgstr "ما نتوانستیم ارزیابی شما را بررسی کنیم"
+msgstr "Hatukuweza kukagua tathmini yako"
 
 #: templates/legacy/student_training/student_training.html:151
 msgid "Compare your selections with the instructor's selections"
-msgstr "انتخاب‌های خود را با انتخاب‌های مربی مقایسه کنید"
+msgstr "Lingananisha chaguo zako na zile za mwalimu"
 
 #: templates/legacy/student_training/student_training_closed.html:29
 msgid ""
@@ -2547,85 +2552,85 @@ msgid ""
 "longer continue with this assignment, and you will receive a grade of "
 "Incomplete."
 msgstr ""
-"تاریخ سررسید این مرحله به پایان رسیده‌است. این مرحله اکنون بسته است. دیگر "
-"نمی‌توانید این تکلیف را ادامه دهید و نمرۀ ناتمام دریافت خواهید کرد."
+"Tarehe ya mwisho ya hatua hii imepita. Hatua hii sasa imefungwa. Huwezi "
+"kuendelea na kazi hii, na utapokea alama ya Haikamilika."
 
 #: templates/legacy/student_training/student_training_error.html:18
 msgid "Error Loading Learner Training Examples"
-msgstr "خطا در بارگیری نمونه‌های آموزشی فراگیرنده"
+msgstr "Hitilafu katika Kupakia Mifano ya Mafunzo ya Wanafunzi"
 
 #: templates/legacy/student_training/student_training_error.html:21
 msgid "The Learner Training Step of this assignment could not be loaded."
-msgstr "مرحلۀ آموزش فراگیرندۀ این تکلیف بارگیری نشد."
+msgstr "Hatupuletwi Hatua ya Mafunzo ya Mwanafunzi kwa kazi hii."
 
 #: templates/openassessmentblock/base.html:69
 msgid "Loading Open Response Assessment..."
-msgstr "درحال بارگیری ارزیابی پاسخ باز..."
+msgstr "Kupakia Tathmini ya Majibu Wazi..."
 
 #: xblock/grade_mixin.py:78 xblock/leaderboard_mixin.py:61
 msgid "An unexpected error occurred."
-msgstr "خطایی غیرمنتظره رخ داد."
+msgstr "Hitilafu isiyotegemewa imetokea."
 
 #: xblock/grade_mixin.py:180
 msgid "Peer Assessment"
-msgstr "ارزیابی همکار"
+msgstr "Tathmini ya Wenzao"
 
 #: xblock/grade_mixin.py:182
 msgid "Self Assessment"
-msgstr "خودارزیابی"
+msgstr "Tathmini ya Mwenyewe"
 
 #: xblock/grade_mixin.py:222
 msgid "Assessment feedback could not be saved."
-msgstr "بازخورد ارزیابی ذخیره نشد."
+msgstr "Maoni ya tathmini hayakuweza kuhifadhiwa."
 
 #: xblock/grade_mixin.py:233
 msgid "Feedback saved."
-msgstr "بازخورد ذخیره شد."
+msgstr "Maoni yamehifadhiwa."
 
 #: xblock/grade_mixin.py:370 xblock/grade_mixin.py:535
 msgid "Staff Comments"
-msgstr "نظرات کارکنان"
+msgstr "Maoni ya Wafanyakazi"
 
 #: xblock/grade_mixin.py:383 xblock/grade_mixin.py:542
 #, python-brace-format
 msgid "Peer {peer_index}"
-msgstr "همتا {peer_index}"
+msgstr "Mwenzao {peer_index}"
 
 #: xblock/grade_mixin.py:384
 msgid "Peer Comments"
-msgstr "نظرات همتایان"
+msgstr "Maoni ya Wenzao"
 
 #: xblock/grade_mixin.py:394
 msgid "Self Assessment Grade"
-msgstr "نمرۀ خودارزیابی"
+msgstr "Alama ya Tathmini ya Mwenyewe"
 
 #: xblock/grade_mixin.py:394
 msgid "Your Self Assessment"
-msgstr "خودارزیابی شما"
+msgstr "Tathmini yako ya Mwenyewe"
 
 #: xblock/grade_mixin.py:395 xblock/grade_mixin.py:554
 msgid "Your Comments"
-msgstr "نظرات شما"
+msgstr "Maoni Yako"
 
 #: xblock/grade_mixin.py:429
 msgid "Peer Mean Grade"
-msgstr "میانگین نمرۀ همتا"
+msgstr "Alama ya Kati ya Wenzao"
 
 #: xblock/grade_mixin.py:430
 msgid "Peer Median Grade"
-msgstr "میانگین نمرۀ همتا"
+msgstr "Alama ya Median ya Wenzao"
 
 #: xblock/grade_mixin.py:508
 msgid "Waiting for peer reviews"
-msgstr "در انتظار بررسی همتایان"
+msgstr "Inasubiri tathmini za wenzao"
 
 #: xblock/grade_mixin.py:677
 msgid "The grade for this problem is determined by your Staff Grade."
-msgstr "نمرۀ این مساله با نمرۀ کارکنان شما تعیین می‌شود."
+msgstr "Alama kwa tatizo hili linatolewa na Alama zako za Wafanyakazi."
 
 #: xblock/grade_mixin.py:681
 msgid "The grade for this problem is determined by your Self Assessment."
-msgstr "نمرۀ این مساله توسط خودارزیابی شما تعیین می‌شود."
+msgstr "Alama kwa tatizo hili linatolewa na Tathmini yako ya Mwenyewe."
 
 #: xblock/grade_mixin.py:687
 #, python-brace-format
@@ -2633,149 +2638,159 @@ msgid ""
 "You have successfully completed this problem and received a "
 "{earned_points}/{total_points}."
 msgstr ""
-"شما این مشکل را با موفقیت تکمیل کردید و یک {earned_points} / {total_points} "
-"دریافت کردید."
+"Umefanikiwa kukamilisha tatizo hili na kupokea "
+"{earned_points}/{total_points}."
 
 #: xblock/grade_mixin.py:695
 msgid ""
 "You have not yet received all necessary peer reviews to determine your final"
 " grade."
 msgstr ""
-"شما هنوز تمام بررسی‌های لازم برای تعیین نمرۀ نهایی خود را دریافت نکرده‌اید."
+"Hujapata bado tathmini zote za wenzao zinazohitajika ili kuamua alama zako "
+"za mwisho."
 
 #: xblock/grade_mixin.py:710
 msgid ""
 "The grade for this problem is determined by the median score of your Peer "
 "Assessments."
-msgstr "نمرۀ این مساله با میانگین نمرۀ ارزیابی همتایان شما تعیین می‌شود."
+msgstr ""
+"Alama kwa tatizo hili linatolewa na alama ya median ya Tathmini zako za "
+"Wenzao."
 
 #: xblock/grade_mixin.py:715
 msgid ""
 "The grade for this problem is determined by the mean score of your Peer "
 "Assessments."
-msgstr "نمره این مساله با میانگین نمرۀ ارزیابی همتایان شما تعیین می‌شود."
+msgstr ""
+"Alama kwa tatizo hili linatolewa na alama ya wastani ya Tathmini zako za "
+"Wenzao."
 
 #: xblock/openassesment_template_mixin.py:66
 msgid "Peer Assessment Only"
-msgstr "فقط ارزیابی همتایان"
+msgstr "Tathmini ya Wenzao Pekee"
 
 #: xblock/openassesment_template_mixin.py:67
 msgid "Self Assessment Only"
-msgstr "فقط خودارزیابی"
+msgstr "Tathmini ya Mwenyewe Pekee"
 
 #: xblock/openassesment_template_mixin.py:68
 msgid "Staff Assessment Only"
-msgstr "فقط ارزیابی کارکنان"
+msgstr "Tathmini ya Wafanyakazi Pekee"
 
 #: xblock/openassesment_template_mixin.py:69
 msgid "Self Assessment to Peer Assessment"
-msgstr "خودارزیابی به ارزیابی همتایان"
+msgstr "Tathmini ya Mwenyewe hadi Tathmini ya Wenzao"
 
 #: xblock/openassesment_template_mixin.py:70
 msgid "Self Assessment to Staff Assessment"
-msgstr "خودارزیابی به ارزیابی کارکنان"
+msgstr "Tathmini ya Mwenyewe hadi Tathmini ya Wafanyakazi"
 
 #: xblock/openassessmentblock.py:1365
 msgid "You can't reset your submission."
-msgstr "شما امکان بازنشانی ارسال خود را ندارید."
+msgstr "Huwezi kurekebisha upya uwasilishaji wako."
 
 #: xblock/openassessmentblock.py:1378
 msgid "The user does not exist."
-msgstr "این کاربر وجود ندارد."
+msgstr "Mtumiaji hayupo."
 
 #: xblock/openassessmentblock.py:1381
 msgid "There is no submission to reset."
-msgstr "ارسالی برای بازنشانی وجود ندارد."
+msgstr "Hakuna uwasilishaji wa kurekebishwa upya."
 
 #: xblock/openassessmentblock.py:1383
 msgid "Submission reset successfully."
-msgstr "ارسال با موفقیت بازنشانی شد."
+msgstr "Uwasilishaji umefanyiwa marekebisho upya kwa mafanikio."
 
 #: xblock/rubric_reuse_mixin.py:62
 msgid "You must specify a block id from which to copy a rubric."
-msgstr "شما باید یک شناسۀ بلوکی را مشخص کنید که از آن سرفصل کپی شود."
+msgstr "Ni lazima ueleze kitambulisho cha kipande ambacho nakopisha ratiba."
 
 #: xblock/rubric_reuse_mixin.py:66
 msgid "Invalid block id."
-msgstr "شناسۀ بلوک معتبر نیست."
+msgstr "Kitambulisho cha kipande si sahihi."
 
 #: xblock/rubric_reuse_mixin.py:72
 #, python-brace-format
 msgid ""
 "No Open Response Assessment found in {course_id} with block id {block_id}"
-msgstr "هیچ ارزیابی پاسخ باز در {course_id} با شناسه بلوک {block_id} یافت نشد"
+msgstr ""
+"Hakuna Tathmini ya Majibu Wazi iliyopatikana katika {course_id} yenye "
+"kitambulisho cha kipande {block_id}"
 
 #: xblock/staff_area_mixin.py:42
 msgid "You do not have permission to schedule training"
-msgstr "شما اجازۀ برنامه‌ریزی آموزش را ندارید"
+msgstr "Hauna ruhusa ya kupanga mafunzo"
 
 #: xblock/staff_area_mixin.py:43
 msgid "You do not have permission to reschedule tasks."
-msgstr "شما اجازۀ برنامه‌ریزی مجدد کارها را ندارید."
+msgstr "Hauna ruhusa ya kupanga upya majukumu."
 
 #: xblock/staff_area_mixin.py:69
 msgid "You do not have permission to access the ORA staff area"
-msgstr "شما اجازۀ دسترسی به بخش کارکنان ORA را ندارید"
+msgstr "Hauna ruhusa ya kufikia eneo la wafanyakazi la ORA"
 
 #: xblock/staff_area_mixin.py:70
 msgid "You do not have permission to access ORA learner information."
-msgstr "شما اجازۀ دسترسی به اطلاعات فراگیرنده ORA را ندارید."
+msgstr "Hauna ruhusa ya kufikia taarifa za wanafunzi wa ORA."
 
 #: xblock/staff_area_mixin.py:71
 msgid "You do not have permission to access ORA staff grading."
-msgstr "شما اجازۀ دسترسی به نمره‌دهی کارکنان ORA را ندارید."
+msgstr "Hauna ruhusa ya kufikia upimaji wa wafanyakazi wa ORA."
 
 #: xblock/staff_area_mixin.py:241
 msgid "Pending"
-msgstr "درحال انتظار"
+msgstr "Inasubiri"
 
 #: xblock/staff_area_mixin.py:242
 msgid "Complete/Overwritten"
-msgstr "کامل/بازنویسی شده‌است"
+msgstr "Imekamilika/Imebadilishwa"
 
 #: xblock/staff_area_mixin.py:245
 msgid "Not applicable"
-msgstr "قابل‌اجرا نیست"
+msgstr "Haifai"
 
 #: xblock/staff_area_mixin.py:246
 msgid "Not submitted"
-msgstr "ثبت‌نشده"
+msgstr "Haijawasilishwa"
 
 #: xblock/staff_area_mixin.py:247
 msgid "Submitted"
-msgstr "ثبت‌شده"
+msgstr "Imewasilishwa"
 
 #: xblock/staff_area_mixin.py:341
 msgid "Error getting learner information."
-msgstr "خطا در دریافت اطلاعات فراگیرنده."
+msgstr "Hitilafu katika kupata taarifa za mwanafunzi."
 
 #: xblock/staff_area_mixin.py:384
 msgid "Error loading the checked out learner response."
-msgstr "خطا در بارگیری پاسخ فراگیرندۀ بررسی‌شده."
+msgstr "Hitilafu katika kupakia jibu la mwanafunzi lililochaguliwa."
 
 #: xblock/staff_area_mixin.py:385
 msgid "No other learner responses are available for grading at this time."
-msgstr "اکنون هیچ پاسخی از فراگیرنده دیگری برای نمره در دسترس نیست."
+msgstr ""
+"Hakuna majibu mengine ya wanafunzi yanayopatikana kwa upimaji wakati huu."
 
 #: xblock/staff_area_mixin.py:387
 msgid "Error getting staff grade information."
-msgstr "خطا در دریافت اطلاعات نمرۀ کارکنان."
+msgstr "Hitilafu katika kupata taarifa za alama za wafanyakazi."
 
 #: xblock/staff_area_mixin.py:408
 msgid "Error getting staff grade ungraded and checked out counts."
-msgstr "خطا در دریافت نمرۀ کارکنان بدون نمره و شمارش بررسی شده."
+msgstr ""
+"Hitilafu katika kupata idadi ya alama za wafanyakazi ambazo hazijapewa alama"
+" na zilizochaguliwa."
 
 #: xblock/staff_area_mixin.py:703
 msgid "Please enter valid reason to remove the submission."
-msgstr "لطفاً دلیل معتبری برای حذف موارد ارسالی وارد کنید."
+msgstr "Tafadhali ingiza sababu halali ya kufuta uwasilishaji."
 
 #: xblock/staff_area_mixin.py:714
 msgid "Submission not found"
-msgstr "ارسالی یافت نشد"
+msgstr "Uwasilishaji haukupatikana"
 
 #: xblock/staff_area_mixin.py:725
 msgid "Submission for team assignment has no associated team submission"
-msgstr "ارسال برای تکلیف تیم، هیچ ارسال تیمی مرتبطی ندارد"
+msgstr "Uwasilishaji wa kazi ya timu haufahamiki na usajili wa timu wowote"
 
 #: xblock/staff_area_mixin.py:754
 msgid ""
@@ -2783,9 +2798,9 @@ msgid ""
 "receives a grade of zero unless you delete the learner's state for the "
 "problem to allow them to resubmit a response."
 msgstr ""
-"ارسال فراگیرنده از ارزیابی همتا حذف شده‌است. فراگیر نمرۀ صفر دریافت می‌کند "
-"مگر اینکه وضعیت فراگیر را برای این مساله حذف کنید تا به او اجازه ارسال مجدد "
-"پاسخ داده شود."
+"Uwasilishaji wa mwanafunzi umeondolewa kutoka tathmini ya wenzao. Mwanafunzi"
+" atapokea alama ya sufuri isipokuwa ukifuta hali ya mwanafunzi kwa tatizo "
+"ili kuwaruhusu kuwasilisha tena jibu."
 
 #: xblock/staff_area_mixin.py:789
 msgid ""
@@ -2793,48 +2808,53 @@ msgid ""
 "grade of zero unless you delete a team member’s state for the problem to "
 "allow the team to resubmit a response."
 msgstr ""
-"ارسالی تیم از نمره‌دهی حذف شده‌است. تیم نمرۀ صفر دریافت می‌کند مگر اینکه "
-"وضعیت یکی از اعضای تیم را برای مساله حذف کنید تا به تیم اجازه ارسال مجدد "
-"پاسخ داده شود."
+"Uwasilishaji wa timu umeondolewa kutoka upimaji. Timu itapokea alama ya "
+"sufuri isipokuwa ukifuta hali ya mwanachama wa timu kwa tatizo ili "
+"kuwaruhusu timu kuwasilisha tena jibu."
 
 #: xblock/studio_mixin.py:247 xblock/studio_mixin.py:259
 msgid "Error updating XBlock configuration"
-msgstr "خطا در به‌روزرسانی پیکربندی XBlock"
+msgstr "Hitilafu katika kusasisha usanidi wa XBlock"
 
 #: xblock/studio_mixin.py:264
 msgid "Error: Text Response and File Upload Response cannot both be disabled"
-msgstr "خطا: پاسخ متن و پاسخ بارگذاری پوشه هر دو غیرفعال نیستند"
+msgstr ""
+"Hitilafu: Jibu la Maandishi na Upakiaji wa Faili haiwezi kuzima zote mbili"
 
 #: xblock/studio_mixin.py:268
 msgid ""
 "Error: When Text Response is disabled, File Upload Response must be Required"
-msgstr "خطا: وقتی پاسخ متن غیرفعال است، پاسخ بارگذاری پوشه باید الزامی باشد"
+msgstr ""
+"Hitilafu: Wakati Jibu la Maandishi limezimwa, Upakiaji wa Faili lazima uwe "
+"wa lazima"
 
 #: xblock/studio_mixin.py:271
 msgid ""
 "Error: When File Upload Response is disabled, Text Response must be Required"
-msgstr "خطا: وقتی پاسخ بارگذاری پوشه غیرفعال است، پاسخ متنی باید الزامی باشد"
+msgstr ""
+"Hitilafu: Wakati Upakiaji wa Faili umezimwa, Jibu la Maandishi lazima uwe wa"
+" lazima"
 
 #: xblock/studio_mixin.py:295
 #, python-brace-format
 msgid "Validation error: {error}"
-msgstr "خطای اعتبارسنجی: {error}"
+msgstr "Hitilafu ya uthibitisho: {error}"
 
 #: xblock/studio_mixin.py:329
 msgid "Successfully updated OpenAssessment XBlock"
-msgstr "OpenAssessment XBlock با موفقیت به‌روز شد"
+msgstr "XBlock ya OpenAssessment imesasishwa kwa mafanikio"
 
 #: xblock/utils/data_conversion.py:315
 msgid "You must provide options selected in the assessment."
-msgstr "شما باید گزینه‌های انتخاب شده در ارزیابی را ارائه دهید."
+msgstr "Ni lazima upatie chaguzi zilizoteuliwa katika tathmini."
 
 #: xblock/utils/data_conversion.py:318
 msgid "You must provide overall feedback in the assessment."
-msgstr "شما باید بازخورد کلی را در ارزیابی ارائه دهید."
+msgstr "Ni lazima upatie maoni ya jumla katika tathmini."
 
 #: xblock/utils/data_conversion.py:321
 msgid "You must provide feedback for criteria in the assessment."
-msgstr "برای معیارهای ارزیابی باید بازخورد ارائه کنید."
+msgstr "Ni lazima upatie maoni kwa vigezo katika tathmini."
 
 #: xblock/utils/resolve_dates.py:52
 #, python-brace-format
@@ -2842,13 +2862,13 @@ msgid ""
 "'{date}' is an invalid date format. Make sure the date is formatted as YYYY-"
 "MM-DDTHH:MM:SS."
 msgstr ""
-"'{date}' یک قالب تاریخ نامعتبر است. مطمئن شوید که تاریخ به عنوان YYYY-MM-"
-"DDTHH:MM:SS قالب‌بندی شده‌است."
+"'{date}' ni muundo wa tarehe usio sahihi. Hakikisha tarehe imeandikwa kama "
+"YYYY-MM-DDTHH:MM:SS."
 
 #: xblock/utils/resolve_dates.py:57
 #, python-brace-format
 msgid "'{date}' must be a date string or datetime"
-msgstr "'{date}' باید یک رشتۀ تاریخ یا datetime باشد"
+msgstr "'{date}' lazima iwe uzi wa tarehe au datetime"
 
 #: xblock/utils/resolve_dates.py:210
 #, python-brace-format
@@ -2856,8 +2876,8 @@ msgid ""
 "This step's start date '{start}' cannot be earlier than the previous step's "
 "start date '{prev}'."
 msgstr ""
-"تاریخ شروع این مرحله '{start}' نمی‌تواند زودتر از تاریخ شروع مرحله قبلی "
-"'{prev}' باشد."
+"Tarehe ya kuanza ya hatua hii '{start}' haiwezi kuwa zamani kuliko tarehe ya"
+" kuanza ya hatua iliyopita '{prev}'."
 
 #: xblock/utils/resolve_dates.py:218
 #, python-brace-format
@@ -2865,116 +2885,122 @@ msgid ""
 "This step's due date '{due}' cannot be later than the next step's due date "
 "'{prev}'."
 msgstr ""
-"تاریخ سررسید این مرحله '{due}' نمی‌تواند دیرتر از سررسید مرحلۀ بعدی '{prev}'"
-" باشد."
+"Tarehe ya mwisho ya hatua hii '{due}' haiwezi kuwa baadaye kuliko tarehe ya "
+"mwisho ya hatua inayofuata '{prev}'."
 
 #: xblock/utils/resolve_dates.py:234
 #, python-brace-format
 msgid "The start date '{start}' cannot be later than the due date '{due}'"
-msgstr "تاریخ شروع '{start}' نمی‌تواند دیرتر از تاریخ سررسید '{due}' باشد"
+msgstr ""
+"Tarehe ya kuanza '{start}' haiwezi kuwa baadaye kuliko tarehe ya mwisho "
+"'{due}'"
 
 #: xblock/utils/validation.py:120
 msgid "This problem must include at least one assessment."
-msgstr "این مساله باید حداقل یک ارزیابی داشته باشد."
+msgstr "Tatizo hili lazima lijumuishwe na angalau tathmini moja."
 
 #: xblock/utils/validation.py:124
 msgid "The assessment order you selected is invalid."
-msgstr "ترتیب ارزیابی انتخابی شما معتبر نیست."
+msgstr "Mpangilio wa tathmini uliouchagua si sahihi."
 
 #: xblock/utils/validation.py:134
 msgid "In peer assessment, the \"Must Grade\" value must be a positive integer."
-msgstr "در ارزیابی همتایان، مقدار «باید درجه» باید عدد صحیح مثبتی باشد."
+msgstr ""
+"Katika tathmini ya wenzao, thamani ya \"Lazima Pimepimwa\" lazima iwe "
+"nambari chanya."
 
 #: xblock/utils/validation.py:137
 msgid "In peer assessment, the \"Graded By\" value must be a positive integer."
 msgstr ""
-"در ارزیابی همتایان، مقدار &quot;Graded By&quot; باید عدد صحیح مثبتی باشد."
+"Katika tathmini ya wenzao, thamani ya \"Imepimwa na\" lazima iwe nambari "
+"chanya."
 
 #: xblock/utils/validation.py:141
 msgid ""
 "In peer assessment, the \"Must Grade\" value must be greater than or equal "
 "to the \"Graded By\" value."
 msgstr ""
-"در ارزیابی همتایان، مقدار «نمره باید» باید بزرگتر یا مساوی با مقدار "
-"«نمره‌دهی با» باشد."
+"Katika tathmini ya wenzao, thamani ya \"Lazima Pimepimwa\" lazima iwe kubwa "
+"kuliko au sawa na thamani ya \"Imepimwa na\"."
 
 #: xblock/utils/validation.py:150
 msgid "You must provide at least one example response for learner training."
-msgstr "شما باید حداقل یک نمونه پاسخ، برای آموزش فراگیرنده ارائه دهید."
+msgstr "Ni lazima upatie angalau jibu la mfano moja kwa mafunzo ya wanafunzi."
 
 #: xblock/utils/validation.py:153
 msgid "Each example response for learner training must be unique."
-msgstr "هر پاسخ نمونه برای آموزش فراگیرنده باید منحصربه‌فرد باشد."
+msgstr "Kila jibu la mfano kwa mafunzo ya wanafunzi lazima liwe la kipekee."
 
 #: xblock/utils/validation.py:160
 msgid "The \"required\" value must be true if staff assessment is the only step."
 msgstr ""
-"اگر ارزیابی کارکنان تنها مرحله باشد، مقدار &quot;الزامی&quot; باید روی گزینۀ"
-" «درست» باشد."
+"Thamani ya \"inahitajika\" lazima iwe kweli ikiwa tathmini ya wafanyakazi "
+"ndiyo tu hatua."
 
 #: xblock/utils/validation.py:164
 msgid ""
 "The number of assessments cannot be changed after the problem has been "
 "released."
-msgstr "پس از انتشار مساله، امکان تغییر تعداد ارزیابی‌ها نیست."
+msgstr "Idadi ya tathmini haiwezi kubadilishwa baada ya tatizo kutolewa."
 
 #: xblock/utils/validation.py:169
 msgid ""
 "The assessment type cannot be changed after the problem has been released."
-msgstr "نوع ارزیابی پس از انتشار مساله، قابل تغییر نیست."
+msgstr "Aina ya tathmini haiwezi kubadilishwa baada ya tatizo kutolewa."
 
 #: xblock/utils/validation.py:176
 msgid ""
 "The grading strategy for peer assessments cannot be changed after the "
 "problem has been released."
 msgstr ""
-"استراتژی نمره‌دهی برای ارزیابی همتایان پس از رفع مشکل، قابل تغییر نیست."
+"Mbinu ya upimaji kwa tathmini za wenzao haiwezi kubadilishwa baada ya tatizo"
+" kutolewa."
 
 #: xblock/utils/validation.py:200
 msgid "This rubric definition is not valid."
-msgstr "این تعریف سرفصل معتبر نیست."
+msgstr "Ufafanuzi huu wa ratiba sio sahihi."
 
 #: xblock/utils/validation.py:203
 msgid "You must provide at least one prompt."
-msgstr "شما باید حداقل یک درخواست ارائه دهید."
+msgstr "Ni lazima upatie angalau ombi."
 
 #: xblock/utils/validation.py:209
 #, python-brace-format
 msgid "Options in '{criterion}' have duplicate name(s): {duplicates}"
-msgstr "گزینه‌های '{criterion}' دارای نام(های) تکراری هستند: {duplicates}"
+msgstr "Chaguzi katika '{criterion}' zina majina yanayojirudia: {duplicates}"
 
 #: xblock/utils/validation.py:217
 msgid "Criteria with no options must require written feedback."
-msgstr "معیارهای بدون گزینه مستلزم بازخورد کتبی هستند."
+msgstr "Vigezo visivyo na chaguzi lazima viambatishe maoni ya maandishi."
 
 #: xblock/utils/validation.py:226
 msgid "Prompts cannot be created or deleted after a problem is released."
-msgstr "پس از رفع مشکل نمی‌توان درخواست‌ها را ایجاد یا حذف کرد."
+msgstr "Ombi haliwezi kuundwa au kufutwa baada ya tatizo kutolewa."
 
 #: xblock/utils/validation.py:230
 msgid "The number of criteria cannot be changed after a problem is released."
-msgstr "پس از رفع مشکل، امکان تغییر تعداد معیارها نیست."
+msgstr "Idadi ya vigezo haiwezi kubadilishwa baada ya tatizo kutolewa."
 
 #: xblock/utils/validation.py:243
 msgid "Criteria names cannot be changed after a problem is released"
-msgstr "پس از حل مساله، امکان تغییر نام‌معیارها وجود ندارد."
+msgstr "Majina ya vigezo hayawezi kubadilishwa baada ya tatizo kutolewa"
 
 #: xblock/utils/validation.py:248
 msgid "The number of options cannot be changed after a problem is released."
-msgstr "پس از رفع مشکل، امکان تغییر تعداد گزینه‌ها نیست."
+msgstr "Idadi ya chaguzi haiwezi kubadilishwa baada ya tatizo kutolewa."
 
 #: xblock/utils/validation.py:253
 msgid "Point values cannot be changed after a problem is released."
-msgstr "پس از رفع مشکل، امکان تغییر مقادیر امتیازات نیست."
+msgstr "Thamani za alama haziwezi kubadilishwa baada ya tatizo kutolewa."
 
 #: xblock/utils/validation.py:304
 msgid "Learner training must have at least one training example."
-msgstr "آموزش فراگیر باید حداقل یک نمونۀ آموزشی داشته باشد."
+msgstr "Mafunzo ya mwanafunzi lazima yawe na angalau mfano mmoja wa mafunzo."
 
 #: xblock/utils/validation.py:369
 msgid "Leaderboard number is invalid."
-msgstr "شمارۀ تابلوی امتیازات معتبر نیست."
+msgstr "Nambari ya uongozi wa uongozi si sahihi."
 
 #: xblock/utils/validation.py:392
 msgid "The submission format is invalid."
-msgstr "قالب ارسال معتبر نیست."
+msgstr "Inlämningsformatet är ogiltigt."
