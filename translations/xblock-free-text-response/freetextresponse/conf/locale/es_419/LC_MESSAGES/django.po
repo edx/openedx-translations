@@ -1,48 +1,41 @@
-# edX translation file.
-# Copyright (C) 2025 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2025.
-# 
-# Translators:
-# Brian Smith, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2023-05-19 00:50+0000\n"
-"Last-Translator: Brian Smith, 2023\n"
-"Language-Team: Spanish (Latin America) (https://app.transifex.com/open-edx/teams/6205/es_419/)\n"
+"PO-Revision-Date: 2026-09-10 09:59+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: es_419\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_419\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: models.py:39
 msgid "Display Correctness?"
-msgstr "¿Mostrar correción?"
+msgstr "¿Mostrar corrección?"
 
 #: models.py:41
 msgid ""
 "This is a flag that indicates if the indicator icon should be displayed "
 "after a student enters their response"
 msgstr ""
-"Esta es una bandera que señala si el icono indicador debería ser mostrado "
-"después de que los estudiantes ingresan su respuesta"
+"Esta es una bandera que indica si el ícono indicador debe mostrarse después "
+"de que un estudiante ingrese su respuesta."
 
 #: models.py:49
 msgid "Display Other Student Responses"
-msgstr "Mostrar otras respuestas de los estudiantes"
+msgstr "Mostrar respuestas de otros estudiantes"
 
 #: models.py:51
 msgid ""
 "This will display other student responses to the student after they submit "
 "their response."
 msgstr ""
-"Este mostrará las respuestas de otros estudiantes a los estudiantes después "
-"de enviar sus respuestas."
+"Esto mostrará las respuestas de otros estudiantes al alumno después de que "
+"éste envíe su respuesta."
 
 #: models.py:60
 msgid "System selected answers to give to students"
@@ -51,7 +44,7 @@ msgstr ""
 
 #: models.py:63
 msgid "Display Name"
-msgstr "Nombre a mostrar"
+msgstr "Nombre para mostrar"
 
 #: models.py:65
 msgid "This is the title for this question type"
@@ -59,44 +52,43 @@ msgstr "Este es el título para este tipo de pregunta"
 
 #: models.py:71
 msgid "Full-Credit Key Phrases"
-msgstr "Frases Clave para puntuación completa"
+msgstr "Frases clave de crédito completo"
 
 #: models.py:73
 msgid ""
 "This is a list of words or phrases, one of which must be present in order "
 "for the student's answer to receive full credit"
 msgstr ""
-"Esta es una lista de palabras o frases, una de las cuales debe estar "
-"presente para que la respuesta del estudiante reciba la puntuación completa"
+"Esta es una lista de palabras o frases, de las cuales al menos una debe "
+"estar presente para que la respuesta del estudiante reciba crédito completo"
 
 #: models.py:81
 msgid "Half-Credit Key Phrases"
-msgstr "Frases Clave para mitad de la puntuación"
+msgstr "Frases clave de medio crédito"
 
 #: models.py:83
 msgid ""
 "This is a list of words or phrases, one of which must be present in order "
 "for the student's answer to receive half credit"
 msgstr ""
-"Esta es una lista de palabras o frases, una de las cuales debe estar "
-"presente para que la respuesta del estudiante reciba la mitad de la "
-"puntuación"
+"Esta es una lista de palabras o frases, de las cuales al menos una debe "
+"estar presente para que la respuesta del estudiante reciba medio crédito"
 
 #: models.py:91
 msgid "Maximum Number of Attempts"
-msgstr "Máximo Número de Intentos"
+msgstr "Número máximo de intentos"
 
 #: models.py:93
 msgid ""
 "This is the maximum number of times a student is allowed to attempt the "
 "problem"
 msgstr ""
-"Este es el número máximo de veces que se le permite al estudiante intentar "
-"responder el problema"
+"Este es el número máximo de veces que se permite que un estudiante intente "
+"resolver el problema"
 
 #: models.py:101
 msgid "Maximum Word Count"
-msgstr "Recuento Máximo de Palabras"
+msgstr "Cantidad máxima de palabras"
 
 #: models.py:103
 msgid "This is the maximum number of words allowed for this question"
@@ -104,26 +96,26 @@ msgstr "Este es el número máximo de palabras permitidas para esta pregunta"
 
 #: models.py:111
 msgid "Minimum Word Count"
-msgstr "Recuento mínimo de palabras"
+msgstr "Cantidad mínima de palabras"
 
 #: models.py:113
 msgid "This is the minimum number of words required for this question"
-msgstr "Este es el número mínimo de palabras requeridos para esta pregunta"
+msgstr "Este es el número mínimo de palabras requeridas para esta pregunta"
 
 #: models.py:121
 msgid "Prompt"
-msgstr "Planteamiento"
+msgstr "Indicador"
 
 #: models.py:123
 msgid ""
 "This is the prompt students will see when asked to enter their response"
 msgstr ""
-"Este es el mensaje de aviso que verán los estudiantes cuando se les pida "
-"ingresar sus respuestas"
+"Este es el enunciado que los estudiantes verán cuando se les solicite "
+"ingresar su respuesta"
 
 #: models.py:131
 msgid "Submission Received Message"
-msgstr "Mensaje de envío recibido"
+msgstr "Mensaje de confirmación de envío"
 
 #: models.py:133
 msgid "This is the message students will see upon submitting their response"
@@ -144,16 +136,16 @@ msgstr "Mensaje de borrador recibido"
 #: models.py:152
 msgid "This is the message students will see upon submitting a draft response"
 msgstr ""
-"Este es el mensaje que los estudiantes verán al enviar un borrador de la "
-"respuesta"
+"Este es el mensaje que los estudiantes verán al enviar una respuesta en "
+"borrador"
 
 #: templates/view.html:15
 msgid ""
 "Allow my response to possibly be visible by other learners after submitting "
 "their response"
 msgstr ""
-"Permitir que mi respuesta tenga la posiblidad de ser visible para otros "
-"estudiantes después de enviar su respuesta"
+"Permitir que mi respuesta sea posiblemente visible para otros estudiantes "
+"después de enviarla"
 
 #: templates/view.html:21 templates/view.html:24
 msgid "Checking..."
@@ -177,21 +169,21 @@ msgstr "Mostrar"
 
 #: templates/view.html:36
 msgid "peer responses"
-msgstr "respuestas de los pares"
+msgstr "respuestas de compañeros"
 
 #: templates/view.html:38
 msgid "Submissions by others"
-msgstr "Envíos por otros"
+msgstr "Envíos de otros"
 
 #: templates/view.html:39 templates/view.html:43
 msgid "No responses to show at this time"
-msgstr "No hay respuestas para mostrar en este momento."
+msgstr "No hay respuestas para mostrar en este momento"
 
 #: views.py:126
 #, python-brace-format
 msgid "{weight} point possible"
 msgid_plural "{weight} points possible"
-msgstr[0] "{weight} puntos posibles"
+msgstr[0] "{weight} punto posible"
 msgstr[1] "{weight} puntos posibles"
 msgstr[2] "{weight} puntos posibles"
 
@@ -207,19 +199,19 @@ msgstr[2] "{score_string}/{weight} puntos"
 #, python-brace-format
 msgid "You have used {count_attempts} of {max_attempts} submission"
 msgid_plural "You have used {count_attempts} of {max_attempts} submissions"
-msgstr[0] "Ha usado {count_attempts} de {max_attempts} envío"
-msgstr[1] "Ha usado {count_attempts} de  {max_attempts} envíos"
-msgstr[2] "Ha usado {count_attempts} de  {max_attempts} envíos"
+msgstr[0] "Has usado {count_attempts} de {max_attempts} envío"
+msgstr[1] "Has usado {count_attempts} de {max_attempts} envíos"
+msgstr[2] "Has usado {count_attempts} de {max_attempts} envíos"
 
 #: views.py:171
 #, python-brace-format
 msgid "Your response must be between {min} and {max} word."
 msgid_plural "Your response must be between {min} and {max} words."
-msgstr[0] "Su respuesta debe tener entre {min} y {max} palabra."
-msgstr[1] "Su respuesta debe tener entre {min} y {max} palabras."
-msgstr[2] "Su respuesta debe tener entre {min} y {max} palabras."
+msgstr[0] "Tu respuesta debe tener entre {min} y {max} palabra"
+msgstr[1] "Tu respuesta debe tener entre {min} y {max} palabras"
+msgstr[2] "Tu respuesta debe tener entre {min} y {max} palabras"
 
 #: views.py:267
 #, python-brace-format
 msgid "Invalid Word Count. {word_count_message}"
-msgstr "Recuento de palabras inválido. {word_count_message}"
+msgstr "Cantidad de palabras inválida. {word_count_message}"
