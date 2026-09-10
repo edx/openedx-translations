@@ -1,33 +1,24 @@
-# #-#-#-#-#  django.po (course-discovery)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2018 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# 
-# Translators:
-# Translators:
-# Nathan Robertson, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-16 00:21+0000\n"
-"PO-Revision-Date: 2023-01-26 15:39+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024\n"
-"Language-Team: Telugu (https://app.transifex.com/open-edx/teams/6205/te/)\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-08-19 00:16+0000\n"
+"PO-Revision-Date: 2026-09-10 10:43+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: English (http://www.transifex.com/open-edx/edx-platform/language/en/)\n"
+"Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: te\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps/api/filters.py:47
+#: apps/api/filters.py:48
 #, python-brace-format
 msgid "No user with the username [{username}] exists."
 msgstr "వినియోగదారు పేరు [ {username} ] ఉన్న వినియోగదారు ఎవరూ లేరు."
 
-#: apps/api/filters.py:50
+#: apps/api/filters.py:51
 msgid ""
 "Only staff users are permitted to filter by username. Remove the username "
 "parameter."
@@ -35,63 +26,63 @@ msgstr ""
 "వినియోగదారు పేరు ద్వారా ఫిల్టర్ చేయడానికి సిబ్బంది వినియోగదారులు మాత్రమే "
 "అనుమతించబడతారు. వినియోగదారు పేరు పరామితిని తీసివేయండి."
 
-#: apps/api/serializers.py:818
+#: apps/api/serializers.py:850
 msgid "Number of courses contained in this catalog"
 msgstr "ఈ కేటలాగ్‌లో ఉన్న కోర్సుల సంఖ్య"
 
-#: apps/api/serializers.py:821
+#: apps/api/serializers.py:853
 msgid "Usernames of users with explicit access to view this catalog"
 msgstr ""
 "ఈ కేటలాగ్‌ను వీక్షించడానికి స్పష్టమైన యాక్సెస్ ఉన్న వినియోగదారుల వినియోగదారు"
 " పేర్లు"
 
-#: apps/api/serializers.py:989
+#: apps/api/serializers.py:1023
 msgid "Start date cannot be after the End date"
 msgstr "ప్రారంభ తేదీ ముగింపు తేదీ తర్వాత ఉండకూడదు"
 
-#: apps/api/serializers.py:994
+#: apps/api/serializers.py:1028
 msgid "Term cannot be changed"
 msgstr "పదం మార్చబడదు"
 
-#: apps/api/serializers.py:1014
+#: apps/api/serializers.py:1048
 msgid "Language in which the course is administered"
 msgstr "కోర్సు నిర్వహించబడే భాష"
 
-#: apps/api/serializers.py:1112
+#: apps/api/serializers.py:1152
 msgid "Course cannot be changed for an existing course run"
 msgstr "ఇప్పటికే ఉన్న కోర్సు కోసం కోర్సును మార్చడం సాధ్యం కాదు"
 
-#: apps/api/serializers.py:1117
+#: apps/api/serializers.py:1157
 msgid "Minimum effort cannot be greater than Maximum effort"
 msgstr "కనిష్ట ప్రయత్నం గరిష్ట ప్రయత్నం కంటే గొప్పది కాదు"
 
-#: apps/api/serializers.py:1119
+#: apps/api/serializers.py:1159
 msgid "Minimum effort and Maximum effort cannot be the same"
 msgstr "కనీస ప్రయత్నం మరియు గరిష్ట ప్రయత్నం ఒకేలా ఉండకూడదు"
 
-#: apps/api/serializers.py:1165
+#: apps/api/serializers.py:1205
 msgid "Dictionary mapping course run IDs to boolean values"
 msgstr "డిక్షనరీ మ్యాపింగ్ కోర్సు IDలను బూలియన్ విలువలకు అమలు చేస్తుంది"
 
-#: apps/api/serializers.py:1269
+#: apps/api/serializers.py:1310
 msgid "Restriction Type cannot be empty"
 msgstr "పరిమితి రకం ఖాళీగా ఉండకూడదు"
 
-#: apps/api/serializers.py:1717
+#: apps/api/serializers.py:1778
 msgid "Dictionary mapping course IDs to boolean values"
 msgstr "బూలియన్ విలువలకు నిఘంటువు మ్యాపింగ్ కోర్సు IDలు"
 
-#: apps/api/serializers.py:2184
+#: apps/api/serializers.py:2245
 msgid "Languages that course runs in this program are offered in."
 msgstr "ఈ ప్రోగ్రామ్‌లో కోర్సు నడిచే భాషలు అందించబడతాయి."
 
-#: apps/api/serializers.py:2188
+#: apps/api/serializers.py:2249
 msgid ""
 "Languages that course runs in this program have available transcripts in."
 msgstr ""
 "ఈ ప్రోగ్రామ్‌లో కోర్సు నడిచే భాషల్లో లిప్యంతరీకరణలు అందుబాటులో ఉన్నాయి."
 
-#: apps/api/utils.py:327
+#: apps/api/utils.py:346
 #, python-brace-format
 msgid ""
 "An error occurred while setting the course run image for [{key}] in studio. "
@@ -108,56 +99,65 @@ msgstr "సవరించదగిన=1 మరియు aq పరామిత�
 msgid "You must include a course_uuid in your query parameters."
 msgstr "మీరు మీ ప్రశ్న పారామితులలో తప్పనిసరిగా course_uuidని చేర్చాలి."
 
-#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:192
+#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:205
 #, python-brace-format
 msgid "Missing value for: [{name}]. "
 msgstr "దీని కోసం విలువ లేదు: [ {name} ]. "
 
-#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:203
+#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:216
 msgid "Incorrect data sent. "
 msgstr "తప్పు డేటా పంపబడింది. "
 
-#: apps/api/v1/views/course_runs.py:46
+#: apps/api/v1/views/course_runs.py:49
 msgid "Failed to set course run data: {}"
 msgstr "కోర్సు రన్ డేటాను సెట్ చేయడంలో విఫలమైంది: {}"
 
-#: apps/api/v1/views/course_runs.py:313
+#: apps/api/v1/views/course_runs.py:328
 msgid "Can only update status, ofac restrictions, and ofac comment"
 msgstr "స్థితి, ofac పరిమితులు మరియు ofac వ్యాఖ్యను మాత్రమే నవీకరించగలదు"
 
-#: apps/api/v1/views/course_runs.py:352
+#: apps/api/v1/views/course_runs.py:363
+#, python-brace-format
+msgid ""
+"The course run type '{course_run_type}' is not valid for this course type "
+"'{course_type}'."
+msgstr ""
+"కోర్సు ర‌న్ రకం '{course_run_type}' ఈ కోర్సు రకం '{course_type}'కు సరైనది "
+"కాదు."
+
+#: apps/api/v1/views/course_runs.py:381
 msgid "Course run is in review. Editing disabled."
 msgstr "కోర్సు రన్ సమీక్షలో ఉంది. సవరణ నిలిపివేయబడింది."
 
-#: apps/api/v1/views/course_runs.py:359
+#: apps/api/v1/views/course_runs.py:388
 msgid "Invalid parameter"
 msgstr "చెల్లని పరామితి"
 
-#: apps/api/v1/views/courses.py:59
+#: apps/api/v1/views/courses.py:62
 msgid "Failed to set data: {}"
 msgstr "డేటాను సెట్ చేయడంలో విఫలమైంది: {}"
 
-#: apps/api/v1/views/courses.py:194
+#: apps/api/v1/views/courses.py:207
 #, python-brace-format
 msgid "Organization [{org}] does not exist. "
 msgstr "సంస్థ [ {org} ] ఉనికిలో లేదు. "
 
-#: apps/api/v1/views/courses.py:196
+#: apps/api/v1/views/courses.py:209
 #, python-brace-format
 msgid "Course Type [{course_type}] does not exist. "
 msgstr "కోర్సు రకం [ {course_type} ] లేదు. "
 
-#: apps/api/v1/views/courses.py:199
+#: apps/api/v1/views/courses.py:212
 #, python-brace-format
 msgid "Product Source [{product_source}] does not exist. "
 msgstr "ఉత్పత్తి మూలం [ {product_source} ] లేదు. "
 
-#: apps/api/v1/views/courses.py:217
+#: apps/api/v1/views/courses.py:229
 #, python-brace-format
 msgid "A course with key [{key}] already exists."
 msgstr "కీ [ {key} ]తో ఒక కోర్సు ఇప్పటికే ఉంది."
 
-#: apps/api/v1/views/courses.py:225
+#: apps/api/v1/views/courses.py:237
 #, python-brace-format
 msgid ""
 "Course creation was unsuccessful. The course URL slug ‘[{url_slug}]’ is "
@@ -166,7 +166,7 @@ msgstr ""
 "కోర్సు సృష్టి విఫలమైంది. కోర్సు URL స్లగ్ &#39;[ {url_slug} ]&#39; ఇప్పటికే "
 "వాడుకలో ఉంది. దయచేసి ఈ ఫీల్డ్‌ని అప్‌డేట్ చేసి, మళ్లీ ప్రయత్నించండి."
 
-#: apps/api/v1/views/courses.py:284
+#: apps/api/v1/views/courses.py:298
 msgid ""
 "Switching entitlement types after being reviewed is not supported. Please "
 "reach out to your project coordinator for additional help if necessary."
@@ -174,7 +174,7 @@ msgstr ""
 "సమీక్షించిన తర్వాత అర్హత రకాలను మార్చడానికి మద్దతు లేదు. అవసరమైతే అదనపు "
 "సహాయం కోసం దయచేసి మీ ప్రాజెక్ట్ కోఆర్డినేటర్‌ను సంప్రదించండి."
 
-#: apps/api/v1/views/courses.py:394
+#: apps/api/v1/views/courses.py:408
 #, python-brace-format
 msgid ""
 "Course edit was unsuccessful. The course URL slug ‘[{url_slug}]’ is already "
@@ -183,23 +183,23 @@ msgstr ""
 "కోర్సు సవరణ విఫలమైంది. కోర్సు URL స్లగ్ &#39;[ {url_slug} ]&#39; ఇప్పటికే "
 "వాడుకలో ఉంది. దయచేసి ఈ ఫీల్డ్‌ని అప్‌డేట్ చేసి, మళ్లీ ప్రయత్నించండి."
 
-#: apps/api/views.py:58
+#: apps/api/views.py:57
 msgid "You are not permitted to access the API documentation."
 msgstr "API డాక్యుమెంటేషన్‌ను యాక్సెస్ చేయడానికి మీకు అనుమతి లేదు."
 
-#: apps/catalogs/models.py:17
+#: apps/catalogs/models.py:18
 msgid "Catalog name"
 msgstr "కేటలాగ్ పేరు"
 
-#: apps/catalogs/models.py:18
+#: apps/catalogs/models.py:19
 msgid "Query to retrieve Course Run catalog contents"
 msgstr "కోర్స్ రన్ కేటలాగ్ కంటెంట్‌లను తిరిగి పొందేందుకు ప్రశ్న"
 
-#: apps/catalogs/models.py:22
+#: apps/catalogs/models.py:23
 msgid "Query to retrieve Program catalog contents"
 msgstr "ప్రోగ్రామ్ కేటలాగ్ కంటెంట్‌లను తిరిగి పొందేందుకు ప్రశ్న"
 
-#: apps/catalogs/models.py:25
+#: apps/catalogs/models.py:26
 msgid "Include archived courses"
 msgstr "ఆర్కైవ్ చేసిన కోర్సులను చేర్చండి"
 
@@ -358,7 +358,7 @@ msgstr ""
 
 #: apps/core/models.py:84
 msgid "Analytics API URL"
-msgstr "Analytics API URL"
+msgstr "విశ్లేషణ API URL"
 
 #: apps/core/models.py:85
 msgid "Analytics Access Token"
@@ -396,7 +396,7 @@ msgstr "సేల్స్‌ఫోర్స్ శాండ్‌బాక్�
 msgid "Case Record Type Id"
 msgstr "కేసు రికార్డ్ రకం Id"
 
-#: apps/course_metadata/admin.py:36
+#: apps/course_metadata/admin.py:38
 #, python-brace-format
 msgid ""
 "An error occurred while publishing the {model} to the marketing site. Please"
@@ -406,76 +406,81 @@ msgstr ""
 "మళ్లీ ప్రయత్నించండి. లోపం కొనసాగితే, దయచేసి ఇంజనీరింగ్ బృందాన్ని "
 "సంప్రదించండి."
 
-#: apps/course_metadata/admin.py:56
+#: apps/course_metadata/admin.py:65
 msgid "eligible for one-click purchase"
 msgstr "ఒక-క్లిక్ కొనుగోలుకు అర్హత"
 
-#: apps/course_metadata/admin.py:61
+#: apps/course_metadata/admin.py:70
 msgid "Yes"
 msgstr "అవును"
 
-#: apps/course_metadata/admin.py:62
+#: apps/course_metadata/admin.py:71
 msgid "No"
 msgstr "నం"
 
-#: apps/course_metadata/admin.py:427 apps/course_metadata/admin.py:712
+#: apps/course_metadata/admin.py:539 apps/course_metadata/admin.py:884
 msgid "Included course runs"
 msgstr "చేర్చబడిన కోర్సు పరుగులు"
 
-#: apps/course_metadata/admin.py:718
+#: apps/course_metadata/admin.py:890
 msgid "Edit link"
 msgstr "లింక్‌ని సవరించండి"
 
-#: apps/course_metadata/admin.py:726
+#: apps/course_metadata/admin.py:898
 msgid "Edit course run exclusions"
 msgstr "కోర్సు అమలు మినహాయింపులను సవరించండి"
 
-#: apps/course_metadata/admin.py:728
+#: apps/course_metadata/admin.py:900
 msgid "(save and continue editing to create a link)"
 msgstr "(లింక్‌ని సృష్టించడానికి సేవ్ చేసి, సవరించడాన్ని కొనసాగించండి)"
 
-#: apps/course_metadata/admin.py:854
+#: apps/course_metadata/admin.py:1038
 #, python-format
 msgid "Successfully %(status)s %(count)d %(items)s."
 msgstr "విజయవంతంగా %(status)s %(count)d %(items)s ."
 
-#: apps/course_metadata/algolia_models.py:95
-#: apps/course_metadata/algolia_models.py:637
+#: apps/course_metadata/algolia_models.py:54
+msgid "Certificates"
+msgstr "సర్టిఫికెట్లు"
+
+#: apps/course_metadata/algolia_models.py:55
+msgid "Pathways to Degrees"
+msgstr "డిగ్రీలకు మార్గాలు"
+
+#: apps/course_metadata/algolia_models.py:58
+msgid "Boot Camps"
+msgstr "బూట్ క్యాంప్స్"
+
+#: apps/course_metadata/algolia_models.py:65
+msgid "Bachelor’s"
+msgstr "బ్యాచిలర్స్"
+
+#: apps/course_metadata/algolia_models.py:66
+msgid "Master’s"
+msgstr "మాస్టర్స్"
+
+#: apps/course_metadata/algolia_models.py:116
+#: apps/course_metadata/algolia_models.py:671
 msgid "Available now"
 msgstr "ఇప్పుడు లభించుచున్నది"
 
-#: apps/course_metadata/algolia_models.py:97
-#: apps/course_metadata/models.py:2556
+#: apps/course_metadata/algolia_models.py:118
+#: apps/course_metadata/models.py:2763
 msgid "Upcoming"
 msgstr "రాబోయేది"
 
-#: apps/course_metadata/algolia_models.py:99
-#: apps/course_metadata/choices.py:71 apps/course_metadata/models.py:2550
-#: apps/course_metadata/models.py:2566
+#: apps/course_metadata/algolia_models.py:120
+#: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2757
+#: apps/course_metadata/models.py:2773
 msgid "Archived"
 msgstr "ఆర్కైవ్ చేయబడింది"
 
-#: apps/course_metadata/algolia_models.py:304
-#: apps/course_metadata/algolia_models.py:314
-#: apps/course_metadata/algolia_models.py:581
-msgid "Certificate courses"
-msgstr "సర్టిఫికేట్ కోర్సులు"
-
-#: apps/course_metadata/algolia_models.py:316
-#: apps/course_metadata/algolia_models.py:587
-msgid "Degrees"
-msgstr "డిగ్రీలు"
-
-#: apps/course_metadata/algolia_models.py:318
-#: apps/course_metadata/algolia_models.py:589
-msgid "Paths to degrees"
-msgstr "డిగ్రీలకు దారులు"
-
-#: apps/course_metadata/algolia_models.py:648
+#: apps/course_metadata/algolia_models.py:682
 msgid "Available by subscription"
 msgstr "చందా ద్వారా లభిస్తుంది"
 
-#: apps/course_metadata/choices.py:6 apps/course_metadata/choices.py:30
+#: apps/course_metadata/choices.py:6 apps/course_metadata/choices.py:22
+#: apps/course_metadata/choices.py:36
 msgid "Unpublished"
 msgstr "ప్రచురించబడలేదు"
 
@@ -491,122 +496,171 @@ msgstr "అంతర్గత సమీక్ష కోసం వేచి ఉ�
 msgid "Reviewed"
 msgstr "సమీక్షించబడింది"
 
-#: apps/course_metadata/choices.py:10 apps/course_metadata/choices.py:72
+#: apps/course_metadata/choices.py:10 apps/course_metadata/choices.py:23
+#: apps/course_metadata/choices.py:101
 msgid "Published"
 msgstr "ప్రచురించబడింది"
+
+#: apps/course_metadata/choices.py:24 apps/course_metadata/choices.py:38
+msgid "Retired"
+msgstr "పదవీ విరమణ పొందారు"
 
 #. Translators: Instructor-paced refers to course runs that operate on a
 #. schedule set by the instructor,
 #. similar to a normal university course.
-#: apps/course_metadata/choices.py:24
+#: apps/course_metadata/choices.py:30
 msgid "Instructor-paced"
 msgstr "బోధకుడు-వేగం"
 
 #. Translators: Self-paced refers to course runs that operate on the student's
 #. schedule.
-#: apps/course_metadata/choices.py:26
+#: apps/course_metadata/choices.py:32
 msgid "Self-paced"
 msgstr "స్వయం గమనం"
 
-#: apps/course_metadata/choices.py:31 apps/learner_pathway/choices.py:6
+#: apps/course_metadata/choices.py:37 apps/learner_pathway/choices.py:6
 msgid "Active"
 msgstr "చురుకుగా"
 
-#: apps/course_metadata/choices.py:32
-msgid "Retired"
-msgstr "పదవీ విరమణ పొందారు"
-
-#: apps/course_metadata/choices.py:33
+#: apps/course_metadata/choices.py:39
 msgid "Deleted"
 msgstr "తొలగించబడింది"
 
-#: apps/course_metadata/choices.py:37
+#: apps/course_metadata/choices.py:43
 msgid "mooc"
 msgstr "మూక్"
 
-#: apps/course_metadata/choices.py:38
+#: apps/course_metadata/choices.py:44
 msgid "spoc"
 msgstr "స్పాక్"
 
-#: apps/course_metadata/choices.py:39
+#: apps/course_metadata/choices.py:45
 msgid "test"
 msgstr "పరీక్ష"
 
-#: apps/course_metadata/choices.py:40
+#: apps/course_metadata/choices.py:46
 msgid "demo"
 msgstr "డెమో"
 
-#: apps/course_metadata/choices.py:41
+#: apps/course_metadata/choices.py:47
 msgid "other"
 msgstr "ఇతర"
 
-#: apps/course_metadata/choices.py:45
-msgid "Honor"
-msgstr "గౌరవం"
+#: apps/course_metadata/choices.py:54
+msgid "Course Create"
+msgstr "కోర్సును సృష్టించు"
 
-#: apps/course_metadata/choices.py:46
-msgid "Credit"
-msgstr "క్రెడిట్"
+#: apps/course_metadata/choices.py:55
+msgid "Partial Update"
+msgstr "ఆంశిక నవీకరణ"
 
-#: apps/course_metadata/choices.py:47
+#: apps/course_metadata/choices.py:56
+msgid "Course Rerun"
+msgstr "కోర్సును మళ్లీ ప్రారంభించు"
+
+#: apps/course_metadata/choices.py:57
+msgid "Course Editor Update"
+msgstr "కోర్సు ఎడిటర్ నవీకరణ"
+
+#: apps/course_metadata/choices.py:64
+msgid "Pending"
+msgstr "పెండింగ్"
+
+#: apps/course_metadata/choices.py:65 apps/course_metadata/choices.py:76
 msgid "Verified"
 msgstr "ధృవీకరించబడింది"
 
-#: apps/course_metadata/choices.py:48
+#: apps/course_metadata/choices.py:66
+msgid "Processing"
+msgstr "ప్రాసెసింగ్"
+
+#: apps/course_metadata/choices.py:67
+msgid "Completed"
+msgstr "పూర్తయింది"
+
+#: apps/course_metadata/choices.py:68
+msgid "Failed"
+msgstr "విఫలమైంది"
+
+#: apps/course_metadata/choices.py:69
+msgid "Partially Completed"
+msgstr "భాగంగా పూర్తయింది"
+
+#: apps/course_metadata/choices.py:70
+msgid "Errored"
+msgstr "లోపం వచ్చింది"
+
+#: apps/course_metadata/choices.py:74
+msgid "Honor"
+msgstr "గౌరవం"
+
+#: apps/course_metadata/choices.py:75
+msgid "Credit"
+msgstr "క్రెడిట్"
+
+#: apps/course_metadata/choices.py:77
 msgid "Professional"
 msgstr "వృత్తిపరమైన"
 
-#: apps/course_metadata/choices.py:49
+#: apps/course_metadata/choices.py:78
 msgid "Executive Education"
 msgstr "కార్యనిర్వాహక విద్య"
 
-#: apps/course_metadata/choices.py:50
+#: apps/course_metadata/choices.py:79
 msgid "Paid Executive Education"
 msgstr "చెల్లింపు కార్యనిర్వాహక విద్య"
 
-#: apps/course_metadata/choices.py:51
+#: apps/course_metadata/choices.py:80
 msgid "Unpaid Executive Education"
 msgstr "చెల్లించని కార్యనిర్వాహక విద్య"
 
-#: apps/course_metadata/choices.py:52
+#: apps/course_metadata/choices.py:81
 msgid "Paid Bootcamp"
 msgstr "చెల్లించిన బూట్‌క్యాంప్"
 
-#: apps/course_metadata/choices.py:53
+#: apps/course_metadata/choices.py:82
 msgid "Unpaid Bootcamp"
 msgstr "చెల్లించని బూట్‌క్యాంప్"
 
-#: apps/course_metadata/choices.py:57
+#: apps/course_metadata/choices.py:86
 msgid "Platform"
 msgstr "వేదిక"
 
-#: apps/course_metadata/choices.py:58
+#: apps/course_metadata/choices.py:87
 msgid "Organization"
 msgstr "సంస్థ"
 
-#: apps/course_metadata/choices.py:62
+#: apps/course_metadata/choices.py:91
 msgid "Short"
 msgstr "పొట్టి"
 
-#: apps/course_metadata/choices.py:63
+#: apps/course_metadata/choices.py:92
 msgid "Medium"
 msgstr "మధ్యస్థం"
 
-#: apps/course_metadata/choices.py:64
+#: apps/course_metadata/choices.py:93
 msgid "Long"
 msgstr "పొడవు"
 
-#: apps/course_metadata/choices.py:79
+#: apps/course_metadata/choices.py:108
 msgid "Short Course"
 msgstr "చిన్న కోర్సు"
 
-#: apps/course_metadata/choices.py:80
+#: apps/course_metadata/choices.py:109
 msgid "Sprint"
 msgstr "స్ప్రింట్"
 
-#: apps/course_metadata/choices.py:81
+#: apps/course_metadata/choices.py:110
 msgid "Course Stack"
 msgstr "కోర్సు స్టాక్"
+
+#: apps/course_metadata/choices.py:114
+msgid "Custom B2B Enterprise"
+msgstr "కస్టమ్ B2B ఎంటర్‌ప్రైజ్"
+
+#: apps/course_metadata/choices.py:115
+msgid "Custom B2C"
+msgstr "కస్టమ్ B2C"
 
 #: apps/course_metadata/data_loaders/course_type.py:27
 #, python-brace-format
@@ -644,7 +698,7 @@ msgstr "కోర్సు {key} ( {id} ) సరిపోలిన రకం {ty
 msgid "Could not convert course {key} ({id}) to type {type}"
 msgstr "కోర్సు {key} ( {id} )ని {type} అని టైప్ చేయడం సాధ్యపడలేదు."
 
-#: apps/course_metadata/emails.py:36
+#: apps/course_metadata/emails.py:37
 #, python-brace-format
 msgid ""
 "Not sending notification email for template {template} because no "
@@ -653,7 +707,7 @@ msgstr ""
 "{template} టెంప్లేట్ కోసం నోటిఫికేషన్ ఇమెయిల్ పంపడం లేదు ఎందుకంటే {course} "
 "కోర్సు కోసం ఏ సంస్థ నిర్వచించబడలేదు"
 
-#: apps/course_metadata/emails.py:41
+#: apps/course_metadata/emails.py:42
 #, python-brace-format
 msgid ""
 "Not sending notification email for template {template} because no project "
@@ -662,7 +716,7 @@ msgstr ""
 "{template} టెంప్లేట్ కోసం నోటిఫికేషన్ ఇమెయిల్ పంపడం లేదు ఎందుకంటే సంస్థ "
 "{org} కోసం ప్రాజెక్ట్ కోఆర్డినేటర్ ఏదీ నిర్వచించబడలేదు"
 
-#: apps/course_metadata/emails.py:95
+#: apps/course_metadata/emails.py:96
 #, python-brace-format
 msgid ""
 "Not sending notification email for template {template} because no publisher "
@@ -671,7 +725,7 @@ msgstr ""
 "{template} టెంప్లేట్ కోసం నోటిఫికేషన్ ఇమెయిల్ పంపడం లేదు ఎందుకంటే భాగస్వామి "
 "{partner} కోసం ప్రచురణకర్త URL నిర్వచించబడలేదు"
 
-#: apps/course_metadata/emails.py:103
+#: apps/course_metadata/emails.py:104
 #, python-brace-format
 msgid ""
 "Not sending notification email for template {template} because no studio URL"
@@ -680,49 +734,49 @@ msgstr ""
 "భాగస్వామి {partner} కోసం స్టూడియో URL నిర్వచించనందున {template} టెంప్లేట్ "
 "కోసం నోటిఫికేషన్ ఇమెయిల్ పంపడం లేదు"
 
-#: apps/course_metadata/emails.py:169
+#: apps/course_metadata/emails.py:170
 msgid "legal team"
 msgstr "న్యాయ బృందం"
 
-#: apps/course_metadata/emails.py:187
+#: apps/course_metadata/emails.py:188
 msgid "Project Coordinator team"
 msgstr "ప్రాజెక్ట్ కోఆర్డినేటర్ బృందం"
 
-#: apps/course_metadata/emails.py:211
+#: apps/course_metadata/emails.py:212
 msgid "course team"
 msgstr "కోర్సు జట్టు"
 
-#: apps/course_metadata/emails.py:220
+#: apps/course_metadata/emails.py:221
 #, python-brace-format
 msgid "Legal review requested: {title}"
 msgstr "చట్టపరమైన సమీక్ష అభ్యర్థించబడింది: {title}"
 
-#: apps/course_metadata/emails.py:233
+#: apps/course_metadata/emails.py:234
 #, python-brace-format
 msgid "Course URL for {title}"
 msgstr "{title} కోసం కోర్సు URL"
 
-#: apps/course_metadata/emails.py:279
+#: apps/course_metadata/emails.py:280
 #, python-brace-format
 msgid "Review requested: {key} - {title}"
 msgstr "సమీక్ష అభ్యర్థించబడింది: {key} - {title}"
 
-#: apps/course_metadata/emails.py:291
+#: apps/course_metadata/emails.py:292
 #, python-brace-format
 msgid "Review complete: {title}"
 msgstr "సమీక్ష పూర్తయింది: {title}"
 
-#: apps/course_metadata/emails.py:307
+#: apps/course_metadata/emails.py:308
 #, python-brace-format
 msgid "Published: {title}"
 msgstr "ప్రచురించబడింది: {title}"
 
-#: apps/course_metadata/emails.py:311
+#: apps/course_metadata/emails.py:312
 #, python-brace-format
 msgid "Published: {key} - {title}"
 msgstr "ప్రచురించబడింది: {key} - {title}"
 
-#: apps/course_metadata/emails.py:326
+#: apps/course_metadata/emails.py:327
 #, python-brace-format
 msgid "Comment added: {title}"
 msgstr "వ్యాఖ్య జోడించబడింది: {title}"
@@ -736,10 +790,21 @@ msgstr ""
 "అక్షరాలు, సంఖ్యలు, స్లాష్‌లు, అండర్‌స్కోర్‌లు లేదా హైఫన్‌లతో కూడిన "
 "చెల్లుబాటు అయ్యే “స్లగ్”ని నమోదు చేయండి."
 
-#: apps/course_metadata/forms.py:66
+#: apps/course_metadata/forms.py:106
 msgid "Programs can only be activated if they have a banner image."
 msgstr ""
 "ప్రోగ్రామ్‌లు బ్యానర్ ఇమేజ్‌ని కలిగి ఉంటే మాత్రమే యాక్టివేట్ చేయబడతాయి."
+
+#: apps/course_metadata/forms.py:125
+#, python-format
+msgid ""
+"All courses in a B2C subscription program must support B2C subscription "
+"inclusion. Remove or update the following courses before saving: "
+"%(courses)s."
+msgstr ""
+"B2C సబ్స్క్రిప్షన్ ప్రోగ్రామ్‌లోని అన్ని కోర్సులు B2C సబ్స్క్రిప్షన్ "
+"చేరిచేర్పును మద్దతు ఇవ్వవలెను. సేవ్ చేయకముందు ఈ క్రింది కోర్సులను తొలగించండి"
+" లేదా నవీకరించండి: %(courses)s."
 
 #: apps/course_metadata/management/commands/add_tag_to_courses.py:15
 msgid "Tag to add to courses"
@@ -777,14 +842,14 @@ msgid "Short code for a partner."
 msgstr "భాగస్వామి కోసం చిన్న కోడ్."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:20
-#: apps/course_metadata/models.py:233 apps/course_metadata/models.py:488
-#: apps/course_metadata/models.py:636 apps/course_metadata/models.py:669
-#: apps/course_metadata/models.py:693 apps/course_metadata/models.py:732
-#: apps/course_metadata/models.py:1003 apps/course_metadata/models.py:1144
-#: apps/course_metadata/models.py:1306 apps/course_metadata/models.py:2100
-#: apps/course_metadata/models.py:3110 apps/course_metadata/models.py:4041
-#: apps/course_metadata/models.py:4133 apps/learner_pathway/models.py:35
-#: apps/learner_pathway/models.py:84 apps/learner_pathway/models.py:159
+#: apps/course_metadata/models.py:238 apps/course_metadata/models.py:493
+#: apps/course_metadata/models.py:641 apps/course_metadata/models.py:674
+#: apps/course_metadata/models.py:698 apps/course_metadata/models.py:737
+#: apps/course_metadata/models.py:1054 apps/course_metadata/models.py:1275
+#: apps/course_metadata/models.py:1452 apps/course_metadata/models.py:2294
+#: apps/course_metadata/models.py:3378 apps/course_metadata/models.py:4433
+#: apps/course_metadata/models.py:4574 apps/learner_pathway/models.py:34
+#: apps/learner_pathway/models.py:83 apps/learner_pathway/models.py:158
 msgid "UUID"
 msgstr "UUID"
 
@@ -971,21 +1036,21 @@ msgstr "మార్గం /కోర్సు/ {url_slug} ఉపయోగంల
 msgid "Path {url_path} not in use, nothing to delete"
 msgstr "మార్గం {url_path} ఉపయోగంలో లేదు, తొలగించడానికి ఏమీ లేదు"
 
-#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:42
+#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:44
 msgid "One or more courses failed to unpublish."
 msgstr "ఒకటి లేదా అంతకంటే ఎక్కువ కోర్సులు ప్రచురణను తీసివేయడంలో విఫలమయ్యాయి."
 
-#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:48
+#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:50
 #, python-brace-format
 msgid "Successfully unpublished runs in course {key}"
 msgstr "కోర్సు {key} లో విజయవంతంగా పబ్లిష్ చేయబడలేదు"
 
-#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:51
+#: apps/course_metadata/management/commands/unpublish_inactive_runs.py:53
 #, python-brace-format
 msgid "Failed to unpublish runs in course {key}"
 msgstr "కోర్సు {key} లో పరుగులను ప్రచురించడం విఫలమైంది"
 
-#: apps/course_metadata/models.py:234
+#: apps/course_metadata/models.py:239
 msgid ""
 "Please do not use any spaces or special characters other than period, "
 "underscore or hyphen. This key will be used in the course's course key."
@@ -993,16 +1058,16 @@ msgstr ""
 "దయచేసి పీరియడ్, అండర్‌స్కోర్ లేదా హైఫన్ కాకుండా ఏ ఖాళీలు లేదా ప్రత్యేక "
 "అక్షరాలను ఉపయోగించవద్దు. ఈ కీ కోర్సు యొక్క కోర్సు కీలో ఉపయోగించబడుతుంది."
 
-#: apps/course_metadata/models.py:239
+#: apps/course_metadata/models.py:244
 msgid "If populated, this field will overwrite name in platform."
 msgstr ""
 "జనాభా ఉన్నట్లయితే, ఈ ఫీల్డ్ ప్లాట్‌ఫారమ్‌లో పేరును ఓవర్‌రైట్ చేస్తుంది."
 
-#: apps/course_metadata/models.py:244
+#: apps/course_metadata/models.py:249
 msgid "Spanish Description"
 msgstr "స్పానిష్ వివరణ"
 
-#: apps/course_metadata/models.py:245
+#: apps/course_metadata/models.py:250
 msgid ""
 "For seo, this field allows for alternate spanish description to be manually "
 "inputted"
@@ -1010,8 +1075,8 @@ msgstr ""
 "SEO కోసం, ఈ ఫీల్డ్ ప్రత్యామ్నాయ స్పానిష్ వివరణను మాన్యువల్‌గా ఇన్‌పుట్ "
 "చేయడానికి అనుమతిస్తుంది"
 
-#: apps/course_metadata/models.py:270 apps/course_metadata/models.py:1383
-#: apps/course_metadata/models.py:2177
+#: apps/course_metadata/models.py:275 apps/course_metadata/models.py:1529
+#: apps/course_metadata/models.py:2378
 msgid ""
 "Pick a tag from the suggestions. To make a new tag, add a comma after the "
 "tag name."
@@ -1019,11 +1084,11 @@ msgstr ""
 "సూచనల నుండి ట్యాగ్‌ని ఎంచుకోండి. కొత్త ట్యాగ్ చేయడానికి, ట్యాగ్ పేరు తర్వాత "
 "కామాను జోడించండి."
 
-#: apps/course_metadata/models.py:274
+#: apps/course_metadata/models.py:279
 msgid "Automatically generate course run keys"
 msgstr "కోర్సు రన్ కీలను స్వయంచాలకంగా రూపొందించండి"
 
-#: apps/course_metadata/models.py:276
+#: apps/course_metadata/models.py:281
 msgid ""
 "When this flag is enabled, the key of a new course run will be auto "
 "generated.  When this flag is disabled, the key can be manually set."
@@ -1032,7 +1097,7 @@ msgstr ""
 "రూపొందించబడుతుంది. ఈ ఫ్లాగ్ నిలిపివేయబడినప్పుడు, కీని మాన్యువల్‌గా సెట్ "
 "చేయవచ్చు."
 
-#: apps/course_metadata/models.py:282
+#: apps/course_metadata/models.py:287
 msgid ""
 "This field signifies if any of this org's courses are in the enterprise "
 "subscription catalog"
@@ -1040,7 +1105,7 @@ msgstr ""
 "ఈ ఫీల్డ్ ఈ org యొక్క ఏదైనా కోర్సులు ఎంటర్‌ప్రైజ్ సబ్‌స్క్రిప్షన్ కేటలాగ్‌లో "
 "ఉంటే సూచిస్తుంది"
 
-#: apps/course_metadata/models.py:285
+#: apps/course_metadata/models.py:290
 msgid ""
 "The 6 character-hex-value of the orgnization theme color,\n"
 "            all related course under same organization will use this color as theme color.\n"
@@ -1050,11 +1115,11 @@ msgstr ""
 " ఒకే సంస్థ క్రింద అన్ని సంబంధిత కోర్సులు ఈ రంగును థీమ్ రంగుగా ఉపయోగిస్తాయి.\n"
 " (ఉదా &quot;#ff0000&quot; ఇది ఎరుపుకు సమానం) `#`ని అందించాల్సిన అవసరం లేదు"
 
-#: apps/course_metadata/models.py:301
+#: apps/course_metadata/models.py:306
 msgid "The timestamp of the last time the organization data was modified."
 msgstr "సంస్థ డేటా చివరిసారిగా సవరించబడిన టైమ్‌స్టాంప్."
 
-#: apps/course_metadata/models.py:317
+#: apps/course_metadata/models.py:322
 msgid ""
 "Please do not use any spaces or special characters other than period, "
 "underscore or hyphen in the key field."
@@ -1062,15 +1127,15 @@ msgstr ""
 "దయచేసి కీ ఫీల్డ్‌లో పీరియడ్, అండర్‌స్కోర్ లేదా హైఫన్ కాకుండా ఖాళీలు లేదా "
 "ప్రత్యేక అక్షరాలను ఉపయోగించవద్దు."
 
-#: apps/course_metadata/models.py:388
+#: apps/course_metadata/models.py:393
 msgid "Corresponding organization code in an external product source"
 msgstr "బాహ్య ఉత్పత్తి మూలంలో సంబంధిత సంస్థ కోడ్"
 
-#: apps/course_metadata/models.py:445
+#: apps/course_metadata/models.py:450
 msgid "LevelType model translations"
 msgstr "LevelType మోడల్ అనువాదాలు"
 
-#: apps/course_metadata/models.py:470
+#: apps/course_metadata/models.py:475
 msgid ""
 "Seat types that qualify for completion of programs of this type. Learners "
 "completing associated courses, but enrolled in other seat types, will NOT "
@@ -1081,41 +1146,41 @@ msgstr ""
 "కోర్సులను పూర్తి చేసే అభ్యాసకులు, కానీ ఇతర సీట్ రకాల్లో నమోదు చేసుకున్నవారు,"
 " ప్రోగ్రామ్ పూర్తయిన తర్వాత వారి కోర్సును పూర్తి చేయలేరు."
 
-#: apps/course_metadata/models.py:484
+#: apps/course_metadata/models.py:489
 msgid "Please provide an image file with transparent background"
 msgstr "దయచేసి పారదర్శక నేపథ్యంతో చిత్ర ఫైల్‌ను అందించండి"
 
-#: apps/course_metadata/models.py:487 apps/course_metadata/models.py:531
-#: apps/course_metadata/models.py:697 apps/course_metadata/models.py:735
-#: apps/course_metadata/models.py:1318 apps/course_metadata/models.py:3124
+#: apps/course_metadata/models.py:492 apps/course_metadata/models.py:536
+#: apps/course_metadata/models.py:702 apps/course_metadata/models.py:740
+#: apps/course_metadata/models.py:1464 apps/course_metadata/models.py:3392
 msgid "Leave this field blank to have the value generated automatically."
 msgstr "విలువ స్వయంచాలకంగా రూపొందించబడటానికి ఈ ఫీల్డ్‌ను ఖాళీగా ఉంచండి."
 
-#: apps/course_metadata/models.py:528
+#: apps/course_metadata/models.py:533
 msgid "Name of the external source."
 msgstr "బాహ్య మూలం పేరు."
 
-#: apps/course_metadata/models.py:533
+#: apps/course_metadata/models.py:538
 msgid "Description of the external source."
 msgstr "బాహ్య మూలం యొక్క వివరణ."
 
-#: apps/course_metadata/models.py:538
+#: apps/course_metadata/models.py:543
 msgid "Programs of these types will be OFAC restricted"
 msgstr "ఈ రకమైన ప్రోగ్రామ్‌లు OFAC పరిమితం చేయబడతాయి"
 
-#: apps/course_metadata/models.py:552
+#: apps/course_metadata/models.py:557
 msgid "ProgramType model translations"
 msgstr "ప్రోగ్రామ్ టైప్ మోడల్ అనువాదాలు"
 
-#: apps/course_metadata/models.py:566
+#: apps/course_metadata/models.py:571
 msgid "This mode requires ID verification."
 msgstr "ఈ మోడ్‌కు ID ధృవీకరణ అవసరం."
 
-#: apps/course_metadata/models.py:569
+#: apps/course_metadata/models.py:574
 msgid "Completion can grant credit toward an organization’s degree."
 msgstr "పూర్తి చేయడం సంస్థ యొక్క డిగ్రీకి క్రెడిట్‌ను మంజూరు చేస్తుంది."
 
-#: apps/course_metadata/models.py:573
+#: apps/course_metadata/models.py:578
 msgid ""
 "Certificate type granted if this mode is eligible for a certificate, or "
 "blank if not."
@@ -1123,18 +1188,18 @@ msgstr ""
 "ఈ మోడ్ సర్టిఫికేట్‌కు అర్హత కలిగి ఉంటే సర్టిఫికేట్ రకం మంజూరు చేయబడుతుంది "
 "లేదా లేకపోతే ఖాళీగా ఉంటుంది."
 
-#: apps/course_metadata/models.py:577
+#: apps/course_metadata/models.py:582
 msgid ""
 "Who gets paid for the course? Platform is the site owner, Organization is "
 "the school."
 msgstr ""
 "కోర్సు కోసం ఎవరు చెల్లించబడతారు? ప్లాట్‌ఫారమ్ సైట్ యజమాని, సంస్థ పాఠశాల."
 
-#: apps/course_metadata/models.py:674
+#: apps/course_metadata/models.py:679
 msgid "Sets the order for displaying Course Run Types."
 msgstr "కోర్సు రన్ రకాలను ప్రదర్శించడానికి క్రమాన్ని సెట్ చేస్తుంది."
 
-#: apps/course_metadata/models.py:677
+#: apps/course_metadata/models.py:682
 msgid ""
 "Leave this blank to allow all orgs. Otherwise, specifies which orgs can see "
 "this course type in Publisher."
@@ -1142,19 +1207,19 @@ msgstr ""
 "అన్ని అవయవాలను అనుమతించడానికి దీన్ని ఖాళీగా ఉంచండి. లేకపోతే, ప్రచురణకర్తలో ఈ"
 " కోర్సు రకాన్ని ఏ orgs చూడవచ్చో పేర్కొంటుంది."
 
-#: apps/course_metadata/models.py:727
+#: apps/course_metadata/models.py:732
 msgid "Subject model translations"
 msgstr "సబ్జెక్ట్ మోడల్ అనువాదాలు"
 
-#: apps/course_metadata/models.py:774
+#: apps/course_metadata/models.py:779
 msgid "Topic model translations"
 msgstr "టాపిక్ మోడల్ అనువాదాలు"
 
-#: apps/course_metadata/models.py:833
+#: apps/course_metadata/models.py:846
 msgid "SEO Meta tags for Products"
 msgstr "ఉత్పత్తుల కోసం SEO మెటా ట్యాగ్‌లు"
 
-#: apps/course_metadata/models.py:863
+#: apps/course_metadata/models.py:881
 msgid ""
 "The ID of the Taxi Form (by 2U) that would be rendered in place of the "
 "hubspot capture form"
@@ -1162,7 +1227,7 @@ msgstr ""
 "హబ్‌స్పాట్ క్యాప్చర్ ఫారమ్ స్థానంలో రెండర్ చేయబడే టాక్సీ ఫారమ్ (2U ద్వారా) "
 "ID"
 
-#: apps/course_metadata/models.py:869
+#: apps/course_metadata/models.py:887
 msgid ""
 "The grouping of the Taxi Form (by 2U) that would be rendered instead of the "
 "hubspot capture form"
@@ -1170,115 +1235,115 @@ msgstr ""
 "హబ్‌స్పాట్ క్యాప్చర్ ఫారమ్‌కు బదులుగా రెండర్ చేయబడే టాక్సీ ఫారమ్ (2U ద్వారా)"
 " సమూహం"
 
-#: apps/course_metadata/models.py:893
+#: apps/course_metadata/models.py:933
 msgid "The URL of the paid landing page on external site"
 msgstr "బాహ్య సైట్‌లో చెల్లింపు ల్యాండింగ్ పేజీ యొక్క URL"
 
-#: apps/course_metadata/models.py:899
+#: apps/course_metadata/models.py:939
 msgid "The URL of the organic landing page on external site"
 msgstr "బాహ్య సైట్‌లోని ఆర్గానిక్ ల్యాండింగ్ పేజీ యొక్క URL"
 
-#: apps/course_metadata/models.py:910
+#: apps/course_metadata/models.py:950
 msgid "The start date of the external course offering for marketing purpose"
 msgstr "మార్కెటింగ్ ప్రయోజనం కోసం అందించే బాహ్య కోర్సు ప్రారంభ తేదీ"
 
-#: apps/course_metadata/models.py:914
+#: apps/course_metadata/models.py:954
 msgid "The ends date of the external course offering for marketing purpose"
 msgstr "మార్కెటింగ్ ప్రయోజనం కోసం అందించే బాహ్య కోర్సు ముగింపు తేదీ"
 
-#: apps/course_metadata/models.py:918
+#: apps/course_metadata/models.py:958
 msgid "The suggested deadline for enrollment for marketing purpose"
 msgstr "మార్కెటింగ్ ప్రయోజనం కోసం నమోదు కోసం సూచించిన గడువు"
 
-#: apps/course_metadata/models.py:922
+#: apps/course_metadata/models.py:962
 msgid "The identifier for a product variant."
 msgstr "ఉత్పత్తి వేరియంట్ కోసం ఐడెంటిఫైయర్."
 
-#: apps/course_metadata/models.py:926
+#: apps/course_metadata/models.py:966
 msgid "Course override"
 msgstr "కోర్స్ ఓవర్‌రైడ్"
 
-#: apps/course_metadata/models.py:927
+#: apps/course_metadata/models.py:967
 msgid "This field allows for override the default course term"
 msgstr "ఈ ఫీల్డ్ డిఫాల్ట్ కోర్సు పదాన్ని భర్తీ చేయడానికి అనుమతిస్తుంది"
 
-#: apps/course_metadata/models.py:945
+#: apps/course_metadata/models.py:993
 msgid ""
 "This field contain external course marketing type specific to product lines"
 msgstr ""
 "ఈ ఫీల్డ్ ఉత్పత్తి లైన్లకు ప్రత్యేకమైన బాహ్య కోర్సు మార్కెటింగ్ రకాన్ని కలిగి"
 " ఉంటుంది"
 
-#: apps/course_metadata/models.py:954
+#: apps/course_metadata/models.py:1002
 msgid ""
 "Determines weather the course should be displayed on the owning "
 "organization's page"
 msgstr "స్వంత సంస్థ పేజీలో ప్రదర్శించబడే కోర్సు వాతావరణాన్ని నిర్ణయిస్తుంది"
 
-#: apps/course_metadata/models.py:1022
+#: apps/course_metadata/models.py:1073
 msgid "A list of major works by this person. Must be valid HTML."
 msgstr "ఈ వ్యక్తి చేసిన ప్రధాన పనుల జాబితా. చెల్లుబాటు అయ్యే HTML అయి ఉండాలి."
 
-#: apps/course_metadata/models.py:1030
+#: apps/course_metadata/models.py:1081
 msgid "People"
 msgstr "ప్రజలు"
 
-#: apps/course_metadata/models.py:1141
+#: apps/course_metadata/models.py:1272
 msgid ""
 "Add the collaborator image, please make sure its dimensions are 200x100px"
 msgstr ""
 "సహకారి చిత్రాన్ని జోడించండి, దయచేసి దాని కొలతలు 200x100px అని "
 "నిర్ధారించుకోండి"
 
-#: apps/course_metadata/models.py:1165
+#: apps/course_metadata/models.py:1296
 msgid "U.S. Value Per Lead"
 msgstr "ప్రతి లీడ్‌కు US విలువ"
 
-#: apps/course_metadata/models.py:1166
+#: apps/course_metadata/models.py:1297
 msgid "U.S. value per lead in U.S. dollars."
 msgstr "US డాలర్లలో లీడ్‌కు US విలువ."
 
-#: apps/course_metadata/models.py:1171
+#: apps/course_metadata/models.py:1302
 msgid "International Value Per Lead"
 msgstr "లీడ్‌కు అంతర్జాతీయ విలువ"
 
-#: apps/course_metadata/models.py:1172
+#: apps/course_metadata/models.py:1303
 msgid "International value per lead in U.S. dollars."
 msgstr "US డాలర్లలో లీడ్‌కు అంతర్జాతీయ విలువ."
 
-#: apps/course_metadata/models.py:1177
+#: apps/course_metadata/models.py:1308
 msgid "U.S. Value Per Click"
 msgstr "ప్రతి క్లిక్‌కి US విలువ"
 
-#: apps/course_metadata/models.py:1178
+#: apps/course_metadata/models.py:1309
 msgid "U.S. value per click in U.S. dollars."
 msgstr "US డాలర్లలో ప్రతి క్లిక్‌కి US విలువ."
 
-#: apps/course_metadata/models.py:1183
+#: apps/course_metadata/models.py:1314
 msgid "International Value Per Click"
 msgstr "ప్రతి క్లిక్‌కి అంతర్జాతీయ విలువ"
 
-#: apps/course_metadata/models.py:1184
+#: apps/course_metadata/models.py:1315
 msgid "International value per click in U.S. dollars."
 msgstr "ప్రతి క్లిక్‌కి అంతర్జాతీయ విలువ US డాలర్లలో."
 
-#: apps/course_metadata/models.py:1222
+#: apps/course_metadata/models.py:1359
 msgid "Latitude"
 msgstr "అక్షాంశం"
 
-#: apps/course_metadata/models.py:1229
+#: apps/course_metadata/models.py:1366
 msgid "Longitude"
 msgstr "రేఖాంశం"
 
-#: apps/course_metadata/models.py:1266
+#: apps/course_metadata/models.py:1409
 msgid "Allowlist"
 msgstr "అనుమతి జాబితా"
 
-#: apps/course_metadata/models.py:1267
+#: apps/course_metadata/models.py:1410
 msgid "Blocklist"
 msgstr "బ్లాక్‌లిస్ట్"
 
-#: apps/course_metadata/models.py:1314
+#: apps/course_metadata/models.py:1460
 msgid ""
 "When making reruns for this course, they will use this key instead of the "
 "course key."
@@ -1286,50 +1351,56 @@ msgstr ""
 "ఈ కోర్సు కోసం పునఃప్రవేశాలు చేస్తున్నప్పుడు, వారు కోర్సు కీకి బదులుగా ఈ కీని"
 " ఉపయోగిస్తారు."
 
-#: apps/course_metadata/models.py:1331
+#: apps/course_metadata/models.py:1477
 msgid ""
 "The actual duration of this course as experienced by learners who complete "
 "it."
 msgstr "ఈ కోర్సు పూర్తి చేసిన అభ్యాసకులు అనుభవించిన వాస్తవ వ్యవధి."
 
-#: apps/course_metadata/models.py:1352
+#: apps/course_metadata/models.py:1498
 msgid "Add the course image"
 msgstr "కోర్సు చిత్రాన్ని జోడించండి"
 
-#: apps/course_metadata/models.py:1355 apps/course_metadata/models.py:3096
+#: apps/course_metadata/models.py:1501 apps/course_metadata/models.py:3364
 msgid "FAQ"
 msgstr "ఎఫ్ ఎ క్యూ"
 
-#: apps/course_metadata/models.py:1358
+#: apps/course_metadata/models.py:1504
 msgid "Total number of learners who have enrolled in this course"
 msgstr "ఈ కోర్సులో నమోదు చేసుకున్న అభ్యాసకుల మొత్తం సంఖ్య"
 
-#: apps/course_metadata/models.py:1363
+#: apps/course_metadata/models.py:1509
 msgid ""
 "Total number of learners who have enrolled in this course in the last 6 "
 "months"
 msgstr "గత 6 నెలల్లో ఈ కోర్సులో నమోదు చేసుకున్న మొత్తం అభ్యాసకుల సంఖ్య"
 
-#: apps/course_metadata/models.py:1377
+#: apps/course_metadata/models.py:1523
 msgid "Course number format e.g CS002x, BIO1.1x, BIO1.2x"
 msgstr "కోర్సు సంఖ్య ఫార్మాట్ ఉదా CS002x, BIO1.1x, BIO1.2x"
 
-#: apps/course_metadata/models.py:1391
+#: apps/course_metadata/models.py:1537
 msgid "Additional Information"
 msgstr "అదనపు సమాచారం"
 
-#: apps/course_metadata/models.py:1413
+#: apps/course_metadata/models.py:1559
 msgid "The last time this course was modified in the database."
 msgstr "చివరిసారిగా ఈ కోర్సు డేటాబేస్‌లో సవరించబడింది."
 
-#: apps/course_metadata/models.py:1418
+#: apps/course_metadata/models.py:1564
 msgid ""
 "This field signifies if this course is in the enterprise subscription "
 "catalog"
 msgstr ""
 "ఈ కోర్సు ఎంటర్‌ప్రైజ్ సబ్‌స్క్రిప్షన్ కేటలాగ్‌లో ఉంటే ఈ ఫీల్డ్ సూచిస్తుంది"
 
-#: apps/course_metadata/models.py:1426 apps/course_metadata/models.py:3255
+#: apps/course_metadata/models.py:1570
+msgid ""
+"Signifies whether this course is included in the B2c subscription catalog."
+msgstr ""
+"ఈ కోర్స్ B2c సబ్‌స్క్రిప్షన్ క్యాటలాగ్‌లో చేర్చబడిందో లేదో సూచిస్తుంది."
+
+#: apps/course_metadata/models.py:1578 apps/course_metadata/models.py:3528
 msgid ""
 "If checked, this item will not be indexed in Algolia and will not show up in"
 " search results."
@@ -1337,17 +1408,17 @@ msgstr ""
 "తనిఖీ చేయబడితే, ఈ అంశం అల్గోలియాలో సూచిక చేయబడదు మరియు శోధన ఫలితాలలో "
 "చూపబడదు."
 
-#: apps/course_metadata/models.py:1434 apps/course_metadata/models.py:3263
+#: apps/course_metadata/models.py:1586 apps/course_metadata/models.py:3536
 msgid "If checked, the About Page will have a meta tag with noindex value"
 msgstr ""
 "తనిఖీ చేసినట్లయితే, పరిచయం పేజీ noindex విలువతో కూడిన మెటా ట్యాగ్‌ని కలిగి "
 "ఉంటుంది"
 
-#: apps/course_metadata/models.py:1439
+#: apps/course_metadata/models.py:1591
 msgid "Watchers"
 msgstr "చూసేవారు"
 
-#: apps/course_metadata/models.py:1441
+#: apps/course_metadata/models.py:1593
 msgid ""
 "The list of email addresses that will be notified if any of the course runs "
 "is published or scheduled."
@@ -1355,23 +1426,23 @@ msgstr ""
 "కోర్సు అమలులో ఏదైనా ప్రచురించబడినా లేదా షెడ్యూల్ చేయబడినా తెలియజేయబడే "
 "ఇమెయిల్ చిరునామాల జాబితా."
 
-#: apps/course_metadata/models.py:1680
+#: apps/course_metadata/models.py:1838
 msgid "Future"
 msgstr "భవిష్యత్తు"
 
-#: apps/course_metadata/models.py:1682
+#: apps/course_metadata/models.py:1840
 msgid "Past"
 msgstr "గతం"
 
-#: apps/course_metadata/models.py:2093 apps/course_metadata/models.py:3107
+#: apps/course_metadata/models.py:2282 apps/course_metadata/models.py:3375
 msgid "Blocked"
 msgstr "నిరోధించబడింది"
 
-#: apps/course_metadata/models.py:2094 apps/course_metadata/models.py:3108
+#: apps/course_metadata/models.py:2283 apps/course_metadata/models.py:3376
 msgid "Unrestricted"
 msgstr "అపరిమితం"
 
-#: apps/course_metadata/models.py:2110
+#: apps/course_metadata/models.py:2304
 msgid ""
 "Title specific for this run of a course. Leave this value blank to default "
 "to the parent course's title."
@@ -1379,7 +1450,7 @@ msgstr ""
 "కోర్సు యొక్క ఈ రన్ కోసం నిర్దిష్ట శీర్షిక. మాతృ కోర్సు శీర్షికకు డిఫాల్ట్‌గా"
 " ఈ విలువను ఖాళీగా ఉంచండి."
 
-#: apps/course_metadata/models.py:2119
+#: apps/course_metadata/models.py:2313
 msgid ""
 "Short description specific for this run of a course. Leave this value blank "
 "to default to the parent course's short_description attribute."
@@ -1387,7 +1458,7 @@ msgstr ""
 "ఈ కోర్సు యొక్క రన్ కోసం నిర్దిష్ట చిన్న వివరణ. మాతృ కోర్సు యొక్క "
 "short_description లక్షణానికి డిఫాల్ట్‌గా ఈ విలువను ఖాళీగా ఉంచండి."
 
-#: apps/course_metadata/models.py:2123
+#: apps/course_metadata/models.py:2317
 msgid ""
 "Full description specific for this run of a course. Leave this value blank "
 "to default to the parent course's full_description attribute."
@@ -1395,34 +1466,44 @@ msgstr ""
 "కోర్సు యొక్క ఈ రన్ కోసం నిర్దిష్ట పూర్తి వివరణ. మాతృ కోర్సు యొక్క "
 "పూర్తి_వివరణ లక్షణానికి డిఫాల్ట్‌గా ఈ విలువను ఖాళీగా ఉంచండి."
 
-#: apps/course_metadata/models.py:2128
+#: apps/course_metadata/models.py:2322
 msgid ""
 "Estimated minimum number of hours per week needed to complete a course run."
 msgstr ""
 "కోర్సు పరుగును పూర్తి చేయడానికి వారానికి కనీస గంటలు అవసరమని అంచనా వేయబడింది."
 
-#: apps/course_metadata/models.py:2131
+#: apps/course_metadata/models.py:2325
 msgid ""
 "Estimated maximum number of hours per week needed to complete a course run."
 msgstr ""
 "కోర్సు రన్‌ను పూర్తి చేయడానికి వారానికి గరిష్టంగా ఎన్ని గంటలు అవసరమో అంచనా "
 "వేయబడింది."
 
-#: apps/course_metadata/models.py:2134
+#: apps/course_metadata/models.py:2328
 msgid "Estimated number of weeks needed to complete this course run."
 msgstr "ఈ కోర్సు రన్‌ను పూర్తి చేయడానికి ఎన్ని వారాలు అవసరమో అంచనా వేయబడింది."
 
-#: apps/course_metadata/models.py:2141
+#: apps/course_metadata/models.py:2335
+msgid ""
+"A JSON dict detailing the available translations and transcriptions for this"
+" run. The dict has two keys: translation_languages and "
+"transcription_languages."
+msgstr ""
+"ఈ రన్ కోసం అందుబాటులో ఉన్న అనువాదాలు మరియు ట్రాన్స్క్రిప్షన్ల వివరాలను "
+"చూపించే JSON డిక్షనరీ. ఈ డిక్షనరీకి రెండు కీలను కలిగి ఉంటుంది: "
+"translation_languages మరియు transcription_languages."
+
+#: apps/course_metadata/models.py:2342
 msgid "Total number of learners who have enrolled in this course run"
 msgstr "ఈ కోర్సులో నమోదు చేసుకున్న మొత్తం అభ్యాసకుల సంఖ్య నడుస్తుంది"
 
-#: apps/course_metadata/models.py:2145
+#: apps/course_metadata/models.py:2346
 msgid ""
 "Total number of learners who have enrolled in this course run in the last 6 "
 "months"
 msgstr "గత 6 నెలల్లో ఈ కోర్సులో చేరిన మొత్తం అభ్యాసకుల సంఖ్య"
 
-#: apps/course_metadata/models.py:2158
+#: apps/course_metadata/models.py:2359
 msgid ""
 "Whether this run should be hidden from API responses.  Do not edit here - "
 "this value will be overwritten by the \"Course Visibility In Catalog\" field"
@@ -1432,11 +1513,11 @@ msgstr ""
 "స్టూడియోలోని &quot;కోర్సు విజిబిలిటీ ఇన్ కేటలాగ్&quot; ఫీల్డ్ ద్వారా "
 "రిఫ్రెష్ కోర్స్ మెటాడేటా ద్వారా భర్తీ చేయబడుతుంది."
 
-#: apps/course_metadata/models.py:2164
+#: apps/course_metadata/models.py:2365
 msgid "Indicates whether the course relation has been manually overridden."
 msgstr "కోర్సు సంబంధం మాన్యువల్‌గా భర్తీ చేయబడిందో లేదో సూచిస్తుంది."
 
-#: apps/course_metadata/models.py:2171
+#: apps/course_metadata/models.py:2372
 msgid ""
 "'What You Will Learn' description for this particular course run. Leave this"
 " value blank to default to the parent course's Outcome attribute."
@@ -1444,11 +1525,11 @@ msgstr ""
 "ఈ నిర్దిష్ట కోర్సు రన్ కోసం &#39;మీరు ఏమి నేర్చుకుంటారు&#39; వివరణ. మాతృ "
 "కోర్సు యొక్క ఫలిత లక్షణానికి డిఫాల్ట్‌గా ఈ విలువను ఖాళీగా ఉంచండి."
 
-#: apps/course_metadata/models.py:2184 apps/course_metadata/models.py:3291
+#: apps/course_metadata/models.py:2385 apps/course_metadata/models.py:3564
 msgid "Add OFAC restriction text to the FAQ section of the Marketing site"
 msgstr "మార్కెటింగ్ సైట్ యొక్క FAQ విభాగానికి OFAC పరిమితి వచనాన్ని జోడించండి"
 
-#: apps/course_metadata/models.py:2204
+#: apps/course_metadata/models.py:2405
 msgid ""
 "This calculated field signifies if this course run is in the enterprise "
 "subscription catalog"
@@ -1456,7 +1537,7 @@ msgstr ""
 "ఈ కోర్సు రన్ ఎంటర్‌ప్రైజ్ సబ్‌స్క్రిప్షన్ కేటలాగ్‌లో ఉంటే ఈ లెక్కించబడిన "
 "ఫీల్డ్ సూచిస్తుంది"
 
-#: apps/course_metadata/models.py:2210
+#: apps/course_metadata/models.py:2411
 msgid ""
 "The identifier for a product variant. This is used to link a course run to a"
 " product variant for external LOBs (i.e; ExecEd & Bootcamps)."
@@ -1465,15 +1546,15 @@ msgstr ""
 "Bootcamps) ప్రోడక్ట్ వేరియంట్‌కు రన్ అయ్యే కోర్సును లింక్ చేయడానికి "
 "ఉపయోగించబడుతుంది."
 
-#: apps/course_metadata/models.py:2552 apps/course_metadata/models.py:2565
+#: apps/course_metadata/models.py:2759 apps/course_metadata/models.py:2772
 msgid "Current"
 msgstr "ప్రస్తుత"
 
-#: apps/course_metadata/models.py:2554
+#: apps/course_metadata/models.py:2761
 msgid "Starting Soon"
 msgstr "త్వరలో ప్రారంభం"
 
-#: apps/course_metadata/models.py:2604
+#: apps/course_metadata/models.py:2811
 msgid ""
 "Switching seat types after being reviewed is not supported. Please reach out"
 " to your project coordinator for additional help if necessary."
@@ -1481,43 +1562,43 @@ msgstr ""
 "సమీక్షించిన తర్వాత సీట్ రకాలను మార్చడానికి మద్దతు లేదు. అవసరమైతే అదనపు సహాయం"
 " కోసం దయచేసి మీ ప్రాజెక్ట్ కోఆర్డినేటర్‌ను సంప్రదించండి."
 
-#: apps/course_metadata/models.py:2906
+#: apps/course_metadata/models.py:3165
 msgid "Change careers"
 msgstr "కెరీర్ మార్చుకోండి"
 
-#: apps/course_metadata/models.py:2907
+#: apps/course_metadata/models.py:3166
 msgid "Job advancement"
 msgstr "ఉద్యోగంలో పురోగతి"
 
-#: apps/course_metadata/models.py:2908
+#: apps/course_metadata/models.py:3167
 msgid "Learn valuable skills"
 msgstr "విలువైన నైపుణ్యాలను నేర్చుకోండి"
 
-#: apps/course_metadata/models.py:2909
+#: apps/course_metadata/models.py:3168
 msgid "Learn for fun"
 msgstr "వినోదం కోసం నేర్చుకోండి"
 
-#: apps/course_metadata/models.py:3097
+#: apps/course_metadata/models.py:3365
 msgid "FAQs"
 msgstr "తరచుగా అడిగే ప్రశ్నలు"
 
-#: apps/course_metadata/models.py:3112
+#: apps/course_metadata/models.py:3380
 msgid "The user-facing display title for this Program."
 msgstr "ఈ ప్రోగ్రామ్ కోసం యూజర్ ఫేసింగ్ డిస్‌ప్లే టైటిల్."
 
-#: apps/course_metadata/models.py:3114
+#: apps/course_metadata/models.py:3382
 msgid "A brief, descriptive subtitle for the Program."
 msgstr "ప్రోగ్రామ్ కోసం సంక్షిప్త, వివరణాత్మక ఉపశీర్షిక."
 
-#: apps/course_metadata/models.py:3116
+#: apps/course_metadata/models.py:3384
 msgid "A brief hook for the marketing website"
 msgstr "మార్కెటింగ్ వెబ్‌సైట్ కోసం సంక్షిప్త హుక్"
 
-#: apps/course_metadata/models.py:3119
+#: apps/course_metadata/models.py:3387
 msgid "The lifecycle status of this Program."
 msgstr "ఈ ప్రోగ్రామ్ యొక్క జీవితచక్ర స్థితి."
 
-#: apps/course_metadata/models.py:3131
+#: apps/course_metadata/models.py:3399
 msgid ""
 "If this box is not checked, courses will be ordered as in the courses select"
 " box above."
@@ -1525,7 +1606,7 @@ msgstr ""
 "ఈ పెట్టెను ఎంపిక చేయకుంటే, పైన ఉన్న కోర్సుల ఎంపిక పెట్టెలో వలె కోర్సులు "
 "ఆర్డర్ చేయబడతాయి."
 
-#: apps/course_metadata/models.py:3146
+#: apps/course_metadata/models.py:3414
 msgid ""
 "This field is now deprecated (ECOM-6021).Estimated number of weeks needed to"
 " complete a course run belonging to this program."
@@ -1533,11 +1614,11 @@ msgstr ""
 "ఈ ఫీల్డ్ ఇప్పుడు నిలిపివేయబడింది (ECOM-6021).ఈ ప్రోగ్రామ్‌కు సంబంధించిన "
 "కోర్సు రన్‌ను పూర్తి చేయడానికి ఎన్ని వారాల అవసరమో అంచనా వేయబడింది."
 
-#: apps/course_metadata/models.py:3172
+#: apps/course_metadata/models.py:3440
 msgid "DEPRECATED: Use the card image field"
 msgstr "నిలిపివేయబడింది: కార్డ్ ఇమేజ్ ఫీల్డ్‌ని ఉపయోగించండి"
 
-#: apps/course_metadata/models.py:3179
+#: apps/course_metadata/models.py:3447
 msgid ""
 "This field can be used by API clients to determine the order in which "
 "instructors will be displayed on program pages. Instructors in this list "
@@ -1547,16 +1628,16 @@ msgstr ""
 "క్లయింట్లు ఈ ఫీల్డ్‌ని ఉపయోగించవచ్చు. ఈ ప్రోగ్రామ్‌ల కోర్సులతో అనుబంధించబడిన"
 " ఇతరులందరి ముందు ఈ జాబితాలోని బోధకులు కనిపించాలి."
 
-#: apps/course_metadata/models.py:3190
+#: apps/course_metadata/models.py:3458
 msgid "The description of credit redemption for courses in program"
 msgstr "ప్రోగ్రామ్‌లోని కోర్సుల కోసం క్రెడిట్ రిడెంప్షన్ యొక్క వివరణ"
 
-#: apps/course_metadata/models.py:3195
+#: apps/course_metadata/models.py:3463
 msgid "Allow courses in this program to be purchased in a single transaction"
 msgstr ""
 "ఈ ప్రోగ్రామ్‌లోని కోర్సులను ఒకే లావాదేవీలో కొనుగోలు చేయడానికి అనుమతించండి"
 
-#: apps/course_metadata/models.py:3199
+#: apps/course_metadata/models.py:3467
 msgid ""
 "Hide program on marketing site landing and search pages. This program MAY "
 "have a detail page."
@@ -1564,17 +1645,17 @@ msgstr ""
 "మార్కెటింగ్ సైట్ ల్యాండింగ్ మరియు శోధన పేజీలలో ప్రోగ్రామ్‌ను దాచండి. ఈ "
 "ప్రోగ్రామ్ వివరాల పేజీని కలిగి ఉండవచ్చు."
 
-#: apps/course_metadata/models.py:3202
+#: apps/course_metadata/models.py:3470
 msgid "Total number of learners who have enrolled in courses this program"
 msgstr "ఈ ప్రోగ్రామ్‌లో కోర్సులలో నమోదు చేసుకున్న మొత్తం అభ్యాసకుల సంఖ్య"
 
-#: apps/course_metadata/models.py:3207
+#: apps/course_metadata/models.py:3475
 msgid ""
 "Total number of learners who have enrolled in courses in this program in the"
 " last 6 months"
 msgstr "గత 6 నెలల్లో ఈ ప్రోగ్రామ్‌లో కోర్సుల్లో చేరిన మొత్తం అభ్యాసకుల సంఖ్య"
 
-#: apps/course_metadata/models.py:3212
+#: apps/course_metadata/models.py:3480
 msgid ""
 "Number of credits a learner will earn upon successful completion of the "
 "program"
@@ -1582,7 +1663,7 @@ msgstr ""
 "ప్రోగ్రామ్‌ని విజయవంతంగా పూర్తి చేసిన తర్వాత ఒక అభ్యాసకుడు సంపాదించే "
 "క్రెడిట్‌ల సంఖ్య"
 
-#: apps/course_metadata/models.py:3216
+#: apps/course_metadata/models.py:3484
 msgid ""
 "This calculated field signifies if all the courses in this program are "
 "included in the enterprise subscription catalog "
@@ -1590,18 +1671,24 @@ msgstr ""
 "ఈ ప్రోగ్రామ్‌లోని అన్ని కోర్సులు ఎంటర్‌ప్రైజ్ సబ్‌స్క్రిప్షన్ కేటలాగ్‌లో "
 "చేర్చబడితే ఈ లెక్కించబడిన ఫీల్డ్ సూచిస్తుంది "
 
-#: apps/course_metadata/models.py:3220
+#: apps/course_metadata/models.py:3490
+msgid ""
+"Signifies whether this program is included in the B2c subscription catalog."
+msgstr ""
+"ఈ ప్రోగ్రామ్ B2c సబ్‌స్క్రిప్షన్ క్యాటలాగ్‌లో చేర్చబడిందో లేదో సూచిస్తుంది."
+
+#: apps/course_metadata/models.py:3493
 msgid ""
 "A field to override Organization short code alias specific for this program."
 msgstr ""
 "ఈ ప్రోగ్రామ్ కోసం నిర్దిష్టమైన సంస్థ షార్ట్ కోడ్ అలియాస్‌ని భర్తీ చేయడానికి "
 "ఫీల్డ్."
 
-#: apps/course_metadata/models.py:3227
+#: apps/course_metadata/models.py:3500
 msgid "A field to override Organization logo specific for this program."
 msgstr "ఈ ప్రోగ్రామ్ కోసం నిర్దిష్ట సంస్థ లోగోను భర్తీ చేయడానికి ఫీల్డ్."
 
-#: apps/course_metadata/models.py:3231
+#: apps/course_metadata/models.py:3504
 msgid ""
 "Primary subject field specific for this program. Useful field in case there "
 "are no courses associated with this program."
@@ -1609,7 +1696,7 @@ msgstr ""
 "ఈ ప్రోగ్రామ్ కోసం నిర్దిష్టమైన ప్రాథమిక సబ్జెక్ట్ ఫీల్డ్. ఈ ప్రోగ్రామ్‌తో "
 "అనుబంధించబడిన కోర్సులు లేనట్లయితే ఉపయోగకరమైన ఫీల్డ్."
 
-#: apps/course_metadata/models.py:3236
+#: apps/course_metadata/models.py:3509
 msgid ""
 "Level type specific for this program. Useful field in case there are no "
 "courses associated with this program."
@@ -1617,7 +1704,7 @@ msgstr ""
 "ఈ ప్రోగ్రామ్ కోసం నిర్దిష్ట స్థాయి రకం. ఈ ప్రోగ్రామ్‌తో అనుబంధించబడిన "
 "కోర్సులు లేనట్లయితే ఉపయోగకరమైన ఫీల్డ్."
 
-#: apps/course_metadata/models.py:3241
+#: apps/course_metadata/models.py:3514
 msgid ""
 "Language code specific for this program. Useful field in case there are no "
 "courses associated with this program."
@@ -1625,7 +1712,7 @@ msgstr ""
 "ఈ ప్రోగ్రామ్ కోసం నిర్దిష్ట భాషా కోడ్. ఈ ప్రోగ్రామ్‌తో అనుబంధించబడిన "
 "కోర్సులు లేనట్లయితే ఉపయోగకరమైన ఫీల్డ్."
 
-#: apps/course_metadata/models.py:3275
+#: apps/course_metadata/models.py:3548
 msgid ""
 "Useful field to overwrite the duration of a program. It can be a text "
 "describing a period of time, Ex: 6-9 months."
@@ -1633,7 +1720,7 @@ msgstr ""
 "ప్రోగ్రామ్ వ్యవధిని ఓవర్‌రైట్ చేయడానికి ఉపయోగకరమైన ఫీల్డ్. ఇది కాల వ్యవధిని "
 "వివరించే వచనం కావచ్చు, ఉదా: 6-9 నెలలు."
 
-#: apps/course_metadata/models.py:3284
+#: apps/course_metadata/models.py:3557
 msgid ""
 "Pick a tag/label from the suggestions. To make a new tag, add a comma after "
 "the tag name."
@@ -1641,35 +1728,35 @@ msgstr ""
 "సూచనల నుండి ట్యాగ్/లేబుల్‌ని ఎంచుకోండి. కొత్త ట్యాగ్ చేయడానికి, ట్యాగ్ పేరు "
 "తర్వాత కామాను జోడించండి."
 
-#: apps/course_metadata/models.py:3295
+#: apps/course_metadata/models.py:3568
 msgid "The last time this program was modified."
 msgstr "చివరిసారి ఈ కార్యక్రమం సవరించబడింది."
 
-#: apps/course_metadata/models.py:3723 apps/course_metadata/models.py:3740
+#: apps/course_metadata/models.py:4020 apps/course_metadata/models.py:4037
 msgid "ID"
-msgstr "ID"
+msgstr "ఐడి"
 
-#: apps/course_metadata/models.py:3759
+#: apps/course_metadata/models.py:4056
 msgid "The actual rank number"
 msgstr "అసలు ర్యాంక్ సంఖ్య"
 
-#: apps/course_metadata/models.py:3760
+#: apps/course_metadata/models.py:4057
 msgid "What does the rank number mean"
 msgstr "ర్యాంక్ నంబర్ అంటే ఏమిటి"
 
-#: apps/course_metadata/models.py:3761
+#: apps/course_metadata/models.py:4058
 msgid "From where the rank is obtained"
 msgstr "ర్యాంక్ ఎక్కడి నుంచి వస్తుంది"
 
-#: apps/course_metadata/models.py:3777
+#: apps/course_metadata/models.py:4105
 msgid "Callback URL to partner application flow"
 msgstr "పార్టనర్ అప్లికేషన్ ఫ్లోకి కాల్ బ్యాక్ URL"
 
-#: apps/course_metadata/models.py:3780
+#: apps/course_metadata/models.py:4108
 msgid "Overall program ranking (e.g. \"#1 in the U.S.\")"
 msgstr "మొత్తం ప్రోగ్రామ్ ర్యాంకింగ్ (ఉదా &quot;USలో #1&quot;)"
 
-#: apps/course_metadata/models.py:3785
+#: apps/course_metadata/models.py:4113
 msgid ""
 "The 6 character hex value of the color to make the banner borders\n"
 "            (e.g. \"#ff0000\" which equals red) No need to provide the `#`"
@@ -1677,51 +1764,51 @@ msgstr ""
 "బ్యానర్ అంచులను చేయడానికి రంగు యొక్క 6 అక్షరాల హెక్స్ విలువ\n"
 " (ఉదా &quot;#ff0000&quot; ఇది ఎరుపుకు సమానం) `#`ని అందించాల్సిన అవసరం లేదు"
 
-#: apps/course_metadata/models.py:3794
+#: apps/course_metadata/models.py:4122
 msgid "Provide a campus image for the header of the degree"
 msgstr "డిగ్రీ హెడర్ కోసం క్యాంపస్ చిత్రాన్ని అందించండి"
 
-#: apps/course_metadata/models.py:3800
+#: apps/course_metadata/models.py:4128
 msgid "Provide a background image for the title section of the degree"
 msgstr "డిగ్రీ యొక్క శీర్షిక విభాగానికి నేపథ్య చిత్రాన్ని అందించండి"
 
-#: apps/course_metadata/models.py:3805
+#: apps/course_metadata/models.py:4133
 msgid "The fine print that displays at the Tuition section's bottom"
 msgstr "ట్యూషన్ విభాగం దిగువన ప్రదర్శించబడే చక్కటి ముద్రణ"
 
-#: apps/course_metadata/models.py:3810
+#: apps/course_metadata/models.py:4138
 msgid "The fine print that displays at the Deadline section's bottom"
 msgstr "గడువు విభాగం దిగువన ప్రదర్శించబడే చక్కటి ముద్రణ"
 
-#: apps/course_metadata/models.py:3817
+#: apps/course_metadata/models.py:4145
 msgid "The sailthru email list name to capture leads"
 msgstr "లీడ్‌లను సంగ్రహించడానికి sailthru ఇమెయిల్ జాబితా పేరు"
 
-#: apps/course_metadata/models.py:3831
+#: apps/course_metadata/models.py:4159
 msgid "Please provide an image file for the lead capture banner."
 msgstr "దయచేసి లీడ్ క్యాప్చర్ బ్యానర్ కోసం ఇమేజ్ ఫైల్‌ను అందించండి."
 
-#: apps/course_metadata/models.py:3834
+#: apps/course_metadata/models.py:4162
 msgid "The Hubspot form ID for the lead capture form"
 msgstr "లీడ్ క్యాప్చర్ ఫారమ్ కోసం హబ్‌స్పాట్ ఫారమ్ ID"
 
-#: apps/course_metadata/models.py:3840
+#: apps/course_metadata/models.py:4168
 msgid "URL to micromasters landing page"
 msgstr "మైక్రోమాస్టర్స్ ల్యాండింగ్ పేజీకి URL"
 
-#: apps/course_metadata/models.py:3846
+#: apps/course_metadata/models.py:4174
 msgid "Micromasters verbose title"
 msgstr "మైక్రోమాస్టర్స్ వెర్బోస్ టైటిల్"
 
-#: apps/course_metadata/models.py:3852
+#: apps/course_metadata/models.py:4180
 msgid "Micromasters descriptive paragraph"
 msgstr "మైక్రోమాస్టర్స్ వివరణాత్మక పేరా"
 
-#: apps/course_metadata/models.py:3865
+#: apps/course_metadata/models.py:4193
 msgid "Customized background image for the MicroMasters section."
 msgstr "మైక్రోమాస్టర్స్ విభాగం కోసం అనుకూలీకరించిన నేపథ్య చిత్రం."
 
-#: apps/course_metadata/models.py:3869
+#: apps/course_metadata/models.py:4197
 msgid ""
 "Override org name if micromasters program comes from different organization "
 "than Masters program"
@@ -1729,118 +1816,118 @@ msgstr ""
 "మైక్రోమాస్టర్స్ ప్రోగ్రామ్ మాస్టర్స్ ప్రోగ్రామ్ కాకుండా వేరే సంస్థ నుండి "
 "వచ్చినట్లయితే org పేరును భర్తీ చేయండి"
 
-#: apps/course_metadata/models.py:3876
+#: apps/course_metadata/models.py:4204
 msgid "Ranking display for search card (e.g. \"#1 in the U.S.\""
 msgstr "శోధన కార్డ్ కోసం ర్యాంకింగ్ ప్రదర్శన (ఉదా &quot;USలో #1&quot;"
 
-#: apps/course_metadata/models.py:3882
+#: apps/course_metadata/models.py:4210
 msgid "Cost display for search card (e.g. \"$9,999\""
 msgstr "శోధన కార్డ్ కోసం ధర ప్రదర్శన (ఉదా &quot;$9,999&quot;"
 
-#: apps/course_metadata/models.py:3888
+#: apps/course_metadata/models.py:4216
 msgid "Number of courses for search card (e.g. \"11 Courses\""
 msgstr "శోధన కార్డ్ కోసం కోర్సుల సంఖ్య (ఉదా &quot;11 కోర్సులు&quot;"
 
-#: apps/course_metadata/models.py:3896
+#: apps/course_metadata/models.py:4224
 msgid ""
 "Designates whether the degree should be displayed on the owning "
 "organization's page"
 msgstr ""
 "యాజమాన్య సంస్థ పేజీలో డిగ్రీని ప్రదర్శించాలా వద్దా అని నిర్దేశిస్తుంది"
 
-#: apps/course_metadata/models.py:3913
+#: apps/course_metadata/models.py:4243
 msgid "The redirect URL of the degree on external site"
 msgstr "బాహ్య సైట్‌లో డిగ్రీ మళ్లింపు URL"
 
-#: apps/course_metadata/models.py:3918
+#: apps/course_metadata/models.py:4248
 msgid "The URL of the landing page on external site"
 msgstr "బాహ్య సైట్‌లోని ల్యాండింగ్ పేజీ యొక్క URL"
 
-#: apps/course_metadata/models.py:3953
+#: apps/course_metadata/models.py:4299
 msgid "Bell"
 msgstr "బెల్"
 
-#: apps/course_metadata/models.py:3954
+#: apps/course_metadata/models.py:4300
 msgid "Certificate"
 msgstr "సర్టిఫికేట్"
 
-#: apps/course_metadata/models.py:3955
+#: apps/course_metadata/models.py:4301
 msgid "Checkmark"
 msgstr "చెక్ మార్క్"
 
-#: apps/course_metadata/models.py:3956
+#: apps/course_metadata/models.py:4302
 msgid "Clock"
 msgstr "గడియారం"
 
-#: apps/course_metadata/models.py:3957
+#: apps/course_metadata/models.py:4303
 msgid "Desktop"
 msgstr "డెస్క్‌టాప్"
 
-#: apps/course_metadata/models.py:3958
+#: apps/course_metadata/models.py:4304
 msgid "Info"
 msgstr "సమాచారం"
 
-#: apps/course_metadata/models.py:3959
+#: apps/course_metadata/models.py:4305
 msgid "Sitemap"
 msgstr "సైట్‌మ్యాప్"
 
-#: apps/course_metadata/models.py:3960
+#: apps/course_metadata/models.py:4306
 msgid "User"
 msgstr "వినియోగదారు"
 
-#: apps/course_metadata/models.py:3961
+#: apps/course_metadata/models.py:4307
 msgid "Dollar"
 msgstr "డాలర్"
 
-#: apps/course_metadata/models.py:3962
+#: apps/course_metadata/models.py:4308
 msgid "Book"
 msgstr "పుస్తకం"
 
-#: apps/course_metadata/models.py:3963
+#: apps/course_metadata/models.py:4309
 msgid "Mortar Board"
 msgstr "మోర్టార్ బోర్డు"
 
-#: apps/course_metadata/models.py:3964
+#: apps/course_metadata/models.py:4310
 msgid "Star"
 msgstr "నక్షత్రం"
 
-#: apps/course_metadata/models.py:3965
+#: apps/course_metadata/models.py:4311
 msgid "Trophy"
 msgstr "ట్రోఫీ"
 
-#: apps/course_metadata/models.py:3969
+#: apps/course_metadata/models.py:4315
 msgid "Icon FA class"
 msgstr "చిహ్నం FA తరగతి"
 
-#: apps/course_metadata/models.py:3970
+#: apps/course_metadata/models.py:4316
 msgid "Paired text"
 msgstr "జత చేసిన వచనం"
 
-#: apps/course_metadata/models.py:3989
+#: apps/course_metadata/models.py:4351
 msgid "Deadline applies for this semester (e.g. Spring 2019"
 msgstr "ఈ సెమిస్టర్‌కి గడువు వర్తిస్తుంది (ఉదా. వసంతకాలం 2019"
 
-#: apps/course_metadata/models.py:3993
+#: apps/course_metadata/models.py:4355
 msgid "Describes the deadline (e.g. Early Admission Deadline)"
 msgstr "గడువును వివరిస్తుంది (ఉదా. ముందస్తు అడ్మిషన్ గడువు)"
 
-#: apps/course_metadata/models.py:3997
+#: apps/course_metadata/models.py:4359
 msgid "The date after which the deadline expires (e.g. January 1, 2019)"
 msgstr "గడువు ముగిసే తేదీ (ఉదా. జనవరి 1, 2019)"
 
-#: apps/course_metadata/models.py:4001
+#: apps/course_metadata/models.py:4363
 msgid "The time after which the deadline expires (e.g. 11:59 PM EST)."
 msgstr "గడువు ముగిసే సమయం (ఉదా 11:59 PM EST)."
 
-#: apps/course_metadata/models.py:4022
+#: apps/course_metadata/models.py:4399
 msgid "Describes what the cost is for (e.g. Tuition)"
 msgstr "ఖర్చు ఏమిటో వివరిస్తుంది (ఉదా. ట్యూషన్)"
 
-#: apps/course_metadata/models.py:4026
+#: apps/course_metadata/models.py:4403
 msgid "String-based field stating how much the cost is (e.g. $1000)."
 msgstr "స్ట్రింగ్-ఆధారిత ఫీల్డ్ ధర ఎంత అని తెలియజేస్తుంది (ఉదా $1000)."
 
-#: apps/course_metadata/models.py:4054
+#: apps/course_metadata/models.py:4446
 msgid ""
 "A high-level overview of the degree's courseware. The \"brief\"\n"
 "            text is the first 750 characters of \"marketing_text\" and must be\n"
@@ -1850,35 +1937,35 @@ msgstr ""
 " టెక్స్ట్ అనేది &quot;మార్కెటింగ్_టెక్స్ట్&quot; యొక్క మొదటి 750 అక్షరాలు మరియు తప్పనిసరిగా ఉండాలి\n"
 " చెల్లుబాటు అయ్యే HTML."
 
-#: apps/course_metadata/models.py:4062
+#: apps/course_metadata/models.py:4454
 msgid "A high-level overview of the degree's courseware."
 msgstr "డిగ్రీ యొక్క కోర్సు యొక్క ఉన్నత-స్థాయి అవలోకనం."
 
-#: apps/course_metadata/models.py:4138
+#: apps/course_metadata/models.py:4579
 msgid "Organization name"
 msgstr "సంస్థ పేరు"
 
-#: apps/course_metadata/models.py:4160
+#: apps/course_metadata/models.py:4606
 msgid "These programs are for a different partner than the pathway itself: {}"
 msgstr "ఈ ప్రోగ్రామ్‌లు పాత్‌వే కాకుండా వేరే భాగస్వామి కోసం ఉన్నాయి: {}"
 
-#: apps/course_metadata/models.py:4187
+#: apps/course_metadata/models.py:4633
 msgid "Facebook"
 msgstr "ఫేస్బుక్"
 
-#: apps/course_metadata/models.py:4188
+#: apps/course_metadata/models.py:4634
 msgid "Twitter"
 msgstr "ట్విట్టర్"
 
-#: apps/course_metadata/models.py:4189
+#: apps/course_metadata/models.py:4635
 msgid "Blog"
 msgstr "బ్లాగు"
 
-#: apps/course_metadata/models.py:4190
+#: apps/course_metadata/models.py:4636
 msgid "Others"
 msgstr "ఇతరులు"
 
-#: apps/course_metadata/models.py:4250
+#: apps/course_metadata/models.py:4696
 #, python-brace-format
 msgid ""
 "Partner {partner_key} and course partner {course_partner_key} do not match "
@@ -1887,7 +1974,7 @@ msgstr ""
 "url స్లగ్ {url_slug} ని సేవ్ చేయడానికి ప్రయత్నిస్తున్నప్పుడు భాగస్వామి "
 "{partner_key} మరియు కోర్సు భాగస్వామి {course_partner_key} సరిపోలలేదు"
 
-#: apps/course_metadata/models.py:4270
+#: apps/course_metadata/models.py:4716
 #, python-brace-format
 msgid ""
 "Partner {partner_key} and course partner {course_partner_key} do not match "
@@ -1896,14 +1983,19 @@ msgstr ""
 "url దారిమార్పు {url_path} సేవ్ చేయడానికి ప్రయత్నిస్తున్నప్పుడు భాగస్వామి "
 "{partner_key} మరియు కోర్సు భాగస్వామి {course_partner_key} సరిపోలలేదు"
 
-#: apps/course_metadata/models.py:4291
+#: apps/course_metadata/models.py:4737
 msgid "It expects the data will be provided in a csv file format "
 msgstr "ఇది డేటా csv ఫైల్ ఫార్మాట్‌లో అందించబడుతుందని ఆశిస్తోంది "
 
-#: apps/course_metadata/models.py:4303 apps/course_metadata/models.py:4316
-#: apps/course_metadata/models.py:4329 apps/course_metadata/models.py:4349
-#: apps/course_metadata/models.py:4362 apps/course_metadata/models.py:4381
-#: apps/course_metadata/models.py:4401 apps/course_metadata/models.py:4416
+#: apps/course_metadata/models.py:4749
+msgid "A csv file containing uuid of the courses to be archived"
+msgstr "ఆర్కైవ్ చేయవలసిన కోర్సుల uuidలను కలిగి ఉన్న ఒక csv ఫైల్"
+
+#: apps/course_metadata/models.py:4763 apps/course_metadata/models.py:4776
+#: apps/course_metadata/models.py:4789 apps/course_metadata/models.py:4824
+#: apps/course_metadata/models.py:4837 apps/course_metadata/models.py:4856
+#: apps/course_metadata/models.py:4876 apps/course_metadata/models.py:4891
+#: apps/course_metadata/models.py:5044
 msgid ""
 "It expects the data will be provided in a csv file format with first row "
 "containing all the headers."
@@ -1911,50 +2003,78 @@ msgstr ""
 "డేటా అన్ని హెడర్‌లను కలిగి ఉన్న మొదటి వరుసలో csv ఫైల్ ఫార్మాట్‌లో "
 "అందించబడుతుందని ఇది ఆశిస్తోంది."
 
-#: apps/course_metadata/models.py:4373
+#: apps/course_metadata/models.py:4848
 msgid "Open Courses"
 msgstr "ఓపెన్ కోర్సులు"
 
-#: apps/course_metadata/models.py:4374
+#: apps/course_metadata/models.py:4849
 msgid "2U Executive Education Courses"
 msgstr "2U ఎగ్జిక్యూటివ్ ఎడ్యుకేషన్ కోర్సులు"
 
-#: apps/course_metadata/models.py:4375
+#: apps/course_metadata/models.py:4850
 msgid "Bootcamps"
 msgstr "బూట్‌క్యాంప్‌లు"
 
-#: apps/course_metadata/models.py:4386 apps/course_metadata/models.py:4490
+#: apps/course_metadata/models.py:4861 apps/course_metadata/models.py:4965
 msgid "Course UUIDs"
 msgstr "కోర్సు UUIDలు"
 
-#: apps/course_metadata/models.py:4466
+#: apps/course_metadata/models.py:4941
 msgid "Course Run IDs"
 msgstr "కోర్సు రన్ IDలు"
 
-#: apps/course_metadata/models.py:4482
+#: apps/course_metadata/models.py:4957
 msgid "Profile Image UUIDs"
 msgstr "ప్రొఫైల్ చిత్రం UUIDలు"
 
-#: apps/course_metadata/models.py:4489
+#: apps/course_metadata/models.py:4964
 msgid "Tag"
 msgstr "ట్యాగ్ చేయండి"
 
-#: apps/course_metadata/models.py:4505
+#: apps/course_metadata/models.py:4980
 msgid "Remove All Redirects"
 msgstr "అన్ని దారి మళ్లింపులను తీసివేయండి"
 
-#: apps/course_metadata/models.py:4506
+#: apps/course_metadata/models.py:4981
 msgid "Url Paths"
 msgstr "Url మార్గాలు"
 
-#: apps/course_metadata/models.py:4514
+#: apps/course_metadata/models.py:4989
 msgid "Add redirects from all published course url slugs"
 msgstr ""
 "ప్రచురించబడిన అన్ని కోర్సు url స్లగ్‌ల నుండి దారి మళ్లింపులను జోడించండి"
 
-#: apps/course_metadata/models.py:4515 apps/taxonomy_support/models.py:55
+#: apps/course_metadata/models.py:4990 apps/taxonomy_support/models.py:55
 msgid "Course uuids"
 msgstr "కోర్సు uuids"
+
+#: apps/course_metadata/models.py:5055
+msgid "User who uploaded the file"
+msgstr "ఫైల్‌ని అప్‌లోడ్ చేసిన వినియోగదారు"
+
+#: apps/course_metadata/models.py:5060
+msgid "Summary of the task"
+msgstr "టాస్క్ యొక్క సారాంశం"
+
+#: apps/course_metadata/models.py:5063
+msgid "Task Type"
+msgstr "టాస్క్ రకం"
+
+#: apps/course_metadata/models.py:5066
+msgid "Type of Bulk Task to be performed"
+msgstr "నిర్వహించాల్సిన మోతాదులో టాస్క్ రకం"
+
+#: apps/course_metadata/models.py:5069
+msgid "Status"
+msgstr "స్థితి"
+
+#: apps/course_metadata/models.py:5072
+msgid "Status of the Bulk Task"
+msgstr "మోతాదులో టాస్క్ యొక్క స్థితి"
+
+#: apps/course_metadata/models.py:5080
+msgid "Identifier of the celery task associated with this bulk task"
+msgstr "ఈ మోతాదు టాస్క్‌కు సంబంధించిన సెలరీ టాస్క్ యొక్క గుర్తింపు"
 
 #: apps/course_metadata/salesforce.py:78
 msgid "Attempted to query Salesforce with no client for partner={}"
@@ -2026,8 +2146,291 @@ msgstr ""
 "%(user_name)s %(time)s వద్ద %(course_name)s %(date)s పై ఈ క్రింది వ్యాఖ్యను "
 "చేసారు"
 
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:8
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:3
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:9
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:3
+msgid "Hi Course Team,"
+msgstr "హాయ్ కోర్సు టీం,"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:14
+#, python-format
+msgid ""
+"\n"
+"    This is an automated reminder that the course \"%(course_name)s\" (%(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
+"    "
+msgstr ""
+"\n"
+"    ఇది ఆటోమేటెడ్ గుర్తింపుగా, కోర్స్ \"%(course_name)s\" (%(course_key)s) %(days)s రోజుల్లో %(course_end_date)sన ముగియనుందని సూచిస్తుంది.\n"
+"    "
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:20
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:11
+msgid ""
+"If no action is taken, the course will be automatically archived after this "
+"date. If you decide not to extend the course or create a new run at this "
+"time, please inform your dedicated Project Coordinator and share your plans."
+" This helps ensure our internal teams remain aligned and can support you "
+"effectively."
+msgstr ""
+"ఏ చర్య తీసుకోకపోతే, ఈ తేదీ తరువాత కోర్స్ ఆటోమేటిక్‌గా ఆర్కైవ్ చేయబడుతుంది. "
+"మీరు కోర్స్‌ను పొడిగించకపోవాలని లేదా ఇప్పటి సమయంలో కొత్త రన్‌ను "
+"సృష్టించకపోవాలని నిర్ణయించుకుంటే, దయచేసి మీ నియమిత ప్రాజెక్ట్ "
+"కోఆర్డినెటర్‌ను తెలియజేసి, మీ ప్రణాళికలను పంచుకోండి. దీని ద్వారా మా అంతర్గత "
+"బృందాలు సరిగ్గా సమన్వయాన్ని కొనసాగిస్తూ, మీకు సమర్థవంతంగా మద్దతు ఇస్తాయి."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:24
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:13
+msgid ""
+"To ensure a smooth experience for our edX Learners, please take one of the "
+"following actions:"
+msgstr ""
+"మా edX విద్యార్థులకు సజావుగా అనుభవం కలగడానికి, దయచేసి కింద పేర్కొన్న "
+"చర్యల్లో ఒకటిని ఎంచుకోండి:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:29
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:64
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:99
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:15
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:33
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:51
+msgid "Create a New Course Run:"
+msgstr "కొత్త కోర్స్ రన్‌ను సృష్టించండి:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:30
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:65
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:100
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:16
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:34
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:52
+msgid ""
+"Planning to update the content or offer the course to a new cohort? We "
+"recommend setting up a new course run in Publisher."
+msgstr ""
+"కంటెంట్‌ను అప్‌డేట్ చేయాలని లేదా కోర్స్‌ను కొత్త తరగతి పిల్లలకు "
+"అందించాలనుకుంటున్నారా? పబ్లిషర్‌లో కొత్త కోర్స్ రన్ ఏర్పాటును చేయాలని మేము "
+"సిఫారసు చేస్తున్నాం."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:31
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:66
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:101
+msgid "You can get started"
+msgstr "మీరు ప్రారంభించవచ్చు"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:33
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:41
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:68
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:76
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:103
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:111
+msgid "here"
+msgstr "ఇక్కడ"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:38
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:73
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:108
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:19
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:37
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:55
+msgid "Extend the Course End Date:"
+msgstr "కోర్స్ ముగింపు తేదీని పొడిగించండి:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:39
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:74
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:109
+msgid ""
+"If the content is still relevant, you can extend the course end date in "
+"Studio. Simply visit the Schedule and Details tab"
+msgstr ""
+"కంటెంట్ ఇంకా సంబంధితమైతే, స్టూడియోలో కోర్స్ ముగింపు తేదీని పొడిగించవచ్చు. "
+"కేవలం షెడ్యూల్ మరియు వివరాల ట్యాబ్‌ను సందర్శించండి."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:49
+#, python-format
+msgid ""
+"\n"
+"    Our records indicate that the course \"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in 7 days on %(course_end_date)s. Despite previous reminders, we’ve noticed that no action has been taken yet.\n"
+"    "
+msgstr ""
+"\n"
+"    మా రికార్డుల ప్రకారం, కోర్స్ \"%(course_name)s\" (కోర్స్ కీ: %(course_key)s) 7 రోజులలో %(course_end_date)sన ముగియనుంది. మునుపటి మీటింగ్ల హోదా ఉన్నప్పటికీ, ఇంకా ఏ చర్య తీసుకోబడలేదు.\n"
+"    "
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:55
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:29
+msgid ""
+"Important: If no action is taken, the course will be automatically archived "
+"after the current end date. If you choose not to extend or create a new "
+"course run at this time, you must inform your dedicated Project Coordinator "
+"with your reasons. This will ensure our internal teams are properly informed"
+" about your plans."
+msgstr ""
+"ముఖ్య సమాచారం: ఏ చర్య తీసుకోకపోతే, ప్రస్తుత ముగింపు తేదీ తరువాత కోర్స్ "
+"ఆటోమేటిక్‌గా ఆర్కైవ్ చేయబడుతుంది. మీరు ఈ సమయంలో కోర్స్‌ను పొడిగించకపోవాలని "
+"లేదా కొత్త కోర్స్ రన్ సృష్టించకపోవాలని నిర్ణయిస్తే, మీ కారణాలను తెలియజేసే "
+"విధంగా మీ నియమిత ప్రాజెక్ట్ కోఆర్డినెటర్‌ను తప్పనిసరిగా సంప్రదించండి. దీని "
+"ద్వారా మా అంతర్గత బృందాలకు మీ ప్రణాళికల గురించి సక్రమమైన సమాచారాన్ని "
+"అందించవచ్చు."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:59
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:31
+msgid ""
+"To prevent disruption to learner access, please choose one of the following "
+"options:"
+msgstr ""
+"విద్యార్థుల యాక్సెస్‌లో అంతరాయం రాకుండా వ్యవస్థను కొనసాగించేందుకు, దయచేసి "
+"కింది ఎంపికలలో ఒకదాన్ని ఎంచుకోండి:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:84
+#, python-format
+msgid ""
+"\n"
+"    Our records show that the course \"%(course_name)s\" (Course Key: %(course_key)s) officially ended on %(course_end_date)s and has now entered the archived state. Despite our previous reminders, it appears no action has been taken yet.\n"
+"    "
+msgstr ""
+"\n"
+"    మా రికార్డులు చూపిస్తున్నాయి, కోర్స్ \"%(course_name)s\" (కోర్స్ కీ: %(course_key)s) అధికారికంగా %(course_end_date)sన ముగిసినది మరియు ఇప్పుడు ఆర్కైవ్డ్ స్థితిలోకి প্রবేశించింది. మునుపటి గుర్తింపుల باوجود, ఇంకా ఏ చర్య తీసుకోబడలేదు.\n"
+"    "
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:90
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:47
+msgid ""
+"Important: If you decide not to extend the course or create a new course run"
+" at this time, you must inform your dedicated Project Coordinator with the "
+"reasons behind this. This will help ensure our internal teams are fully "
+"updated on your plans for the course."
+msgstr ""
+"ముఖ్యమైంది: మీరు ఈ సమయంలో కోర్స్‌ను పొడిగించకపోవాలని లేదా కొత్త కోర్స్ "
+"రన్‌ను సృష్టించకపోవాలని నిర్ణయిస్తే, దయచేసి మీ కారణాలను తెలిపి, మీ నియమిత "
+"ప్రాజెక్ట్ కోఆర్డినెటర్‌ను అయితులు చేయండి. తద్వారా మా అంతర్గత బృందాల వద్ద మీ"
+" ప్రణాళికల పూర్తి సమాచారాన్ని పొందడం సాధ్యమవుతుంది."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:94
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:49
+msgid ""
+"If you wish to keep this course active, please choose one of the following "
+"options:"
+msgstr ""
+"మీరు ఈ కోర్స్‌ను చురుకుగా ఉంచాలని కోరితే, దయచేసి కింది ఎంపికలలో ఒకదాన్ని "
+"ఎంచుకోండి:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:121
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:63
+msgid ""
+"NOTE: This email address isn’t monitored for replies. If you have any "
+"questions or need assistance, please reach out to your dedicated Project "
+"Coordinator at"
+msgstr ""
+"గమనిక: ఈ ఇమెయిల్ చిరునామాను సమాధానాల కోసం పర్యవేక్షించరు. మీకు ఏవైనా "
+"ప్రశ్నలు లేదా సహాయం అవసరమైతే, దయచేసి మీ నియమిత ప్రాజెక్ట్ కోఆర్డినెటర్‌ను "
+"సంప్రదించండి."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:124
+#: apps/course_metadata/templates/course_metadata/email/go_live.html:26
+#: apps/course_metadata/templates/course_metadata/email/legal_review.html:23
+#: apps/course_metadata/templates/course_metadata/email/reviewed.html:38
+#, python-brace-format
+msgid ""
+"{link_start}{contact_us_email}{link_middle}{contact_us_email}{link_end}"
+msgstr ""
+"{link_start} {contact_us_email} {link_middle} {contact_us_email} {link_end}"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:137
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:74
+msgid ""
+"NOTE: This email address isn’t monitored for replies. If you have any "
+"questions or need assistance, please reach out to your dedicated Project "
+"Coordinator."
+msgstr ""
+"గమనిక: ఈ ఇమెయిల్ చిరునామాను సమాధానాల కోసం పర్యవేక్షించరు. మీకు ఏవైనా "
+"ప్రశ్నలు లేదా సహాయం అవసరమైతే, దయచేసి మీ నియమిత ప్రాజెక్ట్ కోఆర్డినెటర్‌ను "
+"సంప్రదించండి."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:143
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:78
+msgid "Thank you for your attention to this—looking forward to your updates!"
+msgstr "ఈ విషయంపై మీ దృష్టికి ధన్యవాదాలు — మీ నవీకరణలను ఎదురుచూస్తున్నాము!"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:147
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:80
+msgid "Best,"
+msgstr "శుభాకాంక్షలతో,"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.html:149
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:81
+msgid "edX Operational Team"
+msgstr "edX ఆపరేషనల్ టీం"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:7
+#, python-format
+msgid ""
+"\n"
+"This is an automated reminder that the course \"%(course_name)s\" (%(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
+msgstr ""
+"\n"
+"ఇది ఆటోమేటెడ్ గుర్తింపుగా, కోర్స్ \"%(course_name)s\" (%(course_key)s) %(days)s రోజుల్లో %(course_end_date)sన ముగియనుందని సూచిస్తుంది.\n"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:17
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:35
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:53
+msgid "You can get started here:"
+msgstr "మీరు ఇక్కడ ప్రారంభించవచ్చు:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:20
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:38
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:56
+msgid ""
+"If the content is still relevant, you can extend the course end date in "
+"Studio."
+msgstr ""
+"కంటెంట్ ఇంకా సంబంధితమైతే, స్టూడియోలో కోర్స్ ముగింపు తేదీని పొడిగించవచ్చు."
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:21
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:39
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:57
+msgid "Simply visit the Schedule and Details tab here:"
+msgstr "కేవలం ఇక్కడ షెడ్యూల్ మరియు వివరాల ట్యాబ్‌ను సందర్శించండి:"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:25
+#, python-format
+msgid ""
+"\n"
+"Our records indicate that the course \"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in 7 days on %(course_end_date)s. Despite previous reminders, we’ve noticed that no action has been taken yet.\n"
+msgstr ""
+"\n"
+"మా రికార్డులు సూచిస్తున్నాయి, కోర్స్ \"%(course_name)s\" (కోర్స్ కీ: %(course_key)s) 7 రోజులలో %(course_end_date)sన ముగియనుంది. మునుపటి గుర్తింపుల باوجود, ఇప్పటివరకు ఏ చర్య తీసుకోబడలేదు.\n"
+
+#: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:43
+#, python-format
+msgid ""
+"\n"
+"Our records show that the course \"%(course_name)s\" (Course Key: %(course_key)s) officially ended on %(course_end_date)s and has now entered the archived state. Despite our previous reminders, it appears no action has been taken yet.\n"
+msgstr ""
+"\n"
+"మా రికార్డులు చూపిస్తున్నాయి, కోర్స్ \"%(course_name)s\" (కోర్స్ కీ: %(course_key)s) అధికారికంగా %(course_end_date)sన ముగిసినది మరియు ఇప్పుడు ఆర్కైవ్డ్ స్థితిలోకి ప్రవేశించింది. మునుపటి గుర్తింపులున్నప్పటికీ, ఇంకా ఏ చర్య తీసుకోబడలేదు.\n"
+
+#: apps/course_metadata/templates/course_metadata/email/go_live.html:17
+#: apps/course_metadata/templates/course_metadata/email/go_live.txt:7
+#, python-format
+msgid ""
+"The About page for the %(course_run_number)s course run of %(course_name)s "
+"has been submitted for publishing. The new session will appear on the edX "
+"website following the next couple of deployments—typically within 24 to 48 "
+"business hours."
+msgstr ""
+"'%(course_name)s' కోర్సు యొక్క %(course_run_number)s వ త్రో కోర్సు రన్ కోసం "
+"'About' పేజీ ప్రచురణకు సమర్పించబడింది. తదుపరి రెండు డిప్లాయ్‌మెంట్ల "
+"తరువాత—సాధారణంగా 24 నుండి 48 వ్యాపార గంటల లో—edX వెబ్‌సైట్‌లో కొత్త సెషన్ "
+"కనిపిస్తుంది."
+
+#: apps/course_metadata/templates/course_metadata/email/go_live.txt:11
+msgid ""
+"Note: This is a no-reply email. For any questions or comments, please "
+"contact your Project Coordinator at"
+msgstr ""
+"గమనిక: ఇది నో-రిప్లై ఇమెయిల్. ఏవైనా ప్రశ్నలు లేదా వ్యాఖ్యల కోసం, దయచేసి మీ "
+"ప్రాజెక్ట్ కోఆర్డినేటర్‌ను సంప్రదించండి."
+
 #: apps/course_metadata/templates/course_metadata/email/internal_review.html:9
 #: apps/course_metadata/templates/course_metadata/email/internal_review.txt:3
 #: apps/course_metadata/templates/course_metadata/email/legal_review.html:9
@@ -2037,47 +2440,6 @@ msgstr ""
 #, python-format
 msgid "Dear %(recipient_name)s,"
 msgstr "ప్రియమైన %(recipient_name)s ,"
-
-#: apps/course_metadata/templates/course_metadata/email/go_live.html:17
-#: apps/course_metadata/templates/course_metadata/email/go_live.txt:7
-#, python-format
-msgid ""
-"The About page for the %(course_run_number)s course run of %(course_name)s "
-"has been published. No further action is necessary."
-msgstr ""
-"%(course_name)s యొక్క %(course_run_number)s కోర్సు రన్ గురించి పేజీ "
-"ప్రచురించబడింది. తదుపరి చర్య అవసరం లేదు."
-
-#: apps/course_metadata/templates/course_metadata/email/go_live.html:24
-#, python-brace-format
-msgid "{link_start}{preview_url}{link_middle}View this About page.{link_end}"
-msgstr ""
-"{link_start} {preview_url} {link_middle} దీని గురించి పేజీని వీక్షించండి. "
-"{link_end}"
-
-#: apps/course_metadata/templates/course_metadata/email/go_live.html:33
-#: apps/course_metadata/templates/course_metadata/email/legal_review.html:23
-#: apps/course_metadata/templates/course_metadata/email/reviewed.html:38
-#, python-brace-format
-msgid ""
-"{link_start}{contact_us_email}{link_middle}{contact_us_email}{link_end}"
-msgstr ""
-"{link_start} {contact_us_email} {link_middle} {contact_us_email} {link_end}"
-
-#: apps/course_metadata/templates/course_metadata/email/go_live.txt:11
-#, python-format
-msgid "View this About page. %(preview_url)s"
-msgstr "ఈ పరిచయం పేజీని వీక్షించండి. %(preview_url)s"
-
-#: apps/course_metadata/templates/course_metadata/email/go_live.txt:15
-#: apps/course_metadata/templates/course_metadata/email/legal_review.txt:15
-#: apps/course_metadata/templates/course_metadata/email/reviewed.txt:25
-msgid ""
-"Note: This email address is unable to receive replies. For questions or "
-"comments, please contact your Project Coordinator(s):"
-msgstr ""
-"గమనిక: ఈ ఇమెయిల్ చిరునామా ప్రత్యుత్తరాలను స్వీకరించలేకపోయింది. ప్రశ్నలు లేదా"
-" వ్యాఖ్యల కోసం, దయచేసి మీ ప్రాజెక్ట్ కోఆర్డినేటర్(ల)ని సంప్రదించండి:"
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.html:14
 #, python-brace-format
@@ -2150,6 +2512,15 @@ msgstr "%(org_name)s సమీక్ష కోసం %(course_name)s సమర�
 msgid "View this course run in Publisher above to determine OFAC status."
 msgstr ""
 "OFAC స్థితిని గుర్తించడానికి ఎగువ ప్రచురణకర్తలో ఈ కోర్సును వీక్షించండి."
+
+#: apps/course_metadata/templates/course_metadata/email/legal_review.txt:15
+#: apps/course_metadata/templates/course_metadata/email/reviewed.txt:25
+msgid ""
+"Note: This email address is unable to receive replies. For questions or "
+"comments, please contact your Project Coordinator(s):"
+msgstr ""
+"గమనిక: ఈ ఇమెయిల్ చిరునామా ప్రత్యుత్తరాలను స్వీకరించలేకపోయింది. ప్రశ్నలు లేదా"
+" వ్యాఖ్యల కోసం, దయచేసి మీ ప్రాజెక్ట్ కోఆర్డినేటర్(ల)ని సంప్రదించండి:"
 
 #: apps/course_metadata/templates/course_metadata/email/reviewed.html:15
 #, python-brace-format
@@ -2234,7 +2605,7 @@ msgstr ""
 "కోర్సు &#39; %(course_name)s &#39; edX ద్వారా విజయవంతంగా సమీక్షించబడింది మరియు ఇప్పుడు ప్రచురణకు సిద్ధంగా ఉంది. కోర్సు %(course_publish_date)s లో ప్రచురించబడుతుంది.\n"
 " పేజీ గురించి కోర్సు యొక్క ప్రివ్యూను చూడటానికి, ఇక్కడకు వెళ్లండి: %(course_preview_url)s\n"
 
-#: apps/course_metadata/utils.py:380
+#: apps/course_metadata/utils.py:391
 msgid "Special characters not allowed in Course Number."
 msgstr "కోర్సు నంబర్‌లో ప్రత్యేక అక్షరాలు అనుమతించబడవు."
 
@@ -2297,51 +2668,51 @@ msgstr "LanguageTag మోడల్ అనువాదాలు"
 msgid "Inactive"
 msgstr "నిష్క్రియ"
 
-#: apps/learner_pathway/models.py:85
+#: apps/learner_pathway/models.py:84
 msgid "Title of the learner pathway."
 msgstr "అభ్యాసకుల మార్గం యొక్క శీర్షిక."
 
-#: apps/learner_pathway/models.py:88
+#: apps/learner_pathway/models.py:87
 msgid "Course/Program associated pathways also appear in search results"
 msgstr "కోర్సు/ప్రోగ్రామ్ అనుబంధిత మార్గాలు శోధన ఫలితాలలో కూడా కనిపిస్తాయి"
 
-#: apps/learner_pathway/models.py:91
+#: apps/learner_pathway/models.py:90
 msgid "The active/inactive status of this Pathway."
 msgstr "ఈ మార్గం యొక్క సక్రియ/క్రియారహిత స్థితి."
 
-#: apps/learner_pathway/models.py:119
+#: apps/learner_pathway/models.py:118
 msgid "Learner Pathway"
 msgstr "అభ్యాసకుడి మార్గం"
 
-#: apps/learner_pathway/models.py:120
+#: apps/learner_pathway/models.py:119
 msgid "Learner Pathways"
 msgstr "అభ్యాసకుల మార్గాలు"
 
-#: apps/learner_pathway/models.py:166
+#: apps/learner_pathway/models.py:165
 msgid "Minimum number of nodes to complete this step of the pathway"
 msgstr "పాత్‌వే యొక్క ఈ దశను పూర్తి చేయడానికి కనీస నోడ్‌ల సంఖ్య"
 
-#: apps/learner_pathway/models.py:170
+#: apps/learner_pathway/models.py:169
 msgid "Learner Pathway Step"
 msgstr "లెర్నర్ పాత్‌వే దశ"
 
-#: apps/learner_pathway/models.py:171
+#: apps/learner_pathway/models.py:170
 msgid "Learner Pathway Steps"
 msgstr "లెర్నర్ పాత్‌వే దశలు"
 
-#: apps/learner_pathway/models.py:238
+#: apps/learner_pathway/models.py:237
 msgid "Learner Pathway Course"
 msgstr "లెర్నర్ పాత్‌వే కోర్సు"
 
-#: apps/learner_pathway/models.py:239
+#: apps/learner_pathway/models.py:238
 msgid "Learner Pathway Courses"
 msgstr "లెర్నర్ పాత్‌వే కోర్సులు"
 
-#: apps/learner_pathway/models.py:276
+#: apps/learner_pathway/models.py:275
 msgid "Learner Pathway Program"
 msgstr "లెర్నర్ పాత్‌వే ప్రోగ్రామ్"
 
-#: apps/learner_pathway/models.py:277
+#: apps/learner_pathway/models.py:276
 msgid "Learner Pathway Programs"
 msgstr "లెర్నర్ పాత్‌వే ప్రోగ్రామ్‌లు"
 
@@ -2409,7 +2780,7 @@ msgstr ""
 "గత అనేక రోజులలో సృష్టించబడిన లేదా సవరించబడిన కోర్సుల కోసం సిఫార్సులను "
 "జోడిస్తుంది"
 
-#: apps/taxonomy_support/providers.py:162
+#: apps/taxonomy_support/providers.py:198
 msgid "No partner object found!"
 msgstr "భాగస్వామి వస్తువు కనుగొనబడలేదు!"
 
