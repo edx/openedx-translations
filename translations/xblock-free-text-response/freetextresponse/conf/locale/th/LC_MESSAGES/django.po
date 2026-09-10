@@ -1,24 +1,16 @@
-# edX translation file.
-# Copyright (C) 2024 EdX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2024.
-# 
-# Translators:
-# Brian Smith, 2024
-# Nathan Robertson, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2023-05-19 00:50+0000\n"
-"Last-Translator: Nathan Robertson, 2024\n"
-"Language-Team: Thai (https://app.transifex.com/open-edx/teams/6205/th/)\n"
+"PO-Revision-Date: 2026-09-10 10:16+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: th\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: models.py:39
@@ -30,45 +22,46 @@ msgid ""
 "This is a flag that indicates if the indicator icon should be displayed "
 "after a student enters their response"
 msgstr ""
-"นี่คือธงที่ระบุว่าควรแสดงไอคอนตัวบ่งชี้หลังจากที่นักเรียนป้อนคำตอบแล้วหรือไม่"
+"นี่คือค่าสถานะที่บ่งชี้ว่าควรแสดงไอคอนตัวชี้หลังจากนักเรียนป้อนคำตอบแล้ว"
 
 #: models.py:49
 msgid "Display Other Student Responses"
-msgstr "แสดงคำตอบของนักเรียนคนอื่นๆ"
+msgstr "แสดงคำตอบของนักเรียนอื่นๆ"
 
 #: models.py:51
 msgid ""
 "This will display other student responses to the student after they submit "
 "their response."
 msgstr ""
-"นี่จะแสดงคำตอบของนักเรียนคนอื่นๆ ให้กับนักเรียนหลังจากที่พวกเขาส่งคำตอบแล้ว"
+"หลังจากนักเรียนส่งคำตอบแล้ว จะแสดงคำตอบของนักเรียนคนอื่นให้กับนักเรียน"
 
 #: models.py:60
 msgid "System selected answers to give to students"
-msgstr "ระบบได้เลือกคำตอบมามอบให้กับนักเรียน"
+msgstr "คำตอบที่ระบบเลือกมาเพื่อนำเสนอแก่นักเรียน"
 
 #: models.py:63
 msgid "Display Name"
-msgstr "ชื่อที่แสดง"
+msgstr "แสดงชื่อ"
 
 #: models.py:65
 msgid "This is the title for this question type"
-msgstr "นี่คือชื่อของคำถามประเภทนี้"
+msgstr "นี่คือชื่อสำหรับประเภทคำถามนี้"
 
 #: models.py:71
 msgid "Full-Credit Key Phrases"
-msgstr "วลีสำคัญแบบเต็มเครดิต"
+msgstr "วลีสำคัญสำหรับคะแนนเต็ม"
 
 #: models.py:73
 msgid ""
 "This is a list of words or phrases, one of which must be present in order "
 "for the student's answer to receive full credit"
 msgstr ""
-"นี่คือรายการคำหรือวลีที่ต้องแสดงอย่างใดอย่างหนึ่งเพื่อให้คำตอบของนักเรียนได้รับเครดิตเต็ม"
+"นี่คือรายการคำหรือวลี "
+"โดยหนึ่งในนั้นต้องมีอยู่เพื่อให้นักเรียนได้รับคะแนนเต็ม"
 
 #: models.py:81
 msgid "Half-Credit Key Phrases"
-msgstr "วลีสำคัญครึ่งเครดิต"
+msgstr "วลีสำคัญสำหรับคะแนนครึ่ง"
 
 #: models.py:83
 msgid ""
@@ -76,7 +69,7 @@ msgid ""
 "for the student's answer to receive half credit"
 msgstr ""
 "นี่คือรายการคำหรือวลี "
-"ซึ่งต้องมีรายการใดรายการหนึ่งเพื่อให้คำตอบของนักเรียนได้รับครึ่งหนึ่งเครดิต"
+"โดยหนึ่งในนั้นต้องมีอยู่เพื่อให้นักเรียนได้รับคะแนนครึ่ง"
 
 #: models.py:91
 msgid "Maximum Number of Attempts"
@@ -86,7 +79,7 @@ msgstr "จำนวนความพยายามสูงสุด"
 msgid ""
 "This is the maximum number of times a student is allowed to attempt the "
 "problem"
-msgstr "นี่คือจำนวนครั้งสูงสุดที่นักเรียนจะได้รับอนุญาตให้พยายามแก้ปัญหา"
+msgstr "นี่คือจำนวนครั้งสูงสุดที่นักเรียนสามารถลองทำปัญหานี้ได้"
 
 #: models.py:101
 msgid "Maximum Word Count"
@@ -106,20 +99,20 @@ msgstr "นี่คือจำนวนคำขั้นต่ำที่จ
 
 #: models.py:121
 msgid "Prompt"
-msgstr "แจ้ง"
+msgstr "ข้อความแจ้ง"
 
 #: models.py:123
 msgid ""
 "This is the prompt students will see when asked to enter their response"
-msgstr "นี่คือข้อความที่นักเรียนจะเห็นเมื่อถูกขอให้ป้อนคำตอบ"
+msgstr "นี่คือข้อความแจ้งที่นักเรียนจะเห็นเมื่อถูกขอให้ป้อนคำตอบ"
 
 #: models.py:131
 msgid "Submission Received Message"
-msgstr "ข้อความที่ได้รับการส่ง"
+msgstr "ข้อความยืนยันการรับคำตอบ"
 
 #: models.py:133
 msgid "This is the message students will see upon submitting their response"
-msgstr "นี่คือข้อความที่นักเรียนจะเห็นเมื่อส่งคำตอบ"
+msgstr "นี่คือข้อความที่นักเรียนจะเห็นเมื่อส่งคำตอบแล้ว"
 
 #: models.py:140
 msgid "Weight"
@@ -127,21 +120,21 @@ msgstr "น้ำหนัก"
 
 #: models.py:142
 msgid "This assigns an integer value representing the weight of this problem"
-msgstr "ซึ่งจะกำหนดค่าจำนวนเต็มที่แสดงถึงน้ำหนักของปัญหานี้"
+msgstr "นี่คือการกำหนดค่าจำนวนเต็มที่แสดงถึงน้ำหนักของปัญหานี้"
 
 #: models.py:150
 msgid "Draft Received Message"
-msgstr "ข้อความที่ได้รับฉบับร่าง"
+msgstr "ข้อความรับร่างคำตอบ"
 
 #: models.py:152
 msgid "This is the message students will see upon submitting a draft response"
-msgstr "นี่คือข้อความที่นักเรียนจะเห็นเมื่อส่งคำตอบฉบับร่าง"
+msgstr "นี่คือข้อความที่นักเรียนจะเห็นเมื่อส่งร่างคำตอบ"
 
 #: templates/view.html:15
 msgid ""
 "Allow my response to possibly be visible by other learners after submitting "
 "their response"
-msgstr "อนุญาตให้ผู้เรียนคนอื่นมองเห็นคำตอบของฉันได้หลังจากส่งคำตอบแล้ว"
+msgstr "อนุญาตให้คำตอบของฉันอาจจะแสดงผลแก่ผู้เรียนคนอื่นหลังจากส่งคำตอบแล้ว"
 
 #: templates/view.html:21 templates/view.html:24
 msgid "Checking..."
@@ -149,15 +142,15 @@ msgstr "กำลังตรวจสอบ..."
 
 #: templates/view.html:21 templates/view.html:22
 msgid "Submit"
-msgstr "ยอมรับ"
+msgstr "ส่ง"
 
 #: templates/view.html:24 templates/view.html:25
 msgid "Save"
-msgstr "Save"
+msgstr "บันทึก"
 
 #: templates/view.html:34
 msgid "Hide"
-msgstr "Hide"
+msgstr "ซ่อน"
 
 #: templates/view.html:35
 msgid "Show"
@@ -165,15 +158,15 @@ msgstr "แสดง"
 
 #: templates/view.html:36
 msgid "peer responses"
-msgstr "การตอบสนองของเพื่อน"
+msgstr "คำตอบของเพื่อน"
 
 #: templates/view.html:38
 msgid "Submissions by others"
-msgstr "การส่งผลงานโดยผู้อื่น"
+msgstr "คำตอบที่ส่งโดยผู้อื่น"
 
 #: templates/view.html:39 templates/view.html:43
 msgid "No responses to show at this time"
-msgstr "ไม่มีคำตอบที่จะแสดงในขณะนี้"
+msgstr "ขณะนี้ไม่มีคำตอบที่จะแสดง"
 
 #: views.py:126
 #, python-brace-format
@@ -185,21 +178,21 @@ msgstr[0] "{weight} คะแนนที่เป็นไปได้"
 #, python-brace-format
 msgid "{score_string}/{weight} point"
 msgid_plural "{score_string}/{weight} points"
-msgstr[0] "{score_string} / {weight} คะแนน"
+msgstr[0] "{score_string}/{weight} คะแนน"
 
 #: views.py:147
 #, python-brace-format
 msgid "You have used {count_attempts} of {max_attempts} submission"
 msgid_plural "You have used {count_attempts} of {max_attempts} submissions"
-msgstr[0] "คุณได้ใช้การส่ง {count_attempts} จาก {max_attempts} แล้ว"
+msgstr[0] "คุณได้ใช้ {count_attempts} จาก {max_attempts} ครั้งส่ง"
 
 #: views.py:171
 #, python-brace-format
 msgid "Your response must be between {min} and {max} word."
 msgid_plural "Your response must be between {min} and {max} words."
-msgstr[0] "คำตอบของคุณจะต้องอยู่ระหว่างคำ {min} ถึง {max}"
+msgstr[0] "คำตอบของคุณต้องมีระหว่าง {min} ถึง {max} คำ"
 
 #: views.py:267
 #, python-brace-format
 msgid "Invalid Word Count. {word_count_message}"
-msgstr "จำนวนคำไม่ถูกต้อง {word_count_message}"
+msgstr "จำนวนคำไม่ถูกต้อง. {word_count_message}"
