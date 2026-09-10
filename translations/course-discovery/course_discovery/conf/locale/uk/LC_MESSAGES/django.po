@@ -4,82 +4,82 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2026-08-19 00:16+0000\n"
-"PO-Revision-Date: 2026-09-10 11:37+0000\n"
+"PO-Revision-Date: 2026-09-10 11:40+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: English (http://www.transifex.com/open-edx/edx-platform/language/en/)\n"
-"Language: de_DE\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #: apps/api/filters.py:48
 #, python-brace-format
 msgid "No user with the username [{username}] exists."
-msgstr "Ein Nutzer mit Namen [{username}] existiert nicht."
+msgstr "Користувача з ім'ям [{username}] не існує."
 
 #: apps/api/filters.py:51
 msgid ""
 "Only staff users are permitted to filter by username. Remove the username "
 "parameter."
 msgstr ""
-"Nur Mitarbeiter sind berechtigt nach Benutzernamen zu filtern. Entfernen Sie"
-" den Benutzername Parameter"
+"Лише співробітникам дозволено фільтрувати за ім'ям користувача. Видаліть "
+"параметр username."
 
 #: apps/api/serializers.py:850
 msgid "Number of courses contained in this catalog"
-msgstr "Anzahl der Kurse in diesem Katalog"
+msgstr "Кількість курсів, що містяться в цьому каталозі"
 
 #: apps/api/serializers.py:853
 msgid "Usernames of users with explicit access to view this catalog"
 msgstr ""
-"Benutzernamen der Nutzer mit ausdrücklichem Zugriff um diesen Katalog zu "
-"sehen"
+"Імена користувачів, яким надано явний дозвіл для перегляду цього каталогу"
 
 #: apps/api/serializers.py:1023
 msgid "Start date cannot be after the End date"
-msgstr "Startdatum kann nicht nach dem Enddatum gesetzt werden"
+msgstr "Дата початку не може бути пізнішою за дату завершення"
 
 #: apps/api/serializers.py:1028
 msgid "Term cannot be changed"
-msgstr "Begriff kann nicht geändert werden"
+msgstr "Термін не може бути змінений"
 
 #: apps/api/serializers.py:1048
 msgid "Language in which the course is administered"
-msgstr "Sprache in der dieser Kurs verwaltet wird"
+msgstr "Мова, на якій адмініструється курс"
 
 #: apps/api/serializers.py:1152
 msgid "Course cannot be changed for an existing course run"
-msgstr "Kurs kann nicht für den aktuellen Kurslauf geändert werden"
+msgstr "Курс не може бути змінений для існуючого запуску курсу"
 
 #: apps/api/serializers.py:1157
 msgid "Minimum effort cannot be greater than Maximum effort"
-msgstr "Minimale Bemühungen können nicht besser sein als maximale Bemühungen"
+msgstr "Мінімальні зусилля не можуть перевищувати максимальні"
 
 #: apps/api/serializers.py:1159
 msgid "Minimum effort and Maximum effort cannot be the same"
-msgstr "Minimale und maximale Anforderung kann nicht gleich sein"
+msgstr "Мінімальні та максимальні зусилля не можуть бути однаковими"
 
 #: apps/api/serializers.py:1205
 msgid "Dictionary mapping course run IDs to boolean values"
-msgstr "Dictionary welches die \"Course run\" IDs auf boole'sche Werte abbildet"
+msgstr ""
+"Словник, що відображає ідентифікатори запусків курсів у логічні значення"
 
 #: apps/api/serializers.py:1310
 msgid "Restriction Type cannot be empty"
-msgstr "Die Typeinschränkung darf nicht leer sein"
+msgstr "Тип обмеження не може бути порожнім"
 
 #: apps/api/serializers.py:1778
 msgid "Dictionary mapping course IDs to boolean values"
-msgstr "Dictionary welches die \"Course\" IDs auf boole'sche Werte abbildet"
+msgstr "Словник, що відображає ідентифікатори курсів у логічні значення"
 
 #: apps/api/serializers.py:2245
 msgid "Languages that course runs in this program are offered in."
-msgstr "Verfügbare Sprachen dieses Kurses"
+msgstr "Мови, на яких пропонуються запуски курсів цієї програми."
 
 #: apps/api/serializers.py:2249
 msgid ""
 "Languages that course runs in this program have available transcripts in."
-msgstr "Sprachen der Kurse mit Transkription"
+msgstr "Мови, для яких у запусках курсів цієї програми доступні стенограми."
 
 #: apps/api/utils.py:346
 #, python-brace-format
@@ -87,36 +87,33 @@ msgid ""
 "An error occurred while setting the course run image for [{key}] in studio. "
 "All other fields were successfully saved in Studio."
 msgstr ""
-"Es ist ein Fehler aufgetreten beim erstellen des Kurslaufs für [{key}] in "
-"Studio. Alle Felder wurden erfolgreich in Studio gespeichert."
+"Сталася помилка при встановленні зображення запуску курсу для [{key}] у "
+"Studio. Всі інші поля було успішно збережено у Studio."
 
 #: apps/api/v1/exceptions.py:13
 msgid "Specifying both editable=1 and a q parameter is not supported."
-msgstr ""
-"Die Angabe sowohl von editable=1 als auch eines q-Parameters wird nicht "
-"unterstützt."
+msgstr "Вказівка одночасно editable=1 та параметру q не підтримується."
 
 #: apps/api/v1/views/comments.py:34
 msgid "You must include a course_uuid in your query parameters."
-msgstr "Ihre Abfrageparameter müssen eine Kurs_uuid beinhalten."
+msgstr "Ви повинні включити course_uuid у параметри запиту."
 
 #: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:205
 #, python-brace-format
 msgid "Missing value for: [{name}]. "
-msgstr "Fehlender Wert für: [{name}]. "
+msgstr "Відсутнє значення для: [{name}]. "
 
 #: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:216
 msgid "Incorrect data sent. "
-msgstr "Falsche Daten wurden gesendet."
+msgstr "Надіслані дані некоректні. "
 
 #: apps/api/v1/views/course_runs.py:49
 msgid "Failed to set course run data: {}"
-msgstr "Festlegen der Kurslaufdaten fehlgeschlagen: {}"
+msgstr "Не вдалося встановити дані запуску курсу: {}"
 
 #: apps/api/v1/views/course_runs.py:328
 msgid "Can only update status, ofac restrictions, and ofac comment"
-msgstr ""
-"Kann nur Status, ofac-Einschränkungen und ofac-Kommentar aktualisieren"
+msgstr "Можна оновлювати лише статус, обмеження OFAC та коментар OFAC"
 
 #: apps/api/v1/views/course_runs.py:363
 #, python-brace-format
@@ -124,40 +121,40 @@ msgid ""
 "The course run type '{course_run_type}' is not valid for this course type "
 "'{course_type}'."
 msgstr ""
-"Der Kursausführungstyp „{course_run_type}“ ist für diesen Kurstyp "
-"„{course_type}“ ungültig."
+"Тип запуску курсу '{course_run_type}' недійсний для цього типу курсу "
+"'{course_type}'."
 
 #: apps/api/v1/views/course_runs.py:381
 msgid "Course run is in review. Editing disabled."
-msgstr "Kurslauf ist in Revision. Bearbeiten ist nicht möglich."
+msgstr "Запуск курсу перебуває на розгляді. Редагування вимкнено."
 
 #: apps/api/v1/views/course_runs.py:388
 msgid "Invalid parameter"
-msgstr "Ungültiger Parameter"
+msgstr "Недійсний параметр"
 
 #: apps/api/v1/views/courses.py:62
 msgid "Failed to set data: {}"
-msgstr "Festlegen der Daten fehlgeschlagen: {}"
+msgstr "Не вдалося встановити дані: {}"
 
 #: apps/api/v1/views/courses.py:207
 #, python-brace-format
 msgid "Organization [{org}] does not exist. "
-msgstr "Das Unternehmen [{org}] existiert nicht."
+msgstr "Організація [{org}] не існує. "
 
 #: apps/api/v1/views/courses.py:209
 #, python-brace-format
 msgid "Course Type [{course_type}] does not exist. "
-msgstr "Kurstyp [{course_type}] existiert nicht."
+msgstr "Тип курсу [{course_type}] не існує. "
 
 #: apps/api/v1/views/courses.py:212
 #, python-brace-format
 msgid "Product Source [{product_source}] does not exist. "
-msgstr "Produktquelle [{product_source}] existiert nicht."
+msgstr "Джерело продукту [{product_source}] не існує. "
 
 #: apps/api/v1/views/courses.py:229
 #, python-brace-format
 msgid "A course with key [{key}] already exists."
-msgstr "Ein Kurs mit dem Schlüssel [{key}] existiert bereits."
+msgstr "Курс з ключем [{key}] вже існує."
 
 #: apps/api/v1/views/courses.py:237
 #, python-brace-format
@@ -165,18 +162,16 @@ msgid ""
 "Course creation was unsuccessful. The course URL slug ‘[{url_slug}]’ is "
 "already in use. Please update this field and try again."
 msgstr ""
-"Kurserstellung ist fehlgeschlagen. Der Kurs URL-Slug ‘[{url_slug}]’ wir "
-"bereits anderweitig genutzt. Bitte aktualisieren Sie dieses Feld und "
-"versuchen Sie es erneut."
+"Створення курсу було неуспішним. URL-слег курсу ‘[{url_slug}]’ вже "
+"використовується. Будь ласка, оновіть це поле і спробуйте ще раз."
 
 #: apps/api/v1/views/courses.py:298
 msgid ""
 "Switching entitlement types after being reviewed is not supported. Please "
 "reach out to your project coordinator for additional help if necessary."
 msgstr ""
-"Ein Wechsel der Berechtigungsarten nach der Prüfung wird nicht unterstützt. "
-"Bitte wenden Sie sich bei Bedarf an Ihren Projektkoordinator, um weitere "
-"Hilfe zu erhalten."
+"Перемикання типів прав після перевірки не підтримується. Якщо необхідно, "
+"зверніться до вашого координатора проекту за додатковою допомогою."
 
 #: apps/api/v1/views/courses.py:408
 #, python-brace-format
@@ -184,93 +179,90 @@ msgid ""
 "Course edit was unsuccessful. The course URL slug ‘[{url_slug}]’ is already "
 "in use. Please update this field and try again."
 msgstr ""
-"Die Kursbearbeitung ist fehlgeschlagen. Der Kurs URL-Slug ‘[{url_slug}]’ wir"
-" bereits anderweitig genutzt. Bitte aktualisieren Sie dieses Feld und "
-"versuchen Sie es erneut."
+"Редагування курсу було неуспішним. URL-слег курсу ‘[{url_slug}]’ вже "
+"використовується. Будь ласка, оновіть це поле і спробуйте ще раз."
 
 #: apps/api/views.py:57
 msgid "You are not permitted to access the API documentation."
-msgstr "Sie sind nicht berechtigt um auf die API Dokumentation zuzugreifen."
+msgstr "Вам заборонено доступ до документації API."
 
 #: apps/catalogs/models.py:18
 msgid "Catalog name"
-msgstr "Katalogname"
+msgstr "Назва каталогу"
 
 #: apps/catalogs/models.py:19
 msgid "Query to retrieve Course Run catalog contents"
-msgstr "Abfrage zum Aufrufen der Inhalte des Kurslaufkatalogs"
+msgstr "Запит для отримання вмісту каталогу запусків курсів"
 
 #: apps/catalogs/models.py:23
 msgid "Query to retrieve Program catalog contents"
-msgstr "Abfrage zum Aufrufen der Inhalte des Programmkatalogs"
+msgstr "Запит для отримання вмісту каталогу програм"
 
 #: apps/catalogs/models.py:26
 msgid "Include archived courses"
-msgstr "Archivierte Kurse berücksichtigen"
+msgstr "Включити архівні курси"
 
 #: apps/core/admin.py:17
 msgid "Personal info"
-msgstr "Persönliche Info"
+msgstr "Особиста інформація"
 
 #: apps/core/admin.py:18
 msgid "Permissions"
-msgstr "Berechtigungen"
+msgstr "Дозволи"
 
 #: apps/core/admin.py:19
 msgid "Important dates"
-msgstr "Wichtige Daten"
+msgstr "Важливі дати"
 
 #: apps/core/admin.py:45
 msgid "API Configuration"
-msgstr "Programmierschnittstellen-Konfiguration"
+msgstr "Налаштування API"
 
 #: apps/core/admin.py:46
 msgid "Configure the APIs that will be used to retrieve data."
-msgstr ""
-"Konfiguriere die zum Datenempfang benötigten Programmierschnittstellen "
+msgstr "Налаштуйте API, які будуть використовуватися для отримання даних."
 
 #: apps/core/admin.py:53
 msgid "Marketing Site Configuration"
-msgstr "Marketing Site Einstellungen"
+msgstr "Налаштування маркетингового сайту"
 
 #: apps/core/admin.py:54
 msgid ""
 "Configure the marketing site URLs that will be used to retrieve data and "
 "create URLs."
 msgstr ""
-"Passen Sie diejenigen URLs der Marketing Site an, die benutzt werden um "
-"Daten zu empfangen und weitere URLs zu erstellen."
+"Налаштуйте URL-адреси маркетингового сайту, які будуть використовуватися для"
+" отримання даних та створення URL-адрес."
 
 #: apps/core/admin.py:58
 msgid "Analytics Configuration"
-msgstr "Analytics Einstellungen"
+msgstr "Налаштування аналітики"
 
 #: apps/core/admin.py:59
 msgid ""
 "Configure the analytics API that will be used to retrieve enrollment data"
 msgstr ""
-"Bearbeiten Sie die Einstellungen der Analytics API, die genutzt wird, um die"
-" Daten aller Einschreibungen abzurufen."
+"Налаштуйте API аналітики, який буде використовуватися для отримання даних "
+"про реєстрацію"
 
 #. Translators: 'period_choices' is a list of possible values, like ('second',
 #. 'minute', 'hour')
 #: apps/core/forms.py:23
 #, python-brace-format
 msgid "period must be one of {period_choices}."
-msgstr "Interval muss eines von {period_choices} sein."
+msgstr "параметр period повинен бути одним із {period_choices}."
 
 #: apps/core/forms.py:26
 msgid "'rate' must be in the format defined by DRF, such as '100/hour'."
-msgstr ""
-"'rate' muss in dem DRF definierten Format sein, zum Beispiel '100/hour'."
+msgstr "'rate' має бути у форматі, визначеному DRF, наприклад, '100/hour'."
 
 #: apps/core/models.py:17
 msgid "Full Name"
-msgstr "Vollständiger Name"
+msgstr "Повне ім'я"
 
 #: apps/core/models.py:18
 msgid "Referral Tracking ID"
-msgstr "Tracking-ID für Empfehlungen"
+msgstr "Ідентифікатор для відстеження рефералів"
 
 #: apps/core/models.py:34
 msgid ""
@@ -278,129 +270,129 @@ msgid ""
 "Django Rest Framework (see http://www.django-rest-framework.org/api-"
 "guide/throttling/)."
 msgstr ""
-"Die Rate mit welcher dieser Nutzer Anfragen ausführen kann. Das Format ist "
-"spezifiziert im Django Rest Framework (siehe http://www.django-rest-"
+"Швидкість запитів, яку необхідно обмежити для цього користувача. Формат "
+"визначено Django Rest Framework (див. http://www.django-rest-"
 "framework.org/api-guide/throttling/)."
 
 #: apps/core/models.py:54
 msgid "Short Code"
-msgstr "Kurzcode"
+msgstr "Короткий код"
 
 #: apps/core/models.py:55
 msgid ""
 "Convenient code/slug used to identify this Partner (e.g. for management "
 "commands.)"
 msgstr ""
-"Convenient code/slug wird genutzt um diesen Partner zu identifizieren(z.B. "
-"für Management-Befehle)"
+"Зручний код/slug для ідентифікації цього партнера (наприклад, для команд "
+"управління)."
 
 #: apps/core/models.py:56
 msgid "Courses API URL"
-msgstr "API-URL für Kurse"
+msgstr "URL API курсів"
 
 #: apps/core/models.py:59
 msgid "Course Mode API URL"
-msgstr "Kursmodus API URL"
+msgstr "URL API режимів курсу"
 
 #: apps/core/models.py:60
 msgid "E-Commerce API URL"
-msgstr "API-URL für E-Commerce"
+msgstr "URL API електронної комерції"
 
 #: apps/core/models.py:62
 msgid "Organizations API URL"
-msgstr "Organisations API URL"
+msgstr "URL API організацій"
 
 #: apps/core/models.py:63
 msgid "Programs API URL"
-msgstr "API-URL für Programme"
+msgstr "URL API програм"
 
 #: apps/core/models.py:65
 msgid "Marketing Site API URL"
-msgstr "API-URL für die Marketingseite"
+msgstr "URL API маркетингового сайту"
 
 #: apps/core/models.py:67
 msgid "Marketing Site URL"
-msgstr "URL der Marketingseite"
+msgstr "URL маркетингового сайту"
 
 #: apps/core/models.py:69
 msgid "Marketing Site API Username"
-msgstr "Marketing Site API Nutzername"
+msgstr "Ім'я користувача для API маркетингового сайту"
 
 #: apps/core/models.py:71
 msgid "Marketing Site API Password"
-msgstr "Marketing Site API Passwort"
+msgstr "Пароль для API маркетингового сайту"
 
 #: apps/core/models.py:73
 msgid "Studio URL"
-msgstr "Studio-URL"
+msgstr "URL Studio"
 
 #: apps/core/models.py:75
 msgid "Publisher URL"
-msgstr "Herausgeber-URL"
+msgstr "URL видавця"
 
 #: apps/core/models.py:76
 msgid ""
 "The base URL of your publisher service, if used. Example: "
 "https://publisher.example.com/"
 msgstr ""
-"Die grundlegende URL von Ihrem Publisher Service, wenn dieser genutzt wird. "
-"Beispiel: https://publisher.example.com/"
+"Базовий URL вашого сервісу видавця, якщо використовується. Наприклад: "
+"https://publisher.example.com/"
 
 #: apps/core/models.py:79
 msgid "LMS URL"
-msgstr "LMS-URL"
+msgstr "URL LMS"
 
 #: apps/core/models.py:81
 msgid "LMS Admin URL"
-msgstr "LMS-Admin-URL"
+msgstr "URL адміністрування LMS"
 
 #: apps/core/models.py:82
 msgid ""
 "The public URL of your LMS Django admin. Example: https://lms-"
 "internal.example.com/admin"
 msgstr ""
-"Die öffentliche URL der Django Administration des LMS. Beispiel: "
-"https://lms-internal.example.com/admin"
+"Публічний URL адміністративної панелі Django LMS. Наприклад: https://lms-"
+"internal.example.com/admin"
 
 #: apps/core/models.py:84
 msgid "Analytics API URL"
-msgstr "API-URL für Analytics"
+msgstr "URL API аналітики"
 
 #: apps/core/models.py:85
 msgid "Analytics Access Token"
-msgstr "Analytics Zugangs-Token"
+msgstr "Токен доступу аналітики"
 
 #: apps/core/models.py:94
 msgid "Partner"
-msgstr "Partner"
+msgstr "Партнер"
 
 #: apps/core/models.py:95
 msgid "Partners"
-msgstr "Partner"
+msgstr "Партнери"
 
 #: apps/core/models.py:130
 msgid "Salesforce Username"
-msgstr "Salesforce Nutzername"
+msgstr "Ім'я користувача Salesforce"
 
 #: apps/core/models.py:134
 msgid "Salesforce Password"
-msgstr "Salesforce Passwort"
+msgstr "Пароль Salesforce"
 
 #: apps/core/models.py:139
 msgid "Salesforce Organization Id"
-msgstr "Salesforce Unternehmens ID"
+msgstr "Ідентифікатор організації Salesforce"
 
 #: apps/core/models.py:145
 msgid "Salesforce Security Token"
-msgstr "Salesforce Sicherheits-Token"
+msgstr "Токен безпеки Salesforce"
 
 #: apps/core/models.py:149
 msgid "Is a Salesforce Sandbox?"
-msgstr "Ist das eine Salesforce Testumgebung?"
+msgstr "Чи є це Salesforce Sandbox?"
 
 #: apps/core/models.py:155
 msgid "Case Record Type Id"
-msgstr "Case Record Type ID"
+msgstr "Ідентифікатор типу запису справи"
 
 #: apps/course_metadata/admin.py:38
 #, python-brace-format
@@ -408,265 +400,265 @@ msgid ""
 "An error occurred while publishing the {model} to the marketing site. Please"
 " try again. If the error persists, please contact the Engineering Team."
 msgstr ""
-"Ein Fehler ist beim veröffentlichen des {model} auf der Marketingseite "
-"aufgetreten. Bitte versuchen Sie es später noch einmal. Bitte kontaktieren "
-"Sie das Entwicklungsteam, wenn der Fehler weiterhin auftritt."
+"Сталася помилка під час публікації {model} на маркетинговий сайт. Будь "
+"ласка, спробуйте ще раз. Якщо помилка повторюється, зверніться до інженерної"
+" команди."
 
 #: apps/course_metadata/admin.py:65
 msgid "eligible for one-click purchase"
-msgstr "Berechtigt zum Ein-Klick-Kauf"
+msgstr "придатний для покупки одним кліком"
 
 #: apps/course_metadata/admin.py:70
 msgid "Yes"
-msgstr "Yeah "
+msgstr "Так"
 
 #: apps/course_metadata/admin.py:71
 msgid "No"
-msgstr "Nö"
+msgstr "Ні"
 
 #: apps/course_metadata/admin.py:539 apps/course_metadata/admin.py:884
 msgid "Included course runs"
-msgstr "Eingeschlossene Kursdurchläufe"
+msgstr "Включені запуски курсів"
 
 #: apps/course_metadata/admin.py:890
 msgid "Edit link"
-msgstr "Link bearbeiten"
+msgstr "Посилання для редагування"
 
 #: apps/course_metadata/admin.py:898
 msgid "Edit course run exclusions"
-msgstr "Kurslaufausschlüsse bearbeiten"
+msgstr "Редагувати виключення запуску курсу"
 
 #: apps/course_metadata/admin.py:900
 msgid "(save and continue editing to create a link)"
-msgstr "(Speichern und mit dem Bearbeiten der Linkerstellung fortfahren)"
+msgstr "(збережіть і продовжуйте редагування для створення посилання)"
 
 #: apps/course_metadata/admin.py:1038
 #, python-format
 msgid "Successfully %(status)s %(count)d %(items)s."
-msgstr "Erfolgreich %(status)s %(count)d %(items)s."
+msgstr "Успішно %(status)s %(count)d %(items)s."
 
 #: apps/course_metadata/algolia_models.py:54
 msgid "Certificates"
-msgstr "Zertifikate"
+msgstr "Сертифікати"
 
 #: apps/course_metadata/algolia_models.py:55
 msgid "Pathways to Degrees"
-msgstr "Wege zum Abschluss"
+msgstr "Шляхи до ступенів"
 
 #: apps/course_metadata/algolia_models.py:58
 msgid "Boot Camps"
-msgstr "Trainingslager"
+msgstr "Буткемпи"
 
 #: apps/course_metadata/algolia_models.py:65
 msgid "Bachelor’s"
-msgstr "Bachelor"
+msgstr "Бакалаврський"
 
 #: apps/course_metadata/algolia_models.py:66
 msgid "Master’s"
-msgstr "Master"
+msgstr "Магістерський"
 
 #: apps/course_metadata/algolia_models.py:116
 #: apps/course_metadata/algolia_models.py:671
 msgid "Available now"
-msgstr "Jetzt verfügbar"
+msgstr "Доступно зараз"
 
 #: apps/course_metadata/algolia_models.py:118
 #: apps/course_metadata/models.py:2763
 msgid "Upcoming"
-msgstr "Demnächst Stattfindend"
+msgstr "Наближаються"
 
 #: apps/course_metadata/algolia_models.py:120
 #: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2757
 #: apps/course_metadata/models.py:2773
 msgid "Archived"
-msgstr "Abgelegt"
+msgstr "Архівовано"
 
 #: apps/course_metadata/algolia_models.py:682
 msgid "Available by subscription"
-msgstr "Erhältlich im Abonnement"
+msgstr "Доступно за підпискою"
 
 #: apps/course_metadata/choices.py:6 apps/course_metadata/choices.py:22
 #: apps/course_metadata/choices.py:36
 msgid "Unpublished"
-msgstr "Unveröffentlicht"
+msgstr "Непубліковано"
 
 #: apps/course_metadata/choices.py:7
 msgid "Awaiting Review from Legal"
-msgstr "Warten auf die Überprüfung durch die Rechtsabteilung"
+msgstr "Очікує перевірки юридичним відділом"
 
 #: apps/course_metadata/choices.py:8
 msgid "Awaiting Internal Review"
-msgstr "Warten auf die interne Überprüfung"
+msgstr "Очікує внутрішнього перегляду"
 
 #: apps/course_metadata/choices.py:9
 msgid "Reviewed"
-msgstr "Geprüft"
+msgstr "Розглянуто"
 
 #: apps/course_metadata/choices.py:10 apps/course_metadata/choices.py:23
 #: apps/course_metadata/choices.py:101
 msgid "Published"
-msgstr "Veröffentlicht"
+msgstr "Опубліковано"
 
 #: apps/course_metadata/choices.py:24 apps/course_metadata/choices.py:38
 msgid "Retired"
-msgstr "Abgelegt"
+msgstr "Виведено з експлуатації"
 
 #. Translators: Instructor-paced refers to course runs that operate on a
 #. schedule set by the instructor,
 #. similar to a normal university course.
 #: apps/course_metadata/choices.py:30
 msgid "Instructor-paced"
-msgstr "Tempo vom Dozenten festgelegt"
+msgstr "За розкладом викладача"
 
 #. Translators: Self-paced refers to course runs that operate on the student's
 #. schedule.
 #: apps/course_metadata/choices.py:32
 msgid "Self-paced"
-msgstr "Selbstgewähltes Tempo"
+msgstr "Самостійно"
 
 #: apps/course_metadata/choices.py:37 apps/learner_pathway/choices.py:6
 msgid "Active"
-msgstr "Aktiv"
+msgstr "Активний"
 
 #: apps/course_metadata/choices.py:39
 msgid "Deleted"
-msgstr "Gelöscht"
+msgstr "Видалено"
 
 #: apps/course_metadata/choices.py:43
 msgid "mooc"
-msgstr "mooc"
+msgstr "MOOC"
 
 #: apps/course_metadata/choices.py:44
 msgid "spoc"
-msgstr "spoc"
+msgstr "SPOC"
 
 #: apps/course_metadata/choices.py:45
 msgid "test"
-msgstr "prüfen"
+msgstr "тест"
 
 #: apps/course_metadata/choices.py:46
 msgid "demo"
-msgstr "Demo"
+msgstr "демо"
 
 #: apps/course_metadata/choices.py:47
 msgid "other"
-msgstr "Andere"
+msgstr "інше"
 
 #: apps/course_metadata/choices.py:54
 msgid "Course Create"
-msgstr "Kurs erstellen"
+msgstr "Створити курс"
 
 #: apps/course_metadata/choices.py:55
 msgid "Partial Update"
-msgstr "Teilaktualisierung"
+msgstr "Часткове оновлення"
 
 #: apps/course_metadata/choices.py:56
 msgid "Course Rerun"
-msgstr "Kurswiederholung"
+msgstr "Повторний запуск курсу"
 
 #: apps/course_metadata/choices.py:57
 msgid "Course Editor Update"
-msgstr "Kurseditor-Update"
+msgstr "Оновлення редактора курсу"
 
 #: apps/course_metadata/choices.py:64
 msgid "Pending"
-msgstr "Ausstehend"
+msgstr "В очікуванні"
 
 #: apps/course_metadata/choices.py:65 apps/course_metadata/choices.py:76
 msgid "Verified"
-msgstr "Geprüft"
+msgstr "Підтверджено"
 
 #: apps/course_metadata/choices.py:66
 msgid "Processing"
-msgstr "Verarbeitung"
+msgstr "Обробка"
 
 #: apps/course_metadata/choices.py:67
 msgid "Completed"
-msgstr "abgeschlossen"
+msgstr "Завершено"
 
 #: apps/course_metadata/choices.py:68
 msgid "Failed"
-msgstr "Fehlgeschlagen"
+msgstr "Не вдалося"
 
 #: apps/course_metadata/choices.py:69
 msgid "Partially Completed"
-msgstr "Teilweise abgeschlossen"
+msgstr "Частково завершено"
 
 #: apps/course_metadata/choices.py:70
 msgid "Errored"
-msgstr "Fehlerhaft"
+msgstr "Помилка"
 
 #: apps/course_metadata/choices.py:74
 msgid "Honor"
-msgstr "Teilnahmemodus"
+msgstr "Почесний"
 
 #: apps/course_metadata/choices.py:75
 msgid "Credit"
-msgstr "Anerkennung"
+msgstr "Кредит"
 
 #: apps/course_metadata/choices.py:77
 msgid "Professional"
-msgstr "Experte"
+msgstr "Професійний"
 
 #: apps/course_metadata/choices.py:78
 msgid "Executive Education"
-msgstr "Ausbildung von Führungskräften"
+msgstr "Освіта для керівників"
 
 #: apps/course_metadata/choices.py:79
 msgid "Paid Executive Education"
-msgstr "Bezahlte Executive Education"
+msgstr "Платна освіта для керівників"
 
 #: apps/course_metadata/choices.py:80
 msgid "Unpaid Executive Education"
-msgstr "Unbezahlte Executive Education"
+msgstr "Безкоштовна освіта для керівників"
 
 #: apps/course_metadata/choices.py:81
 msgid "Paid Bootcamp"
-msgstr "Bezahltes Bootcamp"
+msgstr "Платний буткемп"
 
 #: apps/course_metadata/choices.py:82
 msgid "Unpaid Bootcamp"
-msgstr "Unbezahltes Bootcamp"
+msgstr "Безкоштовний буткемп"
 
 #: apps/course_metadata/choices.py:86
 msgid "Platform"
-msgstr "Plattform"
+msgstr "Платформа"
 
 #: apps/course_metadata/choices.py:87
 msgid "Organization"
-msgstr "Organistation"
+msgstr "Організація"
 
 #: apps/course_metadata/choices.py:91
 msgid "Short"
-msgstr "Kurz"
+msgstr "Коротко"
 
 #: apps/course_metadata/choices.py:92
 msgid "Medium"
-msgstr "Mittel"
+msgstr "Середньо"
 
 #: apps/course_metadata/choices.py:93
 msgid "Long"
-msgstr "Lang"
+msgstr "Довго"
 
 #: apps/course_metadata/choices.py:108
 msgid "Short Course"
-msgstr "Kurze Einführung"
+msgstr "Короткий курс"
 
 #: apps/course_metadata/choices.py:109
 msgid "Sprint"
-msgstr "Sprint"
+msgstr "Спринт"
 
 #: apps/course_metadata/choices.py:110
 msgid "Course Stack"
-msgstr "Kursstapel"
+msgstr "Стек курсів"
 
 #: apps/course_metadata/choices.py:114
 msgid "Custom B2B Enterprise"
-msgstr "Maßgeschneidertes B2B-Unternehmen"
+msgstr "Користувацький B2B Enterprise"
 
 #: apps/course_metadata/choices.py:115
 msgid "Custom B2C"
-msgstr "Maßgeschneidertes B2C"
+msgstr "Користувацький B2C"
 
 #: apps/course_metadata/data_loaders/course_type.py:27
 #, python-brace-format
@@ -674,8 +666,7 @@ msgid ""
 "Existing course type {type} for {key} ({id}) doesn't match its own "
 "entitlements."
 msgstr ""
-"Bestehender Kurstyp {type} für {key} ({id}) stimmt nicht mit den Angaben "
-"überein."
+"Існуючий тип курсу {type} для {key} ({id}) не відповідає власним правам."
 
 #: apps/course_metadata/data_loaders/course_type.py:61
 #, python-brace-format
@@ -683,26 +674,25 @@ msgid ""
 "Existing run type {run_type} for {key} ({id}) doesn't match course type "
 "{type}.Skipping type."
 msgstr ""
-"Bestehender Kurslauftyp {run_type} für {key} ({id}) stimmt nicht mit dem "
-"Kurstypen {type} überein. Typ überspringen."
+"Існуючий тип запуску {run_type} для {key} ({id}) не відповідає типу курсу "
+"{type}. Пропускаємо тип."
 
 #: apps/course_metadata/data_loaders/course_type.py:75
 #, python-brace-format
 msgid ""
 "Existing run type {run_type} for {key} ({id}) doesn't match its own seats."
 msgstr ""
-"Bestehender Kurslauftyp {run_type} für {key} ({id}) stimmt nicht mit den "
-"Angaben überein."
+"Існуючий тип запуску {run_type} для {key} ({id}) не відповідає своїм місцям."
 
 #: apps/course_metadata/data_loaders/course_type.py:91
 #, python-brace-format
 msgid "Course {key} ({id}) matched type {type}"
-msgstr "Kurs {key} ({id}) passende Typen {type}"
+msgstr "Курс {key} ({id}) співпадає з типом {type}"
 
 #: apps/course_metadata/data_loaders/course_type.py:101
 #, python-brace-format
 msgid "Could not convert course {key} ({id}) to type {type}"
-msgstr "Kurs {key} ({id}) konnte nicht zum Typen {type} konvertiert werden"
+msgstr "Не вдалося перетворити курс {key} ({id}) на тип {type}"
 
 #: apps/course_metadata/emails.py:37
 #, python-brace-format
@@ -710,8 +700,8 @@ msgid ""
 "Not sending notification email for template {template} because no "
 "organization is defined for course {course}"
 msgstr ""
-"Es werden keine E-Mails für die Vorlage {template} gesendet, da noch kein "
-"Unternehmen für den Kurs {course} definiert wurde."
+"Не надсилається сповіщення для шаблону {template}, тому що для курсу "
+"{course} не визначено організацію"
 
 #: apps/course_metadata/emails.py:42
 #, python-brace-format
@@ -719,8 +709,8 @@ msgid ""
 "Not sending notification email for template {template} because no project "
 "coordinator is defined for organization {org}"
 msgstr ""
-"Es werden keine E-Mails für die Vorlage {template} gesendet, da noch kein "
-"Projektkoordinator für das Unternehmen {org} definiert wurde."
+"Не надсилається сповіщення для шаблону {template}, тому що для організації "
+"{org} не визначено координатора проекту"
 
 #: apps/course_metadata/emails.py:96
 #, python-brace-format
@@ -728,8 +718,8 @@ msgid ""
 "Not sending notification email for template {template} because no publisher "
 "URL is defined for partner {partner}"
 msgstr ""
-"Es werden keine E-Mails für die Vorlage {template} gesendet, da noch keine "
-"Publisher URL für den Partner {partner} definiert wurde."
+"Не надсилається сповіщення для шаблону {template}, тому що для партнера "
+"{partner} не визначено URL видавця"
 
 #: apps/course_metadata/emails.py:104
 #, python-brace-format
@@ -737,55 +727,55 @@ msgid ""
 "Not sending notification email for template {template} because no studio URL"
 " is defined for partner {partner}"
 msgstr ""
-"Es werden keine E-Mails für die Vorlage {template} gesendet, da noch keine "
-"Studio URL für den Partner {partner} definiert wurde."
+"Не надсилається сповіщення для шаблону {template}, тому що для партнера "
+"{partner} не визначено URL Studio"
 
 #: apps/course_metadata/emails.py:170
 msgid "legal team"
-msgstr "Rechtsabteilung"
+msgstr "юридична команда"
 
 #: apps/course_metadata/emails.py:188
 msgid "Project Coordinator team"
-msgstr "Projektkoordinator-Team"
+msgstr "Команда координаторів проекту"
 
 #: apps/course_metadata/emails.py:212
 msgid "course team"
-msgstr "Kurs Team"
+msgstr "команда курсу"
 
 #: apps/course_metadata/emails.py:221
 #, python-brace-format
 msgid "Legal review requested: {title}"
-msgstr "rechtliche Überprüfung angefordert: {title}"
+msgstr "Запитано юридичний перегляд: {title}"
 
 #: apps/course_metadata/emails.py:234
 #, python-brace-format
 msgid "Course URL for {title}"
-msgstr "Kurs-URL für {title}"
+msgstr "URL курсу для {title}"
 
 #: apps/course_metadata/emails.py:280
 #, python-brace-format
 msgid "Review requested: {key} - {title}"
-msgstr "Überprüfung angefordert: {key} - {title}"
+msgstr "Запитано перегляд: {key} - {title}"
 
 #: apps/course_metadata/emails.py:292
 #, python-brace-format
 msgid "Review complete: {title}"
-msgstr "Überprüfung abgeschlossen: {title}"
+msgstr "Перегляд завершено: {title}"
 
 #: apps/course_metadata/emails.py:308
 #, python-brace-format
 msgid "Published: {title}"
-msgstr "Veröffentlicht: {title}"
+msgstr "Опубліковано: {title}"
 
 #: apps/course_metadata/emails.py:312
 #, python-brace-format
 msgid "Published: {key} - {title}"
-msgstr "Veröffentlicht: {key} - {title}"
+msgstr "Опубліковано: {key} - {title}"
 
 #: apps/course_metadata/emails.py:327
 #, python-brace-format
 msgid "Comment added: {title}"
-msgstr "Kommentar hinzugefügt: {title}"
+msgstr "Коментар додано: {title}"
 
 #. Translators: "letters" means latin letters: a-z and A-Z.
 #: apps/course_metadata/fields.py:33
@@ -793,13 +783,12 @@ msgid ""
 "Enter a valid “slug” consisting of letters, numbers, slashes, underscores or"
 " hyphens."
 msgstr ""
-"Geben Sie einen gültigen „Slug“ ein, der aus Buchstaben, Zahlen, "
-"Schrägstrichen, Unterstrichen oder Bindestrichen besteht."
+"Введіть дійсний “slug”, що складається з літер, цифр, косих рисок, "
+"підкреслень або тире."
 
 #: apps/course_metadata/forms.py:106
 msgid "Programs can only be activated if they have a banner image."
-msgstr ""
-"Programme können nur aktiviert werden, wenn sie über ein Bannerbild verfügen"
+msgstr "Програми можна активувати лише за наявності зображення банера."
 
 #: apps/course_metadata/forms.py:125
 #, python-format
@@ -808,44 +797,42 @@ msgid ""
 "inclusion. Remove or update the following courses before saving: "
 "%(courses)s."
 msgstr ""
-"Alle Kurse in einem B2C-Abonnementprogramm müssen den B2C-Abonnement-"
-"Einschluss unterstützen. Entfernen oder aktualisieren Sie die folgenden "
-"Kurse, bevor Sie speichern: %(courses)s."
+"Усі курси в програмі підписки B2C повинні підтримувати включення підписки "
+"B2C. Перед збереженням видаліть або оновіть наступні курси: %(courses)s."
 
 #: apps/course_metadata/management/commands/add_tag_to_courses.py:15
 msgid "Tag to add to courses"
-msgstr "Markieren, um zu dem Kurs hinzuzufügen"
+msgstr "Тег для додавання до курсів"
 
 #: apps/course_metadata/management/commands/add_tag_to_courses.py:16
 msgid "UUIDs of courses to tag"
-msgstr "UUIDs zum Markieren des Kurses"
+msgstr "UUID курсів для тегування"
 
 #: apps/course_metadata/management/commands/add_tag_to_courses.py:18
 msgid ""
 "Use arguments from the TagCourseUUIDsConfig model instead of the command "
 "line."
 msgstr ""
-"Nutzen Sie Argumente aus des TagCourseUUIDsConfig Modells, anstelle der "
-"Befehlszeile."
+"Використовуйте аргументи з моделі TagCourseUUIDsConfig замість командного "
+"рядка."
 
 #: apps/course_metadata/management/commands/add_tag_to_courses.py:27
 msgid "Missing required arguments"
-msgstr "Fehlendes erforderliches Argument"
+msgstr "Відсутні необхідні аргументи"
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:10
 msgid "Backpopulate new-style CourseType and CourseRunType where possible."
 msgstr ""
-"Wenn möglich, sollten Sie den neuen CourseType und CourseRunType "
-"zurücksetzen."
+"Якщо можливо, заповніть дані для нових типів CourseType та CourseRunType."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:15
 msgid "CODE"
-msgstr "CODE"
+msgstr "КОД"
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:16
 #: apps/course_metadata/management/commands/delete_person_dups.py:33
 msgid "Short code for a partner."
-msgstr "Kürzel für einen Partner"
+msgstr "Короткий код для партнера."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:20
 #: apps/course_metadata/models.py:238 apps/course_metadata/models.py:493
@@ -861,230 +848,219 @@ msgstr "UUID"
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:22
 msgid "Course to backpopulate."
-msgstr "Kurs zurücksetzen"
+msgstr "Курс для заповнення."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:27
 msgid "KEY"
-msgstr "SCHLÜSSEL"
+msgstr "КЛЮЧ"
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:29
 msgid "Organization to backpopulate."
-msgstr "Unternehmen zurücksetzen"
+msgstr "Організація для заповнення."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:35
 msgid ""
 "CourseType/CourseRunType mismatches to allow. Specify like course-type-"
 "slug:run-type-slug."
 msgstr ""
-"CourseType/CourseRunType kann nicht erlaubt werden. Bitte als course-type-"
-"slug:run-type-slug spezifizieren."
+"Несумісність CourseType/CourseRunType дозволена. Вкажіть у форматі course-"
+"type-slug:run-type-slug."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:41
 #: apps/course_metadata/management/commands/delete_person_dups.py:38
 msgid "Actually commit the changes to the database."
-msgstr "Übertragen Sie die Änderungen in die Datenbank."
+msgstr "Насправді зафіксуйте зміни у базі даних."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:46
 msgid ""
 "Use arguments from the BackpopulateCourseTypeConfig model instead of the "
 "command line."
 msgstr ""
-"Nutzen Sie Argumente aus des BackpopulateCourseTypeConfig Modells, anstelle "
-"der Befehlszeile."
+"Використовуйте аргументи з моделі BackpopulateCourseTypeConfig замість "
+"командного рядка."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:64
 msgid "You must specify --partner"
-msgstr "Sie müssen den --partner definieren"
+msgstr "Ви повинні вказати --partner"
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:71
 #, python-brace-format
 msgid "Supplied Course Run Type slug [{rt_slug}] does not exist."
-msgstr "Zusätzlicher Kurslauftyp-Slug [{rt_slug}] existiert nicht."
+msgstr "Вказаний slug типу запуску курсу [{rt_slug}] не існує."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:78
 #, python-brace-format
 msgid "Supplied Course Type slug [{ct_slug}] does not exist."
-msgstr "Zusätzlicher Kurstyp-Slug [{ct_slug}] existiert nicht."
+msgstr "Вказаний slug типу курсу [{ct_slug}] не існує."
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:89
 msgid "No courses found. Did you specify an argument?"
-msgstr "Kein Kurs gefunden. Haben sie den Begriff richtig eingegeben?"
+msgstr "Курси не знайдені. Чи вказали ви аргумент?"
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:101
 #, python-brace-format
 msgid ""
 "Could not backpopulate a course type for the following courses: "
 "{course_keys}"
-msgstr ""
-"Kurstyp für die folgenden Kurse konnte nicht zurückgesetzt werden: "
-"{course_keys}"
+msgstr "Не вдалося заповнити тип курсу для наступних курсів: {course_keys}"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:21
 msgid "Delete duplicate persons in course_metadata."
-msgstr "Doppelte Personen aus den Kurs_Metadaten löschen."
+msgstr "Видалити дублікати осіб у course_metadata."
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:26
 msgid "PERSON"
-msgstr "PERSONEN"
+msgstr "ОСОБА"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:28
 msgid "People to delete, in UUID:TARGET_UUID form."
-msgstr ""
-"Teilnehmer, welche in dem UUID:TARGET_UUID Formular gelöscht werden sollen."
+msgstr "Особи для видалення, у форматі UUID:TARGET_UUID."
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:32
 msgid "PARTNER"
-msgstr "PARTNER"
+msgstr "ПАРТНЕР"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:43
 msgid ""
 "Use arguments from the DeletePersonDupsConfig model instead of the command "
 "line."
 msgstr ""
-"Nutzen Sie Argumente aus des DeletePersonDupsConfig Modells, anstelle der "
-"Befehlszeile."
+"Використовуйте аргументи з моделі DeletePersonDupsConfig замість командного "
+"рядка."
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:60
 msgid "Malformed argument \"{}\", should be in form of UUID:TARGET_UUID"
-msgstr "fehlerhaftes Argument \"{}\", sollte in Form von UUID:TARGET_UUID sein"
+msgstr "Неправильний аргумент \"{}\", має бути у форматі UUID:TARGET_UUID"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:62
 msgid "Malformed argument \"{}\", UUIDs cannot be equal"
-msgstr "Fehlerhafte Begründung \"{}\", UUIDs dürfen nicht gleich sein"
+msgstr "Неправильний аргумент \"{}\", UUID не можуть бути однаковими"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:85
 msgid "Deleting"
-msgstr "Löscht"
+msgstr "Видалення"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:85
 msgid "Would delete"
-msgstr "Wortlöschung"
+msgstr "Буде видалено"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:86
 msgid "Name"
-msgstr "Name"
+msgstr "Ім'я"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:87
 msgid "Endorsements"
-msgstr "Befürwortung"
+msgstr "Підтвердження"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:88
 msgid "Programs"
-msgstr "Programme"
+msgstr "Програми"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:89
 msgid "Course Runs"
-msgstr "Kursläufe"
+msgstr "Запуски курсів"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:90
 msgid "Target"
-msgstr "Ziel"
+msgstr "Ціль"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:129
 msgid "You must specify --partner-code"
-msgstr "Sie müssen den --partner-code definieren"
+msgstr "Ви повинні вказати --partner-code"
 
 #: apps/course_metadata/management/commands/delete_person_dups.py:132
 msgid "You must specify at least one person"
-msgstr "Sie müssen mindestens eine Person festlegen"
+msgstr "Ви повинні вказати хоча б одну особу"
 
 #: apps/course_metadata/management/commands/publish_live_course_runs.py:23
 #, python-brace-format
 msgid "Publishing course run {key}"
-msgstr "Kurslauf {key} wird veröffentlicht "
+msgstr "Публікація запуску курсу {key}"
 
 #: apps/course_metadata/management/commands/publish_live_course_runs.py:28
 #, python-brace-format
 msgid "Failed to publish {key}"
-msgstr "Veröffentlichen ist fehlgeschlagen {key}"
+msgstr "Не вдалося опублікувати {key}"
 
 #: apps/course_metadata/management/commands/publish_live_course_runs.py:31
 #, python-brace-format
 msgid "Successfully published {key}"
-msgstr "{key} wurde erfolgreich veröffentlicht"
+msgstr "Успішно опубліковано {key}"
 
 #: apps/course_metadata/management/commands/publish_live_course_runs.py:34
 msgid "One or more course runs failed to publish."
-msgstr "Das Veröffentlichen eines oder mehrerer Kursläufe ist fehlgeschlagen"
+msgstr "Один або декілька запусків курсу не вдалося опублікувати."
 
 #: apps/course_metadata/management/commands/remove_redirects_from_courses.py:22
 msgid "Remove all redirects to all courses"
-msgstr "Alle Weiterleitungen zu allen Kursen entfernen"
+msgstr "Видалити всі переадресації для всіх курсів"
 
 #: apps/course_metadata/management/commands/remove_redirects_from_courses.py:23
 msgid "Redirects to remove"
-msgstr "Weiterleitungen zum Entfernen"
+msgstr "Переадресації для видалення"
 
 #: apps/course_metadata/management/commands/remove_redirects_from_courses.py:25
 msgid ""
 "Use arguments from the RemoveRedirectsConfig model instead of the command "
 "line."
 msgstr ""
-"Nutzen Sie Argumente aus des RemoveRedirectsConfig Modells, anstelle der "
-"Befehlszeile."
+"Використовуйте аргументи з моделі RemoveRedirectsConfig замість командного "
+"рядка."
 
 #: apps/course_metadata/management/commands/remove_redirects_from_courses.py:32
 msgid "Invalid arguments"
-msgstr "Ungültige Begriffe"
+msgstr "Недійсні аргументи"
 
 #: apps/course_metadata/management/commands/remove_redirects_from_courses.py:56
 #, python-brace-format
 msgid "Cannot remove active url_slug {url_slug}"
-msgstr "Aktiver url_slug {url_slug} kann nicht entfernt werden"
+msgstr "Неможливо видалити активний url_slug {url_slug}"
 
 #: apps/course_metadata/management/commands/remove_redirects_from_courses.py:60
 #, python-brace-format
 msgid "Path /course/{url_slug} not in use, nothing to delete"
-msgstr ""
-"Pfad/Kurs/{url_slug} ist nicht in Benutzung, demnach gibt es nichts zu "
-"löschen"
+msgstr "Шлях /course/{url_slug} не використовується, нечого видаляти"
 
 #: apps/course_metadata/management/commands/remove_redirects_from_courses.py:65
 #, python-brace-format
 msgid "Path {url_path} not in use, nothing to delete"
-msgstr ""
-"Pfad  {url_path} ist nicht in Benutzung, demnach gibt es nichts zu löschen"
+msgstr "Шлях {url_path} не використовується, нечого видаляти"
 
 #: apps/course_metadata/management/commands/unpublish_inactive_runs.py:44
 msgid "One or more courses failed to unpublish."
-msgstr "Die Privatisierung einer oder mehrerer Kurse ist fehlgeschlagen."
+msgstr "Один або декілька курсів не вдалося скасувати публікацію."
 
 #: apps/course_metadata/management/commands/unpublish_inactive_runs.py:50
 #, python-brace-format
 msgid "Successfully unpublished runs in course {key}"
-msgstr "Die Kursläufe für {key} wurden erfolgreich privatisiert"
+msgstr "Успішно скасовано публікацію запусків у курсі {key}"
 
 #: apps/course_metadata/management/commands/unpublish_inactive_runs.py:53
 #, python-brace-format
 msgid "Failed to unpublish runs in course {key}"
-msgstr "Die Kursläufe für {key} konnten nicht privatisiert werden"
+msgstr "Не вдалося скасувати публікацію запусків у курсі {key}"
 
 #: apps/course_metadata/models.py:239
 msgid ""
 "Please do not use any spaces or special characters other than period, "
 "underscore or hyphen. This key will be used in the course's course key."
 msgstr ""
-"Bitte verwenden Sie keine Leerzeichen oder Sonderzeichen außer Punkt, "
-"Unterstrich oder Bindestrich. Dieser Schlüssel wird im Kursschlüssel des "
-"Kurses verwendet."
+"Будь ласка, не використовуйте пробіли або спеціальні символи, окрім крапки, "
+"підкреслення або тире. Цей ключ буде використано в курсі."
 
 #: apps/course_metadata/models.py:244
 msgid "If populated, this field will overwrite name in platform."
-msgstr ""
-"Wenn dieses Feld ausgefüllt ist, wird der Name in der Plattform "
-"überschrieben."
+msgstr "Якщо заповнено, це поле перезапише ім'я у платформі."
 
 #: apps/course_metadata/models.py:249
 msgid "Spanish Description"
-msgstr "Spanische Beschreibung"
+msgstr "Іспанський опис"
 
 #: apps/course_metadata/models.py:250
 msgid ""
 "For seo, this field allows for alternate spanish description to be manually "
 "inputted"
-msgstr ""
-"Für SEO ermöglicht dieses Feld die manuelle Eingabe einer alternativen "
-"spanischen Beschreibung"
+msgstr "Для SEO це поле дозволяє вручну ввести альтернативний іспанський опис"
 
 #: apps/course_metadata/models.py:275 apps/course_metadata/models.py:1529
 #: apps/course_metadata/models.py:2378
@@ -1092,29 +1068,28 @@ msgid ""
 "Pick a tag from the suggestions. To make a new tag, add a comma after the "
 "tag name."
 msgstr ""
-"Wählen Sie ein Symbol aus den Vorschlägen. Um ein neues Symbol zu erstellen,"
-" fügen Sie nach dem Symbol-Namen ein Komma ein."
+"Виберіть тег із запропонованих. Щоб створити новий тег, додайте кому після "
+"його назви."
 
 #: apps/course_metadata/models.py:279
 msgid "Automatically generate course run keys"
-msgstr "Schlüssel der Kursläufe automatisch generieren."
+msgstr "Автоматично генерувати ключі запусків курсу"
 
 #: apps/course_metadata/models.py:281
 msgid ""
 "When this flag is enabled, the key of a new course run will be auto "
 "generated.  When this flag is disabled, the key can be manually set."
 msgstr ""
-"Wenn diese Funktion aktiviert ist, wir der Schlüssel eines neuen Kurslaufs "
-"automatisch generiert. Wenn diese Funktion nicht aktiviert ist, kann der "
-"Schlüssel auch manuell generiert werden."
+"Коли цей прапорець увімкнено, ключ нового запуску курсу буде генеруватися "
+"автоматично. Коли прапорець вимкнено, ключ можна встановити вручну."
 
 #: apps/course_metadata/models.py:287
 msgid ""
 "This field signifies if any of this org's courses are in the enterprise "
 "subscription catalog"
 msgstr ""
-"Dieses Feld gibt an, ob sich Kurse dieser Organisation im "
-"Unternehmensabonnementkatalog befinden"
+"Це поле означає, чи є якісь курси цієї організації в каталозі корпоративних "
+"підписок"
 
 #: apps/course_metadata/models.py:290
 msgid ""
@@ -1122,30 +1097,29 @@ msgid ""
 "            all related course under same organization will use this color as theme color.\n"
 "            (e.g. \"#ff0000\" which equals red) No need to provide the `#`"
 msgstr ""
-"Der 6-stellige Hexadezimalwert der Themenfarbe der Organisation, alle "
-"verwandten Kurse unter derselben Organisation verwenden diese Farbe als "
-"Themenfarbe. (z. B. „#ff0000“, was rot entspricht) Es ist nicht "
-"erforderlich, das „#“ anzugeben"
+"6-символьне шестнадцяткове значення кольору теми організації,\n"
+"            всі пов'язані курси тієї ж організації використовуватимуть цей колір як тему.\n"
+"            (наприклад, \"#ff0000\", що означає червоний) Не потрібно вказувати `#`"
 
 #: apps/course_metadata/models.py:306
 msgid "The timestamp of the last time the organization data was modified."
-msgstr "Der Zeitstempel der letzten Änderung von Organization Daten ."
+msgstr "Мітка часу останніх змін даних організації."
 
 #: apps/course_metadata/models.py:322
 msgid ""
 "Please do not use any spaces or special characters other than period, "
 "underscore or hyphen in the key field."
 msgstr ""
-"Bitte verwenden Sie keine Leerzeichen oder Sonderzeichen außer Punkt, "
-"Unterstrich und Bindestrich in diesem Schlüsselfeld."
+"Будь ласка, не використовуйте пробіли або спеціальні символи, окрім крапки, "
+"підкреслення або тире в полі ключа."
 
 #: apps/course_metadata/models.py:393
 msgid "Corresponding organization code in an external product source"
-msgstr "Entsprechender Organisationscode in einer externen Produktquelle"
+msgstr "Відповідний код організації в зовнішньому джерелі продукту"
 
 #: apps/course_metadata/models.py:450
 msgid "LevelType model translations"
-msgstr "LevelType Modell-Übersetzungen"
+msgstr "Переклади моделі LevelType"
 
 #: apps/course_metadata/models.py:475
 msgid ""
@@ -1154,361 +1128,348 @@ msgid ""
 "have their completion of the course counted toward the completion of the "
 "program."
 msgstr ""
-"Kursplatztypen, die für den Abschluss von Programmen dieses Typs "
-"qualifizieren. Lernende, die zugehörige Kurse absolvieren, aber in anderen "
-"Kursplätzen eingeschrieben sind, werden NICHT mit dem Abschluss des Kurses "
-"auf den Abschluss des Programms angerechnet."
+"Типи місць, які дають право на закінчення програм цього типу. Студенти, які "
+"завершують відповідні курси, але зареєстровані в інших типах місць, НЕ "
+"матимуть зарахування завершення курсу для проходження програми."
 
 #: apps/course_metadata/models.py:489
 msgid "Please provide an image file with transparent background"
-msgstr "Bitte stellen Sie eine Bilddatei mit transparentem Hintergrund ein"
+msgstr "Будь ласка, надайте файл зображення з прозорим фоном"
 
 #: apps/course_metadata/models.py:492 apps/course_metadata/models.py:536
 #: apps/course_metadata/models.py:702 apps/course_metadata/models.py:740
 #: apps/course_metadata/models.py:1464 apps/course_metadata/models.py:3392
 msgid "Leave this field blank to have the value generated automatically."
-msgstr "Feld unausgefüllt lassen, Wert wird automatisch generiert"
+msgstr "Залиште це поле порожнім, щоб значення згенерувалося автоматично."
 
 #: apps/course_metadata/models.py:533
 msgid "Name of the external source."
-msgstr "Name der externen Quelle."
+msgstr "Назва зовнішнього джерела."
 
 #: apps/course_metadata/models.py:538
 msgid "Description of the external source."
-msgstr "Beschreibung der externen Quelle."
+msgstr "Опис зовнішнього джерела."
 
 #: apps/course_metadata/models.py:543
 msgid "Programs of these types will be OFAC restricted"
-msgstr "Programme dieser Art sind OFAC-beschränkt"
+msgstr "Програми цих типів будуть обмежені за правилами OFAC"
 
 #: apps/course_metadata/models.py:557
 msgid "ProgramType model translations"
-msgstr "ProgramType Modell-Übersetzungen"
+msgstr "Переклади моделі ProgramType"
 
 #: apps/course_metadata/models.py:571
 msgid "This mode requires ID verification."
-msgstr "Dieser Modus erfordert eine Verifikation der ID."
+msgstr "Цей режим вимагає перевірки ідентифікації."
 
 #: apps/course_metadata/models.py:574
 msgid "Completion can grant credit toward an organization’s degree."
-msgstr ""
-"Mit dem Abschluss können Credits einer Organisation für einen anderen Kurs "
-"angerechnet werden."
+msgstr "Завершення може надавати кредит для отримання ступеня організації."
 
 #: apps/course_metadata/models.py:578
 msgid ""
 "Certificate type granted if this mode is eligible for a certificate, or "
 "blank if not."
 msgstr ""
-"Der Zertifikatstyp zeigt, ob dieser Modus Sie befähigt ein Zertifikat "
-"anzufordern oder nicht."
+"Тип сертифіката, що надається, якщо цей режим придатний для сертифікації, "
+"або залиште порожнім, якщо ні."
 
 #: apps/course_metadata/models.py:582
 msgid ""
 "Who gets paid for the course? Platform is the site owner, Organization is "
 "the school."
 msgstr ""
-"Wer wird für den Kurs bezahlt? Die Plattform ist der Eigentümer der Website,"
-" die Organisation ist die Schule."
+"Хто отримує оплату за курс? Платформа – власник сайту, Організація – школа."
 
 #: apps/course_metadata/models.py:679
 msgid "Sets the order for displaying Course Run Types."
-msgstr "Legt die Reihenfolge fest, nach der Kurslauftypen angezeigt werden."
+msgstr "Встановлює порядок відображення типів запусків курсу."
 
 #: apps/course_metadata/models.py:682
 msgid ""
 "Leave this blank to allow all orgs. Otherwise, specifies which orgs can see "
 "this course type in Publisher."
 msgstr ""
-"Wenn Sie es frei lassen, lassen Sie alle Organisationen zu. Wenn Sie das "
-"nicht möchten, spezifizieren Sie, welche Organisationen diesen Kurstypen in "
-"Publisher sehen dürfen."
+"Залиште це поле порожнім, щоб дозволити всім організаціям. Інакше вкажіть, "
+"які організації можуть бачити цей тип курсу у Publisher."
 
 #: apps/course_metadata/models.py:732
 msgid "Subject model translations"
-msgstr "Fach spezifische Übersetzungen"
+msgstr "Переклади моделі Subject"
 
 #: apps/course_metadata/models.py:779
 msgid "Topic model translations"
-msgstr "Themen spezifische Übersetzungen"
+msgstr "Переклади моделі Topic"
 
 #: apps/course_metadata/models.py:846
 msgid "SEO Meta tags for Products"
-msgstr "SEO-Meta-Tags für Produkte"
+msgstr "SEO мета-теги для продуктів"
 
 #: apps/course_metadata/models.py:881
 msgid ""
 "The ID of the Taxi Form (by 2U) that would be rendered in place of the "
 "hubspot capture form"
 msgstr ""
-"Die ID des Taxiformulars (von 2U), das anstelle des Hubspot-"
-"Erfassungsformulars gerendert würde"
+"ID Taxi Form (від 2U), який буде відображено замість форми збору HubSpot"
 
 #: apps/course_metadata/models.py:887
 msgid ""
 "The grouping of the Taxi Form (by 2U) that would be rendered instead of the "
 "hubspot capture form"
 msgstr ""
-"Die Gruppierung des Taxiformulars (von 2U), das anstelle des Hubspot-"
-"Erfassungsformulars gerendert würde"
+"Групування Taxi Form (від 2U), яке буде відображено замість форми збору "
+"HubSpot"
 
 #: apps/course_metadata/models.py:933
 msgid "The URL of the paid landing page on external site"
-msgstr "Die URL der bezahlten Zielseite auf einer externen Website"
+msgstr "URL платної цільової сторінки на зовнішньому сайті"
 
 #: apps/course_metadata/models.py:939
 msgid "The URL of the organic landing page on external site"
-msgstr "Die URL der organischen Zielseite auf einer externen Website"
+msgstr "URL органічної цільової сторінки на зовнішньому сайті"
 
 #: apps/course_metadata/models.py:950
 msgid "The start date of the external course offering for marketing purpose"
-msgstr "Das Startdatum des externen Kursangebots für Marketingzwecke"
+msgstr "Дата початку зовнішньої пропозиції курсу для маркетингових цілей"
 
 #: apps/course_metadata/models.py:954
 msgid "The ends date of the external course offering for marketing purpose"
-msgstr "Das Enddatum des externen Kursangebots für Marketingzwecke"
+msgstr "Дата завершення зовнішньої пропозиції курсу для маркетингових цілей"
 
 #: apps/course_metadata/models.py:958
 msgid "The suggested deadline for enrollment for marketing purpose"
-msgstr "Die vorgeschlagene Anmeldefrist für Marketingzwecke"
+msgstr "Пропонований термін для реєстрації для маркетингових цілей"
 
 #: apps/course_metadata/models.py:962
 msgid "The identifier for a product variant."
-msgstr "Die Kennung für eine Produktvariante."
+msgstr "Ідентифікатор варіанту продукту."
 
 #: apps/course_metadata/models.py:966
 msgid "Course override"
-msgstr "Kurs überschreiben"
+msgstr "Перезапис курсу"
 
 #: apps/course_metadata/models.py:967
 msgid "This field allows for override the default course term"
-msgstr "Dieses Feld ermöglicht das Überschreiben des Standard-Kursbegriffs"
+msgstr "Це поле дозволяє перезаписати стандартний термін курсу"
 
 #: apps/course_metadata/models.py:993
 msgid ""
 "This field contain external course marketing type specific to product lines"
 msgstr ""
-"Dieses Feld enthält externe Kursmarketingtypen, die für Produktlinien "
-"spezifisch sind"
+"Це поле містить зовнішній тип маркетингу курсу, специфічний для ліній "
+"продуктів"
 
 #: apps/course_metadata/models.py:1002
 msgid ""
 "Determines weather the course should be displayed on the owning "
 "organization's page"
 msgstr ""
-"Legt fest, ob der Kurs auf der Seite der Eigentümerorganisation angezeigt "
-"werden soll"
+"Визначає, чи повинен курс відображатися на сторінці власної організації"
 
 #: apps/course_metadata/models.py:1073
 msgid "A list of major works by this person. Must be valid HTML."
-msgstr ""
-"Eine Liste der besten Arbeiten dieser Person. Es muss im gültigen HTML "
-"Format geschrieben sein."
+msgstr "Список основних творів цієї особи. Має бути валідним HTML"
 
 #: apps/course_metadata/models.py:1081
 msgid "People"
-msgstr "Personen"
+msgstr "Люди"
 
 #: apps/course_metadata/models.py:1272
 msgid ""
 "Add the collaborator image, please make sure its dimensions are 200x100px"
 msgstr ""
-"Füge das Teilnehmerbild hinzu. Bitte stell sicher, dass die Abmessungen 200 "
-"x 100 Pixel betragen."
+"Додайте зображення співпрацівника, переконайтеся, що його розміри становлять"
+" 200x100 пікселів"
 
 #: apps/course_metadata/models.py:1296
 msgid "U.S. Value Per Lead"
-msgstr "US-Wert pro Lead"
+msgstr "Вартість ліда (США)"
 
 #: apps/course_metadata/models.py:1297
 msgid "U.S. value per lead in U.S. dollars."
-msgstr "US-Wert pro Lead in US-Dollar."
+msgstr "Вартість ліда у США в доларах США"
 
 #: apps/course_metadata/models.py:1302
 msgid "International Value Per Lead"
-msgstr "Internationaler Wert pro Lead"
+msgstr "Міжнародна вартість ліда"
 
 #: apps/course_metadata/models.py:1303
 msgid "International value per lead in U.S. dollars."
-msgstr "Internationaler Wert pro Lead in US-Dollar."
+msgstr "Міжнародна вартість ліда в доларах США"
 
 #: apps/course_metadata/models.py:1308
 msgid "U.S. Value Per Click"
-msgstr "US-Wert pro Klick"
+msgstr "Вартість кліку (США)"
 
 #: apps/course_metadata/models.py:1309
 msgid "U.S. value per click in U.S. dollars."
-msgstr "US-Wert pro Klick in US-Dollar."
+msgstr "Вартість кліку у США в доларах США"
 
 #: apps/course_metadata/models.py:1314
 msgid "International Value Per Click"
-msgstr "Internationaler Wert pro Klick"
+msgstr "Міжнародна вартість кліку"
 
 #: apps/course_metadata/models.py:1315
 msgid "International value per click in U.S. dollars."
-msgstr "Internationaler Wert pro Klick in US-Dollar."
+msgstr "Міжнародна вартість кліку в доларах США"
 
 #: apps/course_metadata/models.py:1359
 msgid "Latitude"
-msgstr "Breite"
+msgstr "Широта"
 
 #: apps/course_metadata/models.py:1366
 msgid "Longitude"
-msgstr "Längengrad"
+msgstr "Довгота"
 
 #: apps/course_metadata/models.py:1409
 msgid "Allowlist"
-msgstr "Zulassungsliste"
+msgstr "Білий список"
 
 #: apps/course_metadata/models.py:1410
 msgid "Blocklist"
-msgstr "Blockliste"
+msgstr "Чорний список"
 
 #: apps/course_metadata/models.py:1460
 msgid ""
 "When making reruns for this course, they will use this key instead of the "
 "course key."
 msgstr ""
-"Wenn ein Kurslauf wiederholt wird, wird dieser Schlüssel genutzt anstelle "
-"des Kursschlüssels."
+"При повторних запусків цього курсу буде використовуватися цей ключ замість "
+"ключа курсу"
 
 #: apps/course_metadata/models.py:1477
 msgid ""
 "The actual duration of this course as experienced by learners who complete "
 "it."
 msgstr ""
-"Die tatsächliche Dauer dieses Kurses, wie sie von Lernenden erlebt wird, die"
-" ihn absolvieren."
+"Фактична тривалість цього курсу, яку відчувають студенти, що проходять його"
 
 #: apps/course_metadata/models.py:1498
 msgid "Add the course image"
-msgstr "Fügen Sie ein Kursbild hinzu"
+msgstr "Додайте зображення курсу"
 
 #: apps/course_metadata/models.py:1501 apps/course_metadata/models.py:3364
 msgid "FAQ"
-msgstr "Häufig gestellte Fragen"
+msgstr "Питання та відповіді"
 
 #: apps/course_metadata/models.py:1504
 msgid "Total number of learners who have enrolled in this course"
-msgstr "Gesamtanzahl der Teilnehmer, die in dem Kurs eingeschrieben sind"
+msgstr "Загальна кількість студентів, які зареєструвалися на цей курс"
 
 #: apps/course_metadata/models.py:1509
 msgid ""
 "Total number of learners who have enrolled in this course in the last 6 "
 "months"
 msgstr ""
-"Die Gesamtanzahl an Teilnehmern, die sich innerhalb der letzten 6 Monate in "
-"diesen Kurs eingeschrieben haben."
+"Загальна кількість студентів, які зареєструвалися на цей курс за останні 6 "
+"місяців"
 
 #: apps/course_metadata/models.py:1523
 msgid "Course number format e.g CS002x, BIO1.1x, BIO1.2x"
-msgstr "Format der Kursnummer z.B. CS002x, BIO1.1x, BIO1.2x"
+msgstr "Формат номеру курсу, наприклад: CS002x, BIO1.1x, BIO1.2x"
 
 #: apps/course_metadata/models.py:1537
 msgid "Additional Information"
-msgstr "Zusätzliche Informationen"
+msgstr "Додаткова інформація"
 
 #: apps/course_metadata/models.py:1559
 msgid "The last time this course was modified in the database."
-msgstr "Das letzte Mal, dass dieser Kurs in der Datenbank geändert wurde."
+msgstr "Останній раз цей курс було змінено у базі даних"
 
 #: apps/course_metadata/models.py:1564
 msgid ""
 "This field signifies if this course is in the enterprise subscription "
 "catalog"
 msgstr ""
-"Dieses Feld gibt an, ob sich dieser Kurs im Unternehmensabonnementkatalog "
-"befindet"
+"Це поле вказує, чи входить цей курс до каталогу корпоративних підписок"
 
 #: apps/course_metadata/models.py:1570
 msgid ""
 "Signifies whether this course is included in the B2c subscription catalog."
-msgstr "Gibt an, ob dieser Kurs im B2c-Abonnementkatalog enthalten ist."
+msgstr "Вказує, чи включено цей курс до каталогу підписки B2c."
 
 #: apps/course_metadata/models.py:1578 apps/course_metadata/models.py:3528
 msgid ""
 "If checked, this item will not be indexed in Algolia and will not show up in"
 " search results."
 msgstr ""
-"Wenn diese Option aktiviert ist, wird dieser Artikel nicht in Algolia "
-"indiziert und nicht in den Suchergebnissen angezeigt."
+"Якщо увімкнено, цей елемент не буде індексуватися в Algolia та не з’явиться "
+"в результатах пошуку"
 
 #: apps/course_metadata/models.py:1586 apps/course_metadata/models.py:3536
 msgid "If checked, the About Page will have a meta tag with noindex value"
-msgstr ""
-"Wenn diese Option aktiviert ist, hat die About-Seite ein Meta-Tag mit dem "
-"Wert noindex"
+msgstr "Якщо позначено, сторінка \"Про нас\" матиме мета-тег зі значенням noindex"
 
 #: apps/course_metadata/models.py:1591
 msgid "Watchers"
-msgstr "Beobachter"
+msgstr "Спостерігачі"
 
 #: apps/course_metadata/models.py:1593
 msgid ""
 "The list of email addresses that will be notified if any of the course runs "
 "is published or scheduled."
 msgstr ""
-"Die Liste der E-Mail-Adressen, die benachrichtigt werden, wenn einer der "
-"Kursläufe veröffentlicht oder geplant wird."
+"Список електронних адрес, які отримають сповіщення, якщо будь-який з "
+"запусків курсу буде опублікований або запланований"
 
 #: apps/course_metadata/models.py:1838
 msgid "Future"
-msgstr "Zukunft"
+msgstr "Майбутнє"
 
 #: apps/course_metadata/models.py:1840
 msgid "Past"
-msgstr "Vergangenheit"
+msgstr "Минуле"
 
 #: apps/course_metadata/models.py:2282 apps/course_metadata/models.py:3375
 msgid "Blocked"
-msgstr "Blockiert"
+msgstr "Заблоковано"
 
 #: apps/course_metadata/models.py:2283 apps/course_metadata/models.py:3376
 msgid "Unrestricted"
-msgstr "Uneingeschränkt"
+msgstr "Без обмежень"
 
 #: apps/course_metadata/models.py:2304
 msgid ""
 "Title specific for this run of a course. Leave this value blank to default "
 "to the parent course's title."
 msgstr ""
-"Spezifischer Titel für diesen Kursdurchlauf. Lassen Sie dieses Feld frei um "
-"den Titel des übergeordneten Kurses zu übernehmen."
+"Заголовок, специфічний для цього запуску курсу. Залиште це поле порожнім, "
+"щоб використати заголовок основного курсу"
 
 #: apps/course_metadata/models.py:2313
 msgid ""
 "Short description specific for this run of a course. Leave this value blank "
 "to default to the parent course's short_description attribute."
 msgstr ""
-"Spezielle Kurzbeschreibung für diesen Kursdurchlauf. Lassen Sie diese Feld "
-"frei um die Kurzbeschreibung des übergeordneten Kurses zu übernehmen."
+"Короткий опис, специфічний для цього запуску курсу. Залиште це поле "
+"порожнім, щоб використати короткий опис основного курсу"
 
 #: apps/course_metadata/models.py:2317
 msgid ""
 "Full description specific for this run of a course. Leave this value blank "
 "to default to the parent course's full_description attribute."
 msgstr ""
-"Spezielle Komplettbescheibung für diesen Kursdurchlauf. Lassen Sie dieses "
-"Feld frei um die Komplettbescheibung des übergeordneten Kurses zu "
-"übernehmen."
+"Повний опис, специфічний для цього запуску курсу. Залиште це поле порожнім, "
+"щоб використати опис основного курсу"
 
 #: apps/course_metadata/models.py:2322
 msgid ""
 "Estimated minimum number of hours per week needed to complete a course run."
 msgstr ""
-"Die geschätzte minimale Anzahl an Stunden pro Woche, die man benötigt um "
-"einen Kurslauf abzuschließen."
+"Орієнтовна мінімальна кількість годин на тиждень, необхідна для проходження "
+"курсу"
 
 #: apps/course_metadata/models.py:2325
 msgid ""
 "Estimated maximum number of hours per week needed to complete a course run."
 msgstr ""
-"Die geschätzte maximale Anzahl an Stunden pro Woche die man benötigt um "
-"einen Kurslauf abzuschließen."
+"Орієнтовна максимальна кількість годин на тиждень, необхідна для проходження"
+" курсу"
 
 #: apps/course_metadata/models.py:2328
 msgid "Estimated number of weeks needed to complete this course run."
-msgstr "Geschätzte Anzahl benötigter Wochen zum Abschluss des Kurses"
+msgstr ""
+"Орієнтовна кількість тижнів, необхідних для завершення цього запуску курсу"
 
 #: apps/course_metadata/models.py:2335
 msgid ""
@@ -1516,21 +1477,21 @@ msgid ""
 " run. The dict has two keys: translation_languages and "
 "transcription_languages."
 msgstr ""
-"Ein JSON-Wörterbuch mit detaillierten Angaben zu den verfügbaren "
-"Übersetzungen und Transkriptionen für diesen Lauf. Das Wörterbuch hat zwei "
-"Schlüssel: translation_languages und transcription_languages."
+"JSON-словник, що описує доступні переклади та транскрипції для цього "
+"запуску. Словник містить два ключі: translation_languages та "
+"transcription_languages"
 
 #: apps/course_metadata/models.py:2342
 msgid "Total number of learners who have enrolled in this course run"
-msgstr "Gesamtanzahl der Teilnehmer, die in dem Kurslauf eingeschrieben sind"
+msgstr "Загальна кількість студентів, які зареєструвалися на цей запуск курсу"
 
 #: apps/course_metadata/models.py:2346
 msgid ""
 "Total number of learners who have enrolled in this course run in the last 6 "
 "months"
 msgstr ""
-"Die Gesamtanzahl an Teilnehmern, die sich innerhalb der letzten 6 Monate in "
-"diesen Kurslauf eingeschrieben haben."
+"Загальна кількість студентів, які зареєструвалися на цей запуск курсу за "
+"останні 6 місяців"
 
 #: apps/course_metadata/models.py:2359
 msgid ""
@@ -1538,120 +1499,112 @@ msgid ""
 "this value will be overwritten by the \"Course Visibility In Catalog\" field"
 " in Studio via Refresh Course Metadata."
 msgstr ""
-"Soll dieser Kurslauf vor API-Responses verborgen werden? Die Einstellung "
-"bitte nicht hier bearbeiten - dieser Wert wird durch das Feld \"Sichtbarkeit"
-" des Kurses im Katalog\" in Studio über die Schaltfläche \"Kursmetadaten "
-"aktualisieren\" überschrieben."
+"Чи повинен цей запуск бути прихований у відповідях API. Не редагуйте це "
+"значення – воно буде перезаписане полем \"Видимість курсу в каталозі\" у "
+"Studio через оновлення метаданих курсу"
 
 #: apps/course_metadata/models.py:2365
 msgid "Indicates whether the course relation has been manually overridden."
-msgstr "Zeigt an ob die Kursbeziehungen von Hand geändert wurden."
+msgstr "Вказує, чи було вручну змінено зв’язок з курсом"
 
 #: apps/course_metadata/models.py:2372
 msgid ""
 "'What You Will Learn' description for this particular course run. Leave this"
 " value blank to default to the parent course's Outcome attribute."
 msgstr ""
-"'Was Sie lernen werden' Beschreibung für diesen Kurs. Lassen Sie dieses Feld"
-" leer, um die Standardeinstellungen für das Outcome-Attribut des "
-"übergeordneten Kurses zu verwenden."
+"Опис розділу «Що ви дізнаєтесь» для цього запуску курсу. Залиште це поле "
+"порожнім, щоб використати атрибут Outcome основного курсу"
 
 #: apps/course_metadata/models.py:2385 apps/course_metadata/models.py:3564
 msgid "Add OFAC restriction text to the FAQ section of the Marketing site"
-msgstr ""
-"Fügen Sie einen OFAC Richtlinien Text zu der Sektion der FAQs auf der "
-"Marketing Seite hinzu"
+msgstr "Додайте текст обмежень OFAC до розділу FAQ на маркетинговому сайті"
 
 #: apps/course_metadata/models.py:2405
 msgid ""
 "This calculated field signifies if this course run is in the enterprise "
 "subscription catalog"
 msgstr ""
-"Dieses berechnete Feld gibt an, ob sich dieser Kurslauf im "
-"Unternehmensabonnementkatalog befindet"
+"Це обчислюване поле вказує, чи входить цей запуск курсу до каталогу "
+"корпоративних підписок"
 
 #: apps/course_metadata/models.py:2411
 msgid ""
 "The identifier for a product variant. This is used to link a course run to a"
 " product variant for external LOBs (i.e; ExecEd & Bootcamps)."
 msgstr ""
-"Die Kennung für eine Produktvariante. Dies wird verwendet, um einen Kurslauf"
-" mit einer Produktvariante für externe LOBs (z. B. ExecEd und Bootcamps) zu "
-"verknüpfen."
+"Ідентифікатор варіанту продукту. Використовується для зв’язку запуску курсу "
+"з варіантом продукту для зовнішніх LOB (наприклад, ExecEd та Bootcamps)"
 
 #: apps/course_metadata/models.py:2759 apps/course_metadata/models.py:2772
 msgid "Current"
-msgstr "Derzeit aktiv"
+msgstr "Поточний"
 
 #: apps/course_metadata/models.py:2761
 msgid "Starting Soon"
-msgstr "In Kürze Beginnend"
+msgstr "Починається скоро"
 
 #: apps/course_metadata/models.py:2811
 msgid ""
 "Switching seat types after being reviewed is not supported. Please reach out"
 " to your project coordinator for additional help if necessary."
 msgstr ""
-"Ein Wechsel der Berechtigungsarten nach der Prüfung wird nicht unterstützt. "
-"Bitte wenden Sie sich bei Bedarf an Ihren Projektkoordinator, um weitere "
-"Hilfe zu erhalten."
+"Зміна типів місць після перевірки не підтримується. Будь ласка, зверніться "
+"до координатора вашого проекту за додатковою допомогою, якщо необхідно"
 
 #: apps/course_metadata/models.py:3165
 msgid "Change careers"
-msgstr "Karrierewechsel"
+msgstr "Змінити кар’єру"
 
 #: apps/course_metadata/models.py:3166
 msgid "Job advancement"
-msgstr "Berufliche Weiterentwicklung"
+msgstr "Кар’єрне зростання"
 
 #: apps/course_metadata/models.py:3167
 msgid "Learn valuable skills"
-msgstr "Lernen Sie wertvolle Fähigkeiten"
+msgstr "Навчіться цінним навичкам"
 
 #: apps/course_metadata/models.py:3168
 msgid "Learn for fun"
-msgstr "Lernen Sie zum Spaß"
+msgstr "Навчайтеся для задоволення"
 
 #: apps/course_metadata/models.py:3365
 msgid "FAQs"
-msgstr "Häufig gestellte Fragen - Übersicht"
+msgstr "Питання та відповіді"
 
 #: apps/course_metadata/models.py:3380
 msgid "The user-facing display title for this Program."
-msgstr "Anwenderorientierter Anzeigentitel für dieses Programm"
+msgstr "Назва, що відображається користувачам, для цієї Програми"
 
 #: apps/course_metadata/models.py:3382
 msgid "A brief, descriptive subtitle for the Program."
-msgstr "Kurzer, beschreibender Untertitel für das Programm"
+msgstr "Короткий, описовий підзаголовок для Програми"
 
 #: apps/course_metadata/models.py:3384
 msgid "A brief hook for the marketing website"
-msgstr "Ein kurzer Aufhänger für die Marketing-Website"
+msgstr "Короткий слоган для маркетингового сайту"
 
 #: apps/course_metadata/models.py:3387
 msgid "The lifecycle status of this Program."
-msgstr "Der Status im Lebenszyklus dieses Programms."
+msgstr "Стан життєвого циклу цієї Програми"
 
 #: apps/course_metadata/models.py:3399
 msgid ""
 "If this box is not checked, courses will be ordered as in the courses select"
 " box above."
 msgstr ""
-"Wenn dieses Feld nicht markiert ist, werden die Kurse wie im obigen "
-"Kursauswahlfeld ausgegewählt"
+"Якщо ця опція не вибрана, курси будуть впорядковані, як у списку курсів вище"
 
 #: apps/course_metadata/models.py:3414
 msgid ""
 "This field is now deprecated (ECOM-6021).Estimated number of weeks needed to"
 " complete a course run belonging to this program."
 msgstr ""
-"Dieses Feld ist jetzt veraltet (ECOM-6021). Geschätzte Anzahl von Wochen, "
-"die benötigt werden, um einen Kurs zu beenden, der zu diesem Programm "
-"gehört."
+"Це поле тепер застаріле (ECOM-6021). Орієнтовна кількість тижнів, необхідних"
+" для завершення запуску курсу цієї програми"
 
 #: apps/course_metadata/models.py:3440
 msgid "DEPRECATED: Use the card image field"
-msgstr "ENTFERNT: Verwenden Sie das Kartenbildfeld"
+msgstr "Застаріло: використовуйте поле зображення картки"
 
 #: apps/course_metadata/models.py:3447
 msgid ""
@@ -1659,320 +1612,311 @@ msgid ""
 "instructors will be displayed on program pages. Instructors in this list "
 "should appear before all others associated with this programs courses runs."
 msgstr ""
-"Dieses Feld kann von API-Clients verwendet werden, um die Reihenfolge "
-"festzulegen, in der die Instruktoren auf den Programmseiten angezeigt "
-"werden. Kursleiter in dieser Liste sollten erscheinen, bevor alle anderen "
-"mit diesem Kurs verbundenen Kurse ausgeführt werden."
+"Це поле може використовуватися API-клієнтами для визначення порядку "
+"відображення інструкторів на сторінках програми. Інструктори зі списку "
+"повинні бути показані перед іншими, пов’язаними з запусками курсів цієї "
+"програми"
 
 #: apps/course_metadata/models.py:3458
 msgid "The description of credit redemption for courses in program"
-msgstr "Die Beschreibung für die Kursauswertung im Programm"
+msgstr "Опис обміну кредитами для курсів цієї програми"
 
 #: apps/course_metadata/models.py:3463
 msgid "Allow courses in this program to be purchased in a single transaction"
-msgstr ""
-"Lassen Sie Kurse in diesem Programm in einer einzigen Transaktion erwerben."
+msgstr "Дозволити купівлю курсів цієї програми в одній транзакції"
 
 #: apps/course_metadata/models.py:3467
 msgid ""
 "Hide program on marketing site landing and search pages. This program MAY "
 "have a detail page."
 msgstr ""
-"Verstecken Sie das Programm auf den Landing- und Suchseiten der "
-"Marketingseite. Dieses Programm kann eine Detailseite haben."
+"Приховати програму на цільових та пошукових сторінках маркетингового сайту. "
+"У програми МОЖЕ бути детальна сторінка"
 
 #: apps/course_metadata/models.py:3470
 msgid "Total number of learners who have enrolled in courses this program"
 msgstr ""
-"Gesamtanzahl der Teilnehmer, die in Kursen dieses Programms eingeschrieben "
-"sind"
+"Загальна кількість студентів, які зареєструвалися на курси цієї програми"
 
 #: apps/course_metadata/models.py:3475
 msgid ""
 "Total number of learners who have enrolled in courses in this program in the"
 " last 6 months"
 msgstr ""
-"Die Gesamtanzahl an Teilnehmern, die sich innerhalb der letzten 6 Monate in "
-"Kursen dieses Programms eingeschrieben haben."
+"Загальна кількість студентів, які зареєструвалися на курси цієї програми за "
+"останні 6 місяців"
 
 #: apps/course_metadata/models.py:3480
 msgid ""
 "Number of credits a learner will earn upon successful completion of the "
 "program"
 msgstr ""
-"Die Anzahl an Credits, die ein Teilnehmer bekommen kann, wenn er das "
-"Kursprogramm erfolgreich abschließt."
+"Кількість кредитів, які студент отримає після успішного завершення програми"
 
 #: apps/course_metadata/models.py:3484
 msgid ""
 "This calculated field signifies if all the courses in this program are "
 "included in the enterprise subscription catalog "
 msgstr ""
-"Dieses berechnete Feld gibt an, ob alle Kurse in diesem Programm im "
-"Unternehmensabonnementkatalog enthalten sind"
+"Це обчислюване поле вказує, чи всі курси цієї програми включені до каталогу "
+"корпоративних підписок"
 
 #: apps/course_metadata/models.py:3490
 msgid ""
 "Signifies whether this program is included in the B2c subscription catalog."
-msgstr "Gibt an, ob dieses Programm im B2c-Abonnementkatalog enthalten ist."
+msgstr "Вказує, чи включено цю програму до каталогу підписки B2c."
 
 #: apps/course_metadata/models.py:3493
 msgid ""
 "A field to override Organization short code alias specific for this program."
 msgstr ""
-"Ein Feld zum Überschreiben des für dieses Programm spezifischen Alias-"
-"Kurzcodes der Organisation."
+"Поле для перевизначення короткого коду організації, специфічного для цієї "
+"програми"
 
 #: apps/course_metadata/models.py:3500
 msgid "A field to override Organization logo specific for this program."
 msgstr ""
-"Ein Feld zum Überschreiben des für dieses Programm spezifischen "
-"Organisationslogos."
+"Поле для перевизначення логотипу організації, специфічного для цієї програми"
 
 #: apps/course_metadata/models.py:3504
 msgid ""
 "Primary subject field specific for this program. Useful field in case there "
 "are no courses associated with this program."
 msgstr ""
-"Primäres Fachgebiet, das für dieses Programm spezifisch ist. Nützliches "
-"Feld, falls diesem Programm keine Kurse zugeordnet sind."
+"Основне поле предмету для цієї програми. Корисне, якщо курси не пов’язані з "
+"цією програмою"
 
 #: apps/course_metadata/models.py:3509
 msgid ""
 "Level type specific for this program. Useful field in case there are no "
 "courses associated with this program."
 msgstr ""
-"Für dieses Programm spezifischer Leveltyp. Nützliches Feld, falls diesem "
-"Programm keine Kurse zugeordnet sind."
+"Тип рівня, специфічний для цієї програми. Корисне, якщо курси не пов’язані з"
+" цією програмою"
 
 #: apps/course_metadata/models.py:3514
 msgid ""
 "Language code specific for this program. Useful field in case there are no "
 "courses associated with this program."
 msgstr ""
-"Spezifischer Sprachcode für dieses Programm. Nützliches Feld, falls diesem "
-"Programm keine Kurse zugeordnet sind."
+"Код мови, специфічний для цієї програми. Корисне, якщо курси не пов’язані з "
+"цією програмою"
 
 #: apps/course_metadata/models.py:3548
 msgid ""
 "Useful field to overwrite the duration of a program. It can be a text "
 "describing a period of time, Ex: 6-9 months."
 msgstr ""
-"Nützliches Feld um die Dauer eines Programms zu überschreiben. Es kann ein "
-"Text sein, der einen Zeitraum beschreibt, zB: 6-9 Monate."
+"Корисне поле для перевизначення тривалості програми. Це може бути текст, що "
+"описує період часу, наприклад: 6-9 місяців"
 
 #: apps/course_metadata/models.py:3557
 msgid ""
 "Pick a tag/label from the suggestions. To make a new tag, add a comma after "
 "the tag name."
 msgstr ""
-"Wählen Sie ein Tag/Label aus den Vorschlägen aus. Um ein neues Tag zu "
-"erstellen, fügen Sie nach dem Tag-Namen ein Komma hinzu."
+"Виберіть тег/мітку з запропонованих варіантів. Щоб створити новий тег, "
+"додайте кому після назви тегу"
 
 #: apps/course_metadata/models.py:3568
 msgid "The last time this program was modified."
-msgstr "Das letzte Mal, als dieses Programm geändert wurde."
+msgstr "Останній раз ця програма була змінена"
 
 #: apps/course_metadata/models.py:4020 apps/course_metadata/models.py:4037
 msgid "ID"
-msgstr "ID"
+msgstr "Ідентифікатор"
 
 #: apps/course_metadata/models.py:4056
 msgid "The actual rank number"
-msgstr "Die tatsächliche Rangnummer"
+msgstr "Фактичний номер рангу"
 
 #: apps/course_metadata/models.py:4057
 msgid "What does the rank number mean"
-msgstr "Was bedeutet die Rangnummer"
+msgstr "Що означає номер рангу"
 
 #: apps/course_metadata/models.py:4058
 msgid "From where the rank is obtained"
-msgstr "Woher kommt diese Rangnummer"
+msgstr "Звідки отримується ранг"
 
 #: apps/course_metadata/models.py:4105
 msgid "Callback URL to partner application flow"
-msgstr "Rückruf-URL zum Ablauf der Partneranwendung"
+msgstr "URL зворотного виклику для потоку додатка партнера"
 
 #: apps/course_metadata/models.py:4108
 msgid "Overall program ranking (e.g. \"#1 in the U.S.\")"
-msgstr "Gesamte Programm-Rangliste (e.g. \"#1 in the U.S.\")"
+msgstr "Загальний рейтинг програми (наприклад, \"#1 в США\")"
 
 #: apps/course_metadata/models.py:4113
 msgid ""
 "The 6 character hex value of the color to make the banner borders\n"
 "            (e.g. \"#ff0000\" which equals red) No need to provide the `#`"
 msgstr ""
-"Die 6 Zeichen des Hexadezimalcodes zum Festlegen der Rahmenfarbe des Banners\n"
-" (z.B. \"#ff0000\" für die Farbe Rot) Das `#` Zeichen muss nicht angegeben werden"
+"6-символьне шістнадцяткове значення кольору для рамок банера (наприклад, "
+"\"ff0000\", що означає червоний). Не потрібно включати `#`"
 
 #: apps/course_metadata/models.py:4122
 msgid "Provide a campus image for the header of the degree"
-msgstr "Laden Sie ein Bild für die Überschrift dieses Abschlusses hoch."
+msgstr "Надайте зображення кампусу для заголовка ступеня"
 
 #: apps/course_metadata/models.py:4128
 msgid "Provide a background image for the title section of the degree"
-msgstr ""
-"Laden Sie ein Hintegrundbild für die Überschrift dieses Abschlusses hoch."
+msgstr "Надайте фонове зображення для секції заголовка ступеня"
 
 #: apps/course_metadata/models.py:4133
 msgid "The fine print that displays at the Tuition section's bottom"
 msgstr ""
-"Das Kleingedruckte, das unten in der Sektion \"Studiengebühren\" angezeigt "
-"wird"
+"Умови дрібним шрифтом, що відображаються внизу секції навчального збору"
 
 #: apps/course_metadata/models.py:4138
 msgid "The fine print that displays at the Deadline section's bottom"
-msgstr "Das Kleingedruckte, das unten im Abschnitt \"Frist\" angezeigt wird"
+msgstr "Умови дрібним шрифтом, що відображаються внизу секції дедлайну"
 
 #: apps/course_metadata/models.py:4145
 msgid "The sailthru email list name to capture leads"
-msgstr "Der Name der sailthru E-Mail-Liste zur Erfassung von Kontakten"
+msgstr "Назва розсилки Sailthru для збору лідів"
 
 #: apps/course_metadata/models.py:4159
 msgid "Please provide an image file for the lead capture banner."
-msgstr "Bitte laden Sie ein Bild für den Titelbanner hoch."
+msgstr "Будь ласка, надайте файл із зображенням для банера збору лідів"
 
 #: apps/course_metadata/models.py:4162
 msgid "The Hubspot form ID for the lead capture form"
-msgstr "Die Hubspot-Formular-ID für das Lead Capture Formular."
+msgstr "Ідентифікатор форми Hubspot для форми збору лідів"
 
 #: apps/course_metadata/models.py:4168
 msgid "URL to micromasters landing page"
-msgstr "Die URL der Seite für die Micromasters"
+msgstr "URL цільової сторінки micromasters"
 
 #: apps/course_metadata/models.py:4174
 msgid "Micromasters verbose title"
-msgstr "Ausführlicher Micromasters Titel"
+msgstr "Розширений заголовок Micromasters"
 
 #: apps/course_metadata/models.py:4180
 msgid "Micromasters descriptive paragraph"
-msgstr "Ein beschreibender Absatz über Micromasters"
+msgstr "Описовий абзац Micromasters"
 
 #: apps/course_metadata/models.py:4193
 msgid "Customized background image for the MicroMasters section."
-msgstr "Benutzerdefiniertes Hintergrundbild für die MicroMasters Sektion."
+msgstr "Кастомізоване фонове зображення для секції MicroMasters"
 
 #: apps/course_metadata/models.py:4197
 msgid ""
 "Override org name if micromasters program comes from different organization "
 "than Masters program"
 msgstr ""
-"Überschreiben des ORG-Namens, wenn Micromasters Programme von "
-"unterschiedlichen Organisationen kommen."
+"Перевизначте назву організації, якщо програма Micromasters належить до іншої"
+" організації, ніж програма Masters"
 
 #: apps/course_metadata/models.py:4204
 msgid "Ranking display for search card (e.g. \"#1 in the U.S.\""
-msgstr "Reihenfolge für die Anzeige der Suchergebnisse (z.B. \"#1 in den USA\" "
+msgstr "Відображення рейтингу для картки пошуку (наприклад, \"#1 в США\""
 
 #: apps/course_metadata/models.py:4210
 msgid "Cost display for search card (e.g. \"$9,999\""
-msgstr "Preisanzeige für die Suche (z.B. \"€9,999\""
+msgstr "Відображення вартості для картки пошуку (наприклад, \"$9,999\""
 
 #: apps/course_metadata/models.py:4216
 msgid "Number of courses for search card (e.g. \"11 Courses\""
-msgstr "Die Anzahl der Kurse für die Suchergebnisse (z.B. \"11 Kurse\""
+msgstr "Кількість курсів для картки пошуку (наприклад, \"11 Курсів\""
 
 #: apps/course_metadata/models.py:4224
 msgid ""
 "Designates whether the degree should be displayed on the owning "
 "organization's page"
 msgstr ""
-"Legt fest, ob der Abschluss auf der Seite der besitzenden Organisation "
-"angezeigt werden soll"
+"Вказує, чи повинен ступінь відображатися на сторінці організації-власника"
 
 #: apps/course_metadata/models.py:4243
 msgid "The redirect URL of the degree on external site"
-msgstr "Die Weiterleitungs-URL des Abschlusses auf einer externen Website"
+msgstr "URL редіректу ступеня на зовнішньому сайті"
 
 #: apps/course_metadata/models.py:4248
 msgid "The URL of the landing page on external site"
-msgstr "Die URL der Zielseite auf einer externen Website"
+msgstr "URL цільової сторінки на зовнішньому сайті"
 
 #: apps/course_metadata/models.py:4299
 msgid "Bell"
-msgstr "Klingel"
+msgstr "Дзвоник"
 
 #: apps/course_metadata/models.py:4300
 msgid "Certificate"
-msgstr "Zertifikat"
+msgstr "Сертифікат"
 
 #: apps/course_metadata/models.py:4301
 msgid "Checkmark"
-msgstr "Häkchen"
+msgstr "Галочка"
 
 #: apps/course_metadata/models.py:4302
 msgid "Clock"
-msgstr "Uhr"
+msgstr "Годинник"
 
 #: apps/course_metadata/models.py:4303
 msgid "Desktop"
-msgstr "Desktop"
+msgstr "Настільний комп’ютер"
 
 #: apps/course_metadata/models.py:4304
 msgid "Info"
-msgstr "Info"
+msgstr "Інформація"
 
 #: apps/course_metadata/models.py:4305
 msgid "Sitemap"
-msgstr "Sitemap"
+msgstr "Карта сайту"
 
 #: apps/course_metadata/models.py:4306
 msgid "User"
-msgstr "Benutzer"
+msgstr "Користувач"
 
 #: apps/course_metadata/models.py:4307
 msgid "Dollar"
-msgstr "Dollar"
+msgstr "Долар"
 
 #: apps/course_metadata/models.py:4308
 msgid "Book"
-msgstr "Buch"
+msgstr "Книга"
 
 #: apps/course_metadata/models.py:4309
 msgid "Mortar Board"
-msgstr "Akademische Mütze"
+msgstr "Випускна шапка"
 
 #: apps/course_metadata/models.py:4310
 msgid "Star"
-msgstr "Stern"
+msgstr "Зірка"
 
 #: apps/course_metadata/models.py:4311
 msgid "Trophy"
-msgstr "Trophäe"
+msgstr "Трофей"
 
 #: apps/course_metadata/models.py:4315
 msgid "Icon FA class"
-msgstr "Icon FA Klasse"
+msgstr "Клас іконки FA"
 
 #: apps/course_metadata/models.py:4316
 msgid "Paired text"
-msgstr "Gepaarter Text"
+msgstr "Парний текст"
 
 #: apps/course_metadata/models.py:4351
 msgid "Deadline applies for this semester (e.g. Spring 2019"
-msgstr "Die Frist, die für dieses Semester gilt (z.B. Frühjahr 2019"
+msgstr "Дедлайн діє для цього семестру (наприклад, весна 2019"
 
 #: apps/course_metadata/models.py:4355
 msgid "Describes the deadline (e.g. Early Admission Deadline)"
-msgstr "Beschreibender Name der Frist (z.B. Frühe Eintrittsphase)"
+msgstr "Описує дедлайн (наприклад, Дедлайн раннього вступу)"
 
 #: apps/course_metadata/models.py:4359
 msgid "The date after which the deadline expires (e.g. January 1, 2019)"
-msgstr "Der Tag, nach dem die Frist abläuft (z.B. 01.01.2019)"
+msgstr "Дата, після якої дедлайн спливає (наприклад, 1 січня 2019)"
 
 #: apps/course_metadata/models.py:4363
 msgid "The time after which the deadline expires (e.g. 11:59 PM EST)."
-msgstr "Die Zeit, nach der die Frist abläuft (z.B. 11:59 PM EST)."
+msgstr "Час, після якого дедлайн спливає (наприклад, 23:59 EST)"
 
 #: apps/course_metadata/models.py:4399
 msgid "Describes what the cost is for (e.g. Tuition)"
-msgstr "Preis für (z.B. Unterricht)"
+msgstr "Описує, за що стягується плата (наприклад, навчальний збір)"
 
 #: apps/course_metadata/models.py:4403
 msgid "String-based field stating how much the cost is (e.g. $1000)."
-msgstr ""
-"String-basiertes Feld, welches aussagt, wie viel ein Kurs kostet (e.g. "
-"$1000)."
+msgstr "Текстове поле, що вказує розмір плати (наприклад, $1000)"
 
 #: apps/course_metadata/models.py:4446
 msgid ""
@@ -1980,22 +1924,20 @@ msgid ""
 "            text is the first 750 characters of \"marketing_text\" and must be\n"
 "            valid HTML."
 msgstr ""
-"Ein genauer Überblick über das Studienangebot der Studiengänge. Der Beschreibungstext\n"
-"wird aus den ersten 750 Zeichen des \"marketing_text\" genommen und muss\n"
-"im gültigen HTML Format geschrieben sein."
+"Огляд матеріалів курсу для ступеня. Поле \"brief\" містить перші 750 "
+"символів з \"marketing_text\" і має бути валідним HTML"
 
 #: apps/course_metadata/models.py:4454
 msgid "A high-level overview of the degree's courseware."
-msgstr "Eine genaue Übersicht der Abschlussrelevanten Lerninhalte."
+msgstr "Огляд курсів ступеня"
 
 #: apps/course_metadata/models.py:4579
 msgid "Organization name"
-msgstr "Unternehmensname"
+msgstr "Назва організації"
 
 #: apps/course_metadata/models.py:4606
 msgid "These programs are for a different partner than the pathway itself: {}"
-msgstr ""
-"Diese Programme sind für einen anderen Partner als der Pfad selbst: {}"
+msgstr "Ці програми належать іншому партнеру, ніж сама траєкторія: {}"
 
 #: apps/course_metadata/models.py:4633
 msgid "Facebook"
@@ -2007,11 +1949,11 @@ msgstr "Twitter"
 
 #: apps/course_metadata/models.py:4635
 msgid "Blog"
-msgstr "Blog"
+msgstr "Блог"
 
 #: apps/course_metadata/models.py:4636
 msgid "Others"
-msgstr "Andere"
+msgstr "Інші"
 
 #: apps/course_metadata/models.py:4696
 #, python-brace-format
@@ -2019,8 +1961,8 @@ msgid ""
 "Partner {partner_key} and course partner {course_partner_key} do not match "
 "when attempting to save url slug {url_slug}"
 msgstr ""
-"Partner {partner_key} und Kurspartner {course_partner_key} stimmen nicht "
-"überein, um die Url-Slug {url_slug} zu speichern."
+"Партнер {partner_key} та партнер курсу {course_partner_key} не співпадають "
+"при спробі зберегти URL slug {url_slug}"
 
 #: apps/course_metadata/models.py:4716
 #, python-brace-format
@@ -2028,17 +1970,16 @@ msgid ""
 "Partner {partner_key} and course partner {course_partner_key} do not match "
 "when attempting to save url redirect {url_path}"
 msgstr ""
-"Partner {partner_key} und Kurspartner {course_partner_key} stimmen nicht "
-"überein, wenn versucht wird, die Url-Weiterleitung {url_path} zu speichern."
+"Партнер {partner_key} та партнер курсу {course_partner_key} не співпадають "
+"при спробі зберегти URL перенаправлення {url_path}"
 
 #: apps/course_metadata/models.py:4737
 msgid "It expects the data will be provided in a csv file format "
-msgstr ""
-"Es erwartet, dass die Daten in einem csv-Dateiformat bereitgestellt werden"
+msgstr "Очікується, що дані будуть надані у форматі CSV"
 
 #: apps/course_metadata/models.py:4749
 msgid "A csv file containing uuid of the courses to be archived"
-msgstr "Eine CSV-Datei mit der UUID der zu archivierenden Kurse"
+msgstr "CSV файл, що містить UUID курсів для архівації"
 
 #: apps/course_metadata/models.py:4763 apps/course_metadata/models.py:4776
 #: apps/course_metadata/models.py:4789 apps/course_metadata/models.py:4824
@@ -2049,138 +1990,139 @@ msgid ""
 "It expects the data will be provided in a csv file format with first row "
 "containing all the headers."
 msgstr ""
-"Es erwartet, dass die Daten in einem CSV-Dateiformat bereitgestellt werden, "
-"wobei die erste Zeile alle Header enthält."
+"Очікується, що дані будуть надані у форматі CSV, де перший рядок містить усі"
+" заголовки"
 
 #: apps/course_metadata/models.py:4848
 msgid "Open Courses"
-msgstr "Offene Kurse"
+msgstr "Відкриті курси"
 
 #: apps/course_metadata/models.py:4849
 msgid "2U Executive Education Courses"
-msgstr "2U Executive Education-Kurse"
+msgstr "Курси 2U Executive Education"
 
 #: apps/course_metadata/models.py:4850
 msgid "Bootcamps"
-msgstr "Trainingslager"
+msgstr "Буткемпи"
 
 #: apps/course_metadata/models.py:4861 apps/course_metadata/models.py:4965
 msgid "Course UUIDs"
-msgstr "Kurs UUIDs"
+msgstr "UUID курсів"
 
 #: apps/course_metadata/models.py:4941
 msgid "Course Run IDs"
-msgstr "Kurslauf IDs"
+msgstr "ID запусків курсу"
 
 #: apps/course_metadata/models.py:4957
 msgid "Profile Image UUIDs"
-msgstr "UUIDs der Profilbilder"
+msgstr "UUID зображень профілю"
 
 #: apps/course_metadata/models.py:4964
 msgid "Tag"
-msgstr "Stichwort"
+msgstr "Тег"
 
 #: apps/course_metadata/models.py:4980
 msgid "Remove All Redirects"
-msgstr "Alle Weiterleitungen entfernen"
+msgstr "Видалити всі перенаправлення"
 
 #: apps/course_metadata/models.py:4981
 msgid "Url Paths"
-msgstr "URL Pfad"
+msgstr "Шляхи URL"
 
 #: apps/course_metadata/models.py:4989
 msgid "Add redirects from all published course url slugs"
-msgstr "Umleitungen von allen veröffentlichten Kurs-URL-Slugs hinzufügen"
+msgstr "Додати перенаправлення для всіх опублікованих URL slug курсів"
 
 #: apps/course_metadata/models.py:4990 apps/taxonomy_support/models.py:55
 msgid "Course uuids"
-msgstr "Kurs UUIDs"
+msgstr "UUID курсів"
 
 #: apps/course_metadata/models.py:5055
 msgid "User who uploaded the file"
-msgstr "Benutzer, der die Datei hochgeladen hat"
+msgstr "Користувач, який завантажив файл"
 
 #: apps/course_metadata/models.py:5060
 msgid "Summary of the task"
-msgstr "Zusammenfassung der Aufgabe"
+msgstr "Короткий опис завдання"
 
 #: apps/course_metadata/models.py:5063
 msgid "Task Type"
-msgstr "Aufgabentyp"
+msgstr "Тип завдання"
 
 #: apps/course_metadata/models.py:5066
 msgid "Type of Bulk Task to be performed"
-msgstr "Art der auszuführenden Massenaufgabe"
+msgstr "Тип пакетного завдання, яке буде виконано"
 
 #: apps/course_metadata/models.py:5069
 msgid "Status"
-msgstr "Status"
+msgstr "Статус"
 
 #: apps/course_metadata/models.py:5072
 msgid "Status of the Bulk Task"
-msgstr "Status der Massenaufgabe"
+msgstr "Статус пакетного завдання"
 
 #: apps/course_metadata/models.py:5080
 msgid "Identifier of the celery task associated with this bulk task"
-msgstr ""
-"Kennung der Sellerie-Aufgabe, die mit dieser Massenaufgabe verknüpft ist"
+msgstr "Ідентифікатор celery завдання, пов’язаного з цим пакетним завданням"
 
 #: apps/course_metadata/salesforce.py:78
 msgid "Attempted to query Salesforce with no client for partner={}"
-msgstr "Es wurde versucht, Salesforce ohne Client für Partner abzufragen={}"
+msgstr "Спроба здійснити запит до Salesforce без клієнта для партнера={}"
 
 #: apps/course_metadata/salesforce.py:237
 msgid "Unable to associate a case for comments for {}"
-msgstr "Kann keinen Fall für Kommentare zuordnen für {}"
+msgstr "Не вдалося пов’язати кейс для коментарів для {}"
 
 #: apps/course_metadata/templates/admin/course_metadata/course_run.html:24
 msgid "Cancel"
-msgstr "Abbruch"
+msgstr "Скасувати"
 
 #: apps/course_metadata/templates/admin/course_metadata/course_run.html:27
 msgid "Back to Program"
-msgstr "Zurück "
+msgstr "Повернутися до програми"
 
 #: apps/course_metadata/templates/admin/course_metadata/course_run.html:29
 msgid "Save Course Run"
-msgstr "Kursverlauf speichern"
+msgstr "Зберегти запуск курсу"
 
 #: apps/course_metadata/templates/admin/course_metadata/course_skills.html:11
 #: apps/course_metadata/templates/admin/course_metadata/refresh_course_skills.html:7
 #: apps/course_metadata/templates/admin/course_metadata/refresh_program_skills.html:7
 msgid "Home"
-msgstr "Startseite"
+msgstr "Головна"
 
 #: apps/course_metadata/templates/admin/course_metadata/course_skills.html:26
 msgid "Course Skills"
-msgstr "Kurskenntnisse"
+msgstr "Навички курсу"
 
 #: apps/course_metadata/templates/admin/course_metadata/refresh_course_skills.html:22
 #: apps/course_metadata/templates/admin/course_metadata/refresh_course_skills.html:32
 msgid "Refresh Course Skills"
-msgstr "Kursfähigkeiten auffrischen"
+msgstr "Оновити навички курсу"
 
 #: apps/course_metadata/templates/admin/course_metadata/refresh_program_skills.html:22
 #: apps/course_metadata/templates/admin/course_metadata/refresh_program_skills.html:32
 msgid "Refresh Program Skills"
-msgstr "Programmkenntnisse auffrischen"
+msgstr "Оновити навички програми"
 
 #: apps/course_metadata/templates/course_metadata/email/comment.html:7
 #, python-format
 msgid ""
 "%(user_name)s made the following comment on %(course_name)s on %(date)s at "
 "%(time)s"
-msgstr "%(user_name)s kommentierte in %(course_name)s am %(date)s um %(time)s"
+msgstr ""
+"%(user_name)s залишив наступний коментар до %(course_name)s %(date)s о "
+"%(time)s"
 
 #: apps/course_metadata/templates/course_metadata/email/comment.html:19
 #: apps/course_metadata/templates/course_metadata/email/comment.txt:9
 msgid "View comment in Publisher"
-msgstr "Kommentar sehen"
+msgstr "Переглянути коментар у Publisher"
 
 #: apps/course_metadata/templates/course_metadata/email/comment.html:21
 #: apps/course_metadata/templates/course_metadata/email/comment.txt:11
 msgid "The edX team"
-msgstr "Das edX Team"
+msgstr "Команда edX"
 
 #: apps/course_metadata/templates/course_metadata/email/comment.txt:3
 #, python-format
@@ -2188,15 +2130,15 @@ msgid ""
 "%(user_name)s made the following comment on %(course_name)s %(date)s at "
 "%(time)s"
 msgstr ""
-"%(user_name)shat folgenden Kommentar zu %(course_name)s am %(date)s um "
-"%(time)s hinzugefügt."
+"%(user_name)s залишив наступний коментар до %(course_name)s %(date)s о "
+"%(time)s"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:8
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:3
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:9
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:3
 msgid "Hi Course Team,"
-msgstr "Hallo Kursteam,"
+msgstr "Привіт, команда курсу,"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:14
 #, python-format
@@ -2206,7 +2148,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Dies ist eine automatische Erinnerung, dass der Kurs \"%(course_name)s\" (%(course_key)s) in %(days)s am %(course_end_date)s endet.\n"
+"    Це автоматичне нагадування, що курс \"%(course_name)s\" (%(course_key)s) заплановано завершити через %(days)s, дата завершення: %(course_end_date)s.\n"
 "    "
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:20
@@ -2218,12 +2160,11 @@ msgid ""
 " This helps ensure our internal teams remain aligned and can support you "
 "effectively."
 msgstr ""
-"Wenn keine Maßnahmen ergriffen werden, wird der Kurs nach diesem Datum "
-"automatisch archiviert. Sollten Sie sich entscheiden, den Kurs nicht zu "
-"verlängern oder einen neuen Durchlauf zu starten, informieren Sie bitte "
-"Ihren zuständigen Projektkoordinator und teilen Sie ihm Ihre Pläne mit. So "
-"wird sichergestellt, dass unsere internen Teams harmoniert bleiben und Sie "
-"effektiv unterstützen können."
+"Якщо ніяких дій не буде вжито, курс буде автоматично архівовано після цієї "
+"дати. Якщо ви вирішите не продовжувати курс або не створювати новий запуск у"
+" цей час, будь ласка, повідомте свого спеціального координатора проекту та "
+"поділіться своїми планами. Це допомагає забезпечити узгодженість наших "
+"внутрішніх команд та ефективну підтримку."
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:24
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:13
@@ -2231,8 +2172,8 @@ msgid ""
 "To ensure a smooth experience for our edX Learners, please take one of the "
 "following actions:"
 msgstr ""
-"Um ein reibungsloses Erlebnis für unsere edX-Lernenden sicherzustellen, "
-"wählen Sie bitte eine der folgenden Maßnahmen:"
+"Щоб забезпечити безперебійну роботу для наших студентів edX, будь ласка, "
+"оберіть одну з наступних дій:"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:29
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:64
@@ -2241,7 +2182,7 @@ msgstr ""
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:33
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:51
 msgid "Create a New Course Run:"
-msgstr "Erstellen Sie einen neuen Kursdurchlauf:"
+msgstr "Створити новий запуск курсу:"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:30
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:65
@@ -2253,15 +2194,14 @@ msgid ""
 "Planning to update the content or offer the course to a new cohort? We "
 "recommend setting up a new course run in Publisher."
 msgstr ""
-"Planen Sie, den Inhalt zu aktualisieren oder den Kurs einer neuen Kohorte "
-"anzubieten? Wir empfehlen, in Publisher einen neuen Kursdurchlauf "
-"einzurichten."
+"Плануєте оновити вміст або запропонувати курс новій групі? Рекомендуємо "
+"налаштувати новий запуск курсу в Publisher."
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:31
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:66
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:101
 msgid "You can get started"
-msgstr "Sie können beginnen"
+msgstr "Ви можете почати"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:33
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:41
@@ -2270,7 +2210,7 @@ msgstr "Sie können beginnen"
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:103
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:111
 msgid "here"
-msgstr "hier"
+msgstr "тут"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:38
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:73
@@ -2279,7 +2219,7 @@ msgstr "hier"
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:37
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:55
 msgid "Extend the Course End Date:"
-msgstr "Verlängern Sie das Kursende-Datum:"
+msgstr "Продовжити дату завершення курсу:"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:39
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:74
@@ -2288,8 +2228,8 @@ msgid ""
 "If the content is still relevant, you can extend the course end date in "
 "Studio. Simply visit the Schedule and Details tab"
 msgstr ""
-"Wenn der Inhalt noch relevant ist, können Sie das Kursende-Datum in Studio "
-"verlängern. Besuchen Sie einfach den Tab 'Zeitplan und Details'"
+"Якщо вміст усе ще актуальний, ви можете продовжити дату завершення курсу в "
+"Studio. Просто перейдіть на вкладку «Розклад та деталі»"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:49
 #, python-format
@@ -2299,7 +2239,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Unsere Aufzeichnungen zeigen, dass der Kurs \"%(course_name)s\" (Kurs-Schlüssel: %(course_key)s) in 7 Tagen am %(course_end_date)s endet. Trotz früherer Erinnerungen wurde bisher keine Maßnahme ergriffen.\n"
+"    Наші записи свідчать, що курс \"%(course_name)s\" (Ключ курсу: %(course_key)s) заплановано завершити через 7 днів, дата завершення: %(course_end_date)s. Незважаючи на попередні нагадування, жодних дій не було здійснено.\n"
 "    "
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:55
@@ -2311,12 +2251,11 @@ msgid ""
 "with your reasons. This will ensure our internal teams are properly informed"
 " about your plans."
 msgstr ""
-"Wichtig: Wenn keine Maßnahmen ergriffen werden, wird der Kurs nach dem "
-"aktuellen Enddatum automatisch archiviert. Sollten Sie sich dafür "
-"entscheiden, den Kurs nicht zu verlängern oder einen neuen Kursdurchlauf zu "
-"starten, müssen Sie Ihren zuständigen Projektkoordinator über Ihre Gründe "
-"informieren. So wird sichergestellt, dass unsere internen Teams rechtzeitig "
-"über Ihre Pläne informiert sind."
+"Важливо: Якщо ніяких дій не буде вжито, курс буде автоматично архівовано "
+"після чинної дати завершення. Якщо ви вирішуєте не продовжувати курс або не "
+"створювати новий запуск у цей час, ви повинні повідомити свого спеціального "
+"координатора проекту та пояснити причину. Це забезпечить належне "
+"інформування наших внутрішніх команд про ваші плани."
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:59
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:31
@@ -2324,8 +2263,8 @@ msgid ""
 "To prevent disruption to learner access, please choose one of the following "
 "options:"
 msgstr ""
-"Um Unterbrechungen beim Zugriff der Lernenden zu vermeiden, wählen Sie bitte"
-" eine der folgenden Optionen:"
+"Щоб уникнути перешкоджень у доступі студентів, будь ласка, оберіть один із "
+"наступних варіантів:"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:84
 #, python-format
@@ -2335,7 +2274,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Unsere Aufzeichnungen zeigen, dass der Kurs \"%(course_name)s\" (Kurs-Schlüssel: %(course_key)s) offiziell am %(course_end_date)s endete und nun archiviert ist. Trotz unserer früheren Erinnerungen scheint bislang keine Maßnahme ergriffen worden zu sein.\n"
+"    Наші записи показують, що курс \"%(course_name)s\" (Ключ курсу: %(course_key)s) офіційно закінчився %(course_end_date)s і тепер знаходиться в архівному стані. Незважаючи на попередні нагадування, здається, що ніяких дій не було вжито.\n"
 "    "
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:90
@@ -2346,10 +2285,10 @@ msgid ""
 "reasons behind this. This will help ensure our internal teams are fully "
 "updated on your plans for the course."
 msgstr ""
-"Wichtig: Wenn Sie sich entscheiden, den Kurs nicht zu verlängern oder einen "
-"neuen Kursdurchlauf zu starten, müssen Sie Ihren zuständigen "
-"Projektkoordinator über die Gründe informieren. So wird sichergestellt, dass"
-" unsere internen Teams umfassend über Ihre Kurspläne informiert sind."
+"Важливо: Якщо ви вирішуєте не продовжувати курс або не створювати новий "
+"запуск у цей час, ви повинні повідомити свого спеціального координатора "
+"проекту з поясненням причин. Це допоможе забезпечити повне інформування "
+"наших внутрішніх команд про ваші плани щодо курсу."
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:94
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:49
@@ -2357,8 +2296,8 @@ msgid ""
 "If you wish to keep this course active, please choose one of the following "
 "options:"
 msgstr ""
-"Wenn Sie diesen Kurs aktiv halten möchten, wählen Sie bitte eine der "
-"folgenden Optionen:"
+"Якщо ви бажаєте зберегти курс активним, будь ласка, оберіть один із "
+"наступних варіантів:"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:121
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:63
@@ -2367,9 +2306,9 @@ msgid ""
 "questions or need assistance, please reach out to your dedicated Project "
 "Coordinator at"
 msgstr ""
-"HINWEIS: Auf diese E-Mail-Adresse wird nicht auf Antworten geachtet. Wenn "
-"Sie Fragen haben oder Hilfe benötigen, wenden Sie sich bitte an Ihren "
-"zuständigen Projektkoordinator unter"
+"УВАГА: На цю електронну адресу не надходять відповіді. Якщо у вас є питання "
+"або вам потрібна допомога, будь ласка, зверніться до свого спеціального "
+"координатора проекту за адресою"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:124
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:26
@@ -2379,7 +2318,7 @@ msgstr ""
 msgid ""
 "{link_start}{contact_us_email}{link_middle}{contact_us_email}{link_end}"
 msgstr ""
-"{link_start}{contact_us_email}{link_middle}{contact_us_email} {link_end}"
+"{link_start}{contact_us_email}{link_middle}{contact_us_email}{link_end}"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:137
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:74
@@ -2388,25 +2327,24 @@ msgid ""
 "questions or need assistance, please reach out to your dedicated Project "
 "Coordinator."
 msgstr ""
-"HINWEIS: Auf diese E-Mail-Adresse wird nicht auf Antworten geachtet. Wenn "
-"Sie Fragen haben oder Hilfe benötigen, wenden Sie sich bitte an Ihren "
-"zuständigen Projektkoordinator."
+"УВАГА: На цю електронну адресу не надходять відповіді. Якщо у вас є питання "
+"або вам потрібна допомога, будь ласка, зверніться до свого спеціального "
+"координатора проекту."
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:143
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:78
 msgid "Thank you for your attention to this—looking forward to your updates!"
-msgstr ""
-"Vielen Dank für Ihre Aufmerksamkeit—wir freuen uns auf Ihre Rückmeldungen!"
+msgstr "Дякуємо за вашу увагу — з нетерпінням чекаємо ваших оновлень!"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:147
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:80
 msgid "Best,"
-msgstr "Beste Grüße,"
+msgstr "З найкращими побажаннями,"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.html:149
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:81
 msgid "edX Operational Team"
-msgstr "edX Betriebsteam"
+msgstr "Оперативна команда edX"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:7
 #, python-format
@@ -2415,13 +2353,13 @@ msgid ""
 "This is an automated reminder that the course \"%(course_name)s\" (%(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
 msgstr ""
 "\n"
-"Dies ist eine automatische Erinnerung, dass der Kurs \"%(course_name)s\" (%(course_key)s) in %(days)s am %(course_end_date)s endet.\n"
+"Це автоматичне нагадування, що курс \"%(course_name)s\" (%(course_key)s) заплановано завершити через %(days)s, дата завершення: %(course_end_date)s.\n"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:17
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:35
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:53
 msgid "You can get started here:"
-msgstr "Sie können hier beginnen:"
+msgstr "Ви можете почати тут:"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:20
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:38
@@ -2430,14 +2368,14 @@ msgid ""
 "If the content is still relevant, you can extend the course end date in "
 "Studio."
 msgstr ""
-"Wenn der Inhalt noch relevant ist, können Sie das Kursende-Datum in Studio "
-"verlängern."
+"Якщо вміст усе ще актуальний, ви можете продовжити дату завершення курсу в "
+"Studio."
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:21
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:39
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:57
 msgid "Simply visit the Schedule and Details tab here:"
-msgstr "Besuchen Sie einfach den Tab 'Zeitplan und Details' hier:"
+msgstr "Просто перейдіть на вкладку «Розклад та деталі» тут:"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:25
 #, python-format
@@ -2446,7 +2384,7 @@ msgid ""
 "Our records indicate that the course \"%(course_name)s\" (Course Key: %(course_key)s) is scheduled to end in 7 days on %(course_end_date)s. Despite previous reminders, we’ve noticed that no action has been taken yet.\n"
 msgstr ""
 "\n"
-"Unsere Aufzeichnungen zeigen, dass der Kurs \"%(course_name)s\" (Kurs-Schlüssel: %(course_key)s) in 7 Tagen am %(course_end_date)s endet. Trotz früherer Erinnerungen wurde bisher keine Maßnahme ergriffen.\n"
+"Наші записи свідчать, що курс \"%(course_name)s\" (Ключ курсу: %(course_key)s) заплановано завершити через 7 днів, дата завершення: %(course_end_date)s. Незважаючи на попередні нагадування, жодних дій не було вжито.\n"
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:43
 #, python-format
@@ -2455,7 +2393,7 @@ msgid ""
 "Our records show that the course \"%(course_name)s\" (Course Key: %(course_key)s) officially ended on %(course_end_date)s and has now entered the archived state. Despite our previous reminders, it appears no action has been taken yet.\n"
 msgstr ""
 "\n"
-"Unsere Aufzeichnungen zeigen, dass der Kurs \"%(course_name)s\" (Kurs-Schlüssel: %(course_key)s) offiziell am %(course_end_date)s endete und nun archiviert ist. Trotz unserer früheren Erinnerungen scheint bislang keine Maßnahme ergriffen worden zu sein.\n"
+"Наші записи показують, що курс \"%(course_name)s\" (Ключ курсу: %(course_key)s) офіційно закінчився %(course_end_date)s і тепер знаходиться в архівному стані. Незважаючи на попередні нагадування, здається, що жодних дій не було вжито.\n"
 
 #: apps/course_metadata/templates/course_metadata/email/go_live.html:17
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:7
@@ -2466,18 +2404,17 @@ msgid ""
 "website following the next couple of deployments—typically within 24 to 48 "
 "business hours."
 msgstr ""
-"Die \"Über\"-Seite für den Kursdurchlauf %(course_run_number)s des Kurses "
-"%(course_name)s wurde zur Veröffentlichung eingereicht. Die neue Sitzung "
-"wird nach den nächsten paar Bereitstellungen auf der edX-Website erscheinen "
-"– in der Regel innerhalb von 24 bis 48 Geschäftsstunden."
+"Сторінка «Про курс» для запуску курсу %(course_run_number)s %(course_name)s "
+"була відправлена для публікації. Новий сеанс з’явиться на сайті edX після "
+"наступних декількох розгортань — зазвичай протягом 24-48 робочих годин."
 
 #: apps/course_metadata/templates/course_metadata/email/go_live.txt:11
 msgid ""
 "Note: This is a no-reply email. For any questions or comments, please "
 "contact your Project Coordinator at"
 msgstr ""
-"Hinweis: Dies ist eine No-Reply-E-Mail. Bei Fragen oder Anmerkungen wenden "
-"Sie sich bitte an Ihren Projektkoordinator unter"
+"Примітка: Це email без можливості відповіді. Для питань чи коментарів "
+"звертайтеся до координатора вашого проекту за адресою"
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.html:9
 #: apps/course_metadata/templates/course_metadata/email/internal_review.txt:3
@@ -2487,7 +2424,7 @@ msgstr ""
 #: apps/course_metadata/templates/course_metadata/email/reviewed.txt:3
 #, python-format
 msgid "Dear %(recipient_name)s,"
-msgstr "Lieber/Liebe %(recipient_name)s,"
+msgstr "Шановний(а) %(recipient_name)s,"
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.html:14
 #, python-brace-format
@@ -2496,10 +2433,10 @@ msgid ""
 "{link_start}{course_page_url}{link_middle}View this course run in "
 "Publisher{link_end} to review the changes and mark it as reviewed."
 msgstr ""
-"{org_name} hat {course_key} zur Überprüfung eingereicht. "
-"{link_start}{course_page_url}{link_middle}Diesen Kurslauf in Publisher "
-"ansehen{link_end}, um die Änderungen zu überprüfen und diese entsprechend zu"
-" markieren."
+"{org_name} надіслав {course_key} на перевірку. "
+"{link_start}{course_page_url}{link_middle}Перегляньте цей запуск курсу у "
+"Publisher{link_end}, щоб ознайомитися зі змінами та позначити його як "
+"перевірений."
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.html:20
 #, python-brace-format
@@ -2507,8 +2444,8 @@ msgid ""
 "This is a good time to {link_start}{studio_url}{link_middle}review this "
 "course run in Studio{link_end}."
 msgstr ""
-"Jetzt ist eine gute Gelegenheit, {link_start}{studio_url}{link_middle} um "
-"diesen Kurslauf in Studio zu überprüfen{link_end}."
+"Зараз хороший час, щоб {link_start}{studio_url}{link_middle}переглянути цей "
+"запуск курсу у Studio{link_end}."
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.html:27
 #, python-brace-format
@@ -2516,30 +2453,29 @@ msgid ""
 "Visit the {link_start}{restricted_admin_url}{link_middle}restricted course "
 "admin page{link_end} to set embargo rules for this course, as needed."
 msgstr ""
-"Besuchen Sie die  "
-"{link_start}{restricted_admin_url}{link_middle}eingeschränkte "
-"Kursadministrationsseite{link_end}, um bei Bedarf Sperrregeln für diesen "
-"Kurs festzulegen."
+"Перейдіть на {link_start}{restricted_admin_url}{link_middle}обмежену "
+"адміністративну сторінку курсу{link_end}, щоб встановити правила ембарго для"
+" цього курсу, за потреби."
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.txt:6
 #, python-format
 msgid "%(org_name)s has submitted %(course_key)s for review."
-msgstr "%(org_name)s hat %(course_key)s zu Überprüfung eingereicht. "
+msgstr "%(org_name)s надіслав %(course_key)s на перевірку."
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.txt:10
 #, python-format
 msgid "Publisher page: %(course_page_url)s"
-msgstr "Publisher-Seite: %(course_page_url)s"
+msgstr "Сторінка Publisher: %(course_page_url)s"
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.txt:14
 #, python-format
 msgid "Studio page: %(studio_url)s"
-msgstr "Studio Seite: %(studio_url)s"
+msgstr "Сторінка Studio: %(studio_url)s"
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.txt:19
 #, python-format
 msgid "Restricted Course admin: %(restricted_admin_url)s"
-msgstr "Eingeschränkter Kursadministrator: %(restricted_admin_url)s"
+msgstr "Обмежена адміністрація курсу: %(restricted_admin_url)s"
 
 #: apps/course_metadata/templates/course_metadata/email/legal_review.html:15
 #, python-brace-format
@@ -2548,20 +2484,19 @@ msgid ""
 "{link_start}{course_page_url}{link_middle}View this course run in "
 "Publisher{link_end} to determine OFAC status."
 msgstr ""
-"{org_name} hat {course_name} zur Überprüfung eingereicht. "
-"{link_start}{course_page_url}{link_middle}Den Kurslauf in Publisher "
-"anschauen.{link_end}, um den OFAC-Status zu bestimmen."
+"{org_name} надіслав {course_name} на перевірку. "
+"{link_start}{course_page_url}{link_middle}Перегляньте цей запуск курсу у "
+"Publisher{link_end}, щоб визначити статус OFAC."
 
 #: apps/course_metadata/templates/course_metadata/email/legal_review.txt:6
 #, python-format
 msgid "%(org_name)s has submitted %(course_name)s for review."
-msgstr "%(org_name)s hat %(course_name)s zur Überprüfung eingereicht."
+msgstr "%(org_name)s надіслав %(course_name)s на перевірку."
 
 #: apps/course_metadata/templates/course_metadata/email/legal_review.txt:11
 msgid "View this course run in Publisher above to determine OFAC status."
 msgstr ""
-"Schauen Sie sich den Kurslauf in Publisher an, um den OFAC Status zu "
-"bestimmen."
+"Перегляньте цей запуск курсу у Publisher вище, щоб визначити статус OFAC."
 
 #: apps/course_metadata/templates/course_metadata/email/legal_review.txt:15
 #: apps/course_metadata/templates/course_metadata/email/reviewed.txt:25
@@ -2569,8 +2504,8 @@ msgid ""
 "Note: This email address is unable to receive replies. For questions or "
 "comments, please contact your Project Coordinator(s):"
 msgstr ""
-"Hinweis: Diese E-Mail-Adresse kann keine Antworten empfangen. Bei Fragen "
-"oder Anmerkungen wenden Sie sich bitte an Ihren/Ihre Projektkoordinator(en):"
+"Примітка: Ця електронна адреса не приймає відповіді. Для питань чи "
+"коментарів звертайтеся до вашого(їх) координатора(ів) проекту:"
 
 #: apps/course_metadata/templates/course_metadata/email/reviewed.html:15
 #, python-brace-format
@@ -2579,9 +2514,8 @@ msgid ""
 "run{link_end} of {course_name} has been reviewed and approved by "
 "{platform_name}."
 msgstr ""
-"Der {link_start}{course_page_url}{link_middle}{course_run_number} "
-"Kurslauf{link_end} des Kurses {course_name} wurde überprüft und freigegeben "
-"von {platform_name}."
+"Запуск курсу {link_start}{course_page_url}{link_middle}{course_run_number} "
+"{link_end} курсу {course_name} був перевірений та схвалений {platform_name}"
 
 #: apps/course_metadata/templates/course_metadata/email/reviewed.html:22
 #: apps/course_metadata/templates/course_metadata/email/reviewed.txt:12
@@ -2590,13 +2524,13 @@ msgid ""
 "The course run about page will be published on %(go_live_date)s, pending no "
 "further edits."
 msgstr ""
-"Die Beschreibungsseite wird auf %(go_live_date)s veröffentlicht, in "
-"Erwartung keiner weiteren Änderungen."
+"Сторінка «Про курс» буде опублікована %(go_live_date)s, якщо не буде внесено"
+" додаткових змін"
 
 #: apps/course_metadata/templates/course_metadata/email/reviewed.html:28
 #: apps/course_metadata/templates/course_metadata/email/reviewed.txt:16
 msgid "The course run about page is now published."
-msgstr "Die Kursbeschreibungsseite ist nun veröffentlicht."
+msgstr "Сторінка «Про курс» тепер опублікована"
 
 #: apps/course_metadata/templates/course_metadata/email/reviewed.txt:6
 #, python-format
@@ -2604,13 +2538,13 @@ msgid ""
 "The %(course_run_number)s course run of %(course_name)s has been reviewed "
 "and approved by %(platform_name)s."
 msgstr ""
-"Der %(course_run_number)s Kurslauf von %(course_name)s wurde überprüft und "
-"bestätigt von %(platform_name)s."
+"Запуск курсу %(course_run_number)s курсу %(course_name)s був перевірений та "
+"схвалений %(platform_name)s"
 
 #: apps/course_metadata/templates/course_metadata/email/reviewed.txt:21
 #, python-format
 msgid "View the course run in Publisher: %(course_page_url)s"
-msgstr "Diesen Kurslauf in Publisher ansehen: %(course_page_url)s"
+msgstr "Перегляньте запуск курсу у Publisher: %(course_page_url)s"
 
 #: apps/course_metadata/templates/course_metadata/email/watchers_course_url.html:8
 #, python-format
@@ -2620,7 +2554,8 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Der Kurs „ %(course_name)s “ wurde von edX erfolgreich überprüft und ist jetzt auf %(course_publish_date)s veröffentlicht. Um den Live-Kurs zu sehen, gehen Sie hier: <a href=\"%(course_marketing_url)s\">%(course_marketing_url)s</a>"
+"        Курс '%(course_name)s' успішно перевірено edX та тепер опубліковано %(course_publish_date)s. Щоб переглянути курс онлайн, перейдіть за посиланням: <a href=\"%(course_marketing_url)s\">%(course_marketing_url)s</a>\n"
+"    "
 
 #: apps/course_metadata/templates/course_metadata/email/watchers_course_url.html:12
 #, python-format
@@ -2631,7 +2566,9 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Der Kurs „ %(course_name)s “ wurde von edX erfolgreich überprüft und ist nun zur Veröffentlichung bereit. Der Kurs wird auf %(course_publish_date)s veröffentlicht. Eine Vorschau der Seite „Kursinformationen“ finden Sie hier: <a href=\"%(course_marketing_url)s\">%(course_marketing_url)s</a>"
+"        Курс '%(course_name)s' успішно перевірено edX та тепер готовий до публікації. Курс буде опубліковано %(course_publish_date)s.\n"
+"        Щоб переглянути попередній перегляд сторінки «Про курс», перейдіть за посиланням: <a href=\"%(course_marketing_url)s\">%(course_marketing_url)s</a>\n"
+"    "
 
 #: apps/course_metadata/templates/course_metadata/email/watchers_course_url.txt:4
 #, python-format
@@ -2640,7 +2577,7 @@ msgid ""
 "    Course '%(course_name)s' has been successfully reviewed by edX and is now published on %(course_publish_date)s. To see live course, go here: %(course_marketing_url)s\n"
 msgstr ""
 "\n"
-"Der Kurs „ %(course_name)s “ wurde von edX erfolgreich überprüft und ist jetzt auf %(course_publish_date)s veröffentlicht. Um den Live-Kurs zu sehen, gehen Sie hier: %(course_marketing_url)s\n"
+"    Курс '%(course_name)s' успішно перевірено edX та тепер опубліковано %(course_publish_date)s. Щоб переглянути курс онлайн, перейдіть за посиланням: %(course_marketing_url)s\n"
 
 #: apps/course_metadata/templates/course_metadata/email/watchers_course_url.txt:8
 #, python-format
@@ -2650,199 +2587,191 @@ msgid ""
 "    To see a preview of the Course About Page, go here: %(course_preview_url)s\n"
 msgstr ""
 "\n"
-"Der Kurs „ %(course_name)s “ wurde von edX erfolgreich überprüft und ist nun zur Veröffentlichung bereit. Der Kurs wird auf %(course_publish_date)s veröffentlicht. Eine Vorschau der Seite „Kursinformationen“ finden Sie hier: %(course_preview_url)s\n"
+"   Курс '%(course_name)s' успішно перевірено edX та тепер готовий до публікації. Курс буде опубліковано %(course_publish_date)s.\n"
+"    Щоб переглянути попередній перегляд сторінки «Про курс», перейдіть за посиланням: %(course_preview_url)s\n"
 
 #: apps/course_metadata/utils.py:391
 msgid "Special characters not allowed in Course Number."
-msgstr "Die Nutzung von Sonderzeichen für die Kursnummer ist nicht erlaubt."
+msgstr "Спеціальні символи не дозволені в номері курсу."
 
 #: apps/course_metadata/validators.py:30
 #, python-brace-format
 msgid "Invalid HTML received: {0}"
-msgstr "Ungültige HTML: {0}"
+msgstr "Отримано невірний HTML: {0}"
 
 #: apps/course_metadata/validators.py:31
 msgid "Invalid HTML received"
-msgstr "Ungültige HTML"
+msgstr "Отримано невірний HTML"
 
 #: apps/course_metadata/validators.py:35 apps/course_metadata/validators.py:46
 #, python-brace-format
 msgid "{0} tag is not allowed"
-msgstr "{0} Tag ist nich erlaubt"
+msgstr "Тег {0} не дозволено"
 
 #: apps/course_metadata/validators.py:42
 #, python-brace-format
 msgid "{0} attribute is not allowed on the {1} tag"
-msgstr "{0} Attribut ist nicht erlaubt bei dem {1} Tag"
+msgstr "Атрибут {0} не дозволено для тега {1}"
 
 #: apps/course_metadata/views.py:38
 msgid "Update excluded course runs"
-msgstr "Aktualisieren Sie die ausgeschlossenen Kursläufe"
+msgstr "Оновити виключені запуски курсу"
 
 #: apps/course_metadata/views.py:45
 msgid "The program was changed successfully."
-msgstr "Das Programm wurde erfolgreich geändert."
+msgstr "Програму успішно змінено"
 
 #: apps/course_metadata/views.py:127
 msgid "The refresh program skills task triggered successfully."
-msgstr ""
-"Die Aufgabe zur Aktualisierung der Programmfähigkeiten wurde erfolgreich "
-"ausgelöst."
+msgstr "Завдання з оновлення навичок програми успішно запущено"
 
 #: apps/course_metadata/views.py:206
 msgid "The refresh course skills task triggered successfully."
-msgstr ""
-"Die Aufgabe zur Aktualisierung der Kursfertigkeiten wurde erfolgreich "
-"ausgelöst."
+msgstr "Завдання з оновлення навичок курсу успішно запущено"
 
 #: apps/course_metadata/views.py:306
 msgid "The course skills were updated successfully."
-msgstr "Die Kursfähigkeiten wurden erfolgreich aktualisiert."
+msgstr "Навички курсу успішно оновлено"
 
 #: apps/edx_elasticsearch_dsl_extensions/exceptions.py:17
 msgid ""
 "Request could not be completed due to an incorrect ElasticSearch query "
 "parameters"
 msgstr ""
-"Anfrage konnte aufgrund eines falschen ElasticSearch-Abfrageparameters nicht"
-" abgeschlossen werden"
+"Запит не може бути виконаний через неправильні параметри запиту до "
+"ElasticSearch"
 
 #: apps/ietf_language_tags/models.py:34
 msgid "Name for translation"
-msgstr "Name für die Übersetzung"
+msgstr "Назва для перекладу"
 
 #: apps/ietf_language_tags/models.py:38
 msgid "LanguageTag model translations"
-msgstr "LanguageTag Modell-Übersetzung"
+msgstr "Переклади моделі LanguageTag"
 
 #: apps/learner_pathway/choices.py:7
 msgid "Inactive"
-msgstr "Inaktiv"
+msgstr "Неактивно"
 
 #: apps/learner_pathway/models.py:84
 msgid "Title of the learner pathway."
-msgstr "Titel des Lernpfads."
+msgstr "Назва траєкторії навчання"
 
 #: apps/learner_pathway/models.py:87
 msgid "Course/Program associated pathways also appear in search results"
 msgstr ""
-"Mit Kursen/Programmen verbundene Pfade erscheinen auch in den "
-"Suchergebnissen"
+"Шляхи, пов’язані з курсом/програмою, також з’являються в результатах пошуку"
 
 #: apps/learner_pathway/models.py:90
 msgid "The active/inactive status of this Pathway."
-msgstr "Der aktive/inaktive Status dieses Pfads."
+msgstr "Статус активності/неактивності цієї траєкторії"
 
 #: apps/learner_pathway/models.py:118
 msgid "Learner Pathway"
-msgstr "Lernweg"
+msgstr "Траєкторія навчання"
 
 #: apps/learner_pathway/models.py:119
 msgid "Learner Pathways"
-msgstr "Lernpfade"
+msgstr "Траєкторії навчання"
 
 #: apps/learner_pathway/models.py:165
 msgid "Minimum number of nodes to complete this step of the pathway"
-msgstr "Mindestanzahl von Knoten, um diesen Schritt des Pfads abzuschließen"
+msgstr "Мінімальна кількість вузлів для завершення цього кроку траєкторії"
 
 #: apps/learner_pathway/models.py:169
 msgid "Learner Pathway Step"
-msgstr "Lernpfad-Schritt"
+msgstr "Крок траєкторії навчання"
 
 #: apps/learner_pathway/models.py:170
 msgid "Learner Pathway Steps"
-msgstr "Lernpfad-Schritte"
+msgstr "Кроки траєкторії навчання"
 
 #: apps/learner_pathway/models.py:237
 msgid "Learner Pathway Course"
-msgstr "Lernpfad-Kurs"
+msgstr "Курс траєкторії навчання"
 
 #: apps/learner_pathway/models.py:238
 msgid "Learner Pathway Courses"
-msgstr "Lernpfad-Kurse"
+msgstr "Курси траєкторії навчання"
 
 #: apps/learner_pathway/models.py:275
 msgid "Learner Pathway Program"
-msgstr "Lernpfad-Programm"
+msgstr "Програма траєкторії навчання"
 
 #: apps/learner_pathway/models.py:276
 msgid "Learner Pathway Programs"
-msgstr "Lernpfad-Programme"
+msgstr "Програми траєкторії навчання"
 
 #: apps/publisher/models.py:34
 msgid "Organization Role"
-msgstr "Organisations rolle"
+msgstr "Роль організації"
 
 #: apps/taxonomy_support/management/commands/update_course_recommendations.py:19
 msgid "Update the course recommendations based on skills."
-msgstr "Aktualisieren Sie die Kursempfehlungen basierend auf den Fähigkeiten."
+msgstr "Оновити рекомендації курсів на основі навичок"
 
 #: apps/taxonomy_support/management/commands/update_course_recommendations.py:41
 msgid ""
 "Use arguments from the UpdateCourseRecommendationsConfig model instead of "
 "the command line."
 msgstr ""
-"Verwenden Sie anstelle der Befehlszeile Argumente aus dem "
-"UpdateCourseRecommendationsConfig-Modell."
+"Використовуйте аргументи з моделі UpdateCourseRecommendationsConfig замість "
+"командного рядка"
 
 #: apps/taxonomy_support/models.py:24
 msgid "The original course, whose recommendation is stored here."
-msgstr "Der Originalkurs, dessen Empfehlung hier hinterlegt ist."
+msgstr "Початковий курс, для якого збережено рекомендацію"
 
 #: apps/taxonomy_support/models.py:29
 msgid ""
 "This is the course recommended after learner completes the original course."
 msgstr ""
-"Dies ist der empfohlene Kurs, nachdem der Lernende den ursprünglichen Kurs "
-"abgeschlossen hat."
+"Це курс, який рекомендується після завершення початкового курсу студентом"
 
 #: apps/taxonomy_support/models.py:32
 msgid "Ratio of number of common skills and total skill count."
 msgstr ""
-"Verhältnis der Anzahl allgemeiner Fertigkeiten zur Gesamtzahl der "
-"Fertigkeiten."
+"Співвідношення кількості спільних навичок до загальної кількості навичок"
 
 #: apps/taxonomy_support/models.py:35
 msgid ""
 "Count of common skills between the original course and recommended course."
 msgstr ""
-"Anzahl der gemeinsamen Fähigkeiten zwischen dem ursprünglichen Kurs und dem "
-"empfohlenen Kurs."
+"Кількість спільних навичок між початковим курсом та рекомендованим курсом"
 
 #: apps/taxonomy_support/models.py:38
 msgid "Ratio of number of common subjects and total subject count."
-msgstr "Verhältnis der Anzahl gemeinsamer Fächer zur Gesamtzahl der Fächer."
+msgstr ""
+"Співвідношення кількості спільних предметів до загальної кількості предметів"
 
 #: apps/taxonomy_support/models.py:41
 msgid ""
 "Count of common subjects between the original course and recommended course."
 msgstr ""
-"Anzahl der gemeinsamen Fächer zwischen dem ursprünglichen Kurs und dem "
-"empfohlenen Kurs."
+"Кількість спільних предметів між початковим курсом та рекомендованим курсом"
 
 #: apps/taxonomy_support/models.py:46
 msgid "Course Recommendation"
-msgstr "Kursempfehlung"
+msgstr "Рекомендація курсу"
 
 #: apps/taxonomy_support/models.py:47
 msgid "Course Recommendations"
-msgstr "Kursempfehlungen"
+msgstr "Рекомендації курсів"
 
 #: apps/taxonomy_support/models.py:54
 msgid "Adds recommendations for all published courses"
-msgstr "Fügt Empfehlungen für alle veröffentlichten Kurse hinzu"
+msgstr "Додає рекомендації для всіх опублікованих курсів"
 
 #: apps/taxonomy_support/models.py:58
 msgid ""
 "Adds recommendations for courses created or modified in the past num days"
 msgstr ""
-"Fügt Empfehlungen für Kurse hinzu, die in den letzten num Tagen erstellt "
-"oder geändert wurden"
+"Додає рекомендації для курсів, створених або змінених за останні num днів"
 
 #: apps/taxonomy_support/providers.py:198
 msgid "No partner object found!"
-msgstr "Kein Partnerobjekt gefunden!"
+msgstr "Об’єкт партнера не знайдено!"
 
 #: urls.py:32
 msgid "Discovery Service Administration"
-msgstr "Suchdienstverwaltung"
+msgstr "Адміністрування служби виявлення"
