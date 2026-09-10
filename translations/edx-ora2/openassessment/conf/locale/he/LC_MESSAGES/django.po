@@ -1,43 +1,34 @@
-# #-#-#-#-#  django.po (edx-ora2)  #-#-#-#-#
-# edX translation file
-# Copyright (C) 2018 edX
-# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
-# EdX Team <info@edx.org>, 2018.
-# 
-# Translators:
-# Brian Smith, 2024
-# edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-ora2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-13 17:55-0500\n"
-"PO-Revision-Date: 2023-05-10 00:48+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2024\n"
-"Language-Team: Hebrew (https://app.transifex.com/open-edx/teams/6205/he/)\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-05-05 00:52+0000\n"
+"PO-Revision-Date: 2026-09-10 11:37+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: he\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;\n"
 
 #: assessment/api/student_training.py:179
 msgid "Could not parse serialized rubric"
-msgstr "לא ניתן לפענח כותרת בסדרה"
+msgstr "לא ניתן לפרש רובריקה מקודדת"
 
 #: assessment/api/student_training.py:191
 msgid ""
 "If your assignment includes a learner training step, the rubric must have at"
 " least one criterion, and that criterion must have at least one option."
 msgstr ""
-"אם ההערכה שלך כוללת שלב תרגול תלמיד, הכותרת חייבת לכלול  קריטריון אחד לפחות "
-"והקריטריון חייב לכלול אפשרות אחת לפחות."
+"אם המשימה שלך כוללת שלב אימון ללומדים, על הרובריקה לכלול לפחות קריטריון אחד,"
+" והקריטריון הזה צריך לכלול לפחות אפשרות אחת."
 
 #: assessment/api/student_training.py:203
 #, python-brace-format
 msgid "Example {example_number} has a validation error: {error}"
-msgstr "דוגמה {example_number} מכילה שגיאת אימות: {error} "
+msgstr "הדוגמה {example_number} מכילה שגיאת אימות: {error}"
 
 #: assessment/api/student_training.py:217
 #, python-brace-format
@@ -45,36 +36,132 @@ msgid ""
 "Example {example_number} has an invalid option for \"{criterion_name}\": "
 "\"{option_name}\""
 msgstr ""
-"דוגמה {example_number} מכילה אפשרות לא חוקית עבור \n"
-"\"{criterion_name}\": \"{option_name}\""
+"הדוגמה {example_number} כוללת אפשרות לא חוקית עבור \"{criterion_name}\": "
+"\"{option_name}\""
 
 #: assessment/api/student_training.py:227
 #, python-brace-format
 msgid "Example {example_number} has an extra option for \"{criterion_name}\""
-msgstr ""
-"דוגמה {example_number} מכילה אפשרות עודפת עבור\n"
-" \"{criterion_name}\" "
+msgstr "בדוגמה {example_number} יש אפשרות נוספת עבור \"{criterion_name}\""
 
 #: assessment/api/student_training.py:240
 #, python-brace-format
 msgid "Example {example_number} is missing an option for \"{criterion_name}\""
-msgstr ""
-"חסרה בדוגמה {example_number} אפשרות עבור \n"
-"\"{criterion_name}\""
+msgstr "בדוגמה {example_number} חסרה אפשרות עבור \"{criterion_name}\""
 
 #: assessment/score_type_constants.py:21 xblock/grade_mixin.py:547
 msgid "Peer"
 msgstr "עמית"
+
+#: assessment/score_type_constants.py:22
+msgid "Self"
+msgstr "עצמי"
+
+#: assessment/score_type_constants.py:23
+msgid "Staff"
+msgstr "צוות"
+
+#: assessment/score_type_constants.py:25
+msgid "Unknown"
+msgstr "לא ידוע"
+
+#: data.py:584
+#, python-brace-format
+msgid "Criterion {number}: {label}"
+msgstr "קריטריון {number}: {label}"
+
+#: data.py:586
+#, python-brace-format
+msgid "Points {number}"
+msgstr "נקודות {number}"
+
+#: data.py:587
+#, python-brace-format
+msgid "Median Score {number}"
+msgstr "ציון חציון {number}"
+
+#: data.py:588
+#, python-brace-format
+msgid "Feedback {number}"
+msgstr "משוב {number}"
+
+#: data.py:917
+msgid "Item ID"
+msgstr "מזהה פריט"
+
+#: data.py:918
+msgid "Submission ID"
+msgstr "מזהה הגשה"
+
+#: data.py:930
+msgid "Anonymized Student ID"
+msgstr "מזהה סטודנט אנונימי"
+
+#: data.py:961
+msgid "Assessment ID"
+msgstr "מזהה הערכה"
+
+#: data.py:962
+msgid "Assessment Scored Date"
+msgstr "תאריך הערכה"
+
+#: data.py:963
+msgid "Assessment Scored Time"
+msgstr "שעת הערכה"
+
+#: data.py:964
+msgid "Assessment Type"
+msgstr "סוג הערכה"
+
+#: data.py:965
+msgid "Anonymous Scorer Id"
+msgstr "מזהה מדרג אנונימי"
 
 #: data.py:967
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:59
 msgid "Overall Feedback"
 msgstr "משוב כולל"
 
+#: data.py:968
+msgid "Assessment Score Earned"
+msgstr "ציון שהושג בהערכה"
+
+#: data.py:969
+msgid "Assessment Scored At"
+msgstr "הוערך ב-"
+
+#: data.py:970
+msgid "Date/Time Final Score Given"
+msgstr "תאריך/שעה להענקת הציון הסופי"
+
+#: data.py:971
+msgid "Final Score Earned"
+msgstr "ציון סופי שהושג"
+
+#: data.py:972
+msgid "Final Score Possible"
+msgstr "ציון סופי אפשרי"
+
+#: data.py:973
+msgid "Feedback Statements Selected"
+msgstr "משפטי משוב שנבחרו"
+
+#: data.py:974
+msgid "Feedback on Assessment"
+msgstr "משוב על ההערכה"
+
+#: data.py:976
+msgid "Response Files"
+msgstr "קבצי תגובה"
+
+#: data.py:1367
+msgid "No description provided."
+msgstr "לא סופק תיאור."
+
 #: data.py:1626 templates/legacy/edit/oa_edit_criterion.html:54
-#: xblock/studio_mixin.py:57
+#: xblock/studio_mixin.py:58
 msgid "None"
-msgstr "ללא"
+msgstr "אין"
 
 #: templates/legacy/edit/oa_edit.html:28
 msgid "Save"
@@ -82,31 +169,61 @@ msgstr "שמור"
 
 #: templates/legacy/edit/oa_edit.html:32
 msgid "Cancel"
-msgstr "בטל"
+msgstr "ביטול"
+
+#: templates/legacy/edit/oa_edit_assessment_steps.html:6
+msgid ""
+"Open Response Assessments allow you to configure single or multiple steps in"
+" a rubric based open response assessment sequence. The steps available below"
+" can be enabled, disable, and ordered for a flexible set of pedagogical "
+"needs."
+msgstr ""
+"הערכות תגובה פתוחה מאפשרות להגדיר שלב אחד או מספר שלבים ברצף הערכת תגובה "
+"פתוחה מבוסס קריטריונים. השלבים המופיעים למטה ניתנים להפעלה, כיבוי וסידור "
+"לצרכים פדגוגיים גמישים."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:5
 msgid "Display Name "
-msgstr "שם תצוגה"
+msgstr "שם תצוגה "
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:8
 msgid "The display name for this component."
-msgstr "שם התצוגה עבור רכיב זה"
+msgstr "שם התצוגה עבור רכיב זה."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:12
+msgid "Text Response"
+msgstr "תגובה טקסטואלית"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:20
 msgid ""
 "Specify whether learners must include a text based response to this "
 "problem's prompt."
-msgstr "הגדירו אם על הלומדים לכלול תגובה מבוססת טקסט לבעיה זו."
+msgstr "ציין אם על הלומדים לכלול תגובה מבוססת טקסט להנחיית הבעיה."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:25
+msgid "Response Editor"
+msgstr "עורך תגובות"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:33
+msgid ""
+"Select which editor learners will use to include a text based response to "
+"this problem's prompt."
+msgstr ""
+"בחר את העורך שבו ישתמשו הלומדים כדי לכלול תגובה מבוססת טקסט להנחיית הבעיה."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:38
 msgid "File Uploads Response"
-msgstr "העלאת קובץ כתשובה"
+msgstr "תגובה עם העלאת קבצים"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:46
 msgid ""
 "Specify whether learners are able to upload files as a part of their "
 "response."
-msgstr "הגדירו אם על הלומדים להעלות קובץ כחלק מתשובה עבור בעיה זו."
+msgstr "ציין אם הלומדים יכולים להעלות קבצים כחלק מתגובתם."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:50
+msgid "Allow Multiple Files"
+msgstr "אפשר קבצים מרובים"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:52
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:93
@@ -115,7 +232,7 @@ msgstr "הגדירו אם על הלומדים להעלות קובץ כחלק מ�
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:169
 #: templates/legacy/edit/oa_edit_peer_assessment.html:45
 msgid "False"
-msgstr "לא נכון"
+msgstr "לא"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:53
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:94
@@ -126,25 +243,59 @@ msgstr "לא נכון"
 msgid "True"
 msgstr "נכון"
 
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:56
+msgid ""
+"Specify whether learners can upload more than one file. This has no effect "
+"if File Uploads Response is set to None. This is automatically set to True "
+"for Team Assignments. "
+msgstr ""
+"ציין אם הלומדים יכולים להעלות יותר מקובץ אחד. אין השפעה אם תגובת העלאת "
+"הקבצים מוגדרת ל-None. בהקצאות צוות, זה מוגדר אוטומטית כ-True."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:58
+msgid "File Upload Types"
+msgstr "סוגי העלאת קבצים"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:60
+msgid "PDF or Image Files"
+msgstr "קבצי PDF או תמונות"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:61
+msgid "Image Files"
+msgstr "קבצי תמונה"
+
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:62
 msgid "Custom File Types"
-msgstr "סוגי קבצים מותאמים אישית"
+msgstr "סוגי קבצים מותאמים"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:66
+msgid ""
+"Specify whether learners can submit files along with their text responses."
+msgstr "ציין אם הלומדים יכולים להגיש קבצים בנוסף לתגובות הטקסט שלהם."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:70
 msgid "File Types"
-msgstr "סוגי קובץ"
+msgstr "סוגי קבצים"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:79
 msgid ""
 "Enter the file extensions, separated by commas, that you want learners to be"
 " able to upload. For example: pdf,doc,docx."
 msgstr ""
-"הזן את תוספות הקובץ, כשהן מופרדות בפסיק, שברצונך שהלומדים יוכלו להעלות. "
-"לדוגמה: pdf‏, doc‏, docx."
+"הזן את סיומות הקבצים, מופרדות בפסיקים, שברצונך לאפשר ללומדים להעלות. לדוגמה:"
+" pdf,doc,docx."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:84
+msgid ""
+"To add more file extensions, select Custom File Types and enter the full "
+"list of acceptable file extensions to be included."
+msgstr ""
+"כדי להוסיף סיומות נוספות, בחר \"סוגי קבצים מותאמים\" והזן את הרשימה המלאה של"
+" סיומות הקבצים המקובלות."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:91
 msgid "Allow LaTeX Responses"
-msgstr "אפשר תשובות ל-LaTeX"
+msgstr "אפשר תגובות LaTeX"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:97
 msgid "Specify whether learners can write LaTeX formatted strings"
@@ -154,7 +305,72 @@ msgstr "ציין אם הלומדים יכולים לכתוב מחרוזות מע
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:8
 #: templates/legacy/leaderboard/oa_leaderboard_waiting.html:10
 msgid "Top Responses"
-msgstr "תשובות מובילות"
+msgstr "תגובות מובילות"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:104
+msgid " (Disabled)"
+msgstr " (מושבת)"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:117
+msgid ""
+"Specify the number of top scoring responses to display after the learner has"
+" submitted a response. Valid numbers are 0 to 99. If the number is 0, the "
+"Top Responses section does not appear to learners."
+msgstr ""
+"ציין את מספר התגובות עם הציון הגבוה להצגה לאחר שהלומד הגיש תגובה. מספרים "
+"תקפים הם מ-0 עד 99. אם המספר הוא 0, אז לא יוצג חלק התגובות המובילות ללומדים."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:122
+msgid "When Teams Enabled is set to true, Top Responses will be disabled."
+msgstr "כאשר 'Teams Enabled' מוגדר כ-true, חלק התגובות המובילות מושבת."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:129
+msgid "Teams Enabled"
+msgstr "צוותים מופעלים"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:136
+msgid "Specify whether team submissions are allowed for this response."
+msgstr "ציין אם ניתן לשלוח תגובות בצוות עבור תגובה זו."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:141
+msgid "Select Team-Set"
+msgstr "בחר קבוצת צוות"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:155
+msgid "Show Rubric During Response"
+msgstr "הצג רובריקה במהלך התגובה"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:162
+msgid ""
+"Specify whether learners can see the rubric while they are working on their "
+"response."
+msgstr "ציין אם הלומדים יכולים לראות את הרובריקה בזמן שהם עובדים על תגובתם."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:167
+msgid "Allow Learner Resubmissions"
+msgstr "אפשר הגשות מחדש מהלומד"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:174
+msgid ""
+"Set to TRUE to allow learners to resubmit ungraded work. Set to FALSE if "
+"resubmissions are not allowed."
+msgstr ""
+"הגדר ל-True כדי לאפשר ללומדים להגיש עבודה לא מדורגת מחדש. הגדר ל-False אם "
+"הגשות מחדש אינן מורשות."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:178
+msgid "Resubmission Grace Period"
+msgstr "תקופת חסד להגשת מחדש"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:187
+msgid ""
+"Specify the maximum period during which resubmissions are allowed. If left "
+"blank, learners will be able to reset their submission as long as it has not"
+" been graded. The grace period starts once the learner has submitted their "
+"response."
+msgstr ""
+"ציין את התקופה המקסימלית בה מותרות הגשות מחדש. אם השדה נשאר ריק, הלומדים "
+"יוכלו לאפס את הגשתם כל עוד לא הוערכה. תקופת החסד מתחילה עם הגשת התגובה."
 
 #: templates/legacy/edit/oa_edit_criterion.html:6
 #: templates/legacy/staff_area/oa_student_info.html:122
@@ -164,7 +380,7 @@ msgstr "קריטריון"
 
 #: templates/legacy/edit/oa_edit_criterion.html:7
 msgid "You cannot delete a criterion after the assignment has been released."
-msgstr "לא ניתן למחוק קריטריון לאחר פרסום המטלה."
+msgstr "לא ניתן למחוק קריטריון לאחר שהמשימה פורסמה."
 
 #: templates/legacy/edit/oa_edit_criterion.html:9
 #: templates/legacy/edit/oa_edit_option.html:7
@@ -179,7 +395,7 @@ msgstr "שם הקריטריון"
 
 #: templates/legacy/edit/oa_edit_criterion.html:29
 msgid "Criterion Prompt"
-msgstr "הנחיית קריטריון"
+msgstr "הנחיית הקריטריון"
 
 #: templates/legacy/edit/oa_edit_criterion.html:44
 msgid "Add Option"
@@ -189,20 +405,28 @@ msgstr "הוסף אפשרות"
 msgid "Feedback for This Criterion"
 msgstr "משוב עבור קריטריון זה"
 
-#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:56
+#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:57
 msgid "Optional"
-msgstr "רשות"
+msgstr "אופציונלי"
 
 #: templates/legacy/edit/oa_edit_criterion.html:56
 #: templates/legacy/oa_rubric.html:13
 #: templates/legacy/student_training/student_training.html:93
-#: xblock/studio_mixin.py:55
+#: xblock/studio_mixin.py:56
 msgid "Required"
 msgstr "נדרש"
 
+#: templates/legacy/edit/oa_edit_criterion.html:61
+msgid ""
+"Select one of the options above. This describes whether or not the reviewer "
+"will have to provide criterion feedback."
+msgstr ""
+"בחר אחת מהאפשרויות למעלה. הדבר מתאר אם על המבקר לספק משוב על הקריטריון או "
+"לא."
+
 #: templates/legacy/edit/oa_edit_header_and_validation.html:3
 msgid "Open Response Assessment"
-msgstr "הערכה של תשובה פתוחה"
+msgstr "הערכת תגובה פתוחה"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:8
 #: templates/legacy/edit/oa_edit_prompt.html:7
@@ -211,7 +435,15 @@ msgstr "הנחיה"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:15
 msgid "Rubric"
-msgstr "כותרת"
+msgstr "רובריקה"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:22
+msgid "Schedule"
+msgstr "לוח זמנים"
+
+#: templates/legacy/edit/oa_edit_header_and_validation.html:29
+msgid "Assessment steps"
+msgstr "שלבי הערכה"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:36
 msgid "Settings"
@@ -227,23 +459,104 @@ msgstr "שם האפשרות"
 
 #: templates/legacy/edit/oa_edit_option.html:29
 msgid "Option Points"
-msgstr "ניקוד האפשרות"
+msgstr "נקודות האפשרות"
 
 #: templates/legacy/edit/oa_edit_option.html:42
 msgid "Option Explanation"
-msgstr "הֶסבר האפשרות"
+msgstr "הסבר האפשרות"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:10
 msgid "Step: Peer Assessment"
 msgstr "שלב: הערכת עמיתים"
 
+#: templates/legacy/edit/oa_edit_peer_assessment.html:15
+msgid ""
+"Peer Assessment allows students to provide feedback to other students and "
+"also receive feedback from others in their final grade. Often, though not "
+"always, this step is preceded by Self Assessment or Learner Training steps."
+msgstr ""
+"הערכת עמיתים מאפשרת לסטודנטים לספק משוב לסטודנטים אחרים ולקבל משוב מאחרים "
+"בציון הסופי. לעיתים, אך לא תמיד, שלב זה מלווה בהערכה עצמית או בשלבי אימון "
+"ללומדים."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:18
+msgid ""
+"Configuration: For this step to be configured you must specify the number of"
+" peer reviews a student will be assessed with, and the number of peer a "
+"student must grade. Additional options can be specified."
+msgstr ""
+"הגדרות: כדי להגדיר שלב זה, עליך לציין את מספר הערכות העמיתים שכל סטודנט "
+"יוערך עליהן, ואת מספר העמיתים שעל הסטודנט לדרג. ניתן לציין אפשרויות נוספות."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:23
+msgid "View Options & Configuration"
+msgstr "צפה באפשרויות ובהגדרות"
+
 #: templates/legacy/edit/oa_edit_peer_assessment.html:29
 msgid "Must Grade"
 msgstr "חובה לדרג"
 
+#: templates/legacy/edit/oa_edit_peer_assessment.html:32
+msgid ""
+"Specify the number of peer assessments that each learner must complete. "
+"Valid numbers are 1 to 99."
+msgstr ""
+"ציין את מספר הערכות העמיתים שכל לומד חייב להשלים. מספרים תקפים הם מ-1 עד 99."
+
 #: templates/legacy/edit/oa_edit_peer_assessment.html:36
 msgid "Graded By"
-msgstr "דורג בידי"
+msgstr "דורג על ידי"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:39
+msgid ""
+"Specify the number of learners that each response must be assessed by. Valid"
+" numbers are 1 to 99."
+msgstr "ציין את מספר הלומדים שעליהם לדרג כל תגובה. מספרים תקפים הם מ-1 עד 99."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:43
+msgid "Enable Flexible Peer Grade Averaging"
+msgstr "אפשר ממוצע גמיש של ציוני עמיתים"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:49
+#, python-format
+msgid ""
+"When enabled, learners who have received at least 30%% of the required \\"
+msgstr "כאשר מופעל, הלומדים שקיבלו לפחות 30%% מהנדרש \\"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:53
+msgid ""
+"This feature is being enabled by the course-level setting. It can be found "
+"under the Open Response Assessment Settings card on the Pages & Resources "
+"studio page."
+msgstr ""
+"תכונה זו מופעלת על ידי הגדרת רמת הקורס. ניתן למצוא אותה בכרטיס הגדרות הערכת "
+"תגובה פתוחה בדף 'דפים ומשאבים'."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:60
+msgid "Grading strategy for the peer assessment"
+msgstr "אסטרטגיית דירוג להערכת עמיתים"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:62
+msgid "Mean"
+msgstr "ממוצע"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:63
+msgid "Median (default)"
+msgstr "חציון (ברירת מחדל)"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:66
+msgid ""
+"Select the preferred grading strategy for the peer assessment. By default, "
+"the median across all peer reviews is used to calculate the final grade. If "
+"you select the mean, the average of all peer reviews will be used."
+msgstr ""
+"בחר את אסטרטגיית הדירוג המועדפת להערכת העמיתים. כברירת מחדל, משתמשים בחציון "
+"של כל הערכות העמיתים לחישוב הציון הסופי. אם תבחרו בממוצע, יחושב ממוצע כל "
+"הערכות העמיתים."
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:5
+msgid "Peer Assessment Deadlines"
+msgstr "תאריכי יעד להערכת עמיתים"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:10
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:10
@@ -255,30 +568,38 @@ msgstr "תאריך התחלה"
 msgid "Start Time"
 msgstr "שעת התחלה"
 
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:27
+msgid "The date and time when learners can begin assessing peer responses."
+msgstr "התאריך והשעה בהם הלומדים יכולים להתחיל להעריך תגובות עמיתים."
+
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:31
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:119
 msgid "Due Date"
-msgstr "תאריך סיום"
+msgstr "תאריך יעד"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:40
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:40
 msgid "Due Time"
-msgstr "שעת סיום"
+msgstr "שעת יעד"
+
+#: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:48
+msgid "The date and time when all peer assessments must be complete."
+msgstr "התאריך והשעה בהם כל הערכות העמיתים חייבות להיות מושלמות."
 
 #: templates/legacy/edit/oa_edit_prompt.html:8
 msgid "You cannot delete a prompt after the assignment has been released."
-msgstr "לא ניתן למחוק הנחיה לאחר שהופצה המשימה."
+msgstr "לא ניתן למחוק הנחיה לאחר שהמשימה פורסמה."
 
 #: templates/legacy/edit/oa_edit_prompts.html:10
 msgid ""
 "Prompts. Replace the sample text with your own text. For more information, "
 "see the ORA documentation."
-msgstr "הנחיות. החלף את טקסט הדוגמה בטקסט משלך. למידע נוסף, ראה את תיעוד ORA."
+msgstr "הנחיות. החלף את הטקסט לדוגמה בטקסט שלך. למידע נוסף, עיין בתיעוד ORA."
 
 #: templates/legacy/edit/oa_edit_prompts.html:22
 msgid "Add Prompt"
-msgstr "הוסף הנחיות"
+msgstr "הוסף הנחיה"
 
 #: templates/legacy/edit/oa_edit_rubric.html:14
 msgid ""
@@ -287,9 +608,9 @@ msgid ""
 "and their options. Replace the sample text with your own text. For more "
 "information, see the ORA documentation."
 msgstr ""
-"הכותרות מורכבות מהקריטריונים, שמכילות לרוב אפשרות אחת או יותר. לכל אפשרות יש"
-" ערך נקודה. תבנית זו מכילה שני קריטריוני דוגמה והאפשרויות שלהם. החלף את טקסט"
-" הדוגמה בטקסט משלך. למידע נוסף, ראה את תיעוד ORA."
+"רובריקות מורכבות מקריטריונים, שלרוב כוללים אפשרות אחת או יותר. לכל אפשרות יש"
+" ערך נקודות. תבנית זו כוללת שני קריטריונים לדוגמה והאפשרויות שלהם. החלף את "
+"הטקסט לדוגמה בטקסט שלך. למידע נוסף, עיין בתיעוד ORA."
 
 #: templates/legacy/edit/oa_edit_rubric.html:29
 msgid "Add Criterion"
@@ -297,79 +618,189 @@ msgstr "הוסף קריטריון"
 
 #: templates/legacy/edit/oa_edit_rubric.html:35
 msgid "Feedback for This Response"
-msgstr "משוב עבור תשובה זו"
+msgstr "משוב עבור תגובה זו"
 
 #: templates/legacy/edit/oa_edit_rubric.html:40
 msgid "Feedback Instructions"
-msgstr "הוראות משוב"
+msgstr "הנחיות למשוב"
 
 #: templates/legacy/edit/oa_edit_rubric.html:44
 msgid ""
 "Encourage learners to provide feedback on the response they have graded. You"
 " can replace the sample text with your own."
 msgstr ""
-"עודד את התלמידים לספק משוב על התשובה שדירגו. ניתן להחליף את טקסט הדוגמה "
-"בטקסט משלך."
+"עודד את הלומדים לספק משוב על התגובה שדרגו. ניתן להחליף את הטקסט לדוגמה בטקסט"
+" שלך."
 
 #: templates/legacy/edit/oa_edit_rubric.html:49
 msgid "Default Feedback Text"
-msgstr "ברירת מחדל עבור טקסט משוב"
+msgstr "טקסט משוב ברירת מחדל"
 
 #: templates/legacy/edit/oa_edit_rubric.html:53
 msgid ""
 "Enter feedback text that learners will see before they enter their own "
 "feedback. Use this text to show learners a good example peer assessment."
 msgstr ""
-"הזן טקסט משוב שלומדים יראו לפני שהם מזינים את המשוב שלהם. השתמש בטקסט זה על "
-"מנת להציג לתלמידים דוגמה טובה להערכת עמיתים."
+"הזן טקסט משוב שהלומדים יראו לפני שהם מזינים את המשוב שלהם. השתמש בטקסט זה "
+"כדי להראות להם דוגמה טובה להערכת עמיתים."
+
+#: templates/legacy/edit/oa_edit_schedule.html:5
+msgid "Deadlines Configuration"
+msgstr "הגדרת תאריכים"
+
+#: templates/legacy/edit/oa_edit_schedule.html:9
+msgid "Select a deadline configuration option"
+msgstr "בחר אפשרות להגדרת תאריכים"
+
+#: templates/legacy/edit/oa_edit_schedule.html:14
+msgid "Configure deadlines manually"
+msgstr "הגדר תאריכים באופן ידני"
+
+#: templates/legacy/edit/oa_edit_schedule.html:18
+msgid "Match deadlines to the subsection due date"
+msgstr "התאם את התאריכים לתאריך היעד של תת-הפרק"
+
+#: templates/legacy/edit/oa_edit_schedule.html:22
+msgid "Match deadlines to the course end date"
+msgstr "התאם את התאריכים לתאריך סיום הקורס"
+
+#: templates/legacy/edit/oa_edit_schedule.html:25
+msgid "Learn more about open response date settings"
+msgstr "למידע נוסף על הגדרות תאריכי תגובה פתוחה"
 
 #: templates/legacy/edit/oa_edit_schedule.html:35
 msgid "Response Start Date"
-msgstr "תאריך התחלת קבלת תשובות"
+msgstr "תאריך התחלת תגובה"
 
 #: templates/legacy/edit/oa_edit_schedule.html:48
 msgid "Response Start Time"
-msgstr "שעת התחלת קבלת תשובות"
+msgstr "שעת התחלת תגובה"
 
 #: templates/legacy/edit/oa_edit_schedule.html:57
 msgid "The date and time when learners can begin submitting responses."
-msgstr "התאריך והשעה שבהם הלומדים יכולים להתחיל לשלוח תשובות."
+msgstr "התאריך והשעה בהם הלומדים יכולים להתחיל להגיש תגובות."
 
 #: templates/legacy/edit/oa_edit_schedule.html:65
 msgid "Response Due Date"
-msgstr "תאריך יעד לתשובות"
+msgstr "תאריך יעד להגשת תגובה"
 
 #: templates/legacy/edit/oa_edit_schedule.html:78
 msgid "Response Due Time"
-msgstr "שעת יעד לתשובות"
+msgstr "שעת יעד להגשת תגובה"
 
 #: templates/legacy/edit/oa_edit_schedule.html:87
 msgid "The date and time when learners can no longer submit responses."
-msgstr "התאריך והשעה שבהם התלמידים אינם יכולים לשלוח יותר  תשובות."
+msgstr "התאריך והשעה בהם הלומדים אינם יכולים יותר להגיש תגובות."
 
 #: templates/legacy/edit/oa_edit_self_assessment.html:8
 msgid "Step: Self Assessment"
 msgstr "שלב: הערכה עצמית"
 
+#: templates/legacy/edit/oa_edit_self_assessment.html:12
+msgid ""
+"Self Assessment asks learners to grade their own submissions against the "
+"rubric."
+msgstr "הערכת עצמי מבקשת מהלומדים לדרג את הגשותיהם בהתבסס על הרובריקה."
+
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:5
+msgid "Self Assessment Deadlines"
+msgstr "תאריכי יעד להערכת עצמי"
+
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:27
+msgid "The date and time when learners can begin assessing their responses."
+msgstr "התאריך והשעה בהם הלומדים יכולים להתחיל להעריך את תגובותיהם."
+
+#: templates/legacy/edit/oa_edit_self_assessment_schedule.html:48
+msgid "The date and time when all self assessments must be complete."
+msgstr "התאריך והשעה בהם כל ההערכות העצמיות חייבות להיות מושלמות."
+
 #: templates/legacy/edit/oa_edit_staff_assessment.html:8
 msgid "Step: Staff Assessment"
 msgstr "שלב: הערכת צוות"
 
+#: templates/legacy/edit/oa_edit_staff_assessment.html:12
+msgid ""
+"Staff Assessment gates sets the final grade for students if enabled with "
+"other steps, though it can also be used as a standalone step."
+msgstr ""
+"שערי הערכת הצוות קובעים את הציון הסופי לסטודנטים אם מופעל יחד עם שלבים "
+"אחרים, אך ניתן גם להשתמש בו כשלב עצמאי."
+
 #: templates/legacy/edit/oa_edit_student_training.html:9
 msgid "Step: Learner Training"
-msgstr "שלב: תרגול לומד"
+msgstr "שלב: אימון ללומדים"
+
+#: templates/legacy/edit/oa_edit_student_training.html:14
+msgid ""
+"Learner Training is used to help students practice grading a simulated peer "
+"submission in order to train them on the rubric and ensure learner's "
+"understand the rubric for either Self or Peer Assessment steps."
+msgstr ""
+"אימון ללומדים משמש לעזור לסטודנטים לתרגל דירוג הגשה סימולטיבית של עמית, "
+"במטרה לאמן אותם על הרובריקה ולהבטיח הבנה בקריטריונים עבור שלבי הערכה עצמית "
+"או הערכת עמיתים."
+
+#: templates/legacy/edit/oa_edit_student_training.html:17
+msgid ""
+"Configuration: For this step to be fully configured you must provide one or "
+"more graded sample responses. Learners must then match this instructor score"
+" to advance and are provided feedback when their score doesn't match the "
+"sample response."
+msgstr ""
+"הגדרות: כדי ששלב זה יהיה מוגדר במלואו, עליך לספק תגובת/תגובות לדוגמה עם "
+"ציונים. לאחר מכן, על הלומדים להתאים את הציון הזה כדי להתקדם, ויינתן להם משוב"
+" אם הציון לא תואם את תגובת הדוגמה."
+
+#: templates/legacy/edit/oa_edit_student_training.html:22
+msgid "View / Add Sample Responses"
+msgstr "צפה / הוסף תגובות לדוגמה"
 
 #: templates/legacy/edit/oa_edit_student_training.html:32
 msgid "Add Sample Response"
-msgstr "הוסף תשובה לדוגמה"
+msgstr "הוסף תגובת דוגמה"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:4
+msgid "Clone Rubric"
+msgstr "שכפל רובריקה"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:7
+msgid ""
+"To clone a rubric from an existing published or unpublished draft, you can "
+"search by the Block ID. Note that cloning is one-way, meaning changes made "
+"after cloning will only affect the rubric being modified, and will not "
+"modify any rubric it was cloned from."
+msgstr ""
+"כדי לשכפל רובריקה מטיוטה קיימת שפורסמה או לא, ניתן לחפש לפי מזהה בלוק. שים "
+"לב ששכפול הוא חד-כיווני, כלומר שינויים שנעשים לאחר השכפול ישפיעו רק על "
+"הרובריקה המותאמת, ולא תשפיע על הרובריקה המקורית."
+
+#: templates/legacy/edit/oa_rubric_reuse.html:9
+msgid "Block ID For this ORA:"
+msgstr "מזהה בלוק עבור ORA זה:"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:19
+msgid "Block ID"
+msgstr "מזהה בלוק"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:21
+msgid "No other Open Response Assessments found in course"
+msgstr "לא נמצאו הערכות תגובה פתוחה נוספות בקורס"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:31
+msgid "Clone"
+msgstr "שכפל"
+
+#: templates/legacy/edit/oa_rubric_reuse.html:37
+msgid "Rubric Successfully Cloned from Block ID: "
+msgstr "הרובריקה שוכפלה בהצלחה ממזהה בלוק: "
 
 #: templates/legacy/edit/oa_training_example.html:7
 msgid "Scored Response"
-msgstr "תשובה שניתן לה ציון"
+msgstr "תגובה מדורגת"
 
 #: templates/legacy/edit/oa_training_example.html:16
 msgid "Response Score"
-msgstr "ציון תשובה"
+msgstr "ציון תגובה"
 
 #: templates/legacy/edit/oa_training_example.html:27
 msgid "Response"
@@ -377,7 +808,7 @@ msgstr "תגובה"
 
 #: templates/legacy/edit/oa_training_example_criterion.html:10
 msgid "Not Selected"
-msgstr "לא נבחר "
+msgstr "לא נבחר"
 
 #: templates/legacy/edit/oa_training_example_criterion.html:15
 #: templates/legacy/oa_rubric.html:43
@@ -393,12 +824,36 @@ msgid ""
 "              "
 msgstr ""
 "\n"
-"%(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s"
+"                %(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s\n"
+"              "
+
+#: templates/legacy/grade/oa_assessment_title.html:7
+#, python-format
+msgid ""
+"\n"
+"                      %(assessment_title)s - %(points)s point\n"
+"                  "
+msgid_plural ""
+"\n"
+"                      %(assessment_title)s - %(points)s points\n"
+"                  "
+msgstr[0] ""
+"\n"
+"                      %(assessment_title)s - %(points)s נקודה\n"
+"                  "
+msgstr[1] ""
+"\n"
+"                      %(assessment_title)s - %(points)s שתי נקודות\n"
+"                  "
+msgstr[2] ""
+"\n"
+"                      %(assessment_title)s - %(points)s נקודות\n"
+"                  "
 
 #: templates/legacy/grade/oa_assessment_title.html:24
 #, python-format
 msgid "More information about %(name)s"
-msgstr "מידע נוסף אודות %(name)s "
+msgstr "מידע נוסף אודות %(name)s"
 
 #: templates/legacy/grade/oa_grade_cancelled.html:14
 #: templates/legacy/grade/oa_grade_complete.html:15
@@ -407,7 +862,7 @@ msgstr "מידע נוסף אודות %(name)s "
 #: templates/legacy/grade/oa_grade_not_started.html:14
 #: templates/legacy/grade/oa_grade_waiting.html:14
 msgid "Your Grade"
-msgstr "ציונך"
+msgstr "הציון שלך"
 
 #: templates/legacy/grade/oa_grade_cancelled.html:19
 #, python-format
@@ -417,12 +872,12 @@ msgid ""
 "                                    "
 msgstr ""
 "\n"
-"%(points_earned)s מתוך %(points_possible)s\n"
-"                            "
+"                                        %(points_earned)s מתוך %(points_possible)s\n"
+"                                    "
 
 #: templates/legacy/grade/oa_grade_cancelled.html:38
 msgid "Your submission has been cancelled."
-msgstr "הגשתך בוטלה"
+msgstr "הגשתך בוטלה."
 
 #: templates/legacy/grade/oa_grade_complete.html:19
 #, python-format
@@ -432,12 +887,13 @@ msgid ""
 "                                        "
 msgstr ""
 "\n"
-"%(points_earned)s מתוך %(points_possible)s "
+"                                            %(points_earned)s מתוך %(points_possible)s\n"
+"                                        "
 
 #: templates/legacy/grade/oa_grade_complete.html:38
 #: templates/legacy/response/oa_response.html:29
 msgid "Your Response"
-msgstr "תשובתך"
+msgstr "תגובתך"
 
 #: templates/legacy/grade/oa_grade_complete.html:41
 msgid "Your Upload"
@@ -445,7 +901,7 @@ msgstr "ההעלאה שלך"
 
 #: templates/legacy/grade/oa_grade_complete.html:46
 msgid "Assessments of Your Response"
-msgstr "הערכת תשובתך"
+msgstr "הערכות לתגובתך"
 
 #: templates/legacy/grade/oa_grade_complete.html:50
 #: templates/legacy/grade/oa_grade_complete.html:132
@@ -467,7 +923,7 @@ msgstr "הערכת תשובתך"
 #: templates/legacy/self/oa_self_closed.html:30
 #: templates/legacy/student_training/student_training_closed.html:27
 msgid "Status"
-msgstr "סטטוס"
+msgstr "מצב"
 
 #: templates/legacy/grade/oa_grade_complete.html:65
 msgid "Overall Grade"
@@ -480,11 +936,11 @@ msgstr "נקודות"
 
 #: templates/legacy/grade/oa_grade_complete.html:96
 msgid "Additional comments on your response"
-msgstr "הערות נוספות על תשובתך"
+msgstr "הערות נוספות לתגובתך"
 
 #: templates/legacy/grade/oa_grade_complete.html:117
 msgid "Provide feedback on peer assessments"
-msgstr "ספֵּק משוב עבור הערכת עמיתים"
+msgstr "ספק משוב על הערכות עמיתים"
 
 #: templates/legacy/grade/oa_grade_complete.html:126
 msgid "Submitting Feedback"
@@ -495,53 +951,54 @@ msgid ""
 "Your feedback has been submitted. Course staff will be able to see this "
 "feedback when they review course records."
 msgstr ""
-"המשוב שלך הוגש. צוות הקורס יוכל לראות את המשוב כאשר יצפו ברשומות הקורס."
+"המשוב שלך נשלח. צוות הקורס יוכל לראות את המשוב הזה כאשר יעיינו ברשומות "
+"הקורס."
 
 #: templates/legacy/grade/oa_grade_complete.html:140
 msgid ""
 "Course staff will be able to see any feedback that you provide here when "
 "they review course records."
-msgstr "צוות הקורס יוכל לראות כל משוב שתספק כאן כאשר יצפו ברשומות הקורס. "
+msgstr "צוות הקורס יוכל לראות כל משוב שתספק כאן כאשר יעיינו ברשומות הקורס."
 
 #: templates/legacy/grade/oa_grade_complete.html:146
 msgid ""
 "Select the statements below that best reflect your experience with peer "
 "assessments."
 msgstr ""
-"בחר את ההצהרות להלן אשר משקפות באופן הטוב ביותר את חווייתך בהערכת עמיתים."
+"בחר את ההצהרות למטה שמשקפות בצורה הטובה ביותר את חוויתך עם הערכות עמיתים."
 
 #: templates/legacy/grade/oa_grade_complete.html:155
 msgid "These assessments were useful."
-msgstr "הערכות אלו היו מועילות."
+msgstr "ההערכות האלה היו שימושיות."
 
 #: templates/legacy/grade/oa_grade_complete.html:164
 msgid "These assessments were not useful."
-msgstr "הערכות אלו לא היו מועילות."
+msgstr "הערכות אלו לא היו שימושיות."
 
 #: templates/legacy/grade/oa_grade_complete.html:173
 msgid "I disagree with one or more of the peer assessments of my response."
-msgstr "אינני מסכים עם אחת או יותר מההערכות של תשובתי."
+msgstr "אני לא מסכים עם אחת או יותר מהערכות העמיתים לתגובתי."
 
 #: templates/legacy/grade/oa_grade_complete.html:182
 msgid "Some comments I received were inappropriate."
-msgstr "חלק מההערות שקיבלתי היו בלתי הולמות."
+msgstr "חלק מההערות שקיבלתי לא היו הולמות."
 
 #: templates/legacy/grade/oa_grade_complete.html:187
 msgid ""
 "Provide feedback on the grade or comments that you received from your peers."
-msgstr "ספֵּק משוב על הדירוג או על התגובות שקיבלת מהעמיתים."
+msgstr "ספק משוב על הציון או ההערות שקיבלת מעמיתיך."
 
 #: templates/legacy/grade/oa_grade_complete.html:190
 msgid "I feel the feedback I received was..."
-msgstr "אני חש כי המשוב שקיבלתי היה..."
+msgstr "אני מרגיש שהמשוב שקיבלתי היה..."
 
 #: templates/legacy/grade/oa_grade_complete.html:200
 msgid "We could not submit your feedback"
-msgstr "לא הצלחנו להגיש את המשוב שלך."
+msgstr "לא הצלחנו לשלוח את המשוב שלך"
 
 #: templates/legacy/grade/oa_grade_complete.html:206
 msgid "Submit feedback on peer assessments"
-msgstr "שלח משוב על הערכת עמיתים"
+msgstr "שלח משוב על הערכות עמיתים"
 
 #: templates/legacy/grade/oa_grade_incomplete.html:16
 msgid "Not Completed"
@@ -549,7 +1006,7 @@ msgstr "לא הושלם"
 
 #: templates/legacy/grade/oa_grade_incomplete.html:33
 msgid "You have not completed all the steps of this problem."
-msgstr "לא השלמת את כל השלבים בבעיה זו."
+msgstr "לא השלמת את כל שלבי הבעיה."
 
 #: templates/legacy/grade/oa_grade_not_started.html:16
 msgid "Not Started"
@@ -557,7 +1014,7 @@ msgstr "לא התחיל"
 
 #: templates/legacy/grade/oa_grade_not_started.html:27
 msgid "You have not started this problem yet."
-msgstr " לא התחלת עדיין בעיה זו."
+msgstr "עדיין לא התחלת את הבעיה הזו."
 
 #: templates/legacy/grade/oa_grade_waiting.html:16
 msgid "Waiting for Assessments"
@@ -570,16 +1027,36 @@ msgid ""
 "complete, you will see feedback from everyone who assessed your response, "
 "and you will receive your final grade."
 msgstr ""
-"השלמת את השלבים שבמשימה, אך עדיין צריך להשלים כמה מההערכות על התשובה שלך. "
-"כאשר ההערכות על התשובה שלך הושלמו, תראה משוב מכל אחד שהעריך את תשובתך, ותקבל"
-" את הציון הסופי שלך."
+"השלמת את שלבי המשימה, אך עדיין יש לבצע הערכות מסוימות על תגובתך. כאשר הערכות"
+" תגובתך יהיו מושלמות, תראה משוב מכל מי שדרג את תגובתך, ותקבל את הציון הסופי "
+"שלך."
 
 #: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:15
 #: templates/legacy/staff_area/oa_staff_area.html:16
 #: templates/legacy/staff_area/oa_staff_area.html:18
 #: templates/legacy/staff_area/oa_staff_area.html:153
 msgid "Grade Available Responses"
-msgstr "דרג תשובות זמינות"
+msgstr "דירוג תגובות זמינות"
+
+#: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:26
+msgid ""
+"Grade Available Responses is unavailable. This item is not configured for "
+"Staff Assessment."
+msgstr "דירוג תגובות זמינות אינו זמין. פריט זה אינו מוגדר להערכת צוות."
+
+#: templates/legacy/instructor_dashboard/oa_listing.html:6
+msgid "Please wait"
+msgstr "אנא המתן"
+
+#: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:15
+msgid "Waiting Step Details"
+msgstr "פרטי שלב בהמתנה"
+
+#: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:24
+msgid ""
+"Waiting Step details view is unavailable. This item is not configured for "
+"peer assessments."
+msgstr "תצוגת פרטי השלב בהמתנה אינה זמינה. פריט זה אינו מוגדר להערכות עמיתים."
 
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:20
 #, python-format
@@ -590,62 +1067,81 @@ msgstr "%(num_points)s נקודות"
 #: templates/legacy/peer/oa_peer_assessment.html:84
 #: templates/legacy/peer/oa_peer_turbo_mode.html:53
 msgid "Your peer's response to the prompt above"
-msgstr "תגובה של העמית שלך להנחיה שלמעלה"
+msgstr "תגובת עמיתך להנחיה שלמעלה"
 
 #: templates/legacy/leaderboard/oa_leaderboard_waiting.html:19
 msgid ""
 "After you complete all the steps of this assignment, you can see the top-"
 "scoring responses from your peers."
 msgstr ""
-"לאחר שתשלים את כל השלבים במשימה זו, תוכל לראות את התשובות המובילות של עמיתך."
-" "
+"לאחר שתסיים את כל שלבי המשימה, תוכל לראות את התגובות בעלות הציונים הגבוהים "
+"של עמיתיך."
+
+#: templates/legacy/message/oa_message_cancelled.html:8
+msgid ""
+"Your team’s submission has been cancelled. Your team will receive a grade of"
+" zero unless course staff resets your assessment to allow the team to "
+"resubmit a response."
+msgstr ""
+"הגשת הצוות שלך בוטלה. הצוות שלך יקבל ציון אפס אלא אם צוות הקורס יאפס את "
+"הערכתך כדי לאפשר לצוות להגיש תגובה מחדש."
+
+#: templates/legacy/message/oa_message_cancelled.html:10
+msgid ""
+"Your submission has been cancelled. You will receive a grade of zero unless "
+"course staff resets your assessment to allow you to resubmit a response."
+msgstr ""
+"הגשתך בוטלה. תקבל ציון אפס אלא אם צוות הקורס יאפס את הערכתך כדי לאפשר לך "
+"להגיש תגובה מחדש."
 
 #: templates/legacy/message/oa_message_closed.html:8
 msgid ""
 "This task is not yet available. Check back to complete the assignment once "
 "this section has opened."
-msgstr "המטלה אינה זמינה עדיין. חזור להשלים את המטלה כאשר יפתח חלק זה. "
+msgstr ""
+"משימה זו עדיין אינה זמינה. בדוק שוב מאוחר יותר להשלמת המשימה ברגע שהקטע "
+"ייפתח."
 
 #: templates/legacy/message/oa_message_closed.html:10
 msgid ""
 "This assignment has closed. One or more deadlines for this assignment have "
 "passed. You will receive an incomplete grade for this assignment."
 msgstr ""
-"משימה זו נסגרה. תאריך יעד אחד או יותר למשימה זו עבר. תקבל ציון חלקי עבור "
-"משימה זו. "
+"משימה זו נסגרה. אחד או יותר מתאריכי היעד עבור המשימה עברו. תקבל ציון לא שלם "
+"עבור משימה זו."
 
 #: templates/legacy/message/oa_message_complete.html:8
 msgid ""
 "You have completed this assignment. Your final grade will be available when "
 "the assessments of your response are complete."
-msgstr "השלמת משימה זו. הציון הסופי יהיה זמין כאשר יושלמו ההערכות על תשובתך."
+msgstr ""
+"סיימת משימה זו. הציון הסופי שלך יהיה זמין כאשר הערכות תגובתך יהיו מושלמות."
 
 #: templates/legacy/message/oa_message_complete.html:10
 msgid ""
 "You have completed this assignment. Review your grade and your assessment "
 "details."
-msgstr "השלמת משימה זו. בדוק את הציון שלך ואת פרטי ההערכה שלך."
+msgstr "סיימת משימה זו. עיין בציון שלך ובפרטי ההערכה."
 
 #: templates/legacy/message/oa_message_incomplete.html:9
 msgid ""
 "This assignment is in progress. Learner training will close soon. Complete "
 "the learner training step to move on."
 msgstr ""
-"משימה זו נמצאת בתהליך. תרגול הלומד ייסגר בקרוב. השלם את שלב תרגול הלומד על "
-"מנת להמשיך הלאה."
+"משימה זו בתהליך. אימון הלומדים ייסגר בקרוב. השלם את שלב האימון כדי להמשיך."
 
 #: templates/legacy/message/oa_message_incomplete.html:11
 msgid ""
 "This assignment is in progress. Complete the learner training step to move "
 "on."
-msgstr "משימה זו נמצאת בתהליך. השלם את שלב תרגול הלומד על מנת להמשיך הלאה."
+msgstr "משימה זו בתהליך. השלם את שלב האימון כדי להמשיך."
 
 #: templates/legacy/message/oa_message_incomplete.html:15
 #: templates/legacy/message/oa_message_incomplete.html:33
 msgid ""
 "This assignment is in progress. Check back later when the assessment period "
 "has started."
-msgstr "משימה זו נמצאת בתהליך. חזור מאוחר יותר כאשר תקופת ההערכה נפתחת."
+msgstr "משימה זו בתהליך. בדוק שוב מאוחר יותר כאשר תקופת ההערכה תתחיל."
 
 #: templates/legacy/message/oa_message_incomplete.html:20
 #, python-format
@@ -655,7 +1151,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"%(start_strong)s משימה זו נמצאת בתהליך. שלב ההערכה העצמית ייסגר בקרוב. %(end_strong)s עליך להשלים עדיין את %(start_link)s שלב %(end_link)s ההערכה העצמית."
+"                                    %(start_strong)sמשימה זו בתהליך. שלב ההערכה העצמית ייסגר בקרוב.%(end_strong)s עדיין עליך להשלים את שלב %(start_link)sההערכה העצמית%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:24
 #, python-format
@@ -665,7 +1162,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"משימה זו נמצאת בתהליך.  עליך להשלים עדיין את %(start_link)sשלב%(end_link)s ההערכה העצמית.\n"
+"                                    המשימה בתהליך. עדיין עליך להשלים את שלב %(start_link)sההערכה העצמית%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:38
@@ -676,7 +1173,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"משימה זו נמצאת בתהליך. %(start_strong)s שלב הערכת העמיתים ייסגר בקרוב. %(end_strong)s כל תשובות העמיתים שנשלחו הוערכו. בדוק מאוחר יותר על מנת לראות אם לומדים נוספים שלחו תשובות. עליך להשלים עדיין את שלב %(start_link)s הערכת עמיתים%(end_link)s step."
+"                                    המשימה בתהליך.%(start_strong)s שלב הערכת העמיתים ייסגר בקרוב.%(end_strong)s כל תגובות העמיתים שהוגשו הוערכו. בדוק שוב מאוחר יותר אם לומדים נוספים הגישו תגובות. עדיין עליך להשלים את שלב %(start_link)sהערכת העמיתים%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:42
 #, python-format
@@ -686,7 +1184,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"משימה זו נמצאת בתהליך. כל תשובות העמיתים שנשלחו, הוערכו. חזור ובדוק מאוחר יותר על מנת לראות אם לומדים נוספים שלחו תשובות. עליך להשלים עדיין את  %(start_link)s שלב %(end_link)s step הערכת עמיתים."
+"                                    המשימה בתהליך. כל תגובות העמיתים שהוגשו הוערכו. בדוק שוב מאוחר יותר אם לומדים נוספים הגישו תגובות. עדיין עליך להשלים את שלב %(start_link)sהערכת העמיתים%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:46
 #, python-format
@@ -696,7 +1195,8 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"משימה זו נמצאת בתהליך. %(start_strong)s שלב הערכת העמיתים ייסגר בקרוב.%(end_strong)s עליך עדיין להשלים את %(start_link)s שלב %(end_link)s הערכת העמיתים."
+"                                    המשימה בתהליך. %(start_strong)s שלב הערכת העמיתים ייסגר בקרוב.%(end_strong)s עדיין עליך להשלים את שלב %(start_link)sהערכת העמיתים%(end_link)s.\n"
+"                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:50
 #, python-format
@@ -706,8 +1206,38 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"משימה זו נמצאת בתהליך.  עליך להשלים עדיין את שלב %(start_link)sהערכת העמיתים%(end_link)s .\n"
+"                                    המשימה בתהליך. עדיין עליך להשלים את שלב %(start_link)sהערכת העמיתים%(end_link)s.\n"
 "                                "
+
+#: templates/legacy/message/oa_message_no_team.html:4
+msgid "Team membership is required to view this assignment"
+msgstr "חברות בצוות נדרשת לצפייה במשימה זו"
+
+#: templates/legacy/message/oa_message_no_team.html:7
+#, python-format
+msgid ""
+"\n"
+"            This is a team assignment for team-set \"%(teamset_name)s\".\n"
+"            You are currently not on a team in team-set \"%(teamset_name)s\".\n"
+"            You must be on a team in team-set \"%(teamset_name)s\" to access this team assignment.\n"
+"            "
+msgstr ""
+"\n"
+"            זו משימה צוותית עבור קבוצת צוות \"%(teamset_name)s\".\n"
+"            אתה כרגע לא נמצא בצוות בקבוצת צוות \"%(teamset_name)s\".\n"
+"            עליך להיות בצוות בקבוצת צוות \"%(teamset_name)s\" כדי לגשת למשימה זו.\n"
+"            "
+
+#: templates/legacy/message/oa_message_open.html:7
+#, python-format
+msgid ""
+"\n"
+"                    Assignment submissions will close soon. To receive a grade, first provide a response to the prompt, then complete the steps below the %(start_tag)sYour Response%(end_tag)s field.\n"
+"                "
+msgstr ""
+"\n"
+"                    הגשת המשימה תיסגר בקרוב. כדי לקבל ציון, קודם כל ספק תגובה להנחיה, לאחר מכן השלם את השלבים שמתחת לשדה %(start_tag)sתגובתך%(end_tag)s.\n"
+"                "
 
 #: templates/legacy/message/oa_message_open.html:11
 #, python-format
@@ -717,16 +1247,16 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                    במטלה זו קיימים מספר שלבים. בשלב הראשון, תידרש לספק תשובה עבור השאלה. השלבים האחרים מופיעים מתחת %(start_tag)s לשדה תשובתך %(end_tag)s.\n"
+"                    למשימה זו יש מספר שלבים. בשלב הראשון, תספק תגובה להנחיה. השלבים האחרים מופיעים מתחת לשדה %(start_tag)sתגובתך%(end_tag)s.\n"
 "                "
 
 #: templates/legacy/message/oa_message_unavailable.html:4
 msgid "Instructions Unavailable"
-msgstr "הוראות לא זמינות"
+msgstr "ההנחיות לא זמינות"
 
 #: templates/legacy/message/oa_message_unavailable.html:6
 msgid "The instructions for this step could not be loaded."
-msgstr "לא ניתן לטעון את ההוראות עבור שלב זה."
+msgstr "לא ניתן לטעון את ההנחיות עבור שלב זה."
 
 #: templates/legacy/oa_base.html:16 templates/openassessmentblock/base.html:22
 msgid ""
@@ -734,8 +1264,8 @@ msgid ""
 "response to the prompt. The other steps appear below the Your Response "
 "field."
 msgstr ""
-"במטלה זו קיימים מספר שלבים. בשלב הראשון, תידרש לספק תשובה עבור השאלה. השלבים"
-" האחרים מופיעים מתחת לשדה תשובתך"
+"למשימה זו יש מספר שלבים. בשלב הראשון, תספק תגובה להנחיה. השלבים האחרים "
+"מופיעים מתחת לשדה 'תגובתך'."
 
 #: templates/legacy/oa_base.html:37 templates/openassessmentblock/base.html:56
 #: templates/openassessmentblock/base.html:105
@@ -748,11 +1278,11 @@ msgstr "תצוגה מקדימה ב-LaTeX"
 
 #: templates/legacy/oa_latex_preview.html:9
 msgid "Click to preview your submission in LaTeX."
-msgstr "לחץ על מנת להציג תצוגה מקדימה של הגשתך ב-LaTeX"
+msgstr "לחץ כדי לצפות בתצוגה מקדימה של הגשתך ב-LaTeX."
 
 #: templates/legacy/oa_latex_preview.html:14
 msgid "Preview Response"
-msgstr "תצוגה מקדימה של התשובה"
+msgstr "תצוגה מקדימה לתגובה"
 
 #: templates/legacy/oa_rubric.html:53
 msgid "Comments"
@@ -760,16 +1290,90 @@ msgstr "הערות"
 
 #: templates/legacy/oa_submission_answer.html:8
 msgid "The question for this section"
-msgstr "השאלה עבור פרק זה."
+msgstr "השאלה עבור קטע זה"
+
+#: templates/legacy/oa_team_uploaded_files.html:9
+msgid "Files that were uploaded by your teammates:"
+msgstr "קבצים שהועלו על ידי חברי הצוות שלך:"
+
+#: templates/legacy/oa_team_uploaded_files.html:28
+#: templates/legacy/oa_uploaded_file.html:34
+msgid "View the files associated with this submission:"
+msgstr "צפה בקבצים המשויכים להגשה זו:"
+
+#: templates/legacy/oa_team_uploaded_files.html:32
+msgid "Uploaded by"
+msgstr "הועלה על ידי"
+
+#: templates/legacy/oa_uploaded_file.html:16
+msgid "Files that were uploaded by you:"
+msgstr "קבצים שהועלו על ידך:"
+
+#: templates/legacy/oa_uploaded_file.html:48
+msgid ""
+"Caution: These files were uploaded by another course learner and have not "
+"been verified, screened, approved, reviewed, or endorsed by the site "
+"administrator. If you access the files, you do so at your own risk.)"
+msgstr ""
+"אזהרה: קבצים אלה הועלו על ידי לומד אחר בקורס ולא אומתו, נבדקו, אושרו, נסקרו "
+"או נתמכו על ידי מנהל האתר. אם תצפה בקבצים, תעשה זאת על אחריותך בלבד.)"
 
 #: templates/legacy/peer/oa_peer_assessment.html:36
 msgid "Assess Peers"
 msgstr "הערך עמיתים"
 
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 00:00 UTC (in
+#. 5 days and 45 minutes)"
+#: templates/legacy/peer/oa_peer_assessment.html:44
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 00:00 UTC (in 5 days
+#. and 45 minutes)"
+#: templates/legacy/peer/oa_peer_assessment.html:51
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#: templates/legacy/peer/oa_peer_assessment.html:61
+#, python-format
+msgid ""
+"\n"
+"                    In Progress (%(review_number)s of %(num_must_grade)s)\n"
+"                "
+msgstr ""
+"\n"
+"                    בתהליך (%(review_number)s מתוך %(num_must_grade)s)\n"
+"                "
+
 #: templates/legacy/peer/oa_peer_assessment.html:75
 #: templates/legacy/peer/oa_peer_turbo_mode.html:45
 msgid "Read and assess the following response from one of your peers."
-msgstr "קרא והערך את התשובה הבאה של אחד מעמיתך."
+msgstr "קרא והערך את התגובה הבאה מאחד מחברי עמיתיך."
+
+#: templates/legacy/peer/oa_peer_assessment.html:87
+#: templates/legacy/peer/oa_peer_turbo_mode.html:56
+#: templates/legacy/self/oa_self_assessment.html:70
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:45
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:38
+#: templates/legacy/staff_area/oa_student_info.html:63
+msgid "Associated Files"
+msgstr "קבצים משויכים"
 
 #: templates/legacy/peer/oa_peer_assessment.html:101
 #: templates/legacy/peer/oa_peer_turbo_mode.html:70
@@ -777,7 +1381,7 @@ msgstr "קרא והערך את התשובה הבאה של אחד מעמיתך."
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:57
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:50
 msgid "We could not submit your assessment"
-msgstr "לא הצלחנו להגיש את הערכתך"
+msgstr "לא הצלחנו לשלוח את הערכתך"
 
 #: templates/legacy/peer/oa_peer_cancelled.html:19
 #: templates/legacy/response/oa_response_cancelled.html:21
@@ -794,7 +1398,8 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"לא הושלם (%(num_graded)s מתוך %(num_must_grade)s)"
+"            לא הושלם (%(num_graded)s מתוך %(num_must_grade)s)\n"
+"        "
 
 #: templates/legacy/peer/oa_peer_closed.html:35
 msgid ""
@@ -802,8 +1407,8 @@ msgid ""
 "longer complete peer assessments or continue with this assignment, and you "
 "will receive a grade of Incomplete."
 msgstr ""
-"תאריך היעד עבור שלב זה עבר. שלב זה סגור כעת. אינך יכול יותר להשלים הערכת "
-"עמיתים או להמשיך עם משימה זו ותקבל ציון חלקי."
+"מועד היעד עבור שלב זה עבר. שלב זה כעת סגור. אינך יכול להשלים הערכות עמיתים "
+"או להמשיך במשימה, ותקבל ציון 'לא הושלם'."
 
 #: templates/legacy/peer/oa_peer_complete.html:13
 msgid "Completed"
@@ -817,16 +1422,17 @@ msgid ""
 "this assignment. You may assess additional peer responses if you want to. "
 "Completing additional assessments will not affect your final grade."
 msgstr ""
-"השלמת בהצלחה את כל הערכות העמיתים כבור משימה זו. אתה יכול להעריך תשובות "
-"נוספות אם אתה רוצה. השלמה של הערכות עמיתים נוספות לא תשפיע על ציונך הסופי. "
+"השלמת בהצלחה את כל הערכות העמיתים הנדרשות עבור משימה זו. באפשרותך להעריך "
+"תגובות עמיתים נוספות אם תרצה. השלמת הערכות נוספות לא תשפיע על הציון הסופי "
+"שלך."
 
 #: templates/legacy/peer/oa_peer_complete.html:36
 msgid "We could not retrieve additional submissions for assessment"
-msgstr "לא הצלחנו לאחזר הגשות נוספות עבור מטלה"
+msgstr "לא הצלחנו לשחזר הגשות נוספות להערכה"
 
 #: templates/legacy/peer/oa_peer_complete.html:43
 msgid "Continue Assessing Peers"
-msgstr "המשך בהערכת עמיתים"
+msgstr "המשך הערכת עמיתים"
 
 #: templates/legacy/peer/oa_peer_turbo_mode.html:26
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:20
@@ -837,15 +1443,16 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"הושלם  (%(num_graded)s)"
+"        הושלם (%(num_graded)s)\n"
+"      "
 
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:38
 msgid ""
 "All submitted peer responses have been assessed. Check back later to see if "
 "more learners have submitted responses."
 msgstr ""
-"כל תשובות העמיתים שנשלחו, הוערכו. בדוק מאוחר יותר אם לומדים נוספים הגישו "
-"תשובות."
+"כל תגובות העמיתים שהוגשו הוערכו. בדוק שוב מאוחר יותר אם לומדים נוספים הגישו "
+"תגובות."
 
 #: templates/legacy/peer/oa_peer_unavailable.html:16
 #: templates/legacy/response/oa_response_unavailable.html:17
@@ -862,7 +1469,8 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"בתהליך (%(review_number)s מתוך %(num_must_grade)s)"
+"          בתהליך (%(review_number)s מתוך %(num_must_grade)s)\n"
+"        "
 
 #: templates/legacy/peer/oa_peer_waiting.html:37
 msgid ""
@@ -871,58 +1479,299 @@ msgid ""
 "you've completed all the steps for this problem and your peers have assessed"
 " your response."
 msgstr ""
-"כל תשובות העמיתים שנשלחו הוערכו. חזור ובדוק מאוחר יותר על מנת לראות אם "
-"לומדים נוספים שלחו תשובות. תקבל את ציונך לאחר שתשלים את כל השלבים עבור בעיה "
-"זו ולאחר שעמיתיך העריכו את תשובתך."
+"כל התגובות של עמיתים נותחו. בדוק שוב מאוחר יותר אם תלמידים נוספים הגישו "
+"תגובות. תקבל את הציון שלך לאחר שסיימת את כל השלבים למשימה ועמיתיך העריכו את "
+"תגובתך."
+
+#: templates/legacy/response/oa_response.html:27
+msgid "Your Team's Response"
+msgstr "תגובת הצוות שלך"
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/response/oa_response.html:39
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/response/oa_response.html:46
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
 
 #: templates/legacy/response/oa_response.html:54
 #: templates/legacy/self/oa_self_assessment.html:56
 msgid "In Progress"
-msgstr "בביצוע"
+msgstr "בתהליך"
+
+#: templates/legacy/response/oa_response.html:66
+msgid "Enter your team's response to the prompt."
+msgstr "הקלד את תגובת הצוות שלך להנחיה."
+
+#: templates/legacy/response/oa_response.html:68
+msgid ""
+"\n"
+"                        Your work will save automatically and you can return to complete your team's response at any time before the due date\n"
+"                      "
+msgstr ""
+"\n"
+"                        העבודה שלך תישמר באופן אוטומטי ותוכל לחזור ולהשלים את תגובת הצוות בכל עת עד תאריך היעד\n"
+"                      "
+
+#: templates/legacy/response/oa_response.html:81
+msgid ""
+"\n"
+"                        Your work will save automatically and you can return to complete your team's response at any time.\n"
+"                      "
+msgstr ""
+"\n"
+"                        עבודתך תישמר אוטומטית ותוכל לחזור ולהשלים את תגובת הצוות בכל עת.\n"
+"                      "
+
+#: templates/legacy/response/oa_response.html:86
+msgid ""
+"After you submit a response on behalf of your team, it cannot be edited."
+msgstr "לאחר שליחת תגובתך בשם הצוות, לא ניתן לערוך אותה."
 
 #: templates/legacy/response/oa_response.html:89
 msgid "Enter your response to the prompt."
-msgstr " הזן את תשובתך לשאלה. "
+msgstr "הקלד את תגובתך להנחיה."
+
+#: templates/legacy/response/oa_response.html:92
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time before the subsection due date "
+msgstr ""
+"עבודתך תישמר אוטומטית ותוכל לחזור ולהשלים את תגובתך בכל עת עד תאריך היעד של "
+"תת-הסעיף"
+
+#: templates/legacy/response/oa_response.html:94
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time before the course ends "
+msgstr ""
+"עבודתך תישמר אוטומטית ותוכל לחזור ולהשלים את תגובתך בכל עת לפני סיום הקורס"
+
+#: templates/legacy/response/oa_response.html:96
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time before the due date "
+msgstr ""
+"עבודתך תישמר אוטומטית ותוכל לחזור ולהשלים את תגובתך בכל עת עד תאריך היעד"
+
+#: templates/legacy/response/oa_response.html:108
+msgid ""
+"Your work will save automatically and you can return to complete your "
+"response at any time."
+msgstr "עבודתך תישמר אוטומטית ותוכל לחזור ולהשלים את תגובתך בכל עת."
 
 #: templates/legacy/response/oa_response.html:110
 msgid "After you submit your response, you cannot edit it"
-msgstr "שימו לב, לאחר שתשלחו את התשובה, לא תוכלו לערוך אותה."
+msgstr "לאחר שליחת תגובתך, לא ניתן לערוך אותה."
+
+#: templates/legacy/response/oa_response.html:120
+msgid "What will this assignment be graded on?"
+msgstr "על סמך מה תוערך המשימה הזו?"
 
 #: templates/legacy/response/oa_response.html:134
 msgid "The prompt for this section"
-msgstr "ההנחיה לסעיף זה"
+msgstr "הנחיה עבור סעיף זה"
+
+#: templates/legacy/response/oa_response.html:148
+msgid "You are on team "
+msgstr "הנך נמצא בצוות "
+
+#: templates/legacy/response/oa_response.html:150
+msgid "Team Members: "
+msgstr "חברי הצוות: "
+
+#: templates/legacy/response/oa_response.html:155
+#, python-format
+msgid ""
+"\n"
+"                                              %(team_members_with_external_submissions)s\n"
+"                                              have/has already submitted a response to this assignment with another team,\n"
+"                                              and will not be a part of your team's submission or assignment grade.\n"
+"                                          "
+msgstr ""
+"\n"
+"                                              %(team_members_with_external_submissions)s\n"
+"                                              כבר הגיש/ו תגובה למשימה זו עם צוות אחר,\n"
+"                                              ולא ייכללו בהגשת הצוות שלך או בציון המשימה.\n"
+"                                          "
+
+#: templates/legacy/response/oa_response.html:171
+msgid "Team Response "
+msgstr "תגובת צוות "
+
+#: templates/legacy/response/oa_response.html:173
+msgid "Your Response "
+msgstr "תגובתך "
+
+#: templates/legacy/response/oa_response.html:177
+#: templates/legacy/response/oa_response.html:247
+msgid "(Required)"
+msgstr "(נדרש)"
+
+#: templates/legacy/response/oa_response.html:179
+#: templates/legacy/response/oa_response.html:249
+msgid "(Optional)"
+msgstr "(אופציונלי)"
+
+#: templates/legacy/response/oa_response.html:183
+msgid ""
+"\n"
+"                                              Teams should designate one team member to submit a response on behalf of the\n"
+"                                              entire team.  All team members can use this space to work on draft responses,\n"
+"                                              but you will not be able to see your teammates' drafts made in this space, so\n"
+"                                              please coordinate with them to decide on the final response the designated team\n"
+"                                              member should submit.\n"
+"                                          "
+msgstr ""
+"\n"
+"                                              הצוות צריך למנות חבר צוות אחד שישלח את התגובה בשם כל הצוות. כל חברי הצוות יכולים להשתמש בשטח זה לעבודת טיוטה,\n"
+"                                              אך לא תוכל לראות את הטיוטות של שאר חברי הצוות, לכן נא לתאם עמם כדי לקבוע את התגובה הסופית שחבר הצוות הממונה אמור לשלוח.\n"
+"                                          "
 
 #: templates/legacy/response/oa_response.html:197
 msgid "Enter your response to the prompt above."
-msgstr "הזינו את תשובתכם כאן."
+msgstr "הקלד את תגובתך להנחיה שלמעלה."
+
+#: templates/legacy/response/oa_response.html:211
+#, python-format
+msgid ""
+"\n"
+"                                      You are currently on Team %(team_name)s. Since you were on Team %(previous_team_name)s\n"
+"                                      when they submitted a response to this assignment, you are seeing Team %(previous_team_name)s’s\n"
+"                                      response and will receive the same grade for this assignment as your former teammates.\n"
+"                                      You will not be part of Team %(team_name)s’s submission for this assignment and will not\n"
+"                                      receive a grade for their submission.\n"
+"                                  "
+msgstr ""
+"\n"
+"                                      הנך נמצא כרגע בצוות %(team_name)s. מאחר שהיית בצוות %(previous_team_name)s\n"
+"                                      כאשר הוגשה תגובה למשימה זו, אתה רואה את תגובת צוות %(previous_team_name)s\n"
+"                                      ותקבל את אותו ציון כמו חבריך לשעבר. אינך יהיה חלק מהגשת צוות %(team_name)s למשימה זו ולא תקבל ציון על ההגשה שלהם.\n"
+"                                  "
 
 #: templates/legacy/response/oa_response.html:224
 msgid "We could not save your progress"
-msgstr "לא הצלחנו לשמור את התקדמותך"
+msgstr "לא הצלחנו לשמור את ההתקדמות שלך"
+
+#: templates/legacy/response/oa_response.html:232
+msgid "Status of Your Response"
+msgstr "מצב תגובתך"
+
+#: templates/legacy/response/oa_response.html:245
+msgid "File Uploads "
+msgstr "העלאות קבצים "
+
+#: templates/legacy/response/oa_response.html:253
+msgid ""
+"\n"
+"                                  Upload files and review files uploaded by you and your teammates below. Be sure to add\n"
+"                                  descriptions to your files to help your teammates identify them.\n"
+"                              "
+msgstr ""
+"\n"
+"                                  העלה קבצים ועיין בקבצים שהועלו על ידך ועל יד חברי הצוות שלך למטה. ודא שאתה מוסיף\n"
+"                                  תיאורים לקבצים שלך כדי לעזור לחברי הצוות לזהותם.\n"
+"                              "
 
 #: templates/legacy/response/oa_response.html:261
 msgid "We could not upload files"
-msgstr "לא הצלחנו להעלות את הקבצים"
+msgstr "לא הצלחנו להעלות קבצים"
+
+#: templates/legacy/response/oa_response.html:267
+msgid "We could not delete files"
+msgstr "לא הצלחנו למחוק קבצים"
+
+#: templates/legacy/response/oa_response.html:274
+msgid "Select one or more files to upload for this submission."
+msgstr "בחר קובץ אחד או יותר להעלאה להגשה זו."
 
 #: templates/legacy/response/oa_response.html:276
 msgid "Select a file to upload for this submission."
-msgstr "בחר קובץ להעלאה עבור הגשה זו."
+msgstr "בחר קובץ להעלאה להגשה זו."
 
-#: templates/legacy/response/oa_response.html:285
+#: templates/legacy/response/oa_response.html:280
+msgid "Supported file types: "
+msgstr "סוגי קבצים נתמכים: "
+
+#: templates/legacy/response/oa_response.html:286
 msgid "Upload files"
-msgstr "העלה את הקובץ"
+msgstr "העלה קבצים"
 
-#: templates/legacy/response/oa_response.html:322
+#: templates/legacy/response/oa_response.html:288
+msgid "Upload file"
+msgstr "העלה קובץ"
+
+#: templates/legacy/response/oa_response.html:305
+msgid "This is a team submission."
+msgstr "זוהי הגשת צוות."
+
+#: templates/legacy/response/oa_response.html:307
+msgid ""
+"One team member should submit a response with the team’s shared files and a "
+"text response on behalf of the entire team."
+msgstr ""
+"חבר צוות אחד צריך להגיש תגובה הכוללת את הקבצים המשותפים של הצוות ותגובה "
+"טקסטואלית בשם כל הצוות."
+
+#: templates/legacy/response/oa_response.html:309
+msgid ""
+"One team member should submit a response with the team’s shared files on "
+"behalf of the entire team."
+msgstr ""
+"חבר צוות אחד צריך להגיש תגובה הכוללת את הקבצים המשותפים של הצוות בשם כל "
+"הצוות."
+
+#: templates/legacy/response/oa_response.html:311
+msgid ""
+"One team member should submit a text response on behalf of the entire team."
+msgstr "חבר צוות אחד צריך להגיש תגובה טקסטואלית בשם כל הצוות."
+
+#: templates/legacy/response/oa_response.html:313
+msgid "One team member should submit on behalf of the entire team."
+msgstr "חבר צוות אחד צריך להגיש בשם כל הצוות."
+
+#: templates/legacy/response/oa_response.html:315
+msgid ""
+"\n"
+"                  Learn more about team assignments here: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
+"                  "
+msgstr ""
+"\n"
+"                  למידע נוסף על משימות צוות כאן: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">קישור</a>)\n"
+"                  "
+
+#: templates/legacy/response/oa_response.html:323
 msgid "We could not submit your response"
-msgstr "לא הצלחנו להגיש את תשובתך"
+msgstr "לא הצלחנו להגיש את תגובתך"
 
-#: templates/legacy/response/oa_response.html:333
+#: templates/legacy/response/oa_response.html:334
 msgid "Submit your response and move to the next step"
-msgstr "הגישו את התשובה והמשיכו לשלב הבא"
+msgstr "הגש את תגובתך ועבור לשלב הבא"
 
 #: templates/legacy/response/oa_response_cancelled.html:34
 msgid "Your submission was cancelled. "
-msgstr "הגשתך בוטלה"
+msgstr "ההגשה שלך בוטלה. "
 
 #: templates/legacy/response/oa_response_cancelled.html:37
 #, python-format
@@ -932,7 +1781,7 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"                                הגשתך בוטלה על ידי %(removed_by_username)s ב- %(removed_datetime)s\n"
+"                                ההגשה שלך בוטלה על ידי %(removed_by_username)s בתאריך %(removed_datetime)s\n"
 "                            "
 
 #: templates/legacy/response/oa_response_cancelled.html:41
@@ -943,7 +1792,8 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"הגשתך בוטלה ב %(removed_datetime)s"
+"                               ההגשה שלך בוטלה בתאריך %(removed_datetime)s\n"
+"                            "
 
 #: templates/legacy/response/oa_response_cancelled.html:48
 #, python-format
@@ -953,7 +1803,8 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"הערות: %(comments)s"
+"                            הערות: %(comments)s\n"
+"                        "
 
 #: templates/legacy/response/oa_response_closed.html:19
 #: templates/legacy/self/oa_self_closed.html:20
@@ -968,8 +1819,8 @@ msgid ""
 " a grade of Incomplete. If you saved but did not submit a response, the "
 "response appears in the course records."
 msgstr ""
-"תאריך היעד עבור שלב זה עבר. שלב זה סגור כעת. אינך יכול יותר להגיש תשובה או "
-"להמשיך עם בעיה זו ותקבל ציון חלקי. אם שמרת תשובה אך לא הגשת אותה, היא תופיע "
+"תאריך היעד לשלב זה עבר. השלב כעת סגור. אינך יכול/ה להגיש תגובה או להמשיך "
+"בבעיה זו, ותקבל/י ציון 'לא הושלם'. אם שמרת אך לא הגשת תגובה, היא תופיע "
 "ברשומות הקורס."
 
 #: templates/legacy/response/oa_response_graded.html:20
@@ -983,14 +1834,20 @@ msgstr "הושלם"
 #: templates/legacy/response/oa_response_submitted.html:51
 #: templates/legacy/self/oa_self_assessment.html:67
 msgid "Your response"
-msgstr "תשובתך"
+msgstr "תגובתך"
+
+#: templates/legacy/response/oa_response_graded.html:33
+#: templates/legacy/response/oa_response_submitted.html:54
+msgid "Your Uploaded Files"
+msgstr "הקבצים שהעלית"
 
 #: templates/legacy/response/oa_response_submitted.html:32
 msgid ""
 "Your response has been submitted. You will receive your grade after all "
 "steps are complete and your response is fully assessed."
 msgstr ""
-"תשובתך הוגשה. תקבל את הציון שלך לאחר השלמת כל השלבים והערכה מלאה של תשובתך."
+"תגובתך נשלחה. תקבל/י את הציון שלך לאחר שכל השלבים יושלמו ותגובתך תוערך "
+"במלואה."
 
 #: templates/legacy/response/oa_response_submitted.html:34
 #, python-format
@@ -1000,7 +1857,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                        עליך להשלים עדיין את שלב %(peer_start_tag)sהערכת העמיתים%(end_tag)s ואת שלב %(self_start_tag)sההערכה העצמית%(end_tag)s .\n"
+"                        עדיין עליך להשלים את שלבי %(peer_start_tag)sהערכת עמיתים%(end_tag)s ו-%(self_start_tag)sהערכת עצמי%(end_tag)s.\n"
 "                    "
 
 #: templates/legacy/response/oa_response_submitted.html:38
@@ -1011,7 +1868,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                        עליך להשלים עדיין את שלב %(start_tag)sהערכת העמיתים%(end_tag)s .\n"
+"                        עדיין עליך להשלים את שלב %(start_tag)sהערכת עמיתים%(end_tag)s.\n"
 "                    "
 
 #: templates/legacy/response/oa_response_submitted.html:42
@@ -1022,16 +1879,71 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                       עליך להשלים עדיין את שלב %(start_tag)sההערכה העצמית%(end_tag)s .\n"
+"                        עדיין עליך להשלים את שלב %(start_tag)sהערכת עצמי%(end_tag)s.\n"
 "                    "
+
+#: templates/legacy/response/oa_response_submitted.html:63
+msgid "We could not reset your response"
+msgstr "לא הצלחנו לאפס את תגובתך"
+
+#: templates/legacy/response/oa_response_submitted.html:69
+msgid "Reset response and submit again"
+msgstr "אפס תגובה והגש שוב"
+
+#: templates/legacy/response/oa_response_team_already_submitted.html:15
+msgid "Error"
+msgstr "שגיאה"
+
+#: templates/legacy/response/oa_response_team_already_submitted.html:29
+#, python-format
+msgid ""
+"\n"
+"                            You joined Team %(team_name)s after they submitted a response for this assignment\n"
+"                            and you will not receive a grade for their response. You have also not previously submitted\n"
+"                            a response to this assignment with another team. Please contact course staff to discuss your\n"
+"                            options for this assignment.\n"
+"                        "
+msgstr ""
+"\n"
+"                            הצטרפת לצוות %(team_name)s לאחר שהגישו תגובה למשימה זו\n"
+"                            ולכן לא תקבל/י ציון עבור תגובתם. כמו כן, אינך הגשת בעבר תגובה למשימה זו עם צוות אחר. אנא פנה/י לצוות הקורס כדי לדון באפשרויות העומדות בפניך עבור משימה זו.\n"
+"                        "
 
 #: templates/legacy/self/oa_self_assessment.html:33
 msgid "Assess Your Response"
-msgstr "הערך את תשובתך"
+msgstr "הערך/י את תגובתך"
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/self/oa_self_assessment.html:41
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+msgstr ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/self/oa_self_assessment.html:48
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
+msgstr ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
 
 #: templates/legacy/self/oa_self_assessment.html:88
 msgid "Submit your assessment"
-msgstr "שלח את הערכתך"
+msgstr "הגש/י את הערכתך"
 
 #: templates/legacy/self/oa_self_closed.html:32
 msgid ""
@@ -1039,22 +1951,34 @@ msgid ""
 "longer complete a self assessment or continue with this assignment, and you "
 "will receive a grade of Incomplete."
 msgstr ""
-"תאריך היעד עבור שלב זה עבר. שלב זה סגור כעת. אינך יכול יותר להשלים הערכה "
-"עצמית או להמשיך עם משימה זו ותקבל ציון חלקי."
+"תאריך היעד של שלב זה עבר. השלב כעת סגור. אינך יכול/ה להשלים הערכת עצמי או "
+"להמשיך במשימה זו, ותקבל/י ציון 'לא הושלם'."
 
 #: templates/legacy/staff/oa_staff_grade.html:13 xblock/grade_mixin.py:369
 msgid "Staff Grade"
-msgstr "ציון צוות"
+msgstr "ציון צוות ההוראה"
 
 #: templates/legacy/staff_area/oa_staff_area.html:8
 #: templates/legacy/staff_area/oa_staff_area.html:35
 msgid "Manage Individual Learners"
-msgstr "נהל לומדים עצמאיים"
+msgstr "נהל/י תלמידים פרטניים"
+
+#: templates/legacy/staff_area/oa_staff_area.html:10
+msgid "Manage Team Responses"
+msgstr "נהל/י תגובות צוות"
 
 #: templates/legacy/staff_area/oa_staff_area.html:13
 #: templates/legacy/staff_area/oa_staff_area.html:71
 msgid "View Assignment Statistics"
-msgstr "הצג סטטיסטיקות משימה"
+msgstr "צפה בסטטיסטיקות המשימה"
+
+#: templates/legacy/staff_area/oa_staff_area.html:22
+msgid "Demo the new Grading Experience"
+msgstr "הדגם/י את חוויית הציונון החדשה"
+
+#: templates/legacy/staff_area/oa_staff_area.html:26
+msgid "View ORA in Studio"
+msgstr "צפה ב-ORA בסטודיו"
 
 #: templates/legacy/staff_area/oa_staff_area.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:69
@@ -1062,17 +1986,25 @@ msgstr "הצג סטטיסטיקות משימה"
 msgid "Close"
 msgstr "סגור"
 
+#: templates/legacy/staff_area/oa_staff_area.html:37
+msgid "Manage Teams"
+msgstr "נהל/י צוותים"
+
 #: templates/legacy/staff_area/oa_staff_area.html:50
 msgid "Enter an individual learner's username or email"
-msgstr "הזן את שם המשתמש או הדואר האלקטרוני של הלומד היחיד‬"
+msgstr "הזן/י שם משתמש או דוא\"ל של תלמיד"
+
+#: templates/legacy/staff_area/oa_staff_area.html:52
+msgid "Enter a team member's username or edX email"
+msgstr "הזן/י שם משתמש או דוא\"ל edX של חבר צוות"
 
 #: templates/legacy/staff_area/oa_staff_area.html:56
 msgid "Submit"
-msgstr "הגש"
+msgstr "הגש/י"
 
 #: templates/legacy/staff_area/oa_staff_area.html:78
 msgid "Response total"
-msgstr "סך תשובות"
+msgstr "סה\"כ תגובות"
 
 #: templates/legacy/staff_area/oa_staff_area.html:84
 msgid "Location"
@@ -1080,16 +2012,16 @@ msgstr "מיקום"
 
 #: templates/legacy/staff_area/oa_staff_area.html:90
 msgid "Learner Progress"
-msgstr "התקדמות הלומד"
+msgstr "התקדמות התלמיד"
 
 #: templates/legacy/staff_area/oa_staff_area.html:94
 #: templates/legacy/staff_area/oa_staff_area.html:117
 msgid "Problem Step"
-msgstr "שלב הבעיה "
+msgstr "שלב בבעיה"
 
 #: templates/legacy/staff_area/oa_staff_area.html:95
 msgid "Active Learners in Step"
-msgstr "לומדים פעילים בשלב"
+msgstr "תלמידים פעילים בשלב"
 
 #: templates/legacy/staff_area/oa_staff_area.html:113
 msgid "Dates"
@@ -1097,7 +2029,7 @@ msgstr "תאריכים"
 
 #: templates/legacy/staff_area/oa_staff_area.html:118
 msgid "Release Date"
-msgstr "תאריכי פרסום"
+msgstr "תאריך שחרור"
 
 #: templates/legacy/staff_area/oa_staff_area.html:131
 #: templates/legacy/staff_area/oa_staff_area.html:137
@@ -1106,11 +2038,26 @@ msgstr "לא זמין"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners.html:7
 msgid "Staff Assessment"
-msgstr "הערכת צוות"
+msgstr "הערכת צוות ההוראה"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:14
+msgid "Give this team a grade using the problem's rubric."
+msgstr "תן/י לצוות זה ציון בהתאם למטריצת הציונים של הבעיה."
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:16
 msgid "Give this learner a grade using the problem's rubric."
-msgstr "הענק ללומד זה ציון באמצעות כותרת הבעיה."
+msgstr "תן/י לתלמיד זה ציון בהתאם למטריצת הציונים של הבעיה."
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:26
+#, python-format
+msgid ""
+"\n"
+"                                        Response for: %(team_name)s with %(team_usernames)s\n"
+"                                    "
+msgstr ""
+"\n"
+"                                        תגובה עבור: %(team_name)s עם %(team_usernames)s\n"
+"                                    "
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:30
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:20
@@ -1121,22 +2068,32 @@ msgid ""
 "                                    "
 msgstr ""
 "\n"
-"                                        תשובה עבור: %(student_username)s\n"
+"                                        תגובה עבור: %(student_username)s\n"
 "                                    "
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:34
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:24
 msgid "Learner Response"
-msgstr "תשובה ללומד"
+msgstr "תגובת התלמיד"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:39
+msgid "The teams's response to the prompt above"
+msgstr "תגובת הצוות להנחיה שלמעלה"
+
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:41
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:32
+#: templates/legacy/staff_area/oa_student_info.html:57
+msgid "The learner's response to the prompt above"
+msgstr "תגובת התלמיד להנחיה שלמעלה"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:64
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:57
 msgid "Submit assessment"
-msgstr "הגש הערכה"
+msgstr "הגש/י הערכה"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:70
 msgid "Submit assessment and continue grading"
-msgstr "שלח הערכה והמשך בדירוג"
+msgstr "הגש/י הערכה והמשך/י בציונון"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_count.html:6
 #, python-format
@@ -1146,16 +2103,55 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"                %(ungraded)s זמין ו- %(in_progress)s יצא\n"
+"                %(ungraded)s זמינים ו-%(in_progress)s בהליכי בדיקה\n"
 "            "
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:7
 msgid "Override this learner's current grade using the problem's rubric."
-msgstr "מחק את ציון לומד זה באמצעות כותרת הבעיה."
+msgstr "עקוף/י את הציון הנוכחי של התלמיד בהתאם למטריצת הציונים של הבעיה."
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:9
+msgid "Override this team's current grade using the problem's rubric."
+msgstr "עקוף/י את הציון הנוכחי של הצוות בהתאם למטריצת הציונים של הבעיה."
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:27
+msgid "Team Response"
+msgstr "תגובת צוות"
+
+#: templates/legacy/staff_area/oa_staff_override_assessment.html:34
+#: templates/legacy/staff_area/oa_student_info.html:59
+msgid "The team's response to the prompt above"
+msgstr "תגובת הצוות להנחיה שלמעלה"
+
+#: templates/legacy/staff_area/oa_student_info.html:11
+#, python-format
+msgid ""
+"\n"
+"                    Viewing learner: %(learner)s\n"
+"                "
+msgstr ""
+"\n"
+"                    מציג/ה תלמיד: %(learner)s\n"
+"                "
+
+#: templates/legacy/staff_area/oa_student_info.html:15
+#, python-format
+msgid ""
+"\n"
+"                    Viewing team: %(team)s\n"
+"                "
+msgstr ""
+"\n"
+"                    מציג/ה צוות: %(team)s\n"
+"                "
 
 #: templates/legacy/staff_area/oa_student_info.html:28
 msgid "Learner's Response"
-msgstr "תשובתו של הלומד"
+msgstr "תגובת התלמיד"
+
+#: templates/legacy/staff_area/oa_student_info.html:30
+msgid "Team's Response"
+msgstr "תגובת הצוות"
 
 #: templates/legacy/staff_area/oa_student_info.html:39
 #, python-format
@@ -1165,7 +2161,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                            הגשת הלומד הוסרה בידי %(removed_by_username)s ב- %(removed_datetime)s\n"
+"                            ההגשה של התלמיד הוסרה על ידי %(removed_by_username)s בתאריך %(removed_datetime)s\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:43
@@ -1176,7 +2172,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                            הגשת התלמיד הוסרה ב- %(removed_datetime)s\n"
+"                            ההגשה של התלמיד הוסרה בתאריך %(removed_datetime)s\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:50
@@ -1187,27 +2183,36 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"הערות: %(comments)s"
+"                        הערות: %(comments)s\n"
+"                    "
 
 #: templates/legacy/staff_area/oa_student_info.html:71
 msgid "Peer Assessments for This Learner"
-msgstr "הערכות עמיתים ללומד זה"
+msgstr "הערכות עמיתים עבור תלמיד זה"
 
 #: templates/legacy/staff_area/oa_student_info.html:76
 msgid "Peer Assessments Completed by This Learner"
-msgstr "לומד זה השלים הערכות עמיתים"
+msgstr "הערכות עמיתים שהושלמו על ידי תלמיד זה"
 
 #: templates/legacy/staff_area/oa_student_info.html:81
 msgid "Learner's Self Assessment"
-msgstr "הערכה עצמית של לומד זה"
+msgstr "הערכת עצמי של התלמיד"
 
 #: templates/legacy/staff_area/oa_student_info.html:87
 msgid "Staff Assessment for This Learner"
-msgstr "הערכת צוות ללומד זה"
+msgstr "הערכת צוות ההוראה עבור תלמיד זה"
+
+#: templates/legacy/staff_area/oa_student_info.html:89
+msgid "Staff Assessment for this Team"
+msgstr "הערכת צוות ההוראה עבור צוות זה"
 
 #: templates/legacy/staff_area/oa_student_info.html:100
 msgid "Learner's Final Grade"
-msgstr "הציון הסופי של הלומד"
+msgstr "הציון הסופי של התלמיד"
+
+#: templates/legacy/staff_area/oa_student_info.html:102
+msgid "Team's Final Grade"
+msgstr "הציון הסופי של הצוות"
 
 #: templates/legacy/staff_area/oa_student_info.html:112
 #, python-format
@@ -1224,9 +2229,29 @@ msgstr ""
 msgid "Final Grade Details"
 msgstr "פרטי הציון הסופי"
 
+#: templates/legacy/staff_area/oa_student_info.html:139
+#, python-format
+msgid ""
+"\n"
+"                                        %(assessment_label)s - %(points)s point\n"
+"                                    "
+msgid_plural ""
+"\n"
+"                                        %(assessment_label)s - %(points)s points\n"
+"                                    "
+msgstr[0] ""
+"\n"
+"%(assessment_label)s - %(points)s נקודה"
+msgstr[1] ""
+"\n"
+"%(assessment_label)s - %(points)s נקודות"
+msgstr[2] ""
+"\n"
+"%(assessment_label)s - %(points)s נקודות"
+
 #: templates/legacy/staff_area/oa_student_info.html:154
 msgid "Feedback Recorded"
-msgstr "המשוב הוקלט"
+msgstr "פידבק נרשם"
 
 #: templates/legacy/staff_area/oa_student_info.html:165
 msgid "The submission is waiting for assessments."
@@ -1238,12 +2263,21 @@ msgid ""
 "receives a grade of zero unless you delete the learner's state for the "
 "problem to allow them to resubmit a response."
 msgstr ""
-"הגשת הלומד הוסרה מהערכת העמיתים. הלומד קיבל ציון אפס אלא אם כן מחקת את מצב "
-"הלומד לבעיה על מנת לאפשר לו להגיש מחדש תשובה."
+"ההגשה של התלמיד הוסרה מהערכת עמיתים. התלמיד יקבל ציון אפס אלא אם תמחוק/י את "
+"מצב התלמיד בבעיה כדי לאפשר לו להגיש תגובה מחדש."
+
+#: templates/legacy/staff_area/oa_student_info.html:172
+msgid ""
+"The team’s submission has been removed from grading. The team receives a "
+"grade of zero unless you delete the a team member’s state for the problem to"
+" allow the team to resubmit a response."
+msgstr ""
+"ההגשה של הצוות הוסרה מהציונון. הצוות יקבל ציון אפס אלא אם תמחק/י את מצב חבר "
+"צוות בבעיה כדי לאפשר להם להגיש תגובה מחדש."
 
 #: templates/legacy/staff_area/oa_student_info.html:177
 msgid "The problem has not been started."
-msgstr "הבעיה לא החלה."
+msgstr "הבעיה לא הותחלה."
 
 #: templates/legacy/staff_area/oa_student_info.html:181
 msgid "The problem has not been completed."
@@ -1251,21 +2285,55 @@ msgstr "הבעיה לא הושלמה."
 
 #: templates/legacy/staff_area/oa_student_info.html:193
 msgid "Submit Assessment Grade Override"
-msgstr "שלח מחיקת ציון הערכה"
+msgstr "הגש/י כוונון ציון הערכה"
+
+#: templates/legacy/staff_area/oa_student_info.html:195
+msgid "Submit Team Grade Override"
+msgstr "הגש/י כוונון ציון צוות"
+
+#: templates/legacy/staff_area/oa_student_info.html:204
+msgid "Unable to perform grade override"
+msgstr "לא ניתן לבצע כוונון ציון"
+
+#: templates/legacy/staff_area/oa_student_info.html:207
+msgid ""
+"Grades are frozen. Grades are automatically frozen 30 days after the course "
+"end date."
+msgstr ""
+"הציונים קפואים. הציונים מקובעים באופן אוטומטי 30 יום לאחר תאריך סיום הקורס."
+
+#: templates/legacy/staff_area/oa_student_info.html:212
+msgid ""
+"This submission has been cancelled and cannot recieve a grade. Refer to "
+"documentation for how to delete the learner’s state for this problem to "
+"allow them to resubmit."
+msgstr ""
+"ההגשה הזו בוטלה ואינה יכולה לקבל ציון. עיין/י בתיעוד כיצד למחוק את מצב "
+"התלמיד בבעיה כדי לאפשר לו להגיש מחדש."
 
 #: templates/legacy/staff_area/oa_student_info.html:230
 msgid "Remove Submission From Peer Grading"
-msgstr "הסר הגשה מדירוג עמית"
+msgstr "הסר/י הגשה מציונון עמיתים"
+
+#: templates/legacy/staff_area/oa_student_info.html:232
+msgid "Remove Team Submission from Grading"
+msgstr "הסר/י הגשת צוות מהציונון"
 
 #: templates/legacy/staff_area/oa_student_info.html:242
 msgid "Caution: This Action Cannot Be Undone"
-msgstr "זהירות: לא ניתן לבטל פעולה זו"
+msgstr "זהירות: פעולה זו אינה ניתנת לביטול"
 
 #: templates/legacy/staff_area/oa_student_info.html:244
 msgid ""
 "Removing a learner's submission cannot be undone and should be done with "
 "caution."
-msgstr "לא ניתן לבטל הסרת הגשת לומד ויש לבצעה בזהירות."
+msgstr "מחיקת הגשת תלמיד אינה ניתנת לשחזורים ויש לבצע אותה בזהירות."
+
+#: templates/legacy/staff_area/oa_student_info.html:246
+msgid ""
+"Removing a team's submission cannot be undone and should be done with "
+"caution."
+msgstr "מחיקת הגשת צוות אינה ניתנת לשחזורים ויש לבצע אותה בזהירות."
 
 #: templates/legacy/staff_area/oa_student_info.html:252
 msgid "Comments:"
@@ -1273,11 +2341,11 @@ msgstr "הערות:"
 
 #: templates/legacy/staff_area/oa_student_info.html:261
 msgid "Remove submission"
-msgstr "הסר הגשה"
+msgstr "הסר/י הגשה"
 
 #: templates/legacy/staff_area/oa_student_info.html:276
 msgid "A response was not found for this learner."
-msgstr "לא נמצאה תשובה עבור לומד זה."
+msgstr "לא נמצאה תגובה עבור תלמיד זה."
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:16
 #, python-format
@@ -1296,11 +2364,11 @@ msgstr "פרטי הערכה"
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:26
 msgid "Selected Option"
-msgstr "אפשרות שנבחרה"
+msgstr "אפשרות נבחרת"
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:27
 msgid "Feedback"
-msgstr "משוב"
+msgstr "פידבק"
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:29
 msgid "Points Possible"
@@ -1308,12 +2376,51 @@ msgstr "נקודות אפשריות"
 
 #: templates/legacy/student_training/student_training.html:18
 msgid "Learn to Assess Responses"
-msgstr "למד להעריך תשובות"
+msgstr "למד/י להעריך תגובות"
+
+#: templates/legacy/student_training/student_training.html:27
+#, python-format
+msgid ""
+"\n"
+"                      In Progress (%(current_progress_num)s of %(training_available_num)s)\n"
+"                  "
+msgstr ""
+"\n"
+"                      בתהליך (%(current_progress_num)s מתוך %(training_available_num)s)\n"
+"                  "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "available August 13th, 2014 (in 5 days and
+#. 45 minutes)"
+#: templates/legacy/student_training/student_training.html:38
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+
+#. Translators: This string displays a date to the user, then tells them the
+#. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
+#. minutes)"
+#: templates/legacy/student_training/student_training.html:45
+#, python-format, python-brace-format
+msgid ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
 
 #: templates/legacy/student_training/student_training.html:58
 #: templates/legacy/student_training/student_training.html:66
 msgid "Learning to Assess Responses"
-msgstr "למידה הערכת תשובות"
+msgstr "לימוד הערכת תגובות"
 
 #: templates/legacy/student_training/student_training.html:61
 msgid ""
@@ -1323,10 +2430,9 @@ msgid ""
 "instructor selected, you'll move to the next step. If you don't select the "
 "same options, you'll review the response and try again."
 msgstr ""
-"לפני התחלת הערכתך את תשובות עמיתיך, תלמד כיצד להשלים הערכת עמיתים באמצעות "
-"סקירת תשובות שהעריכו כבר המדריכים. במידה ותבחר את אותן האפשרויות עבור "
-"התשובות שבחר המדריך, תוכל לעבור לשלב הבא. במידה ולא, תידרש לסקור את התשובות "
-"ולנסות שוב.   "
+"לפני שתתחיל/י להעריך את תגובות עמיתיך, תלמד/י כיצד להשלים הערכות עמיתים על "
+"ידי עיון בתגובות שהמדריכים כבר העריכו. אם תבחר/י את אותן אפשרויות לתגובה כפי"
+" שהמדריך בחר, תעבור/י לשלב הבא. אם לא, תסקור/י את התגובה ונסה/י שוב."
 
 #: templates/legacy/student_training/student_training.html:69
 msgid ""
@@ -1334,29 +2440,29 @@ msgid ""
 "Review the response and consider why the instructor may have assessed it "
 "differently. Then, try the assessment again."
 msgstr ""
-"הערכתך תשובה זו שונה מזו של המדריך. עבור על התשובה וחשוב מדוע המדריך עשוי "
-"היה להעריך את התשובה באופן שונה. לאחר מכן, נסה להשלים שוב את המשימה.  "
+"הערכתך שונה מהערכת המדריך לתגובה זו. עיין/י בתגובה ושקול/י מדוע המדריך העריך"
+" אותה בצורה שונה. לאחר מכן, נסה/י שוב לבצע את ההערכה."
 
 #: templates/legacy/student_training/student_training.html:76
 msgid "The response to the prompt above:"
-msgstr "התגובה להנחיה הנ\"ל:"
+msgstr "התגובה להנחיה שלמעלה:"
 
 #: templates/legacy/student_training/student_training.html:98
 msgid "Selected Options Agree"
-msgstr "אפשרויות מוסכמות שנבחרו "
+msgstr "האפשרויות הנבחרות תואמות"
 
 #: templates/legacy/student_training/student_training.html:101
 msgid "The option you selected is the option that the instructor selected."
-msgstr "האפשרות שבחרת היא האפשרות שבחר המדריך."
+msgstr "האופציה שבחרת היא אותה אופציה שהמדריך בחר."
 
 #: templates/legacy/student_training/student_training.html:105
 msgid "Selected Options Differ"
-msgstr "אפשרויות אחרות שנבחרו"
+msgstr "האפשרויות הנבחרות שונות"
 
 #: templates/legacy/student_training/student_training.html:108
 msgid ""
 "The option you selected is not the option that the instructor selected."
-msgstr "האפשרות שבחרת אינה האפשרות שבחר המדריך."
+msgstr "האופציה שבחרת אינה אותה האופציה שהמדריך בחר."
 
 #: templates/legacy/student_training/student_training.html:144
 msgid "We could not check your assessment"
@@ -1364,7 +2470,7 @@ msgstr "לא הצלחנו לבדוק את הערכתך"
 
 #: templates/legacy/student_training/student_training.html:151
 msgid "Compare your selections with the instructor's selections"
-msgstr "השווה את בחירתך עם זו של המדריך."
+msgstr "השווה/י בין הבחירות שלך לבין הבחירות של המדריך"
 
 #: templates/legacy/student_training/student_training_closed.html:29
 msgid ""
@@ -1372,20 +2478,24 @@ msgid ""
 "longer continue with this assignment, and you will receive a grade of "
 "Incomplete."
 msgstr ""
-"תאריך היעד עבור שלב זה עבר. שלב זה סגור כעת. אינך יכול יותר להמשיך עם משימה "
-"זו ותקבל ציון חלקי."
+"תאריך היעד לשלב זה עבר. השלב כעת סגור. אינך יכול/ה להמשיך במשימה זו, ותקבל/י"
+" ציון 'לא הושלם'."
 
 #: templates/legacy/student_training/student_training_error.html:18
 msgid "Error Loading Learner Training Examples"
-msgstr "שגיאה בעת טעינת דוגמאות לתרגול לומד"
+msgstr "שגיאה בטעינת דוגמאות לאימון התלמיד"
 
 #: templates/legacy/student_training/student_training_error.html:21
 msgid "The Learner Training Step of this assignment could not be loaded."
-msgstr "לא ניתן היה לטעון את שלב תרגול הלומד במשימה זו."
+msgstr "לא ניתן לטעון את שלב האימון לתלמיד במשימה זו."
+
+#: templates/openassessmentblock/base.html:69
+msgid "Loading Open Response Assessment..."
+msgstr "טוען/ת הערכת תגובה פתוחה..."
 
 #: xblock/grade_mixin.py:78 xblock/leaderboard_mixin.py:61
 msgid "An unexpected error occurred."
-msgstr "אירעה שגיאה לא צפויה."
+msgstr "אירעה שגיאה בלתי צפויה."
 
 #: xblock/grade_mixin.py:180
 msgid "Peer Assessment"
@@ -1393,19 +2503,19 @@ msgstr "הערכת עמיתים"
 
 #: xblock/grade_mixin.py:182
 msgid "Self Assessment"
-msgstr "הערכה עצמית"
+msgstr "הערכת עצמי"
 
 #: xblock/grade_mixin.py:222
 msgid "Assessment feedback could not be saved."
-msgstr "לא ניתן היה לשמור משוב על ההערכה."
+msgstr "לא הצלחנו לשמור את הפידבק על ההערכה."
 
 #: xblock/grade_mixin.py:233
 msgid "Feedback saved."
-msgstr "משוב נשמר."
+msgstr "הפידבק נשמר."
 
 #: xblock/grade_mixin.py:370 xblock/grade_mixin.py:535
 msgid "Staff Comments"
-msgstr "תגובות הצוות"
+msgstr "הערות צוות ההוראה"
 
 #: xblock/grade_mixin.py:383 xblock/grade_mixin.py:542
 #, python-brace-format
@@ -1414,71 +2524,186 @@ msgstr "עמית {peer_index}"
 
 #: xblock/grade_mixin.py:384
 msgid "Peer Comments"
-msgstr "תגובות עמיתים"
+msgstr "הערות עמיתים"
 
 #: xblock/grade_mixin.py:394
 msgid "Self Assessment Grade"
-msgstr "ציון הערכה עצמית"
+msgstr "ציון הערכת עצמי"
 
 #: xblock/grade_mixin.py:394
 msgid "Your Self Assessment"
-msgstr "הערכתך העצמית"
+msgstr "הערכת העצמי שלך"
 
 #: xblock/grade_mixin.py:395 xblock/grade_mixin.py:554
 msgid "Your Comments"
-msgstr "תגובותיך"
+msgstr "הערותיך"
+
+#: xblock/grade_mixin.py:429
+msgid "Peer Mean Grade"
+msgstr "ממוצע ציוני העמיתים"
 
 #: xblock/grade_mixin.py:430
 msgid "Peer Median Grade"
-msgstr "דירוג חציוני של עמית"
+msgstr "חציוני ציוני העמיתים"
 
 #: xblock/grade_mixin.py:508
 msgid "Waiting for peer reviews"
-msgstr "ממתין לסקירות עמית"
+msgstr "ממתין/ה לבדיקות עמיתים"
+
+#: xblock/grade_mixin.py:677
+msgid "The grade for this problem is determined by your Staff Grade."
+msgstr "הציון לבעיה זו נקבע על פי ציון צוות ההוראה שלך."
+
+#: xblock/grade_mixin.py:681
+msgid "The grade for this problem is determined by your Self Assessment."
+msgstr "הציון לבעיה זו נקבע על פי הערכת העצמי שלך."
+
+#: xblock/grade_mixin.py:687
+#, python-brace-format
+msgid ""
+"You have successfully completed this problem and received a "
+"{earned_points}/{total_points}."
+msgstr "השגת בהצלחה את הבעיה וקיבלת {earned_points}/{total_points}."
+
+#: xblock/grade_mixin.py:695
+msgid ""
+"You have not yet received all necessary peer reviews to determine your final"
+" grade."
+msgstr "עדיין לא קיבלת את כל בדיקות העמיתים הנדרשות לקביעת הציון הסופי שלך."
+
+#: xblock/grade_mixin.py:710
+msgid ""
+"The grade for this problem is determined by the median score of your Peer "
+"Assessments."
+msgstr "הציון לבעיה זו נקבע על פי הציון החציוני של הערכות העמיתים שלך."
+
+#: xblock/grade_mixin.py:715
+msgid ""
+"The grade for this problem is determined by the mean score of your Peer "
+"Assessments."
+msgstr "הציון לבעיה זו נקבע על פי הממוצע של הערכות העמיתים שלך."
+
+#: xblock/openassesment_template_mixin.py:66
+msgid "Peer Assessment Only"
+msgstr "הערכת עמיתים בלבד"
+
+#: xblock/openassesment_template_mixin.py:67
+msgid "Self Assessment Only"
+msgstr "הערכת עצמי בלבד"
+
+#: xblock/openassesment_template_mixin.py:68
+msgid "Staff Assessment Only"
+msgstr "הערכת צוות ההוראה בלבד"
+
+#: xblock/openassesment_template_mixin.py:69
+msgid "Self Assessment to Peer Assessment"
+msgstr "מעבר מהערכת עצמי להערכת עמיתים"
+
+#: xblock/openassesment_template_mixin.py:70
+msgid "Self Assessment to Staff Assessment"
+msgstr "מעבר מהערכת עצמי להערכת צוות ההוראה"
+
+#: xblock/openassessmentblock.py:1365
+msgid "You can't reset your submission."
+msgstr "לא ניתן לאפס את ההגשה שלך."
+
+#: xblock/openassessmentblock.py:1378
+msgid "The user does not exist."
+msgstr "המשתמש אינו קיים."
+
+#: xblock/openassessmentblock.py:1381
+msgid "There is no submission to reset."
+msgstr "אין הגשה לאיפוס."
+
+#: xblock/openassessmentblock.py:1383
+msgid "Submission reset successfully."
+msgstr "ההגשה אופסה בהצלחה."
+
+#: xblock/rubric_reuse_mixin.py:62
+msgid "You must specify a block id from which to copy a rubric."
+msgstr "עליך לציין מזהה בלוק ממנו יש להעתיק מטריצת ציונים."
+
+#: xblock/rubric_reuse_mixin.py:66
+msgid "Invalid block id."
+msgstr "מזהה בלוק לא חוקי."
+
+#: xblock/rubric_reuse_mixin.py:72
+#, python-brace-format
+msgid ""
+"No Open Response Assessment found in {course_id} with block id {block_id}"
+msgstr "לא נמצא/ת הערכת תגובה פתוחה ב-{course_id} עם מזהה בלוק {block_id}"
 
 #: xblock/staff_area_mixin.py:42
 msgid "You do not have permission to schedule training"
-msgstr "אין לך את ההרשאות הדרושות על מנת לקבוע הכשרה."
+msgstr "אין לך הרשאה לקבוע מועד לאימון"
 
 #: xblock/staff_area_mixin.py:43
 msgid "You do not have permission to reschedule tasks."
-msgstr "אין לך את ההרשאות הדרושות על מנת לקבוע מחדש משימות."
+msgstr "אין לך הרשאה לשנות את מועדי המשימות."
 
 #: xblock/staff_area_mixin.py:69
 msgid "You do not have permission to access the ORA staff area"
-msgstr "אין לך הרשאה לגשת לאזור הצוות של ORA"
+msgstr "אין לך הרשאה לגשת לאזור צוות ההוראה של ORA"
 
 #: xblock/staff_area_mixin.py:70
 msgid "You do not have permission to access ORA learner information."
-msgstr "אין לך הרשאה לגשת לפרטי הלומד של ORA."
+msgstr "אין לך הרשאה לגשת למידע תלמידי ORA."
 
 #: xblock/staff_area_mixin.py:71
 msgid "You do not have permission to access ORA staff grading."
-msgstr "אין לך הרשאה לגשת לדירוג הצוות של ORA."
+msgstr "אין לך הרשאה לגשת לציונון צוות ההוראה של ORA."
+
+#: xblock/staff_area_mixin.py:241
+msgid "Pending"
+msgstr "ממתין/ה"
+
+#: xblock/staff_area_mixin.py:242
+msgid "Complete/Overwritten"
+msgstr "הושלם/עודכן"
+
+#: xblock/staff_area_mixin.py:245
+msgid "Not applicable"
+msgstr "לא חל"
+
+#: xblock/staff_area_mixin.py:246
+msgid "Not submitted"
+msgstr "לא הוגש"
+
+#: xblock/staff_area_mixin.py:247
+msgid "Submitted"
+msgstr "הוגש"
 
 #: xblock/staff_area_mixin.py:341
 msgid "Error getting learner information."
-msgstr "שגיאה בעת השגת פרטי הלומד."
+msgstr "שגיאה בקבלת מידע על התלמיד."
 
 #: xblock/staff_area_mixin.py:384
 msgid "Error loading the checked out learner response."
-msgstr "שגיאה בעת טעינת תשובת הלומד שיצא."
+msgstr "שגיאה בטעינת תגובת התלמיד שנבדקה."
 
 #: xblock/staff_area_mixin.py:385
 msgid "No other learner responses are available for grading at this time."
-msgstr "אין תשובות לומד זמינות אחרות לדירוג כעת."
+msgstr "אין תגובות תלמידים נוספות זמינות לציונון כרגע."
 
 #: xblock/staff_area_mixin.py:387
 msgid "Error getting staff grade information."
-msgstr "שגיאה בעת השגת פרטי דירוג הצוות."
+msgstr "שגיאה בקבלת מידע על ציון צוות ההוראה."
 
 #: xblock/staff_area_mixin.py:408
 msgid "Error getting staff grade ungraded and checked out counts."
-msgstr "שגיאה בהשגת ביטול דירוג של דירוג הצוות וספירות שהסתיימו."
+msgstr "שגיאה בקבלת מספרי הציונים הלא מעריכים והמצויים בבדיקה מצוות ההוראה."
 
 #: xblock/staff_area_mixin.py:703
 msgid "Please enter valid reason to remove the submission."
-msgstr "אנא רשום סיבה תקפה לביטול ההגשה."
+msgstr "אנא הזן סיבה תקינה להסרת ההגשה."
+
+#: xblock/staff_area_mixin.py:714
+msgid "Submission not found"
+msgstr "לא נמצאה הגשה"
+
+#: xblock/staff_area_mixin.py:725
+msgid "Submission for team assignment has no associated team submission"
+msgstr "למשימה המבוצעת על ידי צוות אין הגשת צוות מקושרת"
 
 #: xblock/staff_area_mixin.py:754
 msgid ""
@@ -1486,33 +2711,56 @@ msgid ""
 "receives a grade of zero unless you delete the learner's state for the "
 "problem to allow them to resubmit a response."
 msgstr ""
-"הגשת הלומד הוסרה מהערכת העמיתים. הלומד קיבל ציון אפס אלא אם כן מחקת את מצב "
-"התלמיד לבעיה על מנת לאפשר לו להגיש תשובה מחדש."
+"ההגשה של התלמיד הוסרה מהערכת עמיתים. התלמיד יקבל ציון אפס אלא אם תמחוק/י את "
+"מצב התלמיד בבעיה כדי לאפשר לו להגיש תגובה מחדש."
 
-#: xblock/studio_mixin.py:246 xblock/studio_mixin.py:258
+#: xblock/staff_area_mixin.py:789
+msgid ""
+"The team’s submission has been removed from grading. The team receives a "
+"grade of zero unless you delete a team member’s state for the problem to "
+"allow the team to resubmit a response."
+msgstr ""
+"ההגשה של הצוות הוסרה מהציונון. הצוות יקבל ציון אפס אלא אם תמחק/י את מצב חבר "
+"צוות בבעיה כדי לאפשר להם להגיש תגובה מחדש."
+
+#: xblock/studio_mixin.py:247 xblock/studio_mixin.py:259
 msgid "Error updating XBlock configuration"
-msgstr "שגיאה בעדכון תצורת XBLOCK"
+msgstr "שגיאה בעדכון הגדרות XBlock"
 
-#: xblock/studio_mixin.py:294
+#: xblock/studio_mixin.py:264
+msgid "Error: Text Response and File Upload Response cannot both be disabled"
+msgstr "שגיאה: תגובת טקסט ותגובת העלאת קובץ לא יכולים להיות מושבתים בשניהם"
+
+#: xblock/studio_mixin.py:268
+msgid ""
+"Error: When Text Response is disabled, File Upload Response must be Required"
+msgstr "שגיאה: כאשר תגובת טקסט מושבתת, תגובת העלאת קובץ חייבת להיות חובה"
+
+#: xblock/studio_mixin.py:271
+msgid ""
+"Error: When File Upload Response is disabled, Text Response must be Required"
+msgstr "שגיאה: כאשר תגובת העלאת קובץ מושבתת, תגובת טקסט חייבת להיות חובה"
+
+#: xblock/studio_mixin.py:295
 #, python-brace-format
 msgid "Validation error: {error}"
 msgstr "שגיאת אימות: {error}"
 
-#: xblock/studio_mixin.py:328
+#: xblock/studio_mixin.py:329
 msgid "Successfully updated OpenAssessment XBlock"
-msgstr "OpenAssessment XBlock עודכן בהצלחה"
+msgstr "עודכן/ה בהצלחה XBlock של OpenAssessment"
 
 #: xblock/utils/data_conversion.py:315
 msgid "You must provide options selected in the assessment."
-msgstr "עליך לספק אפשרויות שנבחרו במשימה."
+msgstr "עליך לספק את האפשרויות שנבחרו בהערכה."
 
 #: xblock/utils/data_conversion.py:318
 msgid "You must provide overall feedback in the assessment."
-msgstr "עליך לספק אפשרויות שנבחרו במשימה."
+msgstr "עליך לספק פידבק כללי בהערכה."
 
 #: xblock/utils/data_conversion.py:321
 msgid "You must provide feedback for criteria in the assessment."
-msgstr "עליך לספק משוב עבור הקריטריונים בהערכה."
+msgstr "עליך לספק פידבק עבור הקריטריונים בהערכה."
 
 #: xblock/utils/resolve_dates.py:52
 #, python-brace-format
@@ -1520,13 +2768,12 @@ msgid ""
 "'{date}' is an invalid date format. Make sure the date is formatted as YYYY-"
 "MM-DDTHH:MM:SS."
 msgstr ""
-"'{date}' הוא תבנית תאריך שאינה תקפה. ודא כי התאריך מובנה כדלקמן YYYY-MM-"
-"DDTHH:MM:SS."
+"'{date}' הוא פורמט תאריך לא חוקי. ודא שהתאריך מפורמט כ-YYYY-MM-DDTHH:MM:SS."
 
 #: xblock/utils/resolve_dates.py:57
 #, python-brace-format
 msgid "'{date}' must be a date string or datetime"
-msgstr "'{date}' חייב להיות מחרוזת תאריך או תאריך ושעה"
+msgstr "'{date}' חייב להיות מחרוזת תאריך או datetime"
 
 #: xblock/utils/resolve_dates.py:210
 #, python-brace-format
@@ -1534,8 +2781,8 @@ msgid ""
 "This step's start date '{start}' cannot be earlier than the previous step's "
 "start date '{prev}'."
 msgstr ""
-"תאריך התחלת שלב זה '{start}' אינו יכול להיות מוקדם יותר מתאריך ההתחלה של "
-"השלב הקודם  '{prev}'."
+"תאריך ההתחלה '{start}' של שלב זה לא יכול להיות מוקדם יותר מתאריך ההתחלה "
+"'{prev}' של השלב הקודם."
 
 #: xblock/utils/resolve_dates.py:218
 #, python-brace-format
@@ -1543,103 +2790,113 @@ msgid ""
 "This step's due date '{due}' cannot be later than the next step's due date "
 "'{prev}'."
 msgstr ""
-"תאריך היעד של שלב זה '{due}' אינו יכול להיות מאוחר יותר מתאריך היעד של השלב "
-"הבא '{prev}'."
+"תאריך היעד '{due}' של שלב זה לא יכול להיות מאוחר יותר מתאריך היעד '{prev}' "
+"של השלב הבא."
 
 #: xblock/utils/resolve_dates.py:234
 #, python-brace-format
 msgid "The start date '{start}' cannot be later than the due date '{due}'"
-msgstr ""
-"תאריך ההתחלה '{start}' אינו יכול להיות מאוחר יותר מתאריך הסיום '{due}'."
+msgstr "תאריך ההתחלה '{start}' לא יכול להיות מאוחר יותר מתאריך היעד '{due}'"
 
 #: xblock/utils/validation.py:120
 msgid "This problem must include at least one assessment."
-msgstr "בעיה זו צריכה לכלול לפחות הערכה אחת."
+msgstr "הבעיה זו חייבת לכלול לפחות הערכה אחת."
 
 #: xblock/utils/validation.py:124
 msgid "The assessment order you selected is invalid."
-msgstr "פקודת ההערכה שבחרת אינה תקפה."
+msgstr "סדר ההערכה שבחרת אינו חוקי."
 
 #: xblock/utils/validation.py:134
 msgid "In peer assessment, the \"Must Grade\" value must be a positive integer."
-msgstr "בהערכת עמיתים, ערך ה\"חובה לדרג\" חייב להיות מספר שלם חיובי."
+msgstr "בהערכת עמיתים, הערך של \"חייב לקבל ציון\" חייב להיות מספר שלם חיובי."
 
 #: xblock/utils/validation.py:137
 msgid "In peer assessment, the \"Graded By\" value must be a positive integer."
-msgstr "בהערכת עמיתים, ערך \"דורג בידי\" חייב להיות מספר שלם חיובי."
+msgstr "בהערכת עמיתים, הערך של \"מוקרן על ידי\" חייב להיות מספר שלם חיובי."
 
 #: xblock/utils/validation.py:141
 msgid ""
 "In peer assessment, the \"Must Grade\" value must be greater than or equal "
 "to the \"Graded By\" value."
 msgstr ""
-"בהערכת עמיתים, ערך שדה \"חובה לדרג\" חייב להיות גדול או שווה לערך \"דורג "
-"בידי\". "
+"בהערכת עמיתים, הערך של \"חייב לקבל ציון\" חייב להיות גדול או שווה ל\"מוקרן "
+"על ידי\"."
 
 #: xblock/utils/validation.py:150
 msgid "You must provide at least one example response for learner training."
-msgstr "עליך לספק לפחות דוגמה אחת לתשובה עבור תרגול הלומד."
+msgstr "עליך לספק לפחות תגובה לדוגמה לאימון התלמיד."
 
 #: xblock/utils/validation.py:153
 msgid "Each example response for learner training must be unique."
-msgstr "כל דוגמה לתשובה עבור תרגול הלומד חייבת להיות ייחודית."
+msgstr "כל תגובה לדוגמה לאימון התלמיד חייבת להיות ייחודית."
 
 #: xblock/utils/validation.py:160
 msgid "The \"required\" value must be true if staff assessment is the only step."
-msgstr "ערך ה\"דרוש\" חייב להיות נכון אם הערכת הצוות היא השלב היחיד."
+msgstr "ערך \"חובה\" חייב להיות true אם הערכת צוות ההוראה היא השלב היחידי."
 
 #: xblock/utils/validation.py:164
 msgid ""
 "The number of assessments cannot be changed after the problem has been "
 "released."
-msgstr "לא ניתן לשנות את מספר ההערכות לאחר פרסום הבעיה. "
+msgstr "לא ניתן לשנות את מספר ההערכות לאחר שחרור הבעיה."
 
 #: xblock/utils/validation.py:169
 msgid ""
 "The assessment type cannot be changed after the problem has been released."
-msgstr "לא ניתן לשנות את סוג ההערכה לאחר פרסום הבעיה."
+msgstr "לא ניתן לשנות את סוג ההערכה לאחר שחרור הבעיה."
+
+#: xblock/utils/validation.py:176
+msgid ""
+"The grading strategy for peer assessments cannot be changed after the "
+"problem has been released."
+msgstr ""
+"לא ניתן לשנות את אסטרטגיית הציונון עבור הערכות העמיתים לאחר שחרור הבעיה."
 
 #: xblock/utils/validation.py:200
 msgid "This rubric definition is not valid."
-msgstr "הגדרת כותרת זו אינה תקפה."
+msgstr "הגדרת מטריצת הציונים אינה חוקית."
+
+#: xblock/utils/validation.py:203
+msgid "You must provide at least one prompt."
+msgstr "עליך לספק לפחות הנחיה אחת."
 
 #: xblock/utils/validation.py:209
 #, python-brace-format
 msgid "Options in '{criterion}' have duplicate name(s): {duplicates}"
-msgstr "ב-'{criterion}' ישנן כפילויות בשמ(ות) האפשרויות : {duplicates}"
+msgstr "לאופציות ב'{criterion}' יש שמות כפולים: {duplicates}"
 
 #: xblock/utils/validation.py:217
 msgid "Criteria with no options must require written feedback."
-msgstr "קריטריונים ללא אפשרויות מחייבים משוב כתוב. "
+msgstr "קריטריונים ללא אפשרויות חייבים לדרוש פידבק כתוב."
 
 #: xblock/utils/validation.py:226
 msgid "Prompts cannot be created or deleted after a problem is released."
-msgstr "לא ניתן ליצור או למחוק הנחיות לאחר שהופצה בעיה."
+msgstr "לא ניתן ליצור או למחוק הנחיות לאחר שחרור הבעיה."
 
 #: xblock/utils/validation.py:230
 msgid "The number of criteria cannot be changed after a problem is released."
-msgstr "לא ניתן לשנות את מספר הקריטריונים לאחר פרסום הבעיה. "
+msgstr "לא ניתן לשנות את מספר הקריטריונים לאחר שחרור הבעיה."
 
 #: xblock/utils/validation.py:243
 msgid "Criteria names cannot be changed after a problem is released"
-msgstr "לא ניתן לשנות את שם הקריטריונים לאחר פרסום הבעיה."
+msgstr "שמות הקריטריונים אינם ניתנים לשינוי לאחר שחרור הבעיה"
 
 #: xblock/utils/validation.py:248
 msgid "The number of options cannot be changed after a problem is released."
-msgstr "לא ניתן לשנות את מספר האפשרויות לאחר פרסום הבעיה. "
+msgstr "לא ניתן לשנות את מספר האפשרויות לאחר שחרור הבעיה."
 
 #: xblock/utils/validation.py:253
 msgid "Point values cannot be changed after a problem is released."
-msgstr "לא ניתן לשנות את ערך הנקודות לאחר פרסום הבעיה. "
+msgstr "ערכי הנקודות אינם ניתנים לשינוי לאחר שחרור הבעיה."
 
 #: xblock/utils/validation.py:304
 msgid "Learner training must have at least one training example."
-msgstr "לתרגול הלומד חייבת להיות לפחות דוגמת תרגול אחת"
+msgstr "לאימון התלמיד חייבת להיות לפחות דוגמת אימון אחת."
 
 #: xblock/utils/validation.py:369
 msgid "Leaderboard number is invalid."
-msgstr "מספר לוח התוצאות אינו חוקי."
+msgstr "מספר הדירוג אינו חוקי."
 
 #: xblock/utils/validation.py:392
 msgid "The submission format is invalid."
-msgstr "פורמט ההגשה אינו חוקי"
+msgstr "פורמט ההגשה אינו תקין."
