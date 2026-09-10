@@ -4,31 +4,31 @@ msgstr ""
 "Project-Id-Version: edx-ora2\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2026-05-05 00:52+0000\n"
-"PO-Revision-Date: 2026-09-10 11:32+0000\n"
+"PO-Revision-Date: 2026-09-10 12:44+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: fa\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #: assessment/api/student_training.py:179
 msgid "Could not parse serialized rubric"
-msgstr "سرفصل سریالی تحلیل نشد"
+msgstr "Не вдалося розпізнати серіалізовану рубрику"
 
 #: assessment/api/student_training.py:191
 msgid ""
 "If your assignment includes a learner training step, the rubric must have at"
 " least one criterion, and that criterion must have at least one option."
 msgstr ""
-"اگر تکلیف شما شامل یک مرحله از آموزش فراگیرنده باشد، سرفصل باید حداقل یک "
-"معیار و آن معیار حداقل یک گزینه داشته باشد."
+"Якщо ваше завдання містить етап навчання учня, рубрика має містити "
+"щонайменше один критерій, а цей критерій – щонайменше одну опцію."
 
 #: assessment/api/student_training.py:203
 #, python-brace-format
 msgid "Example {example_number} has a validation error: {error}"
-msgstr "مثال {example_number} دارای یک خطای اعتبارسنجی است: {error}"
+msgstr "Приклад {example_number} має помилку перевірки: {error}"
 
 #: assessment/api/student_training.py:217
 #, python-brace-format
@@ -36,140 +36,140 @@ msgid ""
 "Example {example_number} has an invalid option for \"{criterion_name}\": "
 "\"{option_name}\""
 msgstr ""
-"مثال {example_number} یک گزینه نامعتبر برای  \"{criterion_name}\": "
-"\"{option_name}\" دارد "
+"Приклад {example_number} містить недопустиму опцію для \"{criterion_name}\":"
+" \"{option_name}\""
 
 #: assessment/api/student_training.py:227
 #, python-brace-format
 msgid "Example {example_number} has an extra option for \"{criterion_name}\""
-msgstr "مثال {example_number} یک گزینه اضافی برای  \"{criterion_name}\"  دارد"
+msgstr "Приклад {example_number} має зайву опцію для \"{criterion_name}\""
 
 #: assessment/api/student_training.py:240
 #, python-brace-format
 msgid "Example {example_number} is missing an option for \"{criterion_name}\""
-msgstr "نمونه {example_number} گزینه‌ای برای  \"{criterion_name}\" وجود ندارد"
+msgstr "Приклад {example_number} не містить опції для \"{criterion_name}\""
 
 #: assessment/score_type_constants.py:21 xblock/grade_mixin.py:547
 msgid "Peer"
-msgstr "همتا"
+msgstr "Однолітник"
 
 #: assessment/score_type_constants.py:22
 msgid "Self"
-msgstr "خود"
+msgstr "Себе"
 
 #: assessment/score_type_constants.py:23
 msgid "Staff"
-msgstr "کارکنان"
+msgstr "Персонал"
 
 #: assessment/score_type_constants.py:25
 msgid "Unknown"
-msgstr "ناشناخته"
+msgstr "Невідомо"
 
 #: data.py:584
 #, python-brace-format
 msgid "Criterion {number}: {label}"
-msgstr "معیار {number} : {label}"
+msgstr "Критерій {number}: {label}"
 
 #: data.py:586
 #, python-brace-format
 msgid "Points {number}"
-msgstr "امتیاز {number}"
+msgstr "Бали {number}"
 
 #: data.py:587
 #, python-brace-format
 msgid "Median Score {number}"
-msgstr "میانگین امتیاز {number}"
+msgstr "Медіанна оцінка {number}"
 
 #: data.py:588
 #, python-brace-format
 msgid "Feedback {number}"
-msgstr "بازخورد {number}"
+msgstr "Відгук {number}"
 
 #: data.py:917
 msgid "Item ID"
-msgstr "شناسۀ مورد"
+msgstr "ID елемента"
 
 #: data.py:918
 msgid "Submission ID"
-msgstr "شناسۀ ثبت"
+msgstr "ID подання"
 
 #: data.py:930
 msgid "Anonymized Student ID"
-msgstr "شناسۀ دانشجویی ناشناس"
+msgstr "Анонімізований ID студента"
 
 #: data.py:961
 msgid "Assessment ID"
-msgstr "شناسۀ ارزیابی"
+msgstr "ID оцінювання"
 
 #: data.py:962
 msgid "Assessment Scored Date"
-msgstr "تاریخ امتیازدهی ارزیابی"
+msgstr "Дата оцінювання"
 
 #: data.py:963
 msgid "Assessment Scored Time"
-msgstr "زمان امتیازدهی ارزیابی"
+msgstr "Час оцінювання"
 
 #: data.py:964
 msgid "Assessment Type"
-msgstr "نوع ارزیابی"
+msgstr "Тип оцінювання"
 
 #: data.py:965
 msgid "Anonymous Scorer Id"
-msgstr "شناسۀ مصحح ناشناس"
+msgstr "Анонімний ID оцінювача"
 
 #: data.py:967
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:59
 msgid "Overall Feedback"
-msgstr "بازخورد کلی"
+msgstr "Загальний відгук"
 
 #: data.py:968
 msgid "Assessment Score Earned"
-msgstr "امتیاز ارزیابی کسب شد"
+msgstr "Отримані бали оцінювання"
 
 #: data.py:969
 msgid "Assessment Scored At"
-msgstr "ارزیابی با امتیاز"
+msgstr "Оцінено о"
 
 #: data.py:970
 msgid "Date/Time Final Score Given"
-msgstr "تاریخ/زمان امتیاز نهایی داده شده‌است"
+msgstr "Дата/час остаточного балу"
 
 #: data.py:971
 msgid "Final Score Earned"
-msgstr "امتیاز نهایی کسب‌شده"
+msgstr "Отримані остаточні бали"
 
 #: data.py:972
 msgid "Final Score Possible"
-msgstr "امتیاز نهایی احتمالی"
+msgstr "Максимально можливі бали"
 
 #: data.py:973
 msgid "Feedback Statements Selected"
-msgstr "اظهارات بازخورد انتخاب شد"
+msgstr "Вибрані відгуки"
 
 #: data.py:974
 msgid "Feedback on Assessment"
-msgstr "بازخورد دربارۀ ارزیابی"
+msgstr "Відгуки про оцінювання"
 
 #: data.py:976
 msgid "Response Files"
-msgstr "فایل های پاسخ"
+msgstr "Файли відповіді"
 
 #: data.py:1367
 msgid "No description provided."
-msgstr "هیچ توضیحی ارائه نشده است."
+msgstr "Опис не надано."
 
 #: data.py:1626 templates/legacy/edit/oa_edit_criterion.html:54
 #: xblock/studio_mixin.py:58
 msgid "None"
-msgstr "هیچ یک"
+msgstr "Немає"
 
 #: templates/legacy/edit/oa_edit.html:28
 msgid "Save"
-msgstr "ذخیره کردن"
+msgstr "Зберегти"
 
 #: templates/legacy/edit/oa_edit.html:32
 msgid "Cancel"
-msgstr "لغو کردن"
+msgstr "Скасувати"
 
 #: templates/legacy/edit/oa_edit_assessment_steps.html:6
 msgid ""
@@ -178,57 +178,54 @@ msgid ""
 " can be enabled, disable, and ordered for a flexible set of pedagogical "
 "needs."
 msgstr ""
-"ارزیابی‌های پاسخ باز به شما این امکان را می‌دهد که مراحل تک یا چندگانه را در"
-" یک توالی ارزیابی پاسخ باز مبتنی بر سرفصل پیکربندی کنید. مراحل موجود زیر را "
-"می‌توان برای مجموعه‌ای منعطف از نیازهای آموزشی فعال، غیرفعال و سفارشی شوند."
+"Відкриті оцінювання відповідей дозволяють налаштовувати один або декілька "
+"етапів оцінювання відповідей на основі рубрики. Нижченаведені етапи можна "
+"увімкнути, вимкнути або впорядкувати відповідно до педагогічних потреб."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:5
 msgid "Display Name "
-msgstr "نام نمایشی "
+msgstr "Відображуване ім’я "
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:8
 msgid "The display name for this component."
-msgstr "نام نمایشی این مؤلفه"
+msgstr "Відображуване ім’я для цього компонента."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:12
 msgid "Text Response"
-msgstr "پاسخ متنی"
+msgstr "Текстова відповідь"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:20
 msgid ""
 "Specify whether learners must include a text based response to this "
 "problem's prompt."
-msgstr ""
-"مشخص کنید که آیا فراگیران باید پاسخی مبتنی بر متن به درخواست این مساله ارائه"
-" دهند یا خیر."
+msgstr "Вкажіть, чи повинні учні надати текстову відповідь на запит завдання."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:25
 msgid "Response Editor"
-msgstr "ویرایشگر پاسخ"
+msgstr "Редактор відповідей"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:33
 msgid ""
 "Select which editor learners will use to include a text based response to "
 "this problem's prompt."
 msgstr ""
-"انتخاب کنید که فراگیران از کدام ویرایشگر برای درج پاسخ متنی به درخواست این "
-"مساله استفاده کنند."
+"Виберіть редактор, який учні використовуватимуть для написання текстової "
+"відповіді на запит завдання."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:38
 msgid "File Uploads Response"
-msgstr "بارگذاری فایل پاسخ"
+msgstr "Відповідь з завантаженням файлів"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:46
 msgid ""
 "Specify whether learners are able to upload files as a part of their "
 "response."
 msgstr ""
-"مشخص کنید که آیا فراگیران قادر به بارگذاری پوشه به‌عنوان بخشی از پاسخ خود "
-"هستند یا خیر."
+"Вкажіть, чи можуть учні завантажувати файли як частину своєї відповіді."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:50
 msgid "Allow Multiple Files"
-msgstr "امکان بارگذاری چند فایل"
+msgstr "Дозволити кілька файлів"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:52
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:93
@@ -237,7 +234,7 @@ msgstr "امکان بارگذاری چند فایل"
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:169
 #: templates/legacy/edit/oa_edit_peer_assessment.html:45
 msgid "False"
-msgstr "نادرست"
+msgstr "Ні"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:53
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:94
@@ -246,7 +243,7 @@ msgstr "نادرست"
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:170
 #: templates/legacy/edit/oa_edit_peer_assessment.html:46
 msgid "True"
-msgstr "درست"
+msgstr "Так"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:56
 msgid ""
@@ -254,72 +251,70 @@ msgid ""
 "if File Uploads Response is set to None. This is automatically set to True "
 "for Team Assignments. "
 msgstr ""
-"مشخص کنید که آیا زبان آموزان می توانند بیش از یک فایل آپلود کنند یا خیر. اگر"
-" File Uploads Response روی None تنظیم شده باشد، این تاثیری ندارد. این به طور"
-" خودکار روی True برای تکالیف تیم تنظیم می شود. "
+"Вкажіть, чи можуть учні завантажувати більше одного файлу. Це не має ефекту,"
+" якщо Відповідь з завантаженням файлів встановлена в «Немає». Автоматично "
+"встановлюється в «Так» для командних завдань."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:58
 msgid "File Upload Types"
-msgstr "انواع آپلود فایل"
+msgstr "Типи файлів для завантаження"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:60
 msgid "PDF or Image Files"
-msgstr "فایل های PDF یا تصویری"
+msgstr "PDF або графічні файли"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:61
 msgid "Image Files"
-msgstr "فایل های تصویری"
+msgstr "Графічні файли"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:62
 msgid "Custom File Types"
-msgstr "انواع فایل های سفارشی"
+msgstr "Користувацькі типи файлів"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:66
 msgid ""
 "Specify whether learners can submit files along with their text responses."
 msgstr ""
-"مشخص کنید که آیا زبان آموزان می توانند فایل ها را همراه با پاسخ های متنی خود"
-" ارسال کنند یا خیر."
+"Вкажіть, чи можуть учні надсилати файли разом із своїми текстовими "
+"відповідями."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:70
 msgid "File Types"
-msgstr "انواع فایل"
+msgstr "Типи файлів"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:79
 msgid ""
 "Enter the file extensions, separated by commas, that you want learners to be"
 " able to upload. For example: pdf,doc,docx."
 msgstr ""
-"پسوندهای پوشه‌ها درحالی که با کاما از هم جدا شده‌اند وارد کنید تا فراگیران "
-"بتوانند آن را بارگذاری کنند. به‌عنوان نمونه: pdf,doc,docx."
+"Введіть розширення файлів, розділені комами, які учні зможуть завантажувати."
+" Наприклад: pdf,doc,docx."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:84
 msgid ""
 "To add more file extensions, select Custom File Types and enter the full "
 "list of acceptable file extensions to be included."
 msgstr ""
-"برای افزودن پسوندهای بیشتر، Custom File Types را انتخاب کنید و فهرست کامل "
-"پسوندهای قابل قبول را وارد کنید."
+"Щоб додати більше розширень, виберіть Користувацькі типи файлів та введіть "
+"повний перелік допустимих розширень."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:91
 msgid "Allow LaTeX Responses"
-msgstr "پاسخ های LaTeX را مجاز کنید"
+msgstr "Дозволити відповіді у LaTeX"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:97
 msgid "Specify whether learners can write LaTeX formatted strings"
-msgstr ""
-"مشخص کنید که آیا زبان آموزان می توانند رشته های قالب بندی شده LaTeX بنویسند "
-"یا خیر"
+msgstr "Вкажіть, чи можуть учні писати рядки, відформатовані в LaTeX"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:102
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:8
 #: templates/legacy/leaderboard/oa_leaderboard_waiting.html:10
 msgid "Top Responses"
-msgstr "پاسخ های برتر"
+msgstr "Топ-відповіді"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:104
 msgid " (Disabled)"
-msgstr " (غیرفعال)"
+msgstr " (Вимкнено)"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:117
 msgid ""
@@ -327,54 +322,52 @@ msgid ""
 " submitted a response. Valid numbers are 0 to 99. If the number is 0, the "
 "Top Responses section does not appear to learners."
 msgstr ""
-" برای نمایش پس از ارسال پاسخ توسط فراگیرنده، تعداد پاسخ‌هایی را مشخص کنید که"
-" امتیاز بالاتری دارند . اعداد معتبر 0 تا 99 هستند. اگر عدد 0 باشد، قسمت "
-"پاسخ‌های برتر برای فراگیران ظاهر نمی‌شود."
+"Вкажіть кількість відповідей з найвищими балами, які будуть показані після "
+"подання відповіді учнем. Допустимі значення від 0 до 99. Якщо значення 0, "
+"розділ Топ-відповіді не відображається учням."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:122
 msgid "When Teams Enabled is set to true, Top Responses will be disabled."
 msgstr ""
-"وقتی تیم فعال باشد یعنی روی گزینۀ «درست» تنظیم شود، پاسخ‌ها، غیرفعال می‌شود."
+"Коли Дозволено команди встановлено в «Так», Топ-відповіді будуть вимкнені."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:129
 msgid "Teams Enabled"
-msgstr "تیم فعال شد"
+msgstr "Команди увімкнено"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:136
 msgid "Specify whether team submissions are allowed for this response."
-msgstr "مشخص کنید که آیا ارسال تیم برای این پاسخ مجاز است یا خیر."
+msgstr "Вкажіть, чи дозволені командні подання відповіді."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:141
 msgid "Select Team-Set"
-msgstr "تنظیم-تیم را انتخاب کنید"
+msgstr "Виберіть набір команд"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:155
 msgid "Show Rubric During Response"
-msgstr "نمایش سرفصل در حین پاسخ"
+msgstr "Показати рубрику під час відповіді"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:162
 msgid ""
 "Specify whether learners can see the rubric while they are working on their "
 "response."
-msgstr ""
-"مشخص کنید که آیا فراگیران می‌توانند در حین کار بر روی پاسخ خود، سرفصل را "
-"ببینند یا خیر."
+msgstr "Вкажіть, чи можуть учні бачити рубрику під час роботи над відповіддю."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:167
 msgid "Allow Learner Resubmissions"
-msgstr "اجازه ارسال مجدد توسط فراگیرنده"
+msgstr "Дозволити повторні подання учнем"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:174
 msgid ""
 "Set to TRUE to allow learners to resubmit ungraded work. Set to FALSE if "
 "resubmissions are not allowed."
 msgstr ""
-"روی «درست» تنظیم کنید تا به فراگیران امکان ارسال مجدد کار بدون نمره داده "
-"شود. اگر ارسال مجدد مجاز نباشد، روی «نادرست» تنظیم کنید."
+"Встановіть в «Так», щоб дозволити учням повторно подавати неоцінювану "
+"роботу. Встановіть в «Ні», якщо повторні подання не дозволені."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:178
 msgid "Resubmission Grace Period"
-msgstr "مدت زمان مهلت ارسال مجدد"
+msgstr "Додатковий період для повторного подання"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:187
 msgid ""
@@ -383,107 +376,106 @@ msgid ""
 " been graded. The grace period starts once the learner has submitted their "
 "response."
 msgstr ""
-"حداکثر دوره‌ای را که طی آن ارسال مجدد مجاز است مشخص کنید. در صورت خالی "
-"ماندن، فراگیران می‌توانند تا زمانی که به مطالب ارسالی‌شان نمره داده نشده "
-"باشد، آن‌ها را بازنشانی کنند. این مدت زمانی آغاز می‌شود که فراگیر پاسخ خود "
-"را ارسال کند."
+"Вкажіть максимальний період, протягом якого дозволені повторні подання. Якщо"
+" залишити поле порожнім, учні зможуть скинути своє подання до його "
+"оцінювання. Додатковий період починається після подання відповіді учнем."
 
 #: templates/legacy/edit/oa_edit_criterion.html:6
 #: templates/legacy/staff_area/oa_student_info.html:122
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:25
 msgid "Criterion"
-msgstr "معیار"
+msgstr "Критерій"
 
 #: templates/legacy/edit/oa_edit_criterion.html:7
 msgid "You cannot delete a criterion after the assignment has been released."
-msgstr "پس از انتشار تکلیف امکان حذف معیار را ندارید."
+msgstr "Ви не можете видалити критерій після публікації завдання."
 
 #: templates/legacy/edit/oa_edit_criterion.html:9
 #: templates/legacy/edit/oa_edit_option.html:7
 #: templates/legacy/edit/oa_edit_prompt.html:10
 #: templates/legacy/edit/oa_training_example.html:10
 msgid "Remove"
-msgstr "حذف"
+msgstr "Видалити"
 
 #: templates/legacy/edit/oa_edit_criterion.html:17
 msgid "Criterion Name"
-msgstr "نام معیار"
+msgstr "Назва критерію"
 
 #: templates/legacy/edit/oa_edit_criterion.html:29
 msgid "Criterion Prompt"
-msgstr "درخواست معیار"
+msgstr "Запит критерію"
 
 #: templates/legacy/edit/oa_edit_criterion.html:44
 msgid "Add Option"
-msgstr "افزودن گزینه"
+msgstr "Додати опцію"
 
 #: templates/legacy/edit/oa_edit_criterion.html:52
 msgid "Feedback for This Criterion"
-msgstr "بازخورد این معیار"
+msgstr "Відгуки для цього критерію"
 
 #: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:57
 msgid "Optional"
-msgstr "اختیاری"
+msgstr "Необов’язково"
 
 #: templates/legacy/edit/oa_edit_criterion.html:56
 #: templates/legacy/oa_rubric.html:13
 #: templates/legacy/student_training/student_training.html:93
 #: xblock/studio_mixin.py:56
 msgid "Required"
-msgstr "ضروری"
+msgstr "Обов’язково"
 
 #: templates/legacy/edit/oa_edit_criterion.html:61
 msgid ""
 "Select one of the options above. This describes whether or not the reviewer "
 "will have to provide criterion feedback."
 msgstr ""
-"یکی از گزینه‌های بالا را انتخاب کنید. این مورد توضیح می‌دهد که آیا بازبین "
-"باید بازخورد معیار را ارائه دهد یا خیر."
+"Виберіть одну з наведених опцій. Це описує, чи буде рецензент змушений "
+"надавати відгуки щодо критерію."
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:3
 msgid "Open Response Assessment"
-msgstr "ارزیابی پاسخ باز"
+msgstr "Оцінювання відкритої відповіді"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:8
 #: templates/legacy/edit/oa_edit_prompt.html:7
 msgid "Prompt"
-msgstr "سریع"
+msgstr "Запитання"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:15
 msgid "Rubric"
-msgstr "سرفصل"
+msgstr "Рубрика"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:22
 msgid "Schedule"
-msgstr "برنامه"
+msgstr "Розклад"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:29
 msgid "Assessment steps"
-msgstr "مراحل ارزیابی"
+msgstr "Кроки оцінювання"
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:36
 msgid "Settings"
-msgstr "تنظیمات"
+msgstr "Налаштування"
 
 #: templates/legacy/edit/oa_edit_option.html:5
 msgid "Option"
-msgstr "گزینه"
+msgstr "Опція"
 
 #: templates/legacy/edit/oa_edit_option.html:16
 msgid "Option Name"
-msgstr "نام گزینه"
+msgstr "Назва опції"
 
 #: templates/legacy/edit/oa_edit_option.html:29
 msgid "Option Points"
-msgstr "امتیاز گزینه"
+msgstr "Бали опції"
 
 #: templates/legacy/edit/oa_edit_option.html:42
 msgid "Option Explanation"
-msgstr "توضیح گزینه"
+msgstr "Пояснення опції"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:10
 msgid "Step: Peer Assessment"
-msgstr "مرحله: ارزیابی همتایان"
+msgstr "Крок: Оцінювання однолітників"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:15
 msgid ""
@@ -491,10 +483,9 @@ msgid ""
 "also receive feedback from others in their final grade. Often, though not "
 "always, this step is preceded by Self Assessment or Learner Training steps."
 msgstr ""
-"ارزیابی همتا به فراگیران این امکان را می‌دهد تا بازخورد خود را به سایر "
-"فراگیران ارائه دهند و نیز در کلاس پایانی خود از دیگران بازخورد دریافت کنند. "
-"اغلب، البته نه همیشه، این مرحله پیش از مراحل خود ارزیابی یا آموزش فراگیرنده "
-"است."
+"Оцінювання однолітників дозволяє студентам надавати відгуки іншим студентам "
+"та отримувати відгуки, які враховуються в остаточній оцінці. Часто, але не "
+"завжди, цей крок передує крокам самооцінки або навчання учнів."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:18
 msgid ""
@@ -502,49 +493,47 @@ msgid ""
 " peer reviews a student will be assessed with, and the number of peer a "
 "student must grade. Additional options can be specified."
 msgstr ""
-"پیکربندی: برای پیکربندی این مرحله، باید تعداد بررسی‌های همتا را مشخص کنید که"
-" فراگیر با آن‌ها ارزیابی می‌شود، و تعداد همتاهایی که یک فرد بایدبه آن‌ها "
-"نمره دهد. گزینه‌های اضافی را می‌توان مشخص کرد."
+"Налаштування: Щоб налаштувати цей крок, ви повинні вказати кількість "
+"рецензій однолітників, за які студент буде оцінюватися, а також кількість "
+"однолітників, яких студент має оцінити. Можна вказати додаткові параметри."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:23
 msgid "View Options & Configuration"
-msgstr "مشاهدۀ گزینه‌ها و پیکربندی"
+msgstr "Переглянути опції та налаштування"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:29
 msgid "Must Grade"
-msgstr "باید نمره داده شود"
+msgstr "Обов’язково оцінювати"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:32
 msgid ""
 "Specify the number of peer assessments that each learner must complete. "
 "Valid numbers are 1 to 99."
 msgstr ""
-"تعداد ارزیابی‌های همتا را مشخص کنید که هر فراگیرنده باید انجام دهد. اعداد از"
-" 1 تا 99 معتبر هستند."
+"Вкажіть кількість оцінювань однолітників, які кожен учень має виконати. "
+"Допустимі значення від 1 до 99."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:36
 msgid "Graded By"
-msgstr "نمره داده‌شده توسط"
+msgstr "Оцінюється"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:39
 msgid ""
 "Specify the number of learners that each response must be assessed by. Valid"
 " numbers are 1 to 99."
 msgstr ""
-"تعداد فراگیرانی را مشخص کنید که هر پاسخ باید توسط آنها ارزیابی شود. اعداد از"
-" 1 تا 99 معتبر هستند."
+"Вкажіть кількість учнів, які повинні оцінити кожну відповідь. Допустимі "
+"значення від 1 до 99."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:43
 msgid "Enable Flexible Peer Grade Averaging"
-msgstr "فعال‌سازی میانگین نمرات همتا منعطف"
+msgstr "Увімкнути гнучке середнє оцінювання однолітників"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:49
 #, python-format
 msgid ""
 "When enabled, learners who have received at least 30%% of the required \\"
-msgstr ""
-"وقتی فعال باشد، فراگیرانی که حداقل 30%% از موارد مورد نیاز \\ را دریافت "
-"کرده‌اند"
+msgstr "Коли увімкнено, учні, які отримали щонайменше 30%% від необхідного \\"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:53
 msgid ""
@@ -552,20 +541,21 @@ msgid ""
 "under the Open Response Assessment Settings card on the Pages & Resources "
 "studio page."
 msgstr ""
-"این ویژگی توسط تنظیمات سطح دوره فعال می‌شود. می‌توانید آن را در کارت تنظیمات"
-" ارزیابی پاسخ باز در صفحۀ استودیو صفحات و منابع بیابید."
+"Цю функцію увімкнено налаштуванням рівня курсу. Вона доступна на картці "
+"налаштувань оцінювання відкритих відповідей на сторінці «Сторінки та "
+"ресурси»."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:60
 msgid "Grading strategy for the peer assessment"
-msgstr "استراتژی نمره برای ارزیابی همتایان"
+msgstr "Стратегія оцінювання для оцінювання однолітників"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:62
 msgid "Mean"
-msgstr "میانگین"
+msgstr "Середнє"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:63
 msgid "Median (default)"
-msgstr "میانه (پیش‌فرض)"
+msgstr "Медіана (за замовчуванням)"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:66
 msgid ""
@@ -573,59 +563,60 @@ msgid ""
 "the median across all peer reviews is used to calculate the final grade. If "
 "you select the mean, the average of all peer reviews will be used."
 msgstr ""
-"استراتژی نمره‌دهی ترجیحی برای ارزیابی همتا انتخاب کنید. به‌طور پیش‌فرض، "
-"میانه در تمام بررسی‌های همتا برای محاسبۀ نمره نهایی استفاده می‌شود. اگر "
-"میانگین را انتخاب کنید، از میانگین همه بررسی‌های همتا استفاده خواهدشد."
+"Виберіть бажану стратегію оцінювання для оцінювання однолітників. За "
+"замовчуванням для розрахунку остаточної оцінки використовується медіана всіх"
+" рецензій. Якщо вибрати середнє, буде використано середнє значення всіх "
+"рецензій."
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:5
 msgid "Peer Assessment Deadlines"
-msgstr "مهلت‌های ارزیابی همتایان"
+msgstr "Терміни оцінювання однолітників"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:10
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:10
 msgid "Start Date"
-msgstr "تاریخ شروع"
+msgstr "Дата початку"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:19
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:19
 msgid "Start Time"
-msgstr "زمان شروع"
+msgstr "Час початку"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:27
 msgid "The date and time when learners can begin assessing peer responses."
 msgstr ""
-"تاریخ و زمانی که فراگیران می‌توانند ارزیابی پاسخ‌های همتایان را آغاز کنند."
+"Дата та час, коли учні можуть почати оцінювати відповіді однолітників."
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:31
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:119
 msgid "Due Date"
-msgstr "سررسید"
+msgstr "Кінцева дата"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:40
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:40
 msgid "Due Time"
-msgstr "زمان مقرر"
+msgstr "Кінцевий час"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:48
 msgid "The date and time when all peer assessments must be complete."
-msgstr "تاریخ و زمانی که تمام ارزیابی‌های همتا باید کامل شود."
+msgstr "Дата та час, коли усі оцінювання однолітників мають бути завершені."
 
 #: templates/legacy/edit/oa_edit_prompt.html:8
 msgid "You cannot delete a prompt after the assignment has been released."
-msgstr "امکان حذف درخواست پس از انتشار تکلیف وجود ندارد."
+msgstr "Ви не можете видалити запитання після публікації завдання."
 
 #: templates/legacy/edit/oa_edit_prompts.html:10
 msgid ""
 "Prompts. Replace the sample text with your own text. For more information, "
 "see the ORA documentation."
 msgstr ""
-"مهلت‌ها. متن نمونه را با متن خود جایگزین کنید. برای اطلاعات بیشتر، به "
-"مستندات ORA مراجعه کنید."
+"Запитання. Замініть зразковий текст своїм власним. Для додаткової інформації"
+" дивіться документацію ORA."
 
 #: templates/legacy/edit/oa_edit_prompts.html:22
 msgid "Add Prompt"
-msgstr "افزودن درخواست"
+msgstr "Додати запитання"
 
 #: templates/legacy/edit/oa_edit_rubric.html:14
 msgid ""
@@ -634,134 +625,129 @@ msgid ""
 "and their options. Replace the sample text with your own text. For more "
 "information, see the ORA documentation."
 msgstr ""
-"سرفصل‌ها از معیارهایی تشکیل شده‌اند که معمولاً شامل یک یا چند گزینه هستند. "
-"هر گزینه یک مقدار امتیاز دارد. این الگو شامل دو معیار نمونه و گزینه‌های "
-"آن‌هاست. متن نمونه را با متن خود جایگزین کنید. برای اطلاعات بیشتر، به "
-"مستندات ORA مراجعه کنید."
+"Рубрики складаються з критеріїв, які зазвичай містять одну або кілька опцій."
+" Кожна опція має бальну вартість. Цей шаблон містить два зразкових критерії "
+"з відповідними опціями. Замініть зразковий текст своїм власним. Для "
+"додаткової інформації дивіться документацію ORA."
 
 #: templates/legacy/edit/oa_edit_rubric.html:29
 msgid "Add Criterion"
-msgstr "افزودن معیار "
+msgstr "Додати критерій"
 
 #: templates/legacy/edit/oa_edit_rubric.html:35
 msgid "Feedback for This Response"
-msgstr "بازخورد برای این پاسخ"
+msgstr "Відгуки для цієї відповіді"
 
 #: templates/legacy/edit/oa_edit_rubric.html:40
 msgid "Feedback Instructions"
-msgstr "دستورالعمل بازخورد"
+msgstr "Інструкції щодо відгуків"
 
 #: templates/legacy/edit/oa_edit_rubric.html:44
 msgid ""
 "Encourage learners to provide feedback on the response they have graded. You"
 " can replace the sample text with your own."
 msgstr ""
-"فراگیران را تشویق کنید تا دربارۀ پاسخی که به آن نمره داده‌اند بازخورد ارائه "
-"کنند. می‌توانید متن نمونه را با متن خود جایگزین کنید."
+"Заохочуйте учнів надавати відгуки щодо відповіді, яку вони оцінили. Ви "
+"можете замінити зразковий текст своїм власним."
 
 #: templates/legacy/edit/oa_edit_rubric.html:49
 msgid "Default Feedback Text"
-msgstr "متن بازخورد پیش‌فرض"
+msgstr "Текст за замовчуванням для відгуків"
 
 #: templates/legacy/edit/oa_edit_rubric.html:53
 msgid ""
 "Enter feedback text that learners will see before they enter their own "
 "feedback. Use this text to show learners a good example peer assessment."
 msgstr ""
-"متن بازخوردی را وارد کنید که فراگیران قبل از واردکردن بازخورد خود می‌بینند. "
-"از این متن برای نمایش یک نمونه خوب از ارزیابی همتایان به فراگیران استفاده "
-"کنید."
+"Введіть текст відгуку, який учні бачитимуть перед тим, як нададуть свій "
+"власний. Використовуйте цей текст, щоб продемонструвати учням приклад "
+"хорошої рецензії однолітників."
 
 #: templates/legacy/edit/oa_edit_schedule.html:5
 msgid "Deadlines Configuration"
-msgstr "پیکربندی مهلت‌ها"
+msgstr "Налаштування термінів"
 
 #: templates/legacy/edit/oa_edit_schedule.html:9
 msgid "Select a deadline configuration option"
-msgstr "انتخاب گزینۀ پیکربندی مهلت"
+msgstr "Виберіть параметр налаштування термінів"
 
 #: templates/legacy/edit/oa_edit_schedule.html:14
 msgid "Configure deadlines manually"
-msgstr "پیگیری دستی مهلت‌ها"
+msgstr "Налаштувати терміни вручну"
 
 #: templates/legacy/edit/oa_edit_schedule.html:18
 msgid "Match deadlines to the subsection due date"
-msgstr "تطبیق مهلت‌ها با تاریخ سررسید فرعی "
+msgstr "Вирівняти терміни із кінцевою датою підрозділу"
 
 #: templates/legacy/edit/oa_edit_schedule.html:22
 msgid "Match deadlines to the course end date"
-msgstr "تطبیق مهلت‌ها با تاریخ پایان دوره "
+msgstr "Вирівняти терміни із кінцевою датою курсу"
 
 #: templates/legacy/edit/oa_edit_schedule.html:25
 msgid "Learn more about open response date settings"
-msgstr "اطلاعات بیشتر دربارۀ تنظیمات تاریخ پاسخ باز "
+msgstr "Дізнайтеся більше про налаштування дат для відкритих відповідей"
 
 #: templates/legacy/edit/oa_edit_schedule.html:35
 msgid "Response Start Date"
-msgstr "تاریخ آغاز پاسخ"
+msgstr "Дата початку подання відповіді"
 
 #: templates/legacy/edit/oa_edit_schedule.html:48
 msgid "Response Start Time"
-msgstr "زمان آغاز پاسخ"
+msgstr "Час початку подання відповіді"
 
 #: templates/legacy/edit/oa_edit_schedule.html:57
 msgid "The date and time when learners can begin submitting responses."
-msgstr "تاریخ و زمانی که فراگیران می‌توانند ارسال پاسخ را آغاز کنند."
+msgstr "Дата та час, коли учні можуть почати надсилати відповіді."
 
 #: templates/legacy/edit/oa_edit_schedule.html:65
 msgid "Response Due Date"
-msgstr "تاریخ سررسید پاسخ"
+msgstr "Кінцева дата подання відповіді"
 
 #: templates/legacy/edit/oa_edit_schedule.html:78
 msgid "Response Due Time"
-msgstr "زمان مقرر پاسخگویی"
+msgstr "Кінцевий час подання відповіді"
 
 #: templates/legacy/edit/oa_edit_schedule.html:87
 msgid "The date and time when learners can no longer submit responses."
-msgstr ""
-"تاریخ و زمانی که فراگیران پس از آن دیگر نمی‌توانند پاسخ را ارسال کنند."
+msgstr "Дата та час, коли учні більше не можуть надсилати відповіді."
 
 #: templates/legacy/edit/oa_edit_self_assessment.html:8
 msgid "Step: Self Assessment"
-msgstr "مرحله: خودارزیابی"
+msgstr "Крок: Самооцінка"
 
 #: templates/legacy/edit/oa_edit_self_assessment.html:12
 msgid ""
 "Self Assessment asks learners to grade their own submissions against the "
 "rubric."
-msgstr ""
-"خودارزیابی از فراگیران می‌خواهد تا مطالب ارسالی خود را بر اساس این عنوان "
-"نمره‌دهی کنند."
+msgstr "Самооцінка просить учнів оцінити власні подання за рубрикою."
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:5
 msgid "Self Assessment Deadlines"
-msgstr "مهلت‌های خودارزیابی"
+msgstr "Терміни самооцінки"
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:27
 msgid "The date and time when learners can begin assessing their responses."
-msgstr ""
-"تاریخ و زمانی که فراگیران می‌توانند ارزیابی پاسخ های خود را آغاز کنند."
+msgstr "Дата та час, коли учні можуть починати оцінювати свої відповіді."
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:48
 msgid "The date and time when all self assessments must be complete."
-msgstr "تاریخ و زمانی که همۀ خودارزیابی‌هاباید کامل شوند."
+msgstr "Дата та час, коли всі самооцінки мають бути завершені."
 
 #: templates/legacy/edit/oa_edit_staff_assessment.html:8
 msgid "Step: Staff Assessment"
-msgstr "مرحله: ارزیابی کارکنان"
+msgstr "Крок: Оцінювання персоналом"
 
 #: templates/legacy/edit/oa_edit_staff_assessment.html:12
 msgid ""
 "Staff Assessment gates sets the final grade for students if enabled with "
 "other steps, though it can also be used as a standalone step."
 msgstr ""
-"دروازه‌های ارزیابی کارکنان، نمرۀ نهایی را برای فراگیران تعیین می‌کند، اگر "
-"همراه با مراحل دیگر فعال باشد، می‌توان از آن به‌عنوان یک مرحلۀ مستقل نیز "
-"استفاده کرد."
+"Оцінювання персоналом визначає остаточну оцінку для студентів, якщо воно "
+"використовується разом з іншими кроками, хоча може застосовуватися і окремо."
 
 #: templates/legacy/edit/oa_edit_student_training.html:9
 msgid "Step: Learner Training"
-msgstr "مرحله: آموزش فراگیرنده"
+msgstr "Крок: Навчання учнів"
 
 #: templates/legacy/edit/oa_edit_student_training.html:14
 msgid ""
@@ -769,9 +755,10 @@ msgid ""
 "submission in order to train them on the rubric and ensure learner's "
 "understand the rubric for either Self or Peer Assessment steps."
 msgstr ""
-"آموزش فراگیرنده برای کمک به فراگیران برای تمرین نمره‌دهی به یک ارسال "
-"شبیه‌سازی‌شده توسط همتایان است تا آن‌ها را به این شکل آموزش دهند و اطمینان "
-"حاصل کنند که وی این موضوع را برای مراحل ارزیابی خود یا همتایان درک می‌کند."
+"Навчання учнів використовується для того, щоб допомогти студентам "
+"попрактикуватись у оцінюванні змодельованого подання однолітника, щоб "
+"ознайомити їх з рубрикою та забезпечити розуміння рубрики в кроках "
+"самооцінки або оцінювання однолітників."
 
 #: templates/legacy/edit/oa_edit_student_training.html:17
 msgid ""
@@ -780,22 +767,22 @@ msgid ""
 " to advance and are provided feedback when their score doesn't match the "
 "sample response."
 msgstr ""
-"پیکربندی: برای اینکه این مرحله به‌طور کامل پیکربندی شود، باید یک یا چند پاسخ"
-" نمونه نمره‌دار ارائه دهید. سپس فراگیران برای پیشرفت باید این امتیاز مربی را"
-" مطابقت دهند و زمانی که نمرۀ آن‌ها با پاسخ نمونه مطابقت نداشته باشد بازخورد "
-"دریافت می‌کنند."
+"Налаштування: Щоб цей крок був повністю налаштований, потрібно надати одну "
+"або декілька оцінених зразкових відповідей. Учні повинні потім співставити "
+"свою оцінку з оцінкою викладача для продовження, і їм буде надано відгуки, "
+"якщо їхня оцінка не збігається із зразковою відповіддю."
 
 #: templates/legacy/edit/oa_edit_student_training.html:22
 msgid "View / Add Sample Responses"
-msgstr "مشاهده/افزودن نمونۀ پاسخ‌ها"
+msgstr "Переглянути / додати зразкові відповіді"
 
 #: templates/legacy/edit/oa_edit_student_training.html:32
 msgid "Add Sample Response"
-msgstr "افزودن نمونۀ پاسخ"
+msgstr "Додати зразкову відповідь"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:4
 msgid "Clone Rubric"
-msgstr "شبیه‌سازی سرفصل"
+msgstr "Клонувати рубрику"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:7
 msgid ""
@@ -804,52 +791,52 @@ msgid ""
 "after cloning will only affect the rubric being modified, and will not "
 "modify any rubric it was cloned from."
 msgstr ""
-"برای شبیه‌سازی یک سرفصل از پیش‌نویس موجود یا منتشرنشده، می‌توانید با شناسۀ "
-"Block جستجو کنید. توجه کنید که شبیه‌سازی یک طرفه است، یعنی تغییراتی که پس از"
-" شبیه‌سازی ایجاد می‌شود، فقط بر روی سرفصلی که در حال تغییر است تأثیر "
-"می‌گذارد و سرفصلی را که از آن شبیه‌سازی شده‌است، تغییر نخواهد داد."
+"Щоб клонувати рубрику з існуючого опублікованого або неопублікованого "
+"проекту, ви можете шукати за Block ID. Зверніть увагу, що клонування є "
+"одностороннім, тобто зміни, внесені після клонування, вплинуть лише на "
+"змінювану рубрику і не змінять жодну рубрику, з якої було скопійовано."
 
 #: templates/legacy/edit/oa_rubric_reuse.html:9
 msgid "Block ID For this ORA:"
-msgstr "شناسۀ بلاک برای این ORA:"
+msgstr "Block ID для цього ORA:"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:19
 msgid "Block ID"
-msgstr "شناسۀ بلاک"
+msgstr "Block ID"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:21
 msgid "No other Open Response Assessments found in course"
-msgstr "هیچ ارزیابی پاسخ باز دیگری در دوره یافت نشد"
+msgstr "Інші відкриті оцінювання відповідей у курсі не знайдено"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:31
 msgid "Clone"
-msgstr "شبیه‌سازی"
+msgstr "Клонувати"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:37
 msgid "Rubric Successfully Cloned from Block ID: "
-msgstr "سرفصل با موفقیت از Block ID شبیه‌سازی شد: "
+msgstr "Рубрика успішно клонована з Block ID: "
 
 #: templates/legacy/edit/oa_training_example.html:7
 msgid "Scored Response"
-msgstr "پاسخ نمره‌دار"
+msgstr "Оцінена відповідь"
 
 #: templates/legacy/edit/oa_training_example.html:16
 msgid "Response Score"
-msgstr "نمرۀ پاسخ"
+msgstr "Оцінка відповіді"
 
 #: templates/legacy/edit/oa_training_example.html:27
 msgid "Response"
-msgstr "پاسخ"
+msgstr "Відповідь"
 
 #: templates/legacy/edit/oa_training_example_criterion.html:10
 msgid "Not Selected"
-msgstr "انتخاب‌نشده"
+msgstr "Не вибрано"
 
 #: templates/legacy/edit/oa_training_example_criterion.html:15
 #: templates/legacy/oa_rubric.html:43
 #: templates/legacy/student_training/student_training.html:128
 msgid "points"
-msgstr "امتیازات"
+msgstr "бали"
 
 #: templates/legacy/grade/oa_assessment_feedback.html:8
 #, python-format
@@ -859,7 +846,7 @@ msgid ""
 "              "
 msgstr ""
 "\n"
-"%(start_tag)s %(title)s %(end_tag)s %(start_grade_tag)s - %(grade)s %(end_tag)s\n"
+"                %(start_tag)s%(title)s%(end_tag)s%(start_grade_tag)s - %(grade)s%(end_tag)s\n"
 "              "
 
 #: templates/legacy/grade/oa_assessment_title.html:7
@@ -874,17 +861,25 @@ msgid_plural ""
 "                  "
 msgstr[0] ""
 "\n"
-"%(assessment_title)s - نقطه %(points)s\n"
+"                      %(assessment_title)s - %(points)s бал\n"
 "                  "
 msgstr[1] ""
 "\n"
-"%(assessment_title)s - %(points)s امتیاز\n"
+"                      %(assessment_title)s - %(points)s бали\n"
+"                  "
+msgstr[2] ""
+"\n"
+"                      %(assessment_title)s - %(points)s балів\n"
+"                  "
+msgstr[3] ""
+"\n"
+"                      %(assessment_title)s - %(points)s балів\n"
 "                  "
 
 #: templates/legacy/grade/oa_assessment_title.html:24
 #, python-format
 msgid "More information about %(name)s"
-msgstr "اطلاعات بیشتر دربارۀ %(name)s"
+msgstr "Додаткова інформація про %(name)s"
 
 #: templates/legacy/grade/oa_grade_cancelled.html:14
 #: templates/legacy/grade/oa_grade_complete.html:15
@@ -893,7 +888,7 @@ msgstr "اطلاعات بیشتر دربارۀ %(name)s"
 #: templates/legacy/grade/oa_grade_not_started.html:14
 #: templates/legacy/grade/oa_grade_waiting.html:14
 msgid "Your Grade"
-msgstr "نمرۀ شما"
+msgstr "Ваша оцінка"
 
 #: templates/legacy/grade/oa_grade_cancelled.html:19
 #, python-format
@@ -903,12 +898,12 @@ msgid ""
 "                                    "
 msgstr ""
 "\n"
-"%(points_earned)s از %(points_possible)s\n"
+"                                        %(points_earned)s з %(points_possible)s\n"
 "                                    "
 
 #: templates/legacy/grade/oa_grade_cancelled.html:38
 msgid "Your submission has been cancelled."
-msgstr "ارسال شما لغو شد."
+msgstr "Ваше подання скасовано."
 
 #: templates/legacy/grade/oa_grade_complete.html:19
 #, python-format
@@ -918,21 +913,21 @@ msgid ""
 "                                        "
 msgstr ""
 "\n"
-"%(points_earned)s از %(points_possible)s\n"
+"                                            %(points_earned)s з %(points_possible)s\n"
 "                                        "
 
 #: templates/legacy/grade/oa_grade_complete.html:38
 #: templates/legacy/response/oa_response.html:29
 msgid "Your Response"
-msgstr "پاسخ شما"
+msgstr "Ваша відповідь"
 
 #: templates/legacy/grade/oa_grade_complete.html:41
 msgid "Your Upload"
-msgstr "بارگذاری شما"
+msgstr "Ваше завантаження"
 
 #: templates/legacy/grade/oa_grade_complete.html:46
 msgid "Assessments of Your Response"
-msgstr "ارزیابی‌های پاسخ شما"
+msgstr "Оцінювання вашої відповіді"
 
 #: templates/legacy/grade/oa_grade_complete.html:50
 #: templates/legacy/grade/oa_grade_complete.html:132
@@ -954,105 +949,108 @@ msgstr "ارزیابی‌های پاسخ شما"
 #: templates/legacy/self/oa_self_closed.html:30
 #: templates/legacy/student_training/student_training_closed.html:27
 msgid "Status"
-msgstr "وضعیت"
+msgstr "Статус"
 
 #: templates/legacy/grade/oa_grade_complete.html:65
 msgid "Overall Grade"
-msgstr "نمرۀ کلی"
+msgstr "Загальна оцінка"
 
 #: templates/legacy/grade/oa_grade_complete.html:70
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:28
 msgid "Points"
-msgstr "امتیازات"
+msgstr "Бали"
 
 #: templates/legacy/grade/oa_grade_complete.html:96
 msgid "Additional comments on your response"
-msgstr "نظرات بیشتر دربارۀ پاسخ شما"
+msgstr "Додаткові коментарі до вашої відповіді"
 
 #: templates/legacy/grade/oa_grade_complete.html:117
 msgid "Provide feedback on peer assessments"
-msgstr "ارائه بازخورد دربارۀ ارزیابی همتایان"
+msgstr "Надайте відгук щодо оцінювання однолітників"
 
 #: templates/legacy/grade/oa_grade_complete.html:126
 msgid "Submitting Feedback"
-msgstr "ثبت بازخورد"
+msgstr "Надсилання відгуків"
 
 #: templates/legacy/grade/oa_grade_complete.html:134
 msgid ""
 "Your feedback has been submitted. Course staff will be able to see this "
 "feedback when they review course records."
 msgstr ""
-"بازخورد شما ارسال شد. کارکنان دوره، زمانی که سوابق دوره را بررسی می‌کنند، "
-"می‌توانند این بازخورد را ببینند."
+"Ваш відгук надіслано. Персонал курсу зможе переглянути цей відгук під час "
+"перевірки записів курсу."
 
 #: templates/legacy/grade/oa_grade_complete.html:140
 msgid ""
 "Course staff will be able to see any feedback that you provide here when "
 "they review course records."
 msgstr ""
-"کارکنان دوره می‌توانند هر بازخوردی را که در اینجا ارائه می‌دهید، هنگام بررسی"
-" سوابق دوره مشاهده کنند."
+"Персонал курсу зможе бачити будь-які відгуки, які ви надаєте тут, під час "
+"перевірки записів курсу."
 
 #: templates/legacy/grade/oa_grade_complete.html:146
 msgid ""
 "Select the statements below that best reflect your experience with peer "
 "assessments."
 msgstr ""
-"عبارات زیر را انتخاب کنید که بهترین منعکس‌کننده تجربۀ شما از ارزیابی همتایان"
-" باشد."
+"Виберіть твердження нижче, які найкраще відображають ваш досвід оцінювання "
+"однолітників."
 
 #: templates/legacy/grade/oa_grade_complete.html:155
 msgid "These assessments were useful."
-msgstr "این ارزیابی‌ها مفید بود."
+msgstr "Ці оцінювання були корисними."
 
 #: templates/legacy/grade/oa_grade_complete.html:164
 msgid "These assessments were not useful."
-msgstr "این ارزیابی‌ها مفید نبودند."
+msgstr "Ці оцінювання не були корисними."
 
 #: templates/legacy/grade/oa_grade_complete.html:173
 msgid "I disagree with one or more of the peer assessments of my response."
-msgstr "من با یک یا چند مورد از ارزیابی‌های همتا از پاسخ خود مخالفم."
+msgstr ""
+"Я не згоден(на) з одним або декількома оцінюваннями однолітників моєї "
+"відповіді."
 
 #: templates/legacy/grade/oa_grade_complete.html:182
 msgid "Some comments I received were inappropriate."
-msgstr "برخی از نظراتی که دریافت کردم امناسب نبود."
+msgstr "Деякі отримані мною коментарі були недоречними."
 
 #: templates/legacy/grade/oa_grade_complete.html:187
 msgid ""
 "Provide feedback on the grade or comments that you received from your peers."
-msgstr "ارائۀ بازخورد دربارۀ نمره یا نظراتی که از همسالان خود دریافت کرده‌اید"
+msgstr ""
+"Надайте відгук щодо оцінки або коментарів, які ви отримали від однолітників."
 
 #: templates/legacy/grade/oa_grade_complete.html:190
 msgid "I feel the feedback I received was..."
-msgstr "احساس می‌کنم بازخوردی که دریافت کردم ..."
+msgstr "Я вважаю, що отримані відгуки були..."
 
 #: templates/legacy/grade/oa_grade_complete.html:200
 msgid "We could not submit your feedback"
-msgstr "ما نتوانستیم بازخورد شما را ارسال کنیم"
+msgstr "Не вдалося надіслати ваш відгук"
 
 #: templates/legacy/grade/oa_grade_complete.html:206
 msgid "Submit feedback on peer assessments"
-msgstr "ارائه بازخورد دربارۀ ارزیابی همتایان"
+msgstr "Надіслати відгуки щодо оцінювання однолітників"
 
 #: templates/legacy/grade/oa_grade_incomplete.html:16
 msgid "Not Completed"
-msgstr "ناکامل"
+msgstr "Не завершено"
 
 #: templates/legacy/grade/oa_grade_incomplete.html:33
 msgid "You have not completed all the steps of this problem."
-msgstr "شما همۀ مراحل این مشکل را کامل نکرده‌اید."
+msgstr "Ви не завершили всі кроки цього завдання."
 
 #: templates/legacy/grade/oa_grade_not_started.html:16
 msgid "Not Started"
-msgstr "شروع نشده‌است"
+msgstr "Не розпочато"
 
 #: templates/legacy/grade/oa_grade_not_started.html:27
 msgid "You have not started this problem yet."
-msgstr "شما هنوز این مشکل را آغاز نکرده‌اید."
+msgstr "Ви ще не розпочали це завдання."
 
 #: templates/legacy/grade/oa_grade_waiting.html:16
 msgid "Waiting for Assessments"
-msgstr "در انتظار ارزیابی‌ها"
+msgstr "Очікування оцінювань"
 
 #: templates/legacy/grade/oa_grade_waiting.html:33
 msgid ""
@@ -1061,60 +1059,59 @@ msgid ""
 "complete, you will see feedback from everyone who assessed your response, "
 "and you will receive your final grade."
 msgstr ""
-"شما مراحل خود را در تکلیف طی کردید، اما هنوز باید برخی ارزیابی‌ها دربارۀ "
-"پاسخ شما انجام شود. هنگامی که ارزیابی پاسخ شما کامل شد، بازخوردی را از همۀ "
-"کسانی که پاسخ شما را ارزیابی کردند مشاهده و نمرۀ نهایی خود را دریافت خواهید "
-"کرد."
+"Ви завершили всі кроки завдання, але деякі оцінювання вашої відповіді ще не "
+"виконані. Після завершення оцінювання ви побачите відгуки від усіх, хто "
+"оцінював вашу відповідь, і отримаєте остаточну оцінку."
 
 #: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:15
 #: templates/legacy/staff_area/oa_staff_area.html:16
 #: templates/legacy/staff_area/oa_staff_area.html:18
 #: templates/legacy/staff_area/oa_staff_area.html:153
 msgid "Grade Available Responses"
-msgstr "پاسخ‌های موجود نمره"
+msgstr "Оцінити доступні відповіді"
 
 #: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:26
 msgid ""
 "Grade Available Responses is unavailable. This item is not configured for "
 "Staff Assessment."
 msgstr ""
-"درجه پاسخ‌های موجود در دسترس نیست. این مورد برای ارزیابی کارکنان پیکربندی "
-"نشده‌است."
+"Оцінювання доступних відповідей недоступне. Цей елемент не налаштовано для "
+"оцінювання персоналом."
 
 #: templates/legacy/instructor_dashboard/oa_listing.html:6
 msgid "Please wait"
-msgstr "لطفاً صبر کنید"
+msgstr "Будь ласка, зачекайте"
 
 #: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:15
 msgid "Waiting Step Details"
-msgstr "جزئیات مرحلۀ انتظار"
+msgstr "Деталі очікування кроку"
 
 #: templates/legacy/instructor_dashboard/oa_waiting_step_details.html:24
 msgid ""
 "Waiting Step details view is unavailable. This item is not configured for "
 "peer assessments."
 msgstr ""
-"نمای جزئیات مرحلۀ انتظار در دسترس نیست. این مورد برای ارزیابی همتایان "
-"پیکربندی نشده‌است."
+"Перегляд деталей очікування кроку недоступний. Цей елемент не налаштовано "
+"для оцінювання однолітників."
 
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:20
 #, python-format
 msgid "%(num_points)s points"
-msgstr "%(num_points)s امتیاز"
+msgstr "%(num_points)s бали"
 
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:24
 #: templates/legacy/peer/oa_peer_assessment.html:84
 #: templates/legacy/peer/oa_peer_turbo_mode.html:53
 msgid "Your peer's response to the prompt above"
-msgstr "پاسخ همتای شما به درخواست بالا"
+msgstr "Відповідь вашого однолітника на запитання вище"
 
 #: templates/legacy/leaderboard/oa_leaderboard_waiting.html:19
 msgid ""
 "After you complete all the steps of this assignment, you can see the top-"
 "scoring responses from your peers."
 msgstr ""
-"پس از تکمیل همۀ مراحل این تکلیف، می‌توانید پاسخ‌های امتیازدهی بالا را از "
-"همتایان خود مشاهده کنید."
+"Після завершення всіх кроків завдання ви зможете побачити відповіді від "
+"однолітників з найвищими балами."
 
 #: templates/legacy/message/oa_message_cancelled.html:8
 msgid ""
@@ -1122,64 +1119,63 @@ msgid ""
 " zero unless course staff resets your assessment to allow the team to "
 "resubmit a response."
 msgstr ""
-"ارسال تیم شما لغو شده‌است. تیم شما نمرۀ صفر دریافت خواهد کرد مگر اینکه "
-"کارکنان دوره، ارزیابی شما را مجدداً تنظیم کنند تا به تیم اجازه ارسال دوبارۀ "
-"پاسخ داده شود."
+"Подання вашої команди скасовано. Ваша команда отримає оцінку нуль, якщо "
+"персонал курсу не скине оцінювання, щоб дозволити команді повторно подати "
+"відповідь."
 
 #: templates/legacy/message/oa_message_cancelled.html:10
 msgid ""
 "Your submission has been cancelled. You will receive a grade of zero unless "
 "course staff resets your assessment to allow you to resubmit a response."
 msgstr ""
-"ارسال شما لغو شده است. شما نمرۀ صفر دریافت خواهید کرد مگر اینکه کارکنان "
-"دوره، ارزیابی شما را مجدداً تنظیم کنند تا به شما اجازۀ ارسال دوبارۀ پاسخ "
-"داده شود."
+"Ваше подання скасовано. Ви отримаєте оцінку нуль, якщо персонал курсу не "
+"скине оцінювання, щоб дозволити вам повторно подати відповідь."
 
 #: templates/legacy/message/oa_message_closed.html:8
 msgid ""
 "This task is not yet available. Check back to complete the assignment once "
 "this section has opened."
 msgstr ""
-"این کار هنوز در دسترس نیست. پس از بازشدن این بخش، دوباره بررسی کنید تا تکلیف"
-" را تکمیل کنید."
+"Цей завдання ще недоступне. Поверніться пізніше, щоб завершити завдання "
+"після відкриття цього розділу."
 
 #: templates/legacy/message/oa_message_closed.html:10
 msgid ""
 "This assignment has closed. One or more deadlines for this assignment have "
 "passed. You will receive an incomplete grade for this assignment."
 msgstr ""
-"این تکلیف بسته است. یک یا چند مهلت این تکلیف سپری شده است. برای این تکلیف، "
-"نمرۀ ناقص دریافت خواهید کرد."
+"Завдання закрито. Один або кілька термінів для цього завдання пройшли. Ви "
+"отримаєте незавершену оцінку за це завдання."
 
 #: templates/legacy/message/oa_message_complete.html:8
 msgid ""
 "You have completed this assignment. Your final grade will be available when "
 "the assessments of your response are complete."
 msgstr ""
-"شما این تکلیف را انجام داده‌اید. نمرۀ نهایی شما زمانی در دسترس خواهد بود که "
-"ارزیابی پاسخ شما کامل شود."
+"Ви завершили це завдання. Ваша остаточна оцінка стане доступною після "
+"завершення оцінювання вашої відповіді."
 
 #: templates/legacy/message/oa_message_complete.html:10
 msgid ""
 "You have completed this assignment. Review your grade and your assessment "
 "details."
 msgstr ""
-"شما این تکلیف را انجام داده‌اید. نمره و جزئیات ارزیابی خود را مرور کنید."
+"Ви завершили це завдання. Перегляньте свою оцінку та деталі оцінювання."
 
 #: templates/legacy/message/oa_message_incomplete.html:9
 msgid ""
 "This assignment is in progress. Learner training will close soon. Complete "
 "the learner training step to move on."
 msgstr ""
-"این تکلیف درحال انجام است. آموزش فراگیران به‌زودی بسته می‌شود. برای ادامه، "
-"مرحلۀ آموزش فراگیرنده را کامل کنید."
+"Це завдання у процесі виконання. Навчання учнів скоро закриється. Завершіть "
+"крок навчання, щоб продовжити."
 
 #: templates/legacy/message/oa_message_incomplete.html:11
 msgid ""
 "This assignment is in progress. Complete the learner training step to move "
 "on."
 msgstr ""
-"این تکلیف درحال انجام است. برای ادامه، مرحلۀ آموزش فراگیرنده را کامل کنید."
+"Це завдання у процесі виконання. Завершіть крок навчання, щоб продовжити."
 
 #: templates/legacy/message/oa_message_incomplete.html:15
 #: templates/legacy/message/oa_message_incomplete.html:33
@@ -1187,8 +1183,8 @@ msgid ""
 "This assignment is in progress. Check back later when the assessment period "
 "has started."
 msgstr ""
-"این تکلیف درحال انجام است. بعداً وقتی دوره ارزیابی شروع شد دوباره بررسی "
-"کنید."
+"Це завдання у процесі виконання. Поверніться пізніше, коли розпочнеться "
+"період оцінювання."
 
 #: templates/legacy/message/oa_message_incomplete.html:20
 #, python-format
@@ -1198,7 +1194,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"%(start_strong)s این تکلیف درحال انجام است. مرحلۀ خودارزیابی به‌زودی بسته می‌شود. %(end_strong)s هنوز باید مرحلۀ خودارزیابی %(start_link)s %(end_link)s را تکمیل کنید.\n"
+"                                    %(start_strong)sЦе завдання у процесі виконання. Крок самооцінки скоро закриється.%(end_strong)s Вам ще потрібно завершити крок %(start_link)ssамооцінки%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:24
@@ -1209,7 +1205,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"این تکلیف درحال انجام است. هنوز باید مرحلۀ %(start_link)s خود ارزیابی %(end_link)s را تکمیل کنید.\n"
+"                                    Це завдання у процесі виконання. Вам ще потрібно завершити крок %(start_link)ssамооцінки%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:38
@@ -1220,7 +1216,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"این تکلیف درحال انجام است. %(start_strong)s مرحلۀ ارزیابی همتا به‌زودی بسته می‌شود. %(end_strong)s همۀ پاسخ‌های ارسالی همتا ارزیابی شده‌اند. بعداً دوباره بررسی کنید تا ببینید آیا فراگیران بیشتری پاسخ‌ را ارسال کرده‌اند یا خیر. هنوز باید مرحلۀ %(start_link)s ارزیابی همتا %(end_link)s را تکمیل کنید.\n"
+"                                    Це завдання у процесі виконання.%(start_strong)sКрок оцінювання однолітників скоро закриється.%(end_strong)s Всі надіслані відповіді однолітників уже оцінені. Поверніться пізніше, щоб перевірити, чи надіслали більше учнів відповіді. Вам ще потрібно завершити крок %(start_link)sоцінювання однолітників%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:42
@@ -1231,7 +1227,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"این تکلیف در حال انجام است. همۀ پاسخ‌های ارسالی همتایان ارزیابی شده‌اند. بعداً دوباره بررسی کنید تا ببینید آیا فراگیران بیشتری پاسخ‌ را ارسال کرده‌اند یا خیر. هنوز باید مرحلۀ%(start_link)s ارزیابی همتا %(end_link)s را تکمیل کنید.\n"
+"                                    Це завдання у процесі виконання. Всі надіслані відповіді однолітників вже оцінені. Поверніться пізніше, щоб перевірити, чи надіслали більше учнів відповіді. Вам ще потрібно завершити крок %(start_link)sоцінювання однолітників%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:46
@@ -1242,7 +1238,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"این تکلیف در حال انجام است. %(start_strong)s مرحلۀ ارزیابی همتا به‌زودی بسته می‌شود. %(end_strong)s شما هنوز باید مرحلۀ ارزیابی همتا %(start_link)s %(end_link)s را تکمیل کنید.\n"
+"                                    Це завдання у процесі виконання. %(start_strong)sКрок оцінювання однолітників скоро закриється.%(end_strong)s Вам ще потрібно завершити крок %(start_link)sоцінювання однолітників%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_incomplete.html:50
@@ -1253,12 +1249,12 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"این تکلیف در حال انجام است. هنوز باید مرحلۀ %(start_link)s ارزیابی همتا %(end_link)s را تکمیل کنید.\n"
+"                                    Це завдання у процесі виконання. Вам ще потрібно завершити крок %(start_link)sоцінювання однолітників%(end_link)s.\n"
 "                                "
 
 #: templates/legacy/message/oa_message_no_team.html:4
 msgid "Team membership is required to view this assignment"
-msgstr "عضویت تیم برای مشاهده این تکلیف الزامی است"
+msgstr "Для перегляду цього завдання потрібне членство в команді"
 
 #: templates/legacy/message/oa_message_no_team.html:7
 #, python-format
@@ -1270,9 +1266,9 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"این یک تکلیف تیمی برای مجموعۀ تیمی &quot; %(teamset_name)s &quot; است.\n"
-" شما درحال حاضر در تیمی در مجموعۀ تیمی &quot; %(teamset_name)s &quot; نیستید.\n"
-" برای دسترسی به این تکلیف تیمی باید در یک تیم در مجموعۀ تیمی &quot; %(teamset_name)s &quot; باشید.\n"
+"            Це командне завдання для набору команд \"%(teamset_name)s\".\n"
+"            Наразі ви не входите до команди у наборі команд \"%(teamset_name)s\".\n"
+"            Для доступу до цього командного завдання ви повинні бути членом команди в наборі \"%(teamset_name)s\".\n"
 "            "
 
 #: templates/legacy/message/oa_message_open.html:7
@@ -1283,7 +1279,7 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"ارسال تکالیف به زودی بسته خواهد شد. برای دریافت نمره، ابتدا به درخواست پاسخ دهید، سپس مراحل زیر را در قسمت %(start_tag)s Your Response %(end_tag)s کامل کنید.\n"
+"                    Подання завдання скоро закриється. Щоб отримати оцінку, спочатку надайте відповідь на запитання, а потім завершіть кроки нижче поля %(start_tag)sВаша відповідь%(end_tag)s.\n"
 "                "
 
 #: templates/legacy/message/oa_message_open.html:11
@@ -1294,16 +1290,16 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"این تکلیف چندین مرحله دارد. در مرحله اول، پاسخی به درخواست ارائه می‌دهید. سایر مراحل در زیر قسمت %(start_tag)s پاسخ شما%(end_tag)s ظاهر می‌شود.\n"
+"                    Це завдання має кілька кроків. На першому кроці ви надасте відповідь на запитання. Інші кроки з’являються нижче поля %(start_tag)sВаша відповідь%(end_tag)s.\n"
 "                "
 
 #: templates/legacy/message/oa_message_unavailable.html:4
 msgid "Instructions Unavailable"
-msgstr "دستورالعمل‌ها در دسترس نیستند"
+msgstr "Інструкції недоступні"
 
 #: templates/legacy/message/oa_message_unavailable.html:6
 msgid "The instructions for this step could not be loaded."
-msgstr "دستورالعمل‌های این مرحله بارگیری نشدند."
+msgstr "Інструкції для цього кроку не вдалося завантажити."
 
 #: templates/legacy/oa_base.html:16 templates/openassessmentblock/base.html:22
 msgid ""
@@ -1311,50 +1307,50 @@ msgid ""
 "response to the prompt. The other steps appear below the Your Response "
 "field."
 msgstr ""
-"این تکلیف چندین مرحله دارد. در مرحلۀ اول، پاسخی به درخواست ارائه می‌دهید. "
-"سایر مراحل در زیر قسمت «پاسخ شما» ظاهر می‌شود."
+"Це завдання має кілька кроків. На першому кроці ви надасте відповідь на "
+"запитання. Інші кроки з’являються нижче поля Ваша відповідь."
 
 #: templates/legacy/oa_base.html:37 templates/openassessmentblock/base.html:56
 #: templates/openassessmentblock/base.html:105
 msgid "Loading"
-msgstr "درحال بارگذاری"
+msgstr "Завантаження"
 
 #: templates/legacy/oa_latex_preview.html:6
 msgid "Preview in LaTeX"
-msgstr "پیش‌نمایش در LaTeX"
+msgstr "Попередній перегляд у LaTeX"
 
 #: templates/legacy/oa_latex_preview.html:9
 msgid "Click to preview your submission in LaTeX."
-msgstr "برای پیش‌نمایش مطالب ارسالی خود در LaTeX کلیک کنید."
+msgstr "Натисніть для попереднього перегляду вашого подання у LaTeX."
 
 #: templates/legacy/oa_latex_preview.html:14
 msgid "Preview Response"
-msgstr "پیش‌نمایش پاسخ"
+msgstr "Попередній перегляд відповіді"
 
 #: templates/legacy/oa_rubric.html:53
 msgid "Comments"
-msgstr "نظرات"
+msgstr "Коментарі"
 
 #: templates/legacy/oa_submission_answer.html:8
 msgid "The question for this section"
-msgstr "سوال این بخش"
+msgstr "Питання для цього розділу"
 
 #: templates/legacy/oa_team_uploaded_files.html:9
 msgid "Files that were uploaded by your teammates:"
-msgstr "پوشه‌هایی که توسط هم‌تیمی های شما بارگذاری شده‌اند:"
+msgstr "Файли, завантажені вашими товаришами по команді:"
 
 #: templates/legacy/oa_team_uploaded_files.html:28
 #: templates/legacy/oa_uploaded_file.html:34
 msgid "View the files associated with this submission:"
-msgstr "مشاهدۀ پوشه‌های مرتبط با این ارسال:"
+msgstr "Перегляньте файли, пов’язані з цим поданням:"
 
 #: templates/legacy/oa_team_uploaded_files.html:32
 msgid "Uploaded by"
-msgstr "بارگذاری‌ توسط"
+msgstr "Завантажено"
 
 #: templates/legacy/oa_uploaded_file.html:16
 msgid "Files that were uploaded by you:"
-msgstr "پوشه‌هایی که توسط شما بارگذاری شده‌اند:"
+msgstr "Файли, завантажені вами:"
 
 #: templates/legacy/oa_uploaded_file.html:48
 msgid ""
@@ -1362,13 +1358,13 @@ msgid ""
 "been verified, screened, approved, reviewed, or endorsed by the site "
 "administrator. If you access the files, you do so at your own risk.)"
 msgstr ""
-"احتیاط: این پوشه‌ها توسط یک فراگیر از دوره‌ای دیگر بارگذاری شده‌اند و توسط "
-"مدیر وبگاه تایید، غربالگری، تایید، بررسی یا تایید نشده‌اند. اگر به آن‌ها "
-"دسترسی دارید، این کار را با مسئولیت خود انجام می‌دهید.)"
+"Увага: ці файли були завантажені іншим учасником курсу і не пройшли "
+"перевірку, відбір, затвердження, рецензування чи підтримку адміністраторів "
+"сайту. Якщо ви їх відкриваєте, ви робите це на свій страх і ризик.)"
 
 #: templates/legacy/peer/oa_peer_assessment.html:36
 msgid "Assess Peers"
-msgstr "ارزیابی همتایان "
+msgstr "Оцінити однолітників"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 00:00 UTC (in
@@ -1406,13 +1402,13 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"درحال انجام ( %(review_number)s از %(num_must_grade)s )\n"
+"                    У процесі виконання (%(review_number)s з %(num_must_grade)s)\n"
 "                "
 
 #: templates/legacy/peer/oa_peer_assessment.html:75
 #: templates/legacy/peer/oa_peer_turbo_mode.html:45
 msgid "Read and assess the following response from one of your peers."
-msgstr "پاسخ زیر را از یکی از همتایان خود بخوانید و ارزیابی کنید."
+msgstr "Прочитайте та оцініть наступну відповідь одного з ваших однолітників."
 
 #: templates/legacy/peer/oa_peer_assessment.html:87
 #: templates/legacy/peer/oa_peer_turbo_mode.html:56
@@ -1421,7 +1417,7 @@ msgstr "پاسخ زیر را از یکی از همتایان خود بخوانی
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:38
 #: templates/legacy/staff_area/oa_student_info.html:63
 msgid "Associated Files"
-msgstr "پوشه‌های مرتبط"
+msgstr "Зв’язані файли"
 
 #: templates/legacy/peer/oa_peer_assessment.html:101
 #: templates/legacy/peer/oa_peer_turbo_mode.html:70
@@ -1429,14 +1425,14 @@ msgstr "پوشه‌های مرتبط"
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:57
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:50
 msgid "We could not submit your assessment"
-msgstr "ما نتوانستیم ارزیابی شما را ارسال کنیم"
+msgstr "Не вдалося надіслати ваше оцінювання"
 
 #: templates/legacy/peer/oa_peer_cancelled.html:19
 #: templates/legacy/response/oa_response_cancelled.html:21
 #: templates/legacy/self/oa_self_cancelled.html:21
 #: templates/legacy/student_training/student_training_cancelled.html:18
 msgid "Cancelled"
-msgstr "لغو شد"
+msgstr "Скасовано"
 
 #: templates/legacy/peer/oa_peer_closed.html:20
 #, python-format
@@ -1446,7 +1442,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"ناقص ( %(num_graded)s از %(num_must_grade)s )\n"
+"            Незавершено (%(num_graded)s з %(num_must_grade)s)\n"
 "        "
 
 #: templates/legacy/peer/oa_peer_closed.html:35
@@ -1455,13 +1451,13 @@ msgid ""
 "longer complete peer assessments or continue with this assignment, and you "
 "will receive a grade of Incomplete."
 msgstr ""
-"تاریخ سررسید این مرحله به پایان رسیده‌است. این مرحله اکنون بسته است. دیگر "
-"نمی‌توانید ارزیابی‌های همتا را تکمیل کنید یا به این تکلیف ادامه دهید و نمرۀ "
-"ناقص دریافت خواهید کرد."
+"Термін виконання цього кроку минув. Цей крок тепер закритий. Ви більше не "
+"зможете завершити оцінювання однолітників або продовжити виконання завдання,"
+" і отримаєте оцінку «Незавершено»."
 
 #: templates/legacy/peer/oa_peer_complete.html:13
 msgid "Completed"
-msgstr "تکمیل شد"
+msgstr "Завершено"
 
 #: templates/legacy/peer/oa_peer_complete.html:31
 #: templates/legacy/peer/oa_peer_turbo_mode.html:41
@@ -1471,17 +1467,17 @@ msgid ""
 "this assignment. You may assess additional peer responses if you want to. "
 "Completing additional assessments will not affect your final grade."
 msgstr ""
-"شما همۀ ارزیابی‌های ضروری برای این تکلیف را با موفقیت انجام دادید. در صورت "
-"تمایل می‌توانید پاسخ‌های دیگر همتایان را ارزیابی کنید. تکمیل ارزیابی‌های "
-"بیشتر بر نمرۀ نهایی شما تأثیری نخواهد داشت."
+"Ви успішно завершили всі обов’язкові оцінювання однолітників для цього "
+"завдання. Ви можете оцінити додаткові відповіді, якщо бажаєте. Додаткове "
+"оцінювання не вплине на вашу остаточну оцінку."
 
 #: templates/legacy/peer/oa_peer_complete.html:36
 msgid "We could not retrieve additional submissions for assessment"
-msgstr "ما نتوانستیم موارد ارسالی بیشتری را برای ارزیابی بازیابی کنیم"
+msgstr "Не вдалося отримати додаткові подання для оцінювання"
 
 #: templates/legacy/peer/oa_peer_complete.html:43
 msgid "Continue Assessing Peers"
-msgstr "به ارزیابی همتایان ادامه دهید"
+msgstr "Продовжити оцінювання однолітників"
 
 #: templates/legacy/peer/oa_peer_turbo_mode.html:26
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:20
@@ -1492,7 +1488,7 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"کامل ( %(num_graded)s )\n"
+"        Завершено (%(num_graded)s)\n"
 "      "
 
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:38
@@ -1500,15 +1496,15 @@ msgid ""
 "All submitted peer responses have been assessed. Check back later to see if "
 "more learners have submitted responses."
 msgstr ""
-"همۀ پاسخ‌های ارسالی توسط همتایان ارزیابی شده‌است. بعداً دوباره بررسی کنید تا"
-" ببینید آیا فراگیران بیشتری پاسخ‌هایی را ارسال کرده‌اند یا خیر."
+"Всі надіслані відповіді однолітників були оцінені. Поверніться пізніше, щоб "
+"перевірити, чи надіслали більше учнів відповіді."
 
 #: templates/legacy/peer/oa_peer_unavailable.html:16
 #: templates/legacy/response/oa_response_unavailable.html:17
 #: templates/legacy/self/oa_self_unavailable.html:17
 #: templates/legacy/student_training/student_training_unavailable.html:16
 msgid "Not Available"
-msgstr "در دسترس نیست"
+msgstr "Недоступно"
 
 #: templates/legacy/peer/oa_peer_waiting.html:20
 #, python-format
@@ -1518,7 +1514,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"درحال انجام ( %(review_number)s از %(num_must_grade)s )\n"
+"          В процесі (%(review_number)s з %(num_must_grade)s)\n"
 "        "
 
 #: templates/legacy/peer/oa_peer_waiting.html:37
@@ -1528,14 +1524,14 @@ msgid ""
 "you've completed all the steps for this problem and your peers have assessed"
 " your response."
 msgstr ""
-"تمام پاسخ های همتایان موجود ارزیابی شده‌است. بعداً دوباره بررسی کنید تا "
-"ببینید آیا فراگیران بیشتری پاسخ‌هایی را ارسال کرده‌اند یا خیر. بعد از اینکه "
-"تمام مراحل این مشکل را کامل کردید و همتایانتان پاسخ شما را ارزیابی کردند، "
-"نمرۀ خود را دریافت خواهید کرد."
+"Всі доступні відповіді однолітків оцінені. Поверніться пізніше, щоб "
+"перевірити, чи більше учнів подали свої відповіді. Ви отримаєте оцінку після"
+" завершення всіх етапів цієї задачі та після оцінки вашої відповіді "
+"однолітками."
 
 #: templates/legacy/response/oa_response.html:27
 msgid "Your Team's Response"
-msgstr "پاسخ تیم شما"
+msgstr "Відповідь вашої команди"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 (in 5 days and
@@ -1568,11 +1564,11 @@ msgstr ""
 #: templates/legacy/response/oa_response.html:54
 #: templates/legacy/self/oa_self_assessment.html:56
 msgid "In Progress"
-msgstr "درحال پیشرفت"
+msgstr "В процесі"
 
 #: templates/legacy/response/oa_response.html:66
 msgid "Enter your team's response to the prompt."
-msgstr "پاسخ تیم خود به درخواست را وارد کنید."
+msgstr "Введіть відповідь вашої команди на запитання."
 
 #: templates/legacy/response/oa_response.html:68
 msgid ""
@@ -1581,7 +1577,7 @@ msgid ""
 "                      "
 msgstr ""
 "\n"
-"کار شما به‌طور خودکار ذخیره می‌شود و می‌توانید در هرزمانی پیش از موعد مقرر، برای تکمیل پاسخ تیم خود بازگردید\n"
+"                        Ваша робота збережеться автоматично, і ви зможете повернутися, щоб завершити відповідь вашої команди будь-коли до встановленого терміну\n"
 "                      "
 
 #: templates/legacy/response/oa_response.html:81
@@ -1591,69 +1587,70 @@ msgid ""
 "                      "
 msgstr ""
 "\n"
-"کار شما به‌طور خودکار ذخیره می‌شود و می‌توانید در هرزمان برای تکمیل پاسخ تیم خود بازگردید.\n"
+"                        Ваша робота збережеться автоматично, і ви зможете повернутися, щоб завершити відповідь вашої команди у будь-який час.\n"
 "                      "
 
 #: templates/legacy/response/oa_response.html:86
 msgid ""
 "After you submit a response on behalf of your team, it cannot be edited."
-msgstr "پس از ارسال پاسخ از طرف تیم خود، امکان ویرایش آن را ندارید."
+msgstr ""
+"Після подання відповіді від імені вашої команди її редагувати неможливо."
 
 #: templates/legacy/response/oa_response.html:89
 msgid "Enter your response to the prompt."
-msgstr "پاسخ خود را به درخواست وارد کنید."
+msgstr "Введіть вашу відповідь на запитання."
 
 #: templates/legacy/response/oa_response.html:92
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the subsection due date "
 msgstr ""
-"کار شما به‌طور خودکار ذخیره می‌شود و می‌توانید در هر زمان قبل از موعد مقرر "
-"برای تکمیل پاسخ خود بازگردید "
+"Ваша робота збережеться автоматично, і ви зможете повернутися, щоб завершити"
+" вашу відповідь будь-коли до встановленого терміну підрозділу "
 
 #: templates/legacy/response/oa_response.html:94
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the course ends "
 msgstr ""
-"کار شما به‌طور خودکار ذخیره می‌شود و می‌توانید در هر زمانی پیش از پایان "
-"دوره، برای تکمیل پاسخ خود بازگردید "
+"Ваша робота збережеться автоматично, і ви зможете повернутися, щоб завершити"
+" вашу відповідь будь-коли до завершення курсу "
 
 #: templates/legacy/response/oa_response.html:96
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the due date "
 msgstr ""
-"کار شما به‌طور خودکار ذخیره می‌شود و می‌توانید در هر زمانی قبل از موعد مقرر،"
-" برای تکمیل پاسخ خود بازگردید "
+"Ваша робота збережеться автоматично, і ви зможете повернутися, щоб завершити"
+" вашу відповідь будь-коли до встановленого терміну "
 
 #: templates/legacy/response/oa_response.html:108
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time."
 msgstr ""
-"کار شما به‌طور خودکار ذخیره می‌شود و می‌توانید در هر زمان برای تکمیل پاسخ "
-"خود بازگردید."
+"Ваша робота збережеться автоматично, і ви зможете повернутися, щоб завершити"
+" вашу відповідь у будь-який час."
 
 #: templates/legacy/response/oa_response.html:110
 msgid "After you submit your response, you cannot edit it"
-msgstr "پس از ارسال پاسخ، امکان ویرایش آن را ندارید"
+msgstr "Після подання вашої відповіді її редагувати неможливо"
 
 #: templates/legacy/response/oa_response.html:120
 msgid "What will this assignment be graded on?"
-msgstr "این تکلیف بر چه اساسی نمره می‌گیرد؟"
+msgstr "За чим буде оцінюватися це завдання?"
 
 #: templates/legacy/response/oa_response.html:134
 msgid "The prompt for this section"
-msgstr "درخواست این بخش"
+msgstr "Запитання для цього розділу"
 
 #: templates/legacy/response/oa_response.html:148
 msgid "You are on team "
-msgstr "شما در تیم هستید "
+msgstr "Ви в команді "
 
 #: templates/legacy/response/oa_response.html:150
 msgid "Team Members: "
-msgstr "اعضای تیم: "
+msgstr "Члени команди: "
 
 #: templates/legacy/response/oa_response.html:155
 #, python-format
@@ -1665,28 +1662,28 @@ msgid ""
 "                                          "
 msgstr ""
 "\n"
-"%(team_members_with_external_submissions)s\n"
-" قبلاً پاسخی به این تکلیف با تیم دیگری ارسال کرده است،\n"
-" و بخشی از نمره ارسال یا تکلیف تیم شما نخواهد بود.\n"
+"                                              %(team_members_with_external_submissions)s\n"
+"                                              вже подали відповідь на це завдання в іншій команді,\n"
+"                                              і не враховуватимуться при оцінюванні вашої команди або завдання.\n"
 "                                          "
 
 #: templates/legacy/response/oa_response.html:171
 msgid "Team Response "
-msgstr "پاسخ تیم "
+msgstr "Відповідь команди "
 
 #: templates/legacy/response/oa_response.html:173
 msgid "Your Response "
-msgstr "پاسخ شما "
+msgstr "Ваша відповідь "
 
 #: templates/legacy/response/oa_response.html:177
 #: templates/legacy/response/oa_response.html:247
 msgid "(Required)"
-msgstr "(ضروری)"
+msgstr "(Обов'язково)"
 
 #: templates/legacy/response/oa_response.html:179
 #: templates/legacy/response/oa_response.html:249
 msgid "(Optional)"
-msgstr "(اختیاری)"
+msgstr "(Необов'язково)"
 
 #: templates/legacy/response/oa_response.html:183
 msgid ""
@@ -1699,16 +1696,15 @@ msgid ""
 "                                          "
 msgstr ""
 "\n"
-"تیم ها باید یک عضو تیم را برای ارسال پاسخ از طرف تیم تعیین کنند\n"
-" کل تیم همه اعضای تیم می توانند از این فضا برای کار بر روی پیش نویس پاسخ ها استفاده کنند،\n"
-" اما شما نمی توانید پیش نویس های هم تیمی های خود را در این فضا ببینید، بنابراین\n"
-" لطفا با آنها هماهنگ کنید تا در مورد پاسخ نهایی تیم تعیین شده تصمیم گیری کنید\n"
-" عضو باید ارسال کند\n"
+"                                              Команди повинні призначити одного члена для подання відповіді від імені\n"
+"                                              усієї команди. Всі члени команди можуть використовувати це поле для підготовки чернеток,\n"
+"                                              але ви не зможете бачити чернетки своїх колег, тому, будь ласка, узгодьте\n"
+"                                              остаточну версію відповіді, яку повинен подати призначений член команди.\n"
 "                                          "
 
 #: templates/legacy/response/oa_response.html:197
 msgid "Enter your response to the prompt above."
-msgstr "پاسخ خود را به درخواست بالا وارد کنید."
+msgstr "Введіть вашу відповідь на запитання вище."
 
 #: templates/legacy/response/oa_response.html:211
 #, python-format
@@ -1722,24 +1718,23 @@ msgid ""
 "                                  "
 msgstr ""
 "\n"
-"شما در حال حاضر در تیم %(team_name)s هستید. از آنجایی که در تیم %(previous_team_name)s بودید\n"
-" وقتی آن‌ها پاسخی برای این تکلیف ارسال کردند، تیم %(previous_team_name)s را مشاهده می‌کنید\n"
-" پاسخ دهید و برای این تکلیف نمرۀ مشابهی با هم‌تیمی‌های سابق خود دریافت خواهید کرد.\n"
-" شما بخشی از ارسالی تیم %(team_name)s برای این تکلیف نخواهید بود و نخواهید بود\n"
-" برای ارسال آنها نمره دریافت می‌کنند.\n"
+"                                      Ви наразі в команді %(team_name)s. Оскільки ви були у команді %(previous_team_name)s,\n"
+"                                      коли відповідь подавали, ви бачите відповідь команди %(previous_team_name)s і отримаєте таку ж оцінку,\n"
+"                                      як ваші колишні колеги. Ви не братимете участі у поданні команди %(team_name)s і не\n"
+"                                      отримаєте оцінку за їхню відповідь.\n"
 "                                  "
 
 #: templates/legacy/response/oa_response.html:224
 msgid "We could not save your progress"
-msgstr "ما نتوانستیم پیشرفت شما را ذخیره کنیم"
+msgstr "Не вдалося зберегти ваш прогрес"
 
 #: templates/legacy/response/oa_response.html:232
 msgid "Status of Your Response"
-msgstr "وضعیت پاسخ شما"
+msgstr "Статус вашої відповіді"
 
 #: templates/legacy/response/oa_response.html:245
 msgid "File Uploads "
-msgstr "بارگذاری‌ها"
+msgstr "Завантаження файлів "
 
 #: templates/legacy/response/oa_response.html:253
 msgid ""
@@ -1749,66 +1744,67 @@ msgid ""
 "                              "
 msgstr ""
 "\n"
-"پوشه‌ها را بارگذاری کنید و سپس آن‌ها را خودتان یا اعضای تیم‌تان بررسی کنید. اطمینان حاصل کنید که توضیحی دربارۀ آن‌ها ارائه کنید \n"
-" برای کمک به هم‌تیمی های خود در شناسایی آن‌ها.\n"
+"                                  Завантажуйте файли та переглядайте файли, завантажені вами та вашими колегами нижче. Обов'язково додайте\n"
+"                                  описи до файлів, щоб вашим колегам було легше їх ідентифікувати.\n"
 "                              "
 
 #: templates/legacy/response/oa_response.html:261
 msgid "We could not upload files"
-msgstr "ما نتوانستیم پوشه‌ها را بارگذاری کنیم"
+msgstr "Не вдалося завантажити файли"
 
 #: templates/legacy/response/oa_response.html:267
 msgid "We could not delete files"
-msgstr "ما نتوانستیم پوشه‌ها را حذف کنیم"
+msgstr "Не вдалося видалити файли"
 
 #: templates/legacy/response/oa_response.html:274
 msgid "Select one or more files to upload for this submission."
-msgstr "یک یا چند پوشه را برای بارگذاری برای این ارسال انتخاب کنید."
+msgstr "Виберіть один або кілька файлів для завантаження для цього подання."
 
 #: templates/legacy/response/oa_response.html:276
 msgid "Select a file to upload for this submission."
-msgstr "پوشه‌ای را برای بارگذاری برای این ارسال انتخاب کنید."
+msgstr "Виберіть файл для завантаження для цього подання."
 
 #: templates/legacy/response/oa_response.html:280
 msgid "Supported file types: "
-msgstr "انواع پوشه‌های پشتیبانی‌شده: "
+msgstr "Підтримувані типи файлів: "
 
 #: templates/legacy/response/oa_response.html:286
 msgid "Upload files"
-msgstr "بارگذاری پوشه‌ها"
+msgstr "Завантажити файли"
 
 #: templates/legacy/response/oa_response.html:288
 msgid "Upload file"
-msgstr "بارگذاری پوشه"
+msgstr "Завантажити файл"
 
 #: templates/legacy/response/oa_response.html:305
 msgid "This is a team submission."
-msgstr "این ارسال توسط یک تیم است."
+msgstr "Це подання команди."
 
 #: templates/legacy/response/oa_response.html:307
 msgid ""
 "One team member should submit a response with the team’s shared files and a "
 "text response on behalf of the entire team."
 msgstr ""
-"یکی از اعضای تیم باید یک پاسخ با پوشه‌های مشترک تیم و یک پاسخ متنی از طرف کل"
-" تیم ارسال کند."
+"Один член команди повинен подати відповідь, використовуючи спільні файли "
+"команди та текстову відповідь від імені всієї команди."
 
 #: templates/legacy/response/oa_response.html:309
 msgid ""
 "One team member should submit a response with the team’s shared files on "
 "behalf of the entire team."
 msgstr ""
-"یکی از اعضای تیم باید از طرف کل تیم پاسخی را با پوشه‌های مشترک تیم ارسال "
-"کند."
+"Один член команди повинен подати відповідь із спільними файлами від імені "
+"всієї команди."
 
 #: templates/legacy/response/oa_response.html:311
 msgid ""
 "One team member should submit a text response on behalf of the entire team."
-msgstr "یک عضو از تیم باید یک پاسخ متنی از طرف کل تیم ارسال کند."
+msgstr ""
+"Один член команди повинен подати текстову відповідь від імені всієї команди."
 
 #: templates/legacy/response/oa_response.html:313
 msgid "One team member should submit on behalf of the entire team."
-msgstr "یک عضو از تیم باید به نمایندگی از کل تیم ارسال کند."
+msgstr "Один член команди повинен подати від імені всієї команди."
 
 #: templates/legacy/response/oa_response.html:315
 msgid ""
@@ -1817,20 +1813,20 @@ msgid ""
 "                  "
 msgstr ""
 "\n"
-"دربارۀ تکالیف تیمی بیشتر بدانید: ( <a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">لینک</a> )\n"
+"                  Дізнайтеся більше про командні завдання тут: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">посилання</a>)\n"
 "                  "
 
 #: templates/legacy/response/oa_response.html:323
 msgid "We could not submit your response"
-msgstr "ما نتوانستیم پاسخ شما را ارسال کنیم"
+msgstr "Не вдалося подати вашу відповідь"
 
 #: templates/legacy/response/oa_response.html:334
 msgid "Submit your response and move to the next step"
-msgstr "پاسخ خود را ارسال کنید و به مرحلۀ بعدی بروید"
+msgstr "Подайте вашу відповідь та перейдіть до наступного кроку"
 
 #: templates/legacy/response/oa_response_cancelled.html:34
 msgid "Your submission was cancelled. "
-msgstr "ارسال شما لغو شد. "
+msgstr "Ваше подання було скасовано. "
 
 #: templates/legacy/response/oa_response_cancelled.html:37
 #, python-format
@@ -1840,7 +1836,7 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"ارسال شما توسط %(removed_by_username)s در %(removed_datetime)s لغو شده‌است\n"
+"                                Ваше подання було скасовано %(removed_by_username)s у %(removed_datetime)s\n"
 "                            "
 
 #: templates/legacy/response/oa_response_cancelled.html:41
@@ -1851,7 +1847,7 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"ارسال شما در %(removed_datetime)s لغو شد\n"
+"                               Ваше подання було скасовано %(removed_datetime)s\n"
 "                            "
 
 #: templates/legacy/response/oa_response_cancelled.html:48
@@ -1862,14 +1858,14 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"نظرات: %(comments)s\n"
+"                            Коментарі: %(comments)s\n"
 "                        "
 
 #: templates/legacy/response/oa_response_closed.html:19
 #: templates/legacy/self/oa_self_closed.html:20
 #: templates/legacy/student_training/student_training_closed.html:17
 msgid "Incomplete"
-msgstr "ناقص"
+msgstr "Незавершено"
 
 #: templates/legacy/response/oa_response_closed.html:32
 msgid ""
@@ -1878,36 +1874,36 @@ msgid ""
 " a grade of Incomplete. If you saved but did not submit a response, the "
 "response appears in the course records."
 msgstr ""
-"تاریخ سررسید این مرحله به پایان رسیده‌است. این مرحله اکنون بسته است. دیگر "
-"نمی‌توانید پاسخی ارسال کنید یا با این مشکل ادامه دهید و نمرۀ ناقص دریافت "
-"خواهید کرد. اگر ذخیره کرده‌اید اما پاسخی ارسال نکرده‌اید، پاسخ در سوابق دوره"
-" ظاهر می‌شود."
+"Термін для цього кроку минув. Цей крок тепер закрито. Ви більше не зможете "
+"подати відповідь або продовжити роботу над цією задачею, і ви отримаєте "
+"оцінку «Незавершено». Якщо ви зберегли, але не подали відповідь, вона "
+"з'явиться в записах курсу."
 
 #: templates/legacy/response/oa_response_graded.html:20
 #: templates/legacy/response/oa_response_submitted.html:20
 #: templates/legacy/self/oa_self_complete.html:18
 #: templates/legacy/student_training/student_training_complete.html:17
 msgid "Complete"
-msgstr "کامل"
+msgstr "Завершено"
 
 #: templates/legacy/response/oa_response_graded.html:30
 #: templates/legacy/response/oa_response_submitted.html:51
 #: templates/legacy/self/oa_self_assessment.html:67
 msgid "Your response"
-msgstr "پاسخ شما"
+msgstr "Ваша відповідь"
 
 #: templates/legacy/response/oa_response_graded.html:33
 #: templates/legacy/response/oa_response_submitted.html:54
 msgid "Your Uploaded Files"
-msgstr "پوشه‌های بارگذاری‌شدۀ شما"
+msgstr "Ваші завантажені файли"
 
 #: templates/legacy/response/oa_response_submitted.html:32
 msgid ""
 "Your response has been submitted. You will receive your grade after all "
 "steps are complete and your response is fully assessed."
 msgstr ""
-"پاسخ شما ارسال شد. پس از تکمیل تمام مراحل و ارزیابی کامل پاسخ شما، نمره خود "
-"را دریافت خواهید کرد."
+"Ваша відповідь подана. Ви отримаєте оцінку після завершення всіх кроків та "
+"повної оцінки вашої відповіді."
 
 #: templates/legacy/response/oa_response_submitted.html:34
 #, python-format
@@ -1917,7 +1913,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"هنوز باید مراحل ارزیابی همتا %(peer_start_tag)s %(end_tag)s و %(self_start_tag)s %(end_tag)s را تکمیل کنید.\n"
+"                        Вам ще потрібно виконати кроки %(peer_start_tag)sоцінки однолітків%(end_tag)s та %(self_start_tag)sself оцінки%(end_tag)s.\n"
 "                    "
 
 #: templates/legacy/response/oa_response_submitted.html:38
@@ -1928,7 +1924,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"هنوز باید مرحلۀ %(start_tag)s ارزیابی همتا %(end_tag)s را تکمیل کنید.\n"
+"                        Вам ще потрібно пройти крок %(start_tag)sоцінки однолітків%(end_tag)s.\n"
 "                    "
 
 #: templates/legacy/response/oa_response_submitted.html:42
@@ -1939,20 +1935,20 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"هنوز باید مرحلۀ %(start_tag)s خودارزیابی %(end_tag)s را تکمیل کنید.\n"
+"                        Вам ще потрібно пройти крок %(start_tag)sсамооцінки%(end_tag)s.\n"
 "                    "
 
 #: templates/legacy/response/oa_response_submitted.html:63
 msgid "We could not reset your response"
-msgstr "ما نتوانستیم پاسخ شما را بازنشانی کنیم"
+msgstr "Не вдалося скинути вашу відповідь"
 
 #: templates/legacy/response/oa_response_submitted.html:69
 msgid "Reset response and submit again"
-msgstr "بازنشانی پاسخ و ثبت دوباره"
+msgstr "Скинути відповідь та подати знову"
 
 #: templates/legacy/response/oa_response_team_already_submitted.html:15
 msgid "Error"
-msgstr "خطا"
+msgstr "Помилка"
 
 #: templates/legacy/response/oa_response_team_already_submitted.html:29
 #, python-format
@@ -1965,15 +1961,13 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"شما پس از ارسال پاسخی برای این تکلیف به تیم %(team_name)s پیوستید\n"
-" و برای پاسخ آنها نمره‌ای دریافت نخواهید کرد. شما همچنین قبلاً ارسال نکرده‌اید\n"
-" پاسخ به این تکلیف با تیم دیگری. لطفاً با کارکنان دوره تماس بگیرید تا دربارۀ خود صحبت کنید\n"
-" گزینه‌های این تکلیف\n"
+"                            Ви приєдналися до команди %(team_name)s після того, як вона подала відповідь на це завдання,\n"
+"                            тому ви не отримаєте оцінку за її відповідь. Також ви раніше не подавали відповідь на це завдання в іншій команді. Будь ласка, зв'яжіться з персоналом курсу для обговорення ваших варіантів щодо цього завдання.\n"
 "                        "
 
 #: templates/legacy/self/oa_self_assessment.html:33
 msgid "Assess Your Response"
-msgstr "ارزیابی پاسخ "
+msgstr "Оцініть вашу відповідь"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 (in 5 days and
@@ -2005,7 +1999,7 @@ msgstr ""
 
 #: templates/legacy/self/oa_self_assessment.html:88
 msgid "Submit your assessment"
-msgstr "ثبت ارزیابی "
+msgstr "Подайте вашу оцінку"
 
 #: templates/legacy/self/oa_self_closed.html:32
 msgid ""
@@ -2013,103 +2007,103 @@ msgid ""
 "longer complete a self assessment or continue with this assignment, and you "
 "will receive a grade of Incomplete."
 msgstr ""
-"تاریخ سررسید این مرحله به پایان رسیده‌است. این مرحله اکنون بسته است. شما "
-"دیگر نمی‌توانید خودارزیابی را تکمیل کنید یا به این تکلیف ادامه دهید و نمرۀ "
-"ناقص دریافت خواهید کرد."
+"Термін цього кроку минув. Він тепер закритий. Ви більше не зможете пройти "
+"самооцінку або продовжити виконання цього завдання, і ви отримаєте оцінку "
+"«Незавершено»."
 
 #: templates/legacy/staff/oa_staff_grade.html:13 xblock/grade_mixin.py:369
 msgid "Staff Grade"
-msgstr "نمرۀ کارکنان"
+msgstr "Оцінка викладача"
 
 #: templates/legacy/staff_area/oa_staff_area.html:8
 #: templates/legacy/staff_area/oa_staff_area.html:35
 msgid "Manage Individual Learners"
-msgstr "مدیریت فراگیران فردی "
+msgstr "Керувати окремими учнями"
 
 #: templates/legacy/staff_area/oa_staff_area.html:10
 msgid "Manage Team Responses"
-msgstr "مدیریت پاسخ‌های تیم"
+msgstr "Керувати відповідями команд"
 
 #: templates/legacy/staff_area/oa_staff_area.html:13
 #: templates/legacy/staff_area/oa_staff_area.html:71
 msgid "View Assignment Statistics"
-msgstr "مشاهدۀ آمار تکالیف"
+msgstr "Переглянути статистику завдань"
 
 #: templates/legacy/staff_area/oa_staff_area.html:22
 msgid "Demo the new Grading Experience"
-msgstr "نمایش تجربۀ نمره‌دهی جدید"
+msgstr "Ознайомтеся з новим досвідом оцінювання"
 
 #: templates/legacy/staff_area/oa_staff_area.html:26
 msgid "View ORA in Studio"
-msgstr "مشاهدۀ ORA در استودیو "
+msgstr "Переглянути ORA в Studio"
 
 #: templates/legacy/staff_area/oa_staff_area.html:31
 #: templates/legacy/staff_area/oa_staff_area.html:69
 #: templates/legacy/staff_area/oa_staff_area.html:151
 msgid "Close"
-msgstr "بستن"
+msgstr "Закрити"
 
 #: templates/legacy/staff_area/oa_staff_area.html:37
 msgid "Manage Teams"
-msgstr "مدیریت تیم‌ها"
+msgstr "Керувати командами"
 
 #: templates/legacy/staff_area/oa_staff_area.html:50
 msgid "Enter an individual learner's username or email"
-msgstr "نام کاربری یا آدرس رایانامه یک فراگیرنده را وارد کنید"
+msgstr "Введіть ім'я користувача або електронну адресу окремого учня"
 
 #: templates/legacy/staff_area/oa_staff_area.html:52
 msgid "Enter a team member's username or edX email"
-msgstr "نام کاربری یا آدرس رایانامه edX یکی از اعضای تیم را وارد کنید"
+msgstr "Введіть ім'я користувача або електронну адресу члена команди edX"
 
 #: templates/legacy/staff_area/oa_staff_area.html:56
 msgid "Submit"
-msgstr "ثبت"
+msgstr "Подати"
 
 #: templates/legacy/staff_area/oa_staff_area.html:78
 msgid "Response total"
-msgstr "کل پاسخ"
+msgstr "Загальна кількість відповідей"
 
 #: templates/legacy/staff_area/oa_staff_area.html:84
 msgid "Location"
-msgstr "محل"
+msgstr "Місцезнаходження"
 
 #: templates/legacy/staff_area/oa_staff_area.html:90
 msgid "Learner Progress"
-msgstr "پیشرفت فراگیرنده"
+msgstr "Прогрес учня"
 
 #: templates/legacy/staff_area/oa_staff_area.html:94
 #: templates/legacy/staff_area/oa_staff_area.html:117
 msgid "Problem Step"
-msgstr "مرحلۀ مشکل"
+msgstr "Крок задачі"
 
 #: templates/legacy/staff_area/oa_staff_area.html:95
 msgid "Active Learners in Step"
-msgstr "فراگیران فعال در این مرحله"
+msgstr "Активні учні в кроці"
 
 #: templates/legacy/staff_area/oa_staff_area.html:113
 msgid "Dates"
-msgstr "تاریخ"
+msgstr "Дати"
 
 #: templates/legacy/staff_area/oa_staff_area.html:118
 msgid "Release Date"
-msgstr "تاریخ انتشار"
+msgstr "Дата виходу"
 
 #: templates/legacy/staff_area/oa_staff_area.html:131
 #: templates/legacy/staff_area/oa_staff_area.html:137
 msgid "N/A"
-msgstr "ناموجود"
+msgstr "Н/Д"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners.html:7
 msgid "Staff Assessment"
-msgstr "ارزیابی کارکنان"
+msgstr "Оцінка викладача"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:14
 msgid "Give this team a grade using the problem's rubric."
-msgstr "با استفاده از سرفصل مساله به این تیم نمره بدهید."
+msgstr "Оцініть цю команду, використовуючи рубрику задачі."
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:16
 msgid "Give this learner a grade using the problem's rubric."
-msgstr "با استفاده از سرفصل مساله به این فراگیرنده نمره بدهید."
+msgstr "Оцініть цього учня, використовуючи рубрику задачі."
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:26
 #, python-format
@@ -2119,7 +2113,7 @@ msgid ""
 "                                    "
 msgstr ""
 "\n"
-"پاسخ برای: %(team_name)s با %(team_usernames)s\n"
+"                                        Відповідь для: %(team_name)s з %(team_usernames)s\n"
 "                                    "
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:30
@@ -2131,32 +2125,32 @@ msgid ""
 "                                    "
 msgstr ""
 "\n"
-"پاسخ برای: %(student_username)s\n"
+"                                        Відповідь для: %(student_username)s\n"
 "                                    "
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:34
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:24
 msgid "Learner Response"
-msgstr "پاسخ فراگیرنده"
+msgstr "Відповідь учня"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:39
 msgid "The teams's response to the prompt above"
-msgstr "پاسخ تیم‌ها به درخواست بالا"
+msgstr "Відповідь команди на запитання вище"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:41
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:32
 #: templates/legacy/staff_area/oa_student_info.html:57
 msgid "The learner's response to the prompt above"
-msgstr "پاسخ فراگیر به درخواست بالا"
+msgstr "Відповідь учня на запитання вище"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:64
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:57
 msgid "Submit assessment"
-msgstr "ارسال ارزیابی "
+msgstr "Подати оцінку"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:70
 msgid "Submit assessment and continue grading"
-msgstr "ارسال ارزیابی  و ادامۀ نمره‌گذاری"
+msgstr "Подати оцінку та продовжити оцінювання"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_count.html:6
 #, python-format
@@ -2166,25 +2160,27 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"%(ungraded)s موجود و %(in_progress)s بررسی شد\n"
+"                %(ungraded)s Неоцінених та %(in_progress)s В процесі перевірки\n"
 "            "
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:7
 msgid "Override this learner's current grade using the problem's rubric."
-msgstr "با استفاده از سرفصل مساله، نمرۀ فعلی این فراگیرنده را نادیده بگیرید."
+msgstr ""
+"Перевизначте поточну оцінку цього учня, використовуючи рубрику задачі."
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:9
 msgid "Override this team's current grade using the problem's rubric."
-msgstr "با استفاده از سرفصل مساله، نمرۀ فعلی این تیم را لغو کنید."
+msgstr ""
+"Перевизначте поточну оцінку цієї команди, використовуючи рубрику задачі."
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:27
 msgid "Team Response"
-msgstr "پاسخ تیم"
+msgstr "Відповідь команди"
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:34
 #: templates/legacy/staff_area/oa_student_info.html:59
 msgid "The team's response to the prompt above"
-msgstr "پاسخ تیم به درخواست بالا"
+msgstr "Відповідь команди на запитання вище"
 
 #: templates/legacy/staff_area/oa_student_info.html:11
 #, python-format
@@ -2194,7 +2190,7 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"درحال مشاهدۀ فراگیرنده: %(learner)s\n"
+"                    Перегляд учня: %(learner)s\n"
 "                "
 
 #: templates/legacy/staff_area/oa_student_info.html:15
@@ -2205,16 +2201,16 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"تیم مشاهده: %(team)s\n"
+"                    Перегляд команди: %(team)s\n"
 "                "
 
 #: templates/legacy/staff_area/oa_student_info.html:28
 msgid "Learner's Response"
-msgstr "پاسخ فراگیرنده"
+msgstr "Відповідь учня"
 
 #: templates/legacy/staff_area/oa_student_info.html:30
 msgid "Team's Response"
-msgstr "پاسخ تیم"
+msgstr "Відповідь команди"
 
 #: templates/legacy/staff_area/oa_student_info.html:39
 #, python-format
@@ -2224,7 +2220,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"ارسال فراگیرنده توسط %(removed_by_username)s در %(removed_datetime)s حذف شد\n"
+"                            Подання учня видалено %(removed_by_username)s у %(removed_datetime)s\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:43
@@ -2235,7 +2231,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"ارسال فراگیرنده در %(removed_datetime)s حذف شد\n"
+"                            Подання учня видалено %(removed_datetime)s\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:50
@@ -2246,36 +2242,36 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"نظرات: %(comments)s\n"
+"                        Коментарі: %(comments)s\n"
 "                    "
 
 #: templates/legacy/staff_area/oa_student_info.html:71
 msgid "Peer Assessments for This Learner"
-msgstr "ارزیابی همتایان برای این فراگیرنده"
+msgstr "Оцінки однолітків для цього учня"
 
 #: templates/legacy/staff_area/oa_student_info.html:76
 msgid "Peer Assessments Completed by This Learner"
-msgstr "ارزیابی‌های همتا توسط این فرد تکمیل شد"
+msgstr "Оцінки однолітків, завершені цим учнем"
 
 #: templates/legacy/staff_area/oa_student_info.html:81
 msgid "Learner's Self Assessment"
-msgstr "خودارزیابی فراگیرنده"
+msgstr "Самооцінка учня"
 
 #: templates/legacy/staff_area/oa_student_info.html:87
 msgid "Staff Assessment for This Learner"
-msgstr "ارزیابی کارکنان از این فراگیرنده"
+msgstr "Оцінка викладача для цього учня"
 
 #: templates/legacy/staff_area/oa_student_info.html:89
 msgid "Staff Assessment for this Team"
-msgstr "ارزیابی کارکنان برای این تیم"
+msgstr "Оцінка викладача для цієї команди"
 
 #: templates/legacy/staff_area/oa_student_info.html:100
 msgid "Learner's Final Grade"
-msgstr "نمرۀ نهایی فراگیرنده"
+msgstr "Фінальна оцінка учня"
 
 #: templates/legacy/staff_area/oa_student_info.html:102
 msgid "Team's Final Grade"
-msgstr "نمرۀ نهایی تیم"
+msgstr "Фінальна оцінка команди"
 
 #: templates/legacy/staff_area/oa_student_info.html:112
 #, python-format
@@ -2285,12 +2281,12 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"نمرۀ نهایی: %(points_earned)s از %(points_possible)s\n"
+"                            Фінальна оцінка: %(points_earned)s з %(points_possible)s\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:119
 msgid "Final Grade Details"
-msgstr "جزئیات نمرۀ نهایی"
+msgstr "Деталі фінальної оцінки"
 
 #: templates/legacy/staff_area/oa_student_info.html:139
 #, python-format
@@ -2304,20 +2300,28 @@ msgid_plural ""
 "                                    "
 msgstr[0] ""
 "\n"
-"%(assessment_label)s - نقطه %(points)s\n"
+"                                        %(assessment_label)s - %(points)s бал\n"
 "                                    "
 msgstr[1] ""
 "\n"
-"%(assessment_label)s - %(points)s امتیاز\n"
+"                                        %(assessment_label)s - %(points)s бали\n"
+"                                    "
+msgstr[2] ""
+"\n"
+"                                        %(assessment_label)s - %(points)s балів\n"
+"                                    "
+msgstr[3] ""
+"\n"
+"                                        %(assessment_label)s - %(points)s балів\n"
 "                                    "
 
 #: templates/legacy/staff_area/oa_student_info.html:154
 msgid "Feedback Recorded"
-msgstr "بازخورد ثبت شد"
+msgstr "Зворотний зв'язок зафіксовано"
 
 #: templates/legacy/staff_area/oa_student_info.html:165
 msgid "The submission is waiting for assessments."
-msgstr "ارسال در انتظار ارزیابی است."
+msgstr "Подання очікує на оцінку."
 
 #: templates/legacy/staff_area/oa_student_info.html:170
 msgid ""
@@ -2325,9 +2329,9 @@ msgid ""
 "receives a grade of zero unless you delete the learner's state for the "
 "problem to allow them to resubmit a response."
 msgstr ""
-"ارسال فراگیرنده از ارزیابی همتا حذف شده‌است. فراگیرنده، نمرۀ صفر دریافت "
-"می‌کند مگر اینکه وضعیت وی را برای این مساله حذف کنید تا به او اجازه ارسال "
-"مجدد پاسخ داده شود."
+"Подання учня вилучено з оцінювання однолітків. Учень отримає оцінку нуль, "
+"якщо ви не видалите його стан для задачі, щоб дозволити повторну подачу "
+"відповіді."
 
 #: templates/legacy/staff_area/oa_student_info.html:172
 msgid ""
@@ -2335,37 +2339,37 @@ msgid ""
 "grade of zero unless you delete the a team member’s state for the problem to"
 " allow the team to resubmit a response."
 msgstr ""
-"ارسالی تیم از نمره‌دهی حذف شده‌است. تیم نمرۀ صفر دریافت می‌کند مگر اینکه "
-"وضعیت یکی از اعضای تیم را برای این مساله حذف کنید تا به تیم اجازه ارسال مجدد"
-" پاسخ را داده شود."
+"Подання команди вилучено з оцінювання. Команда отримає оцінку нуль, якщо ви "
+"не видалите стан члена команди для задачі, щоб дозволити повторну подачу "
+"відповіді."
 
 #: templates/legacy/staff_area/oa_student_info.html:177
 msgid "The problem has not been started."
-msgstr "این مساله شروع نشده‌است."
+msgstr "Задачу ще не розпочато."
 
 #: templates/legacy/staff_area/oa_student_info.html:181
 msgid "The problem has not been completed."
-msgstr "مشکل تکمیل نشده‌است."
+msgstr "Задачу не завершено."
 
 #: templates/legacy/staff_area/oa_student_info.html:193
 msgid "Submit Assessment Grade Override"
-msgstr "ثبت لغو نمرۀ ارزیابی"
+msgstr "Подати змінення оцінки за оцінкою"
 
 #: templates/legacy/staff_area/oa_student_info.html:195
 msgid "Submit Team Grade Override"
-msgstr "ثبت لغو نمرۀ تیم"
+msgstr "Подати змінення оцінки команди"
 
 #: templates/legacy/staff_area/oa_student_info.html:204
 msgid "Unable to perform grade override"
-msgstr "لغو نمره انجام نشد"
+msgstr "Не вдалося змінити оцінку"
 
 #: templates/legacy/staff_area/oa_student_info.html:207
 msgid ""
 "Grades are frozen. Grades are automatically frozen 30 days after the course "
 "end date."
 msgstr ""
-"نمرات منجمد شده‌اند. نمرات به‌طور خودکار 30 روز پس از تاریخ پایان دوره، "
-"منجمد می‌شوند."
+"Оцінки заморожено. Оцінки автоматично заморожуються через 30 днів після "
+"закінчення курсу."
 
 #: templates/legacy/staff_area/oa_student_info.html:212
 msgid ""
@@ -2373,45 +2377,49 @@ msgid ""
 "documentation for how to delete the learner’s state for this problem to "
 "allow them to resubmit."
 msgstr ""
-"این ارسال لغو شده‌است و نمی‌تواند نمره ای دریافت کند. برای دریافت نحوۀ حذف "
-"وضعیت فراگیرنده برای این مساله به مستندات مراجعه کنید تا به آن‌ها اجازۀ "
-"ارسال مجدد داده شود."
+"Це подання було скасовано та не може отримати оцінку. Зверніться до "
+"документації, щоб дізнатися, як видалити стан учня для цієї задачі, щоб "
+"дозволити повторну подачу."
 
 #: templates/legacy/staff_area/oa_student_info.html:230
 msgid "Remove Submission From Peer Grading"
-msgstr "حذف ارسال از نمره‌دهی همتا"
+msgstr "Видалити подання з оцінки однолітків"
 
 #: templates/legacy/staff_area/oa_student_info.html:232
 msgid "Remove Team Submission from Grading"
-msgstr "حذف ارسال تیم از نمره‌دهی "
+msgstr "Видалити подання команди з оцінювання"
 
 #: templates/legacy/staff_area/oa_student_info.html:242
 msgid "Caution: This Action Cannot Be Undone"
-msgstr "احتیاط: این عمل قابل لغو نیست"
+msgstr "Увага: Цю дію неможливо скасувати"
 
 #: templates/legacy/staff_area/oa_student_info.html:244
 msgid ""
 "Removing a learner's submission cannot be undone and should be done with "
 "caution."
-msgstr "حذف مطالب ارسالی فراگیرنده، قابل لغو نیست و باید با احتیاط انجام شود."
+msgstr ""
+"Видалення подання учня не можна скасувати, тому виконуйте його з "
+"обережністю."
 
 #: templates/legacy/staff_area/oa_student_info.html:246
 msgid ""
 "Removing a team's submission cannot be undone and should be done with "
 "caution."
-msgstr "حذف ارسال یک تیم،  قابل لغو نیست و باید با احتیاط انجام شود."
+msgstr ""
+"Видалення подання команди не можна скасувати, тому виконуйте його з "
+"обережністю."
 
 #: templates/legacy/staff_area/oa_student_info.html:252
 msgid "Comments:"
-msgstr "نظرات:"
+msgstr "Коментарі:"
 
 #: templates/legacy/staff_area/oa_student_info.html:261
 msgid "Remove submission"
-msgstr "حذف ارسال"
+msgstr "Видалити подання"
 
 #: templates/legacy/staff_area/oa_student_info.html:276
 msgid "A response was not found for this learner."
-msgstr "پاسخی برای این فراگیرنده یافت نشد."
+msgstr "Відповідь для цього учня не знайдено."
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:16
 #, python-format
@@ -2421,28 +2429,28 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"ارزیابی %(assessment_num)s :\n"
+"                            Оцінка %(assessment_num)s:\n"
 "                        "
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:22
 msgid "Assessment Details"
-msgstr "جزئیات ارزیابی"
+msgstr "Деталі оцінки"
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:26
 msgid "Selected Option"
-msgstr "گزینۀ منتخب"
+msgstr "Вибрана опція"
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:27
 msgid "Feedback"
-msgstr "بازخورد"
+msgstr "Зворотний зв'язок"
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:29
 msgid "Points Possible"
-msgstr "امتیازات احتمالی"
+msgstr "Максимальна кількість балів"
 
 #: templates/legacy/student_training/student_training.html:18
 msgid "Learn to Assess Responses"
-msgstr "یادگیری ارزیابی پاسخ‌ها"
+msgstr "Навчіться оцінювати відповіді"
 
 #: templates/legacy/student_training/student_training.html:27
 #, python-format
@@ -2452,7 +2460,7 @@ msgid ""
 "                  "
 msgstr ""
 "\n"
-"درحال انجام ( %(current_progress_num)s از %(training_available_num)s )\n"
+"                      В процесі (%(current_progress_num)s з %(training_available_num)s)\n"
 "                  "
 
 #. Translators: This string displays a date to the user, then tells them the
@@ -2486,7 +2494,7 @@ msgstr ""
 #: templates/legacy/student_training/student_training.html:58
 #: templates/legacy/student_training/student_training.html:66
 msgid "Learning to Assess Responses"
-msgstr "یادگیری ارزیابی پاسخ‌ها"
+msgstr "Навчання оцінювати відповіді"
 
 #: templates/legacy/student_training/student_training.html:61
 msgid ""
@@ -2496,11 +2504,11 @@ msgid ""
 "instructor selected, you'll move to the next step. If you don't select the "
 "same options, you'll review the response and try again."
 msgstr ""
-"قبل از اینکه شروع به ارزیابی پاسخ‌های همتایان خود کنید، می‌آموزید که چگونه "
-"ارزیابی‌های همتا را با مرور پاسخ‌هایی که مدرسان قبلا ارزیابی کرده‌اند کامل "
-"کنید. اگر همان گزینه‌ها را برای پاسخی که مدرس انتخاب کرده انتخاب کنید، به "
-"مرحلۀ بعد می‌روید. اگر همان گزینه‌ها را انتخاب نکنید، پاسخ را مرور کرده و "
-"دوباره امتحان می‌کنید."
+"Перш ніж почати оцінювати відповіді своїх однолітків, ви дізнаєтеся, як "
+"виконувати оцінку однолітків, переглядаючи відповіді, які вже оцінили "
+"викладачі. Якщо ви виберете ті самі варіанти, що вибрав викладач, ви "
+"перейдете до наступного кроку. Якщо ні, перегляньте відповідь і спробуйте "
+"оцінити знову."
 
 #: templates/legacy/student_training/student_training.html:69
 msgid ""
@@ -2508,38 +2516,38 @@ msgid ""
 "Review the response and consider why the instructor may have assessed it "
 "differently. Then, try the assessment again."
 msgstr ""
-"ارزیابی شما با ارزیابی مربی از این پاسخ متفاوت است. پاسخ را مرور کنید و در "
-"نظر بگیرید که چرا مربی ممکن است آن را متفاوت ارزیابی کرده باشد. سپس، دوباره "
-"ارزیابی را امتحان کنید."
+"Ваша оцінка відрізняється від оцінки викладача цієї відповіді. Перегляньте "
+"відповідь та замисліться, чому викладач оцінив її по-іншому. Потім спробуйте"
+" оцінити знову."
 
 #: templates/legacy/student_training/student_training.html:76
 msgid "The response to the prompt above:"
-msgstr "پاسخ به درخواست بالا:"
+msgstr "Відповідь на запитання вище:"
 
 #: templates/legacy/student_training/student_training.html:98
 msgid "Selected Options Agree"
-msgstr "با گزینه‌های منتخب موافقم"
+msgstr "Вибрані опції співпадають"
 
 #: templates/legacy/student_training/student_training.html:101
 msgid "The option you selected is the option that the instructor selected."
-msgstr "گزین‌ه‌ای که انتخاب کردید گزینه‌ای است که مدرس انتخاب کرده است."
+msgstr "Обрана вами опція є тією, яку вибрав викладач."
 
 #: templates/legacy/student_training/student_training.html:105
 msgid "Selected Options Differ"
-msgstr "گزینه‌های منتخب متفاوت هستند"
+msgstr "Вибрані опції відрізняються"
 
 #: templates/legacy/student_training/student_training.html:108
 msgid ""
 "The option you selected is not the option that the instructor selected."
-msgstr "گزینه‌ای که انتخاب کردید گزینه‌ای نیست که مدرس انتخاب کرده است."
+msgstr "Обрана вами опція не відповідає тій, яку вибрав викладач."
 
 #: templates/legacy/student_training/student_training.html:144
 msgid "We could not check your assessment"
-msgstr "ما نتوانستیم ارزیابی شما را بررسی کنیم"
+msgstr "Не вдалося перевірити вашу оцінку"
 
 #: templates/legacy/student_training/student_training.html:151
 msgid "Compare your selections with the instructor's selections"
-msgstr "انتخاب‌های خود را با انتخاب‌های مربی مقایسه کنید"
+msgstr "Порівняйте ваші вибори з виборами викладача"
 
 #: templates/legacy/student_training/student_training_closed.html:29
 msgid ""
@@ -2547,85 +2555,85 @@ msgid ""
 "longer continue with this assignment, and you will receive a grade of "
 "Incomplete."
 msgstr ""
-"تاریخ سررسید این مرحله به پایان رسیده‌است. این مرحله اکنون بسته است. دیگر "
-"نمی‌توانید این تکلیف را ادامه دهید و نمرۀ ناتمام دریافت خواهید کرد."
+"Термін цього кроку минув. Він тепер закритий. Ви більше не зможете "
+"продовжувати роботу над завданням, і отримаєте оцінку «Незавершено»."
 
 #: templates/legacy/student_training/student_training_error.html:18
 msgid "Error Loading Learner Training Examples"
-msgstr "خطا در بارگیری نمونه‌های آموزشی فراگیرنده"
+msgstr "Помилка завантаження прикладів навчання для учнів"
 
 #: templates/legacy/student_training/student_training_error.html:21
 msgid "The Learner Training Step of this assignment could not be loaded."
-msgstr "مرحلۀ آموزش فراگیرندۀ این تکلیف بارگیری نشد."
+msgstr "Крок навчання учнів для цього завдання не вдалося завантажити."
 
 #: templates/openassessmentblock/base.html:69
 msgid "Loading Open Response Assessment..."
-msgstr "درحال بارگیری ارزیابی پاسخ باز..."
+msgstr "Завантаження оцінки відкритої відповіді..."
 
 #: xblock/grade_mixin.py:78 xblock/leaderboard_mixin.py:61
 msgid "An unexpected error occurred."
-msgstr "خطایی غیرمنتظره رخ داد."
+msgstr "Сталася несподівана помилка."
 
 #: xblock/grade_mixin.py:180
 msgid "Peer Assessment"
-msgstr "ارزیابی همکار"
+msgstr "Оцінка однолітків"
 
 #: xblock/grade_mixin.py:182
 msgid "Self Assessment"
-msgstr "خودارزیابی"
+msgstr "Самооцінка"
 
 #: xblock/grade_mixin.py:222
 msgid "Assessment feedback could not be saved."
-msgstr "بازخورد ارزیابی ذخیره نشد."
+msgstr "Не вдалося зберегти відгук до оцінки."
 
 #: xblock/grade_mixin.py:233
 msgid "Feedback saved."
-msgstr "بازخورد ذخیره شد."
+msgstr "Відгук збережено."
 
 #: xblock/grade_mixin.py:370 xblock/grade_mixin.py:535
 msgid "Staff Comments"
-msgstr "نظرات کارکنان"
+msgstr "Коментарі викладача"
 
 #: xblock/grade_mixin.py:383 xblock/grade_mixin.py:542
 #, python-brace-format
 msgid "Peer {peer_index}"
-msgstr "همتا {peer_index}"
+msgstr "Однолітній {peer_index}"
 
 #: xblock/grade_mixin.py:384
 msgid "Peer Comments"
-msgstr "نظرات همتایان"
+msgstr "Коментарі однолітніх"
 
 #: xblock/grade_mixin.py:394
 msgid "Self Assessment Grade"
-msgstr "نمرۀ خودارزیابی"
+msgstr "Оцінка самооцінки"
 
 #: xblock/grade_mixin.py:394
 msgid "Your Self Assessment"
-msgstr "خودارزیابی شما"
+msgstr "Ваша самооцінка"
 
 #: xblock/grade_mixin.py:395 xblock/grade_mixin.py:554
 msgid "Your Comments"
-msgstr "نظرات شما"
+msgstr "Ваші коментарі"
 
 #: xblock/grade_mixin.py:429
 msgid "Peer Mean Grade"
-msgstr "میانگین نمرۀ همتا"
+msgstr "Середня оцінка однолітніх"
 
 #: xblock/grade_mixin.py:430
 msgid "Peer Median Grade"
-msgstr "میانگین نمرۀ همتا"
+msgstr "Медіанна оцінка однолітніх"
 
 #: xblock/grade_mixin.py:508
 msgid "Waiting for peer reviews"
-msgstr "در انتظار بررسی همتایان"
+msgstr "Очікується оцінка від однолітніх"
 
 #: xblock/grade_mixin.py:677
 msgid "The grade for this problem is determined by your Staff Grade."
-msgstr "نمرۀ این مساله با نمرۀ کارکنان شما تعیین می‌شود."
+msgstr "Оцінка за цю задачу визначається вашою оцінкою викладача."
 
 #: xblock/grade_mixin.py:681
 msgid "The grade for this problem is determined by your Self Assessment."
-msgstr "نمرۀ این مساله توسط خودارزیابی شما تعیین می‌شود."
+msgstr "Оцінка за цю задачу визначається вашою самооцінкою."
 
 #: xblock/grade_mixin.py:687
 #, python-brace-format
@@ -2633,149 +2641,154 @@ msgid ""
 "You have successfully completed this problem and received a "
 "{earned_points}/{total_points}."
 msgstr ""
-"شما این مشکل را با موفقیت تکمیل کردید و یک {earned_points} / {total_points} "
-"دریافت کردید."
+"Ви успішно завершили цю задачу і отримали {earned_points}/{total_points}."
 
 #: xblock/grade_mixin.py:695
 msgid ""
 "You have not yet received all necessary peer reviews to determine your final"
 " grade."
 msgstr ""
-"شما هنوز تمام بررسی‌های لازم برای تعیین نمرۀ نهایی خود را دریافت نکرده‌اید."
+"Ви ще не отримали всі необхідні оцінки від однолітніх для визначення вашої "
+"фінальної оцінки."
 
 #: xblock/grade_mixin.py:710
 msgid ""
 "The grade for this problem is determined by the median score of your Peer "
 "Assessments."
-msgstr "نمرۀ این مساله با میانگین نمرۀ ارزیابی همتایان شما تعیین می‌شود."
+msgstr ""
+"Оцінка за цю задачу визначається медіанним балом ваших оцінок однолітніх."
 
 #: xblock/grade_mixin.py:715
 msgid ""
 "The grade for this problem is determined by the mean score of your Peer "
 "Assessments."
-msgstr "نمره این مساله با میانگین نمرۀ ارزیابی همتایان شما تعیین می‌شود."
+msgstr ""
+"Оцінка за цю задачу визначається середнім балом ваших оцінок однолітніх."
 
 #: xblock/openassesment_template_mixin.py:66
 msgid "Peer Assessment Only"
-msgstr "فقط ارزیابی همتایان"
+msgstr "Лише оцінка однолітніх"
 
 #: xblock/openassesment_template_mixin.py:67
 msgid "Self Assessment Only"
-msgstr "فقط خودارزیابی"
+msgstr "Лише самооцінка"
 
 #: xblock/openassesment_template_mixin.py:68
 msgid "Staff Assessment Only"
-msgstr "فقط ارزیابی کارکنان"
+msgstr "Лише оцінка викладача"
 
 #: xblock/openassesment_template_mixin.py:69
 msgid "Self Assessment to Peer Assessment"
-msgstr "خودارزیابی به ارزیابی همتایان"
+msgstr "Перехід від самооцінки до оцінки однолітніх"
 
 #: xblock/openassesment_template_mixin.py:70
 msgid "Self Assessment to Staff Assessment"
-msgstr "خودارزیابی به ارزیابی کارکنان"
+msgstr "Перехід від самооцінки до оцінки викладача"
 
 #: xblock/openassessmentblock.py:1365
 msgid "You can't reset your submission."
-msgstr "شما امکان بازنشانی ارسال خود را ندارید."
+msgstr "Ви не можете скинути своє подання."
 
 #: xblock/openassessmentblock.py:1378
 msgid "The user does not exist."
-msgstr "این کاربر وجود ندارد."
+msgstr "Користувача не існує."
 
 #: xblock/openassessmentblock.py:1381
 msgid "There is no submission to reset."
-msgstr "ارسالی برای بازنشانی وجود ندارد."
+msgstr "Немає подання для скидання."
 
 #: xblock/openassessmentblock.py:1383
 msgid "Submission reset successfully."
-msgstr "ارسال با موفقیت بازنشانی شد."
+msgstr "Подання успішно скинуто."
 
 #: xblock/rubric_reuse_mixin.py:62
 msgid "You must specify a block id from which to copy a rubric."
-msgstr "شما باید یک شناسۀ بلوکی را مشخص کنید که از آن سرفصل کپی شود."
+msgstr "Ви повинні вказати ідентифікатор блоку, з якого копіювати рубрику."
 
 #: xblock/rubric_reuse_mixin.py:66
 msgid "Invalid block id."
-msgstr "شناسۀ بلوک معتبر نیست."
+msgstr "Невірний ідентифікатор блоку."
 
 #: xblock/rubric_reuse_mixin.py:72
 #, python-brace-format
 msgid ""
 "No Open Response Assessment found in {course_id} with block id {block_id}"
-msgstr "هیچ ارزیابی پاسخ باز در {course_id} با شناسه بلوک {block_id} یافت نشد"
+msgstr ""
+"Не знайдено оцінки відкритої відповіді в {course_id} з ідентифікатором блоку"
+" {block_id}"
 
 #: xblock/staff_area_mixin.py:42
 msgid "You do not have permission to schedule training"
-msgstr "شما اجازۀ برنامه‌ریزی آموزش را ندارید"
+msgstr "У вас немає прав для планування навчання"
 
 #: xblock/staff_area_mixin.py:43
 msgid "You do not have permission to reschedule tasks."
-msgstr "شما اجازۀ برنامه‌ریزی مجدد کارها را ندارید."
+msgstr "У вас немає прав для перенесення завдань."
 
 #: xblock/staff_area_mixin.py:69
 msgid "You do not have permission to access the ORA staff area"
-msgstr "شما اجازۀ دسترسی به بخش کارکنان ORA را ندارید"
+msgstr "У вас немає прав для доступу до області викладача ORA"
 
 #: xblock/staff_area_mixin.py:70
 msgid "You do not have permission to access ORA learner information."
-msgstr "شما اجازۀ دسترسی به اطلاعات فراگیرنده ORA را ندارید."
+msgstr "У вас немає прав для доступу до інформації учнів ORA."
 
 #: xblock/staff_area_mixin.py:71
 msgid "You do not have permission to access ORA staff grading."
-msgstr "شما اجازۀ دسترسی به نمره‌دهی کارکنان ORA را ندارید."
+msgstr "У вас немає прав для доступу до оцінювання викладачем ORA."
 
 #: xblock/staff_area_mixin.py:241
 msgid "Pending"
-msgstr "درحال انتظار"
+msgstr "Очікується"
 
 #: xblock/staff_area_mixin.py:242
 msgid "Complete/Overwritten"
-msgstr "کامل/بازنویسی شده‌است"
+msgstr "Завершено/Перезаписано"
 
 #: xblock/staff_area_mixin.py:245
 msgid "Not applicable"
-msgstr "قابل‌اجرا نیست"
+msgstr "Не застосовується"
 
 #: xblock/staff_area_mixin.py:246
 msgid "Not submitted"
-msgstr "ثبت‌نشده"
+msgstr "Не подано"
 
 #: xblock/staff_area_mixin.py:247
 msgid "Submitted"
-msgstr "ثبت‌شده"
+msgstr "Подано"
 
 #: xblock/staff_area_mixin.py:341
 msgid "Error getting learner information."
-msgstr "خطا در دریافت اطلاعات فراگیرنده."
+msgstr "Помилка отримання інформації про учня."
 
 #: xblock/staff_area_mixin.py:384
 msgid "Error loading the checked out learner response."
-msgstr "خطا در بارگیری پاسخ فراگیرندۀ بررسی‌شده."
+msgstr "Помилка завантаження поданої відповіді учня."
 
 #: xblock/staff_area_mixin.py:385
 msgid "No other learner responses are available for grading at this time."
-msgstr "اکنون هیچ پاسخی از فراگیرنده دیگری برای نمره در دسترس نیست."
+msgstr "Немає інших відповідей учнів, доступних для оцінювання на даний час."
 
 #: xblock/staff_area_mixin.py:387
 msgid "Error getting staff grade information."
-msgstr "خطا در دریافت اطلاعات نمرۀ کارکنان."
+msgstr "Помилка отримання інформації про оцінку викладача."
 
 #: xblock/staff_area_mixin.py:408
 msgid "Error getting staff grade ungraded and checked out counts."
-msgstr "خطا در دریافت نمرۀ کارکنان بدون نمره و شمارش بررسی شده."
+msgstr ""
+"Помилка отримання кількостей необроблених та виділених оцінок викладача."
 
 #: xblock/staff_area_mixin.py:703
 msgid "Please enter valid reason to remove the submission."
-msgstr "لطفاً دلیل معتبری برای حذف موارد ارسالی وارد کنید."
+msgstr "Будь ласка, введіть дійсну причину для видалення подання."
 
 #: xblock/staff_area_mixin.py:714
 msgid "Submission not found"
-msgstr "ارسالی یافت نشد"
+msgstr "Подання не знайдено"
 
 #: xblock/staff_area_mixin.py:725
 msgid "Submission for team assignment has no associated team submission"
-msgstr "ارسال برای تکلیف تیم، هیچ ارسال تیمی مرتبطی ندارد"
+msgstr "Подання для командного завдання не має відповідного подання команди"
 
 #: xblock/staff_area_mixin.py:754
 msgid ""
@@ -2783,9 +2796,9 @@ msgid ""
 "receives a grade of zero unless you delete the learner's state for the "
 "problem to allow them to resubmit a response."
 msgstr ""
-"ارسال فراگیرنده از ارزیابی همتا حذف شده‌است. فراگیر نمرۀ صفر دریافت می‌کند "
-"مگر اینکه وضعیت فراگیر را برای این مساله حذف کنید تا به او اجازه ارسال مجدد "
-"پاسخ داده شود."
+"Подання учня вилучено з оцінювання однолітнів. Учень отримає оцінку нуль, "
+"якщо ви не видалите його стан для задачі, щоб дозволити повторну подачу "
+"відповіді."
 
 #: xblock/staff_area_mixin.py:789
 msgid ""
@@ -2793,48 +2806,54 @@ msgid ""
 "grade of zero unless you delete a team member’s state for the problem to "
 "allow the team to resubmit a response."
 msgstr ""
-"ارسالی تیم از نمره‌دهی حذف شده‌است. تیم نمرۀ صفر دریافت می‌کند مگر اینکه "
-"وضعیت یکی از اعضای تیم را برای مساله حذف کنید تا به تیم اجازه ارسال مجدد "
-"پاسخ داده شود."
+"Подання команди вилучено з оцінювання. Команда отримає оцінку нуль, якщо ви "
+"не видалите стан члена команди для задачі, щоб дозволити повторну подачу "
+"відповіді."
 
 #: xblock/studio_mixin.py:247 xblock/studio_mixin.py:259
 msgid "Error updating XBlock configuration"
-msgstr "خطا در به‌روزرسانی پیکربندی XBlock"
+msgstr "Помилка оновлення конфігурації XBlock"
 
 #: xblock/studio_mixin.py:264
 msgid "Error: Text Response and File Upload Response cannot both be disabled"
-msgstr "خطا: پاسخ متن و پاسخ بارگذاری پوشه هر دو غیرفعال نیستند"
+msgstr ""
+"Помилка: не можна одночасно вимкнути текстову відповідь та завантаження "
+"файлів"
 
 #: xblock/studio_mixin.py:268
 msgid ""
 "Error: When Text Response is disabled, File Upload Response must be Required"
-msgstr "خطا: وقتی پاسخ متن غیرفعال است، پاسخ بارگذاری پوشه باید الزامی باشد"
+msgstr ""
+"Помилка: коли текстова відповідь вимкнена, завантаження файлів має бути "
+"обов'язковим"
 
 #: xblock/studio_mixin.py:271
 msgid ""
 "Error: When File Upload Response is disabled, Text Response must be Required"
-msgstr "خطا: وقتی پاسخ بارگذاری پوشه غیرفعال است، پاسخ متنی باید الزامی باشد"
+msgstr ""
+"Помилка: коли завантаження файлів вимкнено, текстова відповідь має бути "
+"обов'язковою"
 
 #: xblock/studio_mixin.py:295
 #, python-brace-format
 msgid "Validation error: {error}"
-msgstr "خطای اعتبارسنجی: {error}"
+msgstr "Помилка валідації: {error}"
 
 #: xblock/studio_mixin.py:329
 msgid "Successfully updated OpenAssessment XBlock"
-msgstr "OpenAssessment XBlock با موفقیت به‌روز شد"
+msgstr "XBlock OpenAssessment успішно оновлено"
 
 #: xblock/utils/data_conversion.py:315
 msgid "You must provide options selected in the assessment."
-msgstr "شما باید گزینه‌های انتخاب شده در ارزیابی را ارائه دهید."
+msgstr "Ви повинні надати обрані варіанти в оцінці."
 
 #: xblock/utils/data_conversion.py:318
 msgid "You must provide overall feedback in the assessment."
-msgstr "شما باید بازخورد کلی را در ارزیابی ارائه دهید."
+msgstr "Ви повинні надати загальний зворотний зв'язок в оцінці."
 
 #: xblock/utils/data_conversion.py:321
 msgid "You must provide feedback for criteria in the assessment."
-msgstr "برای معیارهای ارزیابی باید بازخورد ارائه کنید."
+msgstr "Ви повинні надати зворотний зв'язок за критеріями в оцінці."
 
 #: xblock/utils/resolve_dates.py:52
 #, python-brace-format
@@ -2842,13 +2861,13 @@ msgid ""
 "'{date}' is an invalid date format. Make sure the date is formatted as YYYY-"
 "MM-DDTHH:MM:SS."
 msgstr ""
-"'{date}' یک قالب تاریخ نامعتبر است. مطمئن شوید که تاریخ به عنوان YYYY-MM-"
-"DDTHH:MM:SS قالب‌بندی شده‌است."
+"'{date}' має недійсний формат дати. Переконайтеся, що дата має формат YYYY-"
+"MM-DDTHH:MM:SS."
 
 #: xblock/utils/resolve_dates.py:57
 #, python-brace-format
 msgid "'{date}' must be a date string or datetime"
-msgstr "'{date}' باید یک رشتۀ تاریخ یا datetime باشد"
+msgstr "'{date}' має бути рядком дати або datetime"
 
 #: xblock/utils/resolve_dates.py:210
 #, python-brace-format
@@ -2856,8 +2875,8 @@ msgid ""
 "This step's start date '{start}' cannot be earlier than the previous step's "
 "start date '{prev}'."
 msgstr ""
-"تاریخ شروع این مرحله '{start}' نمی‌تواند زودتر از تاریخ شروع مرحله قبلی "
-"'{prev}' باشد."
+"Дата початку цього кроку '{start}' не може бути раніше дати початку "
+"попереднього кроку '{prev}'."
 
 #: xblock/utils/resolve_dates.py:218
 #, python-brace-format
@@ -2865,116 +2884,117 @@ msgid ""
 "This step's due date '{due}' cannot be later than the next step's due date "
 "'{prev}'."
 msgstr ""
-"تاریخ سررسید این مرحله '{due}' نمی‌تواند دیرتر از سررسید مرحلۀ بعدی '{prev}'"
-" باشد."
+"Термін цього кроку '{due}' не може бути пізнішим за термін наступного кроку "
+"'{prev}'."
 
 #: xblock/utils/resolve_dates.py:234
 #, python-brace-format
 msgid "The start date '{start}' cannot be later than the due date '{due}'"
-msgstr "تاریخ شروع '{start}' نمی‌تواند دیرتر از تاریخ سررسید '{due}' باشد"
+msgstr "Дата початку '{start}' не може бути пізнішою за термін '{due}'"
 
 #: xblock/utils/validation.py:120
 msgid "This problem must include at least one assessment."
-msgstr "این مساله باید حداقل یک ارزیابی داشته باشد."
+msgstr "Ця задача повинна містити щонайменше одну оцінку."
 
 #: xblock/utils/validation.py:124
 msgid "The assessment order you selected is invalid."
-msgstr "ترتیب ارزیابی انتخابی شما معتبر نیست."
+msgstr "Вибраний порядок оцінки недійсний."
 
 #: xblock/utils/validation.py:134
 msgid "In peer assessment, the \"Must Grade\" value must be a positive integer."
-msgstr "در ارزیابی همتایان، مقدار «باید درجه» باید عدد صحیح مثبتی باشد."
+msgstr ""
+"При оцінці однолітків значення \"Must Grade\" має бути додатним цілим "
+"числом."
 
 #: xblock/utils/validation.py:137
 msgid "In peer assessment, the \"Graded By\" value must be a positive integer."
 msgstr ""
-"در ارزیابی همتایان، مقدار &quot;Graded By&quot; باید عدد صحیح مثبتی باشد."
+"При оцінці однолітків значення \"Graded By\" має бути додатним цілим числом."
 
 #: xblock/utils/validation.py:141
 msgid ""
 "In peer assessment, the \"Must Grade\" value must be greater than or equal "
 "to the \"Graded By\" value."
 msgstr ""
-"در ارزیابی همتایان، مقدار «نمره باید» باید بزرگتر یا مساوی با مقدار "
-"«نمره‌دهی با» باشد."
+"При оцінці однолітків значення \"Must Grade\" має бути більшим або рівним "
+"значенню \"Graded By\"."
 
 #: xblock/utils/validation.py:150
 msgid "You must provide at least one example response for learner training."
-msgstr "شما باید حداقل یک نمونه پاسخ، برای آموزش فراگیرنده ارائه دهید."
+msgstr "Ви повинні надати хоча б один приклад відповіді для навчання учнів."
 
 #: xblock/utils/validation.py:153
 msgid "Each example response for learner training must be unique."
-msgstr "هر پاسخ نمونه برای آموزش فراگیرنده باید منحصربه‌فرد باشد."
+msgstr "Кожен приклад відповіді для навчання учнів має бути унікальним."
 
 #: xblock/utils/validation.py:160
 msgid "The \"required\" value must be true if staff assessment is the only step."
-msgstr ""
-"اگر ارزیابی کارکنان تنها مرحله باشد، مقدار &quot;الزامی&quot; باید روی گزینۀ"
-" «درست» باشد."
+msgstr "Значення \"required\" має бути true, якщо є лише оцінка викладача."
 
 #: xblock/utils/validation.py:164
 msgid ""
 "The number of assessments cannot be changed after the problem has been "
 "released."
-msgstr "پس از انتشار مساله، امکان تغییر تعداد ارزیابی‌ها نیست."
+msgstr "Кількість оцінок не може бути змінена після запуску задачі."
 
 #: xblock/utils/validation.py:169
 msgid ""
 "The assessment type cannot be changed after the problem has been released."
-msgstr "نوع ارزیابی پس از انتشار مساله، قابل تغییر نیست."
+msgstr "Тип оцінки не може бути змінений після запуску задачі."
 
 #: xblock/utils/validation.py:176
 msgid ""
 "The grading strategy for peer assessments cannot be changed after the "
 "problem has been released."
 msgstr ""
-"استراتژی نمره‌دهی برای ارزیابی همتایان پس از رفع مشکل، قابل تغییر نیست."
+"Стратегію оцінювання для оцінок однолітків не можна змінювати після запуску "
+"задачі."
 
 #: xblock/utils/validation.py:200
 msgid "This rubric definition is not valid."
-msgstr "این تعریف سرفصل معتبر نیست."
+msgstr "Визначення цієї рубрики недійсне."
 
 #: xblock/utils/validation.py:203
 msgid "You must provide at least one prompt."
-msgstr "شما باید حداقل یک درخواست ارائه دهید."
+msgstr "Ви повинні надати хоча б одне запитання."
 
 #: xblock/utils/validation.py:209
 #, python-brace-format
 msgid "Options in '{criterion}' have duplicate name(s): {duplicates}"
-msgstr "گزینه‌های '{criterion}' دارای نام(های) تکراری هستند: {duplicates}"
+msgstr "Опції в '{criterion}' мають дубльовані імена: {duplicates}"
 
 #: xblock/utils/validation.py:217
 msgid "Criteria with no options must require written feedback."
-msgstr "معیارهای بدون گزینه مستلزم بازخورد کتبی هستند."
+msgstr "Критерії без опцій повинні вимагати письмового зворотного зв'язку."
 
 #: xblock/utils/validation.py:226
 msgid "Prompts cannot be created or deleted after a problem is released."
-msgstr "پس از رفع مشکل نمی‌توان درخواست‌ها را ایجاد یا حذف کرد."
+msgstr "Запитання не можуть бути створені або видалені після запуску задачі."
 
 #: xblock/utils/validation.py:230
 msgid "The number of criteria cannot be changed after a problem is released."
-msgstr "پس از رفع مشکل، امکان تغییر تعداد معیارها نیست."
+msgstr "Кількість критеріїв не може бути змінена після запуску задачі."
 
 #: xblock/utils/validation.py:243
 msgid "Criteria names cannot be changed after a problem is released"
-msgstr "پس از حل مساله، امکان تغییر نام‌معیارها وجود ندارد."
+msgstr "Назви критеріїв не можуть бути змінені після запуску задачі"
 
 #: xblock/utils/validation.py:248
 msgid "The number of options cannot be changed after a problem is released."
-msgstr "پس از رفع مشکل، امکان تغییر تعداد گزینه‌ها نیست."
+msgstr "Кількість опцій не може бути змінена після запуску задачі."
 
 #: xblock/utils/validation.py:253
 msgid "Point values cannot be changed after a problem is released."
-msgstr "پس از رفع مشکل، امکان تغییر مقادیر امتیازات نیست."
+msgstr "Значення балів не можуть бути змінені після запуску задачі."
 
 #: xblock/utils/validation.py:304
 msgid "Learner training must have at least one training example."
-msgstr "آموزش فراگیر باید حداقل یک نمونۀ آموزشی داشته باشد."
+msgstr "Навчання учнів має містити хоча б один приклад для навчання."
 
 #: xblock/utils/validation.py:369
 msgid "Leaderboard number is invalid."
-msgstr "شمارۀ تابلوی امتیازات معتبر نیست."
+msgstr "Номер у таблиці лідерів недійсний."
 
 #: xblock/utils/validation.py:392
 msgid "The submission format is invalid."
-msgstr "قالب ارسال معتبر نیست."
+msgstr "Формат подання є недійсним."
