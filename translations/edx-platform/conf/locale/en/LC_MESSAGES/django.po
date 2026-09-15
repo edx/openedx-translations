@@ -47,7 +47,7 @@ msgstr ""
 "#-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-19 00:23+0000\n"
+"POT-Creation-Date: 2026-09-15 00:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -458,32 +458,32 @@ msgstr ""
 msgid "Change the visibility of tabs in a course."
 msgstr ""
 
-#: cms/djangoapps/contentstore/transcript_storage_handlers.py:116
+#: cms/djangoapps/contentstore/transcript_storage_handlers.py:148
 msgid "The information you entered is incorrect."
 msgstr ""
 
-#: cms/djangoapps/contentstore/transcript_storage_handlers.py:138
-#: cms/djangoapps/contentstore/transcript_storage_handlers.py:231
-#: cms/djangoapps/contentstore/transcript_storage_handlers.py:256
+#: cms/djangoapps/contentstore/transcript_storage_handlers.py:170
+#: cms/djangoapps/contentstore/transcript_storage_handlers.py:275
+#: cms/djangoapps/contentstore/transcript_storage_handlers.py:308
 #: xmodule/video_block/video_handlers.py:460
 #, python-brace-format
 msgid "The following parameters are required: {missing}."
 msgstr ""
 
-#: cms/djangoapps/contentstore/transcript_storage_handlers.py:208
+#: cms/djangoapps/contentstore/transcript_storage_handlers.py:252
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py:292
 #: xmodule/video_block/video_handlers.py:601
 msgid ""
 "There is a problem with this transcript file. Try to upload a different file."
 msgstr ""
 
-#: cms/djangoapps/contentstore/transcript_storage_handlers.py:236
+#: cms/djangoapps/contentstore/transcript_storage_handlers.py:288
 #: xmodule/video_block/video_handlers.py:464
 #, python-brace-format
 msgid "A transcript with the \"{language_code}\" language code already exists."
 msgstr ""
 
-#: cms/djangoapps/contentstore/transcript_storage_handlers.py:240
+#: cms/djangoapps/contentstore/transcript_storage_handlers.py:292
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py:221
 #: xmodule/video_block/video_handlers.py:468
 msgid "A transcript file is required."
@@ -1316,7 +1316,7 @@ msgstr ""
 
 #: common/djangoapps/course_modes/helpers.py:48
 #: lms/djangoapps/branding/api.py:329 lms/djangoapps/branding/api.py:404
-#: lms/djangoapps/courseware/views/views.py:2297
+#: lms/djangoapps/courseware/views/views.py:2380
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:1096
 #: lms/templates/static_templates/honor.html:5
 #: lms/templates/static_templates/honor.html:10
@@ -1514,7 +1514,7 @@ msgid "User with this email doesn't exist in system."
 msgstr ""
 
 #: common/djangoapps/student/helpers.py:77
-#: common/djangoapps/student/helpers.py:725
+#: common/djangoapps/student/helpers.py:742
 #, python-brace-format
 msgid "An account with the Email '{email}' already exists."
 msgstr ""
@@ -1848,21 +1848,21 @@ msgid ""
 "from us related to the courses you are enrolled in. Sign In to continue."
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:744
-#: common/djangoapps/student/views/management.py:759
+#: common/djangoapps/student/views/management.py:756
+#: common/djangoapps/student/views/management.py:771
 msgid "Valid e-mail address required."
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:747
-#: common/djangoapps/student/views/management.py:764
+#: common/djangoapps/student/views/management.py:759
+#: common/djangoapps/student/views/management.py:776
 msgid "Old email is the same as the new email."
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:768
+#: common/djangoapps/student/views/management.py:780
 msgid "Cannot be same as your sign in email address."
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:838
+#: common/djangoapps/student/views/management.py:850
 msgid "Unable to send email activation link. Please try again later."
 msgstr ""
 
@@ -1899,7 +1899,7 @@ msgid "The Site that this provider configuration belongs to."
 msgstr ""
 
 #: common/djangoapps/third_party_auth/models.py:175
-#: common/djangoapps/third_party_auth/models.py:729
+#: common/djangoapps/third_party_auth/models.py:733
 msgid ""
 "If this option is enabled, users that visit a \"TPA hinted\" URL for this "
 "provider (e.g. a URL ending with `?tpa_hint=[provider_name]`) will be "
@@ -1908,7 +1908,7 @@ msgid ""
 msgstr ""
 
 #: common/djangoapps/third_party_auth/models.py:183
-#: common/djangoapps/third_party_auth/models.py:737
+#: common/djangoapps/third_party_auth/models.py:741
 msgid ""
 "If this option is enabled, users will not be asked to confirm their details "
 "(name, email, etc.) during the registration process. Only select this option "
@@ -1916,7 +1916,7 @@ msgid ""
 msgstr ""
 
 #: common/djangoapps/third_party_auth/models.py:191
-#: common/djangoapps/third_party_auth/models.py:745
+#: common/djangoapps/third_party_auth/models.py:750
 msgid ""
 "If this option is selected, users will not be required to confirm their "
 "email, and their account will be activated immediately upon registration."
@@ -1944,7 +1944,7 @@ msgid ""
 msgstr ""
 
 #: common/djangoapps/third_party_auth/models.py:224
-#: common/djangoapps/third_party_auth/models.py:752
+#: common/djangoapps/third_party_auth/models.py:757
 msgid ""
 "If this option is selected, users will be directed to the registration page "
 "immediately after authenticating with the third party instead of the login "
@@ -1978,7 +1978,7 @@ msgstr ""
 msgid "A configuration nickname."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:759
+#: common/djangoapps/third_party_auth/models.py:764
 msgid ""
 "If enabled, optional checkboxes (marketing emails opt-in, etc.) will not be "
 "rendered on the registration form for users registering via this provider. "
@@ -1986,7 +1986,7 @@ msgid ""
 "out)."
 msgstr ""
 
-#: common/djangoapps/third_party_auth/models.py:767
+#: common/djangoapps/third_party_auth/models.py:773
 msgid ""
 "If enabled, and the identity provider supplies an email address, the email "
 "field on the SSO registration form will be read-only and users will not be "
@@ -3066,7 +3066,7 @@ msgid "News"
 msgstr ""
 
 #: lms/djangoapps/branding/api.py:317 lms/djangoapps/branding/api.py:391
-#: lms/djangoapps/certificates/views/webview.py:187
+#: lms/djangoapps/certificates/views/webview.py:193
 msgid "Terms of Service & Honor Code"
 msgstr ""
 
@@ -3074,7 +3074,7 @@ msgstr ""
 #. Translators: A 'Privacy Policy' is a legal document/statement describing a
 #. website's use of personal information
 #: lms/djangoapps/branding/api.py:318 lms/djangoapps/branding/api.py:392
-#: lms/djangoapps/certificates/views/webview.py:190
+#: lms/djangoapps/certificates/views/webview.py:196
 #: cms/templates/widgets/footer.html:30
 #: lms/templates/static_templates/privacy.html:6
 #: lms/templates/static_templates/privacy.html:11
@@ -3333,7 +3333,7 @@ msgid "User {username} is not enrolled in the course {course_key}"
 msgstr ""
 
 #. Translators:  This text describes the 'Honor' course certificate type.
-#: lms/djangoapps/certificates/views/webview.py:72
+#: lms/djangoapps/certificates/views/webview.py:78
 #, python-brace-format
 msgid ""
 "An {cert_type} certificate signifies that a learner has agreed to abide by "
@@ -3345,7 +3345,7 @@ msgstr ""
 #. type, which is a higher level of
 #. verification offered by edX.  This type of verification is useful for
 #. professional education/certifications
-#: lms/djangoapps/certificates/views/webview.py:80
+#: lms/djangoapps/certificates/views/webview.py:86
 #, python-brace-format
 msgid ""
 "A {cert_type} certificate signifies that a learner has agreed to abide by "
@@ -3353,7 +3353,7 @@ msgid ""
 "required tasks for this course under its guidelines. "
 msgstr ""
 
-#: lms/djangoapps/certificates/views/webview.py:86
+#: lms/djangoapps/certificates/views/webview.py:92
 #, python-brace-format
 msgid ""
 "A {cert_type} certificate also indicates that the identity of the learner "
@@ -3364,7 +3364,7 @@ msgstr ""
 #. An XSeries is a collection of
 #. courses related to each other in a meaningful way, such as a specific topic
 #. or theme, or even an organization
-#: lms/djangoapps/certificates/views/webview.py:93
+#: lms/djangoapps/certificates/views/webview.py:99
 #, python-brace-format
 msgid ""
 "An {cert_type} certificate demonstrates a high level of achievement in a "
@@ -3372,7 +3372,7 @@ msgid ""
 msgstr ""
 
 #. Translators:  This text represents the verification of the certificate
-#: lms/djangoapps/certificates/views/webview.py:127
+#: lms/djangoapps/certificates/views/webview.py:133
 #, python-brace-format
 msgid ""
 "This is a valid {platform_name} certificate for {user_name}, who "
@@ -3381,7 +3381,7 @@ msgstr ""
 
 #. Translators:  This text is bound to the HTML 'title' element of the page
 #. and appears in the browser title bar
-#: lms/djangoapps/certificates/views/webview.py:136
+#: lms/djangoapps/certificates/views/webview.py:142
 #, python-brace-format
 msgid "{partner_short_name} {course_number} Certificate | {platform_name}"
 msgstr ""
@@ -3390,7 +3390,7 @@ msgstr ""
 #. (displayed in a large font) on the certificate
 #. screen.  The text describes the accomplishment represented by the
 #. certificate information displayed to the user
-#: lms/djangoapps/certificates/views/webview.py:144
+#: lms/djangoapps/certificates/views/webview.py:150
 #, python-brace-format
 msgid ""
 "successfully completed, received a passing grade, and was awarded this "
@@ -3399,7 +3399,7 @@ msgstr ""
 
 #. Translators: This text describes the purpose (and therefore, value) of a
 #. course certificate
-#: lms/djangoapps/certificates/views/webview.py:157
+#: lms/djangoapps/certificates/views/webview.py:163
 #, python-brace-format
 msgid ""
 "{platform_name} acknowledges achievements through certificates, which are "
@@ -3408,7 +3408,7 @@ msgstr ""
 
 #. Translators:  'All rights reserved' is a legal term used in copyrighting to
 #. protect published content
-#: lms/djangoapps/certificates/views/webview.py:176
+#: lms/djangoapps/certificates/views/webview.py:182
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:176
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:231
 #: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:50
@@ -3421,51 +3421,52 @@ msgstr ""
 #. and appears
 #. in the browser title bar when a requested certificate is not found or
 #. recognized
-#: lms/djangoapps/certificates/views/webview.py:185
+#: lms/djangoapps/certificates/views/webview.py:191
 msgid "Invalid Certificate"
 msgstr ""
 
 #. Translators: This line appears as a byline to a header image and describes
 #. the purpose of the page
-#: lms/djangoapps/certificates/views/webview.py:193
+#: lms/djangoapps/certificates/views/webview.py:199
 msgid "Certificate Validation"
 msgstr ""
 
 #. Translators: Accomplishments describe the awards/certifications obtained by
 #. students on this platform
-#: lms/djangoapps/certificates/views/webview.py:196
+#: lms/djangoapps/certificates/views/webview.py:202
 #, python-brace-format
 msgid "About {platform_name} Accomplishments"
 msgstr ""
 
 #. Translators:  This line appears on the page just before the generation date
 #. for the certificate
-#: lms/djangoapps/certificates/views/webview.py:201
+#: lms/djangoapps/certificates/views/webview.py:207
 msgid "Issued On:"
 msgstr ""
 
 #. Translators:  The Certificate ID Number is an alphanumeric value unique to
 #. each individual certificate
-#: lms/djangoapps/certificates/views/webview.py:204
+#: lms/djangoapps/certificates/views/webview.py:210
 msgid "Certificate ID Number"
 msgstr ""
 
-#: lms/djangoapps/certificates/views/webview.py:206
+#: lms/djangoapps/certificates/views/webview.py:212
 #: lms/templates/certificates/invalid.html:15
+#: lms/templates/certificates/proctoring_blocked.html:21
 #: lms/templates/certificates/url_unsupported.html:15
 #: lms/templates/certificates/valid.html:12
 #, python-brace-format
 msgid "About {platform_name} Certificates"
 msgstr ""
 
-#: lms/djangoapps/certificates/views/webview.py:210
+#: lms/djangoapps/certificates/views/webview.py:216
 #, python-brace-format
 msgid "How {platform_name} Validates Student Certificates"
 msgstr ""
 
 #. Translators:  This text describes the validation mechanism for a
 #. certificate file (known as GPG security)
-#: lms/djangoapps/certificates/views/webview.py:215
+#: lms/djangoapps/certificates/views/webview.py:221
 #, python-brace-format
 msgid ""
 "Certificates issued by {platform_name} are signed by a gpg key so that they "
@@ -3474,51 +3475,51 @@ msgid ""
 "\"detached signature\"&quot;\"."
 msgstr ""
 
-#: lms/djangoapps/certificates/views/webview.py:221
+#: lms/djangoapps/certificates/views/webview.py:227
 msgid "Validate this certificate for yourself"
 msgstr ""
 
 #. Translators:  This text describes (at a high level) the mission and charter
 #. the edX platform and organization
-#: lms/djangoapps/certificates/views/webview.py:224
+#: lms/djangoapps/certificates/views/webview.py:230
 #, python-brace-format
 msgid "{platform_name} offers interactive online classes and MOOCs."
 msgstr ""
 
-#: lms/djangoapps/certificates/views/webview.py:227
+#: lms/djangoapps/certificates/views/webview.py:233
 #, python-brace-format
 msgid "About {platform_name}"
 msgstr ""
 
-#: lms/djangoapps/certificates/views/webview.py:229
+#: lms/djangoapps/certificates/views/webview.py:235
 #, python-brace-format
 msgid "Learn more about {platform_name}"
 msgstr ""
 
-#: lms/djangoapps/certificates/views/webview.py:231
+#: lms/djangoapps/certificates/views/webview.py:237
 #, python-brace-format
 msgid "Learn with {platform_name}"
 msgstr ""
 
-#: lms/djangoapps/certificates/views/webview.py:233
+#: lms/djangoapps/certificates/views/webview.py:239
 #, python-brace-format
 msgid "Work at {platform_name}"
 msgstr ""
 
-#: lms/djangoapps/certificates/views/webview.py:235
+#: lms/djangoapps/certificates/views/webview.py:241
 #, python-brace-format
 msgid "Contact {platform_name}"
 msgstr ""
 
 #. Translators:  This text appears near the top of the certificate and
 #. describes the guarantee provided by edX
-#: lms/djangoapps/certificates/views/webview.py:238
+#: lms/djangoapps/certificates/views/webview.py:244
 #, python-brace-format
 msgid "{platform_name} acknowledges the following student accomplishment"
 msgstr ""
 
 #. Translators:  This text represents the description of course
-#: lms/djangoapps/certificates/views/webview.py:256
+#: lms/djangoapps/certificates/views/webview.py:262
 #, python-brace-format
 msgid ""
 "a course of study offered by {partner_short_name}, an online learning "
@@ -3526,36 +3527,36 @@ msgid ""
 msgstr ""
 
 #. Translators:  This text represents the description of course
-#: lms/djangoapps/certificates/views/webview.py:264
+#: lms/djangoapps/certificates/views/webview.py:270
 #, python-brace-format
 msgid "a course of study offered by {partner_short_name}."
 msgstr ""
 
-#: lms/djangoapps/certificates/views/webview.py:279
+#: lms/djangoapps/certificates/views/webview.py:285
 #, python-brace-format
 msgid "I completed the {course_title} course on {platform_name}."
 msgstr ""
 
-#: lms/djangoapps/certificates/views/webview.py:287
+#: lms/djangoapps/certificates/views/webview.py:293
 #, python-brace-format
 msgid "I completed a course at {platform_name}. Take a look at my certificate."
 msgstr ""
 
-#: lms/djangoapps/certificates/views/webview.py:324
+#: lms/djangoapps/certificates/views/webview.py:330
 #, python-brace-format
 msgid "More Information About {user_name}'s Certificate:"
 msgstr ""
 
 #. Translators: This line is displayed to a user who has completed a course
 #. and achieved a certification
-#: lms/djangoapps/certificates/views/webview.py:328
+#: lms/djangoapps/certificates/views/webview.py:334
 #, python-brace-format
 msgid "{fullname}, you earned a certificate!"
 msgstr ""
 
 #. Translators: This line congratulates the user and instructs them to share
 #. their accomplishment on social networks
-#: lms/djangoapps/certificates/views/webview.py:333
+#: lms/djangoapps/certificates/views/webview.py:339
 msgid ""
 "Congratulations! This page summarizes what you accomplished. Show it off to "
 "family, friends, and colleagues in your social and professional networks."
@@ -3563,9 +3564,24 @@ msgstr ""
 
 #. Translators: This line leads the reader to understand more about the
 #. certificate that a student has been awarded
-#: lms/djangoapps/certificates/views/webview.py:338
+#: lms/djangoapps/certificates/views/webview.py:344
 #, python-brace-format
 msgid "More about {fullname}'s accomplishment"
+msgstr ""
+
+#: lms/djangoapps/certificates/views/webview.py:714
+#: lms/djangoapps/courseware/views/views.py:321
+#: lms/templates/certificates/proctoring_blocked.html:9
+msgid "Certificate temporarily unavailable"
+msgstr ""
+
+#: lms/djangoapps/certificates/views/webview.py:791
+#: lms/djangoapps/certificates/views/webview.py:811
+#: lms/djangoapps/certificates/views/webview.py:824
+#: lms/djangoapps/certificates/views/webview.py:839
+#: lms/djangoapps/certificates/views/webview.py:854
+#: lms/djangoapps/certificates/views/webview.py:865
+msgid "The certificate is temporarily unavailable. Please try again later."
 msgstr ""
 
 #: lms/djangoapps/commerce/api/v1/serializers.py:50
@@ -3589,13 +3605,13 @@ msgstr ""
 #: lms/djangoapps/commerce/models.py:38
 #: openedx/core/djangoapps/catalog/models.py:31
 #: openedx/core/djangoapps/credentials/models.py:60
-#: openedx/core/djangoapps/credit/models.py:785
+#: openedx/core/djangoapps/credit/models.py:793
 msgid "Cache Time To Live"
 msgstr ""
 
 #: lms/djangoapps/commerce/models.py:41
 #: openedx/core/djangoapps/credentials/models.py:63
-#: openedx/core/djangoapps/credit/models.py:788
+#: openedx/core/djangoapps/credit/models.py:796
 msgid ""
 "Specified in seconds. Enable caching by setting this to a value greater than "
 "0."
@@ -4131,13 +4147,13 @@ msgstr ""
 msgid "Financial Assistance Backend API Base URL."
 msgstr ""
 
-#: lms/djangoapps/courseware/models.py:572
+#: lms/djangoapps/courseware/models.py:573
 msgid ""
 "Username created for Financial Assistance Backend, e.g. "
 "financial_assistance_service_user."
 msgstr ""
 
-#: lms/djangoapps/courseware/models.py:577
+#: lms/djangoapps/courseware/models.py:578
 msgid "Percentage of courses allowed to use edx-financial-assistance"
 msgstr ""
 
@@ -4202,7 +4218,7 @@ msgid ""
 msgstr ""
 
 #: lms/djangoapps/courseware/tabs.py:36
-#: lms/djangoapps/courseware/views/views.py:2250
+#: lms/djangoapps/courseware/views/views.py:2333
 #: openedx/features/course_experience/__init__.py:91 xmodule/tabs.py:490
 #: cms/templates/widgets/header.html:89 cms/templates/widgets/header.html:93
 #: cms/templates/widgets/header.html:164 cms/templates/widgets/header.html:292
@@ -4220,103 +4236,127 @@ msgstr ""
 msgid "Dates"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:181
+#: lms/djangoapps/courseware/views/views.py:192
 msgid "Your enrollment: Audit track"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:182
+#: lms/djangoapps/courseware/views/views.py:193
 msgid ""
 "You are enrolled in the audit track for this course. The audit track does "
 "not include a certificate."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:190
+#: lms/djangoapps/courseware/views/views.py:204
 msgid "Your enrollment: Honor track"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:191
+#: lms/djangoapps/courseware/views/views.py:205
 msgid ""
 "You are enrolled in the honor track for this course. The honor track does "
 "not include a certificate."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:204
+#: lms/djangoapps/courseware/views/views.py:221
 msgid "We're working on it..."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:206
+#: lms/djangoapps/courseware/views/views.py:223
 msgid ""
 "We're creating your certificate. You can keep working in your courses and a "
 "link to it will appear here and on your Dashboard when it is ready."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:216
+#: lms/djangoapps/courseware/views/views.py:236
 msgid "Your certificate has been invalidated"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:217
+#: lms/djangoapps/courseware/views/views.py:237
 msgid "Please contact your course team if you have any questions."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:225
+#: lms/djangoapps/courseware/views/views.py:248
 msgid "Congratulations, you qualified for a certificate!"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:226
-#: lms/djangoapps/courseware/views/views.py:259
+#: lms/djangoapps/courseware/views/views.py:249
+#: lms/djangoapps/courseware/views/views.py:291
 msgid "You've earned a certificate for this course."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:236
+#: lms/djangoapps/courseware/views/views.py:262
 msgid "Your certificate will be available soon!"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:237
-#: lms/djangoapps/courseware/views/views.py:248
+#: lms/djangoapps/courseware/views/views.py:263
+#: lms/djangoapps/courseware/views/views.py:277
 msgid ""
 "After this course officially ends, you will receive an email notification "
 "with your certificate."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:247
+#: lms/djangoapps/courseware/views/views.py:276
 msgid "Your certificate will be available after the indicated date"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:258
+#: lms/djangoapps/courseware/views/views.py:290
 msgid "Your certificate is available"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:272
+#: lms/djangoapps/courseware/views/views.py:306
+#: lms/templates/certificates/proctoring_blocked.html:12
+#: lms/templates/dashboard/_dashboard_certificate_information.html:71
+msgid ""
+"Your certificate is temporarily unavailable while your required proctored "
+"exam is being reviewed. Please check back after the review is complete."
+msgstr ""
+
+#: lms/djangoapps/courseware/views/views.py:310
+#: lms/djangoapps/courseware/views/views.py:312
+#: lms/templates/certificates/proctoring_blocked.html:14
+#: lms/templates/dashboard/_dashboard_certificate_information.html:67
+msgid ""
+"Complete your required proctored exam before accessing your certificate."
+msgstr ""
+
+#: lms/djangoapps/courseware/views/views.py:315
+#: lms/templates/certificates/proctoring_blocked.html:16
+#: lms/templates/dashboard/_dashboard_certificate_information.html:69
+msgid ""
+"Your certificate is temporarily unavailable because the proctoring result is "
+"still being confirmed. Please check back later."
+msgstr ""
+
+#: lms/djangoapps/courseware/views/views.py:338
 msgid "Certificate unavailable"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:274
+#: lms/djangoapps/courseware/views/views.py:340
 #, python-brace-format
 msgid ""
 "You have not received a certificate because you do not have a current "
 "{platform_name} verified identity."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:577
+#: lms/djangoapps/courseware/views/views.py:646
 #, python-brace-format
 msgid "To see course content, {sign_in_link} or {register_link}."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:579 xmodule/discussion_block.py:187
+#: lms/djangoapps/courseware/views/views.py:648 xmodule/discussion_block.py:187
 msgid "sign in"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:583
-#: lms/djangoapps/courseware/views/views.py:598 xmodule/discussion_block.py:191
+#: lms/djangoapps/courseware/views/views.py:652
+#: lms/djangoapps/courseware/views/views.py:667 xmodule/discussion_block.py:191
 msgid "register"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:592
+#: lms/djangoapps/courseware/views/views.py:661
 #, python-brace-format
 msgid "{sign_in_link} or {register_link}."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:594
+#: lms/djangoapps/courseware/views/views.py:663
 #: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordresetsuccess/email/body.html:25
 #: lms/templates/header/navbar-not-authenticated.html:63
 #: lms/templates/header/navbar-not-authenticated.html:67
@@ -4325,53 +4365,53 @@ msgstr ""
 msgid "Sign in"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:608
+#: lms/djangoapps/courseware/views/views.py:677
 #, python-brace-format
 msgid ""
 "You must be enrolled in the course to see course content. {enroll_link_start}"
 "Enroll now{enroll_link_end}."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:621
+#: lms/djangoapps/courseware/views/views.py:690
 msgid "You must be enrolled in the course to see course content."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1248
+#: lms/djangoapps/courseware/views/views.py:1323
 #: lms/djangoapps/instructor/views/api.py:171
 msgid "User does not exist."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1255
+#: lms/djangoapps/courseware/views/views.py:1330
 msgid "Invalid location."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1269
+#: lms/djangoapps/courseware/views/views.py:1344
 #, python-brace-format
 msgid "User {username} has never accessed problem {location}"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1466
+#: lms/djangoapps/courseware/views/views.py:1541
 #, python-brace-format
 msgid "You must be signed in to {platform_name} to create a certificate."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1476
+#: lms/djangoapps/courseware/views/views.py:1551
 msgid "Course is not valid"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1492
+#: lms/djangoapps/courseware/views/views.py:1567
 msgid "Your certificate will be available when you pass the course."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1505
+#: lms/djangoapps/courseware/views/views.py:1580
 msgid "Certificate has already been created."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1507
+#: lms/djangoapps/courseware/views/views.py:1582
 msgid "Certificate is being created."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2062
+#: lms/djangoapps/courseware/views/views.py:2145
 msgid ""
 "We plan to use this information to evaluate your application for financial "
 "assistance and to further develop our financial assistance program. \n"
@@ -4388,29 +4428,29 @@ msgid ""
 "processed."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2257
+#: lms/djangoapps/courseware/views/views.py:2340
 msgid ""
 "Select the course for which you want to earn a verified certificate. If the "
 "course does not appear in the list, make sure that you have enrolled in the "
 "audit track for the course."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2264
+#: lms/djangoapps/courseware/views/views.py:2347
 msgid "I certify that: "
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2271
+#: lms/djangoapps/courseware/views/views.py:2354
 msgid ""
 "Paying the verified certificate fee for the above course would cause me "
 "economic hardship"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2283
+#: lms/djangoapps/courseware/views/views.py:2366
 msgid ""
 "I will work diligently to complete the course work and receive a certificate"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2295
+#: lms/djangoapps/courseware/views/views.py:2378
 #, python-brace-format
 msgid ""
 "I have read, understand, and will abide by the {honor_code_link} for the edX "
@@ -7530,17 +7570,17 @@ msgid ""
 "responses by setting this to a value greater than 0."
 msgstr ""
 
-#: openedx/core/djangoapps/catalog/models.py:53
+#: openedx/core/djangoapps/catalog/models.py:54
 msgid ""
 "Username created for Course Catalog Integration, e.g. "
 "lms_catalog_service_user."
 msgstr ""
 
-#: openedx/core/djangoapps/catalog/models.py:58
+#: openedx/core/djangoapps/catalog/models.py:59
 msgid "Page Size"
 msgstr ""
 
-#: openedx/core/djangoapps/catalog/models.py:61
+#: openedx/core/djangoapps/catalog/models.py:62
 msgid ""
 "Maximum number of records in paginated response of a single request to "
 "catalog service."
@@ -8006,29 +8046,29 @@ msgid ""
 "credit provider."
 msgstr ""
 
-#: openedx/core/djangoapps/credit/models.py:121
+#: openedx/core/djangoapps/credit/models.py:122
 msgid ""
 "Plain text or html content for displaying custom message inside credit "
 "eligibility email content which is sent when user has met all credit "
 "eligibility requirements."
 msgstr ""
 
-#: openedx/core/djangoapps/credit/models.py:130
+#: openedx/core/djangoapps/credit/models.py:132
 msgid ""
 "Plain text or html content for displaying custom message inside credit "
 "receipt email content which is sent *after* paying to get credit for a "
 "credit course."
 msgstr ""
 
-#: openedx/core/djangoapps/credit/models.py:140
+#: openedx/core/djangoapps/credit/models.py:142
 msgid "Thumbnail image url of the credit provider."
 msgstr ""
 
-#: openedx/core/djangoapps/credit/models.py:449
+#: openedx/core/djangoapps/credit/models.py:453
 msgid "Credit requirement statuses"
 msgstr ""
 
-#: openedx/core/djangoapps/credit/models.py:560
+#: openedx/core/djangoapps/credit/models.py:566
 msgid "Deadline for purchasing and requesting credit."
 msgstr ""
 
@@ -9136,7 +9176,7 @@ msgstr ""
 msgid "Enter a valid name"
 msgstr ""
 
-#: openedx/core/djangoapps/user_api/accounts/utils.py:55
+#: openedx/core/djangoapps/user_api/accounts/utils.py:64
 #, python-brace-format
 msgid ""
 "Make sure that you are providing a valid username or a URL that contains "
@@ -9801,7 +9841,7 @@ msgstr ""
 msgid "video encode manager API URL."
 msgstr ""
 
-#: openedx/core/djangoapps/video_pipeline/models.py:46
+#: openedx/core/djangoapps/video_pipeline/models.py:47
 msgid "Username created for VEM Integration, e.g. vem_service_user."
 msgstr ""
 
@@ -9985,14 +10025,14 @@ msgstr ""
 msgid "Access to the course you were looking for expired on {expiration_date}"
 msgstr ""
 
-#: openedx/features/course_duration_limits/access.py:204
+#: openedx/features/course_duration_limits/access.py:203
 #, python-brace-format
 msgid ""
 "This learner does not have access to this course. Their access expired on "
 "{expiration_date}."
 msgstr ""
 
-#: openedx/features/course_duration_limits/access.py:210
+#: openedx/features/course_duration_limits/access.py:209
 #, python-brace-format
 msgid ""
 "{strong_open}Audit Access Expires {expiration_date}{strong_close}{line_break}"
@@ -10000,7 +10040,7 @@ msgid ""
 "{expiration_date}."
 msgstr ""
 
-#: openedx/features/course_duration_limits/access.py:213
+#: openedx/features/course_duration_limits/access.py:212
 #, python-brace-format
 msgid ""
 "{line_break}Upgrade by {upgrade_deadline} to get unlimited access to the "
@@ -12940,7 +12980,7 @@ msgstr ""
 msgid "Basic"
 msgstr ""
 
-#: xmodule/video_block/video_block.py:619
+#: xmodule/video_block/video_block.py:610
 #, python-brace-format
 msgid "There is no transcript file associated with the {lang} language."
 msgid_plural ""
@@ -12948,13 +12988,13 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: xmodule/video_block/video_block.py:950
+#: xmodule/video_block/video_block.py:941
 msgid ""
 "The URL for your video. This can be a YouTube URL or a link to an .mp4, ."
 "ogg, or .webm video file hosted elsewhere on the Internet."
 msgstr ""
 
-#: xmodule/video_block/video_block.py:952
+#: xmodule/video_block/video_block.py:943
 msgid "Default Video URL"
 msgstr ""
 
@@ -18999,8 +19039,26 @@ msgstr ""
 msgid "Past due"
 msgstr ""
 
-#: lms/templates/vert_module.html:74
+#: lms/templates/vert_module.html:81
+#, python-brace-format
+msgid "Loading question {number}"
+msgstr ""
+
+#: lms/templates/vert_module.html:94
 msgid "Reset Problems"
+msgstr ""
+
+#: lms/templates/vert_module_lazy_bootstrap.html:28
+#, python-brace-format
+msgid "Loading question {loaded} of {total}..."
+msgstr ""
+
+#: lms/templates/vert_module_lazy_bootstrap.html:29
+msgid "Some questions could not be loaded."
+msgstr ""
+
+#: lms/templates/vert_module_lazy_bootstrap.html:30
+msgid "Retry"
 msgstr ""
 
 #: lms/templates/video.html:28
@@ -20662,7 +20720,7 @@ msgid "Opens in a new browser window"
 msgstr ""
 
 #: lms/templates/courseware/progress.html:88
-#: lms/templates/dashboard/_dashboard_certificate_information.html:97
+#: lms/templates/dashboard/_dashboard_certificate_information.html:107
 msgid "Request Certificate"
 msgstr ""
 
@@ -20860,25 +20918,25 @@ msgid ""
 "{link_end}."
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:52
+#: lms/templates/dashboard/_dashboard_certificate_information.html:54
 #, python-brace-format
 msgid "Your grade and certificate will be ready after {date}."
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:62
+#: lms/templates/dashboard/_dashboard_certificate_information.html:64
 msgid "Congratulations! Your certificate is ready."
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:65
+#: lms/templates/dashboard/_dashboard_certificate_information.html:75
 #, python-brace-format
 msgid "Grade required for a {cert_name_short}:"
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:67
+#: lms/templates/dashboard/_dashboard_certificate_information.html:77
 msgid "Grade required to pass this course:"
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:72
+#: lms/templates/dashboard/_dashboard_certificate_information.html:82
 #, python-brace-format
 msgid ""
 "Your verified {cert_name_long} is being held pending confirmation that the "
@@ -20889,7 +20947,7 @@ msgid ""
 "{cert_name_long}, please contact our billing address {billing_email}"
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:76
+#: lms/templates/dashboard/_dashboard_certificate_information.html:86
 #, python-brace-format
 msgid ""
 "Your {cert_name_long} is being held pending confirmation that the issuance "
@@ -20899,48 +20957,48 @@ msgid ""
 "know by contacting {email}."
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:80
+#: lms/templates/dashboard/_dashboard_certificate_information.html:90
 #, python-brace-format
 msgid ""
 "Your certificate was not issued because you do not have a current verified "
 "identity with {platform_name}. "
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:91
+#: lms/templates/dashboard/_dashboard_certificate_information.html:101
 #, python-brace-format
 msgid "Your {cert_name_short} is Generating"
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:103
+#: lms/templates/dashboard/_dashboard_certificate_information.html:113
 msgid "This link will open the certificate web view"
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:104
+#: lms/templates/dashboard/_dashboard_certificate_information.html:114
 #, python-brace-format
 msgid "View my {cert_name_short}"
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:112
+#: lms/templates/dashboard/_dashboard_certificate_information.html:122
 msgid "Complete our course feedback survey"
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:123
+#: lms/templates/dashboard/_dashboard_certificate_information.html:133
 msgid "Add Certificate to LinkedIn Profile"
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:129
+#: lms/templates/dashboard/_dashboard_certificate_information.html:139
 msgid "Share on LinkedIn"
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:142
+#: lms/templates/dashboard/_dashboard_certificate_information.html:152
 msgid "You are not yet eligible for a certificate."
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:148
+#: lms/templates/dashboard/_dashboard_certificate_information.html:158
 msgid "This link will open the course progress page"
 msgstr ""
 
-#: lms/templates/dashboard/_dashboard_certificate_information.html:149
+#: lms/templates/dashboard/_dashboard_certificate_information.html:159
 msgid "View grades"
 msgstr ""
 
