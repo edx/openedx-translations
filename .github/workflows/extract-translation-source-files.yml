@@ -41,6 +41,8 @@ jobs:
             const pythonRepos = Object.entries(pythonApplications).map(([repo, config]) => ({
               owner: config.owner ?? 'edx',
               repo,
+              pythonVersion: config.pythonVersion ?? '3.11',
+              djangoSettingsModule: config.djangoSettingsModule ?? '',
             }));
 
             const javascriptRepos = Object.entries(javascriptApplications)
@@ -223,7 +225,7 @@ jobs:
         uses: actions/setup-python@v5
         id: setup_python
         with:
-          python-version: '3.11'
+          python-version: ${{ matrix.repo_config.pythonVersion }}
           cache: pip
           # The `edx-platf*rm` wildcard will be expanded to `edx-platform` if its requirement file exists,
           # otherwise it will be omitted
@@ -264,6 +266,17 @@ jobs:
               fi
             done
           fi
+
+      # Only present when translations-config.json declares a
+      # djangoSettingsModule override (e.g. to pick a settings module that
+      # doesn't require a DB driver/cloud storage lib absent from base.txt).
+      # Run as its own conditional step, rather than an env value on the
+      # extraction step below, so DJANGO_SETTINGS_MODULE is never exported
+      # for apps that don't opt in - an empty/null env value would still
+      # short-circuit the app's own manage.py `os.environ.setdefault(...)`.
+      - name: override DJANGO_SETTINGS_MODULE
+        if: matrix.repo_config.djangoSettingsModule != ''
+        run: echo "DJANGO_SETTINGS_MODULE=${{ matrix.repo_config.djangoSettingsModule }}" >> $GITHUB_ENV
 
       # Extracts the translation source files
       - name: extract translation source files

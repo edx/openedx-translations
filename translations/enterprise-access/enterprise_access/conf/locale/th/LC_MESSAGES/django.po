@@ -1,0 +1,192 @@
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-09-18 11:11+0000\n"
+"PO-Revision-Date: 2026-09-18 11:44+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: enterprise_access/apps/core/admin.py:17
+msgid "Personal info"
+msgstr "ข้อมูลส่วนตัว"
+
+#: enterprise_access/apps/core/admin.py:18
+msgid "Permissions"
+msgstr "สิทธิ์"
+
+#: enterprise_access/apps/core/admin.py:20
+msgid "Important dates"
+msgstr "วันที่สำคัญ"
+
+#: enterprise_access/apps/core/models.py:19
+msgid "Full Name"
+msgstr "ชื่อเต็ม"
+
+#: enterprise_access/apps/provisioning/admin.py:486
+msgid "Trigger Subscription Trial Customer Provisioning Workflow"
+msgstr "เรียกใช้กระบวนการตั้งค่าลูกค้าทดลองใช้งานสมัครรับข้อมูล"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:470
+msgid "{} has already been redeemed"
+msgstr "{} ถูกใช้ไปแล้ว"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:476
+msgid ""
+"{} has wait_to_redeem set to true, redemption will not occur until this is "
+"changed to false"
+msgstr ""
+"{} ตั้งค่า wait_to_redeem เป็น true แล้ว "
+"การแลกจะไม่เกิดขึ้นจนกว่าจะเปลี่ยนเป็น false"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:498
+msgid "{} Failure reason: {}"
+msgstr "เหตุผลความล้มเหลวของ {}: {}"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:22
+msgid "Disable now"
+msgstr "ปิดการใช้งานตอนนี้"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:23
+msgid "1"
+msgstr "1"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:24
+msgid "2"
+msgstr "2"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:25
+msgid "3"
+msgstr "3"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:26
+msgid "4"
+msgstr "4"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:27
+msgid "5"
+msgstr "5"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:28
+msgid "6"
+msgstr "6"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:29
+msgid "7"
+msgstr "7"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:38
+msgid "Enable late redemptions until _ days from now"
+msgstr "เปิดใช้งานการแลกล่าช้าจนถึงอีก _ วัน"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:40
+msgid ""
+"Unless disabled now, late redemptions will be disabled at midnight UTC of "
+"the selected day."
+msgstr ""
+"ถ้าไม่ปิดตอนนี้ การแลกล่าช้าจะถูกปิดที่เที่ยงคืนตามเวลา UTC ของวันที่เลือก"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:50
+msgid "Top-up quantity in USD"
+msgstr "จำนวนเติมเงินในรูปแบบ USD"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:52
+msgid ""
+"Amount of funds to add to the associated Subsidy, and also by which to "
+"increase this Policy's spend_limit."
+msgstr ""
+"จำนวนเงินที่จะเพิ่มเข้าไปในเงินช่วยเหลือที่เกี่ยวข้อง "
+"และยังเป็นการเพิ่มขีดจำกัดการใช้จ่ายของนโยบายนี้"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:60
+msgid ""
+"Reference the original sales object that originated this deposit. This must "
+"be the 18-character case-insensitive version of the ID."
+msgstr ""
+"อ้างอิงวัตถุขายต้นฉบับที่เกี่ยวข้องกับการฝากนี้ โดยจะต้องเป็นรหัส ID "
+"แบบไม่คำนึงถึงตัวพิมพ์ที่มี 18 ตัวอักษร"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:77
+msgid "Learner First Name (EE-only)"
+msgstr "ชื่อผู้เรียน (สำหรับ EE เท่านั้น)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:79
+msgid ""
+"First name of learner, only used for Exec Ed Redemptions. This value (along "
+"with last name and D.O.B.) are not persisted; if you select 'Wait to "
+"redeem', the values will be gone when you try to save later."
+msgstr ""
+"ชื่อแรกของผู้เรียน ใช้เฉพาะการแลก Exec Ed เท่านั้น ค่านี้ "
+"(รวมถึงนามสกุลและวันเกิด) จะไม่ได้ถูกเก็บไว้ ถ้าคุณเลือก 'รอการแลก' "
+"ค่านั้นจะหายไปเมื่อคุณพยายามบันทึกในภายหลัง"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:86
+msgid "Learner Last Name (EE-only)"
+msgstr "นามสกุลผู้เรียน (สำหรับ EE เท่านั้น)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:87
+msgid "Last name of learner, only used for Exec Ed Redemptions"
+msgstr "นามสกุลของผู้เรียน ใช้เฉพาะการแลก Exec Ed"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:91
+msgid "Learner Date of Birth (EE-only)"
+msgstr "วันเกิดของผู้เรียน (สำหรับ EE เท่านั้น)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:92
+msgid "Learner date of birth, only used for Exec Ed Redemptions"
+msgstr "วันเกิดของผู้เรียน ใช้เฉพาะการแลก Exec Ed"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:96
+msgid "Order UUID of existing GEAG allocation (EE-only)"
+msgstr "Order UUID ของการแบ่งสรร GEAG ที่มีอยู่ (สำหรับ EE เท่านั้น)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:98
+msgid ""
+"Link new transaction to a specific Order UUID. This is rarely needed, as a "
+"GEAG allocation will typically not yet exist and neither will an Order UUID."
+" Only used for Exec Ed Redemptions."
+msgstr ""
+"เชื่อมโยงธุรกรรมใหม่กับ Order UUID เฉพาะ อาจไม่จำเป็นบ่อยนัก เพราะการแบ่งสรร"
+" GEAG มักจะยังไม่มีอยู่และ Order UUID ก็เช่นกัน ใช้เฉพาะการแลก Exec Ed"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/views.py:83
+msgid "Successfully set late redemption."
+msgstr "ตั้งค่าสำหรับการแลกล่าช้าสำเร็จ"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/views.py:149
+msgid "Successfully deposited funds."
+msgstr "ฝากเงินสำเร็จ"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/views.py:155
+msgid "One or more invalid inputs."
+msgstr "ข้อมูลนำเข้าหนึ่งหรือมากกว่านี้ไม่ถูกต้อง"
+
+#: enterprise_access/apps/subsidy_request/models.py:80
+msgid "List of course partner dictionaries."
+msgstr "รายการของพจนานุกรมคู่ค้าในหลักสูตร"
+
+#: enterprise_access/apps/subsidy_request/models.py:271
+msgid "Whether or not subsidy requests are enabled for an enterprise."
+msgstr "ว่าการขอรับเงินช่วยเหลือสำหรับองค์กรได้รับการเปิดใช้งานหรือไม่"
+
+#: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:16
+#: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:16
+msgid "Home"
+msgstr "หน้าหลัก"
+
+#: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:23
+#: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:30
+msgid "Deposit Funds"
+msgstr "ฝากเงิน"
+
+#: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:23
+#: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:30
+msgid "Set Late Redemption"
+msgstr "ตั้งค่าการแลกแบบล่าช้า"
