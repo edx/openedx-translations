@@ -7,69 +7,71 @@ msgstr ""
 "PO-Revision-Date: 2026-09-18 07:47+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: da\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: recommender.py:314
 msgid "Invalid location URL provided"
-msgstr "Ugyldig adresse-URL angivet"
+msgstr "URL de localisation invalide fournie"
 
 #: recommender.py:325
 msgid "The resource you are attempting to provide already exists"
-msgstr "Den ressource, du forsøger at levere, findes allerede"
+msgstr "La ressource que vous tentez de fournir existe déjà"
 
 #: recommender.py:338
 msgid ""
 "The resource you are attempting to provide has been disallowed by the staff."
 " Reason: "
 msgstr ""
-"Den ressource, du forsøger at levere, er blevet afvist af personalet. Grund:"
-" "
+"La ressource que vous tentez de fournir a été refusée par le personnel. "
+"Raison : "
 
 #: recommender.py:355
 msgid "The selected resource does not exist"
-msgstr "Den valgte ressource findes ikke"
+msgstr "La ressource sélectionnée n'existe pas"
 
 #: recommender.py:403
 msgid "Size of uploaded file exceeds threshold"
-msgstr "Størrelsen på den uploadede fil overstiger tærsklen"
+msgstr "La taille du fichier téléchargé dépasse la limite"
 
 #: recommender.py:414
 msgid "The configuration of pyfs is not properly set"
-msgstr "Konfigurationen af pyfs er ikke korrekt indstillet"
+msgstr "La configuration de pyfs n'est pas correctement définie"
 
 #: recommender.py:753
 msgid "Endorse resource without permission"
-msgstr "Godkend ressource uden tilladelse"
+msgstr "Approuver la ressource sans autorisation"
 
 #: recommender.py:797
 msgid "You don't have the permission to remove this resource"
-msgstr "Du har ikke tilladelse til at fjerne denne ressource"
+msgstr "Vous n'avez pas la permission de supprimer cette ressource"
 
 #: recommender.py:848
 msgid "Only staff can import resources"
-msgstr "Kun personale kan importere ressourcer"
+msgstr "Seul le personnel peut importer des ressources"
 
 #: recommender.py:859 recommender.py:886
 msgid ""
 "Please submit the JSON file obtained with the download resources button"
-msgstr "Indsend venligst JSON-filen opnået med knappen download ressourcer"
+msgstr ""
+"Veuillez soumettre le fichier JSON obtenu avec le bouton de téléchargement "
+"des ressources"
 
 #: recommender.py:899
 msgid "Tried to access flagged resources without staff permission"
 msgstr ""
-"Forsøgte at få adgang til markerede ressourcer uden personaletilladelse"
+"Tentative d'accès à des ressources signalées sans autorisation du personnel"
 
 #: templates/recommender.html:85
 msgid "This is a list of recommended resources. If you\\"
-msgstr "Dette er en liste over anbefalede ressourcer. Hvis du\\"
+msgstr "Ceci est une liste de ressources recommandées. Si vous\\"
 
 #: templates/recommender.html:86 static/js/src/cats.js:158
 msgid "Show related resources"
-msgstr "Vis relaterede ressourcer"
+msgstr "Afficher les ressources connexes"
 
 #: templates/recommender.html:93
 msgid ""
@@ -77,25 +79,25 @@ msgid ""
 "helpful, but it is empty currently. If you find useful resources, either on "
 "edx.org or elsewhere, please add it."
 msgstr ""
-"Dette vil være en liste over ressourcer, som dine medstuderende mente kunne "
-"være nyttige, men den er tom i øjeblikket. Hvis du finder nyttige "
-"ressourcer, enten på edx.org eller andre steder, bedes du tilføje dem."
+"Voici une liste des ressources que vos camarades étudiants ont jugé utiles, "
+"mais elle est actuellement vide. Si vous trouvez des ressources utiles, que "
+"ce soit sur edx.org ou ailleurs, veuillez les ajouter."
 
 #: templates/recommender.html:120
 msgid "Add new resource &gt;&gt;"
-msgstr "Tilføj ny ressource &gt;&gt;"
+msgstr "Ajouter une nouvelle ressource &gt;&gt;"
 
 #: templates/recommender.html:121
 msgid "Download resources"
-msgstr "Download ressourcer"
+msgstr "Télécharger des ressources"
 
 #: templates/recommender.html:122 templates/recommender.html:148
 msgid "Upload resources"
-msgstr "Upload ressourcer"
+msgstr "Téléverser des ressources"
 
 #: templates/recommender.html:124
 msgid "mode"
-msgstr "tilstand"
+msgstr "mode"
 
 #: templates/recommender.html:133
 msgid ""
@@ -106,140 +108,144 @@ msgid ""
 "so helpful, downvote it. If it has issues (illegal material, incorrect, "
 "etc.), please flag it and let us know the reason."
 msgstr ""
-"Dette er en liste over ressourcer, som dine medstuderende mente kunne være "
-"nyttige. Hvis du finder en anden nyttig ressource, enten på edx.org eller "
-"andre steder, bedes du tilføje den. Hvis du kan forbedre beskrivelsen eller "
-"forhåndsvisningen af en ressource, så gør det også. Hvis du finder en "
-"ressource nyttig, så stem den op. Hvis det ikke er så nyttigt, så nedstem "
-"det. Hvis det har problemer (ulovligt materiale, forkert osv.), skal du "
-"markere det og fortælle os årsagen."
+"Voici une liste de ressources que vos camarades étudiants ont jugé utiles. "
+"Si vous trouvez une autre ressource utile, que ce soit sur edx.org ou "
+"ailleurs, veuillez l'ajouter. Si vous pouvez améliorer la description ou "
+"l'aperçu d'une ressource, faites-le également. Si vous trouvez une ressource"
+" utile, votez positivement. Si elle ne l'est pas, votez négativement. Si "
+"elle présente des problèmes (contenu illégal, erreur, abus, etc.), veuillez "
+"la signaler et nous indiquer la raison."
 
 #: templates/recommender.html:141
 msgid "cancel and go back to resource list"
-msgstr "annuller og gå tilbage til ressourcelisten"
+msgstr "annuler et revenir à la liste des ressources"
 
 #: templates/recommender.html:141
 msgid "&lt; Related resources"
-msgstr "&lt; Relaterede ressourcer"
+msgstr "&lt; Ressources connexes"
 
 #: templates/recommender.html:147
 msgid "Resources (in JSON format):"
-msgstr "Ressourcer (i JSON-format):"
+msgstr "Ressources (au format JSON) :"
 
 #: templates/recommender.html:147
 msgid "Provide a file of resource list in JSON format"
-msgstr "Angiv en fil med ressourceliste i JSON-format"
+msgstr "Fournissez un fichier de liste de ressources au format JSON"
 
 #: templates/recommender.html:153 templates/recommender.html:163
 #: templates/recommender.html:173
 msgid "Reason"
-msgstr "Årsag"
+msgstr "Raison"
 
 #: templates/recommender.html:157
 msgid "Reason for why this resource should be removed"
-msgstr "Begrundelse for, hvorfor denne ressource skal fjernes"
+msgstr "Raison pour laquelle cette ressource doit être supprimée"
 
 #: templates/recommender.html:167
 msgid "Reason for why this resource should be endorsed"
-msgstr "Begrundelse for, hvorfor denne ressource bør godkendes"
+msgstr "Raison pour laquelle cette ressource doit être approuvée"
 
 #: templates/recommender.html:177
 msgid "Reason for why this resource should be flagged"
-msgstr "Årsag til, hvorfor denne ressource skal markeres"
+msgstr "Raison pour laquelle cette ressource doit être signalée"
 
 #: templates/recommender.html:183 templates/recommender.html:208
 msgid "Title"
-msgstr "Titel"
+msgstr "Titre"
 
 #: templates/recommender.html:185 templates/recommender.html:210
 msgid "Provide a resource title, required"
-msgstr "Angiv en ressourcetitel, påkrævet"
+msgstr "Fournissez un titre pour la ressource, requis"
 
 #: templates/recommender.html:187 templates/recommender.html:212
 msgid ""
 "Provide a meaningful title so other students know whether this is useful to "
 "them"
 msgstr ""
-"Giv en meningsfuld titel, så andre elever ved, om dette er nyttigt for dem"
+"Fournissez un titre significatif afin que les autres étudiants sachent si "
+"cela leur est utile"
 
 #: templates/recommender.html:189
 msgid "Location"
-msgstr "Beliggenhed"
+msgstr "Emplacement"
 
 #: templates/recommender.html:191 templates/recommender.html:216
 msgid "Provide a resource location in url, required"
-msgstr "Angiv en ressourceplacering i url, påkrævet"
+msgstr "Fournissez une adresse URL pour la ressource, requis"
 
 #: templates/recommender.html:195 templates/recommender.html:220
 msgid "Description"
-msgstr "Beskrivelse"
+msgstr "Description"
 
 #: templates/recommender.html:199 templates/recommender.html:224
 msgid ""
 "Provide a meaningful description so other students know whether this is "
 "useful to them"
 msgstr ""
-"Giv en meningsfuld beskrivelse, så andre elever ved, om dette er nyttigt for"
-" dem"
+"Fournissez une description significative afin que les autres étudiants "
+"sachent si cela leur est utile"
 
 #: templates/recommender.html:202
 msgid "Preview screenshot:"
-msgstr "Forhåndsvisning af skærmbillede:"
+msgstr "Aperçu de la capture d'écran :"
 
 #: templates/recommender.html:202
 msgid "Provide a resource screenshot"
-msgstr "Giv et ressourceskærmbillede"
+msgstr "Fournissez une capture d'écran de la ressource"
 
 #: templates/recommender.html:203
 msgid "Save change"
-msgstr "Gem ændring"
+msgstr "Enregistrer la modification"
 
 #: templates/recommender.html:222
 msgid "Provide a resource description"
-msgstr "Giv en ressourcebeskrivelse"
+msgstr "Fournissez une description de la ressource"
 
 #: templates/recommender.html:227
 msgid "Provide a file of resource screenshot"
-msgstr "Angiv en fil med ressourceskærmbillede"
+msgstr "Fournissez un fichier contenant une capture d'écran de la ressource"
 
 #: templates/recommender.html:228
 msgid "Add resource"
-msgstr "Tilføj ressource"
+msgstr "Ajouter la ressource"
 
 #: templates/recommenderstudio.html:6
 msgid "Configuration setting"
-msgstr "Konfigurationsindstilling"
+msgstr "Paramètre de configuration"
 
 #: templates/recommenderstudio.html:9
 msgid ""
 "Set the student-view, client side configurations for RecommenderXblock."
 msgstr ""
-"Indstil elev-visning, klientside konfigurationer for RecommenderXblock."
+"Définissez les configurations côté client pour l'affichage étudiant du "
+"RecommenderXblock."
 
 #: templates/recommenderstudio.html:12 templates/recommenderstudio.html:18
 msgid "Yes"
-msgstr "Ja"
+msgstr "Oui"
 
 #: templates/recommenderstudio.html:13 templates/recommenderstudio.html:19
 msgid "No"
-msgstr "Ingen"
+msgstr "Non"
 
 #: templates/recommenderstudio.html:14
 msgid ""
 "Do you want to take users on a little tour when they see the "
 "RecommenderXBlock first time?"
 msgstr ""
-"Vil du tage brugere med på en lille rundvisning, når de ser "
-"RecommenderXBlock første gang?"
+"Voulez-vous proposer une petite visite aux utilisateurs lors de leur "
+"première découverte du RecommenderXblock ?"
 
 #: templates/recommenderstudio.html:21
 msgid "Do you want to disable the UX functions which are under development?"
-msgstr "Vil du deaktivere UX-funktionerne, som er under udvikling?"
+msgstr ""
+"Voulez-vous désactiver les fonctionnalités UX en cours de développement ?"
 
 #: templates/recommenderstudio.html:36
 msgid "How many resources you want to show in each page of the resource list?"
 msgstr ""
-"Hvor mange ressourcer vil du have vist på hver side af ressourcelisten?"
+"Combien de ressources souhaitez-vous afficher sur chaque page de la liste "
+"des ressources ?"
 
 #: templates/recommenderstudio.html:46
 msgid ""
@@ -247,45 +253,45 @@ msgid ""
 "pages from (current page - page range) to (current page + page range) will "
 "be shown."
 msgstr ""
-"Hvor mange sideikoner i sideinddelingskontrol (dvs. sideområde)? Ikonerne "
-"for sider fra (aktuel side - sideområde) til (aktuel side + sideområde) vil "
-"blive vist."
+"Combien d'icônes de page afficher dans le contrôle de pagination (c.-à-d. "
+"l'intervalle de pages) ? Les icônes pour les pages allant de (page actuelle "
+"- intervalle) à (page actuelle + intervalle) seront affichées."
 
 #: static/js/src/cats.js:65
 msgid ""
 "Recommend a new resource which may be helpful to other students solving this"
 " problem"
 msgstr ""
-"Anbefal en ny ressource, som kan være nyttig for andre elever, der løser "
-"dette problem"
+"Recommandez une nouvelle ressource qui pourrait être utile aux autres "
+"étudiants confrontés à ce problème"
 
 #: static/js/src/cats.js:66
 msgid "Edit this resource"
-msgstr "Rediger denne ressource"
+msgstr "Modifier cette ressource"
 
 #: static/js/src/cats.js:67
 msgid "Upvote if the resource is helpful"
-msgstr "Stem op, hvis ressourcen er nyttig"
+msgstr "Votez positivement si la ressource est utile"
 
 #: static/js/src/cats.js:68
 msgid "Downvote if the resource is not helpful"
-msgstr "Stem ned, hvis ressourcen ikke er nyttig"
+msgstr "Votez négativement si la ressource n'est pas utile"
 
 #: static/js/src/cats.js:69
 msgid "Votes"
-msgstr "Stemmer"
+msgstr "Votes"
 
 #: static/js/src/cats.js:70
 msgid "Resource title"
-msgstr "Ressource titel"
+msgstr "Titre de la ressource"
 
 #: static/js/src/cats.js:71
 msgid "Remove this resource and give the reason why you do that"
-msgstr "Fjern denne ressource og giv grunden til, hvorfor du gør det"
+msgstr "Supprimez cette ressource et indiquez la raison de cette action"
 
 #: static/js/src/cats.js:72
 msgid "Preview image (typically, a screenshot)"
-msgstr "Eksempelbillede (typisk et skærmbillede)"
+msgstr "Image d'aperçu (généralement, une capture d'écran)"
 
 #: static/js/src/cats.js:73 static/js/src/cats.js:77
 msgid ""
@@ -293,139 +299,144 @@ msgid ""
 " concise, but give enough detail to let students know whether this resources"
 " is useful to them"
 msgstr ""
-"Giv et kort (1-3 sætninger) resumé af ressourcen; ideelt set bør dette være "
-"kortfattet, men give nok detaljer til at fortælle eleverne, om disse "
-"ressourcer er nyttige for dem"
+"Fournissez un résumé court (1 à 3 phrases) de la ressource ; idéalement, il "
+"doit être concis, tout en donnant suffisamment de détails pour que les "
+"étudiants sachent si cette ressource leur est utile"
 
 #: static/js/src/cats.js:74 static/js/src/cats.js:78
 msgid "Cut-and-paste the URL of the resource."
-msgstr "Klip og indsæt ressourcens URL."
+msgstr "Copiez-collez l'URL de la ressource."
 
 #: static/js/src/cats.js:75 static/js/src/cats.js:79
 msgid ""
 "Give a paragraph of summary of the resource; the summary should be more "
 "detailed than you gave in Title"
 msgstr ""
-"Giv et afsnit med resumé af ressourcen; resuméet skal være mere detaljeret, "
-"end du angav i titel"
+"Fournissez un paragraphe de résumé de la ressource ; le résumé doit être "
+"plus détaillé que le titre"
 
 #: static/js/src/cats.js:76 static/js/src/cats.js:80
 msgid ""
 "Upload a preview screenshot (in GIF/PNG/JPG) of the resource; ideally, this "
 "should let students know whether this resources is useful to them"
 msgstr ""
-"Upload et forhåndsvisningsskærmbillede (i GIF/PNG/JPG) af ressourcen; ideelt"
-" set bør dette fortælle eleverne, om disse ressourcer er nyttige for dem"
+"Téléversez une capture d'écran d'aperçu (en GIF/PNG/JPG) de la ressource ; "
+"idéalement, cela devrait permettre aux étudiants de savoir si cette "
+"ressource leur est utile"
 
 #: static/js/src/cats.js:81
 msgid "Go back to the main list"
-msgstr "Gå tilbage til hovedlisten"
+msgstr "Retourner à la liste principale"
 
 #: static/js/src/cats.js:82
 msgid "Give a meaningful reason for why this resource should be removed"
-msgstr "Giv en meningsfuld grund til, hvorfor denne ressource skal fjernes"
+msgstr ""
+"Donnez une raison significative pour laquelle cette ressource devrait être "
+"supprimée"
 
 #: static/js/src/cats.js:83
 msgid "Flag this resource as problematic and give your reason"
-msgstr "Markér denne ressource som problematisk og giv din grund"
+msgstr "Signalez cette ressource comme problématique et donnez votre raison"
 
 #: static/js/src/cats.js:84
 msgid "Delete this resource"
-msgstr "Slet denne ressource"
+msgstr "Supprimez cette ressource"
 
 #: static/js/src/cats.js:85
 msgid "Show a list of student-recommented related resources"
-msgstr "Vis en liste over relaterede ressourcer anbefalet af elever"
+msgstr ""
+"Afficher une liste des ressources connexes recommandées par les étudiants"
 
 #: static/js/src/cats.js:86
 msgid "Hide the recommendations list"
-msgstr "Skjul listen med anbefalinger"
+msgstr "Masquer la liste des recommandations"
 
 #: static/js/src/cats.js:87
 msgid "Check the icon to endorse this resource"
-msgstr "Marker ikonet for at godkende denne ressource"
+msgstr "Cochez l'icône pour approuver cette ressource"
 
 #: static/js/src/cats.js:88
 msgid "This resource is endorsed by staff"
-msgstr "Denne ressource er godkendt af personalet"
+msgstr "Cette ressource est approuvée par le personnel"
 
 #: static/js/src/cats.js:89
 msgid "Click to view resources for removal"
-msgstr "Klik for at se ressourcer til fjernelse"
+msgstr "Cliquez pour voir les ressources à supprimer"
 
 #: static/js/src/cats.js:90
 msgid "Click to view resources in ordinary decreasing-vote order"
-msgstr "Klik for at se ressourcer i almindelig faldende stemmerækkefølge"
+msgstr ""
+"Cliquez pour voir les ressources classées par ordre décroissant de votes"
 
 #: static/js/src/cats.js:93
 msgid ""
 "Here is a list of reasons why students think this resource problematic:"
 msgstr ""
-"Her er en liste over årsager til, at eleverne synes, at denne ressource er "
-"problematisk:"
+"Voici une liste des raisons pour lesquelles les étudiants considèrent cette "
+"ressource comme problématique :"
 
 #: static/js/src/cats.js:94
 msgid "The reason why it is endorsed is:"
-msgstr "Grunden til at det er godkendt er:"
+msgstr "La raison pour laquelle elle est approuvée est :"
 
 #: static/js/src/cats.js:95
 msgid "Resource: "
-msgstr "Ressource: "
+msgstr "Ressource : "
 
 #: static/js/src/cats.js:96
 msgid "votes"
-msgstr "stemmer"
+msgstr "votes"
 
 #: static/js/src/cats.js:104
 msgid ""
 "The content you typed has not been submitted yet. Are you sure to go back?"
 msgstr ""
-"Indholdet du indtastede er ikke blevet indsendt endnu. Er du sikker på at gå"
-" tilbage?"
+"Le contenu que vous avez tapé n'a pas encore été soumis. Êtes-vous sûr de "
+"vouloir revenir en arrière ?"
 
 #: static/js/src/cats.js:107 static/js/src/cats.js:199
 msgid "Import resources"
-msgstr "Importer ressourcer"
+msgstr "Importer des ressources"
 
 #: static/js/src/cats.js:108
 msgid "Suggest resource"
-msgstr "Foreslå ressource"
+msgstr "Suggérer une ressource"
 
 #: static/js/src/cats.js:109 static/js/src/cats.js:207
 msgid "Edit existing resource"
-msgstr "Rediger eksisterende ressource"
+msgstr "Modifier la ressource existante"
 
 #: static/js/src/cats.js:110
 msgid "Flag Resource"
-msgstr "Flagressource"
+msgstr "Signaler la ressource"
 
 #: static/js/src/cats.js:111
 msgid "Endorse Resource"
-msgstr "Godkend ressource"
+msgstr "Approuver la ressource"
 
 #: static/js/src/cats.js:112
 msgid "Remove Resource"
-msgstr "Fjern ressource"
+msgstr "Supprimer la ressource"
 
 #: static/js/src/cats.js:116
 msgid "Upload resources in JSON format to the database."
-msgstr "Upload ressourcer i JSON-format til databasen."
+msgstr "Téléverser des ressources au format JSON dans la base de données."
 
 #: static/js/src/cats.js:117
 msgid ""
 "Suggest a resource which can help other students with this problem. Please "
 "do not give the answer directly."
 msgstr ""
-"Foreslå en ressource, som kan hjælpe andre elever med dette problem. Giv "
-"venligst ikke svaret direkte."
+"Suggérez une ressource qui peut aider les autres étudiants confrontés à ce "
+"problème. Veuillez ne pas donner directement la réponse."
 
 #: static/js/src/cats.js:118
 msgid ""
 "Edit the resource and make it more helpful for other students with this "
 "problem. Please do not give the answer directly."
 msgstr ""
-"Rediger ressourcen og gør den mere nyttig for andre elever med dette "
-"problem. Giv venligst ikke svaret direkte."
+"Modifiez la ressource pour la rendre plus utile aux autres étudiants "
+"confrontés à ce problème. Veuillez ne pas donner directement la réponse."
 
 #: static/js/src/cats.js:119
 msgid ""
@@ -433,78 +444,79 @@ msgid ""
 "resources, and remove inappropriate ones (spam, incorrect, abusive, etc.). "
 "Giving a clear reason will help us do this efficiently."
 msgstr ""
-"Hvorfor vil du markere denne ressource? Personalet vil gennemgå alle "
-"markerede ressourcer og fjerne upassende (spam, forkert, misbrug osv.). At "
-"give en klar begrundelse vil hjælpe os med at gøre dette effektivt."
+"Pourquoi souhaitez-vous signaler cette ressource ? Le personnel examinera "
+"toutes les ressources signalées et supprimera celles qui sont inappropriées "
+"(spam, incorrectes, abusives, etc.). Donner une raison précise nous aidera à"
+" le faire efficacement."
 
 #: static/js/src/cats.js:120
 msgid "Endorse this resource and give the reason why you do that."
-msgstr "Godkend denne ressource og giv grunden til, hvorfor du gør det."
+msgstr "Approuvez cette ressource et indiquez la raison de cette approbation."
 
 #: static/js/src/cats.js:121
 msgid "Remove this resource and give the reason why you do that."
-msgstr "Fjern denne ressource og giv grunden til, hvorfor du gør det."
+msgstr "Supprimez cette ressource et indiquez la raison de cette suppression."
 
 #: static/js/src/cats.js:157
 msgid "Hide related resources"
-msgstr "Skjul relaterede ressourcer"
+msgstr "Masquer les ressources connexes"
 
 #: static/js/src/cats.js:191
 msgid "From page {fromPage} To page {toPage}"
-msgstr "Fra side {fromPage} Til side {toPage}"
+msgstr "De la page {fromPage} à la page {toPage}"
 
 #: static/js/src/cats.js:196
 msgid "Export resources"
-msgstr "Eksporter ressourcer"
+msgstr "Exporter des ressources"
 
 #: static/js/src/cats.js:198
 msgid "Entering import resource mode"
-msgstr "Går ind i importressourcetilstand"
+msgstr "Passage en mode d'importation de ressource"
 
 #: static/js/src/cats.js:202
 msgid "Entering add resource mode"
-msgstr "Går ind i tilstanden Tilføj ressource"
+msgstr "Passage en mode d'ajout de ressource"
 
 #: static/js/src/cats.js:203
 msgid "Add new resource"
-msgstr "Tilføj ny ressource"
+msgstr "Ajouter une nouvelle ressource"
 
 #: static/js/src/cats.js:206
 msgid "Entering edit resource mode"
-msgstr "Går ind i redigeringsressourcetilstand"
+msgstr "Passage en mode de modification de ressource"
 
 #: static/js/src/cats.js:210
 msgid "Entering flag resource mode"
-msgstr "Går ind i flagressourcetilstand"
+msgstr "Passage en mode de signalement de ressource"
 
 #: static/js/src/cats.js:211
 msgid "Flag resource"
-msgstr "Flagressource"
+msgstr "Signaler la ressource"
 
 #: static/js/src/cats.js:212
 msgid "Unflag resource"
-msgstr "Fjern flag for ressource"
+msgstr "Retirer le signalement de la ressource"
 
 #: static/js/src/cats.js:215
 msgid "Endorse resource"
-msgstr "Godkend ressource"
+msgstr "Approuver la ressource"
 
 #: static/js/src/cats.js:216
 msgid "Unendorse resource"
-msgstr "Ikke godkendt ressource"
+msgstr "Retirer l'approbation de la ressource"
 
 #: static/js/src/cats.js:218
 msgid "Remove resource"
-msgstr "Fjern ressource"
+msgstr "Supprimer la ressource"
 
 #: static/js/src/cats.js:219
 msgid "Hovering resource"
-msgstr "Svævende ressource"
+msgstr "Ressource survolée"
 
 #: static/js/src/cats.js:220
 msgid "A resource was clicked"
-msgstr "Der blev klikket på en ressource"
+msgstr "Une ressource a été cliquée"
 
 #: static/js/src/cats.js:221
 msgid "Back to resource list mode"
-msgstr "Tilbage til ressourcelistetilstand"
+msgstr "Retour en mode liste des ressources"
