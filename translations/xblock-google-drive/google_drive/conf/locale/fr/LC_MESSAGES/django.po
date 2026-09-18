@@ -7,29 +7,27 @@ msgstr ""
 "PO-Revision-Date: 2026-09-18 07:48+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: es_ES\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: google_calendar.py:45 google_docs.py:59
 #: templates/html/google_calendar_edit.html:17
 #: templates/html/google_docs_edit.html:17
 msgid "Display Name"
-msgstr "Nombre para mostrar"
+msgstr "Nom d'affichage"
 
 #: google_calendar.py:46 google_docs.py:60
 #: templates/html/google_calendar_edit.html:24
 #: templates/html/google_docs_edit.html:24
 msgid "This name appears in the horizontal navigation at the top of the page."
-msgstr ""
-"Este nombre aparece en la navegación horizontal en la parte superior de la "
-"página."
+msgstr "Ce nom apparaît dans la navigation horizontale en haut de la page."
 
 #: google_calendar.py:51 templates/html/google_calendar_edit.html:28
 msgid "Public Calendar ID"
-msgstr "ID de calendario público"
+msgstr "ID de calendrier public"
 
 #: google_calendar.py:53
 msgid ""
@@ -37,25 +35,25 @@ msgid ""
 "Calendar, open Settings and copy the ID from the Calendar Address section "
 "into this field."
 msgstr ""
-"Google proporciona una identificación para los calendarios disponibles "
-"públicamente. En Google Calendar, abra Configuración y copie el ID de la "
-"sección Dirección del calendario en este campo."
+"Google fournit un identifiant pour les calendriers publics. Dans Google "
+"Agenda, ouvrez les Paramètres et copiez l'identifiant depuis la section "
+"Adresse du calendrier dans ce champ."
 
 #: google_calendar.py:60 templates/html/google_calendar_edit.html:41
 msgid "Default View"
-msgstr "Vista predeterminada"
+msgstr "Affichage par défaut"
 
 #: google_calendar.py:61 templates/html/google_calendar_edit.html:50
 msgid ""
 "The calendar view that students see by default. A student can change this "
 "view."
 msgstr ""
-"La vista de calendario que ven los estudiantes de forma predeterminada. Un "
-"estudiante puede cambiar esta vista."
+"La vue du calendrier que les étudiants voient par défaut. Un étudiant peut "
+"la modifier."
 
 #: google_docs.py:65 templates/html/google_docs_edit.html:28
 msgid "Embed Code"
-msgstr "Código de inserción"
+msgstr "Code d'intégration"
 
 #: google_docs.py:67 templates/html/google_docs_edit.html:31
 msgid ""
@@ -63,36 +61,36 @@ msgid ""
 "document, from the File menu, select Publish to the Web. Modify settings as "
 "needed, click Publish, and copy the embed code into this field."
 msgstr ""
-"Google proporciona un código de inserción para documentos de Drive. En el "
-"documento de Google Drive, en el menú Archivo, seleccione Publicar en la "
-"Web. Modifique la configuración según sea necesario, haga clic en Publicar y"
-" copie el código para insertar en este campo."
+"Google fournit un code d'intégration pour les documents Drive. Dans le "
+"document Google Drive, dans le menu Fichier, sélectionnez Publier sur le "
+"Web. Modifiez les paramètres si nécessaire, cliquez sur Publier, et copiez "
+"le code d'intégration dans ce champ."
 
 #: google_docs.py:75
 msgid "Alternative Text"
-msgstr "Texto alternativo"
+msgstr "Texte alternatif"
 
 #: google_docs.py:76 templates/html/google_docs_edit.html:38
 msgid ""
 "Alternative text describes an image and appears if the image is unavailable."
 msgstr ""
-"El texto alternativo describe una imagen y aparece si la imagen no está "
+"Le texte alternatif décrit une image et apparaît si celle-ci n'est pas "
 "disponible."
 
 #: templates/html/google_calendar_edit.html:9
 msgid "Invalid Google Calendar"
-msgstr "Calendario de Google no válido"
+msgstr "Google Agenda invalide"
 
 #: templates/html/google_calendar_edit.html:10
 #: templates/html/google_docs_edit.html:10
 msgid "Please correct the outlined fields."
-msgstr "Corrija los campos resaltados."
+msgstr "Veuillez corriger les champs encadrés."
 
 #: templates/html/google_calendar_edit.html:21
 #: templates/html/google_calendar_edit.html:32
 #: templates/html/google_docs_edit.html:21
 msgid "Clear Value"
-msgstr "Limpiar valor"
+msgstr "Effacer la valeur"
 
 #: templates/html/google_calendar_edit.html:35
 msgid ""
@@ -100,28 +98,28 @@ msgid ""
 "Calendar, open Settings and copy the ID from the Calendar Address section "
 "into this field. You can "
 msgstr ""
-"Google proporciona una identificación para los calendarios disponibles "
-"públicamente. En Google Calendar, abra Configuración y copie el ID de la "
-"sección Dirección del calendario en este campo. Puede "
+"Google fournit un identifiant pour les calendriers publics. Dans Google "
+"Agenda, ouvrez les Paramètres et copiez l'identifiant depuis la section "
+"Adresse du calendrier dans ce champ. Vous pouvez "
 
 #: templates/html/google_calendar_edit.html:60
 #: templates/html/google_docs_edit.html:47
 msgid "Save"
-msgstr "Guardar"
+msgstr "Enregistrer"
 
 #: templates/html/google_calendar_edit.html:64
 #: templates/html/google_docs_edit.html:51
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Annuler"
 
 #: templates/html/google_docs_edit.html:9
 msgid "Invalid Google Document"
-msgstr "Documento de Google no válido"
+msgstr "Document Google invalide"
 
 #: templates/html/google_docs_edit.html:35
 msgid "Alternative text"
-msgstr "Texto alternativo"
+msgstr "Texte alternatif"
 
 #: public/js/google_calendar_edit.js:88 public/js/google_docs_edit.js:55
 msgid "Saving"
-msgstr "Guardando"
+msgstr "Enregistrement"
