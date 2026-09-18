@@ -41,6 +41,7 @@ jobs:
             const pythonRepos = Object.entries(pythonApplications).map(([repo, config]) => ({
               owner: config.owner ?? 'edx',
               repo,
+              pythonVersion: config.pythonVersion ?? '3.11',
             }));
 
             const javascriptRepos = Object.entries(javascriptApplications)
@@ -223,7 +224,7 @@ jobs:
         uses: actions/setup-python@v5
         id: setup_python
         with:
-          python-version: '3.11'
+          python-version: ${{ matrix.repo_config.pythonVersion }}
           cache: pip
           # The `edx-platf*rm` wildcard will be expanded to `edx-platform` if its requirement file exists,
           # otherwise it will be omitted
