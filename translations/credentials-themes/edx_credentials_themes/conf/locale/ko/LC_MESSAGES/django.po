@@ -7,47 +7,47 @@ msgstr ""
 "PO-Revision-Date: 2026-09-18 07:17+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: fr_CA\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: templates/edx.org/_footer.html:7
 msgid "Legal Policies"
-msgstr "Politiques juridiques"
+msgstr "법률 정책"
 
 #: templates/edx.org/_footer.html:11
 msgid "Terms of Service & Honor Code"
-msgstr "Conditions d'utilisation & code d'honneur"
+msgstr "서비스 약관 및 명예 강령"
 
 #: templates/edx.org/_footer.html:16
 msgid "Privacy Policy"
-msgstr "Politique de confidentialité"
+msgstr "개인정보 보호정책"
 
 #: templates/edx.org/_footer.html:21
 msgid "Cookie Policy"
-msgstr "Politique en matière de cookies"
+msgstr "쿠키 정책"
 
 #: templates/edx.org/_footer.html:26
 msgid "Your Privacy Choices"
-msgstr "Vos choix en matière de confidentialité"
+msgstr "귀하의 개인정보 선택권"
 
 #: templates/edx.org/_footer.html:36
 msgid ""
 "All rights reserved except where noted. edX, Open edX and the edX and Open "
 "edX logos are registered trademarks or trademarks of edX Inc."
 msgstr ""
-"Tous droits réservés sauf où indiqué. edX, Open edX, ainsi que les logos edX"
-" et Open edX sont des marques déposées ou marques de edX Inc."
+"별도 명시된 경우를 제외하고 모든 권리가 보호됩니다. edX, Open edX 및 edX와 Open edX 로고는 edX Inc.의 등록"
+" 상표 또는 상표입니다."
 
 #: templates/edx.org/_footer.html:46
 msgid "Powered by"
-msgstr "Propulsé par"
+msgstr "제공:"
 
 #: templates/edx.org/credentials/programs/base.html:30
 msgid "About edX"
-msgstr "À propos d'edX"
+msgstr "edX 소개"
 
 #: templates/edx.org/credentials/programs/base.html:33
 #, python-brace-format
@@ -57,10 +57,9 @@ msgid ""
 "of Texas, and many others. edX is an online initiative created by founding "
 "partners Harvard and MIT."
 msgstr ""
-"{link_start} edX{link_end} propose des cours interactifs en ligne et des "
-"CLOMs provenant des meilleures universités du monde, notamment le MIT, "
-"Harvard, Berkeley, l'Université du Texas et bien d'autres. edX est une "
-"initiative en ligne créée par les partenaires fondateurs Harvard et MIT."
+"{link_start} edX{link_end}는 MIT, Harvard, Berkeley, University of Texas 등 세계"
+" 유수의 대학들이 제공하는 인터랙티브 온라인 강의와 MOOC를 제공합니다. edX는 창립 파트너인 Harvard와 MIT가 만든 온라인 "
+"이니셔티브입니다."
 
 #. Translators: MicroBachelors should not be translated, this phrase is
 #. preceded by the learner's name and followed by a program title
@@ -68,19 +67,17 @@ msgstr ""
 msgid ""
 "has successfully completed all courses and received passing grades to earn a"
 " MicroBachelors program certificate in"
-msgstr ""
-"a terminé avec succès tous les cours et obtenu les notes de passage pour "
-"obtenir une attestation du programme MicroBachelors en"
+msgstr "모든 과정을 성공적으로 이수하고 합격 점수를 받아 MicroBachelors 프로그램 인증서를 취득한 분야"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:12
 msgid "MicroBachelors program certificate"
-msgstr "Attestation du programme MicroBachelors"
+msgstr "MicroBachelors 프로그램 인증서"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:17
 msgid "About the edX MicroBachelors program certificate"
-msgstr "À propos de l'attestation du programme MicroBachelors d'edX"
+msgstr "edX MicroBachelors 프로그램 인증서에 대하여"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:22
@@ -92,11 +89,9 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the program."
 msgstr ""
-"Une attestation MicroBachelors d'edX signifie que l'apprenant a suivi un "
-"groupe de cours qui s'ajoutent à une riche compréhension d'un domaine "
-"d'études. Pour terminer les programmes MicroBachelors, les apprenants "
-"doivent obtenir des {link_start}attestations vérifiées{link_end} pour chacun"
-" des cours inclus dans le programme."
+"edX MicroBachelors 인증은 학습자가 특정 분야에 대한 깊은 이해를 위해 여러 과목을 이수했음을 의미합니다. "
+"MicroBachelors 프로그램을 완료하려면 프로그램에 포함된 각 과목에서 {link_start}검증된 인증서{link_end}를 "
+"취득해야 합니다."
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:8
@@ -104,9 +99,7 @@ msgstr ""
 msgid ""
 "You worked hard to earn your MicroMasters Credential from "
 "%(organization_name)s."
-msgstr ""
-"Vous avez travaillé fort pour obtenir votre attestation MicroMasters auprès "
-"de %(organization_name)s."
+msgstr "당신은 %(organization_name)s에서 MicroMasters 인증을 받기 위해 열심히 노력했습니다."
 
 #. Translators: MicroMasters should not be translated, this phrase is preceded
 #. by the learner's name and followed by a program title
@@ -114,19 +107,17 @@ msgstr ""
 msgid ""
 "has successfully completed all courses and received passing grades to earn a"
 " MicroMasters program certificate in"
-msgstr ""
-"a terminé avec succès tous les cours et obtenu les notes de passage pour "
-"obtenir une attestation du programme MicroMasters en"
+msgstr "모든 과정을 성공적으로 이수하고 합격 점수를 받아 MicroMasters 프로그램 인증서를 취득한 분야"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:21
 msgid "MicroMasters program certificate"
-msgstr "Attestation du programme MicroMasters"
+msgstr "MicroMasters 프로그램 인증서"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:26
 msgid "About the edX MicroMasters credential"
-msgstr "À propos de l'attestation du programme MicroMasters d'edX"
+msgstr "edX MicroMasters 인증에 대하여"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:31
@@ -138,11 +129,9 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
-"Une attestation MicroMasters d'edX signifie que l'apprenant a suivi un "
-"groupe de cours qui s'ajoutent à une riche compréhension d'un domaine "
-"d'étude. Pour terminer les programmes MicroMasters, les apprenants doivent "
-"obtenir des {link_start}attestations vérifiées{link_end} pour chacun des "
-"cours inclus dans le programme."
+"edX MicroMasters 인증은 학습자가 특정 분야에 대한 깊은 이해를 위해 여러 과목을 이수했음을 의미합니다. "
+"MicroMasters 프로그램을 완료하려면 프로그램에 포함된 각 과목에서 {link_start}검증된 인증서{link_end}를 "
+"취득해야 합니다."
 
 #. Translators: This phrase is preceded by the learner's name and followed by
 #. a program title
@@ -150,17 +139,15 @@ msgstr ""
 msgid ""
 "successfully completed all courses and received passing grades for a "
 "Professional Certificate in"
-msgstr ""
-"a réussi tous les cours et a eu les notes de passage pour une attestation "
-"professionnelle en"
+msgstr "모든 과정을 성공적으로 이수하고 합격 점수를 받아 Professional Certificate 프로그램 인증서를 취득한 분야"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:11
 msgid "Professional Certificate"
-msgstr "Attestation professionnelle"
+msgstr "전문 인증서"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:15
 msgid "About the edX Professional Certificate"
-msgstr "À propos de l'attestation professionnelle edX"
+msgstr "edX 전문 인증서에 대하여"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:19
 #, python-brace-format
@@ -171,11 +158,8 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
-"Une attestation professionnelle d'edX signifie que l'apprenant a suivi un "
-"groupe de cours qui s'ajoutent à une riche compréhension d'un domaine "
-"d'étude. Pour terminer les programmes d'attestation professionnelle, les "
-"apprenants doivent obtenir des {link_start}attestations vérifiées{link_end} "
-"pour chacun des cours inclus dans le programme."
+"edX 전문 인증서는 학습자가 특정 분야에 대한 깊은 이해를 위해 여러 과목을 이수했음을 의미합니다. 전문 인증서 프로그램을 완료하려면 "
+"프로그램에 포함된 각 과목에서 {link_start}검증된 인증서{link_end}를 취득해야 합니다."
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:8
@@ -183,9 +167,7 @@ msgstr ""
 msgid ""
 "You worked hard to earn your XSeries Program certificate from "
 "%(organization_name)s."
-msgstr ""
-"Vous avez travaillé fort pour obtenir votre attestation du programme XSeries"
-" de %(organization_name)s."
+msgstr "당신은 %(organization_name)s에서 XSeries 프로그램 인증서를 받기 위해 열심히 노력했습니다."
 
 #. Translators: XSeries should not be translated, this phrase is preceded by
 #. the learner's name and followed by a program title
@@ -193,19 +175,17 @@ msgstr ""
 msgid ""
 "has successfully completed all courses and received passing grades for an "
 "XSeries Program certificate in"
-msgstr ""
-"a terminé avec succès tous les cours et obtenu les notes de passage pour "
-"obtenir une attestation du programme XSeries en"
+msgstr "모든 과정을 성공적으로 이수하고 합격 점수를 받아 XSeries 프로그램 인증서를 취득한 분야"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:21
 msgid "XSeries Program certificate"
-msgstr "Attestation du programme XSeries"
+msgstr "XSeries 프로그램 인증서"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:26
 msgid "About the edX XSeries Program certificate"
-msgstr "À propos de l'attestation du programme XSeries d'edX"
+msgstr "edX XSeries 프로그램 인증서에 대하여"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:31
@@ -217,8 +197,5 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
-"Une attestation du programme XSeries d'edX signifie que l'apprenant a suivi "
-"un groupe de cours qui s'ajoutent à une riche compréhension d'un domaine "
-"d'étude. Pour terminer les programmes XSeries, les apprenants doivent "
-"obtenir des {link_start}attestations vérifiées{link_end} pour chacun des "
-"cours inclus dans le programme."
+"edX XSeries 프로그램 인증서는 학습자가 특정 분야에 대한 폭넓은 이해를 위해 여러 과목을 이수했음을 의미합니다. XSeries "
+"프로그램을 완료하려면 프로그램에 포함된 각 과목에서 {link_start}검증된 인증서{link_end}를 취득해야 합니다."
