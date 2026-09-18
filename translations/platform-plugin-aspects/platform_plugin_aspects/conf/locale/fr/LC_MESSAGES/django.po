@@ -7,7 +7,7 @@ msgstr ""
 "PO-Revision-Date: 2026-09-18 07:46+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: fr_CA\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,7 +23,7 @@ msgstr "Tableau de bord du cours"
 
 #: settings/common.py:37
 msgid "Individual Learner Dashboard"
-msgstr "Tableau de bord individuel de l'apprenant"
+msgstr "Tableau de bord de l'apprenant individuel"
 
 #: settings/common.py:43
 msgid "At-Risk Learners Dashboard"
@@ -50,7 +50,7 @@ msgid ""
 "Superset is not configured properly. Please contact your system "
 "administrator."
 msgstr ""
-"Superset n'est pas configuré correctement. Veuillez contacter votre "
+"Superset n'est pas correctement configuré. Veuillez contacter votre "
 "administrateur système."
 
 #: static/html/superset_student.html:4
@@ -64,17 +64,17 @@ msgstr ""
 #: views.py:87
 #, python-brace-format
 msgid "Course not found: '{course_id}'"
-msgstr "Cours introuvable : '{course_id}'"
+msgstr "Cours non trouvé : '{course_id}'"
 
 #: views.py:114
 #, python-brace-format
 msgid "Invalid course id: '{course_id}'"
-msgstr "Identifiant de cours invalide : '{course_id}'"
+msgstr "Identifiant de cours invalide : '{course_id}'"
 
 #: views.py:179
 #, python-brace-format
 msgid "Invalid usage id: '{usage_id}'"
-msgstr "ID d'utilisation invalide : '{usage_id}'"
+msgstr "Identifiant d'utilisation invalide : '{usage_id}'"
 
 #: views.py:208
 #, python-brace-format
@@ -98,8 +98,8 @@ msgid ""
 "The ID of the dashboard to embed. Available in the Superset embed dashboard "
 "UI."
 msgstr ""
-"L'ID du tableau de bord à intégrer. Disponible dans l’interface utilisateur "
-"du tableau de bord intégré Superset."
+"L'identifiant du tableau de bord à intégrer. Disponible dans l'interface "
+"d'intégration du tableau de bord Superset."
 
 #: xblock.py:64
 msgid "Filters"
@@ -113,6 +113,6 @@ msgid ""
 "               "
 msgstr ""
 "Liste des filtres SQL à appliquer au\n"
-" tableau de bord. Par exemple : [\"org='edX'\", \"pays dans ('us', 'co')\"]\n"
-" Les champs utilisés ici doivent être disponibles sur chaque ensemble de données utilisé par le tableau de bord.\n"
+"               tableau de bord. Ex. : [\"org='edX'\", \"country in ('us', 'co')\"]\n"
+"               Les champs utilisés ici doivent être disponibles dans chaque ensemble de données utilisé par le tableau de bord.\n"
 "               "
