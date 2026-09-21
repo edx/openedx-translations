@@ -291,6 +291,16 @@ jobs:
         run: |
           cd translations/${{ matrix.repo_config.repo }}
           django-admin compilemessages --locale en
+        env:
+          # django-admin (unlike manage.py) never adds the app checkout to
+          # sys.path, so if DJANGO_SETTINGS_MODULE is set here, Django's
+          # compilemessages tries to import it purely to read
+          # settings.LOCALE_PATHS and fails with ModuleNotFoundError. It's a
+          # no-op for that command when unset (it just walks conf/locale
+          # directly), so always clear it here regardless of whether the
+          # "override DJANGO_SETTINGS_MODULE" step above ran and left it in
+          # $GITHUB_ENV for the rest of the job.
+          DJANGO_SETTINGS_MODULE: ''
 
       # Preparations so git adds only the translation source files, found in conf/locale/en
       - name: find the location of the translation source files
