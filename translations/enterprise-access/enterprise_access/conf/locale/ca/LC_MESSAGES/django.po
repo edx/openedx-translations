@@ -1,0 +1,201 @@
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-09-18 11:11+0000\n"
+"PO-Revision-Date: 2026-09-21 06:23+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: enterprise_access/apps/core/admin.py:17
+msgid "Personal info"
+msgstr "Informació personal"
+
+#: enterprise_access/apps/core/admin.py:18
+msgid "Permissions"
+msgstr "Permisos"
+
+#: enterprise_access/apps/core/admin.py:20
+msgid "Important dates"
+msgstr "Dates importants"
+
+#: enterprise_access/apps/core/models.py:19
+msgid "Full Name"
+msgstr "Nom complet"
+
+#: enterprise_access/apps/provisioning/admin.py:486
+msgid "Trigger Subscription Trial Customer Provisioning Workflow"
+msgstr ""
+"Activar el flux de treball de provisió per a clients de prova de la "
+"subscripció"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:470
+msgid "{} has already been redeemed"
+msgstr "{} ja ha estat redimit"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:476
+msgid ""
+"{} has wait_to_redeem set to true, redemption will not occur until this is "
+"changed to false"
+msgstr ""
+"{} té wait_to_redeem configurat a true, la redempció no es realitzarà fins "
+"que això es canviï a false"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:498
+msgid "{} Failure reason: {}"
+msgstr "{} Raó del fracàs: {}"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:22
+msgid "Disable now"
+msgstr "Deshabilitar ara"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:23
+msgid "1"
+msgstr "1"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:24
+msgid "2"
+msgstr "2"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:25
+msgid "3"
+msgstr "3"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:26
+msgid "4"
+msgstr "4"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:27
+msgid "5"
+msgstr "5"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:28
+msgid "6"
+msgstr "6"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:29
+msgid "7"
+msgstr "7"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:38
+msgid "Enable late redemptions until _ days from now"
+msgstr "Activa les redempcions tardanes fins a _ dies a partir d'ara"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:40
+msgid ""
+"Unless disabled now, late redemptions will be disabled at midnight UTC of "
+"the selected day."
+msgstr ""
+"A menys que es deshabiliti ara, les redempcions tardanes es desactivaran a "
+"la mitjanit UTC del dia seleccionat."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:50
+msgid "Top-up quantity in USD"
+msgstr "Quantitat de càrrega en USD"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:52
+msgid ""
+"Amount of funds to add to the associated Subsidy, and also by which to "
+"increase this Policy's spend_limit."
+msgstr ""
+"Quantitat de fons a afegir a la Subvenció associada, i també amb què "
+"augmentar el límit de despesa d'aquesta Política."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:60
+msgid ""
+"Reference the original sales object that originated this deposit. This must "
+"be the 18-character case-insensitive version of the ID."
+msgstr ""
+"Referència a l'objecte de vendes original que va originar aquest dipòsit. "
+"Aquesta ha de ser la versió de 18 caràcters del ID sense distingir "
+"majúscules de minúscules."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:77
+msgid "Learner First Name (EE-only)"
+msgstr "Nom de l'estudiant (EE-only)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:79
+msgid ""
+"First name of learner, only used for Exec Ed Redemptions. This value (along "
+"with last name and D.O.B.) are not persisted; if you select 'Wait to "
+"redeem', the values will be gone when you try to save later."
+msgstr ""
+"Nom de l'estudiant, només s'utilitza per a les redempcions Exec Ed. Aquest "
+"valor (així com el cognom i la data de naixement) no es guarda; si "
+"selecciones 'Wait to redeem', els valors desapareixeran quan intentis desar "
+"més endavant."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:86
+msgid "Learner Last Name (EE-only)"
+msgstr "Cognom de l'estudiant (EE-only)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:87
+msgid "Last name of learner, only used for Exec Ed Redemptions"
+msgstr "Cognom de l'estudiant, només s'utilitza per a les redempcions Exec Ed"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:91
+msgid "Learner Date of Birth (EE-only)"
+msgstr "Data de naixement de l'estudiant (EE-only)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:92
+msgid "Learner date of birth, only used for Exec Ed Redemptions"
+msgstr ""
+"Data de naixement de l'estudiant, només s'utilitza per a les redempcions "
+"Exec Ed"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:96
+msgid "Order UUID of existing GEAG allocation (EE-only)"
+msgstr "UUID de la comanda de l'assignació GEAG existent (EE-only)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:98
+msgid ""
+"Link new transaction to a specific Order UUID. This is rarely needed, as a "
+"GEAG allocation will typically not yet exist and neither will an Order UUID."
+" Only used for Exec Ed Redemptions."
+msgstr ""
+"Enllaça la nova transacció a un UUID de comanda específic. Això rarament és "
+"necessari, ja que normalment una assignació GEAG encara no existirà, i "
+"tampoc un UUID de comanda. Només s'utilitza per a les redempcions Exec Ed."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/views.py:83
+msgid "Successfully set late redemption."
+msgstr "Redempció tardana configurada amb èxit."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/views.py:149
+msgid "Successfully deposited funds."
+msgstr "Fons dipositats amb èxit."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/views.py:155
+msgid "One or more invalid inputs."
+msgstr "Una o més entrades no vàlides."
+
+#: enterprise_access/apps/subsidy_request/models.py:80
+msgid "List of course partner dictionaries."
+msgstr "Llista de diccionaris dels socis del curs."
+
+#: enterprise_access/apps/subsidy_request/models.py:271
+msgid "Whether or not subsidy requests are enabled for an enterprise."
+msgstr ""
+"Si les sol·licituds de subvenció estan o no activades per a una empresa."
+
+#: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:16
+#: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:16
+msgid "Home"
+msgstr "Inici"
+
+#: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:23
+#: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:30
+msgid "Deposit Funds"
+msgstr "Dipositar fons"
+
+#: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:23
+#: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:30
+msgid "Set Late Redemption"
+msgstr "Configura la redempció tardana"

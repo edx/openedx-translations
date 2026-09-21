@@ -1,0 +1,201 @@
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-09-18 11:11+0000\n"
+"PO-Revision-Date: 2026-09-21 06:23+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: enterprise_access/apps/core/admin.py:17
+msgid "Personal info"
+msgstr "Προσωπικές πληροφορίες"
+
+#: enterprise_access/apps/core/admin.py:18
+msgid "Permissions"
+msgstr "Δικαιώματα"
+
+#: enterprise_access/apps/core/admin.py:20
+msgid "Important dates"
+msgstr "Σημαντικές ημερομηνίες"
+
+#: enterprise_access/apps/core/models.py:19
+msgid "Full Name"
+msgstr "Πλήρες Όνομα"
+
+#: enterprise_access/apps/provisioning/admin.py:486
+msgid "Trigger Subscription Trial Customer Provisioning Workflow"
+msgstr "Εκκίνηση ροής ρύθμισης δοκιμαστικής συνδρομής πελάτη"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:470
+msgid "{} has already been redeemed"
+msgstr "{} έχει ήδη εξαργυρωθεί"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:476
+msgid ""
+"{} has wait_to_redeem set to true, redemption will not occur until this is "
+"changed to false"
+msgstr ""
+"{} έχει οριστεί το wait_to_redeem σε true, η εξαργυρωση δεν θα "
+"πραγματοποιηθεί μέχρι να αλλάξει σε false"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:498
+msgid "{} Failure reason: {}"
+msgstr "{} Λόγος αποτυχίας: {}"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:22
+msgid "Disable now"
+msgstr "Απενεργοποιήστε τώρα"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:23
+msgid "1"
+msgstr "1"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:24
+msgid "2"
+msgstr "2"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:25
+msgid "3"
+msgstr "3"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:26
+msgid "4"
+msgstr "4"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:27
+msgid "5"
+msgstr "5"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:28
+msgid "6"
+msgstr "6"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:29
+msgid "7"
+msgstr "7"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:38
+msgid "Enable late redemptions until _ days from now"
+msgstr "Ενεργοποίηση καθυστερημένων εξαργυρώσεων μέχρι _ ημέρες από τώρα"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:40
+msgid ""
+"Unless disabled now, late redemptions will be disabled at midnight UTC of "
+"the selected day."
+msgstr ""
+"Εάν δεν απενεργοποιηθεί τώρα, οι καθυστερημένες εξαργυρώσεις θα "
+"απενεργοποιηθούν στις μεσάνυχτα UTC της επιλεγμένης ημέρας."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:50
+msgid "Top-up quantity in USD"
+msgstr "Ποσότητα συμπλήρωσης σε USD"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:52
+msgid ""
+"Amount of funds to add to the associated Subsidy, and also by which to "
+"increase this Policy's spend_limit."
+msgstr ""
+"Ποσό των κεφαλαίων που θα προστεθούν στην αντίστοιχη Επιχορήγηση, και με το "
+"οποίο θα αυξηθεί το όριο δαπάνης αυτής της Πολιτικής."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:60
+msgid ""
+"Reference the original sales object that originated this deposit. This must "
+"be the 18-character case-insensitive version of the ID."
+msgstr ""
+"Αναφορικά με το αρχικό αντικείμενο πωλήσεων που προκάλεσε αυτήν την "
+"κατάθεση. Πρέπει να είναι η 18-χαρακτηρική έκδοση του αναγνωριστικού χωρίς "
+"διάκριση πεζών-κεφαλαίων."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:77
+msgid "Learner First Name (EE-only)"
+msgstr "Όνομα Μαθητή (μόνο για EE)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:79
+msgid ""
+"First name of learner, only used for Exec Ed Redemptions. This value (along "
+"with last name and D.O.B.) are not persisted; if you select 'Wait to "
+"redeem', the values will be gone when you try to save later."
+msgstr ""
+"Όνομα του μαθητή, που χρησιμοποιείται μόνο για τις εξαργυρώσεις Exec Ed. "
+"Αυτή η τιμή (μαζί με το επώνυμο και την ημερομηνία γέννησης) δεν "
+"αποθηκεύεται· εάν επιλέξετε 'Wait to redeem', οι τιμές θα χαθούν όταν "
+"προσπαθήσετε να αποθηκεύσετε αργότερα."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:86
+msgid "Learner Last Name (EE-only)"
+msgstr "Επώνυμο Μαθητή (μόνο για EE)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:87
+msgid "Last name of learner, only used for Exec Ed Redemptions"
+msgstr ""
+"Επώνυμο του μαθητή, που χρησιμοποιείται μόνο για τις εξαργυρώσεις Exec Ed"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:91
+msgid "Learner Date of Birth (EE-only)"
+msgstr "Ημερομηνία Γέννησης Μαθητή (μόνο για EE)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:92
+msgid "Learner date of birth, only used for Exec Ed Redemptions"
+msgstr ""
+"Ημερομηνία γέννησης του μαθητή, που χρησιμοποιείται μόνο για τις "
+"εξαργυρώσεις Exec Ed"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:96
+msgid "Order UUID of existing GEAG allocation (EE-only)"
+msgstr "UUID παραγγελίας της υπάρχουσας κατανομής GEAG (μόνο για EE)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:98
+msgid ""
+"Link new transaction to a specific Order UUID. This is rarely needed, as a "
+"GEAG allocation will typically not yet exist and neither will an Order UUID."
+" Only used for Exec Ed Redemptions."
+msgstr ""
+"Σύνδεση της νέας συναλλαγής με συγκεκριμένο UUID παραγγελίας. Αυτό είναι "
+"σπάνιο, καθώς μια κατανομή GEAG συνήθως δεν υπάρχει ακόμη και ούτε "
+"δημιουργείται UUID παραγγελίας. Χρησιμοποιείται μόνο για τις εξαργυρώσεις "
+"Exec Ed."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/views.py:83
+msgid "Successfully set late redemption."
+msgstr "Η καθυστερημένη εξαργυρώση ορίστηκε με επιτυχία."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/views.py:149
+msgid "Successfully deposited funds."
+msgstr "Τα κεφάλαια κατατέθηκαν με επιτυχία."
+
+#: enterprise_access/apps/subsidy_access_policy/admin/views.py:155
+msgid "One or more invalid inputs."
+msgstr "Ένα ή περισσότερα μη έγκυρα εισαγόμενα."
+
+#: enterprise_access/apps/subsidy_request/models.py:80
+msgid "List of course partner dictionaries."
+msgstr "Λίστα λεξικών συνεργατών μαθημάτων."
+
+#: enterprise_access/apps/subsidy_request/models.py:271
+msgid "Whether or not subsidy requests are enabled for an enterprise."
+msgstr ""
+"Εάν οι αιτήσεις επιχορήγησης είναι ενεργοποιημένες για μια επιχείρηση."
+
+#: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:16
+#: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:16
+msgid "Home"
+msgstr "Αρχική"
+
+#: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:23
+#: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:30
+msgid "Deposit Funds"
+msgstr "Κατάθεση Κεφαλαίων"
+
+#: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:23
+#: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:30
+msgid "Set Late Redemption"
+msgstr "Ορισμός Καθυστερημένης Εξαργυρώσεως"

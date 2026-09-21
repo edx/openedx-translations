@@ -1,0 +1,183 @@
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: @content-aurora\n"
+"POT-Creation-Date: 2026-09-18 11:11+0000\n"
+"PO-Revision-Date: 2026-09-21 06:23+0000\n"
+"Last-Translator: AI Translation Service, 2026\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: enterprise_access/apps/core/admin.py:17
+msgid "Personal info"
+msgstr "个人信息"
+
+#: enterprise_access/apps/core/admin.py:18
+msgid "Permissions"
+msgstr "权限"
+
+#: enterprise_access/apps/core/admin.py:20
+msgid "Important dates"
+msgstr "重要日期"
+
+#: enterprise_access/apps/core/models.py:19
+msgid "Full Name"
+msgstr "全名"
+
+#: enterprise_access/apps/provisioning/admin.py:486
+msgid "Trigger Subscription Trial Customer Provisioning Workflow"
+msgstr "触发订阅试用客户启用流程"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:470
+msgid "{} has already been redeemed"
+msgstr "{} 已经被兑换"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:476
+msgid ""
+"{} has wait_to_redeem set to true, redemption will not occur until this is "
+"changed to false"
+msgstr "{} 的 wait_to_redeem 设置为 true，兑换不会进行，直到其被改为 false"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:498
+msgid "{} Failure reason: {}"
+msgstr "{} 失败原因：{}"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:22
+msgid "Disable now"
+msgstr "立即禁用"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:23
+msgid "1"
+msgstr "1"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:24
+msgid "2"
+msgstr "2"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:25
+msgid "3"
+msgstr "3"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:26
+msgid "4"
+msgstr "4"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:27
+msgid "5"
+msgstr "5"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:28
+msgid "6"
+msgstr "6"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:29
+msgid "7"
+msgstr "7"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:38
+msgid "Enable late redemptions until _ days from now"
+msgstr "在未来 _ 天内允许延迟兑换"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:40
+msgid ""
+"Unless disabled now, late redemptions will be disabled at midnight UTC of "
+"the selected day."
+msgstr "除非立即禁用，否则延迟兑换将在所选日期的 UTC 午夜被禁用"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:50
+msgid "Top-up quantity in USD"
+msgstr "充值金额（美元）"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:52
+msgid ""
+"Amount of funds to add to the associated Subsidy, and also by which to "
+"increase this Policy's spend_limit."
+msgstr "向关联补贴中添加的资金数额，同时也用于增加该政策的花费上限"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:60
+msgid ""
+"Reference the original sales object that originated this deposit. This must "
+"be the 18-character case-insensitive version of the ID."
+msgstr "引用产生此存款的原始销售对象。该 ID 必须为 18 个字符、不区分大小写的版本"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:77
+msgid "Learner First Name (EE-only)"
+msgstr "学习者名字（仅限 EE）"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:79
+msgid ""
+"First name of learner, only used for Exec Ed Redemptions. This value (along "
+"with last name and D.O.B.) are not persisted; if you select 'Wait to "
+"redeem', the values will be gone when you try to save later."
+msgstr ""
+"学习者的名字，仅用于 Exec Ed 兑换。该值（连同姓氏和出生日期）不会被持久保存；如果选择 'Wait to "
+"redeem'，稍后保存时这些信息将会丢失"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:86
+msgid "Learner Last Name (EE-only)"
+msgstr "学习者姓氏（仅限 EE）"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:87
+msgid "Last name of learner, only used for Exec Ed Redemptions"
+msgstr "学习者的姓氏，仅用于 Exec Ed 兑换"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:91
+msgid "Learner Date of Birth (EE-only)"
+msgstr "学习者出生日期（仅限 EE）"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:92
+msgid "Learner date of birth, only used for Exec Ed Redemptions"
+msgstr "学习者的出生日期，仅用于 Exec Ed 兑换"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:96
+msgid "Order UUID of existing GEAG allocation (EE-only)"
+msgstr "现有 GEAG 分配的订单 UUID（仅限 EE）"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:98
+msgid ""
+"Link new transaction to a specific Order UUID. This is rarely needed, as a "
+"GEAG allocation will typically not yet exist and neither will an Order UUID."
+" Only used for Exec Ed Redemptions."
+msgstr ""
+"将新交易链接到特定的订单 UUID。通常不需要这样做，因为 GEAG 分配通常尚未存在，订单 UUID 也不会存在。仅用于 Exec Ed 兑换"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/views.py:83
+msgid "Successfully set late redemption."
+msgstr "成功设置延迟兑换"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/views.py:149
+msgid "Successfully deposited funds."
+msgstr "资金存入成功"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/views.py:155
+msgid "One or more invalid inputs."
+msgstr "存在一个或多个无效的输入"
+
+#: enterprise_access/apps/subsidy_request/models.py:80
+msgid "List of course partner dictionaries."
+msgstr "课程合作伙伴字典列表"
+
+#: enterprise_access/apps/subsidy_request/models.py:271
+msgid "Whether or not subsidy requests are enabled for an enterprise."
+msgstr "是否为企业启用了补贴申请"
+
+#: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:16
+#: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:16
+msgid "Home"
+msgstr "首页"
+
+#: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:23
+#: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:30
+msgid "Deposit Funds"
+msgstr "存入资金"
+
+#: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:23
+#: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:30
+msgid "Set Late Redemption"
+msgstr "设置延迟兑换"
