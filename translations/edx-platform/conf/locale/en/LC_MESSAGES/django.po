@@ -47,7 +47,7 @@ msgstr ""
 "#-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-09-18 00:35+0000\n"
+"POT-Creation-Date: 2026-10-07 00:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -622,7 +622,7 @@ msgid "{profile_name} URL"
 msgstr ""
 
 #: cms/djangoapps/contentstore/video_storage_handlers.py:512
-#: lms/djangoapps/instructor/views/api.py:1511
+#: lms/djangoapps/instructor/views/api.py:1516
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:59
 msgid "Name"
 msgstr ""
@@ -773,29 +773,29 @@ msgstr ""
 msgid "Advanced"
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/course.py:359
+#: cms/djangoapps/contentstore/views/course.py:360
 msgid "Course has been successfully reindexed."
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/course.py:892
+#: cms/djangoapps/contentstore/views/course.py:893
 msgid ""
 "Special characters not allowed in organization, course number, and course "
 "run."
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/course.py:928
+#: cms/djangoapps/contentstore/views/course.py:929
 msgid ""
 "There is already a course defined with the same organization and course "
 "number. Please change either organization or course number to be unique."
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/course.py:933
-#: cms/djangoapps/contentstore/views/course.py:936
+#: cms/djangoapps/contentstore/views/course.py:934
+#: cms/djangoapps/contentstore/views/course.py:937
 msgid ""
 "Please change either the organization or course number so that it is unique."
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/course.py:941
+#: cms/djangoapps/contentstore/views/course.py:942
 #, python-brace-format
 msgid ""
 "Unable to create course '{name}'.\n"
@@ -803,32 +803,32 @@ msgid ""
 "{err}"
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/course.py:953
+#: cms/djangoapps/contentstore/views/course.py:954
 msgid ""
 "User does not have the permission to create courses in this organization or "
 "course creation is disabled"
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/course.py:970
+#: cms/djangoapps/contentstore/views/course.py:971
 msgid ""
 "You must link this course to an organization in order to continue. "
 "Organization you selected does not exist in the system, you will need to add "
 "it to the system"
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/course.py:1376
+#: cms/djangoapps/contentstore/views/course.py:1377
 msgid "An error occurred while trying to save your tabs"
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/course.py:1377
+#: cms/djangoapps/contentstore/views/course.py:1378
 msgid "Tabs Exception"
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/course.py:1595
+#: cms/djangoapps/contentstore/views/course.py:1596
 msgid "This group configuration is in use and cannot be deleted."
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/course.py:1609
+#: cms/djangoapps/contentstore/views/course.py:1610
 msgid "This content group is in use and cannot be deleted."
 msgstr ""
 
@@ -865,18 +865,18 @@ msgstr ""
 msgid "File upload failed. Please try again"
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/library.py:240
+#: cms/djangoapps/contentstore/views/library.py:241
 msgid ""
 "User does not have the permission to create library in this organization or "
 "course creation is disabled"
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/library.py:247
+#: cms/djangoapps/contentstore/views/library.py:248
 #, python-brace-format
 msgid "Unable to create library - missing required field '{field}'"
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/library.py:252
+#: cms/djangoapps/contentstore/views/library.py:253
 #, python-brace-format
 msgid ""
 "Unable to create library '{name}'.\n"
@@ -884,14 +884,14 @@ msgid ""
 "{err}"
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/library.py:258
+#: cms/djangoapps/contentstore/views/library.py:259
 msgid ""
 "There is already a library defined with the same organization and library "
 "code. Please change your library code so that it is unique within your "
 "organization."
 msgstr ""
 
-#: cms/djangoapps/contentstore/views/library.py:267
+#: cms/djangoapps/contentstore/views/library.py:268
 #, python-brace-format
 msgid "'{organization_key}' is not a valid organization identifier."
 msgstr ""
@@ -1315,8 +1315,8 @@ msgid "You're enrolled as an honor code student"
 msgstr ""
 
 #: common/djangoapps/course_modes/helpers.py:48
-#: lms/djangoapps/branding/api.py:329 lms/djangoapps/branding/api.py:404
-#: lms/djangoapps/courseware/views/views.py:2383
+#: lms/djangoapps/branding/api.py:332 lms/djangoapps/branding/api.py:407
+#: lms/djangoapps/courseware/views/views.py:2388
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:1096
 #: lms/templates/static_templates/honor.html:5
 #: lms/templates/static_templates/honor.html:10
@@ -1513,13 +1513,13 @@ msgstr ""
 msgid "User with this email doesn't exist in system."
 msgstr ""
 
-#: common/djangoapps/student/helpers.py:77
-#: common/djangoapps/student/helpers.py:742
+#: common/djangoapps/student/helpers.py:81
+#: common/djangoapps/student/helpers.py:746
 #, python-brace-format
 msgid "An account with the Email '{email}' already exists."
 msgstr ""
 
-#: common/djangoapps/student/helpers.py:78
+#: common/djangoapps/student/helpers.py:82
 #, python-brace-format
 msgid "An account with the Public Username '{username}' already exists."
 msgstr ""
@@ -1535,25 +1535,25 @@ msgstr ""
 msgid "Disabled Account"
 msgstr ""
 
-#: common/djangoapps/student/models/course_enrollment.py:1696
+#: common/djangoapps/student/models/course_enrollment.py:1693
 msgid "Namespace of enrollment attribute"
 msgstr ""
 
-#: common/djangoapps/student/models/course_enrollment.py:1700
+#: common/djangoapps/student/models/course_enrollment.py:1697
 msgid "Name of the enrollment attribute"
 msgstr ""
 
-#: common/djangoapps/student/models/course_enrollment.py:1704
+#: common/djangoapps/student/models/course_enrollment.py:1701
 msgid "Value of the enrollment attribute"
 msgstr ""
 
-#: common/djangoapps/student/models/course_enrollment.py:1778
+#: common/djangoapps/student/models/course_enrollment.py:1775
 msgid ""
 "The window of time after enrolling during which users can be granted a "
 "refund, represented in microseconds. The default is 14 days."
 msgstr ""
 
-#: common/djangoapps/student/models/course_enrollment.py:1800
+#: common/djangoapps/student/models/course_enrollment.py:1797
 msgid ""
 "It expect that the data will be provided in a csv file format "
 "with                     first row being the header and columns will be as "
@@ -1561,7 +1561,7 @@ msgid ""
 "is_verified, verification_date"
 msgstr ""
 
-#: common/djangoapps/student/models/course_enrollment.py:1814
+#: common/djangoapps/student/models/course_enrollment.py:1811
 msgid ""
 "It expect that the data will be provided in a csv file format "
 "with                     first row being the header and columns will be as "
@@ -1695,43 +1695,43 @@ msgstr ""
 msgid "Add a reason"
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:137
+#: common/djangoapps/student/views/dashboard.py:138
 msgid " and "
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:280
+#: common/djangoapps/student/views/dashboard.py:281
 msgid "Photos are mismatched"
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:281
+#: common/djangoapps/student/views/dashboard.py:282
 msgid "Name missing from ID photo"
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:282
+#: common/djangoapps/student/views/dashboard.py:283
 msgid "ID photo not provided"
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:283
+#: common/djangoapps/student/views/dashboard.py:284
 msgid "ID is invalid"
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:284
+#: common/djangoapps/student/views/dashboard.py:285
 msgid "Learner photo is blurry"
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:285
+#: common/djangoapps/student/views/dashboard.py:286
 msgid "Name on ID does not match name on account"
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:286
+#: common/djangoapps/student/views/dashboard.py:287
 msgid "Learner photo not provided"
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:287
+#: common/djangoapps/student/views/dashboard.py:288
 msgid "ID photo is blurry"
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:601
+#: common/djangoapps/student/views/dashboard.py:602
 #, python-brace-format
 msgid ""
 "Check your {email_start}{email}{email_end} inbox for an account activation "
@@ -1739,86 +1739,86 @@ msgid ""
 "{platform_name} Support{link_end}."
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:624
+#: common/djangoapps/student/views/dashboard.py:625
 #, python-brace-format
 msgid ""
 "Add a recovery email to retain access when single-sign on is not available. "
 "Go to {link_start}your Account Settings{link_end}."
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:635
+#: common/djangoapps/student/views/dashboard.py:636
 msgid ""
 "Recovery email is not activated yet. Kindly visit your email and follow the "
 "instructions to activate it."
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:753
+#: common/djangoapps/student/views/dashboard.py:754
 #, python-brace-format
 msgid "The course you are looking for does not start until {date}."
 msgstr ""
 
-#: common/djangoapps/student/views/dashboard.py:757
+#: common/djangoapps/student/views/dashboard.py:758
 #, python-brace-format
 msgid "The course you are looking for is closed for enrollment as of {date}."
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:386
+#: common/djangoapps/student/views/management.py:387
 msgid "Course id not specified"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:397
+#: common/djangoapps/student/views/management.py:398
 msgid "Invalid course id"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:412
+#: common/djangoapps/student/views/management.py:413
 msgid "Course id is invalid"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:447
+#: common/djangoapps/student/views/management.py:448
 msgid "Could not enroll"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:467
+#: common/djangoapps/student/views/management.py:468
 msgid "Unenrollment is currently disabled"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:471
+#: common/djangoapps/student/views/management.py:472
 msgid "You are not enrolled in this course"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:475
+#: common/djangoapps/student/views/management.py:476
 msgid "Your certificate prevents you from unenrolling from this course"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:487
+#: common/djangoapps/student/views/management.py:488
 msgid "Enrollment action is invalid"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:530
+#: common/djangoapps/student/views/management.py:531
 msgid "Please enter a username"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:535
+#: common/djangoapps/student/views/management.py:536
 msgid "Please choose an option"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:542
+#: common/djangoapps/student/views/management.py:543
 msgid "User with username {} does not exist"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:555
+#: common/djangoapps/student/views/management.py:556
 msgid "Successfully disabled {}'s account"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:559
+#: common/djangoapps/student/views/management.py:560
 msgid "Successfully reenabled {}'s account"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:562
+#: common/djangoapps/student/views/management.py:563
 msgid "Unexpected account status"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:603
+#: common/djangoapps/student/views/management.py:604
 #, python-brace-format
 msgid ""
 "{html_start}Your {account_or_email} could not be {activated_or_confirmed}"
@@ -1826,21 +1826,21 @@ msgid ""
 "support</a> to resolve this issue."
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:638
+#: common/djangoapps/student/views/management.py:639
 #, python-brace-format
 msgid ""
 "{html_start}This {account_or_email} has already been "
 "{activated_or_confirmed}.{html_end}"
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:650
+#: common/djangoapps/student/views/management.py:651
 #, python-brace-format
 msgid ""
 "{html_start}Success{html_end} You have {activated_or_confirmed} your "
 "{account_or_email}."
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:663
+#: common/djangoapps/student/views/management.py:664
 #, python-brace-format
 msgid ""
 "{html_start}Success! You have {activated_or_confirmed} your "
@@ -1848,21 +1848,21 @@ msgid ""
 "from us related to the courses you are enrolled in. Sign In to continue."
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:766
-#: common/djangoapps/student/views/management.py:781
+#: common/djangoapps/student/views/management.py:767
+#: common/djangoapps/student/views/management.py:782
 msgid "Valid e-mail address required."
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:769
-#: common/djangoapps/student/views/management.py:786
+#: common/djangoapps/student/views/management.py:770
+#: common/djangoapps/student/views/management.py:787
 msgid "Old email is the same as the new email."
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:790
+#: common/djangoapps/student/views/management.py:791
 msgid "Cannot be same as your sign in email address."
 msgstr ""
 
-#: common/djangoapps/student/views/management.py:861
+#: common/djangoapps/student/views/management.py:862
 msgid "Unable to send email activation link. Please try again later."
 msgstr ""
 
@@ -2970,13 +2970,13 @@ msgstr ""
 
 #. Translators: This string is used across Open edX installations
 #. as a callback to edX. Please do not translate `edX.org`
-#: lms/djangoapps/branding/api.py:117
+#: lms/djangoapps/branding/api.py:120
 msgid "Take free online courses at edX.org"
 msgstr ""
 
 #. Translators: 'edX' and 'Open edX' are trademarks of 'edX Inc.'.
 #. Please do not translate any of these trademarks and company names.
-#: lms/djangoapps/branding/api.py:131
+#: lms/djangoapps/branding/api.py:134
 #, python-brace-format
 msgid ""
 "© {org_name}.  All rights reserved except where noted.  edX, Open edX and "
@@ -2989,44 +2989,44 @@ msgstr ""
 #. #-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#
 #. Translators: 'Open edX' is a brand, please keep this untranslated. See
 #. http://openedx.org for more information.
-#: lms/djangoapps/branding/api.py:147 cms/templates/widgets/footer.html:58
+#: lms/djangoapps/branding/api.py:150 cms/templates/widgets/footer.html:58
 #: cms/templates/widgets/footer.html:59
 #: themes/red-theme/lms/templates/footer.html:113
 msgid "Powered by Open edX"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:254 lms/djangoapps/branding/api.py:291
+#: lms/djangoapps/branding/api.py:257 lms/djangoapps/branding/api.py:294
 #: lms/templates/static_templates/blog.html:5
 #: lms/templates/static_templates/blog.html:10
 msgid "Blog"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:255 cms/templates/widgets/sock_links.html:35
+#: lms/djangoapps/branding/api.py:258 cms/templates/widgets/sock_links.html:35
 #: themes/stanford-style/lms/templates/static_templates/about.html:96
 msgid "Contact Us"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:256 lms/djangoapps/branding/api.py:292
+#: lms/djangoapps/branding/api.py:259 lms/djangoapps/branding/api.py:295
 msgid "Help Center"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:257
+#: lms/djangoapps/branding/api.py:260
 msgid "Security"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:261 lms/djangoapps/branding/api.py:320
+#: lms/djangoapps/branding/api.py:264 lms/djangoapps/branding/api.py:323
 #: lms/templates/static_templates/media-kit.html:5
 #: lms/templates/static_templates/media-kit.html:10
 msgid "Media Kit"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:262 lms/djangoapps/branding/api.py:295
+#: lms/djangoapps/branding/api.py:265 lms/djangoapps/branding/api.py:298
 #: lms/templates/static_templates/donate.html:5
 #: lms/templates/static_templates/donate.html:10
 msgid "Donate"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:286 lms/djangoapps/branding/api.py:362
+#: lms/djangoapps/branding/api.py:289 lms/djangoapps/branding/api.py:365
 #: lms/templates/footer.html:18 lms/templates/footer.html:92
 #: lms/templates/static_templates/about.html:5
 #: lms/templates/static_templates/about.html:10
@@ -3039,12 +3039,12 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:289 lms/djangoapps/branding/api.py:365
+#: lms/djangoapps/branding/api.py:292 lms/djangoapps/branding/api.py:368
 #, python-brace-format
 msgid "{platform_name} for Business"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:293
+#: lms/djangoapps/branding/api.py:296
 #: lms/templates/static_templates/contact.html:5
 #: lms/templates/static_templates/contact.html:10
 #: themes/red-theme/lms/templates/footer.html:48
@@ -3053,19 +3053,19 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:294 lms/djangoapps/branding/api.py:373
+#: lms/djangoapps/branding/api.py:297 lms/djangoapps/branding/api.py:376
 #: themes/stanford-style/lms/templates/footer.html:16
 #: themes/stanford-style/lms/templates/static_templates/about.html:42
 #: themes/stanford-style/lms/templates/static_templates/about.html:77
 msgid "Careers"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:300 lms/djangoapps/branding/api.py:374
+#: lms/djangoapps/branding/api.py:303 lms/djangoapps/branding/api.py:377
 #: themes/red-theme/lms/templates/footer.html:37
 msgid "News"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:317 lms/djangoapps/branding/api.py:391
+#: lms/djangoapps/branding/api.py:320 lms/djangoapps/branding/api.py:394
 #: lms/djangoapps/certificates/views/webview.py:193
 msgid "Terms of Service & Honor Code"
 msgstr ""
@@ -3073,7 +3073,7 @@ msgstr ""
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: A 'Privacy Policy' is a legal document/statement describing a
 #. website's use of personal information
-#: lms/djangoapps/branding/api.py:318 lms/djangoapps/branding/api.py:392
+#: lms/djangoapps/branding/api.py:321 lms/djangoapps/branding/api.py:395
 #: lms/djangoapps/certificates/views/webview.py:196
 #: cms/templates/widgets/footer.html:30
 #: lms/templates/static_templates/privacy.html:6
@@ -3084,14 +3084,14 @@ msgstr ""
 msgid "Privacy Policy"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:319 lms/djangoapps/branding/api.py:394
+#: lms/djangoapps/branding/api.py:322 lms/djangoapps/branding/api.py:397
 msgid "Accessibility Policy"
 msgstr ""
 
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: This is a legal document users must agree to
 #. in order to register a new account.
-#: lms/djangoapps/branding/api.py:328 lms/djangoapps/branding/api.py:403
+#: lms/djangoapps/branding/api.py:331 lms/djangoapps/branding/api.py:406
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:331
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:1169
 #: cms/templates/widgets/footer.html:25
@@ -3104,39 +3104,51 @@ msgstr ""
 msgid "Terms of Service"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:334 lms/djangoapps/branding/api.py:409
+#: lms/djangoapps/branding/api.py:337 lms/djangoapps/branding/api.py:412
 msgid "Sitemap"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:370
+#: lms/djangoapps/branding/api.py:373
 msgid "Affiliates"
 msgstr ""
 
 #. Translators: 'Open edX' is a trademark, please keep this untranslated
-#: lms/djangoapps/branding/api.py:372
+#: lms/djangoapps/branding/api.py:375
 msgid "Open edX"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:393
+#: lms/djangoapps/branding/api.py:396
 msgid "Cookie Policy"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:395
+#: lms/djangoapps/branding/api.py:398
 msgid "Your Privacy Choices"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:408
+#: lms/djangoapps/branding/api.py:411
 msgid "Trademark Policy"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:439
+#: lms/djangoapps/branding/api.py:442
 #, python-brace-format
 msgid "Download the {platform_name} mobile app from the Apple App Store"
 msgstr ""
 
-#: lms/djangoapps/branding/api.py:447
+#: lms/djangoapps/branding/api.py:450
 #, python-brace-format
 msgid "Download the {platform_name} mobile app from Google Play"
+msgstr ""
+
+#: lms/djangoapps/branding/api.py:703
+#, python-brace-format
+msgid "{name} Dashboard"
+msgstr ""
+
+#: lms/djangoapps/branding/api.py:710 lms/templates/header/brand.html:19
+#: lms/templates/navigation/bootstrap/navbar-logo-header.html:15
+#: lms/templates/navigation/navbar-logo-header.html:20
+#, python-brace-format
+msgid "{platform_name} Home Page"
 msgstr ""
 
 #. Translators: Bulk email from address e.g. ("Physics 101" Course Staff)
@@ -3149,13 +3161,13 @@ msgstr ""
 msgid "CCX Coach"
 msgstr ""
 
-#: lms/djangoapps/ccx/utils.py:50
+#: lms/djangoapps/ccx/utils.py:51
 msgid ""
 "A CCX can only be created on this course through an external service. "
 "Contact a course admin to give you access."
 msgstr ""
 
-#: lms/djangoapps/ccx/utils.py:267
+#: lms/djangoapps/ccx/utils.py:268
 #, python-brace-format
 msgid "The course is full: the limit is {max_student_enrollments_allowed}"
 msgstr ""
@@ -3570,7 +3582,7 @@ msgid "More about {fullname}'s accomplishment"
 msgstr ""
 
 #: lms/djangoapps/certificates/views/webview.py:714
-#: lms/djangoapps/courseware/views/views.py:321
+#: lms/djangoapps/courseware/views/views.py:322
 #: lms/templates/certificates/proctoring_blocked.html:9
 msgid "Certificate temporarily unavailable"
 msgstr ""
@@ -4218,7 +4230,7 @@ msgid ""
 msgstr ""
 
 #: lms/djangoapps/courseware/tabs.py:36
-#: lms/djangoapps/courseware/views/views.py:2336
+#: lms/djangoapps/courseware/views/views.py:2341
 #: openedx/features/course_experience/__init__.py:91 xmodule/tabs.py:490
 #: cms/templates/widgets/header.html:89 cms/templates/widgets/header.html:93
 #: cms/templates/widgets/header.html:164 cms/templates/widgets/header.html:292
@@ -4236,73 +4248,73 @@ msgstr ""
 msgid "Dates"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:192
+#: lms/djangoapps/courseware/views/views.py:193
 msgid "Your enrollment: Audit track"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:193
+#: lms/djangoapps/courseware/views/views.py:194
 msgid ""
 "You are enrolled in the audit track for this course. The audit track does "
 "not include a certificate."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:204
+#: lms/djangoapps/courseware/views/views.py:205
 msgid "Your enrollment: Honor track"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:205
+#: lms/djangoapps/courseware/views/views.py:206
 msgid ""
 "You are enrolled in the honor track for this course. The honor track does "
 "not include a certificate."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:221
+#: lms/djangoapps/courseware/views/views.py:222
 msgid "We're working on it..."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:223
+#: lms/djangoapps/courseware/views/views.py:224
 msgid ""
 "We're creating your certificate. You can keep working in your courses and a "
 "link to it will appear here and on your Dashboard when it is ready."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:236
+#: lms/djangoapps/courseware/views/views.py:237
 msgid "Your certificate has been invalidated"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:237
+#: lms/djangoapps/courseware/views/views.py:238
 msgid "Please contact your course team if you have any questions."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:248
+#: lms/djangoapps/courseware/views/views.py:249
 msgid "Congratulations, you qualified for a certificate!"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:249
-#: lms/djangoapps/courseware/views/views.py:291
+#: lms/djangoapps/courseware/views/views.py:250
+#: lms/djangoapps/courseware/views/views.py:292
 msgid "You've earned a certificate for this course."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:262
+#: lms/djangoapps/courseware/views/views.py:263
 msgid "Your certificate will be available soon!"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:263
-#: lms/djangoapps/courseware/views/views.py:277
+#: lms/djangoapps/courseware/views/views.py:264
+#: lms/djangoapps/courseware/views/views.py:278
 msgid ""
 "After this course officially ends, you will receive an email notification "
 "with your certificate."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:276
+#: lms/djangoapps/courseware/views/views.py:277
 msgid "Your certificate will be available after the indicated date"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:290
+#: lms/djangoapps/courseware/views/views.py:291
 msgid "Your certificate is available"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:306
+#: lms/djangoapps/courseware/views/views.py:307
 #: lms/templates/certificates/proctoring_blocked.html:12
 #: lms/templates/dashboard/_dashboard_certificate_information.html:71
 msgid ""
@@ -4310,15 +4322,15 @@ msgid ""
 "exam is being reviewed. Please check back after the review is complete."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:310
-#: lms/djangoapps/courseware/views/views.py:312
+#: lms/djangoapps/courseware/views/views.py:311
+#: lms/djangoapps/courseware/views/views.py:313
 #: lms/templates/certificates/proctoring_blocked.html:14
 #: lms/templates/dashboard/_dashboard_certificate_information.html:67
 msgid ""
 "Complete your required proctored exam before accessing your certificate."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:315
+#: lms/djangoapps/courseware/views/views.py:316
 #: lms/templates/certificates/proctoring_blocked.html:16
 #: lms/templates/dashboard/_dashboard_certificate_information.html:69
 msgid ""
@@ -4326,37 +4338,37 @@ msgid ""
 "still being confirmed. Please check back later."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:338
+#: lms/djangoapps/courseware/views/views.py:339
 msgid "Certificate unavailable"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:340
+#: lms/djangoapps/courseware/views/views.py:341
 #, python-brace-format
 msgid ""
 "You have not received a certificate because you do not have a current "
 "{platform_name} verified identity."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:646
+#: lms/djangoapps/courseware/views/views.py:647
 #, python-brace-format
 msgid "To see course content, {sign_in_link} or {register_link}."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:648 xmodule/discussion_block.py:187
+#: lms/djangoapps/courseware/views/views.py:649 xmodule/discussion_block.py:187
 msgid "sign in"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:652
-#: lms/djangoapps/courseware/views/views.py:667 xmodule/discussion_block.py:191
+#: lms/djangoapps/courseware/views/views.py:653
+#: lms/djangoapps/courseware/views/views.py:668 xmodule/discussion_block.py:191
 msgid "register"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:661
+#: lms/djangoapps/courseware/views/views.py:662
 #, python-brace-format
 msgid "{sign_in_link} or {register_link}."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:663
+#: lms/djangoapps/courseware/views/views.py:664
 #: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordresetsuccess/email/body.html:25
 #: lms/templates/header/navbar-not-authenticated.html:63
 #: lms/templates/header/navbar-not-authenticated.html:67
@@ -4365,53 +4377,53 @@ msgstr ""
 msgid "Sign in"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:677
+#: lms/djangoapps/courseware/views/views.py:678
 #, python-brace-format
 msgid ""
 "You must be enrolled in the course to see course content. {enroll_link_start}"
 "Enroll now{enroll_link_end}."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:690
+#: lms/djangoapps/courseware/views/views.py:691
 msgid "You must be enrolled in the course to see course content."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1323
-#: lms/djangoapps/instructor/views/api.py:171
+#: lms/djangoapps/courseware/views/views.py:1324
+#: lms/djangoapps/instructor/views/api.py:175
 msgid "User does not exist."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1330
+#: lms/djangoapps/courseware/views/views.py:1331
 msgid "Invalid location."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1344
+#: lms/djangoapps/courseware/views/views.py:1345
 #, python-brace-format
 msgid "User {username} has never accessed problem {location}"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1541
+#: lms/djangoapps/courseware/views/views.py:1542
 #, python-brace-format
 msgid "You must be signed in to {platform_name} to create a certificate."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1551
+#: lms/djangoapps/courseware/views/views.py:1552
 msgid "Course is not valid"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1570
+#: lms/djangoapps/courseware/views/views.py:1569
 msgid "Your certificate will be available when you pass the course."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1583
+#: lms/djangoapps/courseware/views/views.py:1582
 msgid "Certificate has already been created."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:1585
+#: lms/djangoapps/courseware/views/views.py:1584
 msgid "Certificate is being created."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2148
+#: lms/djangoapps/courseware/views/views.py:2147
 msgid ""
 "We plan to use this information to evaluate your application for financial "
 "assistance and to further develop our financial assistance program. \n"
@@ -4428,29 +4440,29 @@ msgid ""
 "processed."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2343
+#: lms/djangoapps/courseware/views/views.py:2348
 msgid ""
 "Select the course for which you want to earn a verified certificate. If the "
 "course does not appear in the list, make sure that you have enrolled in the "
 "audit track for the course."
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2350
+#: lms/djangoapps/courseware/views/views.py:2355
 msgid "I certify that: "
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2357
+#: lms/djangoapps/courseware/views/views.py:2362
 msgid ""
 "Paying the verified certificate fee for the above course would cause me "
 "economic hardship"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2369
+#: lms/djangoapps/courseware/views/views.py:2374
 msgid ""
 "I will work diligently to complete the course work and receive a certificate"
 msgstr ""
 
-#: lms/djangoapps/courseware/views/views.py:2381
+#: lms/djangoapps/courseware/views/views.py:2386
 #, python-brace-format
 msgid ""
 "I have read, understand, and will abide by the {honor_code_link} for the edX "
@@ -4641,31 +4653,31 @@ msgstr ""
 msgid "Your Platform Insights"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:155
+#: lms/djangoapps/instructor/views/api.py:159
 #, python-brace-format
 msgid ""
 "The {report_type} report is being created. To view the status of the report, "
 "see Pending Tasks below."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:173
+#: lms/djangoapps/instructor/views/api.py:177
 msgid ""
 "Found a conflict with given identifier. Please try an alternative identifier"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:364
-#: lms/djangoapps/instructor/views/api.py:4033
+#: lms/djangoapps/instructor/views/api.py:368
+#: lms/djangoapps/instructor/views/api.py:4038
 msgid ""
 "Make sure that the file you upload is in CSV format with no extraneous "
 "characters or rows."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:370
-#: lms/djangoapps/instructor/views/api.py:4036
+#: lms/djangoapps/instructor/views/api.py:374
+#: lms/djangoapps/instructor/views/api.py:4041
 msgid "Could not read uploaded file."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:395
+#: lms/djangoapps/instructor/views/api.py:399
 #, python-brace-format
 msgid ""
 "Data in row #{row_num} must have between four and six columns: email, "
@@ -4673,64 +4685,64 @@ msgid ""
 "are optional."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:400
+#: lms/djangoapps/instructor/views/api.py:404
 #, python-brace-format
 msgid ""
 "Data in row #{row_num} must have exactly four columns: email, username, full "
 "name, and country."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:429
+#: lms/djangoapps/instructor/views/api.py:433
 msgid ""
 "Course is not cohorted but cohort provided. Ignoring cohort assignment for "
 "all users."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:444
+#: lms/djangoapps/instructor/views/api.py:448
 #, python-brace-format
 msgid ""
 "Cohort name not found: {cohort}. Ignoring cohort assignment for all users."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:461
+#: lms/djangoapps/instructor/views/api.py:465
 #, python-brace-format
 msgid ""
 "Invalid course mode: {mode}. Falling back to the default mode, or keeping "
 "the current mode in case the user is already enrolled."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:467
+#: lms/djangoapps/instructor/views/api.py:471
 #, python-brace-format
 msgid ""
 "Invalid course mode: {mode}.  Failling back to {default_mode}, or resetting "
 "to {default_mode} in case the user is already enrolled."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:485
-#: lms/djangoapps/instructor/views/api.py:552
-#: lms/djangoapps/instructor/views/api.py:587
+#: lms/djangoapps/instructor/views/api.py:489
+#: lms/djangoapps/instructor/views/api.py:556
+#: lms/djangoapps/instructor/views/api.py:592
 #, python-brace-format
 msgid "Invalid email {email_address}."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:497
+#: lms/djangoapps/instructor/views/api.py:501
 #, python-brace-format
 msgid ""
 "An account with email {email} exists but the provided username {username} is "
 "different. Enrolling anyway with {email}."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:592
-#: lms/djangoapps/instructor/views/api.py:4078
+#: lms/djangoapps/instructor/views/api.py:597
+#: lms/djangoapps/instructor/views/api.py:4083
 msgid "File is not attached."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:726
+#: lms/djangoapps/instructor/views/api.py:731
 #, python-brace-format
 msgid "Username {user} already exists."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:753
+#: lms/djangoapps/instructor/views/api.py:758
 #, python-brace-format
 msgid ""
 "Error '{error}' while sending email to new user (user email={email}). "
@@ -4738,86 +4750,86 @@ msgid ""
 "for further information."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1152
+#: lms/djangoapps/instructor/views/api.py:1157
 msgid ""
 "A usage key location for a section or a problem. If the location is a block "
 "that contains other blocks, (such as the course, section, subsection, or "
 "unit blocks) then all blocks under that block will be included in the report."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1161
+#: lms/djangoapps/instructor/views/api.py:1166
 msgid "A list of usage keys for the blocks to include in the report. "
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1169
+#: lms/djangoapps/instructor/views/api.py:1174
 msgid ""
 "A list of problem/block types to generate the report for. This field can be "
 "omitted if the report should include details of allblock types. "
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1180
+#: lms/djangoapps/instructor/views/api.py:1185
 msgid "User-friendly text describing current status of report generation."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1183
+#: lms/djangoapps/instructor/views/api.py:1188
 msgid ""
 "A unique id for the report generation task. It can be used to query the "
 "latest report generation status."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1209
+#: lms/djangoapps/instructor/views/api.py:1214
 msgid ""
 "The provided parameters were invalid. Make sure you've provided at least one "
 "valid usage key for `problem_locations`."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1212
-#: lms/djangoapps/instructor/views/api.py:2505
-#: lms/djangoapps/instructor/views/api.py:2715
+#: lms/djangoapps/instructor/views/api.py:1217
+#: lms/djangoapps/instructor/views/api.py:2510
+#: lms/djangoapps/instructor/views/api.py:2720
 msgid "The requesting user is not authenticated."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1213
-#: lms/djangoapps/instructor/views/api.py:2506
-#: lms/djangoapps/instructor/views/api.py:2716
+#: lms/djangoapps/instructor/views/api.py:1218
+#: lms/djangoapps/instructor/views/api.py:2511
+#: lms/djangoapps/instructor/views/api.py:2721
 msgid "The requesting user lacks access to the course."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1359
+#: lms/djangoapps/instructor/views/api.py:1364
 #: lms/djangoapps/instructor_task/api_helper.py:109
 msgid "problem responses"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1365
+#: lms/djangoapps/instructor/views/api.py:1370
 msgid "Could not find problem with this location."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1431
+#: lms/djangoapps/instructor/views/api.py:1436
 msgid "CourseID"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1432
+#: lms/djangoapps/instructor/views/api.py:1437
 msgid "Certificate Type"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1433
+#: lms/djangoapps/instructor/views/api.py:1438
 msgid "Total Certificates Issued"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1434
+#: lms/djangoapps/instructor/views/api.py:1439
 msgid "Date Report Run"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1484
+#: lms/djangoapps/instructor/views/api.py:1489
 #: lms/djangoapps/instructor_task/api_helper.py:110
 msgid "enrolled learner profile"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1509
+#: lms/djangoapps/instructor/views/api.py:1514
 msgid "User ID"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1510
+#: lms/djangoapps/instructor/views/api.py:1515
 #: lms/djangoapps/instructor/views/tools.py:221
 #: lms/djangoapps/instructor/views/tools.py:226
 #: openedx/core/djangoapps/schedules/admin.py:148
@@ -4834,7 +4846,7 @@ msgstr ""
 #. form meant to hold the user's email address.
 #. Translators: This label appears above a field on the registration form
 #. meant to hold the user's email address.
-#: lms/djangoapps/instructor/views/api.py:1512
+#: lms/djangoapps/instructor/views/api.py:1517
 #: lms/djangoapps/instructor/views/instructor_dashboard.py:722
 #: openedx/core/djangoapps/user_authn/views/login_form.py:76
 #: openedx/core/djangoapps/user_authn/views/password_reset.py:91
@@ -4845,15 +4857,15 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1513
+#: lms/djangoapps/instructor/views/api.py:1518
 msgid "Language"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1514
+#: lms/djangoapps/instructor/views/api.py:1519
 msgid "Location"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1515
+#: lms/djangoapps/instructor/views/api.py:1520
 msgid "Birth Year"
 msgstr ""
 
@@ -4862,7 +4874,7 @@ msgstr ""
 #. the user's gender.
 #. Translators: This label appears above a dropdown menu on the registration
 #. form used to select the user's gender.
-#: lms/djangoapps/instructor/views/api.py:1516
+#: lms/djangoapps/instructor/views/api.py:1521
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:117
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:723
 #: lms/templates/signup_modal.html:94
@@ -4870,44 +4882,44 @@ msgstr ""
 msgid "Gender"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1517
+#: lms/djangoapps/instructor/views/api.py:1522
 msgid "Level of Education"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1518
+#: lms/djangoapps/instructor/views/api.py:1523
 #: themes/stanford-style/lms/templates/register-form.html:223
 msgid "Mailing Address"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1519
+#: lms/djangoapps/instructor/views/api.py:1524
 msgid "Goals"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1520
+#: lms/djangoapps/instructor/views/api.py:1525
 msgid "Enrollment Mode"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1521
+#: lms/djangoapps/instructor/views/api.py:1526
 msgid "Last Login"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1522
+#: lms/djangoapps/instructor/views/api.py:1527
 msgid "Date Joined"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1523
+#: lms/djangoapps/instructor/views/api.py:1528
 msgid "External User Key"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1524
+#: lms/djangoapps/instructor/views/api.py:1529
 msgid "LTI 1.3 UUID"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1534
+#: lms/djangoapps/instructor/views/api.py:1539
 msgid "Cohort"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1538
+#: lms/djangoapps/instructor/views/api.py:1543
 #: lms/djangoapps/instructor/views/instructor_dashboard.py:778
 msgid "Team"
 msgstr ""
@@ -4917,7 +4929,7 @@ msgstr ""
 #. which allows the user to input the city in which they live.
 #. Translators: This label appears above a field on the registration form
 #. which allows the user to input the city in which they live.
-#: lms/djangoapps/instructor/views/api.py:1542
+#: lms/djangoapps/instructor/views/api.py:1547
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:290
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:931
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:88
@@ -4925,327 +4937,327 @@ msgstr ""
 msgid "City"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1544
+#: lms/djangoapps/instructor/views/api.py:1549
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:103
 #: themes/stanford-style/lms/templates/register-form.html:167
 msgid "Country"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1593
+#: lms/djangoapps/instructor/views/api.py:1598
 #: lms/djangoapps/instructor_task/api_helper.py:111
 msgid "enrollment"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1629
+#: lms/djangoapps/instructor/views/api.py:1634
 #: lms/djangoapps/instructor_task/api_helper.py:117
 msgid "inactive enrollment"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1659
+#: lms/djangoapps/instructor/views/api.py:1664
 msgid "The file must contain a 'cohort' column containing cohort names."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1661
+#: lms/djangoapps/instructor/views/api.py:1666
 msgid "The file must contain a 'username' column, an 'email' column, or both."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1764
+#: lms/djangoapps/instructor/views/api.py:1769
 #: lms/djangoapps/instructor_task/api_helper.py:113
 msgid "survey"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1789
+#: lms/djangoapps/instructor/views/api.py:1794
 #: lms/djangoapps/instructor_task/api_helper.py:114
 msgid "proctored exam results"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1819
+#: lms/djangoapps/instructor/views/api.py:1824
 msgid "Anonymized User IDs"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1856
+#: lms/djangoapps/instructor/views/api.py:1861
 #, python-brace-format
 msgid "Enrollment status for {student}: active"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1858
+#: lms/djangoapps/instructor/views/api.py:1863
 #, python-brace-format
 msgid "Enrollment status for {student}: inactive"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1863
+#: lms/djangoapps/instructor/views/api.py:1868
 #, python-brace-format
 msgid "Enrollment status for {student}: pending"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:1865
+#: lms/djangoapps/instructor/views/api.py:1870
 #, python-brace-format
 msgid "Enrollment status for {student}: never enrolled"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2011
+#: lms/djangoapps/instructor/views/api.py:2016
 msgid "Module does not exist."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2014
+#: lms/djangoapps/instructor/views/api.py:2019
 msgid "An error occurred while deleting the score."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2024
+#: lms/djangoapps/instructor/views/api.py:2029
 msgid "An error occurred while attempting to reset for all students."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2084
-#: lms/djangoapps/instructor/views/api.py:2323
+#: lms/djangoapps/instructor/views/api.py:2089
+#: lms/djangoapps/instructor/views/api.py:2328
 msgid "Course has no entrance exam section."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2095
+#: lms/djangoapps/instructor/views/api.py:2100
 msgid "Requires instructor access."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2112
-#: lms/djangoapps/instructor/views/api.py:2345
-#: lms/djangoapps/instructor/views/api.py:2654
+#: lms/djangoapps/instructor/views/api.py:2117
+#: lms/djangoapps/instructor/views/api.py:2350
+#: lms/djangoapps/instructor/views/api.py:2659
 msgid "Course has no valid entrance exam section."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2114
-#: lms/djangoapps/instructor/views/api.py:2350
+#: lms/djangoapps/instructor/views/api.py:2119
+#: lms/djangoapps/instructor/views/api.py:2355
 msgid "All Students"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2260
+#: lms/djangoapps/instructor/views/api.py:2265
 #, python-brace-format
 msgid ""
 "User {user_id} does not have permission to override scores for problem "
 "{problem_to_reset}."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2337
+#: lms/djangoapps/instructor/views/api.py:2342
 msgid "Cannot rescore with all_students and unique_student_identifier."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2423
+#: lms/djangoapps/instructor/views/api.py:2428
 msgid "Current status of task."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2424
+#: lms/djangoapps/instructor/views/api.py:2429
 msgid "Identifies the kind of task being performed, e.g. rescoring."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2425
+#: lms/djangoapps/instructor/views/api.py:2430
 msgid "The celery ID for the task."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2426
+#: lms/djangoapps/instructor/views/api.py:2431
 msgid "The date and time when the task was created."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2429
+#: lms/djangoapps/instructor/views/api.py:2434
 msgid ""
 "The input parameters for the task. The format and content of this data will "
 "depend on the kind of task being performed. For instanceit may contain the "
 "problem locations for a problem resources task."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2433
+#: lms/djangoapps/instructor/views/api.py:2438
 msgid "The username of the user who initiated this task."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2434
+#: lms/djangoapps/instructor/views/api.py:2439
 msgid "The last knows state of the celery task."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2435
+#: lms/djangoapps/instructor/views/api.py:2440
 msgid "Task duration information, if known"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2436
+#: lms/djangoapps/instructor/views/api.py:2441
 msgid "User-friendly task status information, if available."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2445
+#: lms/djangoapps/instructor/views/api.py:2450
 msgid "List of instructor tasks."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2507
-#: lms/djangoapps/instructor/views/api.py:2717
+#: lms/djangoapps/instructor/views/api.py:2512
+#: lms/djangoapps/instructor/views/api.py:2722
 msgid "The requested course does not exist."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2679
+#: lms/djangoapps/instructor/views/api.py:2684
 msgid "URL from which report can be downloaded."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2680
+#: lms/djangoapps/instructor/views/api.py:2685
 msgid "Name of report."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2681
+#: lms/djangoapps/instructor/views/api.py:2686
 msgid "HTML anchor tag that contains the name and link."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2690
+#: lms/djangoapps/instructor/views/api.py:2695
 msgid "List of report downloads"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2704
+#: lms/djangoapps/instructor/views/api.py:2709
 msgid "ID for the course whose reports need to be listed."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2710
+#: lms/djangoapps/instructor/views/api.py:2715
 msgid ""
 "Filter results to only return details of for the report with the specified "
 "name."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2834
+#: lms/djangoapps/instructor/views/api.py:2839
 #: lms/djangoapps/instructor_task/api_helper.py:115
 msgid "ORA data"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2866
+#: lms/djangoapps/instructor/views/api.py:2871
 msgid "ORA summary"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2895
+#: lms/djangoapps/instructor/views/api.py:2900
 msgid "Attachments archive is being created."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2916
+#: lms/djangoapps/instructor/views/api.py:2921
 #: lms/djangoapps/instructor_task/api_helper.py:116
 msgid "grade"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:2944
+#: lms/djangoapps/instructor/views/api.py:2949
 #: lms/djangoapps/instructor_task/api_helper.py:108
 msgid "problem grade"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3211
+#: lms/djangoapps/instructor/views/api.py:3216
 msgid "All fields must be filled out"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3217
+#: lms/djangoapps/instructor/views/api.py:3222
 #, python-brace-format
 msgid "Could not find student matching identifier: {student}"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3226
+#: lms/djangoapps/instructor/views/api.py:3231
 msgid "The extension due date and time format is incorrect"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3237
+#: lms/djangoapps/instructor/views/api.py:3242
 #, python-brace-format
 msgid "Successfully changed due date for student {0} for {1} to {2}"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3284
+#: lms/djangoapps/instructor/views/api.py:3289
 msgid "Successfully removed invalid due date extension (unit has no due date)."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3289
+#: lms/djangoapps/instructor/views/api.py:3294
 #, python-brace-format
 msgid "Successfully reset due date for student {0} for {1} to {2}"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3490
+#: lms/djangoapps/instructor/views/api.py:3495
 msgid ""
 "Certificate generation task for all students of this course has been "
 "started. You can view the status of the generation task in the \"Pending "
 "Tasks\" section."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3517
+#: lms/djangoapps/instructor/views/api.py:3522
 msgid ""
 "Certificate regeneration task has been started. You can view the status of "
 "the generation task in the \"Pending Tasks\" section."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3601
+#: lms/djangoapps/instructor/views/api.py:3606
 msgid ""
 "Please select certificate statuses that lie with in \"certificate_statuses\" "
 "entry in POST data."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3658
+#: lms/djangoapps/instructor/views/api.py:3663
 #, python-format
 msgid "This student (%s) will skip the entrance exam."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3660
+#: lms/djangoapps/instructor/views/api.py:3665
 #, python-format
 msgid "This student (%s) is already allowed to skip the entrance exam."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3708
+#: lms/djangoapps/instructor/views/api.py:3713
 msgid "Please select certificate statuses from the list only."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3756
-#: lms/djangoapps/instructor/views/api.py:3906
+#: lms/djangoapps/instructor/views/api.py:3761
+#: lms/djangoapps/instructor/views/api.py:3911
 msgid ""
 "The record is not in the correct format. Please add a valid username or "
 "email address."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3822
+#: lms/djangoapps/instructor/views/api.py:3827
 #, python-brace-format
 msgid ""
 "Student {user} is not enrolled in this course. Please check your spelling "
 "and retry."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3829
+#: lms/djangoapps/instructor/views/api.py:3834
 #, python-brace-format
 msgid ""
 "Student {user} is already on the certificate invalidation list and cannot be "
 "added to the certificate exception list."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3835
+#: lms/djangoapps/instructor/views/api.py:3840
 #, python-brace-format
 msgid "Student (username/email={user}) already in certificate exception list."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3871
+#: lms/djangoapps/instructor/views/api.py:3876
 #, python-brace-format
 msgid ""
 "Error occurred removing the allowlist entry for student {student}. Please "
 "refresh the page and try again"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3889
+#: lms/djangoapps/instructor/views/api.py:3894
 msgid ""
 "Student username/email field is required and can not be empty. Kindly fill "
 "in username/email and then press \"Add to Exception List\" button."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3923
+#: lms/djangoapps/instructor/views/api.py:3928
 #, python-brace-format
 msgid "{user} does not exist in the LMS. Please check your spelling and retry."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3964
+#: lms/djangoapps/instructor/views/api.py:3969
 msgid "Invalid data, generate_for must be \"new\" or \"all\"."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:3972
+#: lms/djangoapps/instructor/views/api.py:3977
 msgid "Certificate generation started for students on the allowlist."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:4025
+#: lms/djangoapps/instructor/views/api.py:4030
 #, python-brace-format
 msgid "user \"{user}\" in row# {row}"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:4076
+#: lms/djangoapps/instructor/views/api.py:4081
 #, python-brace-format
 msgid "user \"{username}\" in row# {row}"
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:4136
+#: lms/djangoapps/instructor/views/api.py:4141
 #, python-brace-format
 msgid ""
 "The student {student} appears on the Certificate Exception list in course "
@@ -5253,33 +5265,33 @@ msgid ""
 "attempting to invalidate their certificate."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:4197
+#: lms/djangoapps/instructor/views/api.py:4202
 #, python-brace-format
 msgid ""
 "Certificate of {user} has already been invalidated. Please check your "
 "spelling and retry."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:4205
+#: lms/djangoapps/instructor/views/api.py:4210
 #, python-brace-format
 msgid ""
 "Certificate for student {user} is already invalid, kindly verify that "
 "certificate was generated for this student and then proceed."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:4242
+#: lms/djangoapps/instructor/views/api.py:4247
 msgid ""
 "Certificate Invalidation does not exist, Please refresh the page and try "
 "again."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:4278
+#: lms/djangoapps/instructor/views/api.py:4283
 msgid ""
 "Student username/email field is required and can not be empty. Kindly fill "
 "in username/email and then press \"Invalidate Certificate\" button."
 msgstr ""
 
-#: lms/djangoapps/instructor/views/api.py:4296
+#: lms/djangoapps/instructor/views/api.py:4301
 #, python-brace-format
 msgid ""
 "The student {student} does not have certificate for the course {course}. "
@@ -6126,11 +6138,11 @@ msgstr ""
 msgid "Your {platform_name} ID verification was approved!"
 msgstr ""
 
-#: lms/djangoapps/verify_student/models.py:1108
+#: lms/djangoapps/verify_student/models.py:1109
 msgid "The course for which this deadline applies"
 msgstr ""
 
-#: lms/djangoapps/verify_student/models.py:1113
+#: lms/djangoapps/verify_student/models.py:1114
 msgid ""
 "The datetime after which users are no longer allowed to submit photos for "
 "verification."
@@ -9191,7 +9203,7 @@ msgid ""
 msgstr ""
 
 #: openedx/core/djangoapps/user_api/accounts/views.py:648
-#: openedx/core/djangoapps/user_authn/views/login.py:310
+#: openedx/core/djangoapps/user_authn/views/login.py:491
 #: lms/templates/provider_login.html:43
 msgid "Email or password is incorrect."
 msgstr ""
@@ -9499,11 +9511,11 @@ msgid "Account modification not allowed."
 msgstr ""
 
 #: openedx/core/djangoapps/user_authn/views/auto_auth.py:125
-#: openedx/core/djangoapps/user_authn/views/register.py:713
+#: openedx/core/djangoapps/user_authn/views/register.py:732
 msgid "Account creation not allowed."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:89
+#: openedx/core/djangoapps/user_authn/views/login.py:97
 #, python-brace-format
 msgid ""
 "You've successfully signed in to your {provider_name} account, but this "
@@ -9514,17 +9526,22 @@ msgid ""
 "yet, click {register_label_strong} at the top of the page."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:100
+#: openedx/core/djangoapps/user_authn/views/login.py:108
 #: lms/templates/navigation/navbar-not-authenticated.html:38
 #: themes/stanford-style/lms/templates/register-form.html:272
 msgid "Register"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:136
+#: openedx/core/djangoapps/user_authn/views/login.py:286
+#: openedx/core/djangoapps/user_authn/views/login.py:291
+#: openedx/core/djangoapps/user_authn/views/login.py:304
+#: openedx/core/djangoapps/user_authn/views/login.py:308
+#: openedx/core/djangoapps/user_authn/views/login.py:315
+#: openedx/core/djangoapps/user_authn/views/login.py:435
 msgid "There was an error receiving your login information. Please email us."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:170
+#: openedx/core/djangoapps/user_authn/views/login.py:348
 #, python-brace-format
 msgid ""
 "To protect your account, it’s been temporarily locked. Try again in "
@@ -9532,11 +9549,11 @@ msgid ""
 "your password {link_start}here{link_end} before you try again."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:242
+#: openedx/core/djangoapps/user_authn/views/login.py:420
 msgid "Too many failed login attempts. Try again later."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:284
+#: openedx/core/djangoapps/user_authn/views/login.py:465
 #, python-brace-format
 msgid ""
 "Email or password is incorrect.{li_start}You have {remaining_attempts} more "
@@ -9545,7 +9562,7 @@ msgid ""
 "{li_end}"
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/login.py:392
+#: openedx/core/djangoapps/user_authn/views/login.py:573
 #, python-brace-format
 msgid ""
 "As {allowed_domain} user, You must login with your {allowed_domain} "
@@ -9625,20 +9642,24 @@ msgstr ""
 msgid "Your new password must be different from your current password."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/register.py:186
+#: openedx/core/djangoapps/user_authn/views/register.py:178
+msgid "total_registration_time must be a number between 0 and 86400 (seconds)"
+msgstr ""
+
+#: openedx/core/djangoapps/user_authn/views/register.py:205
 #, python-brace-format
 msgid "Registration using {provider} has timed out."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/register.py:329
+#: openedx/core/djangoapps/user_authn/views/register.py:348
 msgid "An access_token is required when passing value ({}) for provider."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/register.py:342
+#: openedx/core/djangoapps/user_authn/views/register.py:361
 msgid "The provided access_token is already associated with another user."
 msgstr ""
 
-#: openedx/core/djangoapps/user_authn/views/register.py:345
+#: openedx/core/djangoapps/user_authn/views/register.py:364
 msgid "The provided access_token is not valid."
 msgstr ""
 
@@ -17837,7 +17858,7 @@ msgid "Choose Language"
 msgstr ""
 
 #: cms/templates/widgets/header.html:357 cms/templates/widgets/header.html:372
-#: lms/templates/header/user_dropdown.html:48
+#: lms/templates/header/user_dropdown.html:46
 #: lms/templates/user_dropdown.html:31 lms/templates/user_dropdown.html:39
 msgid "Account"
 msgstr ""
@@ -17984,7 +18005,7 @@ msgid "Maintenance"
 msgstr ""
 
 #: cms/templates/widgets/user_dropdown.html:30
-#: lms/templates/header/user_dropdown.html:52
+#: lms/templates/header/user_dropdown.html:50
 #: lms/templates/user_dropdown.html:32 lms/templates/user_dropdown.html:40
 #: lms/templates/user_dropdown.html:59
 msgid "Sign Out"
@@ -18156,8 +18177,7 @@ msgstr ""
 msgid "View all Courses"
 msgstr ""
 
-#: lms/templates/dashboard.html:29 lms/templates/header/user_dropdown.html:42
-#: lms/templates/header/user_dropdown.html:44
+#: lms/templates/dashboard.html:29 lms/templates/header/user_dropdown.html:43
 #: lms/templates/user_dropdown.html:30 lms/templates/user_dropdown.html:38
 msgid "Dashboard"
 msgstr ""
@@ -18982,7 +19002,7 @@ msgid ""
 "not mean to do this, {undo_link_start}you can re-subscribe{link_end}."
 msgstr ""
 
-#: lms/templates/header/user_dropdown.html:32
+#: lms/templates/header/user_dropdown.html:34
 #: lms/templates/user_dropdown.html:24 lms/templates/user_dropdown.html:46
 msgid "Dashboard for:"
 msgstr ""
@@ -18996,7 +19016,7 @@ msgid "More options"
 msgstr ""
 
 #: lms/templates/header/header.html:67
-#: lms/templates/header/user_dropdown.html:40
+#: lms/templates/header/user_dropdown.html:42
 #: lms/templates/user_dropdown.html:57
 msgid "More Options"
 msgstr ""
@@ -21878,16 +21898,8 @@ msgstr ""
 msgid "Apply for Financial Assistance"
 msgstr ""
 
-#: lms/templates/header/brand.html:19
-#: lms/templates/header/navbar-logo-header.html:32
-#: lms/templates/navigation/bootstrap/navbar-logo-header.html:15
-#: lms/templates/navigation/navbar-logo-header.html:20
-#, python-brace-format
-msgid "{platform_name} Home Page"
-msgstr ""
-
 #: lms/templates/header/header.html:55
-#: lms/templates/header/user_dropdown.html:37
+#: lms/templates/header/user_dropdown.html:39
 msgid "Options Menu"
 msgstr ""
 
@@ -21901,11 +21913,6 @@ msgstr ""
 
 #: lms/templates/header/navbar-authenticated.html:51
 msgid "Discover New"
-msgstr ""
-
-#: lms/templates/header/navbar-logo-header.html:24
-#, python-brace-format
-msgid "{name} Dashboard"
 msgstr ""
 
 #: lms/templates/header/navbar-not-authenticated.html:24
@@ -21927,11 +21934,11 @@ msgstr ""
 msgid "Register for free"
 msgstr ""
 
-#: lms/templates/header/user_dropdown.html:47
+#: lms/templates/header/user_dropdown.html:45
 msgid "Profile"
 msgstr ""
 
-#: lms/templates/header/user_dropdown.html:50
+#: lms/templates/header/user_dropdown.html:48
 msgid "Order History"
 msgstr ""
 
