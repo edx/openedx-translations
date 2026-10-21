@@ -11,7 +11,7 @@ on:
         required: true
         type: string
       application_name:
-        description: 'Application to filter to. Leave blank to include all.'
+        description: 'Application(s) to filter to (comma-separated). Leave blank to include all.'
         required: false
         type: string
         default: ''
@@ -74,11 +74,14 @@ jobs:
 
             const appInput = ${{ toJSON(inputs.application_name) }} || '';
             const languageInput = ${{ toJSON(inputs.translation_language) }} || '';
-            const selectedApp = appInput || '';
+            const selectedApps = appInput
+              ? appInput.split(',').map(s => s.trim()).filter(Boolean)
+              : [];
             const selectedLanguage = languageInput ? languageInput.toLowerCase() : '';
 
-            if (selectedApp !== '' && !Object.keys(allApps).includes(selectedApp)) {
-              core.setFailed(`Selected application "${selectedApp}" is not a valid option.`);
+            const invalidApps = selectedApps.filter(app => !Object.keys(allApps).includes(app));
+            if (invalidApps.length > 0) {
+              core.setFailed(`Selected application(s) "${invalidApps.join('", "')}" are not valid options.`);
               return;
             }
             if (selectedLanguage !== '' && !Object.keys(languageMap).includes(selectedLanguage)) {
@@ -89,13 +92,13 @@ jobs:
             const regularRepos = Object.entries(allApps).filter(([, config]) => !config.subpackages);
             const subpackageRepos = Object.entries(allApps).filter(([, config]) => config.subpackages);
 
-            const applications = selectedApp === ''
+            const applications = selectedApps.length === 0
               ? regularRepos.map(([appName, config]) => ({ appName, ...config }))
-              : regularRepos.filter(([appName]) => appName === selectedApp).map(([appName, config]) => ({ appName, ...config }));
+              : regularRepos.filter(([appName]) => selectedApps.includes(appName)).map(([appName, config]) => ({ appName, ...config }));
 
-            const reposWithSubpackages = selectedApp === ''
+            const reposWithSubpackages = selectedApps.length === 0
               ? subpackageRepos.map(([repo, config]) => ({ repo, owner: config.owner ?? 'edx', packages: config.subpackages }))
-              : subpackageRepos.filter(([repo]) => repo === selectedApp).map(([repo, config]) => ({ repo, owner: config.owner ?? 'edx', packages: config.subpackages }));
+              : subpackageRepos.filter(([repo]) => selectedApps.includes(repo)).map(([repo, config]) => ({ repo, owner: config.owner ?? 'edx', packages: config.subpackages }));
 
             const translationLanguages = selectedLanguage === '' ? Object.values(languageMap) : [languageMap[selectedLanguage]];
 
