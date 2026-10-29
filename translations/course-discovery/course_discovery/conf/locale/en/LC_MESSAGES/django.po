@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-15 00:31+0000\n"
+"POT-Creation-Date: 2026-10-29 00:22+0000\n"
 "PO-Revision-Date: 2016-05-25 15:41+0000\n"
 "Last-Translator: Muhammad Ayub khan <ayubkhan@edx.org>\n"
 "Language-Team: English (http://www.transifex.com/open-edx/edx-platform/"
@@ -314,8 +314,8 @@ msgstr ""
 
 #: apps/core/models.py:76
 msgid ""
-"The base URL of your publisher service, if used. Example: https://publisher."
-"example.com/"
+"The base URL of your publisher service, if used. Example: https://"
+"publisher.example.com/"
 msgstr ""
 
 #: apps/core/models.py:79
@@ -328,8 +328,8 @@ msgstr ""
 
 #: apps/core/models.py:82
 msgid ""
-"The public URL of your LMS Django admin. Example: https://lms-internal."
-"example.com/admin"
+"The public URL of your LMS Django admin. Example: https://lms-"
+"internal.example.com/admin"
 msgstr ""
 
 #: apps/core/models.py:84
@@ -432,23 +432,23 @@ msgstr ""
 msgid "Master’s"
 msgstr ""
 
-#: apps/course_metadata/algolia_models.py:116
-#: apps/course_metadata/algolia_models.py:671
+#: apps/course_metadata/algolia_models.py:119
+#: apps/course_metadata/algolia_models.py:682
 msgid "Available now"
 msgstr ""
 
-#: apps/course_metadata/algolia_models.py:118
+#: apps/course_metadata/algolia_models.py:121
 #: apps/course_metadata/models.py:2763
 msgid "Upcoming"
 msgstr ""
 
-#: apps/course_metadata/algolia_models.py:120
+#: apps/course_metadata/algolia_models.py:123
 #: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2757
 #: apps/course_metadata/models.py:2773
 msgid "Archived"
 msgstr ""
 
-#: apps/course_metadata/algolia_models.py:682
+#: apps/course_metadata/algolia_models.py:693
 msgid "Available by subscription"
 msgstr ""
 
@@ -813,8 +813,8 @@ msgstr ""
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:35
 msgid ""
-"CourseType/CourseRunType mismatches to allow. Specify like course-type-slug:"
-"run-type-slug."
+"CourseType/CourseRunType mismatches to allow. Specify like course-type-"
+"slug:run-type-slug."
 msgstr ""
 
 #: apps/course_metadata/management/commands/backpopulate_course_type.py:41
@@ -1977,9 +1977,8 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"    This is an automated reminder that the course "
-"\"%(course_name)s\" (%(course_key)s) is scheduled to end in %(days)s on "
-"%(course_end_date)s.\n"
+"    This is an automated reminder that the course \"%(course_name)s\" "
+"(%(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
 "    "
 msgstr ""
 
@@ -2150,9 +2149,8 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"This is an automated reminder that the course "
-"\"%(course_name)s\" (%(course_key)s) is scheduled to end in %(days)s on "
-"%(course_end_date)s.\n"
+"This is an automated reminder that the course \"%(course_name)s\" "
+"(%(course_key)s) is scheduled to end in %(days)s on %(course_end_date)s.\n"
 msgstr ""
 
 #: apps/course_metadata/templates/course_metadata/email/course_deadline.txt:17
@@ -2529,7 +2527,7 @@ msgid ""
 "Adds recommendations for courses created or modified in the past num days"
 msgstr ""
 
-#: apps/taxonomy_support/providers.py:198
+#: apps/taxonomy_support/providers.py:216
 msgid "No partner object found!"
 msgstr ""
 
