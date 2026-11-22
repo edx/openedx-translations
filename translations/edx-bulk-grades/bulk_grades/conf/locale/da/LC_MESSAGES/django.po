@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-05-05 00:51+0000\n"
-"PO-Revision-Date: 2026-09-18 07:46+0000\n"
+"POT-Creation-Date: 2026-11-13 00:23+0000\n"
+"PO-Revision-Date: 2026-11-22 04:36+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -33,22 +33,34 @@ msgstr "Point må ikke være større end {}."
 msgid "Points must be greater than 0"
 msgstr "Point skal være større end 0"
 
-#: api.py:347
+#: api.py:351
 msgid "Wrong course id {} != {}"
 msgstr "Forkert kursus-id {} != {}"
 
-#: api.py:366 api.py:368
+#: api.py:367
+msgid "The file has no data rows."
+msgstr "Filen indeholder ingen datarækker."
+
+#: api.py:370
+msgid ""
+"No grades were changed. Enter grades in a \"new_override\" column and upload"
+" the file again."
+msgstr ""
+"Ingen karakterer blev ændret. Indtast karakterer i en kolonne med navnet "
+"\"new_override\", og upload filen igen."
+
+#: api.py:383 api.py:385
 msgid "Repeated user_id: "
 msgstr "Gentaget bruger-id: "
 
-#: api.py:385
+#: api.py:402
 msgid "Grade must be a number"
 msgstr "Karakter skal være et tal"
 
-#: api.py:388
+#: api.py:405
 msgid "Grade must not be negative"
 msgstr "Karakteren må ikke være negativ"
 
-#: api.py:642
+#: api.py:666
 msgid "score must be positive"
 msgstr "score skal være positiv"
