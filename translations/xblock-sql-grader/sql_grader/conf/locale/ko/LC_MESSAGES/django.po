@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2026-09-10 10:12+0000\n"
+"PO-Revision-Date: 2026-11-22 11:03+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
 "Language: ko\n"
@@ -23,7 +23,7 @@ msgstr "가중치"
 
 #: mixins/grading.py:91
 msgid "This assigns an integer value representing the weight of this problem"
-msgstr "이 문제의 가중치를 나타내는 정수 값을 할당합니다."
+msgstr "이 문제의 가중치를 나타내는 정수 값을 지정합니다."
 
 #: mixins/grading.py:170
 msgid "Display Name"
@@ -31,7 +31,7 @@ msgstr "표시 이름"
 
 #: mixins/grading.py:171
 msgid "The display name for this component."
-msgstr "이 구성요소의 표시 이름입니다."
+msgstr "이 구성 요소의 표시 이름입니다."
 
 #: mixins/grading.py:172
 msgid "SQL Problem"
@@ -39,11 +39,11 @@ msgstr "SQL 문제"
 
 #: mixins/grading.py:176
 msgid "Dataset"
-msgstr "데이터셋"
+msgstr "데이터 세트"
 
 #: mixins/grading.py:177
 msgid "Which initial dataset/database to be used for queries"
-msgstr "쿼리에 사용할 초기 데이터셋/데이터베이스"
+msgstr "쿼리에 사용할 초기 데이터 세트 또는 데이터베이스"
 
 #: mixins/grading.py:183
 msgid "Answer Query"
@@ -51,7 +51,7 @@ msgstr "정답 쿼리"
 
 #: mixins/grading.py:184
 msgid "A correct response SQL query"
-msgstr "정답 SQL 쿼리"
+msgstr "정답에 해당하는 SQL 쿼리"
 
 #: mixins/grading.py:190
 msgid "Verify Query"
@@ -63,34 +63,34 @@ msgid ""
 "the database (UPDATE, INSERT, DELETE, etc.). Only enter a single SELECT "
 "query here, which is used for matching the answer"
 msgstr ""
-"정답 쿼리가 데이터베이스를 수정할 경우(UPDATE, INSERT, DELETE 등) 사용할 보조 검증 SQL 쿼리입니다. 답안을 "
-"비교하는 데 사용되는 단일 SELECT 쿼리만 입력하세요."
+"answer_query가 데이터베이스를 수정하는 경우(UPDATE, INSERT, DELETE 등)에 사용할 보조 SQL 검증 "
+"쿼리입니다. 정답 비교에 사용할 SELECT 쿼리 하나만 입력하세요."
 
 #: mixins/grading.py:202
 msgid "Modification query statements"
-msgstr "수정 쿼리 문장"
+msgstr "수정 쿼리 문"
 
 #: mixins/grading.py:204
 msgid ""
 "Optional SQL statements, to be executed after the user-submitted query, but "
 "before the verify_query."
-msgstr "사용자가 제출한 쿼리 실행 후, 검증 쿼리 실행 전에 선택적으로 실행되는 SQL 문장들입니다."
+msgstr "사용자가 제출한 쿼리 실행 후 verify_query 실행 전에 실행할 선택적 SQL 문입니다."
 
 #: mixins/grading.py:212
 msgid "Is Ordered?"
-msgstr "정렬됨?"
+msgstr "순서 적용 여부"
 
 #: mixins/grading.py:213
 msgid "Should results be in order?"
-msgstr "결과가 정렬되어야 합니까?"
+msgstr "결과의 순서를 고려해야 하나요?"
 
 #: mixins/grading.py:228
 msgid "Prompt"
-msgstr "프롬프트"
+msgstr "문제 지문"
 
 #: mixins/grading.py:229
 msgid "Explanatory text to accompany the problem"
-msgstr "문제에 첨부할 설명 텍스트"
+msgstr "문제에 함께 표시할 설명 텍스트"
 
 #: mixins/grading.py:234
 msgid "Submission Query"
@@ -98,7 +98,7 @@ msgstr "제출 쿼리"
 
 #: mixins/grading.py:235
 msgid "A Submission Query"
-msgstr "제출용 쿼리"
+msgstr "제출할 쿼리"
 
 #: templates/view.html:6
 #, python-format
@@ -112,7 +112,7 @@ msgid_plural ""
 "        "
 msgstr[0] ""
 "\n"
-"            %(score_weighted)s/%(max_score)s 점 (채점됨)\n"
+"            %(score_weighted)s/%(max_score)s점 (채점됨)\n"
 "        "
 
 #: templates/view.html:12
@@ -127,11 +127,11 @@ msgstr "참고:"
 msgid ""
 "Your queries are executed using SQLite, so you must conform to the SQL "
 "constructs supported by SQLite."
-msgstr "쿼리는 SQLite를 사용하여 실행되므로, SQLite가 지원하는 SQL 구문을 따라야 합니다."
+msgstr "쿼리는 SQLite를 사용하여 실행되므로 SQLite에서 지원하는 SQL 구문을 사용해야 합니다."
 
 #: templates/view.html:27
 msgid "Press ESC then TAB or click outside of the code editor to exit"
-msgstr "종료하려면 ESC를 누른 후 TAB 키를 누르거나 코드 편집기 밖을 클릭하세요."
+msgstr "코드 편집기를 벗어나려면 ESC를 누른 다음 TAB을 누르거나 편집기 바깥을 클릭하세요."
 
 #: templates/view.html:33
 msgid "Submit"
@@ -157,11 +157,11 @@ msgstr "미응답"
 msgid ""
 "To check your data modification statement, we ran the following query after "
 "your modification:"
-msgstr "데이터 수정 문장을 확인하기 위해, 수정 후 다음 쿼리를 실행했습니다:"
+msgstr "데이터 수정 문을 확인하기 위해 수정 후 다음 쿼리를 실행했습니다:"
 
 #: templates/view.html:75
 msgid "Your Query Result:"
-msgstr "당신의 쿼리 결과:"
+msgstr "쿼리 결과:"
 
 #: templates/view.html:80
 msgid "Expected Query Result:"
