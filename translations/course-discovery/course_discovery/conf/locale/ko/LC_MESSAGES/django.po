@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-08-19 00:16+0000\n"
-"PO-Revision-Date: 2026-09-10 11:37+0000\n"
+"POT-Creation-Date: 2026-11-13 00:20+0000\n"
+"PO-Revision-Date: 2026-11-22 04:31+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: English (http://www.transifex.com/open-edx/edx-platform/language/en/)\n"
 "Language: ko\n"
@@ -94,12 +94,12 @@ msgstr "editable=1과 q 매개변수를 동시에 지정하는 것은 지원되�
 msgid "You must include a course_uuid in your query parameters."
 msgstr "쿼리 매개변수에 course_uuid를 포함해야 합니다."
 
-#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:205
+#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:366
 #, python-brace-format
 msgid "Missing value for: [{name}]. "
 msgstr "[{name}]의 값이 누락되었습니다. "
 
-#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:216
+#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:377
 msgid "Incorrect data sent. "
 msgstr "잘못된 데이터가 전송되었습니다. "
 
@@ -126,31 +126,31 @@ msgstr "강의 실행이 검토 중입니다. 편집할 수 없습니다."
 msgid "Invalid parameter"
 msgstr "잘못된 매개변수"
 
-#: apps/api/v1/views/courses.py:62
+#: apps/api/v1/views/courses.py:67
 msgid "Failed to set data: {}"
 msgstr "데이터 설정에 실패했습니다: {}"
 
-#: apps/api/v1/views/courses.py:207
+#: apps/api/v1/views/courses.py:368
 #, python-brace-format
 msgid "Organization [{org}] does not exist. "
 msgstr "조직 [{org}]이(가) 존재하지 않습니다. "
 
-#: apps/api/v1/views/courses.py:209
+#: apps/api/v1/views/courses.py:370
 #, python-brace-format
 msgid "Course Type [{course_type}] does not exist. "
 msgstr "강의 유형 [{course_type}]이(가) 존재하지 않습니다. "
 
-#: apps/api/v1/views/courses.py:212
+#: apps/api/v1/views/courses.py:373
 #, python-brace-format
 msgid "Product Source [{product_source}] does not exist. "
 msgstr "제품 출처 [{product_source}]이(가) 존재하지 않습니다. "
 
-#: apps/api/v1/views/courses.py:229
+#: apps/api/v1/views/courses.py:390
 #, python-brace-format
 msgid "A course with key [{key}] already exists."
 msgstr "키 [{key}]를 가진 강의가 이미 존재합니다."
 
-#: apps/api/v1/views/courses.py:237
+#: apps/api/v1/views/courses.py:398
 #, python-brace-format
 msgid ""
 "Course creation was unsuccessful. The course URL slug ‘[{url_slug}]’ is "
@@ -158,13 +158,13 @@ msgid ""
 msgstr ""
 "강의 생성에 실패했습니다. 강의 URL 슬러그 ‘[{url_slug}]’가 이미 사용 중입니다. 이 필드를 업데이트하고 다시 시도하세요."
 
-#: apps/api/v1/views/courses.py:298
+#: apps/api/v1/views/courses.py:459
 msgid ""
 "Switching entitlement types after being reviewed is not supported. Please "
 "reach out to your project coordinator for additional help if necessary."
 msgstr "검토 후 권한 유형을 변경하는 것은 지원되지 않습니다. 필요한 경우 프로젝트 코디네이터에게 추가 도움을 요청하세요."
 
-#: apps/api/v1/views/courses.py:408
+#: apps/api/v1/views/courses.py:569
 #, python-brace-format
 msgid ""
 "Course edit was unsuccessful. The course URL slug ‘[{url_slug}]’ is already "
@@ -434,23 +434,23 @@ msgstr "학사"
 msgid "Master’s"
 msgstr "석사"
 
-#: apps/course_metadata/algolia_models.py:116
-#: apps/course_metadata/algolia_models.py:671
+#: apps/course_metadata/algolia_models.py:119
+#: apps/course_metadata/algolia_models.py:682
 msgid "Available now"
 msgstr "지금 이용 가능"
 
-#: apps/course_metadata/algolia_models.py:118
+#: apps/course_metadata/algolia_models.py:121
 #: apps/course_metadata/models.py:2763
 msgid "Upcoming"
 msgstr "준비 중"
 
-#: apps/course_metadata/algolia_models.py:120
+#: apps/course_metadata/algolia_models.py:123
 #: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2757
 #: apps/course_metadata/models.py:2773
 msgid "Archived"
 msgstr "보관됨"
 
-#: apps/course_metadata/algolia_models.py:682
+#: apps/course_metadata/algolia_models.py:693
 msgid "Available by subscription"
 msgstr "구독으로 이용 가능"
 
@@ -2257,7 +2257,9 @@ msgstr ""
 msgid ""
 "Note: This is a no-reply email. For any questions or comments, please "
 "contact your Project Coordinator at"
-msgstr "참고: 이 메일은 회신 전용입니다. 질문이나 의견이 있으시면, 프로젝트 코디네이터에게 연락해 주십시오."
+msgstr ""
+"강좌 '%(course_name)s'는 edX에 의해 성공적으로 검토되었으며 게시 준비가 완료되었습니다. 강좌는 %(course_publish_date)s에 게시될 예정입니다.\n"
+"강좌 소개 페이지 미리보기를 보려면 여기로 이동하세요: <a href=\"%(course_marketing_url)s\">%(course_marketing_url)s</a>"
 
 #: apps/course_metadata/templates/course_metadata/email/internal_review.html:9
 #: apps/course_metadata/templates/course_metadata/email/internal_review.txt:3
@@ -2593,7 +2595,7 @@ msgid ""
 "Adds recommendations for courses created or modified in the past num days"
 msgstr "지난 num일 동안 생성되거나 수정된 강좌에 대한 추천을 추가합니다."
 
-#: apps/taxonomy_support/providers.py:198
+#: apps/taxonomy_support/providers.py:216
 msgid "No partner object found!"
 msgstr "파트너 객체를 찾을 수 없습니다!"
 
