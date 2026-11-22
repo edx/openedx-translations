@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-08-19 00:23+0000\n"
-"PO-Revision-Date: 2026-09-14 11:04+0000\n"
+"POT-Creation-Date: 2026-11-22 00:26+0000\n"
+"PO-Revision-Date: 2026-11-22 17:49+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_PT\n"
@@ -321,6 +321,31 @@ msgstr "Erro ao importar o curso"
 #: cms/static/js/features/import/views/import.js:298
 msgid "There was an error with the upload"
 msgstr "Ocorreu um erro com o carregamento"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:23
+msgid "Organization:"
+msgstr "Organização:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:27
+msgid "Course Number:"
+msgstr "Número do curso:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:33
+msgid "Course Run:"
+msgstr "Edição do curso:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:38
+msgid "(Read-only)"
+msgstr "(Só de leitura)"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:66
+msgid "Re-run Course"
+msgstr "Criar nova edição do curso"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:77
+#: cms/templates/js/show-textbook.underscore:37
+msgid "View Live"
+msgstr "Ver em direto"
 
 #. Translators: This is the status of a video upload that is queued
 #. waiting for other uploads to complete
@@ -675,7 +700,7 @@ msgstr "Adicionar conteúdo da biblioteca"
 
 #: cms/static/js/views/components/add_xblock.js:120
 #: cms/static/js/views/components/add_xblock.js:131
-#: cms/static/js/views/pages/container.js:656
+#: cms/static/js/views/pages/container.js:657
 #: cms/static/js/views/utils/xblock_utils.js:55
 msgid "Adding"
 msgstr "A Adicionar"
@@ -694,8 +719,8 @@ msgstr "Tem a certeza de que deseja eliminar esta atualização?"
 #: cms/static/js/views/course_info_update.js:241
 #: cms/static/js/views/course_outline.js:390
 #: cms/static/js/views/course_outline.js:402
-#: cms/static/js/views/pages/container.js:424
-#: cms/static/js/views/pages/container.js:436 cms/static/js/views/tabs.js:164
+#: cms/static/js/views/pages/container.js:426
+#: cms/static/js/views/pages/container.js:438 cms/static/js/views/tabs.js:164
 #: cms/static/js/views/utils/xblock_utils.js:101
 #: cms/static/js/views/utils/xblock_utils.js:113
 #: lms/static/js/Markdown.Editor.js:1091 xmodule/js/src/html/edit.js:885
@@ -705,7 +730,7 @@ msgid "OK"
 msgstr "OK"
 
 #: cms/static/js/views/course_outline.js:242
-#: cms/static/js/views/pages/container.js:783
+#: cms/static/js/views/pages/container.js:784
 #: cms/static/js/views/pages/container_subviews.js:187
 msgid "Copying"
 msgstr "A Copiar"
@@ -715,32 +740,32 @@ msgid "Copy of \"{componentDisplayName}\""
 msgstr "Cópia de \"{componentDisplayName}\""
 
 #: cms/static/js/views/course_outline.js:367
-#: cms/static/js/views/pages/container.js:395
+#: cms/static/js/views/pages/container.js:397
 #: cms/static/js/views/utils/xblock_utils.js:79
 msgid "Pasting"
 msgstr "A Colar"
 
 #: cms/static/js/views/course_outline.js:385
-#: cms/static/js/views/pages/container.js:419
+#: cms/static/js/views/pages/container.js:421
 #: cms/static/js/views/utils/xblock_utils.js:96
 msgid "Some errors occurred"
 msgstr "Ocorreu alguns erros"
 
 #: cms/static/js/views/course_outline.js:387
-#: cms/static/js/views/pages/container.js:421
+#: cms/static/js/views/pages/container.js:423
 #: cms/static/js/views/utils/xblock_utils.js:98
 msgid "The following required files could not be added to the course:"
 msgstr ""
 "Os seguintes ficheiros necessários não puderam ser adicionados ao curso:"
 
 #: cms/static/js/views/course_outline.js:395
-#: cms/static/js/views/pages/container.js:429
+#: cms/static/js/views/pages/container.js:431
 #: cms/static/js/views/utils/xblock_utils.js:106
 msgid "You may need to update a file(s) manually"
 msgstr "Pode ser necessário atualizar manualmente um ou mais ficheiros"
 
 #: cms/static/js/views/course_outline.js:398
-#: cms/static/js/views/pages/container.js:432
+#: cms/static/js/views/pages/container.js:434
 #: cms/static/js/views/utils/xblock_utils.js:109
 msgid ""
 "The following files already exist in this course but don't match the version"
@@ -750,25 +775,25 @@ msgstr ""
 "utilizada pelo componente que colou:"
 
 #: cms/static/js/views/course_outline.js:407
-#: cms/static/js/views/pages/container.js:441
+#: cms/static/js/views/pages/container.js:443
 #: cms/static/js/views/utils/xblock_utils.js:118
 msgid "New file(s) added to Files & Uploads."
 msgstr "Novo(s) ficheiro(s) adicionado(s) a Ficheiros & Uploads."
 
 #: cms/static/js/views/course_outline.js:409
-#: cms/static/js/views/pages/container.js:443
+#: cms/static/js/views/pages/container.js:445
 #: cms/static/js/views/utils/xblock_utils.js:120
 msgid "The following required files were imported to this course:"
 msgstr "Os seguintes ficheiros necessários foram importados para este curso:"
 
 #: cms/static/js/views/course_outline.js:414
-#: cms/static/js/views/pages/container.js:448
+#: cms/static/js/views/pages/container.js:450
 #: cms/static/js/views/utils/xblock_utils.js:125
 msgid "View files"
 msgstr "Ver ficheiros"
 
 #: cms/static/js/views/course_outline.js:422
-#: cms/static/js/views/pages/container.js:457
+#: cms/static/js/views/pages/container.js:459
 #: cms/static/js/views/utils/xblock_utils.js:134
 msgid "Dismiss"
 msgstr "Dispensar"
@@ -1332,7 +1357,7 @@ msgstr "Data de adição"
 
 #. Translators: "title" is the name of the current component or unit being
 #. edited.
-#: cms/static/js/views/pages/container.js:735
+#: cms/static/js/views/pages/container.js:736
 msgid "Editing access for: {title}"
 msgstr "A conceder acesso de edição para: {title}"
 
@@ -1968,6 +1993,10 @@ msgstr "Ver itens filho"
 msgid "Navigate up"
 msgstr "Navegar para cima"
 
+#: common/static/common/js/components/BlockBrowser/components/BlockBrowser/BlockBrowser.jsx:89
+msgid "Browsing"
+msgstr "Navegação"
+
 #: common/static/common/js/components/BlockBrowser/components/BlockBrowser/BlockBrowser.jsx:96
 msgid "Select"
 msgstr "Selecionar"
@@ -2551,9 +2580,41 @@ msgstr ""
 " curso. Por favor, coloque todas as questões relacionadas com o curso no "
 "Fórum de Discussão, onde a equipa do curso pode responder diretamente."
 
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:106
+msgid "Details"
+msgstr "Detalhes"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:107
+msgid "the more quickly and helpfully we can respond!"
+msgstr "mais rápida e eficazmente poderemos responder!"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:118
+msgid "Create Support Ticket"
+msgstr "Criar pedido de suporte"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:140
+msgid "What can we help you with, {fullName}?"
+msgstr "Como podemos ajudar, {fullName}?"
+
 #: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:15
 msgid "Sign in to {platform} so we can help you better."
 msgstr "Inicie sessão em {platform} para que possamos ajudar melhor."
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:24
+#: lms/templates/student_account/hinted_login.underscore:4
+#: lms/templates/student_account/login.underscore:56
+msgid "Sign in"
+msgstr "Iniciar sessão"
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:28
+#: lms/templates/student_account/institution_register.underscore:28
+#: lms/templates/student_account/register.underscore:50
+msgid "Create an Account"
+msgstr "Criar uma conta"
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:35
+msgid "Need help logging in?"
+msgstr "Precisa de ajuda para iniciar sessão?"
 
 #: lms/djangoapps/support/static/support/jsx/single_support_form.jsx:47
 msgid ""
@@ -3732,8 +3793,8 @@ msgstr "Atribuição à coorte não permitida: {email_or_username}"
 msgid "There was an error when trying to add learners:"
 msgid_plural "{numErrors} learners could not be added to this cohort:"
 msgstr[0] "{numErrors} learners could not be added to this cohort:"
-msgstr[1] "{numErrors} alunos não puderam ser adicionados a esta turma:"
-msgstr[2] "{numErrors} alunos não puderam ser adicionados a esta turma:"
+msgstr[1] "Não foi possível adicionar {numErrors} formandos a esta coorte:"
+msgstr[2] "Não foi possível adicionar {numErrors} formandos a esta coorte:"
 
 #: lms/static/js/groups/views/cohort_editor.js:306
 msgid "View all errors"
@@ -5319,15 +5380,274 @@ msgstr[0] "{total_results} resultado encontrado para \"{search_term}\""
 msgstr[1] "{total_results} resultados encontrados para \"{search_term}\""
 msgstr[2] "{total_results} resultados encontrados para \"{search_term}\""
 
-#: xmodule/assets/library_content/public/js/library_content_edit.js:16
-#: xmodule/js/public/js/library_content_edit.js:16
+#: xmodule/assets/library_content/public/js/library_content_edit.js:44
+#: xmodule/js/public/js/library_content_edit.js:44
 msgid "Updating with latest library content"
 msgstr "Actualizando com o conteúdo mais recente da biblioteca"
+
+#: xmodule/assets/library_content/public/js/library_content_edit.js:64
+#: xmodule/js/public/js/library_content_edit.js:64
+msgid "Migrating to Problem Bank"
+msgstr "A migrar para o Banco de Problemas"
 
 #: xmodule/assets/split_test/public/js/split_test_author_view.js:12
 #: xmodule/js/public/js/split_test_author_view.js:12
 msgid "Creating missing groups"
 msgstr "A criar os grupos em falta"
+
+#: xmodule/assets/video/public/js/00_i18n.js:10
+#: xmodule/assets/video/public/js/09_play_pause_control.js:31
+#: xmodule/assets/video/public/js/09_play_pause_control.js:89
+#: xmodule/assets/video/public/js/09_play_skip_control.js:28
+msgid "Play"
+msgstr "Reproduzir"
+
+#: xmodule/assets/video/public/js/00_i18n.js:11
+#: xmodule/assets/video/public/js/09_play_pause_control.js:79
+msgid "Pause"
+msgstr "Pausar"
+
+#: xmodule/assets/video/public/js/00_i18n.js:12
+msgid "Mute"
+msgstr "Silenciar"
+
+#: xmodule/assets/video/public/js/00_i18n.js:13
+msgid "Unmute"
+msgstr "Ativar som"
+
+#: xmodule/assets/video/public/js/00_i18n.js:14
+#: xmodule/assets/video/public/js/04_video_full_screen.js:227
+msgid "Exit full browser"
+msgstr "Sair do navegador em ecrã inteiro"
+
+#: xmodule/assets/video/public/js/00_i18n.js:15
+#: xmodule/assets/video/public/js/04_video_full_screen.js:5
+#: xmodule/assets/video/public/js/04_video_full_screen.js:7
+#: xmodule/assets/video/public/js/04_video_full_screen.js:199
+msgid "Fill browser"
+msgstr "Preencher navegador"
+
+#: xmodule/assets/video/public/js/00_i18n.js:16
+#: xmodule/assets/video/public/js/08_video_speed_control.js:43
+msgid "Speed"
+msgstr "Velocidade"
+
+#: xmodule/assets/video/public/js/00_i18n.js:17
+#: xmodule/assets/video/public/js/08_video_auto_advance_control.js:38
+#: xmodule/js/src/video/08_video_auto_advance_control.js:40
+msgid "Auto-advance"
+msgstr "Avanço automático"
+
+#: xmodule/assets/video/public/js/00_i18n.js:18
+#: xmodule/assets/video/public/js/07_video_volume_control.js:70
+msgid "Volume"
+msgstr "Volume"
+
+#. Translators: Volume level equals 0%.
+#: xmodule/assets/video/public/js/00_i18n.js:20
+msgid "Muted"
+msgstr "Silenciado"
+
+#. Translators: Volume level in range ]0,20]%
+#: xmodule/assets/video/public/js/00_i18n.js:22
+msgid "Very low"
+msgstr "Muito baixo"
+
+#. Translators: Volume level in range ]20,40]%
+#: xmodule/assets/video/public/js/00_i18n.js:24
+msgid "Low"
+msgstr "Baixo"
+
+#. Translators: Volume level in range ]40,60]%
+#: xmodule/assets/video/public/js/00_i18n.js:26
+msgid "Average"
+msgstr "Médio"
+
+#. Translators: Volume level in range ]60,80]%
+#: xmodule/assets/video/public/js/00_i18n.js:28
+msgid "Loud"
+msgstr "Alto"
+
+#. Translators: Volume level in range ]80,99]%
+#: xmodule/assets/video/public/js/00_i18n.js:30
+msgid "Very loud"
+msgstr "Muito alto"
+
+#. Translators: Volume level equals 100%.
+#: xmodule/assets/video/public/js/00_i18n.js:32
+msgid "Maximum"
+msgstr "Máximo"
+
+#: xmodule/assets/video/public/js/02_html5_video.js:82
+msgid "This browser cannot play .mp4, .ogg, or .webm files."
+msgstr "Este navegador não pode reproduzir ficheiros .mp4, .ogg ou .webm."
+
+#: xmodule/assets/video/public/js/02_html5_video.js:83
+msgid "Try using a different browser, such as Google Chrome."
+msgstr "Experimente utilizar um navegador diferente, como o Google Chrome."
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:22
+msgid "High Definition"
+msgstr "Alta definição"
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:23
+#: xmodule/assets/video/public/js/05_video_quality_control.js:156
+msgid "off"
+msgstr "desligado"
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:150
+msgid "on"
+msgstr "ligado"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:11
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:102
+msgid "Video position. Press space to toggle playback"
+msgstr ""
+"Posição do vídeo. Pressione a barra de espaço para alternar a reprodução"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:299
+msgid "Video ended"
+msgstr "Vídeo terminado"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:303
+msgid "Video position"
+msgstr "Posição do vídeo"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:319
+msgid "%(value)s hour"
+msgid_plural "%(value)s hours"
+msgstr[0] "%(value)s hora"
+msgstr[1] "%(value)s horas"
+msgstr[2] "%(value)s horas"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:322
+msgid "%(value)s minute"
+msgid_plural "%(value)s minutes"
+msgstr[0] "%(value)s minuto"
+msgstr[1] "%(value)s minutos"
+msgstr[2] "%(value)s minutos"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:325
+msgid "%(value)s second"
+msgid_plural "%(value)s seconds"
+msgstr[0] "%(value)s segundo"
+msgstr[1] "%(value)s segundos"
+msgstr[2] "%(value)s segundos"
+
+#: xmodule/assets/video/public/js/07_video_volume_control.js:68
+msgid ""
+"Click on this button to mute or unmute this video or press UP or DOWN "
+"buttons to increase or decrease volume level."
+msgstr ""
+"Clique neste botão para silenciar ou ativar o som deste vídeo, ou pressione "
+"as setas para cima ou para baixo para aumentar ou diminuir o volume."
+
+#: xmodule/assets/video/public/js/07_video_volume_control.js:69
+msgid "Adjust video volume"
+msgstr "Ajustar o volume do vídeo"
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:33
+msgid ""
+"Press UP to enter the speed menu then use the UP and DOWN arrow keys to "
+"navigate the different speeds, then press ENTER to change to the selected "
+"speed."
+msgstr ""
+"Pressione a seta para cima para aceder ao menu de velocidade, depois utilize"
+" as setas para cima e para baixo para navegar entre as diferentes "
+"velocidades e, por fim, pressione ENTER para escolher a velocidade "
+"selecionada."
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:37
+msgid "Adjust video speed"
+msgstr "Ajustar a velocidade do vídeo"
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:268
+msgid "Video speed: "
+msgstr "Velocidade do vídeo: "
+
+#: xmodule/assets/video/public/js/09_play_skip_control.js:77
+msgid "Skip"
+msgstr "Pular"
+
+#: xmodule/assets/video/public/js/09_poster.js:25
+msgid "Play video"
+msgstr "Reproduzir vídeo"
+
+#: xmodule/assets/video/public/js/09_skip_control.js:31
+msgid "Do not show again"
+msgstr "Não mostrar novamente"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:105
+#: xmodule/assets/video/public/js/09_video_audio_description.js:107
+msgid "Toggle audio description"
+msgstr "Alternar descrição de áudio"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:106
+msgid "Audio Description"
+msgstr "Descrição de áudio"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:108
+#: xmodule/assets/video/public/js/09_video_audio_description.js:109
+msgid "Audio description not available"
+msgstr "Descrição de áudio não disponível"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:105
+msgid "Open language menu"
+msgstr "Abrir menu de idiomas"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:628
+msgid "Transcript will be displayed when you start playing the video."
+msgstr "A transcrição será exibida quando iniciar a reprodução do vídeo."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:879
+msgid ""
+"Activating a link in this group will skip to the corresponding point in the "
+"video."
+msgstr ""
+"Ativar uma ligação neste grupo fará saltar para o ponto correspondente no "
+"vídeo."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:882
+msgid "Video transcript"
+msgstr "Transcrição do vídeo"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:885
+msgid "Start of transcript. Skip to the end."
+msgstr "Início da transcrição. Saltar para o fim."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:889
+msgid "End of transcript. Skip to the start."
+msgstr "Fim da transcrição. Saltar para o início."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:893
+msgid ""
+"Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
+" keys to navigate language options. Press ENTER to change to the selected "
+"language."
+msgstr ""
+"Pressione a seta para cima para aceder ao menu de idiomas, depois use as "
+"setas para cima e para baixo para navegar entre as opções e, por fim, "
+"pressione ENTER para escolher o idioma selecionado."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1249
+msgid "Hide closed captions"
+msgstr "Ocultar legendas"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1267
+msgid "(Caption will be displayed when you start playing the video.)"
+msgstr "(A legenda será exibida quando iniciar a reprodução do vídeo.)"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1274
+msgid "Turn on closed captioning"
+msgstr "Ativar legendas"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1382
+msgid "Turn on transcripts"
+msgstr "Ativar transcrições"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1397
+msgid "Turn off transcripts"
+msgstr "Desativar transcrições"
 
 #: xmodule/assets/word_cloud/src/js/word_cloud_main.js:258
 msgid "{start_strong}{total}{end_strong} words submitted in total."
@@ -6772,259 +7092,6 @@ msgid ""
 msgstr ""
 "Erro de sequência! Não é possível navegar para %(tab_name)s no "
 "SequenceModule atual. Por favor, contacte a equipa do curso."
-
-#: xmodule/js/src/video/00_i18n.js:15
-#: xmodule/js/src/video/09_play_pause_control.js:30
-#: xmodule/js/src/video/09_play_pause_control.js:88
-#: xmodule/js/src/video/09_play_skip_control.js:30
-msgid "Play"
-msgstr "Reproduzir"
-
-#: xmodule/js/src/video/00_i18n.js:16
-#: xmodule/js/src/video/09_play_pause_control.js:78
-msgid "Pause"
-msgstr "Pausar"
-
-#: xmodule/js/src/video/00_i18n.js:17
-msgid "Mute"
-msgstr "Silenciar"
-
-#: xmodule/js/src/video/00_i18n.js:18
-msgid "Unmute"
-msgstr "Ativar som"
-
-#: xmodule/js/src/video/00_i18n.js:19
-#: xmodule/js/src/video/04_video_full_screen.js:229
-msgid "Exit full browser"
-msgstr "Sair do navegador em ecrã inteiro"
-
-#: xmodule/js/src/video/00_i18n.js:20
-#: xmodule/js/src/video/04_video_full_screen.js:7
-#: xmodule/js/src/video/04_video_full_screen.js:9
-#: xmodule/js/src/video/04_video_full_screen.js:201
-msgid "Fill browser"
-msgstr "Preencher navegador"
-
-#: xmodule/js/src/video/00_i18n.js:21
-#: xmodule/js/src/video/08_video_speed_control.js:46
-msgid "Speed"
-msgstr "Velocidade"
-
-#: xmodule/js/src/video/00_i18n.js:22
-#: xmodule/js/src/video/08_video_auto_advance_control.js:40
-msgid "Auto-advance"
-msgstr "Avanço automático"
-
-#: xmodule/js/src/video/00_i18n.js:23
-#: xmodule/js/src/video/07_video_volume_control.js:72
-msgid "Volume"
-msgstr "Volume"
-
-#. Translators: Volume level equals 0%.
-#: xmodule/js/src/video/00_i18n.js:25
-msgid "Muted"
-msgstr "Silenciado"
-
-#. Translators: Volume level in range ]0,20]%
-#: xmodule/js/src/video/00_i18n.js:27
-msgid "Very low"
-msgstr "Muito baixo"
-
-#. Translators: Volume level in range ]20,40]%
-#: xmodule/js/src/video/00_i18n.js:29
-msgid "Low"
-msgstr "Baixo"
-
-#. Translators: Volume level in range ]40,60]%
-#: xmodule/js/src/video/00_i18n.js:31
-msgid "Average"
-msgstr "Médio"
-
-#. Translators: Volume level in range ]60,80]%
-#: xmodule/js/src/video/00_i18n.js:33
-msgid "Loud"
-msgstr "Alto"
-
-#. Translators: Volume level in range ]80,99]%
-#: xmodule/js/src/video/00_i18n.js:35
-msgid "Very loud"
-msgstr "Muito alto"
-
-#. Translators: Volume level equals 100%.
-#: xmodule/js/src/video/00_i18n.js:37
-msgid "Maximum"
-msgstr "Máximo"
-
-#: xmodule/js/src/video/02_html5_video.js:87
-msgid "This browser cannot play .mp4, .ogg, or .webm files."
-msgstr "Este navegador não pode reproduzir ficheiros .mp4, .ogg ou .webm."
-
-#: xmodule/js/src/video/02_html5_video.js:88
-msgid "Try using a different browser, such as Google Chrome."
-msgstr "Experimente utilizar um navegador diferente, como o Google Chrome."
-
-#: xmodule/js/src/video/05_video_quality_control.js:25
-msgid "High Definition"
-msgstr "Alta definição"
-
-#: xmodule/js/src/video/05_video_quality_control.js:26
-#: xmodule/js/src/video/05_video_quality_control.js:159
-msgid "off"
-msgstr "desligado"
-
-#: xmodule/js/src/video/05_video_quality_control.js:153
-msgid "on"
-msgstr "ligado"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:16
-#: xmodule/js/src/video/06_video_progress_slider.js:107
-msgid "Video position. Press space to toggle playback"
-msgstr ""
-"Posição do vídeo. Pressione a barra de espaço para alternar a reprodução"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:304
-msgid "Video ended"
-msgstr "Vídeo terminado"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:308
-msgid "Video position"
-msgstr "Posição do vídeo"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:324
-msgid "%(value)s hour"
-msgid_plural "%(value)s hours"
-msgstr[0] "%(value)s hora"
-msgstr[1] "%(value)s horas"
-msgstr[2] "%(value)s horas"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:327
-msgid "%(value)s minute"
-msgid_plural "%(value)s minutes"
-msgstr[0] "%(value)s minuto"
-msgstr[1] "%(value)s minutos"
-msgstr[2] "%(value)s minutos"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:330
-msgid "%(value)s second"
-msgid_plural "%(value)s seconds"
-msgstr[0] "%(value)s segundo"
-msgstr[1] "%(value)s segundos"
-msgstr[2] "%(value)s segundos"
-
-#: xmodule/js/src/video/07_video_volume_control.js:70
-msgid ""
-"Click on this button to mute or unmute this video or press UP or DOWN "
-"buttons to increase or decrease volume level."
-msgstr ""
-"Clique neste botão para silenciar ou ativar o som deste vídeo, ou pressione "
-"as setas para cima ou para baixo para aumentar ou diminuir o volume."
-
-#: xmodule/js/src/video/07_video_volume_control.js:71
-msgid "Adjust video volume"
-msgstr "Ajustar o volume do vídeo"
-
-#: xmodule/js/src/video/08_video_speed_control.js:36
-msgid ""
-"Press UP to enter the speed menu then use the UP and DOWN arrow keys to "
-"navigate the different speeds, then press ENTER to change to the selected "
-"speed."
-msgstr ""
-"Pressione a seta para cima para aceder ao menu de velocidade, depois utilize"
-" as setas para cima e para baixo para navegar entre as diferentes "
-"velocidades e, por fim, pressione ENTER para escolher a velocidade "
-"selecionada."
-
-#: xmodule/js/src/video/08_video_speed_control.js:40
-msgid "Adjust video speed"
-msgstr "Ajustar a velocidade do vídeo"
-
-#: xmodule/js/src/video/08_video_speed_control.js:271
-msgid "Video speed: "
-msgstr "Velocidade do vídeo: "
-
-#: xmodule/js/src/video/09_play_skip_control.js:79
-msgid "Skip"
-msgstr "Pular"
-
-#: xmodule/js/src/video/09_poster.js:31
-msgid "Play video"
-msgstr "Reproduzir vídeo"
-
-#: xmodule/js/src/video/09_skip_control.js:33
-msgid "Do not show again"
-msgstr "Não mostrar novamente"
-
-#: xmodule/js/src/video/09_video_audio_description.js:111
-#: xmodule/js/src/video/09_video_audio_description.js:113
-msgid "Toggle audio description"
-msgstr "Alternar descrição de áudio"
-
-#: xmodule/js/src/video/09_video_audio_description.js:112
-msgid "Audio Description"
-msgstr "Descrição de áudio"
-
-#: xmodule/js/src/video/09_video_audio_description.js:114
-#: xmodule/js/src/video/09_video_audio_description.js:115
-msgid "Audio description not available"
-msgstr "Descrição de áudio não disponível"
-
-#: xmodule/js/src/video/09_video_caption.js:107
-msgid "Open language menu"
-msgstr "Abrir menu de idiomas"
-
-#: xmodule/js/src/video/09_video_caption.js:630
-msgid "Transcript will be displayed when you start playing the video."
-msgstr "A transcrição será exibida quando iniciar a reprodução do vídeo."
-
-#: xmodule/js/src/video/09_video_caption.js:881
-msgid ""
-"Activating a link in this group will skip to the corresponding point in the "
-"video."
-msgstr ""
-"Ativar uma ligação neste grupo fará saltar para o ponto correspondente no "
-"vídeo."
-
-#: xmodule/js/src/video/09_video_caption.js:884
-msgid "Video transcript"
-msgstr "Transcrição do vídeo"
-
-#: xmodule/js/src/video/09_video_caption.js:887
-msgid "Start of transcript. Skip to the end."
-msgstr "Início da transcrição. Saltar para o fim."
-
-#: xmodule/js/src/video/09_video_caption.js:891
-msgid "End of transcript. Skip to the start."
-msgstr "Fim da transcrição. Saltar para o início."
-
-#: xmodule/js/src/video/09_video_caption.js:895
-msgid ""
-"Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
-" keys to navigate language options. Press ENTER to change to the selected "
-"language."
-msgstr ""
-"Pressione a seta para cima para aceder ao menu de idiomas, depois use as "
-"setas para cima e para baixo para navegar entre as opções e, por fim, "
-"pressione ENTER para escolher o idioma selecionado."
-
-#: xmodule/js/src/video/09_video_caption.js:1251
-msgid "Hide closed captions"
-msgstr "Ocultar legendas"
-
-#: xmodule/js/src/video/09_video_caption.js:1269
-msgid "(Caption will be displayed when you start playing the video.)"
-msgstr "(A legenda será exibida quando iniciar a reprodução do vídeo.)"
-
-#: xmodule/js/src/video/09_video_caption.js:1276
-msgid "Turn on closed captioning"
-msgstr "Ativar legendas"
-
-#: xmodule/js/src/video/09_video_caption.js:1384
-msgid "Turn on transcripts"
-msgstr "Ativar transcrições"
-
-#: xmodule/js/src/video/09_video_caption.js:1399
-msgid "Turn off transcripts"
-msgstr "Desativar transcrições"
 
 #: cms/templates/js/access-editor.underscore:3
 msgid "Limit Access"
@@ -8531,10 +8598,6 @@ msgstr ""
 #: cms/templates/js/show-textbook.underscore:12
 msgid "PDF Chapters"
 msgstr "Capítulos em PDF"
-
-#: cms/templates/js/show-textbook.underscore:37
-msgid "View Live"
-msgstr "Ver em direto"
 
 #: cms/templates/js/signatory-details.underscore:9
 #: cms/templates/js/signatory-editor.underscore:8
@@ -10802,11 +10865,6 @@ msgstr "Precisa de outra ajuda para iniciar sessão?"
 msgid "Create an account"
 msgstr "Criar uma conta"
 
-#: lms/templates/student_account/hinted_login.underscore:4
-#: lms/templates/student_account/login.underscore:56
-msgid "Sign in"
-msgstr "Iniciar sessão"
-
 #: lms/templates/student_account/hinted_login.underscore:8
 #, python-format
 msgid "Would you like to sign in using your %(providerName)s credentials?"
@@ -10838,11 +10896,6 @@ msgstr "Voltar para iniciar sessão"
 #: lms/templates/student_account/institution_register.underscore:5
 msgid "Register with Institution/Campus Credentials"
 msgstr "Registe-se com credenciais da Instituição/Campus"
-
-#: lms/templates/student_account/institution_register.underscore:28
-#: lms/templates/student_account/register.underscore:50
-msgid "Create an Account"
-msgstr "Criar uma conta"
 
 #: lms/templates/student_account/login.underscore:6
 msgid "First time here?"

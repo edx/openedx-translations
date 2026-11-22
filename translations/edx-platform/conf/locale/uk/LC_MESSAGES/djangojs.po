@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-08-19 00:23+0000\n"
-"PO-Revision-Date: 2026-09-14 04:43+0000\n"
+"POT-Creation-Date: 2026-11-22 00:26+0000\n"
+"PO-Revision-Date: 2026-11-22 18:43+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: uk\n"
@@ -317,6 +317,31 @@ msgstr "Помилка імпорту курсу"
 #: cms/static/js/features/import/views/import.js:298
 msgid "There was an error with the upload"
 msgstr "Під час завантаження сталася помилка"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:23
+msgid "Organization:"
+msgstr "Організація:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:27
+msgid "Course Number:"
+msgstr "Номер курсу:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:33
+msgid "Course Run:"
+msgstr "Запуск курсу:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:38
+msgid "(Read-only)"
+msgstr "(Лише для читання)"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:66
+msgid "Re-run Course"
+msgstr "Повторно запустити курс"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:77
+#: cms/templates/js/show-textbook.underscore:37
+msgid "View Live"
+msgstr "Переглянути вживу"
 
 #. Translators: This is the status of a video upload that is queued
 #. waiting for other uploads to complete
@@ -664,7 +689,7 @@ msgstr "Додати контент бібліотеки"
 
 #: cms/static/js/views/components/add_xblock.js:120
 #: cms/static/js/views/components/add_xblock.js:131
-#: cms/static/js/views/pages/container.js:656
+#: cms/static/js/views/pages/container.js:657
 #: cms/static/js/views/utils/xblock_utils.js:55
 msgid "Adding"
 msgstr "Додається"
@@ -683,8 +708,8 @@ msgstr "Ви впевнені, що хочете видалити це онов�
 #: cms/static/js/views/course_info_update.js:241
 #: cms/static/js/views/course_outline.js:390
 #: cms/static/js/views/course_outline.js:402
-#: cms/static/js/views/pages/container.js:424
-#: cms/static/js/views/pages/container.js:436 cms/static/js/views/tabs.js:164
+#: cms/static/js/views/pages/container.js:426
+#: cms/static/js/views/pages/container.js:438 cms/static/js/views/tabs.js:164
 #: cms/static/js/views/utils/xblock_utils.js:101
 #: cms/static/js/views/utils/xblock_utils.js:113
 #: lms/static/js/Markdown.Editor.js:1091 xmodule/js/src/html/edit.js:885
@@ -694,7 +719,7 @@ msgid "OK"
 msgstr "Добре"
 
 #: cms/static/js/views/course_outline.js:242
-#: cms/static/js/views/pages/container.js:783
+#: cms/static/js/views/pages/container.js:784
 #: cms/static/js/views/pages/container_subviews.js:187
 msgid "Copying"
 msgstr "Копіювання"
@@ -704,31 +729,31 @@ msgid "Copy of \"{componentDisplayName}\""
 msgstr "Копія \"{componentDisplayName}\""
 
 #: cms/static/js/views/course_outline.js:367
-#: cms/static/js/views/pages/container.js:395
+#: cms/static/js/views/pages/container.js:397
 #: cms/static/js/views/utils/xblock_utils.js:79
 msgid "Pasting"
 msgstr "Вставка"
 
 #: cms/static/js/views/course_outline.js:385
-#: cms/static/js/views/pages/container.js:419
+#: cms/static/js/views/pages/container.js:421
 #: cms/static/js/views/utils/xblock_utils.js:96
 msgid "Some errors occurred"
 msgstr "Сталася помилка"
 
 #: cms/static/js/views/course_outline.js:387
-#: cms/static/js/views/pages/container.js:421
+#: cms/static/js/views/pages/container.js:423
 #: cms/static/js/views/utils/xblock_utils.js:98
 msgid "The following required files could not be added to the course:"
 msgstr "Наступні обов’язкові файли не вдалося додати до курсу:"
 
 #: cms/static/js/views/course_outline.js:395
-#: cms/static/js/views/pages/container.js:429
+#: cms/static/js/views/pages/container.js:431
 #: cms/static/js/views/utils/xblock_utils.js:106
 msgid "You may need to update a file(s) manually"
 msgstr "Вам можливо доведеться оновити файл(и) вручну"
 
 #: cms/static/js/views/course_outline.js:398
-#: cms/static/js/views/pages/container.js:432
+#: cms/static/js/views/pages/container.js:434
 #: cms/static/js/views/utils/xblock_utils.js:109
 msgid ""
 "The following files already exist in this course but don't match the version"
@@ -738,25 +763,25 @@ msgstr ""
 "використовується у вставленому компоненті:"
 
 #: cms/static/js/views/course_outline.js:407
-#: cms/static/js/views/pages/container.js:441
+#: cms/static/js/views/pages/container.js:443
 #: cms/static/js/views/utils/xblock_utils.js:118
 msgid "New file(s) added to Files & Uploads."
 msgstr "Нові файли додано до «Файли та завантаження»."
 
 #: cms/static/js/views/course_outline.js:409
-#: cms/static/js/views/pages/container.js:443
+#: cms/static/js/views/pages/container.js:445
 #: cms/static/js/views/utils/xblock_utils.js:120
 msgid "The following required files were imported to this course:"
 msgstr "Наступні обов’язкові файли були імпортовані до цього курсу:"
 
 #: cms/static/js/views/course_outline.js:414
-#: cms/static/js/views/pages/container.js:448
+#: cms/static/js/views/pages/container.js:450
 #: cms/static/js/views/utils/xblock_utils.js:125
 msgid "View files"
 msgstr "Переглянути файли"
 
 #: cms/static/js/views/course_outline.js:422
-#: cms/static/js/views/pages/container.js:457
+#: cms/static/js/views/pages/container.js:459
 #: cms/static/js/views/utils/xblock_utils.js:134
 msgid "Dismiss"
 msgstr "Приховати"
@@ -1316,7 +1341,7 @@ msgstr "Дата додавання"
 
 #. Translators: "title" is the name of the current component or unit being
 #. edited.
-#: cms/static/js/views/pages/container.js:735
+#: cms/static/js/views/pages/container.js:736
 msgid "Editing access for: {title}"
 msgstr "Надання доступу для редагування для: {title}"
 
@@ -1948,6 +1973,10 @@ msgstr "Переглянути дочірні елементи"
 msgid "Navigate up"
 msgstr "Перейти вгору"
 
+#: common/static/common/js/components/BlockBrowser/components/BlockBrowser/BlockBrowser.jsx:89
+msgid "Browsing"
+msgstr "Перегляд"
+
 #: common/static/common/js/components/BlockBrowser/components/BlockBrowser/BlockBrowser.jsx:96
 msgid "Select"
 msgstr "Вибрати"
@@ -2197,10 +2226,10 @@ msgstr "Показати всі відповіді"
 #: common/static/common/js/discussion/views/discussion_thread_view.js:274
 msgid "Showing first response"
 msgid_plural "Showing first {numResponses} responses"
-msgstr[0] "Showing first {numResponses} responses"
+msgstr[0] "Показано відповідей з початку списку: {numResponses}"
 msgstr[1] "Показано перші {numResponses} відповіді"
-msgstr[2] "Показано перших {numResponses} відповідей"
-msgstr[3] "Показано першої {numResponses} відповіді"
+msgstr[2] "Показано перші {numResponses} відповідей"
+msgstr[3] "Показано перші {numResponses} відповіді"
 
 #: common/static/common/js/discussion/views/discussion_thread_view.js:287
 msgid "Load all responses"
@@ -2531,9 +2560,41 @@ msgstr ""
 "курсу. Будь ласка, розміщуйте всі питання, пов’язані з курсом, у "
 "дискусійному форумі, де співробітники курсу можуть безпосередньо відповісти."
 
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:106
+msgid "Details"
+msgstr "Деталі"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:107
+msgid "the more quickly and helpfully we can respond!"
+msgstr "тим швидше й ефективніше ми зможемо відповісти!"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:118
+msgid "Create Support Ticket"
+msgstr "Створити запит до служби підтримки"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:140
+msgid "What can we help you with, {fullName}?"
+msgstr "Чим ми можемо вам допомогти, {fullName}?"
+
 #: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:15
 msgid "Sign in to {platform} so we can help you better."
 msgstr "Увійдіть до {platform}, щоб ми могли краще вам допомогти."
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:24
+#: lms/templates/student_account/hinted_login.underscore:4
+#: lms/templates/student_account/login.underscore:56
+msgid "Sign in"
+msgstr "Увійти"
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:28
+#: lms/templates/student_account/institution_register.underscore:28
+#: lms/templates/student_account/register.underscore:50
+msgid "Create an Account"
+msgstr "Створити обліковий запис"
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:35
+msgid "Need help logging in?"
+msgstr "Потрібна допомога з входом?"
 
 #: lms/djangoapps/support/static/support/jsx/single_support_form.jsx:47
 msgid ""
@@ -3706,10 +3767,10 @@ msgstr "Призначення до когорти не дозволено: {ema
 #: lms/static/js/groups/views/cohort_editor.js:291
 msgid "There was an error when trying to add learners:"
 msgid_plural "{numErrors} learners could not be added to this cohort:"
-msgstr[0] "{numErrors} learners could not be added to this cohort:"
-msgstr[1] "{numErrors} учні не вдалося додати до цього когорту:"
-msgstr[2] "{numErrors} учнів не вдалося додати до цього когорту:"
-msgstr[3] "{numErrors} учнів не вдалося додати до цього когорту:"
+msgstr[0] "Не вдалося додати {numErrors} слухача до цієї когорти:"
+msgstr[1] "Не вдалося додати {numErrors} слухачів до цієї когорти:"
+msgstr[2] "Не вдалося додати {numErrors} слухачів до цієї когорти:"
+msgstr[3] "Не вдалося додати {numErrors} слухача до цієї когорти:"
 
 #: lms/static/js/groups/views/cohort_editor.js:306
 msgid "View all errors"
@@ -5283,15 +5344,275 @@ msgstr[1] "{total_results} результати знайдено для \"{searc
 msgstr[2] "{total_results} результатів знайдено для \"{search_term}\""
 msgstr[3] "{total_results} результату знайдено для \"{search_term}\""
 
-#: xmodule/assets/library_content/public/js/library_content_edit.js:16
-#: xmodule/js/public/js/library_content_edit.js:16
+#: xmodule/assets/library_content/public/js/library_content_edit.js:44
+#: xmodule/js/public/js/library_content_edit.js:44
 msgid "Updating with latest library content"
 msgstr "Оновлення з останнім вмістом бібліотеки"
+
+#: xmodule/assets/library_content/public/js/library_content_edit.js:64
+#: xmodule/js/public/js/library_content_edit.js:64
+msgid "Migrating to Problem Bank"
+msgstr "Перехід до банку завдань"
 
 #: xmodule/assets/split_test/public/js/split_test_author_view.js:12
 #: xmodule/js/public/js/split_test_author_view.js:12
 msgid "Creating missing groups"
 msgstr "Створення відсутніх груп"
+
+#: xmodule/assets/video/public/js/00_i18n.js:10
+#: xmodule/assets/video/public/js/09_play_pause_control.js:31
+#: xmodule/assets/video/public/js/09_play_pause_control.js:89
+#: xmodule/assets/video/public/js/09_play_skip_control.js:28
+msgid "Play"
+msgstr "Відтворити"
+
+#: xmodule/assets/video/public/js/00_i18n.js:11
+#: xmodule/assets/video/public/js/09_play_pause_control.js:79
+msgid "Pause"
+msgstr "Пауза"
+
+#: xmodule/assets/video/public/js/00_i18n.js:12
+msgid "Mute"
+msgstr "Вимкнути звук"
+
+#: xmodule/assets/video/public/js/00_i18n.js:13
+msgid "Unmute"
+msgstr "Увімкнути звук"
+
+#: xmodule/assets/video/public/js/00_i18n.js:14
+#: xmodule/assets/video/public/js/04_video_full_screen.js:227
+msgid "Exit full browser"
+msgstr "Вийти з повноекранного режиму"
+
+#: xmodule/assets/video/public/js/00_i18n.js:15
+#: xmodule/assets/video/public/js/04_video_full_screen.js:5
+#: xmodule/assets/video/public/js/04_video_full_screen.js:7
+#: xmodule/assets/video/public/js/04_video_full_screen.js:199
+msgid "Fill browser"
+msgstr "Розтягнути на весь екран"
+
+#: xmodule/assets/video/public/js/00_i18n.js:16
+#: xmodule/assets/video/public/js/08_video_speed_control.js:43
+msgid "Speed"
+msgstr "Швидкість"
+
+#: xmodule/assets/video/public/js/00_i18n.js:17
+#: xmodule/assets/video/public/js/08_video_auto_advance_control.js:38
+#: xmodule/js/src/video/08_video_auto_advance_control.js:40
+msgid "Auto-advance"
+msgstr "Автоматичний перехід"
+
+#: xmodule/assets/video/public/js/00_i18n.js:18
+#: xmodule/assets/video/public/js/07_video_volume_control.js:70
+msgid "Volume"
+msgstr "Гучність"
+
+#. Translators: Volume level equals 0%.
+#: xmodule/assets/video/public/js/00_i18n.js:20
+msgid "Muted"
+msgstr "Заглушено"
+
+#. Translators: Volume level in range ]0,20]%
+#: xmodule/assets/video/public/js/00_i18n.js:22
+msgid "Very low"
+msgstr "Дуже низько"
+
+#. Translators: Volume level in range ]20,40]%
+#: xmodule/assets/video/public/js/00_i18n.js:24
+msgid "Low"
+msgstr "Низько"
+
+#. Translators: Volume level in range ]40,60]%
+#: xmodule/assets/video/public/js/00_i18n.js:26
+msgid "Average"
+msgstr "Середньо"
+
+#. Translators: Volume level in range ]60,80]%
+#: xmodule/assets/video/public/js/00_i18n.js:28
+msgid "Loud"
+msgstr "Гучно"
+
+#. Translators: Volume level in range ]80,99]%
+#: xmodule/assets/video/public/js/00_i18n.js:30
+msgid "Very loud"
+msgstr "Дуже гучно"
+
+#. Translators: Volume level equals 100%.
+#: xmodule/assets/video/public/js/00_i18n.js:32
+msgid "Maximum"
+msgstr "Максимум"
+
+#: xmodule/assets/video/public/js/02_html5_video.js:82
+msgid "This browser cannot play .mp4, .ogg, or .webm files."
+msgstr "Цей браузер не може відтворювати файли .mp4, .ogg або .webm."
+
+#: xmodule/assets/video/public/js/02_html5_video.js:83
+msgid "Try using a different browser, such as Google Chrome."
+msgstr "Спробуйте використати інший браузер, наприклад Google Chrome."
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:22
+msgid "High Definition"
+msgstr "Висока чіткість"
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:23
+#: xmodule/assets/video/public/js/05_video_quality_control.js:156
+msgid "off"
+msgstr "вимкнено"
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:150
+msgid "on"
+msgstr "увімкнено"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:11
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:102
+msgid "Video position. Press space to toggle playback"
+msgstr "Положення відео. Натисніть пробіл для перемикання відтворення"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:299
+msgid "Video ended"
+msgstr "Відео завершено"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:303
+msgid "Video position"
+msgstr "Положення відео"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:319
+msgid "%(value)s hour"
+msgid_plural "%(value)s hours"
+msgstr[0] "%(value)s година"
+msgstr[1] "%(value)s години"
+msgstr[2] "%(value)s годин"
+msgstr[3] "%(value)s години"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:322
+msgid "%(value)s minute"
+msgid_plural "%(value)s minutes"
+msgstr[0] "%(value)s хвилина"
+msgstr[1] "%(value)s хвилини"
+msgstr[2] "%(value)s хвилин"
+msgstr[3] "%(value)s хвилини"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:325
+msgid "%(value)s second"
+msgid_plural "%(value)s seconds"
+msgstr[0] "%(value)s секунда"
+msgstr[1] "%(value)s секунди"
+msgstr[2] "%(value)s секунд"
+msgstr[3] "%(value)s секунди"
+
+#: xmodule/assets/video/public/js/07_video_volume_control.js:68
+msgid ""
+"Click on this button to mute or unmute this video or press UP or DOWN "
+"buttons to increase or decrease volume level."
+msgstr ""
+"Натисніть цю кнопку, щоб вимкнути або увімкнути звук відео, або "
+"використовуйте кнопки ВГОРУ/ВНИЗ для збільшення або зменшення гучності."
+
+#: xmodule/assets/video/public/js/07_video_volume_control.js:69
+msgid "Adjust video volume"
+msgstr "Налаштувати гучність відео"
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:33
+msgid ""
+"Press UP to enter the speed menu then use the UP and DOWN arrow keys to "
+"navigate the different speeds, then press ENTER to change to the selected "
+"speed."
+msgstr ""
+"Натисніть ВГОРУ, щоб увійти в меню швидкості, потім використовуйте стрілки "
+"ВГОРУ та ВНИЗ для переміщення між різними швидкостями, і натисніть ENTER для"
+" вибору обраної швидкості."
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:37
+msgid "Adjust video speed"
+msgstr "Налаштувати швидкість відео"
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:268
+msgid "Video speed: "
+msgstr "Швидкість відео: "
+
+#: xmodule/assets/video/public/js/09_play_skip_control.js:77
+msgid "Skip"
+msgstr "Пропустити"
+
+#: xmodule/assets/video/public/js/09_poster.js:25
+msgid "Play video"
+msgstr "Відтворити відео"
+
+#: xmodule/assets/video/public/js/09_skip_control.js:31
+msgid "Do not show again"
+msgstr "Більше не показувати"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:105
+#: xmodule/assets/video/public/js/09_video_audio_description.js:107
+msgid "Toggle audio description"
+msgstr "Перемкнути аудіо опис"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:106
+msgid "Audio Description"
+msgstr "Аудіо опис"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:108
+#: xmodule/assets/video/public/js/09_video_audio_description.js:109
+msgid "Audio description not available"
+msgstr "Аудіо опис недоступний"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:105
+msgid "Open language menu"
+msgstr "Відкрити меню мов"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:628
+msgid "Transcript will be displayed when you start playing the video."
+msgstr "Субтитри будуть показані, коли почнеться відтворення відео."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:879
+msgid ""
+"Activating a link in this group will skip to the corresponding point in the "
+"video."
+msgstr ""
+"Активування посилання в цій групі пропустить до відповідного моменту у "
+"відео."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:882
+msgid "Video transcript"
+msgstr "Субтитри відео"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:885
+msgid "Start of transcript. Skip to the end."
+msgstr "Початок субтитрів. Перейти до кінця."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:889
+msgid "End of transcript. Skip to the start."
+msgstr "Кінець субтитрів. Перейти до початку."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:893
+msgid ""
+"Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
+" keys to navigate language options. Press ENTER to change to the selected "
+"language."
+msgstr ""
+"Натисніть стрілку ВГОРУ, щоб увійти в меню мов, потім використовуйте стрілки"
+" ВГОРУ та ВНИЗ для переміщення між мовами, і натисніть ENTER, щоб вибрати "
+"мову."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1249
+msgid "Hide closed captions"
+msgstr "Приховати закриті субтитри"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1267
+msgid "(Caption will be displayed when you start playing the video.)"
+msgstr "Субтитри з’являться, коли ви почнете відтворення відео."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1274
+msgid "Turn on closed captioning"
+msgstr "Увімкнути закриті субтитри"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1382
+msgid "Turn on transcripts"
+msgstr "Увімкнути стенограми"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1397
+msgid "Turn off transcripts"
+msgstr "Вимкнути стенограми"
 
 #: xmodule/assets/word_cloud/src/js/word_cloud_main.js:258
 msgid "{start_strong}{total}{end_strong} words submitted in total."
@@ -6739,260 +7060,6 @@ msgid ""
 msgstr ""
 "Помилка послідовності! Неможливо перейти до %(tab_name)s у поточному модулі "
 "послідовності. Будь ласка, зв'яжіться з адміністрацією курсу."
-
-#: xmodule/js/src/video/00_i18n.js:15
-#: xmodule/js/src/video/09_play_pause_control.js:30
-#: xmodule/js/src/video/09_play_pause_control.js:88
-#: xmodule/js/src/video/09_play_skip_control.js:30
-msgid "Play"
-msgstr "Відтворити"
-
-#: xmodule/js/src/video/00_i18n.js:16
-#: xmodule/js/src/video/09_play_pause_control.js:78
-msgid "Pause"
-msgstr "Пауза"
-
-#: xmodule/js/src/video/00_i18n.js:17
-msgid "Mute"
-msgstr "Вимкнути звук"
-
-#: xmodule/js/src/video/00_i18n.js:18
-msgid "Unmute"
-msgstr "Увімкнути звук"
-
-#: xmodule/js/src/video/00_i18n.js:19
-#: xmodule/js/src/video/04_video_full_screen.js:229
-msgid "Exit full browser"
-msgstr "Вийти з повноекранного режиму"
-
-#: xmodule/js/src/video/00_i18n.js:20
-#: xmodule/js/src/video/04_video_full_screen.js:7
-#: xmodule/js/src/video/04_video_full_screen.js:9
-#: xmodule/js/src/video/04_video_full_screen.js:201
-msgid "Fill browser"
-msgstr "Розтягнути на весь екран"
-
-#: xmodule/js/src/video/00_i18n.js:21
-#: xmodule/js/src/video/08_video_speed_control.js:46
-msgid "Speed"
-msgstr "Швидкість"
-
-#: xmodule/js/src/video/00_i18n.js:22
-#: xmodule/js/src/video/08_video_auto_advance_control.js:40
-msgid "Auto-advance"
-msgstr "Автоматичний перехід"
-
-#: xmodule/js/src/video/00_i18n.js:23
-#: xmodule/js/src/video/07_video_volume_control.js:72
-msgid "Volume"
-msgstr "Гучність"
-
-#. Translators: Volume level equals 0%.
-#: xmodule/js/src/video/00_i18n.js:25
-msgid "Muted"
-msgstr "Заглушено"
-
-#. Translators: Volume level in range ]0,20]%
-#: xmodule/js/src/video/00_i18n.js:27
-msgid "Very low"
-msgstr "Дуже низько"
-
-#. Translators: Volume level in range ]20,40]%
-#: xmodule/js/src/video/00_i18n.js:29
-msgid "Low"
-msgstr "Низько"
-
-#. Translators: Volume level in range ]40,60]%
-#: xmodule/js/src/video/00_i18n.js:31
-msgid "Average"
-msgstr "Середньо"
-
-#. Translators: Volume level in range ]60,80]%
-#: xmodule/js/src/video/00_i18n.js:33
-msgid "Loud"
-msgstr "Гучно"
-
-#. Translators: Volume level in range ]80,99]%
-#: xmodule/js/src/video/00_i18n.js:35
-msgid "Very loud"
-msgstr "Дуже гучно"
-
-#. Translators: Volume level equals 100%.
-#: xmodule/js/src/video/00_i18n.js:37
-msgid "Maximum"
-msgstr "Максимум"
-
-#: xmodule/js/src/video/02_html5_video.js:87
-msgid "This browser cannot play .mp4, .ogg, or .webm files."
-msgstr "Цей браузер не може відтворювати файли .mp4, .ogg або .webm."
-
-#: xmodule/js/src/video/02_html5_video.js:88
-msgid "Try using a different browser, such as Google Chrome."
-msgstr "Спробуйте використати інший браузер, наприклад Google Chrome."
-
-#: xmodule/js/src/video/05_video_quality_control.js:25
-msgid "High Definition"
-msgstr "Висока чіткість"
-
-#: xmodule/js/src/video/05_video_quality_control.js:26
-#: xmodule/js/src/video/05_video_quality_control.js:159
-msgid "off"
-msgstr "вимкнено"
-
-#: xmodule/js/src/video/05_video_quality_control.js:153
-msgid "on"
-msgstr "увімкнено"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:16
-#: xmodule/js/src/video/06_video_progress_slider.js:107
-msgid "Video position. Press space to toggle playback"
-msgstr "Положення відео. Натисніть пробіл для перемикання відтворення"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:304
-msgid "Video ended"
-msgstr "Відео завершено"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:308
-msgid "Video position"
-msgstr "Положення відео"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:324
-msgid "%(value)s hour"
-msgid_plural "%(value)s hours"
-msgstr[0] "%(value)s година"
-msgstr[1] "%(value)s години"
-msgstr[2] "%(value)s годин"
-msgstr[3] "%(value)s години"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:327
-msgid "%(value)s minute"
-msgid_plural "%(value)s minutes"
-msgstr[0] "%(value)s хвилина"
-msgstr[1] "%(value)s хвилини"
-msgstr[2] "%(value)s хвилин"
-msgstr[3] "%(value)s хвилини"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:330
-msgid "%(value)s second"
-msgid_plural "%(value)s seconds"
-msgstr[0] "%(value)s секунда"
-msgstr[1] "%(value)s секунди"
-msgstr[2] "%(value)s секунд"
-msgstr[3] "%(value)s секунди"
-
-#: xmodule/js/src/video/07_video_volume_control.js:70
-msgid ""
-"Click on this button to mute or unmute this video or press UP or DOWN "
-"buttons to increase or decrease volume level."
-msgstr ""
-"Натисніть цю кнопку, щоб вимкнути або увімкнути звук відео, або "
-"використовуйте кнопки ВГОРУ/ВНИЗ для збільшення або зменшення гучності."
-
-#: xmodule/js/src/video/07_video_volume_control.js:71
-msgid "Adjust video volume"
-msgstr "Налаштувати гучність відео"
-
-#: xmodule/js/src/video/08_video_speed_control.js:36
-msgid ""
-"Press UP to enter the speed menu then use the UP and DOWN arrow keys to "
-"navigate the different speeds, then press ENTER to change to the selected "
-"speed."
-msgstr ""
-"Натисніть ВГОРУ, щоб увійти в меню швидкості, потім використовуйте стрілки "
-"ВГОРУ та ВНИЗ для переміщення між різними швидкостями, і натисніть ENTER для"
-" вибору обраної швидкості."
-
-#: xmodule/js/src/video/08_video_speed_control.js:40
-msgid "Adjust video speed"
-msgstr "Налаштувати швидкість відео"
-
-#: xmodule/js/src/video/08_video_speed_control.js:271
-msgid "Video speed: "
-msgstr "Швидкість відео: "
-
-#: xmodule/js/src/video/09_play_skip_control.js:79
-msgid "Skip"
-msgstr "Пропустити"
-
-#: xmodule/js/src/video/09_poster.js:31
-msgid "Play video"
-msgstr "Відтворити відео"
-
-#: xmodule/js/src/video/09_skip_control.js:33
-msgid "Do not show again"
-msgstr "Більше не показувати"
-
-#: xmodule/js/src/video/09_video_audio_description.js:111
-#: xmodule/js/src/video/09_video_audio_description.js:113
-msgid "Toggle audio description"
-msgstr "Перемкнути аудіо опис"
-
-#: xmodule/js/src/video/09_video_audio_description.js:112
-msgid "Audio Description"
-msgstr "Аудіо опис"
-
-#: xmodule/js/src/video/09_video_audio_description.js:114
-#: xmodule/js/src/video/09_video_audio_description.js:115
-msgid "Audio description not available"
-msgstr "Аудіо опис недоступний"
-
-#: xmodule/js/src/video/09_video_caption.js:107
-msgid "Open language menu"
-msgstr "Відкрити меню мов"
-
-#: xmodule/js/src/video/09_video_caption.js:630
-msgid "Transcript will be displayed when you start playing the video."
-msgstr "Субтитри будуть показані, коли почнеться відтворення відео."
-
-#: xmodule/js/src/video/09_video_caption.js:881
-msgid ""
-"Activating a link in this group will skip to the corresponding point in the "
-"video."
-msgstr ""
-"Активування посилання в цій групі пропустить до відповідного моменту у "
-"відео."
-
-#: xmodule/js/src/video/09_video_caption.js:884
-msgid "Video transcript"
-msgstr "Субтитри відео"
-
-#: xmodule/js/src/video/09_video_caption.js:887
-msgid "Start of transcript. Skip to the end."
-msgstr "Початок субтитрів. Перейти до кінця."
-
-#: xmodule/js/src/video/09_video_caption.js:891
-msgid "End of transcript. Skip to the start."
-msgstr "Кінець субтитрів. Перейти до початку."
-
-#: xmodule/js/src/video/09_video_caption.js:895
-msgid ""
-"Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
-" keys to navigate language options. Press ENTER to change to the selected "
-"language."
-msgstr ""
-"Натисніть стрілку ВГОРУ, щоб увійти в меню мов, потім використовуйте стрілки"
-" ВГОРУ та ВНИЗ для переміщення між мовами, і натисніть ENTER, щоб вибрати "
-"мову."
-
-#: xmodule/js/src/video/09_video_caption.js:1251
-msgid "Hide closed captions"
-msgstr "Приховати закриті субтитри"
-
-#: xmodule/js/src/video/09_video_caption.js:1269
-msgid "(Caption will be displayed when you start playing the video.)"
-msgstr "Субтитри з’являться, коли ви почнете відтворення відео."
-
-#: xmodule/js/src/video/09_video_caption.js:1276
-msgid "Turn on closed captioning"
-msgstr "Увімкнути закриті субтитри"
-
-#: xmodule/js/src/video/09_video_caption.js:1384
-msgid "Turn on transcripts"
-msgstr "Увімкнути стенограми"
-
-#: xmodule/js/src/video/09_video_caption.js:1399
-msgid "Turn off transcripts"
-msgstr "Вимкнути стенограми"
 
 #: cms/templates/js/access-editor.underscore:3
 msgid "Limit Access"
@@ -8487,10 +8554,6 @@ msgstr ""
 #: cms/templates/js/show-textbook.underscore:12
 msgid "PDF Chapters"
 msgstr "PDF глави"
-
-#: cms/templates/js/show-textbook.underscore:37
-msgid "View Live"
-msgstr "Переглянути вживу"
 
 #: cms/templates/js/signatory-details.underscore:9
 #: cms/templates/js/signatory-editor.underscore:8
@@ -10744,11 +10807,6 @@ msgstr "Потрібна інша допомога зі входом?"
 msgid "Create an account"
 msgstr "Створити обліковий запис"
 
-#: lms/templates/student_account/hinted_login.underscore:4
-#: lms/templates/student_account/login.underscore:56
-msgid "Sign in"
-msgstr "Увійти"
-
 #: lms/templates/student_account/hinted_login.underscore:8
 #, python-format
 msgid "Would you like to sign in using your %(providerName)s credentials?"
@@ -10779,11 +10837,6 @@ msgstr "Повернутися до входу"
 #: lms/templates/student_account/institution_register.underscore:5
 msgid "Register with Institution/Campus Credentials"
 msgstr "Зареєструватися, використовуючи дані установи/кампусу"
-
-#: lms/templates/student_account/institution_register.underscore:28
-#: lms/templates/student_account/register.underscore:50
-msgid "Create an Account"
-msgstr "Створити обліковий запис"
 
 #: lms/templates/student_account/login.underscore:6
 msgid "First time here?"
