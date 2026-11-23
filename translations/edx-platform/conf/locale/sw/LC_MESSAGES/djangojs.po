@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-08-19 00:23+0000\n"
-"PO-Revision-Date: 2026-09-14 08:37+0000\n"
+"POT-Creation-Date: 2026-11-22 00:26+0000\n"
+"PO-Revision-Date: 2026-11-23 23:02+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sw\n"
@@ -317,6 +317,31 @@ msgstr "Fel vid import av kurs"
 #: cms/static/js/features/import/views/import.js:298
 msgid "There was an error with the upload"
 msgstr "Ett fel uppstod vid uppladdningen"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:23
+msgid "Organization:"
+msgstr "Shirika:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:27
+msgid "Course Number:"
+msgstr "Nambari ya Kozi:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:33
+msgid "Course Run:"
+msgstr "Toleo la Kozi:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:38
+msgid "(Read-only)"
+msgstr "(Kusoma pekee)"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:66
+msgid "Re-run Course"
+msgstr "Endesha Kozi Tena"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:77
+#: cms/templates/js/show-textbook.underscore:37
+msgid "View Live"
+msgstr "Tazama Moja kwa Moja"
 
 #. Translators: This is the status of a video upload that is queued
 #. waiting for other uploads to complete
@@ -662,7 +687,7 @@ msgstr "Lägg till bibliotekets innehåll"
 
 #: cms/static/js/views/components/add_xblock.js:120
 #: cms/static/js/views/components/add_xblock.js:131
-#: cms/static/js/views/pages/container.js:656
+#: cms/static/js/views/pages/container.js:657
 #: cms/static/js/views/utils/xblock_utils.js:55
 msgid "Adding"
 msgstr "Lägger till"
@@ -681,8 +706,8 @@ msgstr "Är du säker på att du vill ta bort denna uppdatering?"
 #: cms/static/js/views/course_info_update.js:241
 #: cms/static/js/views/course_outline.js:390
 #: cms/static/js/views/course_outline.js:402
-#: cms/static/js/views/pages/container.js:424
-#: cms/static/js/views/pages/container.js:436 cms/static/js/views/tabs.js:164
+#: cms/static/js/views/pages/container.js:426
+#: cms/static/js/views/pages/container.js:438 cms/static/js/views/tabs.js:164
 #: cms/static/js/views/utils/xblock_utils.js:101
 #: cms/static/js/views/utils/xblock_utils.js:113
 #: lms/static/js/Markdown.Editor.js:1091 xmodule/js/src/html/edit.js:885
@@ -692,7 +717,7 @@ msgid "OK"
 msgstr "OK"
 
 #: cms/static/js/views/course_outline.js:242
-#: cms/static/js/views/pages/container.js:783
+#: cms/static/js/views/pages/container.js:784
 #: cms/static/js/views/pages/container_subviews.js:187
 msgid "Copying"
 msgstr "Kopierar"
@@ -702,31 +727,31 @@ msgid "Copy of \"{componentDisplayName}\""
 msgstr "Kopia av \"{componentDisplayName}\""
 
 #: cms/static/js/views/course_outline.js:367
-#: cms/static/js/views/pages/container.js:395
+#: cms/static/js/views/pages/container.js:397
 #: cms/static/js/views/utils/xblock_utils.js:79
 msgid "Pasting"
 msgstr "Klistrar in"
 
 #: cms/static/js/views/course_outline.js:385
-#: cms/static/js/views/pages/container.js:419
+#: cms/static/js/views/pages/container.js:421
 #: cms/static/js/views/utils/xblock_utils.js:96
 msgid "Some errors occurred"
 msgstr "Några fel inträffade"
 
 #: cms/static/js/views/course_outline.js:387
-#: cms/static/js/views/pages/container.js:421
+#: cms/static/js/views/pages/container.js:423
 #: cms/static/js/views/utils/xblock_utils.js:98
 msgid "The following required files could not be added to the course:"
 msgstr "Följande obligatoriska filer kunde inte läggas till i kursen:"
 
 #: cms/static/js/views/course_outline.js:395
-#: cms/static/js/views/pages/container.js:429
+#: cms/static/js/views/pages/container.js:431
 #: cms/static/js/views/utils/xblock_utils.js:106
 msgid "You may need to update a file(s) manually"
 msgstr "Du kan behöva uppdatera en eller flera filer manuellt"
 
 #: cms/static/js/views/course_outline.js:398
-#: cms/static/js/views/pages/container.js:432
+#: cms/static/js/views/pages/container.js:434
 #: cms/static/js/views/utils/xblock_utils.js:109
 msgid ""
 "The following files already exist in this course but don't match the version"
@@ -736,25 +761,25 @@ msgstr ""
 " av den insatta komponenten:"
 
 #: cms/static/js/views/course_outline.js:407
-#: cms/static/js/views/pages/container.js:441
+#: cms/static/js/views/pages/container.js:443
 #: cms/static/js/views/utils/xblock_utils.js:118
 msgid "New file(s) added to Files & Uploads."
 msgstr "Nya filer har lagts till i Filer & Uppladdningar."
 
 #: cms/static/js/views/course_outline.js:409
-#: cms/static/js/views/pages/container.js:443
+#: cms/static/js/views/pages/container.js:445
 #: cms/static/js/views/utils/xblock_utils.js:120
 msgid "The following required files were imported to this course:"
 msgstr "Följande obligatoriska filer importerades till kursen:"
 
 #: cms/static/js/views/course_outline.js:414
-#: cms/static/js/views/pages/container.js:448
+#: cms/static/js/views/pages/container.js:450
 #: cms/static/js/views/utils/xblock_utils.js:125
 msgid "View files"
 msgstr "Visa filer"
 
 #: cms/static/js/views/course_outline.js:422
-#: cms/static/js/views/pages/container.js:457
+#: cms/static/js/views/pages/container.js:459
 #: cms/static/js/views/utils/xblock_utils.js:134
 msgid "Dismiss"
 msgstr "Avfärda"
@@ -1313,7 +1338,7 @@ msgstr "Datum tillagt"
 
 #. Translators: "title" is the name of the current component or unit being
 #. edited.
-#: cms/static/js/views/pages/container.js:735
+#: cms/static/js/views/pages/container.js:736
 msgid "Editing access for: {title}"
 msgstr "Redigeringsåtkomst för: {title}"
 
@@ -1945,6 +1970,10 @@ msgstr "Angalia vitu vidogo"
 msgid "Navigate up"
 msgstr "Ingia juu"
 
+#: common/static/common/js/components/BlockBrowser/components/BlockBrowser/BlockBrowser.jsx:89
+msgid "Browsing"
+msgstr "Kuvinjari"
+
 #: common/static/common/js/components/BlockBrowser/components/BlockBrowser/BlockBrowser.jsx:96
 msgid "Select"
 msgstr "Chagua"
@@ -2508,9 +2537,41 @@ msgstr ""
 "ndani ya Jukwaa la Mjadala ambapo wafanyakazi wa kozi wanaweza kujibu moja "
 "kwa moja."
 
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:106
+msgid "Details"
+msgstr "Maelezo"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:107
+msgid "the more quickly and helpfully we can respond!"
+msgstr "ndivyo tunavyoweza kujibu kwa haraka na kwa manufaa zaidi!"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:118
+msgid "Create Support Ticket"
+msgstr "Fungua Tiketi ya Usaidizi"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:140
+msgid "What can we help you with, {fullName}?"
+msgstr "Tunaweza kukusaidia nini, {fullName}?"
+
 #: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:15
 msgid "Sign in to {platform} so we can help you better."
 msgstr "Ingia kwenye {platform} ili tuweze kukusaidia vizuri zaidi."
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:24
+#: lms/templates/student_account/hinted_login.underscore:4
+#: lms/templates/student_account/login.underscore:56
+msgid "Sign in"
+msgstr "Ingia"
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:28
+#: lms/templates/student_account/institution_register.underscore:28
+#: lms/templates/student_account/register.underscore:50
+msgid "Create an Account"
+msgstr "Unda Akaunti"
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:35
+msgid "Need help logging in?"
+msgstr "Unahitaji usaidizi kuingia?"
 
 #: lms/djangoapps/support/static/support/jsx/single_support_form.jsx:47
 msgid ""
@@ -5249,15 +5310,269 @@ msgid_plural "{total_results} results found for \"{search_term}\""
 msgstr[0] "{total_results} tokeo imepatikana kwa \"{search_term}\""
 msgstr[1] "{total_results} matokeo yamepatikana kwa \"{search_term}\""
 
-#: xmodule/assets/library_content/public/js/library_content_edit.js:16
-#: xmodule/js/public/js/library_content_edit.js:16
+#: xmodule/assets/library_content/public/js/library_content_edit.js:44
+#: xmodule/js/public/js/library_content_edit.js:44
 msgid "Updating with latest library content"
 msgstr "Inasasisha kwa maudhui mapya ya maktaba"
+
+#: xmodule/assets/library_content/public/js/library_content_edit.js:64
+#: xmodule/js/public/js/library_content_edit.js:64
+msgid "Migrating to Problem Bank"
+msgstr "Kuhamia kwenye Benki ya Maswali"
 
 #: xmodule/assets/split_test/public/js/split_test_author_view.js:12
 #: xmodule/js/public/js/split_test_author_view.js:12
 msgid "Creating missing groups"
 msgstr "Kuunda makundi yaliyokosekana"
+
+#: xmodule/assets/video/public/js/00_i18n.js:10
+#: xmodule/assets/video/public/js/09_play_pause_control.js:31
+#: xmodule/assets/video/public/js/09_play_pause_control.js:89
+#: xmodule/assets/video/public/js/09_play_skip_control.js:28
+msgid "Play"
+msgstr "Cheza"
+
+#: xmodule/assets/video/public/js/00_i18n.js:11
+#: xmodule/assets/video/public/js/09_play_pause_control.js:79
+msgid "Pause"
+msgstr "Zingua"
+
+#: xmodule/assets/video/public/js/00_i18n.js:12
+msgid "Mute"
+msgstr "Zima sauti"
+
+#: xmodule/assets/video/public/js/00_i18n.js:13
+msgid "Unmute"
+msgstr "Washwa sauti"
+
+#: xmodule/assets/video/public/js/00_i18n.js:14
+#: xmodule/assets/video/public/js/04_video_full_screen.js:227
+msgid "Exit full browser"
+msgstr "Toka kwenye kivinjari kikamilifu"
+
+#: xmodule/assets/video/public/js/00_i18n.js:15
+#: xmodule/assets/video/public/js/04_video_full_screen.js:5
+#: xmodule/assets/video/public/js/04_video_full_screen.js:7
+#: xmodule/assets/video/public/js/04_video_full_screen.js:199
+msgid "Fill browser"
+msgstr "Jaza skrini"
+
+#: xmodule/assets/video/public/js/00_i18n.js:16
+#: xmodule/assets/video/public/js/08_video_speed_control.js:43
+msgid "Speed"
+msgstr "Mwendo"
+
+#: xmodule/assets/video/public/js/00_i18n.js:17
+#: xmodule/assets/video/public/js/08_video_auto_advance_control.js:38
+#: xmodule/js/src/video/08_video_auto_advance_control.js:40
+msgid "Auto-advance"
+msgstr "Endesha moja kwa moja"
+
+#: xmodule/assets/video/public/js/00_i18n.js:18
+#: xmodule/assets/video/public/js/07_video_volume_control.js:70
+msgid "Volume"
+msgstr "Sauti"
+
+#. Translators: Volume level equals 0%.
+#: xmodule/assets/video/public/js/00_i18n.js:20
+msgid "Muted"
+msgstr "Sauti imezimwa"
+
+#. Translators: Volume level in range ]0,20]%
+#: xmodule/assets/video/public/js/00_i18n.js:22
+msgid "Very low"
+msgstr "Chini sana"
+
+#. Translators: Volume level in range ]20,40]%
+#: xmodule/assets/video/public/js/00_i18n.js:24
+msgid "Low"
+msgstr "Chini"
+
+#. Translators: Volume level in range ]40,60]%
+#: xmodule/assets/video/public/js/00_i18n.js:26
+msgid "Average"
+msgstr "Kawaida"
+
+#. Translators: Volume level in range ]60,80]%
+#: xmodule/assets/video/public/js/00_i18n.js:28
+msgid "Loud"
+msgstr "Sauti kubwa"
+
+#. Translators: Volume level in range ]80,99]%
+#: xmodule/assets/video/public/js/00_i18n.js:30
+msgid "Very loud"
+msgstr "Sauti kubwa sana"
+
+#. Translators: Volume level equals 100%.
+#: xmodule/assets/video/public/js/00_i18n.js:32
+msgid "Maximum"
+msgstr "Maksimum"
+
+#: xmodule/assets/video/public/js/02_html5_video.js:82
+msgid "This browser cannot play .mp4, .ogg, or .webm files."
+msgstr "Kivinjari hiki hakiwezi kucheza faili za .mp4, .ogg, au .webm."
+
+#: xmodule/assets/video/public/js/02_html5_video.js:83
+msgid "Try using a different browser, such as Google Chrome."
+msgstr "Jaribu kutumia kivinjari tofauti, kama Google Chrome."
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:22
+msgid "High Definition"
+msgstr "Ufumbuzi wa juu"
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:23
+#: xmodule/assets/video/public/js/05_video_quality_control.js:156
+msgid "off"
+msgstr "zimwa"
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:150
+msgid "on"
+msgstr "washa"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:11
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:102
+msgid "Video position. Press space to toggle playback"
+msgstr "Mpangilio wa video. Bonyeza space kubadilisha utendaji"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:299
+msgid "Video ended"
+msgstr "Video imekwisha"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:303
+msgid "Video position"
+msgstr "Mpangilio wa video"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:319
+msgid "%(value)s hour"
+msgid_plural "%(value)s hours"
+msgstr[0] "%(value)s saa"
+msgstr[1] "%(value)s saa"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:322
+msgid "%(value)s minute"
+msgid_plural "%(value)s minutes"
+msgstr[0] "%(value)s dakika"
+msgstr[1] "%(value)s dakika"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:325
+msgid "%(value)s second"
+msgid_plural "%(value)s seconds"
+msgstr[0] "%(value)s sekunde"
+msgstr[1] "%(value)s sekunde"
+
+#: xmodule/assets/video/public/js/07_video_volume_control.js:68
+msgid ""
+"Click on this button to mute or unmute this video or press UP or DOWN "
+"buttons to increase or decrease volume level."
+msgstr ""
+"Bonyeza kitufe hiki kuzima au kuwasha sauti ya video hii au bonyeza vitufe "
+"vya UP au DOWN kuongeza au kupunguza kiwango cha sauti."
+
+#: xmodule/assets/video/public/js/07_video_volume_control.js:69
+msgid "Adjust video volume"
+msgstr "Badilisha kiwango cha sauti ya video"
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:33
+msgid ""
+"Press UP to enter the speed menu then use the UP and DOWN arrow keys to "
+"navigate the different speeds, then press ENTER to change to the selected "
+"speed."
+msgstr ""
+"Bonyeza UP kuingia kwenye menyu ya mwendo, kisha tumia mishale ya UP na DOWN"
+" kuvinjari miendo tofauti, kisha bonyeza ENTER kubadilisha hadi mwendo "
+"uliouchaguliwa."
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:37
+msgid "Adjust video speed"
+msgstr "Badilisha mwendo wa video"
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:268
+msgid "Video speed: "
+msgstr "Mwendo wa video: "
+
+#: xmodule/assets/video/public/js/09_play_skip_control.js:77
+msgid "Skip"
+msgstr "Ruka"
+
+#: xmodule/assets/video/public/js/09_poster.js:25
+msgid "Play video"
+msgstr "Cheza video"
+
+#: xmodule/assets/video/public/js/09_skip_control.js:31
+msgid "Do not show again"
+msgstr "Usionyeshe tena"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:105
+#: xmodule/assets/video/public/js/09_video_audio_description.js:107
+msgid "Toggle audio description"
+msgstr "Badilisha maelezo ya sauti"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:106
+msgid "Audio Description"
+msgstr "Maelezo ya sauti"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:108
+#: xmodule/assets/video/public/js/09_video_audio_description.js:109
+msgid "Audio description not available"
+msgstr "Maelezo ya sauti hayapatikani"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:105
+msgid "Open language menu"
+msgstr "Fungua menyu ya lugha"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:628
+msgid "Transcript will be displayed when you start playing the video."
+msgstr "Nakala itaonyeshwa unapochukua mchezaji wa video."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:879
+msgid ""
+"Activating a link in this group will skip to the corresponding point in the "
+"video."
+msgstr ""
+"Kuwasha kiungo katika kundi hili kutaruka hadi sehemu inayolingana katika "
+"video."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:882
+msgid "Video transcript"
+msgstr "Nakala ya video"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:885
+msgid "Start of transcript. Skip to the end."
+msgstr "Anza nakala. Ruka hadi mwisho."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:889
+msgid "End of transcript. Skip to the start."
+msgstr "Mwisho wa nakala. Ruka hadi mwanzo."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:893
+msgid ""
+"Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
+" keys to navigate language options. Press ENTER to change to the selected "
+"language."
+msgstr ""
+"Bonyeza mshale wa UP kuingia kwenye menyu ya lugha, kisha tumia mishale ya "
+"UP na DOWN kuvinjari chaguzi za lugha. Bonyeza ENTER kubadilisha hadi lugha "
+"uliyochagua."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1249
+msgid "Hide closed captions"
+msgstr "Ficha manukuu yaliyofungwa"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1267
+msgid "(Caption will be displayed when you start playing the video.)"
+msgstr "(Manukuu yataonyeshwa unapowanza kucheza video.)"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1274
+msgid "Turn on closed captioning"
+msgstr "Washa manukuu yaliyofungwa"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1382
+msgid "Turn on transcripts"
+msgstr "Washa nakala"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1397
+msgid "Turn off transcripts"
+msgstr "Zima nakala"
 
 #: xmodule/assets/word_cloud/src/js/word_cloud_main.js:258
 msgid "{start_strong}{total}{end_strong} words submitted in total."
@@ -6695,254 +7010,6 @@ msgid ""
 msgstr ""
 "Hitilafu ya mlolongo! Haiwezekani kusafiri kwenda %(tab_name)s katika Module"
 " ya Mlolongo wa sasa. Tafadhali wasiliana na wafanyakazi wa kozi."
-
-#: xmodule/js/src/video/00_i18n.js:15
-#: xmodule/js/src/video/09_play_pause_control.js:30
-#: xmodule/js/src/video/09_play_pause_control.js:88
-#: xmodule/js/src/video/09_play_skip_control.js:30
-msgid "Play"
-msgstr "Cheza"
-
-#: xmodule/js/src/video/00_i18n.js:16
-#: xmodule/js/src/video/09_play_pause_control.js:78
-msgid "Pause"
-msgstr "Zingua"
-
-#: xmodule/js/src/video/00_i18n.js:17
-msgid "Mute"
-msgstr "Zima sauti"
-
-#: xmodule/js/src/video/00_i18n.js:18
-msgid "Unmute"
-msgstr "Washwa sauti"
-
-#: xmodule/js/src/video/00_i18n.js:19
-#: xmodule/js/src/video/04_video_full_screen.js:229
-msgid "Exit full browser"
-msgstr "Toka kwenye kivinjari kikamilifu"
-
-#: xmodule/js/src/video/00_i18n.js:20
-#: xmodule/js/src/video/04_video_full_screen.js:7
-#: xmodule/js/src/video/04_video_full_screen.js:9
-#: xmodule/js/src/video/04_video_full_screen.js:201
-msgid "Fill browser"
-msgstr "Jaza skrini"
-
-#: xmodule/js/src/video/00_i18n.js:21
-#: xmodule/js/src/video/08_video_speed_control.js:46
-msgid "Speed"
-msgstr "Mwendo"
-
-#: xmodule/js/src/video/00_i18n.js:22
-#: xmodule/js/src/video/08_video_auto_advance_control.js:40
-msgid "Auto-advance"
-msgstr "Endesha moja kwa moja"
-
-#: xmodule/js/src/video/00_i18n.js:23
-#: xmodule/js/src/video/07_video_volume_control.js:72
-msgid "Volume"
-msgstr "Sauti"
-
-#. Translators: Volume level equals 0%.
-#: xmodule/js/src/video/00_i18n.js:25
-msgid "Muted"
-msgstr "Sauti imezimwa"
-
-#. Translators: Volume level in range ]0,20]%
-#: xmodule/js/src/video/00_i18n.js:27
-msgid "Very low"
-msgstr "Chini sana"
-
-#. Translators: Volume level in range ]20,40]%
-#: xmodule/js/src/video/00_i18n.js:29
-msgid "Low"
-msgstr "Chini"
-
-#. Translators: Volume level in range ]40,60]%
-#: xmodule/js/src/video/00_i18n.js:31
-msgid "Average"
-msgstr "Kawaida"
-
-#. Translators: Volume level in range ]60,80]%
-#: xmodule/js/src/video/00_i18n.js:33
-msgid "Loud"
-msgstr "Sauti kubwa"
-
-#. Translators: Volume level in range ]80,99]%
-#: xmodule/js/src/video/00_i18n.js:35
-msgid "Very loud"
-msgstr "Sauti kubwa sana"
-
-#. Translators: Volume level equals 100%.
-#: xmodule/js/src/video/00_i18n.js:37
-msgid "Maximum"
-msgstr "Maksimum"
-
-#: xmodule/js/src/video/02_html5_video.js:87
-msgid "This browser cannot play .mp4, .ogg, or .webm files."
-msgstr "Kivinjari hiki hakiwezi kucheza faili za .mp4, .ogg, au .webm."
-
-#: xmodule/js/src/video/02_html5_video.js:88
-msgid "Try using a different browser, such as Google Chrome."
-msgstr "Jaribu kutumia kivinjari tofauti, kama Google Chrome."
-
-#: xmodule/js/src/video/05_video_quality_control.js:25
-msgid "High Definition"
-msgstr "Ufumbuzi wa juu"
-
-#: xmodule/js/src/video/05_video_quality_control.js:26
-#: xmodule/js/src/video/05_video_quality_control.js:159
-msgid "off"
-msgstr "zimwa"
-
-#: xmodule/js/src/video/05_video_quality_control.js:153
-msgid "on"
-msgstr "washa"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:16
-#: xmodule/js/src/video/06_video_progress_slider.js:107
-msgid "Video position. Press space to toggle playback"
-msgstr "Mpangilio wa video. Bonyeza space kubadilisha utendaji"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:304
-msgid "Video ended"
-msgstr "Video imekwisha"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:308
-msgid "Video position"
-msgstr "Mpangilio wa video"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:324
-msgid "%(value)s hour"
-msgid_plural "%(value)s hours"
-msgstr[0] "%(value)s saa"
-msgstr[1] "%(value)s saa"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:327
-msgid "%(value)s minute"
-msgid_plural "%(value)s minutes"
-msgstr[0] "%(value)s dakika"
-msgstr[1] "%(value)s dakika"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:330
-msgid "%(value)s second"
-msgid_plural "%(value)s seconds"
-msgstr[0] "%(value)s sekunde"
-msgstr[1] "%(value)s sekunde"
-
-#: xmodule/js/src/video/07_video_volume_control.js:70
-msgid ""
-"Click on this button to mute or unmute this video or press UP or DOWN "
-"buttons to increase or decrease volume level."
-msgstr ""
-"Bonyeza kitufe hiki kuzima au kuwasha sauti ya video hii au bonyeza vitufe "
-"vya UP au DOWN kuongeza au kupunguza kiwango cha sauti."
-
-#: xmodule/js/src/video/07_video_volume_control.js:71
-msgid "Adjust video volume"
-msgstr "Badilisha kiwango cha sauti ya video"
-
-#: xmodule/js/src/video/08_video_speed_control.js:36
-msgid ""
-"Press UP to enter the speed menu then use the UP and DOWN arrow keys to "
-"navigate the different speeds, then press ENTER to change to the selected "
-"speed."
-msgstr ""
-"Bonyeza UP kuingia kwenye menyu ya mwendo, kisha tumia mishale ya UP na DOWN"
-" kuvinjari miendo tofauti, kisha bonyeza ENTER kubadilisha hadi mwendo "
-"uliouchaguliwa."
-
-#: xmodule/js/src/video/08_video_speed_control.js:40
-msgid "Adjust video speed"
-msgstr "Badilisha mwendo wa video"
-
-#: xmodule/js/src/video/08_video_speed_control.js:271
-msgid "Video speed: "
-msgstr "Mwendo wa video: "
-
-#: xmodule/js/src/video/09_play_skip_control.js:79
-msgid "Skip"
-msgstr "Ruka"
-
-#: xmodule/js/src/video/09_poster.js:31
-msgid "Play video"
-msgstr "Cheza video"
-
-#: xmodule/js/src/video/09_skip_control.js:33
-msgid "Do not show again"
-msgstr "Usionyeshe tena"
-
-#: xmodule/js/src/video/09_video_audio_description.js:111
-#: xmodule/js/src/video/09_video_audio_description.js:113
-msgid "Toggle audio description"
-msgstr "Badilisha maelezo ya sauti"
-
-#: xmodule/js/src/video/09_video_audio_description.js:112
-msgid "Audio Description"
-msgstr "Maelezo ya sauti"
-
-#: xmodule/js/src/video/09_video_audio_description.js:114
-#: xmodule/js/src/video/09_video_audio_description.js:115
-msgid "Audio description not available"
-msgstr "Maelezo ya sauti hayapatikani"
-
-#: xmodule/js/src/video/09_video_caption.js:107
-msgid "Open language menu"
-msgstr "Fungua menyu ya lugha"
-
-#: xmodule/js/src/video/09_video_caption.js:630
-msgid "Transcript will be displayed when you start playing the video."
-msgstr "Nakala itaonyeshwa unapochukua mchezaji wa video."
-
-#: xmodule/js/src/video/09_video_caption.js:881
-msgid ""
-"Activating a link in this group will skip to the corresponding point in the "
-"video."
-msgstr ""
-"Kuwasha kiungo katika kundi hili kutaruka hadi sehemu inayolingana katika "
-"video."
-
-#: xmodule/js/src/video/09_video_caption.js:884
-msgid "Video transcript"
-msgstr "Nakala ya video"
-
-#: xmodule/js/src/video/09_video_caption.js:887
-msgid "Start of transcript. Skip to the end."
-msgstr "Anza nakala. Ruka hadi mwisho."
-
-#: xmodule/js/src/video/09_video_caption.js:891
-msgid "End of transcript. Skip to the start."
-msgstr "Mwisho wa nakala. Ruka hadi mwanzo."
-
-#: xmodule/js/src/video/09_video_caption.js:895
-msgid ""
-"Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
-" keys to navigate language options. Press ENTER to change to the selected "
-"language."
-msgstr ""
-"Bonyeza mshale wa UP kuingia kwenye menyu ya lugha, kisha tumia mishale ya "
-"UP na DOWN kuvinjari chaguzi za lugha. Bonyeza ENTER kubadilisha hadi lugha "
-"uliyochagua."
-
-#: xmodule/js/src/video/09_video_caption.js:1251
-msgid "Hide closed captions"
-msgstr "Ficha manukuu yaliyofungwa"
-
-#: xmodule/js/src/video/09_video_caption.js:1269
-msgid "(Caption will be displayed when you start playing the video.)"
-msgstr "(Manukuu yataonyeshwa unapowanza kucheza video.)"
-
-#: xmodule/js/src/video/09_video_caption.js:1276
-msgid "Turn on closed captioning"
-msgstr "Washa manukuu yaliyofungwa"
-
-#: xmodule/js/src/video/09_video_caption.js:1384
-msgid "Turn on transcripts"
-msgstr "Washa nakala"
-
-#: xmodule/js/src/video/09_video_caption.js:1399
-msgid "Turn off transcripts"
-msgstr "Zima nakala"
 
 #: cms/templates/js/access-editor.underscore:3
 msgid "Limit Access"
@@ -8434,10 +8501,6 @@ msgstr ""
 #: cms/templates/js/show-textbook.underscore:12
 msgid "PDF Chapters"
 msgstr "Sura za PDF"
-
-#: cms/templates/js/show-textbook.underscore:37
-msgid "View Live"
-msgstr "Tazama Moja kwa Moja"
 
 #: cms/templates/js/signatory-details.underscore:9
 #: cms/templates/js/signatory-editor.underscore:8
@@ -10692,11 +10755,6 @@ msgstr "Unahitaji msaada mwingine kuingia?"
 msgid "Create an account"
 msgstr "Unda akaunti"
 
-#: lms/templates/student_account/hinted_login.underscore:4
-#: lms/templates/student_account/login.underscore:56
-msgid "Sign in"
-msgstr "Ingia"
-
 #: lms/templates/student_account/hinted_login.underscore:8
 #, python-format
 msgid "Would you like to sign in using your %(providerName)s credentials?"
@@ -10727,11 +10785,6 @@ msgstr "Rudi kwenye kuingia"
 #: lms/templates/student_account/institution_register.underscore:5
 msgid "Register with Institution/Campus Credentials"
 msgstr "Jiandikishe kwa kutumia taarifa za Taasisi/Campus"
-
-#: lms/templates/student_account/institution_register.underscore:28
-#: lms/templates/student_account/register.underscore:50
-msgid "Create an Account"
-msgstr "Unda Akaunti"
 
 #: lms/templates/student_account/login.underscore:6
 msgid "First time here?"
