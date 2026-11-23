@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-08-19 00:23+0000\n"
-"PO-Revision-Date: 2026-09-14 11:25+0000\n"
+"POT-Creation-Date: 2026-11-22 00:26+0000\n"
+"PO-Revision-Date: 2026-11-22 17:46+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hi\n"
@@ -315,6 +315,31 @@ msgstr "पाठ्यक्रम आयात करते समय त्�
 #: cms/static/js/features/import/views/import.js:298
 msgid "There was an error with the upload"
 msgstr "अपलोड में त्रुटि हुई"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:23
+msgid "Organization:"
+msgstr "संगठन:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:27
+msgid "Course Number:"
+msgstr "पाठ्यक्रम संख्या:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:33
+msgid "Course Run:"
+msgstr "पाठ्यक्रम सत्र:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:38
+msgid "(Read-only)"
+msgstr "(केवल पढ़ने के लिए)"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:66
+msgid "Re-run Course"
+msgstr "पाठ्यक्रम फिर से चलाएँ"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:77
+#: cms/templates/js/show-textbook.underscore:37
+msgid "View Live"
+msgstr "लाइव देखें"
 
 #. Translators: This is the status of a video upload that is queued
 #. waiting for other uploads to complete
@@ -659,7 +684,7 @@ msgstr "पुस्तकालय सामग्री जोड़ें"
 
 #: cms/static/js/views/components/add_xblock.js:120
 #: cms/static/js/views/components/add_xblock.js:131
-#: cms/static/js/views/pages/container.js:656
+#: cms/static/js/views/pages/container.js:657
 #: cms/static/js/views/utils/xblock_utils.js:55
 msgid "Adding"
 msgstr "जोड़ रहा है"
@@ -678,8 +703,8 @@ msgstr "क्या आप वाकई इस अपडेट को हटा
 #: cms/static/js/views/course_info_update.js:241
 #: cms/static/js/views/course_outline.js:390
 #: cms/static/js/views/course_outline.js:402
-#: cms/static/js/views/pages/container.js:424
-#: cms/static/js/views/pages/container.js:436 cms/static/js/views/tabs.js:164
+#: cms/static/js/views/pages/container.js:426
+#: cms/static/js/views/pages/container.js:438 cms/static/js/views/tabs.js:164
 #: cms/static/js/views/utils/xblock_utils.js:101
 #: cms/static/js/views/utils/xblock_utils.js:113
 #: lms/static/js/Markdown.Editor.js:1091 xmodule/js/src/html/edit.js:885
@@ -689,7 +714,7 @@ msgid "OK"
 msgstr "ठीक है"
 
 #: cms/static/js/views/course_outline.js:242
-#: cms/static/js/views/pages/container.js:783
+#: cms/static/js/views/pages/container.js:784
 #: cms/static/js/views/pages/container_subviews.js:187
 msgid "Copying"
 msgstr "कॉपी कर रहा है"
@@ -699,31 +724,31 @@ msgid "Copy of \"{componentDisplayName}\""
 msgstr "\"{componentDisplayName}\" की कॉपी"
 
 #: cms/static/js/views/course_outline.js:367
-#: cms/static/js/views/pages/container.js:395
+#: cms/static/js/views/pages/container.js:397
 #: cms/static/js/views/utils/xblock_utils.js:79
 msgid "Pasting"
 msgstr "पेस्ट कर रहा है"
 
 #: cms/static/js/views/course_outline.js:385
-#: cms/static/js/views/pages/container.js:419
+#: cms/static/js/views/pages/container.js:421
 #: cms/static/js/views/utils/xblock_utils.js:96
 msgid "Some errors occurred"
 msgstr "कुछ त्रुटियाँ हुईं"
 
 #: cms/static/js/views/course_outline.js:387
-#: cms/static/js/views/pages/container.js:421
+#: cms/static/js/views/pages/container.js:423
 #: cms/static/js/views/utils/xblock_utils.js:98
 msgid "The following required files could not be added to the course:"
 msgstr "निम्नलिखित आवश्यक फ़ाइलें पाठ्यक्रम में जोड़ी नहीं जा सकीं:"
 
 #: cms/static/js/views/course_outline.js:395
-#: cms/static/js/views/pages/container.js:429
+#: cms/static/js/views/pages/container.js:431
 #: cms/static/js/views/utils/xblock_utils.js:106
 msgid "You may need to update a file(s) manually"
 msgstr "हो सकता है आपको फ़ाइल(फ़ाइलों) को मैन्युअली अपडेट करना पड़े"
 
 #: cms/static/js/views/course_outline.js:398
-#: cms/static/js/views/pages/container.js:432
+#: cms/static/js/views/pages/container.js:434
 #: cms/static/js/views/utils/xblock_utils.js:109
 msgid ""
 "The following files already exist in this course but don't match the version"
@@ -733,25 +758,25 @@ msgstr ""
 " मेल नहीं खातीं जिसका उपयोग आपने पेस्ट किए गए घटक में किया था:"
 
 #: cms/static/js/views/course_outline.js:407
-#: cms/static/js/views/pages/container.js:441
+#: cms/static/js/views/pages/container.js:443
 #: cms/static/js/views/utils/xblock_utils.js:118
 msgid "New file(s) added to Files & Uploads."
 msgstr "नई फ़ाइल(फ़ाइलें) 'फ़ाइलें और अपलोड' में जोड़ी गईं।"
 
 #: cms/static/js/views/course_outline.js:409
-#: cms/static/js/views/pages/container.js:443
+#: cms/static/js/views/pages/container.js:445
 #: cms/static/js/views/utils/xblock_utils.js:120
 msgid "The following required files were imported to this course:"
 msgstr "निम्नलिखित आवश्यक फ़ाइलें इस पाठ्यक्रम में आयात की गईं:"
 
 #: cms/static/js/views/course_outline.js:414
-#: cms/static/js/views/pages/container.js:448
+#: cms/static/js/views/pages/container.js:450
 #: cms/static/js/views/utils/xblock_utils.js:125
 msgid "View files"
 msgstr "फ़ाइलें देखें"
 
 #: cms/static/js/views/course_outline.js:422
-#: cms/static/js/views/pages/container.js:457
+#: cms/static/js/views/pages/container.js:459
 #: cms/static/js/views/utils/xblock_utils.js:134
 msgid "Dismiss"
 msgstr "अस्वीकार करें"
@@ -1211,7 +1236,7 @@ msgstr "घटक"
 
 #: cms/static/js/views/modals/edit_xblock.js:228
 msgid "Studio's having trouble parsing the problem component's content"
-msgstr "स्टूडियो को समस्या घटक की सामग्री को पार्स करने में परेशानी हो रही है"
+msgstr ""
 
 #: cms/static/js/views/modals/move_xblock_modal.js:37
 msgid "Move"
@@ -1311,7 +1336,7 @@ msgstr "जोड़ने की तिथि"
 
 #. Translators: "title" is the name of the current component or unit being
 #. edited.
-#: cms/static/js/views/pages/container.js:735
+#: cms/static/js/views/pages/container.js:736
 msgid "Editing access for: {title}"
 msgstr "{title} के लिए संपादन पहुँच"
 
@@ -1944,6 +1969,10 @@ msgstr "अंडे आइटम देखें"
 msgid "Navigate up"
 msgstr "ऊपर जाएँ"
 
+#: common/static/common/js/components/BlockBrowser/components/BlockBrowser/BlockBrowser.jsx:89
+msgid "Browsing"
+msgstr "ब्राउज़िंग"
+
 #: common/static/common/js/components/BlockBrowser/components/BlockBrowser/BlockBrowser.jsx:96
 msgid "Select"
 msgstr "चुनें"
@@ -2506,9 +2535,41 @@ msgstr ""
 "प्रक्रियाओं के लिए कोर्स स्टाफ के पास विशेषज्ञता है। कृपया सभी कोर्स संबंधित"
 " प्रश्न उस चर्चा मंच में पोस्ट करें जहाँ कोर्स स्टाफ सीधे उत्तर दे सकें।"
 
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:106
+msgid "Details"
+msgstr "विवरण"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:107
+msgid "the more quickly and helpfully we can respond!"
+msgstr "हम उतनी ही जल्दी और बेहतर तरीके से आपकी मदद कर पाएँगे!"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:118
+msgid "Create Support Ticket"
+msgstr "सहायता टिकट बनाएँ"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:140
+msgid "What can we help you with, {fullName}?"
+msgstr "{fullName}, हम आपकी किस तरह मदद कर सकते हैं?"
+
 #: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:15
 msgid "Sign in to {platform} so we can help you better."
 msgstr "{platform} में साइन इन करें ताकि हम आपकी बेहतर सहायता कर सकें।"
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:24
+#: lms/templates/student_account/hinted_login.underscore:4
+#: lms/templates/student_account/login.underscore:56
+msgid "Sign in"
+msgstr "साइन इन करें"
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:28
+#: lms/templates/student_account/institution_register.underscore:28
+#: lms/templates/student_account/register.underscore:50
+msgid "Create an Account"
+msgstr "एक खाता बनाएं"
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:35
+msgid "Need help logging in?"
+msgstr "लॉग इन करने में मदद चाहिए?"
 
 #: lms/djangoapps/support/static/support/jsx/single_support_form.jsx:47
 msgid ""
@@ -5241,15 +5302,269 @@ msgid_plural "{total_results} results found for \"{search_term}\""
 msgstr[0] "{total_results} परिणाम मिला \"{search_term}\""
 msgstr[1] "{total_results} परिणाम मिले \"{search_term}\""
 
-#: xmodule/assets/library_content/public/js/library_content_edit.js:16
-#: xmodule/js/public/js/library_content_edit.js:16
+#: xmodule/assets/library_content/public/js/library_content_edit.js:44
+#: xmodule/js/public/js/library_content_edit.js:44
 msgid "Updating with latest library content"
 msgstr "नवीनतम पुस्तकालय सामग्री के साथ अपडेट हो रहा है"
+
+#: xmodule/assets/library_content/public/js/library_content_edit.js:64
+#: xmodule/js/public/js/library_content_edit.js:64
+msgid "Migrating to Problem Bank"
+msgstr "प्रश्न बैंक में माइग्रेट किया जा रहा है"
 
 #: xmodule/assets/split_test/public/js/split_test_author_view.js:12
 #: xmodule/js/public/js/split_test_author_view.js:12
 msgid "Creating missing groups"
 msgstr "गुमशुदा समूह बना रहे हैं"
+
+#: xmodule/assets/video/public/js/00_i18n.js:10
+#: xmodule/assets/video/public/js/09_play_pause_control.js:31
+#: xmodule/assets/video/public/js/09_play_pause_control.js:89
+#: xmodule/assets/video/public/js/09_play_skip_control.js:28
+msgid "Play"
+msgstr "चलाएं"
+
+#: xmodule/assets/video/public/js/00_i18n.js:11
+#: xmodule/assets/video/public/js/09_play_pause_control.js:79
+msgid "Pause"
+msgstr "विराम"
+
+#: xmodule/assets/video/public/js/00_i18n.js:12
+msgid "Mute"
+msgstr "म्यूट"
+
+#: xmodule/assets/video/public/js/00_i18n.js:13
+msgid "Unmute"
+msgstr "अनम्यूट"
+
+#: xmodule/assets/video/public/js/00_i18n.js:14
+#: xmodule/assets/video/public/js/04_video_full_screen.js:227
+msgid "Exit full browser"
+msgstr "पूर्ण ब्राउज़र से बाहर निकलें"
+
+#: xmodule/assets/video/public/js/00_i18n.js:15
+#: xmodule/assets/video/public/js/04_video_full_screen.js:5
+#: xmodule/assets/video/public/js/04_video_full_screen.js:7
+#: xmodule/assets/video/public/js/04_video_full_screen.js:199
+msgid "Fill browser"
+msgstr "ब्राउज़र भरें"
+
+#: xmodule/assets/video/public/js/00_i18n.js:16
+#: xmodule/assets/video/public/js/08_video_speed_control.js:43
+msgid "Speed"
+msgstr "गति"
+
+#: xmodule/assets/video/public/js/00_i18n.js:17
+#: xmodule/assets/video/public/js/08_video_auto_advance_control.js:38
+#: xmodule/js/src/video/08_video_auto_advance_control.js:40
+msgid "Auto-advance"
+msgstr "स्वचालित रूप से आगे बढ़ें"
+
+#: xmodule/assets/video/public/js/00_i18n.js:18
+#: xmodule/assets/video/public/js/07_video_volume_control.js:70
+msgid "Volume"
+msgstr "आवाज़"
+
+#. Translators: Volume level equals 0%.
+#: xmodule/assets/video/public/js/00_i18n.js:20
+msgid "Muted"
+msgstr "म्यूट किया गया"
+
+#. Translators: Volume level in range ]0,20]%
+#: xmodule/assets/video/public/js/00_i18n.js:22
+msgid "Very low"
+msgstr "बहुत कम"
+
+#. Translators: Volume level in range ]20,40]%
+#: xmodule/assets/video/public/js/00_i18n.js:24
+msgid "Low"
+msgstr "कम"
+
+#. Translators: Volume level in range ]40,60]%
+#: xmodule/assets/video/public/js/00_i18n.js:26
+msgid "Average"
+msgstr "औसत"
+
+#. Translators: Volume level in range ]60,80]%
+#: xmodule/assets/video/public/js/00_i18n.js:28
+msgid "Loud"
+msgstr "तेज़"
+
+#. Translators: Volume level in range ]80,99]%
+#: xmodule/assets/video/public/js/00_i18n.js:30
+msgid "Very loud"
+msgstr "बहुत तेज़"
+
+#. Translators: Volume level equals 100%.
+#: xmodule/assets/video/public/js/00_i18n.js:32
+msgid "Maximum"
+msgstr "अधिकतम"
+
+#: xmodule/assets/video/public/js/02_html5_video.js:82
+msgid "This browser cannot play .mp4, .ogg, or .webm files."
+msgstr "यह ब्राउज़र .mp4, .ogg, या .webm फ़ाइलों को चला नहीं सकता।"
+
+#: xmodule/assets/video/public/js/02_html5_video.js:83
+msgid "Try using a different browser, such as Google Chrome."
+msgstr "Google Chrome जैसे किसी अन्य ब्राउज़र का उपयोग करने का प्रयास करें।"
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:22
+msgid "High Definition"
+msgstr "उच्च परिभाषा"
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:23
+#: xmodule/assets/video/public/js/05_video_quality_control.js:156
+msgid "off"
+msgstr "बंद"
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:150
+msgid "on"
+msgstr "चालू"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:11
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:102
+msgid "Video position. Press space to toggle playback"
+msgstr "वीडियो स्थिति। प्लेबैक टॉगल करने के लिए स्पेस दबाएँ"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:299
+msgid "Video ended"
+msgstr "वीडियो समाप्त हुआ"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:303
+msgid "Video position"
+msgstr "वीडियो स्थिति"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:319
+msgid "%(value)s hour"
+msgid_plural "%(value)s hours"
+msgstr[0] "%(value)s घंटा"
+msgstr[1] "%(value)s घंटे"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:322
+msgid "%(value)s minute"
+msgid_plural "%(value)s minutes"
+msgstr[0] "%(value)s मिनट"
+msgstr[1] "%(value)s मिनट"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:325
+msgid "%(value)s second"
+msgid_plural "%(value)s seconds"
+msgstr[0] "%(value)s सेकंड"
+msgstr[1] "%(value)s सेकंड"
+
+#: xmodule/assets/video/public/js/07_video_volume_control.js:68
+msgid ""
+"Click on this button to mute or unmute this video or press UP or DOWN "
+"buttons to increase or decrease volume level."
+msgstr ""
+"इस वीडियो को म्यूट या अनम्यूट करने के लिए इस बटन पर क्लिक करें या आवाज़ स्तर"
+" बढ़ाने/कम करने के लिए UP या DOWN बटन दबाएँ।"
+
+#: xmodule/assets/video/public/js/07_video_volume_control.js:69
+msgid "Adjust video volume"
+msgstr "वीडियो की आवाज़ समायोजित करें"
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:33
+msgid ""
+"Press UP to enter the speed menu then use the UP and DOWN arrow keys to "
+"navigate the different speeds, then press ENTER to change to the selected "
+"speed."
+msgstr ""
+"गति मेनू में प्रवेश करने के लिए UP दबाएँ, फिर विभिन्न गतियों के बीच नेविगेट "
+"करने के लिए UP और DOWN तीर कुंजियाँ दबाएँ, और चयनित गति में बदलाव के लिए "
+"ENTER दबाएँ।"
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:37
+msgid "Adjust video speed"
+msgstr "वीडियो गति समायोजित करें"
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:268
+msgid "Video speed: "
+msgstr "वीडियो गति: "
+
+#: xmodule/assets/video/public/js/09_play_skip_control.js:77
+msgid "Skip"
+msgstr "छोड़ें"
+
+#: xmodule/assets/video/public/js/09_poster.js:25
+msgid "Play video"
+msgstr "वीडियो चलाएँ"
+
+#: xmodule/assets/video/public/js/09_skip_control.js:31
+msgid "Do not show again"
+msgstr "फिर से न दिखाएँ"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:105
+#: xmodule/assets/video/public/js/09_video_audio_description.js:107
+msgid "Toggle audio description"
+msgstr "ऑडियो विवरण टॉगल करें"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:106
+msgid "Audio Description"
+msgstr "ऑडियो विवरण"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:108
+#: xmodule/assets/video/public/js/09_video_audio_description.js:109
+msgid "Audio description not available"
+msgstr "ऑडियो विवरण उपलब्ध नहीं"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:105
+msgid "Open language menu"
+msgstr "भाषा मेनू खोलें"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:628
+msgid "Transcript will be displayed when you start playing the video."
+msgstr "वीडियो चलाने पर लिप्यंतरण प्रदर्शित होगा।"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:879
+msgid ""
+"Activating a link in this group will skip to the corresponding point in the "
+"video."
+msgstr ""
+"इस समूह में किसी लिंक को सक्रिय करने से वीडियो के संबंधित बिंदु पर छोड़ा "
+"जाएगा।"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:882
+msgid "Video transcript"
+msgstr "वीडियो लिप्यंतरण"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:885
+msgid "Start of transcript. Skip to the end."
+msgstr "लिप्यंतरण की शुरुआत। अंत तक जाएँ।"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:889
+msgid "End of transcript. Skip to the start."
+msgstr "लिप्यंतरण का अंत। शुरुआत तक जाएँ।"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:893
+msgid ""
+"Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
+" keys to navigate language options. Press ENTER to change to the selected "
+"language."
+msgstr ""
+"भाषा मेनू में प्रवेश करने के लिए UP तीर कुंजी दबाएँ, फिर भाषा विकल्पों के "
+"बीच नेविगेट करने के लिए UP और DOWN तीर कुंजियाँ दबाएँ। चयनित भाषा में बदलाव "
+"के लिए ENTER दबाएँ।"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1249
+msgid "Hide closed captions"
+msgstr "बंद कैप्शन छिपाएं"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1267
+msgid "(Caption will be displayed when you start playing the video.)"
+msgstr "(कैप्शन वीडियो चलाना शुरू करने पर दिखाई देगा।)"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1274
+msgid "Turn on closed captioning"
+msgstr "बंद कैप्शन चालू करें"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1382
+msgid "Turn on transcripts"
+msgstr "ट्रांसक्रिप्ट चालू करें"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1397
+msgid "Turn off transcripts"
+msgstr "ट्रांसक्रिप्ट बंद करें"
 
 #: xmodule/assets/word_cloud/src/js/word_cloud_main.js:258
 msgid "{start_strong}{total}{end_strong} words submitted in total."
@@ -6687,254 +7002,6 @@ msgid ""
 msgstr ""
 "क्रम त्रुटि! वर्तमान SequenceModule में %(tab_name)s पर नेविगेट नहीं किया जा"
 " सकता। कृपया पाठ्यक्रम स्टाफ से संपर्क करें।"
-
-#: xmodule/js/src/video/00_i18n.js:15
-#: xmodule/js/src/video/09_play_pause_control.js:30
-#: xmodule/js/src/video/09_play_pause_control.js:88
-#: xmodule/js/src/video/09_play_skip_control.js:30
-msgid "Play"
-msgstr "चलाएं"
-
-#: xmodule/js/src/video/00_i18n.js:16
-#: xmodule/js/src/video/09_play_pause_control.js:78
-msgid "Pause"
-msgstr "विराम"
-
-#: xmodule/js/src/video/00_i18n.js:17
-msgid "Mute"
-msgstr "म्यूट"
-
-#: xmodule/js/src/video/00_i18n.js:18
-msgid "Unmute"
-msgstr "अनम्यूट"
-
-#: xmodule/js/src/video/00_i18n.js:19
-#: xmodule/js/src/video/04_video_full_screen.js:229
-msgid "Exit full browser"
-msgstr "पूर्ण ब्राउज़र से बाहर निकलें"
-
-#: xmodule/js/src/video/00_i18n.js:20
-#: xmodule/js/src/video/04_video_full_screen.js:7
-#: xmodule/js/src/video/04_video_full_screen.js:9
-#: xmodule/js/src/video/04_video_full_screen.js:201
-msgid "Fill browser"
-msgstr "ब्राउज़र भरें"
-
-#: xmodule/js/src/video/00_i18n.js:21
-#: xmodule/js/src/video/08_video_speed_control.js:46
-msgid "Speed"
-msgstr "गति"
-
-#: xmodule/js/src/video/00_i18n.js:22
-#: xmodule/js/src/video/08_video_auto_advance_control.js:40
-msgid "Auto-advance"
-msgstr "स्वचालित रूप से आगे बढ़ें"
-
-#: xmodule/js/src/video/00_i18n.js:23
-#: xmodule/js/src/video/07_video_volume_control.js:72
-msgid "Volume"
-msgstr "आवाज़"
-
-#. Translators: Volume level equals 0%.
-#: xmodule/js/src/video/00_i18n.js:25
-msgid "Muted"
-msgstr "म्यूट किया गया"
-
-#. Translators: Volume level in range ]0,20]%
-#: xmodule/js/src/video/00_i18n.js:27
-msgid "Very low"
-msgstr "बहुत कम"
-
-#. Translators: Volume level in range ]20,40]%
-#: xmodule/js/src/video/00_i18n.js:29
-msgid "Low"
-msgstr "कम"
-
-#. Translators: Volume level in range ]40,60]%
-#: xmodule/js/src/video/00_i18n.js:31
-msgid "Average"
-msgstr "औसत"
-
-#. Translators: Volume level in range ]60,80]%
-#: xmodule/js/src/video/00_i18n.js:33
-msgid "Loud"
-msgstr "तेज़"
-
-#. Translators: Volume level in range ]80,99]%
-#: xmodule/js/src/video/00_i18n.js:35
-msgid "Very loud"
-msgstr "बहुत तेज़"
-
-#. Translators: Volume level equals 100%.
-#: xmodule/js/src/video/00_i18n.js:37
-msgid "Maximum"
-msgstr "अधिकतम"
-
-#: xmodule/js/src/video/02_html5_video.js:87
-msgid "This browser cannot play .mp4, .ogg, or .webm files."
-msgstr "यह ब्राउज़र .mp4, .ogg, या .webm फ़ाइलों को चला नहीं सकता।"
-
-#: xmodule/js/src/video/02_html5_video.js:88
-msgid "Try using a different browser, such as Google Chrome."
-msgstr "Google Chrome जैसे किसी अन्य ब्राउज़र का उपयोग करने का प्रयास करें।"
-
-#: xmodule/js/src/video/05_video_quality_control.js:25
-msgid "High Definition"
-msgstr "उच्च परिभाषा"
-
-#: xmodule/js/src/video/05_video_quality_control.js:26
-#: xmodule/js/src/video/05_video_quality_control.js:159
-msgid "off"
-msgstr "बंद"
-
-#: xmodule/js/src/video/05_video_quality_control.js:153
-msgid "on"
-msgstr "चालू"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:16
-#: xmodule/js/src/video/06_video_progress_slider.js:107
-msgid "Video position. Press space to toggle playback"
-msgstr "वीडियो स्थिति। प्लेबैक टॉगल करने के लिए स्पेस दबाएँ"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:304
-msgid "Video ended"
-msgstr "वीडियो समाप्त हुआ"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:308
-msgid "Video position"
-msgstr "वीडियो स्थिति"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:324
-msgid "%(value)s hour"
-msgid_plural "%(value)s hours"
-msgstr[0] "%(value)s घंटा"
-msgstr[1] "%(value)s घंटे"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:327
-msgid "%(value)s minute"
-msgid_plural "%(value)s minutes"
-msgstr[0] "%(value)s मिनट"
-msgstr[1] "%(value)s मिनट"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:330
-msgid "%(value)s second"
-msgid_plural "%(value)s seconds"
-msgstr[0] "%(value)s सेकंड"
-msgstr[1] "%(value)s सेकंड"
-
-#: xmodule/js/src/video/07_video_volume_control.js:70
-msgid ""
-"Click on this button to mute or unmute this video or press UP or DOWN "
-"buttons to increase or decrease volume level."
-msgstr ""
-"इस वीडियो को म्यूट या अनम्यूट करने के लिए इस बटन पर क्लिक करें या आवाज़ स्तर"
-" बढ़ाने/कम करने के लिए UP या DOWN बटन दबाएँ।"
-
-#: xmodule/js/src/video/07_video_volume_control.js:71
-msgid "Adjust video volume"
-msgstr "वीडियो की आवाज़ समायोजित करें"
-
-#: xmodule/js/src/video/08_video_speed_control.js:36
-msgid ""
-"Press UP to enter the speed menu then use the UP and DOWN arrow keys to "
-"navigate the different speeds, then press ENTER to change to the selected "
-"speed."
-msgstr ""
-"गति मेनू में प्रवेश करने के लिए UP दबाएँ, फिर विभिन्न गतियों के बीच नेविगेट "
-"करने के लिए UP और DOWN तीर कुंजियाँ दबाएँ, और चयनित गति में बदलाव के लिए "
-"ENTER दबाएँ।"
-
-#: xmodule/js/src/video/08_video_speed_control.js:40
-msgid "Adjust video speed"
-msgstr "वीडियो गति समायोजित करें"
-
-#: xmodule/js/src/video/08_video_speed_control.js:271
-msgid "Video speed: "
-msgstr "वीडियो गति: "
-
-#: xmodule/js/src/video/09_play_skip_control.js:79
-msgid "Skip"
-msgstr "छोड़ें"
-
-#: xmodule/js/src/video/09_poster.js:31
-msgid "Play video"
-msgstr "वीडियो चलाएँ"
-
-#: xmodule/js/src/video/09_skip_control.js:33
-msgid "Do not show again"
-msgstr "फिर से न दिखाएँ"
-
-#: xmodule/js/src/video/09_video_audio_description.js:111
-#: xmodule/js/src/video/09_video_audio_description.js:113
-msgid "Toggle audio description"
-msgstr "ऑडियो विवरण टॉगल करें"
-
-#: xmodule/js/src/video/09_video_audio_description.js:112
-msgid "Audio Description"
-msgstr "ऑडियो विवरण"
-
-#: xmodule/js/src/video/09_video_audio_description.js:114
-#: xmodule/js/src/video/09_video_audio_description.js:115
-msgid "Audio description not available"
-msgstr "ऑडियो विवरण उपलब्ध नहीं"
-
-#: xmodule/js/src/video/09_video_caption.js:107
-msgid "Open language menu"
-msgstr "भाषा मेनू खोलें"
-
-#: xmodule/js/src/video/09_video_caption.js:630
-msgid "Transcript will be displayed when you start playing the video."
-msgstr "वीडियो चलाने पर लिप्यंतरण प्रदर्शित होगा।"
-
-#: xmodule/js/src/video/09_video_caption.js:881
-msgid ""
-"Activating a link in this group will skip to the corresponding point in the "
-"video."
-msgstr ""
-"इस समूह में किसी लिंक को सक्रिय करने से वीडियो के संबंधित बिंदु पर छोड़ा "
-"जाएगा।"
-
-#: xmodule/js/src/video/09_video_caption.js:884
-msgid "Video transcript"
-msgstr "वीडियो लिप्यंतरण"
-
-#: xmodule/js/src/video/09_video_caption.js:887
-msgid "Start of transcript. Skip to the end."
-msgstr "लिप्यंतरण की शुरुआत। अंत तक जाएँ।"
-
-#: xmodule/js/src/video/09_video_caption.js:891
-msgid "End of transcript. Skip to the start."
-msgstr "लिप्यंतरण का अंत। शुरुआत तक जाएँ।"
-
-#: xmodule/js/src/video/09_video_caption.js:895
-msgid ""
-"Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
-" keys to navigate language options. Press ENTER to change to the selected "
-"language."
-msgstr ""
-"भाषा मेनू में प्रवेश करने के लिए UP तीर कुंजी दबाएँ, फिर भाषा विकल्पों के "
-"बीच नेविगेट करने के लिए UP और DOWN तीर कुंजियाँ दबाएँ। चयनित भाषा में बदलाव "
-"के लिए ENTER दबाएँ।"
-
-#: xmodule/js/src/video/09_video_caption.js:1251
-msgid "Hide closed captions"
-msgstr "बंद कैप्शन छिपाएं"
-
-#: xmodule/js/src/video/09_video_caption.js:1269
-msgid "(Caption will be displayed when you start playing the video.)"
-msgstr "(कैप्शन वीडियो चलाना शुरू करने पर दिखाई देगा।)"
-
-#: xmodule/js/src/video/09_video_caption.js:1276
-msgid "Turn on closed captioning"
-msgstr "बंद कैप्शन चालू करें"
-
-#: xmodule/js/src/video/09_video_caption.js:1384
-msgid "Turn on transcripts"
-msgstr "ट्रांसक्रिप्ट चालू करें"
-
-#: xmodule/js/src/video/09_video_caption.js:1399
-msgid "Turn off transcripts"
-msgstr "ट्रांसक्रिप्ट बंद करें"
 
 #: cms/templates/js/access-editor.underscore:3
 msgid "Limit Access"
@@ -8421,10 +8488,6 @@ msgstr ""
 #: cms/templates/js/show-textbook.underscore:12
 msgid "PDF Chapters"
 msgstr "PDF अध्याय"
-
-#: cms/templates/js/show-textbook.underscore:37
-msgid "View Live"
-msgstr "लाइव देखें"
 
 #: cms/templates/js/signatory-details.underscore:9
 #: cms/templates/js/signatory-editor.underscore:8
@@ -10679,11 +10742,6 @@ msgstr "साइन इन करने के लिए अन्य सहा
 msgid "Create an account"
 msgstr "एक खाता बनाएँ"
 
-#: lms/templates/student_account/hinted_login.underscore:4
-#: lms/templates/student_account/login.underscore:56
-msgid "Sign in"
-msgstr "साइन इन करें"
-
 #: lms/templates/student_account/hinted_login.underscore:8
 #, python-format
 msgid "Would you like to sign in using your %(providerName)s credentials?"
@@ -10716,11 +10774,6 @@ msgstr "साइन इन पर वापस जाएँ"
 #: lms/templates/student_account/institution_register.underscore:5
 msgid "Register with Institution/Campus Credentials"
 msgstr "संस्थान/कैंपस प्रमाण-पत्रों के साथ रजिस्टर करें"
-
-#: lms/templates/student_account/institution_register.underscore:28
-#: lms/templates/student_account/register.underscore:50
-msgid "Create an Account"
-msgstr "एक खाता बनाएं"
 
 #: lms/templates/student_account/login.underscore:6
 msgid "First time here?"

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-08-19 00:23+0000\n"
-"PO-Revision-Date: 2026-09-13 06:04+0000\n"
+"POT-Creation-Date: 2026-11-22 00:26+0000\n"
+"PO-Revision-Date: 2026-11-22 17:47+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ko\n"
@@ -308,6 +308,31 @@ msgstr "강좌 가져오기 오류"
 #: cms/static/js/features/import/views/import.js:298
 msgid "There was an error with the upload"
 msgstr "업로드 중 오류가 발생했습니다."
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:23
+msgid "Organization:"
+msgstr "기관:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:27
+msgid "Course Number:"
+msgstr "강좌 번호:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:33
+msgid "Course Run:"
+msgstr "강좌 운영 회차:"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:38
+msgid "(Read-only)"
+msgstr "(읽기 전용)"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:66
+msgid "Re-run Course"
+msgstr "강좌 재개설"
+
+#: cms/static/js/features_jsx/studio/CourseOrLibraryListing.jsx:77
+#: cms/templates/js/show-textbook.underscore:37
+msgid "View Live"
+msgstr "실시간 보기"
 
 #. Translators: This is the status of a video upload that is queued
 #. waiting for other uploads to complete
@@ -643,7 +668,7 @@ msgstr "도서관 콘텐츠 추가"
 
 #: cms/static/js/views/components/add_xblock.js:120
 #: cms/static/js/views/components/add_xblock.js:131
-#: cms/static/js/views/pages/container.js:656
+#: cms/static/js/views/pages/container.js:657
 #: cms/static/js/views/utils/xblock_utils.js:55
 msgid "Adding"
 msgstr "추가 중"
@@ -662,8 +687,8 @@ msgstr "이 업데이트를 삭제하시겠습니까?"
 #: cms/static/js/views/course_info_update.js:241
 #: cms/static/js/views/course_outline.js:390
 #: cms/static/js/views/course_outline.js:402
-#: cms/static/js/views/pages/container.js:424
-#: cms/static/js/views/pages/container.js:436 cms/static/js/views/tabs.js:164
+#: cms/static/js/views/pages/container.js:426
+#: cms/static/js/views/pages/container.js:438 cms/static/js/views/tabs.js:164
 #: cms/static/js/views/utils/xblock_utils.js:101
 #: cms/static/js/views/utils/xblock_utils.js:113
 #: lms/static/js/Markdown.Editor.js:1091 xmodule/js/src/html/edit.js:885
@@ -673,7 +698,7 @@ msgid "OK"
 msgstr "확인"
 
 #: cms/static/js/views/course_outline.js:242
-#: cms/static/js/views/pages/container.js:783
+#: cms/static/js/views/pages/container.js:784
 #: cms/static/js/views/pages/container_subviews.js:187
 msgid "Copying"
 msgstr "복사 중"
@@ -683,31 +708,31 @@ msgid "Copy of \"{componentDisplayName}\""
 msgstr "\"{componentDisplayName}\"의 복사본"
 
 #: cms/static/js/views/course_outline.js:367
-#: cms/static/js/views/pages/container.js:395
+#: cms/static/js/views/pages/container.js:397
 #: cms/static/js/views/utils/xblock_utils.js:79
 msgid "Pasting"
 msgstr "붙여넣는 중"
 
 #: cms/static/js/views/course_outline.js:385
-#: cms/static/js/views/pages/container.js:419
+#: cms/static/js/views/pages/container.js:421
 #: cms/static/js/views/utils/xblock_utils.js:96
 msgid "Some errors occurred"
 msgstr "일부 오류가 발생했습니다"
 
 #: cms/static/js/views/course_outline.js:387
-#: cms/static/js/views/pages/container.js:421
+#: cms/static/js/views/pages/container.js:423
 #: cms/static/js/views/utils/xblock_utils.js:98
 msgid "The following required files could not be added to the course:"
 msgstr "다음 필수 파일들을 강의에 추가할 수 없습니다:"
 
 #: cms/static/js/views/course_outline.js:395
-#: cms/static/js/views/pages/container.js:429
+#: cms/static/js/views/pages/container.js:431
 #: cms/static/js/views/utils/xblock_utils.js:106
 msgid "You may need to update a file(s) manually"
 msgstr "파일을 수동으로 업데이트해야 할 수도 있습니다"
 
 #: cms/static/js/views/course_outline.js:398
-#: cms/static/js/views/pages/container.js:432
+#: cms/static/js/views/pages/container.js:434
 #: cms/static/js/views/utils/xblock_utils.js:109
 msgid ""
 "The following files already exist in this course but don't match the version"
@@ -715,25 +740,25 @@ msgid ""
 msgstr "다음 파일들은 이미 강의에 존재하지만, 붙여넣은 구성 요소에서 사용된 버전과 일치하지 않습니다:"
 
 #: cms/static/js/views/course_outline.js:407
-#: cms/static/js/views/pages/container.js:441
+#: cms/static/js/views/pages/container.js:443
 #: cms/static/js/views/utils/xblock_utils.js:118
 msgid "New file(s) added to Files & Uploads."
 msgstr "파일 및 업로드에 새 파일이 추가되었습니다."
 
 #: cms/static/js/views/course_outline.js:409
-#: cms/static/js/views/pages/container.js:443
+#: cms/static/js/views/pages/container.js:445
 #: cms/static/js/views/utils/xblock_utils.js:120
 msgid "The following required files were imported to this course:"
 msgstr "다음 필수 파일들이 강의로 가져와졌습니다:"
 
 #: cms/static/js/views/course_outline.js:414
-#: cms/static/js/views/pages/container.js:448
+#: cms/static/js/views/pages/container.js:450
 #: cms/static/js/views/utils/xblock_utils.js:125
 msgid "View files"
 msgstr "파일 보기"
 
 #: cms/static/js/views/course_outline.js:422
-#: cms/static/js/views/pages/container.js:457
+#: cms/static/js/views/pages/container.js:459
 #: cms/static/js/views/utils/xblock_utils.js:134
 msgid "Dismiss"
 msgstr "해제"
@@ -1271,7 +1296,7 @@ msgstr "추가 날짜"
 
 #. Translators: "title" is the name of the current component or unit being
 #. edited.
-#: cms/static/js/views/pages/container.js:735
+#: cms/static/js/views/pages/container.js:736
 msgid "Editing access for: {title}"
 msgstr "{title}에 대한 수정 권한"
 
@@ -1867,6 +1892,10 @@ msgstr "하위 항목 보기"
 msgid "Navigate up"
 msgstr "위로 이동"
 
+#: common/static/common/js/components/BlockBrowser/components/BlockBrowser/BlockBrowser.jsx:89
+msgid "Browsing"
+msgstr "둘러보기"
+
 #: common/static/common/js/components/BlockBrowser/components/BlockBrowser/BlockBrowser.jsx:96
 msgid "Select"
 msgstr "선택"
@@ -2384,9 +2413,41 @@ msgstr ""
 "저희 지원팀은 edX 플랫폼 관련 지원을 제공하지만, 과제, 성적 또는 강의 절차에 관해서는 강의 담당자가 전문성을 보유하고 있습니다. "
 "모든 강의 관련 질문은 강의 토론 포럼에 게시하여 담당자가 직접 답변할 수 있도록 하세요."
 
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:106
+msgid "Details"
+msgstr "상세 정보"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:107
+msgid "the more quickly and helpfully we can respond!"
+msgstr "더 빠르고 유용하게 답변해 드릴 수 있습니다!"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:118
+msgid "Create Support Ticket"
+msgstr "지원 요청 만들기"
+
+#: lms/djangoapps/support/static/support/jsx/logged_in_user.jsx:140
+msgid "What can we help you with, {fullName}?"
+msgstr "{fullName}님, 무엇을 도와드릴까요?"
+
 #: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:15
 msgid "Sign in to {platform} so we can help you better."
 msgstr "{platform}에 로그인하면 더 나은 지원을 받을 수 있습니다."
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:24
+#: lms/templates/student_account/hinted_login.underscore:4
+#: lms/templates/student_account/login.underscore:56
+msgid "Sign in"
+msgstr "로그인"
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:28
+#: lms/templates/student_account/institution_register.underscore:28
+#: lms/templates/student_account/register.underscore:50
+msgid "Create an Account"
+msgstr "계정 만들기"
+
+#: lms/djangoapps/support/static/support/jsx/logged_out_user.jsx:35
+msgid "Need help logging in?"
+msgstr "로그인하는 데 도움이 필요하신가요?"
 
 #: lms/djangoapps/support/static/support/jsx/single_support_form.jsx:47
 msgid ""
@@ -4913,15 +4974,260 @@ msgid "{total_results} result found for \"{search_term}\""
 msgid_plural "{total_results} results found for \"{search_term}\""
 msgstr[0] "\"{search_term}\"에 대한 {total_results}개의 결과가 검색되었습니다."
 
-#: xmodule/assets/library_content/public/js/library_content_edit.js:16
-#: xmodule/js/public/js/library_content_edit.js:16
+#: xmodule/assets/library_content/public/js/library_content_edit.js:44
+#: xmodule/js/public/js/library_content_edit.js:44
 msgid "Updating with latest library content"
 msgstr "최신 라이브러리 콘텐츠로 업데이트 중"
+
+#: xmodule/assets/library_content/public/js/library_content_edit.js:64
+#: xmodule/js/public/js/library_content_edit.js:64
+msgid "Migrating to Problem Bank"
+msgstr "문제 은행으로 이전 중"
 
 #: xmodule/assets/split_test/public/js/split_test_author_view.js:12
 #: xmodule/js/public/js/split_test_author_view.js:12
 msgid "Creating missing groups"
 msgstr "누락된 그룹 생성 중"
+
+#: xmodule/assets/video/public/js/00_i18n.js:10
+#: xmodule/assets/video/public/js/09_play_pause_control.js:31
+#: xmodule/assets/video/public/js/09_play_pause_control.js:89
+#: xmodule/assets/video/public/js/09_play_skip_control.js:28
+msgid "Play"
+msgstr "재생"
+
+#: xmodule/assets/video/public/js/00_i18n.js:11
+#: xmodule/assets/video/public/js/09_play_pause_control.js:79
+msgid "Pause"
+msgstr "일시 정지"
+
+#: xmodule/assets/video/public/js/00_i18n.js:12
+msgid "Mute"
+msgstr "음소거"
+
+#: xmodule/assets/video/public/js/00_i18n.js:13
+msgid "Unmute"
+msgstr "음소거 해제"
+
+#: xmodule/assets/video/public/js/00_i18n.js:14
+#: xmodule/assets/video/public/js/04_video_full_screen.js:227
+msgid "Exit full browser"
+msgstr "전체 브라우저 모드 종료"
+
+#: xmodule/assets/video/public/js/00_i18n.js:15
+#: xmodule/assets/video/public/js/04_video_full_screen.js:5
+#: xmodule/assets/video/public/js/04_video_full_screen.js:7
+#: xmodule/assets/video/public/js/04_video_full_screen.js:199
+msgid "Fill browser"
+msgstr "브라우저 채우기"
+
+#: xmodule/assets/video/public/js/00_i18n.js:16
+#: xmodule/assets/video/public/js/08_video_speed_control.js:43
+msgid "Speed"
+msgstr "속도"
+
+#: xmodule/assets/video/public/js/00_i18n.js:17
+#: xmodule/assets/video/public/js/08_video_auto_advance_control.js:38
+#: xmodule/js/src/video/08_video_auto_advance_control.js:40
+msgid "Auto-advance"
+msgstr "자동 진행"
+
+#: xmodule/assets/video/public/js/00_i18n.js:18
+#: xmodule/assets/video/public/js/07_video_volume_control.js:70
+msgid "Volume"
+msgstr "음량"
+
+#. Translators: Volume level equals 0%.
+#: xmodule/assets/video/public/js/00_i18n.js:20
+msgid "Muted"
+msgstr "음소거됨"
+
+#. Translators: Volume level in range ]0,20]%
+#: xmodule/assets/video/public/js/00_i18n.js:22
+msgid "Very low"
+msgstr "매우 낮음"
+
+#. Translators: Volume level in range ]20,40]%
+#: xmodule/assets/video/public/js/00_i18n.js:24
+msgid "Low"
+msgstr "낮음"
+
+#. Translators: Volume level in range ]40,60]%
+#: xmodule/assets/video/public/js/00_i18n.js:26
+msgid "Average"
+msgstr "보통"
+
+#. Translators: Volume level in range ]60,80]%
+#: xmodule/assets/video/public/js/00_i18n.js:28
+msgid "Loud"
+msgstr "시끄러움"
+
+#. Translators: Volume level in range ]80,99]%
+#: xmodule/assets/video/public/js/00_i18n.js:30
+msgid "Very loud"
+msgstr "매우 시끄러움"
+
+#. Translators: Volume level equals 100%.
+#: xmodule/assets/video/public/js/00_i18n.js:32
+msgid "Maximum"
+msgstr "최대"
+
+#: xmodule/assets/video/public/js/02_html5_video.js:82
+msgid "This browser cannot play .mp4, .ogg, or .webm files."
+msgstr "이 브라우저는 .mp4, .ogg, .webm 파일을 재생할 수 없습니다."
+
+#: xmodule/assets/video/public/js/02_html5_video.js:83
+msgid "Try using a different browser, such as Google Chrome."
+msgstr "Google Chrome과 같은 다른 브라우저를 사용해 보세요."
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:22
+msgid "High Definition"
+msgstr "고화질"
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:23
+#: xmodule/assets/video/public/js/05_video_quality_control.js:156
+msgid "off"
+msgstr "끔"
+
+#: xmodule/assets/video/public/js/05_video_quality_control.js:150
+msgid "on"
+msgstr "켬"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:11
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:102
+msgid "Video position. Press space to toggle playback"
+msgstr "비디오 위치. 스페이스바로 재생 전환"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:299
+msgid "Video ended"
+msgstr "비디오 종료"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:303
+msgid "Video position"
+msgstr "비디오 위치"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:319
+msgid "%(value)s hour"
+msgid_plural "%(value)s hours"
+msgstr[0] "%(value)s 시간"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:322
+msgid "%(value)s minute"
+msgid_plural "%(value)s minutes"
+msgstr[0] "%(value)s 분"
+
+#: xmodule/assets/video/public/js/06_video_progress_slider.js:325
+msgid "%(value)s second"
+msgid_plural "%(value)s seconds"
+msgstr[0] "%(value)s 초"
+
+#: xmodule/assets/video/public/js/07_video_volume_control.js:68
+msgid ""
+"Click on this button to mute or unmute this video or press UP or DOWN "
+"buttons to increase or decrease volume level."
+msgstr "이 버튼을 클릭하여 비디오를 음소거하거나 음소거 해제하고, UP 또는 DOWN 버튼을 눌러 음량을 조절하세요."
+
+#: xmodule/assets/video/public/js/07_video_volume_control.js:69
+msgid "Adjust video volume"
+msgstr "비디오 음량 조절"
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:33
+msgid ""
+"Press UP to enter the speed menu then use the UP and DOWN arrow keys to "
+"navigate the different speeds, then press ENTER to change to the selected "
+"speed."
+msgstr ""
+"속도 메뉴로 들어가려면 UP 키를 누른 후, UP과 DOWN 화살표 키로 다양한 속도를 탐색하고 ENTER 키를 눌러 선택한 속도로 "
+"변경하세요."
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:37
+msgid "Adjust video speed"
+msgstr "비디오 속도 조절"
+
+#: xmodule/assets/video/public/js/08_video_speed_control.js:268
+msgid "Video speed: "
+msgstr "비디오 속도: "
+
+#: xmodule/assets/video/public/js/09_play_skip_control.js:77
+msgid "Skip"
+msgstr "건너뛰기"
+
+#: xmodule/assets/video/public/js/09_poster.js:25
+msgid "Play video"
+msgstr "비디오 재생"
+
+#: xmodule/assets/video/public/js/09_skip_control.js:31
+msgid "Do not show again"
+msgstr "다시 표시하지 않음"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:105
+#: xmodule/assets/video/public/js/09_video_audio_description.js:107
+msgid "Toggle audio description"
+msgstr "오디오 설명 전환"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:106
+msgid "Audio Description"
+msgstr "오디오 설명"
+
+#: xmodule/assets/video/public/js/09_video_audio_description.js:108
+#: xmodule/assets/video/public/js/09_video_audio_description.js:109
+msgid "Audio description not available"
+msgstr "오디오 설명을 사용할 수 없습니다."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:105
+msgid "Open language menu"
+msgstr "언어 메뉴 열기"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:628
+msgid "Transcript will be displayed when you start playing the video."
+msgstr "비디오 재생 시 대본이 표시됩니다."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:879
+msgid ""
+"Activating a link in this group will skip to the corresponding point in the "
+"video."
+msgstr "이 그룹의 링크를 활성화하면 비디오의 해당 지점으로 건너뛰게 됩니다."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:882
+msgid "Video transcript"
+msgstr "비디오 대본"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:885
+msgid "Start of transcript. Skip to the end."
+msgstr "대본 시작. 끝으로 건너뛰기."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:889
+msgid "End of transcript. Skip to the start."
+msgstr "대본 끝. 시작으로 건너뛰기."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:893
+msgid ""
+"Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
+" keys to navigate language options. Press ENTER to change to the selected "
+"language."
+msgstr ""
+"언어 메뉴로 들어가려면 UP 화살표 키를 누르고, UP 및 DOWN 화살표 키로 언어 옵션을 탐색한 후 ENTER 키를 눌러 선택한 "
+"언어로 변경하세요."
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1249
+msgid "Hide closed captions"
+msgstr "닫힌 캡션 숨기기"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1267
+msgid "(Caption will be displayed when you start playing the video.)"
+msgstr "(비디오 재생을 시작하면 자막이 표시됩니다.)"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1274
+msgid "Turn on closed captioning"
+msgstr "닫힌 캡션 켜기"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1382
+msgid "Turn on transcripts"
+msgstr "전사 켜기"
+
+#: xmodule/assets/video/public/js/09_video_caption.js:1397
+msgid "Turn off transcripts"
+msgstr "전사 끄기"
 
 #: xmodule/assets/word_cloud/src/js/word_cloud_main.js:258
 msgid "{start_strong}{total}{end_strong} words submitted in total."
@@ -6336,245 +6642,6 @@ msgid ""
 msgstr ""
 "순서 오류! 현재의 SequenceModule에서 %(tab_name)s으로 이동할 수 없습니다. 강의 담당자에게 문의하세요."
 
-#: xmodule/js/src/video/00_i18n.js:15
-#: xmodule/js/src/video/09_play_pause_control.js:30
-#: xmodule/js/src/video/09_play_pause_control.js:88
-#: xmodule/js/src/video/09_play_skip_control.js:30
-msgid "Play"
-msgstr "재생"
-
-#: xmodule/js/src/video/00_i18n.js:16
-#: xmodule/js/src/video/09_play_pause_control.js:78
-msgid "Pause"
-msgstr "일시 정지"
-
-#: xmodule/js/src/video/00_i18n.js:17
-msgid "Mute"
-msgstr "음소거"
-
-#: xmodule/js/src/video/00_i18n.js:18
-msgid "Unmute"
-msgstr "음소거 해제"
-
-#: xmodule/js/src/video/00_i18n.js:19
-#: xmodule/js/src/video/04_video_full_screen.js:229
-msgid "Exit full browser"
-msgstr "전체 브라우저 모드 종료"
-
-#: xmodule/js/src/video/00_i18n.js:20
-#: xmodule/js/src/video/04_video_full_screen.js:7
-#: xmodule/js/src/video/04_video_full_screen.js:9
-#: xmodule/js/src/video/04_video_full_screen.js:201
-msgid "Fill browser"
-msgstr "브라우저 채우기"
-
-#: xmodule/js/src/video/00_i18n.js:21
-#: xmodule/js/src/video/08_video_speed_control.js:46
-msgid "Speed"
-msgstr "속도"
-
-#: xmodule/js/src/video/00_i18n.js:22
-#: xmodule/js/src/video/08_video_auto_advance_control.js:40
-msgid "Auto-advance"
-msgstr "자동 진행"
-
-#: xmodule/js/src/video/00_i18n.js:23
-#: xmodule/js/src/video/07_video_volume_control.js:72
-msgid "Volume"
-msgstr "음량"
-
-#. Translators: Volume level equals 0%.
-#: xmodule/js/src/video/00_i18n.js:25
-msgid "Muted"
-msgstr "음소거됨"
-
-#. Translators: Volume level in range ]0,20]%
-#: xmodule/js/src/video/00_i18n.js:27
-msgid "Very low"
-msgstr "매우 낮음"
-
-#. Translators: Volume level in range ]20,40]%
-#: xmodule/js/src/video/00_i18n.js:29
-msgid "Low"
-msgstr "낮음"
-
-#. Translators: Volume level in range ]40,60]%
-#: xmodule/js/src/video/00_i18n.js:31
-msgid "Average"
-msgstr "보통"
-
-#. Translators: Volume level in range ]60,80]%
-#: xmodule/js/src/video/00_i18n.js:33
-msgid "Loud"
-msgstr "시끄러움"
-
-#. Translators: Volume level in range ]80,99]%
-#: xmodule/js/src/video/00_i18n.js:35
-msgid "Very loud"
-msgstr "매우 시끄러움"
-
-#. Translators: Volume level equals 100%.
-#: xmodule/js/src/video/00_i18n.js:37
-msgid "Maximum"
-msgstr "최대"
-
-#: xmodule/js/src/video/02_html5_video.js:87
-msgid "This browser cannot play .mp4, .ogg, or .webm files."
-msgstr "이 브라우저는 .mp4, .ogg, .webm 파일을 재생할 수 없습니다."
-
-#: xmodule/js/src/video/02_html5_video.js:88
-msgid "Try using a different browser, such as Google Chrome."
-msgstr "Google Chrome과 같은 다른 브라우저를 사용해 보세요."
-
-#: xmodule/js/src/video/05_video_quality_control.js:25
-msgid "High Definition"
-msgstr "고화질"
-
-#: xmodule/js/src/video/05_video_quality_control.js:26
-#: xmodule/js/src/video/05_video_quality_control.js:159
-msgid "off"
-msgstr "끔"
-
-#: xmodule/js/src/video/05_video_quality_control.js:153
-msgid "on"
-msgstr "켬"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:16
-#: xmodule/js/src/video/06_video_progress_slider.js:107
-msgid "Video position. Press space to toggle playback"
-msgstr "비디오 위치. 스페이스바로 재생 전환"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:304
-msgid "Video ended"
-msgstr "비디오 종료"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:308
-msgid "Video position"
-msgstr "비디오 위치"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:324
-msgid "%(value)s hour"
-msgid_plural "%(value)s hours"
-msgstr[0] "%(value)s 시간"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:327
-msgid "%(value)s minute"
-msgid_plural "%(value)s minutes"
-msgstr[0] "%(value)s 분"
-
-#: xmodule/js/src/video/06_video_progress_slider.js:330
-msgid "%(value)s second"
-msgid_plural "%(value)s seconds"
-msgstr[0] "%(value)s 초"
-
-#: xmodule/js/src/video/07_video_volume_control.js:70
-msgid ""
-"Click on this button to mute or unmute this video or press UP or DOWN "
-"buttons to increase or decrease volume level."
-msgstr "이 버튼을 클릭하여 비디오를 음소거하거나 음소거 해제하고, UP 또는 DOWN 버튼을 눌러 음량을 조절하세요."
-
-#: xmodule/js/src/video/07_video_volume_control.js:71
-msgid "Adjust video volume"
-msgstr "비디오 음량 조절"
-
-#: xmodule/js/src/video/08_video_speed_control.js:36
-msgid ""
-"Press UP to enter the speed menu then use the UP and DOWN arrow keys to "
-"navigate the different speeds, then press ENTER to change to the selected "
-"speed."
-msgstr ""
-"속도 메뉴로 들어가려면 UP 키를 누른 후, UP과 DOWN 화살표 키로 다양한 속도를 탐색하고 ENTER 키를 눌러 선택한 속도로 "
-"변경하세요."
-
-#: xmodule/js/src/video/08_video_speed_control.js:40
-msgid "Adjust video speed"
-msgstr "비디오 속도 조절"
-
-#: xmodule/js/src/video/08_video_speed_control.js:271
-msgid "Video speed: "
-msgstr "비디오 속도: "
-
-#: xmodule/js/src/video/09_play_skip_control.js:79
-msgid "Skip"
-msgstr "건너뛰기"
-
-#: xmodule/js/src/video/09_poster.js:31
-msgid "Play video"
-msgstr "비디오 재생"
-
-#: xmodule/js/src/video/09_skip_control.js:33
-msgid "Do not show again"
-msgstr "다시 표시하지 않음"
-
-#: xmodule/js/src/video/09_video_audio_description.js:111
-#: xmodule/js/src/video/09_video_audio_description.js:113
-msgid "Toggle audio description"
-msgstr "오디오 설명 전환"
-
-#: xmodule/js/src/video/09_video_audio_description.js:112
-msgid "Audio Description"
-msgstr "오디오 설명"
-
-#: xmodule/js/src/video/09_video_audio_description.js:114
-#: xmodule/js/src/video/09_video_audio_description.js:115
-msgid "Audio description not available"
-msgstr "오디오 설명을 사용할 수 없습니다."
-
-#: xmodule/js/src/video/09_video_caption.js:107
-msgid "Open language menu"
-msgstr "언어 메뉴 열기"
-
-#: xmodule/js/src/video/09_video_caption.js:630
-msgid "Transcript will be displayed when you start playing the video."
-msgstr "비디오 재생 시 대본이 표시됩니다."
-
-#: xmodule/js/src/video/09_video_caption.js:881
-msgid ""
-"Activating a link in this group will skip to the corresponding point in the "
-"video."
-msgstr "이 그룹의 링크를 활성화하면 비디오의 해당 지점으로 건너뛰게 됩니다."
-
-#: xmodule/js/src/video/09_video_caption.js:884
-msgid "Video transcript"
-msgstr "비디오 대본"
-
-#: xmodule/js/src/video/09_video_caption.js:887
-msgid "Start of transcript. Skip to the end."
-msgstr "대본 시작. 끝으로 건너뛰기."
-
-#: xmodule/js/src/video/09_video_caption.js:891
-msgid "End of transcript. Skip to the start."
-msgstr "대본 끝. 시작으로 건너뛰기."
-
-#: xmodule/js/src/video/09_video_caption.js:895
-msgid ""
-"Press the UP arrow key to enter the language menu then use UP and DOWN arrow"
-" keys to navigate language options. Press ENTER to change to the selected "
-"language."
-msgstr ""
-"언어 메뉴로 들어가려면 UP 화살표 키를 누르고, UP 및 DOWN 화살표 키로 언어 옵션을 탐색한 후 ENTER 키를 눌러 선택한 "
-"언어로 변경하세요."
-
-#: xmodule/js/src/video/09_video_caption.js:1251
-msgid "Hide closed captions"
-msgstr "닫힌 캡션 숨기기"
-
-#: xmodule/js/src/video/09_video_caption.js:1269
-msgid "(Caption will be displayed when you start playing the video.)"
-msgstr "(비디오 재생을 시작하면 자막이 표시됩니다.)"
-
-#: xmodule/js/src/video/09_video_caption.js:1276
-msgid "Turn on closed captioning"
-msgstr "닫힌 캡션 켜기"
-
-#: xmodule/js/src/video/09_video_caption.js:1384
-msgid "Turn on transcripts"
-msgstr "전사 켜기"
-
-#: xmodule/js/src/video/09_video_caption.js:1399
-msgid "Turn off transcripts"
-msgstr "전사 끄기"
-
 #: cms/templates/js/access-editor.underscore:3
 msgid "Limit Access"
 msgstr "접근 제한"
@@ -7985,10 +8052,6 @@ msgstr ""
 #: cms/templates/js/show-textbook.underscore:12
 msgid "PDF Chapters"
 msgstr "PDF 챕터"
-
-#: cms/templates/js/show-textbook.underscore:37
-msgid "View Live"
-msgstr "실시간 보기"
 
 #: cms/templates/js/signatory-details.underscore:9
 #: cms/templates/js/signatory-editor.underscore:8
@@ -10131,11 +10194,6 @@ msgstr "로그인 관련 다른 도움이 필요하신가요?"
 msgid "Create an account"
 msgstr "계정 생성"
 
-#: lms/templates/student_account/hinted_login.underscore:4
-#: lms/templates/student_account/login.underscore:56
-msgid "Sign in"
-msgstr "로그인"
-
 #: lms/templates/student_account/hinted_login.underscore:8
 #, python-format
 msgid "Would you like to sign in using your %(providerName)s credentials?"
@@ -10166,11 +10224,6 @@ msgstr "로그인 화면으로 돌아가기"
 #: lms/templates/student_account/institution_register.underscore:5
 msgid "Register with Institution/Campus Credentials"
 msgstr "기관/캠퍼스 인증 정보를 사용하여 등록하기"
-
-#: lms/templates/student_account/institution_register.underscore:28
-#: lms/templates/student_account/register.underscore:50
-msgid "Create an Account"
-msgstr "계정 만들기"
 
 #: lms/templates/student_account/login.underscore:6
 msgid "First time here?"
