@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-08-19 00:16+0000\n"
-"PO-Revision-Date: 2026-09-10 11:37+0000\n"
+"POT-Creation-Date: 2026-11-13 00:20+0000\n"
+"PO-Revision-Date: 2026-11-22 04:30+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: English (http://www.transifex.com/open-edx/edx-platform/language/en/)\n"
 "Language: ar\n"
@@ -96,12 +96,12 @@ msgstr "لا يتم دعم تحديد كل من المعامل القابل لل
 msgid "You must include a course_uuid in your query parameters."
 msgstr "يجب تضمين course_UUID في متغيرات الاستعلام الخاصة بك."
 
-#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:205
+#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:366
 #, python-brace-format
 msgid "Missing value for: [{name}]. "
 msgstr "قيمة مفقودة لـ: [{name}]."
 
-#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:216
+#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:377
 msgid "Incorrect data sent. "
 msgstr "تم إرسال بيانات غير صحيحة."
 
@@ -130,31 +130,31 @@ msgstr "مشغل المساق تحت المراجعة، تم تعطيل خاصي
 msgid "Invalid parameter"
 msgstr "مُعامِل غير صحيح"
 
-#: apps/api/v1/views/courses.py:62
+#: apps/api/v1/views/courses.py:67
 msgid "Failed to set data: {}"
 msgstr "فشل ضبط البيانات: {}"
 
-#: apps/api/v1/views/courses.py:207
+#: apps/api/v1/views/courses.py:368
 #, python-brace-format
 msgid "Organization [{org}] does not exist. "
 msgstr "المؤسسة [{org}] غير موجودة."
 
-#: apps/api/v1/views/courses.py:209
+#: apps/api/v1/views/courses.py:370
 #, python-brace-format
 msgid "Course Type [{course_type}] does not exist. "
 msgstr "نوع الكورس [{course_type}] غير موجود"
 
-#: apps/api/v1/views/courses.py:212
+#: apps/api/v1/views/courses.py:373
 #, python-brace-format
 msgid "Product Source [{product_source}] does not exist. "
 msgstr "مصدر المنتج [{product_source}] غير موجود."
 
-#: apps/api/v1/views/courses.py:229
+#: apps/api/v1/views/courses.py:390
 #, python-brace-format
 msgid "A course with key [{key}] already exists."
 msgstr "يوجد كورس يحمل نفس المفتاح [{key}] مسبقًا"
 
-#: apps/api/v1/views/courses.py:237
+#: apps/api/v1/views/courses.py:398
 #, python-brace-format
 msgid ""
 "Course creation was unsuccessful. The course URL slug ‘[{url_slug}]’ is "
@@ -163,7 +163,7 @@ msgstr ""
 "فشلت عملية إنشاء المساق، ولكن مازال رابط المساق قيد الاستخدام ‘[{url_slug}]’"
 " يرجى تحديث هذا الحقل وإعادة المحاولة مرة أخرى."
 
-#: apps/api/v1/views/courses.py:298
+#: apps/api/v1/views/courses.py:459
 msgid ""
 "Switching entitlement types after being reviewed is not supported. Please "
 "reach out to your project coordinator for additional help if necessary."
@@ -171,7 +171,7 @@ msgstr ""
 "لا يتم دعم تحويل أنواع التخويل بعد مراجعتها. يرجى الاتصال بمنسق المشروع "
 "للحصول على مساعدة إضافية إذا لزم الأمر."
 
-#: apps/api/v1/views/courses.py:408
+#: apps/api/v1/views/courses.py:569
 #, python-brace-format
 msgid ""
 "Course edit was unsuccessful. The course URL slug ‘[{url_slug}]’ is already "
@@ -450,23 +450,23 @@ msgstr "البكالوريوس"
 msgid "Master’s"
 msgstr "الماجستير"
 
-#: apps/course_metadata/algolia_models.py:116
-#: apps/course_metadata/algolia_models.py:671
+#: apps/course_metadata/algolia_models.py:119
+#: apps/course_metadata/algolia_models.py:682
 msgid "Available now"
 msgstr "متوفر الآن"
 
-#: apps/course_metadata/algolia_models.py:118
+#: apps/course_metadata/algolia_models.py:121
 #: apps/course_metadata/models.py:2763
 msgid "Upcoming"
 msgstr "مرتقبة"
 
-#: apps/course_metadata/algolia_models.py:120
+#: apps/course_metadata/algolia_models.py:123
 #: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2757
 #: apps/course_metadata/models.py:2773
 msgid "Archived"
 msgstr "تمت أرشفته"
 
-#: apps/course_metadata/algolia_models.py:682
+#: apps/course_metadata/algolia_models.py:693
 msgid "Available by subscription"
 msgstr "متاح عن طريق الاشتراك"
 
@@ -2719,7 +2719,7 @@ msgid ""
 msgstr ""
 "يضيف توصيات للدورات التدريبية التي تم إنشاؤها أو تعديلها في الأيام الماضية"
 
-#: apps/taxonomy_support/providers.py:198
+#: apps/taxonomy_support/providers.py:216
 msgid "No partner object found!"
 msgstr "لم يتم العثور على كائن شريك!"
 

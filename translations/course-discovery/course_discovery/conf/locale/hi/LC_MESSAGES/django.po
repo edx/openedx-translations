@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-08-19 00:16+0000\n"
-"PO-Revision-Date: 2026-09-10 11:37+0000\n"
+"POT-Creation-Date: 2026-11-13 00:20+0000\n"
+"PO-Revision-Date: 2026-11-22 04:31+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: English (http://www.transifex.com/open-edx/edx-platform/language/en/)\n"
 "Language: hi\n"
@@ -98,12 +98,12 @@ msgstr "संपादन योग्य=1 और a q पैरामीटर
 msgid "You must include a course_uuid in your query parameters."
 msgstr "आपको अपने क्वेरी पैरामीटर्स में course_uuid अवश्य शामिल करना होगा।"
 
-#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:205
+#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:366
 #, python-brace-format
 msgid "Missing value for: [{name}]. "
 msgstr "इसके लिए गुम मान: [{name}]।"
 
-#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:216
+#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:377
 msgid "Incorrect data sent. "
 msgstr "गलत डाटा भेज दिया।"
 
@@ -132,31 +132,31 @@ msgstr "कोर्स रन रिवियू में है। एडि�
 msgid "Invalid parameter"
 msgstr "अमान्य मापदंड"
 
-#: apps/api/v1/views/courses.py:62
+#: apps/api/v1/views/courses.py:67
 msgid "Failed to set data: {}"
 msgstr "डेटा सेट करने में असफल: {}"
 
-#: apps/api/v1/views/courses.py:207
+#: apps/api/v1/views/courses.py:368
 #, python-brace-format
 msgid "Organization [{org}] does not exist. "
 msgstr "संगठन [{org}] मौजूद नहीं है|"
 
-#: apps/api/v1/views/courses.py:209
+#: apps/api/v1/views/courses.py:370
 #, python-brace-format
 msgid "Course Type [{course_type}] does not exist. "
 msgstr "पाठ्यक्रम प्रकार [{course_type}] मौजूद नहीं है।"
 
-#: apps/api/v1/views/courses.py:212
+#: apps/api/v1/views/courses.py:373
 #, python-brace-format
 msgid "Product Source [{product_source}] does not exist. "
 msgstr "उत्पाद स्रोत [{product_source}] मौजूद नहीं है।"
 
-#: apps/api/v1/views/courses.py:229
+#: apps/api/v1/views/courses.py:390
 #, python-brace-format
 msgid "A course with key [{key}] already exists."
 msgstr "एक कोर्स की के साथ [{key}] ऑलरेडी एकसिस्ट करता है |"
 
-#: apps/api/v1/views/courses.py:237
+#: apps/api/v1/views/courses.py:398
 #, python-brace-format
 msgid ""
 "Course creation was unsuccessful. The course URL slug ‘[{url_slug}]’ is "
@@ -165,7 +165,7 @@ msgstr ""
 "पाठ्यक्रम निर्माण असफल रहा। पाठ्यक्रम URL स्लग '[{url_slug}]' पहले से ही "
 "उपयोग में है। कृपया इस फ़ील्ड को अपडेट करें और पुनः प्रयास करें।"
 
-#: apps/api/v1/views/courses.py:298
+#: apps/api/v1/views/courses.py:459
 msgid ""
 "Switching entitlement types after being reviewed is not supported. Please "
 "reach out to your project coordinator for additional help if necessary."
@@ -173,7 +173,7 @@ msgstr ""
 "समीक्षा के बाद पात्रता प्रकार बदलना समर्थित नहीं है। यदि आवश्यक हो तो "
 "अतिरिक्त सहायता के लिए कृपया अपने परियोजना समन्वयक से संपर्क करें।"
 
-#: apps/api/v1/views/courses.py:408
+#: apps/api/v1/views/courses.py:569
 #, python-brace-format
 msgid ""
 "Course edit was unsuccessful. The course URL slug ‘[{url_slug}]’ is already "
@@ -459,23 +459,23 @@ msgstr "स्नातक की"
 msgid "Master’s"
 msgstr "मास्टर"
 
-#: apps/course_metadata/algolia_models.py:116
-#: apps/course_metadata/algolia_models.py:671
+#: apps/course_metadata/algolia_models.py:119
+#: apps/course_metadata/algolia_models.py:682
 msgid "Available now"
 msgstr "अब उपलब्ध है"
 
-#: apps/course_metadata/algolia_models.py:118
+#: apps/course_metadata/algolia_models.py:121
 #: apps/course_metadata/models.py:2763
 msgid "Upcoming"
 msgstr "आगामी"
 
-#: apps/course_metadata/algolia_models.py:120
+#: apps/course_metadata/algolia_models.py:123
 #: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2757
 #: apps/course_metadata/models.py:2773
 msgid "Archived"
 msgstr "संग्रहीत"
 
-#: apps/course_metadata/algolia_models.py:682
+#: apps/course_metadata/algolia_models.py:693
 msgid "Available by subscription"
 msgstr "सदस्यता द्वारा उपलब्ध"
 
@@ -2777,7 +2777,7 @@ msgstr ""
 "पिछले कुछ दिनों में बनाए गए या संशोधित पाठ्यक्रमों के लिए सिफ़ारिशें जोड़ता "
 "है"
 
-#: apps/taxonomy_support/providers.py:198
+#: apps/taxonomy_support/providers.py:216
 msgid "No partner object found!"
 msgstr "कोई भागीदार वस्तु नहीं मिली!"
 

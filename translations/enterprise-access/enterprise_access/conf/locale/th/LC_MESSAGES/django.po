@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-09-18 11:11+0000\n"
-"PO-Revision-Date: 2026-09-21 06:23+0000\n"
+"POT-Creation-Date: 2026-11-13 00:28+0000\n"
+"PO-Revision-Date: 2026-11-22 10:45+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: th\n"
@@ -34,11 +34,11 @@ msgstr "ชื่อเต็ม"
 msgid "Trigger Subscription Trial Customer Provisioning Workflow"
 msgstr "เรียกใช้กระบวนการตั้งค่าลูกค้าทดลองใช้งานสมัครรับข้อมูล"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:470
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:575
 msgid "{} has already been redeemed"
 msgstr "{} ถูกใช้ไปแล้ว"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:476
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:581
 msgid ""
 "{} has wait_to_redeem set to true, redemption will not occur until this is "
 "changed to false"
@@ -46,58 +46,58 @@ msgstr ""
 "{} ตั้งค่า wait_to_redeem เป็น true แล้ว "
 "การแลกจะไม่เกิดขึ้นจนกว่าจะเปลี่ยนเป็น false"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:498
+#: enterprise_access/apps/subsidy_access_policy/admin/__init__.py:596
 msgid "{} Failure reason: {}"
 msgstr "เหตุผลความล้มเหลวของ {}: {}"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:22
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:25
 msgid "Disable now"
 msgstr "ปิดการใช้งานตอนนี้"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:23
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:26
 msgid "1"
 msgstr "1"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:24
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:27
 msgid "2"
 msgstr "2"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:25
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:28
 msgid "3"
 msgstr "3"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:26
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:29
 msgid "4"
 msgstr "4"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:27
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:30
 msgid "5"
 msgstr "5"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:28
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:31
 msgid "6"
 msgstr "6"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:29
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:32
 msgid "7"
 msgstr "7"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:38
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:41
 msgid "Enable late redemptions until _ days from now"
 msgstr "เปิดใช้งานการแลกล่าช้าจนถึงอีก _ วัน"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:40
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:43
 msgid ""
 "Unless disabled now, late redemptions will be disabled at midnight UTC of "
 "the selected day."
 msgstr ""
 "ถ้าไม่ปิดตอนนี้ การแลกล่าช้าจะถูกปิดที่เที่ยงคืนตามเวลา UTC ของวันที่เลือก"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:50
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:53
 msgid "Top-up quantity in USD"
 msgstr "จำนวนเติมเงินในรูปแบบ USD"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:52
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:55
 msgid ""
 "Amount of funds to add to the associated Subsidy, and also by which to "
 "increase this Policy's spend_limit."
@@ -105,7 +105,7 @@ msgstr ""
 "จำนวนเงินที่จะเพิ่มเข้าไปในเงินช่วยเหลือที่เกี่ยวข้อง "
 "และยังเป็นการเพิ่มขีดจำกัดการใช้จ่ายของนโยบายนี้"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:60
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:63
 msgid ""
 "Reference the original sales object that originated this deposit. This must "
 "be the 18-character case-insensitive version of the ID."
@@ -113,11 +113,11 @@ msgstr ""
 "อ้างอิงวัตถุขายต้นฉบับที่เกี่ยวข้องกับการฝากนี้ โดยจะต้องเป็นรหัส ID "
 "แบบไม่คำนึงถึงตัวพิมพ์ที่มี 18 ตัวอักษร"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:77
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:80
 msgid "Learner First Name (EE-only)"
 msgstr "ชื่อผู้เรียน (สำหรับ EE เท่านั้น)"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:79
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:82
 msgid ""
 "First name of learner, only used for Exec Ed Redemptions. This value (along "
 "with last name and D.O.B.) are not persisted; if you select 'Wait to "
@@ -127,27 +127,28 @@ msgstr ""
 "(รวมถึงนามสกุลและวันเกิด) จะไม่ได้ถูกเก็บไว้ ถ้าคุณเลือก 'รอการแลก' "
 "ค่านั้นจะหายไปเมื่อคุณพยายามบันทึกในภายหลัง"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:86
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:89
 msgid "Learner Last Name (EE-only)"
 msgstr "นามสกุลผู้เรียน (สำหรับ EE เท่านั้น)"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:87
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:90
 msgid "Last name of learner, only used for Exec Ed Redemptions"
 msgstr "นามสกุลของผู้เรียน ใช้เฉพาะการแลก Exec Ed"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:91
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:94
 msgid "Learner Date of Birth (EE-only)"
 msgstr "วันเกิดของผู้เรียน (สำหรับ EE เท่านั้น)"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:92
-msgid "Learner date of birth, only used for Exec Ed Redemptions"
-msgstr "วันเกิดของผู้เรียน ใช้เฉพาะการแลก Exec Ed"
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:95
+msgid "Learner date of birth (YYYY-MM-DD), only used for Exec Ed Redemptions"
+msgstr ""
+"วันเกิดของผู้เรียน (YYYY-MM-DD) ใช้สำหรับการแลกรับสิทธิ์ Exec Ed เท่านั้น"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:96
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:100
 msgid "Order UUID of existing GEAG allocation (EE-only)"
 msgstr "Order UUID ของการแบ่งสรร GEAG ที่มีอยู่ (สำหรับ EE เท่านั้น)"
 
-#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:98
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:102
 msgid ""
 "Link new transaction to a specific Order UUID. This is rarely needed, as a "
 "GEAG allocation will typically not yet exist and neither will an Order UUID."
@@ -155,6 +156,31 @@ msgid ""
 msgstr ""
 "เชื่อมโยงธุรกรรมใหม่กับ Order UUID เฉพาะ อาจไม่จำเป็นบ่อยนัก เพราะการแบ่งสรร"
 " GEAG มักจะยังไม่มีอยู่และ Order UUID ก็เช่นกัน ใช้เฉพาะการแลก Exec Ed"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:109
+msgid "Suppress 'new assignment' email"
+msgstr "ระงับอีเมล 'การจัดสรรใหม่'"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:111
+msgid ""
+"For assignment-based budgets, don't email the learner when their assignment "
+"is created or re-allocated by this redemption. Like the fields above, this "
+"value is not persisted."
+msgstr ""
+"สำหรับงบประมาณแบบจัดสรร "
+"ไม่ต้องส่งอีเมลถึงผู้เรียนเมื่อมีการสร้างหรือจัดสรรสิทธิ์ใหม่จากการแลกรับสิทธิ์นี้"
+" เช่นเดียวกับฟิลด์ข้างต้น ค่านี้จะไม่ถูกบันทึกไว้"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:184
+msgid "Forced redemptions (JSON)"
+msgstr "การบังคับแลกรับสิทธิ์ (JSON)"
+
+#: enterprise_access/apps/subsidy_access_policy/admin/forms.py:186
+#, python-brace-format
+msgid "A JSON list with one object per forced redemption, at most {max_rows}."
+msgstr ""
+"รายการ JSON ที่มีหนึ่งออบเจ็กต์ต่อการบังคับแลกรับสิทธิ์หนึ่งรายการ สูงสุด "
+"{max_rows} รายการ"
 
 #: enterprise_access/apps/subsidy_access_policy/admin/views.py:83
 msgid "Successfully set late redemption."
@@ -176,10 +202,19 @@ msgstr "รายการของพจนานุกรมคู่ค้า
 msgid "Whether or not subsidy requests are enabled for an enterprise."
 msgstr "ว่าการขอรับเงินช่วยเหลือสำหรับองค์กรได้รับการเปิดใช้งานหรือไม่"
 
+#: enterprise_access/templates/subsidy_access_policy/admin/bulk_create_forced_redemptions.html:16
 #: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:16
 #: enterprise_access/templates/subsidy_access_policy/admin/set_late_redemption.html:16
 msgid "Home"
 msgstr "หน้าหลัก"
+
+#: enterprise_access/templates/subsidy_access_policy/admin/bulk_create_forced_redemptions.html:19
+msgid "Bulk create"
+msgstr "สร้างหลายรายการพร้อมกัน"
+
+#: enterprise_access/templates/subsidy_access_policy/admin/bulk_create_forced_redemptions.html:49
+msgid "Save and queue"
+msgstr "บันทึกและเพิ่มลงในคิว"
 
 #: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:23
 #: enterprise_access/templates/subsidy_access_policy/admin/deposit_funds.html:30

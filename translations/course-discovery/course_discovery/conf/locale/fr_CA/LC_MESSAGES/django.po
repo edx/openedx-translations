@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-08-19 00:16+0000\n"
-"PO-Revision-Date: 2026-09-10 11:37+0000\n"
+"POT-Creation-Date: 2026-11-13 00:20+0000\n"
+"PO-Revision-Date: 2026-11-22 04:31+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: English (http://www.transifex.com/open-edx/edx-platform/language/en/)\n"
 "Language: fr_CA\n"
@@ -104,12 +104,12 @@ msgstr ""
 msgid "You must include a course_uuid in your query parameters."
 msgstr "Vous devez inclure un course_uuid dans vos paramètres de recherche."
 
-#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:205
+#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:366
 #, python-brace-format
 msgid "Missing value for: [{name}]. "
 msgstr "Valeur manquante pour : [{name}]."
 
-#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:216
+#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:377
 msgid "Incorrect data sent. "
 msgstr "Données incorrectes envoyées."
 
@@ -141,31 +141,31 @@ msgstr ""
 msgid "Invalid parameter"
 msgstr "Paramètre invalide"
 
-#: apps/api/v1/views/courses.py:62
+#: apps/api/v1/views/courses.py:67
 msgid "Failed to set data: {}"
 msgstr "Impossible de paramétrer la donnée : {}"
 
-#: apps/api/v1/views/courses.py:207
+#: apps/api/v1/views/courses.py:368
 #, python-brace-format
 msgid "Organization [{org}] does not exist. "
 msgstr "L'organisation [{org}] n'existe pas."
 
-#: apps/api/v1/views/courses.py:209
+#: apps/api/v1/views/courses.py:370
 #, python-brace-format
 msgid "Course Type [{course_type}] does not exist. "
 msgstr "Le type de cours [{course_type}] n'existe pas."
 
-#: apps/api/v1/views/courses.py:212
+#: apps/api/v1/views/courses.py:373
 #, python-brace-format
 msgid "Product Source [{product_source}] does not exist. "
 msgstr "La source du produit [{product_source}] n'existe pas."
 
-#: apps/api/v1/views/courses.py:229
+#: apps/api/v1/views/courses.py:390
 #, python-brace-format
 msgid "A course with key [{key}] already exists."
 msgstr "Un cours avec la clé [{key}] existe déjà."
 
-#: apps/api/v1/views/courses.py:237
+#: apps/api/v1/views/courses.py:398
 #, python-brace-format
 msgid ""
 "Course creation was unsuccessful. The course URL slug ‘[{url_slug}]’ is "
@@ -174,7 +174,7 @@ msgstr ""
 "La création de cours a échouée. Le URL du cours ‘[{url_slug}]’ est déjà "
 "utilisé. Veuillez mettre à jour ce champs et réessayer."
 
-#: apps/api/v1/views/courses.py:298
+#: apps/api/v1/views/courses.py:459
 msgid ""
 "Switching entitlement types after being reviewed is not supported. Please "
 "reach out to your project coordinator for additional help if necessary."
@@ -182,7 +182,7 @@ msgstr ""
 "Changer le type de privilège après la revue n'est pas supporté. Veuillez "
 "contacter votre coordinateur pour de l'aide supplémentaire au besoin."
 
-#: apps/api/v1/views/courses.py:408
+#: apps/api/v1/views/courses.py:569
 #, python-brace-format
 msgid ""
 "Course edit was unsuccessful. The course URL slug ‘[{url_slug}]’ is already "
@@ -466,23 +466,23 @@ msgstr "Baccalauréat"
 msgid "Master’s"
 msgstr "Maîtrise"
 
-#: apps/course_metadata/algolia_models.py:116
-#: apps/course_metadata/algolia_models.py:671
+#: apps/course_metadata/algolia_models.py:119
+#: apps/course_metadata/algolia_models.py:682
 msgid "Available now"
 msgstr "Disponible maintenant"
 
-#: apps/course_metadata/algolia_models.py:118
+#: apps/course_metadata/algolia_models.py:121
 #: apps/course_metadata/models.py:2763
 msgid "Upcoming"
 msgstr "Prochainement"
 
-#: apps/course_metadata/algolia_models.py:120
+#: apps/course_metadata/algolia_models.py:123
 #: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2757
 #: apps/course_metadata/models.py:2773
 msgid "Archived"
 msgstr "Archivé"
 
-#: apps/course_metadata/algolia_models.py:682
+#: apps/course_metadata/algolia_models.py:693
 msgid "Available by subscription"
 msgstr "Disponible par abonnement"
 
@@ -2836,7 +2836,7 @@ msgstr ""
 "Ajoute des recommandations pour les cours créés ou modifiés au cours des "
 "derniers jours"
 
-#: apps/taxonomy_support/providers.py:198
+#: apps/taxonomy_support/providers.py:216
 msgid "No partner object found!"
 msgstr "Aucun objet partenaire trouvé!"
 

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-08-19 00:16+0000\n"
-"PO-Revision-Date: 2026-09-10 11:40+0000\n"
+"POT-Creation-Date: 2026-11-13 00:20+0000\n"
+"PO-Revision-Date: 2026-11-22 04:32+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: English (http://www.transifex.com/open-edx/edx-platform/language/en/)\n"
 "Language: zh_CN\n"
@@ -92,12 +92,12 @@ msgstr "同时指定 editable=1 和 q 参数是不支持的。"
 msgid "You must include a course_uuid in your query parameters."
 msgstr "查询参数中必须包含 course_uuid。"
 
-#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:205
+#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:366
 #, python-brace-format
 msgid "Missing value for: [{name}]. "
 msgstr "缺少值: [{name}]. "
 
-#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:216
+#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:377
 msgid "Incorrect data sent. "
 msgstr "发送了错误的数据。 "
 
@@ -124,44 +124,44 @@ msgstr "课程运行正在审核中，不允许编辑。"
 msgid "Invalid parameter"
 msgstr "无效的参数"
 
-#: apps/api/v1/views/courses.py:62
+#: apps/api/v1/views/courses.py:67
 msgid "Failed to set data: {}"
 msgstr "设置数据失败: {}"
 
-#: apps/api/v1/views/courses.py:207
+#: apps/api/v1/views/courses.py:368
 #, python-brace-format
 msgid "Organization [{org}] does not exist. "
 msgstr "组织 [{org}] 不存在。 "
 
-#: apps/api/v1/views/courses.py:209
+#: apps/api/v1/views/courses.py:370
 #, python-brace-format
 msgid "Course Type [{course_type}] does not exist. "
 msgstr "课程类型 [{course_type}] 不存在。 "
 
-#: apps/api/v1/views/courses.py:212
+#: apps/api/v1/views/courses.py:373
 #, python-brace-format
 msgid "Product Source [{product_source}] does not exist. "
 msgstr "产品来源 [{product_source}] 不存在。 "
 
-#: apps/api/v1/views/courses.py:229
+#: apps/api/v1/views/courses.py:390
 #, python-brace-format
 msgid "A course with key [{key}] already exists."
 msgstr "具有键 [{key}] 的课程已存在。"
 
-#: apps/api/v1/views/courses.py:237
+#: apps/api/v1/views/courses.py:398
 #, python-brace-format
 msgid ""
 "Course creation was unsuccessful. The course URL slug ‘[{url_slug}]’ is "
 "already in use. Please update this field and try again."
 msgstr "课程创建失败。课程 URL slug ‘[{url_slug}]’ 已被使用。请更新此字段后重试。"
 
-#: apps/api/v1/views/courses.py:298
+#: apps/api/v1/views/courses.py:459
 msgid ""
 "Switching entitlement types after being reviewed is not supported. Please "
 "reach out to your project coordinator for additional help if necessary."
 msgstr "审核后不支持切换授权类型。如有需要，请联系项目协调员获得进一步帮助。"
 
-#: apps/api/v1/views/courses.py:408
+#: apps/api/v1/views/courses.py:569
 #, python-brace-format
 msgid ""
 "Course edit was unsuccessful. The course URL slug ‘[{url_slug}]’ is already "
@@ -429,23 +429,23 @@ msgstr "学士"
 msgid "Master’s"
 msgstr "硕士"
 
-#: apps/course_metadata/algolia_models.py:116
-#: apps/course_metadata/algolia_models.py:671
+#: apps/course_metadata/algolia_models.py:119
+#: apps/course_metadata/algolia_models.py:682
 msgid "Available now"
 msgstr "立即可用"
 
-#: apps/course_metadata/algolia_models.py:118
+#: apps/course_metadata/algolia_models.py:121
 #: apps/course_metadata/models.py:2763
 msgid "Upcoming"
 msgstr "即将推出"
 
-#: apps/course_metadata/algolia_models.py:120
+#: apps/course_metadata/algolia_models.py:123
 #: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2757
 #: apps/course_metadata/models.py:2773
 msgid "Archived"
 msgstr "已归档"
 
-#: apps/course_metadata/algolia_models.py:682
+#: apps/course_metadata/algolia_models.py:693
 msgid "Available by subscription"
 msgstr "通过订阅提供"
 
@@ -2547,7 +2547,7 @@ msgid ""
 "Adds recommendations for courses created or modified in the past num days"
 msgstr "为过去 num 天内创建或修改的课程添加推荐。"
 
-#: apps/taxonomy_support/providers.py:198
+#: apps/taxonomy_support/providers.py:216
 msgid "No partner object found!"
 msgstr "未找到合作伙伴对象！"
 

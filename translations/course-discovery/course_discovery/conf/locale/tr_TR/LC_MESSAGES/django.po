@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
-"POT-Creation-Date: 2026-08-19 00:16+0000\n"
-"PO-Revision-Date: 2026-09-10 11:40+0000\n"
+"POT-Creation-Date: 2026-11-13 00:20+0000\n"
+"PO-Revision-Date: 2026-11-22 04:31+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: English (http://www.transifex.com/open-edx/edx-platform/language/en/)\n"
 "Language: tr_TR\n"
@@ -98,12 +98,12 @@ msgstr "Hem editable=1 hem de aq parametresinin belirtilmesi desteklenmez."
 msgid "You must include a course_uuid in your query parameters."
 msgstr "Sorgu parametrelerinize bir Course_uuid eklemelisiniz."
 
-#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:205
+#: apps/api/v1/views/comments.py:58 apps/api/v1/views/courses.py:366
 #, python-brace-format
 msgid "Missing value for: [{name}]. "
 msgstr "[{name}] için kayıp değer."
 
-#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:216
+#: apps/api/v1/views/comments.py:60 apps/api/v1/views/courses.py:377
 msgid "Incorrect data sent. "
 msgstr "Hatalı veri gönderildi."
 
@@ -132,31 +132,31 @@ msgstr "Ders yayını incelemede. Düzenleme devre dışı bırakıldı."
 msgid "Invalid parameter"
 msgstr "Geçersiz parametre"
 
-#: apps/api/v1/views/courses.py:62
+#: apps/api/v1/views/courses.py:67
 msgid "Failed to set data: {}"
 msgstr "Veriler ayarlanamadı: {}"
 
-#: apps/api/v1/views/courses.py:207
+#: apps/api/v1/views/courses.py:368
 #, python-brace-format
 msgid "Organization [{org}] does not exist. "
 msgstr "[{org}] kurumu mevcut değil."
 
-#: apps/api/v1/views/courses.py:209
+#: apps/api/v1/views/courses.py:370
 #, python-brace-format
 msgid "Course Type [{course_type}] does not exist. "
 msgstr "[{course_type}] ders türü mevcut değil."
 
-#: apps/api/v1/views/courses.py:212
+#: apps/api/v1/views/courses.py:373
 #, python-brace-format
 msgid "Product Source [{product_source}] does not exist. "
 msgstr "Ürün Kaynağı [ {product_source} ] mevcut değil. "
 
-#: apps/api/v1/views/courses.py:229
+#: apps/api/v1/views/courses.py:390
 #, python-brace-format
 msgid "A course with key [{key}] already exists."
 msgstr "[{key}] anahtarına sahip olan ders zaten mevcut."
 
-#: apps/api/v1/views/courses.py:237
+#: apps/api/v1/views/courses.py:398
 #, python-brace-format
 msgid ""
 "Course creation was unsuccessful. The course URL slug ‘[{url_slug}]’ is "
@@ -165,7 +165,7 @@ msgstr ""
 "Ders oluşturma başarısız oldu. Ders URL yolu \"[{url_slug}]\" zaten "
 "kullanımda. Lütfen bu alanı güncelleyin ve tekrar deneyin."
 
-#: apps/api/v1/views/courses.py:298
+#: apps/api/v1/views/courses.py:459
 msgid ""
 "Switching entitlement types after being reviewed is not supported. Please "
 "reach out to your project coordinator for additional help if necessary."
@@ -173,7 +173,7 @@ msgstr ""
 "İncelendikten sonra yetki türlerinin değiştirilmesi desteklenmez. Gerekirse "
 "ek yardım için lütfen proje koordinatörünüzle iletişime geçin."
 
-#: apps/api/v1/views/courses.py:408
+#: apps/api/v1/views/courses.py:569
 #, python-brace-format
 msgid ""
 "Course edit was unsuccessful. The course URL slug ‘[{url_slug}]’ is already "
@@ -457,23 +457,23 @@ msgstr "Lisans"
 msgid "Master’s"
 msgstr "Yüksek Lisans"
 
-#: apps/course_metadata/algolia_models.py:116
-#: apps/course_metadata/algolia_models.py:671
+#: apps/course_metadata/algolia_models.py:119
+#: apps/course_metadata/algolia_models.py:682
 msgid "Available now"
 msgstr "Şimdi mevcut"
 
-#: apps/course_metadata/algolia_models.py:118
+#: apps/course_metadata/algolia_models.py:121
 #: apps/course_metadata/models.py:2763
 msgid "Upcoming"
 msgstr "Yakında"
 
-#: apps/course_metadata/algolia_models.py:120
+#: apps/course_metadata/algolia_models.py:123
 #: apps/course_metadata/choices.py:100 apps/course_metadata/models.py:2757
 #: apps/course_metadata/models.py:2773
 msgid "Archived"
 msgstr "Arşivlenmiş"
 
-#: apps/course_metadata/algolia_models.py:682
+#: apps/course_metadata/algolia_models.py:693
 msgid "Available by subscription"
 msgstr "Abonelik ile kullanılabilir"
 
@@ -2767,7 +2767,7 @@ msgstr ""
 "Belirli bir gün içinde oluşturulan veya değiştirilen dersler için öneriler "
 "ekler"
 
-#: apps/taxonomy_support/providers.py:198
+#: apps/taxonomy_support/providers.py:216
 msgid "No partner object found!"
 msgstr "İşortağı nesnesi bulunamadı!"
 

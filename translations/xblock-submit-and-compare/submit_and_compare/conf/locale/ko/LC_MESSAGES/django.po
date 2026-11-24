@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: @content-aurora\n"
 "POT-Creation-Date: 2023-06-13 08:00+0000\n"
-"PO-Revision-Date: 2026-09-10 09:59+0000\n"
+"PO-Revision-Date: 2026-11-22 11:04+0000\n"
 "Last-Translator: AI Translation Service, 2026\n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
 "Language: ko\n"
@@ -19,7 +19,7 @@ msgstr "표시 이름"
 
 #: templates/edit.html:11
 msgid "This name appears in the horizontal navigation at the top of the page"
-msgstr "이 이름은 페이지 상단의 가로 내비게이션에 표시됩니다"
+msgstr "이 이름은 페이지 상단의 가로 탐색 메뉴에 표시됩니다."
 
 #: templates/edit.html:16
 msgid "Weight"
@@ -27,7 +27,7 @@ msgstr "가중치"
 
 #: templates/edit.html:19
 msgid "This assigns an integer value representing the weight of this problem"
-msgstr "이것은 이 문제의 가중치를 나타내는 정수 값을 지정합니다"
+msgstr "이 문제의 가중치를 나타내는 정수 값을 지정합니다."
 
 #: templates/edit.html:24
 msgid "Max Attempts"
@@ -37,7 +37,7 @@ msgstr "최대 시도 횟수"
 msgid ""
 "This assigns an integer value representing the maximum number of times a "
 "student can attempt the problem"
-msgstr "이것은 학생이 문제를 시도할 수 있는 최대 횟수를 나타내는 정수 값을 지정합니다"
+msgstr "학생이 문제를 풀 수 있는 최대 시도 횟수를 정수 값으로 지정합니다."
 
 #: templates/edit.html:32
 msgid "Label for Student Answer"
@@ -45,7 +45,7 @@ msgstr "학생 답안 레이블"
 
 #: templates/edit.html:35
 msgid "Label for the text area containing the student's answer"
-msgstr "학생의 답안을 포함하는 텍스트 영역에 대한 라벨"
+msgstr "학생의 답안이 포함된 텍스트 영역의 레이블"
 
 #: templates/edit.html:40
 msgid "Label for Expert Answer"
@@ -53,7 +53,7 @@ msgstr "전문가 답안 레이블"
 
 #: templates/edit.html:43
 msgid "Label for the 'expert' answer"
-msgstr "'전문가' 답안에 대한 라벨"
+msgstr "'전문가' 답안의 레이블"
 
 #: templates/edit.html:48
 msgid "Label for Submit Button"
@@ -61,7 +61,7 @@ msgstr "제출 버튼 레이블"
 
 #: templates/edit.html:51
 msgid "Label for the submit button"
-msgstr "제출 버튼에 대한 라벨"
+msgstr "제출 버튼의 레이블"
 
 #: templates/edit.html:56
 msgid "Definition"
@@ -82,19 +82,19 @@ msgstr "취소"
 #: views.py:223
 #, python-brace-format
 msgid "Hint ({number} of {total}): {hint}"
-msgstr "힌트 (총 {total}개 중 {number}번째): {hint}"
+msgstr "힌트 ({number}/{total}): {hint}"
 
 #: views.py:244
 #, python-brace-format
 msgid "You have used {count_attempts} of {max_attempts} submission"
 msgid_plural "You have used {count_attempts} of {max_attempts} submissions"
-msgstr[0] "제출 {max_attempts}회 중 {count_attempts}회를 사용했습니다."
+msgstr[0] "총 {max_attempts}번의 제출 기회 중 {count_attempts}번을 사용했습니다"
 
 #: views.py:287
 #, python-brace-format
 msgid "{weight} point possible"
 msgid_plural "{weight} points possible"
-msgstr[0] "{weight}점 가능"
+msgstr[0] "최대 {weight}점"
 
 #: views.py:299
 #, python-brace-format
